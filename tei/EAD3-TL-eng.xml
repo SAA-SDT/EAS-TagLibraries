@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../schema/EAD3_TagLibrary_TEILite_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="http://ead3.archivists.org/schema/"
    xmlns:eg="http://www.tei-c.org/ns/Examples"
    xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
@@ -499,9 +499,10 @@
                      space. A number of attributes in EAD where a character string from a code list
                      is to be used are of the type "NMTOKEN".</item>
                   <label>string:</label>
-                  <item>The most general data type, a string can contain any sequence of characters
-                     allowed in XML. Certain characters may have to be represented with an entity
-                     reference, for example &amp;lt; for &lt;, and &amp;amp; for &amp;.</item>
+                  <item>The most general data type, a string can contain any sequence of
+                     characters allowed in XML. Certain characters may have to be represented
+                     with an entity reference, for example &amp;lt; for &lt;, and &amp;amp; for
+                     &amp;.</item>
                   <label>token:</label>
                   <item>A type of string that may not contain carriage return, line feed or tab
                      characters, leading or trailing spaces, and any internal sequence of two or
@@ -966,7 +967,7 @@
                      non-digital records, other, or not known. Required in <gi>dao</gi>.</p>
                </div>
                <div type="values">
-                  <p>Values:borndigital, derived, otherdaotype, unknown</p>
+                  <p>borndigital, derived, otherdaotype, unknown</p>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-datechar">
@@ -2182,33 +2183,7 @@
                      </list>
                   </p>
                </div>
-               <!-- Karin this element-->
-               <!--<div type="description">
-                  <p>Used to record the abbreviated form of a word or phrase, for example, an
-                     acronym.</p>
-                  <p>Use <gi>abbr</gi> within <gi>conventiondeclaration</gi> to identify the code
-                     for a thesaurus, controlled vocabulary, or another standard used in creating
-                     the EAD description. To improve interoperability, it is recommended that the
-                     value be selected from an authorized list of codes such as the MARC Description
-                     Convention Source Codes
-                     (http://www.loc.gov/standards/sourcelist/descriptive-conventions.html).</p>
-                  <p>In other elements, use <gi>abbr</gi> with <att>expan</att> to encode
-                     abbreviations as they occur within the description, if you wish to use an
-                     abbreviation while also providing its fuller form.</p>
-                  <p>Attribute usage:</p>
-                  <list type='simple'>
-                     <item>Use <att>expan</att> to provide the full form of the abbreviation, which
-                        may be given for indexing or searching purposes.</item>
-                  </list>
-                  <p>See also:</p>
-                  <list type='simple'>
-                     <item>The related element <gi>expan</gi> with <att>abbr</att>, which can be
-                        used to encode the full form of a name while providing the abbreviation in
-                        an attribute for indexing or searching purposes.</item>
-                  </list>
-               </div>-->
-               <!-- Should become -->
-               <div type="description">
+              <div type="description">
                   <p>Used to record the abbreviated form of a word or phrase, for example, an
                      acronym.</p>
                   <p>Use <gi>abbr</gi> within <gi>conventiondeclaration</gi> to identify the code
@@ -2222,21 +2197,21 @@
                      abbreviation while also providing its fuller form.</p>
                </div>
                <div type="attributeusage">
-                  <p>
+                  
                      <list type="simple">
                         <item>Use <att>expan</att> to provide the full form of the abbreviation,
                            which may be given for indexing or searching purposes.</item>
                      </list>
-                  </p>
+                  
                </div>
                <div type="seealso">
-                  <p>
+                  
                      <list type="simple">
                         <item>The related element <gi>expan</gi> with <att>abbr</att>, which can be
                            used to encode the full form of a name while providing the abbreviation
                            in an attribute for indexing or searching purposes.</item>
                      </list>
-                  </p>
+                  
                </div>
                <div type="availability">
                   <p>Within <gi>conventiondeclaration</gi>: Optional, not repeatable </p>
@@ -2317,12 +2292,12 @@
                   <p>Within archdesc/did, <gi>abstract</gi> is derived from the longer descriptions
                      found in <gi>bioghist</gi> and <gi>scopecontent</gi>. Its purpose is to help
                      readers identify quickly those materials they need to explore at greater
-                     length. Within the component (<gi>c</gi> or <gi>c01</gi>-&lt;c12) <gi>did</gi>,
+                     length. Within the component (<gi>c</gi> or <gi>c01</gi>-<gi>c12</gi>) <gi>did</gi>,
                         <gi>abstract</gi> may describe unique characteristics of an individual
                      component. </p>
                </div>
                <div type="attributeusage">
-                  <p>
+                  
                      <list type="simple">
                         <item>Use of <att>localtype</att> and <att>encodinganalog</att> on
                               <gi>abstract</gi> may assist in transforming information for such
@@ -2331,7 +2306,7 @@
                         <item>Use <att>lang</att> when abstracts are provided in more than one
                            language.</item>
                      </list>
-                  </p>
+                  
                </div>
 
                <div type="availability">
@@ -2753,10 +2728,12 @@
                      parts of an address.</p>
                </div>
                <div type="attributeusage">
+                  
                   <list type="simple">
                      <item>Use <att>localtype</att>, if local use requires specification of the type
                         of information contained in the line.</item>
                   </list>
+                  
                </div>
                <div type="availability">
                   <p>Required, repeatable</p>
@@ -2925,10 +2902,12 @@
                      of each name using <att>lang</att>.</p>
                </div>
                <div type="attributeusage">
+                  
                   <list type="simple">
                      <item>Use <att>localtype</att> if local use requires recording the type of
                         name.</item>
                   </list>
+                  
                </div>
                <div type="seealso">
                   <list type="simple">
@@ -3069,7 +3048,8 @@
                      than English.</p>
                </div>
                <div type="attributeusage">
-                  <list type="simple">
+                  
+                     <list type="simple">
                      <item>
                         <gi>agenttype</gi> requires use of <att>value</att>, which must be set to
                         "human," "machine," or "unknown," and should correspond to the information
@@ -3080,6 +3060,7 @@
                            <gi>agenttype</gi> may also be set to "unknown" if the agent and/or type
                         of agent cannot be determined.</item>
                   </list>
+                  
                </div>
                <div type="seealso">
                   <list type="simple">
@@ -3361,6 +3342,7 @@
                            <att>otherlevel</att> should be used to provide an alternative
                         term.</item>
                   </list>
+                  
                </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
@@ -3632,7 +3614,8 @@
                      wants to convey to users.</p>
                </div>
                <div type="attributeusage">
-                  <list type="simple">
+                  
+                 <list type="simple">
                      <item>Use <att>localtype</att> if local practice requires recording the type of
                         author.</item>
                   </list>
@@ -5071,7 +5054,7 @@
                      finding aid encoder in accurately nesting components.</p>
                </div>
                <div type="attributeusage">
-                  <list type="simple">
+                 <list type="simple">
                      <item>Use <att>base</att> to specify a base URI other than the URI of the EAD
                         instance for the purpose of resolving any relative URIs contained within
                            <gi>c11</gi>.</item>
@@ -8451,7 +8434,7 @@
                      or other modification to an EAD instance.</p>
                </div>
                <div type="attributeusage">
-                  <list type="simple">
+                 <list type="simple">
                      <item>Use <att>localtype</att> if local practice requires recording the type of
                         description.</item>
                   </list>
@@ -8675,7 +8658,7 @@
                      text.</p>
                </div>
                <div type="attributeusage">
-                  <list type="simple">
+                 <list type="simple">
                      <item>Use <att>encodinganalog</att> to indicate corresponding data elements in
                         another data format, such as MARC.</item>
                      <item>Use <att>identifier</att> to provide a number, code, or string (e.g.,
@@ -10209,7 +10192,7 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use @lang and <att>script</att>to indicate the language and written
+                     <item>Use <att>lang</att> and <att>script</att>to indicate the language and written
                         scripts of the descriptive information, not the language of
                         materials.</item>
                      <item>Use <att>langcode</att> in the <gi>language</gi> child element to record
@@ -11933,9 +11916,9 @@
                   <p>A generic element for encoding numeric information in any form. <gi>num</gi>
                      may be used when it is necessary to display a number in a special way, or to
                      identify it with <att>localtype</att>. For example, an accession number in
-                        <gi>acqinfo</gi> might be designated as &lt;num localtype="accession"&gt;. A
+                     <gi>acqinfo</gi> might be designated as &lt;num localtype="accession"&gt;. A
                      publication number might be designated as <gi>publicationstmt</gi> ...
-                        <gi>num</gi>no. 42&lt;/num&gt; ...</p>
+                     <gi>num</gi>no. 42&lt;/num&gt; ...</p>
                </div>
                <div type="seealso">
                   <list type="simple">
@@ -12777,7 +12760,7 @@
                </div>
                <div type="mayContain">
                   <p>[text], <gi>abbr</gi>, <gi>emph</gi>, <gi>expan</gi>, <gi>foreign</gi>,
-                     &lt;lb/&gt;, &lt;ptr/&gt;, <gi>ref</gi>
+                     <gi>lb</gi>, <gi>ptr</gi>, <gi>ref</gi>
                   </p>
                </div>
                <div type="mayOccurWithin">
@@ -14873,7 +14856,7 @@
                               href="http://resolver.bl.uk/ark:/81055/vdc_100000000035.0x000122"
                               actuate="onrequest" show="new"
                               arcrole="http://www.w3c.org/2000/01/rdf-schema#seeAlso"
-                              linkrole="http://purl.org/archival/vocab/arch#Collection">&gt;
+                              linkrole="http://purl.org/archival/vocab/arch#Collection">
                                  <ead:relationentry>Add MS 88967: Michael Butterworth and J G
                                  Ballard: Correspondence, 1965-2011</ead:relationentry>
                            </ead:relation>
@@ -16751,7 +16734,7 @@
                         singlequote, smcaps, sub, super, and underline.</item>
                      <item>Use <att>rules</att> to specify the descriptive rules followed for
                         forming the title statement.</item>
-                     <item>Use @source to indicate the vocabulary from which the title statement has
+                     <item>Use <att>source</att> to indicate the vocabulary from which the title statement has
                         been taken.</item>
                   </list>
                </div>
@@ -17633,9 +17616,6 @@
                      </ead:archdesc>
                   </egXML>
                </div>
-               <div type="summary">
-                  <p>&lt;/did&gt;</p>
-               </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-unittype">
                <head>
@@ -18102,41 +18082,41 @@
                      <gi>accruals</gi>
                   </item>
                   <label>600 Subject--personal name</label>
-                  <item> &lt;controlaccess&gt;&lt;persname relator="subject"&gt;,
-                     &lt;controlaccess&gt;&lt;famname relator="subject"&gt;</item>
+                  <item> <gi>controlaccess</gi>&lt;persname relator="subject"&gt;,
+                     <gi>controlaccess</gi>&lt;famname relator="subject"&gt;</item>
                   <label>610 Subject--corporate name</label>
-                  <item> &lt;controlaccess&gt;&lt;corpname relator="subject"&gt;</item>
+                  <item> <gi>controlaccess</gi>&lt;corpname relator="subject"&gt;</item>
                   <label>611 Subject--meeting</label>
-                  <item> &lt;controlaccess&gt;&lt;corpname relator="subject"&gt;</item>
+                  <item> <gi>controlaccess</gi>&lt;corpname relator="subject"&gt;</item>
                   <label>630 Subject--uniform title</label>
-                  <item> &lt;controlaccess&gt;&lt;title relator="subject"&gt;</item>
+                  <item> <gi>controlaccess</gi>&gt;ltitle relator="subject"&gt;</item>
                   <label>650 Subject--topical</label>
                   <item>
                      <gi>controlaccess</gi>
                      <gi>subject</gi>
                   </item>
                   <label>651 Subject--geographic name</label>
-                  <item> &lt;controlaccess&gt;&lt;geogname relator="subject"&gt;</item>
+                  <item> <gi>controlaccess</gi>&lt;geogname relator="subject"&gt;</item>
                   <label>655 Genre/form</label>
-                  <item> &lt;controlaccess&gt;&lt;genreform&gt; </item>
+                  <item> <gi>controlaccess</gi><gi>genreform</gi> </item>
                   <label>656 Occupation</label>
-                  <item> &lt;controlaccess&gt;&lt;occupation&gt; </item>
+                  <item> <gi>controlaccess</gi><gi>occupation</gi> </item>
                   <label>657 Function</label>
-                  <item> &lt;controlaccess&gt;&lt;function&gt; </item>
+                  <item> <gi>controlaccess</gi><gi>function</gi> </item>
                   <label>69x Local subject access</label>
-                  <item> &lt;controlaccess&gt;&lt;subject source="local"&gt;</item>
+                  <item> <gi>controlaccess</gi>&lt;subject source="local"&gt;</item>
                   <label>700 Added entry--personal name</label>
-                  <item> &lt;controlaccess&gt;&lt;persname&gt;,&lt;controlaccess&gt;&lt;famname&gt; </item>
+                  <item> <gi>controlaccess</gi><gi>persname</gi>,<gi>controlaccess</gi><gi>famname</gi> </item>
                   <label>710 Added entry--corporate name</label>
-                  <item> &lt;controlaccess&gt;&lt;corpname&gt; </item>
+                  <item> <gi>controlaccess</gi><gi>corpname</gi> </item>
                   <label>711 Added entry--meeting name</label>
-                  <item> &lt;controlaccess&gt;&lt;corpname&gt; </item>
+                  <item> <gi>controlaccess</gi><gi>corpname</gi> </item>
                   <label>720 Added entry--uncontrolled</label>
                   <item>
                      <gi>name</gi>
                   </item>
                   <label>730 Added entry--uniform title</label>
-                  <item> &lt;controlaccess&gt;&lt;title&gt; </item>
+                  <item> <gi>controlaccess</gi><gi>title</gi> </item>
                   <label>740 Added entry--uncont./related anal. title</label>
                   <item>
                      <gi>title</gi>
@@ -18172,21 +18152,21 @@
                   <label>
                      <gi>genre</gi>
                   </label>
-                  <item> &lt;controlaccess&gt;&lt;genreform&gt; </item>
+                  <item> <gi>controlaccess</gi><gi>genreform</gi> </item>
                   <label>
                      <gi>identifier</gi>
                   </label>
                   <item>
                      <gi>unitid</gi>
                   </item>
-                  <label> &lt;language&gt;&lt;languageTerm&gt; </label>
-                  <item> &lt;langmaterial&gt;&lt;language&gt;,
-                     &lt;langmaterial&gt;&lt;languageset&gt;&lt;language&gt; </item>
-                  <label> &lt;location&gt;&lt;physicalLocation&gt; </label>
+                  <label> <gi>language</gi><gi>languageTerm</gi> </label>
+                  <item> <gi>langmaterial</gi><gi>language</gi>,
+                     <gi>langmaterial</gi><gi>languageset</gi><gi>language</gi> </item>
+                  <label> <gi>location</gi><gi>physicalLocation</gi> </label>
                   <item>
                      <gi>repository</gi>
                   </item>
-                  <label> &lt;location&gt;&lt;url&gt; </label>
+                  <label> <gi>location</gi><gi>url</gi> </label>
                   <item>
                      <gi>dao</gi>, <gi>daoset</gi>
                   </item>
@@ -18202,63 +18182,63 @@
                   <item>
                      <gi>didnote</gi>, <gi>odd</gi>
                   </item>
-                  <label> &lt;originInfo&gt;&lt;dateCreated&gt; </label>
+                  <label> <gi>originInfo</gi><gi>dateCreated</gi> </label>
                   <item>
                      <gi>unitdate</gi>, <gi>unitdatestructured</gi>
                   </item>
-                  <label> &lt;physicalDescription&gt;&lt;extent&gt; </label>
-                  <item> &lt;physdesc&gt;, &lt;physdescstructured&gt;&lt;quantity&gt; and
-                     &lt;physdescstructured&gt;&lt;unittype&gt;,
-                     &lt;physdescstructured&gt;&lt;dimensions&gt; </item>
-                  <label> &lt;recordInfo&gt;&lt;recordContentSource&gt; </label>
-                  <item> &lt;maintenanceagency&gt;&lt;agencyname&gt;,
-                     &lt;maintenanceagency&gt;&lt;agencycode&gt;,
-                     &lt;maintenanceagency&gt;&lt;otheragencycode&gt; </item>
-                  <label> &lt;recordInfo&gt;&lt;recordCreationDate&gt; </label>
-                  <item> &lt;maintenancehistory&gt;&lt;maintenanceevent&gt;&lt;eventdatetime&gt;
-                     (where &lt;eventtype&gt; @value='created')</item>
-                  <label> &lt;recordInfo&gt;&lt;recordChangeDate&gt; </label>
-                  <item> &lt;maintenancehistory&gt;&lt;maintenanceevent&gt;&lt;eventdatetime&gt; </item>
-                  <label> &lt;recordInfo&gt;&lt;recordIdentifier&gt; </label>
+                  <label> <gi>physicalDescription</gi><gi>extent</gi> </label>
+                  <item> <gi>physdesc</gi>, <gi>physdescstructured</gi><gi>quantity</gi> and
+                     <gi>physdescstructured</gi><gi>unittype</gi>,
+                     <gi>physdescstructured</gi><gi>dimensions</gi> </item>
+                  <label> <gi>recordInfo</gi><gi>recordContentSource</gi> </label>
+                  <item> <gi>maintenanceagency</gi><gi>agencyname</gi>,
+                     <gi>maintenanceagency</gi><gi>agencycode</gi>,
+                     <gi>maintenanceagency</gi><gi>otheragencycode</gi> </item>
+                  <label> <gi>recordInfo</gi><gi>recordCreationDate</gi> </label>
+                  <item> <gi>maintenancehistory</gi><gi>maintenanceevent</gi><gi>eventdatetime</gi>
+                     (where <gi>eventtype</gi> @value='created')</item>
+                  <label> <gi>recordInfo</gi><gi>recordChangeDate</gi> </label>
+                  <item> <gi>maintenancehistory</gi><gi>maintenanceevent</gi><gi>eventdatetime</gi> </item>
+                  <label> <gi>recordInfo</gi><gi>recordIdentifier</gi> </label>
                   <item>
                      <gi>recordid</gi>
                   </item>
-                  <label> &lt;recordInfo&gt;&lt;recordOrigin&gt; </label>
-                  <item> &lt;maintenancehistory&gt;&lt;maintenanceevent&gt; (where
+                  <label> <gi>recordInfo</gi><gi>recordOrigin</gi> </label>
+                  <item> <gi>maintenancehistory</gi><gi>maintenanceevent</gi> (where
                      eventtype/@value='created' or 'derived')</item>
-                  <label> &lt;recordInfo&gt;&lt;languageOfCataloging&gt; </label>
-                  <item> &lt;control&gt;&lt;languagedeclaration&gt;&lt;language&gt; </item>
-                  <label> &lt;recordInfo&gt;&lt;descriptionStandard&gt; </label>
+                  <label> <gi>recordInfo</gi><gi>languageOfCataloging</gi> </label>
+                  <item> <gi>control</gi><gi>languagedeclaration</gi><gi>language</gi> </item>
+                  <label> <gi>recordInfo</gi><gi>descriptionStandard</gi> </label>
                   <item>
                      <gi>conventiondeclaration</gi>
                   </item>
-                  <label> &lt;subject&gt;&lt;cartographics&gt;&lt;coordinates&gt; </label>
+                  <label> <gi>subject</gi><gi>cartographics</gi><gi>coordinates</gi> </label>
                   <item>
                      <gi>geographiccoordinates</gi>
                   </item>
-                  <label> &lt;subject&gt;&lt;cartographics&gt;&lt;projection&gt; </label>
+                  <label> <gi>subject</gi><gi>cartographics</gi><gi>projection</gi> </label>
                   <item>
                      <gi>materialspec</gi>
                   </item>
-                  <label> &lt;subject&gt;&lt;cartographics&gt;&lt;scale&gt; </label>
+                  <label> <gi>subject</gi><gi>cartographics</gi><gi>scale</gi> </label>
                   <item>
                      <gi>materialspec</gi>
                   </item>
-                  <label> &lt;subject&gt;&lt;genre&gt; </label>
-                  <item> &lt;controlaccess&gt;&lt;genreform&gt; </item>
-                  <label> &lt;subject&gt;&lt;geographic&gt; </label>
-                  <item> &lt;controlaccess&gt;&lt;geogname&gt; </item>
-                  <label> &lt;subject&gt;&lt;hierarchicalGeographic&gt; </label>
-                  <item> &lt;controlaccess&gt;&lt;geogname&gt; </item>
-                  <label> &lt;subject&gt;&lt;name&gt; </label>
-                  <item> &lt;controlaccess&gt;&lt;name&gt; </item>
-                  <label> &lt;subject&gt;&lt;occupation&gt; </label>
-                  <item> &lt;controlaccess&gt;&lt;occupation&gt; </item>
-                  <label> &lt;subject&gt;&lt;titleInfo&gt; </label>
-                  <item> &lt;controlaccess&gt;&lt;title&gt; </item>
-                  <label> &lt;subject&gt;&lt;topic&gt; </label>
-                  <item> &lt;controlaccess&gt;&lt;subject&gt; </item>
-                  <label> &lt;titleInfo&gt;&lt;title&gt; </label>
+                  <label> <gi>subject</gi><gi>genre</gi> </label>
+                  <item> <gi>controlaccess</gi><gi>genreform</gi> </item>
+                  <label> <gi>subject</gi><gi>geographic</gi> </label>
+                  <item> <gi>controlaccess</gi><gi>geogname</gi> </item>
+                  <label> <gi>subject</gi><gi>hierarchicalGeographic</gi> </label>
+                  <item> <gi>controlaccess</gi><gi>geogname</gi> </item>
+                  <label> <gi>subject</gi><gi>name</gi> </label>
+                  <item> <gi>controlaccess</gi><gi>name</gi> </item>
+                  <label> <gi>subject</gi><gi>occupation</gi> </label>
+                  <item> <gi>controlaccess</gi><gi>occupation</gi> </item>
+                  <label> <gi>subject</gi><gi>titleInfo</gi> </label>
+                  <item> <gi>controlaccess</gi><gi>title</gi> </item>
+                  <label> <gi>subject</gi><gi>topic</gi> </label>
+                  <item> <gi>controlaccess</gi><gi>subject</gi> </item>
+                  <label> <gi>titleInfo</gi><gi>title</gi> </label>
                   <item>
                      <gi>unittitle</gi>
                   </item>
@@ -18273,7 +18253,7 @@
                before being removed from subsequent versions. All elements deprecated in EAD 2002
                were removed from EAD3. Elements present in the DTD version of EAD 2002 but removed
                from the schema versions of EAD 2002 (<gi>archdescgrp</gi>, <gi>dscgrp</gi>, and
-                  <gi>eadgrp</gi>eadgrp&gt;) were also removed from EAD3.</p>
+                  <gi>eadgrp</gi>) were also removed from EAD3.</p>
             <p>The Society of American Archivists' Technical Subcommittee on EAD (TS-EAD) endeavored
                to honor the commitment to deprecate removed elements.However, the extent of the
                changes in EAD3 made comprehensive deprecation impossible. Elements to be removed
