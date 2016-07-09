@@ -6880,7 +6880,7 @@
                         <ead:geogname>
                            <ead:part>New York: </ead:part>
                         </ead:geogname>
-                        <ead:corpname relator="publsher">
+                        <ead:corpname relator="publisher">
                            <ead:part>Wells &amp; Sons, </ead:part>
                         </ead:corpname>
                         <ead:date localtype="publication"> 1931 </ead:date>
