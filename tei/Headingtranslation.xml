@@ -148,4 +148,16 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
     <term name="attributeusage">
         <translation lang="en">Attribute usage</translation>
     </term>
+    <term name="allrightsreserved">
+        <translation lang="en">All rights reserved</translation>
+    </term>
+    <term name="printedinusa">
+        <translation lang="en">Printed in the United States of America</translation>
+    </term>
+    <term name="printed">
+        <translation lang="en">Printed</translation>
+    </term>
+    <term name="edition">
+        <translation lang="en">Edition</translation>
+    </term>
 </terms>
