@@ -347,6 +347,7 @@
                   as shown in Figure 1.</p>
                <figure>
                   <graphic url="EAD_figure1.jpg"/>
+                  <p>Figure 1. Layout of element descriptions.</p>
                </figure>
                <list type="gloss">
                   <label>Tag Name: </label>
@@ -431,7 +432,7 @@
       </front>
       <body>
          <div type="attributes" xml:id="EADAttributes">
-            <div>
+            <div type="Introduction">
                <head>Introduction</head>
                <p>Attributes are associated with most of the elements contained in EAD. Attributes
                   reflect named properties of an element and may take on different values, depending
@@ -5585,7 +5586,7 @@
                         <item>Optional (values limited to: none, onload, onrequest, other)</item>
                         <label>altrender</label>
                         <item>Optional</item>
-                        <label/>
+                        <label>arcrole</label>
                         <item>Optional</item>
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
@@ -8330,8 +8331,6 @@
                         <item>Optional</item>
                         <label>standarddatetime</label>
                         <item>Optional (must follow pattern based on ISO 8601)</item>
-                        <label/>
-                        <item>Required, not repeatable</item>
                      </list>
                   </p>
                </div>

@@ -1195,7 +1195,7 @@
         </xsl:template>
 
         <!-- In this template all occuring other namespaceprefixis needs to be added -->
-        <xsl:template match="eac-cpf:*|example:* | ead:* | mods:* | text:*">
+        <xsl:template match="eac-cpf:*|example:* | ead:* | mods:* | text:* | dc:* | oai_dc:*">
                 <div class="innerExample">
                         <xsl:text>&lt;</xsl:text>
                         <xsl:value-of select="local-name()"/>
