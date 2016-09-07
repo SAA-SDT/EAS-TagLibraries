@@ -97,6 +97,8 @@
         select="$headingtranslations//terms/term[@name='edition']/translation[@lang=$currentLanguage]"/>
     <xsl:variable name="printed"
         select="$headingtranslations//terms/term[@name='printed']/translation[@lang=$currentLanguage]"/>
+    <xsl:variable name="availableFrom"
+        select="$headingtranslations//terms/term[@name='availableFrom']/translation[@lang=$currentLanguage]"/>
     
     <xsl:template match="/">
         <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -283,10 +285,11 @@
                 <xsl:apply-templates select="."/>
             </fo:block>
         </xsl:for-each>
-        <fo:block font-size="14pt" font-weight="bold" space-before="8pt" space-after="6pt"
+        <!-- This block is not used -->
+        <!--<fo:block font-size="14pt" font-weight="bold" space-before="8pt" space-after="6pt"
             text-align="center">
             <xsl:apply-templates select="tei:note"/>
-        </fo:block>
+        </fo:block>-->
         <!-- No [] in filename -->
         <fo:block text-align="center" page-break-after="always" padding-before="150pt">
             <fo:external-graphic src="../images/SAAVert540.jpg" alignment-adjust="middle"/>
@@ -297,12 +300,20 @@
     </xsl:template>
 
     <xsl:template name="secondpage">
-        <!-- Needs it layout overlooked -->
-        <fo:block padding-after="5cm">
-            <xsl:value-of select="tei:docTitle/tei:titlePart"/>, <xsl:value-of
-                select="tei:docEdition"/>
+        <fo:block font-weight="bold" space-after="6pt" padding-before="-50pt">
+            <xsl:for-each select="tei:docTitle/tei:titlePart">
+                <xsl:value-of select="."/><xsl:text> </xsl:text>
+            </xsl:for-each>
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="tei:docEdition"/>            
+        </fo:block>
+        <fo:block>
+            <xsl:apply-templates select="tei:note/tei:p"/>
         </fo:block>
         <xsl:variable name="TheWholeDocument" select="ancestor::tei:TEI/tei:teiHeader/tei:fileDesc"/>
+        <fo:block padding-before="1cm" font-weight="bold">
+            <xsl:value-of select="$availableFrom"/><xsl:text>:</xsl:text>
+            </fo:block>
         <fo:block>
             <fo:table>
                 <fo:table-body>
@@ -319,7 +330,7 @@
                 </fo:table-body>
             </fo:table>
         </fo:block>
-        <fo:block>
+        <fo:block padding-before="1cm">
             <fo:table>
                 <fo:table-body>
                     <fo:table-row>
@@ -328,13 +339,16 @@
                         </fo:table-cell>
                         <fo:table-cell>
                             <fo:block><xsl:value-of
+                                    select="$TheWholeDocument/tei:publicationStmt/tei:publisher"/>
+                                <xsl:text>, </xsl:text>
+                                <xsl:value-of
                                     select="$TheWholeDocument/tei:publicationStmt/tei:date/@when"/>
-                                by <xsl:value-of
-                                    select="$TheWholeDocument/tei:publicationStmt/tei:publisher"
-                                /></fo:block>
+                                <xsl:text>.</xsl:text>
+                                </fo:block>
                         </fo:table-cell>
                     </fo:table-row>
-                    <fo:table-row>
+                    <!-- Row not needed -->
+                    <!--<fo:table-row>
                         <fo:table-cell>
                             <fo:block> </fo:block>
                         </fo:table-cell>
@@ -343,7 +357,7 @@
                                     select="$TheWholeDocument/tei:publicationStmt/tei:date/@when"
                                 /></fo:block>
                         </fo:table-cell>
-                    </fo:table-row>
+                    </fo:table-row>-->
                     <fo:table-row>
                         <fo:table-cell >
                             <fo:block wrap-option="no-wrap"><xsl:value-of select="$edition"/>: <xsl:value-of select="$TheWholeDocument/tei:editionStmt/tei:p"/></fo:block>
@@ -357,7 +371,7 @@
                 </fo:table-body>
             </fo:table>
         </fo:block>
-        <fo:block padding-before="1cm">
+        <fo:block padding-before=".5cm">
             <fo:table>
                 <fo:table-body>
                     <fo:table-row>
@@ -371,23 +385,10 @@
                 </fo:table-body>
             </fo:table>            
         </fo:block>
-        <fo:block padding-before="1cm">
-            <fo:table>
-                <fo:table-body>
-                    <fo:table-row>
-                        <fo:table-cell width="1.5cm">
-                            <fo:block> </fo:block>
-                        </fo:table-cell>
-                        <fo:table-cell>
-                            <fo:block>
-                                <xsl:value-of
-                                    select="$TheWholeDocument/tei:publicationStmt/tei:idno"
-                                />
-                            </fo:block>
-                        </fo:table-cell>
-                    </fo:table-row>
-                </fo:table-body>
-            </fo:table>
+        <fo:block padding-before=".5cm">
+            <xsl:value-of
+                select="$TheWholeDocument/tei:publicationStmt/tei:idno"
+            />
         </fo:block>
         <fo:block page-break-after="always"/>
     </xsl:template>

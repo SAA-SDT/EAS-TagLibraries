@@ -160,4 +160,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
     <term name="edition">
         <translation lang="en">Edition</translation>
     </term>
+    <term name="availableFrom">
+        <translation lang="en">Available from</translation>
+    </term>
 </terms>
