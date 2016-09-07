@@ -20,6 +20,7 @@
          <publicationStmt>
             <publisher xml:lang="eng">Society of American Archivists</publisher>
             <address>
+               <addrLine>Society of American Archivists</addrLine>
                <addrLine>17 North State Street, suite 1425</addrLine>
                <addrLine>Chicago, IL 60602-3315</addrLine>
                <addrLine>USA</addrLine>
@@ -58,15 +59,8 @@
                <titlePart type="main">Encoded Archival Description <lb/>Tag Library</titlePart>
                <titlePart type="additional">Version EAD3</titlePart>
             </docTitle>
-            <byline>Prepared and maintained by the<lb/> Technical Subcommittee for Encoded Archival
-               Description <lb/>of the Society of American Archivists</byline>
-            <figure>
-               <graphic url="SAA.png"/>
-            </figure>
-         </titlePage>
-         <div xml:lang="eng" type="EnglishIntroduction">
-            <div xml:id="releaseNotes">
-               <head>Encoded Archival Description Tag Library, Version EAD3</head>
+            <docEdition>Edition 2015</docEdition>
+            <note>
                <p>This tag library represents version EAD3 of the Encoded Archival Description
                   schemas, released in August 2015. It supersedes the Version 2002 tag library
                   published in 2002.</p>
@@ -76,30 +70,20 @@
                <p>The Network Development and MARC Standards Office of the Library of Congress
                   serves as the host for online EAD documentation, including storage and delivery of
                   electronic files and maintenance of the EAD web site, located at <ref
-                     target="http://www.loc.gov/ead/">http://www.loc.gov/ead/</ref>.</p>
-               <p>Available from:<address>
-                     <addrLine>Society of American Archivists</addrLine>
-                     <addrLine>17 North State Street, Suite 1425</addrLine>
-                     <addrLine>Chicago, IL 60602-3315</addrLine>
-                     <addrLine>USA</addrLine>
-                     <addrLine>312-606-0722</addrLine>
-                     <addrLine>Fax: 312-606-0728</addrLine>
-                     <addrLine>info@archivists.org</addrLine>
-                     <addrLine>www.archivists.org</addrLine>
-                  </address>
+                     target="http://www.loc.gov/ead/">http://www.loc.gov/ead/</ref>.
                </p>
-               <p>© The Society of American Archivists, 2015.</p>
-               <figure>
-                  <graphic url="CCommons.png"/>
-               </figure>
-               <p>This work is licensed under a Creative Commons Attribution 4.0 International
-                  License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No
-                  part of this publication may be reproduced, stored in a retrieval system or
-                  transmitted in any form or by any means, electronic, mechanical or photocopying,
-                  recording, or otherwise without attribution.</p>
-               <p>ISBN 1-931666-89-X</p>
-            </div>
+            </note>
+            <docImprint>
+               <docDate>Document date</docDate>
+            </docImprint>
+            <byline>Prepared and maintained by</byline>
+            <docAuthor>the<lb/> Technical Subcommittee for Encoded Archival
+               Description <lb/>of the Society of American Archivists</docAuthor>
+            <figure>
+               <graphic url="SAA.png"/>
+            </figure>
+         </titlePage>
+         <div xml:lang="eng" type="EnglishIntroduction">
             <div xml:id="preface">
                <head>Preface</head>
                <p>Encoded Archival Description (EAD) is the international metadata transmission
