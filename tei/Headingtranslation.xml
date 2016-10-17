@@ -125,25 +125,41 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
     <term name="usage">
         <translation lang="en">Usage</translation>
         <translation lang="fr">Usage</translation>
+        <translation lang="gr">Χρ&#942;ση</translation>
+        <translation lang="de">Verwendung</translation>
         <translation lang="it">Uso</translation>
     </term>
     <term name="and">
         <translation lang="en">and</translation>
+        <translation lang="fr">et</translation>
+        <translation lang="gr">και</translation>
+        <translation lang="de">und</translation>
     </term>
     <term name="availability">
         <translation lang="en">Availability</translation>
+        <translation lang="fr">Disponibilité</translation>
+        <translation lang="gr">Διαθεσιμ&#972;τητα</translation>
+        <translation lang="de">Verfügbarkeit</translation>
     </term>
     <term name="values">
         <translation lang="en">Values</translation>
+        <translation lang="fr">Valeurs</translation>
+        <translation lang="gr">Τιμ&#941;ς</translation>
     </term>
     <term name="value">
         <translation lang="en">Value</translation>
+        <translation lang="fr">Valeur</translation>
+        <translation lang="gr">Τιμ&#942;</translation>
     </term>
     <term name="tl">
         <translation lang="en">Tag Library</translation>
+        <translation lang="fr">Dictionnaire des balises</translation>
+        <translation lang="gr">Βιβλιοθ&#942;κη Ετικετ&#974;ν</translation>
     </term>
     <term name="seealso">
         <translation lang="en">See also</translation>
+        <translation lang="fr"></translation>
+        <translation lang="gr">Βλ&#941;πε επ&#943;σης</translation>
     </term>
     <term name="attributeusage">
         <translation lang="en">Attribute usage</translation>
