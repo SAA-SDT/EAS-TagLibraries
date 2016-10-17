@@ -7,18 +7,21 @@
 3.
 4.
 
-- [] Tag Library Issue
-- [] EAC-CPF Issue
-- [] EAD Issue
-- [] Other
+## The issue relates to
+- [ ] Tag Library Issue
+- [ ] EAC-CPF Issue
+- [ ] EAD Issue
+- [ ] Other
 
 ## Wanted change/feature
 <!--- If you're describing a feature, tell us what should happen -->
 <!--- If you're suggesting a change/improvement, tell us how it should work -->
+* Text: 
 
 ## Reporting a bug
 <!--- If describing a bug, tell us what happens instead of the expected behavior -->
 <!--- If suggesting a change/improvement, explain the difference from current behavior -->
+* Text:
 
 ## Suggested Solution
 <!--- Not obligatory, but suggest a fix/reason for the bug, -->
@@ -35,6 +38,7 @@
 ## Context
 <!--- How has this issue affected you? What are you trying to accomplish? -->
 <!--- Providing context helps us come up with a solution that is most useful in the real world -->
+* Text: 
 
 ## Your Environment can be a clue to a bug
 <!--- Include as many relevant details about the environment you experienced the bug in -->
