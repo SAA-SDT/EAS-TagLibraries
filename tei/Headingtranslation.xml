@@ -7,7 +7,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="en">Summary</translation>
         <translation lang="fr">Résumé</translation>
         <translation lang="gr">Σ&#973;νοψη</translation>
-        <translation lang="de">Kurzfassung</translation>
+        <translation lang="de">Zusammenfassung</translation>
         <translation lang="it">Sommario</translation>
     </term>
     <term name="description">
@@ -21,35 +21,35 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="en">May occur within</translation>
         <translation lang="fr">Peut être contenu dans</translation>
         <translation lang="gr">Μπορε&#943; να εμφαν&#943;ζεται μέσα σε</translation>
-        <translation lang="de">Kann vorkommen in</translation>
+        <translation lang="de">Kann verwendet werden innerhalb von</translation>
         <translation lang="it">Ricorrere in</translation>
     </term>
     <term name="mandatory">
         <translation lang="en">Mandatory</translation>
         <translation lang="fr">Obligatoire</translation>
         <translation lang="gr">Υποχρεωτικ&#972;</translation>
-        <translation lang="de">Obligatorisch</translation>
+        <translation lang="de">obligatorisch</translation>
         <translation lang="it">Obbligatorio</translation>
     </term>
     <term name="optional">
         <translation lang="en">Optional</translation>
         <translation lang="fr">Optionnel</translation>
         <translation lang="gr">Προαιρετικ&#972;</translation>
-        <translation lang="de">Optional</translation>
+        <translation lang="de">optional</translation>
         <translation lang="it">Opzionale</translation>
     </term>
     <term name="repeatable">
         <translation lang="en">Repeatable</translation>
         <translation lang="fr">Répétable</translation>
         <translation lang="gr">Επαναλαμβαν&#972;μενο</translation>
-        <translation lang="de">Wiederholbar</translation>
+        <translation lang="de">wiederholbar</translation>
         <translation lang="it">Ripetibile</translation>
     </term>
     <term name="nonrepeatable">
         <translation lang="en">Non-repeatable</translation>
         <translation lang="fr">Non répétable</translation>
         <translation lang="gr">Μη επαναλαμβαν&#972;μενο</translation>
-        <translation lang="de">Nicht wiederholbar</translation>
+        <translation lang="de">nicht wiederholbar</translation>
         <translation lang="it">Non ripetibile</translation>
     </term>
     <term name="attributes">
@@ -63,7 +63,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="en">References</translation>
         <translation lang="fr">Références</translation>
         <translation lang="gr">Αναφορ&#941;ς</translation>
-        <translation lang="de">Referenz</translation>
+        <translation lang="de">Entspricht</translation>
         <translation lang="it">Riferimenti</translation>        
     </term>
     <term name="datatype">
@@ -98,7 +98,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="en">Occurrence</translation>
         <translation lang="fr">Cardinalité</translation>
         <translation lang="gr">Συχν&#972;τητα</translation>
-        <translation lang="de">Gegenwart</translation>
+        <translation lang="de">Auftreten</translation>
         <translation lang="it">Occorrenze</translation>
     </term>
     <term name="appendix">
@@ -145,50 +145,60 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="en">Values</translation>
         <translation lang="fr">Valeurs</translation>
         <translation lang="gr">Τιμ&#941;ς</translation>
+        <translation lang="de">Werte</translation>
     </term>
     <term name="value">
         <translation lang="en">Value</translation>
         <translation lang="fr">Valeur</translation>
         <translation lang="gr">Τιμ&#942;</translation>
+        <translation lang="de">Wert</translation>
     </term>
     <term name="tl">
         <translation lang="en">Tag Library</translation>
         <translation lang="fr">Dictionnaire des balises</translation>
         <translation lang="gr">Βιβλιοθ&#942;κη Ετικετ&#974;ν</translation>
+        <translation lang="de">Tag-Library</translation>
     </term>
     <term name="seealso">
         <translation lang="en">See also</translation>
         <translation lang="fr">Voir aussi</translation>
         <translation lang="gr">Βλ&#941;πε επ&#943;σης</translation>
+        <translation lang="de">Siehe auch</translation>
     </term>
     <term name="attributeusage">
         <translation lang="en">Attribute usage</translation>
         <translation lang="fr">Usage des attributs</translation>
         <translation lang="gr">Χρ&#942;ση γνωρισμ&#940;των</translation>
+        <translation lang="de">Verwendung des Attributs</translation>
     </term>
     <term name="allrightsreserved">
         <translation lang="en">All rights reserved</translation>
         <translation lang="fr">Tous les droits sont réservés</translation>
         <translation lang="gr">Με την επιφ&#973;λαξη παντός δικαι&#974;ματος</translation>
+        <translation lang="de">Alle Rechte vorbehalten</translation>
     </term>
     <term name="printedinusa">
         <translation lang="en">Printed in the United States of America</translation>
         <translation lang="fr">Imprimé aux États-Unis d'Amérique</translation>
         <translation lang="gr">Τυπ&#974;θηκε στις Ηνωμένες Πολιτε&#943;ες της Αμερικ&#942;ς</translation>
+        <translation lang="de">Gedruckt in den Vereinigten Staaten von Amerika</translation>
     </term>
     <term name="printed">
         <translation lang="en">Printed</translation>
         <translation lang="fr">Imprimé</translation>
         <translation lang="gr">Τυπωμ&#941;νο</translation>
+        <translation lang="de">Gedruckt</translation>
     </term>
     <term name="edition">
         <translation lang="en">Edition</translation>
         <translation lang="fr">Édition</translation>
         <translation lang="gr">&#904;κδοση</translation>
+        <translation lang="de">Ausgabe</translation>
     </term>
     <term name="availableFrom">
         <translation lang="en">Available from</translation>
         <translation lang="fr">Disponible depuis</translation>
         <translation lang="gr">Διαθ&#941;σιμο απ&#972;</translation>
+        <translation lang="de">Verfügbar ab</translation>
     </term>
 </terms>
