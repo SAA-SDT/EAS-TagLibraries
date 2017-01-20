@@ -9,7 +9,7 @@
 4.
 
 ## The issue relates to
-<!--- Make an 'x' replacing the ' ' (space) inside the brackets to mark your choice. -->
+<!--- Make an 'x' replacing the ' ' (space) inside the brackets to mark your choice.  -->
 - [ ] EAC-CPF schema issue
 - [ ] EAC-CPF Tag Library issue
 - [ ] EAD schema issue
