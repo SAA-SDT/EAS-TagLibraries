@@ -117,6 +117,9 @@
             <!-- KB's version of Oxygen needs /2003/ to be /2001/ -->
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                         href="./descriptions/elem-abbreviation.xml"/>
+            <!-- or all elements inserted-->
+            <div type="elementDocumentation" xml:id="id_according_to_element_template">
+            </div>
          </div>
          <div type="attributes">
             <div type="Introduction">
@@ -148,6 +151,9 @@
             <!-- KB's version of Oxygen needs /2003/ to be /2001/ -->
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
                         href="./descriptions/attr-accuracy.xml"/>
+            <!-- or all attributes inserted-->
+            <div type="attributeDocumentation" xml:id="id_according_to_element_template">
+            </div>
          </div>
       </body>
       <back>
