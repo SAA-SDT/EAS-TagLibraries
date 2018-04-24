@@ -10786,7 +10786,7 @@
                   <p>A required and repeatable child of controlled access elements used to encode one or more parts of an access term.</p>
                </div>
                <div type="mayContain">
-                  <p>[text], <gi>abbr</gi>, <gi>emph</gi>, <gi>expan</gi>, <gi>foreign</gi>, <gi>lb</gi>, <gi>ptr</gi>, <gi>ref</gi>
+				   <p>[text], <gi>abbr</gi>, <gi>date</gi>, <gi>emph</gi>, <gi>expan</gi>, <gi>foreign</gi>, <gi>lb</gi>, <gi>ptr</gi>, <gi>ref</gi> (revised in 1.1.0)
                   </p>
                </div>
                <div type="mayOccurWithin">
