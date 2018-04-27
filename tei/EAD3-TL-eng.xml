@@ -12941,6 +12941,7 @@
                      <item>Use <gi>otherrecordid</gi> to provide any local identifier for the EAD instance that does not link to a deliverable version.</item>
                   </list>
                </div>
+            </div>
                <div type="elementDocumentation" xml:id="elem-rightsdeclaration">
                   <head>
                      <gi>rightsdeclaration</gi>
@@ -12991,7 +12992,6 @@
                         <item>Use <gi>publicationstmt</gi> for unstructured and/or non-referencable rights information associated with the finding aid.</item>
                      </list>
                   </div>
-               </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>
