@@ -1325,7 +1325,7 @@
                   <p>Render</p>
                </div>
                <div type="summary">
-                  <p>Controls the formatting of the content of an element for display and print purposes. Available in <gi>emph</gi>, <gi>foreign</gi>, <gi>title</gi>, and <gi>titleproper</gi>. See also
+                  <p>Controls the formatting of the content of an element for display and print purposes. Available in <gi>emph</gi>, <gi>foreign</gi>, <gi>quote</gi> (revised in 1.1.0), <gi>title</gi>, and <gi>titleproper</gi>. See also
                         <att>altrender</att>.</p>
                </div>
                <div type="values">
@@ -4788,7 +4788,7 @@
                </div>
                <div type="mayContain">
                   <p>conventiondeclaration, filedesc, languagedeclaration, localcontrol, localtypedeclaration, maintenanceagency, maintenancehistory, maintenancestatus, otherrecordid, publicationstatus, recordid,
-                     representation, rightsdeclaration, sources</p>
+                     representation, rightsdeclaration (revised in v1.1.0), sources</p>
                </div>
                <div type="mayOccurWithin">
                   <p>ead</p>
@@ -5554,7 +5554,7 @@
                   <p>[text], abbr, emph, expan, foreign, lb, ptr, ref</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>abstract, archref, bibref, entry, event, item, p, physfacet, publicationstmt, ref, unittitle</p>
+                  <p>abstract, archref, bibref, entry, event, item, p, part (revised in 1.1.0), physfacet, publicationstmt, ref, unittitle</p>
                </div>
                <div type="attributes">
                   <p>
