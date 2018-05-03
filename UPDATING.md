@@ -14,10 +14,10 @@ The preface must be updated with a revision-specific preface, titled "Preface to
 
 Version prefaces should be appended after the main preface, but before all other version prefaces.  From beginning to end, the prefaces should read in order of:
 
-_Primary preface
-Most recent version
-Second most recent version
-[...]_
+* _Primary preface_
+* _Most recent version_
+* _Second most recent version_
+* _[...]_
 
 ## Inline Changes
 
@@ -35,8 +35,8 @@ The purpose of the changelog is to provide a running list of changes made to the
 
 Before submitting a pull request to the [tag library repository](https://github.com/SAA-SDT/EAS-TagLibraries), verify that the following changes have been made:
 
-References to the current revision of the tag library have had their version numbers updated
-"Preface to Version x.y.z" has been added for the current version
-"(revised in x.y.z)" notes have been added to all instances across the tag library in which a changed attribute/element are listed
-Last version’s "(revised in x.y.z)" notes have been removed across the text
-PDF and HTML documents have been generated from the revised TEI document
+1. References to the current revision of the tag library have had their version numbers updated
+2. "Preface to Version x.y.z" has been added for the current version
+3. "(revised in x.y.z)" notes have been added to all instances across the tag library in which a changed attribute/element are listed
+4. Last version’s "(revised in x.y.z)" notes have been removed across the text
+5. PDF and HTML documents have been generated from the revised TEI document
