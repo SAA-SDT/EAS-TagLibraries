@@ -4588,7 +4588,7 @@
                      <ead:rightsdeclaration>
                         <ead:abbr>CC0</ead:abbr>
                         <ead:citation href="https://creativecommons.org/publicdomain/zero/1.0/"/>
-                        <ead:descriptivenote>CC0 1.0 Universal (CC0 1.0)</ead:descriptivenote>
+                        <ead:descriptivenote><ead:p>CC0 1.0 Universal (CC0 1.0)</ead:p></ead:descriptivenote>
                      </ead:rightsdeclaration>
                   </egXML>
                </div>
@@ -13001,7 +13001,7 @@
                         <ead:rightsdeclaration>
                            <ead:abbr>CC0</ead:abbr>
                            <ead:citation href="https://creativecommons.org/publicdomain/zero/1.0/"/>
-                           <ead:descriptivenote>CC0 1.0 Universal (CC0 1.0)</ead:descriptivenote>
+                           <ead:descriptivenote><ead:p>CC0 1.0 Universal (CC0 1.0)</ead:p></ead:descriptivenote>
                         </ead:rightsdeclaration>
                      </ead:control>
                   </egXML>
