@@ -15522,7 +15522,7 @@
                      <gi>controlaccess</gi>&lt;corpname relator="subject"&gt;</item>
                   <label>630 Subject--uniform title</label>
                   <item>
-                     <gi>controlaccess</gi>&gt;ltitle relator="subject"&gt;</item>
+                     <gi>controlaccess</gi>&lt;title relator="subject"&gt;</item>
                   <label>650 Subject--topical</label>
                   <item>
                      <gi>controlaccess</gi>
