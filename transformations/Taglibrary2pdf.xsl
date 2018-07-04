@@ -512,13 +512,13 @@
         <!-- Numbered list -->
         <xsl:apply-templates select="tei:head"/>
         <fo:list-block>
+            
             <xsl:for-each select="tei:item">
                 <fo:list-item>
                     <fo:list-item-label end-indent="label-end()">
                         <fo:block>
                             <fo:inline>
-                                <!-- Karin: the n doesnt work! -->
-                                <xsl:value-of select="@n"/>
+                                <xsl:number />
                                 <xsl:text>.</xsl:text>
                             </fo:inline>
                         </fo:block>
