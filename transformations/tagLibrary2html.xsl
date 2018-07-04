@@ -357,8 +357,7 @@
                         </div>
                         <xsl:for-each select="tei:item">
                                 <div class="listOrder">
-                                        <!-- Karin: numbering doesnt work -->
-                                        <xsl:value-of select="@n"/>
+                                        <xsl:number />
                                         <xsl:text>.</xsl:text>
                                 </div>
                                 <div class="listContent">
@@ -387,26 +386,6 @@
                 </div>
         </xsl:template>
         
-        <xsl:template match="tei:list[@type='numbered']">
-                <!-- Karin: May not be needed if ordered list starts to workNumbered list -->
-                <div class="listOrdered">
-                        <xsl:if test="tei:head">
-                                <div class="head04">
-                                        <xsl:apply-templates select="tei:head"/>
-                                </div>
-                        </xsl:if>
-                        <xsl:for-each select="tei:item">
-                                <div class="listOrder">
-                                        <!-- Karin: Add running numbers insteda of bullet point -->
-                                        <xsl:value-of select="$bulletpoint"/>
-                                </div>
-                                <div class="listContent">
-                                        <xsl:apply-templates/>
-                                </div>
-                        </xsl:for-each>
-                </div>
-        </xsl:template>
-
         <xsl:template match="tei:list[@type='simple' or @type='gloss']">
                 <!-- List with only text -->
                 <xsl:if test="tei:head">

@@ -132,7 +132,6 @@
                         <!-- KB September 20 added bullet as value  -->
                         <value>bulleted</value>
                         <!-- KB 3rd July 2018 added value -->
-                        <value>numbered</value>
                         <value>ordered</value>
                     </choice>
                 </attribute>

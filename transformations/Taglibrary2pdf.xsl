@@ -1360,28 +1360,6 @@
 
     </xsl:template>
     
-    <xsl:template match="tei:list[@type='numbered']">
-        <!-- Karin: this may not be needed see list with type ordered -->
-        <fo:list-block provisional-distance-between-starts="20mm">
-            <xsl:for-each select="tei:item">
-                <fo:list-item>
-                    <fo:list-item-label font-weight="bold" end-indent="label-end()">
-                        <fo:block>
-                            <!-- Karin: Add running number instead of bulletpoint -->
-                            <xsl:value-of select="$bulletpoint"/>
-                        </fo:block>
-                    </fo:list-item-label>
-                    <fo:list-item-body start-indent="body-start()">
-                        <fo:block>
-                            <xsl:apply-templates/>
-                        </fo:block>
-                    </fo:list-item-body>
-                </fo:list-item>
-            </xsl:for-each>
-        </fo:list-block>
-        
-    </xsl:template>
-
     <xsl:template match="tei:div[@type='occurrence'] | tei:div[@type='availability']">
         <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
             <fo:list-item>
