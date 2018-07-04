@@ -517,17 +517,12 @@
                         <label>Repeatability</label>
                         <item>Not-repeatable</item>
                      </list>
-                     <list>
+                     <list type="ordered">
                         <head>Examples</head>
-                        <label>1</label>
                         <item>ISBN (Intellectual Entity)</item>
-                        <label>2</label>
                         <item>DOI (Intellectual Entity)</item>
-                        <label>3</label>
                         <item>DLC</item>
-                        <label>4</label>
                         <item>DRS</item>
-                        <label>5</label>
                         <item>hdl:4263537</item>
                      </list>
                   </p>
@@ -541,13 +536,10 @@
                         <label>Repeatability</label>
                         <item>Not-repeatable</item>
                      </list>
-                     <list>
+                     <list type="ordered">
                         <head>Examples</head>
-                        <label>1</label>
                         <item>DLC</item>
-                        <label>2</label>
                         <item>DRS</item>
-                        <label>3</label>
                         <item>hdl:4263537</item>
                      </list>
                   </p>
@@ -561,13 +553,10 @@
                         <label>Repeatability</label>
                         <item>Repeatable</item>
                      </list>
-                     <list>
+                     <list type="ordered">
                         <head>Examples</head>
-                        <label>1</label>
                         <item>DLC</item>
-                        <label>2</label>
                         <item>DRS</item>
-                        <label>3</label>
                         <item>hdl:4263537</item>
                      </list>
                   </p> 
@@ -614,11 +603,9 @@
                         <label>Repeatability</label>
                         <item>Not-repeatable</item>
                      </list>
-                     <list>
+                     <list type="ordered">
                         <head>Examples</head>
-                        <label>1</label>
                         <item>0 00 221804-6</item>
-                        <label>2</label>
                         <item>0000000312</item>
                      </list>
                   </p>
@@ -632,19 +619,13 @@
                         <label>Repeatability</label>
                         <item>Not-repeatable</item>
                      </list>
-                     <list>
+                     <list type="ordered">
                         <head>Examples</head>
-                        <label>1</label>
                         <item>IU2440</item>
-                        <label>2</label>
                         <item>WAC1943.56</item>
-                        <label>3</label>
                         <item>AMNH</item>
-                        <label>4</label>
                         <item>CD269/CD269/70/10</item>
-                        <label>5</label>
                         <item>1001/dig/pres/2004-024</item>
-                        <label>6</label>
                         <item>http://nrs.harvard.edu/urn-3:FHCL.Loeb:sa1</item>
                      </list>
                   </p>
@@ -658,11 +639,9 @@
                         <label>Repeatability</label>
                         <item>Repeatable</item>
                      </list>
-                     <list>
+                     <list type="ordered">
                         <head>Examples</head>
-                        <label>1</label>
                         <item>IU2440-1</item>
-                        <label>2</label>
                         <item>IU2440-2</item>
                      </list>
                   </p> 
@@ -725,9 +704,8 @@
                         <label>Repeatability</label>
                         <item>Not-repeatable</item>
                      </list>
-                     <list>
+                     <list type="ordered">
                         <head>Examples</head>
-                        <label>1</label>
                         <item>intellectual entity representation</item>
                      </list>
                   </p>
@@ -741,9 +719,8 @@
                         <label>Repeatability</label>
                         <item>Not-repeatable</item>
                      </list>
-                     <list>
+                     <list type="ordered">
                         <head>Examples</head>
-                        <label>1</label>
                         <item>file</item>
                      </list>
                   </p>
@@ -757,10 +734,9 @@
                         <label>Repeatability</label>
                         <item>Not-repeatable</item>
                      </list>
-                     <list>
+                     <list type="ordered">
                         <head>Examples</head>
-                        <label>1</label>
-                        <item>bitstream</item>
+                         <item>bitstream</item>
                      </list>
                   </p> 
                </div>

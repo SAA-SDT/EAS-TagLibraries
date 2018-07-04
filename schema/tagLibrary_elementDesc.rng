@@ -146,9 +146,11 @@
                 <ref name="head"/>
             </optional>
             <oneOrMore>
+                <optional>
                 <element name="label">
                     <text/>
                 </element>
+                </optional>
                 <element name="item">
                     <optional>
                         <attribute name="n">

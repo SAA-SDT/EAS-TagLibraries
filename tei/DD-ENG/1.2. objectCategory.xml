@@ -57,9 +57,8 @@
             <label>Repeatability</label>
             <item>Not-repeatable</item>
          </list>
-         <list>
+         <list type="ordered">
             <head>Examples</head>
-            <label>1</label>
             <item>intellectual entity representation</item>
          </list>
       </p>
@@ -73,9 +72,8 @@
             <label>Repeatability</label>
             <item>Not-repeatable</item>
          </list>
-         <list>
+         <list type="ordered">
             <head>Examples</head>
-            <label>1</label>
             <item>file</item>
          </list>
       </p>
@@ -89,9 +87,8 @@
             <label>Repeatability</label>
             <item>Not-repeatable</item>
          </list>
-         <list>
+         <list type="ordered">
             <head>Examples</head>
-            <label>1</label>
             <item>bitstream</item>
          </list>
       </p> 
