@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div type="elementDocumentation" xml:id="objectCategory" xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+
+
+   <head type='DD'>
+      <!-- PREMIS Semantic unit 1.2 -->
+      <gi>objectCategory</gi>
+   </head>
+
+
+   <div type="fullName">
+      <!-- PREMIS Semantic components -->
+      <p xml:lang="en">objectCategory</p>
+   </div>
+
+
+   <div type="definition">
+      <!-- PREMIS Definition -->
+      <p xml:lang="en">The category of object to which the metadata applies.</p>
+   </div>
+
+
+   <div type="rationale">
+      <!-- PREMIS Rationale -->
+      <p xml:lang="en">Description you can use <gi>anglebrackets</gi></p>
+      <p>Preservation repositories are likely to treat different categories of objects (Intellectual
+         Entities, Representations, Files, and Bitstreams) differently in terms of metadata and data
+         management functions, it is therefore important to differentiate between the
+         categories.</p>
+   </div>
+
+
+   <div type="usagenotes">
+      <!-- PREMIS Usage notes -->
+      <p xml:lang="en">A filestream should be considered a file.</p>
+   </div>
+
+
+   <div type="datatype">
+      <!-- PREMIS Data constraint URL should be live after transformation-->
+      <p>Value should be taken from a controlled vocabulary. A controlled vocabulary is available at <ref target="http://id.loc.gov/vocabulary/preservation/objectCategory.html">http://id.loc.gov/vocabulary/preservation/objectCategory.html</ref>
+         .</p>
+   </div>
+   
+   <div type="description">
+      <p>
+         <!-- PREMIS Intellectual Entity / Representation -->
+         <list type="gloss">
+            <head>Intellectual Entity / Representation</head>
+            <label>Applicability</label>
+            <item>Applicable</item>
+            <label>Obligation</label>
+            <item>Mandatory</item>
+            <label>Repeatability</label>
+            <item>Not-repeatable</item>
+         </list>
+         <list>
+            <head>Examples</head>
+            <label>1</label>
+            <item>intellectual entity representation</item>
+         </list>
+      </p>
+      <p>
+         <list type="gloss">
+            <head>PREMIS File</head>
+            <label>Applicability</label>
+            <item>Applicable</item>
+            <label>Obligation</label>
+            <item>Mandatory</item>
+            <label>Repeatability</label>
+            <item>Not-repeatable</item>
+         </list>
+         <list>
+            <head>Examples</head>
+            <label>1</label>
+            <item>file</item>
+         </list>
+      </p>
+      <p>
+         <list type="gloss">
+            <head>PREMIS Bitstream</head>
+            <label>Applicability</label>
+            <item>Applicable</item>
+            <label>Obligation</label>
+            <item>Mandatory</item>
+            <label>Repeatability</label>
+            <item>Not-repeatable</item>
+         </list>
+         <list>
+            <head>Examples</head>
+            <label>1</label>
+            <item>bitstream</item>
+         </list>
+      </p> 
+   </div>
+
+</div>

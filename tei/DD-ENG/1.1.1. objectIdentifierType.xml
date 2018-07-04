@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div type="elementDocumentation" xml:id="objectIdentifierType" xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+
+
+   <head type='DD'>
+      <!-- PREMIS Semantic unit 1.1.1 -->
+      <gi>objectIdentifierType</gi>
+   </head>
+
+   <div type="fullName">
+      <!-- PREMIS Semantic components -->
+      <p xml:lang="en">objectIdentifierType</p>
+   </div>
+
+   <div type="definition">
+      <!-- PREMIS Definition -->
+      <p xml:lang="en">A designation of the domain within which the object identifier is unique.</p>
+   </div>
+
+   <div type="rationale">
+      <!-- PREMIS Rationale -->
+      <p xml:lang="en">Description you can use <gi>anglebrackets</gi></p>
+      <p>Identifier values cannot be assumed to be unique across domains; the combination of
+            <gi>objectIdentifierType</gi> and <gi>objectIdentifierValue</gi> should ensure
+         uniqueness.</p>
+   </div>
+
+   <div type="usagenotes">
+      <!-- PREMIS Usage notes -->
+      <p xml:lang="en">The type of the identifier may be implicit within the repository as long as
+         it can be explicitly communicated when the digital object is disseminated outside of it.
+      </p>
+   </div>
+
+   <div type="datatype">
+      <!-- PREMIS Data constraint URL below should be live after transformation -->
+      <p>Value should be taken from a controlled vocabulary. A controlled vocabulary is available at <ref target="http://id.loc.gov/vocabulary/identifiers.html">http://id.loc.gov/vocabulary/identifiers.html</ref>.</p>
+   </div>
+   
+   <div type="description">
+      <p>
+         <!-- PREMIS Intellectual Entity / Representation -->
+         <list type="gloss">
+            <head>Intellectual Entity / Representation</head>
+            <label>Applicability</label>
+            <item>Applicable</item>
+            <label>Obligation</label>
+            <item>Mandatory</item>
+            <label>Repeatability</label>
+            <item>Not-repeatable</item>
+         </list>
+         <list>
+            <head>Examples</head>
+            <label>1</label>
+            <item>ISBN (Intellectual Entity)</item>
+            <label>2</label>
+            <item>DOI (Intellectual Entity)</item>
+            <label>3</label>
+            <item>DLC</item>
+            <label>4</label>
+            <item>DRS</item>
+            <label>5</label>
+            <item>hdl:4263537</item>
+         </list>
+      </p>
+      <p>
+         <list type="gloss">
+            <head>PREMIS File</head>
+            <label>Applicability</label>
+            <item>Applicable</item>
+            <label>Obligation</label>
+            <item>Mandatory</item>
+            <label>Repeatability</label>
+            <item>Not-repeatable</item>
+         </list>
+         <list>
+            <head>Examples</head>
+            <label>1</label>
+            <item>DLC</item>
+            <label>2</label>
+            <item>DRS</item>
+            <label>3</label>
+            <item>hdl:4263537</item>
+         </list>
+      </p>
+      <p>
+         <list type="gloss">
+            <head>PREMIS Bitstream</head>
+            <label>Applicability</label>
+            <item>Applicable</item>
+            <label>Obligation</label>
+            <item>Mandatory</item>
+            <label>Repeatability</label>
+            <item>Repeatable</item>
+         </list>
+         <list>
+            <head>Examples</head>
+            <label>1</label>
+            <item>DLC</item>
+            <label>2</label>
+            <item>DRS</item>
+            <label>3</label>
+            <item>hdl:4263537</item>
+         </list>
+      </p> 
+   </div>
+</div>

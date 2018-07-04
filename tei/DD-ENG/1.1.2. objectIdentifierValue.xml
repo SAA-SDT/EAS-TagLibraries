@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div type="elementDocumentation" xml:id="objectIdentifierValue" xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+
+
+   <head type='DD'>
+      <!-- PREMIS Semantic unit 1.1.2 -->
+      <gi>objectIdentifierValue</gi>
+   </head>
+
+   <div type="fullName">
+      <!-- PREMIS Semantic components -->
+      <p xml:lang="en">objectIdentifierValue</p>
+   </div>
+
+   <div type="definition">
+      <!-- PREMIS Definition -->
+      <p xml:lang="en">The value of the <gi>objectIdentifier</gi>.</p>
+   </div>
+
+   <!-- PREMIS Rationale -->
+
+   <!-- PREMIS Usage notes -->
+
+   <div type="datatype">
+      <!-- PREMIS Data constraint -->
+      <p>None</p>
+   </div>
+
+<div type="description">
+   <p>
+      <!-- PREMIS Intellectual Entity / Representation -->
+      <list type="gloss">
+         <head>Intellectual Entity / Representation</head>
+         <label>Applicability</label>
+         <item>Applicable</item>
+         <label>Obligation</label>
+         <item>Mandatory</item>
+         <label>Repeatability</label>
+         <item>Not-repeatable</item>
+      </list>
+      <list>
+         <head>Examples</head>
+         <label>1</label>
+         <item>0 00 221804-6</item>
+         <label>2</label>
+         <item>0000000312</item>
+      </list>
+   </p>
+   <p>
+      <list type="gloss">
+         <head>PREMIS File</head>
+         <label>Applicability</label>
+         <item>Applicable</item>
+         <label>Obligation</label>
+         <item>Mandatory</item>
+         <label>Repeatability</label>
+         <item>Not-repeatable</item>
+      </list>
+      <list>
+         <head>Examples</head>
+         <label>1</label>
+         <item>IU2440</item>
+         <label>2</label>
+         <item>WAC1943.56</item>
+         <label>3</label>
+         <item>AMNH</item>
+         <label>4</label>
+         <item>CD269/CD269/70/10</item>
+         <label>5</label>
+         <item>1001/dig/pres/2004-024</item>
+         <label>6</label>
+         <item>http://nrs.harvard.edu/urn-3:FHCL.Loeb:sa1</item>
+      </list>
+   </p>
+   <p>
+      <list type="gloss">
+         <head>PREMIS Bitstream</head>
+         <label>Applicability</label>
+         <item>Applicable</item>
+         <label>Obligation</label>
+         <item>Mandatory</item>
+         <label>Repeatability</label>
+         <item>Repeatable</item>
+      </list>
+      <list>
+         <head>Examples</head>
+         <label>1</label>
+         <item>IU2440-1</item>
+         <label>2</label>
+         <item>IU2440-2</item>
+      </list>
+   </p> 
+</div>
+</div>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:eac-cpf="urn:isbn:1-931666-33-4"
+     xmlns:xlink="http://www.w3c.org/1999/xlink"
+     xmlns:eg="http://www.tei-c.org/ns/Examples"
+     xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="eng">PREMIS Data Dictionary for preservation metadata</title>
+            <title xml:lang="eng" type="part2">Version 3.0</title>
+            <respStmt xml:lang="eng">
+               <resp>Prepared and maintained by the </resp>
+               <name>PREMIS Editorial Committee</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <p xml:lang="eng">2015 Edition</p>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="eng">PREMIS Editorial Committee</publisher>
+            <address>
+               <addrLine>PREMIS Editorial Committee</addrLine>
+               <addrLine>Address line</addrLine>
+               <addrLine>Address line</addrLine>
+               <addrLine>USA</addrLine>
+               <addrLine>312-606-0722</addrLine>
+               <addrLine>Fax: 312-606-0728</addrLine>
+               <addrLine>premis@loc.gov</addrLine>
+               <addrLine>http://www.loc.gov/standards/premis</addrLine>
+            </address>
+            <date when="2015"/>
+            <idno>ISBN Number</idno>
+            <availability>
+               <licence>This work is licensed under a Creative Commons Attribution 4.0 International
+                  License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/"
+                     >http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No
+                  part of this publication may be reproduced, stored in a retrieval system or
+                  transmitted in any form or by any means, electronic, mechanical or photocopying,
+                  recording, or otherwise without attribution.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p xml:lang="eng">Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage xml:lang="eng">
+            <docTitle>
+               <titlePart type="main">PREMIS Data Dictionary for preservation metadata</titlePart>
+            </docTitle>
+            <docEdition>June 2015 – Revised Novembe</docEdition>
+            <byline>Prepared and maintained by the</byline>
+            <docAuthor>PREMIS Editorial Committee</docAuthor>
+            <docImprint>
+               <docDate>June 2015</docDate>
+            </docImprint>
+         </titlePage>
+         <div xml:lang="eng" type="EnglishIntroduction">
+            <div>
+               <head>ACKNOWLEDGMENTS</head>
+               <p>PREMIS Editorial Committee members</p>
+               <list type="simple">
+                  <item>Rebecca Guenther, Library of Congress, Chair</item>
+                  <item>Karin Bredenberg, Riksarkivet, Swedish National Archives</item>
+                  <item>Angela Dappert, University of Portsmouth </item>
+                  <item>Angela Di Iorio, Sapienza Università di Roma</item>
+                  <item>Leslie Johnston, U.S . National Archives and Records Administration</item>
+                  <item>Devon Landes, HBO</item>
+                  <item>Peter McKinney , National Library of New Zealand</item>
+                  <item>Evelyn McLellan, Artefactual Systems</item>
+                  <item>Tracy Meehleib, Library of Congress</item>
+                  <item>Sébastien Peyrard, Bibliothèque nationale de France</item>
+                  <item>Pauline Sinclair, Preservica</item>
+                  <item>Eld Zierau, Royal Library of Denmark</item>                  
+               </list>
+            </div>
+            <div>
+               <head>Special thanks</head>
+               <p>The  following  contributed  their  expertise  to  previous  versions as  former  members  of  the PREMIS Editorial Committee: </p>
+               <list type="simple">
+                  <item>Steve Bordwell, General Register Office for Scotland</item>
+                  <item>Yair Brama, ExLibris</item>
+                  <item>Olaf Brandt, Koninklijke Bibliotheek, Netherlands</item>
+                  <item>Priscilla Caplan, Florida Center for Library Automation (co-chair of original PREMIS Working Group)</item>
+                  <item>Gerard Clifton, National Library of Australia</item>
+                  <item>Markus Enders, British Library</item>
+                  <item>Noreen Hill, Library and Archives Canada</item>
+                  <item>Karsten Huth, Sächsisches Staatsarchiv, Saxon State Archives</item>
+                  <item>David Lake , U.S . National Archives and Records Administration</item>
+                  <item>Brian Lavoie, OCLC</item>
+                  <item>Yaniv Levi, ExLibris</item>
+                  <item>Bill Leonard, Library and Archives Canada</item>
+                  <item>Rory McLeod, British Library</item>
+                  <item>Robert Sharpe, Preservica</item>
+                  <item>Robert Wolfe, HBO</item>
+                  <item>Zhiwu Xie, Los Alamos National Laboratory</item>
+                  <item>Sally Vermaaten, Statistics New Zealand</item>
+                  <item>Kate Zwaard, U.S. Government Printing Office, Library of Congress</item>                  
+               </list>
+               <p>In  addition  to  Editorial  Committee  members,  the  following  contributed  their  expertise  to  the  
+                  work on the Environment Working Group for PREMIS 3</p>
+            </div>
+            <div>
+               <head>INTRODUCTION</head>
+               <p>The PREMIS Data   Dictionary
+                  is   a   comprehensive,   practical   resource   for   implementing   
+                  preservation metadata in digital preservation 
+                  systems. The Data Dictionary
+                  defines preservation 
+                  metadata that</p>
+               <list type="simple">
+                  <item>Supports  the  viability,  renderability,  understandability,  authenticity,  and  identity  of  
+                     digital objects in a preservation context;</item>
+                  <item> Represents  the  information  most  preservation  repositories  need  to  know  to  preserve  
+                     digital materials over the long
+                     term;</item>
+                  <item>Emphasizes 
+                     “implementable  metadata
+                     ”:  rigorously  defined,  supported  by  guidelines  for  
+                     creation, management, and use, and oriented toward automated workflows; and,</item>
+                  <item>Embodies  technical  neutrality:  no  assumptions  made  about  pres
+                     ervation  technologies,  
+                     strategies, metadata storage and management, etc</item>
+                  </list>
+             </div>
+         </div>
+      </front>
+      <body>
+         <div type="elements">
+            <xi:include href="DD-ENG/elem-abbreviation.xml" parse="xml"/>
+            <xi:include href="DD-ENG/1.1.%20objectIdentifier.xml" parse="xml"/>
+            <xi:include href="DD-ENG/1.1.1.%20objectIdentifierType.xml" parse="xml"/>
+            <xi:include href="DD-ENG/1.1.2.%20objectIdentifierValue.xml" parse="xml"/>
+            <xi:include href="DD-ENG/1.2.%20objectCategory.xml" parse="xml"/>
+            <xi:include href="DD-ENG/1.3.%20preservationLevel.xml" parse="xml"/>
+         </div>
+         <div type="attributes">
+            <xi:include href="DD-ENG/attr-accuracy.xml" parse="xml"/>
+         </div>
+      </body>
+      <back>
+         <div xml:id="appendix-eng" type="appendix" xml:lang="eng">
+            <head>Our appendix</head>
+            <p>We have an appendix</p>
+         </div>
+      </back>
+   </text>
+</TEI>
