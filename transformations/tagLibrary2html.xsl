@@ -112,7 +112,9 @@
         <xsl:variable name="definition"
                 select="$headingtranslations//terms/term[@name='definition']/translation[@lang=$currentLanguage]"/>
         <xsl:variable name="dataDictionary"
-                select="$headingtranslations//terms/term[@name='dataDictionary']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//terms/term[@name='dataDictionary']/translation[@lang=$currentLanguage]"/>        
+        <xsl:variable name="entity"
+                select="$headingtranslations//terms/term[@name='entity']/translation[@lang=$currentLanguage]"/>
         
         <xsl:template match="/">
                 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -464,6 +466,7 @@
                         <xsl:apply-templates select="tei:div[@type='semanticcomponents']"/>
                         <xsl:apply-templates select="tei:div[@type='mayOccurWithin']"/>
                         <xsl:apply-templates select="tei:div[@type='definition']"/>
+                        <xsl:apply-templates select="tei:div[@type='entity']"/>
                         <xsl:apply-templates select="tei:div[@type='rationale']"/>
                         <xsl:apply-templates select="tei:div[@type='datatype']"/>
                         <xsl:apply-templates select="tei:div[@type='description']"/>
@@ -536,16 +539,24 @@
                                         <span class="label">
                                                 <xsl:text>&lt;</xsl:text>
                                                 <xsl:apply-templates/>
-                                                <xsl:text>&gt;</xsl:text>
+                                                <xsl:text>&gt;</xsl:text>                                             
                                         </span>
                                 </div>
                         </xsl:when>
                         <xsl:otherwise>
                                 <div class="leftcol" id="{translate(concat('elem-', .), ':','')}">
                                         <span class="label">
-                                                <xsl:text>&lt;</xsl:text>
-                                                <xsl:apply-templates/>
-                                                <xsl:text>&gt;</xsl:text>
+                                                <xsl:choose>
+                                                        <xsl:when test="starts-with($TL, 'PREMIS')">
+                                                                <xsl:value-of select="$semanticUnit"/>    
+                                                                <xsl:text> </xsl:text>     
+                                                        </xsl:when>
+                                                        <xsl:otherwise>
+                                                                <xsl:text>&lt;</xsl:text>
+                                                                <xsl:apply-templates/>
+                                                                <xsl:text>&gt;</xsl:text>    
+                                                        </xsl:otherwise>
+                                                </xsl:choose>     
                                         </span>
                                 </div>
                         </xsl:otherwise>
@@ -651,6 +662,14 @@
         <xsl:template match="tei:div[@type='definition']">
                 <div class="span">
                         <xsl:value-of select="$definition"/>
+                        <xsl:text>: </xsl:text>
+                        <xsl:apply-templates/>
+                </div>
+        </xsl:template>
+        
+        <xsl:template match="tei:div[@type='entity']">
+                <div class="span">
+                        <xsl:value-of select="$entity"/>
                         <xsl:text>: </xsl:text>
                         <xsl:apply-templates/>
                 </div>

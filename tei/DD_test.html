@@ -189,7 +189,7 @@
             <div xmlns="" class="section" id="d0e291">
                <div class="head03">Elements</div>
                <div class="element">
-                  <div class="leftcol" id="elem-abbr"><span class="label">&lt;abbr&gt;</span></div>
+                  <div class="leftcol" id="elem-abbr"><span class="label">Semantic unit </span></div>
                   <div class="content"><span class="label"> &nbsp; 
                         Abbreviation</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="span">Summary: 
@@ -206,8 +206,7 @@
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-addressline">addressline</a>, <a href="#elem-archref">archref</a>, <a href="#elem-author">author</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-citation">citation</a>, <a href="#elem-container">container</a>, <a href="#elem-conventiondeclaration">conventiondeclaration</a>, <a href="#elem-date">date</a>, <a href="#elem-datesingle">datesingle</a>, <a href="#elem-didnote">didnote</a>, <a href="#elem-dimensions">dimensions</a>, <a href="#elem-edition">edition</a>, <a href="#elem-emph">emph</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-fromdate">fromdate</a>, <a href="#elem-head">head</a>, <a href="#elem-head01">head01</a>, <a href="#elem-head02">head02</a>, <a href="#elem-head03">head03</a>, <a href="#elem-item">item</a>, <a href="#elem-label">label</a>, <a href="#elem-localtypedeclaration">localtypedeclaration</a>, <a href="#elem-materialspec">materialspec</a>, <a href="#elem-num">num</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part</a>, <a href="#elem-physdesc">physdesc</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-physloc">physloc</a>, <a href="#elem-publisher">publisher</a>, <a href="#elem-quote">quote</a>, <a href="#elem-ref">ref</a>, <a href="#elem-sponsor">sponsor</a>, <a href="#elem-subtitle">subtitle</a>, <a href="#elem-titleproper">titleproper</a>, <a href="#elem-todate">todate</a>, <a href="#elem-unitdate">unitdate</a>, <a href="#elem-unitid">unitid</a>, <a href="#elem-unittitle">unittitle</a></div>
-                  <div class="span">
-                     <div class="descriptionHead">Description and Usage: </div>
+                  <div class="span">Entity information: 
                      <div class="p">Used to record the abbreviated form of a word or phrase, for example, an
                                              acronym.
                      </div>
@@ -268,7 +267,7 @@
                            <div class="innerExample">&lt;unittitle&gt;
                               <div class="innerExample">&lt;abbr expan="United Nations Educational, Scientific and Cultural                     Organization"&gt; UNESCO &lt;/abbr&gt;<br></div>&lt;/unittitle&gt;<br></div> [. . .] &lt;/did&gt;<br></div>&lt;/c02&gt;<br></div><br></div><br></div>
                <div class="element">
-                  <div class="leftcol" id="elem-objectIdentifier"><span class="label">&lt;objectIdentifier&gt;</span></div>
+                  <div class="leftcol" id="elem-objectIdentifier"><span class="label">Semantic unit </span></div>
                   <div class="content"><span class="label"> &nbsp; 
                         objectIdentifier</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Semantic components: </div>
@@ -278,19 +277,7 @@
                                              repository system in which it is stored.
                      </div>
                   </div>
-                  <div class="span">Rationale: 
-                     <div class="p">Description you can use &lt;to_get_anglebrackets&gt;</div>
-                     <div class="p">Each Object held in the preservation repository must have a unique identifier to allow
-                                             other entities to refer to it and to relate it to descriptive, technical, and other
-                                             metadata unambiguously.
-                     </div>
-                  </div>
-                  <div class="leftcol">Data Type: </div>
-                  <div class="content">
-                     <div class="p">Container.</div>
-                  </div>
-                  <div class="span">
-                     <div class="descriptionHead">Description and Usage: </div>
+                  <div class="span">Entity information: 
                      <div class="p">
                         <div>Intellectual Entity / Representation</div>
                         <div class="leftcol">Applicability</div>
@@ -325,6 +312,17 @@
                         <div class="content">Bitstream example</div>
                      </div>
                   </div>
+                  <div class="span">Rationale: 
+                     <div class="p">Description you can use &lt;to_get_anglebrackets&gt;</div>
+                     <div class="p">Each Object held in the preservation repository must have a unique identifier to allow
+                                             other entities to refer to it and to relate it to descriptive, technical, and other
+                                             metadata unambiguously.
+                     </div>
+                  </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">
+                     <div class="p">Container.</div>
+                  </div>
                   <div class="span">Creation/Maintenance notes: 
                      <div class="p">An identifier may be created by the repository system at the time of
                                              ingest, or it may be created or assigned outside of the repository and submitted with
@@ -354,26 +352,13 @@
                   </div>
                </div>
                <div class="element">
-                  <div class="leftcol" id="elem-objectIdentifierType"><span class="label">&lt;objectIdentifierType&gt;</span></div>
+                  <div class="leftcol" id="elem-objectIdentifierType"><span class="label">Semantic unit </span></div>
                   <div class="content"><span class="label"> &nbsp; 
                         objectIdentifierType</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="span">Definition: 
                      <div class="p">A designation of the domain within which the object identifier is unique.</div>
                   </div>
-                  <div class="span">Rationale: 
-                     <div class="p">Description you can use &lt;anglebrackets&gt;</div>
-                     <div class="p">Identifier values cannot be assumed to be unique across domains; the combination of
-                                             &lt;objectIdentifierType&gt; and &lt;objectIdentifierValue&gt; should ensure
-                                             uniqueness.
-                     </div>
-                  </div>
-                  <div class="leftcol">Data Type: </div>
-                  <div class="content">
-                     <div class="p">Value should be taken from a controlled vocabulary. A controlled vocabulary is available at <a href="http://id.loc.gov/vocabulary/identifiers.html" target="new">http://id.loc.gov/vocabulary/identifiers.html</a>.
-                     </div>
-                  </div>
-                  <div class="span">
-                     <div class="descriptionHead">Description and Usage: </div>
+                  <div class="span">Entity information: 
                      <div class="p">
                         <div>Intellectual Entity / Representation</div>
                         <div class="leftcol">Applicability</div>
@@ -439,6 +424,18 @@
                         </div>
                      </div>
                   </div>
+                  <div class="span">Rationale: 
+                     <div class="p">Description you can use &lt;anglebrackets&gt;</div>
+                     <div class="p">Identifier values cannot be assumed to be unique across domains; the combination of
+                                             &lt;objectIdentifierType&gt; and &lt;objectIdentifierValue&gt; should ensure
+                                             uniqueness.
+                     </div>
+                  </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">
+                     <div class="p">Value should be taken from a controlled vocabulary. A controlled vocabulary is available at <a href="http://id.loc.gov/vocabulary/identifiers.html" target="new">http://id.loc.gov/vocabulary/identifiers.html</a>.
+                     </div>
+                  </div>
                   <div class="span">Usage notes: 
                      <div class="p">The type of the identifier may be implicit within the repository as long as
                                              it can be explicitly communicated when the digital object is disseminated outside of it.
@@ -447,18 +444,13 @@
                   </div>
                </div>
                <div class="element">
-                  <div class="leftcol" id="elem-objectIdentifierValue"><span class="label">&lt;objectIdentifierValue&gt;</span></div>
+                  <div class="leftcol" id="elem-objectIdentifierValue"><span class="label">Semantic unit </span></div>
                   <div class="content"><span class="label"> &nbsp; 
                         objectIdentifierValue</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="span">Definition: 
                      <div class="p">The value of the &lt;objectIdentifier&gt;.</div>
                   </div>
-                  <div class="leftcol">Data Type: </div>
-                  <div class="content">
-                     <div class="p">None</div>
-                  </div>
-                  <div class="span">
-                     <div class="descriptionHead">Description and Usage: </div>
+                  <div class="span">Entity information: 
                      <div class="p">
                         <div>Intellectual Entity / Representation</div>
                         <div class="leftcol">Applicability</div>
@@ -522,30 +514,19 @@
                         </div>
                      </div>
                   </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">
+                     <div class="p">None</div>
+                  </div>
                </div>
                <div class="element">
-                  <div class="leftcol" id="elem-objectCategory"><span class="label">&lt;objectCategory&gt;</span></div>
+                  <div class="leftcol" id="elem-objectCategory"><span class="label">Semantic unit </span></div>
                   <div class="content"><span class="label"> &nbsp; 
                         objectCategory</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="span">Definition: 
                      <div class="p">The category of object to which the metadata applies.</div>
                   </div>
-                  <div class="span">Rationale: 
-                     <div class="p">Description you can use &lt;anglebrackets&gt;</div>
-                     <div class="p">Preservation repositories are likely to treat different categories of objects (Intellectual
-                                             Entities, Representations, Files, and Bitstreams) differently in terms of metadata and data
-                                             management functions, it is therefore important to differentiate between the
-                                             categories.
-                     </div>
-                  </div>
-                  <div class="leftcol">Data Type: </div>
-                  <div class="content">
-                     <div class="p">Value should be taken from a controlled vocabulary. A controlled vocabulary is available at <a href="http://id.loc.gov/vocabulary/preservation/objectCategory.html" target="new">http://id.loc.gov/vocabulary/preservation/objectCategory.html</a>
-                                             .
-                     </div>
-                  </div>
-                  <div class="span">
-                     <div class="descriptionHead">Description and Usage: </div>
+                  <div class="span">Entity information: 
                      <div class="p">
                         <div>Intellectual Entity / Representation</div>
                         <div class="leftcol">Applicability</div>
@@ -595,12 +576,26 @@
                         </div>
                      </div>
                   </div>
+                  <div class="span">Rationale: 
+                     <div class="p">Description you can use &lt;anglebrackets&gt;</div>
+                     <div class="p">Preservation repositories are likely to treat different categories of objects (Intellectual
+                                             Entities, Representations, Files, and Bitstreams) differently in terms of metadata and data
+                                             management functions, it is therefore important to differentiate between the
+                                             categories.
+                     </div>
+                  </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">
+                     <div class="p">Value should be taken from a controlled vocabulary. A controlled vocabulary is available at <a href="http://id.loc.gov/vocabulary/preservation/objectCategory.html" target="new">http://id.loc.gov/vocabulary/preservation/objectCategory.html</a>
+                                             .
+                     </div>
+                  </div>
                   <div class="span">Usage notes: 
                      <div class="p">A filestream should be considered a file.</div>
                   </div>
                </div>
                <div class="element">
-                  <div class="leftcol" id="elem-preservationLevel"><span class="label">&lt;preservationLevel&gt;</span></div>
+                  <div class="leftcol" id="elem-preservationLevel"><span class="label">Semantic unit </span></div>
                   <div class="content"><span class="label"> &nbsp; 
                         preservationLevel</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Semantic components: </div>
@@ -609,6 +604,35 @@
                      <div class="p">Information indicating the decision or policy on the set of preservation
                                              functions to be applied to an object and the context in which the decision or policy was
                                              made.
+                     </div>
+                  </div>
+                  <div class="span">Entity information: 
+                     <div class="p">
+                        <div>Intellectual Entity / Representation</div>
+                        <div class="leftcol">Applicability</div>
+                        <div class="content">Applicable</div>
+                        <div class="leftcol">Obligation</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">Repeatability</div>
+                        <div class="content">Repeatable</div>
+                     </div>
+                     <div class="p">
+                        <div>PREMIS File</div>
+                        <div class="leftcol">Applicability</div>
+                        <div class="content">Applicable</div>
+                        <div class="leftcol">Obligation</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">Repeatability</div>
+                        <div class="content">Repeatable</div>
+                     </div>
+                     <div class="p">
+                        <div>PREMIS Bitstream</div>
+                        <div class="leftcol">Applicability</div>
+                        <div class="content">Non-applicable</div>
+                        <div class="leftcol">Obligation</div>
+                        <div class="content">n/a</div>
+                        <div class="leftcol">Repeatability</div>
+                        <div class="content">n/a</div>
                      </div>
                   </div>
                   <div class="span">Rationale: 
@@ -654,36 +678,6 @@
                   <div class="content">
                      <div class="p">Container</div>
                   </div>
-                  <div class="span">
-                     <div class="descriptionHead">Description and Usage: </div>
-                     <div class="p">
-                        <div>Intellectual Entity / Representation</div>
-                        <div class="leftcol">Applicability</div>
-                        <div class="content">Applicable</div>
-                        <div class="leftcol">Obligation</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">Repeatability</div>
-                        <div class="content">Repeatable</div>
-                     </div>
-                     <div class="p">
-                        <div>PREMIS File</div>
-                        <div class="leftcol">Applicability</div>
-                        <div class="content">Applicable</div>
-                        <div class="leftcol">Obligation</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">Repeatability</div>
-                        <div class="content">Repeatable</div>
-                     </div>
-                     <div class="p">
-                        <div>PREMIS Bitstream</div>
-                        <div class="leftcol">Applicability</div>
-                        <div class="content">Non-applicable</div>
-                        <div class="leftcol">Obligation</div>
-                        <div class="content">n/a</div>
-                        <div class="leftcol">Repeatability</div>
-                        <div class="content">n/a</div>
-                     </div>
-                  </div>
                   <div class="span">Creation/Maintenance notes: 
                      <div class="p">The preservation level may be assigned by the repository or requested
                                              by the depositor and submitted as metadata. The repository may also choose to record
@@ -708,7 +702,7 @@
             <div xmlns="" class="section" id="d0e956">
                <div class="head03">Elements</div>
                <div class="element">
-                  <div class="leftcol" id="elem-abbr"><span class="label">&lt;abbr&gt;</span></div>
+                  <div class="leftcol" id="elem-abbr"><span class="label">Semantic unit </span></div>
                   <div class="content"><span class="label"> &nbsp; 
                         Abbreviation</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="span">Summary: 
@@ -725,8 +719,7 @@
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-addressline">addressline</a>, <a href="#elem-archref">archref</a>, <a href="#elem-author">author</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-citation">citation</a>, <a href="#elem-container">container</a>, <a href="#elem-conventiondeclaration">conventiondeclaration</a>, <a href="#elem-date">date</a>, <a href="#elem-datesingle">datesingle</a>, <a href="#elem-didnote">didnote</a>, <a href="#elem-dimensions">dimensions</a>, <a href="#elem-edition">edition</a>, <a href="#elem-emph">emph</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-fromdate">fromdate</a>, <a href="#elem-head">head</a>, <a href="#elem-head01">head01</a>, <a href="#elem-head02">head02</a>, <a href="#elem-head03">head03</a>, <a href="#elem-item">item</a>, <a href="#elem-label">label</a>, <a href="#elem-localtypedeclaration">localtypedeclaration</a>, <a href="#elem-materialspec">materialspec</a>, <a href="#elem-num">num</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part</a>, <a href="#elem-physdesc">physdesc</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-physloc">physloc</a>, <a href="#elem-publisher">publisher</a>, <a href="#elem-quote">quote</a>, <a href="#elem-ref">ref</a>, <a href="#elem-sponsor">sponsor</a>, <a href="#elem-subtitle">subtitle</a>, <a href="#elem-titleproper">titleproper</a>, <a href="#elem-todate">todate</a>, <a href="#elem-unitdate">unitdate</a>, <a href="#elem-unitid">unitid</a>, <a href="#elem-unittitle">unittitle</a></div>
-                  <div class="span">
-                     <div class="descriptionHead">Description and Usage: </div>
+                  <div class="span">Entity information: 
                      <div class="p">Used to record the abbreviated form of a word or phrase, for example, an
                                              acronym.
                      </div>
@@ -787,7 +780,7 @@
                            <div class="innerExample">&lt;unittitle&gt;
                               <div class="innerExample">&lt;abbr expan="United Nations Educational, Scientific and Cultural                     Organization"&gt; UNESCO &lt;/abbr&gt;<br></div>&lt;/unittitle&gt;<br></div> [. . .] &lt;/did&gt;<br></div>&lt;/c02&gt;<br></div><br></div><br></div>
                <div class="element">
-                  <div class="leftcol" id="elem-objectIdentifier"><span class="label">&lt;objectIdentifier&gt;</span></div>
+                  <div class="leftcol" id="elem-objectIdentifier"><span class="label">Semantic unit </span></div>
                   <div class="content"><span class="label"> &nbsp; 
                         objectIdentifier</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="span">Summary: 
@@ -824,20 +817,14 @@
                   </div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-objectIdentifierType">objectIdentifierType</a>, <a href="#elem-objectIdentifierValue">objectIdentifierValue</a></div>
-                  <div class="leftcol">Data Type: </div>
-                  <div class="content">
-                     <div class="p">Container.</div>
-                  </div>
-                  <div class="span">
-                     <div class="descriptionHead">Description and Usage: </div>
+                  <div class="span">Entity information: 
                      <div class="p">Description you can use &lt;to_get_anglebrackets&gt;</div>
                      <div class="p">Each Object held in the preservation repository must have a unique identifier to allow
                                              other entities to refer to it and to relate it to descriptive, technical, and other
                                              metadata unambiguously.
                      </div>
                   </div>
-                  <div class="span">
-                     <div class="descriptionHead">Description and Usage: </div>
+                  <div class="span">Entity information: 
                      <div class="p">
                         <div>Intellectual Entity / Representation</div>
                         <div class="leftcol">Applicability</div>
@@ -871,6 +858,10 @@
                         <div class="leftcol">Example</div>
                         <div class="content">Bitstream example</div>
                      </div>
+                  </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">
+                     <div class="p">Container.</div>
                   </div>
                </div>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
          </div>

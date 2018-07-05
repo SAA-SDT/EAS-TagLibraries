@@ -43,6 +43,7 @@
                     <value>usagenotes</value>
                     <value>semanticunit</value>
                     <value>semanticcomponents</value>
+                    <value>entity</value>
                 </choice>
             </attribute>
             <!-- FC August 2nd, add xml:lang attribute, datatype language-->
@@ -133,6 +134,7 @@
                         <value>bulleted</value>
                         <!-- KB 3rd July 2018 added value -->
                         <value>ordered</value>
+                        <value>simple</value>
                     </choice>
                 </attribute>
             </optional>

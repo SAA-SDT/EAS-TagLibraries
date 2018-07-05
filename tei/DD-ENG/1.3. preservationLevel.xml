@@ -87,10 +87,10 @@
       <p>Container</p>
    </div>
 
-   <div type="description">
+   <div type="entity">
       <p>
          <!-- PREMIS Intellectual Entity / Representation -->
-         <list type="gloss">
+         <list type="simple">
             <head>Intellectual Entity / Representation</head>
             <label>Applicability</label>
             <item>Applicable</item>
@@ -101,7 +101,7 @@
          </list>
       </p>
       <p>
-         <list type="gloss">
+         <list type="simple">
             <head>PREMIS File</head>
             <label>Applicability</label>
             <item>Applicable</item>
@@ -112,7 +112,7 @@
          </list>
       </p>
       <p>
-         <list type="gloss">
+         <list type="simple">
             <head>PREMIS Bitstream</head>
             <label>Applicability</label>
             <item>Non-applicable</item>

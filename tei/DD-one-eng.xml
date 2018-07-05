@@ -283,7 +283,7 @@
                      </list>
                   </p>
                </div>
-              <div type="description">
+              <div type="entity">
                   <p>Used to record the abbreviated form of a word or phrase, for example, an
                      acronym.</p>
                   <p>Use <gi>abbr</gi> within <gi>conventiondeclaration</gi> to identify the code
@@ -410,11 +410,11 @@
                   <!-- PREMIS Semantic components -->
                   <p>objectIdentifierType, objectIdentifierValue</p>
                </div>
-               <div type="description">
+               <div type="entity">
                   
                   <p>
                      <!-- PREMIS Intellectual Entity / Representation -->
-                     <list type="gloss">
+                     <list type="simple">
                         <head>Intellectual Entity / Representation</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -427,7 +427,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS File</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -440,7 +440,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS Bitstream</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -505,10 +505,10 @@
                   <p>Value should be taken from a controlled vocabulary. A controlled vocabulary is available at <ref target="http://id.loc.gov/vocabulary/identifiers.html">http://id.loc.gov/vocabulary/identifiers.html</ref>.</p>
                </div>
                
-               <div type="description">
+               <div type="entity">
                   <p>
                      <!-- PREMIS Intellectual Entity / Representation -->
-                     <list type="gloss">
+                     <list type="simple">
                         <head>Intellectual Entity / Representation</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -527,7 +527,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS File</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -544,7 +544,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS Bitstream</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -591,10 +591,10 @@
                   <p>None</p>
                </div>
                
-               <div type="description">
+               <div type="entity">
                   <p>
                      <!-- PREMIS Intellectual Entity / Representation -->
-                     <list type="gloss">
+                     <list type="simple">
                         <head>Intellectual Entity / Representation</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -610,7 +610,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS File</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -630,7 +630,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS Bitstream</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -692,10 +692,10 @@
                      .</p>
                </div>
                
-               <div type="description">
+               <div type="entity">
                   <p>
                      <!-- PREMIS Intellectual Entity / Representation -->
-                     <list type="gloss">
+                     <list type="simple">
                         <head>Intellectual Entity / Representation</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -710,7 +710,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS File</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -725,7 +725,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS Bitstream</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -829,10 +829,10 @@
                   <p>Container</p>
                </div>
                
-               <div type="description">
+               <div type="entity">
                   <p>
                      <!-- PREMIS Intellectual Entity / Representation -->
-                     <list type="gloss">
+                     <list type="simple">
                         <head>Intellectual Entity / Representation</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -843,7 +843,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS File</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -854,7 +854,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS Bitstream</head>
                         <label>Applicability</label>
                         <item>Non-applicable</item>
@@ -918,7 +918,7 @@
                      </list>
                   </p>
                </div>
-               <div type="description">
+               <div type="entity">
                   <p>Used to record the abbreviated form of a word or phrase, for example, an
                      acronym.</p>
                   <p>Use <gi>abbr</gi> within <gi>conventiondeclaration</gi> to identify the code
@@ -1004,7 +1004,7 @@
                </div>
                
                
-               <div type="description">
+               <div type="entity">
                   <!-- PREMIS Rationale -->
                   <p xml:lang="en">Description you can use <gi>to_get_anglebrackets</gi></p>
                   <p>Each Object held in the preservation repository must have a unique identifier to allow
@@ -1045,11 +1045,10 @@
                   <!-- PREMIS Semantic components -->
                   <p>objectIdentifierType, objectIdentifierValue</p>
                </div>
-               <div type="description">
-                  
+               <div type="entity">                  
                   <p>
                      <!-- PREMIS Intellectual Entity / Representation -->
-                     <list type="gloss">
+                     <list type="simple">
                         <head>Intellectual Entity / Representation</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -1062,7 +1061,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS File</head>
                         <label>Applicability</label>
                         <item>Applicable</item>
@@ -1075,7 +1074,7 @@
                      </list>
                   </p>
                   <p>
-                     <list type="gloss">
+                     <list type="simple">
                         <head>PREMIS Bitstream</head>
                         <label>Applicability</label>
                         <item>Applicable</item>

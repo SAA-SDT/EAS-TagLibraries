@@ -222,4 +222,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
     <term name="dataDictionary">
         <translation lang="en">Data Dictionary</translation>
     </term>
+    <term name="entity">
+        <translation lang="en">Entity information</translation>
+    </term>
 </terms>

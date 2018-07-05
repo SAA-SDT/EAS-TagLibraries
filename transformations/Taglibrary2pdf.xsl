@@ -110,6 +110,8 @@
         select="$headingtranslations//terms/term[@name='semanticComponents']/translation[@lang=$currentLanguage]"/>
     <xsl:variable name="definition"
         select="$headingtranslations//terms/term[@name='definition']/translation[@lang=$currentLanguage]"/>
+    <xsl:variable name="entity"
+        select="$headingtranslations//terms/term[@name='entity']/translation[@lang=$currentLanguage]"/>
     
     <xsl:template match="/">
         <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -511,8 +513,7 @@
     <xsl:template match="tei:list[@type='ordered']">
         <!-- Numbered list -->
         <xsl:apply-templates select="tei:head"/>
-        <fo:list-block>
-            
+        <fo:list-block>            
             <xsl:for-each select="tei:item">
                 <fo:list-item>
                     <fo:list-item-label end-indent="label-end()">
@@ -527,9 +528,10 @@
                         <fo:block>
                             <xsl:apply-templates/>
                         </fo:block>
-                        <fo:block>
+                        <!-- If space is wanted inbetween the points have this active -->
+                        <!--<fo:block>
                             <xsl:text>&#xA0;</xsl:text>
-                        </fo:block>
+                        </fo:block>-->
                     </fo:list-item-body>
                 </fo:list-item>
             </xsl:for-each>
@@ -640,6 +642,7 @@
             <xsl:apply-templates select="tei:div[@type='semanticcomponents']"/>
             <xsl:apply-templates select="tei:div[@type='mayOccurWithin']"/>
             <xsl:apply-templates select="tei:div[@type='definition']"/>
+            <xsl:apply-templates select="tei:div[@type='entity']"/>
             <xsl:apply-templates select="tei:div[@type='rationale']"/>
             <xsl:apply-templates select="tei:div[@type='datatype']"/>
             <xsl:apply-templates select="tei:div[@type='attributes']"/>
@@ -842,8 +845,8 @@
             </fo:list-item>
         </fo:list-block>
     </xsl:template>
-
-    <xsl:template match="tei:div[@type='summary']">
+    
+   <xsl:template match="tei:div[@type='summary']">
         <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
             <fo:list-item>
                 <fo:list-item-label end-indent="label-end()">
@@ -966,6 +969,25 @@
                         <xsl:value-of select="$and"/>
                         <xsl:text> </xsl:text>
                         <xsl:value-of select="$usage"/>
+                        <xsl:text>: </xsl:text>
+                    </fo:block>
+                </fo:list-item-label>
+                <fo:list-item-body start-indent="body-start()">
+                    <fo:block>
+                        <xsl:apply-templates/>
+                    </fo:block>
+                </fo:list-item-body>
+            </fo:list-item>
+        </fo:list-block>
+    </xsl:template>
+    
+    <xsl:template match="tei:div[@type='entity'][parent::tei:div[@type='elementDocumentation']]">
+        <!-- Entity information PREMIS DD -->
+        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
+            <fo:list-item>
+                <fo:list-item-label end-indent="label-end()">
+                    <fo:block>
+                        <xsl:value-of select="$entity"/>
                         <xsl:text>: </xsl:text>
                     </fo:block>
                 </fo:list-item-label>
