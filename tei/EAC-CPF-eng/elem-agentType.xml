@@ -16,8 +16,8 @@
    </div>
    <div type="description" xml:lang="eng">
       <p>For each maintenance event described in a <gi>maintenanceEvent</gi> element, the type of
-								agent given in the <gi>agent</gi> element must be given as either "human" or
-								"machine."</p>
+								agent given in the <gi>agent</gi> element must be given as "human",
+								"machine", or "unknown."</p>
    </div>
    
    <div type="mayContain">
