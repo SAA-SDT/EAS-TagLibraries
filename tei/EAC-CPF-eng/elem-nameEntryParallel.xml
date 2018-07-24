@@ -11,12 +11,13 @@
    </div>
    <div type="summary">
       <p xml:lang="eng">A wrapper element for two or more <gi>nameEntry</gi> elements that
-							represent parallel forms of the name.</p>
+         represent parallel forms of the name (e.g., official forms of the name in
+         different languages and/or scripts, transliterated forms of the name).</p>
       
    </div>
    <div type="description" xml:lang="eng">
       <p>A wrapper element used to group two or more <gi>nameEntry</gi> elements representing
-								parallel forms of the name for the same CPF entity (e.g., official forms of the name in
+								parallel forms of the name for the same CPF entity which are used at the same time (e.g., official forms of the name in
 								different languages and/or scripts, transliterated forms of the name). All those forms
 								should have the same status, either authorized or alternative. Two optional elements,
 									<gi>authorizedForm</gi> or <gi>alternativeForm</gi> may be used to account more
