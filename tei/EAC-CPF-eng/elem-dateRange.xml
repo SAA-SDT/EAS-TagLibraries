@@ -17,7 +17,7 @@
    <div type="description" xml:lang="eng">
       <p>A generic element that expresses inclusive dates of an event in the history of, or a
 								relationship with, the person, family, or corporate body being described in the EAC-CPF
-								instance. <gi>dateRange</gi> contains mandatory <gi>fromDate</gi> and <gi>toDate</gi>
+								instance. <gi>dateRange</gi> contains <gi>fromDate</gi> and <gi>toDate</gi>
 								child elements. If the event or relationship has a single date use the <gi>date</gi>
 								element, while more complex dates (combining single dates and date ranges) can be expressed
 								in <gi>dateSet</gi>.</p>

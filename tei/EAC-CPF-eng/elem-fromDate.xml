@@ -18,7 +18,7 @@
 								dates expressed as a month, day, or year in any format. A standard numerical form of the
 								date (YYYYMMDD, etc.) may be specified with the <att>standardDate</att> attribute. The
 									<att>notBefore</att> and <att>notAfter</att> attributes may be used to indicate
-								uncertainty.</p>
+         uncertainty. If the <gi>fromDate</gi> is not known, it may be omitted.</p>
    </div>
    
    <div type="mayContain">
@@ -48,7 +48,7 @@
    </div>
    <div type="occurrence">
       <div type="mandatory">
-         <p xml:lang="eng">Mandatory</p>
+         <p xml:lang="eng">Optional</p>
       </div>
       <div type="repeatable">
          <p xml:lang="eng">Non-repeatable</p>

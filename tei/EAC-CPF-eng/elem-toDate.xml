@@ -17,7 +17,7 @@
       <p>May contain actual or approximate dates expressed as a month, day, or year in any format.
 								A standard numerical form of the date (YYYYMMDD, etc.) can be specified with the
 									<att>standardDate</att> attribute. The <att>notBefore</att> and <att>notAfter</att>
-								attributes may be used to indicate uncertainty.</p>
+         attributes may be used to indicate uncertainty. If the <gi>toDate</gi> is not known, it may be omitted.</p>
    </div>
    
    <div type="mayContain">
@@ -47,7 +47,7 @@
    </div>
    <div type="occurrence">
       <div type="mandatory">
-         <p>Mandatory</p>
+         <p>Optional</p>
       </div>
       <div type="repeatable">
          <p>Non-repeatable</p>
