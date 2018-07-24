@@ -21,7 +21,7 @@
    </div>
    
    <div type="mayContain">
-      <p>"human" or "machine"</p>
+      <p>"human" or "machine" or "unknown" (revised in 2010 Revised)</p>
    </div>
    <div type="mayOccurWithin">
       <p>maintenanceEvent</p>
