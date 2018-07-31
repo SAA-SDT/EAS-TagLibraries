@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updates />
+<!--
+    #2
+    The citation element is now non-repeatable.
+    
+    #10
+    The languageDeclaration element is now repeatable.
+    
+    #11
+    The agencyName element is now repeatable.
+    
+    #12
+    The eventDescription element is now repeatable.
+    
+    #13
+    The sourceEntry element is now repeatable.
+    
+    #16
+    The otherAgencyCode element value was changed from NMTOKEN to text.
+    
+    #19
+    The preferredForm element value was changed from NMTOKEN to text.
+    
+    #22
+    The descriptions of attributes @altitute and @longitude were corrected to reference placeEntry instead of place.
+    
+    #24
+    The useDates element description language was updated to be more clear.
+    
+    #31
+    The optional attribute @localType was added to the elements fromDate and toDate.
+    
+    #32
+    The elements fromDate and toDate were made optional to match the schema, and brief guidance was added for when date is unknown and can be omitted.
+    
+    #46
+    The new element rightsDeclaration was added. Parent element control and child elements abbreviation, citation, and descriptiveNote were updated accordingly.
+    
+    #47
+    New value "unknown" was added to restricted content list for eventType element.
+    
+    #48
+    New value "unknown" was added to restricted content list for agentType element.
+    
+    #49
+    New value "published" was added to restricted content list for publicationStatus element, and description of the element was simplified.
+    
+    #50
+    New value "deletedMerged" was added to restricted content list for maintenanceStatus element.
+    
+    -->
