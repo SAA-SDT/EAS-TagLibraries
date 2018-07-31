@@ -21,8 +21,8 @@
 								document that sets out the mandate for a corporate body; it should not be confused with the
 									<gi>source</gi> element which is used to declare a particular resource used in the
 								composition of the EAC-CPF instance. In most contexts it is optional, but a
-									<gi>citation</gi> element must be given within <gi>conventionDeclaration</gi> and
-									<gi>localTypeDeclaration</gi> elements in <gi>control</gi>. Provide the formal title or
+									<gi>citation</gi> element must be given within <gi>conventionDeclaration</gi>, 
+									<gi>localTypeDeclaration</gi>, and <gi>rightsDeclaration</gi> elements in <gi>control</gi> (revised in 2010 Revised). Provide the formal title or
 								name of the resource, using the <gi>span</gi> element to indicate any formatting (such as
 								italic or bold etc) thought necessary. The user experience can be controlled by use of the
 								available XML linking Language (Xlink) attributes for which consult the specification at
@@ -34,7 +34,7 @@
    </div>
    <div type="mayOccurWithin">
       <p>biogHist, conventionDeclaration, function, functions, legalStatus, legalStatuses, localDescription, localDescriptions, 
-							localTypeDeclaration, mandate, mandates, occupation, occupations, place, places</p>
+							localTypeDeclaration, mandate, mandates, occupation, occupations, place, places, rightsDeclaration (revised in 2010 Revised)</p>
    </div>
    <div type="attributes">
       <p xml:lang="eng">
@@ -65,7 +65,7 @@
    </div>
    <div type="occurrence">
       <div type="occurenceSpecifikation" n="1">
-         <head>Within conventionDeclaration:</head>
+         <head>Within conventionDeclaration, localTypeDeclaration and rightsDeclaration (revised in 2010 Revised):</head>
          <div type="mandatory">
             <p xml:lang="eng">Mandatory</p>
          </div>
