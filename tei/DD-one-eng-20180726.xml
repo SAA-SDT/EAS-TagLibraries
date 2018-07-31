@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="http://ead3.archivists.org/schema/"
+   xmlns:eg="http://www.tei-c.org/ns/Examples"
+   xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="eng">PREMIS Data Dictionary for preservation metadata</title>
+            <title xml:lang="eng" type="part2">Version 3.0</title>
+            <respStmt xml:lang="eng">
+               <resp>Prepared and maintained by the </resp>
+               <name>PREMIS Editorial Committee</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <p xml:lang="eng">2015 Edition</p>
+         </editionStmt>
+         <publicationStmt>
+            <publisher xml:lang="eng">PREMIS Editorial Committee</publisher>
+            <address>
+               <addrLine>PREMIS Editorial Committee</addrLine>
+               <addrLine>Address line</addrLine>
+               <addrLine>Address line</addrLine>
+               <addrLine>USA</addrLine>
+               <addrLine>312-606-0722</addrLine>
+               <addrLine>Fax: 312-606-0728</addrLine>
+               <addrLine>premis@loc.gov</addrLine>
+               <addrLine>http://www.loc.gov/standards/premis</addrLine>
+            </address>
+            <date when="2015"/>
+            <idno>ISBN Number</idno>
+            <availability>
+               <licence>This work is licensed under a Creative Commons Attribution 4.0 International
+                  License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/"
+                     >http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No
+                  part of this publication may be reproduced, stored in a retrieval system or
+                  transmitted in any form or by any means, electronic, mechanical or photocopying,
+                  recording, or otherwise without attribution.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p xml:lang="eng">Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage xml:lang="eng">
+            <docTitle>
+               <titlePart type="main">PREMIS Data Dictionary for preservation metadata</titlePart>
+            </docTitle>
+            <docEdition>June 2015 – Revised Novembe</docEdition>
+            <byline>Prepared and maintained by the</byline>
+            <docAuthor>PREMIS Editorial Committee</docAuthor>
+            <docImprint>
+               <docDate>June 2015</docDate>
+            </docImprint>
+         </titlePage>
+         <div xml:lang="eng" type="EnglishIntroduction">
+            <div>
+               <head>ACKNOWLEDGMENTS</head>
+               <p>PREMIS Editorial Committee members</p>
+               <list type="simple">
+                  <item>Rebecca Guenther, Library of Congress, Chair</item>
+                  <item>Karin Bredenberg, Riksarkivet, Swedish National Archives</item>
+                  <item>Angela Dappert, University of Portsmouth </item>
+                  <item>Angela Di Iorio, Sapienza Università di Roma</item>
+                  <item>Leslie Johnston, U.S . National Archives and Records Administration</item>
+                  <item>Devon Landes, HBO</item>
+                  <item>Peter McKinney , National Library of New Zealand</item>
+                  <item>Evelyn McLellan, Artefactual Systems</item>
+                  <item>Tracy Meehleib, Library of Congress</item>
+                  <item>Sébastien Peyrard, Bibliothèque nationale de France</item>
+                  <item>Pauline Sinclair, Preservica</item>
+                  <item>Eld Zierau, Royal Library of Denmark</item>                  
+               </list>
+            </div>
+            <div>
+               <head>Special thanks</head>
+               <p>The  following  contributed  their  expertise  to  previous  versions as  former  members  of  the PREMIS Editorial Committee: </p>
+               <list type="simple">
+                  <item>Steve Bordwell, General Register Office for Scotland</item>
+                  <item>Yair Brama, ExLibris</item>
+                  <item>Olaf Brandt, Koninklijke Bibliotheek, Netherlands</item>
+                  <item>Priscilla Caplan, Florida Center for Library Automation (co-chair of original PREMIS Working Group)</item>
+                  <item>Gerard Clifton, National Library of Australia</item>
+                  <item>Markus Enders, British Library</item>
+                  <item>Noreen Hill, Library and Archives Canada</item>
+                  <item>Karsten Huth, Sächsisches Staatsarchiv, Saxon State Archives</item>
+                  <item>David Lake , U.S . National Archives and Records Administration</item>
+                  <item>Brian Lavoie, OCLC</item>
+                  <item>Yaniv Levi, ExLibris</item>
+                  <item>Bill Leonard, Library and Archives Canada</item>
+                  <item>Rory McLeod, British Library</item>
+                  <item>Robert Sharpe, Preservica</item>
+                  <item>Robert Wolfe, HBO</item>
+                  <item>Zhiwu Xie, Los Alamos National Laboratory</item>
+                  <item>Sally Vermaaten, Statistics New Zealand</item>
+                  <item>Kate Zwaard, U.S. Government Printing Office, Library of Congress</item>                  
+               </list>
+               <p>In  addition  to  Editorial  Committee  members,  the  following  contributed  their  expertise  to  the  
+                  work on the Environment Working Group for PREMIS 3</p>
+            </div>
+            <div>
+               <head>INTRODUCTION</head>
+               <p>The PREMIS Data   Dictionary
+                  is   a   comprehensive,   practical   resource   for   implementing   
+                  preservation metadata in digital preservation 
+                  systems. The Data Dictionary
+                  defines preservation 
+                  metadata that</p>
+               <list type="simple">
+                  <item>Supports  the  viability,  renderability,  understandability,  authenticity,  and  identity  of  
+                     digital objects in a preservation context;</item>
+                  <item> Represents  the  information  most  preservation  repositories  need  to  know  to  preserve  
+                     digital materials over the long
+                     term;</item>
+                  <item>Emphasizes 
+                     “implementable  metadata
+                     ”:  rigorously  defined,  supported  by  guidelines  for  
+                     creation, management, and use, and oriented toward automated workflows; and,</item>
+                  <item>Embodies  technical  neutrality:  no  assumptions  made  about  pres
+                     ervation  technologies,  
+                     strategies, metadata storage and management, etc</item>
+               </list>
+            </div>
+         </div>
+      </front>
+      <body>
+         <div type="attributes" xml:id="EADAttributes">
+            <div type="Introduction">
+               <head>Introduction</head>
+               <p>Attributes are associated with most of the elements contained in EAD. Attributes
+                  reflect named properties of an element and may take on different values, depending
+                  on the context in which they occur. In order to set one or more attributes, an
+                  encoder should include the name of the attribute(s) within the same angle brackets
+                  as the start tag, together with the value(s) to which the attribute(s) is/are to
+                  be set. That is,<lb/>
+                  <code>&lt;[tag] [attribute]="[value]"&gt;</code>
+                  <lb/> or<lb/>
+                  <code>&lt;[tag] [attribute1]="[value1]" [attribute2]="[value2]"&gt;</code>
+               </p>
+               <p>For example: <lb/>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdate unitdatetype="inclusive">1937-1992</ead:unitdate>
+                  </egXML>
+                  <lb/> or<lb/>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdate unitdatetype="inclusive" normal="1937/1992">1937-1992
+                     </ead:unitdate>
+                  </egXML>
+               </p>
+               <p>Most attributes are optional, though some are required. The attribute description
+                  indicates whether an attribute is required. This information is also available in
+                  the Attributes section of each element description.</p>
+               <p>The value of attributes may be constrained by the schema using specific attribute
+                  type values. For example, <att>id</att> attribute is of type ID, which constrains
+                  its value to a string beginning with an alphabetic character. An <att>id</att>
+                  value must be unique within the EAD instance within which it occurs, that is, no
+                  other tag in the entire document can have the same <att>id</att> value. EAD
+                  attributes have the following data types<note>Capitalization of data types follows
+                     the documentation found in the W3C Recommendation <title>XML Schema Part 2:
+                        Datatypes Second Edition</title> (<ref
+                        target="http://www.w3.org/TR/xmlschema-2/"
+                        >http://www.w3.org/TR/xmlschema-2/</ref>).</note>:</p>
+               <list type="gloss">
+                  <label>anyURI:</label>
+                  <item>A Uniform Resource Identifier. This may be a Uniform Resource Locator (URL)
+                     or a Uniform Resource Name (URN). Both relative and absolute URIs are
+                     allowed.</item>
+                  <label>ENTITY:</label>
+                  <item>The name of a nonparsed entity that has been declared in the declaration
+                     subset of the document. For example, <att>entityref</att> must contain the name
+                     of an entity that has been declared in the declaration subset. Processing
+                     software can use the reference to the nonparsed entity to display the entity in
+                     the body of the text or in a new window.</item>
+                  <label>ID:</label>
+                  <item>Unique identifier. For example, most elements have an <att>id</att>, so that
+                     a unique code can be established for and used to refer to that specific
+                     element. The content of the <att>id</att> is of the type called "ID". Parsers
+                     verify that the value of attributes of type "ID" are unique. The values of
+                        <att>id</att> must begin with an alpha, not numeric, character, either upper
+                     or lowercase, and may contain a . (period), : (colon), - (hyphen), or _
+                     (underscore), but not a blank space. See also attributes of type
+                     "IDREF."</item>
+                  <label>IDREF:</label>
+                  <item>ID reference value; must match an existing ID of another element in the
+                     document. For example, the <gi>ptr</gi> element has a <att>target</att>
+                     attribute that can only be an "IDREF," which means it has to reference a valid
+                     ID in another element.</item>
+                  <label>IDREFS:</label>
+                  <item>List of ID reference values.</item>
+                  <label>NMTOKEN:</label>
+                  <item>A name token, which can consist of any alpha or numeric character, as well
+                     as a . (period), : (colon), - (hyphen), or _ (underscore), but not a blank
+                     space. A number of attributes in EAD where a character string from a code list
+                     is to be used are of the type "NMTOKEN".</item>
+                  <label>string:</label>
+                  <item>The most general data type, a string can contain any sequence of
+                     characters allowed in XML. Certain characters may have to be represented
+                     with an entity reference, for example &amp;lt; for &lt;, and &amp;amp; for
+                     &amp;.</item>
+                  <label>token:</label>
+                  <item>A type of string that may not contain carriage return, line feed or tab
+                     characters, leading or trailing spaces, and any internal sequence of two or
+                     more spaces.</item>
+               </list>
+               <p>The attribute value definitions in the DTD versions of EAD3 differ slightly from
+                  those of the Relax NG and W3C Schema versions. The DTD has a limited set of
+                  attribute types so the anyURI, token, and string data types were converted to
+                  "CDATA" (i.e. Character Data).</p>
+               <p>When the EAD schema limits attribute values to a few choices, those values are
+                  declared in the schema in what is known as a "closed list." For example, the
+                  values of <att>audience</att> are limited to either "external" or "internal."
+                  Other attributes are associated with semi-closed lists. Such lists include those
+                  values believed to be the most useful in many contexts, but other values are
+                  allowed. For example, <gi>dsc</gi> defines several values for <att>dsctype</att>,
+                  including "otherdsctype" which may be used with <att>otherdsctype</att> to specify
+                  values that are not in the semi-closed list for <att>dsctype</att>. The
+                  definitions for some values in the closed and semi-closed lists appear below.</p>
+               <p>The following is a complete list of all the attributes that occur in EAD, and some
+                  discussion of how they may be used. Further, context-specific information about
+                  the use of certain attributes may be found in the "Attribute usage" section of the
+                  element descriptions.</p>
+            </div>
+            <div type="attributeDocumentation" xml:id="attr-abbr">
+               <head>
+                  <att>abbr</att>
+               </head>
+               <div type="fullName">
+                  <p>Abbrevation</p>
+               </div>
+               <div type="summary">
+                  <p>An abbreviation for a word or phrase that is expressed in an expanded form in
+                     the text of the current element; used for searching and indexing purposes.
+                     Available only in <gi>expan</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+            </div>
+            
+         </div>
+         <div type="elements" xml:id="objectElements">
+            <div type="elementDocumentation" xml:id="elem-abbr">
+
+               <head>
+                  <gi>abbr</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Abbreviation</p>
+               </div>
+               <div type="summary">
+                  <p>An element for encoding the shortened form of a word or phrase.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>abstract, addressline, archref, author, bibref, citation, container,
+                     conventiondeclaration, date, datesingle, didnote, dimensions, edition, emph,
+                     entry, event, fromdate, head, head01, head02, head03, item, label,
+                     localtypedeclaration, materialspec, num, p, part, physdesc, physfacet, physloc,
+                     publisher, quote, ref, sponsor, subtitle, titleproper, todate, unitdate,
+                     unitid, unittitle</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>expan</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+              <div type="entity">
+                  <p>Used to record the abbreviated form of a word or phrase, for example, an
+                     acronym.</p>
+                  <p>Use <gi>abbr</gi> within <gi>conventiondeclaration</gi> to identify the code
+                     for a thesaurus, controlled vocabulary, or another standard used in creating
+                     the EAD description. To improve interoperability, it is recommended that the
+                     value be selected from an authorized list of codes such as the MARC Description
+                     Convention Source Codes
+                     (http://www.loc.gov/standards/sourcelist/descriptive-conventions.html).</p>
+                  <p>In other elements, use <gi>abbr</gi> with <att>expan</att> to encode
+                     abbreviations as they occur within the description, if you wish to use an
+                     abbreviation while also providing its fuller form.</p>
+               </div>
+               <div type="attributeusage">
+                  
+                     <list type="simple">
+                        <item>Use <att>expan</att> to provide the full form of the abbreviation,
+                           which may be given for indexing or searching purposes.</item>
+                     </list>
+                  
+               </div>
+               <div type="seealso">
+                  
+                     <list type="simple">
+                        <item>The related element <gi>expan</gi> with <att>abbr</att>, which can be
+                           used to encode the full form of a name while providing the abbreviation
+                           in an attribute for indexing or searching purposes.</item>
+                     </list>
+                  
+               </div>
+               <div type="availability">
+                  <p>Within <gi>conventiondeclaration</gi>: Optional, not repeatable </p>
+                  <p>Within other elements: Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:conventiondeclaration>
+                        <ead:abbr> ISAD(G) </ead:abbr>
+                        <ead:citation>ISAD(G): General International Standard Archival Description,
+                           second edition, Ottawa 2000</ead:citation>
+                     </ead:conventiondeclaration>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:didnote>File also contains materials from the <ead:abbr
+                           expan="American Civil                     Liberties Union"> ACLU
+                        </ead:abbr>
+                     </ead:didnote>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c02>
+                        <ead:did>
+                           <ead:unittitle>
+                              <ead:abbr
+                                 expan="United Nations Educational, Scientific and Cultural                     Organization"
+                                 > UNESCO </ead:abbr>
+                           </ead:unittitle> [. . .] </ead:did>
+                     </ead:c02>
+                  </egXML>
+               </div>
+            </div>
+            
+            <div type="elementDocumentation" xml:id="objectIdentifier" xmlns="http://www.tei-c.org/ns/1.0">
+               <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+               
+               
+               <head type='DD'>
+                  <!-- PREMIS Semantic unit 1.1 -->
+                  <gi>objectIdentifier</gi>
+               </head>
+               
+               
+               <div type="fullName">
+                  <p>objectIdentifier</p>
+                  
+                  
+               </div>
+               
+               
+               <div type="definition">
+                  <!-- PREMIS Definition -->
+                  <p xml:lang="en">A designation used to identify the Object uniquely within the preservation
+                     repository system in which it is stored.</p>
+               </div>
+               
+               
+               <div type="rationale">
+                  <!-- PREMIS Rationale -->
+                  <p xml:lang="en">Description you can use <gi>to_get_anglebrackets</gi></p>
+                  <p>Each Object held in the preservation repository must have a unique identifier to allow
+                     other entities to refer to it and to relate it to descriptive, technical, and other
+                     metadata unambiguously.</p>
+               </div>
+               
+               
+               <div type="usagenotes">
+                  <!-- PREMIS Usage notes -->
+                  <p xml:lang="en">The objectIdentifier is mandatory for all Objects stored.</p>
+                  
+                  <p>The objectIdentifier is repeatable in order to allow both repository assigned and
+                     externally-assigned identifiers to be recorded. See “Creation/Maintenance” note above.</p>
+                  
+                  <p>Primary identifiers must be unique within the repository. They may be preexisting, and in
+                     use in other digital object management systems. Ideally, secondary identifiers should also
+                     be unique but sometimes this is not possible (e.g., if the values are inherited from a
+                     legacy system which did not enforce this or only identified items at a higher level).
+                     Identifiers for each item must be sufficient to identify the item uniquely at the
+                     appropriate level of aggregation. For example, an Intellectual Entity that represents all
+                     books in the same edition could use an ISBN but this would be insufficient to identify a
+                     particular copy of that book.</p>
+                  
+                  <p>A preservation repository needs to know both the type of object identifier and the value.
+                     If the value itself contains the identifier type (e.g., “oai:lib.uchicago.edu:1”), the
+                     identifier type does not need to be recorded explicitly. Similarly, if the repository uses
+                     only one type of identifier, the type can be assumed and does not need to be recorded.</p>
+               </div>
+               
+               
+               <div type="datatype">
+                  <!-- PREMIS Data constraint -->
+                  <p>Container.</p>
+               </div>
+               
+               <div type="semanticcomponents">
+                  <!-- PREMIS Semantic components -->
+                  <p>objectIdentifierType, objectIdentifierValue</p>
+               </div>
+               <div type="entity">
+                  
+                  <p>
+                     <!-- PREMIS Intellectual Entity / Representation -->
+                     <list type="simple">
+                        <head>Intellectual Entity / Representation</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>                        
+                     </list>
+                     <list type="ordered">
+                        <head>Example</head>
+                        <item>IE / Representation example</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS File</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>                        
+                     </list>
+                     <list type="ordered">
+                        <head>Example</head>
+                        <item>File example</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS Bitstream</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>                        
+                     </list>
+                     <list type="ordered">
+                        <head>Example</head>
+                        <item>Bitstream example</item>
+                     </list>
+                  </p>
+               </div>
+               
+               
+               
+               
+               <div type="creationmaintenance">
+                  <!-- PREMIS Creation / Maintenance -->
+                  <p xml:lang="en">An identifier may be created by the repository system at the time of
+                     ingest, or it may be created or assigned outside of the repository and submitted with
+                     an object as metadata. Similarly, identifiers can be generated automatically or
+                     manually. </p>
+               </div>
+            </div>
+            <div type="elementDocumentation" xml:id="objectIdentifierType" xmlns="http://www.tei-c.org/ns/1.0">
+               <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+               
+               
+               <head type='DD'>
+                  <!-- PREMIS Semantic unit 1.1.1 -->
+                  <gi>objectIdentifierType</gi>
+               </head>
+               
+               <div type="fullName">
+                  <!-- PREMIS Semantic components -->
+                  <p xml:lang="en">objectIdentifierType</p>
+               </div>
+               
+               <div type="definition">
+                  <!-- PREMIS Definition -->
+                  <p xml:lang="en">A designation of the domain within which the object identifier is unique.</p>
+               </div>
+               
+               <div type="rationale">
+                  <!-- PREMIS Rationale -->
+                  <p xml:lang="en">Description you can use <gi>anglebrackets</gi></p>
+                  <p>Identifier values cannot be assumed to be unique across domains; the combination of
+                     <gi>objectIdentifierType</gi> and <gi>objectIdentifierValue</gi> should ensure
+                     uniqueness.</p>
+               </div>
+               
+               <div type="usagenotes">
+                  <!-- PREMIS Usage notes -->
+                  <p xml:lang="en">The type of the identifier may be implicit within the repository as long as
+                     it can be explicitly communicated when the digital object is disseminated outside of it.
+                  </p>
+               </div>
+               
+               <div type="datatype">
+                  <!-- PREMIS Data constraint URL below should be live after transformation -->
+                  <p>Value should be taken from a controlled vocabulary. A controlled vocabulary is available at <ref target="http://id.loc.gov/vocabulary/identifiers.html">http://id.loc.gov/vocabulary/identifiers.html</ref>.</p>
+               </div>
+               
+               <div type="entity">
+                  <p>
+                     <!-- PREMIS Intellectual Entity / Representation -->
+                     <list type="simple">
+                        <head>Intellectual Entity / Representation</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Not-repeatable</item>
+                     </list>
+                     <list type="ordered">
+                        <head>Examples</head>
+                        <item>ISBN (Intellectual Entity)</item>
+                        <item>DOI (Intellectual Entity)</item>
+                        <item>DLC</item>
+                        <item>DRS</item>
+                        <item>hdl:4263537</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS File</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Not-repeatable</item>
+                     </list>
+                     <list type="ordered">
+                        <head>Examples</head>
+                        <item>DLC</item>
+                        <item>DRS</item>
+                        <item>hdl:4263537</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS Bitstream</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>
+                     </list>
+                     <list type="ordered">
+                        <head>Examples</head>
+                        <item>DLC</item>
+                        <item>DRS</item>
+                        <item>hdl:4263537</item>
+                     </list>
+                  </p> 
+               </div>
+            </div>
+            <div type="elementDocumentation" xml:id="objectIdentifierValue" xmlns="http://www.tei-c.org/ns/1.0">
+               <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+               
+               
+               <head type="DD">
+                  <!-- PREMIS Semantic unit 1.1.2 -->
+                  <gi>objectIdentifierValue</gi>
+               </head>
+               
+               <div type="fullName">
+                  <!-- PREMIS Semantic components -->
+                  <p xml:lang="en">objectIdentifierValue</p>
+               </div>
+               
+               <div type="definition">
+                  <!-- PREMIS Definition -->
+                  <p xml:lang="en">The value of the <gi>objectIdentifier</gi>.</p>
+               </div>
+               
+               <!-- PREMIS Rationale -->
+               
+               <!-- PREMIS Usage notes -->
+               
+               <div type="datatype">
+                  <!-- PREMIS Data constraint -->
+                  <p>None</p>
+               </div>
+               
+               <div type="entity">
+                  <p>
+                     <!-- PREMIS Intellectual Entity / Representation -->
+                     <list type="simple">
+                        <head>Intellectual Entity / Representation</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Not-repeatable</item>
+                     </list>
+                     <list type="ordered">
+                        <head>Examples</head>
+                        <item>0 00 221804-6</item>
+                        <item>0000000312</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS File</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Not-repeatable</item>
+                     </list>
+                     <list type="ordered">
+                        <head>Examples</head>
+                        <item>IU2440</item>
+                        <item>WAC1943.56</item>
+                        <item>AMNH</item>
+                        <item>CD269/CD269/70/10</item>
+                        <item>1001/dig/pres/2004-024</item>
+                        <item>http://nrs.harvard.edu/urn-3:FHCL.Loeb:sa1</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS Bitstream</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>
+                     </list>
+                     <list type="ordered">
+                        <head>Examples</head>
+                        <item>IU2440-1</item>
+                        <item>IU2440-2</item>
+                     </list>
+                  </p> 
+               </div>
+            </div>
+            <div type="elementDocumentation" xml:id="objectCategory" xmlns="http://www.tei-c.org/ns/1.0">
+               <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+               
+               
+               <head type="DD">
+                  <!-- PREMIS Semantic unit 1.2 -->
+                  <gi>objectCategory</gi>
+               </head>
+               
+               
+               <div type="fullName">
+                  <!-- PREMIS Semantic components -->
+                  <p xml:lang="en">objectCategory</p>
+               </div>
+               
+               
+               <div type="definition">
+                  <!-- PREMIS Definition -->
+                  <p xml:lang="en">The category of object to which the metadata applies.</p>
+               </div>
+               
+               
+               <div type="rationale">
+                  <!-- PREMIS Rationale -->
+                  <p xml:lang="en">Description you can use <gi>anglebrackets</gi></p>
+                  <p>Preservation repositories are likely to treat different categories of objects (Intellectual
+                     Entities, Representations, Files, and Bitstreams) differently in terms of metadata and data
+                     management functions, it is therefore important to differentiate between the
+                     categories.</p>
+               </div>
+               
+               
+               <div type="usagenotes">
+                  <!-- PREMIS Usage notes -->
+                  <p xml:lang="en">A filestream should be considered a file.</p>
+               </div>
+               
+               
+               <div type="datatype">
+                  <!-- PREMIS Data constraint URL should be live after transformation-->
+                  <p>Value should be taken from a controlled vocabulary. A controlled vocabulary is available at <ref target="http://id.loc.gov/vocabulary/preservation/objectCategory.html">http://id.loc.gov/vocabulary/preservation/objectCategory.html</ref>
+                     .</p>
+               </div>
+               
+               <div type="entity">
+                  <p>
+                     <!-- PREMIS Intellectual Entity / Representation -->
+                     <list type="simple">
+                        <head>Intellectual Entity / Representation</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Not-repeatable</item>
+                     </list>
+                     <list type="ordered">
+                        <head>Examples</head>
+                        <item>intellectual entity representation</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS File</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Not-repeatable</item>
+                     </list>
+                     <list type="ordered">
+                        <head>Examples</head>
+                        <item>file</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS Bitstream</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Not-repeatable</item>
+                     </list>
+                     <list type="ordered">
+                        <head>Examples</head>
+                         <item>bitstream</item>
+                     </list>
+                  </p> 
+               </div>
+               
+            </div>
+            <div type="elementDocumentation" xml:id="preservationLevel" xmlns="http://www.tei-c.org/ns/1.0">
+               <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+               
+               
+               <head type="DD">
+                  <!-- PREMIS Semantic unit 1.3 -->
+                  <gi>preservationLevel</gi>
+               </head>
+               
+               
+               <div type="fullName">
+                  <!-- PREMIS Semantic components -->
+                  <p xml:lang="en">preservationLevel</p>
+               </div>
+               
+               <div type="semanticcomponents">
+                  <p>preservationLevelType, preservationLevelValue, preservationLevelRole, preservationLevelRationale and preservationLevelDateAssigned</p> 
+               </div>
+               
+               
+               <div type="definition">
+                  <!-- PREMIS Definition -->
+                  <p xml:lang="en">Information indicating the decision or policy on the set of preservation
+                     functions to be applied to an object and the context in which the decision or policy was
+                     made.</p>
+               </div>
+               
+               
+               <div type="rationale">
+                  <!-- PREMIS Rationale -->
+                  <p xml:lang="en">Description you can use <gi>anglebrackets</gi></p>
+                  <p>Some preservation repositories will offer multiple preservation options depending on
+                     factors such as the value or uniqueness of the material, the “preservability” of the
+                     format, the amount the customer is willing to pay, etc. In such circumstances the
+                     <gi>preservationLevelValue</gi> that applies may need to be directly associated with an
+                     Object. The choice of a particular preservation option for an object may also require
+                     further explanation. This can depend on the preservation functions expected to be applied
+                     to the object (which can be described by assigning a <gi>preservationLevelType</gi>) and/or
+                     the context in which a set of preservation options is applicable (which can be described by
+                     assigning a <gi>preservationLevelRole</gi>). The distinction between
+                     <gi>preservationLevelType</gi> and <gi>preservationLevelRole</gi> can be illustrated by
+                     examples. One possible preservation level type is “Bit preservation level”. This might have
+                     values of ‘Low’, ‘Medium’ or ‘High’, where, for example, in 2015 technology examples
+                     for:</p>
+                  <p>
+                     <list type="bulleted">
+                        <label>1</label>
+                        <item>‘Low’ means ordinary on-site backup</item>
+                        <label>2</label>
+                        <item>‘Medium’ means two copies on different media types with a minimum of 150 km
+                           distance between the stored copies, with separate checksums that are integrity
+                           checked annually</item>
+                        <label>3</label>
+                        <item> ‘High’ means solutions a minimum of 5 independent copies on a variety of storage
+                           media distributed over different organizations in several continents with quarterly
+                           integrity checks.</item>
+                     </list>
+                  </p>
+                  <p>The <gi>preservationLevelRole</gi> can then be used to distinguish, for example, if this
+                     level is an aim or has actually been achieved. It is also possible to assign the
+                     rationale for choosing the value (which can be described by adding a
+                     <gi>preservationLevelRationale</gi>).
+                  </p>
+               </div>
+               
+               
+               <div type="usagenotes">
+                  <!-- PREMIS Usage notes -->
+                  <p xml:lang="en">If the repository offers only a single preservation level or the preservation
+                     level can be calculated externally (e.g., based on the information in a technical registry
+                     or by the type of collection), this value does not need to be explicitly recorded with
+                     Objects within the repository. Application of a particular set of
+                     <gi>preservationLevel</gi> semantic units may only cover a single Representation of an
+                     ob ject: Representations in other technical forms or serving other functions may have a
+                     different <gi>preservationLevel</gi> applied. The container may be repeated if a
+                     preservation level value needs to be recorded in additional contexts (see
+                     <gi>preservationLevelRole</gi>, page 24) or part of a context (see
+                     preservationLevelType, page 22). </p>
+               </div>
+               
+               
+               <div type="datatype">
+                  <!-- PREMIS Data constraint -->
+                  <p>Container</p>
+               </div>
+               
+               <div type="entity">
+                  <p>
+                     <!-- PREMIS Intellectual Entity / Representation -->
+                     <list type="simple">
+                        <head>Intellectual Entity / Representation</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Optional</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS File</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Optional</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS Bitstream</head>
+                        <label>Applicability</label>
+                        <item>Non-applicable</item>
+                        <label>Obligation</label>
+                        <item>n/a</item>
+                        <label>Repeatability</label>
+                        <item>n/a</item>
+                     </list>
+                  </p> 
+               </div>
+               
+               <div type="creationmaintenance">
+                  <!-- PREMIS Creation / Maintenance -->
+                  <p xml:lang="en">The preservation level may be assigned by the repository or requested
+                     by the depositor and submitted as metadata. The repository may also choose to record
+                     additional metadata indicating the context for the assignment of the preservation
+                     level.</p>
+               </div>
+               
+               
+            </div>
+            <!-- tmee addition 20180725 -->
+         
+         <div type="elementDocumentation" xml:id="preservationLevelType" xmlns="http://www.tei-c.org/ns/1.0">
+            <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+            
+            
+            <head type="DD">
+               <!-- PREMIS Semantic unit 1.3.1 -->
+               <gi>preservationLevelType</gi>
+            </head>
+            
+            
+            <div type="fullName">
+               <p>preservationLevelType</p>
+            </div>
+            
+            
+            <div type="definition">
+               <!-- PREMIS Definition -->
+               <p xml:lang="en">A value indicating the type of preservation functions expected to be applied
+                  to the Object for this preservation level.</p>
+            </div>
+            
+            
+            <div type="rationale">
+               <!-- PREMIS Rationale -->
+               <p xml:lang="en">Digital preservation functionality can be typed to express various aspects of
+                  the preservation. For instance bit-safety can represent a preservation level type, where
+                  values of this type can be used to express degree of replication and independence between
+                  copies. Likewise logical preservation can represent a type, where values of this type
+                  express whether functional preservation is done via format migration, emulation etc.</p>
+            </div>
+            
+            
+            <div type="usagenotes">
+               <!-- PREMIS Usage notes -->
+               <p xml:lang="en">Only one preservationLevelType may be recorded per preservationLevel
+                  container. If a further preservationLevelType applies to the Object in a different context,
+                  a separate preservationLevel container should be repeated.</p>
+            </div>
+            
+            
+            <div type="datatype">
+               <!-- PREMIS Data constraint -->
+               <p>Value should be taken from a controlled vocabulary.</p>
+            </div>
+            
+            <div type="semanticcomponents">
+               <!-- PREMIS Semantic components -->
+               <p>None</p>
+            </div>
+            <div type="entity">
+               
+               <p>
+                  <!-- PREMIS Intellectual Entity / Representation -->
+                  <list type="simple">
+                     <head>Intellectual Entity / Representation</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Obligation</label>
+                     <item>Optional</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                  </list>
+                  <list type="ordered">
+                     <head>IE / R Example</head>
+                     <item>xxx</item>
+                  </list>
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS File</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Obligation</label>
+                     <item>Optional</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                  </list>
+                  <list type="ordered">
+                     <head>File Example</head>
+                     <item>xxx</item>
+                  </list>
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS Bitstream</head>
+                     <label>Applicability</label>
+                     <item>Not applicable</item>
+                     <label>Obligation</label>
+                     <item>xxx</item>
+                     <label>Repeatability</label>
+                     <item>xxx</item>
+                  </list>
+                  <list type="ordered">
+                     <head>Bitstream Example</head>
+                     <item>xxx</item>
+                  </list>
+               </p>
+            </div>
+            
+            
+            <div type="creationmaintenance">
+               <!-- PREMIS Creation / Maintenance -->
+               <p xml:lang="en">The preservationLevelType may be assigned by the repository or requested by
+                  the depositor and submitted as metadata. </p>
+            </div>
+         </div>
+         
+         <!-- tmee addition 20180725 -->
+         
+         <div type="elementDocumentation" xml:id="preservationLevelValue" xmlns="http://www.tei-c.org/ns/1.0">
+            <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+            
+            
+            <head type="DD">
+               <!-- PREMIS Semantic unit 1.3.2 -->
+               <gi>preservationLevelValue</gi>
+            </head>
+            
+            
+            <div type="fullName">
+               <p>preservationLevelValue</p>
+            </div>
+            
+            
+            <div type="definition">
+               <!-- PREMIS Definition -->
+               <p xml:lang="en">A value indicating the set of preservation functions expected to be applied
+                  to the object.</p>
+            </div>
+            
+            
+            <div type="rationale">
+               <!-- PREMIS Rationale -->
+               <p xml:lang="en">Allows a value to be assigned to the preservationLevel.</p>
+            </div>
+            
+            
+            <div type="usagenotes">
+               <!-- PREMIS Usage notes -->
+               <p xml:lang="en">Only one preservationLevelValue may be recorded per preservationLevel
+                  container. If a further preservationLevelValue applies to the Object in a different
+                  context, a separate preservationLevel container should be repeated.</p>
+            </div>
+            
+            
+            <div type="datatype">
+               <!-- PREMIS Data constraint -->
+               <p>Value should be taken from a controlled vocabulary. If preservationLevelType and/or
+                  preservationLevelRole are used, then the available controlled vocabulary should be
+                  dependent on the values set for each of these types.</p>
+            </div>
+            
+            <div type="semanticcomponents">
+               <!-- PREMIS Semantic components -->
+               <p>None</p>
+            </div>
+            <div type="entity">
+               
+               <p>
+                  <!-- PREMIS Intellectual Entity / Representation -->
+                  <list type="simple">
+                     <head>Intellectual Entity / Representation</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Obligation</label>
+                     <item>Mandatory</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                  </list>
+                  <list type="ordered">
+                     <head>IE / R Example</head>
+                     <item>For preservationLevelType “Logical Preservation”:</item>
+                     <item>Migration</item>
+                     <item>Emulation</item>
+                  </list>
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS File</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Obligation</label>
+                     <item>Mandatory</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                  </list>
+                  <list type="ordered">
+                     <head>File Example</head>
+                     <item>For preservationLevelType “Bit Preservation”:</item>
+                     <item>Low (e.g. backup)</item>
+                     <item>Medium (e.g. min. 2 copies and integrity check)</item>
+                     <item>High (e.g. min 5 copies, integrity check and high independence)</item>
+                  </list>
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS Bitstream</head>
+                     <label>Applicability</label>
+                     <item>Not applicable</item>
+                     <label>Obligation</label>
+                     <item>xxx</item>
+                     <label>Repeatability</label>
+                     <item>xxx</item>
+                  </list>
+                  <list type="ordered">
+                     <head>Bitstream Example</head>
+                     <item>xxx</item>
+                  </list>
+               </p>
+            </div>
+            
+            
+            <div type="creationmaintenance">
+               <!-- PREMIS Creation / Maintenance -->
+               <p xml:lang="en">The preservation level may be assigned by the repository or requested by the
+                  depositor and submitted as metadata. </p>
+            </div>
+         </div>
+         
+         <!-- tmee addition 20180725 -->
+         
+         <div type="elementDocumentation" xml:id="preservationLevelRole" xmlns="http://www.tei-c.org/ns/1.0">
+            <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+            
+            
+            <head type="DD">
+               <!-- PREMIS Semantic unit 1.3.3 -->
+               <gi>preservationLevelRole</gi>
+            </head>
+            
+            
+            <div type="fullName">
+               <p>preservationLevelRole</p>
+            </div>
+            
+            
+            <div type="definition">
+               <!-- PREMIS Definition -->
+               <p xml:lang="en">A value indicating the context in which a set of preservation options is
+                  applicable.</p>
+            </div>
+            
+            
+            <div type="rationale">
+               <!-- PREMIS Rationale -->
+               <p xml:lang="en">Repositories may assign preservationLevelValues in different contexts which
+                  must be differentiated, and may need to record more than one context. This allows a
+                  distinction, for example, between the intended preservation level and the current
+                  achievable preservation level.</p>
+               <p>Note: This is distinct from the preservationLevelType which distinguishes the purpose of
+                  the preservationLevel.</p>
+            </div>
+            
+            
+            <div type="usagenotes">
+               <!-- PREMIS Usage notes -->
+               <p xml:lang="en">This optional semantic unit qualifies the sense or context in which the
+                  preservationLevelValue in the current preservationLevel container is applied.</p>
+               <p>For example, a repository may have a legislated obligation to “fully preserve” object X
+                  (which is of format F) but is presently only capable of preserving objects of format F at a
+                  “bit-level”. The repository may need to record both the required or intended level of
+                  preservation (e.g. preservationLevelRole=“requirement”) and the current capability (e.g.
+                  preservationLevelRole=“capability”).</p>
+               <p>In transferring custody of material from one repository to another, it may also be
+                  important for the receiving repository to know the sense in which preservationLevelValue
+                  should be understood. A receiving repository may not need to know a “capability”
+                  preservation level of which the transferring repository was capable (as this will have
+                  little bearing on its own capabilities), but it needs to know any preservation level
+                  “requirements” for material for which it is now taking responsibility.</p>
+               <p>It is good practice to specify preservationLevelRole for clarity even if the repository
+                  only a ssigns preservationLevelValue in one sense or context. If more than one
+                  preservationLevel is recorded with the same preservationLevelType, preservationLevelRole
+                  should always be supplied.</p>
+               <p>If more than one sense or context needs to be expressed for the same object, (e.g. both the
+                  “requirement” and “capability” are recorded), separate preservationLevel containers should
+                  be used. </p>
+            </div>
+            
+            
+            <div type="datatype">
+               <!-- PREMIS Data constraint -->
+               <p>Value should be taken from a controlled vocabulary. A controlled vocabulary list is
+                  available at: <ref target="http://id.loc.gov/vocabulary/preservation/objectCategory.html">
+                     http://id.loc.gov/vocabulary/preservation/preservationLevelRole.html</ref></p>
+            </div>
+            
+            <div type="semanticcomponents">
+               <!-- PREMIS Semantic components -->
+               <p>None</p>
+               
+               <!-- PREMIS Object category -->
+               <!-- tmee Placement of Examples/Lists? -->
+            </div>
+            <div type="entity">
+               
+               <p>
+                  <!-- PREMIS Intellectual Entity / Representation -->
+                  <list type="simple">
+                     <head>Intellectual Entity / Representation</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                     <label>Obligation</label>
+                     <item>Optional</item>
+                  </list>
+                  <list type="ordered">
+                     <head>IE/R Example</head>
+                     <item>requirement</item>
+                     <item>intention</item>
+                     <item>capability</item>
+                  </list>
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS File</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                     <label>Obligation</label>
+                     <item>Optional</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                  </list>
+                  <list type="ordered">
+                     <head>File Example</head>
+                     <item>requirement</item>
+                     <item>intention</item>
+                     <item>capability</item>
+                  </list>
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS Bitstream</head>
+                     <label>Applicability</label>
+                     <item>Not applicable</item>
+                     <label>Obligation</label>
+                     <item>xxx</item>
+                     <label>Repeatability</label>
+                     <item>xxx</item>
+                  </list>
+                  <list type="ordered">
+                     <head>Bitstream Example</head>
+                     <item>xxx</item>
+                  </list>
+               </p>
+            </div>
+            
+            
+            <div type="creationmaintenance">
+               <!-- PREMIS Creation / Maintenance -->
+               <p xml:lang="en">The preservation level may be assigned by the repository or requested by the
+                  depositor and submitted as metadata. </p>
+            </div>
+         </div>
+         
+         <!-- tmee addition 20180725 -->
+         
+         <div type="elementDocumentation" xml:id="preservationLevelRationale" xmlns="http://www.tei-c.org/ns/1.0">
+            <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+            
+            
+            <head type="DD">
+               <!-- PREMIS Semantic unit 1.3.4 -->
+               <gi>preservationLevelRationale</gi>
+            </head>
+            
+            
+            <div type="fullName">
+               <p>preservationLevelRationale</p>
+            </div>
+            
+            
+            <div type="definition">
+               <!-- PREMIS Definition -->
+               <p xml:lang="en">The reason a particular preservationLevelValue was applied to the object.
+               </p>
+            </div>
+            
+            
+            <div type="rationale">
+               <!-- PREMIS Rationale -->
+               <p xml:lang="en">Application of a particular preservationLevelValue may require justification,
+                  especially if it differs from that usually applied according to repository policy.</p>
+            </div>
+            
+            
+            <div type="usagenotes">
+               <!-- PREMIS Usage notes -->
+               <p xml:lang="en">This optional semantic unit records the reason for applying the
+                  preservationLevelValue.</p>
+               <p> This information can be particularly important when the assigned preservationLevelValue
+                  differs from usual repository policy.</p>
+               <p>For example, a repository may normally assign a preservationLevelValue of “full
+                  preservation” for JPEG2000 f iles , but detects that a particular file is defective. This
+                  may mean that the repository’s preservation strategy for JPEG2000 may not be effective for
+                  this particular file, so the repository may assign a preservationLevelValue of “bit -level
+                  preservation” to this file, recording “defective file” as the rationale.</p>
+               <p>Similarly, legislative requirements or contractual agreements may require a higher level of
+                  preservation to be assigned to a particular object than would be assigned to that class of
+                  object accord ing to usual policy. In this case, the rationale for the assignment may be
+                  recorded as “legislation” or “user pays”, for example.</p>
+               <p>preservationLevelRationale may be repeated if more than one reason needs to be recorded.
+               </p>
+            </div>
+            
+            
+            <div type="datatype">
+               <!-- PREMIS Data constraint -->
+               <p>None</p>
+            </div>
+            
+            <div type="semanticcomponents">
+               <!-- PREMIS Semantic components -->
+               <p>None</p>
+            </div>
+            
+            <!-- PREMIS Object category -->
+            <!-- tmee Placement of Examples? -->
+            <div type="entity">
+               <p>
+                  <!-- PREMIS Intellectual Entity / Representation -->
+                  <list type="simple">
+                     <head>Intellectual Entity / Representation</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                     <label>Obligation</label>
+                     <item>Optional</item>
+                  </list>
+                  <list type="ordered">
+                     <head>IE/R Example</head>
+                     <item>user pays</item>
+                     <item>legislation</item>
+                  </list>
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS File</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                     <label>Obligation</label>
+                     <item>Optional</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                  </list>
+                  <list type="ordered">
+                     <head>File Example</head>
+                     <item>defective file</item>
+                     <item>bit-level preservation only available for this format</item>
+                  </list>
+                  
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS Bitstream</head>
+                     <label>Applicability</label>
+                     <item>Not applicable</item>
+                     <label>Obligation</label>
+                     <item>xxx</item>
+                     <label>Repeatability</label>
+                     <item>xxx</item>
+                  </list>
+                  <list type="ordered">
+                     <head>Bitstream Example</head>
+                     <item>xxx</item>
+                  </list>
+               </p>
+            </div>
+            
+            
+            <div type="creationmaintenance">
+               <!-- PREMIS Creation / Maintenance -->
+               <p xml:lang="en">The preservation level may be assigned by the repository or requested by the
+                  depositor and submitted as metadata.</p>
+            </div>
+         </div>
+         
+         
+         
+         <!-- tmee addition 20180725 -->
+         
+         <div type="elementDocumentation" xml:id="preservationLevelDateAssigned" xmlns="http://www.tei-c.org/ns/1.0">
+            <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+            
+            
+            <head type="DD">
+               <!-- PREMIS Semantic unit 1.3.5 -->
+               <gi>preservationLevelDateAssigned</gi>
+            </head>
+            
+            
+            <div type="fullName">
+               <p>preservationLevelDateAssigned</p>
+            </div>
+            
+            
+            <div type="definition">
+               <!-- PREMIS Definition -->
+               <p xml:lang="en">The date, or date and time, when a particular preservationLevelValue was
+                  assigned to the object.</p>
+            </div>
+            
+            
+            <div type="rationale">
+               <!-- PREMIS Rationale -->
+               <p xml:lang="en">The preservationLevel applicable to an object is expected to be reviewed and
+                  changed over time, in response to changes in repository preservation requirements,
+                  policies, or capabilities relevant to the object. The date that the current
+                  preservationLevelValue was assigned aids review of decisions.</p>
+            </div>
+            
+            <!-- PREMIS Usage notes -->
+            
+            <div type="datatype">
+               <!-- PREMIS Data constraint -->
+               <p>To aid machine processing, value should use a structured form. To facilitate exchange of
+                  PREMIS-conformant metadata, use of standard conventions, for instance as used in the date
+                  elements in the PREMIS schema, is recommended.</p>
+            </div>
+            
+            <div type="semanticcomponents">
+               <!-- PREMIS Semantic components -->
+               <p>None</p>
+            </div>
+            
+            <!-- PREMIS Object category -->
+            
+            <div type="entity">
+               <p>
+                  <!-- PREMIS Intellectual Entity / Representation -->
+                  <list type="simple">
+                     <head>Intellectual Entity / Representation</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                     <label>Obligation</label>
+                     <item>Optional</item>
+                  </list>
+                  <list type="ordered">
+                     <head>IE/R Example</head>
+                     <item>2007-11-05</item>
+                     <item>2007-11-05T08:15:30-5:00</item>
+                  </list>
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS File</head>
+                     <label>Applicability</label>
+                     <item>Applicable</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                     <label>Obligation</label>
+                     <item>Optional</item>
+                     <label>Repeatability</label>
+                     <item>Not repeatable</item>
+                  </list>
+                  <list type="ordered">
+                     <head>File Example</head>
+                     <item>2007-11-05</item>
+                     <item>2007-11-05T08:15:30-5:00</item>
+                  </list>
+               </p>
+               <p>
+                  <list type="simple">
+                     <head>PREMIS Bitstream</head>
+                     <label>Applicability</label>
+                     <item>Not applicable</item>
+                     <label>Obligation</label>
+                     <item>xxx</item>
+                     <label>Repeatability</label>
+                     <item>xxx</item>
+                  </list>
+                  <list type="ordered">
+                     <head>Bitstream Example</head>
+                     <item>xxx</item>
+                  </list>
+               </p>
+            </div>
+            
+            <!-- PREMIS Creation / Maintenance -->
+         </div>
+         
+         
+         <!-- tmee addition 20180725 -->
+         </div>
+         <div type="elements" xml:id="rightsElements">
+            <div type="elementDocumentation" xml:id="elem-abbr2">
+               
+               <head>
+                  <gi>abbr</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Abbreviation</p>
+               </div>
+               <div type="summary">
+                  <p>An element for encoding the shortened form of a word or phrase.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>abstract, addressline, archref, author, bibref, citation, container,
+                     conventiondeclaration, date, datesingle, didnote, dimensions, edition, emph,
+                     entry, event, fromdate, head, head01, head02, head03, item, label,
+                     localtypedeclaration, materialspec, num, p, part, physdesc, physfacet, physloc,
+                     publisher, quote, ref, sponsor, subtitle, titleproper, todate, unitdate,
+                     unitid, unittitle</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>expan</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="entity">
+                  <p>Used to record the abbreviated form of a word or phrase, for example, an
+                     acronym.</p>
+                  <p>Use <gi>abbr</gi> within <gi>conventiondeclaration</gi> to identify the code
+                     for a thesaurus, controlled vocabulary, or another standard used in creating
+                     the EAD description. To improve interoperability, it is recommended that the
+                     value be selected from an authorized list of codes such as the MARC Description
+                     Convention Source Codes
+                     (http://www.loc.gov/standards/sourcelist/descriptive-conventions.html).</p>
+                  <p>In other elements, use <gi>abbr</gi> with <att>expan</att> to encode
+                     abbreviations as they occur within the description, if you wish to use an
+                     abbreviation while also providing its fuller form.</p>
+               </div>
+               <div type="attributeusage">
+                  
+                  <list type="simple">
+                     <item>Use <att>expan</att> to provide the full form of the abbreviation,
+                        which may be given for indexing or searching purposes.</item>
+                  </list>
+                  
+               </div>
+               <div type="seealso">
+                  
+                  <list type="simple">
+                     <item>The related element <gi>expan</gi> with <att>abbr</att>, which can be
+                        used to encode the full form of a name while providing the abbreviation
+                        in an attribute for indexing or searching purposes.</item>
+                  </list>
+                  
+               </div>
+               <div type="availability">
+                  <p>Within <gi>conventiondeclaration</gi>: Optional, not repeatable </p>
+                  <p>Within other elements: Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:conventiondeclaration>
+                        <ead:abbr> ISAD(G) </ead:abbr>
+                        <ead:citation>ISAD(G): General International Standard Archival Description,
+                           second edition, Ottawa 2000</ead:citation>
+                     </ead:conventiondeclaration>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:didnote>File also contains materials from the <ead:abbr
+                        expan="American Civil                     Liberties Union"> ACLU
+                     </ead:abbr>
+                     </ead:didnote>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c02>
+                        <ead:did>
+                           <ead:unittitle>
+                              <ead:abbr
+                                 expan="United Nations Educational, Scientific and Cultural                     Organization"
+                                 > UNESCO </ead:abbr>
+                           </ead:unittitle> [. . .] </ead:did>
+                     </ead:c02>
+                  </egXML>
+               </div>
+            </div>
+            
+            <div type="elementDocumentation" xml:id="objectIdentifier2" xmlns="http://www.tei-c.org/ns/1.0">
+               <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+               
+               
+               <head>
+                  <!-- PREMIS Semantic unit 1.1 -->
+                  <gi>objectIdentifier</gi>
+               </head>
+               
+               
+               <div type="fullName">
+                  <p>objectIdentifier</p>
+               </div>
+               
+               
+               <div type="summary">
+                  <!-- PREMIS Definition -->
+                  <p xml:lang="en">A designation used to identify the Object uniquely within the preservation
+                     repository system in which it is stored.</p>
+               </div>
+               
+               
+               <div type="entity">
+                  <!-- PREMIS Rationale -->
+                  <p xml:lang="en">Description you can use <gi>to_get_anglebrackets</gi></p>
+                  <p>Each Object held in the preservation repository must have a unique identifier to allow
+                     other entities to refer to it and to relate it to descriptive, technical, and other
+                     metadata unambiguously.</p>
+               </div>
+               
+               
+               <div type="usage">
+                  <!-- PREMIS Usage notes -->
+                  <p xml:lang="en">The objectIdentifier is mandatory for all Objects stored.</p>
+                  
+                  <p>The objectIdentifier is repeatable in order to allow both repository assigned and
+                     externally-assigned identifiers to be recorded. See “Creation/Maintenance” note above.</p>
+                  
+                  <p>Primary identifiers must be unique within the repository. They may be preexisting, and in
+                     use in other digital object management systems. Ideally, secondary identifiers should also
+                     be unique but sometimes this is not possible (e.g., if the values are inherited from a
+                     legacy system which did not enforce this or only identified items at a higher level).
+                     Identifiers for each item must be sufficient to identify the item uniquely at the
+                     appropriate level of aggregation. For example, an Intellectual Entity that represents all
+                     books in the same edition could use an ISBN but this would be insufficient to identify a
+                     particular copy of that book.</p>
+                  
+                  <p>A preservation repository needs to know both the type of object identifier and the value.
+                     If the value itself contains the identifier type (e.g., “oai:lib.uchicago.edu:1”), the
+                     identifier type does not need to be recorded explicitly. Similarly, if the repository uses
+                     only one type of identifier, the type can be assumed and does not need to be recorded.</p>
+               </div>
+               
+               
+               <div type="datatype">
+                  <!-- PREMIS Data constraint -->
+                  <p>Container.</p>
+               </div>
+               
+               <div type="mayContain">
+                  <!-- PREMIS Semantic components -->
+                  <p>objectIdentifierType, objectIdentifierValue</p>
+               </div>
+               <div type="entity">                  
+                  <p>
+                     <!-- PREMIS Intellectual Entity / Representation -->
+                     <list type="simple">
+                        <head>Intellectual Entity / Representation</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>                        
+                     </list>
+                     <list type="ordered">
+                        <head>Example</head>
+                        <item>IE / Representation example</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS File</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>                       
+                     </list>
+                     <list type="ordered">
+                         <head>Example</head>
+                        <item>File example</item>
+                     </list>
+                  </p>
+                  <p>
+                     <list type="simple">
+                        <head>PREMIS Bitstream</head>
+                        <label>Applicability</label>
+                        <item>Applicable</item>
+                        <label>Obligation</label>
+                        <item>Mandatory</item>
+                        <label>Repeatability</label>
+                        <item>Repeatable</item>                        
+                     </list>
+                     <list type="ordered">
+                        <head>Example</head>
+                        <item>Bitstream example</item>
+                     </list>
+                  </p>
+               </div>
+               
+               
+               <div type="summary">
+                  <!-- PREMIS Creation / Maintenance -->
+                  <p xml:lang="en">An identifier may be created by the repository system at the time of
+                     ingest, or it may be created or assigned outside of the repository and submitted with
+                     an object as metadata. Similarly, identifiers can be generated automatically or
+                     manually. </p>
+               </div>
+            </div>
+            
+         </div>
+         
+      </body>
+      <back>
+         <div type="appendix" xml:id="appendixA">
+            <head>Appendix A : Our appendix</head>
+            <div>
+               <head>A list of some sort</head>
+               <list type="simple">
+                  <label>Label</label>
+                  <item>Item</item>
+               </list>
+
+            </div>
+         </div>
+        
+      </back>
+   </text>
+</TEI>
