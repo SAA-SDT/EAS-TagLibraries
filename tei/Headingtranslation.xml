@@ -17,7 +17,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="de">Beschreibung</translation>
         <translation lang="it">Descrizione</translation>
     </term>
-    <term name="mayoccurwithin">
+    <term name="mayOccurWithin">
         <translation lang="en">May occur within</translation>
         <translation lang="fr">Peut être contenu dans</translation>
         <translation lang="gr">Μπορε&#943; να εμφαν&#943;ζεται μέσα σε</translation>
@@ -59,6 +59,13 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="de">Attribute</translation>
         <translation lang="it">Attributi</translation>
     </term>
+    <term name="reference">
+        <translation lang="en">References</translation>
+        <translation lang="fr">Références</translation>
+        <translation lang="gr">Αναφορ&#941;ς</translation>
+        <translation lang="de">Entspricht</translation>
+        <translation lang="it">Riferimenti</translation>        
+    </term>
     <term name="references">
         <translation lang="en">References</translation>
         <translation lang="fr">Références</translation>
@@ -87,7 +94,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="de">Elemente</translation>
         <translation lang="it">Elementi</translation>
     </term>
-    <term name="maycontain">
+    <term name="mayContain">
         <translation lang="en">May contain</translation>
         <translation lang="fr">Peut contenir</translation>
         <translation lang="gr">Μπορε&#943; να περι&#941;χει</translation>
@@ -136,6 +143,12 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="de">und</translation>
     </term>
     <term name="availability">
+        <translation lang="en">Availability</translation>
+        <translation lang="fr">Disponibilité</translation>
+        <translation lang="gr">Διαθεσιμ&#972;τητα</translation>
+        <translation lang="de">Verfügbarkeit</translation>
+    </term>
+    <term name="occurence">
         <translation lang="en">Availability</translation>
         <translation lang="fr">Disponibilité</translation>
         <translation lang="gr">Διαθεσιμ&#972;τητα</translation>
