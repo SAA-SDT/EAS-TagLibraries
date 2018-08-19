@@ -214,25 +214,25 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Διαθ&#941;σιμο απ&#972;</translation>
         <translation lang="de">Verfügbar ab</translation>
     </term>
-    <term name="usageNotes">
+    <term name="usagenotes">
         <translation lang="en">Usage notes</translation>
     </term>
     <term name="rationale">
         <translation lang="en">Rationale</translation>
     </term>
-    <term name="creationMaintenance">
+    <term name="creationmaintenance">
         <translation lang="en">Creation/Maintenance notes</translation>
     </term>
-    <term name="semanticUnit">
+    <term name="semanticunit">
         <translation lang="en">Semantic unit</translation>
     </term>
-    <term name="semanticComponents">
+    <term name="semanticcomponents">
         <translation lang="en">Semantic components</translation>
     </term>
     <term name="definition">
         <translation lang="en">Definition</translation>
     </term>
-    <term name="dataDictionary">
+    <term name="datadictionary">
         <translation lang="en">Data Dictionary</translation>
     </term>
     <term name="entity">

@@ -35,8 +35,7 @@
   
 
     <!-- Headingtranslations in an own xml-file using the currentLanguage to fetch them -->
-    <!-- This only works with XSLT-enginee Saxon 6.5.5 -->
-    <xsl:variable name="headingtranslations" select="document('../tei/Headingtranslation.xml')"/>
+     <xsl:variable name="headingtranslations" select="document('../tei/Headingtranslation.xml')"/>
     <!-- All translated headings
          Note that some of these may be redundant now, but are kept just in case -->
     <xsl:variable name="summary"
@@ -99,16 +98,16 @@
         select="$headingtranslations//*:terms/*:term[@name='printed']/*:translation[@lang=$currentLanguage]"/>
     <xsl:variable name="availableFrom"
         select="$headingtranslations//*:terms/*:term[@name='availableFrom']/*:translation[@lang=$currentLanguage]"/>
-    <xsl:variable name="usageNotes"
-        select="$headingtranslations//*:terms/*:term[@name='usageNotes']/*:translation[@lang=$currentLanguage]"/>
+    <xsl:variable name="usagenotes"
+        select="$headingtranslations//*:terms/*:term[@name='usagenotes']/*:translation[@lang=$currentLanguage]"/>
     <xsl:variable name="rationale"
         select="$headingtranslations//*:terms/*:term[@name='rationale']/*:translation[@lang=$currentLanguage]"/>
-    <xsl:variable name="creationMaintenance"
-        select="$headingtranslations//*:terms/*:term[@name='creationMaintenance']/*:translation[@lang=$currentLanguage]"/>
-    <xsl:variable name="semanticUnit"
-        select="$headingtranslations//*:terms/*:term[@name='semanticUnit']/*:translation[@lang=$currentLanguage]"/>
-    <xsl:variable name="semanticComponents"
-        select="$headingtranslations//*:terms/*:term[@name='semanticComponents']/*:translation[@lang=$currentLanguage]"/>
+    <xsl:variable name="creationmaintenance"
+        select="$headingtranslations//*:terms/*:term[@name='creationmaintenance']/*:translation[@lang=$currentLanguage]"/>
+    <xsl:variable name="semanticunit"
+        select="$headingtranslations//*:terms/*:term[@name='semanticunit']/*:translation[@lang=$currentLanguage]"/>
+    <xsl:variable name="semanticcomponents"
+        select="$headingtranslations//*:terms/*:term[@name='semanticcomponents']/*:translation[@lang=$currentLanguage]"/>
     <xsl:variable name="definition"
         select="$headingtranslations//*:terms/*:term[@name='definition']/*:translation[@lang=$currentLanguage]"/>
     <xsl:variable name="entity"
@@ -618,7 +617,7 @@
                 </fo:marker>
                 <xsl:choose>
                     <xsl:when test="tei:head[@type='DD']">
-                        <xsl:value-of select="$semanticUnit"/>
+                        <xsl:value-of select="$semanticunit"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:text>&lt;</xsl:text>
