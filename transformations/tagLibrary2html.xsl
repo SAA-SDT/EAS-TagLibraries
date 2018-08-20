@@ -104,15 +104,15 @@
         <xsl:variable name="rationale"
                 select="$headingtranslations//terms/term[@name='rationale']/translation[@lang=$currentLanguage]"/>
         <xsl:variable name="creationMaintenance"
-                select="$headingtranslations//terms/term[@name='creationMaintenance']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//terms/term[@name='creationmaintenance']/translation[@lang=$currentLanguage]"/>
         <xsl:variable name="semanticUnit"
-                select="$headingtranslations//terms/term[@name='semanticUnit']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//terms/term[@name='semanticunit']/translation[@lang=$currentLanguage]"/>
         <xsl:variable name="semanticComponents"
-                select="$headingtranslations//terms/term[@name='semanticComponents']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//terms/term[@name='semanticcomponents']/translation[@lang=$currentLanguage]"/>
         <xsl:variable name="definition"
                 select="$headingtranslations//terms/term[@name='definition']/translation[@lang=$currentLanguage]"/>
         <xsl:variable name="dataDictionary"
-                select="$headingtranslations//terms/term[@name='dataDictionary']/translation[@lang=$currentLanguage]"/>        
+                select="$headingtranslations//terms/term[@name='datadictionary']/translation[@lang=$currentLanguage]"/>        
         <xsl:variable name="entity"
                 select="$headingtranslations//terms/term[@name='entity']/translation[@lang=$currentLanguage]"/>
         
