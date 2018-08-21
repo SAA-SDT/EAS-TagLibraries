@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:fo="http://www.w3.org/1999/XSL/Format" 
     xmlns:eac-cpf="urn:isbn:1-931666-33-4"
-    xmlns:ead="http://ead3.archivists.org/schema/" 
+    xmlns:ead="urn:isbn:1-931666-22-9" 
     xmlns:premis="http://www.loc.gov/premis/v3"
     xmlns:ex="http://www.tei-c.org/ns/Examples"
     xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -24,7 +24,7 @@
     -->
 
     <xsl:output indent="yes"/>
-    <xsl:variable name="SAA">no</xsl:variable><!-- Used for inserting SAA logo or not Values: yes | no -->
+    <xsl:variable name="SAA">yes</xsl:variable><!-- Used for inserting SAA logo or not Values: yes | no -->
     <xsl:variable name="currentLanguage">en</xsl:variable><!-- xml:lang from taglibrary -->
     <xsl:variable name="toctype">long</xsl:variable><!-- Used for determine style of toc Values: long | short -->
     <xsl:param name="spaceCharacter"> </xsl:param><!-- For egxml formatting -->
@@ -1348,7 +1348,7 @@
         </fo:block>
     </xsl:template>
 
-    <xsl:template match="tei:front/tei:div/tei:div/tei:div/ex:egXML">
+    <!--<xsl:template match="tei:front/tei:div/tei:div/tei:div/ex:egXML">
         <fo:block>
             <xsl:text> </xsl:text>
         </fo:block>
@@ -1373,7 +1373,7 @@
         <fo:block>
             <xsl:text> </xsl:text>
         </fo:block>
-    </xsl:template>
+    </xsl:template>-->
     
     <!-- Terrible hack to account for an egXML called from within some front matter.
         body-start() is only valid from within a list context (although you can call it from a fo:block from there!), so
