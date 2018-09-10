@@ -397,7 +397,8 @@
     <xsl:template match="tei:body | tei:back" mode="toclong">
         <xsl:for-each select="tei:div">
             <xsl:choose>
-                <xsl:when test="@type='elements'">
+                <!-- Karin få in valet här! -->
+                <xsl:when test="@type=['elements','rights', 'agents', 'objects', 'events']">
                     <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
                         space-after="6pt" text-align="left">
                         <!-- Karin: Add selection of value based upon the xml:id??? -->
@@ -447,7 +448,8 @@
     <xsl:template match="tei:body | tei:back" mode="tocshort">
         <xsl:for-each select="tei:div">
             <xsl:choose>
-                <xsl:when test="@type='elements'">
+                <!-- få in valet här! -->
+                <xsl:when test="@type=['elements', 'rights', 'agents', 'objects', 'events']">
                     <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
                         space-after="6pt" text-align="left" text-align-last="justify">
                         <fo:inline>
@@ -592,17 +594,21 @@
 
     </xsl:template>
 
-    <xsl:template match="tei:div[@type='elements']">
+    <xsl:template match="tei:div[@type='elements', 'rights', 'objects', 'agents', 'events']">
         <fo:block font-size="24pt" font-weight="bold" space-before="18pt" space-after="12pt"
             text-align="left" page-break-before="always" id="{generate-id(.)}">
+<!--            <xsl:variable name="parttitle"><xsl:value-of select="current()/@type"/></xsl:variable>-->
+<!--            <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$parttitle]/*:translation[@lang=$currentLanguage]"/>-->
             <fo:marker marker-class-name="taglibrary-head">
                 <fo:block>
                     <!-- Karin: Add selection of value based upon the xml:id??? -->
-                    <xsl:value-of select="$elements"/>
+                    <xsl:variable name="parttitle"><xsl:value-of select="current()/@type"/></xsl:variable>
+                    <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$parttitle]/*:translation[@lang=$currentLanguage]"/>
                 </fo:block>
             </fo:marker>
             <!-- Karin: Add selection of value based upon the xml:id??? -->
-            <xsl:value-of select="$elements"/>
+            <xsl:variable name="parttitle"><xsl:value-of select="current()/@type"/></xsl:variable>
+            <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$parttitle]/*:translation[@lang=$currentLanguage]"/>
         </fo:block>
         <xsl:for-each select="tei:div[@type='elementDocumentation']">
             <fo:block font-size="18pt" font-weight="bold" space-before="18pt" space-after="12pt"
