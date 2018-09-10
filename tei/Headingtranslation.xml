@@ -238,4 +238,16 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
     <term name="entity">
         <translation lang="en">Entity information</translation>
     </term>
+    <term name="rights">
+        <translation lang="en">Rights</translation>
+    </term>
+    <term name="agents">
+        <translation lang="en">Agents</translation>
+    </term>
+    <term name="events">
+        <translation lang="en">Events</translation>
+    </term>
+    <term name="objects">
+        <translation lang="en">Objects</translation>
+    </term>
 </terms>
