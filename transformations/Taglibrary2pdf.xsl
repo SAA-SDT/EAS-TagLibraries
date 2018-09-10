@@ -1354,7 +1354,10 @@
         </fo:block>
     </xsl:template>
 
-    <!--<xsl:template match="tei:front/tei:div/tei:div/tei:div/ex:egXML">
+    <!-- Returning this function due to the use of egXML in the EAC-CPF TEI.
+         This will silence errors regarding the use of body-start() outside of
+         a list context, and will properly monospace/format the egXML samples. -->
+    <xsl:template match="tei:front/tei:div/tei:div/tei:div/ex:egXML">
         <fo:block>
             <xsl:text> </xsl:text>
         </fo:block>
@@ -1369,9 +1372,9 @@
                     <xsl:for-each select="*">
                         <xsl:variable name="myDepth"
                             select="count(ancestor::*[not(namespace-uri()='http://www.tei-c.org/ns/1.0')])*5"/>
-                        <fo:list-item-body start-indent="body-start() + {$myDepth}mm">
+                        <fo:block start-indent="body-start() + {$myDepth}mm" font-family="monospace" font-size="10pt">
                             <xsl:call-template name="eg"/>
-                        </fo:list-item-body>
+                        </fo:block>
                     </xsl:for-each>
                 </fo:list-item-body>
             </fo:list-item>
@@ -1379,9 +1382,9 @@
         <fo:block>
             <xsl:text> </xsl:text>
         </fo:block>
-    </xsl:template>-->
+    </xsl:template>
     
-    <!-- Terrible hack to account for an egXML called from within some front matter.
+    <!-- Terrible hack to account for an egXML called from within some front matter (EAD TEI).
         body-start() is only valid from within a list context (although you can call it from a fo:block from there!), so
         this re-uses the above XPath to achieve that (and monospaces the example for kicks) -->
     <xsl:template match="tei:body/tei:div[@type='attributes']/tei:div[@type='Introduction']/tei:p/ex:egXML">
