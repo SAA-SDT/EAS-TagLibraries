@@ -28,7 +28,7 @@
     <xsl:variable name="currentLanguage">en</xsl:variable><!-- xml:lang from taglibrary -->
     <xsl:variable name="toctype">long</xsl:variable><!-- Used for determine style of toc Values: long | short -->
     <xsl:param name="spaceCharacter"> </xsl:param><!-- For egxml formatting -->
-        <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
+    <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
     <xsl:variable name="returntotoc">yes</xsl:variable><!--Used for creating the return to toc Values: yes | no -->
    
     <xsl:variable name="path">../images/</xsl:variable>  
@@ -853,7 +853,7 @@
     </xsl:template>
     
     <!-- Non-tokenized note divs -->
-    <xsl:template match="tei:div[@type=('summary', 'definition', 'rationale', 'creationmaintenance', 'usagenotes', 'attributeusage', 'seealso', 'datatype', 'values', 'occurrence', 'availability', 'attributeusage', 'reference', 'references')]">
+    <xsl:template match="tei:div[@type=('summary', 'definition', 'rationale', 'creationmaintenance', 'usagenotes', 'attributeusage', 'seealso', 'datatype', 'values', 'availability', 'attributeusage', 'reference', 'references')]">
         <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
             <fo:list-item>
                 <fo:list-item-label end-indent="label-end()">
@@ -914,6 +914,27 @@
         </fo:list-block>
     </xsl:template>
 
+    <!-- occurrence has some special rules, so it gets a special template -->
+    <xsl:template match="tei:div[@type='occurrence']">
+        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
+            <fo:list-item>
+                <fo:list-item-label end-indent="label-end()">
+                    <fo:block font-weight="bold">
+                        <xsl:value-of select="$occurrence"/>
+                        <xsl:text>: </xsl:text>
+                    </fo:block>
+                </fo:list-item-label>
+                <fo:list-item-body start-indent="body-start()">
+                    <fo:block>
+                        <xsl:value-of select="tei:div[@type='mandatory']/tei:p"/>
+                        <xsl:text>, </xsl:text>
+                        <xsl:value-of select="tei:div[@type='repeatable']/tei:p"/>
+                    </fo:block>
+                </fo:list-item-body>
+            </fo:list-item>
+        </fo:list-block>
+    </xsl:template>
+
     <!-- To be used when description is it own header -->
     <!--<xsl:template match="tei:div[@type='description']">
         <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
@@ -940,10 +961,6 @@
                 <fo:list-item-label end-indent="label-end()">
                     <fo:block font-weight="bold">
                         <xsl:value-of select="$description"/>
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="$and"/>
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="$usage"/>
                         <xsl:text>: </xsl:text>
                     </fo:block>
                 </fo:list-item-label>
@@ -982,11 +999,6 @@
                 <fo:list-item-label end-indent="label-end()">
                     <fo:block font-weight="bold">
                         <xsl:value-of select="$description"/>
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="$and"/>
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="$usage"/>
-                        <xsl:text>: </xsl:text>
                     </fo:block>
                 </fo:list-item-label>
                 <fo:list-item-body start-indent="body-start()">
@@ -1072,9 +1084,12 @@
         </fo:list-block>
     </xsl:template>
 
+    <!-- commenting these templates out, but keeping them in case they're needed again later
+    these templates should be superseded by the occurrence template...
+
     <xsl:template match="tei:div[@type='mandatory']">
-        <!-- Only value is given in the latest version of the TL -->
-        <!--<fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
+        Only value is given in the latest version of the TL 
+        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
             <fo:list-item>
                 <fo:list-item-label end-indent="label-end()">
                     <fo:block break-after="auto">
@@ -1092,13 +1107,13 @@
                     </fo:block>
                 </fo:list-item-body>
             </fo:list-item>
-        </fo:list-block>-->
-        <xsl:value-of select="."/>
+        </fo:list-block>
+        <xsl:value-of select="tei:p/text()"/>
     </xsl:template>
 
     <xsl:template match="tei:div[@type='repeatable']">
-        <!-- Only value is given in the latest layout of TL. And always after mandatory -->
-        <!--<fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
+        Only value is given in the latest layout of TL. And always after mandatory
+        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
             <fo:list-item>
                 <fo:list-item-label end-indent="label-end()">
                     <fo:block break-after="auto">
@@ -1116,10 +1131,10 @@
                     </fo:block>
                 </fo:list-item-body>
             </fo:list-item>
-        </fo:list-block>-->
+        </fo:list-block>
         <xsl:text>, </xsl:text>
-        <xsl:value-of select="."/>
-    </xsl:template>
+        <xsl:value-of select="tei:p/text()"/>
+    </xsl:template> -->
 
     <xsl:template match="tei:div[@type='attributes']/tei:p">
         <xsl:choose>

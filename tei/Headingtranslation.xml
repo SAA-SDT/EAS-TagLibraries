@@ -11,11 +11,11 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="it">Sommario</translation>
     </term>
     <term name="description">
-        <translation lang="en">Description</translation>
-        <translation lang="fr">Description</translation>
-        <translation lang="gr">Περιγραφ&#942;</translation>
-        <translation lang="de">Beschreibung</translation>
-        <translation lang="it">Descrizione</translation>
+        <translation lang="en">Description and Usage</translation>
+        <translation lang="fr">Description et Usage</translation>
+        <translation lang="gr">Περιγραφ&#942; και Χρ&#942;ση</translation>
+        <translation lang="de">Beschreibung und Verwendung</translation>
+        <translation lang="it">Descrizione e Uso</translation>
     </term>
     <term name="mayOccurWithin">
         <translation lang="en">May occur within</translation>
