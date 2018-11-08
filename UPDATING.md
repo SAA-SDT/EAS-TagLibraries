@@ -39,4 +39,5 @@ Before submitting a pull request to the [tag library repository](https://github.
 2. "Preface to Version x.y.z" has been added for the current version
 3. "(revised in x.y.z)" notes have been added to all instances across the tag library in which a changed attribute/element are listed
 4. Last version’s "(revised in x.y.z)" notes have been removed across the text
-5. PDF and HTML documents have been generated from the revised TEI document
+5. Appropriate variables and namespaces have been set in the transformation XSLT documents
+6. PDF and HTML documents have been generated from the revised TEI document
