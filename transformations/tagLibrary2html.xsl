@@ -33,88 +33,88 @@
         <xsl:variable name="toctype">short</xsl:variable><!-- Used for the look of the toc Values: long | short -->
         <xsl:param name="spaceCharacter"> </xsl:param> <!-- For egxml formatting -->       
         <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
-        <xsl:variable name="TL">PREMIS</xsl:variable> <!-- For the cases of differnt TEI used and to give the TL name in some places. EAD | EAC-CPF | EAC-G | EAC-F | PREMIS -->
+        <xsl:variable name="TL">EAD</xsl:variable> <!-- For the cases of differnt TEI used and to give the TL name in some places. EAD | EAC-CPF | EAC-G | EAC-F | PREMIS -->
 
         <!-- Headingtranslations in an own xml-file using the currentLanguage to fetch them -->
         <!-- This only works with XSLT-enginee Saxon 6.5.5 -->
         <xsl:variable name="headingtranslations" select="document('../tei/Headingtranslation.xml')"/>
         <!-- All translated headings -->
         <xsl:variable name="summary"
-                select="$headingtranslations//terms/term[@name='summary']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='summary']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="description"
-                select="$headingtranslations//terms/term[@name='description']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='description']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="mayoccurwithin"
-                select="$headingtranslations//terms/term[@name='mayoccurwithin']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='mayOccurWithin']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="mandatory"
-                select="$headingtranslations//terms/term[@name='mandatory']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='mandatory']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="optional"
-                select="$headingtranslations//terms/term[@name='optional']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='optional']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="repeatable"
-                select="$headingtranslations//terms/term[@name='repeatable']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='repeatable']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="nonrepeatable"
-                select="$headingtranslations//terms/term[@name='nonrepeatable']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='nonrepeatable']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="attributes"
-                select="$headingtranslations//terms/term[@name='attributes']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='attributes']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="references"
-                select="$headingtranslations//terms/term[@name='references']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='references']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="datatype"
-                select="$headingtranslations//terms/term[@name='datatype']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='datatype']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="toc"
-                select="$headingtranslations//terms/term[@name='toc']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='toc']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="elements"
-                select="$headingtranslations//terms/term[@name='elements']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='elements']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="maycontain"
-                select="$headingtranslations//terms/term[@name='maycontain']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='mayContain']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="occurrence"
-                select="$headingtranslations//terms/term[@name='occurrence']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='occurrence']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="appendix"
-                select="$headingtranslations//terms/term[@name='appendix']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='appendix']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="examples"
-                select="$headingtranslations//terms/term[@name='examples']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='examples']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="example"
-                select="$headingtranslations//terms/term[@name='example']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='example']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="usage"
-                select="$headingtranslations//terms/term[@name='usage']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='usage']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="and"
-                select="$headingtranslations//terms/term[@name='and']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='and']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="availability"
-                select="$headingtranslations//terms/term[@name='availability']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='availability']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="value"
-                select="$headingtranslations//terms/term[@name='value']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='value']/*:translation[@lang=$currentLanguage]"/>
                 <xsl:variable name="values"
-                select="$headingtranslations//terms/term[@name='values']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='values']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="taglibrary"
-                select="$headingtranslations//terms/term[@name='tl']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='tl']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="seealso"
-                select="$headingtranslations//terms/term[@name='seealso']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='seealso']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="attributeusage"
-                select="$headingtranslations//terms/term[@name='attributeusage']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='attributeusage']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="allrightsreserved"
-                select="$headingtranslations//terms/term[@name='allrightsreserved']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='allrightsreserved']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="printedinusa"
-                select="$headingtranslations//terms/term[@name='printedinusa']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='printedinusa']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="edition"
-                select="$headingtranslations//terms/term[@name='edition']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='edition']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="printed"
-                select="$headingtranslations//terms/term[@name='printed']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='printed']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="availableFrom"
-                select="$headingtranslations//terms/term[@name='availableFrom']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='availableFrom']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="usageNotes"
-                select="$headingtranslations//terms/term[@name='usageNotes']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='usageNotes']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="rationale"
-                select="$headingtranslations//terms/term[@name='rationale']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='rationale']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="creationMaintenance"
-                select="$headingtranslations//terms/term[@name='creationmaintenance']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='creationmaintenance']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="semanticUnit"
-                select="$headingtranslations//terms/term[@name='semanticunit']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='semanticunit']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="semanticComponents"
-                select="$headingtranslations//terms/term[@name='semanticcomponents']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='semanticcomponents']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="definition"
-                select="$headingtranslations//terms/term[@name='definition']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='definition']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="dataDictionary"
-                select="$headingtranslations//terms/term[@name='datadictionary']/translation[@lang=$currentLanguage]"/>        
+                select="$headingtranslations//*:terms/*:term[@name='datadictionary']/*:translation[@lang=$currentLanguage]"/>        
         <xsl:variable name="entity"
-                select="$headingtranslations//terms/term[@name='entity']/translation[@lang=$currentLanguage]"/>
+                select="$headingtranslations//*:terms/*:term[@name='entity']/*:translation[@lang=$currentLanguage]"/>
         
         <xsl:template match="/">
                 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -562,7 +562,7 @@
                         </xsl:otherwise>
                 </xsl:choose>
                 <div class="content">
-                        <span class="label"> &#xA0; 
+                        <span class="label"> 
                                 <xsl:value-of
                                         select="ancestor-or-self::tei:div[@type='elementDocumentation'or 'deprecatedElementDocumentation']/tei:div[@type='fullName']/tei:p"
                                 />  
@@ -651,51 +651,28 @@
                 </div>
         </xsl:template>
 
-        <xsl:template match="tei:div[@type='summary']">
-                <div class="span">
-                        <xsl:value-of select="$summary"/>
+        <xsl:template match="tei:div[@type=('summary', 'definition', 'entity', 'rationale', 'creationmaintenance', 'usagenotes', 'description')]">
+                <div class="leftcol">
+                        <xsl:variable name="termtitle"><xsl:value-of select="current()/@type"/></xsl:variable>
+                        <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$termtitle]/*:translation[@lang=$currentLanguage]"/>
                         <xsl:text>: </xsl:text>
-                        <xsl:apply-templates/>
                 </div>
+                    <div class="content">
+                        <xsl:apply-templates/>
+                    </div>
         </xsl:template>
         
-        <xsl:template match="tei:div[@type='definition']">
-                <div class="span">
-                        <xsl:value-of select="$definition"/>
+        <!-- leftcol + content elements -->
+        <xsl:template match="tei:div[@type=('mayContain', 'semanticcomponents', 'mayOccurWithin')]">
+                <div class="leftcol">
+                        <xsl:variable name="termtitle"><xsl:value-of select="current()/@type"/></xsl:variable>
+                        <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$termtitle]/*:translation[@lang=$currentLanguage]"/>
                         <xsl:text>: </xsl:text>
-                        <xsl:apply-templates/>
                 </div>
-        </xsl:template>
-        
-        <xsl:template match="tei:div[@type='entity']">
-                <div class="span">
-                        <xsl:value-of select="$entity"/>
-                        <xsl:text>: </xsl:text>
-                        <xsl:apply-templates/>
-                </div>
-        </xsl:template>
-        
-        <xsl:template match="tei:div[@type='rationale']">
-                <div class="span">
-                        <xsl:value-of select="$rationale"/>
-                        <xsl:text>: </xsl:text>
-                        <xsl:apply-templates/>
-                </div>
-        </xsl:template>
-        
-        <xsl:template match="tei:div[@type='creationmaintenance']">
-                <div class="span">
-                        <xsl:value-of select="$creationMaintenance"/>
-                        <xsl:text>: </xsl:text>
-                        <xsl:apply-templates/>
-                </div>
-        </xsl:template>
-        
-        <xsl:template match="tei:div[@type='usagenotes']">
-                <div class="span">
-                        <xsl:value-of select="$usageNotes"/>
-                        <xsl:text>: </xsl:text>
-                        <xsl:apply-templates/>
+                <div class="content">
+                        <xsl:call-template name="elemtokenize">
+                                <xsl:with-param name="text" select="tei:p"/>
+                        </xsl:call-template>
                 </div>
         </xsl:template>
 
@@ -709,21 +686,6 @@
                         <xsl:apply-templates/>
                 </div>
         </xsl:template>-->
-        
-        <!-- When we have description and usage in one header -->
-        <xsl:template match="tei:div[@type='description']">
-                <div class="span">
-                        <div class="descriptionHead">
-                                <xsl:value-of select="$description"/>
-                                <xsl:text> </xsl:text>
-                                <xsl:value-of select="$and"/>
-                                <xsl:text> </xsl:text>
-                                <xsl:value-of select="$usage"/>
-                                <xsl:text>: </xsl:text>
-                        </div>
-                        <xsl:apply-templates/>
-                </div>
-        </xsl:template>
         
         <xsl:template match="tei:div[@type='description'][parent::tei:div[@type='attributeDocumentation']]">
                 <div class="span">
@@ -752,30 +714,6 @@
                         <xsl:apply-templates/>
                 </div>
         </xsl:template>
-
-        <xsl:template match="tei:div[@type='mayContain']">
-                <div class="leftcol">
-                        <xsl:value-of select="$maycontain"/>
-                        <xsl:text>: </xsl:text>
-                </div>
-                <div class="content">
-                        <xsl:call-template name="elemtokenize">
-                                <xsl:with-param name="text" select="tei:p"/>
-                        </xsl:call-template>
-                </div>
-        </xsl:template>
-        
-        <xsl:template match="tei:div[@type='semanticcomponents']">
-                <div class="leftcol">
-                        <xsl:value-of select="$semanticComponents"/>
-                        <xsl:text>: </xsl:text>
-                </div>
-                <div class="content">
-                        <xsl:call-template name="elemtokenize">
-                                <xsl:with-param name="text" select="tei:p"/>
-                        </xsl:call-template>
-                </div>
-        </xsl:template>
         
         <xsl:template match="tei:div[@type='mayContain']" mode="dep">
                 <div class="leftcol">
@@ -784,18 +722,6 @@
                 </div>
                 <div class="content">
                         <xsl:value-of select="tei:p"/>
-                </div>
-        </xsl:template>
-
-        <xsl:template match="tei:div[@type='mayOccurWithin']">
-                <div class="leftcol">
-                        <xsl:value-of select="$mayoccurwithin"/>
-                        <xsl:text>: </xsl:text>
-                </div>
-                <div class="content">
-                        <xsl:call-template name="elemtokenize">
-                                <xsl:with-param name="text" select="tei:p"/>
-                        </xsl:call-template>
                 </div>
         </xsl:template>
         
