@@ -129,6 +129,13 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="de">Beispiel</translation>
         <translation lang="it">Esempio</translation>
     </term>
+    <term name="desc">
+        <translation lang="en">Description</translation>
+        <translation lang="fr">Description</translation>
+        <translation lang="gr">Περιγραφ&#942;</translation>
+        <translation lang="de">Beschreibung</translation>
+        <translation lang="it">Descrizione</translation>
+    </term>
     <term name="usage">
         <translation lang="en">Usage</translation>
         <translation lang="fr">Usage</translation>
