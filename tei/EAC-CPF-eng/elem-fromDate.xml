@@ -30,8 +30,8 @@
    <div type="attributes">
       <p xml:lang="eng">
          <list type="gloss">
-            <label>localType (revised in 2010 Revised)</label>
-            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional (revised in 2010 Revised)</item>
             <label>notAfter</label>
             <item>Optional</item>
             <label>notBefore</label>

@@ -68,8 +68,9 @@
                <part>Institut international des droits de l'homme</part>
                <preferredForm>AFNOR_Z44-060</preferredForm>
             </nameEntry>
-            <nameEntry xml:lang="en" scriptCode="Latn">International institute of human
-               rights</nameEntry>
+            <nameEntry xml:lang="en" scriptCode="Latn">
+               <part>International institute of human rights</part>
+            </nameEntry>
             <nameEntry xml:lang="sp" scriptCode="Latn">
                <part>Instituto internacional de derechos humanos</part>
             </nameEntry>

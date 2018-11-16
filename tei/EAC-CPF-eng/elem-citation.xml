@@ -65,7 +65,7 @@
    </div>
    <div type="occurrence">
       <div type="occurenceSpecifikation" n="1">
-         <head>Within conventionDeclaration, localTypeDeclaration and rightsDeclaration (revised in 2010 Revised):</head>
+         <head>Within conventionDeclaration, localTypeDeclaration and rightsDeclaration (revised in 2010 Revised)</head>
          <div type="mandatory">
             <p xml:lang="eng">Mandatory</p>
          </div>
@@ -74,12 +74,21 @@
          </div>
       </div>
       <div type="occurenceSpecifikation" n="2">
-         <head>Other elements:</head>
+         <head>Within function, legalStatus, localDescription, mandate, occupation, place</head>
          <div type="mandatory">
             <p xml:lang="eng">Optional</p>
          </div>
          <div type="repeatable">
             <p xml:lang="eng">Non-repeatable (revised in 2010 Revised)</p>
+         </div>
+      </div>
+      <div type="occurenceSpecifikation" n="3">
+         <head>Within functions, legalStatuses, localDescriptions, mandates, occupations, places</head>
+         <div type="mandatory">
+            <p xml:lang="eng">Optional</p>
+         </div>
+         <div type="repeatable">
+            <p xml:lang="eng">Repeatable</p>
          </div>
       </div>
    </div>

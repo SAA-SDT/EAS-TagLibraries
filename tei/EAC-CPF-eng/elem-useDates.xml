@@ -61,5 +61,19 @@
             <eac-cpf:authorizedForm>AACR2</eac-cpf:authorizedForm>
          </eac-cpf:nameEntry>
       </egXML>
+      <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+         <eac-cpf:nameEntryParallel xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:useDates>
+               <eac-cpf:fromDate standardDate="1976">1976</eac-cpf:fromDate>
+               <eac-cpf:toDate standardDate="1993">1993</eac-cpf:toDate>
+            </eac-cpf:useDates>
+            <nameEntry xml:lang="fr" scriptCode="Latn">
+               <eac-cpf:part>UNESCO. Division des droits de l’homme et de la paix</eac-cpf:part>
+            </nameEntry>
+            <nameEntry xml:lang="en" scriptCode="Latn">
+               <eac-cpf:part>UNESCO. Division of Human Rights and Peace</eac-cpf:part>
+            </nameEntry>
+         </eac-cpf:nameEntryParallel>
+      </egXML>
    </div>
 </div>
