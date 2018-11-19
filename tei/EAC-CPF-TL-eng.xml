@@ -181,25 +181,25 @@
                         <gi>recordId</gi> - Required. Contains the one or more unique identifiers for the
                         EAC-CPF instance.</item>
                      <item>
-                        <gi>otherRecordId</gi>-Optional.An element that allows the recording of additional identifiers that may be associated with the EAC-CPF instance.
+                        <gi>otherRecordId</gi> - Optional. An element that allows the recording of additional identifiers that may be associated with the EAC-CPF instance.
                      </item>
                      <item>
                         <gi>maintenanceStatus</gi> - Required. Contains the current drafting status of the EAC-CPF instance. Values include: new, revised, deleted, cancelled, deletedSplit, or deletedReplaced.
                      </item>
                      <item>
-                        <gi>publicationStatus</gi> - Optional.Contains information about the editorial status of the EAC-CPF instance.
+                        <gi>publicationStatus</gi> - Optional. Contains information about the editorial status of the EAC-CPF instance.
                      </item>
                      <item>
-                        <gi>maintenanceAgency</gi> -Required. Contains the name and coded information about the institution or service responsible for the creation, maintenance, and/or dissemination of the EAC-CPF instance.
+                        <gi>maintenanceAgency</gi> - Required. Contains the name and coded information about the institution or service responsible for the creation, maintenance, and/or dissemination of the EAC-CPF instance.
                      </item>
                      <item>
-                        <gi>languageDeclaration</gi>-Optional.Contains coded and natural language information about the language or languages of the EAC-CPF instance.
+                        <gi>languageDeclaration</gi> - Optional. Contains coded and natural language information about the language or languages of the EAC-CPF instance.
                      </item>
                      <item>
-                        <gi>conventionDeclaration</gi>-Optional.Contains information on the rules used to construct the EAC-CPF instance, in particular the names formed in <gi>identity</gi> and the controlled vocabularies and thesauri used in the EAC-CPF instance.
+                        <gi>conventionDeclaration</gi> - Optional. Contains information on the rules used to construct the EAC-CPF instance, in particular the names formed in <gi>identity</gi> and the controlled vocabularies and thesauri used in the EAC-CPF instance.
                      </item>
                      <item>
-                        <gi>localTypeDeclaration</gi>-Optional.An element used to declare local conventions used in the @localType attribute.
+                        <gi>localTypeDeclaration</gi> - Optional. An element used to declare local conventions used in the @localType attribute.
                      </item>
                      <item>
                         <gi>localControl</gi> - Optional. An element in which to record any administrative metadata necessary due to local practice that are not represented by the other elements in <gi>control</gi>.
@@ -208,7 +208,7 @@
                         <gi>maintenanceHistory</gi> - Required. Contains information about the date, type and events within the life cycle of an EAC-CPF instance. Contains one or more <gi>maintenanceEvent</gi> elements that document creating, importing, updating, and deletion of the description. Each maintenance event contains an agent, the type of agent (human or machine), the type of event, a description of the event, and the date of the event.
                      </item>
                      <item>
-                        <gi>sources</gi>-Optional. Contains information about the sources consulted in creating the description of the CPF entity or entities in the EAC-CPF instance. Contains one or more <gi>source</gi> element.
+                        <gi>sources</gi> - Optional. Contains information about the sources consulted in creating the description of the CPF entity or entities in the EAC-CPF instance. Contains one or more <gi>source</gi> element.
                      </item>
                   </list>
                </div>
@@ -216,22 +216,22 @@
                   <head>
                      <gi>cpfDescription</gi>
                   </head>
-                  <p>The <gi>cpfDescription</gi>-Corporate body, person or family description, comprises the
+                  <p>The <gi>cpfDescription</gi> - Corporate body, person or family description, comprises the
                      description of the entity. Similar to the <gi>control</gi> element,
                      <gi>cpfDescription</gi> has four complex subelements used to describe different features
                      of the entity:</p>
                   <list type="simple">
                      <item>
-                        <gi>identity</gi> -Required. Complex structure containing the name or names used by the CPF entity over the course of the entity’s existence. Contains a repeatable <gi>nameEntry</gi> element for different names, and a repeatable <gi>nameEntryParallel</gi> element for more than one <gi>nameEntry</gi> expressed in different languages.
+                        <gi>identity</gi> - Required. Complex structure containing the name or names used by the CPF entity over the course of the entity’s existence. Contains a repeatable <gi>nameEntry</gi> element for different names, and a repeatable <gi>nameEntryParallel</gi> element for more than one <gi>nameEntry</gi> expressed in different languages.
                      </item>
                      <item>
-                        <gi>description</gi> -Optional. Contains formal description elements parallel to those in ISAAR (CPF) for the description of the CPF entity. An additional <gi>localDescription</gi> allows for local implementation of additional descriptive information not included in the other <gi>description</gi> elements.
+                        <gi>description</gi> - Optional. Contains formal description elements parallel to those in ISAAR (CPF) for the description of the CPF entity. An additional <gi>localDescription</gi> allows for local implementation of additional descriptive information not included in the other <gi>description</gi> elements.
                      </item>
                      <item>
-                        <gi>relations</gi> -Optional. Contains one or more references to or descriptions of related corporate bodies, persons or families <gi>cpfRelation</gi>, functions <gi>functionRelation</gi>, or resources <gi>resourceRelation</gi>.
+                        <gi>relations</gi> - Optional. Contains one or more references to or descriptions of related corporate bodies, persons or families <gi>cpfRelation</gi>, functions <gi>functionRelation</gi>, or resources <gi>resourceRelation</gi>.
                      </item>
                      <item>
-                        <gi>alternativeSet</gi> -Optional. Contains two or more descriptions for the same CPF entity derived from two or more systems, expressed within a single EAC-CPF instance. The <gi>alternativeSet</gi> consists of two or more <gi>setComponent</gi> elements for the descriptions.
+                        <gi>alternativeSet</gi> - Optional. Contains two or more descriptions for the same CPF entity derived from two or more systems, expressed within a single EAC-CPF instance. The <gi>alternativeSet</gi> consists of two or more <gi>setComponent</gi> elements for the descriptions.
                      </item>
                   </list>
                </div>
