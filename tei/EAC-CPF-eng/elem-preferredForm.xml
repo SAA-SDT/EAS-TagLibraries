@@ -64,16 +64,16 @@
    <div type="examples">
       <egXML xmlns="http://www.tei-c.org/ns/Examples">
          <eac-cpf:nameEntryParallel xmlns:eac-cpf="urn:isbn:1-931666-33-4">
-            <nameEntry xml:lang="fr" scriptCode="Latn">
+            <eac-cpf:nameEntry xml:lang="fr" scriptCode="Latn">
                <part>Institut international des droits de l'homme</part>
                <preferredForm>AFNOR_Z44-060</preferredForm>
-            </nameEntry>
-            <nameEntry xml:lang="en" scriptCode="Latn">
+            </eac-cpf:nameEntry>
+            <eac-cpf:nameEntry xml:lang="en" scriptCode="Latn">
                <part>International institute of human rights</part>
-            </nameEntry>
-            <nameEntry xml:lang="sp" scriptCode="Latn">
+            </eac-cpf:nameEntry>
+            <eac-cpf:nameEntry xml:lang="sp" scriptCode="Latn">
                <part>Instituto internacional de derechos humanos</part>
-            </nameEntry>
+            </eac-cpf:nameEntry>
             <authorizedForm>AFNOR_Z44-060</authorizedForm>
          </eac-cpf:nameEntryParallel>
       </egXML>
