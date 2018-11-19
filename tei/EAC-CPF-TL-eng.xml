@@ -494,6 +494,7 @@
             <xi:include href="EAC-CPF-eng/elem-relationEntry.xml" parse="xml"/>
             <xi:include href="EAC-CPF-eng/elem-relations.xml" parse="xml"/>
             <xi:include href="EAC-CPF-eng/elem-resourceRelation.xml" parse="xml"/>
+            <xi:include href="EAC-CPF-eng/elem-rightsDeclaration.xml" parse="xml"/>
             <xi:include href="EAC-CPF-eng/elem-script.xml" parse="xml"/>
             <xi:include href="EAC-CPF-eng/elem-setComponent.xml" parse="xml"/>
             <xi:include href="EAC-CPF-eng/elem-source.xml" parse="xml"/>
