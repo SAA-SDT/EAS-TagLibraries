@@ -299,7 +299,7 @@
             </fo:block>
         </xsl:for-each>
         <!-- No [] in filename -->
-        <fo:block text-align="center" page-break-after="always" padding-before="150pt">
+        <fo:block text-align="center" page-break-after="always" padding-before="125pt">
             <xsl:choose>
                 <xsl:when test="starts-with($SAA,'yes')">
                     <fo:external-graphic src="../images/SAAVert540.jpg" alignment-adjust="middle"/>
@@ -925,11 +925,20 @@
                     </fo:block>
                 </fo:list-item-label>
                 <fo:list-item-body start-indent="body-start()">
-                    <fo:block>
-                        <xsl:value-of select="tei:div[@type='mandatory']/tei:p"/>
-                        <xsl:text>, </xsl:text>
-                        <xsl:value-of select="tei:div[@type='repeatable']/tei:p"/>
-                    </fo:block>
+                    <xsl:choose>
+                        <xsl:when test="div[@type='occurenceSpecifikation']">
+                            <fo:block>
+                               <xsl:apply-templates/>
+                            </fo:block>
+                        </xsl:when>
+                        <xsl:otherwise>
+                        <fo:block>
+                            <xsl:value-of select="tei:div[@type='mandatory']/tei:p"/>
+                            <xsl:text>, </xsl:text>
+                            <xsl:value-of select="tei:div[@type='repeatable']/tei:p"/>
+                        </fo:block>
+                    </xsl:otherwise>
+                </xsl:choose>
                 </fo:list-item-body>
             </fo:list-item>
         </fo:list-block>
@@ -1148,7 +1157,7 @@
                             </fo:block>
                         </fo:list-item-label>
                         <fo:list-item-body start-indent="body-start()">
-                            <fo:table start-indent="body-start()-23mm" table-layout="fixed" width="85%">
+                            <fo:table start-indent="body-start()-22.5mm" table-layout="fixed" width="85%">
                                 <fo:table-body>
                                     <xsl:for-each select="tei:list/tei:label[1]">
                                         <fo:table-row>
@@ -1451,7 +1460,6 @@
                         <xsl:when test="eg:egXML">
                             <xsl:for-each select="eg:egXML">
                         <fo:block font-family="monospace" font-size="10pt">
-                            <xsl:call-template name="newLine"/>
                             <xsl:apply-templates/>
                         </fo:block>
                     </xsl:for-each>
@@ -1646,7 +1654,7 @@ $curnode/descendant-or-self::*[namespace-uri()!='http://www.tei-c.org/ns/Example
 
 
     <xsl:template name="newLine">
-        <xsl:text>&#x000D;&#x000A;</xsl:text>
+    	<fo:block/>
     </xsl:template>
 
     <xsl:template name="makeSpace">
