@@ -66,10 +66,32 @@
             <eac-cpf:nameEntry xml:lang="en" scriptCode="Latn">
                <eac-cpf:part>International institute of human rights</eac-cpf:part>
             </eac-cpf:nameEntry>
-            <eac-cpf:nameEntry xml:lang="sp" scriptCode="Latn">
+            <eac-cpf:nameEntry xml:lang="es" scriptCode="Latn">
                <eac-cpf:part>Instituto internacional de derechos humanos</eac-cpf:part>
             </eac-cpf:nameEntry>
             <eac-cpf:authorizedForm>AFNOR_Z44-060</eac-cpf:authorizedForm>
+         </eac-cpf:nameEntryParallel>
+      </egXML>
+      <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+         <eac-cpf:nameEntryParallel xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:nameEntry localType="authorized">
+               <eac-cpf:part xml:lang="germ" localType="corpname">Bundeskanzleramt</eac-cpf:part>
+            </eac-cpf:nameEntry>
+            <eac-cpf:nameEntry localType="authorized">
+               <eac-cpf:part xml:lang="eng" localType="corpname">Federal Chancellery of Germany</eac-cpf:part>
+            </eac-cpf:nameEntry>
+            <eac-cpf:nameEntry localType="authorized">
+               <eac-cpf:part xml:lang="fre" localType="corpname">Chancellerie fédérale d'Allemagne</eac-cpf:part>
+            </eac-cpf:nameEntry>
+            <eac-cpf:nameEntry localType="abbreviation">
+               <eac-cpf:part xml:lang="ger" localType="corpname">BK</eac-cpf:part>
+            </eac-cpf:nameEntry>
+            <eac-cpf:useDates>
+               <eac-cpf:dateRange localType="open">
+                  <eac-cpf:fromDate standardDate="1949">1949</eac-cpf:fromDate>
+                  <eac-cpf:toDate>open</eac-cpf:toDate>
+               </eac-cpf:dateRange>
+            </eac-cpf:useDates>
          </eac-cpf:nameEntryParallel>
       </egXML>
    </div>
