@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><div xmlns="http://www.tei-c.org/ns/1.0"
+    xml:id="rightsDeclaration"
+    type="elementDocumentation">
+    <head>
+        <gi>rightsDeclaration</gi>
+    </head>
+    <div type="fullName">
+        <p xml:lang="eng">Rights Declaration (revised in 2010 Revised)</p>
+        
+    </div>
+    <div type="summary">
+        <p xml:lang="eng">An optional child element of <gi>control</gi> that indicates a standard rights statement associated with the EAC-CPF instance.</p>
+        
+    </div>
+    <div type="description" xml:lang="eng">
+        <p>Use <gi>rightsDeclaration</gi> to provide structured information about the usage rights of the EAC-CPF instance. <gi>rightsDeclaration</gi> should only be used to reference shared published licenses,
+            such as Creative Commons, RightsStatements.org, and published locally-defined licenses.</p>
+        <p><gi>abbr</gi> may be used to provide the abbreviated name for the rights statement. The value of <gi>abbr</gi> should align with the rights statements referenced by <gi>citation</gi> and
+            <gi>descriptiveNote</gi>.</p>
+        <p><gi>citation</gi> must be used to provide a machine-readable reference to a license statement (for example, a dereferenceable URI).</p>
+        <p><gi>descriptiveNote</gi> may be used to provide a human-readable description of the license statement.</p>
+    </div>
+    
+    <div type="mayContain">
+        <p>abbr, citation, descriptiveNote</p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>control</p>
+    </div>
+    <div type="attributes">
+        <p xml:lang="eng">
+            <list type="gloss">
+                <label>xml:id</label>
+                <item>Optional</item>
+                <label>xml:lang</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+            </list>
+        </p>
+        
+    </div>
+    <div type="occurrence">
+        <div type="mandatory">
+            <p>Optional</p>
+        </div>
+        <div type="repeatable">
+            <p>Repeatable</p>
+        </div>
+    </div>
+    <div type="examples">
+        <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+            <eac-cpf:rightsDeclaration xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:abbr languageCode="eng">CCO</eac-cpf:abbr>
+                <eac-cpf:citation href="https://creativecommons.org/publicdomain/zero/1.0/"/>
+                <eac-cpf:descriptiveNote>CCO 1.0 Universal (CCO 1.0)</eac-cpf:descriptiveNote>
+            </eac-cpf:rightsDeclaration>  
+        </egXML>
+    </div>
+</div>

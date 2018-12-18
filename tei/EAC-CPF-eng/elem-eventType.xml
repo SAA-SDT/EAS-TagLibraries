@@ -15,8 +15,8 @@
    </div>
    <div type="description" xml:lang="eng">
       <p>A required element within <gi>maintenanceEvent</gi> that identifies the type of maintenance event.
-								The available values are: "created", "revised", "updated", "deleted", "derived", or
-								"cancelled". A discursive description of the event may be given in the optional
+								The available values are: "created", "revised", "updated", "deleted", "derived",
+								"cancelled", or "unknown." A discursive description of the event may be given in the optional
 									<gi>eventDescription</gi> element.</p>
       <p>On first creation, the event type would be "created". A "derived" event type is available
 								to indicate that the record was derived from another descriptive system. If revisions were
@@ -30,7 +30,7 @@
    
    <div type="mayContain">
       <p>"cancelled" or "created" or "deleted" or "derived" or "revised" or
-							"updated"</p>
+         "unknown" (revised in 2010 Revised) or "updated"</p>
    </div>
    <div type="mayOccurWithin">
       <p>maintenanceEvent</p>

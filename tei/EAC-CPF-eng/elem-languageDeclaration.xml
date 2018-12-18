@@ -10,12 +10,11 @@
       
    </div>
    <div type="summary">
-      <p xml:lang="eng">The declaration of the predominant language and script used in the EAC-CPF
-							instance.</p>
+      <p xml:lang="eng">The declaration of the languages and scripts used in the EAC-CPF instance.</p>
       
    </div>
    <div type="description" xml:lang="eng">
-      <p>A wrapper element within <gi>control</gi> that declares the primary language and script
+      <p>A wrapper element within <gi>control</gi> that declares the languages and scripts
 								in which an EAC-CPF instance is written in the required <gi>language</gi> and
 									<gi>script</gi> elements. Any comments about the languages and scripts in which the
 								EAC-CPF instance is written may be included in the optional <gi>descriptiveNote</gi>
@@ -47,7 +46,7 @@
          <p>Optional</p>
       </div>
       <div type="repeatable">
-         <p>Non-repeatable</p>
+         <p>Repeatable (revised in 2010 Revised)</p>
       </div>
    </div>
    <div type="examples">

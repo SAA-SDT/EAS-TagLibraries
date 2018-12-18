@@ -49,18 +49,19 @@
          <p>Optional</p>
       </div>
       <div type="repeatable">
-         <p>Non-repeatable</p>
+         <p>Repeatable (revised in 2010 Revised)</p>
       </div>
    </div>
    <div type="examples">
       <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
          <eac-cpf:sources xmlns:eac-cpf="urn:isbn:1-931666-33-4">
             <eac-cpf:source>
-               <eac-cpf:sourceEntry>HMC, Principal Family and Estate Collections: Family Names L-W,
-                  1999</eac-cpf:sourceEntry>
+               <eac-cpf:sourceEntry>Cape Breton Development Corporation fonds</eac-cpf:sourceEntry>
+               <eac-cpf:sourceEntry>Fonds de la Société de développement du Cap-Breton</eac-cpf:sourceEntry>
             </eac-cpf:source>
             <eac-cpf:source>
-               <eac-cpf:sourceEntry>HMC, Complete Peerage, 1936</eac-cpf:sourceEntry>
+               <eac-cpf:sourceEntry>Royal Commission on Coal fonds</eac-cpf:sourceEntry>
+               <eac-cpf:sourceEntry>Fonds de la Commission royale d'enquête sur la houille</eac-cpf:sourceEntry>
             </eac-cpf:source>
          </eac-cpf:sources>
       </egXML>

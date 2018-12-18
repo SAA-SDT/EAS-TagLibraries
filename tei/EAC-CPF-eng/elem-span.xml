@@ -23,7 +23,7 @@
       <p>[text]</p>
    </div>
    <div type="mayOccurWithin">
-      <p>abstract, citation, componentEntry, item, p, sourceEntry</p>
+      <p>abstract, citation, item, p</p>
    </div>
    <div type="attributes">
       <p xml:lang="eng">
