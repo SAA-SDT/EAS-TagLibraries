@@ -16415,8 +16415,10 @@
          <div type="appendix" xml:id="appendixC">
             <head>Appendix C: Revision History</head>
             <div>
-               <p>EAD3 1.1.0 (2018 April)</p>
+               <!--<p>EAD3 1.1.0 (2018 April)</p>-->
+               <p>
                <list type="ordered">
+                  <head>EAD3 1.1.0 (2018 April)</head>
                   <item>The @render attribute can now be used with the quote element.</item>
                   <item>The objectxmlwrap element can now be validated properly in the XSD schemas.</item>
                   <item>Manually fixed a bug that was causing the descgrp element not to validate correctly in the undeprecated DTD.</item>
@@ -16425,12 +16427,16 @@
                   <item>The @localtype attribute can now be used with the conventiondeclaration element.</item>
                   <item>The datatype associated with the @containerid attribute has been relaxed to xsd:string (in EAD3 version 1.0, the datatype for this attribute was restricted to xsd:NMTOKEN).</item>
                </list>
+               </p>
             </div>
             <div>
-               <p>EAD3 1.0.0 (2015 July)</p>
+               <!--<p>EAD3 1.0.0 (2015 July)</p>-->
+               <p>
                <list type="ordered">
+                  <head>EAD3 1.0.0 (2015 July)</head>
                   <item>Initial release.</item>
                </list>
+               </p>
             </div>
          </div>
       </back>
