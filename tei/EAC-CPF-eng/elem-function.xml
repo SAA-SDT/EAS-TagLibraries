@@ -20,7 +20,7 @@
          activities, tasks, or transactions performed by the CPF entity described in the EAC-CPF instance. They may be drawn from
 								controlled vocabularies or may be natural language terms. Associated date or date range
 									(<gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi>) and place(s)
-									(<gi>placeEntry</gi>) may be included to further constrain the term’s meaning. A
+									(<gi>placeEntry</gi>) may be included to further constrain the term's meaning. A
 									<gi>descriptiveNote</gi> may be included if a textual explanation is needed.</p>
       <p>A single <gi>function</gi> element may be encoded directly within
 								<gi>description</gi>. Alternatively, multiple <gi>function</gi> elements may be grouped

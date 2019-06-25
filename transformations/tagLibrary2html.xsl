@@ -33,7 +33,7 @@
         <xsl:variable name="toctype">short</xsl:variable><!-- Used for the look of the toc Values: long | short -->
         <xsl:param name="spaceCharacter"> </xsl:param> <!-- For egxml formatting -->       
         <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
-        <xsl:variable name="TL">EAD</xsl:variable> <!-- For the cases of differnt TEI used and to give the TL name in some places. EAD | EAC-CPF | EAC-G | EAC-F | PREMIS -->
+        <xsl:variable name="TL">EAC-CPF</xsl:variable> <!-- For the cases of differnt TEI used and to give the TL name in some places. EAD | EAC-CPF | EAC-G | EAC-F | PREMIS -->
 
         <!-- Headingtranslations in an own xml-file using the currentLanguage to fetch them -->
         <!-- This only works with XSLT-enginee Saxon 6.5.5 -->
@@ -734,126 +734,43 @@
                         <xsl:value-of select="tei:p"/>                        
                 </div>
         </xsl:template>
-
-        <xsl:template name="tokenize">
-                <xsl:param name="text" select="."/>
-                <xsl:param name="separator" select="','"/>
-                <xsl:choose>
-                        <xsl:when test="not(contains($text, $separator))">
-                                <xsl:choose>
-                                        <xsl:when test="not(contains($text, '['))">
-                                                <a
-                                                  href="#{translate(normalize-space($text), ':','')}">
-                                                  <xsl:value-of select="normalize-space($text)"/>
-                                                </a>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                                <xsl:value-of select="normalize-space($text)"/>
-                                        </xsl:otherwise>
-                                </xsl:choose>
-                        </xsl:when>
-                        <xsl:otherwise>
-                                <xsl:choose>
-                                        <xsl:when test="not(contains($text, '['))">
-                                                <a
-                                                  href="#{translate(normalize-space(substring-before($text, $separator)), ':','')}">
-                                                  <xsl:value-of
-                                                  select="normalize-space(substring-before($text, $separator))"
-                                                  />
-                                                </a>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                                <xsl:value-of
-                                                  select="normalize-space(substring-before($text, $separator))"
-                                                />
-                                        </xsl:otherwise>
-                                </xsl:choose>
-                                <xsl:text>, </xsl:text>
-                                <xsl:call-template name="tokenize">
-                                        <xsl:with-param name="text"
-                                                select="substring-after($text, $separator)"/>
-                                </xsl:call-template>
-                        </xsl:otherwise>
-                </xsl:choose>
-        </xsl:template>
         
         <xsl:template name="elemtokenize">
                 <xsl:param name="text" select="."/>
                 <xsl:param name="separator" select="','"/>
                 <xsl:choose>
+                        <!-- we don't want to tokenize lists of string values -->
+                        <xsl:when test="contains($text, '&quot;') or contains($text, '[')">
+                            <xsl:value-of select="normalize-space($text)"/>
+                        </xsl:when>
+
+                        <!-- if we passed a single element to this template, strip parens from the URL and return it -->
                         <xsl:when test="not(contains($text, $separator))">
                                 <xsl:choose>
-                                        <xsl:when test="not(contains($text, '['))">
+                                            <xsl:when test="not(contains($text, '('))">
                                                 <a
                                                         href="#{translate(concat('elem-', normalize-space($text)), ':','')}">
                                                         <xsl:value-of select="normalize-space($text)"/>
                                                 </a>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                                <xsl:value-of select="normalize-space($text)"/>
-                                        </xsl:otherwise>
-                                </xsl:choose>
-                        </xsl:when>
-                        <xsl:otherwise>
-                                <xsl:choose>
-                                        <xsl:when test="not(contains($text, '['))">
+                                            </xsl:when>
+                                            <xsl:otherwise>
                                                 <a
-                                                        href="#{translate(concat('elem-', normalize-space(substring-before($text, $separator))), ':','')}">
+                                                        href="#{translate(concat('elem-', normalize-space(substring-before($text, '('))), ':','')}">
                                                         <xsl:value-of
-                                                                select="normalize-space(substring-before($text, $separator))"
+                                                                select="normalize-space($text)"
                                                         />
                                                 </a>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                                <xsl:value-of
-                                                        select="normalize-space(substring-before($text, $separator))"
-                                                />
-                                        </xsl:otherwise>
+                                            </xsl:otherwise>
                                 </xsl:choose>
-                                <xsl:text>, </xsl:text>
+                        </xsl:when>
+                        <!-- otherwise, split the string into the front element + rest of string and pass through this template again -->
+                        <xsl:otherwise>
                                 <xsl:call-template name="elemtokenize">
                                         <xsl:with-param name="text"
-                                                select="substring-after($text, $separator)"/>
+                                                select="substring-before($text, $separator)"/>
                                 </xsl:call-template>
-                        </xsl:otherwise>
-                </xsl:choose>
-        </xsl:template>
-        
-        <xsl:template name="attrtokenize">
-                <xsl:param name="text" select="."/>
-                <xsl:param name="separator" select="','"/>
-                <xsl:choose>
-                        <xsl:when test="not(contains($text, $separator))">
-                                <xsl:choose>
-                                        <xsl:when test="not(contains($text, '['))">
-                                                <a
-                                                        href="#{translate(concat('attr-', normalize-space($text)), ':','')}">
-                                                        <xsl:value-of select="normalize-space($text)"/>
-                                                </a>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                                <xsl:value-of select="normalize-space($text)"/>
-                                        </xsl:otherwise>
-                                </xsl:choose>
-                        </xsl:when>
-                        <xsl:otherwise>
-                                <xsl:choose>
-                                        <xsl:when test="not(contains($text, '['))">
-                                                <a
-                                                        href="#{translate(concat('attr-', normalize-space(substring-before($text, $separator))), ':','')}">
-                                                        <xsl:value-of
-                                                                select="normalize-space(substring-before($text, $separator))"
-                                                        />
-                                                </a>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                                <xsl:value-of
-                                                        select="normalize-space(substring-before($text, $separator))"
-                                                />
-                                        </xsl:otherwise>
-                                </xsl:choose>
                                 <xsl:text>, </xsl:text>
-                                <xsl:call-template name="attrtokenize">
+                                <xsl:call-template name="elemtokenize">
                                         <xsl:with-param name="text"
                                                 select="substring-after($text, $separator)"/>
                                 </xsl:call-template>

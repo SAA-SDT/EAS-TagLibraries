@@ -25,7 +25,7 @@
 									<gi>placeEntry</gi> element for recording relevant location information. A
 									<gi>descriptiveNote</gi> element may be included for a more detailed explanation of the relationship.</p>
       <p>The <att>cpfRelationType</att> attribute may be used to specify the nature of the
-									<gi>cpfRelation</gi> entity’s relationship to the entity described in the
+									<gi>cpfRelation</gi> entity's relationship to the entity described in the
 									EAC-CPF instance. Values are chosen from a closed list.</p>
    </div>
    

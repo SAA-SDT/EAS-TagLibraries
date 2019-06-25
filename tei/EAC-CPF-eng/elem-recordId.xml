@@ -23,7 +23,7 @@
    </div>
    
    <div type="mayContain">
-      <p>NMTOKEN</p>
+      <p>[NMTOKEN]</p>
    </div>
    <div type="mayOccurWithin">
       <p>control</p>
