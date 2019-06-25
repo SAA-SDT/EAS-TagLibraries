@@ -2107,6 +2107,24 @@
                <div type="mayOccurWithin">
                   <p>address</p>
                </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
                <div type="description">
                   <p>
                      <gi>addressline</gi> may be repeated as many times as necessary to enter all parts of an address.</p>
