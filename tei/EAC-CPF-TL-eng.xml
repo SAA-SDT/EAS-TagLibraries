@@ -6614,7 +6614,7 @@
             <p xml:lang="eng">Source</p>
           </div>
           <div type="summary">
-            <p xml:lang="eng">A source used for the establishement of the description of the CPF entity in the EAC-CPF instance.</p>
+            <p xml:lang="eng">A source used for the establishment of the description of the CPF entity in the EAC-CPF instance.</p>
           </div>
           <div type="description" xml:lang="eng">
             <p>An element for identifying a particular source of evidence used in describing the CPF entity. A record for the source must be included in either <gi>objectXMLWrap</gi> or
@@ -6778,10 +6778,10 @@
             <p xml:lang="eng">Sources</p>
           </div>
           <div type="summary">
-            <p xml:lang="eng">A grouping element to record of the sources used for the description of the CPF entity in the EAC-CPF instance. </p>
+            <p xml:lang="eng">A grouping element to record the sources used for the description of the CPF entity in the EAC-CPF instance. </p>
           </div>
           <div type="description" xml:lang="eng">
-            <p>A grouping element within <gi>control</gi> used to groupone or more sources consulted in creating the description of the CPF entityin the EAC-CPF instance.</p>
+            <p>A grouping element within <gi>control</gi> used to group one or more sources consulted in creating the description of the CPF entityin the EAC-CPF instance.</p>
           </div>
           <div type="mayContain">
             <p>source</p>
