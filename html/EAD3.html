@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:premis="http://www.loc.gov/premis/v3" xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en" xml:lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-      <title>EAD Tag Library</title>
+      <title>EAC-CPF Tag Library</title>
       <meta content="en" http-equiv="content-language"></meta>
       <link href="tagLibrary.css" rel="stylesheet" type="text/css"></link>
    </head>
@@ -11,7 +11,7 @@
       <div>
          <div>
             <div xmlns="" class="titlePage">
-               <div class="title">Encoded Archival Description Tag LibraryVersion EAD3 1.1.0</div>
+               <div class="title">Encoded Archival Description Tag LibraryVersion EAD3 1.1.1</div>
                <div class="edition">Edition 2018</div>
                <div class="edition">
                   <div>Prepared and maintained by</div>
@@ -22,9 +22,9 @@
                   <div class="image"><img src="../images/SAA.png" alt="SAA.png"></div>
                </div>
                <div>( 
-                  <div class="p">This tag library represents version EAD3 1.1.0 of the Encoded Archival Description
-                     schemas, released in April 2018. It supersedes the Version EAD3 1.0.0 tag library
-                     published in 2015.</div>
+                  <div class="p">This tag library represents version EAD3 1.1.1 of the Encoded Archival Description
+                     schemas, released in December 2019. It supersedes the Version EAD3 1.1.0 tag library
+                     published in 2018.</div>
                   <div class="p">The SAA Technical Subcommittee for Encoded Archival Standards is responsible for updating
                      and editing the EAD schemas and tag library.</div>
                   <div class="p">The Network Development and MARC Standards Office of the Library of Congress serves
@@ -37,10 +37,11 @@
             <div class="head03" id="toc">Table of Contents</div>
             <div xmlns="" class="toc1"><a href="#d1e76">Preface</a></div>
             <div xmlns="" class="toc1"><a href="#d1e293">Preface to Revision 1.1.0</a></div>
-            <div xmlns="" class="toc1"><a href="#d1e298">Tag Library Conventions</a></div>
-            <div xmlns="" class="toc1"><a href="#d1e356">Attributes</a></div>
+            <div xmlns="" class="toc1"><a href="#d1e298">Preface to Revision 1.1.1</a></div>
+            <div xmlns="" class="toc1"><a href="#d1e304">Tag Library Conventions</a></div>
+            <div xmlns="" class="toc1"><a href="#d1e362">Attributes</a></div>
             <div xmlns="" class="toc2"><span><a href="#attr-abbr">abbr</a> &nbsp; </span><span><a href="#attr-actuate">actuate</a> &nbsp; </span><span><a href="#attr-align">align</a> &nbsp; </span><span><a href="#attr-althead">althead</a> &nbsp; </span><span><a href="#attr-altrender">altrender</a> &nbsp; </span><span><a href="#attr-approximate">approximate</a> &nbsp; </span><span><a href="#attr-arcrole">arcrole</a> &nbsp; </span><span><a href="#attr-audience">audience</a> &nbsp; </span><span><a href="#attr-base">base</a> &nbsp; </span><span><a href="#attr-calendar">calendar</a> &nbsp; </span><span><a href="#attr-certainty">certainty</a> &nbsp; </span><span><a href="#attr-char">char</a> &nbsp; </span><span><a href="#attr-charoff">charoff</a> &nbsp; </span><span><a href="#attr-colname">colname</a> &nbsp; </span><span><a href="#attr-colnum">colnum</a> &nbsp; </span><span><a href="#attr-cols">cols</a> &nbsp; </span><span><a href="#attr-colsep">colsep</a> &nbsp; </span><span><a href="#attr-colwidth">colwidth</a> &nbsp; </span><span><a href="#attr-containerid">containerid</a> &nbsp; </span><span><a href="#attr-coordinatesystem">coordinatesystem</a> &nbsp; </span><span><a href="#attr-countrycode">countrycode</a> &nbsp; </span><span><a href="#attr-countryencoding">countryencoding</a> &nbsp; </span><span><a href="#attr-coverage">coverage</a> &nbsp; </span><span><a href="#attr-daotype">daotype</a> &nbsp; </span><span><a href="#attr-datechar">datechar</a> &nbsp; </span><span><a href="#attr-dateencoding">dateencoding</a> &nbsp; </span><span><a href="#attr-dsctype">dsctype</a> &nbsp; </span><span><a href="#attr-encodinganalog">encodinganalog</a> &nbsp; </span><span><a href="#attr-entityref">entityref</a> &nbsp; </span><span><a href="#attr-era">era</a> &nbsp; </span><span><a href="#attr-expan">expan</a> &nbsp; </span><span><a href="#attr-frame">frame</a> &nbsp; </span><span><a href="#attr-href">href</a> &nbsp; </span><span><a href="#attr-id">id</a> &nbsp; </span><span><a href="#attr-identifier">identifier</a> &nbsp; </span><span><a href="#attr-instanceurl">instanceurl</a> &nbsp; </span><span><a href="#attr-label">label</a> &nbsp; </span><span><a href="#attr-lang">lang</a> &nbsp; </span><span><a href="#attr-langcode">langcode</a> &nbsp; </span><span><a href="#attr-langencoding">langencoding</a> &nbsp; </span><span><a href="#attr-lastdatetimeverified">lastdatetimeverified</a> &nbsp; </span><span><a href="#attr-level">level</a> &nbsp; </span><span><a href="#attr-linkrole">linkrole</a> &nbsp; </span><span><a href="#attr-linktitle">linktitle</a> &nbsp; </span><span><a href="#attr-listtype">listtype</a> &nbsp; </span><span><a href="#attr-localtype">localtype</a> &nbsp; </span><span><a href="#attr-mark">mark</a> &nbsp; </span><span><a href="#attr-morerows">morerows</a> &nbsp; </span><span><a href="#attr-nameend">nameend</a> &nbsp; </span><span><a href="#attr-namest">namest</a> &nbsp; </span><span><a href="#attr-normal">normal</a> &nbsp; </span><span><a href="#attr-notafter">notafter</a> &nbsp; </span><span><a href="#attr-notbefore">notbefore</a> &nbsp; </span><span><a href="#attr-numeration">numeration</a> &nbsp; </span><span><a href="#attr-otherdaotype">otherdaotype</a> &nbsp; </span><span><a href="#attr-otherdsctype">otherdsctype</a> &nbsp; </span><span><a href="#attr-otherlevel">otherlevel</a> &nbsp; </span><span><a href="#attr-otherphysdescstructuredtype">otherphysdescstructuredtype</a> &nbsp; </span><span><a href="#attr-otherrelationtype">otherrelationtype</a> &nbsp; </span><span><a href="#attr-parallel">parallel</a> &nbsp; </span><span><a href="#attr-parent">parent</a> &nbsp; </span><span><a href="#attr-pgwide">pgwide</a> &nbsp; </span><span><a href="#attr-physdescstructuredtype">physdescstructuredtype</a> &nbsp; </span><span><a href="#attr-relatedencoding">relatedencoding</a> &nbsp; </span><span><a href="#attr-relationtype">relationtype</a> &nbsp; </span><span><a href="#attr-relator">relator</a> &nbsp; </span><span><a href="#attr-render">render</a> &nbsp; </span><span><a href="#attr-repositorycode">repositorycode</a> &nbsp; </span><span><a href="#attr-repositoryencoding">repositoryencoding</a> &nbsp; </span><span><a href="#attr-rowsep">rowsep</a> &nbsp; </span><span><a href="#attr-rules">rules</a> &nbsp; </span><span><a href="#attr-script">script</a> &nbsp; </span><span><a href="#attr-scriptcode">scriptcode</a> &nbsp; </span><span><a href="#attr-scriptencoding">scriptencoding</a> &nbsp; </span><span><a href="#attr-show">show</a> &nbsp; </span><span><a href="#attr-source">source</a> &nbsp; </span><span><a href="#attr-standarddate">standarddate</a> &nbsp; </span><span><a href="#attr-standarddatetime">standarddatetime</a> &nbsp; </span><span><a href="#attr-target">target</a> &nbsp; </span><span><a href="#attr-transliteration">transliteration</a> &nbsp; </span><span><a href="#attr-unit">unit</a> &nbsp; </span><span><a href="#attr-unitdatetype">unitdatetype</a> &nbsp; </span><span><a href="#attr-valign">valign</a> &nbsp; </span><span><a href="#attr-value">value</a> &nbsp; </span><span><a href="#attr-xpointer">xpointer</a> &nbsp; </span></div>
-            <div xmlns="" class="toc1"><a href="#d1e1928">Elements</a></div>
+            <div xmlns="" class="toc1"><a href="#d1e1934">Elements</a></div>
             <div xmlns="" class="toc2"><span><a href="#elem-abbr">abbr</a> &nbsp; </span><span><a href="#elem-abstract">abstract</a> &nbsp; </span><span><a href="#elem-accessrestrict">accessrestrict</a> &nbsp; </span><span><a href="#elem-accruals">accruals</a> &nbsp; </span><span><a href="#elem-acqinfo">acqinfo</a> &nbsp; </span><span><a href="#elem-address">address</a> &nbsp; </span><span><a href="#elem-addressline">addressline</a> &nbsp; </span><span><a href="#elem-agencycode">agencycode</a> &nbsp; </span><span><a href="#elem-agencyname">agencyname</a> &nbsp; </span><span><a href="#elem-agent">agent</a> &nbsp; </span><span><a href="#elem-agenttype">agenttype</a> &nbsp; </span><span><a href="#elem-altformavail">altformavail</a> &nbsp; </span><span><a href="#elem-appraisal">appraisal</a> &nbsp; </span><span><a href="#elem-archdesc">archdesc</a> &nbsp; </span><span><a href="#elem-archref">archref</a> &nbsp; </span><span><a href="#elem-arrangement">arrangement</a> &nbsp; </span><span><a href="#elem-author">author</a> &nbsp; </span><span><a href="#elem-bibliography">bibliography</a> &nbsp; </span><span><a href="#elem-bibref">bibref</a> &nbsp; </span><span><a href="#elem-bioghist">bioghist</a> &nbsp; </span><span><a href="#elem-blockquote">blockquote</a> &nbsp; </span><span><a href="#elem-c">c</a> &nbsp; </span><span><a href="#elem-c01">c01</a> &nbsp; </span><span><a href="#elem-c02">c02</a> &nbsp; </span><span><a href="#elem-c03">c03</a> &nbsp; </span><span><a href="#elem-c04">c04</a> &nbsp; </span><span><a href="#elem-c05">c05</a> &nbsp; </span><span><a href="#elem-c06">c06</a> &nbsp; </span><span><a href="#elem-c07">c07</a> &nbsp; </span><span><a href="#elem-c08">c08</a> &nbsp; </span><span><a href="#elem-c09">c09</a> &nbsp; </span><span><a href="#elem-c10">c10</a> &nbsp; </span><span><a href="#elem-c11">c11</a> &nbsp; </span><span><a href="#elem-c12">c12</a> &nbsp; </span><span><a href="#elem-chronitem">chronitem</a> &nbsp; </span><span><a href="#elem-chronitemset">chronitemset</a> &nbsp; </span><span><a href="#elem-chronlist">chronlist</a> &nbsp; </span><span><a href="#elem-citation">citation</a> &nbsp; </span><span><a href="#elem-colspec">colspec</a> &nbsp; </span><span><a href="#elem-container">container</a> &nbsp; </span><span><a href="#elem-control">control</a> &nbsp; </span><span><a href="#elem-controlaccess">controlaccess</a> &nbsp; </span><span><a href="#elem-controlnote">controlnote</a> &nbsp; </span><span><a href="#elem-conventiondeclaration">conventiondeclaration</a> &nbsp; </span><span><a href="#elem-corpname">corpname</a> &nbsp; </span><span><a href="#elem-custodhist">custodhist</a> &nbsp; </span><span><a href="#elem-dao">dao</a> &nbsp; </span><span><a href="#elem-daoset">daoset</a> &nbsp; </span><span><a href="#elem-date">date</a> &nbsp; </span><span><a href="#elem-daterange">daterange</a> &nbsp; </span><span><a href="#elem-dateset">dateset</a> &nbsp; </span><span><a href="#elem-datesingle">datesingle</a> &nbsp; </span><span><a href="#elem-defitem">defitem</a> &nbsp; </span><span><a href="#elem-descriptivenote">descriptivenote</a> &nbsp; </span><span><a href="#elem-did">did</a> &nbsp; </span><span><a href="#elem-didnote">didnote</a> &nbsp; </span><span><a href="#elem-dimensions">dimensions</a> &nbsp; </span><span><a href="#elem-dsc">dsc</a> &nbsp; </span><span><a href="#elem-ead">ead</a> &nbsp; </span><span><a href="#elem-edition">edition</a> &nbsp; </span><span><a href="#elem-editionstmt">editionstmt</a> &nbsp; </span><span><a href="#elem-emph">emph</a> &nbsp; </span><span><a href="#elem-entry">entry</a> &nbsp; </span><span><a href="#elem-event">event</a> &nbsp; </span><span><a href="#elem-eventdatetime">eventdatetime</a> &nbsp; </span><span><a href="#elem-eventdescription">eventdescription</a> &nbsp; </span><span><a href="#elem-eventtype">eventtype</a> &nbsp; </span><span><a href="#elem-expan">expan</a> &nbsp; </span><span><a href="#elem-famname">famname</a> &nbsp; </span><span><a href="#elem-filedesc">filedesc</a> &nbsp; </span><span><a href="#elem-fileplan">fileplan</a> &nbsp; </span><span><a href="#elem-footnote">footnote</a> &nbsp; </span><span><a href="#elem-foreign">foreign</a> &nbsp; </span><span><a href="#elem-fromdate">fromdate</a> &nbsp; </span><span><a href="#elem-function">function</a> &nbsp; </span><span><a href="#elem-genreform">genreform</a> &nbsp; </span><span><a href="#elem-geogname">geogname</a> &nbsp; </span><span><a href="#elem-geographiccoordinates">geographiccoordinates</a> &nbsp; </span><span><a href="#elem-head">head</a> &nbsp; </span><span><a href="#elem-head01">head01</a> &nbsp; </span><span><a href="#elem-head02">head02</a> &nbsp; </span><span><a href="#elem-head03">head03</a> &nbsp; </span><span><a href="#elem-index">index</a> &nbsp; </span><span><a href="#elem-indexentry">indexentry</a> &nbsp; </span><span><a href="#elem-item">item</a> &nbsp; </span><span><a href="#elem-label">label</a> &nbsp; </span><span><a href="#elem-langmaterial">langmaterial</a> &nbsp; </span><span><a href="#elem-language">language</a> &nbsp; </span><span><a href="#elem-languagedeclaration">languagedeclaration</a> &nbsp; </span><span><a href="#elem-languageset">languageset</a> &nbsp; </span><span><a href="#elem-lb">lb</a> &nbsp; </span><span><a href="#elem-legalstatus">legalstatus</a> &nbsp; </span><span><a href="#elem-list">list</a> &nbsp; </span><span><a href="#elem-listhead">listhead</a> &nbsp; </span><span><a href="#elem-localcontrol">localcontrol</a> &nbsp; </span><span><a href="#elem-localtypedeclaration">localtypedeclaration</a> &nbsp; </span><span><a href="#elem-maintenanceagency">maintenanceagency</a> &nbsp; </span><span><a href="#elem-maintenanceevent">maintenanceevent</a> &nbsp; </span><span><a href="#elem-maintenancehistory">maintenancehistory</a> &nbsp; </span><span><a href="#elem-maintenancestatus">maintenancestatus</a> &nbsp; </span><span><a href="#elem-materialspec">materialspec</a> &nbsp; </span><span><a href="#elem-name">name</a> &nbsp; </span><span><a href="#elem-namegrp">namegrp</a> &nbsp; </span><span><a href="#elem-notestmt">notestmt</a> &nbsp; </span><span><a href="#elem-num">num</a> &nbsp; </span><span><a href="#elem-objectxmlwrap">objectxmlwrap</a> &nbsp; </span><span><a href="#elem-occupation">occupation</a> &nbsp; </span><span><a href="#elem-odd">odd</a> &nbsp; </span><span><a href="#elem-originalsloc">originalsloc</a> &nbsp; </span><span><a href="#elem-origination">origination</a> &nbsp; </span><span><a href="#elem-otheragencycode">otheragencycode</a> &nbsp; </span><span><a href="#elem-otherfindaid">otherfindaid</a> &nbsp; </span><span><a href="#elem-otherrecordid">otherrecordid</a> &nbsp; </span><span><a href="#elem-p">p</a> &nbsp; </span><span><a href="#elem-part">part</a> &nbsp; </span><span><a href="#elem-persname">persname</a> &nbsp; </span><span><a href="#elem-physdesc">physdesc</a> &nbsp; </span><span><a href="#elem-physdescset">physdescset</a> &nbsp; </span><span><a href="#elem-physdescstructured">physdescstructured</a> &nbsp; </span><span><a href="#elem-physfacet">physfacet</a> &nbsp; </span><span><a href="#elem-physloc">physloc</a> &nbsp; </span><span><a href="#elem-phystech">phystech</a> &nbsp; </span><span><a href="#elem-prefercite">prefercite</a> &nbsp; </span><span><a href="#elem-processinfo">processinfo</a> &nbsp; </span><span><a href="#elem-ptr">ptr</a> &nbsp; </span><span><a href="#elem-ptrgrp">ptrgrp</a> &nbsp; </span><span><a href="#elem-publicationstatus">publicationstatus</a> &nbsp; </span><span><a href="#elem-publicationstmt">publicationstmt</a> &nbsp; </span><span><a href="#elem-publisher">publisher</a> &nbsp; </span><span><a href="#elem-quantity">quantity</a> &nbsp; </span><span><a href="#elem-quote">quote</a> &nbsp; </span><span><a href="#elem-recordid">recordid</a> &nbsp; </span><span><a href="#elem-ref">ref</a> &nbsp; </span><span><a href="#elem-relatedmaterial">relatedmaterial</a> &nbsp; </span><span><a href="#elem-relation">relation</a> &nbsp; </span><span><a href="#elem-relationentry">relationentry</a> &nbsp; </span><span><a href="#elem-relations">relations</a> &nbsp; </span><span><a href="#elem-repository">repository</a> &nbsp; </span><span><a href="#elem-representation">representation</a> &nbsp; </span><span><a href="#elem-rightsdeclaration">rightsdeclaration</a> &nbsp; </span><span><a href="#elem-row">row</a> &nbsp; </span><span><a href="#elem-scopecontent">scopecontent</a> &nbsp; </span><span><a href="#elem-script">script</a> &nbsp; </span><span><a href="#elem-separatedmaterial">separatedmaterial</a> &nbsp; </span><span><a href="#elem-seriesstmt">seriesstmt</a> &nbsp; </span><span><a href="#elem-source">source</a> &nbsp; </span><span><a href="#elem-sourceentry">sourceentry</a> &nbsp; </span><span><a href="#elem-sources">sources</a> &nbsp; </span><span><a href="#elem-sponsor">sponsor</a> &nbsp; </span><span><a href="#elem-subject">subject</a> &nbsp; </span><span><a href="#elem-subtitle">subtitle</a> &nbsp; </span><span><a href="#elem-table">table</a> &nbsp; </span><span><a href="#elem-tbody">tbody</a> &nbsp; </span><span><a href="#elem-term">term</a> &nbsp; </span><span><a href="#elem-tgroup">tgroup</a> &nbsp; </span><span><a href="#elem-thead">thead</a> &nbsp; </span><span><a href="#elem-title">title</a> &nbsp; </span><span><a href="#elem-titleproper">titleproper</a> &nbsp; </span><span><a href="#elem-titlestmt">titlestmt</a> &nbsp; </span><span><a href="#elem-todate">todate</a> &nbsp; </span><span><a href="#elem-unitdate">unitdate</a> &nbsp; </span><span><a href="#elem-unitdatestructured">unitdatestructured</a> &nbsp; </span><span><a href="#elem-unitid">unitid</a> &nbsp; </span><span><a href="#elem-unittitle">unittitle</a> &nbsp; </span><span><a href="#elem-unittype">unittype</a> &nbsp; </span><span><a href="#elem-userestrict">userestrict</a> &nbsp; </span></div>
             <div xmlns="" class="toc1"><a href="#appendix-AppendixAEADCrosswalks">Appendix A : EAD Crosswalks</a></div>
             <div xmlns="" class="toc2"><span><a href="#appendix-ISAD(G)toEAD3">ISAD(G) to EAD3</a> &nbsp; </span><span><a href="#appendix-MARC21toEAD3">MARC21 to EAD3</a> &nbsp; </span><span><a href="#appendix-MODStoEAD3">MODS to EAD3</a> &nbsp; </span></div>
@@ -283,11 +284,11 @@
                   <div class="head03">Preface to Revision 1.1.0&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="p">EAD3 underwent its first revision from 2018 January 16 to 2018 February 28 in order
                      to address schema errors and expand the standard's element set. This revision consisted
-                     of seven changes - one new element
-                     (rightsdeclaration), two schema bugfixes, and four datatype/attribute extensions.
+                     of seven changes - one new
+                     element (rightsdeclaration), two schema bugfixes, and four datatype/attribute extensions.
                      These changes reflect feedback on the EAD3 1.0.0 release and accomodate requirements
-                     for data sharing set forth by
-                     consortial members.</div>
+                     for data sharing set forth
+                     by consortial members.</div>
                   <div class="p">EAD3 Revision 1.1.0 sets a new policy for schema releases, in which smaller updates
                      and fixes can be released on a regular basis. These changes will not invalidate existing
                      records, nor will it break
@@ -296,6 +297,11 @@
                      Archival Standards (TS-EAS), following a period of feedback in January-February 2018.</div>
                </div>
                <div id="d1e298">
+                  <div class="head03">Preface to Revision 1.1.1&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
+                  <div class="p">EAD3 underwent its first patch revision in 2019.  This patch includes one change to
+                     the &lt;ref&gt; element and two fixes to the XSD schema.</div>
+               </div>
+               <div id="d1e304">
                   <div class="head03">Tag Library Conventions&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="p">The EAD Elements section of the Tag Library contains descriptions of 165 elements,
                      arranged alphabetically by element name. It presents information for each element
@@ -385,7 +391,7 @@
             </div>
          </div>
          <div>
-            <div xmlns="" class="section" id="d1e356">
+            <div xmlns="" class="section" id="d1e362">
                <div class="head03">Attributes</div>
                <div class="head03">Introduction&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                <div class="p">Attributes are associated with most of the elements contained in EAD. Attributes reflect
@@ -756,7 +762,7 @@
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
-                     <div class="p">string (revised in 1.1.0)</div>
+                     <div class="p">string</div>
                   </div>
                </div>
                <div class="spacer">&nbsp;</div>
@@ -1516,8 +1522,8 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">Controls the formatting of the content of an element for display and print purposes.
-                        Available in &lt;emph&gt;, &lt;foreign&gt;, &lt;quote&gt; (revised in 1.1.0), &lt;title&gt;, and &lt;titleproper&gt;. See also
-                        altrender.</div>
+                        Available in &lt;emph&gt;, &lt;foreign&gt;, &lt;quote&gt;, &lt;title&gt;, and
+                        &lt;titleproper&gt;. See also altrender.</div>
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
@@ -1818,7 +1824,7 @@
                   </div>
                </div>
                <div class="spacer">&nbsp;</div>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
-            <div xmlns="" class="section" id="d1e1928">
+            <div xmlns="" class="section" id="d1e1934">
                <div class="head03">Elements</div>
                <div class="element">
                   <div class="leftcol" id="elem-abbr"><span class="label">&lt;abbr&gt;</span></div>
@@ -2534,7 +2540,23 @@
                   <div class="content">
                      <div class="p">Required, not repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Examples:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceevent&gt;
+                        <div class="innerExample">&lt;eventtype value="created"&gt;&lt;/eventtype&gt;<br></div>
+                        <div class="innerExample">&lt;eventdatetime standarddatetime="2006-10"&gt;October 2006&lt;/eventdatetime&gt;<br></div>
+                        <div class="innerExample">&lt;agenttype value="human"&gt;&lt;/agenttype&gt;<br></div>
+                        <div class="innerExample">&lt;agent&gt;Michael Rush&lt;/agent&gt;<br></div>
+                        <div class="innerExample">&lt;eventdescription&gt;Finding aid created.&lt;/eventdescription&gt;<br></div>&lt;/maintenanceevent&gt;<br></div><br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceevent&gt;
+                        <div class="innerExample">&lt;eventtype value="created"&gt;&lt;/eventtype&gt;<br></div>
+                        <div class="innerExample">&lt;eventdatetime standarddatetime="2006-10"&gt;October 2006&lt;/eventdatetime&gt;<br></div>
+                        <div class="innerExample">&lt;agenttype value="machine"&gt;&lt;/agenttype&gt;<br></div>
+                        <div class="innerExample">&lt;agent&gt;Beinecke Library Edix/Wordix macros&lt;/agent&gt;<br></div>
+                        <div class="innerExample">&lt;eventdescription&gt;Encoded in EAD 1.0.&lt;/eventdescription&gt;<br></div>&lt;/maintenanceevent&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-agenttype"><span class="label">&lt;agenttype&gt;</span></div>
                   <div class="content"><span class="label">Agent Type</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -2588,7 +2610,23 @@
                   <div class="content">
                      <div class="p">Required, not repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Examples:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceevent&gt;
+                        <div class="innerExample">&lt;eventtype value="created"&gt;&lt;/eventtype&gt;<br></div>
+                        <div class="innerExample">&lt;eventdatetime standarddatetime="2006-10"&gt;October 2006&lt;/eventdatetime&gt;<br></div>
+                        <div class="innerExample">&lt;agenttype value="human"&gt;&lt;/agenttype&gt;<br></div>
+                        <div class="innerExample">&lt;agent&gt;Michael Rush&lt;/agent&gt;<br></div>
+                        <div class="innerExample">&lt;eventdescription&gt;Finding aid created.&lt;/eventdescription&gt;<br></div>&lt;/maintenanceevent&gt;<br></div><br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceevent&gt;
+                        <div class="innerExample">&lt;eventtype value="created"&gt;&lt;/eventtype&gt;<br></div>
+                        <div class="innerExample">&lt;eventdatetime standarddatetime="2006-10"&gt;October 2006&lt;/eventdatetime&gt;<br></div>
+                        <div class="innerExample">&lt;agenttype value="machine"&gt;&lt;/agenttype&gt;<br></div>
+                        <div class="innerExample">&lt;agent&gt;Beinecke Library Edix/Wordix macros&lt;/agent&gt;<br></div>
+                        <div class="innerExample">&lt;eventdescription&gt;Encoded in EAD 1.0.&lt;/eventdescription&gt;<br></div>&lt;/maintenanceevent&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-altformavail"><span class="label">&lt;altformavail&gt;</span></div>
                   <div class="content"><span class="label">Alternative Form Available</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -2836,7 +2874,15 @@
                   <div class="content">
                      <div class="p">Required, not repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div><br></div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;archdesc level="fonds" localtype="inventory" relatedencoding="ISAD(G)v2" encodinganalog="3.1.4" lang="dut" script="Latn"&gt;
+                        <div class="innerExample">&lt;did&gt;
+                           <div class="innerExample">&lt;unittitle encodinganalog="3.1.2"&gt;Nederlandsche Gist- en Spiritusfabriek en Pharmaceutische Fabrieken voorheen Brocades-Stheeman
+                              &amp; Pharmacia, in 1967 gefuseerd tot
+                              Gist-Brocades&lt;/unittitle&gt;<br></div>
+                           <div class="innerExample">&lt;unitdate calendar="gregorian" era="ce" encodinganalog="3.1.3" normal="1860/1967"&gt; 1860-1967 (1987)&lt;/unitdate&gt;<br></div>&lt;/did&gt;<br></div> [...] &lt;/archdesc&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-archref"><span class="label">&lt;archref&gt;</span></div>
                   <div class="content"><span class="label">Archival Reference</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4254,7 +4300,7 @@
                   <div class="leftcol">See also: </div>
                   <div class="content">The element definition for &lt;c&gt;.<br><br></div>
                   <div class="leftcol">May contain: </div>
-                  <div class="content"><a href="#elem-accessrestrict">accessrestrict</a>, <a href="#elem-accruals">accruals</a>, <a href="#elem-acqinfo">acqinfo</a>, <a href="#elem-altformavail">altformavail</a>, <a href="#elem-appraisal">appraisal</a>, <a href="#elem-arrangement">arrangement</a>, <a href="#elem-bibliography">bibliography</a>, <a href="#elem-bioghist">bioghist</a>, <a href="#elem-controlaccess">controlaccess</a>, <a href="#elem-custodhist">custodhist</a>, <a href="#elem-did">did</a>, <a href="#elem-fileplan">fileplan</a>, <a href="#elem-head">head</a>, <a href="#elem-index">index</a>, <a href="#elem-legalstatus">legalstatus</a>, <a href="#elem-odd">odd</a>, <a href="#elem-originalsloc">originalsloc</a>, <a href="#elem-otherfindaid">otherfindaid</a>, <a href="#elem-phystech">phystech</a>, <a href="#elem-prefercite">prefercite</a>, <a href="#elem-processinfo">processinfo</a>, <a href="#elem-relatedmaterial">relatedmaterial</a>, <a href="#elem-relations">relations</a>, <a href="#elem-scopecontent">scopecontent</a>, <a href="#elem-separatedmaterial">separatedmaterial</a>, <a href="#elem-thead">thead</a>, <a href="#elem-userestrict">userestrict</a></div>
+                  <div class="content"><a href="#elem-accessrestrict">accessrestrict</a>, <a href="#elem-accruals">accruals</a>, <a href="#elem-acqinfo">acqinfo</a>, <a href="#elem-altformavail">altformavail</a>, <a href="#elem-appraisal">appraisal</a>, <a href="#elem-arrangement">arrangement</a>, <a href="#elem-bibliography">bibliography</a>, <a href="#elem-bioghist">bioghist</a>, <a href="#elem-controlaccess">controlaccess</a>, <a href="#elem-custodhist">custodhist</a>, <a href="#elem-did">did</a>, <a href="#elem-fileplan">fileplan</a>, <a href="#elem-head">head</a>, <a href="#elem-index">index</a>, <a href="#elem-legalstatus">legalstatus</a>, <a href="#elem-odd">odd</a>, <a href="#elem-originalsloc">originalsloc</a>, <a href="#elem-otherfindaid">otherfindaid</a>, <a href="#elem-phystech">phystech</a>, <a href="#elem-prefercite">prefercite</a>, <a href="#elem-processinfo">processinfo</a>, <a href="#elem-relatedmaterial">relatedmaterial</a>, <a href="#elem-relations">relations</a>, <a href="#elem-scopecontent">scopecontent</a>, <a href="#elem-separatedmaterial">separatedmaterial</a>, <a href="#elem-userestrict">userestrict</a></div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-c11">c11</a></div>
                   <div class="leftcol">Description and Usage: </div>
@@ -4745,7 +4791,24 @@
                   <div class="content">
                      <div class="p">Optional, repeatable </div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;table frame="none"&gt;
+                        <div class="innerExample">&lt;tgroup cols="3"&gt;
+                           <div class="innerExample">&lt;colspec colnum="1" colname="1" align="left" colwidth="50pt"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;colspec colnum="2" colname="2" align="left" colwidth="50pt"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;colspec colnum="3" colname="3" align="left" colwidth="50pt"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;thead&gt;
+                              <div class="innerExample">&lt;row&gt;
+                                 <div class="innerExample">&lt;entry colname="1"&gt;Major Family Members&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="2"&gt;Spouses&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="3"&gt;Children&lt;/entry&gt;<br></div>&lt;/row&gt;<br></div>&lt;/thead&gt;<br></div>
+                           <div class="innerExample">&lt;tbody&gt;
+                              <div class="innerExample">&lt;row&gt;
+                                 <div class="innerExample">&lt;entry colname="1"&gt;John Albemarle (1760-1806)&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="2"&gt;Mary Frances Delaney (1769-1835)&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="3"&gt;John Delaney Albemarle (1787-1848)&lt;/entry&gt;<br></div>&lt;/row&gt;<br></div> . . . &lt;/tbody&gt;<br></div>&lt;/tgroup&gt;<br></div>&lt;/table&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-container"><span class="label">&lt;container&gt;</span></div>
                   <div class="content"><span class="label">Container</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4882,7 +4945,7 @@
                      further information regarding the language codes used in the instance should be supplied
                      in &lt;conventiondeclaration&gt;.<br><br></div>
                   <div class="leftcol">May contain: </div>
-                  <div class="content"><a href="#elem-conventiondeclaration">conventiondeclaration</a>, <a href="#elem-filedesc">filedesc</a>, <a href="#elem-languagedeclaration">languagedeclaration</a>, <a href="#elem-localcontrol">localcontrol</a>, <a href="#elem-localtypedeclaration">localtypedeclaration</a>, <a href="#elem-maintenanceagency">maintenanceagency</a>, <a href="#elem-maintenancehistory">maintenancehistory</a>, <a href="#elem-maintenancestatus">maintenancestatus</a>, <a href="#elem-otherrecordid">otherrecordid</a>, <a href="#elem-publicationstatus">publicationstatus</a>, <a href="#elem-recordid">recordid</a>, <a href="#elem-representation">representation</a>, <a href="#elem-rightsdeclaration">rightsdeclaration (revised in v1.1.0)</a>, <a href="#elem-sources">sources</a></div>
+                  <div class="content"><a href="#elem-conventiondeclaration">conventiondeclaration</a>, <a href="#elem-filedesc">filedesc</a>, <a href="#elem-languagedeclaration">languagedeclaration</a>, <a href="#elem-localcontrol">localcontrol</a>, <a href="#elem-localtypedeclaration">localtypedeclaration</a>, <a href="#elem-maintenanceagency">maintenanceagency</a>, <a href="#elem-maintenancehistory">maintenancehistory</a>, <a href="#elem-maintenancestatus">maintenancestatus</a>, <a href="#elem-otherrecordid">otherrecordid</a>, <a href="#elem-publicationstatus">publicationstatus</a>, <a href="#elem-recordid">recordid</a>, <a href="#elem-representation">representation</a>, <a href="#elem-rightsdeclaration">rightsdeclaration</a>, <a href="#elem-sources">sources</a></div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-ead">ead</a></div>
                   <div class="leftcol">Description and Usage: </div>
@@ -5131,7 +5194,7 @@
                      <div class="centercol"><a href="#attr-lang">lang</a></div>
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist">&nbsp;</div>
-                     <div class="centercol"><a href="#attr-localtype (revised in 1.1.0)">localtype (revised in 1.1.0)</a></div>
+                     <div class="centercol"><a href="#attr-localtype">localtype</a></div>
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist">&nbsp;</div>
                      <div class="centercol"><a href="#attr-script">script</a></div>
@@ -5570,7 +5633,7 @@
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text], abbr, emph, expan, foreign, lb, ptr, ref</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-archref">archref</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-item">item</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part (revised in 1.1.0)</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-publicationstmt">publicationstmt</a>, <a href="#elem-ref">ref</a>, <a href="#elem-unittitle">unittitle</a></div>
+                  <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-archref">archref</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-item">item</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-publicationstmt">publicationstmt</a>, <a href="#elem-ref">ref</a>, <a href="#elem-unittitle">unittitle</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">Use &lt;date&gt; to highlight any dates that merit encoding and are not more appropriately encoded
@@ -6505,7 +6568,15 @@
                   <div class="content">
                      <div class="p">Within &lt;editionstmt&gt;, one of &lt;edition&gt; or &lt;p&gt; is required, repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;filedesc&gt;
+                        <div class="innerExample">&lt;titlestmt&gt;
+                           <div class="innerExample">&lt;titleproper&gt;Register of the Emily Higby Collection&lt;/titleproper&gt;<br></div>&lt;/titlestmt&gt;<br></div>
+                        <div class="innerExample">&lt;editionstmt&gt;
+                           <div class="innerExample">&lt;edition&gt;2nd ed.&lt;/edition&gt;<br></div>
+                           <div class="innerExample">&lt;p&gt;This edition reflects substantial additions to the collection in 1994.&lt;/p&gt;<br></div>&lt;/editionstmt&gt;<br></div>&lt;/filedesc&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-editionstmt"><span class="label">&lt;editionstmt&gt;</span></div>
                   <div class="content"><span class="label">Edition Statement</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6548,7 +6619,15 @@
                   <div class="content">
                      <div class="p">Optional, not repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;filedesc&gt;
+                        <div class="innerExample">&lt;titlestmt&gt;
+                           <div class="innerExample">&lt;titleproper&gt;Register of the Emily Higby Collection&lt;/titleproper&gt;<br></div>&lt;/titlestmt&gt;<br></div>
+                        <div class="innerExample">&lt;editionstmt&gt;
+                           <div class="innerExample">&lt;edition&gt;2nd ed.&lt;/edition&gt;<br></div>
+                           <div class="innerExample">&lt;p&gt;This edition reflects substantial additions to the collection in 1994.&lt;/p&gt;<br></div>&lt;/editionstmt&gt;<br></div>&lt;/filedesc&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-emph"><span class="label">&lt;emph&gt;</span></div>
                   <div class="content"><span class="label">Emphasis</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6895,7 +6974,14 @@
                   <div class="content">
                      <div class="p">Optional, repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceevent&gt;
+                        <div class="innerExample">&lt;eventtype value="created"&gt;&lt;/eventtype&gt;<br></div>
+                        <div class="innerExample">&lt;eventdatetime standarddatetime="2006-10"&gt;October 2006&lt;/eventdatetime&gt;<br></div>
+                        <div class="innerExample">&lt;agenttype value="human"&gt;&lt;/agenttype&gt;<br></div>
+                        <div class="innerExample">&lt;agent&gt;Michael Rush&lt;/agent&gt;<br></div>Findmittel erstellt.Finding aid created.&lt;/maintenanceevent&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-eventtype"><span class="label">&lt;eventtype&gt;</span></div>
                   <div class="content"><span class="label">Event Type</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6952,7 +7038,22 @@
                   <div class="content">
                      <div class="p">Required, not repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Examples:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceevent&gt;Erstellt
+                        <div class="innerExample">&lt;eventdatetime standarddatetime="2006-10"&gt;October 2006&lt;/eventdatetime&gt;<br></div>
+                        <div class="innerExample">&lt;agenttype value="human"&gt;&lt;/agenttype&gt;<br></div>
+                        <div class="innerExample">&lt;agent&gt;Michael Rush&lt;/agent&gt;<br></div>
+                        <div class="innerExample">&lt;eventdescription&gt;Finding aid created.&lt;/eventdescription&gt;<br></div>&lt;/maintenanceevent&gt;<br></div><br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceevent&gt;
+                        <div class="innerExample">&lt;eventtype value="revised"&gt;&lt;/eventtype&gt;<br></div>
+                        <div class="innerExample">&lt;eventdatetime standarddatetime="2007-08-13"&gt;&lt;/eventdatetime&gt;<br></div>
+                        <div class="innerExample">&lt;agenttype value="machine"&gt;&lt;/agenttype&gt;<br></div>
+                        <div class="innerExample">&lt;agent&gt;brbl-migrate-01.xsl&lt;/agent&gt;<br></div>
+                        <div class="innerExample">&lt;eventdescription&gt;converted for compliance with Yale EAD Best Practice Guidelines &lt;/eventdescription&gt;<br></div>&lt;/maintenanceevent&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-expan"><span class="label">&lt;expan&gt;</span></div>
                   <div class="content"><span class="label">Expansion</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -7336,7 +7437,7 @@
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-addressline">addressline</a>, <a href="#elem-archref">archref</a>, <a href="#elem-author">author</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-citation">citation</a>, <a href="#elem-container">container</a>, <a href="#elem-date">date</a>, <a href="#elem-datesingle">datesingle</a>, <a href="#elem-didnote">didnote</a>, <a href="#elem-dimensions">dimensions</a>, <a href="#elem-edition">edition</a>, <a href="#elem-emph">emph</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-fromdate">fromdate</a>, <a href="#elem-head">head</a>, <a href="#elem-head01">head01</a>, <a href="#elem-head02">head02</a>, <a href="#elem-head03">head03</a>, <a href="#elem-item">item</a>, <a href="#elem-label">label</a>, <a href="#elem-materialspec">materialspec</a>, <a href="#elem-num">num</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part</a>, <a href="#elem-physdesc">physdesc</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-physloc">physloc</a>, <a href="#elem-publisher">publisher</a>, <a href="#elem-quote">quote</a>, <a href="#elem-sponsor">sponsor</a>, <a href="#elem-subtitle">subtitle</a>, <a href="#elem-titleproper">titleproper</a>, <a href="#elem-todate">todate</a>, <a href="#elem-unitdate">unitdate</a>, <a href="#elem-unitid">unitid</a>, <a href="#elem-unittitle">unittitle</a></div>
+                  <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-addressline">addressline</a>, <a href="#elem-archref">archref</a>, <a href="#elem-author">author</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-citation">citation</a>, <a href="#elem-container">container</a>, <a href="#elem-date">date</a>, <a href="#elem-datesingle">datesingle</a>, <a href="#elem-didnote">didnote</a>, <a href="#elem-dimensions">dimensions</a>, <a href="#elem-edition">edition</a>, <a href="#elem-emph">emph</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-fromdate">fromdate</a>, <a href="#elem-head">head</a>, <a href="#elem-head01">head01</a>, <a href="#elem-head02">head02</a>, <a href="#elem-head03">head03</a>, <a href="#elem-item">item</a>, <a href="#elem-label">label</a>, <a href="#elem-materialspec">materialspec</a>, <a href="#elem-num">num</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part</a>, <a href="#elem-physdesc">physdesc</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-physloc">physloc</a>, <a href="#elem-publisher">publisher</a>, <a href="#elem-quote">quote</a>, <a href="#elem-ref">ref (revised in 1.1.1)</a>, <a href="#elem-sponsor">sponsor</a>, <a href="#elem-subtitle">subtitle</a>, <a href="#elem-titleproper">titleproper</a>, <a href="#elem-todate">todate</a>, <a href="#elem-unitdate">unitdate</a>, <a href="#elem-unitid">unitid</a>, <a href="#elem-unittitle">unittitle</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">Use &lt;foreign&gt; to indicate a language and/or script that differs from that of the text surrounding
@@ -10383,7 +10484,7 @@
                      in a controlled vocabulary, taxonomy, ontology, or other knowledge organization
                      system, if different from the @identifier for the parent element. Do not confuse with @id, which provides a unique id for the element within the XML instance.<br><br>Use @localtype, if local practice requires specification of the type of part.<br><br></div>
                   <div class="leftcol">May contain: </div>
-                  <div class="content">[text], abbr, date, emph, expan, foreign, lb, ptr, ref (revised in 1.1.0)</div>
+                  <div class="content">[text], abbr, date, emph, expan, foreign, lb, ptr, ref</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-corpname">corpname</a>, <a href="#elem-famname">famname</a>, <a href="#elem-function">function</a>, <a href="#elem-genreform">genreform</a>, <a href="#elem-geogname">geogname</a>, <a href="#elem-name">name</a>, <a href="#elem-occupation">occupation</a>, <a href="#elem-persname">persname</a>, <a href="#elem-subject">subject</a>, <a href="#elem-title">title</a></div>
                   <div class="leftcol">Description and Usage: </div>
@@ -11468,7 +11569,21 @@
                   <div class="content">
                      <div class="p">Optional, not repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;filedesc&gt;
+                        <div class="innerExample">&lt;titlestmt&gt;
+                           <div class="innerExample">&lt;titleproper&gt;Guide to the Edward Raymond Zane Letters, 1960&lt;/titleproper&gt;<br></div>
+                           <div class="innerExample">&lt;author&gt;Noah Huffman&lt;/author&gt;<br></div>&lt;/titlestmt&gt;<br></div>
+                        <div class="innerExample">&lt;publicationstmt&gt;
+                           <div class="innerExample">&lt;publisher&gt;David M. Rubenstein Rare Book and Manuscript Library&lt;/publisher&gt;<br></div>
+                           <div class="innerExample">&lt;address&gt;
+                              <div class="innerExample">&lt;addressline&gt;411 Chapel Drive&lt;/addressline&gt;<br></div>
+                              <div class="innerExample">&lt;addressline&gt;Duke University&lt;/addressline&gt;<br></div>
+                              <div class="innerExample">&lt;addressline&gt;Durham 27708&lt;/addressline&gt;<br></div>&lt;/address&gt;<br></div>
+                           <div class="innerExample">&lt;date&gt;February 2016&lt;/date&gt;<br></div>
+                           <div class="innerExample">&lt;num&gt;RL.11119&lt;/num&gt;<br></div>&lt;/publicationstmt&gt;<br></div>&lt;/filedesc&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-publisher"><span class="label">&lt;publisher&gt;</span></div>
                   <div class="content"><span class="label">Publisher</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -11650,7 +11765,7 @@
                      <div class="centercol"><a href="#attr-localtype">localtype</a></div>
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist">&nbsp;</div>
-                     <div class="centercol"><a href="#attr-render (revised in 1.1.0)">render (revised in 1.1.0)</a></div>
+                     <div class="centercol"><a href="#attr-render">render</a></div>
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist">&nbsp;</div>
                      <div class="centercol"><a href="#attr-script">script</a></div>
@@ -11760,8 +11875,9 @@
                      object are not needed, for example, when providing an image to be embedded in the
                      finding aid.<br><br></div>
                   <div class="leftcol">May contain: </div>
-                  <div class="content">[text], abbr, corpname, date, emph, expan, famname, footnote, function, genreform,
-                     geogname, lb, name, num, occupation, persname, ptr, quote, subject, title</div>
+                  <div class="content">[text], abbr, corpname, date, emph, expan, famname, footnote, foreign (revised in
+                     1.1.1), function, genreform, geogname, lb, name, num, occupation, persname, ptr, quote,
+                     subject, title</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-addressline">addressline</a>, <a href="#elem-archref">archref</a>, <a href="#elem-author">author</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-citation">citation</a>, <a href="#elem-container">container</a>, <a href="#elem-date">date</a>, <a href="#elem-datesingle">datesingle</a>, <a href="#elem-didnote">didnote</a>, <a href="#elem-dimensions">dimensions</a>, <a href="#elem-edition">edition</a>, <a href="#elem-emph">emph</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-fromdate">fromdate</a>, <a href="#elem-head">head</a>, <a href="#elem-head01">head01</a>, <a href="#elem-head02">head02</a>, <a href="#elem-head03">head03</a>, <a href="#elem-indexentry">indexentry</a>, <a href="#elem-item">item</a>, <a href="#elem-label">label</a>, <a href="#elem-materialspec">materialspec</a>, <a href="#elem-num">num</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part</a>, <a href="#elem-physdesc">physdesc</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-physloc">physloc</a>, <a href="#elem-ptrgrp">ptrgrp</a>, <a href="#elem-publisher">publisher</a>, <a href="#elem-quote">quote</a>, <a href="#elem-sponsor">sponsor</a>, <a href="#elem-subtitle">subtitle</a>, <a href="#elem-titleproper">titleproper</a>, <a href="#elem-todate">todate</a>, <a href="#elem-unitdate">unitdate</a>, <a href="#elem-unitid">unitid</a>, <a href="#elem-unittitle">unittitle</a></div>
                   <div class="leftcol">Description and Usage: </div>
@@ -11943,7 +12059,7 @@
                         described and a related entity, such as: an archival, bibliographic, or other resource;
                         a corporate
                         body, person, or family; a function; or any other entity.</div>
-                     <div class="p">Use &lt;relationentry&gt; to provide a textual description of the related entity. Use &lt;objectxmlwrap&gt; to embed XML documenting the related entity from any namespace other than EAD3. Use
+                     <div class="p">Use &lt;relationentry&gt; to provide a textual description of the related entity. Use &lt;objectxmlwrap&gt; to embed XML documenting the related entity from any namespace other than EAD. Use
                         &lt;date&gt;, &lt;daterange&gt;, or &lt;dateset&gt; for specifying the time period of the relationship and &lt;geogname&gt; for relevant location information. &lt;descriptivenote&gt; may be
                         included for more detailed specifications or explanations of the relationship.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
@@ -12393,7 +12509,7 @@
                </div>
                <div class="element">
                   <div class="leftcol" id="elem-rightsdeclaration"><span class="label">&lt;rightsdeclaration&gt;</span></div>
-                  <div class="content"><span class="label">Rights Declaration (revised in 1.1.0)</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
+                  <div class="content"><span class="label">Rights Declaration</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">An optional child element of &lt;control&gt; that indicates a standard rights statement associated with the EAD instance.</div>
@@ -12413,7 +12529,9 @@
                         &lt;abbr&gt; should align with the rights statements referenced by &lt;citation&gt; and
                         &lt;descriptivenote&gt;.</div>
                      <div class="p">&lt;citation&gt; must be used to provide a machine-readable reference to a license statement (for
-                        example, a dereferenceable URI).</div>
+                        example, a dereferenceable URI). It may also be used to encode the name of the license
+                        statement. &lt;descriptivenote&gt; may be used to provide additional, human-readable description or explanation of the
+                        license statement.</div>
                      <div class="p">&lt;descriptivenote&gt; may be used to provide a human-readable description of the license statement.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -12450,9 +12568,10 @@
                      <div class="innerExample">&lt;control&gt;
                         <div class="innerExample">&lt;rightsdeclaration&gt;
                            <div class="innerExample">&lt;abbr&gt;CC0&lt;/abbr&gt;<br></div>
-                           <div class="innerExample">&lt;citation href="https://creativecommons.org/publicdomain/zero/1.0/"&gt;&lt;/citation&gt;<br></div>
-                           <div class="innerExample">&lt;descriptivenote&gt;
-                              <div class="innerExample">&lt;p&gt;CC0 1.0 Universal (CC0 1.0)&lt;/p&gt;<br></div>&lt;/descriptivenote&gt;<br></div>&lt;/rightsdeclaration&gt;<br></div>&lt;/control&gt;<br></div><br></div><br></div>
+                           <div class="innerExample">&lt;citation href="https://creativecommons.org/publicdomain/zero/1.0/"&gt;CC0 1.0 Universal (CC0 1.0)&lt;/citation&gt;<br></div>
+                           <div class="innerExample">&lt;descriptivenote&gt;This work has been dedicated to the public domain, meaning that you can copy, modify,
+                              distribute and perform the work, even for commercial purposes, all without asking
+                              permission.&lt;/descriptivenote&gt;<br></div>&lt;/rightsdeclaration&gt;<br></div>&lt;/control&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-row"><span class="label">&lt;row&gt;</span></div>
                   <div class="content"><span class="label">Table Row</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -12498,7 +12617,25 @@
                   <div class="content">
                      <div class="p">Within &lt;tbody&gt; and &lt;thead&gt;, required, repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;table frame="all" colsep="true" rowsep="true"&gt;
+                        <div class="innerExample">&lt;head&gt;Dates of Existence for Local Chapters&lt;/head&gt;<br></div>
+                        <div class="innerExample">&lt;tgroup align="center" cols="3"&gt;
+                           <div class="innerExample">&lt;colspec colname="chaptertitle" colnum="1"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;colspec colname="yearformed" colnum="2"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;colspec colname="yeardisbanded" colnum="3"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;thead valign="middle"&gt;
+                              <div class="innerExample">&lt;row&gt;
+                                 <div class="innerExample">&lt;entry colname="chaptertitle"&gt;Chapter Title&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yearformed"&gt;Year Formed&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yeardisbanded"&gt;Year Disbanded&lt;/entry&gt;<br></div>&lt;/row&gt;<br></div>&lt;/thead&gt;<br></div>
+                           <div class="innerExample">&lt;tbody valign="middle"&gt;
+                              <div class="innerExample">&lt;row&gt;
+                                 <div class="innerExample">&lt;entry colname="chaptertitle"&gt;Local Chapter 543&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yearformed"&gt;1923&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yeardisbanded"&gt;1967&lt;/entry&gt;<br></div>&lt;/row&gt;<br></div>&lt;/tbody&gt;<br></div>&lt;/tgroup&gt;<br></div>&lt;/table&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-scopecontent"><span class="label">&lt;scopecontent&gt;</span></div>
                   <div class="content"><span class="label">Scope and Content</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -12836,7 +12973,17 @@
                   <div class="content">
                      <div class="p">Optional, not repeatable </div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;filedesc&gt;
+                        <div class="innerExample">&lt;titlestmt&gt;
+                           <div class="innerExample">&lt;titleproper&gt;Guide to the Lucretia Mott Papers, 1848-1887 and undated&lt;/titleproper&gt;<br></div>
+                           <div class="innerExample">&lt;author&gt;Alice Poffinberger&lt;/author&gt;<br></div>&lt;/titlestmt&gt;<br></div>
+                        <div class="innerExample">&lt;publicationstmt&gt;
+                           <div class="innerExample">&lt;publisher&gt;David M. Rubenstein Rare Book and Manuscript Library&lt;/publisher&gt;<br></div>&lt;/publicationstmt&gt;<br></div>
+                        <div class="innerExample">&lt;seriesstmt&gt;
+                           <div class="innerExample">&lt;p&gt;The Lisa Unger Baskin Collection&lt;/p&gt;<br></div>&lt;/seriesstmt&gt;<br></div>&lt;/filedesc&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-source"><span class="label">&lt;source&gt;</span></div>
                   <div class="content"><span class="label">Source</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -12857,7 +13004,7 @@
                         required, a reference for the source should be included as a textual description in
                         the child
                         &lt;sourceentry&gt;. Use the optional &lt;descriptivenote&gt; for any additional notes about the source. Use the optional &lt;objectxmlwrap&gt; to embed XML documenting the source from any
-                        namespace other than EAD3. </div>
+                        namespace other than EAD.</div>
                      <div class="p">The child elements of &lt;source&gt; are optional, but when present they must be provided in a specific order:</div>
                      <div class="blockIndent">&lt;sourceentry&gt;<br><br>&lt;objectxmlwrap&gt;<br><br>&lt;descriptivenote&gt;<br><br></div>
                   </div>
@@ -13299,7 +13446,17 @@
                   <div class="content">
                      <div class="p">Optional, repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;filedesc&gt;
+                        <div class="innerExample">&lt;titlestmt&gt;
+                           <div class="innerExample">&lt;titleproper&gt;Tom Stoppard&lt;/titleproper&gt;<br></div>
+                           <div class="innerExample">&lt;subtitle&gt;An Inventory of His Papers at the Harry Ransom Humanities Research Center&lt;/subtitle&gt;<br></div>
+                           <div class="innerExample">&lt;author&gt;Finding aid written by Katherine Mosley&lt;/author&gt;<br></div>&lt;/titlestmt&gt;<br></div>
+                        <div class="innerExample">&lt;publicationstmt&gt;
+                           <div class="innerExample">&lt;publisher&gt;The University of Texas at Austin, Harry Ransom Humanities Research Center&lt;/publisher&gt;<br></div>
+                           <div class="innerExample">&lt;date&gt;2000&lt;/date&gt;<br></div>&lt;/publicationstmt&gt;<br></div>&lt;/filedesc&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-table"><span class="label">&lt;table&gt;</span></div>
                   <div class="content"><span class="label">Table</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -13567,7 +13724,25 @@
                   <div class="content">
                      <div class="p">Required, repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;table frame="all" colsep="true" rowsep="true"&gt;
+                        <div class="innerExample">&lt;head&gt;Dates of Existence for Local Chapters&lt;/head&gt;<br></div>
+                        <div class="innerExample">&lt;tgroup align="center" cols="3"&gt;
+                           <div class="innerExample">&lt;colspec colname="chaptertitle" colnum="1"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;colspec colname="yearformed" colnum="2"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;colspec colname="yeardisbanded" colnum="3"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;thead valign="middle"&gt;
+                              <div class="innerExample">&lt;row&gt;
+                                 <div class="innerExample">&lt;entry colname="chaptertitle"&gt;Chapter Title&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yearformed"&gt;Year Formed&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yeardisbanded"&gt;Year Disbanded&lt;/entry&gt;<br></div>&lt;/row&gt;<br></div>&lt;/thead&gt;<br></div>
+                           <div class="innerExample">&lt;tbody valign="middle"&gt;
+                              <div class="innerExample">&lt;row&gt;
+                                 <div class="innerExample">&lt;entry colname="chaptertitle"&gt;Local Chapter 543&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yearformed"&gt;1923&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yeardisbanded"&gt;1967&lt;/entry&gt;<br></div>&lt;/row&gt;<br></div>&lt;/tbody&gt;<br></div>&lt;/tgroup&gt;<br></div>&lt;/table&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-thead"><span class="label">&lt;thead&gt;</span></div>
                   <div class="content"><span class="label">Table Head</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -13612,7 +13787,25 @@
                   <div class="content">
                      <div class="p">Optional, not repeatable</div>
                   </div>
-               </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;table frame="all" colsep="true" rowsep="true"&gt;
+                        <div class="innerExample">&lt;head&gt;Dates of Existence for Local Chapters&lt;/head&gt;<br></div>
+                        <div class="innerExample">&lt;tgroup align="center" cols="3"&gt;
+                           <div class="innerExample">&lt;colspec colname="chaptertitle" colnum="1"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;colspec colname="yearformed" colnum="2"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;colspec colname="yeardisbanded" colnum="3"&gt;&lt;/colspec&gt;<br></div>
+                           <div class="innerExample">&lt;thead valign="middle"&gt;
+                              <div class="innerExample">&lt;row&gt;
+                                 <div class="innerExample">&lt;entry colname="chaptertitle"&gt;Chapter Title&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yearformed"&gt;Year Formed&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yeardisbanded"&gt;Year Disbanded&lt;/entry&gt;<br></div>&lt;/row&gt;<br></div>&lt;/thead&gt;<br></div>
+                           <div class="innerExample">&lt;tbody valign="middle"&gt;
+                              <div class="innerExample">&lt;row&gt;
+                                 <div class="innerExample">&lt;entry colname="chaptertitle"&gt;Local Chapter 543&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yearformed"&gt;1923&lt;/entry&gt;<br></div>
+                                 <div class="innerExample">&lt;entry colname="yeardisbanded"&gt;1967&lt;/entry&gt;<br></div>&lt;/row&gt;<br></div>&lt;/tbody&gt;<br></div>&lt;/tgroup&gt;<br></div>&lt;/table&gt;<br></div><br></div><br></div>
                <div class="element">
                   <div class="leftcol" id="elem-title"><span class="label">&lt;title&gt;</span></div>
                   <div class="content"><span class="label">Title</span>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
@@ -14524,10 +14717,10 @@
                            Estate.&lt;/blockquote&gt;<br></div>&lt;/userestrict&gt;<br></div><br></div><br></div>&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
          </div>
          <div>
-            <div xmlns="" class="section" id="d1e16180">
+            <div xmlns="" class="section" id="d1e16404">
                <div class="head03">Appendix &nbsp;&nbsp;</div>
                <div class="head03" id="appendix-AppendixAEADCrosswalks">Appendix A : EAD Crosswalks&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
-               <div class="section" id="d1e16182">
+               <div class="section" id="d1e16406">
                   <div class="head03">Appendix &nbsp;&nbsp;</div>
                   <div class="head03" id="appendix-ISAD(G)toEAD3">ISAD(G) to EAD3&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">ISAD(G)</div>
@@ -14585,7 +14778,7 @@
                   <div class="leftcol">3.7.3 Date(s) of descriptions</div>
                   <div class="content">&lt;maintenanceevent&gt;/&lt;eventdatetime&gt;</div>
                </div>
-               <div class="section" id="d1e16292">
+               <div class="section" id="d1e16516">
                   <div class="head03">Appendix &nbsp;&nbsp;</div>
                   <div class="head03" id="appendix-MARC21toEAD3">MARC21 to EAD3&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">MARC</div>
@@ -14705,7 +14898,7 @@
                   <div class="leftcol">852 Location</div>
                   <div class="content">&lt;repository&gt;, &lt;physloc&gt;</div>
                </div>
-               <div class="section" id="d1e16529">
+               <div class="section" id="d1e16753">
                   <div class="head03">Appendix &nbsp;&nbsp;</div>
                   <div class="head03" id="appendix-MODStoEAD3">MODS to EAD3&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">MODS</div>
@@ -14770,7 +14963,7 @@
                   <div class="content">&lt;unittitle&gt;</div>
                </div>
             </div>
-            <div xmlns="" class="section" id="d1e16729">
+            <div xmlns="" class="section" id="d1e16953">
                <div class="head03">Appendix &nbsp;&nbsp;</div>
                <div class="head03" id="appendix-AppendixBDeprecatedandObsoleteElementsandAttributes">Appendix B : Deprecated and Obsolete Elements and Attributes&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                <div class="p">The revision of EAD 1.0 to EAD 2002 established a precedent that elements to be removed
@@ -14810,7 +15003,7 @@
                <div class="blockIndent">authfilenumber<br><br>continuation<br><br>findaidstatus<br><br>from / xlink:from<br><br>linktype / xlink:type<br><br>mainagencycode<br><br>othertype<br><br>publicid<br><br>role / xlink:role<br><br>to / xlink:to<br><br>type<br><br>urn<br><br>url<br><br></div>
                <div>Obsolete Elements</div>
                <div class="blockIndent">&lt;arc&gt;<br><br>&lt;change&gt;<br><br>&lt;creation&gt;<br><br>&lt;daodesc&gt;<br><br>&lt;daogrp&gt;<br><br>&lt;daoloc&gt;<br><br>&lt;descrules&gt;<br><br>&lt;eadheader&gt;<br><br>&lt;eadid&gt;<br><br>&lt;eventgrp&gt;<br><br>&lt;extptr&gt;<br><br>&lt;extptrloc&gt;<br><br>&lt;extref&gt;<br><br>&lt;extrefloc&gt;<br><br>&lt;langusage&gt;<br><br>&lt;linkgrp&gt;<br><br>&lt;note&gt;<br><br>&lt;ptrloc&gt;<br><br>&lt;refloc&gt;<br><br>&lt;resource&gt;<br><br>&lt;revisiondesc&gt;<br><br>&lt;subarea&gt;<br><br></div>
-               <div class="section" id="d1e16885">
+               <div class="section" id="d1e17109">
                   <div class="head03">Appendix &nbsp;&nbsp;</div>
                   <div class="head03" id="appendix-DeprecatedAttributes">Deprecated Attributes&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="attribute">
@@ -14841,7 +15034,7 @@
                   </div>
                   <div class="spacer">&nbsp;</div>
                </div>
-               <div class="section" id="d1e16913">
+               <div class="section" id="d1e17137">
                   <div class="head03">Appendix &nbsp;&nbsp;</div>
                   <div class="head03" id="appendix-DeprecatedElements">Deprecated Elements&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="element">
@@ -15303,10 +15496,27 @@
                   </div>
                </div>
             </div>
-            <div xmlns="" class="section" id="d1e17387">
+            <div xmlns="" class="section" id="d1e17611">
                <div class="head03">Appendix &nbsp;&nbsp;</div>
                <div class="head03" id="appendix-AppendixCRevisionHistory">Appendix C: Revision History&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
-               <div class="section" id="d1e17389">
+               <div class="section" id="d1e17613">
+                  <div class="head03">Appendix &nbsp;&nbsp;</div>
+                  <div class="p">
+                     <div class="listOrdered">
+                        <div class="head04">
+                           <div class="head03">EAD3 1.1.1 (2019 December)&nbsp;&nbsp;<a class="tocReturn" href="#toc">[toc]</a></div>
+                        </div>
+                        <div class="listOrder">1.</div>
+                        <div class="listContent">The foreign element is now a valid child of the ref element.</div>
+                        <div class="listOrder">2.</div>
+                        <div class="listContent">The c12 element is now valid in the XSD schemas.</div>
+                        <div class="listOrder">3.</div>
+                        <div class="listContent">The objectxmlwrap element cannot have descendants in the EAD3 namespace in the XSD
+                           schemas.</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="section" id="d1e17621">
                   <div class="head03">Appendix &nbsp;&nbsp;</div>
                   <div class="p">
                      <div class="listOrdered">
@@ -15332,7 +15542,7 @@
                      </div>
                   </div>
                </div>
-               <div class="section" id="d1e17401">
+               <div class="section" id="d1e17633">
                   <div class="head03">Appendix &nbsp;&nbsp;</div>
                   <div class="p">
                      <div class="listOrdered">
