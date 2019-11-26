@@ -5,14 +5,14 @@
       <fileDesc>
          <titleStmt>
             <title xml:lang="eng" type="main">Encoded Archival Description <lb/>Tag Library </title>
-            <title xml:lang="eng" type="additional">Version EAD3 1.1.0</title>
+            <title xml:lang="eng" type="additional">Version EAD3 1.1.1</title>
             <respStmt xml:lang="eng">
                <resp>Prepared and maintained by the</resp>
                <name>Technical Subcommittee for Encoded Archival Standards of the Society of American Archivists</name>
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <p xml:lang="eng">2018 Edition</p>
+            <p xml:lang="eng">2019 Edition</p>
          </editionStmt>
          <publicationStmt>
             <publisher xml:lang="eng">Society of American Archivists</publisher>
@@ -49,11 +49,11 @@
          <titlePage>
             <docTitle>
                <titlePart type="main">Encoded Archival Description <lb/>Tag Library</titlePart>
-               <titlePart type="additional">Version EAD3 1.1.0</titlePart>
+               <titlePart type="additional">Version EAD3 1.1.1</titlePart>
             </docTitle>
             <docEdition>Edition 2018</docEdition>
             <note>
-               <p>This tag library represents version EAD3 1.1.0 of the Encoded Archival Description schemas, released in April 2018. It supersedes the Version EAD3 1.0.0 tag library published in 2015.</p>
+               <p>This tag library represents version EAD3 1.1.1 of the Encoded Archival Description schemas, released in December 2019. It supersedes the Version EAD3 1.1.0 tag library published in 2018.</p>
                <p>The SAA Technical Subcommittee for Encoded Archival Standards is responsible for updating and editing the EAD schemas and tag library.</p>
                <p>The Network Development and MARC Standards Office of the Library of Congress serves as the host for online EAD documentation, including storage and delivery of electronic files and maintenance of the
                   EAD web site, located at <ref target="http://www.loc.gov/ead/">http://www.loc.gov/ead/</ref>. </p>
@@ -176,12 +176,16 @@
             </div>
             <div xml:id="preface-1.1.0">
                <head>Preface to Revision 1.1.0</head>
-               <p>EAD3 underwent its first revision from 2018 January 16 to 2018 February 28 in order to address schema errors and expand the standard's element set. This revision consisted of seven changes - one new element
-                  (rightsdeclaration), two schema bugfixes, and four datatype/attribute extensions. These changes reflect feedback on the EAD3 1.0.0 release and accomodate requirements for data sharing set forth by
-                  consortial members.</p>
+               <p>EAD3 underwent its first revision from 2018 January 16 to 2018 February 28 in order to address schema errors and expand the standard's element set. This revision consisted of seven changes - one new
+                  element (rightsdeclaration), two schema bugfixes, and four datatype/attribute extensions. These changes reflect feedback on the EAD3 1.0.0 release and accomodate requirements for data sharing set forth
+                  by consortial members.</p>
                <p>EAD3 Revision 1.1.0 sets a new policy for schema releases, in which smaller updates and fixes can be released on a regular basis. These changes will not invalidate existing records, nor will it break
                   existing interoperability - minor revisions will only be expansive.</p>
                <p>This update was revised and implemented by the SAA Technical Subcommittee for Encoded Archival Standards (TS-EAS), following a period of feedback in January-February 2018.</p>
+            </div>
+            <div xml:id="preface-1.1.1">
+               <head>Preface to Revision 1.1.1</head>
+               <p>EAD3 underwent its first patch revision in 2019.  This patch includes one change to the <gi>ref</gi> element and two fixes to the XSD schema.</p>
             </div>
             <div xml:id="conventions">
                <head>Tag Library Conventions</head>
@@ -582,7 +586,7 @@
                      not be unique within the document, and does not have to conform to the rules for the ID data type.</p>
                </div>
                <div type="datatype">
-                  <p>string (revised in 1.1.0)</p>
+                  <p>string</p>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-coordinatesystem">
@@ -1325,8 +1329,8 @@
                   <p>Render</p>
                </div>
                <div type="summary">
-                  <p>Controls the formatting of the content of an element for display and print purposes. Available in <gi>emph</gi>, <gi>foreign</gi>, <gi>quote</gi> (revised in 1.1.0), <gi>title</gi>, and <gi>titleproper</gi>. See also
-                        <att>altrender</att>.</p>
+                  <p>Controls the formatting of the content of an element for display and print purposes. Available in <gi>emph</gi>, <gi>foreign</gi>, <gi>quote</gi>, <gi>title</gi>, and
+                        <gi>titleproper</gi>. See also <att>altrender</att>.</p>
                </div>
                <div type="values">
                   <p>altrender, bold, bolddoublequote, bolditalic, boldsinglequote, boldsmcaps, boldunderline, doublequote, italic, nonproport, singlequote, smcaps, sub, super, underline</p>
@@ -2365,6 +2369,26 @@
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenanceevent>
+                        <ead:eventtype value="created"/>
+                        <ead:eventdatetime standarddatetime="2006-10">October 2006</ead:eventdatetime>
+                        <ead:agenttype value="human"/>
+                        <ead:agent>Michael Rush</ead:agent>
+                        <ead:eventdescription>Finding aid created.</ead:eventdescription>
+                     </ead:maintenanceevent>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenanceevent>
+                        <ead:eventtype value="created"/>
+                        <ead:eventdatetime standarddatetime="2006-10">October 2006</ead:eventdatetime>
+                        <ead:agenttype value="machine"/>
+                        <ead:agent>Beinecke Library Edix/Wordix macros</ead:agent>
+                        <ead:eventdescription>Encoded in EAD 1.0.</ead:eventdescription>
+                     </ead:maintenanceevent>
+                  </egXML>
+               </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-agenttype">
                <head>
@@ -2421,6 +2445,26 @@
                </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenanceevent>
+                        <ead:eventtype value="created"/>
+                        <ead:eventdatetime standarddatetime="2006-10">October 2006</ead:eventdatetime>
+                        <ead:agenttype value="human"/>
+                        <ead:agent>Michael Rush</ead:agent>
+                        <ead:eventdescription>Finding aid created.</ead:eventdescription>
+                     </ead:maintenanceevent>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenanceevent>
+                        <ead:eventtype value="created"/>
+                        <ead:eventdatetime standarddatetime="2006-10">October 2006</ead:eventdatetime>
+                        <ead:agenttype value="machine"/>
+                        <ead:agent>Beinecke Library Edix/Wordix macros</ead:agent>
+                        <ead:eventdescription>Encoded in EAD 1.0.</ead:eventdescription>
+                     </ead:maintenanceevent>
+                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-altformavail">
@@ -2656,7 +2700,14 @@
                   </p>
                </div>
                <div type="examples">
-                  <p>See fully encoded examples provided at http://www.loc.gov/ead/.</p>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="fonds" localtype="inventory" relatedencoding="ISAD(G)v2" encodinganalog="3.1.4" lang="dut" script="Latn">
+                        <ead:did>
+                           <ead:unittitle encodinganalog="3.1.2">Nederlandsche Gist- en Spiritusfabriek en Pharmaceutische Fabrieken voorheen Brocades-Stheeman &amp; Pharmacia, in 1967 gefuseerd tot
+                              Gist-Brocades</ead:unittitle>
+                           <ead:unitdate calendar="gregorian" era="ce" encodinganalog="3.1.3" normal="1860/1967"> 1860-1967 (1987)</ead:unitdate>
+                        </ead:did> [...] </ead:archdesc>
+                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-archref">
@@ -4107,7 +4158,7 @@
                </div>
                <div type="mayContain">
                   <p>accessrestrict, accruals, acqinfo, altformavail, appraisal, arrangement, bibliography, bioghist, controlaccess, custodhist, did, fileplan, head, index, legalstatus, odd, originalsloc, otherfindaid,
-                     phystech, prefercite, processinfo, relatedmaterial, relations, scopecontent, separatedmaterial, thead, userestrict</p>
+                     phystech, prefercite, processinfo, relatedmaterial, relations, scopecontent, separatedmaterial, userestrict</p>
                </div>
                <div type="mayOccurWithin">
                   <p>c11</p>
@@ -4667,6 +4718,30 @@
                <div type="availability">
                   <p>Optional, repeatable </p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="none">
+                        <ead:tgroup cols="3">
+                           <ead:colspec colnum="1" colname="1" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="2" colname="2" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="3" colname="3" align="left" colwidth="50pt"/>
+                           <ead:thead>
+                              <ead:row>
+                                 <ead:entry colname="1">Major Family Members</ead:entry>
+                                 <ead:entry colname="2">Spouses</ead:entry>
+                                 <ead:entry colname="3">Children</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody>
+                              <ead:row>
+                                 <ead:entry colname="1">John Albemarle (1760-1806)</ead:entry>
+                                 <ead:entry colname="2">Mary Frances Delaney (1769-1835)</ead:entry>
+                                 <ead:entry colname="3">John Delaney Albemarle (1787-1848)</ead:entry>
+                              </ead:row> . . . </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
+               </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-container">
                <head>
@@ -4806,7 +4881,7 @@
                </div>
                <div type="mayContain">
                   <p>conventiondeclaration, filedesc, languagedeclaration, localcontrol, localtypedeclaration, maintenanceagency, maintenancehistory, maintenancestatus, otherrecordid, publicationstatus, recordid,
-                     representation, rightsdeclaration (revised in v1.1.0), sources</p>
+                     representation, rightsdeclaration, sources</p>
                </div>
                <div type="mayOccurWithin">
                   <p>ead</p>
@@ -5084,7 +5159,7 @@
                         <item>Optional</item>
                         <label>lang</label>
                         <item>Optional</item>
-                        <label>localtype (revised in 1.1.0)</label>
+                        <label>localtype</label>
                         <item>Optional</item>
                         <label>script</label>
                         <item>Optional</item>
@@ -5572,7 +5647,7 @@
                   <p>[text], abbr, emph, expan, foreign, lb, ptr, ref</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>abstract, archref, bibref, entry, event, item, p, part (revised in 1.1.0), physfacet, publicationstmt, ref, unittitle</p>
+                  <p>abstract, archref, bibref, entry, event, item, p, part, physfacet, publicationstmt, ref, unittitle</p>
                </div>
                <div type="attributes">
                   <p>
@@ -6604,6 +6679,19 @@
                <div type="availability">
                   <p>Within <gi>editionstmt</gi>, one of <gi>edition</gi> or <gi>p</gi> is required, repeatable</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:filedesc>
+                        <ead:titlestmt>
+                           <ead:titleproper>Register of the Emily Higby Collection</ead:titleproper>
+                        </ead:titlestmt>
+                        <ead:editionstmt>
+                           <ead:edition>2nd ed.</ead:edition>
+                           <ead:p>This edition reflects substantial additions to the collection in 1994.</ead:p>
+                        </ead:editionstmt>
+                     </ead:filedesc>
+                  </egXML>
+               </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-editionstmt">
                <head>
@@ -6645,6 +6733,19 @@
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:filedesc>
+                        <ead:titlestmt>
+                           <ead:titleproper>Register of the Emily Higby Collection</ead:titleproper>
+                        </ead:titlestmt>
+                        <ead:editionstmt>
+                           <ead:edition>2nd ed.</ead:edition>
+                           <ead:p>This edition reflects substantial additions to the collection in 1994.</ead:p>
+                        </ead:editionstmt>
+                     </ead:filedesc>
+                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-emph">
@@ -7012,6 +7113,18 @@
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenanceevent>
+                        <ead:eventtype value="created"/>
+                        <ead:eventdatetime standarddatetime="2006-10">October 2006</ead:eventdatetime>
+                        <ead:agenttype value="human"/>
+                        <ead:agent>Michael Rush</ead:agent>
+                        <eventdescription lang="ger">Findmittel erstellt.</eventdescription>
+                        <eventdescription lang="eng">Finding aid created.</eventdescription>
+                     </ead:maintenanceevent>
+                  </egXML>
+               </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-eventtype">
                <head>
@@ -7072,6 +7185,26 @@
                </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenanceevent>
+                        <eventtype lang="ger" value="created">Erstellt</eventtype>
+                        <ead:eventdatetime standarddatetime="2006-10">October 2006</ead:eventdatetime>
+                        <ead:agenttype value="human"/>
+                        <ead:agent>Michael Rush</ead:agent>
+                        <ead:eventdescription>Finding aid created.</ead:eventdescription>
+                     </ead:maintenanceevent>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenanceevent>
+                        <ead:eventtype value="revised"/>
+                        <ead:eventdatetime standarddatetime="2007-08-13"/>
+                        <ead:agenttype value="machine"/>
+                        <ead:agent>brbl-migrate-01.xsl</ead:agent>
+                        <ead:eventdescription>converted for compliance with Yale EAD Best Practice Guidelines </ead:eventdescription>
+                     </ead:maintenanceevent>
+                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-expan">
@@ -7492,7 +7625,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p>abstract, addressline, archref, author, bibref, citation, container, date, datesingle, didnote, dimensions, edition, emph, entry, event, fromdate, head, head01, head02, head03, item, label,
-                     materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
+                     materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, ref (revised in 1.1.1), sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
                </div>
                <div type="attributes">
                   <p>
@@ -10804,8 +10937,7 @@
                   <p>A required and repeatable child of controlled access elements used to encode one or more parts of an access term.</p>
                </div>
                <div type="mayContain">
-				   <p>[text], <gi>abbr</gi>, <gi>date</gi>, <gi>emph</gi>, <gi>expan</gi>, <gi>foreign</gi>, <gi>lb</gi>, <gi>ptr</gi>, <gi>ref</gi> (revised in 1.1.0)
-                  </p>
+                  <p>[text], <gi>abbr</gi>, <gi>date</gi>, <gi>emph</gi>, <gi>expan</gi>, <gi>foreign</gi>, <gi>lb</gi>, <gi>ptr</gi>, <gi>ref</gi></p>
                </div>
                <div type="mayOccurWithin">
                   <p>corpname, famname, function, genreform, geogname, name, occupation, persname, subject, title</p>
@@ -11944,6 +12076,26 @@
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:filedesc>
+                        <ead:titlestmt>
+                           <ead:titleproper>Guide to the Edward Raymond Zane Letters, 1960</ead:titleproper>
+                           <ead:author>Noah Huffman</ead:author>
+                        </ead:titlestmt>
+                        <ead:publicationstmt>
+                           <ead:publisher>David M. Rubenstein Rare Book and Manuscript Library</ead:publisher>
+                           <ead:address>
+                              <ead:addressline>411 Chapel Drive</ead:addressline>
+                              <ead:addressline>Duke University</ead:addressline>
+                              <ead:addressline>Durham 27708</ead:addressline>
+                           </ead:address>
+                           <ead:date>February 2016</ead:date>
+                           <ead:num>RL.11119</ead:num>
+                        </ead:publicationstmt>
+                     </ead:filedesc>
+                  </egXML>
+               </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-publisher">
                <head>
@@ -12128,7 +12280,7 @@
                         <item>Optional</item>
                         <label>localtype</label>
                         <item>Optional</item>
-                        <label>render (revised in 1.1.0)</label>
+                        <label>render</label>
                         <item>Optional</item>
                         <label>script</label>
                         <item>Optional</item>
@@ -12252,7 +12404,7 @@
                   <p>An element that provides a link to content that may be internal or external to the finding aid.</p>
                </div>
                <div type="mayContain">
-                  <p>[text], abbr, corpname, date, emph, expan, famname, footnote, function, genreform, geogname, lb, name, num, occupation, persname, ptr, quote, subject, title</p>
+                  <p>[text], abbr, corpname, date, emph, expan, famname, footnote, foreign (revised in 1.1.1), function, genreform, geogname, lb, name, num, occupation, persname, ptr, quote, subject, title</p>
                </div>
                <div type="mayOccurWithin">
                   <p>abstract, addressline, archref, author, bibref, citation, container, date, datesingle, didnote, dimensions, edition, emph, entry, event, fromdate, head, head01, head02, head03, indexentry, item,
@@ -12473,7 +12625,7 @@
                   <p>
                      <gi>relation</gi> records descriptive information about a relationship between the materials being described and a related entity, such as: an archival, bibliographic, or other resource; a corporate
                      body, person, or family; a function; or any other entity.</p>
-                  <p>Use <gi>relationentry</gi> to provide a textual description of the related entity. Use <gi>objectxmlwrap</gi> to embed XML documenting the related entity from any namespace other than EAD3. Use
+                  <p>Use <gi>relationentry</gi> to provide a textual description of the related entity. Use <gi>objectxmlwrap</gi> to embed XML documenting the related entity from any namespace other than EAD. Use
                         <gi>date</gi>, <gi>daterange</gi>, or <gi>dateset</gi> for specifying the time period of the relationship and <gi>geogname</gi> for relevant location information. <gi>descriptivenote</gi> may be
                      included for more detailed specifications or explanations of the relationship.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
@@ -12960,56 +13112,56 @@
                   </list>
                </div>
             </div>
-               <div type="elementDocumentation" xml:id="elem-rightsdeclaration">
-                  <head>
-                     <gi>rightsdeclaration</gi>
-                  </head>
-                  <div type="fullName">
-                     <p xml:lang="eng">Rights Declaration (revised in 1.1.0)</p>
-                  </div>
-                  <div type="summary">
-                     <p>An optional child element of <gi>control</gi> that indicates a standard rights statement associated with the EAD instance.</p>
-                  </div>
-                  <div type="mayContain">
-                     <p>abbr, citation, descriptivenote</p>
-                  </div>
-                  <div type="mayOccurWithin">
-                     <p>control</p>
-                  </div>
-                  <div type="attributes">
-                     <p>
-                        <list type="gloss">
-                           <label>altrender</label>
-                           <item>Optional</item>
-                           <label>audience</label>
-                           <item>Optional (values limited to: external, internal)</item>
-                           <label>encodinganalog</label>
-                           <item>Optional</item>
-                           <label>id</label>
-                           <item>Optional</item>
-                           <label>lang</label>
-                           <item>Optional</item>
-                           <label>localtype</label>
-                           <item>Optional</item>
-                           <label>script</label>
-                           <item>Optional</item>
-                        </list>
-                     </p>
-                  </div>
-                  <div type="description">
-                     <p>Use <gi>rightsdeclaration</gi> to provide structured information about the usage rights of the EAD instance. <gi>rightsdeclaration</gi> should only be used to reference shared published licenses,
-                        such as Creative Commons, RightsStatements.org, and published locally-defined licenses.</p>
-                     <p><gi>abbr</gi> may be used to provide the abbreviated name for the rights statement. The value of <gi>abbr</gi> should align with the rights statements referenced by <gi>citation</gi> and
-                           <gi>descriptivenote</gi>.</p>
-                     <p><gi>citation</gi> must be used to provide a machine-readable reference to a license statement (for example, a dereferenceable URI).</p>
-                     <p><gi>descriptivenote</gi> may be used to provide a human-readable description of the license statement.</p>
-                  </div>
-                  <div type="seealso">
-                     <list type="simple">
-                        <item>Do not confuse with <gi>userestrict</gi>, which provides unstructured rights information about the material being described.</item>
-                        <item>Use <gi>publicationstmt</gi> for unstructured and/or non-referencable rights information associated with the finding aid.</item>
+            <div type="elementDocumentation" xml:id="elem-rightsdeclaration">
+               <head>
+                  <gi>rightsdeclaration</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Rights Declaration</p>
+               </div>
+               <div type="summary">
+                  <p>An optional child element of <gi>control</gi> that indicates a standard rights statement associated with the EAD instance.</p>
+               </div>
+               <div type="mayContain">
+                  <p>abbr, citation, descriptivenote</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>control</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
                      </list>
-                  </div>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>rightsdeclaration</gi> to provide structured information about the usage rights of the EAD instance. <gi>rightsdeclaration</gi> should only be used to reference shared published licenses,
+                     such as Creative Commons, RightsStatements.org, and published locally-defined licenses.</p>
+                  <p><gi>abbr</gi> may be used to provide the abbreviated name for the rights statement. The value of <gi>abbr</gi> should align with the rights statements referenced by <gi>citation</gi> and
+                        <gi>descriptivenote</gi>.</p>
+                  <p><gi>citation</gi> must be used to provide a machine-readable reference to a license statement (for example, a dereferenceable URI). It may also be used to encode the name of the license statement. <gi>descriptivenote</gi> may be used to provide additional, human-readable description or explanation of the license statement.</p>
+                  <p><gi>descriptivenote</gi> may be used to provide a human-readable description of the license statement.</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse with <gi>userestrict</gi>, which provides unstructured rights information about the material being described.</item>
+                     <item>Use <gi>publicationstmt</gi> for unstructured and/or non-referencable rights information associated with the finding aid.</item>
+                  </list>
+               </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
@@ -13018,8 +13170,10 @@
                      <ead:control>
                         <ead:rightsdeclaration>
                            <ead:abbr>CC0</ead:abbr>
-                           <ead:citation href="https://creativecommons.org/publicdomain/zero/1.0/"/>
-                           <ead:descriptivenote><ead:p>CC0 1.0 Universal (CC0 1.0)</ead:p></ead:descriptivenote>
+                           <ead:citation href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0)</ead:citation>
+                           <ead:descriptivenote>
+                              <p>This work has been dedicated to the public domain, meaning that you can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.</p>
+                           </ead:descriptivenote>
                         </ead:rightsdeclaration>
                      </ead:control>
                   </egXML>
@@ -13067,6 +13221,32 @@
                </div>
                <div type="availability">
                   <p>Within <gi>tbody</gi> and <gi>thead</gi>, required, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-scopecontent">
@@ -13410,6 +13590,22 @@
                <div type="availability">
                   <p>Optional, not repeatable </p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:filedesc>
+                        <ead:titlestmt>
+                           <ead:titleproper>Guide to the Lucretia Mott Papers, 1848-1887 and undated</ead:titleproper>
+                           <ead:author>Alice Poffinberger</ead:author>
+                        </ead:titlestmt>
+                        <ead:publicationstmt>
+                           <ead:publisher>David M. Rubenstein Rare Book and Manuscript Library</ead:publisher>
+                        </ead:publicationstmt>
+                        <ead:seriesstmt>
+                           <ead:p>The Lisa Unger Baskin Collection</ead:p>
+                        </ead:seriesstmt>
+                     </ead:filedesc>
+                  </egXML>
+               </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-source">
                <head>
@@ -13460,7 +13656,7 @@
                <div type="description">
                   <p>Use <gi>source</gi> to cite a published resource used in describing the archival material. Though not required, a reference for the source should be included as a textual description in the child
                         <gi>sourceentry</gi>. Use the optional <gi>descriptivenote</gi> for any additional notes about the source. Use the optional <gi>objectxmlwrap</gi> to embed XML documenting the source from any
-                     namespace other than EAD3. </p>
+                     namespace other than EAD.</p>
                   <p>The child elements of <gi>source</gi> are optional, but when present they must be provided in a specific order:</p>
                   <list type="simple">
                      <item>
@@ -13908,6 +14104,21 @@
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:filedesc>
+                        <ead:titlestmt>
+                           <ead:titleproper>Tom Stoppard</ead:titleproper>
+                           <ead:subtitle>An Inventory of His Papers at the Harry Ransom Humanities Research Center</ead:subtitle>
+                           <ead:author>Finding aid written by Katherine Mosley</ead:author>
+                        </ead:titlestmt>
+                        <ead:publicationstmt>
+                           <ead:publisher>The University of Texas at Austin, Harry Ransom Humanities Research Center</ead:publisher>
+                           <ead:date>2000</ead:date>
+                        </ead:publicationstmt>
+                     </ead:filedesc>
+                  </egXML>
+               </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-table">
                <head>
@@ -14211,6 +14422,32 @@
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
+               </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-thead">
                <head>
@@ -14257,6 +14494,32 @@
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-title">
@@ -16435,27 +16698,38 @@
          <div type="appendix" xml:id="appendixC">
             <head>Appendix C: Revision History</head>
             <div>
+               <!--<p>EAD3 1.1.1 (2019 December)</p>-->
+               <p>
+                  <list type="ordered">
+                     <head>EAD3 1.1.1 (2019 December)</head>
+                     <item>The foreign element is now a valid child of the ref element.</item>
+                     <item>The c12 element is now valid in the XSD schemas.</item>
+                     <item>The objectxmlwrap element cannot have descendants in the EAD3 namespace in the XSD schemas.</item>
+                  </list>
+               </p>
+            </div>
+            <div>
                <!--<p>EAD3 1.1.0 (2018 April)</p>-->
                <p>
-               <list type="ordered">
-                  <head>EAD3 1.1.0 (2018 April)</head>
-                  <item>The @render attribute can now be used with the quote element.</item>
-                  <item>The objectxmlwrap element can now be validated properly in the XSD schemas.</item>
-                  <item>Manually fixed a bug that was causing the descgrp element not to validate correctly in the undeprecated DTD.</item>
-                  <item>The date element is now a valid child of the part element.</item>
-                  <item>rightsdeclaration, a new element, has been added to the control section.</item>
-                  <item>The @localtype attribute can now be used with the conventiondeclaration element.</item>
-                  <item>The datatype associated with the @containerid attribute has been relaxed to xsd:string (in EAD3 version 1.0, the datatype for this attribute was restricted to xsd:NMTOKEN).</item>
-               </list>
+                  <list type="ordered">
+                     <head>EAD3 1.1.0 (2018 April)</head>
+                     <item>The @render attribute can now be used with the quote element.</item>
+                     <item>The objectxmlwrap element can now be validated properly in the XSD schemas.</item>
+                     <item>Manually fixed a bug that was causing the descgrp element not to validate correctly in the undeprecated DTD.</item>
+                     <item>The date element is now a valid child of the part element.</item>
+                     <item>rightsdeclaration, a new element, has been added to the control section.</item>
+                     <item>The @localtype attribute can now be used with the conventiondeclaration element.</item>
+                     <item>The datatype associated with the @containerid attribute has been relaxed to xsd:string (in EAD3 version 1.0, the datatype for this attribute was restricted to xsd:NMTOKEN).</item>
+                  </list>
                </p>
             </div>
             <div>
                <!--<p>EAD3 1.0.0 (2015 July)</p>-->
                <p>
-               <list type="ordered">
-                  <head>EAD3 1.0.0 (2015 July)</head>
-                  <item>Initial release.</item>
-               </list>
+                  <list type="ordered">
+                     <head>EAD3 1.0.0 (2015 July)</head>
+                     <item>Initial release.</item>
+                  </list>
                </p>
             </div>
          </div>
