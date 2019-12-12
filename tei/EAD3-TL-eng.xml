@@ -51,7 +51,7 @@
                <titlePart type="main">Encoded Archival Description <lb/>Tag Library</titlePart>
                <titlePart type="additional">Version EAD3 1.1.1</titlePart>
             </docTitle>
-            <docEdition>Edition 2018</docEdition>
+            <docEdition>Edition 2019</docEdition>
             <note>
                <p>This tag library represents version EAD3 1.1.1 of the Encoded Archival Description schemas, released in December 2019. It supersedes the Version EAD3 1.1.0 tag library published in 2018.</p>
                <p>The SAA Technical Subcommittee for Encoded Archival Standards is responsible for updating and editing the EAD schemas and tag library.</p>
@@ -185,7 +185,8 @@
             </div>
             <div xml:id="preface-1.1.1">
                <head>Preface to Revision 1.1.1</head>
-               <p>EAD3 underwent its first patch revision in 2019.  This patch includes one change to the <gi>ref</gi> element and two fixes to the XSD schema.</p>
+               <p>EAD3 underwent its first patch revision in 2019. This patch includes one change to the <gi>ref</gi> element, which now allows <gi>foreign</gi> as sub-element and two fixes to the XSD schema.</p>
+               <p>Furthermore, the updated EAD3 tag library includes additional as well as extended examples for certain elements.</p>
             </div>
             <div xml:id="conventions">
                <head>Tag Library Conventions</head>
