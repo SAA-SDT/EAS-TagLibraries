@@ -6516,9 +6516,11 @@
                <div type="mayContain">
                   <p>archdesc, control</p>
                </div>
+               <!--
                <div type="mayOccurWithin">
                   <p>ROOT</p>
                </div>
+               -->
                <div type="attributes">
                   <p>
                      <list type="gloss">
