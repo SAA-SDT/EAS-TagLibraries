@@ -124,7 +124,7 @@
                 <html lang="en" xml:lang="en">
                         <head>
                                 <title>
-                                        <xsl:value-of select="if ($EAD-TL)then $EAD-html-title
+                                        <xsl:value-of select="if ($EAD-TL) then $EAD-html-title
                                                 else if ($EAC-CPF-TL) then $EAC-CPF-html-title
                                                 else 'Tag Library'">
                                         </xsl:value-of>
