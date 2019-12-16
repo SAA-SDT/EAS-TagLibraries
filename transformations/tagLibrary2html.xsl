@@ -676,13 +676,13 @@
                                         <xsl:when test="contains(., '&quot;') or contains(., '[')">
                                                 <xsl:value-of select="normalize-space(.)"/>
                                         </xsl:when>
-                                        <xsl:when test="not(contains(., '('))">
-                                                <a href="#{translate(concat('elem-', normalize-space(.)), ':','')}">
+                                        <xsl:when test="contains(., '(')">
+                                                <a href="#{translate(concat('elem-', normalize-space(substring-before(., '('))), ':','')}">
                                                         <xsl:value-of select="normalize-space(.)"/>
                                                 </a>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                                <a href="#{translate(concat('elem-', normalize-space(substring-before(., '('))), ':','')}">
+                                                <a href="#{translate(concat('elem-', normalize-space(.)), ':','')}">
                                                         <xsl:value-of select="normalize-space(.)"/>
                                                 </a>
                                         </xsl:otherwise>
