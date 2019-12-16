@@ -24,7 +24,7 @@
 
         <xsl:output doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
                 doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
-                encoding="UTF-8" indent="yes" method="html"/>
+                encoding="UTF-8" omit-xml-declaration="yes" indent="yes" method="xhtml"/>
 
         <xsl:strip-space elements="*"/>
 
@@ -990,7 +990,7 @@
         </xsl:template>
 
         <xsl:template match="tei:back/tei:div/tei:head | tei:back/tei:div/tei:div/tei:head">
-                <div class="head03" id="{translate(translate(concat('appendix-' , .), ':',''), ' ','')}">
+                <div class="head03" id="{translate(concat('appendix-' , .), ':() ','')}">
                         <xsl:apply-templates/>
                         <xsl:text>&#xA0;&#xA0;</xsl:text>
                         <a class="tocReturn" href="#toc">[toc]</a>
