@@ -670,9 +670,27 @@
                         <xsl:text>: </xsl:text>
                 </div>
                 <div class="content">
-                        <xsl:call-template name="elemtokenize">
-                                <xsl:with-param name="text" select="tei:p"/>
-                        </xsl:call-template>
+                        <xsl:for-each select="tokenize(tei:p, ',')">
+                                <xsl:choose>
+                                        <!-- for anything that has a " or a [, like [text], we'll just output the text as is -->
+                                        <xsl:when test="contains(., '&quot;') or contains(., '[')">
+                                                <xsl:value-of select="normalize-space(.)"/>
+                                        </xsl:when>
+                                        <xsl:when test="not(contains(., '('))">
+                                                <a href="#{translate(concat('elem-', normalize-space(.)), ':','')}">
+                                                        <xsl:value-of select="normalize-space(.)"/>
+                                                </a>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                                <a href="#{translate(concat('elem-', normalize-space(substring-before(., '('))), ':','')}">
+                                                        <xsl:value-of select="normalize-space(.)"/>
+                                                </a>
+                                        </xsl:otherwise>
+                                </xsl:choose>
+                                <xsl:if test="position() ne last()">
+                                        <xsl:text>, </xsl:text>
+                                </xsl:if>
+                        </xsl:for-each>
                 </div>
         </xsl:template>
 
@@ -735,49 +753,6 @@
                 </div>
         </xsl:template>
         
-        <xsl:template name="elemtokenize">
-                <xsl:param name="text" select="."/>
-                <xsl:param name="separator" select="','"/>
-                <xsl:choose>
-                        <!-- we don't want to tokenize lists of string values -->
-                        <xsl:when test="contains($text, '&quot;') or contains($text, '[')">
-                            <xsl:value-of select="normalize-space($text)"/>
-                        </xsl:when>
-
-                        <!-- if we passed a single element to this template, strip parens from the URL and return it -->
-                        <xsl:when test="not(contains($text, $separator))">
-                                <xsl:choose>
-                                            <xsl:when test="not(contains($text, '('))">
-                                                <a
-                                                        href="#{translate(concat('elem-', normalize-space($text)), ':','')}">
-                                                        <xsl:value-of select="normalize-space($text)"/>
-                                                </a>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <a
-                                                        href="#{translate(concat('elem-', normalize-space(substring-before($text, '('))), ':','')}">
-                                                        <xsl:value-of
-                                                                select="normalize-space($text)"
-                                                        />
-                                                </a>
-                                            </xsl:otherwise>
-                                </xsl:choose>
-                        </xsl:when>
-                        <!-- otherwise, split the string into the front element + rest of string and pass through this template again -->
-                        <xsl:otherwise>
-                                <xsl:call-template name="elemtokenize">
-                                        <xsl:with-param name="text"
-                                                select="substring-before($text, $separator)"/>
-                                </xsl:call-template>
-                                <xsl:text>, </xsl:text>
-                                <xsl:call-template name="elemtokenize">
-                                        <xsl:with-param name="text"
-                                                select="substring-after($text, $separator)"/>
-                                </xsl:call-template>
-                        </xsl:otherwise>
-                </xsl:choose>
-        </xsl:template>
-
         <xsl:template
                 match="tei:div[@type='attributes'][parent::tei:div[@type='elementDocumentation']] | tei:div[@type='attributes'][parent::tei:div[@type='elementDocumentation']]/tei:p">
                 <xsl:choose>
