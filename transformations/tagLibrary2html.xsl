@@ -12,7 +12,7 @@
         xmlns:mods="http://www.loc.gov/mods/v3" xmlns:text="http://www.tei.org/ns/1.0"
         xmlns:example="example" xmlns:term="term" xmlns:exslt="http://exslt.org/common"
         xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-        exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead mods text term dc oai_dc"
+        exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead mods text term dc oai_dc fo premis tei"
         xpath-default-namespace="http://www.tei-c.org/ns/1.0" extension-element-prefixes="exslt"
         version="2.0">
         
@@ -1019,6 +1019,10 @@
                 </span>
         </xsl:template>
 
+        <!-- why?  looks like formatting for foot/end notes, but there aren't any.
+                there are just 2 notes in the EAD tag library... and 0 notes in the EAC tag library.
+                so let's remove this from now.
+                - mdc.
         <xsl:template match="tei:note">
                 <xsl:text>(</xsl:text>
                 <xsl:value-of select="@n"/>
@@ -1026,17 +1030,16 @@
                 <xsl:apply-templates/>
                 <xsl:text>)</xsl:text>
         </xsl:template>
+        -->
         
       
         <xsl:template match="tei:figure/tei:graphic">
-                <div class="image">
-                        <xsl:element name="img">
-                                <xsl:attribute name="src">
-                                        <xsl:text>../images/</xsl:text><xsl:value-of select="@url" />
-                                </xsl:attribute>
-                                <xsl:attribute name="alt"><xsl:value-of select="@url"/></xsl:attribute>
-                        </xsl:element>
-                </div>
+                <xsl:element name="img">
+                        <xsl:attribute name="src">
+                                <xsl:text>../images/</xsl:text><xsl:value-of select="@url" />
+                        </xsl:attribute>
+                        <xsl:attribute name="alt"><xsl:value-of select="@url"/></xsl:attribute>
+                </xsl:element>   
         </xsl:template>
 
         <xsl:template match="tei:front/tei:div/tei:div/ex:egXML | tei:front/tei:div/tei:div/eg:egXML">

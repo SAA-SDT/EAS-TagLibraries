@@ -263,8 +263,8 @@
                   description.</p>
                <p>The value of attributes may be constrained by the schema using specific attribute type values. For example, <att>id</att> attribute is of type ID, which constrains its value to a string beginning with
                   an alphabetic character. An <att>id</att> value must be unique within the EAD instance within which it occurs, that is, no other tag in the entire document can have the same <att>id</att> value. EAD
-                  attributes have the following data types<note>Capitalization of data types follows the documentation found in the W3C Recommendation <title>XML Schema Part 2: Datatypes Second Edition</title> (<ref
-                        target="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/</ref>).</note>:</p>
+                  attributes have the following data types <note>(capitalization of data types follows the documentation found in the W3C Recommendation <title>XML Schema Part 2: Datatypes Second Edition</title> (<ref
+                        target="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/</ref>)</note>:</p>
                <list type="gloss">
                   <label>anyURI:</label>
                   <item>A Uniform Resource Identifier. This may be a Uniform Resource Locator (URL) or a Uniform Resource Name (URN). Both relative and absolute URIs are allowed.</item>
