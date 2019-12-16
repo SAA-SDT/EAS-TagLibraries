@@ -33,7 +33,10 @@
         <xsl:variable name="toctype">short</xsl:variable><!-- Used for the look of the toc Values: long | short -->
         <xsl:param name="spaceCharacter"> </xsl:param> <!-- For egxml formatting -->       
         <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
-        <xsl:variable name="TL">EAC-CPF</xsl:variable> <!-- For the cases of differnt TEI used and to give the TL name in some places. EAD | EAC-CPF | EAC-G | EAC-F | PREMIS -->
+        <xsl:variable name="EAD-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Description', 'i')) then true() else false()"/>
+        <xsl:variable name="EAC-CPF-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Context', 'i')) then true() else false()"/>
+        <xsl:param name="EAC-CPF-html-title" select="'Encoded Archival Context—Corporate Bodies, Persons, and Families (EAC-CPF) Tag Library'"/>
+        <xsl:param name="EAD-html-title" select="'Encoded Archival Description Tag Library - Version EAD3 (EAD Official Site, Library of Congress)'"/>
 
         <!-- Headingtranslations in an own xml-file using the currentLanguage to fetch them -->
         <!-- This only works with XSLT-enginee Saxon 6.5.5 -->
@@ -117,17 +120,14 @@
                 select="$headingtranslations//*:terms/*:term[@name='entity']/*:translation[@lang=$currentLanguage]"/>
         
         <xsl:template match="/">
+                <!-- should update to HTML5 - mdc -->
                 <html lang="en" xml:lang="en">
                         <head>
-                                <title><xsl:value-of select="$TL"/><xsl:text> </xsl:text>
-                                        <xsl:choose>
-                                                <xsl:when test="starts-with($TL, 'PREMIS')">
-                                                        <xsl:value-of select="$dataDictionary"/>
-                                                </xsl:when>
-                                                <xsl:otherwise>
-                                                        <xsl:value-of select="$taglibrary"/>
-                                                </xsl:otherwise>
-                                        </xsl:choose>                                        
+                                <title>
+                                        <xsl:value-of select="if ($EAD-TL)then $EAD-html-title
+                                                else if ($EAC-CPF-TL) then $EAC-CPF-html-title
+                                                else 'Tag Library'">
+                                        </xsl:value-of>
                                 </title>
                                 <meta content="en" http-equiv="content-language"/>
                                 <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
@@ -188,7 +188,7 @@
                                         <xsl:apply-templates select="tei:docAuthor[2]"/>
                                 </div>
                         </div>
-                        <div class="image">
+                        <div class="logo">
                               <xsl:apply-templates select="tei:figure/tei:graphic"/>  
                         </div>
                         <div>
@@ -546,17 +546,10 @@
                         <xsl:otherwise>
                                 <div class="leftcol" id="{translate(concat('elem-', .), ':','')}">
                                         <span class="label">
-                                                <xsl:choose>
-                                                        <xsl:when test="starts-with($TL, 'PREMIS')">
-                                                                <xsl:value-of select="$semanticUnit"/>    
-                                                                <xsl:text> </xsl:text>     
-                                                        </xsl:when>
-                                                        <xsl:otherwise>
-                                                                <xsl:text>&lt;</xsl:text>
-                                                                <xsl:apply-templates/>
-                                                                <xsl:text>&gt;</xsl:text>    
-                                                        </xsl:otherwise>
-                                                </xsl:choose>     
+                                                <!-- would like to look into this section, but for now just removing the PREMIS bit.  - mdc -->
+                                                <xsl:text>&lt;</xsl:text>
+                                                <xsl:apply-templates/>
+                                                <xsl:text>&gt;</xsl:text>    
                                         </span>
                                 </div>
                         </xsl:otherwise>
@@ -982,14 +975,7 @@
 
         <xsl:template match="tei:att" mode="toc">
                 <xsl:text>@</xsl:text>
-                <xsl:apply-templates/>
-                <!--<xsl:choose>
-                        <xsl:when test="$TL='EAD'">
-                               <xsl:value-of select="."/> 
-                        </xsl:when>
-                        <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
-                </xsl:choose>-->
-                
+                <xsl:apply-templates/>                
         </xsl:template>
 
         <xsl:template match="tei:back/tei:div | tei:back/tei:div/tei:div">
@@ -1150,4 +1136,13 @@
                         <br/>
                 </div>
         </xsl:template>
+        
+        <!-- total hack until we determine how best to hande this. but, we don't want to wind up with "LibraryVersion", which is what we have now. -->
+        <xsl:template match="tei:titlePart">
+                <xsl:apply-templates/>
+                <xsl:if test="position() ne last()">
+                        <xsl:text> </xsl:text>
+                </xsl:if>
+        </xsl:template>
+        
 </xsl:stylesheet>
