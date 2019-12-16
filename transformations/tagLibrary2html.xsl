@@ -13,7 +13,7 @@
         xmlns:example="example" xmlns:term="term" xmlns:exslt="http://exslt.org/common"
         xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
         exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead mods text term dc oai_dc fo premis tei"
-        xpath-default-namespace="http://www.tei-c.org/ns/1.0" extension-element-prefixes="exslt"
+        xpath-default-namespace="http://www.w3.org/1999/xhtml" extension-element-prefixes="exslt"
         version="2.0">
         
         <!-- 
@@ -117,7 +117,7 @@
                 select="$headingtranslations//*:terms/*:term[@name='entity']/*:translation[@lang=$currentLanguage]"/>
         
         <xsl:template match="/">
-                <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+                <html lang="en" xml:lang="en">
                         <head>
                                 <title><xsl:value-of select="$TL"/><xsl:text> </xsl:text>
                                         <xsl:choose>
@@ -1034,12 +1034,14 @@
         
       
         <xsl:template match="tei:figure/tei:graphic">
-                <xsl:element name="img">
-                        <xsl:attribute name="src">
-                                <xsl:text>../images/</xsl:text><xsl:value-of select="@url" />
-                        </xsl:attribute>
-                        <xsl:attribute name="alt"><xsl:value-of select="@url"/></xsl:attribute>
-                </xsl:element>   
+                <div class="image">
+                        <xsl:element name="img">
+                                <xsl:attribute name="src">
+                                        <xsl:text>../images/</xsl:text><xsl:value-of select="@url" />
+                                </xsl:attribute>
+                                <xsl:attribute name="alt"><xsl:value-of select="@url"/></xsl:attribute>
+                        </xsl:element>
+                </div>
         </xsl:template>
 
         <xsl:template match="tei:front/tei:div/tei:div/ex:egXML | tei:front/tei:div/tei:div/eg:egXML">
