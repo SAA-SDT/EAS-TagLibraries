@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:eac-cpf="urn:isbn:1-931666-33-4"
-    xmlns:ead="http://ead3.archivists.org/schema/" xmlns:premis="http://www.loc.gov/premis/v3"
+    xmlns:ead="urn:isbn:1-931666-22-9"
+    xmlns:ead3="http://ead3.archivists.org/schema/"
+    xmlns:premis="http://www.loc.gov/premis/v3"
     xmlns:ex="http://www.tei-c.org/ns/Examples" xmlns:eg="http://www.tei-c.org/ns/Examples"
     xmlns:exml="http://workaround for xml namespace restriction/namespace"
     xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -13,13 +15,6 @@
     exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead mods text term dc oai_dc"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0" extension-element-prefixes="exslt"
     version="2.0">
-
-    <!-- 
-        Need to have the same ead namespace as in the xml to be transformed.
-        xmlns:ead="urn:isbn:1-931666-22-9" is for eac-cpf Tl version 2014
-        xmlns:ead="http://ead3.archivists.org/schema/" is for EAD3
-        ... could use an ead3 namespace prefix to avoid the confusion?  but since we aren't maintaining the EAD2002 one right now, i've just edited the ead namespace declaration to use the ead3 namespace.
-    -->
 
     <xsl:output indent="yes"/>
     <xsl:variable name="SAA">yes</xsl:variable>
@@ -1570,7 +1565,7 @@
 
     <!-- In this template all occuring other namespaceprefixis needs to be added -->
     <xsl:template
-        match="eac-cpf:* | example:* | ead:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
+        match="eac-cpf:* | example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
         <xsl:variable name="myDepth"
             select="count(ancestor::*[not(namespace-uri() = 'http://www.tei-c.org/ns/1.0')]) * 5"/>
         <fo:block start-indent="body-start() + {$myDepth}mm" wrap-option="wrap">

@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
         xmlns:fo="http://www.w3.org/1999/XSL/Format" 
         xmlns:eac-cpf="urn:isbn:1-931666-33-4"
-        xmlns:ead="http://ead3.archivists.org/schema/"
+        xmlns:ead="urn:isbn:1-931666-22-9"
+        xmlns:ead3="http://ead3.archivists.org/schema/"
         xmlns:premis="http://www.loc.gov/premis/v3"
         xmlns:ex="http://www.tei-c.org/ns/Examples"
         xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -15,12 +16,6 @@
         exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead mods text term dc oai_dc fo premis tei"
         xpath-default-namespace="http://www.w3.org/1999/xhtml" extension-element-prefixes="exslt"
         version="2.0">
-        
-        <!-- 
-        Need to have the same ead namespace as in the xml to be transformed.
-        xmlns:ead="urn:isbn:1-931666-22-9" is for eac-cpf Tl version 2014
-        xmlns:ead="http://ead3.archivists.org/schema/" is for EAD3
-    -->
 
         <xsl:output doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
                 doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
@@ -1099,7 +1094,7 @@
         </xsl:template>
 
         <!-- In this template all occuring other namespaceprefixis needs to be added -->
-        <xsl:template match="eac-cpf:*|example:* | ead:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
+        <xsl:template match="eac-cpf:* | example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
                 <div class="innerExample">
                         <xsl:text>&lt;</xsl:text>
                         <xsl:value-of select="local-name()"/>
