@@ -958,7 +958,7 @@
                 </fo:list-item-label>
                 <fo:list-item-body start-indent="body-start()">
                     <xsl:choose>
-                        <xsl:when test="div[@type = 'occurenceSpecifikation']">
+                        <xsl:when test="tei:div[@type = 'occurenceSpecifikation']">
                             <fo:block>
                                 <xsl:apply-templates/>
                             </fo:block>
