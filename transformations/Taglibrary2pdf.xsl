@@ -12,7 +12,7 @@
     xmlns:example="example" xmlns:term="term" xmlns:exslt="http://exslt.org/common"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-    exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead mods text term dc oai_dc"
+    exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead ead3 mods text term dc oai_dc"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0" extension-element-prefixes="exslt"
     version="2.0">
 
