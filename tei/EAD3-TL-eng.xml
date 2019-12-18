@@ -14109,8 +14109,8 @@
                         <item>Optional</item>
                         <label>lang</label>
                         <item>Optional</item>
-                        <label>lastDateTimeVerified</label>
-                        <item>Optional</item>
+                        <label>lastdatetimeverified</label>
+                        <item>Optional (must follow pattern based on ISO 8601)</item>
                         <label>localtype</label>
                         <item>Optional</item>
                         <label>script</label>
