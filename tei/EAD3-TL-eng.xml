@@ -1422,7 +1422,7 @@
                   <p>Script Code</p>
                </div>
                <div type="summary">
-                  <p>The code for the writing script used with a given language. Content should be taken from ISO 15924 Codse for the Representation of Names of Scripts, or another controlled list, as specified in the
+                  <p>The code for the writing script used with a given language. Content should be taken from ISO 15924 Codes for the Representation of Names of Scripts, or another controlled list, as specified in the
                         <att>scriptencoding</att> attribute in <gi>control</gi>. Available in <gi>script</gi>.</p>
                </div>
                <div type="datatype">
@@ -1633,7 +1633,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p>abstract, addressline, archref, author, bibref, citation, container, conventiondeclaration, date, datesingle, didnote, dimensions, edition, emph, entry, event, fromdate, head, head01, head02, head03,
-                     item, label, localtypedeclaration, materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, ref, sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
+                     item, label, localtypedeclaration, materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, ref, rightsdeclaration, sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
                </div>
                <div type="attributes">
                   <p>
