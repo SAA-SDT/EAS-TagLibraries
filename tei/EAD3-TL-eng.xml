@@ -3255,7 +3255,7 @@
                   <gi>c</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (unnumbered)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a subordinate part of the materials being described.</p>
@@ -3353,7 +3353,7 @@
                   <gi>c01</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (first level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates the top or first-level subordinate part of the materials.</p>
@@ -3462,7 +3462,7 @@
                   <gi>c02</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (second level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a second-level subordinate part of the materials.</p>
@@ -3533,7 +3533,7 @@
                   <gi>c03</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (third level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a third-level subordinate part of the materials.</p>
@@ -3604,7 +3604,7 @@
                   <gi>c04</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (fourth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a fourth-level subordinate part of the materials.</p>
@@ -3675,7 +3675,7 @@
                   <gi>c05</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (fifth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a fifth-level subordinate part of the materials.</p>
@@ -3746,7 +3746,7 @@
                   <gi>c06</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (sixth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a sixth-level subordinate part of the materials.</p>
@@ -3817,7 +3817,7 @@
                   <gi>c07</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (seventh level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a seventh-level subordinate part of the materials.</p>
@@ -3888,7 +3888,7 @@
                   <gi>c08</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (eighth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates an eighth-level subordinate part of the materials.</p>
@@ -3951,7 +3951,7 @@
                   <gi>c09</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (ninth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a ninth-level subordinate part of the materials.</p>
@@ -4018,7 +4018,7 @@
                   <gi>c10</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (10th level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a tenth-level subordinate part of the materials.</p>
@@ -4085,7 +4085,7 @@
                   <gi>c11</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (11th level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates an eleventh-level subordinate part of the materials.</p>
@@ -4152,7 +4152,7 @@
                   <gi>c12</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (12th level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a twelfth-level subordinate part of the materials.</p>
