@@ -1030,7 +1030,7 @@
                <div type="fullName">
                   <p>Mark</p>
                </div>
-               <div type="values">
+               <div type="summary">
                   <p>For lists with a <att>listtype</att> value "unordered," <att>mark</att> may be used to indicate the character to be used in marking each list entry. Values are drawn from the CSS "list-style-type"
                      property list.</p>
                </div>
