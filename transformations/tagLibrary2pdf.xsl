@@ -16,8 +16,10 @@
     xpath-default-namespace="http://www.tei-c.org/ns/1.0" extension-element-prefixes="exslt"
     version="2.0">
 
+    <!-- variables passed from the build script to the XSLT -->
+    <xsl:param name="SAA" as="xs:string" required="yes"/>
+
     <xsl:output indent="yes"/>
-    <xsl:variable name="SAA">yes</xsl:variable>
     <!-- Used for inserting SAA logo or not Values: yes | no -->
     <xsl:variable name="currentLanguage">en</xsl:variable>
     <!-- xml:lang from taglibrary -->

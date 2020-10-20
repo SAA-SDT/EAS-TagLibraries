@@ -14,35 +14,37 @@ then
     exit 1
 fi
 
+# paths to libraries
+saxon="vendor/SaxonHE10-2J/saxon-he-10.2.jar"
+fop="vendor/fop-2.5/fop/fop"
+outfile=$(basename "$2" .xml)
+
 # check for which TL we're generating
-# if we want to pass any standard-specific variables in,
-# we would do it here (e.g. no SAA logo for PREMIS)
+# and generate the FOXML+HTML with parameters based on that
+# e.g. PREMIS doesn't get the SAA logo on the cover
 case $1 in
 	"eac")
 		echo "generating EAC-CPF tag libraries"
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes"
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes"
 		;;
 	"ead")
 		echo "generating EAD3 tag libraries"
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes"
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes"
 		;;
 	"premis")
 		echo "generating PREMIS tag libraries"
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="no"
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="no"
 		;;
 	*)
 		echo "supplied tag library must be: eac, ead, premis"
 		exit 1
 esac
 
-# paths to libraries
-saxon="vendor/SaxonHE10-2J/saxon-he-10.2.jar"
-fop="vendor/fop-2.5/fop/fop"
-outfile=$(basename "$2" .xml)
-
-# generate the FOXML, then FOXML->PDF, then delete FOXML
-java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml
+# generate the FOXML->PDF, then delete FOXML
 $fop "$outfile"-tmp.xml "$outfile".pdf
 rm "$outfile"-tmp.xml
-
-# generate the HTML
-java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html
 
 echo "All done!"
