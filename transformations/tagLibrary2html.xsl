@@ -23,8 +23,10 @@
 
         <xsl:strip-space elements="*"/>
 
+        <!-- variables passed from the build script to the XSLT -->
+        <xsl:param name="SAA" as="xs:string" required="yes"/>
+
         <xsl:variable name="currentLanguage">en</xsl:variable> <!-- xml:lang from taglibrary -->       
-        <xsl:variable name="SAA">no</xsl:variable><!-- Used for inserting SAA logo or not Values: yes | no -->
         <xsl:variable name="toctype">short</xsl:variable><!-- Used for the look of the toc Values: long | short -->
         <xsl:param name="spaceCharacter"> </xsl:param> <!-- For egxml formatting -->       
         <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
