@@ -36,6 +36,9 @@ div.titlePage {
 	padding-bottom: 6px;
 	margin-left:2%
 }
+table {
+	border-spacing: 10px 0;
+}
 .element {
 	padding-top: 24px;
 	padding-bottom: 24px;
