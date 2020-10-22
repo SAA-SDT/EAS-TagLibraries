@@ -227,22 +227,23 @@
                                                 </a>
                                         </div>
                                         <div class="toc2">
-                                                <xsl:for-each select="tei:div/tei:head/tei:gi">
-                                                        <span>
-                                                                <a href="#{translate(concat('elem-', .), ':','')}">
-                                                                      <xsl:value-of select="."/>
-                                                                </a>
-                                                                <xsl:text> &#xA0; </xsl:text>
-                                                        </span>
-                                                        <xsl:for-each select="parent::tei:div">
-                                                                <xsl:variable name="count">
-                                                                        <xsl:number/>
-                                                                </xsl:variable>
-                                                                <xsl:if test="($count mod 6) = 0">
-                                                                        <br/>
-                                                                </xsl:if>
-                                                        </xsl:for-each>
-                                                </xsl:for-each>  
+                                            <table>
+                                                    <xsl:for-each-group select="tei:div[@type='elementDocumentation']" group-ending-with="tei:div[@type='elementDocumentation'][position() mod 7 = 0]">
+                                                        <tr>
+                                                            <xsl:for-each select="current-group()">
+                                                                <td>
+                                                                    <span>
+                                                                        <xsl:for-each select="tei:head/tei:gi">
+                                                                            <a href="#{translate(concat('elem-', .), ':','')}">
+                                                                                  <xsl:value-of select="."/>
+                                                                            </a>
+                                                                        </xsl:for-each>
+                                                                    </span>
+                                                                </td>
+                                                            </xsl:for-each>
+                                                        </tr>
+                                                    </xsl:for-each-group>
+                                            </table>
                                         </div>
                                 </xsl:when>
                                 <xsl:when test="@type='attributes'">
@@ -252,22 +253,23 @@
                                                 </a>
                                         </div>
                                         <div class="toc2">
-                                                <xsl:for-each select="tei:div/tei:head/tei:att">
-                                                        <span>
-                                                                <a href="#{translate(concat('attr-' , .), ':','')}">
-                                                                        <xsl:value-of select="."/>
-                                                                </a>
-                                                                <xsl:text> &#xA0; </xsl:text>
-                                                        </span>
-                                                        <xsl:for-each select="parent::tei:div">
-                                                                <xsl:variable name="count">
-                                                                        <xsl:number/>
-                                                                </xsl:variable>
-                                                                <xsl:if test="($count mod 6) = 0">
-                                                                        <br/>
-                                                                </xsl:if>
-                                                        </xsl:for-each>
-                                                </xsl:for-each>    
+                                            <table>
+                                                    <xsl:for-each-group select="tei:div[@type='attributeDocumentation']" group-ending-with="tei:div[@type='attributeDocumentation'][position() mod 7 = 0]">
+                                                        <tr>
+                                                            <xsl:for-each select="current-group()">
+                                                                <td>
+                                                                <span>
+                                                                    <xsl:for-each select="tei:head/tei:att">
+                                                                        <a href="#{translate(concat('attr-', .), ':','')}">
+                                                                              <xsl:value-of select="."/>
+                                                                        </a>
+                                                                    </xsl:for-each>
+                                                                </span>
+                                                            </td>
+                                                            </xsl:for-each>
+                                                        </tr>
+                                                    </xsl:for-each-group>
+                                            </table>  
                                         </div>
                                 </xsl:when>
                                 <xsl:when test="@type='appendix'">

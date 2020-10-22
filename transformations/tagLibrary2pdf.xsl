@@ -149,12 +149,25 @@
                     <fo:region-before region-name="frontmatter-region-before" extent="2.3cm"/>
                     <fo:region-after region-name="frontmatter-region-after" extent="2.3cm"/>
                 </fo:simple-page-master>
+                <fo:simple-page-master master-name="toc-region" page-height="29.7cm"
+                    page-width="21cm" margin-top="2.5cm" margin-bottom="2.5cm" margin-left="2.5cm"
+                    margin-right="2.5cm">
+                    <fo:region-body region-name="toc-region-body" margin-top="2.4cm"
+                        margin-bottom="2.4cm" margin-left="0cm" margin-right="2.4cm"
+                        column-count="2" />
+                </fo:simple-page-master>
             </fo:layout-master-set>
 
             <fo:page-sequence master-reference="Frontmatter">
                 <fo:flow flow-name="frontmatter-body">
                     <xsl:apply-templates mode="title"
                         select="tei:TEI/tei:text/tei:front/tei:titlePage"/>
+                </fo:flow>
+            </fo:page-sequence>
+
+            <fo:page-sequence master-reference="toc-region">
+                <fo:flow flow-name="toc-region-body">
+                    <xsl:call-template name="toc"/>
                 </fo:flow>
             </fo:page-sequence>
 
@@ -187,7 +200,6 @@
     </xsl:template>
 
     <xsl:template match="tei:TEI">
-        <xsl:call-template name="toc"/>
         <fo:block>
             <xsl:apply-templates select="//tei:text/tei:front/tei:div"/>
         </fo:block>
@@ -201,7 +213,7 @@
 
     <xsl:template name="toc">
         <fo:block font-size="14pt" font-weight="bold" space-before="8pt" space-after="6pt"
-            text-align="center" page-break-before="always" id="tocpage">
+            text-align="center" page-break-before="always" id="tocpage" span="all">
             <fo:marker marker-class-name="taglibrary-head">
                 <fo:block>
                     <xsl:value-of select="$toc"/>
@@ -209,7 +221,6 @@
             </fo:marker>
             <xsl:value-of select="$toc"/>
         </fo:block>
-        <fo:block>
             <xsl:if test="$toctype = 'long'">
                 <xsl:apply-templates mode="toclong" select="//tei:text/tei:front/tei:div"/>
                 <xsl:apply-templates mode="toclong" select="//tei:text/tei:body"/>
@@ -220,24 +231,27 @@
                 <xsl:apply-templates mode="tocshort" select="//tei:text/tei:body"/>
                 <xsl:apply-templates mode="tocshort" select="//tei:text/tei:back"/>
             </xsl:if>
-        </fo:block>
     </xsl:template>
 
     <xsl:template match="tei:div" mode="toclong">
         <xsl:for-each select="tei:div">
             <fo:block font-size="14pt" font-weight="bold" space-before="8pt" space-after="6pt"
-                text-align="left">
+                text-align="left" text-align-last="justify" span="all">
                 <fo:inline>
                     <fo:basic-link internal-destination="{generate-id()}">
                         <xsl:value-of select="tei:head"/>
+                        <fo:leader leader-pattern="dots"/>
+                        <fo:page-number-citation ref-id="{generate-id(.)}"/>
                     </fo:basic-link>
                 </fo:inline>
             </fo:block>
             <xsl:for-each select="tei:div">
-                <fo:block start-indent="10pt">
+                <fo:block start-indent="10pt" text-align-last="justify">
                     <fo:inline>
                         <fo:basic-link internal-destination="{generate-id(.)}">
                             <xsl:value-of select="tei:head"/>
+                            <fo:leader leader-pattern="dots"/>
+                            <fo:page-number-citation ref-id="{generate-id(.)}"/>
                         </fo:basic-link>
                     </fo:inline>
                 </fo:block>
@@ -390,7 +404,7 @@
                         </fo:table-cell>
                         <fo:table-cell>
                             <fo:block>
-                                <xsl:value-of
+                                <xsl:apply-templates
                                     select="$TheWholeDocument/tei:publicationStmt/tei:availability/tei:licence"
                                 />
                             </fo:block>
@@ -411,43 +425,51 @@
                 <!-- Karin få in valet här! -->
                 <xsl:when test="@type = ['elements', 'rights', 'agents', 'objects', 'events']">
                     <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
-                        space-after="6pt" text-align="left">
+                        space-after="6pt" text-align="left" text-align-last="justify" span="all">
                         <!-- Karin: Add selection of value based upon the xml:id??? -->
                         <xsl:value-of select="$elements"/>
-                        <xsl:text>: </xsl:text>
+                        <fo:leader leader-pattern="dots"/>
+                        <fo:page-number-citation ref-id="{generate-id(.)}"/>
                     </fo:block>
-                    <fo:block>
-                        <xsl:for-each select="tei:div[@type = 'elementDocumentation']">
-                            <fo:inline>
+                    <xsl:for-each select="tei:div[@type = 'elementDocumentation']">
+                        <fo:block font-size="10pt" text-align="left" text-align-last="justify" text-indent="10pt">
+                           <fo:inline>
                                 <fo:basic-link internal-destination="{generate-id(.)}">
                                     <xsl:value-of select="tei:head/tei:gi"/>
+                                    <fo:leader leader-pattern="dots"/>
+                                    <fo:page-number-citation ref-id="{generate-id(.)}"/>
                                 </fo:basic-link>
                             </fo:inline>
-                        </xsl:for-each>
-                    </fo:block>
+                        </fo:block>
+                    </xsl:for-each>
                 </xsl:when>
                 <xsl:when test="@type = 'attributes'">
                     <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
-                        space-after="6pt" text-align="left">
+                        space-after="6pt" text-align="left" text-align-last="justify" span="all">
                         <xsl:value-of select="$attributes"/>
-                        <xsl:text>: </xsl:text>
+                        <fo:leader leader-pattern="dots"/>
+                        <fo:page-number-citation ref-id="{generate-id(.)}"/>
                     </fo:block>
-                    <fo:block>
-                        <xsl:for-each select="tei:div[@type = 'attributeDocumentation']">
+                    <xsl:for-each select="tei:div[@type = 'attributeDocumentation']">
+                        <fo:block font-size="10pt" text-align="left" text-align-last="justify" text-indent="10pt">
                             <fo:inline>
                                 <fo:basic-link internal-destination="{generate-id(.)}">
                                     <xsl:value-of select="tei:head/tei:att"/>
+                                    <fo:leader leader-pattern="dots"/>
+                                    <fo:page-number-citation ref-id="{generate-id(.)}"/>
                                 </fo:basic-link>
                             </fo:inline>
-                        </xsl:for-each>
-                    </fo:block>
+                        </fo:block>
+                    </xsl:for-each>
                 </xsl:when>
                 <xsl:when test="@type = 'appendix'">
                     <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
-                        space-after="6pt" text-align="left">
+                        space-after="6pt" text-align="left" text-align-last="justify" span="all">
                         <fo:inline>
                             <fo:basic-link internal-destination="{generate-id(.)}">
                                 <xsl:value-of select="tei:head"/>
+                                <fo:leader leader-pattern="dots"/>
+                                <fo:page-number-citation ref-id="{generate-id(.)}"/>
                             </fo:basic-link>
                         </fo:inline>
                     </fo:block>
@@ -1401,9 +1423,9 @@
     </xsl:template>
 
     <xsl:template match="tei:ref">
-        <fo:inline color="blue" keep-together.within-line="always">
+        <fo:basic-link external-destination="{@target}" color="blue">
             <xsl:apply-templates/>
-        </fo:inline>
+        </fo:basic-link>
     </xsl:template>
 
     <xsl:template match="tei:figure">
