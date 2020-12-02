@@ -43,6 +43,8 @@
                 select="$headingtranslations//*:terms/*:term[@name='summary']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="description"
                 select="$headingtranslations//*:terms/*:term[@name='description']/*:translation[@lang=$currentLanguage]"/>
+        <xsl:variable name="desc"
+                select="$headingtranslations//*:terms/*:term[@name='desc']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="mayoccurwithin"
                 select="$headingtranslations//*:terms/*:term[@name='mayOccurWithin']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="mandatory"
@@ -460,7 +462,6 @@
                         <xsl:apply-templates select="tei:div[@type='summary']"/>
                         <xsl:apply-templates select="tei:div[@type='attributeusage']"/>
                         <xsl:apply-templates select="tei:div[@type='seealso']"/>
-                        <xsl:apply-templates select="tei:div[@type='usage']"/>
                         <xsl:apply-templates select="tei:div[@type='mayContain']"/>
                         <xsl:apply-templates select="tei:div[@type='semanticcomponents']"/>
                         <xsl:apply-templates select="tei:div[@type='mayOccurWithin']"/>
@@ -469,6 +470,8 @@
                         <xsl:apply-templates select="tei:div[@type='rationale']"/>
                         <xsl:apply-templates select="tei:div[@type='datatype']"/>
                         <xsl:apply-templates select="tei:div[@type='description']"/>
+                        <xsl:apply-templates select="tei:div[@type='desc']"/>
+                        <xsl:apply-templates select="tei:div[@type='usage']"/>
                         <xsl:apply-templates select="tei:div[@type='references']"/>
                         <xsl:apply-templates select="tei:div[@type='attributes']"/>
                         <xsl:apply-templates select="tei:div[@type='occurrence']"/>
@@ -487,6 +490,7 @@
                         <xsl:apply-templates select="tei:div[@type='fullName']"/>
                         <xsl:apply-templates select="tei:div[@type='summary']"/>
                         <xsl:apply-templates select="tei:div[@type='description']"/>
+                        <xsl:apply-templates select="tei:div[@type='desc']"/>
                         <xsl:apply-templates select="tei:div[@type='usage']"/>
                         <xsl:apply-templates select="tei:div[@type='mayContain']" mode="dep"/>
                         <xsl:apply-templates select="tei:div[@type='mayOccurWithin']" mode="dep"/>
@@ -506,6 +510,8 @@
                         <xsl:apply-templates select="tei:head/tei:att"/>
                         <xsl:apply-templates select="tei:div[@type='summary']"/>
                         <xsl:apply-templates select="tei:div[@type='description']"/>
+                        <xsl:apply-templates select="tei:div[@type='desc']"/>
+                        <xsl:apply-templates select="tei:div[@type='usage']"/>
                         <xsl:apply-templates select="tei:div[@type='datatype']"/>
                         <xsl:apply-templates select="tei:div[@type='values']"/> 
                         <xsl:apply-templates select="tei:div[@type='examples']"/>
@@ -643,7 +649,7 @@
                 </div>
         </xsl:template>
 
-        <xsl:template match="tei:div[@type=('summary', 'definition', 'entity', 'rationale', 'creationmaintenance', 'usagenotes', 'description')]">
+        <xsl:template match="tei:div[@type=('summary', 'definition', 'entity', 'rationale', 'creationmaintenance', 'usagenotes', 'description', 'desc', 'usage')]">
                 <div class="leftcol">
                         <xsl:variable name="termtitle"><xsl:value-of select="current()/@type"/></xsl:variable>
                         <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$termtitle]/*:translation[@lang=$currentLanguage]"/>
@@ -719,7 +725,7 @@
         </xsl:template>-->
         
         <!-- When we have description and usage in one header -->
-        <xsl:template match="tei:div[@type='usage'] | tei:div[@type='descriptionAndUsage']">
+        <xsl:template match="tei:div[@type='descriptionAndUsage']">
                 <div class="span">
                         <xsl:apply-templates/>
                 </div>
@@ -787,7 +793,7 @@
                 </xsl:choose>
         </xsl:template>
         
-        
+     
         <xsl:template
                 match="tei:div[@type='attributeusage'][parent::tei:div[@type='elementDocumentation']]/tei:list[@type='simple']">
                              <div class="leftcol">
@@ -799,10 +805,9 @@
                                                 
                                                 <xsl:apply-templates/>
                                                 <br/>
-                                                <br/>
                                         </xsl:for-each>
                                 </div>
-        </xsl:template>
+        </xsl:template> 
         <xsl:template
                 match="tei:div[@type='seealso'][parent::tei:div[@type='elementDocumentation']]/tei:list[@type='simple']">
                 <div class="leftcol">
@@ -813,7 +818,6 @@
                         <xsl:for-each select="tei:item">
                                 
                                 <xsl:apply-templates/>
-                                <br/>
                                 <br/>
                         </xsl:for-each>
                 </div>
@@ -1143,5 +1147,18 @@
                         <xsl:text> </xsl:text>
                 </xsl:if>
         </xsl:template>
-        
+
+    <!-- formatting tags -->
+    <xsl:template match="tei:bold">
+        <xsl:text> </xsl:text>
+        <strong>
+            <xsl:apply-templates/>
+        </strong>
+    </xsl:template>
+    <xsl:template match="tei:italic">
+        <xsl:text> </xsl:text>
+        <em>
+            <xsl:apply-templates/>
+        </em>
+    </xsl:template>        
 </xsl:stylesheet>
