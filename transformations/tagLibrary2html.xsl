@@ -674,6 +674,25 @@
                                         <xsl:when test="contains(., '&quot;') or contains(., '[')">
                                                 <xsl:value-of select="normalize-space(.)"/>
                                         </xsl:when>
+                                        <xsl:when test="contains(., ' or ')">
+                                            <xsl:for-each select="tokenize(., ' or ')">
+                                                <xsl:choose>
+                                                    <xsl:when test="contains(., '(')">
+                                                        <a href="#{translate(concat('elem-', normalize-space(substring-before(., '('))), ':','')}">
+                                                                <xsl:value-of select="normalize-space(.)"/>
+                                                        </a>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                            <a href="#{translate(concat('elem-', normalize-space(.)), ':','')}">
+                                                                    <xsl:value-of select="normalize-space(.)"/>
+                                                            </a>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                                <xsl:if test="position() ne last()">
+                                                    <xsl:text> or </xsl:text>
+                                                </xsl:if>
+                                            </xsl:for-each>
+                                        </xsl:when>
                                         <xsl:when test="contains(., '(')">
                                                 <a href="#{translate(concat('elem-', normalize-space(substring-before(., '('))), ':','')}">
                                                         <xsl:value-of select="normalize-space(.)"/>
