@@ -158,7 +158,7 @@
                         <att>part</att> in <gi>nameEntry</gi>. In other cases, the examples simply
                      show what is possible. Some examples have ellipses, either between or within
                      elements, indicating that other elements or text have been omitted. Some
-                     elements have multiple examples  one may show very dense markup with numerous
+                     elements have multiple examples one may show very dense markup with numerous
                      attributes while another may illustrate a minimalist approach to the markup.
                      Either approach is valid in EAC-CPF, and it is up to the repository to
                      determine the optimal level of markup based on their specific purposes,
@@ -207,8 +207,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -269,8 +269,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -339,8 +339,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -397,8 +397,8 @@
                         <item>Optional</item>
                         <label>status</label>
                         <item>Optional (values limited to: alternative, authorized)</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -478,8 +478,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -542,8 +542,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -554,8 +554,12 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>agent</gi> to indicate the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAC-CPF instance, and the style sheet used to update an instance to a new version of EAC-CPF.</p>
-				  <p>Give the name of the agent for each maintenance event described in <gi>maintenanceEvent</gi>.</p>
+                  <p>Use <gi>agent</gi> to indicate the person, institution, or system responsible
+                     for a maintenance event. Examples include the name of the author or encoder,
+                     the database responsible for creating the EAC-CPF instance, and the style sheet
+                     used to update an instance to a new version of EAC-CPF.</p>
+                  <p>Give the name of the agent for each maintenance event described in
+                        <gi>maintenanceEvent</gi>.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
@@ -628,10 +632,12 @@
                   <p>Biography or History</p>
                </div>
                <div type="summary">
-                  <p>A concise essay and/or chronology that provides biographical or historical information about the EAC-CPF entity.</p>
+                  <p>A concise essay and/or chronology that provides biographical or historical
+                     information about the EAC-CPF entity.</p>
                </div>
                <div type="mayContain">
-                  <p>abstract (0..1), chronList (0..n), head (0..1), list (0..n), p (0..n), reference (0..n)</p>
+                  <p>abstract (0..1), chronList (0..n), head (0..1), list (0..n), p (0..n),
+                     reference (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>description</p>
@@ -657,15 +663,25 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p><gi>biogHist</gi> includes significant details about the life of an individual or family, or the administrative history of a corporate body.</p>
-				  <p>The <gi>biogHist</gi> element may contain just text in a series of paragraphs <gi>p</gi>, and/or a chronology list <gi>chronList</gi> that matches dates and date ranges with associated events and/or places. The <gi>abstract</gi> element is intended to provide a very brief synopsis of the full <gi>biogHist</gi> content that could be extracted for inclusion in a remote source, such as a MARC record.</p>
-				  <p>The optional <gi>list</gi> element is used to accommodate greater complexity in expressing or representing the biography or history of the CPF entity being described. A simpler discursive expression of the information may be encoded as one or more <gi>p</gi> elements. The optional <gi>head</gi> element can be used to add a title or caption to the text.</p>
+                  <p><gi>biogHist</gi> includes significant details about the life of an individual
+                     or family, or the administrative history of a corporate body.</p>
+                  <p>The <gi>biogHist</gi> element may contain just text in a series of paragraphs
+                        <gi>p</gi>, and/or a chronology list <gi>chronList</gi> that matches dates
+                     and date ranges with associated events and/or places. The <gi>abstract</gi>
+                     element is intended to provide a very brief synopsis of the full
+                        <gi>biogHist</gi> content that could be extracted for inclusion in a remote
+                     source, such as a MARC record.</p>
+                  <p>The optional <gi>list</gi> element is used to accommodate greater complexity in
+                     expressing or representing the biography or history of the CPF entity being
+                     described. A simpler discursive expression of the information may be encoded as
+                     one or more <gi>p</gi> elements. The optional <gi>head</gi> element can be used
+                     to add a title or caption to the text.</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
@@ -715,8 +731,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -780,8 +796,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -842,8 +858,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -893,8 +909,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>unit</label>
                         <item>Optional</item>
                      </list>
@@ -942,21 +958,23 @@
                   <p>
                      <list type="gloss">
                         <label>Attribute that may be used within this element</label>
-                        <item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
+                        <item>"Optional" or "Required" (values limited to: list of valid values for
+                           this attribute)</item>
                      </list>
                   </p>
                </div>
                <div type="description">
                   <p>A narrative description of the use of the element</p>
                </div>
-			   <div type="attributeusage">
+               <div type="attributeusage">
                   <list type="simple">
-				  <item></item>
-				  </list>
-			   </div>	
+                     <item/>
+                  </list>
+               </div>
                <div type="seeAlso">
                   <list type="simple">
-                     <item>A listing of other elements in the tag library that are relevant to, or similar to, the element</item>
+                     <item>A listing of other elements in the tag library that are relevant to, or
+                        similar to, the element</item>
                   </list>
                </div>
                <div type="availability">
@@ -968,7 +986,7 @@
                   </egXML>
                </div>
             </div>
-			<div type="elementDocumentation" xml:id="elem-contact">
+            <div type="elementDocumentation" xml:id="elem-contact">
                <head>
                   <gi>contact</gi>
                </head>
@@ -1007,8 +1025,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1081,8 +1099,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1163,8 +1181,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1262,8 +1280,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -1336,8 +1354,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1423,8 +1441,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1460,8 +1478,9 @@
                </div>
                <div type="availability">
                   <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>,
-                        <gi>dateRange</gi> or <gi>dateSet</gi> optional, not repeatable</p>
+                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>place</gi>, <gi>relation</gi>:
+                     one of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> optional, not
+                     repeatable</p>
                   <p>Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
                         <gi>dateRange</gi> or <gi>dateSet</gi> required, not repeatable</p>
                   <p>Within <gi>dateSet</gi>: at least two of <gi>date</gi> and/or
@@ -1516,8 +1535,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1549,8 +1568,9 @@
                </div>
                <div type="availability">
                   <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>,
-                        <gi>dateRange</gi> or <gi>dateSet</gi> optional, not repeatable</p>
+                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>place</gi>, <gi>relation</gi>:
+                     one of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> optional, not
+                     repeatable</p>
                   <p>Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
                         <gi>dateRange</gi> or <gi>dateSet</gi> required, not repeatable</p>
                   <p>Within <gi>dateSet</gi>: at least two of <gi>date</gi> and/or
@@ -1605,8 +1625,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1672,8 +1692,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1703,38 +1723,45 @@
                   <p>Descriptive Note</p>
                </div>
                <div type="summary">
-                  <p>An element used to provide general descriptive information related to its parent element.</p>
+                  <p>An element used to provide general descriptive information related to its
+                     parent element.</p>
                </div>
                <div type="mayContain">
                   <p>p (1..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>conventionDeclaration, existDates, function, functions, identity, languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses, localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency, mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes, place, places, relation, relations, rightsDeclaration, source, sources</p>
+                  <p>conventionDeclaration, existDates, function, functions, identity,
+                     languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses,
+                     localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency,
+                     mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes,
+                     place, places, relation, relations, rightsDeclaration, source, sources</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
-						<label>conventionDeclarationReference</label>
-						<item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
-						<label>maintenanceEventReference</label>
-						<item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>sourceReference</label>
-						<item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p><gi>descriptiveNote</gi> provides additional descriptive information about the element in which it is contained. <gi>descriptiveNote</gi> must contain one or more <gi>p</gi> elements.</p>
+                  <p><gi>descriptiveNote</gi> provides additional descriptive information about the
+                     element in which it is contained. <gi>descriptiveNote</gi> must contain one or
+                     more <gi>p</gi> elements.</p>
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
@@ -1771,8 +1798,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1815,8 +1842,8 @@
                         <item>Optional (values limited to: external, internal)</item>
                         <label>id</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>value</label>
                         <item>Required (values limited to: corporateBody, person, family)</item>
                      </list>
@@ -1881,8 +1908,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -1942,8 +1969,8 @@
                         <item>Optional</item>
                         <label>standardDateTime</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -1978,7 +2005,8 @@
                   <p>Maintenance Event Description</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>maintenanceEvent</gi> that provides the description of a maintenance event in the life of the EAC-CPF instance.</p>
+                  <p>An optional child element of <gi>maintenanceEvent</gi> that provides the
+                     description of a maintenance event in the life of the EAC-CPF instance.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -1997,13 +2025,16 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>A child element of <gi>maintenanceEvent</gi> used for describing the maintenance event. The element allows a full description of the maintenance event to be given alongside information about the maintenance agent, type and time and date of the maintenance event.</p>
+                  <p>A child element of <gi>maintenanceEvent</gi> used for describing the
+                     maintenance event. The element allows a full description of the maintenance
+                     event to be given alongside information about the maintenance agent, type and
+                     time and date of the maintenance event.</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
@@ -2054,8 +2085,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2140,8 +2171,8 @@
                         <item>Optional (values limited to: ongoing, unknown)</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2224,8 +2255,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -2297,8 +2328,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2355,8 +2386,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2417,8 +2448,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2476,13 +2507,15 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p><gi>head</gi> is used for supplying title-like statements to a section of text or a list. When <gi>head</gi> is used, it must be the first child element, followed by one or more other elements.</p>
+                  <p><gi>head</gi> is used for supplying title-like statements to a section of text
+                     or a list. When <gi>head</gi> is used, it must be the first child element,
+                     followed by one or more other elements.</p>
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
@@ -2536,8 +2569,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2617,8 +2650,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -2653,7 +2686,8 @@
                   <p>Item</p>
                </div>
                <div type="summary">
-                  <p>A child element of <gi>list</gi> that encodes the individual items in a list.</p>
+                  <p>A child element of <gi>list</gi> that encodes the individual items in a
+                     list.</p>
                </div>
                <div type="mayContain">
                   <p>[text], span (0..n), reference (0..n)</p>
@@ -2666,33 +2700,35 @@
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
-						<label>conventionDeclarationReference</label>
-						<item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
-						<label>languageOfElement</label>
-						<item>Optional</item>
-						<label>localType</label>
-						<item>Optional</item>
-						<label>localTypeDeclarationReference</label>
-						<item>Optional</item>
-						<label>maintenanceEventReference</label>
-						<item>Optional</item>
-						<label>scriptOfElement</label>
-						<item>Optional</item>
-						<label>sourceReference</label>
-						<item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>The <gi>item</gi> element is used for general lists within descriptive elements.</p>
+                  <p>The <gi>item</gi> element is used for general lists within descriptive
+                     elements.</p>
                </div>
                <div type="seeAlso">
                   <list type="simple">
-                     <item>Do not confuse with <gi>chronItem</gi>, which encodes entries within a structured chronology, <gi>chronList</gi>.</item>
+                     <item>Do not confuse with <gi>chronItem</gi>, which encodes entries within a
+                        structured chronology, <gi>chronList</gi>.</item>
                   </list>
                </div>
                <div type="availability">
@@ -2734,8 +2770,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2790,8 +2826,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2827,7 +2863,8 @@
                   <p>Language Used</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>languagesUsed</gi> describing the language and writing system used by the CPF entity being described.</p>
+                  <p>A required child element of <gi>languagesUsed</gi> describing the language and
+                     writing system used by the CPF entity being described.</p>
                </div>
                <div type="mayContain">
                   <p>descriptiveNote (0..1), language (0..n), writingSystem (0..n)</p>
@@ -2856,17 +2893,21 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p><gi>languageUsed</gi> is an element used to indicate the language and writing system, or script, in which the CPF entity being described was creative or productive. Use the <gi>language</gi> element to specify the language and a corresponding <gi>writingSystem</gi> element for the writing system.</p>
+                  <p><gi>languageUsed</gi> is an element used to indicate the language and writing
+                     system, or script, in which the CPF entity being described was creative or
+                     productive. Use the <gi>language</gi> element to specify the language and a
+                     corresponding <gi>writingSystem</gi> element for the writing system.</p>
                </div>
                <div type="seeAlso">
                   <list type="simple">
-                     <item>Do not confuse with <gi>languageDeclaration</gi> which refers to the language and script of the EAC-CPF instance.</item>
+                     <item>Do not confuse with <gi>languageDeclaration</gi> which refers to the
+                        language and script of the EAC-CPF instance.</item>
                   </list>
                </div>
                <div type="availability">
@@ -2916,8 +2957,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2974,8 +3015,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -3049,8 +3090,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -3076,7 +3117,9 @@
                   <p>List</p>
                </div>
                <div type="summary">
-                  <p>A wrapper element to encode a simple list consisting of one or more <gi>item</gi> elements, or a complex list with one or more child <gi>list</gi> elements.</p>
+                  <p>A wrapper element to encode a simple list consisting of one or more
+                        <gi>item</gi> elements, or a complex list with one or more child
+                        <gi>list</gi> elements.</p>
                </div>
                <div type="mayContain">
                   <p>head (0..1), item (0..n), list (0..n)</p>
@@ -3089,45 +3132,56 @@
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
-						<label>conventionDeclarationReference</label>
-						<item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
-						<label>languageOfElement</label>
-						<item>Optional</item>
-						<label>listType</label>
-						<item>Optional (values limited to: deflist, ordered, unordered)</item>
-						<label>localType</label>
-						<item>Optional</item>
-						<label>localTypeDeclarationReference</label>
-						<item>Optional</item>
-						<label>mark</label>
-						<item>Optional (values limited to: disc, circle, inherit, none, square)</item>
-						<label>maintenanceEventReference</label>
-						<item>Optional</item>
-						<label>numeration</label>
-						<item>Optional (values limited to: armenian, decimal, decimal-leading-zero, georgian, inherit, lower-alpha, lower-greek, lower-latin, lower-roman, upper-alpha, upper-latin, upper-roman)</item>
-						<label>scriptOfElement</label>
-						<item>Optional</item>
-						<label>sourceReference</label>
-						<item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>listType</label>
+                        <item>Optional (values limited to: deflist, ordered, unordered)</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>mark</label>
+                        <item>Optional (values limited to: disc, circle, inherit, none,
+                           square)</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>numeration</label>
+                        <item>Optional (values limited to: armenian, decimal, decimal-leading-zero,
+                           georgian, inherit, lower-alpha, lower-greek, lower-latin, lower-roman,
+                           upper-alpha, upper-latin, upper-roman)</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>The <gi>list</gi> element is used for general lists that can be embedded with a large number of descriptive elements.</p>
-				  <p>To encode a simple list, include one or more <gi>item</gi> elements within <gi>list</gi>. To encode more complex list, such as hierarchies, additional <gi>list</gi> elements can be included within <gi>list</gi>, with <gi>item</gi> included within the child <gi>list</gi> elements. <gi>head</gi> can be used to encode a title or caption within a <gi>list</gi>.</p>
+                  <p>The <gi>list</gi> element is used for general lists that can be embedded with a
+                     large number of descriptive elements.</p>
+                  <p>To encode a simple list, include one or more <gi>item</gi> elements within
+                        <gi>list</gi>. To encode more complex list, such as hierarchies, additional
+                        <gi>list</gi> elements can be included within <gi>list</gi>, with
+                        <gi>item</gi> included within the child <gi>list</gi> elements.
+                        <gi>head</gi> can be used to encode a title or caption within a
+                        <gi>list</gi>.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use <att>listType</att> to identify and format the list as a particular type. The choices are: "deflist," "ordered," and "unordered."</item>
+                     <item>Use <att>listType</att> to identify and format the list as a particular
+                        type. The choices are: "deflist," "ordered," and "unordered."</item>
                   </list>
-               </div>	
+               </div>
                <div type="seeAlso">
                   <list type="simple">
-                     <item>Do not confuse with <gi>chronList</gi>, which encodes a structured chronology.</item>
+                     <item>Do not confuse with <gi>chronList</gi>, which encodes a structured
+                        chronology.</item>
                   </list>
                </div>
                <div type="availability">
@@ -3171,8 +3225,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -3244,8 +3298,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -3317,8 +3371,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -3365,8 +3419,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						      <label>target</label>
-				      		<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -3428,8 +3482,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -3490,8 +3544,8 @@
                            revised, unknown, updated)</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -3501,14 +3555,16 @@
                      ongoing maintenance of an EAC-CPF instance, including revisions, updates, and
                      deletions. There will always be at least one maintenance event for each
                      instance, which will typically be its creation.</p>
-					 <p><gi>maintenanceEvent</gi> must include <gi>agent</gi> and <gi>eventDateTime</gi> child elements to record the agent that carried out the maintenance event, and the date and time the maintenance event occurred.</p>
+                  <p><gi>maintenanceEvent</gi> must include <gi>agent</gi> and
+                        <gi>eventDateTime</gi> child elements to record the agent that carried out
+                     the maintenance event, and the date and time the maintenance event
+                     occurred.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use the required <att>maintenanceEventType</att> to document the type of maintenance
-                        activity that the <gi>maintenanceEvent</gi> is recording, using one of the
-                        values from the available controlled list.
-					 </item>
+                     <item>Use the required <att>maintenanceEventType</att> to document the type of
+                        maintenance activity that the <gi>maintenanceEvent</gi> is recording, using
+                        one of the values from the available controlled list. </item>
                   </list>
                </div>
                <div type="availability">
@@ -3548,8 +3604,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -3613,8 +3669,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -3687,8 +3743,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -3731,8 +3787,8 @@
                         <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -3799,8 +3855,8 @@
                         <item>Optional</item>
                         <label>status</label>
                         <item>Optional (values limited to: authorized, alternative)</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -3921,8 +3977,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -3973,8 +4029,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -4037,8 +4093,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -4109,8 +4165,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -4164,8 +4220,8 @@
                         <item>Optional</item>
                         <label>status</label>
                         <item>Optional (values limited to: authorized, alternative)</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -4240,8 +4296,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -4307,8 +4363,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -4364,8 +4420,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -4419,29 +4475,33 @@
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
-						<label>conventionDeclarationReference</label>
-						<item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
-						<label>maintenanceEventReference</label>
-						<item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>sourceReference</label>
-						<item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>p</gi> for bounding blocks of text. A paragraph may be a subdivision of a larger composition or it may exist alone. It is usually typographically distinguished: A line space is often left blank before it; the text begins on a new line; and the first letter of the first word may be indented, enlarged, or both.</p>
+                  <p>Use <gi>p</gi> for bounding blocks of text. A paragraph may be a subdivision of
+                     a larger composition or it may exist alone. It is usually typographically
+                     distinguished: A line space is often left blank before it; the text begins on a
+                     new line; and the first letter of the first word may be indented, enlarged, or
+                     both.</p>
                </div>
                <div type="availability">
                   <p>Within <gi>descriptiveNote</gi>: required, repeatable.</p>
-				  <p>Within all other parents: optional, repeatable.</p>
+                  <p>Within all other parents: optional, repeatable.</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -4457,8 +4517,9 @@
                   <p>Part</p>
                </div>
                <div type="summary">
-                  <p>A required and repeatable child of <gi>nameEntry</gi> and <gi>targetEntity</gi> used to distinguish
-                     components of the name of the CPF entity's name, or the name of a related entity.</p>
+                  <p>A required and repeatable child of <gi>nameEntry</gi> and <gi>targetEntity</gi>
+                     used to distinguish components of the name of the CPF entity's name, or the
+                     name of a related entity.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -4487,8 +4548,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -4498,7 +4559,8 @@
                         <gi>part</gi> element. <gi>part</gi> may also contain the full name of the
                      entity when it is not possible to distinguish the different component parts of
                      the name.</p>
-					<p>Within <gi>targetEntity</gi> the name or term for the related entity is encoded within <gi>part</gi> elements.</p>
+                  <p>Within <gi>targetEntity</gi> the name or term for the related entity is encoded
+                     within <gi>part</gi> elements.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
@@ -4556,8 +4618,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -4643,8 +4705,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -4717,8 +4779,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -4789,8 +4851,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -4837,8 +4899,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -4883,14 +4945,14 @@
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
-						      <label>href</label>
-						      <item>Optional</item>
+                        <label>href</label>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
-						      <label>lastDateTimeVerified</label>
+                        <label>lastDateTimeVerified</label>
                         <item>Optional</item>
-						      <label>target</label>
-						      <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -4925,10 +4987,13 @@
                   <p>Relation</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>relations</gi> for describing a relationship between the entity described in the EAC-CPF instance and a related entity.</p>
+                  <p>A required child element of <gi>relations</gi> for describing a relationship
+                     between the entity described in the EAC-CPF instance and a related entity.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), objectXMLWrap (0..1), place (0..n), relationType (0..n), targetEntity (1..1), targetRole (0..n)</p>
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), objectXMLWrap
+                     (0..1), place (0..n), relationType (0..n), targetEntity (1..1), targetRole
+                     (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>relations</p>
@@ -4950,15 +5015,27 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p><gi>relation</gi> records descriptive information about a relationship between the entity being described and a related entity, such as: a corporate body, person, or family; a function; or an archival, bibliographic, or other resource.</p>
-				  <p>Use the required child element <gi>targetEntity</gi> to provide a textual description of the related entity. Use the optional child element <gi>relationType</gi> to specify the type of relation. Use the optional child element <gi>targetRole</gi> to specify the role of the related entity.</p>
-				  <p>Use <gi>objectXMLWrap</gi> to embed XML documenting the related entity from any namespace other than EAC-CPF. Use <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> for specifying the time period of the relationship and <gi>place</gi> for relevant location information. <gi>descriptiveNote</gi> may be included for more detailed specifications or explanations of the relationship.</p>
+                  <p><gi>relation</gi> records descriptive information about a relationship between
+                     the entity being described and a related entity, such as: a corporate body,
+                     person, or family; a function; or an archival, bibliographic, or other
+                     resource.</p>
+                  <p>Use the required child element <gi>targetEntity</gi> to provide a textual
+                     description of the related entity. Use the optional child element
+                        <gi>relationType</gi> to specify the type of relation. Use the optional
+                     child element <gi>targetRole</gi> to specify the role of the related
+                     entity.</p>
+                  <p>Use <gi>objectXMLWrap</gi> to embed XML documenting the related entity from any
+                     namespace other than EAC-CPF. Use <gi>date</gi>, <gi>dateRange</gi>, or
+                        <gi>dateSet</gi> for specifying the time period of the relationship and
+                        <gi>place</gi> for relevant location information. <gi>descriptiveNote</gi>
+                     may be included for more detailed specifications or explanations of the
+                     relationship.</p>
                </div>
                <div type="availability">
                   <p>Required, repeatable</p>
@@ -4977,7 +5054,10 @@
                   <p>Relations</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>cpfDescription</gi> that groups one or more <gi>relation</gi> elements, which identify external entities and characterize the nature of their relationships to the entity being described.</p>
+                  <p>An optional child element of <gi>cpfDescription</gi> that groups one or more
+                        <gi>relation</gi> elements, which identify external entities and
+                     characterize the nature of their relationships to the entity being
+                     described.</p>
                </div>
                <div type="mayContain">
                   <p>descriptiveNote (0..1), relation (1..n)</p>
@@ -5004,13 +5084,14 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>A wrapper element that groups together one or more <gi>relation</gi> elements, each of which encodes a specific relationship.</p>
+                  <p>A wrapper element that groups together one or more <gi>relation</gi> elements,
+                     each of which encodes a specific relationship.</p>
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
@@ -5029,7 +5110,8 @@
                   <p>RelationType</p>
                </div>
                <div type="summary">
-                  <p>A child element of <gi>relation</gi> used to specify the type of relation that the <gi>targetEntity</gi> has to the entity being described.</p>
+                  <p>A child element of <gi>relation</gi> used to specify the type of relation that
+                     the <gi>targetEntity</gi> has to the entity being described.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -5042,36 +5124,43 @@
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
-						<label>conventionDeclarationReference</label>
-						<item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
-						<label>languageOfElement</label>
-						<item>Optional</item>
-						<label>localType</label>
-						<item>Optional</item>
-						<label>localTypeDeclarationReference</label>
-						<item>Optional</item>
-						<label>maintenanceEventReference</label>
-						<item>Optional</item>
-						<label>scriptOfElement</label>
-						<item>Optional</item>
-						<label>sourceReference</label>
-						<item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
-						<label>valueURI</label>
-						<item>Optional</item>
-						<label>vocabularySource</label>
-						<item>Optional</item>
-						<label>vocabularySourceURI</label>
-						<item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>relationType</gi> within <gi>relation</gi> to specify the type of relation that the <gi>targetEntity</gi> has to the entity being described.</p>
-				  <p>The <gi>relationType</gi>element contains a textual description of the relation. Examples of relations between the entity being described and a corporate body, person or family include "identity, hierarchical, temporal, family or associative. Relations between the entity being described and a resource could be "creatorOf", "subjectOf" or "other". Relations between the entity being described and a function could be "controls", "owns" or "performs".</p>
+                  <p>Use <gi>relationType</gi> within <gi>relation</gi> to specify the type of
+                     relation that the <gi>targetEntity</gi> has to the entity being described.</p>
+                  <p>The <gi>relationType</gi>element contains a textual description of the
+                     relation. Examples of relations between the entity being described and a
+                     corporate body, person or family include "identity, hierarchical, temporal,
+                     family or associative. Relations between the entity being described and a
+                     resource could be "creatorOf", "subjectOf" or "other". Relations between the
+                     entity being described and a function could be "controls", "owns" or
+                     "performs".</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
@@ -5122,8 +5211,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -5182,8 +5271,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -5235,21 +5324,23 @@
                   <p>
                      <list type="gloss">
                         <label>Attribute that may be used within this element</label>
-                        <item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
+                        <item>"Optional" or "Required" (values limited to: list of valid values for
+                           this attribute)</item>
                      </list>
                   </p>
                </div>
                <div type="description">
                   <p>A narrative description of the use of the element</p>
                </div>
-			   <div type="attributeusage">
+               <div type="attributeusage">
                   <list type="simple">
-				  <item></item>
-				  </list>
-			   </div>	
+                     <item/>
+                  </list>
+               </div>
                <div type="seeAlso">
                   <list type="simple">
-                     <item>A listing of other elements in the tag library that are relevant to, or similar to, the element</item>
+                     <item>A listing of other elements in the tag library that are relevant to, or
+                        similar to, the element</item>
                   </list>
                </div>
                <div type="availability">
@@ -5261,7 +5352,7 @@
                   </egXML>
                </div>
             </div>
-			<div type="elementDocumentation" xml:id="elem-shortCode">
+            <div type="elementDocumentation" xml:id="elem-shortCode">
                <head>
                   <gi>shortCode</gi>
                </head>
@@ -5288,8 +5379,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -5352,8 +5443,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -5411,8 +5502,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -5462,31 +5553,34 @@
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
-						<label>localType</label>
-						<item>Optional</item>
-						<label>localTypeDeclarationReference</label>
-						<item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
                         <label>maintenanceEventReference</label>
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>style</label>
-						<item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>style</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p><gi>span</gi> is an optional formatting element for distinguishing words or phrases that are intentionally stressed or emphasized for linguistic effect or identifying some qualities of the words or phrases.</p>
+                  <p><gi>span</gi> is an optional formatting element for distinguishing words or
+                     phrases that are intentionally stressed or emphasized for linguistic effect or
+                     identifying some qualities of the words or phrases.</p>
                </div>
-			   <div type="attributeusage">
+               <div type="attributeusage">
                   <list type="simple">
-				  <item>Use the optional <att>style</att> attribute to affect an arbitrary stylistic difference. </item>
-				  </list>
-			   </div>	
+                     <item>Use the optional <att>style</att> attribute to affect an arbitrary
+                        stylistic difference. </item>
+                  </list>
+               </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
@@ -5496,7 +5590,7 @@
                   </egXML>
                </div>
             </div>
-			<div type="elementDocumentation" xml:id="elem-structureOrGenealogy">
+            <div type="elementDocumentation" xml:id="elem-structureOrGenealogy">
                <head>
                   <gi>structureOrGenealogy</gi>
                </head>
@@ -5535,8 +5629,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -5571,7 +5665,8 @@
                   <p>Target Entity</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>relation</gi> used to identify the entity that is being targeted by the relation.</p>
+                  <p>A required child element of <gi>relation</gi> used to identify the entity that
+                     is being targeted by the relation.</p>
                </div>
                <div type="mayContain">
                   <p>part (1..n)</p>
@@ -5596,8 +5691,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                         <label>targetType</label>
                         <item>Required (values limited to: corporateBody, person, family, resource,
                            function)</item>
@@ -5611,12 +5706,16 @@
                   </p>
                </div>
                <div type="description">
-				  <p><gi>targetEntity</gi> is used within <gi>relation</gi> to identify an entity that is related to the subject of the EAC-CPF instance.</p>
-                  <p><gi>targetEntity</gi> must include at least one <gi>part</gi> element, encoding the name or term for the related entity.</p>
+                  <p><gi>targetEntity</gi> is used within <gi>relation</gi> to identify an entity
+                     that is related to the subject of the EAC-CPF instance.</p>
+                  <p><gi>targetEntity</gi> must include at least one <gi>part</gi> element, encoding
+                     the name or term for the related entity.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use the required <att>targetType</att>, to identity the type of entity related to in <gi>targetEntity</gi>, using one of the following values: corporateBody, person, family, resource, function.</item>
+                     <item>Use the required <att>targetType</att>, to identity the type of entity
+                        related to in <gi>targetEntity</gi>, using one of the following values:
+                        corporateBody, person, family, resource, function.</item>
                   </list>
                </div>
                <div type="availability">
@@ -5636,7 +5735,8 @@
                   <p>Target Role</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>relation</gi> used to specify the role of a related entity.</p>
+                  <p>An optional child element of <gi>relation</gi> used to specify the role of a
+                     related entity.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -5655,30 +5755,32 @@
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
-						<label>localType</label>
-						<item>Optional</item>
-						<label>localTypeDeclarationReference</label>
-						<item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
                         <label>maintenanceEventReference</label>
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
-						<label>valueURI</label>
-						<item>Optional</item>
-						<label>vocabularySource</label>
-						<item>Optional</item>
-						<label>vocabularySourceURI</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p><gi>targetRole</gi> is used with <gi>relation</gi> to specify the role of a related entity.</p>
-				  <p>The <gi>targetRole</gi> element contains a textual description of the relation.</p>
+                  <p><gi>targetRole</gi> is used with <gi>relation</gi> to specify the role of a
+                     related entity.</p>
+                  <p>The <gi>targetRole</gi> element contains a textual description of the
+                     relation.</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
@@ -5724,8 +5826,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -5806,8 +5908,8 @@
                         <item>Optional (values limited to: ongoing, unknown)</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -5886,8 +5988,8 @@
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -5938,8 +6040,8 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-						<label>target</label>
-						<item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -6078,7 +6180,9 @@
                   <p>Calendar</p>
                </div>
                <div type="summary">
-                  <p>System of reckoning time, such as Gregorian calendar or Julian calendar. Suggested values include, but are not limited to, "gregorian" and "julian". Available in <gi>date</gi>, <gi>fromDate</gi> and <gi>toDate</gi>.</p>
+                  <p>System of reckoning time, such as Gregorian calendar or Julian calendar.
+                     Suggested values include, but are not limited to, "gregorian" and "julian".
+                     Available in <gi>date</gi>, <gi>fromDate</gi> and <gi>toDate</gi>.</p>
                </div>
                <div type="values">
                   <p>NMTOKEN</p>
@@ -6246,7 +6350,9 @@
                   <p>Era</p>
                </div>
                <div type="summary">
-                  <p>Period during which years are numbered and dated reckoned, such as CE (Common Era) or BCE (Before Common Era). Suggested values include "ce" and "bce". Available in <gi>date</gi>, <gi>fromDate</gi> and <gi>toDate</gi>.</p>
+                  <p>Period during which years are numbered and dated reckoned, such as CE (Common
+                     Era) or BCE (Before Common Era). Suggested values include "ce" and "bce".
+                     Available in <gi>date</gi>, <gi>fromDate</gi> and <gi>toDate</gi>.</p>
                </div>
                <div type="values">
                   <p>NMTOKEN</p>
@@ -6305,13 +6411,18 @@
                <div type="fullName">
                   <p>Identity Type</p>
                </div>
-			   <div type="summary">
-                  <p>Indicates whether the identity is given or acquired. May be useful for processing when multiple identities are described in the same instance.</p>
+               <div type="summary">
+                  <p>Indicates whether the identity is given or acquired. May be useful for
+                     processing when multiple identities are described in the same instance.</p>
                </div>
                <div type="description">
-                  <p>The <att>identityType</att> may occur on <gi>identity</gi>. Though optional, it is recommended that it be used when multiple identities are described in the same EAC-CPF instance using <gi>multipleIdentities</gi>. It will enable processors to distinguish between the description of a person and one or more personae.</p>
+                  <p>The <att>identityType</att> may occur on <gi>identity</gi>. Though optional, it
+                     is recommended that it be used when multiple identities are described in the
+                     same EAC-CPF instance using <gi>multipleIdentities</gi>. It will enable
+                     processors to distinguish between the description of a person and one or more
+                     personae.</p>
                </div>
-			   <div type="values">
+               <div type="values">
                   <p>given, acquired</p>
                </div>
                <div type="examples">
@@ -6350,7 +6461,12 @@
                   <p>Language Encoding</p>
                </div>
                <div type="summary">
-                  <p>Specifies which standard list of codes is used to identify the language of the EAC-CPF instance and languages represented in the materials. The codes themselves are specified in <att>languageCode</att> in <gi>language</gi> and <gi>languageOfElement</gi> in all non-empty elements. Available in <gi>control</gi>. If the value "otherLangEncoding" is selected an alternate code list should be specified in <gi>conventionDeclaration</gi>.</p>
+                  <p>Specifies which standard list of codes is used to identify the language of the
+                     EAC-CPF instance and languages represented in the materials. The codes
+                     themselves are specified in <att>languageCode</att> in <gi>language</gi> and
+                        <gi>languageOfElement</gi> in all non-empty elements. Available in
+                        <gi>control</gi>. If the value "otherLangEncoding" is selected an alternate
+                     code list should be specified in <gi>conventionDeclaration</gi>.</p>
                </div>
                <div type="values">
                   <p>iso639-1, iso639-2b, iso639-3, otherLangEncoding</p>
@@ -6436,7 +6552,9 @@
                <div type="summary">
                   <p>Information that serves as a viewable caption which explains to users the part
                      that a resource plays in a link. May be useful for meeting accessibility
-                     requirements when rendering finding aids in a web browser. Available in <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>, and <gi>source</gi>.</p>
+                     requirements when rendering finding aids in a web browser. Available in
+                        <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>, and
+                        <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -6454,14 +6572,17 @@
                   <p>List Type</p>
                </div>
                <div type="summary">
-                  <p>Specifies the type of list: an ordered list is a numbered or lettered list; an unordered list is one in which sequence is not critical (e.g., a bulleted list); a definition list (deflist) consists of pairings of terms and descriptions. Available only on <gi>list</gi>.</p>
+                  <p>Specifies the type of list: an ordered list is a numbered or lettered list; an
+                     unordered list is one in which sequence is not critical (e.g., a bulleted
+                     list); a definition list (deflist) consists of pairings of terms and
+                     descriptions. Available only on <gi>list</gi>.</p>
                </div>
                <div type="values">
                   <p>deflist, ordered, unordered</p>
                </div>
-			   <div type="examples">
-			      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-			         ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
+                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-localType">
@@ -6610,17 +6731,19 @@
                   <p>Mark</p>
                </div>
                <div type="summary">
-                  <p>or lists with a <att>listType</att> value "unordered", mark may be used to indicate the character to be used in marking each list entry. Values are drawn from the CSS "list-style-type" property list.</p>
+                  <p>or lists with a <att>listType</att> value "unordered", mark may be used to
+                     indicate the character to be used in marking each list entry. Values are drawn
+                     from the CSS "list-style-type" property list.</p>
                </div>
                <div type="values">
                   <p>disc, circle, inherit, none, square</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                  ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
                </div>
             </div>
-			<div type="attributeDocumentation" xml:id="attr-notAfter">
+            <div type="attributeDocumentation" xml:id="attr-notAfter">
                <head>
                   <att>notAfter</att>
                </head>
@@ -6631,7 +6754,8 @@
                   <p>A standard numerical form of an approximate date for which a latest possible
                      date is known. Available in <gi>date</gi>, <gi>fromDate</gi>, and
                         <gi>toDate</gi>. It is recommended that <att>notAfter</att> values follow
-                     ISO 8601 or another standard date format as specified in <att>dateEncoding</att>.</p>
+                     ISO 8601 or another standard date format as specified in
+                        <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -6652,7 +6776,8 @@
                   <p>A standard numerical form of an approximate date for which an earliest possible
                      date is known. Available in <gi>date</gi>, <gi>fromDate</gi>, and
                         <gi>toDate</gi>. It is recommended that <att>notBefore</att> values follow
-                     ISO 8601 or another standard date format as specified in <att>dateEncoding</att>.</p>
+                     ISO 8601 or another standard date format as specified in
+                        <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -6670,17 +6795,21 @@
                   <p>Numeration</p>
                </div>
                <div type="summary">
-                  <p>For lists with a <att>listType</att> value of "ordered", numeration specifies the type of numeration. Values are drawn from the CSS "list-style-type" property list.</p>
+                  <p>For lists with a <att>listType</att> value of "ordered", numeration specifies
+                     the type of numeration. Values are drawn from the CSS "list-style-type"
+                     property list.</p>
                </div>
                <div type="values">
-                  <p>armenian, decimal, decimal-leading-zero, georgian, inherit, lower-alpha, lower-greek, lower-latin, lower-roman, upper-alpha, upper-latin, upper-roman</p>
+                  <p>armenian, decimal, decimal-leading-zero, georgian, inherit, lower-alpha,
+                     lower-greek, lower-latin, lower-roman, upper-alpha, upper-latin,
+                     upper-roman</p>
                </div>
-			   <div type="examples">
-			      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-			         ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
+                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
                </div>
             </div>
-			<div type="attributeDocumentation" xml:id="attr-preferredForm">
+            <div type="attributeDocumentation" xml:id="attr-preferredForm">
                <head>
                   <att>preferredForm</att>
                </head>
@@ -6688,7 +6817,8 @@
                   <p>Preferred Form</p>
                </div>
                <div type="summary">
-                  <p>Attribute that specifies whether or not a <gi>nameEntry</gi> provides the preferred form of the name of the EAC-CPF entity.</p>
+                  <p>Attribute that specifies whether or not a <gi>nameEntry</gi> provides the
+                     preferred form of the name of the EAC-CPF entity.</p>
                </div>
                <div type="values">
                   <p>false, true</p>
@@ -6878,7 +7008,9 @@
                   <p>Status</p>
                </div>
                <div type="summary">
-                  <p>Attribute that provides controlled terminology detailing the status of elements. The terms available for <att>status</att> are defined in closed lists that vary by element as follows:</p>
+                  <p>Attribute that provides controlled terminology detailing the status of
+                     elements. The terms available for <att>status</att> are defined in closed lists
+                     that vary by element as follows:</p>
                </div>
                <div type="values">
                   <p>Values in <gi>fromDate</gi> and <gi>toDate</gi>: ongoing, unknown</p>
@@ -6886,7 +7018,7 @@
                <div type="values">
                   <p>Values in <gi>nameEntry</gi>: alternative, authorized</p>
                </div>
-			   <div type="examples">
+               <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
                      ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
                </div>
@@ -6899,21 +7031,27 @@
                   <p>Style</p>
                </div>
                <div type="summary">
-                  <p>Used to specify a rendering style for a string. It is recommended that the value conforms to W3C CSS.</p>
+                  <p>Used to specify a rendering style for a string. It is recommended that the
+                     value conforms to W3C CSS.</p>
                </div>
                <div type="description">
-                  <p>The <att>style</att> attribute may occur on <gi>span</gi>. In a limited number of contexts that accommodate discursive description, <gi>span</gi> with <att>style</att> may be used to identify an arbitrary string that is intended to be rendered in a specific style. It is highly recommended that the value of <att>style</att> be expressed as a W3C CSS style to facilitate interoperability.</p>
+                  <p>The <att>style</att> attribute may occur on <gi>span</gi>. In a limited number
+                     of contexts that accommodate discursive description, <gi>span</gi> with
+                        <att>style</att> may be used to identify an arbitrary string that is
+                     intended to be rendered in a specific style. It is highly recommended that the
+                     value of <att>style</att> be expressed as a W3C CSS style to facilitate
+                     interoperability.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
                </div>
-			   <div type="examples">
+               <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-					  <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
-				  </egXML>
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
-			<div type="attributeDocumentation" xml:id="attr-target">
+            <div type="attributeDocumentation" xml:id="attr-target">
                <head>
                   <att>target</att>
                </head>
@@ -6921,15 +7059,16 @@
                   <p>Target</p>
                </div>
                <div type="summary">
-                  <p>A pointer to the ID of another element. Used to create internal links within an XML instance.</p>
+                  <p>A pointer to the ID of another element. Used to create internal links within an
+                     XML instance.</p>
                </div>
                <div type="datatype">
                   <p>IDREF</p>
                </div>
-			   <div type="examples">
+               <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-					  <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
-				  </egXML>
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-targetType">
@@ -6940,7 +7079,7 @@
                   <p>Target Type</p>
                </div>
                <div type="summary">
-                  <p>Identifies the type of entity that <gi>targetEntity</gi> is pointing to.</p>
+                  <p>Required attribute within <gi>targetEntity</gi> which identifies the type of entity that is related to the CPF entity being described.</p>
                </div>
                <div type="values">
                   <p>corporateBody, family, function, person, resource</p>
@@ -6959,7 +7098,8 @@
                </div>
                <div type="summary">
                   <p>Use <att>unit</att> to document the format or unit that is specified in
-                        <gi>citedRange</gi>, for example page number ("pagenumber") or volume number ("volumenumber").</p>
+                        <gi>citedRange</gi>, for example page number ("pagenumber") or volume number
+                     ("volumenumber").</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -6977,7 +7117,8 @@
                   <p>Value</p>
                </div>
                <div type="summary">
-                  <p>Required attribute within the <gi>nameEntry</gi> element that defines the type of entity described in the EAC-CPF instance. </p>
+                  <p>Required attribute within the <gi>nameEntry</gi> element that defines the type
+                     of entity described in the EAC-CPF instance. </p>
                </div>
                <div type="values">
                   <p>corporateBody, family, person</p>
