@@ -3141,7 +3141,7 @@
                         <label>languageOfElement</label>
                         <item>Optional</item>
                         <label>listType</label>
-                        <item>Optional (values limited to: deflist, ordered, unordered)</item>
+                        <item>Optional (values limited to: ordered, unordered)</item>
                         <label>localType</label>
                         <item>Optional</item>
                         <label>localTypeDeclarationReference</label>
@@ -3177,7 +3177,7 @@
                <div type="attributeusage">
                   <list type="simple">
                      <item>Use <att>listType</att> to identify and format the list as a particular
-                        type. The choices are: "deflist," "ordered," and "unordered."</item>
+                        type. The choices are: "ordered," and "unordered."</item>
                   </list>
                </div>
                <div type="seeAlso">
@@ -4972,7 +4972,7 @@
                </div>
                <div type="description">
                   <p>An element used for referencing external resources that have been used to compile the EAC-CPF instance, or that identify rules or conventions that have been applied.</p>
-                  <p><gi>reference</gi> is a required child element of <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, and <gi>rightsDeclaration</gi> for identifying any rules and conventions applied in the compilation of the description. It is also a required child element of <gi>source</gi>, used to identify any sources used in compiling the description. <gi>source</gi> may include multiple child <gi>reference</gi> elements</p>
+                  <p><gi>reference</gi> is a required child element of <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, and <gi>rightsDeclaration</gi> for identifying any rules and conventions applied in the compilation of the description. It is also a required child element of <gi>source</gi>, used to identify any sources used in compiling the description. <gi>source</gi> may include multiple child <gi>reference</gi> elements.</p>
                   <p><gi>reference</gi> is an optional child element of <gi>abstract</gi>, <gi>chronItem</gi>, <gi>chronItemSet</gi>, <gi>event</gi>, <gi>eventDescription</gi>, <gi>item</gi>, and <gi>p</gi> where it is used to reference any external resources that have been used in compiling the content of that element.</p>
                </div>
                <div type="attributeusage">
@@ -5436,7 +5436,7 @@
                </div>
                <div type="mayContain">
                   <p>citedRange (0..n), descriptiveNote (0..1), objectXMLWrap (0..1), reference
-                     (1..1)</p>
+                     (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>sources</p>
@@ -6591,11 +6591,10 @@
                <div type="summary">
                   <p>Specifies the type of list: an ordered list is a numbered or lettered list; an
                      unordered list is one in which sequence is not critical (e.g., a bulleted
-                     list); a definition list (deflist) consists of pairings of terms and
-                     descriptions. Available only on <gi>list</gi>.</p>
+                     list). Available only on <gi>list</gi>.</p>
                </div>
                <div type="values">
-                  <p>deflist, ordered, unordered</p>
+                  <p>ordered, unordered</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
