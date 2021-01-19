@@ -4934,6 +4934,7 @@
                   <p>Reference</p>
                </div>
                <div type="summary">
+                  <p>An element that cites an external resource.</p>
                </div>
                <div type="mayContain">
                   <p>[text], span</p>
