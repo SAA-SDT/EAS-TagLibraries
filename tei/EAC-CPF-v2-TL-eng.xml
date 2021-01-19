@@ -636,8 +636,7 @@
                      information about the EAC-CPF entity.</p>
                </div>
                <div type="mayContain">
-                  <p>abstract (0..1), chronList (0..n), head (0..1), list (0..n), p (0..n),
-                     reference (0..n)</p>
+                  <p>abstract (0..1), chronList (0..n), head (0..1), list (0..n), p (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>description</p>
@@ -705,7 +704,7 @@
                </div>
                <div type="mayContain">
                   <p>chronItemSet (0..n), (date or dateRange or dateSet (1..1)), event (1..1), place
-                     (0..1)</p>
+                     (0..1), reference (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>chronList</p>
@@ -774,7 +773,7 @@
                      more <gi>place</gi> elements within <gi>chronItem</gi>.</p>
                </div>
                <div type="mayContain">
-                  <p>event (1..n), place (0..n)</p>
+                  <p>event (1..n), place (0..n), reference (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>chronItem</p>
@@ -789,6 +788,10 @@
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
                         <item>Optional</item>
                         <label>maintenanceEventReference</label>
                         <item>Optional</item>
@@ -1882,7 +1885,7 @@
                      structured chronology.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p>[text], reference (0..n), span (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>chronItem, chronItemSet</p>
@@ -2009,7 +2012,7 @@
                      description of a maintenance event in the life of the EAC-CPF instance.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p>[text], reference (0..n), span (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>maintenanceEvent</p>
@@ -2168,7 +2171,7 @@
                         <label>standardDate</label>
                         <item>Optional</item>
                         <label>status</label>
-                        <item>Optional (values limited to: ongoing, unknown)</item>
+                        <item>Optional (values limited to: unknown)</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
                         <label>target</label>
@@ -2197,8 +2200,8 @@
                         is uncertain.</item>
                      <item>Use <att>standardDate</att> to provide a machine-processable form of the
                         date.</item>
-                     <item>Use <att>status</att> with the values "unknown" or "ongoing" to indicate
-                        where part of a date range is unknown, or the date range is ongoing.</item>
+                     <item>Use <att>status</att> with the value "unknown" to indicate
+                        where the start of a date range is unknown.</item>
                   </list>
                </div>
                <div type="seeAlso">
@@ -2228,8 +2231,7 @@
                      described.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     reference (0..1), term (1..n)</p>
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>functions</p>
@@ -2360,7 +2362,7 @@
                      described.</p>
                </div>
                <div type="mayContain">
-                  <p>head (0..1), list (0..n), p (0..n), reference (0..n)</p>
+                  <p>head (0..1), list (0..n), p (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>description</p>
@@ -2690,7 +2692,7 @@
                      list.</p>
                </div>
                <div type="mayContain">
-                  <p>[text], span (0..n), reference (0..n)</p>
+                  <p>[text], reference (0..n), span (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>list</p>
@@ -2989,7 +2991,7 @@
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     reference (0..1), term (1..n)</p>
+                     term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>legalStatuses</p>
@@ -3272,7 +3274,7 @@
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     reference (0..1), term (1..n)</p>
+                     term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>localDescriptions</p>
@@ -3643,7 +3645,7 @@
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     reference (0..1), term (1..n)</p>
+                     term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>mandates</p>
@@ -4067,7 +4069,7 @@
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     reference (0..1), term (1..n)</p>
+                     term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>occupations</p>
@@ -4270,7 +4272,7 @@
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     reference (0..1), term (1..n)</p>
+                     term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>otherEntityTypes</p>
@@ -4590,9 +4592,9 @@
                      significant connection.</p>
                </div>
                <div type="mayContain">
-                  <p>address (0..n), contact (0..n), date (0..n), dateRange (0..n), dateSet (0..n),
+                  <p>address (0..n), contact (0..n), date or dateRange or dateSet (0..1),
                      descriptiveNote (0..1), geographicCoordinates (0..n), placeName (0..n),
-                     placeRole (0..n), reference (0..n)</p>
+                     placeRole (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>chronItem, chronItemSet, places, relation</p>
@@ -4932,24 +4934,35 @@
                   <p>Reference</p>
                </div>
                <div type="summary">
-                  <p>A summary of what the element is used for</p>
                </div>
                <div type="mayContain">
                   <p>[text], span</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>abstract, conventionDeclaration, localTypeDeclaration, p, rightsDeclaration</p>
+                  <p>abstract, chronItem, chronItemSet, conventionDeclaration, event, eventDescription, item, localTypeDeclaration, p, rightsDeclaration, source</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
                         <label>href</label>
                         <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
                         <label>lastDateTimeVerified</label>
+                        <item>Optional</item>
+                        <label>linkRole</label>
+                        <item>Optional</item>
+                        <label>linkTitle</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
                         <item>Optional</item>
                         <label>target</label>
                         <item>Optional</item>
@@ -4957,21 +4970,24 @@
                   </p>
                </div>
                <div type="description">
-                  <p>A narrative description of the use of the element</p>
+                  <p>An element used for referencing external resources that have been used to compile the EAC-CPF instance, or that identify rules or conventions that have been applied.</p>
+                  <p><gi>reference</gi> is a required child element of <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, and <gi>rightsDeclaration</gi> for identifying any rules and conventions applied in the compilation of the description. It is also a required child element of <gi>source</gi>, used to identify any sources used in compiling the description. <gi>source</gi> may include multiple child <gi>reference</gi> elements</p>
+                  <p><gi>reference</gi> is an optional child element of <gi>abstract</gi>, <gi>chronItem</gi>, <gi>chronItemSet</gi>, <gi>event</gi>, <gi>eventDescription</gi>, <gi>item</gi>, and <gi>p</gi> where it is used to reference any external resources that have been used in compiling the content of that element.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>attribute usage</item>
+                     <item>Use <att>href</att> to link to the cited resource.</item>
                   </list>
                </div>
                <div type="seeAlso">
                   <list type="simple">
-                     <item>A listing of other elements in the tag library that are relevant to, or
-                        similar to, the element</item>
+                     <item><gi>reference</gi> is used for external linking only. If any internal linking is required within the EAC-CPF instance, use the <att>target</att> attribute.</item>
                   </list>
                </div>
                <div type="availability">
-                  <p>Required/Optional, Repeatable/Not Repeatable</p>
+                  <p>Within <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, <gi>rightsDeclaration</gi>: required, not repeatable</p>
+                  <p>Within <gi>source</gi>: required, repeatable</p>
+                  <p>Within <gi>abstract</gi>, <gi>chronItem</gi>, <gi>chronItemSet</gi>, <gi>event</gi>, <gi>eventDescription</gi>, <gi>item</gi>, <gi>p</gi>: optional, repeatable</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -5540,7 +5556,7 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>abstract, head, item, reference, p</p>
+                  <p>abstract, event, eventDescription, head, item, reference, p</p>
                </div>
                <div type="attributes">
                   <p>
@@ -5603,7 +5619,7 @@
                      family.</p>
                </div>
                <div type="mayContain">
-                  <p>head (0..1), list (0..n), p (0..n), reference (0..n)</p>
+                  <p>head (0..1), list (0..n), p (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>description</p>
@@ -5694,7 +5710,7 @@
                         <label>target</label>
                         <item>Optional</item>
                         <label>targetType</label>
-                        <item>Required (values limited to: corporateBody, person, family, resource,
+                        <item>Required (values limited to: agent, corporateBody, person, family, resource,
                            function)</item>
                         <label>valueURI</label>
                         <item>Optional</item>
@@ -6964,9 +6980,9 @@
                </div>
                <div type="summary">
                   <p>The standardized form of date expressed in <gi>date</gi>, <gi>fromDate</gi>,
-                     and <gi>toDate</gi>. It is recommended that standardDate values follow ISO
+                     and <gi>toDate</gi>. It is recommended that <att>standardDate</att> values follow ISO
                      8601, for example, 2011-07-22, 1963, or 1912-11, or another standard date
-                     format as specified in dateEncoding.</p>
+                     format as specified in <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -7009,14 +7025,13 @@
                </div>
                <div type="summary">
                   <p>Attribute that provides controlled terminology detailing the status of
-                     elements. The terms available for <att>status</att> are defined in closed lists
-                     that vary by element as follows:</p>
+                     elements. Available in <gi>fromDate</gi>, <gi>nameEntry</gi> and <gi>toDate</gi>. The terms available for <att>status</att> are defined in closed lists
+                     that vary by element.</p>
                </div>
                <div type="values">
-                  <p>Values in <gi>fromDate</gi> and <gi>toDate</gi>: ongoing, unknown</p>
-               </div>
-               <div type="values">
+                  <p>Values in <gi>fromDate</gi>: unknown</p>
                   <p>Values in <gi>nameEntry</gi>: alternative, authorized</p>
+                  <p>Values in <gi>toDate</gi>: unknown, ongoing</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
@@ -7079,10 +7094,10 @@
                   <p>Target Type</p>
                </div>
                <div type="summary">
-                  <p>Required attribute within <gi>targetEntity</gi> which identifies the type of entity that is related to the CPF entity being described.</p>
+                  <p>Required attribute within <gi>targetEntity</gi> which identifies the type of entity that is related to the CPF entity being described. Use the value "agent" only for migration from EAC-CPF 2010 to EAC 2.x</p>
                </div>
                <div type="values">
-                  <p>corporateBody, family, function, person, resource</p>
+                  <p>agent, corporateBody, family, function, person, resource</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
