@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
         xmlns:fo="http://www.w3.org/1999/XSL/Format" 
         xmlns:eac-cpf="urn:isbn:1-931666-33-4"
-        xmlns:ead="http://ead3.archivists.org/schema/"
+        xmlns:ead="urn:isbn:1-931666-22-9"
+        xmlns:ead3="http://ead3.archivists.org/schema/"
         xmlns:premis="http://www.loc.gov/premis/v3"
         xmlns:ex="http://www.tei-c.org/ns/Examples"
         xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -12,28 +13,27 @@
         xmlns:mods="http://www.loc.gov/mods/v3" xmlns:text="http://www.tei.org/ns/1.0"
         xmlns:example="example" xmlns:term="term" xmlns:exslt="http://exslt.org/common"
         xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-        exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead mods text term dc oai_dc"
-        xpath-default-namespace="http://www.tei-c.org/ns/1.0" extension-element-prefixes="exslt"
+        exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead ead3 mods text term dc oai_dc fo premis tei"
+        xpath-default-namespace="http://www.w3.org/1999/xhtml" extension-element-prefixes="exslt"
         version="2.0">
-        
-        <!-- 
-        Need to have the same ead namespace as in the xml to be transformed.
-        xmlns:ead="urn:isbn:1-931666-22-9" is for eac-cpf Tl version 2014
-        xmlns:ead="http://ead3.archivists.org/schema/" is for EAD3
-    -->
 
         <xsl:output doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
                 doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
-                encoding="UTF-8" indent="yes" method="html"/>
+                encoding="UTF-8" omit-xml-declaration="yes" indent="yes" method="xhtml"/>
 
         <xsl:strip-space elements="*"/>
 
+        <!-- variables passed from the build script to the XSLT -->
+        <xsl:param name="SAA" as="xs:string" required="yes"/>
+
         <xsl:variable name="currentLanguage">en</xsl:variable> <!-- xml:lang from taglibrary -->       
-        <xsl:variable name="SAA">no</xsl:variable><!-- Used for inserting SAA logo or not Values: yes | no -->
         <xsl:variable name="toctype">short</xsl:variable><!-- Used for the look of the toc Values: long | short -->
         <xsl:param name="spaceCharacter"> </xsl:param> <!-- For egxml formatting -->       
         <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
-        <xsl:variable name="TL">EAC-CPF</xsl:variable> <!-- For the cases of differnt TEI used and to give the TL name in some places. EAD | EAC-CPF | EAC-G | EAC-F | PREMIS -->
+        <xsl:variable name="EAD-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Description', 'i')) then true() else false()"/>
+        <xsl:variable name="EAC-CPF-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Context', 'i')) then true() else false()"/>
+        <xsl:param name="EAC-CPF-html-title" select="'Encoded Archival Context—Corporate Bodies, Persons, and Families (EAC-CPF) Tag Library'"/>
+        <xsl:param name="EAD-html-title" select="'Encoded Archival Description Tag Library - Version EAD3 (EAD Official Site, Library of Congress)'"/>
 
         <!-- Headingtranslations in an own xml-file using the currentLanguage to fetch them -->
         <!-- This only works with XSLT-enginee Saxon 6.5.5 -->
@@ -43,6 +43,8 @@
                 select="$headingtranslations//*:terms/*:term[@name='summary']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="description"
                 select="$headingtranslations//*:terms/*:term[@name='description']/*:translation[@lang=$currentLanguage]"/>
+        <xsl:variable name="desc"
+                select="$headingtranslations//*:terms/*:term[@name='desc']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="mayoccurwithin"
                 select="$headingtranslations//*:terms/*:term[@name='mayOccurWithin']/*:translation[@lang=$currentLanguage]"/>
         <xsl:variable name="mandatory"
@@ -117,17 +119,14 @@
                 select="$headingtranslations//*:terms/*:term[@name='entity']/*:translation[@lang=$currentLanguage]"/>
         
         <xsl:template match="/">
-                <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+                <!-- should update to HTML5 - mdc -->
+                <html lang="en" xml:lang="en">
                         <head>
-                                <title><xsl:value-of select="$TL"/><xsl:text> </xsl:text>
-                                        <xsl:choose>
-                                                <xsl:when test="starts-with($TL, 'PREMIS')">
-                                                        <xsl:value-of select="$dataDictionary"/>
-                                                </xsl:when>
-                                                <xsl:otherwise>
-                                                        <xsl:value-of select="$taglibrary"/>
-                                                </xsl:otherwise>
-                                        </xsl:choose>                                        
+                                <title>
+                                        <xsl:value-of select="if ($EAD-TL) then $EAD-html-title
+                                                else if ($EAC-CPF-TL) then $EAC-CPF-html-title
+                                                else 'Tag Library'">
+                                        </xsl:value-of>
                                 </title>
                                 <meta content="en" http-equiv="content-language"/>
                                 <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
@@ -188,7 +187,7 @@
                                         <xsl:apply-templates select="tei:docAuthor[2]"/>
                                 </div>
                         </div>
-                        <div class="image">
+                        <div class="logo">
                               <xsl:apply-templates select="tei:figure/tei:graphic"/>  
                         </div>
                         <div>
@@ -232,22 +231,23 @@
                                                 </a>
                                         </div>
                                         <div class="toc2">
-                                                <xsl:for-each select="tei:div/tei:head/tei:gi">
-                                                        <span>
-                                                                <a href="#{translate(concat('elem-', .), ':','')}">
-                                                                      <xsl:value-of select="."/>
-                                                                </a>
-                                                                <xsl:text> &#xA0; </xsl:text>
-                                                        </span>
-                                                        <xsl:for-each select="parent::tei:div">
-                                                                <xsl:variable name="count">
-                                                                        <xsl:number/>
-                                                                </xsl:variable>
-                                                                <xsl:if test="($count mod 6) = 0">
-                                                                        <br/>
-                                                                </xsl:if>
-                                                        </xsl:for-each>
-                                                </xsl:for-each>  
+                                            <table>
+                                                    <xsl:for-each-group select="tei:div[@type='elementDocumentation']" group-ending-with="tei:div[@type='elementDocumentation'][position() mod 7 = 0]">
+                                                        <tr>
+                                                            <xsl:for-each select="current-group()">
+                                                                <td>
+                                                                    <span>
+                                                                        <xsl:for-each select="tei:head/tei:gi">
+                                                                            <a href="#{translate(concat('elem-', .), ':','')}">
+                                                                                  <xsl:value-of select="."/>
+                                                                            </a>
+                                                                        </xsl:for-each>
+                                                                    </span>
+                                                                </td>
+                                                            </xsl:for-each>
+                                                        </tr>
+                                                    </xsl:for-each-group>
+                                            </table>
                                         </div>
                                 </xsl:when>
                                 <xsl:when test="@type='attributes'">
@@ -257,22 +257,23 @@
                                                 </a>
                                         </div>
                                         <div class="toc2">
-                                                <xsl:for-each select="tei:div/tei:head/tei:att">
-                                                        <span>
-                                                                <a href="#{translate(concat('attr-' , .), ':','')}">
-                                                                        <xsl:value-of select="."/>
-                                                                </a>
-                                                                <xsl:text> &#xA0; </xsl:text>
-                                                        </span>
-                                                        <xsl:for-each select="parent::tei:div">
-                                                                <xsl:variable name="count">
-                                                                        <xsl:number/>
-                                                                </xsl:variable>
-                                                                <xsl:if test="($count mod 6) = 0">
-                                                                        <br/>
-                                                                </xsl:if>
-                                                        </xsl:for-each>
-                                                </xsl:for-each>    
+                                            <table>
+                                                    <xsl:for-each-group select="tei:div[@type='attributeDocumentation']" group-ending-with="tei:div[@type='attributeDocumentation'][position() mod 7 = 0]">
+                                                        <tr>
+                                                            <xsl:for-each select="current-group()">
+                                                                <td>
+                                                                <span>
+                                                                    <xsl:for-each select="tei:head/tei:att">
+                                                                        <a href="#{translate(concat('attr-', .), ':','')}">
+                                                                              <xsl:value-of select="."/>
+                                                                        </a>
+                                                                    </xsl:for-each>
+                                                                </span>
+                                                            </td>
+                                                            </xsl:for-each>
+                                                        </tr>
+                                                    </xsl:for-each-group>
+                                            </table>  
                                         </div>
                                 </xsl:when>
                                 <xsl:when test="@type='appendix'">
@@ -461,7 +462,6 @@
                         <xsl:apply-templates select="tei:div[@type='summary']"/>
                         <xsl:apply-templates select="tei:div[@type='attributeusage']"/>
                         <xsl:apply-templates select="tei:div[@type='seealso']"/>
-                        <xsl:apply-templates select="tei:div[@type='usage']"/>
                         <xsl:apply-templates select="tei:div[@type='mayContain']"/>
                         <xsl:apply-templates select="tei:div[@type='semanticcomponents']"/>
                         <xsl:apply-templates select="tei:div[@type='mayOccurWithin']"/>
@@ -470,6 +470,8 @@
                         <xsl:apply-templates select="tei:div[@type='rationale']"/>
                         <xsl:apply-templates select="tei:div[@type='datatype']"/>
                         <xsl:apply-templates select="tei:div[@type='description']"/>
+                        <xsl:apply-templates select="tei:div[@type='desc']"/>
+                        <xsl:apply-templates select="tei:div[@type='usage']"/>
                         <xsl:apply-templates select="tei:div[@type='references']"/>
                         <xsl:apply-templates select="tei:div[@type='attributes']"/>
                         <xsl:apply-templates select="tei:div[@type='occurrence']"/>
@@ -488,6 +490,7 @@
                         <xsl:apply-templates select="tei:div[@type='fullName']"/>
                         <xsl:apply-templates select="tei:div[@type='summary']"/>
                         <xsl:apply-templates select="tei:div[@type='description']"/>
+                        <xsl:apply-templates select="tei:div[@type='desc']"/>
                         <xsl:apply-templates select="tei:div[@type='usage']"/>
                         <xsl:apply-templates select="tei:div[@type='mayContain']" mode="dep"/>
                         <xsl:apply-templates select="tei:div[@type='mayOccurWithin']" mode="dep"/>
@@ -507,6 +510,8 @@
                         <xsl:apply-templates select="tei:head/tei:att"/>
                         <xsl:apply-templates select="tei:div[@type='summary']"/>
                         <xsl:apply-templates select="tei:div[@type='description']"/>
+                        <xsl:apply-templates select="tei:div[@type='desc']"/>
+                        <xsl:apply-templates select="tei:div[@type='usage']"/>
                         <xsl:apply-templates select="tei:div[@type='datatype']"/>
                         <xsl:apply-templates select="tei:div[@type='values']"/> 
                         <xsl:apply-templates select="tei:div[@type='examples']"/>
@@ -546,17 +551,10 @@
                         <xsl:otherwise>
                                 <div class="leftcol" id="{translate(concat('elem-', .), ':','')}">
                                         <span class="label">
-                                                <xsl:choose>
-                                                        <xsl:when test="starts-with($TL, 'PREMIS')">
-                                                                <xsl:value-of select="$semanticUnit"/>    
-                                                                <xsl:text> </xsl:text>     
-                                                        </xsl:when>
-                                                        <xsl:otherwise>
-                                                                <xsl:text>&lt;</xsl:text>
-                                                                <xsl:apply-templates/>
-                                                                <xsl:text>&gt;</xsl:text>    
-                                                        </xsl:otherwise>
-                                                </xsl:choose>     
+                                                <!-- would like to look into this section, but for now just removing the PREMIS bit.  - mdc -->
+                                                <xsl:text>&lt;</xsl:text>
+                                                <xsl:apply-templates/>
+                                                <xsl:text>&gt;</xsl:text>    
                                         </span>
                                 </div>
                         </xsl:otherwise>
@@ -651,7 +649,7 @@
                 </div>
         </xsl:template>
 
-        <xsl:template match="tei:div[@type=('summary', 'definition', 'entity', 'rationale', 'creationmaintenance', 'usagenotes', 'description')]">
+        <xsl:template match="tei:div[@type=('summary', 'definition', 'entity', 'rationale', 'creationmaintenance', 'usagenotes', 'description', 'desc', 'usage')]">
                 <div class="leftcol">
                         <xsl:variable name="termtitle"><xsl:value-of select="current()/@type"/></xsl:variable>
                         <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$termtitle]/*:translation[@lang=$currentLanguage]"/>
@@ -670,9 +668,46 @@
                         <xsl:text>: </xsl:text>
                 </div>
                 <div class="content">
-                        <xsl:call-template name="elemtokenize">
-                                <xsl:with-param name="text" select="tei:p"/>
-                        </xsl:call-template>
+                        <xsl:for-each select="tokenize(tei:p, ',')">
+                                <xsl:choose>
+                                        <!-- for anything that has a " or a [, like [text], we'll just output the text as is -->
+                                        <xsl:when test="contains(., '&quot;') or contains(., '[')">
+                                                <xsl:value-of select="normalize-space(.)"/>
+                                        </xsl:when>
+                                        <xsl:when test="contains(., ' or ')">
+                                            <xsl:for-each select="tokenize(., ' or ')">
+                                                <xsl:choose>
+                                                    <xsl:when test="contains(., '(')">
+                                                        <a href="#{translate(concat('elem-', normalize-space(substring-before(., '('))), ':','')}">
+                                                                <xsl:value-of select="normalize-space(.)"/>
+                                                        </a>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                            <a href="#{translate(concat('elem-', normalize-space(.)), ':','')}">
+                                                                    <xsl:value-of select="normalize-space(.)"/>
+                                                            </a>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                                <xsl:if test="position() ne last()">
+                                                    <xsl:text> or </xsl:text>
+                                                </xsl:if>
+                                            </xsl:for-each>
+                                        </xsl:when>
+                                        <xsl:when test="contains(., '(')">
+                                                <a href="#{translate(concat('elem-', normalize-space(substring-before(., '('))), ':','')}">
+                                                        <xsl:value-of select="normalize-space(.)"/>
+                                                </a>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                                <a href="#{translate(concat('elem-', normalize-space(.)), ':','')}">
+                                                        <xsl:value-of select="normalize-space(.)"/>
+                                                </a>
+                                        </xsl:otherwise>
+                                </xsl:choose>
+                                <xsl:if test="position() ne last()">
+                                        <xsl:text>, </xsl:text>
+                                </xsl:if>
+                        </xsl:for-each>
                 </div>
         </xsl:template>
 
@@ -709,7 +744,7 @@
         </xsl:template>-->
         
         <!-- When we have description and usage in one header -->
-        <xsl:template match="tei:div[@type='usage'] | tei:div[@type='descriptionAndUsage']">
+        <xsl:template match="tei:div[@type='descriptionAndUsage']">
                 <div class="span">
                         <xsl:apply-templates/>
                 </div>
@@ -735,49 +770,6 @@
                 </div>
         </xsl:template>
         
-        <xsl:template name="elemtokenize">
-                <xsl:param name="text" select="."/>
-                <xsl:param name="separator" select="','"/>
-                <xsl:choose>
-                        <!-- we don't want to tokenize lists of string values -->
-                        <xsl:when test="contains($text, '&quot;') or contains($text, '[')">
-                            <xsl:value-of select="normalize-space($text)"/>
-                        </xsl:when>
-
-                        <!-- if we passed a single element to this template, strip parens from the URL and return it -->
-                        <xsl:when test="not(contains($text, $separator))">
-                                <xsl:choose>
-                                            <xsl:when test="not(contains($text, '('))">
-                                                <a
-                                                        href="#{translate(concat('elem-', normalize-space($text)), ':','')}">
-                                                        <xsl:value-of select="normalize-space($text)"/>
-                                                </a>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <a
-                                                        href="#{translate(concat('elem-', normalize-space(substring-before($text, '('))), ':','')}">
-                                                        <xsl:value-of
-                                                                select="normalize-space($text)"
-                                                        />
-                                                </a>
-                                            </xsl:otherwise>
-                                </xsl:choose>
-                        </xsl:when>
-                        <!-- otherwise, split the string into the front element + rest of string and pass through this template again -->
-                        <xsl:otherwise>
-                                <xsl:call-template name="elemtokenize">
-                                        <xsl:with-param name="text"
-                                                select="substring-before($text, $separator)"/>
-                                </xsl:call-template>
-                                <xsl:text>, </xsl:text>
-                                <xsl:call-template name="elemtokenize">
-                                        <xsl:with-param name="text"
-                                                select="substring-after($text, $separator)"/>
-                                </xsl:call-template>
-                        </xsl:otherwise>
-                </xsl:choose>
-        </xsl:template>
-
         <xsl:template
                 match="tei:div[@type='attributes'][parent::tei:div[@type='elementDocumentation']] | tei:div[@type='attributes'][parent::tei:div[@type='elementDocumentation']]/tei:p">
                 <xsl:choose>
@@ -820,7 +812,7 @@
                 </xsl:choose>
         </xsl:template>
         
-        
+     
         <xsl:template
                 match="tei:div[@type='attributeusage'][parent::tei:div[@type='elementDocumentation']]/tei:list[@type='simple']">
                              <div class="leftcol">
@@ -832,10 +824,9 @@
                                                 
                                                 <xsl:apply-templates/>
                                                 <br/>
-                                                <br/>
                                         </xsl:for-each>
                                 </div>
-        </xsl:template>
+        </xsl:template> 
         <xsl:template
                 match="tei:div[@type='seealso'][parent::tei:div[@type='elementDocumentation']]/tei:list[@type='simple']">
                 <div class="leftcol">
@@ -846,7 +837,6 @@
                         <xsl:for-each select="tei:item">
                                 
                                 <xsl:apply-templates/>
-                                <br/>
                                 <br/>
                         </xsl:for-each>
                 </div>
@@ -1007,14 +997,7 @@
 
         <xsl:template match="tei:att" mode="toc">
                 <xsl:text>@</xsl:text>
-                <xsl:apply-templates/>
-                <!--<xsl:choose>
-                        <xsl:when test="$TL='EAD'">
-                               <xsl:value-of select="."/> 
-                        </xsl:when>
-                        <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
-                </xsl:choose>-->
-                
+                <xsl:apply-templates/>                
         </xsl:template>
 
         <xsl:template match="tei:back/tei:div | tei:back/tei:div/tei:div">
@@ -1029,7 +1012,7 @@
         </xsl:template>
 
         <xsl:template match="tei:back/tei:div/tei:head | tei:back/tei:div/tei:div/tei:head">
-                <div class="head03" id="{translate(translate(concat('appendix-' , .), ':',''), ' ','')}">
+                <div class="head03" id="{translate(concat('appendix-' , .), ':() ','')}">
                         <xsl:apply-templates/>
                         <xsl:text>&#xA0;&#xA0;</xsl:text>
                         <a class="tocReturn" href="#toc">[toc]</a>
@@ -1044,6 +1027,10 @@
                 </span>
         </xsl:template>
 
+        <!-- why?  looks like formatting for foot/end notes, but there aren't any.
+                there are just 2 notes in the EAD tag library... and 0 notes in the EAC tag library.
+                so let's remove this from now.
+                - mdc.
         <xsl:template match="tei:note">
                 <xsl:text>(</xsl:text>
                 <xsl:value-of select="@n"/>
@@ -1051,6 +1038,7 @@
                 <xsl:apply-templates/>
                 <xsl:text>)</xsl:text>
         </xsl:template>
+        -->
         
       
         <xsl:template match="tei:figure/tei:graphic">
@@ -1133,7 +1121,7 @@
         </xsl:template>
 
         <!-- In this template all occuring other namespaceprefixis needs to be added -->
-        <xsl:template match="eac-cpf:*|example:* | ead:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
+        <xsl:template match="eac-cpf:* | example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
                 <div class="innerExample">
                         <xsl:text>&lt;</xsl:text>
                         <xsl:value-of select="local-name()"/>
@@ -1170,4 +1158,26 @@
                         <br/>
                 </div>
         </xsl:template>
+        
+        <!-- total hack until we determine how best to hande this. but, we don't want to wind up with "LibraryVersion", which is what we have now. -->
+        <xsl:template match="tei:titlePart">
+                <xsl:apply-templates/>
+                <xsl:if test="position() ne last()">
+                        <xsl:text> </xsl:text>
+                </xsl:if>
+        </xsl:template>
+
+    <!-- formatting tags -->
+    <xsl:template match="tei:bold">
+        <xsl:text> </xsl:text>
+        <strong>
+            <xsl:apply-templates/>
+        </strong>
+    </xsl:template>
+    <xsl:template match="tei:italic">
+        <xsl:text> </xsl:text>
+        <em>
+            <xsl:apply-templates/>
+        </em>
+    </xsl:template>        
 </xsl:stylesheet>
