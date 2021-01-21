@@ -1407,7 +1407,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p>chronItem, dateSet, existDates, function, legalStatus, localControl,
-                     localDescription, mandate, occupation, place, relation, useDates</p>
+                     localDescription, mandate, occupation, otherEntityType, place, relation, useDates</p>
                </div>
                <div type="attributes">
                   <p>
@@ -1481,7 +1481,7 @@
                </div>
                <div type="availability">
                   <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>place</gi>, <gi>relation</gi>:
+                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>:
                      one of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> optional, not
                      repeatable</p>
                   <p>Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
@@ -1515,7 +1515,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p>chronItem, dateSet, existDates, function, legalStatus, localControl,
-                     localDescription, mandate, occupation, place, relation, useDates</p>
+                     localDescription, mandate, occupation, otherEntityType, place, relation, useDates</p>
                </div>
                <div type="attributes">
                   <p>
@@ -1571,7 +1571,7 @@
                </div>
                <div type="availability">
                   <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>place</gi>, <gi>relation</gi>:
+                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>:
                      one of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> optional, not
                      repeatable</p>
                   <p>Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
@@ -1642,10 +1642,8 @@
                </div>
                <div type="availability">
                   <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>,
-                        <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi> or
+                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi> or
                         <gi>dateSet</gi> optional, not repeatable</p>
-                  <p>Within <gi>place</gi>: optional, repeatable</p>
                   <p>Within <gi>chronItem</gi>, <gi>existDates</gi>, <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> required, not
                      repeatable</p>
@@ -2401,8 +2399,7 @@
                      contained in <gi>description</gi>.</p>
                   <p>The optional <gi>list</gi> element may be used to accommodate greater
                      complexity in expressing or representing the general context being described.
-                        <gi>reference</gi> may be used to provide a link to relevant external
-                     documents. A simpler discursive expression of the general context may be
+                     The optional <gi>head</gi> element may be used to encode a title or caption. A simpler discursive expression of the general context may be
                      encoded as one or more <gi>p</gi> elements.</p>
                </div>
                <div type="availability">
@@ -3146,16 +3143,11 @@
                         <item>Optional</item>
                         <label>localTypeDeclarationReference</label>
                         <item>Optional</item>
-                        <label>mark</label>
-                        <item>Optional (values limited to: disc, circle, inherit, none,
-                           square)</item>
                         <label>maintenanceEventReference</label>
                         <item>Optional</item>
-                        <label>numeration</label>
-                        <item>Optional (values limited to: armenian, decimal, decimal-leading-zero,
-                           georgian, inherit, lower-alpha, lower-greek, lower-latin, lower-roman,
-                           upper-alpha, upper-latin, upper-roman)</item>
                         <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>style</label>
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
@@ -4681,7 +4673,7 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>function, legalStatus, localDescription, mandate, occupation, otherEntityTypes,
+                  <p>function, legalStatus, localDescription, mandate, occupation, otherEntityType,
                      place</p>
                </div>
                <div type="attributes">
@@ -5660,8 +5652,7 @@
                      interrelationships of its members with relevant dates.</p>
                   <p>The optional <gi>list</gi> element may be used to accommodate greater
                      complexity in expressing or representing the structure(s) or genealogy being
-                     described. <gi>reference</gi> may be used to provide a link to external
-                     documents like organizational charts and family trees. A simpler discursive
+                     described. <gi>head</gi> may be used to encode a title or caption. A simpler discursive
                      expression of the structure(s) or genealogy may be encoded as one or more
                         <gi>p</gi> elements.</p>
                </div>
@@ -6393,7 +6384,7 @@
                      contains the linking element.</p>
                </div>
                <div type="datatype">
-                  <p>Datatype of the attribute</p>
+                  <p>anyURI</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
@@ -6609,13 +6600,13 @@
                   <p>Local Type</p>
                </div>
                <div type="summary">
-                  <p>A summary of what the attribute is used for</p>
+                  <p></p>
                </div>
                <div type="description">
                   <p>A narrative description of the use of the element</p>
                </div>
                <div type="datatype">
-                  <p>anyURI</p>
+                  <p>token</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
@@ -6739,26 +6730,6 @@
                      ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
                </div>
             </div>
-            <div type="attributeDocumentation" xml:id="attr-mark">
-               <head>
-                  <att>mark</att>
-               </head>
-               <div type="fullName">
-                  <p>Mark</p>
-               </div>
-               <div type="summary">
-                  <p>or lists with a <att>listType</att> value "unordered", mark may be used to
-                     indicate the character to be used in marking each list entry. Values are drawn
-                     from the CSS "list-style-type" property list.</p>
-               </div>
-               <div type="values">
-                  <p>disc, circle, inherit, none, square</p>
-               </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
-               </div>
-            </div>
             <div type="attributeDocumentation" xml:id="attr-notAfter">
                <head>
                   <att>notAfter</att>
@@ -6797,28 +6768,6 @@
                </div>
                <div type="datatype">
                   <p>token</p>
-               </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
-               </div>
-            </div>
-            <div type="attributeDocumentation" xml:id="attr-numeration">
-               <head>
-                  <att>numeration</att>
-               </head>
-               <div type="fullName">
-                  <p>Numeration</p>
-               </div>
-               <div type="summary">
-                  <p>For lists with a <att>listType</att> value of "ordered", numeration specifies
-                     the type of numeration. Values are drawn from the CSS "list-style-type"
-                     property list.</p>
-               </div>
-               <div type="values">
-                  <p>armenian, decimal, decimal-leading-zero, georgian, inherit, lower-alpha,
-                     lower-greek, lower-latin, lower-roman, upper-alpha, upper-latin,
-                     upper-roman</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
@@ -7050,10 +6999,10 @@
                      value conforms to W3C CSS.</p>
                </div>
                <div type="description">
-                  <p>The <att>style</att> attribute may occur on <gi>span</gi>. In a limited number
+                  <p>The <att>style</att> attribute may occur on <gi>span</gi> and <gi>list</gi>. In a limited number
                      of contexts that accommodate discursive description, <gi>span</gi> with
                         <att>style</att> may be used to identify an arbitrary string that is
-                     intended to be rendered in a specific style. It is highly recommended that the
+                     intended to be rendered in a specific style. <att>style</att> may be used within <gi>list</gi> to specify the style of a list. It is highly recommended that the
                      value of <att>style</att> be expressed as a W3C CSS style to facilitate
                      interoperability.</p>
                </div>
