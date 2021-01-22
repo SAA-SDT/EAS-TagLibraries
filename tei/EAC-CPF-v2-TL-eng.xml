@@ -703,7 +703,7 @@
                      events and zero or more place names within a chronology list.</p>
                </div>
                <div type="mayContain">
-                  <p>chronItemSet (0..n), (date or dateRange or dateSet (1..1)), event (1..1), place
+                  <p>chronItemSet (0..n), date or dateRange or dateSet (1..1), event (1..1), place
                      (0..1), reference (0..n)</p>
                </div>
                <div type="mayOccurWithin">
@@ -1440,8 +1440,6 @@
                         <item>Optional</item>
                         <label>standardDate</label>
                         <item>Optional</item>
-                        <label>status</label>
-                        <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
                         <label>target</label>
@@ -1475,8 +1473,6 @@
                         is uncertain.</item>
                      <item>Use <att>standardDate</att> to provide a machine-processable form of the
                         date.</item>
-                     <item>Use <att>status</att> to indicate where dates are unknown or
-                        ongoing.</item>
                   </list>
                </div>
                <div type="availability">
@@ -1799,8 +1795,6 @@
                         <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2060,7 +2054,7 @@
                      persons.</p>
                </div>
                <div type="mayContain">
-                  <p>(date or dateRange or dateSet (1..1)), descriptiveNote (0..1)</p>
+                  <p>date or dateRange or dateSet (1..1), descriptiveNote (0..1)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>description</p>
@@ -3199,7 +3193,7 @@
                      information necessary to accommodate local practice.</p>
                </div>
                <div type="mayContain">
-                  <p>(date or dateRange (0..1)), term (1..n)</p>
+                  <p>date or dateRange (0..1), term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>control</p>
@@ -6378,10 +6372,7 @@
                   <p>hypertext Reference</p>
                </div>
                <div type="summary">
-                  <p>The locator for a remote resource in a link. When linking to an external file,
-                     href takes the form of a Uniform Resource Identifier (URI). If the value is not
-                     in the form of a URI, the locator is assumed to be within the document that
-                     contains the linking element.</p>
+                  <p>The address for a remote resource. <att>href</att> takes the form of a Uniform Resource Identifier (URI).</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -6600,10 +6591,10 @@
                   <p>Local Type</p>
                </div>
                <div type="summary">
-                  <p></p>
+                  <p>This optional attribute provides a means to narrow the semantics of an element, or provide semantics for elements that are primarily structural or semantically weak.</p>
                </div>
                <div type="description">
-                  <p>A narrative description of the use of the element</p>
+                  <p>The value of <att>localType</att> may be from a local or generally used external vocabulary. While the value of <att>localType</att> may be any string, to facilitate exchange of data, it is recommended that the value be either the URI or the preferred label for a term defined in a formal vocabulary (e.g., SKOS), which is identified by an absolute URI, and is resolvable to a web resource that describes the semantic scope and use of the value. Local conventions or controlled vocabularies used in <att>localType</att> may be declared in <gi>localTypeDeclaration</gi> within <gi>control</gi>. <att>localTypeDeclarationReference</att> should always be used alongside <att>localType</att> to provide a direct link to the <gi>localTypeDeclarationReference</gi>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -6974,12 +6965,12 @@
                </div>
                <div type="summary">
                   <p>Attribute that provides controlled terminology detailing the status of
-                     elements. Available in <gi>fromDate</gi>, <gi>nameEntry</gi> and <gi>toDate</gi>. The terms available for <att>status</att> are defined in closed lists
+                     elements. Available in <gi>agencyCode</gi>, <gi>fromDate</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi> and <gi>toDate</gi>. The terms available for <att>status</att> are defined in closed lists
                      that vary by element.</p>
                </div>
                <div type="values">
                   <p>Values in <gi>fromDate</gi>: unknown</p>
-                  <p>Values in <gi>nameEntry</gi>: alternative, authorized</p>
+                  <p>Values in <gi>agencyCode</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>: alternative, authorized</p>
                   <p>Values in <gi>toDate</gi>: unknown, ongoing</p>
                </div>
                <div type="examples">
@@ -7024,7 +7015,7 @@
                </div>
                <div type="summary">
                   <p>A pointer to the ID of another element. Used to create internal links within an
-                     XML instance.</p>
+                     XML instance. Available in all elements except <gi>eac</gi>.</p>
                </div>
                <div type="datatype">
                   <p>IDREF</p>
@@ -7081,7 +7072,7 @@
                   <p>Value</p>
                </div>
                <div type="summary">
-                  <p>Required attribute within the <gi>nameEntry</gi> element that defines the type
+                  <p>Required attribute within the <gi>entityType</gi> element that defines the type
                      of entity described in the EAC-CPF instance. </p>
                </div>
                <div type="values">
