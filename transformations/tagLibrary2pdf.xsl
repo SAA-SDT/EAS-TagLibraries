@@ -1095,7 +1095,7 @@
                                 <fo:table-body>
                                     <xsl:for-each select="tei:list/tei:label[1]">
                                         <fo:table-row>
-                                            <fo:table-cell width="50mm">
+                                            <fo:table-cell width="60mm">
                                                 <fo:block>
                                                   <xsl:call-template name="tokenizeattributes">
                                                   <xsl:with-param name="text" select="."/>
