@@ -148,7 +148,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e5965">Attributes</a></div>
+            <div class="toc1"><a href="#d1e6363">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -293,7 +293,7 @@
                      indicate hierarchical relationships between elements. Standard terminology is
                      also used to suggest the kind of element being discussed. "Wrapper element"
                      indicates an element that cannot contain text directly; a second, nested
-                     element must be opened first. When the schema enforces a specific sequence of
+                     element must be opened first.When the schema enforces a specific sequence of
                      child elements, that sequence is indicated.If useful, context-specific
                      guidance for the usage of an element's attributes is given in an "Attribute
                      usage" section. A "See also" section may be provided to indicate additional
@@ -765,6 +765,8 @@
                         described. A simpler discursive expression of the information may be encoded as
                         one or more &lt;p&gt; elements. The optional &lt;head&gt; element can be used
                         to add a title or caption to the text.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;head&gt;<br></br><br></br>&lt;abstract&gt;<br></br><br></br>&lt;list&gt;<br></br><br></br>&lt;p&gt;<br></br><br></br>&lt;chronList&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -832,6 +834,8 @@
                         detail a place that is relevant to the chronology item.</div>
                      <div class="p">&lt;chronItemSet&gt; can be used to record multiple events or place names
                         within a single &lt;chronItem&gt;.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;event&gt;<br></br><br></br>&lt;place&gt;<br></br><br></br>&lt;chronItemSet&gt;<br></br><br></br>&lt;reference&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -895,6 +899,8 @@
                         be repeated within &lt;chronItem&gt; when necessary to associate multiple
                         instances of such combinations with the date or dates recorded within
                         &lt;chronItem&gt;.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;event&gt;<br></br><br></br>&lt;place&gt;<br></br><br></br>&lt;reference&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -1254,24 +1260,25 @@
                         and sources used in the EAC-CPF instance. Other control elements considered
                         necessary but not otherwise included may be given in the &lt;localControl&gt;
                         element.</div>
-                     <div class="p">The available child elements (both required and optional) are:</div>
+                     <div class="p">The available child elements (both required and optional), in their prescribed order,
+                        are:</div>
                      <div class="blockIndent">&lt;recordId&gt; - Required. Contains the unique identifier for the
-                        EAC-CPF instance.<br></br><br></br>&lt;otherRecordId&gt; - Optional. An element that allows the recording
-                        of additional identifiers that may be associated with the EAC-CPF
-                        instance.<br></br><br></br>&lt;maintenanceAgency&gt; - Required. Contains the name and coded
+                        EAC-CPF instance.<br></br><br></br>&lt;maintenanceAgency&gt; - Required. Contains the name and coded
                         information about the institution or service responsible for the creation,
-                        maintenance, and/or dissemination of the EAC-CPF instance.<br></br><br></br>&lt;languageDeclaration&gt; - Optional. Contains coded and natural
-                        language information about the language or languages of the EAC-CPF
-                        instance.<br></br><br></br>&lt;conventionDeclaration&gt; - Optional. Contains information on the
-                        rules or conventions used to construct the EAC-CPF instance.<br></br><br></br>&lt;rightsDeclaration&gt; - Optional. Contains information about the
-                        usage rights of the EAC-CPF instance.<br></br><br></br>&lt;localTypeDeclaration&gt; - Optional. Contains information about
-                        local conventions used in the @localType attribute.<br></br><br></br>&lt;localControl&gt; - Optional. Contains any administrative metadata
-                        necessary due to local practice that are not represented by the other
-                        elements in &lt;control&gt;.<br></br><br></br>&lt;maintenanceHistory&gt; - Required. Contains information about the
+                        maintenance, and/or dissemination of the EAC-CPF instance.<br></br><br></br>&lt;maintenanceHistory&gt; - Required. Contains information about the
                         date, type and events within the life cycle of an EAC-CPF instance.<br></br><br></br>&lt;sources&gt; - Optional. Contains information about the sources
                         consulted in creating the description of the entity or entities in the
-                        EAC-CPF instance.<br></br><br></br>&lt;representation&gt; - Optional. Used for recording a link to a
-                        transformed and deliverable version of the EAC-CPF instance.<br></br><br></br></div>
+                        EAC-CPF instance.<br></br><br></br>&lt;conventionDeclaration&gt; - Optional. Contains information on the
+                        rules or conventions used to construct the EAC-CPF instance.<br></br><br></br>&lt;languageDeclaration&gt; - Optional. Contains coded and natural
+                        language information about the language or languages of the EAC-CPF
+                        instance.<br></br><br></br>&lt;localControl&gt; - Optional. Contains any administrative metadata
+                        necessary due to local practice that are not represented by the other
+                        elements in &lt;control&gt;.<br></br><br></br>&lt;localTypeDeclaration&gt; - Optional. Contains information about
+                        local conventions used in the @localType attribute.<br></br><br></br>&lt;otherRecordId&gt; - Optional. An element that allows the recording
+                        of additional identifiers that may be associated with the EAC-CPF
+                        instance.<br></br><br></br>&lt;representation&gt; - Optional. Used for recording a link to a
+                        transformed and deliverable version of the EAC-CPF instance.<br></br><br></br>&lt;rightsDeclaration&gt; - Optional. Contains information about the
+                        usage rights of the EAC-CPF instance.<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -1352,6 +1359,8 @@
                      <div class="p">It may not be necessary to include &lt;conventionDeclaration&gt; in such cases
                         where the above scenarios are addressed in local or consortial
                         documentation.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;reference&gt;<br></br><br></br>&lt;shortCode&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -1413,6 +1422,8 @@
                         other corporate bodies, persons, families, resources, and functions.</div>
                      <div class="p">An optional &lt;alternativeSet&gt; element allows the incorporation of two or
                         more authority records derived from two or more authority systems.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;identity&gt;<br></br><br></br>&lt;description&gt;<br></br><br></br>&lt;relations&gt;<br></br><br></br>&lt;alternativeSet&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -1592,6 +1603,8 @@
                         particular name of an identity are encoded in &lt;useDates&gt;. The date and
                         time of a maintenance event in the history of the EAC-CPF instance are given in
                         the &lt;eventDateTime&gt; element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;fromDate&gt;<br></br><br></br>&lt;toDate&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -1731,6 +1744,8 @@
                         historical, biographical, and genealogical information; legal status and
                         mandates; functions, occupations, and activities, and the dates and places that
                         further constrain those elements.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;functions&gt;<br></br><br></br>&lt;languagesUsed&gt;<br></br><br></br>&lt;legalStatuses&gt;<br></br><br></br>&lt;localDescriptions&gt;<br></br><br></br>&lt;mandates&gt;<br></br><br></br>&lt;occupations&gt;<br></br><br></br>&lt;places&gt;<br></br><br></br>&lt;biogHist&gt;<br></br><br></br>&lt;existDates&gt;<br></br><br></br>&lt;generalContext&gt;<br></br><br></br>&lt;structureOrGenealogy&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -1834,7 +1849,7 @@
                   <div class="content">
                      <div class="p">&lt;eac&gt; wraps all other elements in a particular instance of an archival
                         authority record encoded with the EAC-CPF XML Schema.</div>
-                     <div class="p">&lt;eac&gt; must contain &lt;control&gt; and either a &lt;cpfDescription&gt;
+                     <div class="p">&lt;eac&gt; must contain &lt;control&gt; followed by either a &lt;cpfDescription&gt;
                         or a &lt;multipleIdentities&gt; element.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -2102,6 +2117,8 @@
                         date of birth or date of incorporation. Use &lt;dateRange&gt; to encode a pair
                         of inclusive dates. Use &lt;dateSet&gt; to encode more complex date
                         expressions that intermix &lt;date&gt; and &lt;dateRange&gt; elements.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2263,6 +2280,8 @@
                         place(s) (&lt;placeName&gt;) may be included to further constrain the term's
                         meaning. A &lt;descriptiveNote&gt; may be included if a textual explanation is
                         needed.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2330,6 +2349,8 @@
                      <div class="p">Use the optional &lt;functions&gt; element to group together one or more
                         occurrences of &lt;function&gt;. &lt;functions&gt; must include at least one
                         &lt;function&gt; element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;function&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2396,6 +2417,8 @@
                         The optional &lt;head&gt; element may be used to encode a title or caption. A simpler discursive expression
                         of the general context may be
                         encoded as one or more &lt;p&gt; elements.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;head&gt;<br></br><br></br>&lt;list&gt;<br></br><br></br>&lt;p&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2588,6 +2611,8 @@
                      <div class="p">In case of multiple identities of the same entity in one EAC-CPF instance, a
                         separate &lt;identity&gt; element is contained in each of the
                         &lt;cpfDescription&gt; elements of the EAC-CPF instance.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;entityType&gt;<br></br><br></br>&lt;nameEntry&gt; or &lt;nameEntrySet&gt;<br></br><br></br>&lt;otherEntityTypes&gt;<br></br><br></br>&lt;identityId&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2883,6 +2908,8 @@
                         system, or script, in which the CPF entity being described was creative or
                         productive. Use the &lt;language&gt; element to specify the language and a
                         corresponding &lt;writingSystem&gt; element for the writing system.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;languageUsed&gt;<br></br><br></br>&lt;writingSystem&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2941,6 +2968,8 @@
                      <div class="p">Use the optional &lt;languagesUsed&gt; element to group together one or more
                         occurrences of &lt;languageUsed&gt;. &lt;languagesUsed&gt; must include at
                         least one &lt;languageUsed&gt; element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;languageUsed&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3011,6 +3040,8 @@
                         explanation is needed.</div>
                      <div class="p">Multiple &lt;legalStatus&gt; elements may be grouped within a
                         &lt;legalStatuses&gt; element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3078,6 +3109,8 @@
                      <div class="p">&lt;legalStatuses&gt; groups together one or more occurrences of
                         &lt;legalStatus&gt;. &lt;legalStatuses&gt; must include at least one
                         &lt;legalStatus&gt; element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;legalStatus&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3145,6 +3178,8 @@
                         &lt;item&gt; included within the child &lt;list&gt; elements.
                         &lt;head&gt; can be used to encode a title or caption within a
                         &lt;list&gt;.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;head&gt;<br></br><br></br>&lt;list&gt;<br></br><br></br>&lt;item&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3215,6 +3250,8 @@
                      <div class="p">The value of the entry must be given in a child &lt;term&gt; element and an
                         associated date or range of dates can be given as either &lt;date&gt; or
                         &lt;dateRange&gt;.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>&lt;date&gt; or &lt;dateRange&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3283,6 +3320,8 @@
                         &lt;dateSet&gt;) and place(s) (&lt;placeName&gt;) may be included to
                         further constrain the term's meaning. A &lt;descriptiveNote&gt; may be
                         included if a fuller textual explanation is needed.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3350,6 +3389,8 @@
                      <div class="p">Use the optional &lt;localDescriptions&gt; element to group together one or
                         more occurrences of &lt;localDescription&gt;. &lt;localDescriptions&gt; must
                         include at least one &lt;localDescription&gt; element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;localDescription&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3416,6 +3457,8 @@
                         representing the local convention or controlled vocabulary.</div>
                      <div class="p">It may not be necessary to include &lt;localTypeDeclaration&gt; if
                         localType values are documented externally.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;reference&gt;<br></br><br></br>&lt;shortCode&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3476,6 +3519,8 @@
                         unambiguously identify the institution or service. Any general information
                         about the institution in relation to the EAC-CPF instance may be given in
                         &lt;descriptiveNote&gt;.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;agencyCode&gt;<br></br><br></br>&lt;agencyName&gt;<br></br><br></br>&lt;otherAgencyCode&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3533,6 +3578,8 @@
                         &lt;eventDateTime&gt; child elements to record the agent that carried out
                         the maintenance event, and the date and time the maintenance event
                         occurred.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;agent&gt;<br></br><br></br>&lt;eventDateTime&gt;<br></br><br></br>&lt;eventDescription&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3641,6 +3688,8 @@
                         included if a fuller explanation is needed.</div>
                      <div class="p">Multiple &lt;mandate&gt; elements may be grouped within a &lt;mandates&gt;
                         element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3707,6 +3756,8 @@
                   <div class="content">
                      <div class="p">&lt;mandates&gt; groups together one or more occurrences of &lt;mandate&gt;.
                         &lt;mandates&gt; must include at least one &lt;mandate&gt; element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;mandate&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3827,6 +3878,8 @@
                         a separate &lt;part&gt; element.</div>
                      <div class="p">The &lt;nameEntry&gt; element may also contain a &lt;useDates&gt; element to
                         indicate the dates the name was used.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;part&gt;<br></br><br></br>&lt;useDates&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3930,6 +3983,8 @@
                         and/or scripts).</div>
                      <div class="p">The &lt;nameEntrySet&gt; element may contain a &lt;useDates&gt; element to
                         indicate the dates the set of name forms was used.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;nameEntry&gt;<br></br><br></br>&lt;useDates&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4048,6 +4103,8 @@
                         place(s) (&lt;placeName&gt;) may be included to further constrain the term's
                         meaning. A &lt;descriptiveNote&gt; element may be included if a textual
                         explanation needed.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4115,6 +4172,8 @@
                      <div class="p">Use the optional &lt;occupations&gt; element to group together one or more
                         occurrences of &lt;occupation&gt;. &lt;occupations&gt; must include at least
                         one &lt;occupation&gt; element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;occupation&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4250,6 +4309,8 @@
                         term for the other entity type.</div>
                      <div class="p">Each CPF instance may include more than one &lt;otherEntityType&gt; elements
                         within the &lt;otherEntityTypes&gt; wrapper element.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4323,6 +4384,8 @@
                         element.</div>
                      <div class="p">&lt;descriptiveNote&gt; can be used to add any additional descriptive
                         information to the &lt;otherEntityTypes&gt;.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;otherEntityType&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4579,6 +4642,8 @@
                         &lt;dateSet&gt;) information may be included to further constrain the
                         term's meaning. A &lt;descriptiveNote&gt; may be included if a fuller
                         explanation of the relation between the values is needed.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;placeName&gt;<br></br><br></br>&lt;placeRole&gt;<br></br><br></br>&lt;geographicCoordinates&gt;<br></br><br></br>&lt;address&gt;<br></br><br></br>&lt;contact&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4798,6 +4863,8 @@
                         occurrences of &lt;place&gt;. &lt;places&gt; must include at least one
                         &lt;place&gt; element. A &lt;descriptiveNote&gt; element may be included
                         if fuller textual explanation is needed.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;place&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4984,6 +5051,8 @@
                         &lt;place&gt; for relevant location information. &lt;descriptiveNote&gt;
                         may be included for more detailed specifications or explanations of the
                         relationship.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;targetEntity&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;place&gt;<br></br><br></br>&lt;relationType&gt;<br></br><br></br>&lt;targetRole&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br>&lt;objectXMLWrap&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5037,6 +5106,8 @@
                   <div class="content">
                      <div class="p">A wrapper element that groups together one or more &lt;relation&gt; elements,
                         each of which encodes a specific relationship.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;relation&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5237,6 +5308,8 @@
                         license statement (for example, a dereferenceable URI).</div>
                      <div class="p">&lt;descriptiveNote&gt; may be used to provide a human-readable description of
                         the license statement.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;reference&gt;<br></br><br></br>&lt;shortCode&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5373,6 +5446,8 @@
                      <div class="p">Use the optional &lt;descriptiveNote&gt; for any additional notes about the
                         source. Use the optional &lt;objectXMLWrap&gt; to embed XML documenting the
                         source from any namespace other than EAC-CPF.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;reference&gt;<br></br><br></br>&lt;citedRange&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br>&lt;objectXMLWrap&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5440,6 +5515,8 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">Use &lt;sources&gt; to bind together one or more &lt;source&gt; elements.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;source&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5558,6 +5635,8 @@
                         described. &lt;head&gt; may be used to encode a title or caption. A simpler discursive
                         expression of the structure(s) or genealogy may be encoded as one or more
                         &lt;p&gt; elements.</div>
+                     <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
+                     <div class="blockIndent">&lt;head&gt;<br></br><br></br>&lt;list&gt;<br></br><br></br>&lt;p&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5991,7 +6070,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example"><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e5965">
+            <div class="section" id="d1e6363">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
@@ -6926,7 +7005,7 @@
                <div class="spacer"> </div>  <a class="tocReturn" href="#toc">[toc]</a></div>
          </div>
          <div>
-            <div class="section" id="d1e6922">
+            <div class="section" id="d1e7320">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Title">Title  <a class="tocReturn" href="#toc">[toc]</a></div>
                <div class="p">Contents of the appendix; this can also include lists</div>

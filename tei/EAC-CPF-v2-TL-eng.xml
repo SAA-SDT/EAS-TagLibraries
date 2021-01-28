@@ -140,7 +140,7 @@
                      indicate hierarchical relationships between elements. Standard terminology is
                      also used to suggest the kind of element being discussed. "Wrapper element"
                      indicates an element that cannot contain text directly; a second, nested
-                     element must be opened first. When the schema enforces a specific sequence of
+                     element must be opened first.When the schema enforces a specific sequence of
                      child elements, that sequence is indicated.<lb/>If useful, context-specific
                      guidance for the usage of an element's attributes is given in an "Attribute
                      usage" section. A "See also" section may be provided to indicate additional
@@ -682,7 +682,7 @@
                      one or more <gi>p</gi> elements. The optional <gi>head</gi> element can be used
                      to add a title or caption to the text.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>head</gi></item>
                      <item><gi>abstract</gi></item>
                      <item><gi>list</gi></item>
@@ -754,8 +754,8 @@
                   <p><gi>chronItemSet</gi> can be used to record multiple events or place names
                      within a single <gi>chronItem</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                  <list type="simple">
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>event</gi></item>
                      <item><gi>place</gi></item>
                      <item><gi>chronItemSet</gi></item>
@@ -830,7 +830,7 @@
                      instances of such combinations with the date or dates recorded within
                         <gi>chronItem</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>event</gi></item>
                      <item><gi>place</gi></item>
                      <item><gi>reference</gi></item>
@@ -1236,13 +1236,14 @@
                         maintenance, and/or dissemination of the EAC-CPF instance.</item>
                      <item><gi>maintenanceHistory</gi> - Required. Contains information about the
                         date, type and events within the life cycle of an EAC-CPF instance.</item>
+                     <item><gi>sources</gi> - Optional. Contains information about the sources
+                        consulted in creating the description of the entity or entities in the
+                        EAC-CPF instance.</item>
                      <item><gi>conventionDeclaration</gi> - Optional. Contains information on the
                         rules or conventions used to construct the EAC-CPF instance.</item>
                      <item><gi>languageDeclaration</gi> - Optional. Contains coded and natural
                         language information about the language or languages of the EAC-CPF
                         instance.</item>
-                     <item><gi>rightsDeclaration</gi> - Optional. Contains information about the
-                        usage rights of the EAC-CPF instance.</item>
                      <item><gi>localControl</gi> - Optional. Contains any administrative metadata
                         necessary due to local practice that are not represented by the other
                         elements in <gi>control</gi>.</item>
@@ -1253,9 +1254,8 @@
                         instance.</item>
                      <item><gi>representation</gi> - Optional. Used for recording a link to a
                         transformed and deliverable version of the EAC-CPF instance.</item>
-                     <item><gi>sources</gi> - Optional. Contains information about the sources
-                        consulted in creating the description of the entity or entities in the
-                        EAC-CPF instance.</item>
+                     <item><gi>rightsDeclaration</gi> - Optional. Contains information about the
+                        usage rights of the EAC-CPF instance.</item>
                   </list>
                </div>
                <div type="attributeusage">
@@ -1332,7 +1332,7 @@
                      where the above scenarios are addressed in local or consortial
                      documentation.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>reference</gi></item>
                      <item><gi>shortCode</gi></item>
                      <item><gi>descriptiveNote</gi></item>
@@ -1400,7 +1400,7 @@
                   <p>An optional <gi>alternativeSet</gi> element allows the incorporation of two or
                      more authority records derived from two or more authority systems.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                     <list>
+                     <list type="simple">
                         <item><gi>identity</gi></item>
                         <item><gi>description</gi></item>
                         <item><gi>relations</gi></item>
@@ -1592,7 +1592,7 @@
                      time of a maintenance event in the history of the EAC-CPF instance are given in
                      the <gi>eventDateTime</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>fromDate</gi></item>
                      <item><gi>toDate</gi></item>
                   </list>
@@ -1743,7 +1743,7 @@
                      mandates; functions, occupations, and activities, and the dates and places that
                      further constrain those elements.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>functions</gi></item>
                      <item><gi>languagesUsed</gi></item>
                      <item><gi>legalStatuses</gi></item>
@@ -2152,8 +2152,8 @@
                      of inclusive dates. Use <gi>dateSet</gi> to encode more complex date
                      expressions that intermix <gi>date</gi> and <gi>dateRange</gi> elements.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                  <list type="simple">
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
@@ -2334,9 +2334,9 @@
                      meaning. A <gi>descriptiveNote</gi> may be included if a textual explanation is
                      needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>term</gi></item>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -2398,7 +2398,7 @@
                      occurrences of <gi>function</gi>. <gi>functions</gi> must include at least one
                         <gi>function</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>function</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -2467,7 +2467,7 @@
                      The optional <gi>head</gi> element may be used to encode a title or caption. A simpler discursive expression of the general context may be
                      encoded as one or more <gi>p</gi> elements.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>head</gi></item>
                      <item><gi>list</gi></item>
                      <item><gi>p</gi></item>
@@ -2673,7 +2673,7 @@
                      separate <gi>identity</gi> element is contained in each of the
                         <gi>cpfDescription</gi> elements of the EAC-CPF instance.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>entityType</gi></item>
                      <item><gi>nameEntry</gi> or <gi>nameEntrySet</gi></item>
                      <item><gi>otherEntityTypes</gi></item>
@@ -2982,7 +2982,7 @@
                      productive. Use the <gi>language</gi> element to specify the language and a
                      corresponding <gi>writingSystem</gi> element for the writing system.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>languageUsed</gi></item>
                      <item><gi>writingSystem</gi></item>
                      <item><gi>descriptiveNote</gi></item>
@@ -3051,7 +3051,7 @@
                      occurrences of <gi>languageUsed</gi>. <gi>languagesUsed</gi> must include at
                      least one <gi>languageUsed</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>languageUsed</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -3132,9 +3132,9 @@
                   <p>Multiple <gi>legalStatus</gi> elements may be grouped within a
                         <gi>legalStatuses</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>term</gi></item>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -3196,7 +3196,7 @@
                         <gi>legalStatus</gi>. <gi>legalStatuses</gi> must include at least one
                         <gi>legalStatus</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>legalStatus</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -3268,7 +3268,7 @@
                         <gi>head</gi> can be used to encode a title or caption within a
                         <gi>list</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>head</gi></item>
                      <item><gi>list</gi></item>
                      <item><gi>item</gi></item>
@@ -3346,7 +3346,7 @@
                      associated date or range of dates can be given as either <gi>date</gi> or
                         <gi>dateRange</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>term</gi></item>
                      <item><gi>date</gi> or <gi>dateRange</gi></item>
                   </list>
@@ -3431,9 +3431,9 @@
                      further constrain the term's meaning. A <gi>descriptiveNote</gi> may be
                      included if a fuller textual explanation is needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>term</gi></item>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -3495,7 +3495,7 @@
                      more occurrences of <gi>localDescription</gi>. <gi>localDescriptions</gi> must
                      include at least one <gi>localDescription</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>localDescription</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -3561,7 +3561,7 @@
                   <p>It may not be necessary to include <gi>localTypeDeclaration</gi> if
                         <att>localType</att> values are documented externally.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>reference</gi></item>
                      <item><gi>shortCode</gi></item>
                      <item><gi>descriptiveNote</gi></item>
@@ -3622,7 +3622,7 @@
                      about the institution in relation to the EAC-CPF instance may be given in
                         <gi>descriptiveNote</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                        <list>
+                        <list type="simple">
                            <item><gi>agencyCode</gi></item>
                            <item><gi>agencyName</gi></item>
                            <item><gi>otherAgencyCode</gi></item>
@@ -3692,7 +3692,7 @@
                      the maintenance event, and the date and time the maintenance event
                      occurred.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>agent</gi></item>
                      <item><gi>eventDateTime</gi></item>
                      <item><gi>eventDescription</gi></item>
@@ -3834,9 +3834,9 @@
                   <p>Multiple <gi>mandate</gi> elements may be grouped within a <gi>mandates</gi>
                      element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>term</gi></item>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -3897,7 +3897,7 @@
                   <p><gi>mandates</gi> groups together one or more occurrences of <gi>mandate</gi>.
                         <gi>mandates</gi> must include at least one <gi>mandate</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>mandate</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -4030,7 +4030,7 @@
                   <p>The <gi>nameEntry</gi> element may also contain a <gi>useDates</gi> element to
                      indicate the dates the name was used.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>part</gi></item>
                      <item><gi>useDates</gi></item>
                   </list>
@@ -4145,7 +4145,7 @@
                   <p>The <gi>nameEntrySet</gi> element may contain a <gi>useDates</gi> element to
                      indicate the dates the set of name forms was used.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>nameEntry</gi></item>
                      <item><gi>useDates</gi></item>
                   </list>
@@ -4278,9 +4278,9 @@
                      meaning. A <gi>descriptiveNote</gi> element may be included if a textual
                      explanation needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>term</gi></item>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -4342,7 +4342,7 @@
                      occurrences of <gi>occupation</gi>. <gi>occupations</gi> must include at least
                      one <gi>occupation</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>occupation</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -4492,9 +4492,9 @@
                   <p>Each CPF instance may include more than one <gi>otherEntityType</gi> elements
                      within the <gi>otherEntityTypes</gi> wrapper element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>term</gi></item>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -4558,7 +4558,7 @@
                   <p><gi>descriptiveNote</gi> can be used to add any additional descriptive
                      information to the <gi>otherEntityTypes</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>otherEntityType</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -4837,13 +4837,13 @@
                      term's meaning. A <gi>descriptiveNote</gi> may be included if a fuller
                      explanation of the relation between the values is needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>placeName</gi></item>
                      <item><gi>placeRole</gi></item>
                      <item><gi>geographicCoordinates</gi></item>
                      <item><gi>address</gi></item>
                      <item><gi>contact</gi></item>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
@@ -5056,7 +5056,7 @@
                         <gi>place</gi> element. A <gi>descriptiveNote</gi> element may be included
                      if fuller textual explanation is needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>place</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -5251,9 +5251,9 @@
                      may be included for more detailed specifications or explanations of the
                      relationship.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>targetEntity</gi></item>
-                     <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
                      <item><gi>place</gi></item>
                      <item><gi>relationType</gi></item>
                      <item><gi>targetRole</gi></item>
@@ -5317,7 +5317,7 @@
                   <p>A wrapper element that groups together one or more <gi>relation</gi> elements,
                      each of which encodes a specific relationship.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>relation</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -5524,7 +5524,7 @@
                   <p><gi>descriptiveNote</gi> may be used to provide a human-readable description of
                      the license statement.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>reference</gi></item>
                      <item><gi>shortCode</gi></item>
                      <item><gi>descriptiveNote</gi></item>
@@ -5697,7 +5697,7 @@
                      source. Use the optional <gi>objectXMLWrap</gi> to embed XML documenting the
                      source from any namespace other than EAC-CPF.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>reference</gi></item>
                      <item><gi>citedRange</gi></item>
                      <item><gi>descriptiveNote</gi></item>
@@ -5752,7 +5752,7 @@
                <div type="description">
                   <p>Use <gi>sources</gi> to bind together one or more <gi>source</gi> elements.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>source</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -5894,7 +5894,7 @@
                      expression of the structure(s) or genealogy may be encoded as one or more
                         <gi>p</gi> elements.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list>
+                  <list type="simple">
                      <item><gi>head</gi></item>
                      <item><gi>list</gi></item>
                      <item><gi>p</gi></item>
