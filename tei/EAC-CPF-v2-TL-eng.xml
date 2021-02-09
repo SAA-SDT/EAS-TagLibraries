@@ -8,7 +8,7 @@
          <titleStmt>
             <title xml:lang="eng" type="main">Encoded Archival Context - Corporate Bodies, Persons,
                and Families (EAC-CPF) <lb/> Tag Library</title>
-            <title xml:lang="eng" type="additional">Version EAC-CPF 2.0.0</title>
+            <title xml:lang="eng" type="additional">Version EAC-CPF 2.0</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
                <name>Technical Subcommittee for Encoded Archival Standard of the Society of American
@@ -30,7 +30,7 @@
                <addrLine>info@archivists.org</addrLine>
                <addrLine>www.archivists.org</addrLine>
             </address>
-            <date when="2013"/>
+            <date when="2021"/>
             <idno>ISBN Number</idno>
             <availability>
                <licence>This work is licensed under a Creative Commons Attribution 4.0 International
@@ -52,7 +52,7 @@
             <docTitle>
                <titlePart type="main">Encoded Archival Context - Corporate Bodies, Persons, and
                   Families (EAC-CPF) <lb/> Tag Library</titlePart>
-               <titlePart type="additional">Version EAC-CPF 2.0.0</titlePart>
+               <titlePart type="additional">Version EAC-CPF 2.0</titlePart>
             </docTitle>
             <docEdition>2021 Edition</docEdition>
             <byline>Prepared and maintained by the</byline>
@@ -66,7 +66,7 @@
          <div>
             <div xml:id="release">
                <head>Release and Revision Notes</head>
-               <p>This is the first release of the Tag Library for EAC-CPF 2.0.0. The current
+               <p>This is the first release of the Tag Library for EAC-CPF 2.0. The current
                   release includes changes and updates in the schema undertaken by the Technical
                   Subcommittee on Encoded Archival Standards reflecting comments received by the
                   international community of professionals. </p>
@@ -140,7 +140,7 @@
                      indicate hierarchical relationships between elements. Standard terminology is
                      also used to suggest the kind of element being discussed. "Wrapper element"
                      indicates an element that cannot contain text directly; a second, nested
-                     element must be opened first.When the schema enforces a specific sequence of
+                     element must be opened first. When the schema enforces a specific sequence of
                      child elements, that sequence is indicated.<lb/>If useful, context-specific
                      guidance for the usage of an element's attributes is given in an "Attribute
                      usage" section. A "See also" section may be provided to indicate additional
@@ -410,10 +410,11 @@
                </div>
                <div type="description">
                   <p>Use <gi>agencyCode</gi> to record a code indicating the institution or service
-                     responsible for the creation, maintenance and/or dissemination of the EAD
+                     responsible for the creation, maintenance and/or dissemination of the EAC-CPF
                      instance. Use of <gi>agencyCode</gi> is recommended, as the combination of
                         <gi>agencyCode</gi> and the required <gi>recordId</gi> provide a globally
                      unique identifier for the instance.</p>
+                  <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyCode</gi> and <gi>agencyName</gi>.</p>
                   <p>It is recommended that the code follow the format of the International Standard
                      Identifier for Libraries and Related Organizations (ISIL: ISO 15511): a prefix,
                      a dash, and an identifier. The code is alphanumeric (characters A-Z, 0-9,
@@ -457,7 +458,7 @@
                   <p>Agency Name</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>maintenanceAgency</gi> that provides the name
+                  <p>A child element of <gi>maintenanceAgency</gi> that provides the name
                      of the institution or service responsible for the creation, maintenance, and/or
                      dissemination of the EAC-CPF instance.</p>
                </div>
@@ -494,6 +495,7 @@
                      responsible for the creation, maintenance, and/or dissemination of the EAC-CPF
                      instance. Examples include the repository name or the name of an aggregation
                      service.</p>
+                  <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyName</gi> and <gi>agencyCode</gi>.</p>
                   <p>It is recommended to use the form of the agency name that is authorized by an
                      appropriate national or international agency or service.</p>
                   <p><gi>agencyName</gi> may be repeated in order to provide the name of the
@@ -502,7 +504,7 @@
                      language of each name using <att>languageOfElement</att>.</p>
                </div>
                <div type="availability">
-                  <p>Required, repeatable</p>
+                  <p>Optional, repeatable</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -581,13 +583,13 @@
                   <gi>alternativeSet</gi>
                </head>
                <div type="fullName">
-                  <p>AlternativeSet</p>
+                  <p>Alternative Set</p>
                </div>
                <div type="summary">
-                  <p>A summary of what the element is used for</p>
+                  <p>A container for two or more authority records derived from two or more authority systems, expressed within a single EAC-CPF instance.</p>
                </div>
                <div type="mayContain">
-                  <p/>
+                  <p>setComponent (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>cpfDescription</p>
@@ -595,24 +597,34 @@
                <div type="attributes">
                   <p>
                      <list type="gloss">
-                        <label>Attribute that may be used within this element</label>
-                        <item>"Optional" or "Required" (values limited to: list of valid values for
-                           this attribute)</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>base</label>
+                        <item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>A narrative description of the use of the element</p>
-               </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>attribute usage</item>
-                  </list>
+                  <p><gi>alternativeSet</gi> is a container element for two or more authority records derived from two or more alternative systems. Authority record aggregation may be used in cooperative or consortial contexts that gather together records describing the same CPF entity in different languages, from different rules, or from different contexts, when it is desirable to provide users with alternative descriptions of the same entity. For example in the context of the European Union, an international cooperative project may want to provide users the option of storing descriptions in Italian, French, German, English, Spanish, and on other European languages.</p>
+                  <p>Alternative authority records are contained within the required <gi>setComponent</gi> child elements. This approach allows different descriptions of the same CPF entity to be contained within a single EAC-CPF instance.</p>
                </div>
                <div type="seeAlso">
                   <list type="simple">
-                     <item>A listing of other elements in the tag library that are relevant to, or
-                        similar to, the element</item>
+                     <item><gi>alternativeSet</gi> should not be confused with <gi>sources</gi>, wherein authority records are not intended to be displayed as alternative versions.</item>
                   </list>
                </div>
                <div type="availability">
@@ -971,39 +983,51 @@
                   <p>Component Entry</p>
                </div>
                <div type="summary">
-                  <p>A summary of what the element is used for</p>
+                  <p>A child element of <gi>setComponent</gi> that can be used to provide identification and access to a linked resource.</p>
                </div>
                <div type="mayContain">
-                  <p>List of elements that may be used as children of the element</p>
+                  <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>List of elements that may be used as immediate parents of the element</p>
+                  <p>setComponent</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
-                        <label>Attribute that may be used within this element</label>
-                        <item>"Optional" or "Required" (values limited to: list of valid values for
-                           this attribute)</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>A narrative description of the use of the element</p>
-               </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item/>
-                  </list>
-               </div>
-               <div type="seeAlso">
-                  <list type="simple">
-                     <item>A listing of other elements in the tag library that are relevant to, or
-                        similar to, the element</item>
-                  </list>
+                  <p><gi>componentEntry</gi> is used within <gi>setComponent</gi> to provide a textual note about the EAC-CPF instance that is being bundled together with other authority records for the same entity within an <gi>alternativeSet</gi> wrapper. The bundled alternative records for a given EAC-CPF entity may be in difference languages or come from different authority systems. The bundling allows them to be transmitted or stored together. The <gi>componentEntry</gi> element provides a place where a particular alternative record can be described or explained in relation to the other authority records.</p>
                </div>
                <div type="availability">
-                  <p>Required/Optional, Repeatable/Not Repeatable</p>
+                  <p>Optional, repeatable</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -3588,7 +3612,7 @@
                      service responsible for the EAC-CPF instance.</p>
                </div>
                <div type="mayContain">
-                  <p>agencyCode (0..1), agencyName (1..n), descriptiveNote (0..1), otherAgencyCode
+                  <p>agencyCode (0..1), agencyName (0..n), descriptiveNote (0..1), otherAgencyCode
                      (0..n)</p>
                </div>
                <div type="mayOccurWithin">
@@ -3615,10 +3639,10 @@
                <div type="description">
                   <p>Information about the institution or service responsible for the creation,
                      maintenance, and/or dissemination of the EAC-CPF instance.</p>
-                  <p><gi>maintenanceAgency</gi> must include a child <gi>agencyName</gi> to provide
-                     the name of the institution or service. It is recommended to include the
-                     optional <gi>agencyCode</gi> and/or <gi>otherAgencyCode</gi> children to
-                     unambiguously identify the institution or service. Any general information
+                  <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyCode</gi> or <gi>agencyName</gi> to provide
+                     the name of the institution or service. It may also include the
+                     optional child element <gi>otherAgencyCode</gi> to
+                     provide any additional identifiers. Any general information
                      about the institution in relation to the EAC-CPF instance may be given in
                         <gi>descriptiveNote</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
@@ -4406,7 +4430,7 @@
                <div type="description">
                   <p>Use <gi>otherAgencyCode</gi> to provide alternative and/or local institution
                      code that represents the institution or service responsible for the creation,
-                     maintenance, and/or dissemination of the EAD instance. Any code other than that
+                     maintenance, and/or dissemination of the EAC-CPF instance. Any code other than that
                      given in <gi>agencyCode</gi> may be provided in <gi>otherAgencyCode</gi>. The
                      addition of an ISO 3166-1 alpha-2 country code as the prefix to a local code is
                      recommended to ensure international uniqueness.</p>
@@ -5459,7 +5483,7 @@
                </div>
                <div type="seeAlso">
                   <list type="simple">
-                     <item>Use <gi>otherRecordId</gi> to provide any local identifier for the EAD
+                     <item>Use <gi>otherRecordId</gi> to provide any local identifier for the EAC-CPF
                         instance that does not link to a deliverable version.</item>
                   </list>
                </div>
@@ -5547,39 +5571,50 @@
                   <p>Set Component</p>
                </div>
                <div type="summary">
-                  <p>A summary of what the element is used for</p>
+                  <p>A required child element of <gi>alternativeSet</gi> that contains the EAC-CPF encoding for one entire authority record, thereby permitting the bundling of authority records from multiple authority systems within <gi>cpfDescription</gi>.</p>
                </div>
                <div type="mayContain">
-                  <p>List of elements that may be used as children of the element</p>
+                  <p>componentEntry (0..n), descriptiveNote (0..1), objectXMLWrap (0..1)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>List of elements that may be used as immediate parents of the element</p>
+                  <p>alternativeSet</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
-                        <label>Attribute that may be used within this element</label>
-                        <item>"Optional" or "Required" (values limited to: list of valid values for
-                           this attribute)</item>
-                     </list>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>href</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>lastDateTimeVerified</label>
+                        <item>Optional</item>
+                        <label>linkRole</label>
+                        <item>Optional</item>
+                        <label>linkTitle</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>A narrative description of the use of the element</p>
-               </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item/>
-                  </list>
-               </div>
-               <div type="seeAlso">
-                  <list type="simple">
-                     <item>A listing of other elements in the tag library that are relevant to, or
-                        similar to, the element</item>
-                  </list>
+                  <p><gi>setComponent</gi> provides a wrapper to contain an entire authority record, so that multiple records for the same identity from separate authority systems, or in different languages, may be combined together within a single EAC-CPF instance.</p>
+                  <p>The <gi>componentEntry</gi> child element encodes the link to the authority record in the external system. An optional <gi>descriptiveNote</gi> may be used for a textual note providing further information about the record referenced in <gi>setComponent</gi>.</p>
                </div>
                <div type="availability">
-                  <p>Required/Optional, Repeatable/Not Repeatable</p>
+                  <p>Required, repeatable</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -6918,7 +6953,7 @@
                         system</item>
                      <item>derived: indicates that the instance was derived from another descriptive
                         system</item>
-                     <item>revised: any type of general modification to the EAD instance</item>
+                     <item>revised: any type of general modification to the EAC-CPF instance</item>
                      <item>unknown: when the type of event is not known</item>
                      <item>updated: when an instance has been brought up to date with significant
                         changes to the materials being described or to the version of EAC-CPF

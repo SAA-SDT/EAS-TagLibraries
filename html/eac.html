@@ -12,7 +12,7 @@
          <div>
             <div class="titlePage">
                <div class="title">Encoded Archival Context - Corporate Bodies, Persons, and
-                  Families (EAC-CPF)  Tag Library Version EAC-CPF 2.0.0</div>
+                  Families (EAC-CPF)  Tag Library Version EAC-CPF 2.0</div>
                <div class="edition">2021 Edition</div>
                <div class="edition">
                   <div>Prepared and maintained by the</div>
@@ -148,7 +148,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e6363">Attributes</a></div>
+            <div class="toc1"><a href="#d1e6465">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -222,7 +222,7 @@
             <div class="section" id="d1e53">
                <div id="d1e54">
                   <div class="head03">Release and Revision Notes  <a class="tocReturn" href="#toc">[toc]</a></div>
-                  <div class="p">This is the first release of the Tag Library for EAC-CPF 2.0.0. The current
+                  <div class="p">This is the first release of the Tag Library for EAC-CPF 2.0. The current
                      release includes changes and updates in the schema undertaken by the Technical
                      Subcommittee on Encoded Archival Standards reflecting comments received by the
                      international community of professionals. </div>
@@ -293,7 +293,7 @@
                      indicate hierarchical relationships between elements. Standard terminology is
                      also used to suggest the kind of element being discussed. "Wrapper element"
                      indicates an element that cannot contain text directly; a second, nested
-                     element must be opened first.When the schema enforces a specific sequence of
+                     element must be opened first. When the schema enforces a specific sequence of
                      child elements, that sequence is indicated.If useful, context-specific
                      guidance for the usage of an element's attributes is given in an "Attribute
                      usage" section. A "See also" section may be provided to indicate additional
@@ -534,10 +534,11 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">Use &lt;agencyCode&gt; to record a code indicating the institution or service
-                        responsible for the creation, maintenance and/or dissemination of the EAD
+                        responsible for the creation, maintenance and/or dissemination of the EAC-CPF
                         instance. Use of &lt;agencyCode&gt; is recommended, as the combination of
                         &lt;agencyCode&gt; and the required &lt;recordId&gt; provide a globally
                         unique identifier for the instance.</div>
+                     <div class="p">&lt;maintenanceAgency&gt; must include one or both of &lt;agencyCode&gt; and &lt;agencyName&gt;.</div>
                      <div class="p">It is recommended that the code follow the format of the International Standard
                         Identifier for Libraries and Related Organizations (ISIL: ISO 15511): a prefix,
                         a dash, and an identifier. The code is alphanumeric (characters A-Z, 0-9,
@@ -590,7 +591,7 @@
                   <div class="content"><span class="label">Agency Name</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">A required child element of &lt;maintenanceAgency&gt; that provides the name
+                     <div class="p">A child element of &lt;maintenanceAgency&gt; that provides the name
                         of the institution or service responsible for the creation, maintenance, and/or
                         dissemination of the EAC-CPF instance.</div>
                   </div>
@@ -604,6 +605,7 @@
                         responsible for the creation, maintenance, and/or dissemination of the EAC-CPF
                         instance. Examples include the repository name or the name of an aggregation
                         service.</div>
+                     <div class="p">&lt;maintenanceAgency&gt; must include one or both of &lt;agencyName&gt; and &lt;agencyCode&gt;.</div>
                      <div class="p">It is recommended to use the form of the agency name that is authorized by an
                         appropriate national or international agency or service.</div>
                      <div class="p">&lt;agencyName&gt; may be repeated in order to provide the name of the
@@ -640,7 +642,7 @@
                   </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">
-                     <div class="p">Required, repeatable</div>
+                     <div class="p">Optional, repeatable</div>
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
@@ -709,27 +711,58 @@
                   <div class="example"><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-alternativeSet"><span class="label">&lt;alternativeSet&gt;</span></div>
-                  <div class="content"><span class="label">AlternativeSet</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
+                  <div class="content"><span class="label">Alternative Set</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">A summary of what the element is used for</div>
+                     <div class="p">A container for two or more authority records derived from two or more authority systems,
+                        expressed within a single EAC-CPF instance.</div>
                   </div>
-                  <div class="leftcol">Attribute usage: </div>
-                  <div class="content">attribute usage<br></br></div>
                   <div class="leftcol">May contain: </div>
-                  <div class="content"></div>
+                  <div class="content"><a href="#elem-setComponent">setComponent (1..n)</a></div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-cpfDescription">cpfDescription</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">A narrative description of the use of the element</div>
+                     <div class="p">&lt;alternativeSet&gt; is a container element for two or more authority records derived from two or more
+                        alternative systems. Authority record aggregation may be used in cooperative or consortial
+                        contexts that gather together records describing the same CPF entity in different
+                        languages, from different rules, or from different contexts, when it is desirable
+                        to provide users with alternative descriptions of the same entity. For example in
+                        the context of the European Union, an international cooperative project may want to
+                        provide users the option of storing descriptions in Italian, French, German, English,
+                        Spanish, and on other European languages.</div>
+                     <div class="p">Alternative authority records are contained within the required &lt;setComponent&gt; child elements. This approach allows different descriptions of the same CPF entity
+                        to be contained within a single EAC-CPF instance.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
-                     <div class="centercol"><a href="#attr-Attribute that may be used within this element">Attribute that may be used within this element</a></div>
-                     <div class="rightcol">"Optional" or "Required" (values limited to: list of valid values for
-                        this attribute)</div>
+                     <div class="centercol"><a href="#attr-audience">audience</a></div>
+                     <div class="rightcol">Optional (values limited to: external, internal)</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-base">base</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-conventionDeclarationReference">conventionDeclarationReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-languageOfElement">languageOfElement</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-id">id</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-maintenanceEventReference">maintenanceEventReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-scriptOfElement">scriptOfElement</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-sourceReference">sourceReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-target">target</a></div>
+                     <div class="rightcol">Optional</div>
                   </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">
@@ -1060,28 +1093,65 @@
                   <div class="content"><span class="label">Component Entry</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">A summary of what the element is used for</div>
+                     <div class="p">A child element of &lt;setComponent&gt; that can be used to provide identification and access to a linked resource.</div>
                   </div>
-                  <div class="leftcol">Attribute usage: </div>
-                  <div class="content"><br></br></div>
                   <div class="leftcol">May contain: </div>
-                  <div class="content"><a href="#elem-List of elements that may be used as children of the element">List of elements that may be used as children of the element</a></div>
+                  <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"><a href="#elem-List of elements that may be used as immediate parents of the element">List of elements that may be used as immediate parents of the element</a></div>
+                  <div class="content"><a href="#elem-setComponent">setComponent</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">A narrative description of the use of the element</div>
+                     <div class="p">&lt;componentEntry&gt; is used within &lt;setComponent&gt; to provide a textual note about the EAC-CPF instance that is being bundled together
+                        with other authority records for the same entity within an &lt;alternativeSet&gt; wrapper. The bundled alternative records for a given EAC-CPF entity may be in difference
+                        languages or come from different authority systems. The bundling allows them to be
+                        transmitted or stored together. The &lt;componentEntry&gt; element provides a place where a particular alternative record can be described or
+                        explained in relation to the other authority records.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
-                     <div class="centercol"><a href="#attr-Attribute that may be used within this element">Attribute that may be used within this element</a></div>
-                     <div class="rightcol">"Optional" or "Required" (values limited to: list of valid values for
-                        this attribute)</div>
+                     <div class="centercol"><a href="#attr-audience">audience</a></div>
+                     <div class="rightcol">Optional (values limited to: external, internal)</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-conventionDeclarationReference">conventionDeclarationReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-id">id</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-languageOfElement">languageOfElement</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-localType">localType</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-localTypeDeclarationReference">localTypeDeclarationReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-maintenanceEventReference">maintenanceEventReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-scriptOfElement">scriptOfElement</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-sourceReference">sourceReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-target">target</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-valueURI">valueURI</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-vocabularySource">vocabularySource</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-vocabularySourceURI">vocabularySourceURI</a></div>
+                     <div class="rightcol">Optional</div>
                   </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">
-                     <div class="p">Required/Optional, Repeatable/Not Repeatable</div>
+                     <div class="p">Optional, repeatable</div>
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
@@ -3506,17 +3576,17 @@
                   <div class="content">Use @countryCode to indicate a unique code for the country of
                      the maintenance agency.<br></br></div>
                   <div class="leftcol">May contain: </div>
-                  <div class="content"><a href="#elem-agencyCode">agencyCode (0..1)</a>, <a href="#elem-agencyName">agencyName (1..n)</a>, <a href="#elem-descriptiveNote">descriptiveNote (0..1)</a>, <a href="#elem-otherAgencyCode">otherAgencyCode (0..n)</a></div>
+                  <div class="content"><a href="#elem-agencyCode">agencyCode (0..1)</a>, <a href="#elem-agencyName">agencyName (0..n)</a>, <a href="#elem-descriptiveNote">descriptiveNote (0..1)</a>, <a href="#elem-otherAgencyCode">otherAgencyCode (0..n)</a></div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-control">control</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">Information about the institution or service responsible for the creation,
                         maintenance, and/or dissemination of the EAC-CPF instance.</div>
-                     <div class="p">&lt;maintenanceAgency&gt; must include a child &lt;agencyName&gt; to provide
-                        the name of the institution or service. It is recommended to include the
-                        optional &lt;agencyCode&gt; and/or &lt;otherAgencyCode&gt; children to
-                        unambiguously identify the institution or service. Any general information
+                     <div class="p">&lt;maintenanceAgency&gt; must include one or both of &lt;agencyCode&gt; or &lt;agencyName&gt; to provide
+                        the name of the institution or service. It may also include the
+                        optional child element &lt;otherAgencyCode&gt; to
+                        provide any additional identifiers. Any general information
                         about the institution in relation to the EAC-CPF instance may be given in
                         &lt;descriptiveNote&gt;.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
@@ -4236,7 +4306,7 @@
                   <div class="content">
                      <div class="p">Use &lt;otherAgencyCode&gt; to provide alternative and/or local institution
                         code that represents the institution or service responsible for the creation,
-                        maintenance, and/or dissemination of the EAD instance. Any code other than that
+                        maintenance, and/or dissemination of the EAC-CPF instance. Any code other than that
                         given in &lt;agencyCode&gt; may be provided in &lt;otherAgencyCode&gt;. The
                         addition of an ISO 3166-1 alpha-2 country code as the prefix to a local code is
                         recommended to ensure international uniqueness.</div>
@@ -5350,28 +5420,64 @@
                   <div class="content"><span class="label">Set Component</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">A summary of what the element is used for</div>
+                     <div class="p">A required child element of &lt;alternativeSet&gt; that contains the EAC-CPF encoding for one entire authority record, thereby permitting
+                        the bundling of authority records from multiple authority systems within &lt;cpfDescription&gt;.</div>
                   </div>
-                  <div class="leftcol">Attribute usage: </div>
-                  <div class="content"><br></br></div>
                   <div class="leftcol">May contain: </div>
-                  <div class="content"><a href="#elem-List of elements that may be used as children of the element">List of elements that may be used as children of the element</a></div>
+                  <div class="content"><a href="#elem-componentEntry">componentEntry (0..n)</a>, <a href="#elem-descriptiveNote">descriptiveNote (0..1)</a>, <a href="#elem-objectXMLWrap">objectXMLWrap (0..1)</a></div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"><a href="#elem-List of elements that may be used as immediate parents of the element">List of elements that may be used as immediate parents of the element</a></div>
+                  <div class="content"><a href="#elem-alternativeSet">alternativeSet</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">A narrative description of the use of the element</div>
+                     <div class="p">&lt;setComponent&gt; provides a wrapper to contain an entire authority record, so that multiple records
+                        for the same identity from separate authority systems, or in different languages,
+                        may be combined together within a single EAC-CPF instance.</div>
+                     <div class="p">The &lt;componentEntry&gt; child element encodes the link to the authority record in the external system. An
+                        optional &lt;descriptiveNote&gt; may be used for a textual note providing further information about the record referenced
+                        in &lt;setComponent&gt;.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
-                     <div class="centercol"><a href="#attr-Attribute that may be used within this element">Attribute that may be used within this element</a></div>
-                     <div class="rightcol">"Optional" or "Required" (values limited to: list of valid values for
-                        this attribute)</div>
+                     <div class="centercol"><a href="#attr-audience">audience</a></div>
+                     <div class="rightcol">Optional (values limited to: external, internal)</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-conventionDeclarationReference">conventionDeclarationReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-href">href</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-id">id</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-languageOfElement">languageOfElement</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-lastDateTimeVerified">lastDateTimeVerified</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-linkRole">linkRole</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-linkTitle">linkTitle</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-maintenanceEventReference">maintenanceEventReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-scriptOfElement">scriptOfElement</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-sourceReference">sourceReference</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-target">target</a></div>
+                     <div class="rightcol">Optional</div>
                   </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">
-                     <div class="p">Required/Optional, Repeatable/Not Repeatable</div>
+                     <div class="p">Required, repeatable</div>
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
@@ -6070,7 +6176,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example"><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e6363">
+            <div class="section" id="d1e6465">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
@@ -6596,7 +6702,7 @@
                      <div class="blockIndent">cancelled: marks an instance as not current (obsolete or rejected), but
                         retained for reference<br></br><br></br>created: the initial creation of the EAC-CPF instance<br></br><br></br>deleted: indication that the instance has been deleted from the
                         system<br></br><br></br>derived: indicates that the instance was derived from another descriptive
-                        system<br></br><br></br>revised: any type of general modification to the EAD instance<br></br><br></br>unknown: when the type of event is not known<br></br><br></br>updated: when an instance has been brought up to date with significant
+                        system<br></br><br></br>revised: any type of general modification to the EAC-CPF instance<br></br><br></br>unknown: when the type of event is not known<br></br><br></br>updated: when an instance has been brought up to date with significant
                         changes to the materials being described or to the version of EAC-CPF
                         used<br></br><br></br></div>
                   </div>
@@ -7005,7 +7111,7 @@
                <div class="spacer"> </div>  <a class="tocReturn" href="#toc">[toc]</a></div>
          </div>
          <div>
-            <div class="section" id="d1e7320">
+            <div class="section" id="d1e7422">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Title">Title  <a class="tocReturn" href="#toc">[toc]</a></div>
                <div class="p">Contents of the appendix; this can also include lists</div>
