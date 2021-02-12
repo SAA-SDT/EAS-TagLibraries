@@ -6370,7 +6370,7 @@
                      encode a local type of an address line.</p>
                </div>
                <div type="values">
-                  <p>city, county, country, district, municipality, postBox, postalCode, region,
+                  <p>county, country, district, municipality, postBox, postalCode, region,
                      street</p>
                </div>
                <div type="examples">
@@ -6391,8 +6391,8 @@
                      instance</p>
                </div>
                <div type="description">
-                  <p>The attributes value must be set to "human," "machine," or "unknown," and
-                     should correspond to the information recorded in . For example, if the is Jane
+                  <p>The attribute's value must be set to "human," "machine," or "unknown," and
+                     should correspond to the information recorded in <gi>agent</gi>. For example, if the is Jane
                      Marshall, the value of <att>agentType</att> should be set to "human." If the is
                      a database, style sheet, or other system, the value of <att>agentType</att>
                      should be set to "machine." The value of <att>agentType</att> may also be set
@@ -6530,8 +6530,7 @@
                </div>
                <div type="summary">
                   <p>Use <att>conventionDeclarationReference</att> to provide a direct link to a
-                        <gi>conventionDeclaration</gi> element within control/conventionDeclaration
-                     from any non-empty elements in the EAC-CPF instance. The attribute can be used
+                        <gi>conventionDeclaration</gi> element within <gi>control</gi> from any non-empty elements in the EAC-CPF instance. The attribute can be used
                      to link to a convention or rule that prescribes a method for converting one
                      script into another script (transliteration). It also can be used to link to a
                      national, international or other rule that governs the construction of an
@@ -6573,11 +6572,11 @@
                   <p>Country Code</p>
                </div>
                <div type="summary">
-                  <p>Content of the attribute should be a code taken from ISO 3166-1 Codes for the
+                  <p>A unique code representing a country. Content of the attribute should be a code taken from ISO 3166-1 Codes for the
                      Representation of Names of Countries and their Subdivisions, column A2, or
                      another controlled list, as specified in the <att>countryEncoding</att>
-                     attribute in <gi>control</gi>. Available in <gi>maintenanceAgency</gi>,
-                        <gi>placeName</gi> and <gi>address</gi>.</p>
+                     attribute in <gi>control</gi>. Available in <gi>maintenanceAgency</gi> and
+                        <gi>placeName</gi>.</p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -6619,7 +6618,7 @@
                   <p>The authoritative source or rules for values provided in
                         <att>standardDate</att> in <gi>date</gi>, <gi>fromDate</gi> and
                         <gi>toDate</gi>. If the value "otherDateEncoding" is selected an alternate
-                     code list should be specified in <gi>conventionDeclaration</gi>.</p>
+                     code list should be specified in <gi>conventionDeclaration</gi>. Available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso8601, otherDateEncoding</p>
@@ -6637,7 +6636,7 @@
                   <p>Era</p>
                </div>
                <div type="summary">
-                  <p>Period during which years are numbered and dated reckoned, such as CE (Common
+                  <p>Period during which years are numbered and dates reckoned, such as CE (Common
                      Era) or BCE (Before Common Era). Suggested values include "ce" and "bce".
                      Available in <gi>date</gi>, <gi>fromDate</gi> and <gi>toDate</gi>.</p>
                </div>
@@ -6657,7 +6656,7 @@
                   <p>hypertext Reference</p>
                </div>
                <div type="summary">
-                  <p>The address for a remote resource. <att>href</att> takes the form of a Uniform Resource Identifier (URI).</p>
+                  <p>The address for a remote resource. <att>href</att> takes the form of a Uniform Resource Identifier (URI). Available in <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi> and <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -6681,7 +6680,7 @@
                      resources.</p>
                </div>
                <div type="datatype">
-                  <p>anyURI</p>
+                  <p>ID</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
@@ -6726,7 +6725,7 @@
                      of the CPF entity being described. Content of the attribute should be a code
                      taken from ISO 639-1, ISO 639-2b, ISO 639-3, or another controlled list, as
                      specified in the <att>languageEncoding</att> attribute in <gi>control</gi>.
-                     Mandatory in <gi>languageDeclaration</gi> and optional available in
+                     Required in <gi>languageDeclaration</gi> and optionally available in
                         <gi>language</gi>.</p>
                </div>
                <div type="datatype">
@@ -6746,14 +6745,14 @@
                </div>
                <div type="summary">
                   <p>Specifies which standard list of codes is used to identify the language of the
-                     EAC-CPF instance and languages represented in the materials. The codes
+                     EAC-CPF instance and languages represented in the creative work of the CPF entity being described. The codes
                      themselves are specified in <att>languageCode</att> in <gi>language</gi> and
                         <gi>languageOfElement</gi> in all non-empty elements. Available in
                         <gi>control</gi>. If the value "otherLangEncoding" is selected an alternate
                      code list should be specified in <gi>conventionDeclaration</gi>.</p>
                </div>
                <div type="values">
-                  <p>iso639-1, iso639-2b, iso639-3, otherLangEncoding</p>
+                  <p>iso639-1, iso639-2b, iso639-3, ietf-bcp-47, otherLangEncoding</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
@@ -6794,7 +6793,7 @@
                   <p>Last date or last date and time the linked resource was verified. Verification
                      may include link resolution as well as verification of the version of the
                      linked object. Available in <gi>contactLine</gi>, <gi>reference</gi>,
-                        <gi>representation</gi> and <gi>source</gi>.</p>
+                        <gi>representation</gi>, <gi>setComponent</gi> and <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>Constrained to the following patterns: YYYY-MM-DD, YYYY-MM, YYYY, or
@@ -6816,7 +6815,8 @@
                </div>
                <div type="summary">
                   <p>A URI that characterizes the nature of the remote resource to which a linking
-                     element refers.</p>
+                     element refers. Available in <gi>contactLine</gi>, <gi>reference</gi>,
+                     <gi>representation</gi>, <gi>setComponent</gi> and <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -6836,8 +6836,8 @@
                <div type="summary">
                   <p>Information that serves as a viewable caption which explains to users the part
                      that a resource plays in a link. May be useful for meeting accessibility
-                     requirements when rendering finding aids in a web browser. Available in
-                        <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>, and
+                     requirements when rendering content in a web browser. Available in
+                        <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi> and
                         <gi>source</gi>.</p>
                </div>
                <div type="datatype">
@@ -6879,7 +6879,7 @@
                   <p>This optional attribute provides a means to narrow the semantics of an element, or provide semantics for elements that are primarily structural or semantically weak.</p>
                </div>
                <div type="description">
-                  <p>The value of <att>localType</att> may be from a local or generally used external vocabulary. While the value of <att>localType</att> may be any string, to facilitate exchange of data, it is recommended that the value be either the URI or the preferred label for a term defined in a formal vocabulary (e.g., SKOS), which is identified by an absolute URI, and is resolvable to a web resource that describes the semantic scope and use of the value. Local conventions or controlled vocabularies used in <att>localType</att> may be declared in <gi>localTypeDeclaration</gi> within <gi>control</gi>. <att>localTypeDeclarationReference</att> should always be used alongside <att>localType</att> to provide a direct link to the <gi>localTypeDeclarationReference</gi>.</p>
+                  <p>The value of <att>localType</att> may be from a local or generally used external vocabulary. While the value of <att>localType</att> may be any string, to facilitate exchange of data, it is recommended that the value be either the URI or the preferred label for a term defined in a formal vocabulary (e.g., SKOS), which is identified by an absolute URI, and is resolvable to a web resource that describes the semantic scope and use of the value. Local conventions or controlled vocabularies used in <att>localType</att> may be declared in <gi>localTypeDeclaration</gi> within <gi>control</gi>. <att>localTypeDeclarationReference</att> should always be used alongside <att>localType</att> to provide a direct link to the <gi>localTypeDeclaration</gi>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -6902,7 +6902,7 @@
                      element using <att>localType</att> within the EAC-CPF instance.
                         <att>localTypeDeclarationReference</att> should always be used when
                         <att>localType</att> is used, in order to link to the local type
-                     definition.</p>
+                     declaration.</p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
@@ -6921,7 +6921,7 @@
                </div>
                <div type="summary">
                   <p>Use <att>maintenanceEventReference</att> to provide a direct link to a
-                        <gi>maintenanceEvent</gi> element within control/maintenanceHistory from any
+                     <gi>maintenanceEvent</gi> element within <gi>maintenanceHistory</gi> from any
                      non-empty element in the EAC-CPF instance. Thus any detailed information about
                      the described entity can be referenced with a maintenance event.</p>
                </div>
@@ -7077,7 +7077,7 @@
                   <p>Publication Status</p>
                </div>
                <div type="summary">
-                  <p>The current publication status of the EAC-CPF instance.</p>
+                  <p>The current publication status of the EAC-CPF instance. Available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>approved, inProcess, published</p>
@@ -7184,7 +7184,7 @@
                </div>
                <div type="summary">
                   <p>Use <att>sourceReference</att> to provide a direct link to a <gi>source</gi>
-                     element within control/sources from an element within the EAC-CPF instance that
+                     element within <gi>sources</gi> in <gi>control</gi> from an element within the EAC-CPF instance that
                      uses the source. Thus any detailed information about the described entity can
                      be referenced with a source.</p>
                </div>
@@ -7319,7 +7319,7 @@
                   <p>Target Type</p>
                </div>
                <div type="summary">
-                  <p>Required attribute within <gi>targetEntity</gi> which identifies the type of entity that is related to the CPF entity being described. Use the value "agent" only for migration from EAC-CPF 2010 to EAC 2.x</p>
+                  <p>Required attribute within <gi>targetEntity</gi> which identifies the type of entity that is related to the CPF entity being described. Use the value "agent" only for migration from EAC-CPF 2010 to EAC 2.0.</p>
                </div>
                <div type="values">
                   <p>agent, corporateBody, family, function, person, resource</p>
@@ -7338,8 +7338,8 @@
                </div>
                <div type="summary">
                   <p>Use <att>unit</att> to document the format or unit that is specified in
-                        <gi>citedRange</gi>, for example page number ("pagenumber") or volume number
-                     ("volumenumber").</p>
+                        <gi>citedRange</gi>, for example page number ("pageNumber") or volume number
+                     ("volumeNumber").</p>
                </div>
                <div type="datatype">
                   <p>token</p>
