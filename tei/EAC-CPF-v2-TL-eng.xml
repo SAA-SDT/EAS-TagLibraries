@@ -282,6 +282,7 @@
                   <p><gi>address</gi> must include one or more <gi>addressLine</gi> element(s) that
                      provide full or sufficient information identifying a postal or other physical
                      address related to the entity being described.</p>
+                  <p>One of <gi>address</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="seealso">
                   <list type="simple">
@@ -428,7 +429,7 @@
                   <list type="simple">
                      <item>Use <att>status</att> with the values "authorized" or "alternative" to
                         declare whether the <gi>agencyCode</gi> is using an authorized or
-                        alternative value</item>
+                        alternative value.</item>
                   </list>
                </div>
                <div type="seealso">
@@ -505,6 +506,13 @@
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Use <gi>agencyCode</gi> to record  a code representing the
+                        institution or service responsible for the creation, maintenance, and/or
+                        dissemination of the EAC-CPF instance.</item>
+                  </list>
+               </div>   
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
@@ -565,7 +573,7 @@
                <div type="attributeusage">
                   <list type="simple">
                      <item>Use the required <att>agentType</att> attribute to specify whether the
-                        agent is 'human', 'machine', or 'unknown'.</item>
+                        agent is "human", "machine", or "unknown".</item>
                   </list>
                </div>
                <div type="availability">
@@ -695,7 +703,7 @@
                   <list type="simple">
                      <item><gi>head</gi></item>
                      <item><gi>abstract</gi></item>
-                     <item>One or more of <gi>chronList</gi>, <gi>list</gi> and <gi>p</gi></item>
+                     <item>One or more of <gi>chronList</gi>, <gi>list</gi>, or <gi>p</gi></item>
                   </list>
                </div>
                <div type="availability">
@@ -763,7 +771,7 @@
                      within a single <gi>chronItem</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>event</gi></item>
                      <item><gi>place</gi></item>
                      <item><gi>chronItemSet</gi></item>
@@ -840,7 +848,7 @@
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>event</gi></item>
-                     <item>One or more of <gi>place</gi> and <gi>reference</gi></item>
+                     <item>One or more of <gi>place</gi> or <gi>reference</gi></item>
                   </list>
                </div>
                <div type="availability">
@@ -901,7 +909,7 @@
                      corporate body described in the EAC-CPF instance. Such events are associated
                      with the date of occurrence and optionally with the name of a place.</p>
                   <p>Each <gi>chronList</gi> contains one or more <gi>chronItem</gi> elements, each
-                     associating a <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> with an
+                     associating a <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> with an
                         <gi>event</gi> and an optional <gi>place</gi>.</p>
                </div>
                <div type="availability">
@@ -1078,6 +1086,7 @@
                      encode digital addresses and contact information.</p>
                   <p><gi>contact</gi> must include one or more <gi>contactLine</gi> element(s) that
                      provide relevant contact details for the entity being described.</p>
+                  <p>One of <gi>contact</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>, or <gi>address</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="seealso">
                   <list type="simple">
@@ -1158,12 +1167,6 @@
                      <item>Use one of the set values in the optional <att>contactLineType</att>
                         attribute to encode the type of contact detail that the <gi>contactLine</gi>
                         refers to, for example "phoneNumber".</item>
-                  </list>
-               </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>A listing of other elements in the tag library that are relevant to, or
-                        similar to, the element</item>
                   </list>
                </div>
                <div type="availability">
@@ -1280,10 +1283,9 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item><att>maintenanceStatus</att> is a required attribute of <gi>control</gi>
-                        that is used to document the current version status of the EAC-CPF
-                        instance.</item>
-                     <item><att>publicationStatus</att> is an optional attribute that can be used to
+                     <item>Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAC-CPF
+                        instance.</item> 
+                     <item>Use the optional <att>publicationStatus</att> attribute to
                         record the editorial status of the EAC-CPF instance.</item>
                   </list>
                </div>
@@ -1429,9 +1431,8 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>The <att>id</att> attribute allows individual <gi>cpfDescription</gi>
-                        elements to be individually identified when using the
-                           <gi>multipleIdentities</gi> structure.</item>
+                     <item>Use the <att>id</att> attribute to identify individual <gi>cpfDescription</gi>
+                        elements when using the <gi>multipleIdentities</gi> structure.</item>
                   </list>
                </div>
                <div type="availability">
@@ -1455,7 +1456,7 @@
                </div>
                <div type="summary">
                   <p>The single date of an event in the history of the person, family, or corporate
-                     body being described in the EAC-CPF instance.</p>
+                     body being described.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -1504,14 +1505,14 @@
                </div>
                <div type="description">
                   <p>An element for expressing the single date of an event in the history of the
-                     person, corporate body or family being described in the EAC-CPF instance.</p>
+                     person, corporate body or family being described.</p>
                   <p>The content of the element is intended to be a human-readable natural language
                      date with a machine-readable date provided as the value of the
                         <att>standardDate</att> attribute, formulated according to ISO 8601.</p>
                   <p>If the event or relationship has inclusive dates use the <gi>dateRange</gi>
                      element, while more complex dates (combining singles dates and date ranges) can
                      be expressed in <gi>dateSet</gi>.</p>
-                  <p>Dates of existence for the entity being described in the EAC-CPF instance are
+                  <p>Dates of existence for the entity being described are
                      encoded with the <gi>existDates</gi> element, while the dates of use of a
                      particular name of an entity are encoded in <gi>useDates</gi>. The date and
                      time of a maintenance event in the history of the EAC-CPF instance are given in
@@ -1533,10 +1534,10 @@
                <div type="availability">
                   <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
                         <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>:
-                     one of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> optional, not
+                     one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not
                      repeatable</p>
                   <p>Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
-                        <gi>dateRange</gi> or <gi>dateSet</gi> required, not repeatable</p>
+                        <gi>dateRange</gi>, or <gi>dateSet</gi> required, not repeatable</p>
                   <p>Within <gi>dateSet</gi>: at least two of <gi>date</gi> and/or
                         <gi>dateRange</gi> required, repeatable</p>
                   <p>Within <gi>chronItem</gi>: one of <gi>date</gi> or <gi>dateRange</gi> required,
@@ -1606,7 +1607,7 @@
                      processing of dates is desired, <att>standardDate</att> should be used on the
                      children of <gi>dateRange</gi> to record the date in machine-processable form
                      as well.</p>
-                  <p>Dates of existence for the identity being described in the EAC-CPF instance are
+                  <p>Dates of existence for the identity being described are
                      encoded with the <gi>existDates</gi> element, while the dates of use of a
                      particular name of an identity are encoded in <gi>useDates</gi>. The date and
                      time of a maintenance event in the history of the EAC-CPF instance are given in
@@ -1621,17 +1622,15 @@
                   <list type="simple">
                      <item>Use <att>localType</att> to supply a more specific characterization of
                         the date range.</item>
-                     <item>Use <att>standardDate</att> to provide a machine-processable form of the
-                        date.</item>
                   </list>
                </div>
                <div type="availability">
                   <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
                         <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>:
-                     one of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> optional, not
+                     one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not
                      repeatable</p>
                   <p>Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
-                        <gi>dateRange</gi> or <gi>dateSet</gi> required, not repeatable</p>
+                        <gi>dateRange</gi>, or <gi>dateSet</gi> required, not repeatable</p>
                   <p>Within <gi>dateSet</gi>: at least two of <gi>date</gi> and/or
                         <gi>dateRange</gi> required, repeatable</p>
                   <p>Within <gi>chronItem</gi>: one of <gi>date</gi> or <gi>dateRange</gi> required,
@@ -1698,10 +1697,10 @@
                </div>
                <div type="availability">
                   <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi> or
+                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> optional, not repeatable</p>
                   <p>Within <gi>chronItem</gi>, <gi>existDates</gi>, <gi>useDates</gi>: one of
-                        <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> required, not
+                        <gi>date</gi>, <gi>dateRange</gi>,  or <gi>dateSet</gi> required, not
                      repeatable</p>
                </div>
                <div type="examples">
@@ -1771,7 +1770,7 @@
                      <item><gi>mandates</gi></item>
                      <item><gi>occupations</gi></item>
                      <item><gi>places</gi></item>
-                     <item> Any of <gi>biogHist</gi>, <gi>existDates</gi>, <gi>generalContext</gi> and <gi>structureOrGenealogy</gi></item>
+                     <item> Any of <gi>biogHist</gi>, <gi>existDates</gi>, <gi>generalContext</gi>, and <gi>structureOrGenealogy</gi></item>
                   </list>
                </div>
                <div type="availability">
@@ -1922,8 +1921,8 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item><gi>entityType</gi> must include the <att>value</att> attribute with one
-                        of the values corporateBody, person or family.</item>
+                     <item>Use the required <att>value</att> attribute with one
+                        of the values "corporateBody", "family", or "person" to identify the type of entity.</item>
                   </list>
                </div>
                <div type="availability">
@@ -1990,7 +1989,7 @@
                         <gi>chronItem</gi> or <gi>chronItemSet</gi>. <gi>chronItem</gi> must include
                      one of either <gi>event</gi> or <gi>chronItemSet</gi>. <gi>chronItemSet</gi>
                      must include one or more <gi>event</gi>.</p>
-                  <p>Every <gi>event</gi> must have date(s) (<gi>date</gi>, <gi>dateRange</gi> or
+                  <p>Every <gi>event</gi> must have date(s) (<gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi>) associated with it. It may also have optional
                         <gi>placeName</gi> element associated with it.</p>
                </div>
@@ -2169,14 +2168,14 @@
                      expressions that intermix <gi>date</gi> and <gi>dateRange</gi> elements.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
                <div type="seealso">
                   <list type="simple">
                      <item>Do not confuse with <gi>useDates</gi>, which is a child element of
-                           <gi>nameEntry</gi> or <gi>nameEntryParallel</gi> and represents the dates
+                           <gi>nameEntry</gi> or <gi>nameEntrySet</gi> and represents the dates
                         of use for a particular name or set of names.</item>
                   </list>
                </div>
@@ -2345,14 +2344,14 @@
                         <gi>term</gi> can be repeated within <gi>function</gi> to include
                      translations of the same function. Use the <att>languageOfElement</att>
                      attribute to identify the language used in each <gi>term</gi>.</p>
-                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi>) and
+                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and
                      place(s) (<gi>placeName</gi>) may be included to further constrain the term's
-                     meaning. A <gi>descriptiveNote</gi> may be included if a textual explanation is
+                     meaning. A <gi>descriptiveNote</gi> may be included if a fuller textual explanation is
                      needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>term</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -2542,6 +2541,8 @@
                   <p>Use <gi>geographicCoordinates</gi> to express a set of geographic coordinates
                      such as latitude, longitude, and altitude representing a point, line, or area
                      on the surface of the earth.</p>
+                  <p>It is recommended that the values included in <gi>geographicCoordinates</gi> are based on a commonly used system for expressing geographic coordinates.</p>
+                  <p>One of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
@@ -2662,15 +2663,14 @@
                   <p><gi>identity</gi> is a wrapper element used to group the elements necessary to
                      encode the name or names related to the identity of the CPF entity within the
                         <gi>cpfDescription</gi> element.</p>
-                  <p>Within this element the <gi>entityType</gi> element is required and specifies
-                     the type of entity (i.e., corporateBody, family, or person). The optional
+                  <p>The required child element <gi>entityType</gi> specifies
+                     the type of entity (i.e., corporate body, family, or person). The optional
                         <gi>otherEntityTypes</gi> element can be used to encode other entity types
                      used in the local context. An optional <gi>identityId</gi> is available for any
                      identifiers associated with the CPF entity.</p>
                   <p>One or more <gi>nameEntry</gi> elements and/or one or more
                         <gi>nameEntrySet</gi> elements must be included. All names by which the
-                     identity, being described within one <gi>cpfDescription</gi> element in the
-                     EAC-CPF instance is known are provided within <gi>identity</gi>. Each of the
+                     identity being described within one <gi>cpfDescription</gi> element is known are provided within <gi>identity</gi>. Each of the
                      names, whether authorized or alternatives, should be recorded in a separate
                         <gi>nameEntry</gi> element.</p>
                   <p><gi>identity</gi> may accommodate two or more parallel names in different
@@ -2689,7 +2689,7 @@
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>entityType</gi></item>
-                     <item><gi>nameEntry</gi> or <gi>nameEntrySet</gi></item>
+                     <item><gi>nameEntry</gi> and/or <gi>nameEntrySet</gi></item>
                      <item><gi>otherEntityTypes</gi></item>
                      <item><gi>identityId</gi></item>
                      <item><gi>descriptiveNote</gi></item>
@@ -2758,8 +2758,12 @@
                      CPF entity being described in the EAC-CPF instance. Identifiers such as legal
                      identifiers, typically assigned by an authoritative agency, may be recorded in
                      this element.</p>
-                  <p>Do not confuse with <gi>recordId</gi> within <gi>control</gi>, which refers to
-                     an identifier for the EAC-CPF instance rather than the entity it describes.</p>
+               </div>
+               <div type="seealso">
+                  <list>
+                     <item>Do not confuse with <gi>recordId</gi> within <gi>control</gi>, which refers to
+                        an identifier for the EAC-CPF instance rather than the entity it describes.</item>
+                  </list>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
@@ -2879,8 +2883,8 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>The <att>languageCode</att> attribute can be used to encode a valid code
-                        from ISO 639-2b.</item>
+                     <item>Use <att>languageCode</att> to provide a code for the language itself.</item>
+                     <item>Use <att>languageOfElement</att> to provide a code for the language in which the element is given.</item>
                   </list>
                </div>
                <div type="availability">
@@ -2938,10 +2942,10 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>The required <att>languageCode</att> attribute must be used to encode a
-                        valid code from ISO 639-2b.</item>
-                     <item>The <att>scriptCode</att> attribute can be used to encode a valid code
-                        from ISO 15924.</item>
+                     <item>Use the required <att>languageCode</att> to provide a code for the language used in the EAC-CPF instance.</item>
+                     <item>Use <att>languageOfElement</att> to provide a code for the language in which the <gi>languageDeclaration</gi> element is given.</item>
+                     <item>Use <att>scriptCode</att> to provide a code for the writing system used in the EAC-CPF intance.</item>
+                     <item>Use <att>scriptOfElement</att> to provide a code for the writing system in which the <gi>languageDeclaration</gi> element is given.</item>                                         
                   </list>
                </div>
                <div type="availability">
@@ -3003,7 +3007,7 @@
                      corresponding <gi>writingSystem</gi> element for the writing system.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
-                     <item>One or both of <gi>language</gi> and <gi>writingSystem</gi></item>
+                     <item><gi>language</gi> and/or <gi>writingSystem</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
@@ -3144,16 +3148,16 @@
                      within <gi>legalStatus</gi> to include translations of the same term. Use the
                         <att>languageOfElement</att> attribute to identify the language used in each
                         <gi>term</gi>.</p>
-                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi>) and
+                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and
                      place(s) (<gi>placeName</gi>) may be included to further constrain the term's
-                     meaning. A <gi>descriptiveNote</gi> element may be included if fuller textual
+                     meaning. A <gi>descriptiveNote</gi> element may be included if a fuller textual
                      explanation is needed.</p>
                   <p>Multiple <gi>legalStatus</gi> elements may be grouped within a
                         <gi>legalStatuses</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>term</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -3237,7 +3241,7 @@
                   <p>List</p>
                </div>
                <div type="summary">
-                  <p>A wrapper element to encode a simple list consisting of one or more
+                  <p>A wrapper element used to encode a simple list consisting of one or more
                         <gi>item</gi> elements, or a complex list with one or more child
                         <gi>list</gi> elements.</p>
                </div>
@@ -3281,10 +3285,8 @@
                   <p>The <gi>list</gi> element is used for general lists that can be embedded with a
                      large number of descriptive elements.</p>
                   <p>To encode a simple list, include one or more <gi>item</gi> elements within
-                        <gi>list</gi>. To encode more complex list, such as hierarchies, additional
-                        <gi>list</gi> elements can be included within <gi>list</gi>, with
-                        <gi>item</gi> included within the child <gi>list</gi> elements.
-                        <gi>head</gi> can be used to encode a title or caption within a
+                        <gi>list</gi>. To encode more complex lists, such as hierarchies, additional
+                        <gi>list</gi> elements can be included within <gi>list</gi>. <gi>head</gi> can be used to encode a title or caption within a
                         <gi>list</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
@@ -3444,14 +3446,14 @@
                      EAC-CPF.</p>
                   <p><gi>localDescription</gi> must contain at least one <gi>term</gi> child
                      element. Terms may be drawn from controlled vocabularies or may be natural
-                     language terms. Associated date(s) (<gi>date</gi>, <gi>dateRange</gi> or
+                     language terms. Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi>) and place(s) (<gi>placeName</gi>) may be included to
                      further constrain the term's meaning. A <gi>descriptiveNote</gi> may be
                      included if a fuller textual explanation is needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>term</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -3576,8 +3578,6 @@
                      conventions have been used may be given in <gi>descriptiveNote</gi>. The child
                         <gi>shortCode</gi> may be used to identify any abbreviation or code
                      representing the local convention or controlled vocabulary.</p>
-                  <p>It may not be necessary to include <gi>localTypeDeclaration</gi> if
-                        <att>localType</att> values are documented externally.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>reference</gi></item>
@@ -3631,7 +3631,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Information about the institution or service responsible for the creation,
+                  <p><gi>maintenanceAgency</gi> encodes information about the institution or service responsible for the creation,
                      maintenance, and/or dissemination of the EAC-CPF instance.</p>
                   <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyCode</gi> or <gi>agencyName</gi> to provide
                      the name of the institution or service. It may also include the
@@ -3794,7 +3794,7 @@
                <div type="summary">
                   <p>A required child element of <gi>mandates</gi> used for identifying the source
                      of authority or mandate for the corporate body in terms of its powers,
-                     functions, responsibilities or activities, such as a law, directive or
+                     functions, responsibilities or activities, such as a law, directivev or
                      charter.</p>
                </div>
                <div type="mayContain">
@@ -3839,22 +3839,22 @@
                <div type="description">
                   <p><gi>mandate</gi> is used to identify the source of authority or mandate for the
                      corporate body in terms of its powers, functions, responsibilities or sphere of
-                     activities, such as a law, directive or charter. Terms may be drawn from
-                     controlled vocabularies or may be natural language terms.</p>
-                  <p><gi>mandate</gi> must include at least one <gi>term</gi> element. <gi>term</gi>
+                     activities, such as a law, directive, or charter.</p>
+                  <p><gi>mandate</gi> must include at least one <gi>term</gi> element. Terms may be drawn from
+                     controlled vocabularies or may be natural language terms. <gi>term</gi>
                      can be repeated within <gi>mandate</gi> to include translations of the same
                      mandate. Use the <att>languageOfElement</att> attribute to identify the
                      language used in each <gi>term</gi>.</p>
-                  <p>Associated date or date range (<gi>date</gi>, <gi>dateRange</gi> or
+                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi>) and place(s) (<gi>placeName</gi>) may be included to
-                     further constrain the term's meaning. A <gi>descriptiveNote</gi> element may be
-                     included if a fuller explanation is needed.</p>
+                     further constrain the term's meaning. A <gi>descriptiveNote</gi> may be
+                     included if a fuller textual explanation is needed.</p>
                   <p>Multiple <gi>mandate</gi> elements may be grouped within a <gi>mandates</gi>
                      element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>term</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -4016,13 +4016,13 @@
                         <label>maintenanceEventReference</label>
                         <item>Optional</item>
                         <label>preferredForm</label>
-                        <item>Optional (values limited to: true, false)</item>
+                        <item>Optional (values limited to: false, true)</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
                         <label>status</label>
-                        <item>Optional (values limited to: authorized, alternative)</item>
+                        <item>Optional (values limited to: alternative, authorized)</item>
                         <label>target</label>
                         <item>Optional</item>
                         <label>valueURI</label>
@@ -4058,7 +4058,7 @@
                      <item>The <att>status</att> attribute may be used to indicate whether the
                            <gi>nameEntry</gi> is an authorized or alternative form of the
                         name.</item>
-                     <item>The attributes <att>scriptOfElement</att> and @languageOfElement can be
+                     <item>The <att>scriptOfElement</att> and <att>languageOfElement</att> attributes can be
                         used to specify the script and language of each name recorded in
                            <gi>nameEntry</gi>.</item>
                   </list>
@@ -4120,7 +4120,7 @@
                <div type="summary">
                   <p>An optional child element of <gi>identity</gi> used as a wrapper element for
                      two or more <gi>nameEntry</gi> elements representing different forms of the
-                     same name (e.g. official forms of the name in different languages and/or
+                     same name (e.g., official forms of the name in different languages and/or
                      scripts).</p>
                </div>
                <div type="mayContain">
@@ -4186,7 +4186,7 @@
                   <p>Object XML Wrap</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>relation</gi>, <gi>setComponent</gi> and
+                  <p>An optional child element of <gi>relation</gi>, <gi>setComponent</gi>, and
                         <gi>source</gi> that allows for the inclusion of an XML element from any
                      XML namespace other than EAC-CPF.</p>
                </div>
@@ -4210,9 +4210,8 @@
                </div>
                <div type="description">
                   <p>A wrapper element that provides a place to express data in any XML encoding
-                     language other than EAC-CPF.</p>
-                  <p>While the element is not restricted with respect to namespace, to facilitate
-                     interoperability the XML should conform to an open, standard XML schema and a
+                     language.</p>
+                  <p>To facilitate interoperability the XML should conform to an open, standard XML schema and a
                      namespace attribute should be present on the root element referencing the
                      namespace of the standard.</p>
                   <p><gi>objectXMLWrap</gi> may be used to store related XML data locally rather
@@ -4237,7 +4236,7 @@
                </div>
                <div type="summary">
                   <p>A required child element of <gi>occupations</gi> that provides information
-                     about an occupation the CPF entity being described.</p>
+                     about an occupation of the CPF entity being described.</p>
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
@@ -4279,22 +4278,21 @@
                   </p>
                </div>
                <div type="description">
-                  <p>An <gi>occupation</gi> element is a wrapper element used to encode an index
-                     term, using the element <gi>term</gi>. Terms are used to identify an occupation
+                  <p><gi>occupation</gi> is a wrapper element that uses the child element <gi>term</gi> to identify an occupation
                      held by the CPF entity. Terms may be drawn from controlled vocabularies or may
                      be natural language terms.</p>
                   <p><gi>occupation</gi> must include at least one <gi>term</gi> element.
                         <gi>term</gi> can be repeated within <gi>occupation</gi> to include
                      translations of the same function. Use the <att>languageOfElement</att>
                      attribute to identify the language used in each <gi>term</gi>.</p>
-                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi>) and
+                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and
                      place(s) (<gi>placeName</gi>) may be included to further constrain the term's
                      meaning. A <gi>descriptiveNote</gi> element may be included if a textual
                      explanation needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>term</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -4405,7 +4403,7 @@
                         <label>scriptOfElement</label>
                         <item>Optional</item>
                         <label>status</label>
-                        <item>Optional (values limited to: authorized, alternative)</item>
+                        <item>Optional (values limited to: alternative, authorized)</item>
                         <label>target</label>
                         <item>Optional</item>
                         <label>valueURI</label>
@@ -4418,8 +4416,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>otherAgencyCode</gi> to provide alternative and/or local institution
-                     code that represents the institution or service responsible for the creation,
+                  <p>Use <gi>otherAgencyCode</gi> to provide an alternative and/or local code that represents the institution or service responsible for the creation,
                      maintenance, and/or dissemination of the EAC-CPF instance. Any code other than that
                      given in <gi>agencyCode</gi> may be provided in <gi>otherAgencyCode</gi>. The
                      addition of an ISO 3166-1 alpha-2 country code as the prefix to a local code is
@@ -4497,18 +4494,18 @@
                   <p><gi>otherEntityType</gi> is a required child element of
                         <gi>otherEntityTypes</gi> used to encode any additional or alternative
                      entity types used for the CPF instance in addition to the required
-                        <gi>entityType</gi> element with values of corporateBody, person or family.
-                     For example in a local context 'organization' might be used as an entity type
-                     instead of 'corporateBody'. <gi>otherEntityType</gi> allows 'organization' to
+                        <gi>entityType</gi> element with values of corporateBody, person, or family.
+                     For example, in a local context "organization" might be used as an entity type
+                     instead of "corporateBody". <gi>otherEntityType</gi> allows "organization" to
                      be encoded.</p>
                   <p><gi>otherEntityType</gi> must include one <gi>term</gi> element containing the
                      term for the other entity type.</p>
-                  <p>Each CPF instance may include more than one <gi>otherEntityType</gi> elements
+                  <p>Each CPF instance may include more than one <gi>otherEntityType</gi> element
                      within the <gi>otherEntityTypes</gi> wrapper element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>term</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
@@ -4530,7 +4527,7 @@
                   <p>Other Entity Types</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>identity</gi> used as a wrapper for one or
+                  <p>An optional child element of <gi>identity</gi> used for grouping one or
                      more <gi>otherEntityType</gi> elements.</p>
                </div>
                <div type="mayContain">
@@ -4562,8 +4559,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>An optional child element of <gi>identity</gi> used as a wrapper for one or
-                     more <gi>otherEntityType</gi> elements. These elements are used to encode any
+                  <p>A wrapper elemebt used to group one or more <gi>otherEntityType</gi> elements. These elements are used to encode any
                      additional or alternative entity types used for the CPF instance in addition to
                      the required <gi>entityType</gi> element with values of corporateBody, person
                      or family.</p>
@@ -4847,14 +4843,14 @@
                   <p>The <gi>address</gi> element is available for specifying a postal or other
                      address. The <gi>contact</gi> element is available for specifying a digital
                      address or other contact information.</p>
-                  <p>Associated date or date range (<gi>date</gi>, <gi>dateRange</gi> or
+                  <p>Associated date or date range (<gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi>) information may be included to further constrain the
                      place's meaning. A <gi>descriptiveNote</gi> may be included if a fuller
                      explanation of the significance of the place to the CPF entity described is needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
-                     <item>One or more of <gi>address</gi>, <gi>contact</gi>, <gi>geographicCoordinates</gi>, <gi>placeName</gi> and <gi>placeRole</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
+                     <item>One or more of <gi>address</gi>, <gi>contact</gi>, <gi>geographicCoordinates</gi>, <gi>placeName</gi>, and <gi>placeRole</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
@@ -4878,7 +4874,7 @@
                   <p>Place Name</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>place</gi> used to encode the name of a place or geographic feature that is related to the CPF entity described in the EAC-CPF instance.</p>
+                  <p>An optional child element of <gi>place</gi> used to encode the name of a place or geographic feature that is related to the CPF entity described.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -4924,10 +4920,11 @@
                <div type="description">
                   <p><gi>placeName</gi> should be identified by the proper noun that commonly
                      designates the place, natural feature, or political jurisdiction. It is
-                     recommended that place names be taken from authorized vocabularies. Within
-                        <gi>place</gi>, a companion <gi>placeRole</gi> is strongly recommended to
+                     recommended that place names be taken from authorized vocabularies.</p>
+                  <p>Within <gi>place</gi>, a companion <gi>placeRole</gi> is strongly recommended to
                      describe the nature of the association of the <gi>placeName</gi> to the
-                     entity.</p>
+                     entity. Furthermore a companion <gi>geographicCoordinates</gi> is available beside <gi>placeName</gi>, when used within <gi>place</gi>, to encode latitutde, lobgitude and altitide information.</p>
+                  <p>One of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                   <p>The <gi>placeName</gi> element is repeatable. It is strongly recommended that
                      within <gi>place</gi>, the <gi>placeName</gi> element be repeated only to
                      represent the same place name in various languages, with an accompanying
@@ -4958,8 +4955,7 @@
                </div>
                <div type="summary">
                   <p>An optional child element of <gi>place</gi> used to identify the contextual
-                     role the place or jurisdiction has in relation to the CPF entity described in
-                     the EAC-CPF instance.</p>
+                     role the place or jurisdiction has in relation to the CPF entity described.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -5002,6 +4998,7 @@
                      jurisdiction. It is strongly recommended that each place name is accompanied by
                      a <gi>placeRole</gi> element in order to describe the nature of the association
                      of the place to the CPF entity.</p>
+                  <p>One of <gi>placeRole</gi>, <gi>placeName</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
@@ -5065,7 +5062,7 @@
                   <p>Use the optional <gi>places</gi> element to group together one or more
                      occurrences of <gi>place</gi>. <gi>places</gi> must include at least one
                         <gi>place</gi> element. A <gi>descriptiveNote</gi> element may be included
-                     if fuller textual explanation is needed.</p>
+                     if a fuller textual explanation is needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>place</gi></item>
@@ -5125,6 +5122,12 @@
                   <p><gi>recordId</gi> cannot be empty. Any alternative or additional record identifiers may be recorded in
                         <gi>otherRecordId</gi>.</p>
                </div>
+               <div type="seealso">
+                  <list>
+                     <item>Use <gi>agencyCode</gi> in combination with <gi>recordId</gi> to provide
+                        a globally unique identifier for the EAC-CPF instance.</item>
+                  </list>
+               </div>   
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
@@ -5181,9 +5184,9 @@
                   </p>
                </div>
                <div type="description">
-                  <p>An element used for referencing external resources that have been used to compile the EAC-CPF instance, or that identify rules or conventions that have been applied.</p>
+                  <p>An element used for referencing external resources that have been used to compile the EAC-CPF instance, that provide additional context to the EAC-CPF instance, or that identify rules or conventions that have been applied.</p>
                   <p><gi>reference</gi> is a required child element of <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, and <gi>rightsDeclaration</gi> for identifying any rules and conventions applied in the compilation of the description. It is also a required child element of <gi>source</gi>, used to identify any sources used in compiling the description. <gi>source</gi> may include multiple child <gi>reference</gi> elements.</p>
-                  <p><gi>reference</gi> is an optional child element of <gi>abstract</gi>, <gi>chronItem</gi>, <gi>chronItemSet</gi>, <gi>event</gi>, <gi>eventDescription</gi>, <gi>item</gi>, and <gi>p</gi> where it is used to reference any external resources that have been used in compiling the content of that element.</p>
+                  <p><gi>reference</gi> is an optional child element of <gi>abstract</gi>, <gi>chronItem</gi>, <gi>chronItemSet</gi>, <gi>event</gi>, <gi>eventDescription</gi>, <gi>item</gi>, and <gi>p</gi> where it is used to reference any external resources that provide additional context to the content of that element.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
@@ -5249,16 +5252,14 @@
                </div>
                <div type="description">
                   <p><gi>relation</gi> records descriptive information about a relationship between
-                     the entity being described and a related entity, such as: a corporate body,
-                     person, or family; a function; or an archival, bibliographic, or other
+                     the entity being described and a related entity, such as: a corporate body, person, or family; a function; or an archival, bibliographic, or other
                      resource.</p>
                   <p>Use the required child element <gi>targetEntity</gi> to provide a textual
-                     description of the related entity. Use the optional child element
+                     identification of the related entity, such as a name or a title. Use the optional child element
                         <gi>relationType</gi> to specify the type of relation. Use the optional
                      child element <gi>targetRole</gi> to specify the role of the related
-                     entity.</p>
-                  <p>Use <gi>objectXMLWrap</gi> to embed XML documenting the related entity from any
-                     namespace other than EAC-CPF. Use <gi>date</gi>, <gi>dateRange</gi>, or
+                     entity. It is recommended that the terms used in <gi>relationType</gi>, <gi>targetEntity</gi>, and <gi>targetRole</gi> be taken from an authorized vocabulary.</p>
+                  <p>Use <gi>objectXMLWrap</gi> to embed XML documenting the related entity from any namespace. Use <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> for specifying the time period of the relationship and
                         <gi>place</gi> for relevant location information. <gi>descriptiveNote</gi>
                      may be included for more detailed specifications or explanations of the
@@ -5266,8 +5267,8 @@
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>targetEntity</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi></item>
-                     <item>One or more of <gi>place</gi>, <gi>relationType</gi> and <gi>targetRole</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                     <item>One or more of <gi>place</gi>, <gi>relationType</gi>, and <gi>targetRole</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                      <item><gi>objectXMLWrap</gi></item>
                   </list>
@@ -5395,12 +5396,12 @@
                   <p>Use <gi>relationType</gi> within <gi>relation</gi> to specify the type of
                      relation that the <gi>targetEntity</gi> has to the entity being described.</p>
                   <p>The <gi>relationType</gi> element contains a textual description of the
-                     relation. Examples of relations between the entity being described and a
+                     relation. It is recommended that values used in <gi>relationType</gi> be taken from an authorized vocabulary. <!--Examples of relations between the entity being described and a
                      corporate body, person or family include "identity", "hierarchical", "temporal",
                      "family" or "associative". Relations between the entity being described and a
                      resource could be "creatorOf", "subjectOf" or "other". Relations between the
                      entity being described and a function could be "controls", "owns" or
-                     "performs".</p>
+                     "performs".--></p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
@@ -5420,7 +5421,7 @@
                </div>
                <div type="summary">
                   <p>An optional child element of <gi>control</gi> for recording a link to a
-                     deliverable version of the EAC-CPF instance.</p>
+                     deliverable version of the EAC-CPF instance or to the XML version of the EAC-CPF instance itself.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -5458,13 +5459,13 @@
                </div>
                <div type="description">
                   <p>Use <gi>representation</gi> to record a link to a deliverable version of an
-                     EAC-CPF instance, for example an HTML or PDF version.</p>
+                     EAC-CPF instance, for example an HTML or PDF version, or to the XML version of the EAC-CPF instance itself.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
                      <item>Use <att>href</att> to specify a link to a deliverable version of the
                         EAC-CPF instance.</item>
-                     <item>The optional <att>localType</att> attribute can be used to differentiate
+                     <item>Use <att>localType</att> to differentiate
                         between multiple <gi>representation</gi> elements.</item>
                   </list>
                </div>
@@ -5527,11 +5528,11 @@
                      usage rights of the EAC-CPF instance. <gi>rightsDeclaration</gi> should only be
                      used to reference shared published licenses, such as Creative Commons,
                      RightsStatements.org, and published locally-defined licenses.</p>
+                  <p><gi>reference</gi> must be used to provide a machine-readable reference to a
+                     license statement (for example, a dereferenceable URI). It may also be used to encode the name of the license statement.</p>
                   <p><gi>shortCode</gi> may be used to provide the abbreviated name for the rights
                      statement. The value of <gi>shortCode</gi> should align with the rights
-                     statements referenced by <gi>reference</gi> and <gi>descriptiveNote</gi>.</p>
-                  <p><gi>reference</gi> must be used to provide a machine-readable reference to a
-                     license statement (for example, a dereferenceable URI).</p>
+                     statement referenced by <gi>reference</gi> and <gi>descriptiveNote</gi>.</p>
                   <p><gi>descriptiveNote</gi> may be used to provide a human-readable description of
                      the license statement.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
@@ -5558,7 +5559,7 @@
                   <p>Set Component</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>alternativeSet</gi> that contains the EAC-CPF encoding for one entire authority record, thereby permitting the bundling of authority records from multiple authority systems within <gi>cpfDescription</gi>.</p>
+                  <p>A required child element of <gi>alternativeSet</gi> that allows an alternative authority record of the EAC-CPF instance being described to be referenced and described, as well as allowing the inclusion of the entire encoding of such alternative authority record in any XML format.</p>
                </div>
                <div type="mayContain">
                   <p>componentEntry (0..n), descriptiveNote (0..1), objectXMLWrap (0..1)</p>
@@ -5597,8 +5598,15 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>setComponent</gi> provides a wrapper to contain an entire authority record, so that multiple records for the same identity from separate authority systems, or in different languages, may be combined together within a single EAC-CPF instance.</p>
-                  <p>The <gi>componentEntry</gi> child element encodes the link to the authority record in the external system. An optional <gi>descriptiveNote</gi> may be used for a textual note providing further information about the record referenced in <gi>setComponent</gi>.</p>
+                  <p><gi>setComponent</gi> provides a wrapper to link to, describe, or contain one or more alternatice authority record, so that multiple records for the same entity from separate authority systems, or in different languages, may be combined together within a single EAC-CPF instance.</p>
+                  <p>The <gi>componentEntry</gi> child element allows for the provision of a name or title for the alternative authority record and the inclusion of a link to the record in an external system, if using a vocabulary or similar..</p> 
+                  <p>Use the optional <gi>descriptiveNote</gi> for a textual note providing further information about the record referenced in <gi>setComponent</gi>.</p>
+                  <p>Use the optional <gi>objectXMLWrap</gi> child element when including the entire authority record within the EAC-CPF instance.</p>
+               </div>
+               <div type="attributeusage">
+                  <list>
+                     <item>Use <att>href</att> to provide a general reference to alternative sets.</item>
+                  </list>
                </div>
                <div type="availability">
                   <p>Required, repeatable</p>
@@ -5713,11 +5721,12 @@
                </div>
                <div type="description">
                   <p>Use <gi>source</gi> to cite a published resource used in describing the CPF
-                     entity. Though not required, a reference for the source should be included as a
-                     textual description in the child <gi>reference</gi>.</p>
+                     entity. Use the required child element <gi>reference</gi>to include a
+                     textual identification of the reference. In the case of online sources, use <att>href</att> with <gi>reference</gi> to provide a URI.</p>
+                  <p>Use the optional child element <gi>citedRange</gi> to point to a specific location within a source.</p>
                   <p>Use the optional <gi>descriptiveNote</gi> for any additional notes about the
                      source. Use the optional <gi>objectXMLWrap</gi> to embed XML documenting the
-                     source from any namespace other than EAC-CPF.</p>
+                     source from any namespace.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>reference</gi></item>
@@ -5968,8 +5977,7 @@
                         <label>target</label>
                         <item>Optional</item>
                         <label>targetType</label>
-                        <item>Required (values limited to: agent, corporateBody, person, family, resource,
-                           function)</item>
+                        <item>Required (values limited to: agent, corporateBody, family,  function, person, resource)</item>
                         <label>valueURI</label>
                         <item>Optional</item>
                         <label>vocabularySource</label>
@@ -5984,12 +5992,12 @@
                      that is related to the subject of the EAC-CPF instance.</p>
                   <p><gi>targetEntity</gi> must include at least one <gi>part</gi> element, encoding
                      the name or term for the related entity.</p>
-               </div>
+                  </div>
                <div type="attributeusage">
                   <list type="simple">
                      <item>Use the required <att>targetType</att>, to identity the type of entity
                         related to in <gi>targetEntity</gi>, using one of the following values:
-                        agent, corporateBody, person, family, resource, function.</item>
+                        "agent", "corporateBody", "family", "function", "person", or "resource".</item>
                   </list>
                </div>
                <div type="availability">
@@ -6108,18 +6116,12 @@
                <div type="description">
                   <p><gi>term</gi> is a required child element of <gi>function</gi>,
                         <gi>legalStatus</gi>, <gi>localControl</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi> and <gi>otherEntityType</gi>, used to
+                        <gi>mandate</gi>, <gi>occupation</gi>, and <gi>otherEntityType</gi>, used to
                      specify a descriptive term in accordance with authorized vocabularies or local rules.</p>
                   <p><gi>term</gi> can be repeated within its parent element to include translations
                      of the same term. Use the <att>languageOfElement</att> attribute to identify
                      the language used in each <gi>term</gi> grouped within a single parent
                      element.</p>
-               </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>A listing of other elements in the tag library that are relevant to, or
-                        similar to, the element</item>
-                  </list>
                </div>
                <div type="availability">
                   <p>Required, repeatable</p>
@@ -6273,7 +6275,7 @@
                      forms of the name in different languages and/or scripts), <gi>useDates</gi> may
                      occur in <gi>nameEntrySet</gi> rather than in the individual <gi>nameEntry</gi>
                      elements contained in <gi>nameEntrySet</gi>.</p>
-                  <p><gi>useDates</gi> must include one of <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi>.</p>
+                  <p><gi>useDates</gi> must include one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>.</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
@@ -6333,8 +6335,8 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>The <att>scriptCode</att> attribute can be used to encode a valid code
-                        from ISO 15924.</item>
+                     <item>Use <att>scriptCode</att> to provide a code for the writing system itself.</item>
+                     <item>Use <att>scriptOfElement</att> to provide a code for the writing system in which the element is given.</item>
                   </list>
                </div>
                <div type="availability">
@@ -6463,9 +6465,9 @@
                <div type="summary">
                   <p>System of reckoning time, such as Gregorian calendar or Julian calendar.
                      Suggested values include, but are not limited to, "gregorian" and "julian".
-                     Available in <gi>date</gi>, <gi>fromDate</gi> and <gi>toDate</gi>.</p>
+                     Available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
                </div>
-               <div type="values">
+               <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
@@ -6632,9 +6634,9 @@
                <div type="summary">
                   <p>Period during which years are numbered and dates reckoned, such as CE (Common
                      Era) or BCE (Before Common Era). Suggested values include "ce" and "bce".
-                     Available in <gi>date</gi>, <gi>fromDate</gi> and <gi>toDate</gi>.</p>
+                     Available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
                </div>
-               <div type="values">
+               <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
@@ -6650,7 +6652,7 @@
                   <p>hypertext Reference</p>
                </div>
                <div type="summary">
-                  <p>The address for a remote resource. <att>href</att> takes the form of a Uniform Resource Identifier (URI). Available in <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi> and <gi>source</gi>.</p>
+                  <p>The address for a remote resource. <att>href</att> takes the form of a Uniform Resource Identifier (URI). Available in <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -6700,7 +6702,7 @@
                      personae.</p>
                </div>
                <div type="values">
-                  <p>given, acquired</p>
+                  <p>acquired, given</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
@@ -6746,7 +6748,7 @@
                      code list should be specified in <gi>conventionDeclaration</gi>.</p>
                </div>
                <div type="values">
-                  <p>iso639-1, iso639-2b, iso639-3, ietf-bcp-47, otherLanguageEncoding</p>
+                  <p>ietf-bcp-47, iso639-1, iso639-2b, iso639-3, otherLanguageEncoding</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
@@ -6787,7 +6789,7 @@
                   <p>Last date or last date and time the linked resource was verified. Verification
                      may include link resolution as well as verification of the version of the
                      linked object. Available in <gi>contactLine</gi>, <gi>reference</gi>,
-                        <gi>representation</gi>, <gi>setComponent</gi> and <gi>source</gi>.</p>
+                        <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>Constrained to the following patterns: YYYY-MM-DD, YYYY-MM, YYYY, or
@@ -6810,7 +6812,7 @@
                <div type="summary">
                   <p>A URI that characterizes the nature of the remote resource to which a linking
                      element refers. Available in <gi>contactLine</gi>, <gi>reference</gi>,
-                     <gi>representation</gi>, <gi>setComponent</gi> and <gi>source</gi>.</p>
+                     <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -6831,7 +6833,7 @@
                   <p>Information that serves as a viewable caption which explains to users the part
                      that a resource plays in a link. May be useful for meeting accessibility
                      requirements when rendering content in a web browser. Available in
-                        <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi> and
+                        <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi>, and
                         <gi>source</gi>.</p>
                </div>
                <div type="datatype">
@@ -7244,12 +7246,12 @@
                </div>
                <div type="summary">
                   <p>Attribute that provides controlled terminology detailing the status of
-                     elements. Available in <gi>agencyCode</gi>, <gi>fromDate</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi> and <gi>toDate</gi>. The terms available for <att>status</att> are defined in closed lists
+                     elements. Available in <gi>agencyCode</gi>, <gi>fromDate</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>, and <gi>toDate</gi>. The terms available for <att>status</att> are defined in closed lists
                      that vary by element.</p>
                </div>
                <div type="values">
-                  <p>Values in <gi>fromDate</gi>: unknown</p>
                   <p>Values in <gi>agencyCode</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>: alternative, authorized</p>
+                  <p>Values in <gi>fromDate</gi>: unknown</p>
                   <p>Values in <gi>toDate</gi>: unknown, ongoing</p>
                </div>
                <div type="examples">

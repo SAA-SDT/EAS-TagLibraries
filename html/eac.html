@@ -148,7 +148,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e6520">Attributes</a></div>
+            <div class="toc1"><a href="#d1e6651">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -409,6 +409,7 @@
                      <div class="p">&lt;address&gt; must include one or more &lt;addressLine&gt; element(s) that
                         provide full or sufficient information identifying a postal or other physical
                         address related to the entity being described.</div>
+                     <div class="p">One of &lt;address&gt;, &lt;placeName&gt;, &lt;placeRole&gt;, &lt;geographicCoordinates&gt;, or &lt;contact&gt; is required within &lt;place&gt;.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -528,7 +529,7 @@
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">Use @status with the values "authorized" or "alternative" to
                      declare whether the &lt;agencyCode&gt; is using an authorized or
-                     alternative value<br></br></div>
+                     alternative value.<br></br></div>
                   <div class="leftcol">See also: </div>
                   <div class="content">Use &lt;agencyName&gt; to record the name of the agency.<br></br>Use &lt;otherAgencyCode&gt; to record any alternative codes representing
                      the agency.<br></br>Use &lt;recordId&gt; in combination with &lt;agencyCode&gt; to provide
@@ -601,6 +602,10 @@
                         of the institution or service responsible for the creation, maintenance, and/or
                         dissemination of the EAC-CPF instance.</div>
                   </div>
+                  <div class="leftcol">See also: </div>
+                  <div class="content">Use &lt;agencyCode&gt; to record  a code representing the
+                     institution or service responsible for the creation, maintenance, and/or
+                     dissemination of the EAC-CPF instance.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -664,7 +669,7 @@
                   </div>
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">Use the required @agentType attribute to specify whether the
-                     agent is 'human', 'machine', or 'unknown'.<br></br></div>
+                     agent is "human", "machine", or "unknown".<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -807,7 +812,7 @@
                         one or more &lt;p&gt; elements. The optional &lt;head&gt; element can be used
                         to add a title or caption to the text.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;head&gt;<br></br><br></br>&lt;abstract&gt;<br></br><br></br>One or more of &lt;chronList&gt;, &lt;list&gt; and &lt;p&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;head&gt;<br></br><br></br>&lt;abstract&gt;<br></br><br></br>One or more of &lt;chronList&gt;, &lt;list&gt;, or &lt;p&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -876,7 +881,7 @@
                      <div class="p">&lt;chronItemSet&gt; can be used to record multiple events or place names
                         within a single &lt;chronItem&gt;.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;event&gt;<br></br><br></br>&lt;place&gt;<br></br><br></br>&lt;chronItemSet&gt;<br></br><br></br>&lt;reference&gt;<br></br><br></br></div>
+                     <div class="blockIndent">One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>&lt;event&gt;<br></br><br></br>&lt;place&gt;<br></br><br></br>&lt;chronItemSet&gt;<br></br><br></br>&lt;reference&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -941,7 +946,7 @@
                         instances of such combinations with the date or dates recorded within
                         &lt;chronItem&gt;.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;event&gt;<br></br><br></br>One or more of &lt;place&gt; and &lt;reference&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;event&gt;<br></br><br></br>One or more of &lt;place&gt; or &lt;reference&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -1002,7 +1007,7 @@
                         corporate body described in the EAC-CPF instance. Such events are associated
                         with the date of occurrence and optionally with the name of a place.</div>
                      <div class="p">Each &lt;chronList&gt; contains one or more &lt;chronItem&gt; elements, each
-                        associating a &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt; with an
+                        associating a &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt; with an
                         &lt;event&gt; and an optional &lt;place&gt;.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -1184,6 +1189,7 @@
                         encode digital addresses and contact information.</div>
                      <div class="p">&lt;contact&gt; must include one or more &lt;contactLine&gt; element(s) that
                         provide relevant contact details for the entity being described.</div>
+                     <div class="p">One of &lt;contact&gt;, &lt;placeName&gt;, &lt;placeRole&gt;, &lt;geographicCoordinates&gt;, or &lt;address&gt; is required within &lt;place&gt;.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -1237,9 +1243,6 @@
                   <div class="content">Use one of the set values in the optional @contactLineType
                      attribute to encode the type of contact detail that the &lt;contactLine&gt;
                      refers to, for example "phoneNumber".<br></br></div>
-                  <div class="leftcol">See also: </div>
-                  <div class="content">A listing of other elements in the tag library that are relevant to, or
-                     similar to, the element<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -1317,9 +1320,8 @@
                         composition of the EAC-CPF instance.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
-                  <div class="content">@maintenanceStatus is a required attribute of &lt;control&gt;
-                     that is used to document the current version status of the EAC-CPF
-                     instance.<br></br>@publicationStatus is an optional attribute that can be used to
+                  <div class="content">Use the required @maintenanceStatus attribute to document the current version status of the EAC-CPF
+                     instance.<br></br>Use the optional @publicationStatus attribute to
                      record the editorial status of the EAC-CPF instance.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-conventionDeclaration">conventionDeclaration (0..n)</a>, <a href="#elem-languageDeclaration">languageDeclaration (0..n)</a>, <a href="#elem-localControl">localControl (0..n)</a>, <a href="#elem-localTypeDeclaration">localTypeDeclaration (0..n)</a>, <a href="#elem-maintenanceAgency">maintenanceAgency (1..1)</a>, <a href="#elem-maintenanceHistory">maintenanceHistory (1..1)</a>, <a href="#elem-otherRecordId">otherRecordId (0..n)</a>, <a href="#elem-recordId">recordId (1..1)</a>, <a href="#elem-rightsDeclaration">rightsDeclaration (0..n)</a>, <a href="#elem-representation">representation (0..n)</a>, <a href="#elem-sources">sources (0..1)</a></div>
@@ -1489,9 +1491,8 @@
                         identity.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
-                  <div class="content">The @id attribute allows individual &lt;cpfDescription&gt;
-                     elements to be individually identified when using the
-                     &lt;multipleIdentities&gt; structure.<br></br></div>
+                  <div class="content">Use the @id attribute to identify individual &lt;cpfDescription&gt;
+                     elements when using the &lt;multipleIdentities&gt; structure.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-alternativeSet">alternativeSet (0..1)</a>, <a href="#elem-description">description (0..1)</a>, <a href="#elem-identity">identity (1..1)</a>, <a href="#elem-relations">relations (0..1)</a></div>
                   <div class="leftcol">May occur within: </div>
@@ -1555,7 +1556,7 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">The single date of an event in the history of the person, family, or corporate
-                        body being described in the EAC-CPF instance.</div>
+                        body being described.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">Use @certainty to indicate the degree of precision in the
@@ -1571,14 +1572,14 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">An element for expressing the single date of an event in the history of the
-                        person, corporate body or family being described in the EAC-CPF instance.</div>
+                        person, corporate body or family being described.</div>
                      <div class="p">The content of the element is intended to be a human-readable natural language
                         date with a machine-readable date provided as the value of the
                         standardDate attribute, formulated according to ISO 8601.</div>
                      <div class="p">If the event or relationship has inclusive dates use the &lt;dateRange&gt;
                         element, while more complex dates (combining singles dates and date ranges) can
                         be expressed in &lt;dateSet&gt;.</div>
-                     <div class="p">Dates of existence for the entity being described in the EAC-CPF instance are
+                     <div class="p">Dates of existence for the entity being described are
                         encoded with the &lt;existDates&gt; element, while the dates of use of a
                         particular name of an entity are encoded in &lt;useDates&gt;. The date and
                         time of a maintenance event in the history of the EAC-CPF instance are given in
@@ -1639,10 +1640,10 @@
                   <div class="content">
                      <div class="p">Within &lt;function&gt;, &lt;legalStatus&gt;, &lt;localDescription&gt;,
                         &lt;mandate&gt;, &lt;occupation&gt;, &lt;otherEntityType&gt;, &lt;place&gt;, &lt;relation&gt;:
-                        one of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt; optional, not
+                        one of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt; optional, not
                         repeatable</div>
                      <div class="p">Within &lt;existDates&gt; and &lt;useDates&gt;: one of &lt;date&gt;,
-                        &lt;dateRange&gt; or &lt;dateSet&gt; required, not repeatable</div>
+                        &lt;dateRange&gt;, or &lt;dateSet&gt; required, not repeatable</div>
                      <div class="p">Within &lt;dateSet&gt;: at least two of &lt;date&gt; and/or
                         &lt;dateRange&gt; required, repeatable</div>
                      <div class="p">Within &lt;chronItem&gt;: one of &lt;date&gt; or &lt;dateRange&gt; required,
@@ -1663,8 +1664,7 @@
                   </div>
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">Use @localType to supply a more specific characterization of
-                     the date range.<br></br>Use @standardDate to provide a machine-processable form of the
-                     date.<br></br></div>
+                     the date range.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-fromDate">fromDate (0..1)</a>, <a href="#elem-toDate">toDate (0..1)</a></div>
                   <div class="leftcol">May occur within: </div>
@@ -1682,7 +1682,7 @@
                         processing of dates is desired, standardDate should be used on the
                         children of &lt;dateRange&gt; to record the date in machine-processable form
                         as well.</div>
-                     <div class="p">Dates of existence for the identity being described in the EAC-CPF instance are
+                     <div class="p">Dates of existence for the identity being described are
                         encoded with the &lt;existDates&gt; element, while the dates of use of a
                         particular name of an identity are encoded in &lt;useDates&gt;. The date and
                         time of a maintenance event in the history of the EAC-CPF instance are given in
@@ -1727,10 +1727,10 @@
                   <div class="content">
                      <div class="p">Within &lt;function&gt;, &lt;legalStatus&gt;, &lt;localDescription&gt;,
                         &lt;mandate&gt;, &lt;occupation&gt;, &lt;otherEntityType&gt;, &lt;place&gt;, &lt;relation&gt;:
-                        one of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt; optional, not
+                        one of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt; optional, not
                         repeatable</div>
                      <div class="p">Within &lt;existDates&gt; and &lt;useDates&gt;: one of &lt;date&gt;,
-                        &lt;dateRange&gt; or &lt;dateSet&gt; required, not repeatable</div>
+                        &lt;dateRange&gt;, or &lt;dateSet&gt; required, not repeatable</div>
                      <div class="p">Within &lt;dateSet&gt;: at least two of &lt;date&gt; and/or
                         &lt;dateRange&gt; required, repeatable</div>
                      <div class="p">Within &lt;chronItem&gt;: one of &lt;date&gt; or &lt;dateRange&gt; required,
@@ -1797,10 +1797,10 @@
                   <div class="leftcol">Availability: </div>
                   <div class="content">
                      <div class="p">Within &lt;function&gt;, &lt;legalStatus&gt;, &lt;localDescription&gt;,
-                        &lt;mandate&gt;, &lt;occupation&gt;, &lt;otherEntityType&gt;, &lt;place&gt;, &lt;relation&gt;: one of &lt;date&gt;, &lt;dateRange&gt; or
+                        &lt;mandate&gt;, &lt;occupation&gt;, &lt;otherEntityType&gt;, &lt;place&gt;, &lt;relation&gt;: one of &lt;date&gt;, &lt;dateRange&gt;, or
                         &lt;dateSet&gt; optional, not repeatable</div>
                      <div class="p">Within &lt;chronItem&gt;, &lt;existDates&gt;, &lt;useDates&gt;: one of
-                        &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt; required, not
+                        &lt;date&gt;, &lt;dateRange&gt;,  or &lt;dateSet&gt; required, not
                         repeatable</div>
                   </div>
                   <div class="leftcol">Example:</div>
@@ -1830,7 +1830,7 @@
                         mandates; functions, occupations, and activities, and the dates and places that
                         further constrain those elements.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;functions&gt;<br></br><br></br>&lt;languagesUsed&gt;<br></br><br></br>&lt;legalStatuses&gt;<br></br><br></br>&lt;localDescriptions&gt;<br></br><br></br>&lt;mandates&gt;<br></br><br></br>&lt;occupations&gt;<br></br><br></br>&lt;places&gt;<br></br><br></br> Any of &lt;biogHist&gt;, &lt;existDates&gt;, &lt;generalContext&gt; and &lt;structureOrGenealogy&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;functions&gt;<br></br><br></br>&lt;languagesUsed&gt;<br></br><br></br>&lt;legalStatuses&gt;<br></br><br></br>&lt;localDescriptions&gt;<br></br><br></br>&lt;mandates&gt;<br></br><br></br>&lt;occupations&gt;<br></br><br></br>&lt;places&gt;<br></br><br></br> Any of &lt;biogHist&gt;, &lt;existDates&gt;, &lt;generalContext&gt;, and &lt;structureOrGenealogy&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -1971,8 +1971,8 @@
                         being described.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
-                  <div class="content">&lt;entityType&gt; must include the @value attribute with one
-                     of the values corporateBody, person or family.<br></br></div>
+                  <div class="content">Use the required @value attribute with one
+                     of the values "corporateBody", "family", or "person" to identify the type of entity.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[empty]</div>
                   <div class="leftcol">May occur within: </div>
@@ -2024,7 +2024,7 @@
                         &lt;chronItem&gt; or &lt;chronItemSet&gt;. &lt;chronItem&gt; must include
                         one of either &lt;event&gt; or &lt;chronItemSet&gt;. &lt;chronItemSet&gt;
                         must include one or more &lt;event&gt;.</div>
-                     <div class="p">Every &lt;event&gt; must have date(s) (&lt;date&gt;, &lt;dateRange&gt; or
+                     <div class="p">Every &lt;event&gt; must have date(s) (&lt;date&gt;, &lt;dateRange&gt;, or
                         &lt;dateSet&gt;) associated with it. It may also have optional
                         &lt;placeName&gt; element associated with it.</div>
                   </div>
@@ -2187,7 +2187,7 @@
                   </div>
                   <div class="leftcol">See also: </div>
                   <div class="content">Do not confuse with &lt;useDates&gt;, which is a child element of
-                     &lt;nameEntry&gt; or &lt;nameEntryParallel&gt; and represents the dates
+                     &lt;nameEntry&gt; or &lt;nameEntrySet&gt; and represents the dates
                      of use for a particular name or set of names.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-date">date</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet">dateSet (1..1)</a>, <a href="#elem-descriptiveNote">descriptiveNote (0..1)</a></div>
@@ -2207,7 +2207,7 @@
                         of inclusive dates. Use &lt;dateSet&gt; to encode more complex date
                         expressions that intermix &lt;date&gt; and &lt;dateRange&gt; elements.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2367,12 +2367,12 @@
                         &lt;term&gt; can be repeated within &lt;function&gt; to include
                         translations of the same function. Use the languageOfElement
                         attribute to identify the language used in each &lt;term&gt;.</div>
-                     <div class="p">Associated date(s) (&lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;) and
+                     <div class="p">Associated date(s) (&lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;) and
                         place(s) (&lt;placeName&gt;) may be included to further constrain the term's
-                        meaning. A &lt;descriptiveNote&gt; may be included if a textual explanation is
+                        meaning. A &lt;descriptiveNote&gt; may be included if a fuller textual explanation is
                         needed.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2572,6 +2572,8 @@
                      <div class="p">Use &lt;geographicCoordinates&gt; to express a set of geographic coordinates
                         such as latitude, longitude, and altitude representing a point, line, or area
                         on the surface of the earth.</div>
+                     <div class="p">It is recommended that the values included in &lt;geographicCoordinates&gt; are based on a commonly used system for expressing geographic coordinates.</div>
+                     <div class="p">One of &lt;geographicCoordinates&gt;, &lt;placeName&gt;, &lt;placeRole&gt;, &lt;address&gt;, or &lt;contact&gt; is required within &lt;place&gt;.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2678,15 +2680,14 @@
                      <div class="p">&lt;identity&gt; is a wrapper element used to group the elements necessary to
                         encode the name or names related to the identity of the CPF entity within the
                         &lt;cpfDescription&gt; element.</div>
-                     <div class="p">Within this element the &lt;entityType&gt; element is required and specifies
-                        the type of entity (i.e., corporateBody, family, or person). The optional
+                     <div class="p">The required child element &lt;entityType&gt; specifies
+                        the type of entity (i.e., corporate body, family, or person). The optional
                         &lt;otherEntityTypes&gt; element can be used to encode other entity types
                         used in the local context. An optional &lt;identityId&gt; is available for any
                         identifiers associated with the CPF entity.</div>
                      <div class="p">One or more &lt;nameEntry&gt; elements and/or one or more
                         &lt;nameEntrySet&gt; elements must be included. All names by which the
-                        identity, being described within one &lt;cpfDescription&gt; element in the
-                        EAC-CPF instance is known are provided within &lt;identity&gt;. Each of the
+                        identity being described within one &lt;cpfDescription&gt; element is known are provided within &lt;identity&gt;. Each of the
                         names, whether authorized or alternatives, should be recorded in a separate
                         &lt;nameEntry&gt; element.</div>
                      <div class="p">&lt;identity&gt; may accommodate two or more parallel names in different
@@ -2703,7 +2704,7 @@
                         separate &lt;identity&gt; element is contained in each of the
                         &lt;cpfDescription&gt; elements of the EAC-CPF instance.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;entityType&gt;<br></br><br></br>&lt;nameEntry&gt; or &lt;nameEntrySet&gt;<br></br><br></br>&lt;otherEntityTypes&gt;<br></br><br></br>&lt;identityId&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;entityType&gt;<br></br><br></br>&lt;nameEntry&gt; and/or &lt;nameEntrySet&gt;<br></br><br></br>&lt;otherEntityTypes&gt;<br></br><br></br>&lt;identityId&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2758,7 +2759,8 @@
                   <div class="content">
                      <div class="p">An optional child element of &lt;identity&gt; used to record any identifier
                         associated with the CPF entity being described.</div>
-                  </div>
+                  </div>Do not confuse with &lt;recordId&gt; within &lt;control&gt;, which refers to
+                  an identifier for the EAC-CPF instance rather than the entity it describes.
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -2769,8 +2771,6 @@
                         CPF entity being described in the EAC-CPF instance. Identifiers such as legal
                         identifiers, typically assigned by an authoritative agency, may be recorded in
                         this element.</div>
-                     <div class="p">Do not confuse with &lt;recordId&gt; within &lt;control&gt;, which refers to
-                        an identifier for the EAC-CPF instance rather than the entity it describes.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -2890,8 +2890,7 @@
                         language used in the creative work of the CPF entity being described.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
-                  <div class="content">The @languageCode attribute can be used to encode a valid code
-                     from ISO 639-2b.<br></br></div>
+                  <div class="content">Use @languageCode to provide a code for the language itself.<br></br>Use @languageOfElement to provide a code for the language in which the element is given.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -2947,9 +2946,7 @@
                         script in which an EAC-CPF instance is written.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
-                  <div class="content">The required @languageCode attribute must be used to encode a
-                     valid code from ISO 639-2b.<br></br>The @scriptCode attribute can be used to encode a valid code
-                     from ISO 15924.<br></br></div>
+                  <div class="content">Use the required @languageCode to provide a code for the language used in the EAC-CPF instance.<br></br>Use @languageOfElement to provide a code for the language in which the &lt;languageDeclaration&gt; element is given.<br></br>Use @scriptCode to provide a code for the writing system used in the EAC-CPF intance.<br></br>Use @scriptOfElement to provide a code for the writing system in which the &lt;languageDeclaration&gt; element is given.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-descriptiveNote">descriptiveNote (0..1)</a></div>
                   <div class="leftcol">May occur within: </div>
@@ -3015,7 +3012,7 @@
                         productive. Use the &lt;language&gt; element to specify the language and a
                         corresponding &lt;writingSystem&gt; element for the writing system.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">One or both of &lt;language&gt; and &lt;writingSystem&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;language&gt; and/or &lt;writingSystem&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3140,14 +3137,14 @@
                         within &lt;legalStatus&gt; to include translations of the same term. Use the
                         languageOfElement attribute to identify the language used in each
                         &lt;term&gt;.</div>
-                     <div class="p">Associated date(s) (&lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;) and
+                     <div class="p">Associated date(s) (&lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;) and
                         place(s) (&lt;placeName&gt;) may be included to further constrain the term's
-                        meaning. A &lt;descriptiveNote&gt; element may be included if fuller textual
+                        meaning. A &lt;descriptiveNote&gt; element may be included if a fuller textual
                         explanation is needed.</div>
                      <div class="p">Multiple &lt;legalStatus&gt; elements may be grouped within a
                         &lt;legalStatuses&gt; element.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3263,7 +3260,7 @@
                   <div class="content"><span class="label">List</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">A wrapper element to encode a simple list consisting of one or more
+                     <div class="p">A wrapper element used to encode a simple list consisting of one or more
                         &lt;item&gt; elements, or a complex list with one or more child
                         &lt;list&gt; elements.</div>
                   </div>
@@ -3282,10 +3279,8 @@
                      <div class="p">The &lt;list&gt; element is used for general lists that can be embedded with a
                         large number of descriptive elements.</div>
                      <div class="p">To encode a simple list, include one or more &lt;item&gt; elements within
-                        &lt;list&gt;. To encode more complex list, such as hierarchies, additional
-                        &lt;list&gt; elements can be included within &lt;list&gt;, with
-                        &lt;item&gt; included within the child &lt;list&gt; elements.
-                        &lt;head&gt; can be used to encode a title or caption within a
+                        &lt;list&gt;. To encode more complex lists, such as hierarchies, additional
+                        &lt;list&gt; elements can be included within &lt;list&gt;. &lt;head&gt; can be used to encode a title or caption within a
                         &lt;list&gt;.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
                      <div class="blockIndent">&lt;head&gt;<br></br><br></br>One or both of &lt;list&gt; and &lt;item&gt;<br></br><br></br></div>
@@ -3425,12 +3420,12 @@
                         EAC-CPF.</div>
                      <div class="p">&lt;localDescription&gt; must contain at least one &lt;term&gt; child
                         element. Terms may be drawn from controlled vocabularies or may be natural
-                        language terms. Associated date(s) (&lt;date&gt;, &lt;dateRange&gt; or
+                        language terms. Associated date(s) (&lt;date&gt;, &lt;dateRange&gt;, or
                         &lt;dateSet&gt;) and place(s) (&lt;placeName&gt;) may be included to
                         further constrain the term's meaning. A &lt;descriptiveNote&gt; may be
                         included if a fuller textual explanation is needed.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3564,8 +3559,6 @@
                         conventions have been used may be given in &lt;descriptiveNote&gt;. The child
                         &lt;shortCode&gt; may be used to identify any abbreviation or code
                         representing the local convention or controlled vocabulary.</div>
-                     <div class="p">It may not be necessary to include &lt;localTypeDeclaration&gt; if
-                        localType values are documented externally.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
                      <div class="blockIndent">&lt;reference&gt;<br></br><br></br>&lt;shortCode&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
@@ -3620,7 +3613,7 @@
                   <div class="content"><a href="#elem-control">control</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">Information about the institution or service responsible for the creation,
+                     <div class="p">&lt;maintenanceAgency&gt; encodes information about the institution or service responsible for the creation,
                         maintenance, and/or dissemination of the EAC-CPF instance.</div>
                      <div class="p">&lt;maintenanceAgency&gt; must include one or both of &lt;agencyCode&gt; or &lt;agencyName&gt; to provide
                         the name of the institution or service. It may also include the
@@ -3774,7 +3767,7 @@
                   <div class="content">
                      <div class="p">A required child element of &lt;mandates&gt; used for identifying the source
                         of authority or mandate for the corporate body in terms of its powers,
-                        functions, responsibilities or activities, such as a law, directive or
+                        functions, responsibilities or activities, such as a law, directivev or
                         charter.</div>
                   </div>
                   <div class="leftcol">May contain: </div>
@@ -3785,20 +3778,20 @@
                   <div class="content">
                      <div class="p">&lt;mandate&gt; is used to identify the source of authority or mandate for the
                         corporate body in terms of its powers, functions, responsibilities or sphere of
-                        activities, such as a law, directive or charter. Terms may be drawn from
-                        controlled vocabularies or may be natural language terms.</div>
-                     <div class="p">&lt;mandate&gt; must include at least one &lt;term&gt; element. &lt;term&gt;
+                        activities, such as a law, directive, or charter.</div>
+                     <div class="p">&lt;mandate&gt; must include at least one &lt;term&gt; element. Terms may be drawn from
+                        controlled vocabularies or may be natural language terms. &lt;term&gt;
                         can be repeated within &lt;mandate&gt; to include translations of the same
                         mandate. Use the languageOfElement attribute to identify the
                         language used in each &lt;term&gt;.</div>
-                     <div class="p">Associated date or date range (&lt;date&gt;, &lt;dateRange&gt; or
+                     <div class="p">Associated date(s) (&lt;date&gt;, &lt;dateRange&gt;, or
                         &lt;dateSet&gt;) and place(s) (&lt;placeName&gt;) may be included to
-                        further constrain the term's meaning. A &lt;descriptiveNote&gt; element may be
-                        included if a fuller explanation is needed.</div>
+                        further constrain the term's meaning. A &lt;descriptiveNote&gt; may be
+                        included if a fuller textual explanation is needed.</div>
                      <div class="p">Multiple &lt;mandate&gt; elements may be grouped within a &lt;mandates&gt;
                         element.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -3966,7 +3959,7 @@
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">The @status attribute may be used to indicate whether the
                      &lt;nameEntry&gt; is an authorized or alternative form of the
-                     name.<br></br>The attributes @scriptOfElement and @languageOfElement can be
+                     name.<br></br>The @scriptOfElement and @languageOfElement attributes can be
                      used to specify the script and language of each name recorded in
                      &lt;nameEntry&gt;.<br></br></div>
                   <div class="leftcol">May contain: </div>
@@ -4015,7 +4008,7 @@
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol"><a href="#attr-preferredForm">preferredForm</a></div>
-                     <div class="rightcol">Optional (values limited to: true, false)</div>
+                     <div class="rightcol">Optional (values limited to: false, true)</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol"><a href="#attr-scriptOfElement">scriptOfElement</a></div>
                      <div class="rightcol">Optional</div>
@@ -4024,7 +4017,7 @@
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol"><a href="#attr-status">status</a></div>
-                     <div class="rightcol">Optional (values limited to: authorized, alternative)</div>
+                     <div class="rightcol">Optional (values limited to: alternative, authorized)</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol"><a href="#attr-target">target</a></div>
                      <div class="rightcol">Optional</div>
@@ -4077,7 +4070,7 @@
                   <div class="content">
                      <div class="p">An optional child element of &lt;identity&gt; used as a wrapper element for
                         two or more &lt;nameEntry&gt; elements representing different forms of the
-                        same name (e.g. official forms of the name in different languages and/or
+                        same name (e.g., official forms of the name in different languages and/or
                         scripts).</div>
                   </div>
                   <div class="leftcol">May contain: </div>
@@ -4141,7 +4134,7 @@
                   <div class="content"><span class="label">Object XML Wrap</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">An optional child element of &lt;relation&gt;, &lt;setComponent&gt; and
+                     <div class="p">An optional child element of &lt;relation&gt;, &lt;setComponent&gt;, and
                         &lt;source&gt; that allows for the inclusion of an XML element from any
                         XML namespace other than EAC-CPF.</div>
                   </div>
@@ -4152,9 +4145,9 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">A wrapper element that provides a place to express data in any XML encoding
-                        language other than EAC-CPF.</div>
-                     <div class="p">While the element is not restricted with respect to namespace, to facilitate
-                        interoperability the XML should conform to an open, standard XML schema and a
+                        language.</div>
+                     <div class="p">To facilitate interoperability the XML should conform to an open, standard XML schema
+                        and a
                         namespace attribute should be present on the root element referencing the
                         namespace of the standard.</div>
                      <div class="p">&lt;objectXMLWrap&gt; may be used to store related XML data locally rather
@@ -4186,7 +4179,7 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">A required child element of &lt;occupations&gt; that provides information
-                        about an occupation the CPF entity being described.</div>
+                        about an occupation of the CPF entity being described.</div>
                   </div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-date">date</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet">dateSet (0..1)</a>, <a href="#elem-descriptiveNote">descriptiveNote (0..1)</a>, <a href="#elem-placeName">placeName (0..n)</a>, <a href="#elem-term">term (1..n)</a></div>
@@ -4194,20 +4187,19 @@
                   <div class="content"><a href="#elem-occupations">occupations</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">An &lt;occupation&gt; element is a wrapper element used to encode an index
-                        term, using the element &lt;term&gt;. Terms are used to identify an occupation
+                     <div class="p">&lt;occupation&gt; is a wrapper element that uses the child element &lt;term&gt; to identify an occupation
                         held by the CPF entity. Terms may be drawn from controlled vocabularies or may
                         be natural language terms.</div>
                      <div class="p">&lt;occupation&gt; must include at least one &lt;term&gt; element.
                         &lt;term&gt; can be repeated within &lt;occupation&gt; to include
                         translations of the same function. Use the languageOfElement
                         attribute to identify the language used in each &lt;term&gt;.</div>
-                     <div class="p">Associated date(s) (&lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;) and
+                     <div class="p">Associated date(s) (&lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;) and
                         place(s) (&lt;placeName&gt;) may be included to further constrain the term's
                         meaning. A &lt;descriptiveNote&gt; element may be included if a textual
                         explanation needed.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4337,8 +4329,8 @@
                   <div class="content"><a href="#elem-maintenanceAgency">maintenanceAgency</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">Use &lt;otherAgencyCode&gt; to provide alternative and/or local institution
-                        code that represents the institution or service responsible for the creation,
+                     <div class="p">Use &lt;otherAgencyCode&gt; to provide an alternative and/or local code that represents the institution or service
+                        responsible for the creation,
                         maintenance, and/or dissemination of the EAC-CPF instance. Any code other than that
                         given in &lt;agencyCode&gt; may be provided in &lt;otherAgencyCode&gt;. The
                         addition of an ISO 3166-1 alpha-2 country code as the prefix to a local code is
@@ -4366,7 +4358,7 @@
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol"><a href="#attr-status">status</a></div>
-                     <div class="rightcol">Optional (values limited to: authorized, alternative)</div>
+                     <div class="rightcol">Optional (values limited to: alternative, authorized)</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol"><a href="#attr-target">target</a></div>
                      <div class="rightcol">Optional</div>
@@ -4404,16 +4396,16 @@
                      <div class="p">&lt;otherEntityType&gt; is a required child element of
                         &lt;otherEntityTypes&gt; used to encode any additional or alternative
                         entity types used for the CPF instance in addition to the required
-                        &lt;entityType&gt; element with values of corporateBody, person or family.
-                        For example in a local context 'organization' might be used as an entity type
-                        instead of 'corporateBody'. &lt;otherEntityType&gt; allows 'organization' to
+                        &lt;entityType&gt; element with values of corporateBody, person, or family.
+                        For example, in a local context "organization" might be used as an entity type
+                        instead of "corporateBody". &lt;otherEntityType&gt; allows "organization" to
                         be encoded.</div>
                      <div class="p">&lt;otherEntityType&gt; must include one &lt;term&gt; element containing the
                         term for the other entity type.</div>
-                     <div class="p">Each CPF instance may include more than one &lt;otherEntityType&gt; elements
+                     <div class="p">Each CPF instance may include more than one &lt;otherEntityType&gt; element
                         within the &lt;otherEntityTypes&gt; wrapper element.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;term&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>&lt;placeName&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4469,7 +4461,7 @@
                   <div class="content"><span class="label">Other Entity Types</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">An optional child element of &lt;identity&gt; used as a wrapper for one or
+                     <div class="p">An optional child element of &lt;identity&gt; used for grouping one or
                         more &lt;otherEntityType&gt; elements.</div>
                   </div>
                   <div class="leftcol">May contain: </div>
@@ -4478,8 +4470,7 @@
                   <div class="content"><a href="#elem-identity">identity</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">An optional child element of &lt;identity&gt; used as a wrapper for one or
-                        more &lt;otherEntityType&gt; elements. These elements are used to encode any
+                     <div class="p">A wrapper elemebt used to group one or more &lt;otherEntityType&gt; elements. These elements are used to encode any
                         additional or alternative entity types used for the CPF instance in addition to
                         the required &lt;entityType&gt; element with values of corporateBody, person
                         or family.</div>
@@ -4743,12 +4734,12 @@
                      <div class="p">The &lt;address&gt; element is available for specifying a postal or other
                         address. The &lt;contact&gt; element is available for specifying a digital
                         address or other contact information.</div>
-                     <div class="p">Associated date or date range (&lt;date&gt;, &lt;dateRange&gt; or
+                     <div class="p">Associated date or date range (&lt;date&gt;, &lt;dateRange&gt;, or
                         &lt;dateSet&gt;) information may be included to further constrain the
                         place's meaning. A &lt;descriptiveNote&gt; may be included if a fuller
                         explanation of the significance of the place to the CPF entity described is needed.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">One or more of &lt;address&gt;, &lt;contact&gt;, &lt;geographicCoordinates&gt;, &lt;placeName&gt; and &lt;placeRole&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
+                     <div class="blockIndent">One or more of &lt;address&gt;, &lt;contact&gt;, &lt;geographicCoordinates&gt;, &lt;placeName&gt;, and &lt;placeRole&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4808,7 +4799,7 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">An optional child element of &lt;place&gt; used to encode the name of a place or geographic feature that is related to the CPF
-                        entity described in the EAC-CPF instance.</div>
+                        entity described.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">The @vocabularySource attribute may be used to indicate the
@@ -4822,10 +4813,11 @@
                   <div class="content">
                      <div class="p">&lt;placeName&gt; should be identified by the proper noun that commonly
                         designates the place, natural feature, or political jurisdiction. It is
-                        recommended that place names be taken from authorized vocabularies. Within
-                        &lt;place&gt;, a companion &lt;placeRole&gt; is strongly recommended to
+                        recommended that place names be taken from authorized vocabularies.</div>
+                     <div class="p">Within &lt;place&gt;, a companion &lt;placeRole&gt; is strongly recommended to
                         describe the nature of the association of the &lt;placeName&gt; to the
-                        entity.</div>
+                        entity. Furthermore a companion &lt;geographicCoordinates&gt; is available beside &lt;placeName&gt;, when used within &lt;place&gt;, to encode latitutde, lobgitude and altitide information.</div>
+                     <div class="p">One of &lt;placeName&gt;, &lt;placeRole&gt;, &lt;geographicCoordinates&gt;, &lt;address&gt;, or &lt;contact&gt; is required within &lt;place&gt;.</div>
                      <div class="p">The &lt;placeName&gt; element is repeatable. It is strongly recommended that
                         within &lt;place&gt;, the &lt;placeName&gt; element be repeated only to
                         represent the same place name in various languages, with an accompanying
@@ -4889,8 +4881,7 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">An optional child element of &lt;place&gt; used to identify the contextual
-                        role the place or jurisdiction has in relation to the CPF entity described in
-                        the EAC-CPF instance.</div>
+                        role the place or jurisdiction has in relation to the CPF entity described.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">The @vocabularySource attribute may be used to indicate the
@@ -4907,6 +4898,7 @@
                         jurisdiction. It is strongly recommended that each place name is accompanied by
                         a &lt;placeRole&gt; element in order to describe the nature of the association
                         of the place to the CPF entity.</div>
+                     <div class="p">One of &lt;placeRole&gt;, &lt;placeName&gt;, &lt;geographicCoordinates&gt;, &lt;address&gt;, or &lt;contact&gt; is required within &lt;place&gt;.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -4968,7 +4960,7 @@
                      <div class="p">Use the optional &lt;places&gt; element to group together one or more
                         occurrences of &lt;place&gt;. &lt;places&gt; must include at least one
                         &lt;place&gt; element. A &lt;descriptiveNote&gt; element may be included
-                        if fuller textual explanation is needed.</div>
+                        if a fuller textual explanation is needed.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
                      <div class="blockIndent">&lt;place&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br></div>
                   </div>
@@ -5019,7 +5011,8 @@
                   <div class="content">
                      <div class="p">A required child element of &lt;control&gt; that designates a unique
                         identifier for the EAC-CPF instance.</div>
-                  </div>
+                  </div>Use &lt;agencyCode&gt; in combination with &lt;recordId&gt; to provide
+                  a globally unique identifier for the EAC-CPF instance.
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -5081,11 +5074,12 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">An element used for referencing external resources that have been used to compile
-                        the EAC-CPF instance, or that identify rules or conventions that have been applied.</div>
+                        the EAC-CPF instance, that provide additional context to the EAC-CPF instance, or
+                        that identify rules or conventions that have been applied.</div>
                      <div class="p">&lt;reference&gt; is a required child element of &lt;conventionDeclaration&gt;, &lt;localTypeDeclaration&gt;, and &lt;rightsDeclaration&gt; for identifying any rules and conventions applied in the compilation of the description.
                         It is also a required child element of &lt;source&gt;, used to identify any sources used in compiling the description. &lt;source&gt; may include multiple child &lt;reference&gt; elements.</div>
-                     <div class="p">&lt;reference&gt; is an optional child element of &lt;abstract&gt;, &lt;chronItem&gt;, &lt;chronItemSet&gt;, &lt;event&gt;, &lt;eventDescription&gt;, &lt;item&gt;, and &lt;p&gt; where it is used to reference any external resources that have been used in compiling
-                        the content of that element.</div>
+                     <div class="p">&lt;reference&gt; is an optional child element of &lt;abstract&gt;, &lt;chronItem&gt;, &lt;chronItemSet&gt;, &lt;event&gt;, &lt;eventDescription&gt;, &lt;item&gt;, and &lt;p&gt; where it is used to reference any external resources that provide additional context
+                        to the content of that element.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5150,22 +5144,22 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">&lt;relation&gt; records descriptive information about a relationship between
-                        the entity being described and a related entity, such as: a corporate body,
-                        person, or family; a function; or an archival, bibliographic, or other
+                        the entity being described and a related entity, such as: a corporate body, person,
+                        or family; a function; or an archival, bibliographic, or other
                         resource.</div>
                      <div class="p">Use the required child element &lt;targetEntity&gt; to provide a textual
-                        description of the related entity. Use the optional child element
+                        identification of the related entity, such as a name or a title. Use the optional
+                        child element
                         &lt;relationType&gt; to specify the type of relation. Use the optional
                         child element &lt;targetRole&gt; to specify the role of the related
-                        entity.</div>
-                     <div class="p">Use &lt;objectXMLWrap&gt; to embed XML documenting the related entity from any
-                        namespace other than EAC-CPF. Use &lt;date&gt;, &lt;dateRange&gt;, or
+                        entity. It is recommended that the terms used in &lt;relationType&gt;, &lt;targetEntity&gt;, and &lt;targetRole&gt; be taken from an authorized vocabulary.</div>
+                     <div class="p">Use &lt;objectXMLWrap&gt; to embed XML documenting the related entity from any namespace. Use &lt;date&gt;, &lt;dateRange&gt;, or
                         &lt;dateSet&gt; for specifying the time period of the relationship and
                         &lt;place&gt; for relevant location information. &lt;descriptiveNote&gt;
                         may be included for more detailed specifications or explanations of the
                         relationship.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;targetEntity&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;<br></br><br></br>One or more of &lt;place&gt;, &lt;relationType&gt; and &lt;targetRole&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br>&lt;objectXMLWrap&gt;<br></br><br></br></div>
+                     <div class="blockIndent">&lt;targetEntity&gt;<br></br><br></br>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br></br><br></br>One or more of &lt;place&gt;, &lt;relationType&gt;, and &lt;targetRole&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br>&lt;objectXMLWrap&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5276,12 +5270,7 @@
                      <div class="p">Use &lt;relationType&gt; within &lt;relation&gt; to specify the type of
                         relation that the &lt;targetEntity&gt; has to the entity being described.</div>
                      <div class="p">The &lt;relationType&gt; element contains a textual description of the
-                        relation. Examples of relations between the entity being described and a
-                        corporate body, person or family include "identity", "hierarchical", "temporal",
-                        "family" or "associative". Relations between the entity being described and a
-                        resource could be "creatorOf", "subjectOf" or "other". Relations between the
-                        entity being described and a function could be "controls", "owns" or
-                        "performs".</div>
+                        relation. It is recommended that values used in &lt;relationType&gt; be taken from an authorized vocabulary. </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5338,11 +5327,12 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">An optional child element of &lt;control&gt; for recording a link to a
-                        deliverable version of the EAC-CPF instance.</div>
+                        deliverable version of the EAC-CPF instance or to the XML version of the EAC-CPF instance
+                        itself.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">Use @href to specify a link to a deliverable version of the
-                     EAC-CPF instance.<br></br>The optional @localType attribute can be used to differentiate
+                     EAC-CPF instance.<br></br>Use @localType to differentiate
                      between multiple &lt;representation&gt; elements.<br></br></div>
                   <div class="leftcol">See also: </div>
                   <div class="content">Use &lt;otherRecordId&gt; to provide any local identifier for the EAC-CPF
@@ -5354,7 +5344,8 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">Use &lt;representation&gt; to record a link to a deliverable version of an
-                        EAC-CPF instance, for example an HTML or PDF version.</div>
+                        EAC-CPF instance, for example an HTML or PDF version, or to the XML version of the
+                        EAC-CPF instance itself.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5417,11 +5408,12 @@
                         usage rights of the EAC-CPF instance. &lt;rightsDeclaration&gt; should only be
                         used to reference shared published licenses, such as Creative Commons,
                         RightsStatements.org, and published locally-defined licenses.</div>
+                     <div class="p">&lt;reference&gt; must be used to provide a machine-readable reference to a
+                        license statement (for example, a dereferenceable URI). It may also be used to encode
+                        the name of the license statement.</div>
                      <div class="p">&lt;shortCode&gt; may be used to provide the abbreviated name for the rights
                         statement. The value of &lt;shortCode&gt; should align with the rights
-                        statements referenced by &lt;reference&gt; and &lt;descriptiveNote&gt;.</div>
-                     <div class="p">&lt;reference&gt; must be used to provide a machine-readable reference to a
-                        license statement (for example, a dereferenceable URI).</div>
+                        statement referenced by &lt;reference&gt; and &lt;descriptiveNote&gt;.</div>
                      <div class="p">&lt;descriptiveNote&gt; may be used to provide a human-readable description of
                         the license statement.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
@@ -5466,21 +5458,24 @@
                   <div class="content"><span class="label">Set Component</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">A required child element of &lt;alternativeSet&gt; that contains the EAC-CPF encoding for one entire authority record, thereby permitting
-                        the bundling of authority records from multiple authority systems within &lt;cpfDescription&gt;.</div>
-                  </div>
+                     <div class="p">A required child element of &lt;alternativeSet&gt; that allows an alternative authority record of the EAC-CPF instance being described
+                        to be referenced and described, as well as allowing the inclusion of the entire encoding
+                        of such alternative authority record in any XML format.</div>
+                  </div>Use href to provide a general reference to alternative sets.
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-componentEntry">componentEntry (0..n)</a>, <a href="#elem-descriptiveNote">descriptiveNote (0..1)</a>, <a href="#elem-objectXMLWrap">objectXMLWrap (0..1)</a></div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-alternativeSet">alternativeSet</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">&lt;setComponent&gt; provides a wrapper to contain an entire authority record, so that multiple records
-                        for the same identity from separate authority systems, or in different languages,
-                        may be combined together within a single EAC-CPF instance.</div>
-                     <div class="p">The &lt;componentEntry&gt; child element encodes the link to the authority record in the external system. An
-                        optional &lt;descriptiveNote&gt; may be used for a textual note providing further information about the record referenced
-                        in &lt;setComponent&gt;.</div>
+                     <div class="p">&lt;setComponent&gt; provides a wrapper to link to, describe, or contain one or more alternatice authority
+                        record, so that multiple records for the same entity from separate authority systems,
+                        or in different languages, may be combined together within a single EAC-CPF instance.</div>
+                     <div class="p">The &lt;componentEntry&gt; child element allows for the provision of a name or title for the alternative authority
+                        record and the inclusion of a link to the record in an external system, if using a
+                        vocabulary or similar..</div>
+                     <div class="p">Use the optional &lt;descriptiveNote&gt; for a textual note providing further information about the record referenced in &lt;setComponent&gt;.</div>
+                     <div class="p">Use the optional &lt;objectXMLWrap&gt; child element when including the entire authority record within the EAC-CPF instance.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -5593,11 +5588,12 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">Use &lt;source&gt; to cite a published resource used in describing the CPF
-                        entity. Though not required, a reference for the source should be included as a
-                        textual description in the child &lt;reference&gt;.</div>
+                        entity. Use the required child element &lt;reference&gt;to include a
+                        textual identification of the reference. In the case of online sources, use href with &lt;reference&gt; to provide a URI.</div>
+                     <div class="p">Use the optional child element &lt;citedRange&gt; to point to a specific location within a source.</div>
                      <div class="p">Use the optional &lt;descriptiveNote&gt; for any additional notes about the
                         source. Use the optional &lt;objectXMLWrap&gt; to embed XML documenting the
-                        source from any namespace other than EAC-CPF.</div>
+                        source from any namespace.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
                      <div class="blockIndent">&lt;reference&gt;<br></br><br></br>&lt;citedRange&gt;<br></br><br></br>&lt;descriptiveNote&gt;<br></br><br></br>&lt;objectXMLWrap&gt;<br></br><br></br></div>
                   </div>
@@ -5841,7 +5837,7 @@
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">Use the required @targetType, to identity the type of entity
                      related to in &lt;targetEntity&gt;, using one of the following values:
-                     agent, corporateBody, person, family, resource, function.<br></br></div>
+                     "agent", "corporateBody", "family", "function", "person", or "resource".<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-part">part (1..n)</a></div>
                   <div class="leftcol">May occur within: </div>
@@ -5881,8 +5877,7 @@
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol"><a href="#attr-targetType">targetType</a></div>
-                     <div class="rightcol">Required (values limited to: agent, corporateBody, person, family, resource,
-                        function)</div>
+                     <div class="rightcol">Required (values limited to: agent, corporateBody, family,  function, person, resource)</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol"><a href="#attr-valueURI">valueURI</a></div>
                      <div class="rightcol">Optional</div>
@@ -5977,9 +5972,6 @@
                         or local
                         rules.</div>
                   </div>
-                  <div class="leftcol">See also: </div>
-                  <div class="content">A listing of other elements in the tag library that are relevant to, or
-                     similar to, the element<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -5988,7 +5980,7 @@
                   <div class="content">
                      <div class="p">&lt;term&gt; is a required child element of &lt;function&gt;,
                         &lt;legalStatus&gt;, &lt;localControl&gt;, &lt;localDescription&gt;,
-                        &lt;mandate&gt;, &lt;occupation&gt; and &lt;otherEntityType&gt;, used to
+                        &lt;mandate&gt;, &lt;occupation&gt;, and &lt;otherEntityType&gt;, used to
                         specify a descriptive term in accordance with authorized vocabularies or local rules.</div>
                      <div class="p">&lt;term&gt; can be repeated within its parent element to include translations
                         of the same term. Use the languageOfElement attribute to identify
@@ -6144,7 +6136,7 @@
                         forms of the name in different languages and/or scripts), &lt;useDates&gt; may
                         occur in &lt;nameEntrySet&gt; rather than in the individual &lt;nameEntry&gt;
                         elements contained in &lt;nameEntrySet&gt;.</div>
-                     <div class="p">&lt;useDates&gt; must include one of &lt;date&gt;, &lt;dateRange&gt; or &lt;dateSet&gt;.</div>
+                     <div class="p">&lt;useDates&gt; must include one of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
@@ -6190,8 +6182,7 @@
                         productive.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
-                  <div class="content">The @scriptCode attribute can be used to encode a valid code
-                     from ISO 15924.<br></br></div>
+                  <div class="content">Use @scriptCode to provide a code for the writing system itself.<br></br>Use @scriptOfElement to provide a code for the writing system in which the element is given.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -6239,7 +6230,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example"><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e6520">
+            <div class="section" id="d1e6651">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
@@ -6343,9 +6334,9 @@
                   <div class="content">
                      <div class="p">System of reckoning time, such as Gregorian calendar or Julian calendar.
                         Suggested values include, but are not limited to, "gregorian" and "julian".
-                        Available in &lt;date&gt;, &lt;fromDate&gt; and &lt;toDate&gt;.</div>
+                        Available in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;.</div>
                   </div>
-                  <div class="leftcol">Values: </div>
+                  <div class="leftcol">Data Type: </div>
                   <div class="content">
                      <div class="p">NMTOKEN</div>
                   </div>
@@ -6490,9 +6481,9 @@
                   <div class="content">
                      <div class="p">Period during which years are numbered and dates reckoned, such as CE (Common
                         Era) or BCE (Before Common Era). Suggested values include "ce" and "bce".
-                        Available in &lt;date&gt;, &lt;fromDate&gt; and &lt;toDate&gt;.</div>
+                        Available in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;.</div>
                   </div>
-                  <div class="leftcol">Values: </div>
+                  <div class="leftcol">Data Type: </div>
                   <div class="content">
                      <div class="p">NMTOKEN</div>
                   </div>
@@ -6505,7 +6496,7 @@
                   <div class="content"> <span class="label">hypertext Reference</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">The address for a remote resource. href takes the form of a Uniform Resource Identifier (URI). Available in &lt;contactLine&gt;, &lt;reference&gt;, &lt;representation&gt;, &lt;setComponent&gt; and &lt;source&gt;.</div>
+                     <div class="p">The address for a remote resource. href takes the form of a Uniform Resource Identifier (URI). Available in &lt;contactLine&gt;, &lt;reference&gt;, &lt;representation&gt;, &lt;setComponent&gt;, and &lt;source&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -6551,7 +6542,7 @@
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
-                     <div class="p">given, acquired</div>
+                     <div class="p">acquired, given</div>
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
@@ -6592,7 +6583,7 @@
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
-                     <div class="p">iso639-1, iso639-2b, iso639-3, ietf-bcp-47, otherLanguageEncoding</div>
+                     <div class="p">ietf-bcp-47, iso639-1, iso639-2b, iso639-3, otherLanguageEncoding</div>
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
@@ -6626,7 +6617,7 @@
                      <div class="p">Last date or last date and time the linked resource was verified. Verification
                         may include link resolution as well as verification of the version of the
                         linked object. Available in &lt;contactLine&gt;, &lt;reference&gt;,
-                        &lt;representation&gt;, &lt;setComponent&gt; and &lt;source&gt;.</div>
+                        &lt;representation&gt;, &lt;setComponent&gt;, and &lt;source&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -6646,7 +6637,7 @@
                   <div class="content">
                      <div class="p">A URI that characterizes the nature of the remote resource to which a linking
                         element refers. Available in &lt;contactLine&gt;, &lt;reference&gt;,
-                        &lt;representation&gt;, &lt;setComponent&gt; and &lt;source&gt;.</div>
+                        &lt;representation&gt;, &lt;setComponent&gt;, and &lt;source&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -6664,7 +6655,7 @@
                      <div class="p">Information that serves as a viewable caption which explains to users the part
                         that a resource plays in a link. May be useful for meeting accessibility
                         requirements when rendering content in a web browser. Available in
-                        &lt;contactLine&gt;, &lt;reference&gt;, &lt;representation&gt;, &lt;setComponent&gt; and
+                        &lt;contactLine&gt;, &lt;reference&gt;, &lt;representation&gt;, &lt;setComponent&gt;, and
                         &lt;source&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
@@ -7023,13 +7014,13 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">Attribute that provides controlled terminology detailing the status of
-                        elements. Available in &lt;agencyCode&gt;, &lt;fromDate&gt;, &lt;nameEntry&gt;, &lt;otherAgencyCode&gt; and &lt;toDate&gt;. The terms available for status are defined in closed lists
+                        elements. Available in &lt;agencyCode&gt;, &lt;fromDate&gt;, &lt;nameEntry&gt;, &lt;otherAgencyCode&gt;, and &lt;toDate&gt;. The terms available for status are defined in closed lists
                         that vary by element.</div>
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
-                     <div class="p">Values in &lt;fromDate&gt;: unknown</div>
                      <div class="p">Values in &lt;agencyCode&gt;, &lt;nameEntry&gt;, &lt;otherAgencyCode&gt;: alternative, authorized</div>
+                     <div class="p">Values in &lt;fromDate&gt;: unknown</div>
                      <div class="p">Values in &lt;toDate&gt;: unknown, ongoing</div>
                   </div>
                   <div class="leftcol">Example:</div>
@@ -7176,7 +7167,7 @@
                <div class="spacer"> </div>  <a class="tocReturn" href="#toc">[toc]</a></div>
          </div>
          <div>
-            <div class="section" id="d1e7518">
+            <div class="section" id="d1e7649">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Title">Title  <a class="tocReturn" href="#toc">[toc]</a></div>
                <div class="p">Contents of the appendix; this can also include lists</div>
