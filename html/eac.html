@@ -241,7 +241,7 @@
                </div>
                <div id="d1e62">
                   <div class="head03">Tag Library Conventions  <a class="tocReturn" href="#toc">[toc]</a></div>
-                  <div class="p">The EAC-CPF Elements section of the Tag Library contains descriptions of [???]
+                  <div class="p">The EAC-CPF Elements section of the Tag Library contains descriptions of 89
                      elements, arranged alphabetically by element name.</div>
                   <div class="p">Entries in the Tag Library that have been updated in the latest revision will be
                      marked with "(revised in [revision number])". Updates that predate the most recent
@@ -266,7 +266,7 @@
                      being defined. Elements are listed in alphabetical order by tag name. Elements
                      may be empty (e.g., an element which allows no child text or element nodes), or
                      they may contain text (listed as [text]), other elements, or a mixture of text
-                     and other elements.Text content cannot include characters that would be
+                     and other elements. Text content cannot include characters that would be
                      interpreted by a parser as action codes. For example, a left angle bracket has
                      to be represented as the character entity reference &amp;lt; so that it is not
                      misinterpreted as the start of an element name. The technical availability
@@ -294,7 +294,7 @@
                      also used to suggest the kind of element being discussed. "Wrapper element"
                      indicates an element that cannot contain text directly; a second, nested
                      element must be opened first. When the schema enforces a specific sequence of
-                     child elements, that sequence is indicated.If useful, context-specific
+                     child elements, that sequence is indicated. If useful, context-specific
                      guidance for the usage of an element's attributes is given in an "Attribute
                      usage" section. A "See also" section may be provided to indicate additional
                      elements that are similar, easily confused, or otherwise related to the element
@@ -527,7 +527,7 @@
                         dissemination of the EAC-CPF instance.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
-                  <div class="content">Use @status with the values "authorized" or "alternative" to
+                  <div class="content">Use @status with the value "authorized" or "alternative" to
                      declare whether the &lt;agencyCode&gt; is using an authorized or
                      alternative value.<br></br></div>
                   <div class="leftcol">See also: </div>
@@ -2759,8 +2759,10 @@
                   <div class="content">
                      <div class="p">An optional child element of &lt;identity&gt; used to record any identifier
                         associated with the CPF entity being described.</div>
-                  </div>Do not confuse with &lt;recordId&gt; within &lt;control&gt;, which refers to
-                  an identifier for the EAC-CPF instance rather than the entity it describes.
+                  </div>
+                  <div class="leftcol">See also: </div>
+                  <div class="content">Do not confuse with &lt;recordId&gt; within &lt;control&gt;, which refers to
+                     an identifier for the EAC-CPF instance rather than the entity it describes.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -2946,7 +2948,7 @@
                         script in which an EAC-CPF instance is written.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
-                  <div class="content">Use the required @languageCode to provide a code for the language used in the EAC-CPF instance.<br></br>Use @languageOfElement to provide a code for the language in which the &lt;languageDeclaration&gt; element is given.<br></br>Use @scriptCode to provide a code for the writing system used in the EAC-CPF intance.<br></br>Use @scriptOfElement to provide a code for the writing system in which the &lt;languageDeclaration&gt; element is given.<br></br></div>
+                  <div class="content">Use the required @languageCode to provide a code for the language used in the EAC-CPF instance.<br></br>Use @languageOfElement to provide a code for the language in which the &lt;languageDeclaration&gt; element is given.<br></br>Use @scriptCode to provide a code for the writing system used in the EAC-CPF instance.<br></br>Use @scriptOfElement to provide a code for the writing system in which the &lt;languageDeclaration&gt; element is given.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-descriptiveNote">descriptiveNote (0..1)</a></div>
                   <div class="leftcol">May occur within: </div>
@@ -3767,7 +3769,7 @@
                   <div class="content">
                      <div class="p">A required child element of &lt;mandates&gt; used for identifying the source
                         of authority or mandate for the corporate body in terms of its powers,
-                        functions, responsibilities or activities, such as a law, directivev or
+                        functions, responsibilities or activities, such as a law, directive, or
                         charter.</div>
                   </div>
                   <div class="leftcol">May contain: </div>
@@ -4041,7 +4043,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;conventionDeclaration audience="external" id="cd1" localtype="transliteration"&gt;
+                     <div class="innerExample">&lt;conventionDeclaration audience="external" id="cd1" localType="transliteration"&gt;
                         <div class="innerExample">&lt;abbreviation&gt;DIN 32708:2014&lt;/abbreviation&gt;<br></br></div>
                         <div class="innerExample">&lt;citation href="https://www.iso.org/standard/9029.html"&gt;Information
                            and documentation - Romanization of Japanese&lt;/citation&gt;<br></br></div>
@@ -4470,7 +4472,7 @@
                   <div class="content"><a href="#elem-identity">identity</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">A wrapper elemebt used to group one or more &lt;otherEntityType&gt; elements. These elements are used to encode any
+                     <div class="p">A wrapper element used to group one or more &lt;otherEntityType&gt; elements. These elements are used to encode any
                         additional or alternative entity types used for the CPF instance in addition to
                         the required &lt;entityType&gt; element with values of corporateBody, person
                         or family.</div>
@@ -4816,7 +4818,7 @@
                         recommended that place names be taken from authorized vocabularies.</div>
                      <div class="p">Within &lt;place&gt;, a companion &lt;placeRole&gt; is strongly recommended to
                         describe the nature of the association of the &lt;placeName&gt; to the
-                        entity. Furthermore a companion &lt;geographicCoordinates&gt; is available beside &lt;placeName&gt;, when used within &lt;place&gt;, to encode latitutde, lobgitude and altitide information.</div>
+                        entity. Furthermore a companion &lt;geographicCoordinates&gt; is available beside &lt;placeName&gt;, when used within &lt;place&gt;, to encode latitude, longitude and altitude information.</div>
                      <div class="p">One of &lt;placeName&gt;, &lt;placeRole&gt;, &lt;geographicCoordinates&gt;, &lt;address&gt;, or &lt;contact&gt; is required within &lt;place&gt;.</div>
                      <div class="p">The &lt;placeName&gt; element is repeatable. It is strongly recommended that
                         within &lt;place&gt;, the &lt;placeName&gt; element be repeated only to
@@ -5011,8 +5013,10 @@
                   <div class="content">
                      <div class="p">A required child element of &lt;control&gt; that designates a unique
                         identifier for the EAC-CPF instance.</div>
-                  </div>Use &lt;agencyCode&gt; in combination with &lt;recordId&gt; to provide
-                  a globally unique identifier for the EAC-CPF instance.
+                  </div>
+                  <div class="leftcol">See also: </div>
+                  <div class="content">Use &lt;agencyCode&gt; in combination with &lt;recordId&gt; to provide
+                     a globally unique identifier for the EAC-CPF instance.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -5461,14 +5465,16 @@
                      <div class="p">A required child element of &lt;alternativeSet&gt; that allows an alternative authority record of the EAC-CPF instance being described
                         to be referenced and described, as well as allowing the inclusion of the entire encoding
                         of such alternative authority record in any XML format.</div>
-                  </div>Use href to provide a general reference to alternative sets.
+                  </div>
+                  <div class="leftcol">Attribute usage: </div>
+                  <div class="content">Use @href to provide a general reference to alternative sets.<br></br></div>
                   <div class="leftcol">May contain: </div>
                   <div class="content"><a href="#elem-componentEntry">componentEntry (0..n)</a>, <a href="#elem-descriptiveNote">descriptiveNote (0..1)</a>, <a href="#elem-objectXMLWrap">objectXMLWrap (0..1)</a></div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-alternativeSet">alternativeSet</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">&lt;setComponent&gt; provides a wrapper to link to, describe, or contain one or more alternatice authority
+                     <div class="p">&lt;setComponent&gt; provides a wrapper to link to, describe, or contain one or more alternative authority
                         record, so that multiple records for the same entity from separate authority systems,
                         or in different languages, may be combined together within a single EAC-CPF instance.</div>
                      <div class="p">The &lt;componentEntry&gt; child element allows for the provision of a name or title for the alternative authority
@@ -6243,7 +6249,7 @@
                      <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">Use one of the set values to specify the type of address line encoded in
                         &lt;addressLine&gt;. Use the attribute localType in order to
-                        encode a local type of an address line.</div>
+                        encode a local type of address line.</div>
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
@@ -6266,8 +6272,8 @@
                   <div class="span">
                      <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">The attribute's value must be set to "human," "machine," or "unknown," and
-                        should correspond to the information recorded in &lt;agent&gt;. For example, if the is Jane
-                        Marshall, the value of agentType should be set to "human." If the is
+                        should correspond to the information recorded in &lt;agent&gt;. For example, if the &lt;agent&gt; is Jane
+                        Marshall, the value of agentType should be set to "human." If the &lt;agent&gt; is
                         a database, style sheet, or other system, the value of agentType
                         should be set to "machine." The value of agentType may also be set
                         to "unknown" if the agent and/or type of agent cannot be determined.</div>
@@ -6371,7 +6377,7 @@
                      <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">Use one of the set values to specify the type of contact line encoded in
                         &lt;contactLine&gt;. Use the attribute localType in order to
-                        encode a local type of a contact line.</div>
+                        encode a local type of contact line.</div>
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
@@ -6785,7 +6791,7 @@
                         updated to reflect the current drafting status.</div>
                      <div class="p">On first creation the status would be "new", which on revision can be changed
                         to "revised". Because it is important to be clear about what has happened to
-                        records particularly when sharing and making links between them, a number of
+                        records, particularly when sharing and making links between them, a number of
                         status values are available for records that are no longer current. A record
                         that is simply deleted from a system can be given the status "deleted", but in
                         cases where a record is marked as not current (obsolete or rejected) but kept
@@ -6898,9 +6904,9 @@
                   <div class="content"> <span class="label">Script Code</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">The code for the writing script for a language used in the EAC-CPF instance or
+                     <div class="p">The code for the writing system, or script, used in the EAC-CPF instance or
                         in which the CPF entity being described was creative or productive. Content of
-                        the attribute should be a code taken from ISO 639-1, ISO 639-2b, ISO 639-3, or
+                        the attribute should be a code taken from ISO 15924, or
                         another controlled list, as specified in the scriptEncoding
                         attribute in &lt;control&gt;. Available in &lt;languageDeclaration&gt; and
                         &lt;writingSystem&gt;.</div>
@@ -6992,7 +6998,7 @@
                   <div class="content"> <span class="label">Standard Date and Time</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">An ISO 8601-compliant form of the date or date and time of a specific
+                     <div class="p">An ISO 8601-compliant form of the date, or date and time, of a specific
                         maintenance event expressed in &lt;eventDateTime&gt;. For example, 2009-12-31,
                         2009, 2009-12, 2009-12-31T23:59:59. Available only in
                         &lt;eventDateTime&gt;.</div>
@@ -7167,7 +7173,7 @@
                <div class="spacer"> </div>  <a class="tocReturn" href="#toc">[toc]</a></div>
          </div>
          <div>
-            <div class="section" id="d1e7649">
+            <div class="section" id="d1e7656">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Title">Title  <a class="tocReturn" href="#toc">[toc]</a></div>
                <div class="p">Contents of the appendix; this can also include lists</div>

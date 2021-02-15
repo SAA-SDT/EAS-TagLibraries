@@ -87,7 +87,7 @@
             </div>
             <div xml:id="conventions">
                <head>Tag Library Conventions</head>
-               <p>The EAC-CPF Elements section of the Tag Library contains descriptions of [???]
+               <p>The EAC-CPF Elements section of the Tag Library contains descriptions of 89
                   elements, arranged alphabetically by element name.</p>
                <p>Entries in the Tag Library that have been updated in the latest revision will be
                   marked with "(revised in [revision number])". Updates that predate the most recent
@@ -113,7 +113,7 @@
                      being defined. Elements are listed in alphabetical order by tag name. Elements
                      may be empty (e.g., an element which allows no child text or element nodes), or
                      they may contain text (listed as [text]), other elements, or a mixture of text
-                     and other elements.<lb/>Text content cannot include characters that would be
+                     and other elements. <lb/>Text content cannot include characters that would be
                      interpreted by a parser as action codes. For example, a left angle bracket has
                      to be represented as the character entity reference &amp;lt; so that it is not
                      misinterpreted as the start of an element name. <lb/>The technical availability
@@ -141,7 +141,7 @@
                      also used to suggest the kind of element being discussed. "Wrapper element"
                      indicates an element that cannot contain text directly; a second, nested
                      element must be opened first. When the schema enforces a specific sequence of
-                     child elements, that sequence is indicated.<lb/>If useful, context-specific
+                     child elements, that sequence is indicated. <lb/>If useful, context-specific
                      guidance for the usage of an element's attributes is given in an "Attribute
                      usage" section. A "See also" section may be provided to indicate additional
                      elements that are similar, easily confused, or otherwise related to the element
@@ -427,7 +427,7 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use <att>status</att> with the values "authorized" or "alternative" to
+                     <item>Use <att>status</att> with the value "authorized" or "alternative" to
                         declare whether the <gi>agencyCode</gi> is using an authorized or
                         alternative value.</item>
                   </list>
@@ -2760,7 +2760,7 @@
                      this element.</p>
                </div>
                <div type="seealso">
-                  <list>
+                  <list type="simple">
                      <item>Do not confuse with <gi>recordId</gi> within <gi>control</gi>, which refers to
                         an identifier for the EAC-CPF instance rather than the entity it describes.</item>
                   </list>
@@ -2944,7 +2944,7 @@
                   <list type="simple">
                      <item>Use the required <att>languageCode</att> to provide a code for the language used in the EAC-CPF instance.</item>
                      <item>Use <att>languageOfElement</att> to provide a code for the language in which the <gi>languageDeclaration</gi> element is given.</item>
-                     <item>Use <att>scriptCode</att> to provide a code for the writing system used in the EAC-CPF intance.</item>
+                     <item>Use <att>scriptCode</att> to provide a code for the writing system used in the EAC-CPF instance.</item>
                      <item>Use <att>scriptOfElement</att> to provide a code for the writing system in which the <gi>languageDeclaration</gi> element is given.</item>                                         
                   </list>
                </div>
@@ -3794,7 +3794,7 @@
                <div type="summary">
                   <p>A required child element of <gi>mandates</gi> used for identifying the source
                      of authority or mandate for the corporate body in terms of its powers,
-                     functions, responsibilities or activities, such as a law, directivev or
+                     functions, responsibilities or activities, such as a law, directive, or
                      charter.</p>
                </div>
                <div type="mayContain">
@@ -4072,7 +4072,7 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac-cpf:conventionDeclaration audience="external" id="cd1"
-                        localtype="transliteration">
+                        localType="transliteration">
                         <eac-cpf:abbreviation>DIN 32708:2014</eac-cpf:abbreviation>
                         <eac-cpf:citation href="https://www.iso.org/standard/9029.html">Information
                            and documentation - Romanization of Japanese</eac-cpf:citation>
@@ -4559,7 +4559,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>A wrapper elemebt used to group one or more <gi>otherEntityType</gi> elements. These elements are used to encode any
+                  <p>A wrapper element used to group one or more <gi>otherEntityType</gi> elements. These elements are used to encode any
                      additional or alternative entity types used for the CPF instance in addition to
                      the required <gi>entityType</gi> element with values of corporateBody, person
                      or family.</p>
@@ -4923,7 +4923,7 @@
                      recommended that place names be taken from authorized vocabularies.</p>
                   <p>Within <gi>place</gi>, a companion <gi>placeRole</gi> is strongly recommended to
                      describe the nature of the association of the <gi>placeName</gi> to the
-                     entity. Furthermore a companion <gi>geographicCoordinates</gi> is available beside <gi>placeName</gi>, when used within <gi>place</gi>, to encode latitutde, lobgitude and altitide information.</p>
+                     entity. Furthermore a companion <gi>geographicCoordinates</gi> is available beside <gi>placeName</gi>, when used within <gi>place</gi>, to encode latitude, longitude and altitude information.</p>
                   <p>One of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                   <p>The <gi>placeName</gi> element is repeatable. It is strongly recommended that
                      within <gi>place</gi>, the <gi>placeName</gi> element be repeated only to
@@ -5123,7 +5123,7 @@
                         <gi>otherRecordId</gi>.</p>
                </div>
                <div type="seealso">
-                  <list>
+                  <list type="simple">
                      <item>Use <gi>agencyCode</gi> in combination with <gi>recordId</gi> to provide
                         a globally unique identifier for the EAC-CPF instance.</item>
                   </list>
@@ -5598,13 +5598,13 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>setComponent</gi> provides a wrapper to link to, describe, or contain one or more alternatice authority record, so that multiple records for the same entity from separate authority systems, or in different languages, may be combined together within a single EAC-CPF instance.</p>
+                  <p><gi>setComponent</gi> provides a wrapper to link to, describe, or contain one or more alternative authority record, so that multiple records for the same entity from separate authority systems, or in different languages, may be combined together within a single EAC-CPF instance.</p>
                   <p>The <gi>componentEntry</gi> child element allows for the provision of a name or title for the alternative authority record and the inclusion of a link to the record in an external system, if using a vocabulary or similar..</p> 
                   <p>Use the optional <gi>descriptiveNote</gi> for a textual note providing further information about the record referenced in <gi>setComponent</gi>.</p>
                   <p>Use the optional <gi>objectXMLWrap</gi> child element when including the entire authority record within the EAC-CPF instance.</p>
                </div>
                <div type="attributeusage">
-                  <list>
+                  <list type="simple">
                      <item>Use <att>href</att> to provide a general reference to alternative sets.</item>
                   </list>
                </div>
@@ -6363,7 +6363,7 @@
                <div type="description">
                   <p>Use one of the set values to specify the type of address line encoded in
                         <gi>addressLine</gi>. Use the attribute <att>localType</att> in order to
-                     encode a local type of an address line.</p>
+                     encode a local type of address line.</p>
                </div>
                <div type="values">
                   <p>county, country, district, municipality, postBox, postalCode, region,
@@ -6388,8 +6388,8 @@
                </div>
                <div type="description">
                   <p>The attribute's value must be set to "human," "machine," or "unknown," and
-                     should correspond to the information recorded in <gi>agent</gi>. For example, if the is Jane
-                     Marshall, the value of <att>agentType</att> should be set to "human." If the is
+                     should correspond to the information recorded in <gi>agent</gi>. For example, if the <gi>agent</gi> is Jane
+                     Marshall, the value of <att>agentType</att> should be set to "human." If the <gi>agent</gi> is
                      a database, style sheet, or other system, the value of <att>agentType</att>
                      should be set to "machine." The value of <att>agentType</att> may also be set
                      to "unknown" if the agent and/or type of agent cannot be determined.</p>
@@ -6442,7 +6442,7 @@
                   <p>Used to specify a base URI that is different than the base URI of the EAC-CPF
                      instance. This allows any relative URIs provided on attributes of a specific
                      element or its descendants to be resolved using the URI provided in that
-                     element's base. Available on <gi>alternativeSet</gi>, <gi>control</gi>,
+                     element's <att>base</att>. Available on <gi>alternativeSet</gi>, <gi>control</gi>,
                         <gi>cpfDescription</gi>, <gi>description</gi>, <gi>eac</gi>,
                         <gi>identity</gi>, <gi>multipleIdentities</gi>, <gi>relations</gi>, and
                         <gi>sources</gi>.</p>
@@ -6507,7 +6507,7 @@
                <div type="description">
                   <p>Use one of the set values to specify the type of contact line encoded in
                         <gi>contactLine</gi>. Use the attribute <att>localType</att> in order to
-                     encode a local type of a contact line.</p>
+                     encode a local type of contact line.</p>
                </div>
                <div type="values">
                   <p>email, fax, homepage, mobileNumber, phoneNumber</p>
@@ -6981,7 +6981,7 @@
                      updated to reflect the current drafting status.</p>
                   <p>On first creation the status would be "new", which on revision can be changed
                      to "revised". Because it is important to be clear about what has happened to
-                     records particularly when sharing and making links between them, a number of
+                     records, particularly when sharing and making links between them, a number of
                      status values are available for records that are no longer current. A record
                      that is simply deleted from a system can be given the status "deleted", but in
                      cases where a record is marked as not current (obsolete or rejected) but kept
@@ -7112,9 +7112,9 @@
                   <p>Script Code</p>
                </div>
                <div type="summary">
-                  <p>The code for the writing script for a language used in the EAC-CPF instance or
+                  <p>The code for the writing system, or script, used in the EAC-CPF instance or
                      in which the CPF entity being described was creative or productive. Content of
-                     the attribute should be a code taken from ISO 639-1, ISO 639-2b, ISO 639-3, or
+                     the attribute should be a code taken from ISO 15924, or
                      another controlled list, as specified in the <att>scriptEncoding</att>
                      attribute in <gi>control</gi>. Available in <gi>languageDeclaration</gi> and
                         <gi>writingSystem</gi>.</p>
@@ -7221,7 +7221,7 @@
                   <p>Standard Date and Time</p>
                </div>
                <div type="summary">
-                  <p>An ISO 8601-compliant form of the date or date and time of a specific
+                  <p>An ISO 8601-compliant form of the date, or date and time, of a specific
                      maintenance event expressed in <gi>eventDateTime</gi>. For example, 2009-12-31,
                      2009, 2009-12, 2009-12-31T23:59:59. Available only in
                      <gi>eventDateTime</gi>.</p>
