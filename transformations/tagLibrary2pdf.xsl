@@ -628,7 +628,6 @@
                 </fo:list-block>
             </xsl:otherwise>
         </xsl:choose>
-
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'elements', 'rights', 'objects', 'agents', 'events']">
@@ -697,11 +696,13 @@
             <xsl:apply-templates select="tei:div[@type = 'rationale']"/>
             <xsl:apply-templates select="tei:div[@type = 'datatype']"/>
             <xsl:apply-templates select="tei:div[@type = 'attributes']"/>
+            <xsl:apply-templates select="tei:div[@type = 'attributeusage']"/>
             <xsl:apply-templates select="tei:div[@type = 'description']"/>
             <xsl:apply-templates select="tei:div[@type = 'desc']"/>
             <xsl:apply-templates select="tei:div[@type = 'usage']"/>
             <xsl:apply-templates select="tei:div[@type = 'occurrence']"/>
             <xsl:apply-templates select="tei:div[@type = 'availability']"/>
+            <xsl:apply-templates select="tei:div[@type = 'seealso']"/>
             <xsl:apply-templates select="tei:div[@type = 'mandatory']"/>
             <xsl:apply-templates select="tei:div[@type = 'repetable']"/>
             <xsl:apply-templates select="tei:div[@type = 'reference']"/>
@@ -905,7 +906,7 @@
 
     <!-- Non-tokenized note divs -->
     <xsl:template
-        match="tei:div[@type = ('summary', 'definition', 'rationale', 'creationmaintenance', 'usagenotes', 'attributeusage', 'seealso', 'datatype', 'values', 'availability', 'attributeusage', 'reference', 'references', 'desc', 'usage', 'description')]">
+        match="tei:div[@type = ('summary', 'definition', 'rationale', 'creationmaintenance', 'usagenotes', 'datatype', 'values', 'availability', 'reference', 'references', 'desc', 'usage', 'description')]">
         <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
             <fo:list-item>
                 <fo:list-item-label end-indent="label-end()">
@@ -919,6 +920,30 @@
                     </fo:block>
                 </fo:list-item-label>
                 <fo:list-item-body start-indent="body-start()">
+                    <fo:block>
+                        <xsl:apply-templates/>
+                    </fo:block>
+                </fo:list-item-body>
+            </fo:list-item>
+        </fo:list-block>
+    </xsl:template>
+
+    <!-- Note divs with lists, which get a special indent -->
+    <xsl:template
+        match="tei:div[@type = ('attributeusage', 'seealso')]">
+        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
+            <fo:list-item>
+                <fo:list-item-label end-indent="label-end()">
+                    <fo:block font-weight="bold">
+                        <xsl:variable name="termtitle">
+                            <xsl:value-of select="current()/@type"/>
+                        </xsl:variable>
+                        <xsl:value-of
+                            select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage]"/>
+                        <xsl:text>: </xsl:text>
+                    </fo:block>
+                </fo:list-item-label>
+                <fo:list-item-body start-indent="25mm">
                     <fo:block>
                         <xsl:apply-templates/>
                     </fo:block>
