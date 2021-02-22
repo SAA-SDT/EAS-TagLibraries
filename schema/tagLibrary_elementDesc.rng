@@ -36,6 +36,14 @@
                     <!-- KB April 18th 2016, added the following values -->
                     <value>seealso</value>
                     <value>attributeusage</value>
+                    <!-- KB July 3rd 2018, added the following values -->
+                    <value>definition</value>
+                    <value>rationale</value>
+                    <value>creationmaintenance</value>
+                    <value>usagenotes</value>
+                    <value>semanticunit</value>
+                    <value>semanticcomponents</value>
+                    <value>entity</value>
                 </choice>
             </attribute>
             <!-- FC August 2nd, add xml:lang attribute, datatype language-->
@@ -106,6 +114,14 @@
                 <ref name="gi"/>
                 <ref name="att"/>
             </choice>
+            <optional>
+                <!-- KB 3rd of July 2018, added attribute type -->
+                <attribute name="type">
+                    <choice>
+                        <value>DD</value>
+                    </choice>
+                </attribute>
+            </optional>
         </element>
     </define>
     <define name="list">
@@ -116,6 +132,9 @@
                         <value>gloss</value>
                         <!-- KB September 20 added bullet as value  -->
                         <value>bulleted</value>
+                        <!-- KB 3rd July 2018 added value -->
+                        <value>ordered</value>
+                        <value>simple</value>
                     </choice>
                 </attribute>
             </optional>
@@ -129,9 +148,11 @@
                 <ref name="head"/>
             </optional>
             <oneOrMore>
+                <optional>
                 <element name="label">
                     <text/>
                 </element>
+                </optional>
                 <element name="item">
                     <optional>
                         <attribute name="n">

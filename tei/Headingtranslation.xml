@@ -11,13 +11,13 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="it">Sommario</translation>
     </term>
     <term name="description">
-        <translation lang="en">Description</translation>
-        <translation lang="fr">Description</translation>
-        <translation lang="gr">Περιγραφ&#942;</translation>
-        <translation lang="de">Beschreibung</translation>
-        <translation lang="it">Descrizione</translation>
+        <translation lang="en">Description and Usage</translation>
+        <translation lang="fr">Description et Usage</translation>
+        <translation lang="gr">Περιγραφ&#942; και Χρ&#942;ση</translation>
+        <translation lang="de">Beschreibung und Verwendung</translation>
+        <translation lang="it">Descrizione e Uso</translation>
     </term>
-    <term name="mayoccurwithin">
+    <term name="mayOccurWithin">
         <translation lang="en">May occur within</translation>
         <translation lang="fr">Peut être contenu dans</translation>
         <translation lang="gr">Μπορε&#943; να εμφαν&#943;ζεται μέσα σε</translation>
@@ -59,6 +59,13 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="de">Attribute</translation>
         <translation lang="it">Attributi</translation>
     </term>
+    <term name="reference">
+        <translation lang="en">References</translation>
+        <translation lang="fr">Références</translation>
+        <translation lang="gr">Αναφορ&#941;ς</translation>
+        <translation lang="de">Entspricht</translation>
+        <translation lang="it">Riferimenti</translation>        
+    </term>
     <term name="references">
         <translation lang="en">References</translation>
         <translation lang="fr">Références</translation>
@@ -87,7 +94,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="de">Elemente</translation>
         <translation lang="it">Elementi</translation>
     </term>
-    <term name="maycontain">
+    <term name="mayContain">
         <translation lang="en">May contain</translation>
         <translation lang="fr">Peut contenir</translation>
         <translation lang="gr">Μπορε&#943; να περι&#941;χει</translation>
@@ -122,6 +129,13 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="de">Beispiel</translation>
         <translation lang="it">Esempio</translation>
     </term>
+    <term name="desc">
+        <translation lang="en">Description</translation>
+        <translation lang="fr">Description</translation>
+        <translation lang="gr">Περιγραφ&#942;</translation>
+        <translation lang="de">Beschreibung</translation>
+        <translation lang="it">Descrizione</translation>
+    </term>
     <term name="usage">
         <translation lang="en">Usage</translation>
         <translation lang="fr">Usage</translation>
@@ -136,6 +150,12 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="de">und</translation>
     </term>
     <term name="availability">
+        <translation lang="en">Availability</translation>
+        <translation lang="fr">Disponibilité</translation>
+        <translation lang="gr">Διαθεσιμ&#972;τητα</translation>
+        <translation lang="de">Verfügbarkeit</translation>
+    </term>
+    <term name="occurence">
         <translation lang="en">Availability</translation>
         <translation lang="fr">Disponibilité</translation>
         <translation lang="gr">Διαθεσιμ&#972;τητα</translation>
@@ -200,5 +220,41 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="fr">Disponible depuis</translation>
         <translation lang="gr">Διαθ&#941;σιμο απ&#972;</translation>
         <translation lang="de">Verfügbar ab</translation>
+    </term>
+    <term name="usagenotes">
+        <translation lang="en">Usage notes</translation>
+    </term>
+    <term name="rationale">
+        <translation lang="en">Rationale</translation>
+    </term>
+    <term name="creationmaintenance">
+        <translation lang="en">Creation/Maintenance notes</translation>
+    </term>
+    <term name="semanticunit">
+        <translation lang="en">Semantic unit</translation>
+    </term>
+    <term name="semanticcomponents">
+        <translation lang="en">Semantic components</translation>
+    </term>
+    <term name="definition">
+        <translation lang="en">Definition</translation>
+    </term>
+    <term name="datadictionary">
+        <translation lang="en">Data Dictionary</translation>
+    </term>
+    <term name="entity">
+        <translation lang="en">Entity information</translation>
+    </term>
+    <term name="rights">
+        <translation lang="en">Rights</translation>
+    </term>
+    <term name="agents">
+        <translation lang="en">Agents</translation>
+    </term>
+    <term name="events">
+        <translation lang="en">Events</translation>
+    </term>
+    <term name="objects">
+        <translation lang="en">Objects</translation>
     </term>
 </terms>

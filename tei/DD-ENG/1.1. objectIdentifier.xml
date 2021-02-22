@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div type="elementDocumentation" xml:id="objectIdentifier" xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- @type is always elementDocumentation 
+      @xml:id is the name of the element-->
+
+
+   <head type='DD'>
+      <!-- PREMIS Semantic unit 1.1 -->
+      <gi>objectIdentifier</gi>
+   </head>
+
+
+   <div type="fullName">
+      <p>objectIdentifier</p>
+         
+      
+   </div>
+
+
+   <div type="definition">
+      <!-- PREMIS Definition -->
+      <p xml:lang="en">A designation used to identify the Object uniquely within the preservation
+         repository system in which it is stored.</p>
+   </div>
+
+
+   <div type="rationale">
+      <!-- PREMIS Rationale -->
+      <p xml:lang="en">Description you can use <gi>to_get_anglebrackets</gi></p>
+      <p>Each Object held in the preservation repository must have a unique identifier to allow
+         other entities to refer to it and to relate it to descriptive, technical, and other
+         metadata unambiguously.</p>
+   </div>
+
+
+   <div type="usagenotes">
+      <!-- PREMIS Usage notes -->
+      <p xml:lang="en">The objectIdentifier is mandatory for all Objects stored.</p>
+
+      <p>The objectIdentifier is repeatable in order to allow both repository assigned and
+         externally-assigned identifiers to be recorded. See “Creation/Maintenance” note above.</p>
+
+      <p>Primary identifiers must be unique within the repository. They may be preexisting, and in
+         use in other digital object management systems. Ideally, secondary identifiers should also
+         be unique but sometimes this is not possible (e.g., if the values are inherited from a
+         legacy system which did not enforce this or only identified items at a higher level).
+         Identifiers for each item must be sufficient to identify the item uniquely at the
+         appropriate level of aggregation. For example, an Intellectual Entity that represents all
+         books in the same edition could use an ISBN but this would be insufficient to identify a
+         particular copy of that book.</p>
+
+      <p>A preservation repository needs to know both the type of object identifier and the value.
+         If the value itself contains the identifier type (e.g., “oai:lib.uchicago.edu:1”), the
+         identifier type does not need to be recorded explicitly. Similarly, if the repository uses
+         only one type of identifier, the type can be assumed and does not need to be recorded.</p>
+   </div>
+
+
+   <div type="datatype">
+      <!-- PREMIS Data constraint -->
+      <p>Container.</p>
+   </div>
+
+   <div type="semanticcomponents">
+      <!-- PREMIS Semantic components -->
+      <p>objectIdentifierType, objectIdentifierValue</p>
+   </div>
+   <div type="entity">
+      
+      <p>
+         <!-- PREMIS Intellectual Entity / Representation -->
+         <list type="simple">
+            <head>Intellectual Entity / Representation</head>
+            <label>Applicability</label>
+            <item>Applicable</item>
+            <label>Obligation</label>
+            <item>Mandatory</item>
+            <label>Repeatability</label>
+            <item>Repeatable</item>
+            <label>Example</label>
+            <item>IE / Representation example</item>
+         </list>
+      </p>
+      <p>
+         <list type="simple">
+            <head>PREMIS File</head>
+            <label>Applicability</label>
+            <item>Applicable</item>
+            <label>Obligation</label>
+            <item>Mandatory</item>
+            <label>Repeatability</label>
+            <item>Repeatable</item>
+            <label>Example</label>
+            <item>File example</item>
+         </list>
+      </p>
+      <p>
+         <list type="simple">
+            <head>PREMIS Bitstream</head>
+            <label>Applicability</label>
+            <item>Applicable</item>
+            <label>Obligation</label>
+            <item>Mandatory</item>
+            <label>Repeatability</label>
+            <item>Repeatable</item>
+            <label>Example</label>
+            <item>Bitstream example</item>
+         </list>
+      </p>
+   </div>
+
+
+
+         
+   <div type="creationmaintenance">
+            <!-- PREMIS Creation / Maintenance -->
+            <p xml:lang="en">An identifier may be created by the repository system at the time of
+               ingest, or it may be created or assigned outside of the repository and submitted with
+               an object as metadata. Similarly, identifiers can be generated automatically or
+               manually. </p>
+         </div>
+</div>

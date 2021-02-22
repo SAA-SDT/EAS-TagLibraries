@@ -31,6 +31,13 @@ A running changelog has been added to the end of the EAD3 tag library.  This sec
 
 The purpose of the changelog is to provide a running list of changes made to the standard since 1.0.0.  Readers of the tag library can refer to the changelog for historic information on the text, as well as having the most recent changes enumerated in one place.
 
+## Generating the Tag Libraries
+
+The tag library deliverables (PDF and HTML) are generated via XSLT transformations run over the TEI documents.  The generation process can be run by opening a command line in the `build` directory and running the following:
+
+Linux/OSX: `sh generate_tag_libraries.sh (eac ead premis) path/to/tei.xml`
+Windows: `generate_tag_libraries.bat (eac ead premis) path\to\tei.xml`
+
 ## Checklist
 
 Before submitting a pull request to the [tag library repository](https://github.com/SAA-SDT/EAS-TagLibraries), verify that the following changes have been made:
@@ -39,4 +46,5 @@ Before submitting a pull request to the [tag library repository](https://github.
 2. "Preface to Version x.y.z" has been added for the current version
 3. "(revised in x.y.z)" notes have been added to all instances across the tag library in which a changed attribute/element are listed
 4. Last version’s "(revised in x.y.z)" notes have been removed across the text
-5. PDF and HTML documents have been generated from the revised TEI document
+5. Appropriate variables and namespaces have been set in the transformation XSLT documents
+6. PDF and HTML documents have been generated from the revised TEI document
