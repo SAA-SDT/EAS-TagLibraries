@@ -58,7 +58,7 @@
             <byline>Prepared and maintained by the</byline>
             <docAuthor>Technical Subcommittee for Encoded Archival Standards of the Society of
                American Archivists</docAuthor>
-            <docAuthor>and the Staatsbibliotech zu Berlin</docAuthor>
+            <docAuthor>and the Staatsbibliothek zu Berlin</docAuthor>
             <docImprint>
                <docDate>Date of the document</docDate>
             </docImprint>
@@ -439,8 +439,7 @@
                <div type="attributeusage">
                   <list type="simple">
                      <item>Use <att>status</att> with the value "authorized" or "alternative" to
-                        declare whether the <gi>agencyCode</gi> is using an authorized or
-                        alternative value.</item>
+                        declare whether the <gi>agencyCode</gi> is using an authorized value, e.g. a registered ISIL code, or an alternative one.</item>
                   </list>
                </div>
                <div type="seealso">
@@ -604,7 +603,7 @@
                   <p>Alternative Set</p>
                </div>
                <div type="summary">
-                  <p>A container for two or more authority records derived from two or more authority systems, expressed within a single EAC-CPF instance.</p>
+                  <p>A container for one or more authority records derived from one or more authority systems, expressed within a single EAC-CPF instance.</p>
                </div>
                <div type="mayContain">
                   <p>setComponent (1..n)</p>
@@ -637,7 +636,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>alternativeSet</gi> is a container element for two or more authority records derived from two or more alternative systems. Authority record aggregation may be used in cooperative or consortial contexts that gather together records describing the same CPF entity in different languages, from different rules, or from different contexts, when it is desirable to provide users with alternative descriptions of the same entity. For example in the context of the European Union, an international cooperative project may want to provide users the option of storing descriptions in Italian, French, German, English, Spanish, and on other European languages.</p>
+                  <p><gi>alternativeSet</gi> is a container element for one or more authority records derived from one or more alternative systems. Authority record aggregation may be used in cooperative or consortial contexts that gather together records describing the same CPF entity in different languages, from different rules, or from different contexts, when it is desirable to provide users with alternative descriptions of the same entity. For example in the context of the European Union, an international cooperative project may want to provide users the option of storing descriptions in English, French, German, Italian, Spanish, and in other European languages.</p>
                   <p>Alternative authority records are contained within the required <gi>setComponent</gi> child elements. This approach allows different descriptions of the same CPF entity to be contained within a single EAC-CPF instance.</p>
                </div>
                <div type="seealso">
@@ -731,11 +730,11 @@
                   <gi>chronItem</gi>
                </head>
                <div type="fullName">
-                  <p>Chronology List Item</p>
+                  <p>Chronology Item</p>
                </div>
                <div type="summary">
                   <p>A required element within <gi>chronList</gi> that pairs a date with one or more
-                     events and zero or more place names within a chronology list.</p>
+                     events and zero or more places within a chronology list.</p>
                </div>
                <div type="mayContain">
                   <p>chronItemSet (0..n), date or dateRange or dateSet (1..1), event (1..1), place
@@ -778,8 +777,7 @@
                      ranges.</p>
                   <p>An optional <gi>place</gi> element may be used alongside <gi>event</gi> to
                      detail a place that is relevant to the chronology item.</p>
-                  <p><gi>chronItemSet</gi> can be used to record multiple events or place names
-                     within a single <gi>chronItem</gi>.</p>
+                  <p><gi>chronItemSet</gi> can be used to record multiple events or places within a single <gi>chronItem</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
@@ -1037,7 +1035,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>componentEntry</gi> is used within <gi>setComponent</gi> to provide a textual note about the EAC-CPF instance that is being bundled together with other authority records for the same entity within an <gi>alternativeSet</gi> wrapper. The bundled alternative records for a given EAC-CPF entity may be in difference languages or come from different authority systems. The bundling allows them to be transmitted or stored together. The <gi>componentEntry</gi> element provides a place where a particular alternative record can be described or explained in relation to the other authority records.</p>
+                  <p><gi>componentEntry</gi> is used within <gi>setComponent</gi> to provide a textual note about the EAC-CPF instance that is being bundled together with other authority records for the same entity within an <gi>alternativeSet</gi> wrapper. The bundled alternative records for a given EAC-CPF entity may be in different languages or come from different authority systems. The bundling allows them to be transmitted or stored together. The <gi>componentEntry</gi> element provides a place where a particular alternative record can be described or explained in relation to the other authority records.</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
@@ -1218,13 +1216,13 @@
                         <label>base</label>
                         <item>Optional</item>
                         <label>countryEncoding</label>
-                        <item>Optional</item>
+                        <item>Optional (values limited to: iso3166-1, otherCountryEncoding)</item>
                         <label>dateEncoding</label>
-                        <item>Optional</item>
+                        <item>Optional (values limited to: iso8601, otherDateEncoding)</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageEncoding</label>
-                        <item>Optional</item>
+                        <item>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2b, iso639-3, otherLanguageEncoding)</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
                         <label>maintenanceStatus</label>
@@ -1233,9 +1231,9 @@
                         <label>publicationStatus</label>
                         <item>Optional (values limited to: approved, inProcess, published)</item>
                         <label>repositoryEncoding</label>
-                        <item>Optional</item>
+                        <item>Optional (values limited to: iso15511, otherRepositoryEncoding)</item>
                         <label>scriptEncoding</label>
-                        <item>Optional</item>
+                        <item>Optional (values limited to: iso15924, otherScriptEncoding)</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
                         <label>target</label>
@@ -1258,7 +1256,7 @@
                   <p>There are optional elements available to declare languages, rules, conventions
                      and sources used in the EAC-CPF instance. Other control elements considered
                      necessary but not otherwise included may be given in the <gi>localControl</gi>
-                     element.</p>
+                     element. Similarly, local types for certain elements used throughout the EAC-CPF instance are recommended to be defined in the <gi>localTypeDeclaration</gi> element</p>
                   <p>The available child elements (both required and optional), in their prescribed order, are:</p>
                   <list type="simple">
                      <item><gi>recordId</gi> - Required. Contains the unique identifier for the
@@ -1426,12 +1424,12 @@
                <div type="description">
                   <p><gi>cpfDescription</gi> contains the description of one identity.</p>
                   <p>The <gi>cpfDescription</gi> includes a required <gi>identity</gi> element
-                     containing authorized or parallel name entries. It also includes the optional
+                     containing the entity type and authorized or alternative name entries. It also includes the optional
                         <gi>description</gi> and <gi>relations</gi> elements that provide contextual
                      information about the CPF entity being described, including the relations to
                      other corporate bodies, persons, families, resources, and functions.</p>
-                  <p>An optional <gi>alternativeSet</gi> element allows the incorporation of two or
-                     more authority records derived from two or more authority systems.</p>
+                  <p>An optional <gi>alternativeSet</gi> element allows the incorporation of one or
+                     more authority records derived from one or more authority systems.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                      <list type="simple">
                         <item><gi>identity</gi></item>
@@ -1467,7 +1465,7 @@
                </div>
                <div type="summary">
                   <p>The single date of an event in the history of the person, family, or corporate
-                     body being described.</p>
+                     body being described, or in  their relationship to, e.g., a name entry, a place, an occupation, another CPF enity, a resource, or a function.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -1516,7 +1514,7 @@
                </div>
                <div type="description">
                   <p>An element for expressing the single date of an event in the history of the
-                     person, corporate body or family being described.</p>
+                     person, corporate body or family being described, or in  their relationship to, e.g., a name entry, a place, an occupation, another CPF enity, a resource, or a function.</p>
                   <p>The content of the element is intended to be a human-readable natural language
                      date with a machine-readable date provided as the value of the
                         <att>standardDate</att> attribute, formulated according to ISO 8601.</p>
@@ -1532,11 +1530,11 @@
                <div type="attributeusage">
                   <list type="simple">
                      <item>Use <att>certainty</att> to indicate the degree of precision in the
-                        dating, for example, "circa," "approximately," or "after."</item>
+                        dating, for example, "uncertain" or "approximate".</item>
                      <item>Use <att>localType</att> to supply a more specific characterization of
                         the date.</item>
-                     <item>Use <att>notAfter</att> and <att>notBefore</att> to capture the earliest
-                        and latest possible dates in machine-processable form in cases when the date
+                     <item>Use <att>notAfter</att> and <att>notBefore</att> to capture the latest
+                        and earliest possible dates in machine-processable form in cases when the date
                         is uncertain.</item>
                      <item>Use <att>standardDate</att> to provide a machine-processable form of the
                         date.</item>
@@ -1547,13 +1545,11 @@
                         <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>:
                      one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not
                      repeatable</p>
-                  <p>Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
+                  <p>Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
                         <gi>dateRange</gi>, or <gi>dateSet</gi> required, not repeatable</p>
                   <p>Within <gi>dateSet</gi>: at least two of <gi>date</gi> and/or
                         <gi>dateRange</gi> required, repeatable</p>
-                  <p>Within <gi>chronItem</gi>: one of <gi>date</gi> or <gi>dateRange</gi> required,
-                     not repeatable</p>
-                  <p>Within <gi>localControl</gi>: one of <gi>dateRange</gi> or <gi>date</gi>
+                  <p>Within <gi>localControl</gi>: one of <gi>date</gi> or <gi>dateRange</gi>
                      optional, not repeatable</p>
                </div>
                <div type="examples">
@@ -1571,7 +1567,7 @@
                </div>
                <div type="summary">
                   <p>A wrapper element for binding together <gi>fromDate</gi> and <gi>toDate</gi> in
-                     order to represent a range of dates.</p>
+                     order to represent a range of dates. Either <gi>fromDate</gi> or <gi>toDate</gi> must be present within a <gi>dateRange</gi>, but it is recommended to use both child elements whenever possible.</p>
                </div>
                <div type="mayContain">
                   <p>fromDate (0..1), toDate (0..1)</p>
@@ -1612,9 +1608,9 @@
                      EAC-CPF instance.</p>
                   <p><gi>dateRange</gi> contains <gi>fromDate</gi> and/or <gi>toDate</gi>, and
                      therefore may express a range of dates as a starting point with no end point, a
-                     start and end point, or an end point with no starting point. The content of the
-                     children of <gi>dateRange</gi> is intended to be a human-readable, natural
-                     language expression of the date. If, however, indexing or other machine
+                     start and end point, or an end point with no starting point. Either <gi>fromDate</gi> or <gi>toDate</gi> must be present within a <gi>dateRange</gi>, but it is recommended to use both child elements whenever possible.</p>
+					 <p>The content of the children of <gi>dateRange</gi> is intended to be a human-readable, natural
+                     language expression of the dates. If, however, indexing or other machine
                      processing of dates is desired, <att>standardDate</att> should be used on the
                      children of <gi>dateRange</gi> to record the date in machine-processable form
                      as well.</p>
@@ -1640,13 +1636,11 @@
                         <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>:
                      one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not
                      repeatable</p>
-                  <p>Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
+                  <p>Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>,
                         <gi>dateRange</gi>, or <gi>dateSet</gi> required, not repeatable</p>
                   <p>Within <gi>dateSet</gi>: at least two of <gi>date</gi> and/or
                         <gi>dateRange</gi> required, repeatable</p>
-                  <p>Within <gi>chronItem</gi>: one of <gi>date</gi> or <gi>dateRange</gi> required,
-                     not repeatable</p>
-                  <p>Within <gi>localControl</gi>: one of <gi>dateRange</gi> or <gi>date</gi>
+                  <p>Within <gi>localControl</gi>: one of <gi>date</gi> or <gi>dateRange</gi>
                      optional, not repeatable</p>
                </div>
                <div type="examples">
@@ -1703,7 +1697,7 @@
                   <p><gi>dateSet</gi> binds together single dates and date ranges, multiple single
                      dates, or multiple date ranges. <gi>dateSet</gi> is used in situations where
                      complex date information needs to be conveyed and requires at least two child
-                     elements. These can be a combination of <gi>date</gi> and
+                     elements. These can be any combination of <gi>date</gi> and
                      <gi>dateRange</gi>.</p>
                </div>
                <div type="availability">
@@ -1884,6 +1878,7 @@
                      authority record encoded with the EAC-CPF XML Schema.</p>
                   <p><gi>eac</gi> must contain <gi>control</gi> followed by either a <gi>cpfDescription</gi>
                      or a <gi>multipleIdentities</gi> element.</p>
+					<p>In order to validate an EAC-CPF instance, it is highly recommended to include according information about the EAC-CPF namespace and the EAC-CPF schema location.</p>
                </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
@@ -1936,6 +1931,11 @@
                         of the values "corporateBody", "family", or "person" to identify the type of entity.</item>
                   </list>
                </div>
+			   <div type="seealso">
+				   <list type="simple">
+						<item>Use <gi>otherEntityType</gi> to encode additional or alternative entity types, such as a translation or a specification of the default entity types.</item>
+				   </list>
+			   </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
@@ -1999,10 +1999,10 @@
                   <p><gi>event</gi> contains discursive text identifying the event described by the
                         <gi>chronItem</gi> or <gi>chronItemSet</gi>. <gi>chronItem</gi> must include
                      one of either <gi>event</gi> or <gi>chronItemSet</gi>. <gi>chronItemSet</gi>
-                     must include one or more <gi>event</gi>.</p>
+                     must include one or more <gi>event</gi> elements.</p>
                   <p>Every <gi>event</gi> must have date(s) (<gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi>) associated with it. It may also have optional
-                        <gi>placeName</gi> element associated with it.</p>
+                        <gi>place</gi> element associated with it.</p>
                </div>
                <div type="availability">
                   <p>Within <gi>chronItem</gi>: One of <gi>chronItemSet</gi> or <gi>event</gi> required, not
@@ -2055,7 +2055,7 @@
                      is for recording the date and time that a maintenance event occurred. Examples
                      of maintenance events include the creation, update, revision, or other
                      modification to an EAC-CPF instance.</p>
-                  <p>The date and time may be captured in natural language in the element.</p>
+                  <p>The date and time may be captured in natural language in the element. It is highly recommended to provide at least a human-readable date in <gi>eventDateTime</gi> directly or a machine-processable date in <att>standardDateTime</att>, in case it is not possible to provide both.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
@@ -2269,11 +2269,11 @@
                <div type="attributeusage">
                   <list type="simple">
                      <item>Use <att>certainty</att> to indicate the degree of precision in the
-                        dating, for example, "circa," "approximately," or "after."</item>
+                        dating, for example, "uncertain" or "approximate".</item>
                      <item>Use <att>localType</att> to supply a more specific characterization of
                         the start date.</item>
-                     <item>Use <att>notAfter</att> and <att>notBefore</att> to capture the earliest
-                        and latest possible dates in machine-processable form in cases when the date
+                     <item>Use <att>notAfter</att> and <att>notBefore</att> to capture the latest
+                        and earliest possible dates in machine-processable form in cases when the date
                         is uncertain.</item>
                      <item>Use <att>standardDate</att> to provide a machine-processable form of the
                         date.</item>
@@ -2367,6 +2367,9 @@
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
+			   <div type="seealso">
+					<list type="simple">Use <gi>relation</gi> with <gi>targetEntity targetType="function"</gi> when describing the relationship between the function and the CPF entity being described in more detail.</list>
+			   </div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
@@ -6213,11 +6216,11 @@
                <div type="attributeusage">
                   <list type="simple">
                      <item>Use <att>certainty</att> to indicate the degree of precision in the
-                        dating, for example, "circa," "approximately," or "after."</item>
+                        dating, for example, "uncertain" or "approximate".</item>
                      <item>Use <att>localType</att> to supply a more specific characterization of
                         the start date.</item>
-                     <item>Use <att>notAfter</att> and <att>notBefore</att> to capture the earliest
-                        and latest possible dates in machine-processable form in cases when the date
+                     <item>Use <att>notAfter</att> and <att>notBefore</att> to capture the latest
+                        and earliest possible dates in machine-processable form in cases when the date
                         is uncertain.</item>
                      <item>Use <att>standardDate</att> to provide a machine-processable form of the
                         date.</item>
