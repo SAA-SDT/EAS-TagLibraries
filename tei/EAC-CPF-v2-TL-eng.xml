@@ -8,7 +8,7 @@
          <titleStmt>
             <title xml:lang="eng" type="main">Encoded Archival Context - Corporate Bodies, Persons,
                and Families (EAC-CPF) <lb/> Tag Library</title>
-            <title xml:lang="eng" type="additional">Version EAC-CPF 2.0</title>
+            <title xml:lang="eng" type="additional">draft Version EAC-CPF 2.0</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
                <name>Technical Subcommittee for Encoded Archival Standard of the Society of American
@@ -52,7 +52,7 @@
             <docTitle>
                <titlePart type="main">Encoded Archival Context - Corporate Bodies, Persons, and
                   Families (EAC-CPF) <lb/> Tag Library</titlePart>
-               <titlePart type="additional">Version EAC-CPF 2.0</titlePart>
+               <titlePart type="additional">draft Version EAC-CPF 2.0</titlePart>
             </docTitle>
             <docEdition>2021 Edition</docEdition>
             <byline>Prepared and maintained by the</byline>
@@ -66,7 +66,7 @@
          <div>
             <div xml:id="release">
                <head>Release and Revision Notes</head>
-               <p>This is the first release of the Tag Library for EAC-CPF 2.0. The current release
+               <p>This is the draft release of the Tag Library for EAC-CPF 2.0. The current release
                   includes changes and updates in the schema undertaken by the Technical
                   Subcommittee on Encoded Archival Standards reflecting comments received by the
                   international community of professionals. </p>
@@ -5497,8 +5497,7 @@
                   <p>Relation Type</p>
                </div>
                <div type="summary">
-                  <p>A child element of <gi>relation</gi> used to specify the type of relation that
-                     the <gi>targetEntity</gi> has to the entity being described.</p>
+                  <p>A child element of <gi>relation</gi> used to specify the type of relation that the entity being described within the EAC-CPF instance has to the <gi>targetEntity</gi>.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -5540,7 +5539,7 @@
                </div>
                <div type="description">
                   <p>Use <gi>relationType</gi> within <gi>relation</gi> to specify the type of
-                     relation that the <gi>targetEntity</gi> has to the entity being described.</p>
+                     relation that the entity being described has to the <gi>targetEntity</gi>.</p>
                   <p>The <gi>relationType</gi> element contains a textual description of the
                      relation. It is recommended that values used in <gi>relationType</gi> be taken
                      from an authorized vocabulary.
