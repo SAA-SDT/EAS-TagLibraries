@@ -18,6 +18,7 @@
 
     <!-- variables passed from the build script to the XSLT -->
     <xsl:param name="SAA" as="xs:string" required="yes"/>
+    <xsl:param name="ISBN" as="xs:string" required="yes"/>
 
     <xsl:output indent="yes"/>
     <!-- Used for inserting SAA logo or not Values: yes | no -->
@@ -418,7 +419,7 @@
             </fo:table>
         </fo:block>
         <fo:block padding-before=".5cm">
-            <xsl:value-of select="$TheWholeDocument/tei:publicationStmt/tei:idno"/>
+            <xsl:value-of select="$ISBN"/>
         </fo:block>
         <fo:block page-break-after="always"/>
     </xsl:template>
