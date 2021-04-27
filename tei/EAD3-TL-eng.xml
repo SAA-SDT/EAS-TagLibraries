@@ -1627,7 +1627,7 @@
                <div type="fullName">
                   <p>Mark</p>
                </div>
-               <div type="values">
+               <div type="summary">
                   <p>For lists with a <att>listtype</att> value "unordered," <att>mark</att> may be used to indicate the character to be used in marking each list entry. Values are drawn from the CSS "list-style-type"
                      property list.</p>
                </div>
@@ -2389,7 +2389,7 @@
                   <p>Script Code</p>
                </div>
                <div type="summary">
-                  <p>The code for the writing script used with a given language. Content should be taken from ISO 15924 Codse for the Representation of Names of Scripts, or another controlled list, as specified in the
+                  <p>The code for the writing script used with a given language. Content should be taken from ISO 15924 Codes for the Representation of Names of Scripts, or another controlled list, as specified in the
                         <att>scriptencoding</att> attribute in <gi>control</gi>. Available in <gi>script</gi>.</p>
                </div>
                <div type="datatype">
@@ -2820,7 +2820,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p>abstract, addressline, archref, author, bibref, citation, container, conventiondeclaration, date, datesingle, didnote, dimensions, edition, emph, entry, event, fromdate, head, head01, head02, head03,
-                     item, label, localtypedeclaration, materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, ref, sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
+                     item, label, localtypedeclaration, materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, ref, rightsdeclaration, sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
                </div>
                <div type="attributes">
                   <p>
@@ -4442,7 +4442,7 @@
                   <gi>c</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (unnumbered)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a subordinate part of the materials being described.</p>
@@ -4540,7 +4540,7 @@
                   <gi>c01</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (first level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates the top or first-level subordinate part of the materials.</p>
@@ -4649,7 +4649,7 @@
                   <gi>c02</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (second level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a second-level subordinate part of the materials.</p>
@@ -4720,7 +4720,7 @@
                   <gi>c03</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (third level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a third-level subordinate part of the materials.</p>
@@ -4791,7 +4791,7 @@
                   <gi>c04</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (fourth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a fourth-level subordinate part of the materials.</p>
@@ -4862,7 +4862,7 @@
                   <gi>c05</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (fifth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a fifth-level subordinate part of the materials.</p>
@@ -4933,7 +4933,7 @@
                   <gi>c06</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (sixth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a sixth-level subordinate part of the materials.</p>
@@ -5004,7 +5004,7 @@
                   <gi>c07</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (seventh level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a seventh-level subordinate part of the materials.</p>
@@ -5075,7 +5075,7 @@
                   <gi>c08</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (eighth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates an eighth-level subordinate part of the materials.</p>
@@ -5138,7 +5138,7 @@
                   <gi>c09</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (ninth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a ninth-level subordinate part of the materials.</p>
@@ -5205,7 +5205,7 @@
                   <gi>c10</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (10th level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a tenth-level subordinate part of the materials.</p>
@@ -5272,7 +5272,7 @@
                   <gi>c11</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (11th level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates an eleventh-level subordinate part of the materials.</p>
@@ -5339,7 +5339,7 @@
                   <gi>c12</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (12th level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a twelfth-level subordinate part of the materials.</p>
@@ -9798,7 +9798,7 @@
                            <ead:name>
                               <ead:part>12th Air Force Photo</ead:part>
                            </ead:name>
-                           <ead:ref target="LOT13105" actuate="onrequest" show="replace">&gt;LOT 13105</ead:ref>
+                           <ead:ref target="LOT13105" actuate="onrequest" show="replace">LOT 13105</ead:ref>
                         </ead:indexentry>
                         <ead:indexentry>
                            <ead:name>
@@ -14587,6 +14587,9 @@
                      <item>Use <gi>otherrecordid</gi> to provide any local identifier for the EAD instance that does not link to a deliverable version.</item>
                   </list>
                </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
                      <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
@@ -15127,6 +15130,8 @@
                         <item>Optional</item>
                         <label>lang</label>
                         <item>Optional</item>
+                        <label>lastdatetimeverified</label>
+                        <item>Optional (must follow pattern based on ISO 8601)</item>
                         <label>linkrole</label>
                         <item>Optional</item>
                         <label>linktitle</label>
@@ -15298,8 +15303,6 @@
                         <item>Optional</item>
                         <label>lang</label>
                         <item>Optional</item>
-                        <label>lastdatetimeverified</label>
-                        <item>Optional (must follow pattern based on ISO 8601)</item>
                         <label>localtype</label>
                         <item>Optional</item>
                         <label>script</label>
