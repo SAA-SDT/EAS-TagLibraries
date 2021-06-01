@@ -9859,7 +9859,7 @@
                            <ead:name>
                               <ead:part>12th Air Force Photo</ead:part>
                            </ead:name>
-                           <ead:ref target="LOT13105" actuate="onrequest" show="replace">&gt;LOT 13105</ead:ref>
+                           <ead:ref target="LOT13105" actuate="onrequest" show="replace">LOT 13105</ead:ref>
                         </ead:indexentry>
                         <ead:indexentry>
                            <ead:name>
