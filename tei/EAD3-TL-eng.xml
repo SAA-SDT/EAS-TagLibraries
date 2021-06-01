@@ -2859,7 +2859,7 @@
                   </list>
                </div>
                <div type="availability">
-                  <p>Within <gi>conventiondeclaration</gi>: Optional, not repeatable </p>
+                  <p>Within <gi>control</gi>: Optional, not repeatable </p>
                   <p>Within other elements: Optional, repeatable</p>
                </div>
                <div type="examples">
