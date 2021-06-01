@@ -645,7 +645,7 @@
                                  </ead:row>
                               </ead:thead>
                               <ead:tbody>
-                                 <!-- [...] -->
+                                 [...]
                               </ead:tbody>
                            </ead:tgroup>
                         </ead:table>
@@ -684,7 +684,7 @@
                                  </ead:row>
                               </ead:thead>
                               <ead:tbody>
-                                 <!-- [...] -->
+                                  [...]
                               </ead:tbody>
                            </ead:tgroup>
                         </ead:table>
