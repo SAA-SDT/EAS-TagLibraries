@@ -1530,7 +1530,7 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>chronItem, dateSet, existDates, function, legalStatus, localControl,
+                  <p>chronItem, dateSet, demographicDescription, existDates, function, legalStatus, localControl,
                      localDescription, mandate, occupation, otherEntityType, place, relation,
                      useDates</p>
                </div>
@@ -1605,7 +1605,7 @@
                   </list>
                </div>
                <div type="availability">
-                  <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
+                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
                         <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>,
                         <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>,
                      or <gi>dateSet</gi> optional, not repeatable</p>
@@ -1640,7 +1640,7 @@
                   <p>fromDate (0..1), toDate (0..1)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>chronItem, dateSet, existDates, function, legalStatus, localControl,
+                  <p>chronItem, dateSet, demographicDescription, existDates, function, legalStatus, localControl,
                      localDescription, mandate, occupation, otherEntityType, place, relation,
                      useDates</p>
                </div>
@@ -1703,7 +1703,7 @@
                   </list>
                </div>
                <div type="availability">
-                  <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
+                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
                         <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>,
                         <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>,
                      or <gi>dateSet</gi> optional, not repeatable</p>
@@ -1736,7 +1736,7 @@
                   <p>date or dateRange (2..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>chronItem, existDates, function, legalStatus, localDescription, mandate,
+                  <p>chronItem, demographicDescription, existDates, function, legalStatus, localDescription, mandate,
                      occupation, otherEntityType, place, relation, useDates</p>
                </div>
                <div type="attributes">
@@ -1773,13 +1773,148 @@
                      <gi>dateRange</gi>.</p>
                </div>
                <div type="availability">
-                  <p>Within <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
+                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
                         <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>,
                         <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>,
                      or <gi>dateSet</gi> optional, not repeatable</p>
                   <p>Within <gi>chronItem</gi>, <gi>existDates</gi>, <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
+               </div>
+            </div>
+            <div type="elementDocumentation" xml:id="elem-demographicDescription">
+               <head>
+                  <gi>demographicDescription</gi>
+               </head>
+               <div type="fullName">
+                  <p>Demographic Description</p>
+               </div>
+               <div type="summary">
+                  <p>A required child element of <gi>demographicDescriptions</gi> that can be used to provide demographic intformation about the CPF entity being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..n), placeName (0..n), term (1..n)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>demographicDescriptions</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>demographicDescription</gi> is a wrapper element used to encode an index term, using the required child element <gi>term</gi>.</p>
+                  <p>Terms are used within <gi>demographicDescription</gi> to encode demographic information about the CPF entity being described. This could include, but is not limited to, nationality, gender, age group, or religion. They may be drawn from controlled vocabularies or may be natural language terms.</p>
+                  <p><gi>demographicDescription</gi> must include at least one <gi>term</gi> element. <gi>term</gi> can be repeated within <gi>demographicDescription</gi> to include translations of the same term. Use the <att>languageOfElement</att> attribute to identify the language used in each <gi>term</gi>.</p>
+                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and place(s) (<gi>placeName</gi>) may be included to further constrain the term's meaning. A <gi>descriptiveNote</gi> may be included if a fuller textual explanation is needed.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                     <list type="simple">
+                        <item><gi>term</gi></item>
+                        <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                        <item><gi>placeName</gi></item>
+                        <item><gi>descriptiveNote</gi></item>
+                     </list>
+               </div>
+               <div type="availability">
+                  <p>Required, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
+               </div>
+            </div>
+            <div type="elementDocumentation" xml:id="elem-demographicDescriptions">
+               <head>
+                  <gi>demographicDescriptions</gi>
+               </head>
+               <div type="fullName">
+                  <p>Demographic Descriptions</p>
+               </div>
+               <div type="summary">
+                  <p>An optional child element of <gi>description</gi> used to group together one or more <gi>demographicDescription</gi> elements.</p>
+               </div>
+               <div type="mayContain">
+                  <p>demographicDescription (1..n), descriptiveNote (0..1)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>description</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use the optional <gi>demographicDescriptions</gi> element to group together one or more occurrences of <gi>demographicDescription</gi>. <gi>demographicDescriptions</gi> must include at least one <gi>demographicDescription</gi> element.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item><gi>demographicDescription</gi></item>
+                     <item><gi>descriptiveNote</gi></item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1800,7 +1935,7 @@
                      information about the CPF entity.</p>
                </div>
                <div type="mayContain">
-                  <p>biogHist (0..n), existDates (0..n), functions (0..1), generalContext (0..n),
+                  <p>biogHist (0..n), demographicDescriptions (0..1), existDates (0..n), functions (0..1), generalContext (0..n),
                      languagesUsed (0..1), legalStatuses (0..1), localDescriptions (0..1), mandates
                      (0..1), occupations (0..1), places (0..1), structureOrGenealogy (0..n)</p>
                </div>
@@ -1876,7 +2011,7 @@
                   <p>p (1..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>conventionDeclaration, existDates, function, functions, identity,
+                  <p>conventionDeclaration, demographicDescription, demographicDescriptions, existDates, function, functions, identity,
                      languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses,
                      localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency,
                      mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes,
@@ -2730,8 +2865,7 @@
                      names related to the identity being described within the EAC-CPF instance.</p>
                </div>
                <div type="mayContain">
-                  <p>descriptiveNote (0..1), entityType (1..1), identityId (0..n), nameEntry or
-                     nameEntrySet (1..n), otherEntityTypes (0..n)</p>
+                  <p>descriptiveNote (0..1), entityType (1..1), identityId (0..n), nameEntry or nameEntrySet (1..n), otherEntityTypes (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>cpfDescription</p>
@@ -4998,7 +5132,7 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>function, legalStatus, localDescription, mandate, occupation, otherEntityType,
+                  <p>demographicDescription, function, legalStatus, localDescription, mandate, occupation, otherEntityType,
                      place</p>
                </div>
                <div type="attributes">
@@ -6246,7 +6380,7 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>function, legalStatus, localControl, localDescription, mandate, occupation,
+                  <p>demographicDescription, function, legalStatus, localControl, localDescription, mandate, occupation,
                      otherEntityType</p>
                </div>
                <div type="attributes">
