@@ -872,10 +872,6 @@
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
                         <label>maintenanceEventReference</label>
                         <item>Optional</item>
                         <label>scriptOfElement</label>
@@ -1197,8 +1193,6 @@
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
-                        <label>lastDateTimeVerified</label>
-                        <item>Optional</item>
                         <label>linkRole</label>
                         <item>Optional</item>
                         <label>linkTitle</label>
@@ -1272,6 +1266,8 @@
                         <item>Optional (values limited to: iso3166-1, otherCountryEncoding)</item>
                         <label>dateEncoding</label>
                         <item>Optional (values limited to: iso8601, otherDateEncoding)</item>
+                        <label>detailLevel</label>
+                        <item>Optional (values limited to: basic, extended, minimal)</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageEncoding</label>
@@ -1569,6 +1565,8 @@
                         <item>Optional</item>
                         <label>standardDate</label>
                         <item>Optional</item>
+                        <label>status</label>
+                        <item>Optional (values limited to: unknown)</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
                         <label>target</label>
@@ -5291,8 +5289,6 @@
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
-                        <label>lastDateTimeVerified</label>
-                        <item>Optional</item>
                         <label>linkRole</label>
                         <item>Optional</item>
                         <label>linkTitle</label>
@@ -5588,8 +5584,6 @@
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
-                        <label>lastDateTimeVerified</label>
-                        <item>Optional</item>
                         <label>linkRole</label>
                         <item>Optional</item>
                         <label>linkTitle</label>
@@ -5733,8 +5727,6 @@
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
-                        <label>lastDateTimeVerified</label>
-                        <item>Optional</item>
                         <label>linkRole</label>
                         <item>Optional</item>
                         <label>linkTitle</label>
@@ -5860,8 +5852,6 @@
                         <label>href</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>lastDateTimeVerified</label>
                         <item>Optional</item>
                         <label>linkRole</label>
                         <item>Optional</item>
@@ -6798,6 +6788,24 @@
                      ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
                </div>
             </div>
+            <div type="attributeDocumentation" xml:id="attr-detailLevel">
+               <head>
+                  <att>detailLevel</att>
+               </head>
+               <div type="fullName">
+                  <p>Level of Detail</p>
+               </div>
+               <div type="summary">
+                  <p>An optional attribute within <gi>control</gi>, used to provide information about the level of detail of the entity's description, from a fixed set of values.  </p>
+               </div>
+               <div type="values">
+                  <p>basic, extended, minimal</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
+                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+               </div>
+            </div>
             <div type="attributeDocumentation" xml:id="attr-era">
                <head>
                   <att>era</att>
@@ -6950,30 +6958,6 @@
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
-               </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
-               </div>
-            </div>
-            <div type="attributeDocumentation" xml:id="attr-lastDateTimeVerified">
-               <head>
-                  <att>lastDateTimeVerified</att>
-               </head>
-               <div type="fullName">
-                  <p>Last Date and Time Verified</p>
-               </div>
-               <div type="summary">
-                  <p>Last date or last date and time the linked resource was verified. Verification
-                     may include link resolution as well as verification of the version of the
-                     linked object. Available in <gi>contactLine</gi>, <gi>reference</gi>,
-                        <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
-               </div>
-               <div type="datatype">
-                  <p>Constrained to the following patterns: YYYY-MM-DD, YYYY-MM, YYYY, or
-                     YYYY-MM-DDThh:mm:ss [with optional timezone offset from UTC in the form of
-                     [+|-][hh:mm], or "Z" to indicate the dateTime is UTC. No timezone implies the
-                     dateTime is UTC.]</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
@@ -7245,7 +7229,7 @@
                </div>
                <div type="summary">
                   <p>Attribute that specifies whether or not a <gi>nameEntry</gi> provides the
-                     preferred form of the name of the EAC-CPF entity.</p>
+                     preferred form of the name of the EAC-CPF entity for display purposes in a given context.</p>
                </div>
                <div type="values">
                   <p>false, true</p>
@@ -7444,7 +7428,7 @@
                <div type="values">
                   <p>Values in <gi>agencyCode</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>:
                      alternative, authorized</p>
-                  <p>Values in <gi>fromDate</gi>: unknown</p>
+                  <p>Values in <gi>date</gi>, <gi>fromDate</gi>: unknown</p>
                   <p>Values in <gi>toDate</gi>: unknown, ongoing</p>
                </div>
                <div type="examples">
