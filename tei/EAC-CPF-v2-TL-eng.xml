@@ -2,7 +2,7 @@
 <?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
    xmlns:exml="http://workaround for xml namespace restriction/namespace"
-   xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+   xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:eac="http://archivists.org/ns/eac/v2">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -258,7 +258,11 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:biogHist>
+                        <eac:abstract>Hubert H. Humphrey was born in Wallace, South Dakota (1911). He was elected Mayor of Minneapolis in 1945 and served until 1948. In November of 1948, he was elected to the United States Senate and he also served as the Senate Democratic Whip from 1961 to 1964 and in 1968, Humphrey was the Democratic Party's candidate for President, but he was defeated by Richard M. Nixon. </eac:abstract>
+                        <eac:p>Hubert H. Humphrey was born in Wallace, South Dakota, on May 27, 1911. He left South Dakota to attend the University of Minnesota but returned to South Dakota to help manage his father's drug store early in the depression. He attended the Capitol College of Pharmacy in Denver, Colorado, and became a register pharmacist in 1933. On September 3, 1936, Humphrey married Muriel Fay Buck. He returned to the University of Minnesota and earned a B.A. degree in 1939. In 1940 he earned an M.A. in political science from Louisiana State University and returned to Minneapolis to teach and pursue further graduate study, he began working for the W.P.A. (Works Progress Administration). He moved on from there to a series of positions with wartime agencies. In 1943, he ran unsuccessfully for Mayor of Minneapolis and returned to teaching as a visiting professor at Macalester College in St. Paul. Between 1943 and 1945 Humphrey worked at a variety of jobs. In 1945, he was elected Mayor of Minneapolis and served until 1948. In 1948, at the Democratic National Convention, he gained national attention when he delivered a stirring speech in favor of a strong civil rights plank in the party's platform. In November of 1948, Humphrey was elected to the United States Senate. He served as the Senate Democratic Whip from 1961 to 1964.</eac:p>
+                        <eac:p>In 1964, at the Democratic National Convention, President Lyndon B. Johnson asked the convention to select Humphrey as the Vice Presidential nominee. The ticket was elected in November in a Democratic landslide. In 1968, Humphrey was the Democratic Party's candidate for President, but he was defeated narrowly by Richard M. Nixon. After the defeat, Humphrey returned to Minnesota to teach at the University of Minnesota and Macalester College. He returned to the U.S. Senate in 1971, and he won re-election in 1976. He died January 13, 1978 of cancer.</eac:p>
+                     </eac:biogHist>
                   </egXML>
                </div>
             </div>
@@ -763,7 +767,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:biogHist>
+                        <eac:abstract>Established in 1961, the United States Peace Corps administered and coordinated Federal international volunteer and related domestic volunteer programs in areas of agricultural assistance, community development, education, environmental protection, and nation assistance.</eac:abstract>
+                        <eac:p>The Peace Corps was established as an operating agency in the Department of State Delegation of Authority 85-11, effective March 3, 1961, pursuant to Executive Order (E.O.) 10924, March 1, 1961. It was recognized legislatively by the Peace Corps Act (75 Stat. 612), approved September 22, 1961. The Peace Corps was reassigned to the newly established ACTION by Reorganization Plan No. 1 of 1971, effective July 1, 1971. It was made autonomous within ACTION by E.O. 12137, May 16, 1979, and was made an independent agency by Title VI of the International Security and Development Corporation Act of 1981 (95 Stat. 1540), February 21, 1982. The Peace Corps administered and coordinated Federal international volunteer and related domestic volunteer programs including the areas of agricultural assistance, community development, education, environmental protection, and nation assistance.</eac:p>
+                     </eac:biogHist>
                   </egXML>
                </div>
             </div>
@@ -840,8 +847,33 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
-                  </egXML>
+                     <eac:chronList>
+                        <eac:chronItem>
+                           <eac:dateRange>
+                              <eac:fromDate standardDate="1944">1944</eac:fromDate>
+                              <eac:toDate standardDate="1947">1947</eac:toDate>
+                           </eac:dateRange>
+                           <eac:event>Summer employment at Minnesota Valley Canning Co.</eac:event>
+                           <eac:place>
+                              <eac:placeName>Blue Earth (Minn.)</eac:placeName>
+                           </eac:place>
+                        </eac:chronItem>
+                        <eac:chronItem>
+                           <eac:dateRange>
+                              <eac:fromDate standardDate="1946">1946</eac:fromDate>
+                              <eac:toDate standardDate="1948">1948</eac:toDate>
+                           </eac:dateRange>
+                           <eac:event>Macalester College</eac:event>
+                           <eac:place>
+                              <eac:placeName>St. Paul (Minn.)</eac:placeName>
+                           </eac:place>
+                        </eac:chronItem>
+                        <eac:chronItem>
+                           <eac:date standardDate="1948">1948</eac:date>
+                           <eac:event>Campaign Manager, 2nd District, State Democratic-Farmer-Labor Central Committee. Report to Orville Freeman.</eac:event>
+                        </eac:chronItem>
+                     </eac:chronList>
+                   </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-chronItemSet">
@@ -964,7 +996,30 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:chronList>
+                        <eac:chronItem>
+                           <eac:date standardDate="1936">1936</eac:date>
+                           <eac:event>Bachelor of Science (BSc) completed at the University of Sydney</eac:event>
+                        </eac:chronItem>
+                        <eac:chronItem>
+                           <eac:date standardDate="1937">1937</eac:date>
+                           <eac:event>Master of Science (MSc) completed at the University of Sydney</eac:event>
+                        </eac:chronItem>
+                        <eac:chronItem>
+                           <eac:dateRange>
+                              <eac:fromDate standardDate="1937">1937</eac:fromDate>
+                              <eac:toDate standardDate="1941">1941</eac:toDate>
+                           </eac:dateRange>
+                           <eac:event>Linnean Macleay Fellow</eac:event>
+                        </eac:chronItem>
+                        <eac:chronItem>
+                           <eac:dateRange>
+                              <eac:fromDate certainty="approximate" standardDate="1939">c. 1939</eac:fromDate>
+                              <eac:toDate certainty="approximate" standardDate="1945">c. 1945</eac:toDate>
+                           </eac:dateRange>
+                           <eac:event>Worked with Army Intelligence to map the vegetation (trees and undergrowth) in the coastal regions of New South Wales</eac:event>
+                        </eac:chronItem>
+                     </eac:chronList>
                   </egXML>
                </div>
             </div>
@@ -1430,7 +1485,16 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:conventionDeclaration id="cd1">
+                        <eac:reference href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033553530/">Décret n° 2016-1689 du 8 décembre 2016 fixant le nom, la composition et le
+                           chef-lieu des circonscriptions administratives régionales - Légifrance</eac:reference>
+                     </eac:conventionDeclaration>
+                     <eac:conventionDeclaration id="cd2">
+                        <eac:reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf">DELIBERATION N° 17-1166, 15 DECEMBRE 2017</eac:reference>
+                     </eac:conventionDeclaration>
+                     <eac:conventionDeclaration id="cd3">
+                        <eac:reference href="cnig.gouv.fr/wp-content/uploads/2015/03/CNT-site-collectivit%C3%A9s-fran%C3%A7aises.pdf">Commission nationale de toponymie: Collectivités territoriales françaises </eac:reference>
+                     </eac:conventionDeclaration>
                   </egXML>
                </div>
             </div>
@@ -1510,7 +1574,11 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:cpfDescription>
+                        <eac:identity>[...] </eac:identity>
+                        <eac:description>[...] </eac:description>
+                        <eac:relations>[...]</eac:relations>
+                     </eac:cpfDescription>
                   </egXML>
                </div>
             </div>
@@ -2226,7 +2294,33 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:chronList>
+                        <eac:chronItem>
+                           <eac:dateRange>
+                              <eac:fromDate standardDate="1944">1944</eac:fromDate>
+                              <eac:toDate standardDate="1947">1947</eac:toDate>
+                           </eac:dateRange>
+                           <eac:event>Summer employment at Minnesota Valley Canning Co.</eac:event>
+                           <eac:place>
+                              <eac:placeName>Blue Earth (Minn.)</eac:placeName>
+                           </eac:place>
+                        </eac:chronItem>
+                        <eac:chronItem>
+                           <eac:dateRange>
+                              <eac:fromDate standardDate="1946">1946</eac:fromDate>
+                              <eac:toDate standardDate="1948">1948</eac:toDate>
+                           </eac:dateRange>
+                           <eac:event>Macalester College</eac:event>
+                           <eac:place>
+                              <eac:placeName>St. Paul (Minn.)</eac:placeName>
+                           </eac:place>
+                        </eac:chronItem>
+                        <eac:chronItem>
+                           <eac:date standardDate="1948">1948</eac:date>
+                           <eac:event>Campaign Manager, 2nd District, State Democratic-Farmer-Labor
+                              Central Committee. Report to Orville Freeman.</eac:event>
+                        </eac:chronItem>
+                     </eac:chronList>
                   </egXML>
                </div>
             </div>
@@ -2414,7 +2508,15 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:existDates>
+                        <eac:dateRange>
+                           <eac:fromDate standardDate="1868">1868</eac:fromDate>
+                           <eac:toDate standardDate="1936">1936</eac:toDate>
+                        </eac:dateRange>
+                        <eac:descriptiveNote>
+                           <eac:p>The company was in business these years</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:existDates>
                   </egXML>
                </div>
             </div>
@@ -2599,7 +2701,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:function>
+                        <eac:term>Estate ownership</eac:term>
+                        <eac:descriptiveNote><eac:p>Social, political, and cultural role typical of landed aristocracy in England. The first Viscount Campden amassed a large fortune in trade in London and purchased extensive estates, including Exton (Rutland), and Chipping Campden (Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron Barham, a successful admiral and naval administrator (First Lord of the Admiralty 1805).</eac:p></eac:descriptiveNote>
+                     </eac:function>
                   </egXML>
                </div>
             </div>
@@ -2661,7 +2766,17 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:functions>
+                        <eac:function>
+                           <eac:term>Industrial or Scientific Research</eac:term>
+                        </eac:function>
+                        <eac:function>
+                           <eac:term>Analytical Services</eac:term>
+                        </eac:function>
+                        <eac:function>
+                           <eac:term>Advisory or Regulatory Body</eac:term>
+                        </eac:function>
+                     </eac:functions>
                   </egXML>
                </div>
             </div>
@@ -3074,7 +3189,15 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <list>
+                        <item><span style="font-style:italic">1450-1950</span> (1929)</item>
+                        <item><span style="font-style:italic">Globe Gliding</span> (1930)</item>
+                        <item><span style="font-style:italic">Gems</span> (1931) </item>
+                        <item><span style="font-style:italic">Words</span> (1931)</item>
+                        <item> <span style="font-style:italic">Demonics</span> (1931)</item>
+                        <item><span style="font-style:italic">Can We Co-operate</span> (1942)</item>
+                        <item><span style="font-style:italic">Amazing Amazon</span> (1942) </item>
+                     </list>
                   </egXML>
                </div>
             </div>
@@ -3415,7 +3538,13 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:legalStatus>
+                        <eac:term>Department of State</eac:term>
+                     </eac:legalStatus>
+                     <eac:legalStatus>
+                        <eac:term>Organismo de la Administracion Central del Estado</eac:term>
+                        <eac:date standardDate="1769">1769</eac:date>
+                     </eac:legalStatus>
                   </egXML>
                </div>
             </div>
@@ -3477,7 +3606,52 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:legalStatuses>
+                        <eac:legalStatus>
+                           <eac:term>Private limited liability company</eac:term>
+                           <eac:dateRange>
+                              <eac:fromDate standardDate="1941">1941</eac:fromDate>
+                              <eac:toDate standardDate="1948">1948</eac:toDate>
+                           </eac:dateRange>
+                        </eac:legalStatus>
+                        <eac:legalStatus>
+                           <eac:term>Public limited liability company</eac:term>
+                           <eac:dateRange>
+                              <eac:fromDate standardDate="1948">1948</eac:fromDate>
+                              <eac:toDate standardDate="2006">2006</eac:toDate>
+                           </eac:dateRange>
+                        </eac:legalStatus>
+                        <eac:legalStatus>
+                           <eac:term>Private limited liability company</eac:term>
+                           <eac:dateRange>
+                              <eac:fromDate standardDate="2006">2006</eac:fromDate>
+                              <eac:toDate standardDate="2008">2008</eac:toDate>
+                           </eac:dateRange>
+                        </eac:legalStatus>
+                     </eac:legalStatuses>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:legalStatuses>
+                        <eac:legalStatus>
+                           <eac:term>EPIC</eac:term>
+                           <eac:dateRange>
+                              <eac:fromDate notBefore="1946-04">avril 1946</eac:fromDate>
+                              <eac:toDate notAfter="2004-11">novembre 2004</eac:toDate>
+                           </eac:dateRange>
+                           <eac:descriptiveNote>
+                              <eac:p>Établissement public à caractère industriel et commercial</eac:p>
+                           </eac:descriptiveNote>
+                        </eac:legalStatus>
+                        <eac:legalStatus>
+                           <eac:term>SA</eac:term>
+                           <eac:dateRange>
+                              <eac:fromDate notBefore="2004-11">novembre 2004</eac:fromDate>
+                           </eac:dateRange>
+                           <eac:descriptiveNote>
+                              <eac:p>Société anonyme à capitaux publics</eac:p>
+                           </eac:descriptiveNote>
+                        </eac:legalStatus>
+                     </eac:legalStatuses>
                   </egXML>
                </div>
             </div>
@@ -3559,7 +3733,17 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:list listType="unordered">
+                        <eac:head>List of ministers of May Memorial Unitarian Universalist Church</eac:head>
+                        <eac:item>John Storer, Minister 1839-1844</eac:item>
+                        <eac:item>Samuel Joseph May, Minister 1845-1868</eac:item>
+                        <eac:item>Samuel R. Calthrop, Minister 1868-1911</eac:item>
+                        <eac:item>John H. Applebee, Minister 1911-1929</eac:item>
+                        <eac:item>Waldemar W. Argow, Minister 1930-1941</eac:item>
+                        <eac:item>Robert E. Romig, Minister 1941-1946</eac:item>
+                        <eac:item>Glenn O. Canfield, Minister 1946-1952</eac:item>
+                        <eac:item>John Fuller, Minister, 1961-1973</eac:item>
+                     </eac:list>
                   </egXML>
                </div>
             </div>
@@ -3906,7 +4090,16 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:maintenanceAgency>
+                        <eac:agencyCode>FR-DAF</eac:agencyCode>
+                        <eac:agencyName>Archives nationales (Paris)</eac:agencyName>
+                     </eac:maintenanceAgency>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">   
+                     <eac:maintenanceAgency>
+                        <eac:agencyName>The British Library: Manuscript Collections</eac:agencyName>
+                        <eac:otherAgencyCode>GB-058</eac:otherAgencyCode>
+                     </eac:maintenanceAgency>
                   </egXML>
                </div>
             </div>
@@ -3976,7 +4169,22 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:maintenanceHistory>
+                        <eac:maintenanceEvent maintenanceEventType="derived">
+                           <eac:agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</eac:agent>
+                           <eac:eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"></eac:eventDateTime>
+                           <eac:eventDescription>Derived from EAD instance.</eac:eventDescription>
+                        </eac:maintenanceEvent>
+                        <eac:maintenanceEvent maintenanceEventType="revised">
+                           <eac:agent agentType="human">Claire Sibille</eac:agent>
+                           <eac:eventDateTime standardDateTime="2009-07-08T10:45:00-01:00">2009-07-08 10:45</eac:eventDateTime>
+                           <eac:eventDescription>Notice convertie en EAC-CPF avec l' éditeur oXygen</eac:eventDescription>
+                        </eac:maintenanceEvent>
+                        <eac:maintenanceEvent maintenanceEventType="created">
+                           <eac:agent agentType="human">Lina Bountouri</eac:agent>
+                           <eac:eventDateTime standardDateTime="2001-11-03T12:00:00+01:00">2001-11/03 12:00</eac:eventDateTime>
+                        </eac:maintenanceEvent>
+                     </eac:maintenanceHistory>
                   </egXML>
                </div>
             </div>
@@ -4028,7 +4236,18 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:maintenanceHistory>
+                        <eac:maintenanceEvent maintenanceEventType="created">
+                           <eac:agent agentType="human">Salvatore Vassallo</eac:agent>
+                           <eac:eventDateTime standardDateTime="2009-06-29T00:20:00.000-00:00">29 giugno 2009</eac:eventDateTime>
+                           <eac:eventDescription>Prima codifica dell'espempio in italiano presente nelle ISAAR(CPF)</eac:eventDescription>
+                        </eac:maintenanceEvent>
+                        <eac:maintenanceEvent maintenanceEventType="revised">
+                           <eac:agent agentType="human">Salvatore Vassallo</eac:agent>
+                           <eac:eventDateTime standardDateTime="2009-06-29T17:16:00.000-00:00">29 giugno 2009</eac:eventDateTime>
+                           <eac:eventDescription>Aggiunte fonti, regole usate e campi di controllo</eac:eventDescription>
+                        </eac:maintenanceEvent>
+                     </eac:maintenanceHistory>
                   </egXML>
                </div>
             </div>
@@ -4112,7 +4331,13 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:mandate>
+                        <eac:term>Law 1946/1991</eac:term>
+                        <eac:date standardDate="1991">1991</eac:date>
+                        <eac:descriptiveNote>
+                           <eac:p>Law 1946/1991 determines a new legislative frame, which regulates the operation of the General State Archives to this day. The Central Service is structured into departments and Archives are established in prefectures which did not exist till then. </eac:p>
+                        </eac:descriptiveNote>
+                     </eac:mandate>
                   </egXML>
                </div>
             </div>
@@ -4173,7 +4398,42 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:mandates>
+                        <eac:mandate>
+                           <eac:term>Instrucciones de 13-VI-1586 por las que se crean y definen las secretarias de Tierra y Mar.</eac:term>
+                        </eac:mandate>
+                        <eac:mandate>
+                           <eac:term>Real Decreto de Nueva Planta para el consejo de Guerra de 23-IV-1714.</eac:term>
+                        </eac:mandate>
+                        <eac:mandate>
+                           <eac:term>Real Decreto de Nueva Planta para el consejo de Guerra de 23-VIII-1715.</eac:term>
+                        </eac:mandate>
+                     </eac:mandates>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:mandates>
+                        <eac:mandate>
+                           <eac:term>Law 380/1914, "The Establishment of the Greek State Archiving Service"</eac:term>
+                           <eac:date standardDate="1914">1914</eac:date>
+                           <eac:descriptiveNote>
+                              <eac:p>The General State Archives of Greece were established thanks the efforts of the Professor Spyridon Lambrou and the historian-researcher Yiannis Vlachogiannis with the purpose of "collecting and monitoring documents included in all public archives dating 50 years back". Their efforts conluded to the production of a law by the Prime Minister Eleftherios Venizelos.</eac:p>
+                           </eac:descriptiveNote>
+                        </eac:mandate>
+                        <eac:mandate>
+                           <eac:term>Law 2027/1939</eac:term>
+                           <eac:date standardDate="1939">1939</eac:date>
+                           <eac:descriptiveNote>
+                              <eac:p>Law 2027/1939 determines the "Reorganization of the General State Archives".</eac:p>
+                           </eac:descriptiveNote>
+                        </eac:mandate>
+                        <eac:mandate>
+                           <eac:term>Law 1946/1991</eac:term>
+                           <eac:date standardDate="1991">1991</eac:date>
+                           <eac:descriptiveNote>
+                              <eac:p>Law 1946/1991 determines a new legislative frame, which regulates the operation of the General State Archives to this day. The Central Service is structured into departments and Archives are established in prefectures which did not exist till then. </eac:p>
+                           </eac:descriptiveNote>
+                        </eac:mandate>
+                     </eac:mandates>
                   </egXML>
                </div>
             </div>
@@ -4319,42 +4579,17 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac-cpf:conventionDeclaration audience="external" id="cd1"
-                        localType="transliteration">
-                        <eac-cpf:abbreviation>DIN 32708:2014</eac-cpf:abbreviation>
-                        <eac-cpf:citation href="https://www.iso.org/standard/9029.html">Information
-                           and documentation - Romanization of Japanese</eac-cpf:citation>
-                        <eac-cpf:descriptiveNote id="dn1">
-                           <p id="p1" languageOfElement="de">Angewendet werden nur die eigentlichen
-                              Umschriftvorgaben, nicht aber die Regeln zur Wortbildungin der
-                              lateinischen Umschrift. Diese erfolgt analog der Praxis von
-                              NACSIS.</p>
-                        </eac-cpf:descriptiveNote>
-                     </eac-cpf:conventionDeclaration> [...] <eac-cpf:nameEntrySet
-                        localType="parallel">
-                        <eac-cpf:nameEntry languageOfElement="de" scriptOfElement="Latn"
-                           preferredForm="true" status="authorized" localType="native">
-                           <eac-cpf:part localType="surname">Arendt</eac-cpf:part>
-                           <eac-cpf:part localType="firstname">Hannah</eac-cpf:part>
-                        </eac-cpf:nameEntry>
-                        <eac-cpf:nameEntry languageOfElement="ja" scriptOfElement="Jpan"
-                           preferredForm="false" status="authorized"
-                           conventionDeclarationReference="#cd1">
-                           <eac-cpf:part localType="surname">?????</eac-cpf:part>
-                           <eac-cpf:part localType="firstname">??</eac-cpf:part>
-                        </eac-cpf:nameEntry>
-                        <eac-cpf:nameEntry languageOfElement="en" scriptOfElement="Latn"
-                           preferredForm="false" status="authorized">
-                           <eac-cpf:part localType="surname">Arendt</eac-cpf:part>
-                           <eac-cpf:part localType="firstname">Hannah</eac-cpf:part>
-                        </eac-cpf:nameEntry>
-                        <eac-cpf:useDates>
-                           <eac-cpf:dateRange>
-                              <eac-cpf:fromDate standardDate="1906">1906</eac-cpf:fromDate>
-                              <eac-cpf:toDate standardDate="1975">1975</eac-cpf:toDate>
-                           </eac-cpf:dateRange>
-                        </eac-cpf:useDates>
-                     </eac-cpf:nameEntrySet>
+                        <eac:nameEntrySet languageOfElement="fre">
+                           <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+                              <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
+                           </eac:nameEntry>
+                           <eac:nameEntry conventionDeclarationReference="cd2">
+                              <eac:part>Région Sud Provence-Alpes-Côte d'Azur</eac:part>
+                           </eac:nameEntry>
+                           <eac:nameEntry conventionDeclarationReference="cd3">
+                              <eac:part>Provence-Alpes-Côte-d'Azur</eac:part>
+                           </eac:nameEntry>
+                        </eac:nameEntrySet>
                   </egXML>
                </div>
             </div>
@@ -4422,8 +4657,21 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
-                  </egXML>
+                     <eac:nameEntrySet localType="parallel">
+                        <eac:nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+                           <eac:part localType="surname">Arendt</eac:part>
+                           <eac:part localType="firstname">Hannah</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry languageOfElement="ja" scriptOfElement="Jpan" preferredForm="false" status="authorized" localType="translation">
+                           <eac:part localType="surname">アーレント</eac:part>
+                           <eac:part localType="firstname">ハナ</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry languageOfElement="en" preferredForm="false" status="authorized">
+                           <eac:part localType="surname">Arendt</eac:part>
+                           <eac:part localType="firstname">Hannah</eac:part>
+                        </eac:nameEntry>
+                     </eac:nameEntrySet>
+                 </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-objectXMLWrap">
@@ -4471,7 +4719,50 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:objectXMLWrap>
+                        <mods:mods xmlns:mods="http://www.loc.gov/mods/v3"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:schemaLocation="http://www.loc.gov/mods/v3
+                           http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                           <mods:titleInfo>
+                              <mods:title>Artisti trentini tra le due guerre</mods:title>
+                           </mods:titleInfo>
+                           <mods:name>
+                              <mods:namePart type="given">Nicoletta</mods:namePart>
+                              <mods:namePart type="family">Boschiero</mods:namePart>
+                              <mods:role>
+                                 <mods:roleTerm type="text">autore</mods:roleTerm>
+                              </mods:role>
+                           </mods:name>
+                        </mods:mods>
+                     </eac:objectXMLWrap>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:objectXMLWrap>
+                        <!-- Karin: Having a tei example is making the transformation mess up so therefore tei is renamed to have namespace text here -->
+                        <!--<tei:bibl xmlns:tei="http://www.tei-c.org/ns/1.0" default="false">
+               <tei:title>
+                  <tei:emph rend="italic">Paris d'hier et d'aujourd'hui</tei:emph>
+               </tei:title>
+               <tei:respStmt>
+                  <tei:resp>photographes</tei:resp>
+                  <tei:name>Roger Henrard</tei:name>
+                  <tei:name>Yann Arthus-Bertrand</tei:name>
+               </tei:respStmt>
+            </tei:bibl>-->
+                        <text:bibl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xmlns:text="http://www.tei.org/ns/1.0"
+                           xsi:schemaLocation="http://www.tei.org/ns/1.0 tei.xsd" default="false">
+                           <text:title>
+                              <text:emph rend="italic">Paris d'hier et d'aujourd'hui</text:emph>
+                           </text:title>
+                           <text:respStmt>
+                              <text:resp>photographes</text:resp>
+                              <text:name>Roger Henrard</text:name>
+                              <text:name>Yann Arthus-Bertrand</text:name>
+                           </text:respStmt>
+                        </text:bibl>
+                     </eac:objectXMLWrap>
                   </egXML>
                </div>
             </div>
@@ -4612,7 +4903,14 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:occupations>
+                        <eac:occupation>
+                           <eac:term>Teacher</eac:term>
+                        </eac:occupation>
+                        <eac:occupation>
+                           <eac:term>Railway labourer</eac:term>
+                        </eac:occupation>
+                     </eac:occupations>
                   </egXML>
                </div>
             </div>
@@ -4684,7 +4982,17 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:maintenanceAgency>
+                        <eac:agencyName>The British Library: Manuscript Collections</eac:agencyName>
+                        <eac:otherAgencyCode>GB-058</eac:otherAgencyCode>
+                     </eac:maintenanceAgency>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:maintenanceAgency>
+                        <eac:agencyCode>US-dna</eac:agencyCode>
+                        <eac:agencyName>National Archives at Washington, DC</eac:agencyName>
+                        <eac:otherAgencyCode>RDTP1</eac:otherAgencyCode>
+                     </eac:maintenanceAgency>
                   </egXML>
                </div>
             </div>
@@ -4951,7 +5259,7 @@
                   </egXML>
                </div>
             </div>
-            <div type="elementDocumentation" xml:id="elem-part">
+            <div type="elementDocumentation" xml:id="part">
                <head>
                   <gi>part</gi>
                </head>
@@ -5016,7 +5324,15 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+                        <eac:part localType="surname">Arendt</eac:part>
+                        <eac:part localType="firstname">Hannah</eac:part>
+                     </eac:nameEntry>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">   
+                     <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+                        <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
+                     </eac:nameEntry>
                   </egXML>
                </div>
             </div>
@@ -5389,7 +5705,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:recordId>F10219</eac:recordId>
                   </egXML>
                </div>
             </div>
@@ -6225,7 +6541,28 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:structureOrGenealogy>
+                        <eac:p>Sir Edward Noel (d 1643) married Julian, daughter and co-heir of Baptists Hicks (d 1629), Viscount Campden, and succeeded to the viscouty of Campden and a portion of his father-in-law's estates. The third Viscount Campden (1612-82) married Hester Wotton, daughter of the second Baron Wotton. The fourth Viscount Campden (1641-1689, created Earl of Gainsborough, 1682) married Elizabeth Wriothesley, elder daughter of the fourth Earl of Southampton. Jane Noel (d 1811), sister of the fifth and sixth Earls of Gainsborough, married Gerard Anne Edwards of Welham Grove (Leicetershire) and had issue Gerard Noel Edwards (1759-1838). He married in 1780 Diana Middleton (1762-1823 suo jure Baroness Barham), daughter of Charles Middleton (1726-1813), created first Baronet of Barham Court (Kent) in 1781 and first Baron Barham in 1805. GN Edwards assumed the surname Noel in 1798 on inheriting the sixth Earl of Gainborough's Rutland and Gloucestershire estates (though not the Earl's honours, which were extinguished); and he later inherited his father-in-law's baronetcy. His eldest son John Noel (1781-1866) succeeded to the estates of his mother and his father, to his mother's barony and his father's baronetcy, and was created Viscount Campden and Earl of Gainsborough in 1841.</eac:p>
+                     </eac:structureOrGenealogy>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:structureOrGenealogy>
+                        <eac:p>The organogram of the
+                           <eac:span style="font-style:italic">Ministry of Culture and Tourism</eac:span>
+                           before its incorporation with the Ministry of Education and Religious Affairs, was the following:</eac:p>
+                        <eac:list>
+                           <eac:item>Minister of Culture and Tourism</eac:item>
+                           <eac:list>
+                              <eac:item>Deputy Minister of Culture and Tourism</eac:item>
+                           </eac:list>
+                           <eac:list>
+                              <eac:item>General Secretary of Tourism</eac:item>
+                              <eac:item>General Secretary of Sports</eac:item>
+                              <eac:item>General Secretary of Culture</eac:item>
+                              <eac:item>General Secretary for Culture and Tourism Infrastructure</eac:item>
+                           </eac:list>
+                        </eac:list>
+                     </eac:structureOrGenealogy>
                   </egXML>
                </div>
             </div>
@@ -6421,7 +6758,40 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:function>
+                        <eac:term>Estate ownership</eac:term>
+                        <eac:descriptiveNote>
+                           <eac:p>Social, political, and cultural role typical of landed aristocracy in England. The first Viscount Campden amassed a large fortune in trade in London and purchased extensive estates, including Exton (Rutland), and Chipping Campden (Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron Barham, a successful admiral and naval administrator (First Lord of the Admiralty 1805).</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:function>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">   
+                     <eac:function>
+                        <eac:term vocabularySource="AGIFT">Education and training</eac:term>
+                     </eac:function>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:legalStatus>
+                        <eac:term scriptCode="Latn">Organismo de la Administracion Central del Estado</eac:term>
+                        <eac:date standardDate="1769">1769</eac:date>
+                     </eac:legalStatus>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:mandate>
+                        <eac:term>Minnesota. Executive Session Laws 1919 c49</eac:term>
+                        <eac:dateRange>
+                           <eac:fromDate standardDate="1919">1919</eac:fromDate>
+                           <eac:toDate standardDate="1925">1925</eac:toDate>
+                        </eac:dateRange>
+                        <eac:descriptiveNote>
+                           <eac:p>Board created in 1919 to receive and examine applications for bonuses from Minnesota soldiers.</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:mandate>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:occupation>
+                        <eac:term>Teacher</eac:term>
+                     </eac:occupation>
                   </egXML>
                </div>
             </div>
