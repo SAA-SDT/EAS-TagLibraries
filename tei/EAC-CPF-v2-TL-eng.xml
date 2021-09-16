@@ -2381,7 +2381,16 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:maintenanceEvent maintenanceEventType="created">
+                        <eac:agent agentType="human">Bill Stockting</eac:agent>
+                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"></eac:eventDateTime>
+                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition: example 10</eac:eventDescription>
+                     </eac:maintenanceEvent>
+                     <eac:maintenanceEvent maintenanceEventType="updated">
+                        <eac:agent agentType="human">Karin Bredenberg</eac:agent>
+                        <eac:eventDateTime>11th of June 2012 at 9AM</eac:eventDateTime>
+                        <eac:eventDescription>Updated example 10</eac:eventDescription>
+                     </eac:maintenanceEvent>
                   </egXML>
                </div>
             </div>
@@ -2429,7 +2438,11 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:maintenanceEvent maintenanceEventType="created">
+                        <eac:agent agentType="human">Bill Stockting</eac:agent>
+                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"></eac:eventDateTime>
+                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition: example 10</eac:eventDescription>
+                     </eac:maintenanceEvent>
                   </egXML>
                </div>
             </div>
@@ -5255,7 +5268,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:biogHist>
+                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <eac:span style="font-style:italic">What Happened to Mary</eac:span> and <eac:span style="font-style:italic">The Remarkable Adventures of Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
+                        <eac:p>During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <eac:span style="font-style:italic">Brazilian American</eac:span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <eac:span style="font-style:italic">Mexican American</eac:span> (1924-1929) and <eac:span style="font-style:italic">British American</eac:span> (1926-1929).</eac:p>
+                     </eac:biogHist>
                   </egXML>
                </div>
             </div>
@@ -6470,7 +6486,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:biogHist>
+                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <eac:span style="font-style:italic">What Happened to Mary</eac:span> and <eac:span style="font-style:italic">The Remarkable Adventures of Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
+                        <eac:p>During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <eac:span style="font-style:italic">Brazilian American</eac:span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <eac:span style="font-style:italic">Mexican American</eac:span> (1924-1929) and <eac:span style="font-style:italic">British American</eac:span> (1926-1929).</eac:p>
+                     </eac:biogHist>
                   </egXML>
                </div>
             </div>
@@ -7035,8 +7054,9 @@
                      street</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-agentType">
@@ -7064,8 +7084,12 @@
                   <p>human, machine, unknown</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:maintenanceEvent maintenanceEventType="created">
+                        <eac:agent agentType="human">bdewhurs</eac:agent>
+                        <eac:eventDateTime standardDateTime="2009-06-26T05:33:41Z">2009-06-26T05:33:41Z</eac:eventDateTime>
+                     </eac:maintenanceEvent>
+                  </egXML> 
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-audience">
@@ -7093,8 +7117,9 @@
                   <p>external, internal</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-base">
@@ -7117,8 +7142,9 @@
                   <p>anyURI</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-calendar">
@@ -7137,8 +7163,12 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:dateRange>
+                        <eac:fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">1950</eac:fromDate>
+                        <eac:toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">2000</eac:toDate>
+                     </eac:dateRange>
+                  </egXML>   
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-certainty">
@@ -7156,8 +7186,9 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-contactLineType">
@@ -7179,8 +7210,9 @@
                   <p>email, fax, homepage, mobileNumber, phoneNumber</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-conventionDeclarationReference">
@@ -7203,8 +7235,19 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:nameEntrySet languageOfElement="fre">
+                        <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+                           <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry conventionDeclarationReference="cd2">
+                           <eac:part>Région Sud Provence-Alpes-Côte d'Azur</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry conventionDeclarationReference="cd3">
+                           <eac:part>Provence-Alpes-Côte-d'Azur</eac:part>
+                        </eac:nameEntry>
+                     </eac:nameEntrySet>
+                  </egXML>   
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-coordinateSystem">
@@ -7223,8 +7266,9 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-countryCode">
@@ -7245,8 +7289,18 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:maintenanceagency countrycode="IE">
+                        <eac:agencycode>IE-NAI</eac:agencycode>
+                        <eac:agencyname>National Archives of Ireland</eac:agencyname>
+                     </eac:maintenanceagency>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:place>
+                        <eac:placeRole>Residence</eac:placeRole>
+                        <eac:placeName countryCode="GR" vocabularySource="ISO3166-2">Greece</eac:placeName>
+                     </eac:place>
+                  </egXML>   
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-countryEncoding">
@@ -7266,8 +7320,12 @@
                   <p>iso3166-1, otherCountryEncoding</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924">
+                        [...]
+                     </eac:control>
+                  </egXML>   
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-dateEncoding">
@@ -7288,8 +7346,12 @@
                   <p>iso8601, otherDateEncoding</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924">
+                        [...]
+                     </eac:control>
+                  </egXML>   
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-detailLevel">
@@ -7306,8 +7368,9 @@
                   <p>basic, extended, minimal</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-era">
@@ -7326,8 +7389,9 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-href">
@@ -7347,8 +7411,12 @@
                   <p>anyURI</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:dateRange>
+                        <eac:fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">1950</eac:fromDate>
+                        <eac:toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">2000</eac:toDate>
+                     </eac:dateRange>
+                  </egXML>   
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-id">
@@ -7368,8 +7436,9 @@
                   <p>ID</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-identityType">
@@ -7394,8 +7463,9 @@
                   <p>acquired, given</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-languageCode">
@@ -7417,8 +7487,21 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:languagesUsed>
+                        <eac:languageUsed>
+                           <eac:language languageCode="eng">English</eac:language>
+                           <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
+                        </eac:languageUsed>
+                        <eac:languageUsed>
+                           <eac:language languageCode="spa">Spanish</eac:language>
+                           <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
+                        </eac:languageUsed>
+                        <eac:descriptiveNote>
+                           <eac:p>Published works in English and Spanish.</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:languagesUsed>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-languageEncoding">
@@ -7441,8 +7524,12 @@
                   <p>ietf-bcp-47, iso639-1, iso639-2b, iso639-3, otherLanguageEncoding</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924">
+                        [...]
+                     </eac:control>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-languageOfElement">
@@ -7464,8 +7551,9 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-linkRole">
@@ -7484,8 +7572,9 @@
                   <p>anyURI</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-linkTitle">
@@ -7506,8 +7595,9 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-listType">
@@ -7526,8 +7616,19 @@
                   <p>ordered, unordered</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:list listType="unordered">
+                        <eac:head>List of ministers of May Memorial Unitarian Universalist Church</eac:head>
+                        <eac:item>John Storer, Minister 1839-1844</eac:item>
+                        <eac:item>Samuel Joseph May, Minister 1845-1868</eac:item>
+                        <eac:item>Samuel R. Calthrop, Minister 1868-1911</eac:item>
+                        <eac:item>John H. Applebee, Minister 1911-1929</eac:item>
+                        <eac:item>Waldemar W. Argow, Minister 1930-1941</eac:item>
+                        <eac:item>Robert E. Romig, Minister 1941-1946</eac:item>
+                        <eac:item>Glenn O. Canfield, Minister 1946-1952</eac:item>
+                        <eac:item>John Fuller, Minister, 1961-1973</eac:item>
+                     </eac:list>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-localType">
@@ -7559,8 +7660,9 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-localTypeDeclarationReference">
@@ -7582,8 +7684,9 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-maintenanceEventReference">
@@ -7603,8 +7706,9 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-maintenanceEventType">
@@ -7638,8 +7742,18 @@
                   <p>cancelled, created, deleted, derived, revised, unknown, updated</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <maintenanceEvent maintenanceEventType="created">
+                        <agent agentType="human">Bill Stockting</agent>
+                        <eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"></eventDateTime>
+                        <eventDescription>Created from original in ISAAR (CPF), 2nd edition: example 10</eventDescription>
+                     </maintenanceEvent>
+                     <maintenanceEvent maintenanceEventType="updated">
+                        <agent agentType="human">Karin Bredenberg</agent>
+                        <eventDateTime>11th of June 2012 at 9AM</eventDateTime>
+                        <eventDescription>Updated example 10</eventDescription>
+                     </maintenanceEvent>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-maintenanceStatus">
@@ -7676,8 +7790,9 @@
                      revised</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-notAfter">
@@ -7698,8 +7813,18 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:legalStatus>
+                        <eac:term>EPIC</eac:term>
+                        <eac:dateRange>
+                           <eac:fromDate notBefore="1946-04">avril 1946</eac:fromDate>
+                           <eac:toDate notAfter="2004-11">novembre 2004</eac:toDate>
+                        </eac:dateRange>
+                        <eac:descriptiveNote>
+                           <eac:p>Établissement public à caractère industriel et commercial</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:legalStatus>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-notBefore">
@@ -7720,8 +7845,18 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:legalStatus>
+                        <eac:term>EPIC</eac:term>
+                        <eac:dateRange>
+                           <eac:fromDate notBefore="1946-04">avril 1946</eac:fromDate>
+                           <eac:toDate notAfter="2004-11">novembre 2004</eac:toDate>
+                        </eac:dateRange>
+                        <eac:descriptiveNote>
+                           <eac:p>Établissement public à caractère industriel et commercial</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:legalStatus>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-preferredForm">
@@ -7739,8 +7874,19 @@
                   <p>false, true</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:nameEntrySet languageOfElement="fre">
+                        <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+                           <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry conventionDeclarationReference="cd2">
+                           <eac:part>Région Sud Provence-Alpes-Côte d'Azur</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry conventionDeclarationReference="cd3">
+                           <eac:part>Provence-Alpes-Côte-d'Azur</eac:part>
+                        </eac:nameEntry>
+                     </eac:nameEntrySet>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-publicationStatus">
@@ -7758,8 +7904,9 @@
                   <p>approved, inProcess, published</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-repositoryEncoding">
@@ -7779,8 +7926,9 @@
                   <p>iso15511, otherRepositoryEncoding</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-scriptCode">
@@ -7801,8 +7949,21 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:languagesUsed>
+                        <eac:languageUsed>
+                           <eac:language languageCode="eng">English</eac:language>
+                           <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
+                        </eac:languageUsed>
+                        <eac:languageUsed>
+                           <eac:language languageCode="spa">Spanish</eac:language>
+                           <eac:writingSystem>scriptCode="Latn">Latin</eac:writingSystem>
+                        </eac:languageUsed>
+                        <eac:descriptiveNote>
+                           <eac:p>Published works in English and Spanish.</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:languagesUsed>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-scriptEncoding">
@@ -7822,8 +7983,12 @@
                   <p>iso15924, otherScriptEncoding</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924">
+                        [...]
+                     </eac:control>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-scriptOfElement">
@@ -7845,8 +8010,9 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-sourceReference">
@@ -7866,8 +8032,9 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-standardDate">
@@ -7887,8 +8054,12 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:dateRange>
+                        <eac:fromDate standardDate="1609-07-04">4 juillet 1609</eac:fromDate>
+                        <eac:toDate standardDate="1640-07-07">7 juillet 1640</eac:toDate>
+                     </eac:dateRange>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-standardDateTime">
@@ -7911,8 +8082,14 @@
                      dateTime is UTC.]</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:maintenanceHistory>
+                        <eac:maintenanceEvent maintenanceEventType="created">
+                           <eac:eventDateTime standardDateTime="2009-06-26T05:33:41Z">2009-06-26T05:33:41Z</eac:eventDateTime>
+                           <eac:agent agentType="human">bdewhurs</eac:agent>
+                        </eac:maintenanceEvent>
+                     </eac:maintenanceHistory>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-status">
@@ -7936,8 +8113,9 @@
                   <p>Values in <gi>toDate</gi>: unknown, ongoing</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-style">
@@ -7965,7 +8143,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:biogHist>
+                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <eac:span style="font-style:italic">What Happened to Mary</eac:span> and <eac:span style="font-style:italic">The Remarkable Adventures of Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
+                        <eac:p>During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <eac:span style="font-style:italic">Brazilian American</eac:span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <eac:span style="font-style:italic">Mexican American</eac:span> (1924-1929) and <eac:span style="font-style:italic">British American</eac:span> (1926-1929).</eac:p>
+                     </eac:biogHist>
                   </egXML>
                </div>
             </div>
@@ -8005,8 +8186,9 @@
                   <p>agent, corporateBody, family, function, person, resource</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-unit">
@@ -8025,8 +8207,9 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"
-                     ><!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> --></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-value">
