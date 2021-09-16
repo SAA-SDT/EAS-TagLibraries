@@ -150,7 +150,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e7250">Attributes</a></div>
+            <div class="toc1"><a href="#d1e7262">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -778,7 +778,16 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
+                        <div class="innerExample">&lt;agent agentType="human"&gt;Bountouri, Lina&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime&gt;20/06/2000 12:00&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
+                        <div class="innerExample">&lt;agent agentType="human"&gt;Ionian University Library, Catalog Division&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime&gt;June 1, 2012&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="revised"&gt;
+                        <div class="innerExample">&lt;agent agentType="machine"&gt;ConvertUtility&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime&gt;2012-06-11 10:00AM&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-alternativeSet"><span class="label">&lt;alternativeSet&gt;</span></div>
                   <div class="content"><span class="label">Alternative Set</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -3236,7 +3245,22 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example">1450-1950 (1929)Globe Gliding (1930)Gems (1931) Words (1931)Demonics (1931)Can We Co-operate (1942)Amazing Amazon (1942) <br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;list&gt;
+                        <div class="innerExample">&lt;item&gt;
+                           <div class="innerExample">&lt;span style="font-style:italic"&gt;1450-1950&lt;/span&gt;<br></br></div> (1929)&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;
+                           <div class="innerExample">&lt;span style="font-style:italic"&gt;Globe Gliding&lt;/span&gt;<br></br></div> (1930)&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;
+                           <div class="innerExample">&lt;span style="font-style:italic"&gt;Gems&lt;/span&gt;<br></br></div> (1931) &lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;
+                           <div class="innerExample">&lt;span style="font-style:italic"&gt;Words&lt;/span&gt;<br></br></div> (1931)&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;
+                           <div class="innerExample">&lt;span style="font-style:italic"&gt;Demonics&lt;/span&gt;<br></br></div> (1931)&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;
+                           <div class="innerExample">&lt;span style="font-style:italic"&gt;Can We Co-operate&lt;/span&gt;<br></br></div> (1942)&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;
+                           <div class="innerExample">&lt;span style="font-style:italic"&gt;Amazing Amazon&lt;/span&gt;<br></br></div> (1942) &lt;/item&gt;<br></br></div>&lt;/list&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-language"><span class="label">&lt;language&gt;</span></div>
                   <div class="content"><span class="label">Language</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -3554,11 +3578,13 @@
                   <div class="content">
                      <div class="p">Required, repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;legalStatus&gt;
-                        <div class="innerExample">&lt;term&gt;Department of State&lt;/term&gt;<br></br></div>&lt;/legalStatus&gt;<br></br></div>
+                        <div class="innerExample">&lt;term&gt;Department of State&lt;/term&gt;<br></br></div>&lt;/legalStatus&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
                      <div class="innerExample">&lt;legalStatus&gt;
                         <div class="innerExample">&lt;term&gt;Organismo de la Administracion Central del Estado&lt;/term&gt;<br></br></div>
                         <div class="innerExample">&lt;date standardDate="1769"&gt;1769&lt;/date&gt;<br></br></div>&lt;/legalStatus&gt;<br></br></div><br></br></div><br></br></div>
@@ -6414,12 +6440,12 @@
                         <div class="innerExample">&lt;list&gt;
                            <div class="innerExample">&lt;item&gt;Minister of Culture and Tourism&lt;/item&gt;<br></br></div>
                            <div class="innerExample">&lt;list&gt;
-                              <div class="innerExample">&lt;item&gt;Deputy Minister of Culture and Tourism&lt;/item&gt;<br></br></div>&lt;/list&gt;<br></br></div>
-                           <div class="innerExample">&lt;list&gt;
-                              <div class="innerExample">&lt;item&gt;General Secretary of Tourism&lt;/item&gt;<br></br></div>
-                              <div class="innerExample">&lt;item&gt;General Secretary of Sports&lt;/item&gt;<br></br></div>
-                              <div class="innerExample">&lt;item&gt;General Secretary of Culture&lt;/item&gt;<br></br></div>
-                              <div class="innerExample">&lt;item&gt;General Secretary for Culture and Tourism Infrastructure&lt;/item&gt;<br></br></div>&lt;/list&gt;<br></br></div>&lt;/list&gt;<br></br></div>&lt;/structureOrGenealogy&gt;<br></br></div><br></br></div><br></br></div>
+                              <div class="innerExample">&lt;item&gt;Deputy Minister of Culture and Tourism&lt;/item&gt;<br></br></div>
+                              <div class="innerExample">&lt;list&gt;
+                                 <div class="innerExample">&lt;item&gt;General Secretary of Tourism&lt;/item&gt;<br></br></div>
+                                 <div class="innerExample">&lt;item&gt;General Secretary of Sports&lt;/item&gt;<br></br></div>
+                                 <div class="innerExample">&lt;item&gt;General Secretary of Culture&lt;/item&gt;<br></br></div>
+                                 <div class="innerExample">&lt;item&gt;General Secretary for Culture and Tourism Infrastructure&lt;/item&gt;<br></br></div>&lt;/list&gt;<br></br></div>&lt;/list&gt;<br></br></div>&lt;/list&gt;<br></br></div>&lt;/structureOrGenealogy&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-targetEntity"><span class="label">&lt;targetEntity&gt;</span></div>
                   <div class="content"><span class="label">Target Entity</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6861,7 +6887,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example"><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e7250">
+            <div class="section" id="d1e7262">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
@@ -7108,7 +7134,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryencoding="iso15511" scriptencoding="iso15924"&gt;
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;
                         [...]
                         &lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
@@ -7130,7 +7156,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryencoding="iso15511" scriptencoding="iso15924"&gt;
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;
                         [...]
                         &lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
@@ -7165,7 +7191,10 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;dateRange&gt;
+                        <div class="innerExample">&lt;fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950"&gt;1950&lt;/fromDate&gt;<br></br></div>
+                        <div class="innerExample">&lt;toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000"&gt;2000&lt;/toDate&gt;<br></br></div>&lt;/dateRange&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-href"><span class="label">@href</span></div>
@@ -7183,10 +7212,7 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example">
-                     <div class="innerExample">&lt;dateRange&gt;
-                        <div class="innerExample">&lt;fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950"&gt;1950&lt;/fromDate&gt;<br></br></div>
-                        <div class="innerExample">&lt;toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000"&gt;2000&lt;/toDate&gt;<br></br></div>&lt;/dateRange&gt;<br></br></div><br></br></div><br></br></div>
+                  <div class="example"><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-id"><span class="label">@id</span></div>
@@ -7279,7 +7305,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryencoding="iso15511" scriptencoding="iso15924"&gt;
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;
                         [...]
                         &lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
@@ -7458,7 +7484,15 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example">Bill StocktingCreated from original in ISAAR (CPF), 2nd edition: example 10Karin Bredenberg11th of June 2012 at 9AMUpdated example 10<br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
+                        <div class="innerExample">&lt;agent agentType="human"&gt;Bill Stockting&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"&gt;&lt;/eventDateTime&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDescription&gt;Created from original in ISAAR (CPF), 2nd edition: example 10&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
+                        <div class="innerExample">&lt;agent agentType="human"&gt;Karin Bredenberg&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime&gt;11th of June 2012 at 9AM&lt;/eventDateTime&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDescription&gt;Updated example 10&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-maintenanceStatus"><span class="label">@maintenanceStatus</span></div>
@@ -7603,7 +7637,10 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;
+                        [...]
+                        &lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-scriptCode"><span class="label">@scriptCode</span></div>
@@ -7650,7 +7687,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryencoding="iso15511" scriptencoding="iso15924"&gt;
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;
                         [...]
                         &lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>

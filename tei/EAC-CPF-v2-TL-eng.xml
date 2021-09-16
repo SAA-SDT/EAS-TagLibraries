@@ -622,7 +622,18 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:maintenanceEvent maintenanceEventType="created">
+                        <eac:agent agentType="human">Bountouri, Lina</eac:agent>
+                        <eac:eventDateTime>20/06/2000 12:00</eac:eventDateTime>
+                     </eac:maintenanceEvent>
+                     <eac:maintenanceEvent maintenanceEventType="updated">
+                        <eac:agent agentType="human">Ionian University Library, Catalog Division</eac:agent>
+                        <eac:eventDateTime>June 1, 2012</eac:eventDateTime>
+                     </eac:maintenanceEvent>
+                     <eac:maintenanceEvent maintenanceEventType="revised">
+                        <eac:agent agentType="machine">ConvertUtility</eac:agent>
+                        <eac:eventDateTime>2012-06-11 10:00AM</eac:eventDateTime>
+                     </eac:maintenanceEvent>
                   </egXML>
                </div>
             </div>
@@ -3202,15 +3213,15 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <list>
-                        <item><span style="font-style:italic">1450-1950</span> (1929)</item>
-                        <item><span style="font-style:italic">Globe Gliding</span> (1930)</item>
-                        <item><span style="font-style:italic">Gems</span> (1931) </item>
-                        <item><span style="font-style:italic">Words</span> (1931)</item>
-                        <item> <span style="font-style:italic">Demonics</span> (1931)</item>
-                        <item><span style="font-style:italic">Can We Co-operate</span> (1942)</item>
-                        <item><span style="font-style:italic">Amazing Amazon</span> (1942) </item>
-                     </list>
+                     <eac:list>
+                        <eac:item><eac:span style="font-style:italic">1450-1950</eac:span> (1929)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">Globe Gliding</eac:span> (1930)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">Gems</eac:span> (1931) </eac:item>
+                        <eac:item><eac:span style="font-style:italic">Words</eac:span> (1931)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">Demonics</eac:span> (1931)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">Can We Co-operate</eac:span> (1942)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">Amazing Amazon</eac:span> (1942) </eac:item>
+                     </eac:list>
                   </egXML>
                </div>
             </div>
@@ -3554,6 +3565,8 @@
                      <eac:legalStatus>
                         <eac:term>Department of State</eac:term>
                      </eac:legalStatus>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:legalStatus>
                         <eac:term>Organismo de la Administracion Central del Estado</eac:term>
                         <eac:date standardDate="1769">1769</eac:date>
@@ -6573,12 +6586,12 @@
                            <eac:item>Minister of Culture and Tourism</eac:item>
                            <eac:list>
                               <eac:item>Deputy Minister of Culture and Tourism</eac:item>
-                           </eac:list>
-                           <eac:list>
-                              <eac:item>General Secretary of Tourism</eac:item>
-                              <eac:item>General Secretary of Sports</eac:item>
-                              <eac:item>General Secretary of Culture</eac:item>
-                              <eac:item>General Secretary for Culture and Tourism Infrastructure</eac:item>
+                              <eac:list>
+                                 <eac:item>General Secretary of Tourism</eac:item>
+                                 <eac:item>General Secretary of Sports</eac:item>
+                                 <eac:item>General Secretary of Culture</eac:item>
+                                 <eac:item>General Secretary for Culture and Tourism Infrastructure</eac:item>
+                              </eac:list>
                            </eac:list>
                         </eac:list>
                      </eac:structureOrGenealogy>
@@ -7322,7 +7335,7 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
-                        repositoryencoding="iso15511" scriptencoding="iso15924">
+                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
                         [...]
                      </eac:control>
                   </egXML>   
@@ -7348,7 +7361,7 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
-                        repositoryencoding="iso15511" scriptencoding="iso15924">
+                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
                         [...]
                      </eac:control>
                   </egXML>   
@@ -7390,7 +7403,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:dateRange>
+                        <eac:fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">1950</eac:fromDate>
+                        <eac:toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">2000</eac:toDate>
+                     </eac:dateRange>
                   </egXML>
                </div>
             </div>
@@ -7412,10 +7428,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:dateRange>
-                        <eac:fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">1950</eac:fromDate>
-                        <eac:toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">2000</eac:toDate>
-                     </eac:dateRange>
+                     
                   </egXML>   
                </div>
             </div>
@@ -7526,7 +7539,7 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
-                        repositoryencoding="iso15511" scriptencoding="iso15924">
+                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
                         [...]
                      </eac:control>
                   </egXML>
@@ -7743,16 +7756,16 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <maintenanceEvent maintenanceEventType="created">
-                        <agent agentType="human">Bill Stockting</agent>
-                        <eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"></eventDateTime>
-                        <eventDescription>Created from original in ISAAR (CPF), 2nd edition: example 10</eventDescription>
-                     </maintenanceEvent>
-                     <maintenanceEvent maintenanceEventType="updated">
-                        <agent agentType="human">Karin Bredenberg</agent>
-                        <eventDateTime>11th of June 2012 at 9AM</eventDateTime>
-                        <eventDescription>Updated example 10</eventDescription>
-                     </maintenanceEvent>
+                     <eac:maintenanceEvent maintenanceEventType="created">
+                        <eac:agent agentType="human">Bill Stockting</eac:agent>
+                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"></eac:eventDateTime>
+                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition: example 10</eac:eventDescription>
+                     </eac:maintenanceEvent>
+                     <eac:maintenanceEvent maintenanceEventType="updated">
+                        <eac:agent agentType="human">Karin Bredenberg</eac:agent>
+                        <eac:eventDateTime>11th of June 2012 at 9AM</eac:eventDateTime>
+                        <eac:eventDescription>Updated example 10</eac:eventDescription>
+                     </eac:maintenanceEvent>
                   </egXML>
                </div>
             </div>
@@ -7927,7 +7940,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
+                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                        [...]
+                     </eac:control>
                   </egXML>
                </div>
             </div>
@@ -7985,7 +8001,7 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
-                        repositoryencoding="iso15511" scriptencoding="iso15924">
+                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
                         [...]
                      </eac:control>
                   </egXML>
