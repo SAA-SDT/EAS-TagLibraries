@@ -75,9 +75,9 @@
                   Technical Subcommittee for Encoded Archival Standards (TS-EAS) still encourages
                   implementers to provide any queries, comments, and suggestions regarding the tag
                   library and its content. In addition, the contribution of examples is highly
-                  encouraged. Questions, comments or examples may be directed to the TS-EAS
-                     (<ref target="mailto:ts-eas@archivists.org">ts-eas[at]archivists.org</ref>).
-                  The underlying encoding of the Tag Library is based on TEI P5 and is designed to
+                  encouraged. Questions, comments or examples may be directed to the TS-EAS (<ref
+                     target="mailto:ts-eas@archivists.org">ts-eas[at]archivists.org</ref>). The
+                  underlying encoding of the Tag Library is based on TEI P5 and is designed to
                   facilitate incorporating documentation into the schema to provide guidance in XML
                   editors. While the initial release of the Tag Library is in English, the
                   underlying encoding is designed to facilitate providing the Tag Library in
@@ -259,9 +259,39 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:biogHist>
-                        <eac:abstract>Hubert H. Humphrey was born in Wallace, South Dakota (1911). He was elected Mayor of Minneapolis in 1945 and served until 1948. In November of 1948, he was elected to the United States Senate and he also served as the Senate Democratic Whip from 1961 to 1964 and in 1968, Humphrey was the Democratic Party's candidate for President, but he was defeated by Richard M. Nixon. </eac:abstract>
-                        <eac:p>Hubert H. Humphrey was born in Wallace, South Dakota, on May 27, 1911. He left South Dakota to attend the University of Minnesota but returned to South Dakota to help manage his father's drug store early in the depression. He attended the Capitol College of Pharmacy in Denver, Colorado, and became a register pharmacist in 1933. On September 3, 1936, Humphrey married Muriel Fay Buck. He returned to the University of Minnesota and earned a B.A. degree in 1939. In 1940 he earned an M.A. in political science from Louisiana State University and returned to Minneapolis to teach and pursue further graduate study, he began working for the W.P.A. (Works Progress Administration). He moved on from there to a series of positions with wartime agencies. In 1943, he ran unsuccessfully for Mayor of Minneapolis and returned to teaching as a visiting professor at Macalester College in St. Paul. Between 1943 and 1945 Humphrey worked at a variety of jobs. In 1945, he was elected Mayor of Minneapolis and served until 1948. In 1948, at the Democratic National Convention, he gained national attention when he delivered a stirring speech in favor of a strong civil rights plank in the party's platform. In November of 1948, Humphrey was elected to the United States Senate. He served as the Senate Democratic Whip from 1961 to 1964.</eac:p>
-                        <eac:p>In 1964, at the Democratic National Convention, President Lyndon B. Johnson asked the convention to select Humphrey as the Vice Presidential nominee. The ticket was elected in November in a Democratic landslide. In 1968, Humphrey was the Democratic Party's candidate for President, but he was defeated narrowly by Richard M. Nixon. After the defeat, Humphrey returned to Minnesota to teach at the University of Minnesota and Macalester College. He returned to the U.S. Senate in 1971, and he won re-election in 1976. He died January 13, 1978 of cancer.</eac:p>
+                        <eac:abstract>Hubert H. Humphrey was born in Wallace, South Dakota (1911).
+                           He was elected Mayor of Minneapolis in 1945 and served until 1948. In
+                           November of 1948, he was elected to the United States Senate and he also
+                           served as the Senate Democratic Whip from 1961 to 1964 and in 1968,
+                           Humphrey was the Democratic Party's candidate for President, but he was
+                           defeated by Richard M. Nixon. </eac:abstract>
+                        <eac:p>Hubert H. Humphrey was born in Wallace, South Dakota, on May 27,
+                           1911. He left South Dakota to attend the University of Minnesota but
+                           returned to South Dakota to help manage his father's drug store early in
+                           the depression. He attended the Capitol College of Pharmacy in Denver,
+                           Colorado, and became a register pharmacist in 1933. On September 3, 1936,
+                           Humphrey married Muriel Fay Buck. He returned to the University of
+                           Minnesota and earned a B.A. degree in 1939. In 1940 he earned an M.A. in
+                           political science from Louisiana State University and returned to
+                           Minneapolis to teach and pursue further graduate study, he began working
+                           for the W.P.A. (Works Progress Administration). He moved on from there to
+                           a series of positions with wartime agencies. In 1943, he ran
+                           unsuccessfully for Mayor of Minneapolis and returned to teaching as a
+                           visiting professor at Macalester College in St. Paul. Between 1943 and
+                           1945 Humphrey worked at a variety of jobs. In 1945, he was elected Mayor
+                           of Minneapolis and served until 1948. In 1948, at the Democratic National
+                           Convention, he gained national attention when he delivered a stirring
+                           speech in favor of a strong civil rights plank in the party's platform.
+                           In November of 1948, Humphrey was elected to the United States Senate. He
+                           served as the Senate Democratic Whip from 1961 to 1964.</eac:p>
+                        <eac:p>In 1964, at the Democratic National Convention, President Lyndon B.
+                           Johnson asked the convention to select Humphrey as the Vice Presidential
+                           nominee. The ticket was elected in November in a Democratic landslide. In
+                           1968, Humphrey was the Democratic Party's candidate for President, but he
+                           was defeated narrowly by Richard M. Nixon. After the defeat, Humphrey
+                           returned to Minnesota to teach at the University of Minnesota and
+                           Macalester College. He returned to the U.S. Senate in 1971, and he won
+                           re-election in 1976. He died January 13, 1978 of cancer.</eac:p>
                      </eac:biogHist>
                   </egXML>
                </div>
@@ -627,7 +657,8 @@
                         <eac:eventDateTime>20/06/2000 12:00</eac:eventDateTime>
                      </eac:maintenanceEvent>
                      <eac:maintenanceEvent maintenanceEventType="updated">
-                        <eac:agent agentType="human">Ionian University Library, Catalog Division</eac:agent>
+                        <eac:agent agentType="human">Ionian University Library, Catalog
+                           Division</eac:agent>
                         <eac:eventDateTime>June 1, 2012</eac:eventDateTime>
                      </eac:maintenanceEvent>
                      <eac:maintenanceEvent maintenanceEventType="revised">
@@ -779,8 +810,53 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:biogHist>
-                        <eac:abstract>Established in 1961, the United States Peace Corps administered and coordinated Federal international volunteer and related domestic volunteer programs in areas of agricultural assistance, community development, education, environmental protection, and nation assistance.</eac:abstract>
-                        <eac:p>The Peace Corps was established as an operating agency in the Department of State Delegation of Authority 85-11, effective March 3, 1961, pursuant to Executive Order (E.O.) 10924, March 1, 1961. It was recognized legislatively by the Peace Corps Act (75 Stat. 612), approved September 22, 1961. The Peace Corps was reassigned to the newly established ACTION by Reorganization Plan No. 1 of 1971, effective July 1, 1971. It was made autonomous within ACTION by E.O. 12137, May 16, 1979, and was made an independent agency by Title VI of the International Security and Development Corporation Act of 1981 (95 Stat. 1540), February 21, 1982. The Peace Corps administered and coordinated Federal international volunteer and related domestic volunteer programs including the areas of agricultural assistance, community development, education, environmental protection, and nation assistance.</eac:p>
+                        <eac:abstract>Established in 1961, the United States Peace Corps
+                           administered and coordinated Federal international volunteer and related
+                           domestic volunteer programs in areas of agricultural assistance,
+                           community development, education, environmental protection, and nation
+                           assistance.</eac:abstract>
+                        <eac:p>The Peace Corps was established as an operating agency in the
+                           Department of State Delegation of Authority 85-11, effective March 3,
+                           1961, pursuant to Executive Order (E.O.) 10924, March 1, 1961. It was
+                           recognized legislatively by the Peace Corps Act (75 Stat. 612), approved
+                           September 22, 1961. The Peace Corps was reassigned to the newly
+                           established ACTION by Reorganization Plan No. 1 of 1971, effective July
+                           1, 1971. It was made autonomous within ACTION by E.O. 12137, May 16,
+                           1979, and was made an independent agency by Title VI of the International
+                           Security and Development Corporation Act of 1981 (95 Stat. 1540),
+                           February 21, 1982. The Peace Corps administered and coordinated Federal
+                           international volunteer and related domestic volunteer programs including
+                           the areas of agricultural assistance, community development, education,
+                           environmental protection, and nation assistance.</eac:p>
+                     </eac:biogHist>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:biogHist>
+                        <eac:p>Ilma Mary Brewer, nee Pidgeon, was Lecturer in Botany/Biology,
+                           University of Sydney 1963-70 and Senior Lecturer in Biological Sciences
+                           1970-78. She developed new methods of teaching based on the recognition
+                           that a student learnt more by working at his/her own place and
+                           instruction him/her self. Her findings were published as a book,
+                           "Learning More and Teaching Less."</eac:p>
+                        <eac:chronList>
+                           <eac:chronItem>
+                              <eac:date standardDate="1936">1936</eac:date>
+                              <eac:event>Bachelor of Science (BSc) completed at the University of
+                                 Sydney</eac:event>
+                           </eac:chronItem>
+                           <eac:chronItem>
+                              <eac:date standardDate="1937">1937</eac:date>
+                              <eac:event>Master of Science (MSc) completed at the University of
+                                 Sydney</eac:event>
+                           </eac:chronItem>
+                           <eac:chronItem>
+                              <eac:dateRange>
+                                 <eac:fromDate standardDate="1937">1937</eac:fromDate>
+                                 <eac:toDate standardDate="1941">1941</eac:toDate>
+                              </eac:dateRange>
+                              <event>Linnean Macleay Fellow</event>
+                           </eac:chronItem>
+                        </eac:chronList>
                      </eac:biogHist>
                   </egXML>
                </div>
@@ -797,8 +873,7 @@
                      events and zero or more places within a chronology list.</p>
                </div>
                <div type="mayContain">
-                  <p>chronItemSet (0..n), date or dateRange or dateSet (1..1), event (1..1), place
-                     (0..1), reference (0..n)</p>
+                  <p>chronItemSet (0..n), date or dateRange or dateSet (1..1), event (1..1), place (0..1), reference (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>chronList</p>
@@ -881,10 +956,11 @@
                         </eac:chronItem>
                         <eac:chronItem>
                            <eac:date standardDate="1948">1948</eac:date>
-                           <eac:event>Campaign Manager, 2nd District, State Democratic-Farmer-Labor Central Committee. Report to Orville Freeman.</eac:event>
+                           <eac:event>Campaign Manager, 2nd District, State Democratic-Farmer-Labor
+                              Central Committee. Report to Orville Freeman.</eac:event>
                         </eac:chronItem>
                      </eac:chronList>
-                   </egXML>
+                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-chronItemSet">
@@ -946,7 +1022,48 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:chronItem>
+                        <eac:date>2015</eac:date>
+                        <eac:chronItemSet>
+                           <eac:event>Opens additional stores</eac:event>
+                           <eac:place>
+                              <eac:placeName>Woodbury, Minnesota</eac:placeName>
+                           </eac:place>
+                           <eac:place>
+                              <eac:placeName>Roseville, Minnesota</eac:placeName>
+                           </eac:place>
+                        </eac:chronItemSet>
+                     </eac:chronItem>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:chronItem>
+                        <eac:date>1948</eac:date>
+                        <eac:chronItemSet>
+                           <eac:event>Graduates from the University of Minnesota</eac:event>
+                           <eac:event>Begins work as a receptionist for the Humphrey for Senator
+                              Committee</eac:event>
+                           <eac:place>
+                              <eac:placeName>Minneapolis, Minnesota</eac:placeName>
+                           </eac:place>
+                        </eac:chronItemSet>
+                     </eac:chronItem>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:chronitem>
+                        <eac:date>March 1957</eac:date>
+                        <eac:chronItemSet>
+                           <eac:event>Dies</eac:event>
+                           <eac:place>
+                              <eac:placeName>Biwabik, Minnesota</eac:placeName>
+                           </eac:place>
+                        </eac:chronItemSet>
+                        <eac:chronItemSet>
+                           <eac:event>Buried in Lakewood Cemetery</eac:event>
+                           <eac:place>
+                              <eac:placeName>Minneapolis, Minnesota</eac:placeName>
+                           </eac:place>
+                        </eac:chronItemSet>
+                     </eac:chronitem>
                   </egXML>
                </div>
             </div>
@@ -1010,11 +1127,13 @@
                      <eac:chronList>
                         <eac:chronItem>
                            <eac:date standardDate="1936">1936</eac:date>
-                           <eac:event>Bachelor of Science (BSc) completed at the University of Sydney</eac:event>
+                           <eac:event>Bachelor of Science (BSc) completed at the University of
+                              Sydney</eac:event>
                         </eac:chronItem>
                         <eac:chronItem>
                            <eac:date standardDate="1937">1937</eac:date>
-                           <eac:event>Master of Science (MSc) completed at the University of Sydney</eac:event>
+                           <eac:event>Master of Science (MSc) completed at the University of
+                              Sydney</eac:event>
                         </eac:chronItem>
                         <eac:chronItem>
                            <eac:dateRange>
@@ -1025,10 +1144,13 @@
                         </eac:chronItem>
                         <eac:chronItem>
                            <eac:dateRange>
-                              <eac:fromDate certainty="approximate" standardDate="1939">c. 1939</eac:fromDate>
-                              <eac:toDate certainty="approximate" standardDate="1945">c. 1945</eac:toDate>
+                              <eac:fromDate certainty="approximate" standardDate="1939">c.
+                                 1939</eac:fromDate>
+                              <eac:toDate certainty="approximate" standardDate="1945">c.
+                                 1945</eac:toDate>
                            </eac:dateRange>
-                           <eac:event>Worked with Army Intelligence to map the vegetation (trees and undergrowth) in the coastal regions of New South Wales</eac:event>
+                           <eac:event>Worked with Army Intelligence to map the vegetation (trees and
+                              undergrowth) in the coastal regions of New South Wales</eac:event>
                         </eac:chronItem>
                      </eac:chronList>
                   </egXML>
@@ -1313,10 +1435,7 @@
                      composition of the EAC-CPF instance.</p>
                </div>
                <div type="mayContain">
-                  <p>conventionDeclaration (0..n), languageDeclaration (0..n), localControl (0..n),
-                     localTypeDeclaration (0..n), maintenanceAgency (1..1), maintenanceHistory
-                     (1..1), otherRecordId (0..n), recordId (1..1), rightsDeclaration (0..n),
-                     representation (0..n), sources (0..1)</p>
+                  <p>conventionDeclaration (0..n), languageDeclaration (0..n), localControl (0..n), localTypeDeclaration (0..n), maintenanceAgency (1..1), maintenanceHistory (1..1), otherRecordId (0..n), recordId (1..1), rightsDeclaration (0..n), representation (0..n), sources (0..1)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>eac</p>
@@ -1497,14 +1616,22 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:conventionDeclaration id="cd1">
-                        <eac:reference href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033553530/">Décret n° 2016-1689 du 8 décembre 2016 fixant le nom, la composition et le
-                           chef-lieu des circonscriptions administratives régionales - Légifrance</eac:reference>
+                        <eac:reference
+                           href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033553530/"
+                           >Décret n° 2016-1689 du 8 décembre 2016 fixant le nom, la composition et
+                           le chef-lieu des circonscriptions administratives régionales -
+                           Légifrance</eac:reference>
                      </eac:conventionDeclaration>
                      <eac:conventionDeclaration id="cd2">
-                        <eac:reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf">DELIBERATION N° 17-1166, 15 DECEMBRE 2017</eac:reference>
+                        <eac:reference
+                           href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf"
+                           >DELIBERATION N° 17-1166, 15 DECEMBRE 2017</eac:reference>
                      </eac:conventionDeclaration>
                      <eac:conventionDeclaration id="cd3">
-                        <eac:reference href="cnig.gouv.fr/wp-content/uploads/2015/03/CNT-site-collectivit%C3%A9s-fran%C3%A7aises.pdf">Commission nationale de toponymie: Collectivités territoriales françaises </eac:reference>
+                        <eac:reference
+                           href="cnig.gouv.fr/wp-content/uploads/2015/03/CNT-site-collectivit%C3%A9s-fran%C3%A7aises.pdf"
+                           >Commission nationale de toponymie: Collectivités territoriales
+                           françaises </eac:reference>
                      </eac:conventionDeclaration>
                   </egXML>
                </div>
@@ -1522,8 +1649,7 @@
                      identity.</p>
                </div>
                <div type="mayContain">
-                  <p>alternativeSet (0..1), description (0..1), identity (1..1), relations
-                     (0..1)</p>
+                  <p>alternativeSet (0..1), description (0..1), identity (1..1), relations (0..1)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>eac, multipleIdentities</p>
@@ -1609,9 +1735,9 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>chronItem, dateSet, demographicDescription, existDates, function, legalStatus, localControl,
-                     localDescription, mandate, occupation, otherEntityType, place, relation,
-                     useDates</p>
+                  <p>chronItem, dateSet, demographicDescription, existDates, function, legalStatus,
+                     localControl, localDescription, mandate, occupation, otherEntityType, place,
+                     relation, useDates</p>
                </div>
                <div type="attributes">
                   <p>
@@ -1656,8 +1782,8 @@
                <div type="description">
                   <p>An element for expressing the single date of an event in the history of the
                      person, corporate body or family being described, or in their relationship to,
-                     e.g., a name entry, a place, an occupation, another CPF entity, a resource, or a
-                     function.</p>
+                     e.g., a name entry, a place, an occupation, another CPF entity, a resource, or
+                     a function.</p>
                   <p>The content of the element is intended to be a human-readable natural language
                      date with a machine-readable date provided as the value of the
                         <att>standardDate</att> attribute, formulated according to ISO 8601.</p>
@@ -1681,13 +1807,16 @@
                         date is uncertain.</item>
                      <item>Use <att>standardDate</att> to provide a machine-processable form of the
                         date.</item>
+                     <item>Use <att>status</att> with the value "unknown" to indicate where the a
+                        date is unknown.</item>
                   </list>
                </div>
                <div type="availability">
-                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>,
-                        <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>,
-                     or <gi>dateSet</gi> optional, not repeatable</p>
+                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>,
+                     <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>,
+                        <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
+                        <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
+                        <gi>dateSet</gi> optional, not repeatable</p>
                   <p>Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>
@@ -1698,7 +1827,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:date standardDate="1765-09-18">September 18, 1765</eac:date>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:date certainty="uncertain" standardDate="1968?">c.1968</eac:date>
                   </egXML>
                </div>
             </div>
@@ -1719,9 +1851,9 @@
                   <p>fromDate (0..1), toDate (0..1)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>chronItem, dateSet, demographicDescription, existDates, function, legalStatus, localControl,
-                     localDescription, mandate, occupation, otherEntityType, place, relation,
-                     useDates</p>
+                  <p>chronItem, dateSet, demographicDescription, existDates, function, legalStatus,
+                     localControl, localDescription, mandate, occupation, otherEntityType, place,
+                     relation, useDates</p>
                </div>
                <div type="attributes">
                   <p>
@@ -1782,10 +1914,11 @@
                   </list>
                </div>
                <div type="availability">
-                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>,
-                        <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>,
-                     or <gi>dateSet</gi> optional, not repeatable</p>
+                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>,
+                     <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>,
+                        <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
+                        <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
+                        <gi>dateSet</gi> optional, not repeatable</p>
                   <p>Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>
@@ -1796,7 +1929,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:dateRange>
+                        <eac:fromDate standardDate="1765-08-18">September 18, 1765</eac:fromDate>
+                        <eac:toDate standardDate="1846-06-01">June 1, 1846</eac:toDate>
+                     </eac:dateRange>
                   </egXML>
                </div>
             </div>
@@ -1815,8 +1951,9 @@
                   <p>date or dateRange (2..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>chronItem, demographicDescription, existDates, function, legalStatus, localDescription, mandate,
-                     occupation, otherEntityType, place, relation, useDates</p>
+                  <p>chronItem, demographicDescription, existDates, function, legalStatus,
+                     localDescription, mandate, occupation, otherEntityType, place, relation,
+                     useDates</p>
                </div>
                <div type="attributes">
                   <p>
@@ -1852,17 +1989,29 @@
                      <gi>dateRange</gi>.</p>
                </div>
                <div type="availability">
-                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>,
-                        <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>,
-                     or <gi>dateSet</gi> optional, not repeatable</p>
+                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>,
+                     <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>,
+                        <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
+                        <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
+                        <gi>dateSet</gi> optional, not repeatable</p>
                   <p>Within <gi>chronItem</gi>, <gi>existDates</gi>, <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:dateSet>
+                        <eac:dateRange>
+                           <eac:fromDate standardDate="1928-09">1928 settembre</eac:fromDate>
+                           <eac:toDate standardDate="1930-08">1930 autunno</eac:toDate>
+                        </eac:dateRange>
+                        <eac:dateRange>
+                           <eac:fromDate standardDate="1947">1947</eac:fromDate>
+                           <eac:toDate standardDate="1949">1949</eac:toDate>
+                        </eac:dateRange>
+                        <eac:date>1950</eac:date>
+                        <eac:date standardDate="1951-10-27">27 of October 1951</eac:date>
+                     </eac:dateSet>
                   </egXML>
                </div>
             </div>
@@ -1874,7 +2023,8 @@
                   <p>Demographic Description</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>demographicDescriptions</gi> that can be used to provide demographic intformation about the CPF entity being described.</p>
+                  <p>A required child element of <gi>demographicDescriptions</gi> that can be used
+                     to provide demographic intformation about the CPF entity being described.</p>
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..n), placeName (0..n), term (1..n)</p>
@@ -1915,17 +2065,27 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>demographicDescription</gi> is a wrapper element used to encode an index term, using the required child element <gi>term</gi>.</p>
-                  <p>Terms are used within <gi>demographicDescription</gi> to encode demographic information about the CPF entity being described. This could include, but is not limited to, nationality, gender, age group, or religion. They may be drawn from controlled vocabularies or may be natural language terms.</p>
-                  <p><gi>demographicDescription</gi> must include at least one <gi>term</gi> element. <gi>term</gi> can be repeated within <gi>demographicDescription</gi> to include translations of the same term. Use the <att>languageOfElement</att> attribute to identify the language used in each <gi>term</gi>.</p>
-                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and place(s) (<gi>placeName</gi>) may be included to further constrain the term's meaning. A <gi>descriptiveNote</gi> may be included if a fuller textual explanation is needed.</p>
+                  <p><gi>demographicDescription</gi> is a wrapper element used to encode an index
+                     term, using the required child element <gi>term</gi>.</p>
+                  <p>Terms are used within <gi>demographicDescription</gi> to encode demographic
+                     information about the CPF entity being described. This could include, but is
+                     not limited to, nationality, gender, age group, or religion. They may be drawn
+                     from controlled vocabularies or may be natural language terms.</p>
+                  <p><gi>demographicDescription</gi> must include at least one <gi>term</gi>
+                     element. <gi>term</gi> can be repeated within <gi>demographicDescription</gi>
+                     to include translations of the same term. Use the <att>languageOfElement</att>
+                     attribute to identify the language used in each <gi>term</gi>.</p>
+                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and
+                     place(s) (<gi>placeName</gi>) may be included to further constrain the term's
+                     meaning. A <gi>descriptiveNote</gi> may be included if a fuller textual
+                     explanation is needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                     <list type="simple">
-                        <item><gi>term</gi></item>
-                        <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
-                        <item><gi>placeName</gi></item>
-                        <item><gi>descriptiveNote</gi></item>
-                     </list>
+                  <list type="simple">
+                     <item><gi>term</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                     <item><gi>placeName</gi></item>
+                     <item><gi>descriptiveNote</gi></item>
+                  </list>
                </div>
                <div type="availability">
                   <p>Required, repeatable</p>
@@ -1944,7 +2104,8 @@
                   <p>Demographic Descriptions</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>description</gi> used to group together one or more <gi>demographicDescription</gi> elements.</p>
+                  <p>An optional child element of <gi>description</gi> used to group together one or
+                     more <gi>demographicDescription</gi> elements.</p>
                </div>
                <div type="mayContain">
                   <p>demographicDescription (1..n), descriptiveNote (0..1)</p>
@@ -1985,7 +2146,10 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use the optional <gi>demographicDescriptions</gi> element to group together one or more occurrences of <gi>demographicDescription</gi>. <gi>demographicDescriptions</gi> must include at least one <gi>demographicDescription</gi> element.</p>
+                  <p>Use the optional <gi>demographicDescriptions</gi> element to group together one
+                     or more occurrences of <gi>demographicDescription</gi>.
+                        <gi>demographicDescriptions</gi> must include at least one
+                        <gi>demographicDescription</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>demographicDescription</gi></item>
@@ -2014,9 +2178,7 @@
                      information about the CPF entity.</p>
                </div>
                <div type="mayContain">
-                  <p>biogHist (0..n), demographicDescriptions (0..1), existDates (0..n), functions (0..1), generalContext (0..n),
-                     languagesUsed (0..1), legalStatuses (0..1), localDescriptions (0..1), mandates
-                     (0..1), occupations (0..1), places (0..1), structureOrGenealogy (0..n)</p>
+                  <p>biogHist (0..n), demographicDescriptions (0..1), existDates (0..n), functions (0..1), generalContext (0..n), languagesUsed (0..1), legalStatuses (0..1), localDescriptions (0..1), mandates (0..1), occupations (0..1), places (0..1), structureOrGenealogy (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>cpfDescription</p>
@@ -2090,12 +2252,12 @@
                   <p>p (1..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>conventionDeclaration, demographicDescription, demographicDescriptions, existDates, function, functions, identity,
-                     languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses,
-                     localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency,
-                     mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes,
-                     place, places, relation, relations, rightsDeclaration, setComponent, source,
-                     sources</p>
+                  <p>conventionDeclaration, demographicDescription, demographicDescriptions,
+                     existDates, function, functions, identity, languageDeclaration, languageUsed,
+                     languagesUsed, legalStatus, legalStatuses, localDescription, localDescriptions,
+                     localTypeDeclaration, maintenanceAgency, mandate, mandates, occupation,
+                     occupations, otherEntityType, otherEntityTypes, place, places, relation,
+                     relations, rightsDeclaration, setComponent, source, sources</p>
                </div>
                <div type="attributes">
                   <p>
@@ -2394,8 +2556,9 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:maintenanceEvent maintenanceEventType="created">
                         <eac:agent agentType="human">Bill Stockting</eac:agent>
-                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"></eac:eventDateTime>
-                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition: example 10</eac:eventDescription>
+                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"/>
+                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition:
+                           example 10</eac:eventDescription>
                      </eac:maintenanceEvent>
                      <eac:maintenanceEvent maintenanceEventType="updated">
                         <eac:agent agentType="human">Karin Bredenberg</eac:agent>
@@ -2451,8 +2614,9 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:maintenanceEvent maintenanceEventType="created">
                         <eac:agent agentType="human">Bill Stockting</eac:agent>
-                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"></eac:eventDateTime>
-                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition: example 10</eac:eventDescription>
+                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"/>
+                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition:
+                           example 10</eac:eventDescription>
                      </eac:maintenanceEvent>
                   </egXML>
                </div>
@@ -2636,7 +2800,18 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:existDates>
+                        <eac:dateRange>
+                           <eac:fromDate standardDate="1868">1868</eac:fromDate>
+                           <eac:toDate standardDate="1936">1936</eac:toDate>
+                        </eac:dateRange>
+                     </eac:existDates>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:dateRange>
+                        <eac:fromDate status="unknown"/>
+                        <eac:todate certainty="uncertain" standardDate="2010?">c.2010</eac:todate>
+                     </eac:dateRange>
                   </egXML>
                </div>
             </div>
@@ -2653,8 +2828,7 @@
                      described.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     term (1..n)</p>
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>functions</p>
@@ -2727,7 +2901,13 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:function>
                         <eac:term>Estate ownership</eac:term>
-                        <eac:descriptiveNote><eac:p>Social, political, and cultural role typical of landed aristocracy in England. The first Viscount Campden amassed a large fortune in trade in London and purchased extensive estates, including Exton (Rutland), and Chipping Campden (Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron Barham, a successful admiral and naval administrator (First Lord of the Admiralty 1805).</eac:p></eac:descriptiveNote>
+                        <eac:descriptiveNote><eac:p>Social, political, and cultural role typical of
+                              landed aristocracy in England. The first Viscount Campden amassed a
+                              large fortune in trade in London and purchased extensive estates,
+                              including Exton (Rutland), and Chipping Campden (Gloucestershire). The
+                              Barham Court (Kent) estate was the acquisition of the first Baron
+                              Barham, a successful admiral and naval administrator (First Lord of
+                              the Admiralty 1805).</eac:p></eac:descriptiveNote>
                      </eac:function>
                   </egXML>
                </div>
@@ -3214,13 +3394,19 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:list>
-                        <eac:item><eac:span style="font-style:italic">1450-1950</eac:span> (1929)</eac:item>
-                        <eac:item><eac:span style="font-style:italic">Globe Gliding</eac:span> (1930)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">1450-1950</eac:span>
+                           (1929)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">Globe Gliding</eac:span>
+                           (1930)</eac:item>
                         <eac:item><eac:span style="font-style:italic">Gems</eac:span> (1931) </eac:item>
-                        <eac:item><eac:span style="font-style:italic">Words</eac:span> (1931)</eac:item>
-                        <eac:item><eac:span style="font-style:italic">Demonics</eac:span> (1931)</eac:item>
-                        <eac:item><eac:span style="font-style:italic">Can We Co-operate</eac:span> (1942)</eac:item>
-                        <eac:item><eac:span style="font-style:italic">Amazing Amazon</eac:span> (1942) </eac:item>
+                        <eac:item><eac:span style="font-style:italic">Words</eac:span>
+                           (1931)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">Demonics</eac:span>
+                           (1931)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">Can We Co-operate</eac:span>
+                           (1942)</eac:item>
+                        <eac:item><eac:span style="font-style:italic">Amazing Amazon</eac:span>
+                           (1942) </eac:item>
                      </eac:list>
                   </egXML>
                </div>
@@ -3495,8 +3681,7 @@
                      about the legal status of a corporate body.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     term (1..n)</p>
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>legalStatuses</p>
@@ -3665,7 +3850,8 @@
                               <eac:toDate notAfter="2004-11">novembre 2004</eac:toDate>
                            </eac:dateRange>
                            <eac:descriptiveNote>
-                              <eac:p>Établissement public à caractère industriel et commercial</eac:p>
+                              <eac:p>Établissement public à caractère industriel et
+                                 commercial</eac:p>
                            </eac:descriptiveNote>
                         </eac:legalStatus>
                         <eac:legalStatus>
@@ -3760,7 +3946,8 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:list listType="unordered">
-                        <eac:head>List of ministers of May Memorial Unitarian Universalist Church</eac:head>
+                        <eac:head>List of ministers of May Memorial Unitarian Universalist
+                           Church</eac:head>
                         <eac:item>John Storer, Minister 1839-1844</eac:item>
                         <eac:item>Samuel Joseph May, Minister 1845-1868</eac:item>
                         <eac:item>Samuel R. Calthrop, Minister 1868-1911</eac:item>
@@ -3856,8 +4043,7 @@
                      descriptive categories to others available in a local system.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     term (1..n)</p>
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>localDescriptions</p>
@@ -4064,8 +4250,7 @@
                      service responsible for the EAC-CPF instance.</p>
                </div>
                <div type="mayContain">
-                  <p>agencyCode (0..1), agencyName (0..n), descriptiveNote (0..1), otherAgencyCode
-                     (0..n)</p>
+                  <p>agencyCode (0..1), agencyName (0..n), descriptiveNote (0..1), otherAgencyCode (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>control</p>
@@ -4121,7 +4306,7 @@
                         <eac:agencyName>Archives nationales (Paris)</eac:agencyName>
                      </eac:maintenanceAgency>
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">   
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:maintenanceAgency>
                         <eac:agencyName>The British Library: Manuscript Collections</eac:agencyName>
                         <eac:otherAgencyCode>GB-058</eac:otherAgencyCode>
@@ -4198,17 +4383,20 @@
                      <eac:maintenanceHistory>
                         <eac:maintenanceEvent maintenanceEventType="derived">
                            <eac:agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</eac:agent>
-                           <eac:eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"></eac:eventDateTime>
+                           <eac:eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
                            <eac:eventDescription>Derived from EAD instance.</eac:eventDescription>
                         </eac:maintenanceEvent>
                         <eac:maintenanceEvent maintenanceEventType="revised">
                            <eac:agent agentType="human">Claire Sibille</eac:agent>
-                           <eac:eventDateTime standardDateTime="2009-07-08T10:45:00-01:00">2009-07-08 10:45</eac:eventDateTime>
-                           <eac:eventDescription>Notice convertie en EAC-CPF avec l' éditeur oXygen</eac:eventDescription>
+                           <eac:eventDateTime standardDateTime="2009-07-08T10:45:00-01:00"
+                              >2009-07-08 10:45</eac:eventDateTime>
+                           <eac:eventDescription>Notice convertie en EAC-CPF avec l' éditeur
+                              oXygen</eac:eventDescription>
                         </eac:maintenanceEvent>
                         <eac:maintenanceEvent maintenanceEventType="created">
                            <eac:agent agentType="human">Lina Bountouri</eac:agent>
-                           <eac:eventDateTime standardDateTime="2001-11-03T12:00:00+01:00">2001-11/03 12:00</eac:eventDateTime>
+                           <eac:eventDateTime standardDateTime="2001-11-03T12:00:00+01:00"
+                              >2001-11/03 12:00</eac:eventDateTime>
                         </eac:maintenanceEvent>
                      </eac:maintenanceHistory>
                   </egXML>
@@ -4265,13 +4453,17 @@
                      <eac:maintenanceHistory>
                         <eac:maintenanceEvent maintenanceEventType="created">
                            <eac:agent agentType="human">Salvatore Vassallo</eac:agent>
-                           <eac:eventDateTime standardDateTime="2009-06-29T00:20:00.000-00:00">29 giugno 2009</eac:eventDateTime>
-                           <eac:eventDescription>Prima codifica dell'espempio in italiano presente nelle ISAAR(CPF)</eac:eventDescription>
+                           <eac:eventDateTime standardDateTime="2009-06-29T00:20:00.000-00:00">29
+                              giugno 2009</eac:eventDateTime>
+                           <eac:eventDescription>Prima codifica dell'espempio in italiano presente
+                              nelle ISAAR(CPF)</eac:eventDescription>
                         </eac:maintenanceEvent>
                         <eac:maintenanceEvent maintenanceEventType="revised">
                            <eac:agent agentType="human">Salvatore Vassallo</eac:agent>
-                           <eac:eventDateTime standardDateTime="2009-06-29T17:16:00.000-00:00">29 giugno 2009</eac:eventDateTime>
-                           <eac:eventDescription>Aggiunte fonti, regole usate e campi di controllo</eac:eventDescription>
+                           <eac:eventDateTime standardDateTime="2009-06-29T17:16:00.000-00:00">29
+                              giugno 2009</eac:eventDateTime>
+                           <eac:eventDescription>Aggiunte fonti, regole usate e campi di
+                              controllo</eac:eventDescription>
                         </eac:maintenanceEvent>
                      </eac:maintenanceHistory>
                   </egXML>
@@ -4291,8 +4483,7 @@
                      charter.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     term (1..n)</p>
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>mandates</p>
@@ -4361,7 +4552,10 @@
                         <eac:term>Law 1946/1991</eac:term>
                         <eac:date standardDate="1991">1991</eac:date>
                         <eac:descriptiveNote>
-                           <eac:p>Law 1946/1991 determines a new legislative frame, which regulates the operation of the General State Archives to this day. The Central Service is structured into departments and Archives are established in prefectures which did not exist till then. </eac:p>
+                           <eac:p>Law 1946/1991 determines a new legislative frame, which regulates
+                              the operation of the General State Archives to this day. The Central
+                              Service is structured into departments and Archives are established in
+                              prefectures which did not exist till then. </eac:p>
                         </eac:descriptiveNote>
                      </eac:mandate>
                   </egXML>
@@ -4426,37 +4620,51 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:mandates>
                         <eac:mandate>
-                           <eac:term>Instrucciones de 13-VI-1586 por las que se crean y definen las secretarias de Tierra y Mar.</eac:term>
+                           <eac:term>Instrucciones de 13-VI-1586 por las que se crean y definen las
+                              secretarias de Tierra y Mar.</eac:term>
                         </eac:mandate>
                         <eac:mandate>
-                           <eac:term>Real Decreto de Nueva Planta para el consejo de Guerra de 23-IV-1714.</eac:term>
+                           <eac:term>Real Decreto de Nueva Planta para el consejo de Guerra de
+                              23-IV-1714.</eac:term>
                         </eac:mandate>
                         <eac:mandate>
-                           <eac:term>Real Decreto de Nueva Planta para el consejo de Guerra de 23-VIII-1715.</eac:term>
+                           <eac:term>Real Decreto de Nueva Planta para el consejo de Guerra de
+                              23-VIII-1715.</eac:term>
                         </eac:mandate>
                      </eac:mandates>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:mandates>
                         <eac:mandate>
-                           <eac:term>Law 380/1914, "The Establishment of the Greek State Archiving Service"</eac:term>
+                           <eac:term>Law 380/1914, "The Establishment of the Greek State Archiving
+                              Service"</eac:term>
                            <eac:date standardDate="1914">1914</eac:date>
                            <eac:descriptiveNote>
-                              <eac:p>The General State Archives of Greece were established thanks the efforts of the Professor Spyridon Lambrou and the historian-researcher Yiannis Vlachogiannis with the purpose of "collecting and monitoring documents included in all public archives dating 50 years back". Their efforts conluded to the production of a law by the Prime Minister Eleftherios Venizelos.</eac:p>
+                              <eac:p>The General State Archives of Greece were established thanks
+                                 the efforts of the Professor Spyridon Lambrou and the
+                                 historian-researcher Yiannis Vlachogiannis with the purpose of
+                                 "collecting and monitoring documents included in all public
+                                 archives dating 50 years back". Their efforts conluded to the
+                                 production of a law by the Prime Minister Eleftherios
+                                 Venizelos.</eac:p>
                            </eac:descriptiveNote>
                         </eac:mandate>
                         <eac:mandate>
                            <eac:term>Law 2027/1939</eac:term>
                            <eac:date standardDate="1939">1939</eac:date>
                            <eac:descriptiveNote>
-                              <eac:p>Law 2027/1939 determines the "Reorganization of the General State Archives".</eac:p>
+                              <eac:p>Law 2027/1939 determines the "Reorganization of the General
+                                 State Archives".</eac:p>
                            </eac:descriptiveNote>
                         </eac:mandate>
                         <eac:mandate>
                            <eac:term>Law 1946/1991</eac:term>
                            <eac:date standardDate="1991">1991</eac:date>
                            <eac:descriptiveNote>
-                              <eac:p>Law 1946/1991 determines a new legislative frame, which regulates the operation of the General State Archives to this day. The Central Service is structured into departments and Archives are established in prefectures which did not exist till then. </eac:p>
+                              <eac:p>Law 1946/1991 determines a new legislative frame, which
+                                 regulates the operation of the General State Archives to this day.
+                                 The Central Service is structured into departments and Archives are
+                                 established in prefectures which did not exist till then. </eac:p>
                            </eac:descriptiveNote>
                         </eac:mandate>
                      </eac:mandates>
@@ -4605,17 +4813,17 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                        <eac:nameEntrySet languageOfElement="fre">
-                           <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
-                              <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
-                           </eac:nameEntry>
-                           <eac:nameEntry conventionDeclarationReference="cd2">
-                              <eac:part>Région Sud Provence-Alpes-Côte d'Azur</eac:part>
-                           </eac:nameEntry>
-                           <eac:nameEntry conventionDeclarationReference="cd3">
-                              <eac:part>Provence-Alpes-Côte-d'Azur</eac:part>
-                           </eac:nameEntry>
-                        </eac:nameEntrySet>
+                     <eac:nameEntrySet languageOfElement="fre">
+                        <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+                           <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry conventionDeclarationReference="cd2">
+                           <eac:part>Région Sud Provence-Alpes-Côte d'Azur</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry conventionDeclarationReference="cd3">
+                           <eac:part>Provence-Alpes-Côte-d'Azur</eac:part>
+                        </eac:nameEntry>
+                     </eac:nameEntrySet>
                   </egXML>
                </div>
             </div>
@@ -4684,20 +4892,23 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:nameEntrySet localType="parallel">
-                        <eac:nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+                        <eac:nameEntry languageOfElement="de" preferredForm="true"
+                           status="authorized" localType="native">
                            <eac:part localType="surname">Arendt</eac:part>
                            <eac:part localType="firstname">Hannah</eac:part>
                         </eac:nameEntry>
-                        <eac:nameEntry languageOfElement="ja" scriptOfElement="Jpan" preferredForm="false" status="authorized" localType="translation">
+                        <eac:nameEntry languageOfElement="ja" scriptOfElement="Jpan"
+                           preferredForm="false" status="authorized" localType="translation">
                            <eac:part localType="surname">アーレント</eac:part>
                            <eac:part localType="firstname">ハナ</eac:part>
                         </eac:nameEntry>
-                        <eac:nameEntry languageOfElement="en" preferredForm="false" status="authorized">
+                        <eac:nameEntry languageOfElement="en" preferredForm="false"
+                           status="authorized">
                            <eac:part localType="surname">Arendt</eac:part>
                            <eac:part localType="firstname">Hannah</eac:part>
                         </eac:nameEntry>
                      </eac:nameEntrySet>
-                 </egXML>
+                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-objectXMLWrap">
@@ -4804,8 +5015,7 @@
                      about an occupation of the CPF entity being described.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     term (1..n)</p>
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>occupations</p>
@@ -5035,8 +5245,7 @@
                      encode additional or alternative entity types.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n),
-                     term (1..n)</p>
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>otherEntityTypes</p>
@@ -5282,8 +5491,23 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:biogHist>
-                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <eac:span style="font-style:italic">What Happened to Mary</eac:span> and <eac:span style="font-style:italic">The Remarkable Adventures of Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
-                        <eac:p>During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <eac:span style="font-style:italic">Brazilian American</eac:span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <eac:span style="font-style:italic">Mexican American</eac:span> (1924-1929) and <eac:span style="font-style:italic">British American</eac:span> (1926-1929).</eac:p>
+                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and
+                           traveler. From 1908 to 1917, he wrote poetry and prose for numerous
+                           magazines and newspapers in New York City, publishing two pulp novels,
+                              <eac:span style="font-style:italic">What Happened to Mary</eac:span>
+                           and <eac:span style="font-style:italic">The Remarkable Adventures of
+                              Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span
+                              style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
+                        <eac:p>During 1918, he traveled extensively in Mexico and Central America,
+                           writing for the U.S. Committee of Public Information in Santiago de
+                           Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro,
+                           where they founded <eac:span style="font-style:italic">Brazilian
+                              American</eac:span>, a weekly magazine that ran until 1929. With
+                           Brown's mother, Cora, the Browns also established magazines in Mexico
+                           City and London: <eac:span style="font-style:italic">Mexican
+                              American</eac:span> (1924-1929) and <eac:span
+                              style="font-style:italic">British American</eac:span>
+                           (1926-1929).</eac:p>
                      </eac:biogHist>
                   </egXML>
                </div>
@@ -5353,12 +5577,13 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+                     <eac:nameEntry languageOfElement="de" preferredForm="true" status="authorized"
+                        localType="native">
                         <eac:part localType="surname">Arendt</eac:part>
                         <eac:part localType="firstname">Hannah</eac:part>
                      </eac:nameEntry>
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">   
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
                         <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
                      </eac:nameEntry>
@@ -5378,9 +5603,7 @@
                      significant connection.</p>
                </div>
                <div type="mayContain">
-                  <p>address (0..n), contact (0..n), date or dateRange or dateSet (0..1),
-                     descriptiveNote (0..1), geographicCoordinates (0..n), placeName (0..n),
-                     placeRole (0..n)</p>
+                  <p>address (0..n), contact (0..n), date or dateRange or dateSet (0..1), descriptiveNote (0..1), geographicCoordinates (0..n), placeName (0..n), placeRole (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>chronItem, chronItemSet, places, relation</p>
@@ -5477,8 +5700,8 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>demographicDescription, function, legalStatus, localDescription, mandate, occupation, otherEntityType,
-                     place</p>
+                  <p>demographicDescription, function, legalStatus, localDescription, mandate,
+                     occupation, otherEntityType, place</p>
                </div>
                <div type="attributes">
                   <p>
@@ -5838,9 +6061,7 @@
                      between the entity described in the EAC-CPF instance and a related entity.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), objectXMLWrap
-                     (0..1), place (0..n), relationType (0..n), targetEntity (1..1), targetRole
-                     (0..n)</p>
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), objectXMLWrap (0..1), place (0..n), relationType (0..n), targetEntity (1..1), targetRole (0..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>relations</p>
@@ -5972,7 +6193,9 @@
                   <p>Relation Type</p>
                </div>
                <div type="summary">
-                  <p>A child element of <gi>relation</gi> used to specify the type of relation that the entity being described within the EAC-CPF instance has to the <gi>targetEntity</gi>.</p>
+                  <p>A child element of <gi>relation</gi> used to specify the type of relation that
+                     the entity being described within the EAC-CPF instance has to the
+                        <gi>targetEntity</gi>.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -6315,8 +6538,7 @@
                      entity in the EAC-CPF instance.</p>
                </div>
                <div type="mayContain">
-                  <p>citedRange (0..n), descriptiveNote (0..1), objectXMLWrap (0..1), reference
-                     (1..n)</p>
+                  <p>citedRange (0..n), descriptiveNote (0..1), objectXMLWrap (0..1), reference (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>sources</p>
@@ -6500,8 +6722,23 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:biogHist>
-                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <eac:span style="font-style:italic">What Happened to Mary</eac:span> and <eac:span style="font-style:italic">The Remarkable Adventures of Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
-                        <eac:p>During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <eac:span style="font-style:italic">Brazilian American</eac:span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <eac:span style="font-style:italic">Mexican American</eac:span> (1924-1929) and <eac:span style="font-style:italic">British American</eac:span> (1926-1929).</eac:p>
+                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and
+                           traveler. From 1908 to 1917, he wrote poetry and prose for numerous
+                           magazines and newspapers in New York City, publishing two pulp novels,
+                              <eac:span style="font-style:italic">What Happened to Mary</eac:span>
+                           and <eac:span style="font-style:italic">The Remarkable Adventures of
+                              Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span
+                              style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
+                        <eac:p>During 1918, he traveled extensively in Mexico and Central America,
+                           writing for the U.S. Committee of Public Information in Santiago de
+                           Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro,
+                           where they founded <eac:span style="font-style:italic">Brazilian
+                              American</eac:span>, a weekly magazine that ran until 1929. With
+                           Brown's mother, Cora, the Browns also established magazines in Mexico
+                           City and London: <eac:span style="font-style:italic">Mexican
+                              American</eac:span> (1924-1929) and <eac:span
+                              style="font-style:italic">British American</eac:span>
+                           (1926-1929).</eac:p>
                      </eac:biogHist>
                   </egXML>
                </div>
@@ -6574,14 +6811,32 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:structureOrGenealogy>
-                        <eac:p>Sir Edward Noel (d 1643) married Julian, daughter and co-heir of Baptists Hicks (d 1629), Viscount Campden, and succeeded to the viscouty of Campden and a portion of his father-in-law's estates. The third Viscount Campden (1612-82) married Hester Wotton, daughter of the second Baron Wotton. The fourth Viscount Campden (1641-1689, created Earl of Gainsborough, 1682) married Elizabeth Wriothesley, elder daughter of the fourth Earl of Southampton. Jane Noel (d 1811), sister of the fifth and sixth Earls of Gainsborough, married Gerard Anne Edwards of Welham Grove (Leicetershire) and had issue Gerard Noel Edwards (1759-1838). He married in 1780 Diana Middleton (1762-1823 suo jure Baroness Barham), daughter of Charles Middleton (1726-1813), created first Baronet of Barham Court (Kent) in 1781 and first Baron Barham in 1805. GN Edwards assumed the surname Noel in 1798 on inheriting the sixth Earl of Gainborough's Rutland and Gloucestershire estates (though not the Earl's honours, which were extinguished); and he later inherited his father-in-law's baronetcy. His eldest son John Noel (1781-1866) succeeded to the estates of his mother and his father, to his mother's barony and his father's baronetcy, and was created Viscount Campden and Earl of Gainsborough in 1841.</eac:p>
+                        <eac:p>Sir Edward Noel (d 1643) married Julian, daughter and co-heir of
+                           Baptists Hicks (d 1629), Viscount Campden, and succeeded to the viscouty
+                           of Campden and a portion of his father-in-law's estates. The third
+                           Viscount Campden (1612-82) married Hester Wotton, daughter of the second
+                           Baron Wotton. The fourth Viscount Campden (1641-1689, created Earl of
+                           Gainsborough, 1682) married Elizabeth Wriothesley, elder daughter of the
+                           fourth Earl of Southampton. Jane Noel (d 1811), sister of the fifth and
+                           sixth Earls of Gainsborough, married Gerard Anne Edwards of Welham Grove
+                           (Leicetershire) and had issue Gerard Noel Edwards (1759-1838). He married
+                           in 1780 Diana Middleton (1762-1823 suo jure Baroness Barham), daughter of
+                           Charles Middleton (1726-1813), created first Baronet of Barham Court
+                           (Kent) in 1781 and first Baron Barham in 1805. GN Edwards assumed the
+                           surname Noel in 1798 on inheriting the sixth Earl of Gainborough's
+                           Rutland and Gloucestershire estates (though not the Earl's honours, which
+                           were extinguished); and he later inherited his father-in-law's baronetcy.
+                           His eldest son John Noel (1781-1866) succeeded to the estates of his
+                           mother and his father, to his mother's barony and his father's baronetcy,
+                           and was created Viscount Campden and Earl of Gainsborough in
+                           1841.</eac:p>
                      </eac:structureOrGenealogy>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:structureOrGenealogy>
-                        <eac:p>The organogram of the
-                           <eac:span style="font-style:italic">Ministry of Culture and Tourism</eac:span>
-                           before its incorporation with the Ministry of Education and Religious Affairs, was the following:</eac:p>
+                        <eac:p>The organogram of the <eac:span style="font-style:italic">Ministry of
+                              Culture and Tourism</eac:span> before its incorporation with the
+                           Ministry of Education and Religious Affairs, was the following:</eac:p>
                         <eac:list>
                            <eac:item>Minister of Culture and Tourism</eac:item>
                            <eac:list>
@@ -6590,7 +6845,8 @@
                                  <eac:item>General Secretary of Tourism</eac:item>
                                  <eac:item>General Secretary of Sports</eac:item>
                                  <eac:item>General Secretary of Culture</eac:item>
-                                 <eac:item>General Secretary for Culture and Tourism Infrastructure</eac:item>
+                                 <eac:item>General Secretary for Culture and Tourism
+                                    Infrastructure</eac:item>
                               </eac:list>
                            </eac:list>
                         </eac:list>
@@ -6749,8 +7005,8 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>demographicDescription, function, legalStatus, localControl, localDescription, mandate, occupation,
-                     otherEntityType</p>
+                  <p>demographicDescription, function, legalStatus, localControl, localDescription,
+                     mandate, occupation, otherEntityType</p>
                </div>
                <div type="attributes">
                   <p>
@@ -6793,18 +7049,25 @@
                      <eac:function>
                         <eac:term>Estate ownership</eac:term>
                         <eac:descriptiveNote>
-                           <eac:p>Social, political, and cultural role typical of landed aristocracy in England. The first Viscount Campden amassed a large fortune in trade in London and purchased extensive estates, including Exton (Rutland), and Chipping Campden (Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron Barham, a successful admiral and naval administrator (First Lord of the Admiralty 1805).</eac:p>
+                           <eac:p>Social, political, and cultural role typical of landed aristocracy
+                              in England. The first Viscount Campden amassed a large fortune in
+                              trade in London and purchased extensive estates, including Exton
+                              (Rutland), and Chipping Campden (Gloucestershire). The Barham Court
+                              (Kent) estate was the acquisition of the first Baron Barham, a
+                              successful admiral and naval administrator (First Lord of the
+                              Admiralty 1805).</eac:p>
                         </eac:descriptiveNote>
                      </eac:function>
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">   
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:function>
                         <eac:term vocabularySource="AGIFT">Education and training</eac:term>
                      </eac:function>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:legalStatus>
-                        <eac:term scriptCode="Latn">Organismo de la Administracion Central del Estado</eac:term>
+                        <eac:term scriptCode="Latn">Organismo de la Administracion Central del
+                           Estado</eac:term>
                         <eac:date standardDate="1769">1769</eac:date>
                      </eac:legalStatus>
                   </egXML>
@@ -6816,7 +7079,8 @@
                            <eac:toDate standardDate="1925">1925</eac:toDate>
                         </eac:dateRange>
                         <eac:descriptiveNote>
-                           <eac:p>Board created in 1919 to receive and examine applications for bonuses from Minnesota soldiers.</eac:p>
+                           <eac:p>Board created in 1919 to receive and examine applications for
+                              bonuses from Minnesota soldiers.</eac:p>
                         </eac:descriptiveNote>
                      </eac:mandate>
                   </egXML>
@@ -6919,7 +7183,24 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:existDates>
+                        <eac:dateRange>
+                           <eac:fromDate standardDate="1868">1868</eac:fromDate>
+                           <eac:toDate standardDate="1936">1936</eac:toDate>
+                        </eac:dateRange>
+                     </eac:existDates>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:dateRange>
+                        <eac:fromDate status="unknown"/>
+                        <eac:todate certainty="uncertain" standardDate="2010?">c.2010</eac:todate>
+                     </eac:dateRange>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:dateRange>
+                        <eac:fromDate standardDate="2016-09">September 2016</eac:fromDate>
+                        <eac:toDate status="ongoing"/>
+                     </eac:dateRange>
                   </egXML>
                </div>
             </div>
@@ -6977,7 +7258,15 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:nameEntry status="authorized">
+                        <eac:part>Technical Subcommittee for Encoded Archival Standards</eac:part>
+                        <eac:useDates>
+                           <eac:dateRange>
+                              <eac:fromDate>2015</eac:fromDate>
+                              <eac:toDate status="ongoing"/>
+                           </eac:dateRange>
+                        </eac:useDates>
+                     </eac:nameEntry>
                   </egXML>
                </div>
             </div>
@@ -7100,9 +7389,10 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:maintenanceEvent maintenanceEventType="created">
                         <eac:agent agentType="human">bdewhurs</eac:agent>
-                        <eac:eventDateTime standardDateTime="2009-06-26T05:33:41Z">2009-06-26T05:33:41Z</eac:eventDateTime>
+                        <eac:eventDateTime standardDateTime="2009-06-26T05:33:41Z"
+                           >2009-06-26T05:33:41Z</eac:eventDateTime>
                      </eac:maintenanceEvent>
-                  </egXML> 
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-audience">
@@ -7178,10 +7468,12 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:dateRange>
-                        <eac:fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">1950</eac:fromDate>
-                        <eac:toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">2000</eac:toDate>
+                        <eac:fromDate calendar="gregorian" certainty="approximate" era="ce"
+                           standardDate="1950">1950</eac:fromDate>
+                        <eac:toDate calendar="gregorian" certainty="approximate" era="ce"
+                           standardDate="2000">2000</eac:toDate>
                      </eac:dateRange>
-                  </egXML>   
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-certainty">
@@ -7200,7 +7492,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                    <eac:date certainty="uncertain" standardDate="1968?">c.1968</eac:date>
                   </egXML>
                </div>
             </div>
@@ -7260,7 +7552,7 @@
                            <eac:part>Provence-Alpes-Côte-d'Azur</eac:part>
                         </eac:nameEntry>
                      </eac:nameEntrySet>
-                  </egXML>   
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-coordinateSystem">
@@ -7311,9 +7603,10 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:place>
                         <eac:placeRole>Residence</eac:placeRole>
-                        <eac:placeName countryCode="GR" vocabularySource="ISO3166-2">Greece</eac:placeName>
+                        <eac:placeName countryCode="GR" vocabularySource="ISO3166-2"
+                           >Greece</eac:placeName>
                      </eac:place>
-                  </egXML>   
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-countryEncoding">
@@ -7334,11 +7627,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
-                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        [...]
-                     </eac:control>
-                  </egXML>   
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601"
+                        languageEncoding="iso639-2b" repositoryEncoding="iso15511"
+                        scriptEncoding="iso15924"> [...] </eac:control>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-dateEncoding">
@@ -7360,11 +7652,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
-                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        [...]
-                     </eac:control>
-                  </egXML>   
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601"
+                        languageEncoding="iso639-2b" repositoryEncoding="iso15511"
+                        scriptEncoding="iso15924"> [...] </eac:control>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-detailLevel">
@@ -7375,7 +7666,9 @@
                   <p>Level of Detail</p>
                </div>
                <div type="summary">
-                  <p>An optional attribute within <gi>control</gi>, used to provide information about the level of detail of the entity's description, from a fixed set of values.  </p>
+                  <p>An optional attribute within <gi>control</gi>, used to provide information
+                     about the level of detail of the entity's description, from a fixed set of
+                     values. </p>
                </div>
                <div type="values">
                   <p>basic, extended, minimal</p>
@@ -7404,8 +7697,10 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:dateRange>
-                        <eac:fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">1950</eac:fromDate>
-                        <eac:toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">2000</eac:toDate>
+                        <eac:fromDate calendar="gregorian" certainty="approximate" era="ce"
+                           standardDate="1950">1950</eac:fromDate>
+                        <eac:toDate calendar="gregorian" certainty="approximate" era="ce"
+                           standardDate="2000">2000</eac:toDate>
                      </eac:dateRange>
                   </egXML>
                </div>
@@ -7428,8 +7723,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     
-                  </egXML>   
+                     <eac:conventionDeclaration id="cd1">
+                        <eac:reference href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033553530/" >Décret n° 2016-1689 du 8 décembre 2016 fixant le nom, la composition et le chef-lieu des circonscriptions administratives régionales - Légifrance</eac:reference>
+                     </eac:conventionDeclaration>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-id">
@@ -7538,10 +7835,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
-                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        [...]
-                     </eac:control>
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601"
+                        languageEncoding="iso639-2b" repositoryEncoding="iso15511"
+                        scriptEncoding="iso15924"> [...] </eac:control>
                   </egXML>
                </div>
             </div>
@@ -7631,7 +7927,8 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:list listType="unordered">
-                        <eac:head>List of ministers of May Memorial Unitarian Universalist Church</eac:head>
+                        <eac:head>List of ministers of May Memorial Unitarian Universalist
+                           Church</eac:head>
                         <eac:item>John Storer, Minister 1839-1844</eac:item>
                         <eac:item>Samuel Joseph May, Minister 1845-1868</eac:item>
                         <eac:item>Samuel R. Calthrop, Minister 1868-1911</eac:item>
@@ -7758,8 +8055,9 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:maintenanceEvent maintenanceEventType="created">
                         <eac:agent agentType="human">Bill Stockting</eac:agent>
-                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"></eac:eventDateTime>
-                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition: example 10</eac:eventDescription>
+                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"/>
+                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition:
+                           example 10</eac:eventDescription>
                      </eac:maintenanceEvent>
                      <eac:maintenanceEvent maintenanceEventType="updated">
                         <eac:agent agentType="human">Karin Bredenberg</eac:agent>
@@ -7827,16 +8125,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:legalStatus>
-                        <eac:term>EPIC</eac:term>
-                        <eac:dateRange>
-                           <eac:fromDate notBefore="1946-04">avril 1946</eac:fromDate>
-                           <eac:toDate notAfter="2004-11">novembre 2004</eac:toDate>
-                        </eac:dateRange>
-                        <eac:descriptiveNote>
-                           <eac:p>Établissement public à caractère industriel et commercial</eac:p>
-                        </eac:descriptiveNote>
-                     </eac:legalStatus>
+                     <eac:dateRange>
+                        <eac:fromDate notBefore="1971" notAfter="1975">around 1973</eac:fromDate>
+                        <eac:toDate standardDate="1992">1992</eac:toDate>
+                     </eac:dateRange>
                   </egXML>
                </div>
             </div>
@@ -7859,16 +8151,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:legalStatus>
-                        <eac:term>EPIC</eac:term>
-                        <eac:dateRange>
-                           <eac:fromDate notBefore="1946-04">avril 1946</eac:fromDate>
-                           <eac:toDate notAfter="2004-11">novembre 2004</eac:toDate>
-                        </eac:dateRange>
-                        <eac:descriptiveNote>
-                           <eac:p>Établissement public à caractère industriel et commercial</eac:p>
-                        </eac:descriptiveNote>
-                     </eac:legalStatus>
+                     <eac:dateRange>
+                        <eac:fromDate notBefore="1971" notAfter="1975">around 1973</eac:fromDate>
+                        <eac:toDate standardDate="1992">1992</eac:toDate>
+                     </eac:dateRange>
                   </egXML>
                </div>
             </div>
@@ -7881,7 +8167,8 @@
                </div>
                <div type="summary">
                   <p>Attribute that specifies whether or not a <gi>nameEntry</gi> provides the
-                     preferred form of the name of the EAC-CPF entity for display purposes in a given context.</p>
+                     preferred form of the name of the EAC-CPF entity for display purposes in a
+                     given context.</p>
                </div>
                <div type="values">
                   <p>false, true</p>
@@ -7940,10 +8227,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
-                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        [...]
-                     </eac:control>
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601"
+                        languageEncoding="iso639-2b" repositoryEncoding="iso15511"
+                        scriptEncoding="iso15924"> [...] </eac:control>
                   </egXML>
                </div>
             </div>
@@ -8000,10 +8286,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b"
-                        repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        [...]
-                     </eac:control>
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601"
+                        languageEncoding="iso639-2b" repositoryEncoding="iso15511"
+                        scriptEncoding="iso15924"> [...] </eac:control>
                   </egXML>
                </div>
             </div>
@@ -8101,7 +8386,8 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:maintenanceHistory>
                         <eac:maintenanceEvent maintenanceEventType="created">
-                           <eac:eventDateTime standardDateTime="2009-06-26T05:33:41Z">2009-06-26T05:33:41Z</eac:eventDateTime>
+                           <eac:eventDateTime standardDateTime="2009-06-26T05:33:41Z"
+                              >2009-06-26T05:33:41Z</eac:eventDateTime>
                            <eac:agent agentType="human">bdewhurs</eac:agent>
                         </eac:maintenanceEvent>
                      </eac:maintenanceHistory>
@@ -8129,8 +8415,21 @@
                   <p>Values in <gi>toDate</gi>: unknown, ongoing</p>
                </div>
                <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:nameEntry languageOfElement="de" preferredForm="true" status="authorized"
+                        localType="native">
+                        <eac:part localType="surname">Arendt</eac:part>
+                        <eac:part localType="firstname">Hannah</eac:part>
+                     </eac:nameEntry>
+                  </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:dateRange>
+                        <eac:fromDate standardDate="2016-09">September 2016</eac:fromDate>
+                        <eac:toDate status="ongoing"/>
+                     </eac:dateRange>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:date status="unknown"/>
                   </egXML>
                </div>
             </div>
@@ -8160,8 +8459,23 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:biogHist>
-                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <eac:span style="font-style:italic">What Happened to Mary</eac:span> and <eac:span style="font-style:italic">The Remarkable Adventures of Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
-                        <eac:p>During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <eac:span style="font-style:italic">Brazilian American</eac:span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <eac:span style="font-style:italic">Mexican American</eac:span> (1924-1929) and <eac:span style="font-style:italic">British American</eac:span> (1926-1929).</eac:p>
+                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and
+                           traveler. From 1908 to 1917, he wrote poetry and prose for numerous
+                           magazines and newspapers in New York City, publishing two pulp novels,
+                              <eac:span style="font-style:italic">What Happened to Mary</eac:span>
+                           and <eac:span style="font-style:italic">The Remarkable Adventures of
+                              Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span
+                              style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
+                        <eac:p>During 1918, he traveled extensively in Mexico and Central America,
+                           writing for the U.S. Committee of Public Information in Santiago de
+                           Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro,
+                           where they founded <eac:span style="font-style:italic">Brazilian
+                              American</eac:span>, a weekly magazine that ran until 1929. With
+                           Brown's mother, Cora, the Browns also established magazines in Mexico
+                           City and London: <eac:span style="font-style:italic">Mexican
+                              American</eac:span> (1924-1929) and <eac:span
+                              style="font-style:italic">British American</eac:span>
+                           (1926-1929).</eac:p>
                      </eac:biogHist>
                   </egXML>
                </div>
