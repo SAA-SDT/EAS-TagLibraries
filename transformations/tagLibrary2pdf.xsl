@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:eac-cpf="urn:isbn:1-931666-33-4"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:eac-cpf="urn:isbn:1-931666-33-4" xmlns:eac="http://archivists.org/ns/eac/v2"
     xmlns:ead="urn:isbn:1-931666-22-9"
     xmlns:ead3="http://ead3.archivists.org/schema/"
     xmlns:premis="http://www.loc.gov/premis/v3"
@@ -12,7 +12,7 @@
     xmlns:example="example" xmlns:term="term" xmlns:exslt="http://exslt.org/common"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-    exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead ead3 mods text term dc oai_dc"
+    exclude-result-prefixes="xs xlink eac-cpf eac ex eg exml example ead ead3 mods text term dc oai_dc"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0" extension-element-prefixes="exslt"
     version="2.0">
 
@@ -1489,7 +1489,7 @@
 
     <!-- In this template all occuring other namespaceprefixis needs to be added -->
     <xsl:template
-        match="eac-cpf:* | example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
+        match="eac-cpf:* | eac:* |example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
         <xsl:variable name="myDepth"
             select="count(ancestor::*[not(namespace-uri() = 'http://www.tei-c.org/ns/1.0')]) * 5"/>
         <fo:block start-indent="body-start() + {$myDepth}mm" wrap-option="wrap">
