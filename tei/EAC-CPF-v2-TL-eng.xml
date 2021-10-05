@@ -6,8 +6,10 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
+<!--  SiJa: <lb/> is missing in pdf & html -->
             <title xml:lang="eng" type="main">Encoded Archival Context - Corporate Bodies, Persons,
                and Families (EAC-CPF) <lb/> Tag Library</title>
+<!--  SiJa: 2nd title is missing in pdf & html -->
             <title xml:lang="eng" type="additional">draft Version EAC-CPF 2.0</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
@@ -46,12 +48,16 @@
          </sourceDesc>
       </fileDesc>
    </teiHeader>
+<!-- SiJa: remarks to table of contents: 
+   1. PDF: blank line before "Attributes" would be great
+   2. HTML: Could we use a three column layout for elements and attributes? -->
    <text>
       <front>
          <titlePage>
             <docTitle>
                <titlePart type="main">Encoded Archival Context - Corporate Bodies, Persons, and
                   Families (EAC-CPF) <lb/> Tag Library</titlePart>
+               <!-- SiJa: in PDF there is a whitespace btw. "[...] 2.0 and the following comma -->
                <titlePart type="additional">draft Version EAC-CPF 2.0</titlePart>
             </docTitle>
             <docEdition>2021 Edition</docEdition>
@@ -66,10 +72,10 @@
          <div>
             <div xml:id="release">
                <head>Release and Revision Notes</head>
-               <p>This is the draft release of the Tag Library for EAC-CPF 2.0. The current release
+               <p>This is the release of the Tag Library for EAC-CPF 2.0. The current release
                   includes changes and updates in the schema undertaken by the Technical
                   Subcommittee on Encoded Archival Standards reflecting comments received by the
-                  international community of professionals. </p>
+                  international community of professionals between 2010 and 2021.</p>
                <p>The EAC-CPF Tag Library is a living document. As such, it will continue to be
                   developed as users suggest areas in need of clarification or expansion. The
                   Technical Subcommittee for Encoded Archival Standards (TS-EAS) still encourages
@@ -90,6 +96,7 @@
                   Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on
                   Encoded Archival Standards (TS-EAS). This major revision aims to modernise the
                   schema in terms of: <list type="simple">
+<!--  SiJa: Define an unordered list with bullet points in html and pdf -->
                      <item>simplifying where possible,</item>
                      <item>alignment with EAD where useful,</item>
                      <item>implementing features and solutions upon users’ request,</item>
@@ -99,16 +106,16 @@
                <p>All elements and attributes in EAC-CPF 2010 were evaluated. Bugs and slight
                   changes were made in a minor update of the Schema in 2018. The present version,
                   EAC-CPF 2.0, is the result of a major overhaul of the standard and a
-                  reconciliation with EAD.</p>
-               <p>Following <ref
+                  reconciliation with EAD3.</p>
+               <p>Following the international standard <ref
                      target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd"
-                     >ISAAR(CPF)</ref>, the established structure of control area, identity area,
+                     >ISAAR(CPF)</ref> by the International Council on Archives (ICA), the established structure of control area, identity area,
                   description area, and relations is still available, as is the idea of encoding
                   multiple identities in one EAC-CPF instance.</p>
                <p>Working in parallel with the ICA Experts Group on Archival Description (ICA EGAD),
-                  who is working on a 2nd draft of <ref
+                  who was working on a 2nd draft of <ref
                      target="https://www.ica.org/en/egad-ric-conceptual-model">Records in
-                     Contexts</ref> (RiC) which is being designed as the next comprehensive
+                     Contexts</ref> (RiC) at the same time in 2020 and 2021 which is being designed as the next comprehensive
                   description standard for archives, EAC-CPF 2.0 tries to include the ideas of RiC
                   where feasible.</p>
                <p>Widely discussed was the question of spelling since the related standard, EAD,
@@ -159,6 +166,7 @@
                      schema. The definitions for parent elements may provide additional information
                      about an element's usage.</item>
                   <label>Attributes:</label>
+<!--                  add link -->
                   <item>Identifies all attributes that can be associated with an element. Attributes
                      are represented in camelCase letters in XML coding. The Tag Library uses the
                      convention of preceding an attribute name with an @ symbol (e.g.,
@@ -199,6 +207,7 @@
          </div>
       </front>
       <body>
+<!-- SiJa: blank page in PDF btw Elements header and first element description -->
          <div type="elements">
             <div type="elementDocumentation" xml:id="elem-abstract">
                <head>
