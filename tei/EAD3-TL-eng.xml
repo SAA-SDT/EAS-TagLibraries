@@ -13618,6 +13618,7 @@
                </div>
                <div type="availability">
                   <p>Within <gi>ptrgrp</gi>: One of <gi>ptr</gi> or <gi>ref</gi> is required, repeatable</p>
+                  <p>Within <gi>indexentry</gi>: Optional, not repeatable</p>
                   <p>Within all other parents: Optional, repeatable</p>
                </div>
                <div type="examples">
@@ -14231,6 +14232,7 @@
                </div>
                <div type="availability">
                   <p>Within <gi>ptrgrp</gi>: One of <gi>ptr</gi> or <gi>ref</gi> is required, repeatable</p>
+                  <p>Within <gi>indexentry</gi>: Optional, not repeatable</p>
                   <p>Within all other parents: Optional, repeatable</p>
                </div>
                <div type="examples">
@@ -14432,7 +14434,7 @@
                   <p>Experimental in EAD3</p>
                </div>
                <div type="examples">
-                  <p>See examples under <gi>relation</gi>.</p>
+                  <p>See examples under <gi>relations</gi>.</p>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-relationentry">
