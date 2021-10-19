@@ -150,7 +150,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e7362">Attributes</a></div>
+            <div class="toc1"><a href="#d1e7528">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -211,9 +211,9 @@
                      <td><span><a href="#attr-targetType">targetType</a></span></td>
                      <td><span><a href="#attr-unit">unit</a></span></td>
                      <td><span><a href="#attr-value">value</a></span></td>
+                     <td><span><a href="#attr-valueURI">valueURI</a></span></td>
                      <td><span><a href="#attr-vocabularySource">vocabularySource</a></span></td>
                      <td><span><a href="#attr-vocabularySourceURI">vocabularySourceURI</a></span></td>
-                     <td><span><a href="#attr-valueURI">valueURI</a></span></td>
                   </tr>
                </table>
             </div>
@@ -509,7 +509,14 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;address audience="external" id="IDAddress1"&gt;
+                        <div class="innerExample">&lt;addressLine languageOfElement="se"&gt;Kungl. Hovstaterna&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="se"&gt;Kungl. Slottet&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine addressLineType="postalCode"&gt;10770&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="se" addressLineType="municipality"&gt;Stockholm&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="se" addressLineType="country"&gt;Sverige&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="en" addressLineType="country"&gt;Sweden&lt;/addressLine&gt;<br></br></div>&lt;/address&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-addressLine"><span class="label">&lt;addressLine&gt;</span></div>
                   <div class="content"><span class="label">Address Line</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -576,7 +583,14 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;address&gt;
+                        <div class="innerExample">&lt;addressLine languageOfElement="se"&gt;Kungl. Hovstaterna&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="se"&gt;Kungl. Slottet&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine addressLineType="postalCode"&gt;10770&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="se" addressLineType="municipality"&gt;Stockholm&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="se" addressLineType="country"&gt;Sverige&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="en" addressLineType="country"&gt;Sweden&lt;/addressLine&gt;<br></br></div>&lt;/address&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-agencyCode"><span class="label">&lt;agencyCode&gt;</span></div>
                   <div class="content"><span class="label">Agency Code</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -653,7 +667,10 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceAgency&gt;
+                        <div class="innerExample">&lt;agencyCode&gt;AU-ANL:PEAU&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;National Library of Australia&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-agencyName"><span class="label">&lt;agencyName&gt;</span></div>
                   <div class="content"><span class="label">Agency Name</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -719,7 +736,14 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceAgency&gt;
+                        <div class="innerExample">&lt;agencyCode&gt;AU-ANL:PEAU&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;National Library of Australia&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div>
+                     <div class="innerExample">&lt;maintenanceAgency&gt;
+                        <div class="innerExample">&lt;agencyCode&gt;CA-OONL&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;Library and Archives Canada&lt;/agencyName&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;Bibliothèque et Archives Canada&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-agent"><span class="label">&lt;agent&gt;</span></div>
                   <div class="content"><span class="label">Agent</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -972,7 +996,8 @@
                            <div class="innerExample">&lt;chronItem&gt;
                               <div class="innerExample">&lt;dateRange&gt;
                                  <div class="innerExample">&lt;fromDate standardDate="1937"&gt;1937&lt;/fromDate&gt;<br></br></div>
-                                 <div class="innerExample">&lt;toDate standardDate="1941"&gt;1941&lt;/toDate&gt;<br></br></div>&lt;/dateRange&gt;<br></br></div>Linnean Macleay Fellow&lt;/chronItem&gt;<br></br></div>&lt;/chronList&gt;<br></br></div>&lt;/biogHist&gt;<br></br></div><br></br></div><br></br></div>
+                                 <div class="innerExample">&lt;toDate standardDate="1941"&gt;1941&lt;/toDate&gt;<br></br></div>&lt;/dateRange&gt;<br></br></div>
+                              <div class="innerExample">&lt;event&gt;Linnean Macleay Fellow&lt;/event&gt;<br></br></div>&lt;/chronItem&gt;<br></br></div>&lt;/chronList&gt;<br></br></div>&lt;/biogHist&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-chronItem"><span class="label">&lt;chronItem&gt;</span></div>
                   <div class="content"><span class="label">Chronology Item</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -1421,7 +1446,11 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;contact audience="external" id="IDContact1"&gt;
+                        <div class="innerExample">&lt;contactLine contactLineType="phoneNumber"&gt;08-402 60 00&lt;/contactLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;contactLine languageOfElement="se" contactLineType="homepage"&gt;https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html&lt;/contactLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;contactLine languageOfElement="en" contactLineType="homepage"&gt;https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html&lt;/contactLine&gt;<br></br></div>&lt;/contact&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-contactLine"><span class="label">&lt;contactLine&gt;</span></div>
                   <div class="content"><span class="label">Contact Line</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -1497,7 +1526,11 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;contact&gt;
+                        <div class="innerExample">&lt;contactLine contactLineType="phoneNumber"&gt;08-402 60 00&lt;/contactLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;contactLine languageOfElement="se" contactLineType="homepage"&gt;https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html&lt;/contactLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;contactLine languageOfElement="en" contactLineType="homepage"&gt;https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html&lt;/contactLine&gt;<br></br></div>&lt;/contact&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-control"><span class="label">&lt;control&gt;</span></div>
                   <div class="content"><span class="label">Control</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -2353,9 +2386,19 @@
                   <div class="content">
                      <div class="p">Required, not repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;eac&gt;
+                        <div class="innerExample">&lt;control&gt;[...]&lt;/control&gt;<br></br></div>
+                        <div class="innerExample">&lt;cpfDescription&gt;[...]&lt;/cpfDescription&gt;<br></br></div>&lt;/eac&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;eac&gt;
+                        <div class="innerExample">&lt;control&gt;[...]&lt;/control&gt;<br></br></div>
+                        <div class="innerExample">&lt;multipleIdentities&gt;
+                           <div class="innerExample">&lt;cpfDescription&gt;[...]&lt;/cpfDescription&gt;<br></br></div>
+                           <div class="innerExample">&lt;cpfDescription&gt;[...]&lt;/cpfDescription&gt;<br></br></div>&lt;/multipleIdentities&gt;<br></br></div>&lt;/eac&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-entityType"><span class="label">&lt;entityType&gt;</span></div>
                   <div class="content"><span class="label">Entity Type</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -2401,9 +2444,27 @@
                   <div class="content">
                      <div class="p">Required, not repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;identity&gt;
+                        <div class="innerExample">&lt;entityType value="corporateBody"&gt;&lt;/entityType&gt;<br></br></div>
+                        <div class="innerExample">&lt;nameEntry status="authorized"&gt;
+                           <div class="innerExample">&lt;part localType="https://d-nb.info/standards/elementset/gnd#preferredNameForTheCorporateBody" localTypeDeclarationReference="MARC21"&gt;Preußische Staatsbibliothek&lt;/part&gt;<br></br></div>&lt;/nameEntry&gt;<br></br></div>&lt;/identity&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;identity&gt;
+                        <div class="innerExample">&lt;entityType value="person"&gt;&lt;/entityType&gt;<br></br></div>
+                        <div class="innerExample">&lt;nameEntry status="authorized"&gt;
+                           <div class="innerExample">&lt;part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO"&gt;Arendt, Hannah&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO"&gt;1906-1975&lt;/part&gt;<br></br></div>&lt;/nameEntry&gt;<br></br></div>&lt;/identity&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;identity&gt;
+                        <div class="innerExample">&lt;entityType value="family"&gt;&lt;/entityType&gt;<br></br></div>
+                        <div class="innerExample">&lt;nameEntry status="authorized"&gt;
+                           <div class="innerExample">&lt;part localType="100$a"&gt;Mozart&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part localType="100$c"&gt;Familie : 17.-19. Jh.&lt;/part&gt;<br></br></div>&lt;/nameEntry&gt;<br></br></div>&lt;/identity&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-event"><span class="label">&lt;event&gt;</span></div>
                   <div class="content"><span class="label">Event</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -3224,7 +3285,12 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;identity&gt;
+                        <div class="innerExample">&lt;entityType value="person"&gt;&lt;/entityType&gt;<br></br></div>
+                        <div class="innerExample">&lt;nameEntry&gt;
+                           <div class="innerExample">&lt;part localType="familyname"&gt;Hill&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part localType="givenname"&gt;Dorothy&lt;/part&gt;<br></br></div>&lt;/nameEntry&gt;<br></br></div>&lt;/identity&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-identityId"><span class="label">&lt;identityId&gt;</span></div>
                   <div class="content"><span class="label">Identity Identifier</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -3296,7 +3362,12 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;localTypeDeclaration id="localTypeDeclaration1" vocabularySource="SwedishRegistrationCodeVocabulary"&gt;
+                        <div class="innerExample">&lt;reference href="https://link.to.source"&gt;The Swedish vocabulary for identification codes&lt;/reference&gt;<br></br></div>&lt;/localTypeDeclaration&gt;<br></br></div>
+                     <div class="innerExample">&lt;identityId localType="RegistrationCode" localTypeDeclarationReference="localTypeDeclaration1"&gt;222000-3103&lt;/identityId&gt;<br></br></div>
+                     <div class="innerExample">&lt;identityId localType="VATRegistrationCode" localTypeDeclarationReference="localTypeDeclaration1"&gt;SE222000310301&lt;/identityId&gt;<br></br></div>
+                     <div class="innerExample">&lt;identityId localType="EInvoiceID" localTypeDeclarationReference="localTypeDeclaration1"&gt;2220003103&lt;/identityId&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-item"><span class="label">&lt;item&gt;</span></div>
                   <div class="content"><span class="label">Item</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4029,7 +4100,16 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;localDescriptions&gt;
+                        <div class="innerExample">&lt;localDescription&gt;
+                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#academicDegree" localTypeDeclarationReference="GNDO"&gt;Prof. Dr.&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription&gt;
+                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#4.7p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;Personen zu Philosophie&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription&gt;
+                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#8.1p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;Personen (Politologen, Staatstheoretiker)&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription&gt;
+                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#9.5p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;Personen zu Soziologie, Gesellschaft, Arbeit, Sozialgeschichte&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>&lt;/localDescriptions&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-localDescriptions"><span class="label">&lt;localDescriptions&gt;</span></div>
                   <div class="content"><span class="label">Local Descriptions</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4089,7 +4169,16 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;localDescriptions&gt;
+                        <div class="innerExample">&lt;localDescription&gt;
+                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DXDE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#"&gt;Deutsches Reich&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription&gt;
+                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE-BE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#"&gt;Berlin&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription&gt;
+                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#broaderTermInstantial" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/gnd/4066573-2" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;Wissenschaftliche Bibliothek&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription&gt;
+                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#6.7" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;Bibliothek, Information und Dokumentation&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>&lt;/localDescriptions&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-localTypeDeclaration"><span class="label">&lt;localTypeDeclaration&gt;</span></div>
                   <div class="content"><span class="label">Local Type Declaration</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4149,7 +4238,15 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;localTypeDeclaration&gt;
+                        <div class="innerExample">&lt;reference href="https://d-nb.info/standards/elementset/gnd_20191015"&gt;GNDO&lt;/reference&gt;<br></br></div>
+                        <div class="innerExample">&lt;descriptiveNote&gt;
+                           <div class="innerExample">&lt;p&gt;Gemeinsame Normdatei Ontologie&lt;/p&gt;<br></br></div>
+                           <div class="innerExample">&lt;p languageOfElement="eng"&gt;Integrated Authority File Ontology&lt;/p&gt;<br></br></div>
+                           <div class="innerExample">&lt;p&gt;Version 2019-10-15&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/localTypeDeclaration&gt;<br></br></div>
+                     <div class="innerExample">&lt;localTypeDeclaration&gt;
+                        <div class="innerExample">&lt;reference href="https://www.loc.gov/marc/authority/"&gt;MARC21&lt;/reference&gt;<br></br></div>&lt;/localTypeDeclaration&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-maintenanceAgency"><span class="label">&lt;maintenanceAgency&gt;</span></div>
                   <div class="content"><span class="label">Maintenance Agency</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4779,6 +4876,7 @@
                      <div class="p">To facilitate interoperability the XML should conform to an open, standard XML
                         schema and a namespace attribute should be present on the root element
                         referencing the namespace of the standard.</div>
+                     <div class="p">It is also possible to encode data in XML without a namespace within the &lt;objectXML&gt; element.</div>
                      <div class="p">&lt;objectXMLWrap&gt; may be used to store related XML data locally rather
                         than linking to external resources in order to facilitate processing or in
                         cases where the related data may not be reliably accessible.</div>
@@ -4820,7 +4918,10 @@
                            <div class="innerExample">&lt;respStmt&gt;
                               <div class="innerExample">&lt;resp&gt;photographes&lt;/resp&gt;<br></br></div>
                               <div class="innerExample">&lt;name&gt;Roger Henrard&lt;/name&gt;<br></br></div>
-                              <div class="innerExample">&lt;name&gt;Yann Arthus-Bertrand&lt;/name&gt;<br></br></div>&lt;/respStmt&gt;<br></br></div>&lt;/bibl&gt;<br></br></div>&lt;/objectXMLWrap&gt;<br></br></div><br></br></div><br></br></div>
+                              <div class="innerExample">&lt;name&gt;Yann Arthus-Bertrand&lt;/name&gt;<br></br></div>&lt;/respStmt&gt;<br></br></div>&lt;/bibl&gt;<br></br></div>&lt;/objectXMLWrap&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;objectXMLWrap&gt;ToveJaniReminderDon't forget me this weekend!&lt;/objectXMLWrap&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-occupation"><span class="label">&lt;occupation&gt;</span></div>
                   <div class="content"><span class="label">Occupation</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4897,7 +4998,12 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;occupations&gt;
+                        <div class="innerExample">&lt;occupation&gt;
+                           <div class="innerExample">&lt;term&gt;Geologist&lt;/term&gt;<br></br></div>&lt;/occupation&gt;<br></br></div>
+                        <div class="innerExample">&lt;occupation&gt;
+                           <div class="innerExample">&lt;term&gt;Palaeontologist&lt;/term&gt;<br></br></div>&lt;/occupation&gt;<br></br></div>&lt;/occupations&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-occupations"><span class="label">&lt;occupations&gt;</span></div>
                   <div class="content"><span class="label">Occupations</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -5240,7 +5346,12 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;otherRecordId localType="024$a" localTypeDeclarationReference="MARC21"&gt;http://d-nb.info/gnd/122651634"&lt;/otherRecordId&gt;<br></br></div>
+                     <div class="innerExample">&lt;otherRecordId localType="035$a" localTypeDeclarationReference="MARC21"&gt;(DE-101)122651634&lt;/otherRecordId&gt;<br></br></div>
+                     <div class="innerExample">&lt;otherRecordId localType="https://d-nb.info/standards/elementset/gnd#gndIdentifier" localTypeDeclarationReference="GNDO"&gt;(DE-588)122651634&lt;/otherRecordId&gt;<br></br></div>
+                     <div class="innerExample">&lt;otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO"&gt;(DE-588)1157909116&lt;/otherRecordId&gt;<br></br></div>
+                     <div class="innerExample">&lt;otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO"&gt;(DE-588)1089757360&lt;/otherRecordId&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-p"><span class="label">&lt;p&gt;</span></div>
                   <div class="content"><span class="label">Paragraph</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6161,7 +6272,9 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;rightsDeclaration&gt;
+                        <div class="innerExample">&lt;reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de"&gt;CC0 1.0 Universell&lt;/reference&gt;<br></br></div>&lt;/rightsDeclaration&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-setComponent"><span class="label">&lt;setComponent&gt;</span></div>
                   <div class="content"><span class="label">Set Component</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6284,7 +6397,10 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;conventionDeclaration id="conventiondeclaration1"&gt;
+                        <div class="innerExample">&lt;reference&gt;Anglo-American Cataloging Rules, Revised&lt;/reference&gt;<br></br></div>
+                        <div class="innerExample">&lt;shortCode&gt;AACR2&lt;/shortCode&gt;<br></br></div>&lt;/conventionDeclaration&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-source"><span class="label">&lt;source&gt;</span></div>
                   <div class="content"><span class="label">Source</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6354,7 +6470,18 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;sources&gt;
+                        <div class="innerExample">&lt;source&gt;
+                           <div class="innerExample">&lt;reference&gt;B 1996&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div>
+                        <div class="innerExample">&lt;source&gt;
+                           <div class="innerExample">&lt;reference&gt;LCAuth&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div>
+                        <div class="innerExample">&lt;source&gt;
+                           <div class="innerExample">&lt;reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)"&gt;Wikipedia&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div>
+                        <div class="innerExample">&lt;source&gt;
+                           <div class="innerExample">&lt;reference href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13318"&gt;Svenskt biografiskt lexikon&lt;/reference&gt;<br></br></div>
+                           <div class="innerExample">&lt;descriptiveNote&gt;
+                              <div class="innerExample">&lt;p&gt;Stand: 03.12.2020&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/source&gt;<br></br></div>&lt;/sources&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-sources"><span class="label">&lt;sources&gt;</span></div>
                   <div class="content"><span class="label">Sources</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6406,7 +6533,14 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;sources&gt;
+                        <div class="innerExample">&lt;source&gt;
+                           <div class="innerExample">&lt;reference&gt;Provenienzmerkmal&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div>
+                        <div class="innerExample">&lt;source&gt;
+                           <div class="innerExample">&lt;reference href="http://staatsbibliothek-berlin.de/die-staatsbibliothek/geschichte/"&gt;
+                              <div class="innerExample">&lt;descriptiveNote&gt;
+                                 <div class="innerExample">&lt;p&gt;Stand: 31.07.2018&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div>&lt;/sources&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-span"><span class="label">&lt;span&gt;</span></div>
                   <div class="content"><span class="label">span</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -7063,7 +7197,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example"><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e7362">
+            <div class="section" id="d1e7528">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
@@ -7085,7 +7219,14 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;address&gt;
+                        <div class="innerExample">&lt;addressLine languageOfElement="se"&gt;Kungl. Hovstaterna&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="se"&gt;Kungl. Slottet&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine addressLineType="postalCode"&gt;10770&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="se" addressLineType="municipality"&gt;Stockholm&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="se" addressLineType="country"&gt;Sverige&lt;/addressLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;addressLine languageOfElement="en" addressLineType="country"&gt;Sweden&lt;/addressLine&gt;<br></br></div>&lt;/address&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-agentType"><span class="label">@agentType</span></div>
@@ -7141,7 +7282,8 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;eac audience="external"&gt;[...]&lt;/eac&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-base"><span class="label">@base</span></div>
@@ -7220,7 +7362,11 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;contact&gt;
+                        <div class="innerExample">&lt;contactLine contactLineType="phoneNumber"&gt;08-402 60 00&lt;/contactLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;contactLine languageOfElement="se" contactLineType="homepage"&gt;https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html&lt;/contactLine&gt;<br></br></div>
+                        <div class="innerExample">&lt;contactLine languageOfElement="en" contactLineType="homepage"&gt;https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html&lt;/contactLine&gt;<br></br></div>&lt;/contact&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-conventionDeclarationReference"><span class="label">@conventionDeclarationReference</span></div>
@@ -7789,7 +7935,8 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;[...]&lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-repositoryEncoding"><span class="label">@repositoryEncoding</span></div>
@@ -8086,39 +8233,8 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
-               <div class="spacer"> </div>
-               <div class="attribute">
-                  <div class="leftcol" id="attr-vocabularySource"><span class="label">@vocabularySource</span></div>
-                  <div class="content"> <span class="label">Vocabulary Source</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
-                  <div class="leftcol">Summary: </div>
-                  <div class="content">
-                     <div class="p">An optional attribute for identifying a vocabulary that is the source of the
-                        element's value.</div>
-                  </div>
-                  <div class="leftcol">Data Type: </div>
-                  <div class="content">
-                     <div class="p">token</div>
-                  </div>
-                  <div class="leftcol">Example:</div>
-                  <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
-               <div class="spacer"> </div>
-               <div class="attribute">
-                  <div class="leftcol" id="attr-vocabularySourceURI"><span class="label">@vocabularySourceURI</span></div>
-                  <div class="content"> <span class="label">Vocabulary Source URI</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
-                  <div class="leftcol">Summary: </div>
-                  <div class="content">
-                     <div class="p">An optional attribute for including a URI identifying the vocabulary source for
-                        the element's value.</div>
-                  </div>
-                  <div class="leftcol">Data Type: </div>
-                  <div class="content">
-                     <div class="p">anyURI</div>
-                  </div>
-                  <div class="leftcol">Example:</div>
-                  <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;entityType value="person"&gt;&lt;/entityType&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-valueURI"><span class="label">@valueURI</span></div>
@@ -8134,7 +8250,47 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;place&gt;
+                        <div class="innerExample">&lt;placeName valueURI="https://d-nb.info/gnd/4076982-3" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;Salzburg&lt;/placeName&gt;<br></br></div>
+                        <div class="innerExample">&lt;placeRole valueURI="https://d-nb.info/standards/elementset/gnd#characteristicPlace" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#"&gt;Charakteristischer Ort&lt;/placeRole&gt;<br></br></div>&lt;/place&gt;<br></br></div><br></br></div><br></br></div>
+               <div class="spacer"> </div>
+               <div class="attribute">
+                  <div class="leftcol" id="attr-vocabularySource"><span class="label">@vocabularySource</span></div>
+                  <div class="content"> <span class="label">Vocabulary Source</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
+                  <div class="leftcol">Summary: </div>
+                  <div class="content">
+                     <div class="p">An optional attribute for identifying a vocabulary that is the source of the
+                        element's value.</div>
+                  </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">
+                     <div class="p">token</div>
+                  </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;occupation&gt;
+                        <div class="innerExample">&lt;term valueURI="https://d-nb.info/gnd/4053311-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;Schriftstellerin&lt;/term&gt;<br></br></div>&lt;/occupation&gt;<br></br></div><br></br></div><br></br></div>
+               <div class="spacer"> </div>
+               <div class="attribute">
+                  <div class="leftcol" id="attr-vocabularySourceURI"><span class="label">@vocabularySourceURI</span></div>
+                  <div class="content"> <span class="label">Vocabulary Source URI</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
+                  <div class="leftcol">Summary: </div>
+                  <div class="content">
+                     <div class="p">An optional attribute for including a URI identifying the vocabulary source for
+                        the element's value.</div>
+                  </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">
+                     <div class="p">anyURI</div>
+                  </div>
+                  <div class="leftcol">Example:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;place&gt;
+                        <div class="innerExample">&lt;placeName valueURI="https://d-nb.info/gnd/4005728-8" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;Berlin&lt;/placeName&gt;<br></br></div>
+                        <div class="innerExample">&lt;placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBusiness" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#"&gt;Sitz&lt;/placeRole&gt;<br></br></div>&lt;/place&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>  <a class="tocReturn" href="#toc">[toc]</a></div>
          </div>
          <div></div>
