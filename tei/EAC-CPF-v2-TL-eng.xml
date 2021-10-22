@@ -5117,13 +5117,13 @@
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:objectXMLWrap>
-                        <!-- Ailie: how to get the transformation working without a namespace? -->
-                        <note xmlns="">
-                           <to>Tove</to>
-                           <from>Jani</from>
-                           <heading>Reminder</heading>
-                           <body>Don't forget me this weekend!</body>
-                        </note>
+                        <!-- Ailie: used the eac prefix to get the example to display, even though not EAC elements -->
+                        <eac:note xmlns="">
+                           <eac:to>Tove</eac:to>
+                           <eac:from>Jani</eac:from>
+                           <eac:heading>Reminder</eac:heading>
+                           <eac:body>Don't forget me this weekend!</eac:body>
+                        </eac:note>
                      </eac:objectXMLWrap>
                   </egXML>
                </div>
