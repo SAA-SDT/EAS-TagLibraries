@@ -1423,7 +1423,7 @@
                     <xsl:choose>
                         <xsl:when test="eg:egXML">
                             <xsl:for-each select="eg:egXML">
-                                <fo:block font-family="monospace" font-size="10pt">
+                                <fo:block font-family="monospace" font-size="10pt" space-after="12pt">
                                     <xsl:apply-templates/>
                                 </fo:block>
                             </xsl:for-each>
@@ -1444,7 +1444,7 @@
 
     <xsl:template name="eg">
         <xsl:choose>
-            <xsl:when test="name() != 'eac-cpf:objectXMLWrap' and name() != 'ead:objectxmlwrap'">
+            <xsl:when test="name() != 'eac-cpf:objectXMLWrap' and name() != 'ead:objectxmlwrap' and name() != 'eac:objectXMLWrap'">
                 <fo:block>
                     <xsl:call-template name="newLine"/>
                     <xsl:text>&lt;</xsl:text>
