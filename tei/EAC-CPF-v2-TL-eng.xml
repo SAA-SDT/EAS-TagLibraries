@@ -1745,8 +1745,8 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:cpfDescription>
-                        <eac:identity>[...] </eac:identity>
-                        <eac:description>[...] </eac:description>
+                        <eac:identity>[...]</eac:identity>
+                        <eac:description>[...]</eac:description>
                         <eac:relations>[...]</eac:relations>
                      </eac:cpfDescription>
                   </egXML>
@@ -3549,7 +3549,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:languageUsed>
+                        <eac:language languageCode="eng">English</eac:language>
+                        <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
+                     </eac:languageUsed>
                   </egXML>
                </div>
             </div>
@@ -3614,7 +3617,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:languageDeclaration languageCode="ger" scriptCode="Latn"/>
                   </egXML>
                </div>
             </div>
@@ -3683,7 +3686,16 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:languagesUsed>
+                        <eac:languageUsed>
+                           <eac:language languageCode="eng">English</eac:language>
+                           <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
+                        </eac:languageUsed>
+                        <eac:languageUsed>
+                           <eac:language languageCode="gre">Greek, Modern (1453-)</eac:language>
+                           <eac:writingSystem scriptCode="Grek">Greek</eac:writingSystem>
+                        </eac:languageUsed>
+                     </eac:languagesUsed>
                   </egXML>
                </div>
             </div>
@@ -3745,7 +3757,16 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:languagesUsed>
+                        <eac:languageUsed>
+                           <eac:language languageCode="eng">English</eac:language>
+                           <eac:writingSystem sriptCode="Latn">Latin</eac:writingSystem>
+                        </eac:languageUsed>
+                        <eac:languageUsed>
+                           <eac:language languageCode="spa">Spanish</eac:language>
+                           <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
+                        </eac:languageUsed>
+                     </eac:languagesUsed>
                   </egXML>
                </div>
             </div>
@@ -7498,7 +7519,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:languageUsed>
+                        <eac:language languageCode="eng">English</eac:language>
+                        <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
+                     </eac:languageUsed>
                   </egXML>
                </div>
             </div>
@@ -7854,7 +7878,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601"
+                        detailLevel="basic" languageEncoding="iso639-2b" repositoryEncoding="iso15511"
+                        scriptEncoding="iso15924"> [...] </eac:control>
                   </egXML>
                </div>
             </div>
@@ -8040,7 +8066,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</eac:agencyName>
                   </egXML>
                </div>
             </div>
@@ -8150,7 +8176,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:nameEntry status="authorized">
+                        <eac:part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">Arendt, Hannah</eac:part>
+                        <eac:part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO">1906-1975</eac:part>						
+                     </eac:nameEntry>
                   </egXML>
                </div>
             </div>
@@ -8174,7 +8203,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:nameEntry status="authorized">
+                        <eac:part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">Arendt, Hannah</eac:part>
+                        <eac:part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO">1906-1975</eac:part>						
+                     </eac:nameEntry>
                   </egXML>
                </div>
             </div>
@@ -8281,7 +8313,8 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new"
+                        publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">[...]</eac:control>
                   </egXML>
                </div>
             </div>
@@ -8439,7 +8472,7 @@
                         </eac:languageUsed>
                         <eac:languageUsed>
                            <eac:language languageCode="spa">Spanish</eac:language>
-                           <eac:writingSystem>scriptCode="Latn">Latin</eac:writingSystem>
+                           <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
                         </eac:languageUsed>
                         <eac:descriptiveNote>
                            <eac:p>Published works in English and Spanish.</eac:p>
@@ -8492,7 +8525,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:nameEntry status="alternative">
+                        <eac:part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO" scriptOfElement="Hans">阿伦特, 汉娜</eac:part>
+                    </eac:nameEntry>
                   </egXML>
                </div>
             </div>
