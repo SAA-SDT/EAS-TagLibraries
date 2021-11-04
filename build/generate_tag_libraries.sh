@@ -37,7 +37,7 @@ case $1 in
 		;;
 	"ead")
 		echo "generating EAD3 tag libraries"
-		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="978-1-945246-70-8" currentLanguage=$lang
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage=$lang
 		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes" currentLanguage=$lang
 		;;
 	"premis")
