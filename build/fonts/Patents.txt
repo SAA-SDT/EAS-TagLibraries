@@ -1,0 +1,13 @@
+# Patents.txt
+# -*- encoding: ASCII -*-
+
+*** Kurinto Font Folio v2.197 [Full] - Patents
+
+This information should be distributed along with the Kurinto fonts as well as
+distributions of any derivative works. If you modify this font software, please
+include this file and augment the information as appropriate.
+
+These patent legends apply to the source fonts that are incorporated in Kurinto
+v2.197:
+
+No patents are known to apply to the Kurinto Font Software.

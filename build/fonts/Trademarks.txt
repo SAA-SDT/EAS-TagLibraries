@@ -1,0 +1,68 @@
+# Trademarks.txt
+# -*- encoding: ASCII -*-
+
+*** Kurinto Font Folio v2.197 [Full] - Trademarks
+
+This information should be distributed along with the Kurinto fonts as well as
+distributions of any derivative works. If you modify this font software, please
+include this file and augment the information as appropriate.
+
+Kurinto is a trademark of Clinton F. Goss in the United States and other
+countries.
+
+These trademark legends apply to the source fonts that are incorporated in
+Kurinto v2.197:
+
+Abyssinica SIL is a trademark of SIL International.
+
+Aksara Bali Galang is a trademark of Bemby Bantara Narendra and Made Suatjana.
+
+All brand icons are trademarks of their respective owners. The use of these
+trademarks does not indicate endorsement of the trademark holder by Font
+Awesome, nor vice versa. Please do not use brand logos for any purpose except
+to represent the company, product, or service to which they refer.
+
+Annapurna SIL is a trademark of SIL International Inc.
+
+Bravura is a registered trademark of Steinberg Media Technologies GmbH in the
+European Union and other territories. [Mac/Rom/Eng]_x000D_
+
+Bravura is a registered trademark of Steinberg Media Technologies GmbH in the
+European Union and other territories. [Win/UniBMP/Eng(US)]
+
+Cardo is a trademark of David J. Perry.
+
+Charis SIL is a trademark of SIL International.
+
+Constructium is a trademark of Kreative Korporation.
+
+Creative Commons Trademark policy authorizes use of CC trademarks on the terms
+and conditions which they can revoke for any reason whatsoever or for no
+specified reason.
+
+Dai Banna SIL is a trademark of SIL International.
+
+Fira Sans is a trademark of The Mozilla Corporation.
+
+Gentium is a trademark of SIL International.
+
+Hind is a trademark of the Indian Type Foundry.
+
+Kurinto is a trademark of Clinton F. Goss in the United States and other
+countries. See the Trademarks.txt file for a declaration of trademarks
+associated with this Font Software.
+
+Noto is a trademark of Google Inc.
+
+Noto is a trademark of Google LLC
+
+Roboto Slab is a trademark of Google.
+
+STIX Fonts(TM) is a trademark of The Institute of Electrical and Electronics
+Engineers, Inc.
+
+Source is a trademark of Adobe in the United States and/or other countries.
+
+Tai Heritage Pro is a trademark of SIL International.
+
+Tinos is a trademark of Google Inc.

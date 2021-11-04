@@ -17,20 +17,20 @@ goto END
 :: run XSLT transformations via Saxon, passing standard-specific variables to the XSLT via these commands
 :EAC
 echo Generating EAC-CPF tag libraries
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="yes"
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="yes" currentLanguage="en"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage="en"
 goto MAIN
 
 :EAD
 echo Generating EAD tag libraries
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="yes"
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="yes" currentLanguage="en"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage="en"
 goto MAIN
 
 :PREMIS
 echo Generating PREMIS tag libraries
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="no"
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="no" ISBN="PLACEHOLDER ISBN VALUE"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="no" currentLanguage="en"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="no" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage="en"
 goto MAIN
 
 :: error out if Java is not installed
@@ -49,7 +49,7 @@ GOTO END
 :: run fop on the FOXML...I don't know how to remove the temp XML,
 :: since fop.bat closes out of the script!
 :MAIN
-vendor\fop-2.5\fop\fop.bat %1.xml %1.pdf
+vendor\fop-2.5\fop\fop.bat -c fop-config.xml %1.xml %1.pdf
 GOTO END
 
 :END
