@@ -1358,7 +1358,7 @@
                     <xsl:for-each select="*">
                         <xsl:variable name="myDepth"
                             select="count(ancestor::*[not(namespace-uri() = 'http://www.tei-c.org/ns/1.0')]) * 5"/>
-                        <fo:block start-indent="body-start() + {$myDepth}mm" font-family="KurintoMono"
+                        <fo:block start-indent="body-start() + {$myDepth}mm" font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC"
                             font-size="10pt">
                             <xsl:call-template name="eg"/>
                         </fo:block>
@@ -1390,7 +1390,7 @@
                     <xsl:for-each select="*">
                         <xsl:variable name="myDepth"
                             select="count(ancestor::*[not(namespace-uri() = 'http://www.tei-c.org/ns/1.0')]) * 5"/>
-                        <fo:block start-indent="body-start() + {$myDepth}mm" font-family="KurintoMono"
+                        <fo:block start-indent="body-start() + {$myDepth}mm" font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC"
                             font-size="10pt">
                             <xsl:call-template name="eg"/>
                         </fo:block>
@@ -1424,7 +1424,7 @@
                     <xsl:choose>
                         <xsl:when test="eg:egXML">
                             <xsl:for-each select="eg:egXML">
-                                <fo:block font-family="KurintoMono" font-size="10pt">
+                                <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" font-size="10pt">
                                     <xsl:apply-templates/>
                                 </fo:block>
                             </xsl:for-each>

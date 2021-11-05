@@ -64,6 +64,42 @@
 			<font embed-url="KurintoMono-It.ttf">
 				<font-triplet name="KurintoMono" style="italic" weight="normal"/>
 			</font>
+			<font embed-url="KurintoMonoJP-Rg.ttf">
+				<font-triplet name="KurintoMonoJP" style="normal" weight="normal"/>
+			</font>
+			<font embed-url="KurintoMonoJP-Bd.ttf">
+				<font-triplet name="KurintoMonoJP" style="normal" weight="bold"/>
+			</font>
+			<font embed-url="KurintoMonoJP-BdIt.ttf">
+				<font-triplet name="KurintoMonoJP" style="italic" weight="bold"/>
+			</font>
+			<font embed-url="KurintoMonoJP-It.ttf">
+				<font-triplet name="KurintoMonoJP" style="italic" weight="normal"/>
+			</font>
+			<font embed-url="KurintoMonoSC-Rg.ttf">
+				<font-triplet name="KurintoMonoSC" style="normal" weight="normal"/>
+			</font>
+			<font embed-url="KurintoMonoSC-Bd.ttf">
+				<font-triplet name="KurintoMonoSC" style="normal" weight="bold"/>
+			</font>
+			<font embed-url="KurintoMonoSC-BdIt.ttf">
+				<font-triplet name="KurintoMonoSC" style="italic" weight="bold"/>
+			</font>
+			<font embed-url="KurintoMonoSC-It.ttf">
+				<font-triplet name="KurintoMonoSC" style="italic" weight="normal"/>
+			</font>
+			<font embed-url="KurintoMonoKR-Rg.ttf">
+				<font-triplet name="KurintoMonoKR" style="normal" weight="normal"/>
+			</font>
+			<font embed-url="KurintoMonoKR-Bd.ttf">
+				<font-triplet name="KurintoMonoKR" style="normal" weight="bold"/>
+			</font>
+			<font embed-url="KurintoMonoKR-BdIt.ttf">
+				<font-triplet name="KurintoMonoKR" style="italic" weight="bold"/>
+			</font>
+			<font embed-url="KurintoMonoKR-It.ttf">
+				<font-triplet name="KurintoMonoKR" style="italic" weight="normal"/>
+			</font>
 		</fonts>
 	</renderer>
 	</renderers>
