@@ -27,7 +27,6 @@
                <addrLine>www.archivists.org</addrLine>
             </address>
             <date when="2015"/>
-            <idno>ISBN 1-931666-89-X</idno>
             <availability>
                <licence>This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/"
                      >http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No part of this publication may be reproduced, stored in a retrieval system or transmitted in any form or by any means,
@@ -311,6 +310,20 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:didnote>File also contains materials from the <ead:expan abbr="ACLU"> American Civil Liberties Union </ead:expan>. </ead:didnote>
+                  </egXML>
+
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c02>
+                        <ead:did>
+                           <ead:unittitle>
+                              <ead:expan abbr="UNESCO"> United Nations Educational, Scientific and Cultural Organization </ead:expan>
+                           </ead:unittitle> [. . .] </ead:did>
+                     </ead:c02>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-actuate">
                <head>
@@ -325,6 +338,14 @@
                </div>
                <div type="values">
                   <p>none, onload, onrequest, other</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:daoset label="Digital Objects" coverage="part">
+                        <ead:dao daotype="derived" coverage="part" actuate="onload" show="embed" linktitle="Chapter 1" localtype="thumbnail" href="http://imgs.ud.edu/archives/image/f12001_1thumb.gif"/>
+                        <ead:dao daotype="derived" coverage="part" actuate="onrequest" show="new" linktitle="Chapter 1" localtype="fullsize" href="http://imgs.ud.edu/archives/image/f12001_1.jpg"/>
+                     </ead:daoset>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-align">
@@ -341,6 +362,55 @@
                <div type="values">
                   <p>left, right, center, justify, char</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
+
+                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="none">
+                        <ead:tgroup cols="3">
+                           <ead:colspec colnum="1" colname="1" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="2" colname="2" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="3" colname="3" align="left" colwidth="50pt"/>
+                           <ead:thead>
+                              <ead:row>
+                                 <ead:entry colname="1">Major Family Members</ead:entry>
+                                 <ead:entry colname="2">Spouses</ead:entry>
+                                 <ead:entry colname="3">Children</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody>
+                              <ead:row>
+                                 <ead:entry colname="1">John Albemarle (1760-1806)</ead:entry>
+                                 <ead:entry colname="2">Mary Frances Delaney (1769-1835)</ead:entry>
+                                 <ead:entry colname="3">John Delaney Albemarle (1787-1848)</ead:entry>
+                              </ead:row> [. . .] </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-althead">
                <head>
@@ -354,6 +424,30 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bioghist>
+                        <ead:head althead="Family relations">Bach family relations listing spouses and children of the major family members</ead:head>
+                        <ead:table pgwide="true">
+                           <ead:tgroup cols="3">
+                              <ead:colspec colnum="1" colname="member"/>
+                              <ead:colspec colnum="2" colname="spouse"/>
+                              <ead:colspec colnum="3" colname="child" align="char" char="*" charoff="2"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="member">Major family members</ead:entry>
+                                    <ead:entry colname="spouse">Spouses</ead:entry>
+                                    <ead:entry colname="child">Children</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 <!-- [...] -->
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:bioghist>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-altrender">
@@ -369,6 +463,15 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:titlestmt>
+                        <ead:titleproper localtype="formal"> Guide to the Abraham Hayward Collection </ead:titleproper>
+                        <ead:titleproper localtype="filing" render="altrender" altrender="nodisplay" audience="internal"> Hayward (Abraham) Collection </ead:titleproper>
+                        <ead:author>by Michael Rush</ead:author>
+                     </ead:titlestmt>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-approximate">
@@ -426,6 +529,15 @@
                <div type="values">
                   <p>external, internal </p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:titlestmt>
+                        <ead:titleproper localtype="formal"> Guide to the Abraham Hayward Collection </ead:titleproper>
+                        <ead:titleproper localtype="filing" render="altrender" altrender="nodisplay" audience="internal"> Hayward (Abraham) Collection </ead:titleproper>
+                        <ead:author>by Michael Rush</ead:author>
+                     </ead:titlestmt>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-base">
                <head>
@@ -442,6 +554,15 @@
                <div type="datatype">
                   <p>anyURI</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:daoset base="https://calisphere.org/item/">
+                        <ead:dao daotype="otherdaotype" otherdaotype="surrogate" href="d3888b77-7d95-4fd0-bcdd-ab5551a4f013"/>
+                        <ead:dao daotype="otherdaotype" otherdaotype="surrogate" href="d5e032bf-57a3-45e9-9f14-1782bc2e95e7"/>
+                        <ead:dao daotype="otherdaotype" otherdaotype="surrogate" href="fd76d8fb-cafb-44c5-a5b5-e34673498b7a"/>
+                     </ead:daoset>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-calendar">
                <head>
@@ -457,6 +578,17 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="fonds" localtype="inventory" relatedencoding="ISAD(G)v2" encodinganalog="3.1.4" lang="dut" script="Latn">
+                        <ead:did>
+                           <ead:unittitle encodinganalog="3.1.2">Nederlandsche Gist- en Spiritusfabriek en Pharmaceutische Fabrieken voorheen Brocades-Stheeman &amp; Pharmacia, in 1967 gefuseerd tot
+                              Gist-Brocades</ead:unittitle>
+                           <ead:unitdate calendar="gregorian" era="ce" encodinganalog="3.1.3" normal="1860/1967"> 1860-1967 (1987)</ead:unitdate>
+                        </ead:did> [...] </ead:archdesc>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-certainty">
                <head>
@@ -470,6 +602,16 @@
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured calendar="gregorian" certainty="approximate" datechar="creation" era="ce" unitdatetype="inclusive">
+                        <ead:daterange>
+                          <ead:fromdate standarddate="1950">1950</ead:fromdate>
+                          <ead:todate standarddate="2000">2000</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-char">
@@ -486,6 +628,30 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bioghist>
+                        <ead:head althead="Family relations">Bach family relations listing spouses and children of the major family members</ead:head>
+                        <ead:table pgwide="true">
+                           <ead:tgroup cols="3">
+                              <ead:colspec colnum="1" colname="member"/>
+                              <ead:colspec colnum="2" colname="spouse"/>
+                              <ead:colspec colnum="3" colname="child" align="char" char="*" charoff="2"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="member">Major family members</ead:entry>
+                                    <ead:entry colname="spouse">Spouses</ead:entry>
+                                    <ead:entry colname="child">Children</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 [...]
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:bioghist>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-charoff">
                <head>
@@ -501,6 +667,30 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bioghist>
+                        <ead:head althead="Family relations">Bach family relations listing spouses and children of the major family members</ead:head>
+                        <ead:table pgwide="true">
+                           <ead:tgroup cols="3">
+                              <ead:colspec colnum="1" colname="member"/>
+                              <ead:colspec colnum="2" colname="spouse"/>
+                              <ead:colspec colnum="3" colname="child" align="char" char="*" charoff="2"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="member">Major family members</ead:entry>
+                                    <ead:entry colname="spouse">Spouses</ead:entry>
+                                    <ead:entry colname="child">Children</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                  [...]
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:bioghist>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-colname">
                <head>
@@ -514,6 +704,32 @@
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-colnum">
@@ -529,6 +745,32 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-cols">
                <head>
@@ -542,6 +784,32 @@
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-colsep">
@@ -557,6 +825,32 @@
                </div>
                <div type="values">
                   <p>false, true</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-colwidth">
@@ -574,6 +868,30 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="none">
+                        <ead:tgroup cols="3">
+                           <ead:colspec colnum="1" colname="1" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="2" colname="2" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="3" colname="3" align="left" colwidth="50pt"/>
+                           <ead:thead>
+                              <ead:row>
+                                 <ead:entry colname="1">Major Family Members</ead:entry>
+                                 <ead:entry colname="2">Spouses</ead:entry>
+                                 <ead:entry colname="3">Children</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody>
+                              <ead:row>
+                                 <ead:entry colname="1">John Albemarle (1760-1806)</ead:entry>
+                                 <ead:entry colname="2">Mary Frances Delaney (1769-1835)</ead:entry>
+                                 <ead:entry colname="3">John Delaney Albemarle (1787-1848)</ead:entry>
+                              </ead:row> . . . </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-containerid">
                <head>
@@ -589,6 +907,11 @@
                <div type="datatype">
                   <p>string</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:container altrender="Slim Legal Document Box (1/2 AB)" containerid="33433117009781" id="aspace_3e98d60dfc5e7ef6c017b677f6616965" label="Mixed Materials" localtype="box">3</ead:container>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-coordinatesystem">
                <head>
@@ -603,6 +926,28 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:geogname>
+                        <ead:part localtype="place">Hardeeville</ead:part>
+                        <ead:part localtype="state">South Carolina</ead:part>
+                        <ead:geographiccoordinates coordinatesystem="WGS84"> -81.1, 32.2, -81.0, 32.3 </ead:geographiccoordinates>
+                     </ead:geogname>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:geogname>
+                        <ead:part>Clear Spring</ead:part>
+                        <ead:part>Maryland</ead:part>
+                        <ead:geographiccoordinates coordinatesystem="UTM"> 18S 248556mE 4393694mN </ead:geographiccoordinates>
+                     </ead:geogname>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:geogname>
+                        <ead:part>Berlin, Germany </ead:part>
+                        <ead:geographiccoordinates coordinatesystem="mgrs"> 33UUU9029819737 </ead:geographiccoordinates>
+                     </ead:geogname>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-countrycode">
@@ -620,6 +965,18 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitid countrycode="US" repositorycode="cu-i" label="Collection number">MS-R72</ead:unitid>
+                  </egXML>
+                  
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenanceagency countrycode="IE">
+                        <ead:agencycode>IE-NAI</ead:agencycode>
+                        <ead:agencyname>National Archives of Ireland</ead:agencyname>
+                     </ead:maintenanceagency>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-countryencoding">
                <head>
@@ -634,6 +991,14 @@
                </div>
                <div type="values">
                   <p>iso3166-1, othercountryencoding</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
+                        [...]
+                     </ead:control>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-coverage">
@@ -650,6 +1015,14 @@
                <div type="values">
                   <p>part, whole</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="whole" physdescstructuredtype="spaceoccupied">
+                        <ead:quantity>3.32</ead:quantity>
+                        <ead:unittype>Linear Feet</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-daotype">
                <head>
@@ -664,6 +1037,18 @@
                <div type="values">
                   <p>borndigital, derived, otherdaotype, unknown</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c>
+                        <ead:did>
+                           <ead:unittitle>Quilting bee, Union Town, Md.</ead:unittitle>
+                           <ead:unitdate>1930</ead:unitdate>
+                           <ead:physdesc>1 photograph</ead:physdesc>
+                           <ead:dao daotype="derived" actuate="onload" show="embed" href="  http://www.lib.utexas.edu/taro/utcah/00462/cah-00462.jpg  "/>
+                        </ead:did>
+                     </ead:c>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-datechar">
                <head>
@@ -677,6 +1062,16 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured calendar="gregorian" certainty="approximate" datechar="creation" era="ce" unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate standarddate="1950">1950</ead:fromdate>
+                           <ead:todate standarddate="2000">2000</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-dateencoding">
@@ -693,6 +1088,14 @@
                <div type="values">
                   <p>iso8601, otherdateencoding </p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
+                        [...]
+                     </ead:control>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-dsctype">
                <head>
@@ -706,6 +1109,37 @@
                </div>
                <div type="values">
                   <p>analyticover, combined, in-depth, otherdsctype</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc dsctype="analyticover">
+                        <ead:c01 level="series">
+                           <ead:did>
+                              <ead:unitid>1-429-1</ead:unitid>
+                              <ead:unittitle>Forest Stand Maps by Township and Basemap </ead:unittitle>
+                              <ead:unitdate unitdatetype="inclusive">1958-1979</ead:unitdate>
+                              <ead:physdesc>36 ft. (approx. 1700 sheets) of cartographic records.</ead:physdesc>
+                              <ead:materialspec>Scale: predominantly 4 inches to 1 mile (1:15,840)</ead:materialspec>
+                           </ead:did>
+                           <ead:scopecontent>
+                              <ead:p>Series consists of forest stand maps. A map sheet was created for each township of the surveyed section of the province and for each basemap area in unsurveyed areas.</ead:p>[ . . .]
+                           </ead:scopecontent>
+                        </ead:c01>
+                        <ead:c01 level="series">
+                           <ead:did>
+                              <ead:unitid>RG 1-429-2</ead:unitid>
+                              <ead:unittitle>Forest Stand Map Composites</ead:unittitle>
+                              <ead:unitdate unitdatetype="inclusive">1958-1971</ead:unitdate>
+                              <ead:physdesc>ca.70 maps</ead:physdesc>
+                              <ead:materialspec>Scale: 1 inch to 1 mile</ead:materialspec>
+                           </ead:did>
+                           <ead:scopecontent>
+                              <ead:p>Series consists of composite maps of the forest resource inventory data from all the townships within a Forestry Management Unit. The composites offer a broader view of an area than
+                                 the township/basemaps, however the forest stand statistics are quite small and difficult to read.</ead:p>[ . . .] </ead:scopecontent>
+                        </ead:c01>
+                        [ . . .] 
+                     </ead:dsc>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-encodinganalog">
@@ -757,6 +1191,13 @@
                <div type="datatype">
                   <p>ENTITY</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:publisher> San Joaquin County Historical Society and Museum<ead:lb/> Lodi, California<ead:lb/>
+                        <ead:ptr actuate="onload" show="embed" entityref="sjmlogo"/>
+                     </ead:publisher>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-era">
                <head>
@@ -772,6 +1213,16 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured calendar="gregorian" certainty="approximate" datechar="creation" era="ce" unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate standarddate="1950">1950</ead:fromdate>
+                           <ead:todate standarddate="2000">2000</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-expan">
                <head>
@@ -786,6 +1237,16 @@
                <div type="datatype">
                   <p>string</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c02>
+                        <ead:did>
+                           <ead:unittitle>
+                              <ead:abbr expan="United Nations Educational, Scientific and Cultural Organization"> UNESCO </ead:abbr>
+                           </ead:unittitle> [. . .] </ead:did>
+                     </ead:c02>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-frame">
                <head>
@@ -799,6 +1260,30 @@
                </div>
                <div type="values">
                   <p>all, bottom, none, sides, top, topbot</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="none">
+                        <ead:tgroup cols="3">
+                           <ead:colspec colnum="1" colname="1" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="2" colname="2" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="3" colname="3" align="left" colwidth="50pt"/>
+                           <ead:thead>
+                              <ead:row>
+                                 <ead:entry colname="1">Major Family Members</ead:entry>
+                                 <ead:entry colname="2">Spouses</ead:entry>
+                                 <ead:entry colname="3">Children</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody>
+                              <ead:row>
+                                 <ead:entry colname="1">John Albemarle (1760-1806)</ead:entry>
+                                 <ead:entry colname="2">Mary Frances Delaney (1769-1835)</ead:entry>
+                                 <ead:entry colname="3">John Delaney Albemarle (1787-1848)</ead:entry>
+                              </ead:row> . . . </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-href">
@@ -815,6 +1300,15 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:rightsdeclaration>
+                        <ead:abbr>CC0</ead:abbr>
+                        <ead:citation href="https://creativecommons.org/publicdomain/zero/1.0/"/>
+                        <ead:descriptivenote><ead:p>CC0 1.0 Universal (CC0 1.0)</ead:p></ead:descriptivenote>
+                     </ead:rightsdeclaration>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-id">
                <head>
@@ -829,6 +1323,11 @@
                </div>
                <div type="datatype">
                   <p>ID</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:container altrender="Slim Legal Document Box (1/2 AB)" containerid="33433117009781" id="aspace_3e98d60dfc5e7ef6c017b677f6616965" label="Mixed Materials" localtype="box">3</ead:container>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-identifier">
@@ -848,6 +1347,44 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:controlaccess>
+                        <ead:corpname encodinganalog="610" identifier="http://viaf.org/viaf/139169065" lang="eng">
+                           <ead:part>Hudson's Bay Company</ead:part>
+                        </ead:corpname>
+                        <ead:corpname encodinganalog="610" identifier="http://viaf.org/viaf/139169065" lang="fre">
+                           <ead:part>Compagnie de la Baie d'Hudson</ead:part>
+                        </ead:corpname>
+                     </ead:controlaccess>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="collection">
+                        <ead:did>
+                           <ead:head>Descriptive Summary</ead:head>
+                           <ead:unittitle label="Title">Donald C. Stone, Jr. Papers, </ead:unittitle>
+                           <ead:unitdate unitdatetype="inclusive">1971-1983</ead:unitdate>
+                           <ead:unitid countrycode="US" repositorycode="cbgtu" identifier="http://library.syr.edu/guides/s/stone_dc.htm" label="Accession number"> GTU 2001-8-03 </ead:unitid>
+                           <ead:origination label="Creator">
+                              <ead:persname source="lcnaf">
+                                 <ead:part>Stone, Donald C., Jr.</ead:part>
+                              </ead:persname>
+                           </ead:origination>
+                           <ead:physdesc label="Extent">4 boxes, 4 linear ft. </ead:physdesc>
+                           <ead:repository label="Repository">
+                              <ead:corpname>
+                                 <ead:part>The Graduate Theological Union</ead:part>
+                              </ead:corpname>
+                              <ead:address>
+                                 <ead:addressline>Berkeley, California</ead:addressline>
+                              </ead:address>
+                           </ead:repository>
+                           <ead:abstract label="Abstract">The papers document Donald C. Stone's work with Ornstein and Swencionis on the <ead:emph render="italic">est</ead:emph> Outcome Project, and the development of
+                              his doctoral research, including his various publications on the human potential movement, up to the completion of his doctoral dissertation.</ead:abstract>
+                           <ead:physloc label="Shelf                     location">5/D/4-5</ead:physloc>
+                        </ead:did> [. . .] </ead:archdesc>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-instanceurl">
                <head>
@@ -861,6 +1398,14 @@
                </div>
                <div type="datatype">
                   <p>anyURI</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control>
+                        <ead:recordid instanceurl="http://drs.library.yale.edu/findaids/wa-mss-s-2636.xml">WA MSS S-2636</ead:recordid>
+                        <ead:otherrecordid localtype="mss"> S-2636 </ead:otherrecordid>
+                        <ead:filedesc>[. . .]</ead:filedesc> [. . .] </ead:control>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-label">
@@ -876,6 +1421,11 @@
                </div>
                <div type="datatype">
                   <p>string</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitid countrycode="US" repositorycode="cu-i" label="Collection number">MS-R72</ead:unitid>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-lang">
@@ -893,6 +1443,18 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:controlaccess>
+                        <ead:corpname encodinganalog="610" identifier="http://viaf.org/viaf/139169065" lang="eng">
+                           <ead:part>Hudson's Bay Company</ead:part>
+                        </ead:corpname>
+                        <ead:corpname encodinganalog="610" identifier="http://viaf.org/viaf/139169065" lang="fre">
+                           <ead:part>Compagnie de la Baie d'Hudson</ead:part>
+                        </ead:corpname>
+                     </ead:controlaccess>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-langcode">
                <head>
@@ -907,6 +1469,27 @@
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:langmaterial>
+                        <ead:languageset>
+                           <ead:language langcode="lat">Latin</ead:language>
+                           <ead:script scriptcode="Latn"/>
+                        </ead:languageset>
+                        <ead:languageset>
+                           <ead:language langcode="ang">Old English</ead:language>
+                           <ead:script scriptcode="Latn"/>
+                        </ead:languageset>
+                        <ead:languageset>
+                           <ead:language langcode="eng">English</ead:language>
+                           <ead:script scriptcode="Latn"/>
+                        </ead:languageset>
+                        <ead:descriptivenote>
+                           <ead:p>The majority of the documents are written in Modern English. Roberts copies multiple passages from original manuscripts in Latin and Old English.</ead:p>
+                        </ead:descriptivenote>
+                     </ead:langmaterial>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-langencoding">
@@ -924,6 +1507,32 @@
                <div type="values">
                   <p>iso639-1, iso639-2b, iso639-3, otherlangencoding</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
+                        <ead:recordid>DFA/PREU</ead:recordid>
+                        <ead:filedesc>
+                           <ead:titlestmt>
+                              <ead:titleproper encodinganalog="245">Permanent Representation of Ireland to the European Union</ead:titleproper>
+                           </ead:titlestmt>
+                        </ead:filedesc>
+                        <ead:maintenancestatus value="derived"/>
+                        <ead:maintenanceagency countrycode="IE">
+                           <ead:agencycode>IE-NAI</ead:agencycode>
+                           <ead:agencyname>National Archives of Ireland</ead:agencyname>
+                        </ead:maintenanceagency>
+                        <ead:maintenancehistory>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="derived"/>
+                              <ead:eventdatetime standarddatetime="2014-05-12T23:59:59">12 May 2014</ead:eventdatetime>
+                              <ead:agenttype value="machine"/>
+                              <ead:agent>Converted_apeEAD_version_1.4.8</ead:agent>
+                           </ead:maintenanceevent>
+                        </ead:maintenancehistory>
+                     </ead:control>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-lastdatetimeverified">
                <head>
@@ -940,6 +1549,18 @@
                   <p>Constrained to the following patterns: YYYY-MM-DD, YYYY-MM, YYYY, or YYYY-MM-DDThh:mm:ss [with optional timezone offset from UTC in the form of [+|-][hh:mm], or "Z" to indicate the dateTime is UTC.
                      No timezone implies the dateTime is UTC.]</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control> [. . .] <ead:conventiondeclaration>
+                           <ead:abbr>DACS</ead:abbr>
+                           <ead:citation href="http://www2.archivists.org/standards/DACS" lastdatetimeverified="2015-07-02T16:30:21-5:00" linktitle="DACS                     in HTML on SAA website" actuate="onload"
+                              show="new">Describing Archives: a Content Standard</ead:citation>
+                           <ead:descriptivenote>
+                              <ead:p>DACS was used as the primary description standard.</ead:p>
+                           </ead:descriptivenote>
+                        </ead:conventiondeclaration> [. . .] </ead:control>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-level">
                <head>
@@ -955,6 +1576,29 @@
                </div>
                <div type="values">
                   <p>class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc dsctype="combined">
+                        <ead:c level="series">
+                           <ead:did>
+                              <ead:unitid>Series 1</ead:unitid>
+                              <ead:unittitle>Correspondence</ead:unittitle>
+                           </ead:did>
+                           <ead:scopecontent>[...]</ead:scopecontent>
+                           <ead:c level="subseries">
+                              <ead:did>
+                                 <ead:unitid>Subseries 1.1</ead:unitid>
+                                 <ead:unittitle>Outgoing Correspondence</ead:unittitle>
+                              </ead:did>
+                              <ead:c level="file">
+                                 <ead:did>
+                                    <ead:unittitle>Abbinger-Aldrich</ead:unittitle>
+                                 </ead:did>
+                              </ead:c> [. . .] </ead:c>
+                        </ead:c>
+                     </ead:dsc>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-linkrole">
@@ -990,6 +1634,15 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:sources>
+                        <ead:source lastdatetimeverified="2015-07-03T14:36:00-05:00" href="https://archive.org/details/dictionaryofamer00drakrich" actuate="onrequest"
+                           linktitle="Dictionary of American biography">
+                           <ead:sourceentry>Dictionary of American biography: including men of the time ... and a supplement</ead:sourceentry> [. . .] </ead:source>
+                     </ead:sources>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-listtype">
                <head>
@@ -1004,6 +1657,21 @@
                </div>
                <div type="values">
                   <p>deflist, ordered, unordered</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:list listtype="unordered" mark="circle">
+                        <ead:head>List of ministers of May Memorial Unitarian Universalist Church</ead:head>
+                        <ead:item>John Storer, Minister 1839-1844</ead:item>
+                        <ead:item>Samuel Joseph May, Minister 1845-1868</ead:item>
+                        <ead:item>Samuel R. Calthrop, Minister 1868-1911</ead:item>
+                        <ead:item>John H. Applebee, Minister 1911-1929</ead:item>
+                        <ead:item>Waldemar W. Argow, Minister 1930-1941</ead:item>
+                        <ead:item>Robert E. Romig, Minister 1941-1946</ead:item>
+                        <ead:item>Glenn O. Canfield, Minister 1946-1952</ead:item>
+                        <ead:item>John Fuller, Minister, 1961-1973</ead:item>
+                     </ead:list>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-localtype">
@@ -1022,6 +1690,23 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c01 level="series">
+                        <ead:did>
+                           <ead:unittitle>...</ead:unittitle>
+                        </ead:did>
+                        <ead:c02 level="file">
+                           <ead:did>
+                              <ead:container localtype="box"> 3 </ead:container>
+                              <ead:container localtype="folder"> 18 </ead:container>
+                              <ead:unittitle>Parent-Teacher Association of Fondsville</ead:unittitle>
+                              <ead:unitdate unitdatetype="inclusive" normal="1959/1972">1959-1972</ead:unitdate>
+                           </ead:did>
+                        </ead:c02>
+                     </ead:c01>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-mark">
                <head>
@@ -1030,12 +1715,27 @@
                <div type="fullName">
                   <p>Mark</p>
                </div>
-               <div type="values">
+               <div type="summary">
                   <p>For lists with a <att>listtype</att> value "unordered," <att>mark</att> may be used to indicate the character to be used in marking each list entry. Values are drawn from the CSS "list-style-type"
                      property list.</p>
                </div>
                <div type="values">
                   <p>disc, circle, inherit, none, square</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:list listtype="unordered" mark="circle">
+                        <ead:head>List of ministers of May Memorial Unitarian Universalist Church</ead:head>
+                        <ead:item>John Storer, Minister 1839-1844</ead:item>
+                        <ead:item>Samuel Joseph May, Minister 1845-1868</ead:item>
+                        <ead:item>Samuel R. Calthrop, Minister 1868-1911</ead:item>
+                        <ead:item>John H. Applebee, Minister 1911-1929</ead:item>
+                        <ead:item>Waldemar W. Argow, Minister 1930-1941</ead:item>
+                        <ead:item>Robert E. Romig, Minister 1941-1946</ead:item>
+                        <ead:item>Glenn O. Canfield, Minister 1946-1952</ead:item>
+                        <ead:item>John Fuller, Minister, 1961-1973</ead:item>
+                     </ead:list>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-morerows">
@@ -1051,6 +1751,34 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bioghist>
+                        <ead:head althead="Family relations">Bach family relations listing spouses and children of the major family members</ead:head>
+                        <ead:table pgwide="true">
+                           <ead:tgroup cols="3">
+                              <ead:colspec colnum="1" colname="member"/>
+                              <ead:colspec colnum="2" colname="spouse"/>
+                              <ead:colspec colnum="3" colname="child" align="char" char="*" charoff="2"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="member">Major family members</ead:entry>
+                                    <ead:entry colname="spouse">Spouses</ead:entry>
+                                    <ead:entry colname="child">Children</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 <ead:row>
+                                    <ead:entry colname="member"/>
+                                    <ead:entry colname="spouse" morerows="2" valign="top">Anna Magdalena, geb. Wilcke (1701–1760)</ead:entry>
+                                    <ead:entry colname="child">* Gottfried Heinrich Bach (1724–1763)</ead:entry>
+                                 </ead:row>
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:bioghist>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-nameend">
                <head>
@@ -1064,6 +1792,43 @@
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:scopecontent>
+                        <ead:table pgwide="false">
+                           <ead:tgroup cols="4">
+                              <ead:colspec colnum="1" colname="correspondent"/>
+                              <ead:colspec colnum="2" colname="total"/>
+                              <ead:colspec colnum="3" colname="sent"/>
+                              <ead:colspec colnum="4" colname="received"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Correspondent</ead:entry>
+                                    <ead:entry colname="total">Total number of letters</ead:entry>
+                                    <ead:entry namest="sent" nameend="received">Letters sent and received</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 <!-- [...] -->
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Douglass, Frederick</ead:entry>
+                                    <ead:entry colname="total">93</ead:entry>
+                                    <ead:entry colname="sent">47</ead:entry>
+                                    <ead:entry colname="received">46</ead:entry>
+                                 </ead:row>
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Phillips, Wendell</ead:entry>
+                                    <ead:entry colname="total">17</ead:entry>
+                                    <ead:entry colname="sent">12</ead:entry>
+                                    <ead:entry colname="received">5</ead:entry>
+                                 </ead:row>
+                                 <!-- [...] -->
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:scopecontent>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-namest">
@@ -1079,6 +1844,43 @@
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:scopecontent>
+                        <ead:table pgwide="false">
+                           <ead:tgroup cols="4">
+                              <ead:colspec colnum="1" colname="correspondent"/>
+                              <ead:colspec colnum="2" colname="total"/>
+                              <ead:colspec colnum="3" colname="sent"/>
+                              <ead:colspec colnum="4" colname="received"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Correspondent</ead:entry>
+                                    <ead:entry colname="total">Total number of letters</ead:entry>
+                                    <ead:entry namest="sent" nameend="received">Letters sent and received</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 <!-- [...] -->
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Douglass, Frederick</ead:entry>
+                                    <ead:entry colname="total">93</ead:entry>
+                                    <ead:entry colname="sent">47</ead:entry>
+                                    <ead:entry colname="received">46</ead:entry>
+                                 </ead:row>
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Phillips, Wendell</ead:entry>
+                                    <ead:entry colname="total">17</ead:entry>
+                                    <ead:entry colname="sent">12</ead:entry>
+                                    <ead:entry colname="received">5</ead:entry>
+                                 </ead:row>
+                                 <!-- [...] -->
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:scopecontent>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-normal">
@@ -1101,6 +1903,27 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc type="analyticover">
+                        <ead:c level="subseries">
+                           <ead:did>
+                              <ead:unittitle>Documentary Movies</ead:unittitle>
+                              <ead:unitdate unitdatetype="inclusive" normal="1952/1964"> 1952-1964 </ead:unitdate>
+                              <ead:abstract>Includes scores, arranged alphabetically by movie title, and some correspondence, arranged chronologically.</ead:abstract>
+                           </ead:did>
+                        </ead:c> [. . .] </ead:dsc>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                           <ead:descriptivenote>
+                              <ead:p>Basic biographical information about <ead:persname source="lcnaf" normal="Freeman, Nathaniel, 1741-1827">
+                                    <ead:part>Nathaniel Freeman</ead:part>
+                                 </ead:persname> was taken from <ead:title>
+                                    <ead:part>Dictionary of American biography: including men of the time ... and a supplement</ead:part>
+                                 </ead:title>, page 340.</ead:p>
+                           </ead:descriptivenote>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-notafter">
                <head>
@@ -1115,6 +1938,24 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate notafter="1962">1962</ead:fromdate>
+                           <ead:todate notafter="1968">1968</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured certainty="circa" unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate notbefore="1971" notafter="1975">around 1973</ead:fromdate>
+                           <ead:todate standarddate="1992">1992</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-notbefore">
@@ -1131,7 +1972,26 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate notafter="1962">1962</ead:fromdate>
+                           <ead:todate notafter="1968">1968</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured certainty="circa" unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate notbefore="1971" notafter="1975">around 1973</ead:fromdate>
+                           <ead:todate standarddate="1992">1992</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
+               </div>
             </div>
+
             <div type="attributeDocumentation" xml:id="attr-numeration">
                <head>
                   <att>numeration</att>
@@ -1144,6 +2004,19 @@
                </div>
                <div type="values">
                   <p>armenian, decimal, decimal-leading-zero, georgian, inherit, lower-alpha, lower-greek, lower-latin, lower-roman, upper-alpha, upper-latin, upper-roman</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                        <ead:fileplan>
+                           <ead:head>AGRICULTURE (AG)</ead:head>
+                           <ead:list listtype="ordered" numeration="arabic">
+                              <ead:item>Home Economics</ead:item>
+                              <ead:item>Horticulture</ead:item>
+                              <ead:item>Marketing</ead:item>
+                              <ead:item>Price Support</ead:item>
+                           </ead:list>
+                        </ead:fileplan>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-otherdaotype">
@@ -1159,6 +2032,15 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:daoset base="https://calisphere.org/item/">
+                        <ead:dao daotype="otherdaotype" otherdaotype="surrogate" href="d3888b77-7d95-4fd0-bcdd-ab5551a4f013"/>
+                        <ead:dao daotype="otherdaotype" otherdaotype="surrogate" href="d5e032bf-57a3-45e9-9f14-1782bc2e95e7"/>
+                        <ead:dao daotype="otherdaotype" otherdaotype="surrogate" href="fd76d8fb-cafb-44c5-a5b5-e34673498b7a"/>
+                     </ead:daoset>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-otherdsctype">
                <head>
@@ -1172,6 +2054,32 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc dsctype="otherdsctype" otherdsctype="structural">
+                        <ead:c level="subseries">
+                           <ead:did>
+                              <ead:unittitle>Clippings</ead:unittitle>
+                           </ead:did>
+                           <ead:c level="otherlevel" otherlevel="sub-subseries">
+                              <ead:did>
+                                 <ead:unittitle>Clippings (chronological)</ead:unittitle>
+                              </ead:did>
+                           </ead:c>
+                           <ead:c level="otherlevel" otherlevel="sub-subseries">
+                              <ead:did>
+                                 <ead:unittitle>Clippings (persons)</ead:unittitle>
+                              </ead:did>
+                           </ead:c>
+                        </ead:c>
+                        <ead:c level="subseries">
+                           <ead:did>
+                              <ead:unittitle>Notes</ead:unittitle>
+                           </ead:did>
+                        </ead:c>
+                     </ead:dsc>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-otherlevel">
@@ -1187,6 +2095,32 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc dsctype="otherdsctype" otherdsctype="structural">
+                        <ead:c level="subseries">
+                           <ead:did>
+                              <ead:unittitle>Clippings</ead:unittitle>
+                           </ead:did>
+                           <ead:c level="otherlevel" otherlevel="sub-subseries">
+                              <ead:did>
+                                 <ead:unittitle>Clippings (chronological)</ead:unittitle>
+                              </ead:did>
+                           </ead:c>
+                           <ead:c level="otherlevel" otherlevel="sub-subseries">
+                              <ead:did>
+                                 <ead:unittitle>Clippings (persons)</ead:unittitle>
+                              </ead:did>
+                           </ead:c>
+                        </ead:c>
+                        <ead:c level="subseries">
+                           <ead:did>
+                              <ead:unittitle>Notes</ead:unittitle>
+                           </ead:did>
+                        </ead:c>
+                     </ead:dsc>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-otherphysdescstructuredtype">
                <head>
@@ -1200,6 +2134,14 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="whole" physdescstructuredtype="otherphysdescstructuredtype" otherphysdescstructuredtype="duration">
+                        <ead:quantity>30</ead:quantity>
+                        <ead:unittype>minutes</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-otherrelationtype">
@@ -1215,6 +2157,17 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                           <ead:relation relationtype="otherrelationtype" otherrelationtype="Creator">
+                              <ead:relationentry>Exxon Valdez oil spill</ead:relationentry>
+                              <ead:geogname>
+                                 <ead:part>Bligh Reef, Prince William Sound, Alaska</ead:part>
+                                 <ead:geographiccoordinates coordinatesystem="utm">6V 490800mE 6719917mN</ead:geographiccoordinates>
+                              </ead:geogname>
+                           </ead:relation>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-parallel">
                <head>
@@ -1229,6 +2182,36 @@
                </div>
                <div type="values">
                   <p>part, whole</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="true">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="spaceoccupied">
+                           <ead:quantity>650</ead:quantity>
+                           <ead:unittype>gigabytes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>1</ead:quantity>
+                           <ead:unittype>hard disk</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                           <ead:quantity>7500</ead:quantity>
+                           <ead:unittype>electronic files</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="false" coverage="whole">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>50</ead:quantity>
+                           <ead:unittype>boxes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>5</ead:quantity>
+                           <ead:unittype>broadside folders</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-parent">
@@ -1246,6 +2229,42 @@
                <div type="datatype">
                   <p>IDREFS</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc dsctype="combined">
+                        <ead:c level="series">
+                           <ead:did>
+                              <ead:unittitle>Correspondence</ead:unittitle>
+                           </ead:did>
+                           <ead:scopecontent>
+                              <ead:p>[...]</ead:p>
+                           </ead:scopecontent>
+                           <ead:c level="file">
+                              <ead:did>
+                                 <ead:container id="mss1993-043.1.1" localtype="box"> 1 </ead:container>
+                                 <ead:container parent="mss1993-043.1.1" localtype="folder"> 1 </ead:container>
+                                 <ead:unittitle>Family</ead:unittitle>
+                                 <ead:unitdate normal="1942/1947">1942-1947</ead:unitdate>
+                              </ead:did>
+                           </ead:c>
+                           <ead:c level="file">
+                              <ead:did>
+                                 <ead:container parent="mss1993-043.1.1" localtype="folder"> 2 </ead:container>
+                                 <ead:unittitle>General</ead:unittitle>
+                                 <ead:unitdate normal="194401/194408">January-August 1944</ead:unitdate>
+                              </ead:did>
+                           </ead:c>
+                           <ead:c level="file">
+                              <ead:did>
+                                 <ead:container parent="mss1993-043.1.1" localtype="folder"> 3 </ead:container>
+                                 <ead:unittitle>General</ead:unittitle>
+                                 <ead:unitdate normal="194409/194503">August 1944-March 1945</ead:unitdate>
+                              </ead:did>
+                           </ead:c>
+                        </ead:c>
+                     </ead:dsc>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-pgwide">
                <head>
@@ -1259,6 +2278,43 @@
                </div>
                <div type="values">
                   <p>false, true</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:scopecontent>
+                        <ead:table pgwide="false">
+                           <ead:tgroup cols="4">
+                              <ead:colspec colnum="1" colname="correspondent"/>
+                              <ead:colspec colnum="2" colname="total"/>
+                              <ead:colspec colnum="3" colname="sent"/>
+                              <ead:colspec colnum="4" colname="received"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Correspondent</ead:entry>
+                                    <ead:entry colname="total">Total number of letters</ead:entry>
+                                    <ead:entry namest="sent" nameend="received">Letters sent and received</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 <!-- [...] -->
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Douglass, Frederick</ead:entry>
+                                    <ead:entry colname="total">93</ead:entry>
+                                    <ead:entry colname="sent">47</ead:entry>
+                                    <ead:entry colname="received">46</ead:entry>
+                                 </ead:row>
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Phillips, Wendell</ead:entry>
+                                    <ead:entry colname="total">17</ead:entry>
+                                    <ead:entry colname="sent">12</ead:entry>
+                                    <ead:entry colname="received">5</ead:entry>
+                                 </ead:row>
+                                 <!-- [...] -->
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:scopecontent>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-physdescstructuredtype">
@@ -1276,6 +2332,24 @@
                <div type="values">
                   <p>carrier, materialtype, otherphysdescstructuredtype, spaceoccupied</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="true" coverage="part">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="spaceoccupied">
+                           <ead:quantity>6</ead:quantity>
+                           <ead:unittype>terabytes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>12</ead:quantity>
+                           <ead:unittype>hard drives</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                           <ead:quantity>1800</ead:quantity>
+                           <ead:unittype>electronic files</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-relatedencoding">
                <head>
@@ -1292,6 +2366,16 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="fonds" localtype="inventory" relatedencoding="ISAD(G)v2" encodinganalog="3.1.4" lang="dut" script="Latn">
+                        <ead:did>
+                           <ead:unittitle encodinganalog="3.1.2">Nederlandsche Gist- en Spiritusfabriek en Pharmaceutische Fabrieken voorheen Brocades-Stheeman &amp; Pharmacia, in 1967 gefuseerd tot
+                              Gist-Brocades</ead:unittitle>
+                           <ead:unitdate calendar="gregorian" era="ce" encodinganalog="3.1.3" normal="1860/1967"> 1860-1967 (1987)</ead:unitdate>
+                        </ead:did> [...] </ead:archdesc>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-relationtype">
                <head>
@@ -1305,6 +2389,19 @@
                </div>
                <div type="values">
                   <p>cpfrelation, resourcerelation, functionrelation, otherrelationtype</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc>
+                        <ead:did>
+                           <ead:unittitle>Michael Butterworth Papers</ead:unittitle> [...] </ead:did>
+                        <ead:relations>
+                           <ead:relation relationtype="resourcerelation" href="http://resolver.bl.uk/ark:/81055/vdc_100000000035.0x000122" actuate="onrequest" show="new"
+                              arcrole="http://www.w3c.org/2000/01/rdf-schema#seeAlso" linkrole="http://purl.org/archival/vocab/arch#Collection">
+                              <ead:relationentry>Add MS 88967: Michael Butterworth and J G Ballard: Correspondence, 1965-2011</ead:relationentry>
+                           </ead:relation>
+                        </ead:relations> [...] </ead:archdesc>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-relator">
@@ -1321,6 +2418,25 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bibref>
+                        <ead:persname relator="author">
+                           <ead:part>Kinder, Dolores.</ead:part>
+                        </ead:persname>
+                        <ead:title>
+                           <ead:part>Once Upon a Lullaby.</ead:part>
+                        </ead:title>
+                        <ead:geogname>
+                           <ead:part>New York: </ead:part>
+                        </ead:geogname>
+                        <ead:corpname relator="publisher">
+                           <ead:part>Wells &amp; Sons, </ead:part>
+                        </ead:corpname>
+                        <ead:date localtype="publication"> 1931 </ead:date>
+                     </ead:bibref>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-render">
                <head>
@@ -1335,6 +2451,34 @@
                </div>
                <div type="values">
                   <p>altrender, bold, bolddoublequote, bolditalic, boldsinglequote, boldsmcaps, boldunderline, doublequote, italic, nonproport, singlequote, smcaps, sub, super, underline</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bibliography>
+                        <ead:head>Bibliography</ead:head>
+                        <ead:p>Sources consulted by John Kobler.</ead:p>
+                        <ead:bibliography>
+                           <ead:head>Monographs</ead:head>
+                           <ead:bibref>
+                              <ead:title render="italic">
+                                 <ead:part>Affiches americaines</ead:part>
+                              </ead:title> San Domingo: Imprimerie royale du Cap, 1782. Nos. 30, 35.</ead:bibref>
+                           <ead:bibref>Ardouin, Charles Nicholas Celigny. <ead:title render="italic">
+                                 <ead:part>Essais sur l'histoire d'Haiti</ead:part>
+                              </ead:title>. Port-au-Prince, 1865.</ead:bibref>
+                           <ead:bibref>Bastien, Remy. <ead:title render="italic">
+                                 <ead:part>Anthologie du folklore haitien</ead:part>
+                              </ead:title>, <ead:title render="doublequote">
+                                 <ead:part>Proverbes</ead:part>
+                              </ead:title>.Mexico, 1946. pp.83-91.</ead:bibref>
+                           <ead:bibref>Bellegarde, Dantes. <ead:title render="italic">
+                                 <ead:part>Dessalines a parle</ead:part>
+                              </ead:title>. Port-au-Prince, 1948.Chap. IV: pp. 47-54.</ead:bibref>
+                        </ead:bibliography>
+                        <ead:bibliography>
+                           <ead:head>Serial publications</ead:head> [. . .] </ead:bibliography>
+                     </ead:bibliography>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-repositorycode">
@@ -1351,6 +2495,34 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="collection">
+                        <ead:did>
+                           <ead:head>Descriptive Summary</ead:head>
+                           <ead:unittitle label="Title">Donald C. Stone, Jr. Papers, </ead:unittitle>
+                           <ead:unitdate unitdatetype="inclusive">1971-1983</ead:unitdate>
+                           <ead:unitid countrycode="US" repositorycode="cbgtu" identifier="http://library.syr.edu/guides/s/stone_dc.htm" label="Accession number"> GTU 2001-8-03 </ead:unitid>
+                           <ead:origination label="Creator">
+                              <ead:persname source="lcnaf">
+                                 <ead:part>Stone, Donald C., Jr.</ead:part>
+                              </ead:persname>
+                           </ead:origination>
+                           <ead:physdesc label="Extent">4 boxes, 4 linear ft. </ead:physdesc>
+                           <ead:repository label="Repository">
+                              <ead:corpname>
+                                 <ead:part>The Graduate Theological Union</ead:part>
+                              </ead:corpname>
+                              <ead:address>
+                                 <ead:addressline>Berkeley, California</ead:addressline>
+                              </ead:address>
+                           </ead:repository>
+                           <ead:abstract label="Abstract">The papers document Donald C. Stone's work with Ornstein and Swencionis on the <ead:emph render="italic">est</ead:emph> Outcome Project, and the development of
+                              his doctoral research, including his various publications on the human potential movement, up to the completion of his doctoral dissertation.</ead:abstract>
+                           <ead:physloc label="Shelf                     location">5/D/4-5</ead:physloc>
+                        </ead:did> [. . .] </ead:archdesc>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-repositoryencoding">
                <head>
@@ -1366,6 +2538,32 @@
                <div type="values">
                   <p>iso15511, otherrepositoryencoding </p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
+                        <ead:recordid>DFA/PREU</ead:recordid>
+                        <ead:filedesc>
+                           <ead:titlestmt>
+                              <ead:titleproper encodinganalog="245">Permanent Representation of Ireland to the European Union</ead:titleproper>
+                           </ead:titlestmt>
+                        </ead:filedesc>
+                        <ead:maintenancestatus value="derived"/>
+                        <ead:maintenanceagency countrycode="IE">
+                           <ead:agencycode>IE-NAI</ead:agencycode>
+                           <ead:agencyname>National Archives of Ireland</ead:agencyname>
+                        </ead:maintenanceagency>
+                        <ead:maintenancehistory>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="derived"/>
+                              <ead:eventdatetime standarddatetime="2014-05-12T23:59:59">12 May 2014</ead:eventdatetime>
+                              <ead:agenttype value="machine"/>
+                              <ead:agent>Converted_apeEAD_version_1.4.8</ead:agent>
+                           </ead:maintenanceevent>
+                        </ead:maintenancehistory>
+                     </ead:control>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-rowsep">
                <head>
@@ -1380,6 +2578,32 @@
                </div>
                <div type="values">
                   <p>false, true</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-rules">
@@ -1397,6 +2621,31 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="fonds">
+                        <ead:did>
+                           <ead:head>Descriptive Summary</ead:head>
+                           <ead:unittitle label="Title">Richard Egan manuscript maps of Orange County</ead:unittitle>
+                           <ead:unitdate unitdatetype="inclusive" normal="1878/1879">Circa 1878-1879</ead:unitdate>
+                           <ead:unitid countrycode="US" repositorycode="cu-i" label="Collection number">MS-R72</ead:unitid>
+                           <ead:origination label="Creator">
+                              <ead:persname rules="aacr2">
+                                 <ead:part>Egan, Richard</ead:part>
+                                 <ead:part>1842-1923</ead:part>
+                              </ead:persname>
+                           </ead:origination>
+                           <ead:repository label="Repository">
+                              <ead:corpname rules="aacr2">
+                                 <ead:part>University of California, Irvine</ead:part>
+                                 <ead:part>Library</ead:part>
+                                 <ead:part>Special Collections and Archives</ead:part>
+                              </ead:corpname>
+                           </ead:repository>
+                        </ead:did>
+                     </ead:archdesc>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-script">
                <head>
@@ -1413,6 +2662,12 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bioghist> [. . .] <ead:p>Thanatos ( <ead:foreign lang="grc" script="Grek"> Θάνατος </ead:foreign> ) was the personification of death. He was a minor figure in Greek mythology, often referred to,
+                           but rarely appearing in person. </ead:p> [. . .] </ead:bioghist>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-scriptcode">
                <head>
@@ -1422,11 +2677,25 @@
                   <p>Script Code</p>
                </div>
                <div type="summary">
-                  <p>The code for the writing script used with a given language. Content should be taken from ISO 15924 Codse for the Representation of Names of Scripts, or another controlled list, as specified in the
+                  <p>The code for the writing script used with a given language. Content should be taken from ISO 15924 Codes for the Representation of Names of Scripts, or another controlled list, as specified in the
                         <att>scriptencoding</att> attribute in <gi>control</gi>. Available in <gi>script</gi>.</p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:langmaterial>
+                        <ead:languageset>
+                           <ead:language langcode="jpn">Japanese</ead:language>
+                           <ead:script scriptcode="Hira">hiragana</ead:script>
+                           <ead:script scriptcode="Kana">katakana</ead:script>
+                        </ead:languageset>
+                        <ead:descriptivenote>
+                           <ead:p>This file contains documents in Japanese, in both the hiragana and katakana scripts.</ead:p>
+                        </ead:descriptivenote>
+                     </ead:langmaterial>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-scriptencoding">
@@ -1443,6 +2712,33 @@
                <div type="values">
                   <p>iso15924, otherscriptencoding</p>
                </div>
+
+            <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
+                        <ead:recordid>DFA/PREU</ead:recordid>
+                        <ead:filedesc>
+                           <ead:titlestmt>
+                              <ead:titleproper encodinganalog="245">Permanent Representation of Ireland to the European Union</ead:titleproper>
+                           </ead:titlestmt>
+                        </ead:filedesc>
+                        <ead:maintenancestatus value="derived"/>
+                        <ead:maintenanceagency countrycode="IE">
+                           <ead:agencycode>IE-NAI</ead:agencycode>
+                           <ead:agencyname>National Archives of Ireland</ead:agencyname>
+                        </ead:maintenanceagency>
+                        <ead:maintenancehistory>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="derived"/>
+                              <ead:eventdatetime standarddatetime="2014-05-12T23:59:59">12 May 2014</ead:eventdatetime>
+                              <ead:agenttype value="machine"/>
+                              <ead:agent>Converted_apeEAD_version_1.4.8</ead:agent>
+                           </ead:maintenanceevent>
+                        </ead:maintenancehistory>
+                     </ead:control>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-show">
                <head>
@@ -1457,6 +2753,18 @@
                </div>
                <div type="values">
                   <p>new, replace, embed, other, none</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control> [. . .] <ead:conventiondeclaration>
+                           <ead:abbr>DACS</ead:abbr>
+                           <ead:citation href="http://www2.archivists.org/standards/DACS" lastdatetimeverified="2015-07-02T16:30:21-5:00" linktitle="DACS in HTML on SAA website" actuate="onload"
+                              show="new">Describing Archives: a Content Standard</ead:citation>
+                           <ead:descriptivenote>
+                              <ead:p>DACS was used as the primary description standard.</ead:p>
+                           </ead:descriptivenote>
+                        </ead:conventiondeclaration> [. . .] </ead:control>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-source">
@@ -1473,6 +2781,21 @@
                <div type="datatype">
                   <p>token</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:controlaccess>
+                        <ead:function encodinganalog="657" source="aat">
+                           <ead:part>Legislating</ead:part>
+                        </ead:function>
+                        <ead:function encodinganalog="657" source="aat">
+                           <ead:part>Law enforcing</ead:part>
+                        </ead:function>
+                        <ead:function encodinganalog="657" source="aat">
+                           <ead:part>Convicting</ead:part>
+                        </ead:function>
+                     </ead:controlaccess>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-standarddate">
                <head>
@@ -1487,6 +2810,19 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured calendar="gregorian" era="ce">
+                        <ead:dateset>
+                           <ead:datesingle standarddate="1963-01-22">22 January 1963</ead:datesingle>
+                           <ead:daterange>
+                              <ead:fromdate standarddate="1971-06-01"> 1 June 1971 </ead:fromdate>
+                              <ead:todate standarddate="1974-04-30">30 April 1974</ead:todate>
+                           </ead:daterange>
+                        </ead:dateset>
+                     </ead:unitdatestructured>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-standarddatetime">
@@ -1504,6 +2840,33 @@
                   <p>Constrained to the following patterns: YYYY-MM-DD, YYYY-MM, YYYY, or YYYY-MM-DDThh:mm:ss [with optional timezone offset from UTC in the form of [+|-][hh:mm], or "Z" to indicate the dateTime is UTC.
                      No timezone implies the dateTime is UTC.]</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenancehistory>
+                        <ead:maintenanceevent>
+                           <ead:eventtype value="derived"/>
+                           <ead:eventdatetime standarddatetime="2015-09-13T08:05:33-05:00">13 September 2015</ead:eventdatetime>
+                           <ead:agenttype value="machine"/>
+                           <ead:agent>EAD2002_to_EAD3.xsl</ead:agent>
+                           <ead:eventdescription>Conversion from EAD 2002 finding aid using XSL transformation.</ead:eventdescription>
+                        </ead:maintenanceevent>
+                        <ead:maintenanceevent>
+                           <ead:eventtype value="revised"/>
+                           <ead:eventdatetime standarddatetime="2015-09-14T10:05:23-05:00">14 September 2014</ead:eventdatetime>
+                           <ead:agenttype value="human"/>
+                           <ead:agent>Lisa Bolkonskaya</ead:agent>
+                           <ead:eventdescription>Conversion from EAD 2002 revised. Conventions and local control added..</ead:eventdescription>
+                        </ead:maintenanceevent>
+                        <ead:maintenanceevent>
+                           <ead:eventtype value="revised"/>
+                           <ead:eventdatetime standarddatetime="2015-09-16T14:23:42-05:00">16 September 2014</ead:eventdatetime>
+                           <ead:agenttype value="human"/>
+                           <ead:agent>Lisa Bolkonskaya</ead:agent>
+                           <ead:eventdescription>Minor revisions. Added sources.</ead:eventdescription>
+                        </ead:maintenanceevent>
+                     </ead:maintenancehistory>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-target">
                <head>
@@ -1517,6 +2880,21 @@
                </div>
                <div type="datatype">
                   <p>IDREF</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:indexentry>
+                        <ead:famname>
+                           <ead:part>Hely-Hutchinson family</ead:part>
+                        </ead:famname>
+                        <ead:indexentry>
+                           <ead:genreform>
+                              <ead:part>Pedigree, 20th cent.</ead:part>
+                           </ead:genreform>
+                           <ead:ref target="EngC5769-f74" show="replace" actuate="onrequest">MS. Eng. c. 5769, fol. 74</ead:ref>
+                        </ead:indexentry>
+                     </ead:indexentry>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-transliteration">
@@ -1533,6 +2911,16 @@
                <div type="datatype">
                   <p>NMTOKEN</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:relations>
+                        <ead:relation relationtype="cpfrelation">
+                           <ead:relationentry localtype="original-language" lang="ger">Hannah Arendt (1906-1975)</ead:relationentry>
+                           <ead:relationentry localtype="translation" lang="jap" transliteration="DIN32708">アーレント, ハナ (1906-1975)</ead:relationentry>
+                        </ead:relation>
+                     </ead:relations>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-unit">
                <head>
@@ -1546,6 +2934,18 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="whole" physdescstructuredtype="materialtype">
+                        <ead:quantity>10</ead:quantity>
+                        <ead:unittype>posters</ead:unittype>
+                        <ead:dimensions>
+                           <ead:dimentions unit="inches" localtype="height">23</ead:dimentions>
+                           <ead:dimentions unit="inches" localtype="width">35</ead:dimentions>
+                        </ead:dimensions>
+                     </ead:physdescstructured>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-unitdatetype">
@@ -1561,6 +2961,16 @@
                <div type="values">
                   <p>bulk, inclusive</p>
                </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured certainty="circa" unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate notbefore="1971" notafter="1975">around 1973</ead:fromdate>
+                           <ead:todate standarddate="1992">1992</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-valign">
                <head>
@@ -1574,6 +2984,32 @@
                </div>
                <div type="values">
                   <p>top, middle, bottom</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-value">
@@ -1599,6 +3035,55 @@
                <div type="values">
                   <p>Values in <gi>maintenancestatus</gi>: revised, deleted, new, deletedsplit, deletedmerged, deletedreplaced, cancelled, derived</p>
                </div>
+               <div type="examples">
+               <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+                        repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
+                        <ead:recordid instanceurl="https://archiveshub.jisc.ac.uk/files/isleofmanpro/im1586-s34.xml">im1586-s34</ead:recordid>
+                        <ead:filedesc>
+                           <ead:titlestmt>
+                              <ead:titleproper encodinganalog="245">Records of the Economic Affairs division: subject files</ead:titleproper>
+                           </ead:titlestmt>
+                        </ead:filedesc>
+                        <ead:maintenancestatus value="derived"/>
+                        <ead:maintenanceagency countrycode="IM">
+                           <ead:agencycode>IM-1586</ead:agencycode>
+                           <ead:agencyname>Isle of Man Public Records Office</ead:agencyname>
+                        </ead:maintenanceagency>
+                        <ead:conventiondeclaration>
+                           <ead:abbr>apeMETSRights</ead:abbr>
+                           <ead:citation href="http://www.archivesportaleurope.net/Portal/profiles/apeMETSRights.xsd">
+                              rts:rightscategory in userestrict/encodinganalog</ead:citation>
+                        </ead:conventiondeclaration>
+                        <ead:maintenancehistory>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="created">Created using the Archives Hub Editor 2017-03-10</ead:eventtype>
+                              <ead:eventdatetime standarddatetime="2017-03-10T23:59:59">10 March 2017</ead:eventdatetime>
+                              <ead:agenttype value="human"/>
+                              <ead:agent/>
+                           </ead:maintenanceevent>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="revised">Normalised for publication by Archives Hub</ead:eventtype>
+                              <ead:eventdatetime standarddatetime="2017-03-10T23:59:59">10 March 2017</ead:eventdatetime>
+                              <ead:agenttype value="machine"/>
+                              <ead:agent>Archives Hub</ead:agent>
+                           </ead:maintenanceevent>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="revised">Last revision by Isle of Man Public Record Office</ead:eventtype>
+                              <ead:eventdatetime standarddatetime="2017-09-26T23:59:59">26 September 2017</ead:eventdatetime>
+                              <ead:agenttype value="human"/>
+                              <ead:agent/>
+                           </ead:maintenanceevent>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="derived"/>
+                              <ead:eventdatetime standarddatetime="2019-10-16T23:59:59">16 October 2019</ead:eventdatetime>
+                              <ead:agenttype value="machine"/>
+                              <ead:agent>Converted_apeEAD_version_2.7.2</ead:agent>
+                           </ead:maintenanceevent>
+                        </ead:maintenancehistory>
+                     </ead:control>
+                  </egXML>
+               </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-xpointer">
                <head>
@@ -1614,6 +3099,13 @@
                </div>
                <div type="datatype">
                   <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:relatedmaterial>
+                        <ead:p>See the <ref xpointer="ScMG108.xml#letters">letters from Frederick Douglass, 1870-1886</ref></ead:p>
+                     </ead:relatedmaterial>
+                  </egXML>
                </div>
             </div>
          </div>
@@ -1633,7 +3125,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p>abstract, addressline, archref, author, bibref, citation, container, conventiondeclaration, date, datesingle, didnote, dimensions, edition, emph, entry, event, fromdate, head, head01, head02, head03,
-                     item, label, localtypedeclaration, materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, ref, sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
+                     item, label, localtypedeclaration, materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, ref, rightsdeclaration, sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
                </div>
                <div type="attributes">
                   <p>
@@ -1672,7 +3164,7 @@
                   </list>
                </div>
                <div type="availability">
-                  <p>Within <gi>conventiondeclaration</gi>: Optional, not repeatable </p>
+                  <p>Within <gi>control</gi>: Optional, not repeatable </p>
                   <p>Within other elements: Optional, repeatable</p>
                </div>
                <div type="examples">
@@ -1683,14 +3175,14 @@
                      </ead:conventiondeclaration>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
-                     <ead:didnote>File also contains materials from the <ead:abbr expan="American Civil                     Liberties Union"> ACLU </ead:abbr>
+                     <ead:didnote>File also contains materials from the <ead:abbr expan="American Civil Liberties Union"> ACLU </ead:abbr>
                      </ead:didnote>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
                      <ead:c02>
                         <ead:did>
                            <ead:unittitle>
-                              <ead:abbr expan="United Nations Educational, Scientific and Cultural                     Organization"> UNESCO </ead:abbr>
+                              <ead:abbr expan="United Nations Educational, Scientific and Cultural Organization"> UNESCO </ead:abbr>
                            </ead:unittitle> [. . .] </ead:did>
                      </ead:c02>
                   </egXML>
@@ -1763,7 +3255,7 @@
                            <ead:head>Descriptive Summary</ead:head>
                            <ead:unittitle label="Title">Richard Egan manuscript maps of Orange County</ead:unittitle>
                            <ead:unitdate unitdatetype="inclusive" normal="1878/1879">Circa 1878-1879</ead:unitdate>
-                           <ead:unitid countrycode="US" repositorycode="cu-i" label="Collection                     number">MS-R72</ead:unitid>
+                           <ead:unitid countrycode="US" repositorycode="cu-i" label="Collection number">MS-R72</ead:unitid>
                            <ead:origination label="Creator">
                               <ead:persname rules="aacr2">
                                  <ead:part>Egan, Richard</ead:part>
@@ -3255,7 +4747,7 @@
                   <gi>c</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (unnumbered)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a subordinate part of the materials being described.</p>
@@ -3353,7 +4845,7 @@
                   <gi>c01</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (first level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates the top or first-level subordinate part of the materials.</p>
@@ -3462,7 +4954,7 @@
                   <gi>c02</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (second level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a second-level subordinate part of the materials.</p>
@@ -3533,7 +5025,7 @@
                   <gi>c03</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (third level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a third-level subordinate part of the materials.</p>
@@ -3604,7 +5096,7 @@
                   <gi>c04</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (fourth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a fourth-level subordinate part of the materials.</p>
@@ -3675,7 +5167,7 @@
                   <gi>c05</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (fifth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a fifth-level subordinate part of the materials.</p>
@@ -3746,7 +5238,7 @@
                   <gi>c06</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (sixth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a sixth-level subordinate part of the materials.</p>
@@ -3817,7 +5309,7 @@
                   <gi>c07</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (seventh level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a seventh-level subordinate part of the materials.</p>
@@ -3888,7 +5380,7 @@
                   <gi>c08</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (eighth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates an eighth-level subordinate part of the materials.</p>
@@ -3951,7 +5443,7 @@
                   <gi>c09</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (ninth level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a ninth-level subordinate part of the materials.</p>
@@ -4018,7 +5510,7 @@
                   <gi>c10</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (10th level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a tenth-level subordinate part of the materials.</p>
@@ -4085,7 +5577,7 @@
                   <gi>c11</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (11th level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates an eleventh-level subordinate part of the materials.</p>
@@ -4152,7 +5644,7 @@
                   <gi>c12</gi>
                </head>
                <div type="fullName">
-                  <p xml:lang="eng"/>
+                  <p xml:lang="eng">Component (12th level)</p>
                </div>
                <div type="summary">
                   <p>An element that designates a twelfth-level subordinate part of the materials.</p>
@@ -5347,7 +6839,7 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
                      <ead:control> [. . .] <ead:conventiondeclaration>
                            <ead:abbr>DACS</ead:abbr>
-                           <ead:citation href="http://www2.archivists.org/standards/DACS" lastdatetimeverified="2015-07-02T16:30:21-5:00" linktitle="DACS                     in HTML on SAA website" actuate="onload"
+                           <ead:citation href="http://www2.archivists.org/standards/DACS" lastdatetimeverified="2015-07-02T16:30:21-5:00" linktitle="DACS in HTML on SAA website" actuate="onload"
                               show="new">Describing Archives: a Content Standard</ead:citation>
                            <ead:descriptivenote>
                               <ead:p>DACS was used as the primary description standard.</ead:p>
@@ -6634,7 +8126,9 @@
                            <ead:scopecontent>
                               <ead:p>Series consists of composite maps of the forest resource inventory data from all the townships within a Forestry Management Unit. The composites offer a broader view of an area than
                                  the township/basemaps, however the forest stand statistics are quite small and difficult to read.</ead:p>[ . . .] </ead:scopecontent>
-                        </ead:c01>[ . . .] </ead:dsc>
+                        </ead:c01>
+                        [ . . .] 
+                     </ead:dsc>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
                      <ead:dsc dsctype="in-depth">
@@ -8609,7 +10103,7 @@
                            <ead:name>
                               <ead:part>12th Air Force Photo</ead:part>
                            </ead:name>
-                           <ead:ref target="LOT13105" actuate="onrequest" show="replace">&gt;LOT 13105</ead:ref>
+                           <ead:ref target="LOT13105" actuate="onrequest" show="replace">LOT 13105</ead:ref>
                         </ead:indexentry>
                         <ead:indexentry>
                            <ead:name>
@@ -8670,7 +10164,7 @@
                            <ead:name>
                               <ead:part>12th Air Force Photo</ead:part>
                            </ead:name>
-                           <ead:ref target="LOT13105" actuate="onrequest" show="replace">&gt;LOT 13105</ead:ref>
+                           <ead:ref target="LOT13105" actuate="onrequest" show="replace">LOT 13105</ead:ref>
                         </ead:indexentry>
                         <ead:indexentry>
                            <ead:name>
@@ -13398,6 +14892,9 @@
                      <item>Use <gi>otherrecordid</gi> to provide any local identifier for the EAD instance that does not link to a deliverable version.</item>
                   </list>
                </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
                      <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
@@ -13938,6 +15435,8 @@
                         <item>Optional</item>
                         <label>lang</label>
                         <item>Optional</item>
+                        <label>lastdatetimeverified</label>
+                        <item>Optional (must follow pattern based on ISO 8601)</item>
                         <label>linkrole</label>
                         <item>Optional</item>
                         <label>linktitle</label>
@@ -14109,8 +15608,6 @@
                         <item>Optional</item>
                         <label>lang</label>
                         <item>Optional</item>
-                        <label>lastdatetimeverified</label>
-                        <item>Optional (must follow pattern based on ISO 8601)</item>
                         <label>localtype</label>
                         <item>Optional</item>
                         <label>script</label>

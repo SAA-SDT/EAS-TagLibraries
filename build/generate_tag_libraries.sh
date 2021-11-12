@@ -25,17 +25,17 @@ outfile=$(basename "$2" .xml)
 case $1 in
 	"eac")
 		echo "generating EAC-CPF tag libraries"
-		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes"
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE"
 		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes"
 		;;
 	"ead")
 		echo "generating EAD3 tag libraries"
-		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes"
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE"
 		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes"
 		;;
 	"premis")
 		echo "generating PREMIS tag libraries"
-		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="no"
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="no" ISBN="PLACEHOLDER ISBN VALUE"
 		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="no"
 		;;
 	*)
