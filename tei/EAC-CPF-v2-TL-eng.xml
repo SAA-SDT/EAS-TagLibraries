@@ -8670,7 +8670,7 @@
                      to facilitate interoperability.</p>
                </div>
                <div type="datatype">
-                  <p>token</p>
+                  <p>normalizedString</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
