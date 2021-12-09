@@ -16,7 +16,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>2021 Edition</edition>
+            <!--<edition>2021 Edition</edition>-->
+            <p>2021 Edition</p>
          </editionStmt>
          <publicationStmt>
             <publisher>Society of American Archivists in collaboration with Staatsbibliothek zu
@@ -90,16 +91,16 @@
                   Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on
                   Encoded Archival Standards (TS-EAS). This major revision aims to modernise the
                   schema in terms of: <list type="simple">
-                     <item>simplifying where possible,</item>
-                     <item>alignment with EAD where useful,</item>
-                     <item>implementing features and solutions upon users’ request,</item>
-                     <item>clearing up unused components.</item>
+                     <item>- simplifying where possible,</item>
+                     <item>- alignment with EAD where useful,</item>
+                     <item>- implementing features and solutions upon users’ request,</item>
+                     <item>- clearing up unused components.</item>
                   </list>
                </p>
                <p>All elements and attributes in EAC-CPF 2010 were evaluated. Bugs and slight
                   changes were made in a minor update of the Schema in 2018. The present version,
                   EAC-CPF 2.0, is the result of a major overhaul of the standard and a
-                  reconciliation with EAD.</p>
+                  reconciliation with EAD3.</p>
                <p>Following <ref
                      target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd"
                      >ISAAR(CPF)</ref>, the established structure of control area, identity area,
@@ -118,7 +119,7 @@
             </div>
             <div xml:id="conventions">
                <head>Tag Library Conventions</head>
-               <p>The EAC-CPF Elements section of the Tag Library contains descriptions of 89
+               <p>The EAC-CPF Elements section of the Tag Library contains descriptions of 91
                   elements, arranged alphabetically by element name.</p>
                <p>Entries in the Tag Library that have been updated in the latest revision will be
                   marked with "(revised in [revision number])". Updates that predate the most recent
@@ -498,14 +499,14 @@
                      unique identifier for the instance.</p>
                   <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyCode</gi> and
                         <gi>agencyName</gi>.</p>
-                  <p>It is recommended that the code follow the format of the International Standard
-                     Identifier for Libraries and Related Organizations (ISIL: ISO 15511): a prefix,
+                  <p>It is recommended that the code follows the format of the International Standard
+                     Identifier for Libraries and Related Organizations (<ref target="https://www.iso.org/standard/57332.html">ISIL: ISO 15511</ref>): a prefix,
                      a dash, and an identifier. The code is alphanumeric (characters A-Z, 0-9,
                      solidus, hyphen-minus, and colon) with a maximum of 16 characters. If
                      appropriate to local or national convention, insert a valid ISIL for an
                      institution, whether provided by a national authority (usually the national
                      library) or a service (such as OCLC). If this is not the case then local
-                     institution codes may be given with the ISO 3166-1 alpha-2 country code as the
+                     institution codes may be given with the <ref target="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</ref> country code as the
                      prefix to ensure international uniqueness in <gi>agencyCode</gi>.</p>
                </div>
                <div type="attributeusage">

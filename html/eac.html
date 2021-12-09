@@ -26,9 +26,9 @@
          </div>
          <div>
             <div class="head03" id="toc">Table of Contents</div>
-            <div class="toc1"><a href="#d1e54">Release and Revision Notes</a></div>
-            <div class="toc1"><a href="#d1e86">Tag Library Conventions</a></div>
-            <div class="toc1"><a href="#d1e135">Elements</a></div>
+            <div class="toc1"><a href="#d1e55">Release and Revision Notes</a></div>
+            <div class="toc1"><a href="#d1e87">Tag Library Conventions</a></div>
+            <div class="toc1"><a href="#d1e136">Elements</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -150,7 +150,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e7556">Attributes</a></div>
+            <div class="toc1"><a href="#d1e7563">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -219,8 +219,8 @@
             </div>
          </div>
          <div>
-            <div class="section" id="d1e53">
-               <div id="d1e54">
+            <div class="section" id="d1e54">
+               <div id="d1e55">
                   <div class="head03">Release and Revision Notes  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="p">This is the draft release of the Tag Library for EAC-CPF 2.0. The current release
                      includes changes and updates in the schema undertaken by the Technical
@@ -243,12 +243,12 @@
                      Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on
                      Encoded Archival Standards (TS-EAS). This major revision aims to modernise the
                      schema in terms of: 
-                     <div class="blockIndent">simplifying where possible,<br></br><br></br>alignment with EAD where useful,<br></br><br></br>implementing features and solutions upon users’ request,<br></br><br></br>clearing up unused components.<br></br><br></br></div>
+                     <div class="blockIndent">- simplifying where possible,<br></br><br></br>- alignment with EAD where useful,<br></br><br></br>- implementing features and solutions upon users’ request,<br></br><br></br>- clearing up unused components.<br></br><br></br></div>
                   </div>
                   <div class="p">All elements and attributes in EAC-CPF 2010 were evaluated. Bugs and slight
                      changes were made in a minor update of the Schema in 2018. The present version,
                      EAC-CPF 2.0, is the result of a major overhaul of the standard and a
-                     reconciliation with EAD.</div>
+                     reconciliation with EAD3.</div>
                   <div class="p">Following <a href="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd" target="new">ISAAR(CPF)</a>, the established structure of control area, identity area,
                      description area, and relations is still available, as is the idea of encoding
                      multiple identities in one EAC-CPF instance.</div>
@@ -262,9 +262,9 @@
                      it was agreed to keep the camel case spelling for element and attribute names and
                      also for fixed values.</div>
                </div>
-               <div id="d1e86">
+               <div id="d1e87">
                   <div class="head03">Tag Library Conventions  <a class="tocReturn" href="#toc">[toc]</a></div>
-                  <div class="p">The EAC-CPF Elements section of the Tag Library contains descriptions of 89
+                  <div class="p">The EAC-CPF Elements section of the Tag Library contains descriptions of 91
                      elements, arranged alphabetically by element name.</div>
                   <div class="p">Entries in the Tag Library that have been updated in the latest revision will be
                      marked with "(revised in [revision number])". Updates that predate the most recent
@@ -343,7 +343,7 @@
             </div>
          </div>
          <div>
-            <div class="section" id="d1e135">
+            <div class="section" id="d1e136">
                <div class="head03">Elements</div>
                <div class="element">
                   <div class="leftcol" id="elem-abstract"><span class="label">&lt;abstract&gt;</span></div>
@@ -621,14 +621,14 @@
                         unique identifier for the instance.</div>
                      <div class="p">&lt;maintenanceAgency&gt; must include one or both of &lt;agencyCode&gt; and
                         &lt;agencyName&gt;.</div>
-                     <div class="p">It is recommended that the code follow the format of the International Standard
-                        Identifier for Libraries and Related Organizations (ISIL: ISO 15511): a prefix,
+                     <div class="p">It is recommended that the code follows the format of the International Standard
+                        Identifier for Libraries and Related Organizations (<a href="https://www.iso.org/standard/57332.html" target="new">ISIL: ISO 15511</a>): a prefix,
                         a dash, and an identifier. The code is alphanumeric (characters A-Z, 0-9,
                         solidus, hyphen-minus, and colon) with a maximum of 16 characters. If
                         appropriate to local or national convention, insert a valid ISIL for an
                         institution, whether provided by a national authority (usually the national
                         library) or a service (such as OCLC). If this is not the case then local
-                        institution codes may be given with the ISO 3166-1 alpha-2 country code as the
+                        institution codes may be given with the <a href="https://www.iso.org/iso-3166-country-codes.html" target="new">ISO 3166-1 alpha-2</a> country code as the
                         prefix to ensure international uniqueness in &lt;agencyCode&gt;.</div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -7223,7 +7223,7 @@
                      <div class="innerExample">&lt;languageUsed&gt;
                         <div class="innerExample">&lt;language languageCode="eng"&gt;English&lt;/language&gt;<br></br></div>
                         <div class="innerExample">&lt;writingSystem scriptCode="Latn"&gt;Latin&lt;/writingSystem&gt;<br></br></div>&lt;/languageUsed&gt;<br></br></div><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e7556">
+            <div class="section" id="d1e7563">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
