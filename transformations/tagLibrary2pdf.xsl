@@ -1424,7 +1424,7 @@
                     <xsl:choose>
                         <xsl:when test="eg:egXML">
                             <xsl:for-each select="eg:egXML">
-                                <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" font-size="10pt">
+                                <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" font-size="10pt" space-after="12pt">
                                     <xsl:apply-templates/>
                                 </fo:block>
                             </xsl:for-each>
