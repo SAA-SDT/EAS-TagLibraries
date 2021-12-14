@@ -150,7 +150,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e7563">Attributes</a></div>
+            <div class="toc1"><a href="#d1e7783">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -334,9 +334,9 @@
                      @part in &lt;nameEntry&gt;. In other cases, the examples simply
                      show what is possible. Some examples have ellipses, either between or within
                      elements, indicating that other elements or text have been omitted. Some
-                     elements have multiple examples one may show very dense markup with numerous
+                     elements have multiple examples: one may show very dense markup with numerous
                      attributes while another may illustrate a minimalist approach to the markup.
-                     Either approach is valid in EAC-CPF, and it is up to the repository to
+                     Either approach is valid in EAC-CPF, and it is up to the instance creator to
                      determine the optimal level of markup based on their specific purposes,
                      functional requirements, resources, or consortial guidelines.</div>
                </div>
@@ -665,12 +665,25 @@
                   <div class="content">
                      <div class="p">Optional, not repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;maintenanceAgency&gt;
-                        <div class="innerExample">&lt;agencyCode&gt;AU-ANL:PEAU&lt;/agencyCode&gt;<br></br></div>
-                        <div class="innerExample">&lt;agencyName&gt;National Library of Australia&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
+                        <div class="innerExample">&lt;agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil"&gt;US-ctybr&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;Beinecke Rare Book and Manuscript Library&lt;/agencyName&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/"&gt;CtY-BR&lt;/otherAgencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/"&gt;Q814779&lt;/otherAgencyCode&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceAgency&gt;
+                        <div class="innerExample">&lt;agencyCode status="alternative" vocabularySource="NAD" vocabularySourceURI="https://sok.riksarkivet.se/"&gt;SE/G066&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;Kommunalförbundet Sydarkivera&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceAgency countryCode="DE"&gt;
+                        <div class="innerExample">&lt;agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="https://sigel.staatsbibliothek-berlin.de/de/suche/" valueURI="https://ld.zdb-services.de/resource/organisations/DE-611"&gt;DE-611&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund&lt;/agencyName&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName languageOfElement="eng"&gt;Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-agencyName"><span class="label">&lt;agencyName&gt;</span></div>
                   <div class="content"><span class="label">Agency Name</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -734,16 +747,18 @@
                   <div class="content">
                      <div class="p">Optional, repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;maintenanceAgency countryCode="DE"&gt;
+                        <div class="innerExample">&lt;agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="https://sigel.staatsbibliothek-berlin.de/de/suche/" valueURI="https://ld.zdb-services.de/resource/organisations/DE-611"&gt;DE-611&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund&lt;/agencyName&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName languageOfElement="eng"&gt;Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div>
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;maintenanceAgency&gt;
-                        <div class="innerExample">&lt;agencyCode&gt;AU-ANL:PEAU&lt;/agencyCode&gt;<br></br></div>
-                        <div class="innerExample">&lt;agencyName&gt;National Library of Australia&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div>
-                     <div class="innerExample">&lt;maintenanceAgency&gt;
-                        <div class="innerExample">&lt;agencyCode&gt;CA-OONL&lt;/agencyCode&gt;<br></br></div>
-                        <div class="innerExample">&lt;agencyName&gt;Library and Archives Canada&lt;/agencyName&gt;<br></br></div>
-                        <div class="innerExample">&lt;agencyName&gt;Bibliothèque et Archives Canada&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
+                        <div class="innerExample">&lt;agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil"&gt;US-nnmnh&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;American Museum of Natural History&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-agent"><span class="label">&lt;agent&gt;</span></div>
                   <div class="content"><span class="label">Agent</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -807,16 +822,17 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
-                        <div class="innerExample">&lt;agent agentType="human"&gt;Bountouri, Lina&lt;/agent&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDateTime&gt;20/06/2000 12:00&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
-                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
-                        <div class="innerExample">&lt;agent agentType="human"&gt;Ionian University Library, Catalog
-                           Division&lt;/agent&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDateTime&gt;June 1, 2012&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
-                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="revised"&gt;
-                        <div class="innerExample">&lt;agent agentType="machine"&gt;ConvertUtility&lt;/agent&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDateTime&gt;2012-06-11 10:00AM&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;maintenanceHistory&gt;
+                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="derived"&gt;
+                           <div class="innerExample">&lt;agent agentType="machine"&gt;XSLT ead2cpf.xsl/Saxon B9&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"&gt;&lt;/eventDateTime&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDescription&gt;Derived from EAD instance.&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="revised"&gt;
+                           <div class="innerExample">&lt;agent agentType="unknown"&gt;&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime standardDateTime="2021-11-27"&gt;&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
+                           <div class="innerExample">&lt;agent agentType="human"&gt;K. Bredenberg&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime&gt;December 2021&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>&lt;/maintenanceHistory&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-alternativeSet"><span class="label">&lt;alternativeSet&gt;</span></div>
                   <div class="content"><span class="label">Alternative Set</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -1309,7 +1325,16 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;source id="source1" xlink:href="https://www.theguardian.com/books/2018/aug/10/langston-hughes-born-a-year-before-accepted-date-poet"&gt;
+                        <div class="innerExample">&lt;citation&gt;Flood, Alison 
+                           <div class="innerExample">&lt;span localType="http://id.loc.gov/ontologies/bibframe/title"&gt;"Langston Hughes
+                              'born a year before accepted date', researcher finds,"&lt;/span&gt;<br></br></div> The Guardian.
+                           Published 10 August 2018.&lt;/citation&gt;<br></br></div>
+                        <div class="innerExample">&lt;citedRange unit="page"&gt;1&lt;/citedRange&gt;<br></br></div>
+                        <div class="innerExample">&lt;descriptiveNote&gt;
+                           <div class="innerExample">&lt;p&gt;Poet researching archives of local African American newspaper finds story reporting
+                              on 'little Langston' before his recorded birth date&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/source&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-componentEntry"><span class="label">&lt;componentEntry&gt;</span></div>
                   <div class="content"><span class="label">Component Entry</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -1644,7 +1669,42 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;
+                        <div class="innerExample">&lt;recordId&gt;https://kalliope-verbund.info/gnd/118584618&lt;/recordId&gt;<br></br></div>
+                        <div class="innerExample">&lt;maintenanceAgency countryCode="DE"&gt;
+                           <div class="innerExample">&lt;agencyCode status="authorized"&gt;DE-611&lt;/agencyCode&gt;<br></br></div>
+                           <div class="innerExample">&lt;agencyName&gt;Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund&lt;/agencyName&gt;<br></br></div>
+                           <div class="innerExample">&lt;agencyName languageOfElement="eng"&gt;Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div>
+                        <div class="innerExample">&lt;maintenanceHistory&gt;
+                           <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
+                              <div class="innerExample">&lt;agent agentType="unknown"&gt;DE-101&lt;/agent&gt;<br></br></div>
+                              <div class="innerExample">&lt;eventDateTime standardDateTime="1988-07-01"&gt;&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                           <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="revised"&gt;
+                              <div class="innerExample">&lt;agent agentType="unknown"&gt;1400&lt;/agent&gt;<br></br></div>
+                              <div class="innerExample">&lt;eventDateTime standardDateTime="2015-10-15"&gt;&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>&lt;/maintenanceHistory&gt;<br></br></div>
+                        <div class="innerExample">&lt;sources&gt;
+                           <div class="innerExample">&lt;source&gt;
+                              <div class="innerExample">&lt;reference&gt;Szb. Mozart-Lex.&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div>&lt;/sources&gt;<br></br></div>
+                        <div class="innerExample">&lt;conventionDeclaration&gt;
+                           <div class="innerExample">&lt;reference href="https://www.loc.gov/aba/rda/"&gt;Resource Description and Access&lt;/reference&gt;<br></br></div>
+                           <div class="innerExample">&lt;shortCode&gt;RDA&lt;/shortCode&gt;<br></br></div>&lt;/conventionDeclaration&gt;<br></br></div>
+                        <div class="innerExample">&lt;languageDeclaration languageCode="ger" scriptCode="Latn"&gt;&lt;/languageDeclaration&gt;<br></br></div>
+                        <div class="innerExample">&lt;localTypeDeclaration&gt;
+                           <div class="innerExample">&lt;reference href="https://d-nb.info/standards/elementset/gnd_20191015"&gt;GNDO&lt;/reference&gt;<br></br></div>
+                           <div class="innerExample">&lt;descriptiveNote&gt;
+                              <div class="innerExample">&lt;p&gt;Gemeinsame Normdatei Ontologie&lt;/p&gt;<br></br></div>
+                              <div class="innerExample">&lt;p languageOfElement="eng"&gt;Integrated Authority File Ontology&lt;/p&gt;<br></br></div>
+                              <div class="innerExample">&lt;p&gt;Version 2019-10-15&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/localTypeDeclaration&gt;<br></br></div>
+                        <div class="innerExample">&lt;localTypeDeclaration&gt;
+                           <div class="innerExample">&lt;reference href="https://www.loc.gov/marc/authority/"&gt;MARC21&lt;/reference&gt;<br></br></div>&lt;/localTypeDeclaration&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherRecordId localType="024$a" localTypeDeclarationReference="MARC21"&gt;http://d-nb.info/gnd/118584618"&lt;/otherRecordId&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherRecordId localType="035$a" localTypeDeclarationReference="MARC21"&gt;(DE-101)118584618&lt;/otherRecordId&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherRecordId localType="https://d-nb.info/standards/elementset/gnd#gndIdentifier" localTypeDeclarationReference="GNDO"&gt;(DE-588)118584618&lt;/otherRecordId&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO"&gt;(DE-588a)118584618&lt;/otherRecordId&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO"&gt;(DE-588c)4040426-2&lt;/otherRecordId&gt;<br></br></div>
+                        <div class="innerExample">&lt;rightsDeclaration&gt;
+                           <div class="innerExample">&lt;reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de"&gt;CC0 1.0 Universell&lt;/reference&gt;<br></br></div>&lt;/rightsDeclaration&gt;<br></br></div>&lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-conventionDeclaration"><span class="label">&lt;conventionDeclaration&gt;</span></div>
                   <div class="content"><span class="label">Convention Declaration</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -2253,7 +2313,7 @@
                         status and mandates; functions, occupations, and activities, and the dates and
                         places that further constrain those elements.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;functions&gt;<br></br><br></br>&lt;languagesUsed&gt;<br></br><br></br>&lt;legalStatuses&gt;<br></br><br></br>&lt;localDescriptions&gt;<br></br><br></br>&lt;mandates&gt;<br></br><br></br>&lt;occupations&gt;<br></br><br></br>&lt;places&gt;<br></br><br></br> Any of &lt;biogHist&gt;, &lt;existDates&gt;, &lt;generalContext&gt;,
+                     <div class="blockIndent">&lt;demographicDescriptions&gt;<br></br><br></br>&lt;functions&gt;<br></br><br></br>&lt;languagesUsed&gt;<br></br><br></br>&lt;legalStatuses&gt;<br></br><br></br>&lt;localDescriptions&gt;<br></br><br></br>&lt;mandates&gt;<br></br><br></br>&lt;occupations&gt;<br></br><br></br>&lt;places&gt;<br></br><br></br> Any of &lt;biogHist&gt;, &lt;existDates&gt;, &lt;generalContext&gt;,
                         and &lt;structureOrGenealogy&gt;<br></br><br></br></div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -2292,7 +2352,20 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;description&gt;
+                        <div class="innerExample">&lt;places&gt;
+                           <div class="innerExample">&lt;place&gt;
+                              <div class="innerExample">&lt;placeName vocabularySource="local" id="IDPlaceName1"&gt;East Side (Buffalo, N.Y.)&lt;/placeName&gt;<br></br></div>
+                              <div class="innerExample">&lt;geographicCoordinates coordinateSystem="WGS84"&gt;N 42°53′48" W 78°50′2"&lt;/geographicCoordinates&gt;<br></br></div>&lt;/place&gt;<br></br></div>&lt;/places&gt;<br></br></div>
+                        <div class="innerExample">&lt;functions&gt;
+                           <div class="innerExample">&lt;function&gt;
+                              <div class="innerExample">&lt;term valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/"&gt;community development&lt;/term&gt;<br></br></div>
+                              <div class="innerExample">&lt;placeName target="IDPlaceName1"&gt;East Side (Buffalo, N.Y.)&lt;/placeName&gt;<br></br></div>
+                              <div class="innerExample">&lt;descriptiveNote&gt;
+                                 <div class="innerExample">&lt;p&gt;The organization’s mission is to create programs to improve the quality of
+                                    residential housing and develop projects to improve the East Side of Buffalo and
+                                    Western New York.&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/function&gt;<br></br></div>&lt;/functions&gt;<br></br></div>&lt;/description&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-descriptiveNote"><span class="label">&lt;descriptiveNote&gt;</span></div>
                   <div class="content"><span class="label">Descriptive Note</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -2344,7 +2417,14 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;function&gt;
+                        <div class="innerExample">&lt;term valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/"&gt;community development&lt;/term&gt;<br></br></div>
+                        <div class="innerExample">&lt;placeName target="IDPlaceName1"&gt;East Side (Buffalo, N.Y.)&lt;/placeName&gt;<br></br></div>
+                        <div class="innerExample">&lt;descriptiveNote&gt;
+                           <div class="innerExample">&lt;p&gt;The organization’s mission is to create programs to improve the quality of
+                              residential housing and develop projects to improve the East Side of Buffalo and
+                              Western New York.&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/function&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-eac"><span class="label">&lt;eac&gt;</span></div>
                   <div class="content"><span class="label">Encoded Archival Context - Corporate Bodies, Persons, and Families</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -2610,18 +2690,17 @@
                   <div class="content">
                      <div class="p">Required, not repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
-                        <div class="innerExample">&lt;agent agentType="human"&gt;Bill Stockting&lt;/agent&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"&gt;&lt;/eventDateTime&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDescription&gt;Created from original in ISAAR (CPF), 2nd edition:
-                           example 10&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="revised"&gt;
+                        <div class="innerExample">&lt;agent agentType="unknown"&gt;&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime standardDateTime="2021-11-27"&gt;&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
                      <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
-                        <div class="innerExample">&lt;agent agentType="human"&gt;Karin Bredenberg&lt;/agent&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDateTime&gt;11th of June 2012 at 9AM&lt;/eventDateTime&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDescription&gt;Updated example 10&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
+                        <div class="innerExample">&lt;agent agentType="human"&gt;K. Bredenberg&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime&gt;December 2021&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-eventDescription"><span class="label">&lt;eventDescription&gt;</span></div>
                   <div class="content"><span class="label">Maintenance Event Description</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -2666,11 +2745,10 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
-                        <div class="innerExample">&lt;agent agentType="human"&gt;Bill Stockting&lt;/agent&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"&gt;&lt;/eventDateTime&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDescription&gt;Created from original in ISAAR (CPF), 2nd edition:
-                           example 10&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="derived"&gt;
+                        <div class="innerExample">&lt;agent agentType="machine"&gt;XSLT ead2cpf.xsl/Saxon B9&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"&gt;&lt;/eventDateTime&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDescription&gt;Derived from EAD instance.&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-existDates"><span class="label">&lt;existDates&gt;</span></div>
                   <div class="content"><span class="label">Dates of Existence</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -3145,7 +3223,19 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;places&gt;
+                        <div class="innerExample">&lt;place&gt;
+                           <div class="innerExample">&lt;geographicCoordinates coordinateSystem="mgrs"&gt;33UUU9029819737&lt;/geographicCoordinates&gt;<br></br></div>
+                           <div class="innerExample">&lt;placeName&gt;Berlin, Germany&lt;/placeName&gt;<br></br></div>&lt;/place&gt;<br></br></div>
+                        <div class="innerExample">&lt;place&gt;
+                           <div class="innerExample">&lt;placeName localType="place"&gt;Clear Spring&lt;/placeName&gt;<br></br></div>
+                           <div class="innerExample">&lt;placeName localType="state"&gt;Maryland&lt;/placeName&gt;<br></br></div>
+                           <div class="innerExample">&lt;geographicCoordinates coordinateSystem="UTM"&gt;18S 248556mE 4393694mN&lt;/geographicCoordinates&gt;<br></br></div>&lt;/place&gt;<br></br></div>
+                        <div class="innerExample">&lt;place&gt;
+                           <div class="innerExample">&lt;placeName localType="place"&gt;Hardeeville&lt;/placeName&gt;<br></br></div>
+                           <div class="innerExample">&lt;placeName localType="state"&gt;South Carolina&gt;&lt;/placeName&gt;<br></br></div>
+                           <div class="innerExample">&lt;geographicCoordinates coordinateSystem="WGS84"&gt;-81.1, 32.2, -81.0, 32.3&lt;/geographicCoordinates&gt;<br></br></div>&lt;/place&gt;<br></br></div>&lt;/places&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-head"><span class="label">&lt;head&gt;</span></div>
                   <div class="content"><span class="label">Head</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -3196,7 +3286,18 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;list listType="unordered"&gt;
+                        <div class="innerExample">&lt;head&gt;List of ministers of May Memorial Unitarian Universalist
+                           Church&lt;/head&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;John Storer, Minister 1839-1844&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;Samuel Joseph May, Minister 1845-1868&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;Samuel R. Calthrop, Minister 1868-1911&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;John H. Applebee, Minister 1911-1929&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;Waldemar W. Argow, Minister 1930-1941&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;Robert E. Romig, Minister 1941-1946&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;Glenn O. Canfield, Minister 1946-1952&lt;/item&gt;<br></br></div>
+                        <div class="innerExample">&lt;item&gt;John Fuller, Minister, 1961-1973&lt;/item&gt;<br></br></div>&lt;/list&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-identity"><span class="label">&lt;identity&gt;</span></div>
                   <div class="content"><span class="label">Identity</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4395,13 +4496,11 @@
                            <div class="innerExample">&lt;eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"&gt;&lt;/eventDateTime&gt;<br></br></div>
                            <div class="innerExample">&lt;eventDescription&gt;Derived from EAD instance.&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
                         <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="revised"&gt;
-                           <div class="innerExample">&lt;agent agentType="human"&gt;Claire Sibille&lt;/agent&gt;<br></br></div>
-                           <div class="innerExample">&lt;eventDateTime standardDateTime="2009-07-08T10:45:00-01:00"&gt;2009-07-08 10:45&lt;/eventDateTime&gt;<br></br></div>
-                           <div class="innerExample">&lt;eventDescription&gt;Notice convertie en EAC-CPF avec l' éditeur
-                              oXygen&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
-                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
-                           <div class="innerExample">&lt;agent agentType="human"&gt;Lina Bountouri&lt;/agent&gt;<br></br></div>
-                           <div class="innerExample">&lt;eventDateTime standardDateTime="2001-11-03T12:00:00+01:00"&gt;2001-11/03 12:00&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>&lt;/maintenanceHistory&gt;<br></br></div><br></br></div><br></br></div>
+                           <div class="innerExample">&lt;agent agentType="unknown"&gt;&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime standardDateTime="2021-11-27"&gt;&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
+                           <div class="innerExample">&lt;agent agentType="human"&gt;K. Bredenberg&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime&gt;December 2021&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>&lt;/maintenanceHistory&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-maintenanceHistory"><span class="label">&lt;maintenanceHistory&gt;</span></div>
                   <div class="content"><span class="label">Maintenance History</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4451,18 +4550,16 @@
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;maintenanceHistory&gt;
-                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
-                           <div class="innerExample">&lt;agent agentType="human"&gt;Salvatore Vassallo&lt;/agent&gt;<br></br></div>
-                           <div class="innerExample">&lt;eventDateTime standardDateTime="2009-06-29T00:20:00.000-00:00"&gt;29
-                              giugno 2009&lt;/eventDateTime&gt;<br></br></div>
-                           <div class="innerExample">&lt;eventDescription&gt;Prima codifica dell'espempio in italiano presente
-                              nelle ISAAR(CPF)&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="derived"&gt;
+                           <div class="innerExample">&lt;agent agentType="machine"&gt;XSLT ead2cpf.xsl/Saxon B9&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"&gt;&lt;/eventDateTime&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDescription&gt;Derived from EAD instance.&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
                         <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="revised"&gt;
-                           <div class="innerExample">&lt;agent agentType="human"&gt;Salvatore Vassallo&lt;/agent&gt;<br></br></div>
-                           <div class="innerExample">&lt;eventDateTime standardDateTime="2009-06-29T17:16:00.000-00:00"&gt;29
-                              giugno 2009&lt;/eventDateTime&gt;<br></br></div>
-                           <div class="innerExample">&lt;eventDescription&gt;Aggiunte fonti, regole usate e campi di
-                              controllo&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>&lt;/maintenanceHistory&gt;<br></br></div><br></br></div><br></br></div>
+                           <div class="innerExample">&lt;agent agentType="unknown"&gt;&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime standardDateTime="2021-11-27"&gt;&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
+                           <div class="innerExample">&lt;agent agentType="human"&gt;K. Bredenberg&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime&gt;December 2021&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>&lt;/maintenanceHistory&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-mandate"><span class="label">&lt;mandate&gt;</span></div>
                   <div class="content"><span class="label">Mandate</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4698,7 +4795,63 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;multipleIdentities&gt;
+                        <div class="innerExample">&lt;cpfDescription&gt;
+                           <div class="innerExample">&lt;identity identityType="acquired" localType="pseudonyme"&gt;
+                              <div class="innerExample">&lt;entityType&gt;person&lt;/entityType&gt;<br></br></div>
+                              <div class="innerExample">&lt;nameEntry languageOfElement="ru" scriptOfElement="Latn"&gt;
+                                 <div class="innerExample">&lt;part localType="élément d'entrée"&gt;Gorki&lt;/part&gt;<br></br></div>
+                                 <div class="innerExample">&lt;part localType="autre élément"&gt;Maksim&lt;/part&gt;<br></br></div>
+                                 <div class="innerExample">&lt;useDates&gt;
+                                    <div class="innerExample">&lt;dateRange&gt;
+                                       <div class="innerExample">&lt;fromDate standardDate="1892"&gt;1892&lt;/fromDate&gt;<br></br></div>
+                                       <div class="innerExample">&lt;toDate standardDate="1936"&gt;1936&lt;/toDate&gt;<br></br></div>&lt;/dateRange&gt;<br></br></div>&lt;/useDates&gt;<br></br></div>&lt;/nameEntry&gt;<br></br></div>&lt;/identity&gt;<br></br></div>
+                           <div class="innerExample">&lt;description&gt;
+                              <div class="innerExample">&lt;functions&gt;
+                                 <div class="innerExample">&lt;function&gt;
+                                    <div class="innerExample">&lt;term&gt;Romancier&lt;/term&gt;<br></br></div>&lt;/function&gt;<br></br></div>&lt;/functions&gt;<br></br></div>
+                              <div class="innerExample">&lt;languagesUsed&gt;
+                                 <div class="innerExample">&lt;languageUsed&gt;
+                                    <div class="innerExample">&lt;language languageCode="rus"&gt;russe&lt;/language&gt;<br></br></div>
+                                    <div class="innerExample">&lt;writingSystem scriptCode="Cyrl"&gt;&lt;/writingSystem&gt;<br></br></div>&lt;/languageUsed&gt;<br></br></div>&lt;/languagesUsed&gt;<br></br></div>
+                              <div class="innerExample">&lt;existDates&gt;
+                                 <div class="innerExample">&lt;dateRange&gt;
+                                    <div class="innerExample">&lt;fromDate standardDate="1868"&gt;1868&lt;/fromDate&gt;<br></br></div>
+                                    <div class="innerExample">&lt;toDate standardDate="1936"&gt;1936&lt;/toDate&gt;<br></br></div>&lt;/dateRange&gt;<br></br></div>&lt;/existDates&gt;<br></br></div>&lt;/description&gt;<br></br></div>&lt;/cpfDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;cpfDescription&gt;
+                           <div class="innerExample">&lt;identity identityType="given" localType="état civil"&gt;
+                              <div class="innerExample">&lt;entityType&gt;person&lt;/entityType&gt;<br></br></div>
+                              <div class="innerExample">&lt;nameEntry languageOfElement="rus" scriptOfElemebt="Latn"&gt;
+                                 <div class="innerExample">&lt;part localType="élément d'entrée"&gt;Peškov&lt;/part&gt;<br></br></div>
+                                 <div class="innerExample">&lt;part localType="autre élément"&gt;Aleksej Maksimovič&lt;/part&gt;<br></br></div>&lt;/nameEntry&gt;<br></br></div>&lt;/identity&gt;<br></br></div>
+                           <div class="innerExample">&lt;description&gt;
+                              <div class="innerExample">&lt;places&gt;
+                                 <div class="innerExample">&lt;place&gt;
+                                    <div class="innerExample">&lt;placeRole&gt;naissance&lt;/placeRole&gt;<br></br></div>
+                                    <div class="innerExample">&lt;placeName&gt;Nijni-Novgorod (Russie)&lt;/placeName&gt;<br></br></div>&lt;/place&gt;<br></br></div>
+                                 <div class="innerExample">&lt;place&gt;
+                                    <div class="innerExample">&lt;placeRole&gt;décès&lt;/placeRole&gt;<br></br></div>
+                                    <div class="innerExample">&lt;placeRole&gt;Gorki (Russie)&lt;/placeRole&gt;<br></br></div>&lt;/place&gt;<br></br></div>
+                                 <div class="innerExample">&lt;place&gt;
+                                    <div class="innerExample">&lt;placeRole&gt;nationalité&lt;/placeRole&gt;<br></br></div>
+                                    <div class="innerExample">&lt;placeName countryCode="SU"&gt;Union Soviétique&lt;/placeName&gt;<br></br></div>&lt;/place&gt;<br></br></div>&lt;/places&gt;<br></br></div>
+                              <div class="innerExample">&lt;existDates&gt;
+                                 <div class="innerExample">&lt;dateRange&gt;
+                                    <div class="innerExample">&lt;fromDate standardDate="1868-03-28"&gt;28 mars 1868&lt;/fromDate&gt;<br></br></div>
+                                    <div class="innerExample">&lt;toDate standardDate="1936-06-18"&gt;18 juin 1936&lt;/toDate&gt;<br></br></div>&lt;/dateRange&gt;<br></br></div>&lt;/existDates&gt;<br></br></div>
+                              <div class="innerExample">&lt;biogHist&gt;
+                                 <div class="innerExample">&lt;p&gt;Élevé par son oncle maternel à Nijni-Novgorod. S'installe à Kazan en 1884. Autodidacte.
+                                    Premiers contacts avec les milieux marxistes et populistes. Retour à Nijni-Novgorod
+                                    en 1889 et première arrestation. Entame un premier voyage dans le sud de la Russie
+                                    en 1891 et s'installe à Tiflis (1891-1892), avant de revenir à Nijni-Novgorod (1893-1895
+                                    puis 1898). Arrêté un deuixème fois à Tiflis en 1898. Il se rend pour la première
+                                    fois à Saint-Pétersbourg en 1899. Arrêté une 3e fois à Nijni-Novgorod en 1901, ce
+                                    qui provoque une campagne de protestations. Entretient des liens d'amitié avec Cehov
+                                    et Tol'stoj. Il apporte son soutien financier au Parti social-démocrate et se rapproche
+                                    des Bolcheviks après 1905. Il s'exile à Capri de 1906 à 1913. Rentré en Russie en
+                                    1913, il s'exile de nouveau en 1921 en Allemagne puis en Italie en 1923. Il retourne
+                                    définitivement en URSS en 1932.&lt;/p&gt;<br></br></div>&lt;/biogHist&gt;<br></br></div>&lt;/description&gt;<br></br></div>&lt;/cpfDescription&gt;<br></br></div>&lt;/multipleIdentities&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-nameEntry"><span class="label">&lt;nameEntry&gt;</span></div>
                   <div class="content"><span class="label">Name Entry</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -5616,9 +5769,17 @@
                      <div class="p">Within &lt;chronItemSet&gt;, &lt;relation&gt;: optional, repeatable.</div>
                      <div class="p">Within &lt;places&gt;: required, repeatable.</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;place&gt;
+                        <div class="innerExample">&lt;placeRole&gt;Residence&lt;/placeRole&gt;<br></br></div>
+                        <div class="innerExample">&lt;placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01"&gt;Kent (county)&lt;/placeName&gt;<br></br></div>&lt;/place&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;place&gt;
+                        <div class="innerExample">&lt;placeName vocabularySource="local" id="IDPlaceName1"&gt;East Side (Buffalo, N.Y.)&lt;/placeName&gt;<br></br></div>
+                        <div class="innerExample">&lt;geographicCoordinates coordinateSystem="WGS84"&gt;N 42°53′48" W 78°50′2"&lt;/geographicCoordinates&gt;<br></br></div>&lt;/place&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-placeName"><span class="label">&lt;placeName&gt;</span></div>
                   <div class="content"><span class="label">Place Name</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -5701,9 +5862,18 @@
                   <div class="content">
                      <div class="p">Optional, repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;place&gt;
+                        <div class="innerExample">&lt;placeName vocabularySource="local" id="IDPlaceName1"&gt;East Side (Buffalo, N.Y.)&lt;/placeName&gt;<br></br></div>
+                        <div class="innerExample">&lt;geographicCoordinates coordinateSystem="WGS84"&gt;N 42°53′48" W 78°50′2"&lt;/geographicCoordinates&gt;<br></br></div>&lt;/place&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;place&gt;
+                        <div class="innerExample">&lt;placeName localType="place"&gt;Clear Spring&lt;/placeName&gt;<br></br></div>
+                        <div class="innerExample">&lt;placeName localType="state"&gt;Maryland&lt;/placeName&gt;<br></br></div>
+                        <div class="innerExample">&lt;geographicCoordinates coordinateSystem="UTM"&gt;18S 248556mE 4393694mN&lt;/geographicCoordinates&gt;<br></br></div>&lt;/place&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-placeRole"><span class="label">&lt;placeRole&gt;</span></div>
                   <div class="content"><span class="label">Place Role</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -5770,9 +5940,17 @@
                   <div class="content">
                      <div class="p">Optional, repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;place&gt;
+                        <div class="innerExample">&lt;placeName valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;Stockholm&lt;/placeName&gt;<br></br></div>
+                        <div class="innerExample">&lt;placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBirth" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#"&gt;Geburtsort&lt;/placeRole&gt;<br></br></div>&lt;/place&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;place&gt;
+                        <div class="innerExample">&lt;placeRole&gt;Residence&lt;/placeRole&gt;<br></br></div>
+                        <div class="innerExample">&lt;placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01"&gt;Kent (county)&lt;/placeName&gt;<br></br></div>&lt;/place&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-places"><span class="label">&lt;places&gt;</span></div>
                   <div class="content"><span class="label">Places</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -5833,7 +6011,13 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;places&gt;
+                        <div class="innerExample">&lt;place&gt;
+                           <div class="innerExample">&lt;placeName valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;Stockholm&lt;/placeName&gt;<br></br></div>
+                           <div class="innerExample">&lt;placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBirth" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#"&gt;Geburtsort&lt;/placeRole&gt;<br></br></div>&lt;/place&gt;<br></br></div>
+                        <div class="innerExample">&lt;place&gt;
+                           <div class="innerExample">&lt;placeName valueURI="https://d-nb.info/gnd/4051594-1" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;Sankt Gallen&lt;/placeName&gt;<br></br></div>Sterbeort&lt;/place&gt;<br></br></div>&lt;/places&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-recordId"><span class="label">&lt;recordId&gt;</span></div>
                   <div class="content"><span class="label">Record Identifier</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -7223,7 +7407,7 @@
                      <div class="innerExample">&lt;languageUsed&gt;
                         <div class="innerExample">&lt;language languageCode="eng"&gt;English&lt;/language&gt;<br></br></div>
                         <div class="innerExample">&lt;writingSystem scriptCode="Latn"&gt;Latin&lt;/writingSystem&gt;<br></br></div>&lt;/languageUsed&gt;<br></br></div><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e7563">
+            <div class="section" id="d1e7783">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
@@ -8254,7 +8438,8 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;citedRange unit="page"&gt;1&lt;/citedRange&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-value"><span class="label">@value</span></div>
