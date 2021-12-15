@@ -150,7 +150,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e7783">Attributes</a></div>
+            <div class="toc1"><a href="#d1e7885">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -225,7 +225,7 @@
                   <div class="p">This is the draft release of the Tag Library for EAC-CPF 2.0. The current release
                      includes changes and updates in the schema undertaken by the Technical
                      Subcommittee on Encoded Archival Standards reflecting comments received by the
-                     international community of professionals. </div>
+                     international community of professionals.</div>
                   <div class="p">The EAC-CPF Tag Library is a living document. As such, it will continue to be
                      developed as users suggest areas in need of clarification or expansion. The
                      Technical Subcommittee for Encoded Archival Standards (TS-EAS) still encourages
@@ -241,7 +241,7 @@
                      updated in late 2018. This version is called <a href="https://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/" target="new">EAC-CPF 2010 edition 2018</a>.</div>
                   <div class="p">The process for a major revision started in 2017, following the 2015 merger of the
                      Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on
-                     Encoded Archival Standards (TS-EAS). This major revision aims to modernise the
+                     Encoded Archival Standards (TS-EAS). This major revision aims to modernize the
                      schema in terms of: 
                      <div class="blockIndent">- simplifying where possible,<br></br><br></br>- alignment with EAD where useful,<br></br><br></br>- implementing features and solutions upon users’ request,<br></br><br></br>- clearing up unused components.<br></br><br></br></div>
                   </div>
@@ -289,7 +289,7 @@
                      being defined. Elements are listed in alphabetical order by tag name. Elements
                      may be empty (e.g., an element which allows no child text or element nodes), or
                      they may contain text (listed as [text]), other elements, or a mixture of text
-                     and other elements. Text content cannot include characters that would be
+                     and other elements.Text content cannot include characters that would be
                      interpreted by a parser as action codes. For example, a left angle bracket has
                      to be represented as the character entity reference &amp;lt; so that it is not
                      misinterpreted as the start of an element name. The technical availability
@@ -414,7 +414,7 @@
                            November of 1948, he was elected to the United States Senate and he also
                            served as the Senate Democratic Whip from 1961 to 1964 and in 1968,
                            Humphrey was the Democratic Party's candidate for President, but he was
-                           defeated by Richard M. Nixon. &lt;/abstract&gt;<br></br></div>
+                           defeated by Richard M. Nixon.&lt;/abstract&gt;<br></br></div>
                         <div class="innerExample">&lt;p&gt;Hubert H. Humphrey was born in Wallace, South Dakota, on May 27,
                            1911. He left South Dakota to attend the University of Minnesota but
                            returned to South Dakota to help manage his father's drug store early in
@@ -901,7 +901,14 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;alternativeSet&gt;
+                        <div class="innerExample">&lt;setComponent href="http://www.womenaustralia.info/biogs/AWE0064b.htm" linkTitle="Hill, Dorothy - Woman - The Australian Women's Register"&gt;
+                           <div class="innerExample">&lt;componentEntry&gt;The Australian Women's Register record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>
+                        <div class="innerExample">&lt;setComponent href="http://nla.gov.au/anbd.aut-an35995526" linkTitle="Hill, Dorothy, 1907-1997 - Full record view - Libraries Australia Search"&gt;
+                           <div class="innerExample">&lt;componentEntry&gt;Libraries Australia record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>
+                        <div class="innerExample">&lt;setComponent href="https://www.eoas.info/biogs/P000494b.htm" linkTitle="Hill, Dorothy - Biographical entry - Encyclopedia of Australian Science"&gt;
+                           <div class="innerExample">&lt;componentEntry&gt;Encyclopedia of Australian Science record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>&lt;/alternativeSet&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-biogHist"><span class="label">&lt;biogHist&gt;</span></div>
                   <div class="content"><span class="label">Biography or History</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -1406,7 +1413,14 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;alternativeSet&gt;
+                        <div class="innerExample">&lt;setComponent href="https://adb.anu.edu.au/biography/mawson-sir-douglas-7531" linkTitle="Biography - Sir Douglas Mawson - Australian Dictionary of Biography"&gt;
+                           <div class="innerExample">&lt;componentEntry&gt;Australian Dictionary of Biography record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>
+                        <div class="innerExample">&lt;setComponent href="http://nla.gov.au/anbd.aut-an35335937" linkTitle="Mawson, Douglas, Sir, 1882-1958 - Full record view - Libraries Australia Search"&gt;
+                           <div class="innerExample">&lt;componentEntry&gt;Libraries Australia record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>
+                        <div class="innerExample">&lt;setComponent href="https://www.eoas.info/biogs/P000631b.htm" linkTitle="Mawson, Douglas - Biographical entry - Encyclopedia of Australian Science"&gt;
+                           <div class="innerExample">&lt;componentEntry&gt;Encyclopedia of Australian Science record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>&lt;/alternativeSet&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-contact"><span class="label">&lt;contact&gt;</span></div>
                   <div class="content"><span class="label">Contact</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4649,7 +4663,7 @@
                            <div class="innerExample">&lt;p&gt;Law 1946/1991 determines a new legislative frame, which regulates
                               the operation of the General State Archives to this day. The Central
                               Service is structured into departments and Archives are established in
-                              prefectures which did not exist till then. &lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/mandate&gt;<br></br></div><br></br></div><br></br></div>
+                              prefectures which did not exist till then.&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/mandate&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-mandates"><span class="label">&lt;mandates&gt;</span></div>
                   <div class="content"><span class="label">Mandates</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4747,7 +4761,7 @@
                               <div class="innerExample">&lt;p&gt;Law 1946/1991 determines a new legislative frame, which
                                  regulates the operation of the General State Archives to this day.
                                  The Central Service is structured into departments and Archives are
-                                 established in prefectures which did not exist till then. &lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/mandate&gt;<br></br></div>&lt;/mandates&gt;<br></br></div><br></br></div><br></br></div>
+                                 established in prefectures which did not exist till then.&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/mandate&gt;<br></br></div>&lt;/mandates&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-multipleIdentities"><span class="label">&lt;multipleIdentities&gt;</span></div>
                   <div class="content"><span class="label">Multiple Identities</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -5399,7 +5413,14 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;identity&gt;
+                        <div class="innerExample">&lt;entityType&gt;corporateBody&lt;/entityType&gt;<br></br></div>
+                        <div class="innerExample">&lt;nameEntry status="authorized"&gt;
+                           <div class="innerExample">&lt;part&gt;Ballarat Orphanage&lt;/part&gt;<br></br></div>&lt;/nameEntry&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherEntityTypes&gt;
+                           <div class="innerExample">&lt;otherEntityType&gt;
+                              <div class="innerExample">&lt;term&gt;Organisation&lt;/term&gt;<br></br></div>&lt;/otherEntityType&gt;<br></br></div>&lt;/otherEntityTypes&gt;<br></br></div>&lt;/identity&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-otherEntityTypes"><span class="label">&lt;otherEntityTypes&gt;</span></div>
                   <div class="content"><span class="label">Other Entity Types</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -5458,7 +5479,12 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;otherEntityTypes&gt;
+                        <div class="innerExample">&lt;otherEntityType&gt;
+                           <div class="innerExample">&lt;term&gt;Non-governmental organization&lt;/term&gt;<br></br></div>&lt;/otherEntityType&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherEntityType&gt;
+                           <div class="innerExample">&lt;term&gt;Organization&lt;/term&gt;<br></br></div>&lt;/otherEntityType&gt;<br></br></div>&lt;/otherEntityTypes&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-otherRecordId"><span class="label">&lt;otherRecordId&gt;</span></div>
                   <div class="content"><span class="label">Other Record Identifier</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6151,9 +6177,16 @@
                         &lt;event&gt;, &lt;eventDescription&gt;, &lt;item&gt;, &lt;p&gt;:
                         optional, repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;source&gt;
+                        <div class="innerExample">&lt;reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)"&gt;Wikipedia&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;conventionDeclaration&gt;
+                        <div class="innerExample">&lt;reference href="https://www.loc.gov/aba/rda/"&gt;Resource Description and Access&lt;/reference&gt;<br></br></div>
+                        <div class="innerExample">&lt;shortCode&gt;RDA&lt;/shortCode&gt;<br></br></div>&lt;/conventionDeclaration&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-relation"><span class="label">&lt;relation&gt;</span></div>
                   <div class="content"><span class="label">Relation</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6219,9 +6252,23 @@
                   <div class="content">
                      <div class="p">Required, repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;relation&gt;
+                        <div class="innerExample">&lt;targetEntity targetType="resource"&gt;
+                           <div class="innerExample">&lt;part&gt;Mémorial du colonel Gustafsson. - 1829&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>
+                        <div class="innerExample">&lt;relationType&gt;creation&lt;/relationType&gt;<br></br></div>
+                        <div class="innerExample">&lt;targetRole&gt;Publication&lt;/targetRole&gt;<br></br></div>&lt;/relation&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;relation&gt;
+                        <div class="innerExample">&lt;targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                           <div class="innerExample">&lt;part&gt;Sophie&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part&gt;Baden, Großherzogin&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part&gt;1801-1865&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>
+                        <div class="innerExample">&lt;relationType&gt;family&lt;/relationType&gt;<br></br></div>
+                        <div class="innerExample">&lt;targetRole&gt;daughter&lt;/targetRole&gt;<br></br></div>&lt;/relation&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-relations"><span class="label">&lt;relations&gt;</span></div>
                   <div class="content"><span class="label">Relations</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6279,7 +6326,26 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;relations&gt;
+                        <div class="innerExample">&lt;relation&gt;
+                           <div class="innerExample">&lt;targetEntity targetType="person" valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                              <div class="innerExample">&lt;part&gt;Arendt, Max&lt;/part&gt;<br></br></div>
+                              <div class="innerExample">&lt;part&gt;1843-1913&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>
+                           <div class="innerExample">&lt;relationType&gt;family&lt;/relationType&gt;<br></br></div>
+                           <div class="innerExample">&lt;targetRole&gt;grandfather&lt;/targetRole&gt;<br></br></div>&lt;/relation&gt;<br></br></div>
+                        <div class="innerExample">&lt;relation&gt;
+                           <div class="innerExample">&lt;targetEntity targetType="person" valueURI="https://d-nb.info/gnd/1190672170" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                              <div class="innerExample">&lt;part&gt;Arendt-Beerwald, Martha&lt;/part&gt;<br></br></div>
+                              <div class="innerExample">&lt;part&gt;1874-1948&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>
+                           <div class="innerExample">&lt;relationType&gt;family&lt;/relationType&gt;<br></br></div>
+                           <div class="innerExample">&lt;targetRole&gt;mother&lt;/targetRole&gt;<br></br></div>&lt;/relation&gt;<br></br></div>
+                        <div class="innerExample">&lt;relation&gt;
+                           <div class="innerExample">&lt;targetEntity targetType="person" valueURI="https://d-nb.info/gnd/1190671301" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                              <div class="innerExample">&lt;part&gt;Arendt, Paul&lt;/part&gt;<br></br></div>
+                              <div class="innerExample">&lt;part&gt;1873-1913&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>
+                           <div class="innerExample">&lt;relationType&gt;family&lt;/relationType&gt;<br></br></div>
+                           <div class="innerExample">&lt;targetRole&gt;father&lt;/targetRole&gt;<br></br></div>&lt;/relation&gt;<br></br></div>&lt;/relations&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-relationType"><span class="label">&lt;relationType&gt;</span></div>
                   <div class="content"><span class="label">Relation Type</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6348,9 +6414,22 @@
                   <div class="content">
                      <div class="p">Optional, repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;relation&gt;
+                        <div class="innerExample">&lt;targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                           <div class="innerExample">&lt;part&gt;Sophie&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part&gt;Baden, Großherzogin&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part&gt;1801-1865&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>
+                        <div class="innerExample">&lt;relationType&gt;family&lt;/relationType&gt;<br></br></div>
+                        <div class="innerExample">&lt;targetRole&gt;daughter&lt;/targetRole&gt;<br></br></div>&lt;/relation&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;relation&gt;
+                        <div class="innerExample">&lt;targetEntity targetType="corporateBody" valueURI="https://d-nb.info/gnd/37101-4" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                           <div class="innerExample">&lt;part&gt;Königliche Bibliothek zu Berlin&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>
+                        <div class="innerExample">&lt;relationType&gt;has ancestor&lt;/relationType&gt;<br></br></div>&lt;/relation&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-representation"><span class="label">&lt;representation&gt;</span></div>
                   <div class="content"><span class="label">Representation</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6414,9 +6493,21 @@
                   <div class="content">
                      <div class="p">Optional, repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;
+                        <div class="innerExample">&lt;recordId&gt;122651634&lt;/recordId&gt;<br></br></div>
+                        [...]
+                        
+                        <div class="innerExample">&lt;representation href="https://kalliope-verbund.info/gnd/122651634"&gt;&lt;/representation&gt;<br></br></div>&lt;/control&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="revised" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;
+                        <div class="innerExample">&lt;recordId&gt;738070&lt;/recordId&gt;<br></br></div>
+                        [...]
+                        
+                        <div class="innerExample">&lt;representation href="https://trove.nla.gov.au/people/738070?c=people"&gt;Osburn, Lucy (1835-1891) - People and organisations - Trove&lt;/representation&gt;<br></br></div>&lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-rightsDeclaration"><span class="label">&lt;rightsDeclaration&gt;</span></div>
                   <div class="content"><span class="label">Rights Declaration</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6555,7 +6646,15 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;alternativeSet&gt;
+                        <div class="innerExample">&lt;setComponent href="http://nla.gov.au/anbd.aut-an35824899" linkTitle="Law, P. G. (Phillip Garth), 1912-2010 - Full record view - Libraries Australia Search"&gt;
+                           <div class="innerExample">&lt;componentEntry&gt;Libraries Australia record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>
+                        <div class="innerExample">&lt;setComponent href="https://www.eoas.info/biogs/P001333b.htm" linkTitle="Law, Phillip Garth - Biographical entry - Encyclopedia of Australian Science"&gt;
+                           <div class="innerExample">&lt;componentEntry&gt;Encyclopedia of Australian Science record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>
+                        <div class="innerExample">&lt;setComponent&gt;
+                           <div class="innerExample">&lt;objectXMLWrap&gt;
+                              <div class="innerExample">&lt;eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"&gt;[...]&lt;/eac-cpf&gt;<br></br></div>&lt;/objectXMLWrap&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>&lt;/alternativeSet&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-shortCode"><span class="label">&lt;shortCode&gt;</span></div>
                   <div class="content"><span class="label">Short Code</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -7008,9 +7107,21 @@
                   <div class="content">
                      <div class="p">Required, not repeatable</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;relation&gt;
+                        <div class="innerExample">&lt;targetEntity targetType="resource"&gt;
+                           <div class="innerExample">&lt;part&gt;La journée du treize mars. - 1835&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>&lt;/relation&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;relation&gt;
+                        <div class="innerExample">&lt;targetEntity targetType="person" valueURI="https://d-nb.info/gnd/117145971" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                           <div class="innerExample">&lt;part&gt;Wasa, Gustav&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part&gt;Prinz von&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part&gt;1799-1877&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>
+                        <div class="innerExample">&lt;relationType&gt;family&lt;/relationType&gt;<br></br></div>
+                        <div class="innerExample">&lt;targetRole&gt;son&lt;/targetRole&gt;<br></br></div>&lt;/relation&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-targetRole"><span class="label">&lt;targetRole&gt;</span></div>
                   <div class="content"><span class="label">Target Role</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -7079,7 +7190,13 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;relation&gt;
+                        <div class="innerExample">&lt;targetEntity targetType="person" valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                           <div class="innerExample">&lt;part&gt;Arendt, Max&lt;/part&gt;<br></br></div>
+                           <div class="innerExample">&lt;part&gt;1843-1913&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div>
+                        <div class="innerExample">&lt;relationType&gt;family&lt;/relationType&gt;<br></br></div>
+                        <div class="innerExample">&lt;targetRole&gt;grandfather&lt;/targetRole&gt;<br></br></div>&lt;/relation&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-term"><span class="label">&lt;term&gt;</span></div>
                   <div class="content"><span class="label">Term</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -7407,7 +7524,7 @@
                      <div class="innerExample">&lt;languageUsed&gt;
                         <div class="innerExample">&lt;language languageCode="eng"&gt;English&lt;/language&gt;<br></br></div>
                         <div class="innerExample">&lt;writingSystem scriptCode="Latn"&gt;Latin&lt;/writingSystem&gt;<br></br></div>&lt;/languageUsed&gt;<br></br></div><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e7783">
+            <div class="section" id="d1e7885">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
@@ -7464,9 +7581,9 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
-                        <div class="innerExample">&lt;agent agentType="human"&gt;bdewhurs&lt;/agent&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDateTime standardDateTime="2009-06-26T05:33:41Z"&gt;2009-06-26T05:33:41Z&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
+                        <div class="innerExample">&lt;agent agentType="human"&gt;A. Smith&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime standardDateTime="2021-12"&gt;December 2021&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-audience"><span class="label">@audience</span></div>
@@ -7619,9 +7736,13 @@
                   <div class="content">
                      <div class="p">token</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;geographicCoordinates coordinateSystem="mgrs"&gt;33UUU9029819737&lt;/geographicCoordinates&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;geographicCoordinates coordinateSystem="WGS84"&gt;-81.1, 32.2, -81.0, 32.3&lt;/geographicCoordinates&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-countryCode"><span class="label">@countryCode</span></div>
@@ -7764,7 +7885,15 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;occupations&gt;
+                        <div class="innerExample">&lt;occupation&gt;
+                           <div class="innerExample">&lt;term&gt;Assistant examiner - level III&lt;/term&gt;<br></br></div>
+                           <div class="innerExample">&lt;placeName target="#place1"&gt;Bern&lt;/placeName&gt;<br></br></div>&lt;/occupation&gt;<br></br></div>&lt;/occupations&gt;<br></br></div>
+                     <div class="innerExample">&lt;places&gt;
+                        <div class="innerExample">&lt;place id="place1"&gt;
+                           <div class="innerExample">&lt;placeName&gt;Bern&lt;/placeName&gt;<br></br></div>
+                           <div class="innerExample">&lt;placeRole&gt;Place of work&lt;/placeRole&gt;<br></br></div>&lt;/place&gt;<br></br></div>&lt;/places&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-identityType"><span class="label">@identityType</span></div>
@@ -7788,7 +7917,8 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;identity identityType="acquired"&gt;[...]&lt;/identity&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-languageCode"><span class="label">@languageCode</span></div>
@@ -7896,7 +8026,9 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;setComponent href="http://nla.gov.au/anbd.aut-an35995526" linkTitle="Hill, Dorothy, 1907-1997 - Full record view - Libraries Australia Search"&gt;
+                        <div class="innerExample">&lt;componentEntry&gt;Libraries Australia record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-listType"><span class="label">@listType</span></div>
@@ -8025,15 +8157,17 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
-                        <div class="innerExample">&lt;agent agentType="human"&gt;Bill Stockting&lt;/agent&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"&gt;&lt;/eventDateTime&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDescription&gt;Created from original in ISAAR (CPF), 2nd edition:
-                           example 10&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
-                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
-                        <div class="innerExample">&lt;agent agentType="human"&gt;Karin Bredenberg&lt;/agent&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDateTime&gt;11th of June 2012 at 9AM&lt;/eventDateTime&gt;<br></br></div>
-                        <div class="innerExample">&lt;eventDescription&gt;Updated example 10&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;maintenanceHistory&gt;
+                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="derived"&gt;
+                           <div class="innerExample">&lt;agent agentType="machine"&gt;XSLT ead2cpf.xsl/Saxon B9&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"&gt;&lt;/eventDateTime&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDescription&gt;Derived from EAD instance.&lt;/eventDescription&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="revised"&gt;
+                           <div class="innerExample">&lt;agent agentType="unknown"&gt;&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime standardDateTime="2021-11-27"&gt;&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>
+                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="updated"&gt;
+                           <div class="innerExample">&lt;agent agentType="human"&gt;K. Bredenberg&lt;/agent&gt;<br></br></div>
+                           <div class="innerExample">&lt;eventDateTime&gt;December 2021&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>&lt;/maintenanceHistory&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-maintenanceStatus"><span class="label">@maintenanceStatus</span></div>
@@ -8290,8 +8424,8 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">An ISO 8601-compliant form of the date, or date and time, of a specific
-                        maintenance event expressed in &lt;eventDateTime&gt;. For example, 2009-12-31,
-                        2009, 2009-12, 2009-12-31T23:59:59. Available only in
+                        maintenance event expressed in &lt;eventDateTime&gt;. For example, 2021-12-31,
+                        2021, 2021-12, 2021-12-31T23:59:59. Available only in
                         &lt;eventDateTime&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
@@ -8304,10 +8438,9 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;maintenanceHistory&gt;
-                        <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="created"&gt;
-                           <div class="innerExample">&lt;eventDateTime standardDateTime="2009-06-26T05:33:41Z"&gt;2009-06-26T05:33:41Z&lt;/eventDateTime&gt;<br></br></div>
-                           <div class="innerExample">&lt;agent agentType="human"&gt;bdewhurs&lt;/agent&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div>&lt;/maintenanceHistory&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;maintenanceEvent maintenanceEventType="revised"&gt;
+                        <div class="innerExample">&lt;agent agentType="unknown"&gt;&lt;/agent&gt;<br></br></div>
+                        <div class="innerExample">&lt;eventDateTime standardDateTime="2021-11-27"&gt;&lt;/eventDateTime&gt;<br></br></div>&lt;/maintenanceEvent&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-status"><span class="label">@status</span></div>
@@ -8404,7 +8537,15 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;occupations&gt;
+                        <div class="innerExample">&lt;occupation&gt;
+                           <div class="innerExample">&lt;term&gt;Assistant examiner - level III&lt;/term&gt;<br></br></div>
+                           <div class="innerExample">&lt;placeName target="#place1"&gt;Bern&lt;/placeName&gt;<br></br></div>&lt;/occupation&gt;<br></br></div>&lt;/occupations&gt;<br></br></div>
+                     <div class="innerExample">&lt;places&gt;
+                        <div class="innerExample">&lt;place id="place1"&gt;
+                           <div class="innerExample">&lt;placeName&gt;Bern&lt;/placeName&gt;<br></br></div>
+                           <div class="innerExample">&lt;placeRole&gt;Place of work&lt;/placeRole&gt;<br></br></div>&lt;/place&gt;<br></br></div>&lt;/places&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-targetType"><span class="label">@targetType</span></div>
@@ -8419,9 +8560,17 @@
                   <div class="content">
                      <div class="p">agent, corporateBody, family, function, person, resource</div>
                   </div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;targetEntity targetType="resource"&gt;
+                        <div class="innerExample">&lt;part&gt;Mémorial du colonel Gustafsson. - 1829&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div><br></br></div>
+                  <div class="leftcol"> </div>
+                  <div class="example">
+                     <div class="innerExample">&lt;targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                        <div class="innerExample">&lt;part&gt;Sophie&lt;/part&gt;<br></br></div>
+                        <div class="innerExample">&lt;part&gt;Baden, Großherzogin&lt;/part&gt;<br></br></div>
+                        <div class="innerExample">&lt;part&gt;1801-1865&lt;/part&gt;<br></br></div>&lt;/targetEntity&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-unit"><span class="label">@unit</span></div>

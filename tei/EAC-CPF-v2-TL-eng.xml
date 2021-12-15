@@ -70,7 +70,7 @@
                <p>This is the draft release of the Tag Library for EAC-CPF 2.0. The current release
                   includes changes and updates in the schema undertaken by the Technical
                   Subcommittee on Encoded Archival Standards reflecting comments received by the
-                  international community of professionals. </p>
+                  international community of professionals.</p>
                <p>The EAC-CPF Tag Library is a living document. As such, it will continue to be
                   developed as users suggest areas in need of clarification or expansion. The
                   Technical Subcommittee for Encoded Archival Standards (TS-EAS) still encourages
@@ -89,7 +89,7 @@
                      >EAC-CPF 2010 edition 2018</ref>.</p>
                <p>The process for a major revision started in 2017, following the 2015 merger of the
                   Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on
-                  Encoded Archival Standards (TS-EAS). This major revision aims to modernise the
+                  Encoded Archival Standards (TS-EAS). This major revision aims to modernize the
                   schema in terms of: <list type="simple">
                      <item>- simplifying where possible,</item>
                      <item>- alignment with EAD where useful,</item>
@@ -145,7 +145,7 @@
                      being defined. Elements are listed in alphabetical order by tag name. Elements
                      may be empty (e.g., an element which allows no child text or element nodes), or
                      they may contain text (listed as [text]), other elements, or a mixture of text
-                     and other elements. <lb/>Text content cannot include characters that would be
+                     and other elements.<lb/>Text content cannot include characters that would be
                      interpreted by a parser as action codes. For example, a left angle bracket has
                      to be represented as the character entity reference &amp;lt; so that it is not
                      misinterpreted as the start of an element name. <lb/>The technical availability
@@ -265,7 +265,7 @@
                            November of 1948, he was elected to the United States Senate and he also
                            served as the Senate Democratic Whip from 1961 to 1964 and in 1968,
                            Humphrey was the Democratic Party's candidate for President, but he was
-                           defeated by Richard M. Nixon. </eac:abstract>
+                           defeated by Richard M. Nixon.</eac:abstract>
                         <eac:p>Hubert H. Humphrey was born in Wallace, South Dakota, on May 27,
                            1911. He left South Dakota to attend the University of Minnesota but
                            returned to South Dakota to help manage his father's drug store early in
@@ -781,7 +781,17 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:alternativeSet>
+                        <eac:setComponent href="http://www.womenaustralia.info/biogs/AWE0064b.htm" linkTitle="Hill, Dorothy - Woman - The Australian Women's Register">
+                           <eac:componentEntry>The Australian Women's Register record.</eac:componentEntry>
+                        </eac:setComponent>
+                        <eac:setComponent href="http://nla.gov.au/anbd.aut-an35995526" linkTitle="Hill, Dorothy, 1907-1997 - Full record view - Libraries Australia Search">
+                           <eac:componentEntry>Libraries Australia record.</eac:componentEntry>
+                        </eac:setComponent>
+                        <eac:setComponent href="https://www.eoas.info/biogs/P000494b.htm" linkTitle="Hill, Dorothy - Biographical entry - Encyclopedia of Australian Science">
+                           <eac:componentEntry>Encyclopedia of Australian Science record.</eac:componentEntry>
+                        </eac:setComponent>
+                     </eac:alternativeSet>
                   </egXML>
                </div>
             </div>
@@ -1330,7 +1340,17 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:alternativeSet>
+                        <eac:setComponent href="https://adb.anu.edu.au/biography/mawson-sir-douglas-7531" linkTitle="Biography - Sir Douglas Mawson - Australian Dictionary of Biography">
+                           <eac:componentEntry>Australian Dictionary of Biography record.</eac:componentEntry>
+                        </eac:setComponent>
+                        <eac:setComponent href="http://nla.gov.au/anbd.aut-an35335937" linkTitle="Mawson, Douglas, Sir, 1882-1958 - Full record view - Libraries Australia Search">
+                           <eac:componentEntry>Libraries Australia record.</eac:componentEntry>
+                        </eac:setComponent>
+                        <eac:setComponent href="https://www.eoas.info/biogs/P000631b.htm" linkTitle="Mawson, Douglas - Biographical entry - Encyclopedia of Australian Science">
+                           <eac:componentEntry>Encyclopedia of Australian Science record.</eac:componentEntry>
+                        </eac:setComponent>
+                     </eac:alternativeSet>
                   </egXML>
                </div>
             </div>
@@ -4820,7 +4840,7 @@
                            <eac:p>Law 1946/1991 determines a new legislative frame, which regulates
                               the operation of the General State Archives to this day. The Central
                               Service is structured into departments and Archives are established in
-                              prefectures which did not exist till then. </eac:p>
+                              prefectures which did not exist till then.</eac:p>
                         </eac:descriptiveNote>
                      </eac:mandate>
                   </egXML>
@@ -4929,7 +4949,7 @@
                               <eac:p>Law 1946/1991 determines a new legislative frame, which
                                  regulates the operation of the General State Archives to this day.
                                  The Central Service is structured into departments and Archives are
-                                 established in prefectures which did not exist till then. </eac:p>
+                                 established in prefectures which did not exist till then.</eac:p>
                            </eac:descriptiveNote>
                         </eac:mandate>
                      </eac:mandates>
@@ -5650,7 +5670,17 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:identity>
+                        <eac:entityType>corporateBody</eac:entityType>
+                        <eac:nameEntry status="authorized">
+                           <eac:part>Ballarat Orphanage</eac:part>
+                        </eac:nameEntry>
+                        <eac:otherEntityTypes>
+                           <eac:otherEntityType>
+                              <eac:term>Organisation</eac:term>
+                           </eac:otherEntityType>
+                        </eac:otherEntityTypes>
+                     </eac:identity>
                   </egXML>
                </div>
             </div>
@@ -5713,7 +5743,14 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:otherEntityTypes>
+                        <eac:otherEntityType>
+                           <eac:term>Non-governmental organization</eac:term>
+                        </eac:otherEntityType>
+                        <eac:otherEntityType>
+                           <eac:term>Organization</eac:term>
+                        </eac:otherEntityType>
+                     </eac:otherEntityTypes>
                   </egXML>
                </div>
             </div>
@@ -6433,7 +6470,15 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:source>
+                        <eac:reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">Wikipedia</eac:reference>
+                     </eac:source>
+                   </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:conventionDeclaration>
+                        <eac:reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</eac:reference>
+                        <eac:shortCode>RDA</eac:shortCode>
+                     </eac:conventionDeclaration>
                   </egXML>
                </div>
             </div>
@@ -6508,7 +6553,24 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:relation>
+                        <eac:targetEntity targetType="resource">
+                           <eac:part>Mémorial du colonel Gustafsson. - 1829</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType>creation</eac:relationType>
+                        <eac:targetRole>Publication</eac:targetRole>
+                     </eac:relation>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:relation>
+                        <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                           <eac:part>Sophie</eac:part>
+                           <eac:part>Baden, Großherzogin</eac:part>
+                           <eac:part>1801-1865</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType>family</eac:relationType>
+                        <eac:targetRole>daughter</eac:targetRole>
+                     </eac:relation>
                   </egXML>
                </div>
             </div>
@@ -6569,7 +6631,32 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:relations>
+                        <eac:relation>
+                           <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                              <eac:part>Arendt, Max</eac:part>
+                              <eac:part>1843-1913</eac:part>
+                           </eac:targetEntity>
+                           <eac:relationType>family</eac:relationType>
+                           <eac:targetRole>grandfather</eac:targetRole>
+                        </eac:relation>
+                        <eac:relation>
+                           <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/1190672170" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                              <eac:part>Arendt-Beerwald, Martha</eac:part>
+                              <eac:part>1874-1948</eac:part>
+                           </eac:targetEntity>
+                           <eac:relationType>family</eac:relationType>
+                           <eac:targetRole>mother</eac:targetRole>
+                        </eac:relation>
+                        <eac:relation>
+                           <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/1190671301" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                              <eac:part>Arendt, Paul</eac:part>
+                              <eac:part>1873-1913</eac:part>
+                           </eac:targetEntity>
+                           <eac:relationType>family</eac:relationType>
+                           <eac:targetRole>father</eac:targetRole>
+                        </eac:relation>
+                     </eac:relations>
                   </egXML>
                </div>
             </div>
@@ -6641,7 +6728,23 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:relation>
+                        <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                           <eac:part>Sophie</eac:part>
+                           <eac:part>Baden, Großherzogin</eac:part>
+                           <eac:part>1801-1865</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType>family</eac:relationType>
+                        <eac:targetRole>daughter</eac:targetRole>
+                     </eac:relation>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:relation>
+                        <eac:targetEntity targetType="corporateBody" valueURI="https://d-nb.info/gnd/37101-4" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                           <eac:part>Königliche Bibliothek zu Berlin</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType>has ancestor</eac:relationType>			
+                     </eac:relation>
                   </egXML>
                </div>
             </div>
@@ -6713,7 +6816,20 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new"
+                        publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                        <eac:recordId>122651634</eac:recordId>
+                        [...]
+                        <eac:representation href="https://kalliope-verbund.info/gnd/122651634" />
+                     </eac:control>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="revised"
+                        publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                        <eac:recordId>738070</eac:recordId>
+                        [...]
+                        <eac:representation href="https://trove.nla.gov.au/people/738070?c=people">Osburn, Lucy (1835-1891) - People and organisations - Trove</eac:representation>
+                     </eac:control>
                   </egXML>
                </div>
             </div>
@@ -6858,7 +6974,19 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:alternativeSet>
+                        <eac:setComponent href="http://nla.gov.au/anbd.aut-an35824899" linkTitle="Law, P. G. (Phillip Garth), 1912-2010 - Full record view - Libraries Australia Search">
+                           <eac:componentEntry>Libraries Australia record.</eac:componentEntry>
+                        </eac:setComponent>
+                        <eac:setComponent href="https://www.eoas.info/biogs/P001333b.htm" linkTitle="Law, Phillip Garth - Biographical entry - Encyclopedia of Australian Science">
+                           <eac:componentEntry>Encyclopedia of Australian Science record.</eac:componentEntry>
+                        </eac:setComponent>
+                        <eac:setComponent>
+                           <eac:objectXMLWrap>
+                              <eac:eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">[...]</eac:eac-cpf>
+                           </eac:objectXMLWrap>
+                        </eac:setComponent>
+                     </eac:alternativeSet>
                   </egXML>
                </div>
             </div>
@@ -7341,7 +7469,22 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:relation>
+                        <eac:targetEntity targetType="resource">
+                           <eac:part>La journée du treize mars. - 1835</eac:part>
+                        </eac:targetEntity>
+                     </eac:relation>                     
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:relation>
+                        <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/117145971" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                           <eac:part>Wasa, Gustav</eac:part>
+                           <eac:part>Prinz von</eac:part>
+                           <eac:part>1799-1877</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType>family</eac:relationType>
+                        <eac:targetRole>son</eac:targetRole>					
+                     </eac:relation>	
                   </egXML>
                </div>
             </div>
@@ -7406,7 +7549,14 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:relation>
+                        <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                           <eac:part>Arendt, Max</eac:part>
+                           <eac:part>1843-1913</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType>family</eac:relationType>
+                        <eac:targetRole>grandfather</eac:targetRole>
+                     </eac:relation>
                   </egXML>
                </div>
             </div>
@@ -7817,10 +7967,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:maintenanceEvent maintenanceEventType="created">
-                        <eac:agent agentType="human">bdewhurs</eac:agent>
-                        <eac:eventDateTime standardDateTime="2009-06-26T05:33:41Z"
-                           >2009-06-26T05:33:41Z</eac:eventDateTime>
+                     <eac:maintenanceEvent maintenanceEventType="updated">
+                        <eac:agent agentType="human">A. Smith</eac:agent>
+                        <eac:eventDateTime standardDateTime="2021-12">December 2021</eac:eventDateTime>
                      </eac:maintenanceEvent>
                   </egXML>
                </div>
@@ -8006,7 +8155,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:geographicCoordinates coordinateSystem="mgrs">33UUU9029819737</eac:geographicCoordinates>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">      
+                     <eac:geographicCoordinates coordinateSystem="WGS84">-81.1, 32.2, -81.0, 32.3</eac:geographicCoordinates>
                   </egXML>
                </div>
             </div>
@@ -8183,7 +8335,18 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:occupations>
+                        <eac:occupation>
+                           <eac:term>Assistant examiner - level III</eac:term>
+                           <eac:placeName target="#place1">Bern</eac:placeName>
+                        </eac:occupation>
+                     </eac:occupations>
+                     <eac:places>
+                        <eac:place id="place1">
+                           <eac:placeName>Bern</eac:placeName>
+                           <eac:placeRole>Place of work</eac:placeRole>
+                        </eac:place>
+                     </eac:places>
                   </egXML>
                </div>
             </div>
@@ -8210,7 +8373,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:identity identityType="acquired">[...]</eac:identity>
                   </egXML>
                </div>
             </div>
@@ -8341,7 +8504,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:setComponent href="http://nla.gov.au/anbd.aut-an35995526" linkTitle="Hill, Dorothy, 1907-1997 - Full record view - Libraries Australia Search">
+                        <eac:componentEntry>Libraries Australia record.</eac:componentEntry>
+                     </eac:setComponent>
                   </egXML>
                </div>
             </div>
@@ -8495,17 +8660,21 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:maintenanceEvent maintenanceEventType="created">
-                        <eac:agent agentType="human">Bill Stockting</eac:agent>
-                        <eac:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"/>
-                        <eac:eventDescription>Created from original in ISAAR (CPF), 2nd edition:
-                           example 10</eac:eventDescription>
-                     </eac:maintenanceEvent>
-                     <eac:maintenanceEvent maintenanceEventType="updated">
-                        <eac:agent agentType="human">Karin Bredenberg</eac:agent>
-                        <eac:eventDateTime>11th of June 2012 at 9AM</eac:eventDateTime>
-                        <eac:eventDescription>Updated example 10</eac:eventDescription>
-                     </eac:maintenanceEvent>
+                     <eac:maintenanceHistory>
+                        <eac:maintenanceEvent maintenanceEventType="derived">
+                           <eac:agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</eac:agent>
+                           <eac:eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
+                           <eac:eventDescription>Derived from EAD instance.</eac:eventDescription>
+                        </eac:maintenanceEvent>
+                        <eac:maintenanceEvent maintenanceEventType="revised">
+                           <eac:agent agentType="unknown"/>
+                           <eac:eventDateTime standardDateTime="2021-11-27"/>
+                        </eac:maintenanceEvent>
+                        <eac:maintenanceEvent maintenanceEventType="updated">
+                           <eac:agent agentType="human">K. Bredenberg</eac:agent>
+                           <eac:eventDateTime>December 2021</eac:eventDateTime>
+                        </eac:maintenanceEvent>
+                     </eac:maintenanceHistory>
                   </egXML>
                </div>
             </div>
@@ -8818,8 +8987,8 @@
                </div>
                <div type="summary">
                   <p>An ISO 8601-compliant form of the date, or date and time, of a specific
-                     maintenance event expressed in <gi>eventDateTime</gi>. For example, 2009-12-31,
-                     2009, 2009-12, 2009-12-31T23:59:59. Available only in
+                     maintenance event expressed in <gi>eventDateTime</gi>. For example, 2021-12-31,
+                     2021, 2021-12, 2021-12-31T23:59:59. Available only in
                      <gi>eventDateTime</gi>.</p>
                </div>
                <div type="datatype">
@@ -8830,13 +8999,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:maintenanceHistory>
-                        <eac:maintenanceEvent maintenanceEventType="created">
-                           <eac:eventDateTime standardDateTime="2009-06-26T05:33:41Z"
-                              >2009-06-26T05:33:41Z</eac:eventDateTime>
-                           <eac:agent agentType="human">bdewhurs</eac:agent>
-                        </eac:maintenanceEvent>
-                     </eac:maintenanceHistory>
+                     <eac:maintenanceEvent maintenanceEventType="revised">
+                        <eac:agent agentType="unknown"/>
+                        <eac:eventDateTime standardDateTime="2021-11-27"/>
+                     </eac:maintenanceEvent>
                   </egXML>
                </div>
             </div>
@@ -8942,7 +9108,18 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:occupations>
+                        <eac:occupation>
+                           <eac:term>Assistant examiner - level III</eac:term>
+                           <eac:placeName target="#place1">Bern</eac:placeName>
+                        </eac:occupation>
+                     </eac:occupations>
+                     <eac:places>
+                        <eac:place id="place1">
+                           <eac:placeName>Bern</eac:placeName>
+                           <eac:placeRole>Place of work</eac:placeRole>
+                        </eac:place>
+                     </eac:places>
                   </egXML>
                </div>
             </div>
@@ -8963,7 +9140,16 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:targetEntity targetType="resource">
+                        <eac:part>Mémorial du colonel Gustafsson. - 1829</eac:part>
+                     </eac:targetEntity>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                        <eac:part>Sophie</eac:part>
+                        <eac:part>Baden, Großherzogin</eac:part>
+                        <eac:part>1801-1865</eac:part>
+                     </eac:targetEntity>
                   </egXML>
                </div>
             </div>
