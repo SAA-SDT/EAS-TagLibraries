@@ -26,9 +26,10 @@
          </div>
          <div>
             <div class="head03" id="toc">Table of Contents</div>
-            <div class="toc1"><a href="#d1e55">Release and Revision Notes</a></div>
-            <div class="toc1"><a href="#d1e87">Tag Library Conventions</a></div>
-            <div class="toc1"><a href="#d1e136">Elements</a></div>
+            <div class="toc1"><a href="#d1e55">Related Standards</a></div>
+            <div class="toc1"><a href="#d1e81">Release and Revision Notes</a></div>
+            <div class="toc1"><a href="#d1e109">Tag Library Conventions</a></div>
+            <div class="toc1"><a href="#d1e158">Elements</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -150,7 +151,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e7885">Attributes</a></div>
+            <div class="toc1"><a href="#d1e7911">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -221,6 +222,49 @@
          <div>
             <div class="section" id="d1e54">
                <div id="d1e55">
+                  <div class="head03">Related Standards  <a class="tocReturn" href="#toc">[toc]</a></div>
+                  <div class="p">The standards maintained by the Society of American Archivists’ Technical Subcommittee
+                     on Encoded Archival Standards (TS-EAS) are XML schemas based on established models
+                     developed by the International Council on Archives (ICA).</div>
+                  <div class="p">Encoded Archival Description (EAD) is based on the General International Standard
+                     Archival Description (ISAD(G)), while Encoded Archival Context for Corporate Bodies,
+                     Persons, and Families (EAC-CPF) is based on the International Standard Archival Authority
+                     Record for Corporate Bodies, Persons and Families (ISAAR-CPF). The current revisions
+                     to the EAD and EAC-CPF standards are being undertaken by TS-EAS based on the requirements
+                     of the Society of American Archivists’ standards maintenance schedule and policies,
+                     and are not tied to ongoing development of standards by the ICA, though keeping close
+                     connections to the ICA Experts Group on Archival Description as a related standards
+                     body.</div>
+                  <div class="p">For this reason, the upcoming release of EAC-CPF 2.0 will continue to be based on
+                     ISAAR-CPF rather than the draft versions of Records in Contexts (RiC). We anticipate
+                     that future versions of EAC-CPF and other standards maintained by TS-EAS will take
+                     the RiC Conceptual Model into account once it is finalized and approved.</div>
+                  <div class="leftcol">International Standard Archival Authority Record for Corporate Bodies, Persons and
+                     Families (ISAAR(CPF))</div>
+                  <div class="content">ISAAR(CPF) is a descriptive standard for descriptions of entities (corporate bodies,
+                     persons and families) associated with the creation and maintenance of archives. ISAAR(CPF)
+                     is maintained by the International Council on Archives.</div>
+                  <div class="leftcol">Encoded Archival Description (EAD)</div>
+                  <div class="content"><a href="https://www.loc.gov/ead/" target="new">Encoded Archival Description (EAD)</a> is an XML standard for encoding archival finding aids, maintained by the Technical
+                     Subcommittee for Encoded Archival Standards of the Society of American Archivists,
+                     in partnership with the Library of Congress.</div>
+                  <div class="leftcol">Encoded Archival Guide (EAG)</div>
+                  <div class="content"><a href="http://www.archivesportaleurope.net/eag" target="new">Encoded Archival Guide (EAG)</a> is an XML standard for encoding data about archives and related organizations. EAG
+                     is maintained by the Archives Portal Europe Foundation and its Working Group on Standards
+                     (WGoS). The development of EAG is coordinated in close cooperation with the Technical
+                     Subcommittee on Encoded Archival Standards (TS-EAS), which is responsible for EAD
+                     and EAC-CPF.</div>
+                  <div class="leftcol">Encoding Standards</div>
+                  <div class="content">The international community of cultural heritage organizations is working on a broad
+                     set of diverse standards to meet the challenges of the digital age. Established standards
+                     concerning digitization and metadata are maintained by the <a href="https://www.loc.gov/librarians/standards" target="new">Library of Congress</a>.</div>
+                  <div class="leftcol">Records in Context Conceptual Model</div>
+                  <div class="content">RiC-CM is a high-level conceptual model that focuses on intellectually identifying
+                     and describing records, the people that created and use(d) them, and the activities
+                     pursued by the people that the records both facilitate and document. RiC-CM is maintained
+                     by the International Council on Archives.</div>
+               </div>
+               <div id="d1e81">
                   <div class="head03">Release and Revision Notes  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="p">This is the draft release of the Tag Library for EAC-CPF 2.0. The current release
                      includes changes and updates in the schema undertaken by the Technical
@@ -231,7 +275,8 @@
                      Technical Subcommittee for Encoded Archival Standards (TS-EAS) still encourages
                      implementers to provide any queries, comments, and suggestions regarding the tag
                      library and its content. In addition, the contribution of examples is highly
-                     encouraged. Questions, comments or examples may be directed to the TS-EAS (<a href="mailto:ts-eas@archivists.org" target="new">ts-eas[at]archivists.org</a>). The
+                     encouraged. Questions, comments or examples may be directed to the TS-EAS (ts-eas[at]archivists.org).
+                     The
                      underlying encoding of the Tag Library is based on TEI P5 and is designed to
                      facilitate incorporating documentation into the schema to provide guidance in XML
                      editors. While the initial release of the Tag Library is in English, the
@@ -262,7 +307,7 @@
                      it was agreed to keep the camel case spelling for element and attribute names and
                      also for fixed values.</div>
                </div>
-               <div id="d1e87">
+               <div id="d1e109">
                   <div class="head03">Tag Library Conventions  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="p">The EAC-CPF Elements section of the Tag Library contains descriptions of 91
                      elements, arranged alphabetically by element name.</div>
@@ -326,7 +371,7 @@
                   <div class="content">Indicates, within the context of its parent(s), whether the element is
                      required or optional, and whether or not it is repeatable. </div>
                   <div class="leftcol">Examples:</div>
-                  <div class="content">Most element descriptions include a tagged example to indicate how
+                  <div class="content">Element and attribute descriptions include a tagged example to indicate how
                      attributes and elements can be used together. Many of the examples are taken
                      from real finding aids; others have been specially constructed for the Tag
                      Library. The examples illustrate any required sequences of elements, as in the
@@ -343,7 +388,7 @@
             </div>
          </div>
          <div>
-            <div class="section" id="d1e136">
+            <div class="section" id="d1e158">
                <div class="head03">Elements</div>
                <div class="element">
                   <div class="leftcol" id="elem-abstract"><span class="label">&lt;abstract&gt;</span></div>
@@ -1865,9 +1910,9 @@
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;cpfDescription&gt;
-                        <div class="innerExample">&lt;identity&gt;[...]&lt;/identity&gt;<br></br></div>
-                        <div class="innerExample">&lt;description&gt;[...]&lt;/description&gt;<br></br></div>
-                        <div class="innerExample">&lt;relations&gt;[...]&lt;/relations&gt;<br></br></div>&lt;/cpfDescription&gt;<br></br></div><br></br></div><br></br></div>
+                        <div class="innerExample">&lt;identity&gt; [...] &lt;/identity&gt;<br></br></div>
+                        <div class="innerExample">&lt;description&gt; [...] &lt;/description&gt;<br></br></div>
+                        <div class="innerExample">&lt;relations&gt; [...] &lt;/relations&gt;<br></br></div>&lt;/cpfDescription&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-date"><span class="label">&lt;date&gt;</span></div>
                   <div class="content"><span class="label">Date</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -1897,7 +1942,8 @@
                         a function.</div>
                      <div class="p">The content of the element is intended to be a human-readable natural language
                         date with a machine-readable date provided as the value of the
-                        standardDate attribute, formulated according to ISO 8601.</div>
+                        standardDate attribute, formulated according to ISO 8601. Uncertain or approximate dates can be
+                        encoded in standardDate using Extended Date/Time Format (EDTF).</div>
                      <div class="p">If the event or relationship has inclusive dates use the &lt;dateRange&gt;
                         element, while more complex dates (combining singles dates and date ranges) can
                         be expressed in &lt;dateSet&gt;.</div>
@@ -2483,16 +2529,16 @@
                   <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;eac&gt;
-                        <div class="innerExample">&lt;control&gt;[...]&lt;/control&gt;<br></br></div>
-                        <div class="innerExample">&lt;cpfDescription&gt;[...]&lt;/cpfDescription&gt;<br></br></div>&lt;/eac&gt;<br></br></div><br></br></div>
+                     <div class="innerExample">&lt;eac audience="external"&gt;
+                        <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="extended" languageEncoding="ietf-bcp-47" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt; [...] &lt;/control&gt;<br></br></div>
+                        <div class="innerExample">&lt;cpfDescription&gt; [...] &lt;/cpfDescription&gt;<br></br></div>&lt;/eac&gt;<br></br></div><br></br></div>
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;eac&gt;
-                        <div class="innerExample">&lt;control&gt;[...]&lt;/control&gt;<br></br></div>
+                        <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="basic" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt; [...] &lt;/control&gt;<br></br></div>
                         <div class="innerExample">&lt;multipleIdentities&gt;
-                           <div class="innerExample">&lt;cpfDescription&gt;[...]&lt;/cpfDescription&gt;<br></br></div>
-                           <div class="innerExample">&lt;cpfDescription&gt;[...]&lt;/cpfDescription&gt;<br></br></div>&lt;/multipleIdentities&gt;<br></br></div>&lt;/eac&gt;<br></br></div><br></br></div><br></br></div>
+                           <div class="innerExample">&lt;cpfDescription&gt; [...] &lt;/cpfDescription&gt;<br></br></div>
+                           <div class="innerExample">&lt;cpfDescription&gt; [...] &lt;/cpfDescription&gt;<br></br></div>&lt;/multipleIdentities&gt;<br></br></div>&lt;/eac&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-entityType"><span class="label">&lt;entityType&gt;</span></div>
                   <div class="content"><span class="label">Entity Type</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6654,7 +6700,7 @@
                            <div class="innerExample">&lt;componentEntry&gt;Encyclopedia of Australian Science record.&lt;/componentEntry&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>
                         <div class="innerExample">&lt;setComponent&gt;
                            <div class="innerExample">&lt;objectXMLWrap&gt;
-                              <div class="innerExample">&lt;eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"&gt;[...]&lt;/eac-cpf&gt;<br></br></div>&lt;/objectXMLWrap&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>&lt;/alternativeSet&gt;<br></br></div><br></br></div><br></br></div>
+                              <div class="innerExample">&lt;eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"&gt; [...] &lt;/eac-cpf&gt;<br></br></div>&lt;/objectXMLWrap&gt;<br></br></div>&lt;/setComponent&gt;<br></br></div>&lt;/alternativeSet&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-shortCode"><span class="label">&lt;shortCode&gt;</span></div>
                   <div class="content"><span class="label">Short Code</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -7524,7 +7570,7 @@
                      <div class="innerExample">&lt;languageUsed&gt;
                         <div class="innerExample">&lt;language languageCode="eng"&gt;English&lt;/language&gt;<br></br></div>
                         <div class="innerExample">&lt;writingSystem scriptCode="Latn"&gt;Latin&lt;/writingSystem&gt;<br></br></div>&lt;/languageUsed&gt;<br></br></div><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e7885">
+            <div class="section" id="d1e7911">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
@@ -7610,7 +7656,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;eac audience="external"&gt;[...]&lt;/eac&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;eac audience="external"&gt; [...] &lt;/eac&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-base"><span class="label">@base</span></div>
@@ -7918,7 +7964,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;identity identityType="acquired"&gt;[...]&lt;/identity&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;identity identityType="acquired" localType="pseudonym" localTypeDeclarationReference="LT001"&gt; [...] &lt;/identity&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-languageCode"><span class="label">@languageCode</span></div>
@@ -8204,7 +8250,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;[...]&lt;/control&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt; [...] &lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-notAfter"><span class="label">@notAfter</span></div>
@@ -8289,7 +8335,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt;[...]&lt;/control&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"&gt; [...] &lt;/control&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-repositoryEncoding"><span class="label">@repositoryEncoding</span></div>

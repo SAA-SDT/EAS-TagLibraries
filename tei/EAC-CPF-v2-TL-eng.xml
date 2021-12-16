@@ -65,6 +65,24 @@
             </docImprint>
          </titlePage>
          <div>
+            <div xml:id="preface">
+               <head>Related Standards</head>
+               <p>The standards maintained by the Society of American Archivists’ Technical Subcommittee on Encoded Archival Standards (TS-EAS) are XML schemas based on established models developed by the International Council on Archives (ICA).</p> 
+               <p>Encoded Archival Description (EAD) is based on the General International Standard Archival Description (ISAD(G)), while Encoded Archival Context for Corporate Bodies, Persons, and Families (EAC-CPF) is based on the International Standard Archival Authority Record for Corporate Bodies, Persons and Families (ISAAR-CPF). The current revisions to the EAD and EAC-CPF standards are being undertaken by TS-EAS based on the requirements of the Society of American Archivists’ standards maintenance schedule and policies, and are not tied to ongoing development of standards by the ICA, though keeping close connections to the ICA Experts Group on Archival Description as a related standards body.</p> 
+               <p>For this reason, the upcoming release of EAC-CPF 2.0 will continue to be based on ISAAR-CPF rather than the draft versions of Records in Contexts (RiC). We anticipate that future versions of EAC-CPF and other standards maintained by TS-EAS will take the RiC Conceptual Model into account once it is finalized and approved.</p>
+               <list type="gloss">
+                  <label>International Standard Archival Authority Record for Corporate Bodies, Persons and Families (ISAAR(CPF))</label>
+                  <item>ISAAR(CPF) is a descriptive standard for descriptions of entities (corporate bodies, persons and families) associated with the creation and maintenance of archives. ISAAR(CPF) is maintained by the International Council on Archives.</item>
+                  <label>Encoded Archival Description (EAD)</label>
+                  <item><ref target="https://www.loc.gov/ead/">Encoded Archival Description (EAD)</ref> is an XML standard for encoding archival finding aids, maintained by the Technical Subcommittee for Encoded Archival Standards of the Society of American Archivists, in partnership with the Library of Congress.</item>
+                  <label>Encoded Archival Guide (EAG)</label>
+                  <item><ref target="http://www.archivesportaleurope.net/eag">Encoded Archival Guide (EAG)</ref> is an XML standard for encoding data about archives and related organizations. EAG is maintained by the Archives Portal Europe Foundation and its Working Group on Standards (WGoS). The development of EAG is coordinated in close cooperation with the Technical Subcommittee on Encoded Archival Standards (TS-EAS), which is responsible for EAD and EAC-CPF.</item>
+                  <label>Encoding Standards</label>
+                  <item>The international community of cultural heritage organizations is working on a broad set of diverse standards to meet the challenges of the digital age. Established standards concerning digitization and metadata are maintained by the <ref target="https://www.loc.gov/librarians/standards">Library of Congress</ref>.</item>
+                  <label>Records in Context Conceptual Model</label>
+                  <item>RiC-CM is a high-level conceptual model that focuses on intellectually identifying and describing records, the people that created and use(d) them, and the activities pursued by the people that the records both facilitate and document. RiC-CM is maintained by the International Council on Archives.</item>
+               </list>   
+            </div>
             <div xml:id="release">
                <head>Release and Revision Notes</head>
                <p>This is the draft release of the Tag Library for EAC-CPF 2.0. The current release
@@ -76,8 +94,7 @@
                   Technical Subcommittee for Encoded Archival Standards (TS-EAS) still encourages
                   implementers to provide any queries, comments, and suggestions regarding the tag
                   library and its content. In addition, the contribution of examples is highly
-                  encouraged. Questions, comments or examples may be directed to the TS-EAS (<ref
-                     target="mailto:ts-eas@archivists.org">ts-eas[at]archivists.org</ref>). The
+                  encouraged. Questions, comments or examples may be directed to the TS-EAS (ts-eas[at]archivists.org). The
                   underlying encoding of the Tag Library is based on TEI P5 and is designed to
                   facilitate incorporating documentation into the schema to provide guidance in XML
                   editors. While the initial release of the Tag Library is in English, the
@@ -182,7 +199,7 @@
                   <item>Indicates, within the context of its parent(s), whether the element is
                      required or optional, and whether or not it is repeatable. </item>
                   <label>Examples:</label>
-                  <item>Most element descriptions include a tagged example to indicate how
+                  <item>Element and attribute descriptions include a tagged example to indicate how
                      attributes and elements can be used together. Many of the examples are taken
                      from real finding aids; others have been specially constructed for the Tag
                      Library. The examples illustrate any required sequences of elements, as in the
@@ -1840,9 +1857,9 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:cpfDescription>
-                        <eac:identity>[...]</eac:identity>
-                        <eac:description>[...]</eac:description>
-                        <eac:relations>[...]</eac:relations>
+                        <eac:identity> [...] </eac:identity>
+                        <eac:description> [...] </eac:description>
+                        <eac:relations> [...] </eac:relations>
                      </eac:cpfDescription>
                   </egXML>
                </div>
@@ -1914,7 +1931,7 @@
                      a function.</p>
                   <p>The content of the element is intended to be a human-readable natural language
                      date with a machine-readable date provided as the value of the
-                        <att>standardDate</att> attribute, formulated according to ISO 8601.</p>
+                        <att>standardDate</att> attribute, formulated according to ISO 8601. Uncertain or approximate dates can be encoded in <att>standardDate</att> using Extended Date/Time Format (EDTF).</p>
                   <p>If the event or relationship has inclusive dates use the <gi>dateRange</gi>
                      element, while more complex dates (combining singles dates and date ranges) can
                      be expressed in <gi>dateSet</gi>.</p>
@@ -2493,17 +2510,21 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:eac>
-                        <eac:control>[...]</eac:control>
-                        <eac:cpfDescription>[...]</eac:cpfDescription>
+                     <eac:eac audience="external">
+                        <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601"
+                              detailLevel="extended" languageEncoding="ietf-bcp-47" repositoryEncoding="iso15511"
+                              scriptEncoding="iso15924"> [...] </eac:control>
+                        <eac:cpfDescription> [...] </eac:cpfDescription>
                      </eac:eac>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:eac>
-                        <eac:control>[...]</eac:control>
+                        <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601"
+                              detailLevel="basic" languageEncoding="iso639-2b" repositoryEncoding="iso15511"
+                              scriptEncoding="iso15924"> [...] </eac:control>
                         <eac:multipleIdentities>
-                           <eac:cpfDescription>[...]</eac:cpfDescription>
-                           <eac:cpfDescription>[...]</eac:cpfDescription>
+                           <eac:cpfDescription> [...] </eac:cpfDescription>
+                           <eac:cpfDescription> [...] </eac:cpfDescription>
                         </eac:multipleIdentities>
                      </eac:eac>
                   </egXML>
@@ -6983,7 +7004,7 @@
                         </eac:setComponent>
                         <eac:setComponent>
                            <eac:objectXMLWrap>
-                              <eac:eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">[...]</eac:eac-cpf>
+                              <eac:eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"> [...] </eac:eac-cpf>
                            </eac:objectXMLWrap>
                         </eac:setComponent>
                      </eac:alternativeSet>
@@ -8000,7 +8021,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:eac audience="external">[...]</eac:eac>
+                     <eac:eac audience="external"> [...] </eac:eac>
                   </egXML>
                </div>
             </div>
@@ -8373,7 +8394,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:identity identityType="acquired">[...]</eac:identity>
+                     <eac:identity identityType="acquired" localType="pseudonym" localTypeDeclarationReference="LT001"> [...] </eac:identity>
                   </egXML>
                </div>
             </div>
@@ -8714,7 +8735,7 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new"
-                        publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">[...]</eac:control>
+                        publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </eac:control>
                   </egXML>
                </div>
             </div>
@@ -8818,7 +8839,7 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new"
-                        publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">[...]</eac:control>
+                        publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </eac:control>
                   </egXML>
                </div>
             </div>
