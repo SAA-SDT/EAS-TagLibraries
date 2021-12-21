@@ -151,7 +151,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e7911">Attributes</a></div>
+            <div class="toc1"><a href="#d1e7910">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -3298,7 +3298,7 @@
                            <div class="innerExample">&lt;geographicCoordinates coordinateSystem="WGS84"&gt;-81.1, 32.2, -81.0, 32.3&lt;/geographicCoordinates&gt;<br></br></div>&lt;/place&gt;<br></br></div>&lt;/places&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-head"><span class="label">&lt;head&gt;</span></div>
-                  <div class="content"><span class="label">Head</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
+                  <div class="content"><span class="label">Heading</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">An element that encodes a title or caption for a section of text.</div>
@@ -4059,7 +4059,7 @@
                   </div>
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">Use @listType to identify and format the list as a particular
-                     type. The choices are: "ordered," and "unordered."<br></br></div>
+                     type. The choices are: "ordered," and "unordered."<br></br> Use @style to define the list type by entering a CSS list-style-type.<br></br></div>
                   <div class="leftcol">See also: </div>
                   <div class="content">Do not confuse with &lt;chronList&gt;, which encodes a structured
                      chronology.<br></br></div>
@@ -4124,7 +4124,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;list listType="unordered"&gt;
+                     <div class="innerExample">&lt;list listType="unordered" style="list-style-type: circle"&gt;
                         <div class="innerExample">&lt;head&gt;List of ministers of May Memorial Unitarian Universalist
                            Church&lt;/head&gt;<br></br></div>
                         <div class="innerExample">&lt;item&gt;John Storer, Minister 1839-1844&lt;/item&gt;<br></br></div>
@@ -4474,6 +4474,15 @@
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol"><a href="#attr-target">target</a></div>
                      <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-vocabularySource">vocabularySource</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-vocabularySourceURI">vocabularySourceURI</a></div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol"><a href="#attr-valueURI">valueURI</a></div>
+                     <div class="rightcol">Optional</div>
                   </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">
@@ -4483,13 +4492,15 @@
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;maintenanceAgency&gt;
-                        <div class="innerExample">&lt;agencyCode&gt;FR-DAF&lt;/agencyCode&gt;<br></br></div>
-                        <div class="innerExample">&lt;agencyName&gt;Archives nationales (Paris)&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div>
+                        <div class="innerExample">&lt;agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil"&gt;US-ctybr&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;Beinecke Rare Book and Manuscript Library&lt;/agencyName&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/"&gt;CtY-BR&lt;/otherAgencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/"&gt;Q814779&lt;/otherAgencyCode&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div>
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;maintenanceAgency&gt;
-                        <div class="innerExample">&lt;agencyName&gt;The British Library: Manuscript Collections&lt;/agencyName&gt;<br></br></div>
-                        <div class="innerExample">&lt;otherAgencyCode&gt;GB-058&lt;/otherAgencyCode&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
+                        <div class="innerExample">&lt;agencyCode status="alternative" vocabularySource="NAD" vocabularySourceURI="https://sok.riksarkivet.se/"&gt;SE/G066&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;Kommunalförbundet Sydarkivera&lt;/agencyName&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-maintenanceEvent"><span class="label">&lt;maintenanceEvent&gt;</span></div>
                   <div class="content"><span class="label">Maintenance Event</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4766,7 +4777,7 @@
                   <div class="content">
                      <div class="p">Optional, not repeatable</div>
                   </div>
-                  <div class="leftcol">Examples:</div>
+                  <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;mandates&gt;
@@ -4778,36 +4789,7 @@
                               23-IV-1714.&lt;/term&gt;<br></br></div>&lt;/mandate&gt;<br></br></div>
                         <div class="innerExample">&lt;mandate&gt;
                            <div class="innerExample">&lt;term&gt;Real Decreto de Nueva Planta para el consejo de Guerra de
-                              23-VIII-1715.&lt;/term&gt;<br></br></div>&lt;/mandate&gt;<br></br></div>&lt;/mandates&gt;<br></br></div><br></br></div>
-                  <div class="leftcol"> </div>
-                  <div class="example">
-                     <div class="innerExample">&lt;mandates&gt;
-                        <div class="innerExample">&lt;mandate&gt;
-                           <div class="innerExample">&lt;term&gt;Law 380/1914, "The Establishment of the Greek State Archiving
-                              Service"&lt;/term&gt;<br></br></div>
-                           <div class="innerExample">&lt;date standardDate="1914"&gt;1914&lt;/date&gt;<br></br></div>
-                           <div class="innerExample">&lt;descriptiveNote&gt;
-                              <div class="innerExample">&lt;p&gt;The General State Archives of Greece were established thanks
-                                 the efforts of the Professor Spyridon Lambrou and the
-                                 historian-researcher Yiannis Vlachogiannis with the purpose of
-                                 "collecting and monitoring documents included in all public
-                                 archives dating 50 years back". Their efforts conluded to the
-                                 production of a law by the Prime Minister Eleftherios
-                                 Venizelos.&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/mandate&gt;<br></br></div>
-                        <div class="innerExample">&lt;mandate&gt;
-                           <div class="innerExample">&lt;term&gt;Law 2027/1939&lt;/term&gt;<br></br></div>
-                           <div class="innerExample">&lt;date standardDate="1939"&gt;1939&lt;/date&gt;<br></br></div>
-                           <div class="innerExample">&lt;descriptiveNote&gt;
-                              <div class="innerExample">&lt;p&gt;Law 2027/1939 determines the "Reorganization of the General
-                                 State Archives".&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/mandate&gt;<br></br></div>
-                        <div class="innerExample">&lt;mandate&gt;
-                           <div class="innerExample">&lt;term&gt;Law 1946/1991&lt;/term&gt;<br></br></div>
-                           <div class="innerExample">&lt;date standardDate="1991"&gt;1991&lt;/date&gt;<br></br></div>
-                           <div class="innerExample">&lt;descriptiveNote&gt;
-                              <div class="innerExample">&lt;p&gt;Law 1946/1991 determines a new legislative frame, which
-                                 regulates the operation of the General State Archives to this day.
-                                 The Central Service is structured into departments and Archives are
-                                 established in prefectures which did not exist till then.&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/mandate&gt;<br></br></div>&lt;/mandates&gt;<br></br></div><br></br></div><br></br></div>
+                              23-VIII-1715.&lt;/term&gt;<br></br></div>&lt;/mandate&gt;<br></br></div>&lt;/mandates&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-multipleIdentities"><span class="label">&lt;multipleIdentities&gt;</span></div>
                   <div class="content"><span class="label">Multiple Identities</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4935,7 +4917,8 @@
                         name by which the corporate body, person, or family described in the EAC-CPF
                         instance is known.</div>
                      <div class="p">When &lt;nameEntry&gt; occurs within &lt;nameEntrySet&gt; it is used to
-                        record two or more parallel forms of a name, for example official forms of the
+                        record two or more forms of a name, for example official and non-official forms of
+                        the
                         name in different languages and/or scripts.</div>
                      <div class="p">Each form of the name is recorded in a separate &lt;nameEntry&gt; element.</div>
                      <div class="p">Each &lt;nameEntry&gt; must contain at least one &lt;part&gt; element. Within
@@ -5018,7 +5001,8 @@
                   <div class="content">
                      <div class="p">An optional child element of &lt;identity&gt; used as a wrapper element for
                         two or more &lt;nameEntry&gt; elements representing different forms of the
-                        same name (e.g., official forms of the name in different languages and/or
+                        same name (e.g., official and non-official forms of the name in different languages
+                        and/or
                         scripts).</div>
                   </div>
                   <div class="leftcol">May contain: </div>
@@ -5028,8 +5012,9 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">A wrapper element used to group two or more &lt;nameEntry&gt; elements
-                        representing parallel forms of the name for the same CPF entity which are used
-                        at the same time (e.g., official forms of the name in different languages
+                        representing parallel or other forms of the name for the same CPF entity which are
+                        used
+                        at the same time (e.g., official and non-official forms of the name in different languages
                         and/or scripts).</div>
                      <div class="p">The &lt;nameEntrySet&gt; element may contain a &lt;useDates&gt; element to
                         indicate the dates the set of name forms was used.</div>
@@ -5375,14 +5360,16 @@
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;maintenanceAgency&gt;
-                        <div class="innerExample">&lt;agencyName&gt;The British Library: Manuscript Collections&lt;/agencyName&gt;<br></br></div>
-                        <div class="innerExample">&lt;otherAgencyCode&gt;GB-058&lt;/otherAgencyCode&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div>
+                        <div class="innerExample">&lt;agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil"&gt;US-nbuuar&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;State University of New York at Buffalo, Archives&lt;/agencyName&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherAgencyCode status="authorized" valueURI="http://id.loc.gov/vocabulary/organizations/nbuuar" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/"&gt;NBuU-AR&lt;/otherAgencyCode&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div>
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;maintenanceAgency&gt;
-                        <div class="innerExample">&lt;agencyCode&gt;US-dna&lt;/agencyCode&gt;<br></br></div>
-                        <div class="innerExample">&lt;agencyName&gt;National Archives at Washington, DC&lt;/agencyName&gt;<br></br></div>
-                        <div class="innerExample">&lt;otherAgencyCode&gt;RDTP1&lt;/otherAgencyCode&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
+                        <div class="innerExample">&lt;agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil"&gt;US-ctybr&lt;/agencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;agencyName&gt;Beinecke Rare Book and Manuscript Library&lt;/agencyName&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/"&gt;CtY-BR&lt;/otherAgencyCode&gt;<br></br></div>
+                        <div class="innerExample">&lt;otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/"&gt;Q814779&lt;/otherAgencyCode&gt;<br></br></div>&lt;/maintenanceAgency&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-otherEntityType"><span class="label">&lt;otherEntityType&gt;</span></div>
                   <div class="content"><span class="label">Other Entity Type</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -6644,7 +6631,7 @@
                         combined together within a single EAC-CPF instance.</div>
                      <div class="p">The &lt;componentEntry&gt; child element allows for the provision of a name or
                         title for the alternative authority record and the inclusion of a link to the
-                        record in an external system, if using a vocabulary or similar..</div>
+                        record in an external system, if using a vocabulary or similar.</div>
                      <div class="p">Use the optional &lt;descriptiveNote&gt; for a textual note providing further
                         information about the record referenced in &lt;setComponent&gt;.</div>
                      <div class="p">Use the optional &lt;objectXMLWrap&gt; child element when including the entire
@@ -6824,10 +6811,6 @@
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;sources&gt;
-                        <div class="innerExample">&lt;source&gt;
-                           <div class="innerExample">&lt;reference&gt;B 1996&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div>
-                        <div class="innerExample">&lt;source&gt;
-                           <div class="innerExample">&lt;reference&gt;LCAuth&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div>
                         <div class="innerExample">&lt;source&gt;
                            <div class="innerExample">&lt;reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)"&gt;Wikipedia&lt;/reference&gt;<br></br></div>&lt;/source&gt;<br></br></div>
                         <div class="innerExample">&lt;source&gt;
@@ -7570,7 +7553,7 @@
                      <div class="innerExample">&lt;languageUsed&gt;
                         <div class="innerExample">&lt;language languageCode="eng"&gt;English&lt;/language&gt;<br></br></div>
                         <div class="innerExample">&lt;writingSystem scriptCode="Latn"&gt;Latin&lt;/writingSystem&gt;<br></br></div>&lt;/languageUsed&gt;<br></br></div><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e7911">
+            <div class="section" id="d1e7910">
                <div class="head03">Attributes</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>

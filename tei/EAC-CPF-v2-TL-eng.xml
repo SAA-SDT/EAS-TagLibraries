@@ -3349,7 +3349,7 @@
                   <gi>head</gi>
                </head>
                <div type="fullName">
-                  <p>Head</p>
+                  <p>Heading</p>
                </div>
                <div type="summary">
                   <p>An element that encodes a title or caption for a section of text.</p>
@@ -4200,6 +4200,7 @@
                   <list type="simple">
                      <item>Use <att>listType</att> to identify and format the list as a particular
                         type. The choices are: "ordered," and "unordered."</item>
+                     <item> Use <att>style</att> to define the list type by entering a CSS list-style-type.</item>
                   </list>
                </div>
                <div type="seealso">
@@ -4213,7 +4214,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:list listType="unordered">
+                     <eac:list listType="unordered" style="list-style-type: circle">
                         <eac:head>List of ministers of May Memorial Unitarian Universalist
                            Church</eac:head>
                         <eac:item>John Storer, Minister 1839-1844</eac:item>
@@ -4581,6 +4582,12 @@
                         <item>Optional</item>
                         <label>target</label>
                         <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -4613,14 +4620,16 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:maintenanceAgency>
-                        <eac:agencyCode>FR-DAF</eac:agencyCode>
-                        <eac:agencyName>Archives nationales (Paris)</eac:agencyName>
+                        <eac:agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-ctybr</eac:agencyCode>
+                        <eac:agencyName>Beinecke Rare Book and Manuscript Library</eac:agencyName>
+                        <eac:otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">CtY-BR</eac:otherAgencyCode>
+                        <eac:otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">Q814779</eac:otherAgencyCode>
                      </eac:maintenanceAgency>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:maintenanceAgency>
-                        <eac:agencyName>The British Library: Manuscript Collections</eac:agencyName>
-                        <eac:otherAgencyCode>GB-058</eac:otherAgencyCode>
+                        <eac:agencyCode status="alternative" vocabularySource="NAD" vocabularySourceURI="https://sok.riksarkivet.se/">SE/G066</eac:agencyCode>
+                        <eac:agencyName>Kommunalförbundet Sydarkivera</eac:agencyName>
                      </eac:maintenanceAgency>
                   </egXML>
                </div>
@@ -4939,42 +4948,6 @@
                         </eac:mandate>
                      </eac:mandates>
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:mandates>
-                        <eac:mandate>
-                           <eac:term>Law 380/1914, "The Establishment of the Greek State Archiving
-                              Service"</eac:term>
-                           <eac:date standardDate="1914">1914</eac:date>
-                           <eac:descriptiveNote>
-                              <eac:p>The General State Archives of Greece were established thanks
-                                 the efforts of the Professor Spyridon Lambrou and the
-                                 historian-researcher Yiannis Vlachogiannis with the purpose of
-                                 "collecting and monitoring documents included in all public
-                                 archives dating 50 years back". Their efforts conluded to the
-                                 production of a law by the Prime Minister Eleftherios
-                                 Venizelos.</eac:p>
-                           </eac:descriptiveNote>
-                        </eac:mandate>
-                        <eac:mandate>
-                           <eac:term>Law 2027/1939</eac:term>
-                           <eac:date standardDate="1939">1939</eac:date>
-                           <eac:descriptiveNote>
-                              <eac:p>Law 2027/1939 determines the "Reorganization of the General
-                                 State Archives".</eac:p>
-                           </eac:descriptiveNote>
-                        </eac:mandate>
-                        <eac:mandate>
-                           <eac:term>Law 1946/1991</eac:term>
-                           <eac:date standardDate="1991">1991</eac:date>
-                           <eac:descriptiveNote>
-                              <eac:p>Law 1946/1991 determines a new legislative frame, which
-                                 regulates the operation of the General State Archives to this day.
-                                 The Central Service is structured into departments and Archives are
-                                 established in prefectures which did not exist till then.</eac:p>
-                           </eac:descriptiveNote>
-                        </eac:mandate>
-                     </eac:mandates>
-                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-multipleIdentities">
@@ -5156,7 +5129,7 @@
                      name by which the corporate body, person, or family described in the EAC-CPF
                      instance is known.</p>
                   <p>When <gi>nameEntry</gi> occurs within <gi>nameEntrySet</gi> it is used to
-                     record two or more parallel forms of a name, for example official forms of the
+                     record two or more forms of a name, for example official and non-official forms of the
                      name in different languages and/or scripts.</p>
                   <p>Each form of the name is recorded in a separate <gi>nameEntry</gi> element.</p>
                   <p>Each <gi>nameEntry</gi> must contain at least one <gi>part</gi> element. Within
@@ -5212,7 +5185,7 @@
                <div type="summary">
                   <p>An optional child element of <gi>identity</gi> used as a wrapper element for
                      two or more <gi>nameEntry</gi> elements representing different forms of the
-                     same name (e.g., official forms of the name in different languages and/or
+                     same name (e.g., official and non-official forms of the name in different languages and/or
                      scripts).</p>
                </div>
                <div type="mayContain">
@@ -5249,8 +5222,8 @@
                </div>
                <div type="description">
                   <p>A wrapper element used to group two or more <gi>nameEntry</gi> elements
-                     representing parallel forms of the name for the same CPF entity which are used
-                     at the same time (e.g., official forms of the name in different languages
+                     representing parallel or other forms of the name for the same CPF entity which are used
+                     at the same time (e.g., official and non-official forms of the name in different languages
                      and/or scripts).</p>
                   <p>The <gi>nameEntrySet</gi> element may contain a <gi>useDates</gi> element to
                      indicate the dates the set of name forms was used.</p>
@@ -5603,15 +5576,17 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:maintenanceAgency>
-                        <eac:agencyName>The British Library: Manuscript Collections</eac:agencyName>
-                        <eac:otherAgencyCode>GB-058</eac:otherAgencyCode>
+                        <eac:agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-nbuuar</eac:agencyCode>
+                        <eac:agencyName>State University of New York at Buffalo, Archives</eac:agencyName>
+                        <eac:otherAgencyCode status="authorized" valueURI="http://id.loc.gov/vocabulary/organizations/nbuuar" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">NBuU-AR</eac:otherAgencyCode>
                      </eac:maintenanceAgency>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:maintenanceAgency>
-                        <eac:agencyCode>US-dna</eac:agencyCode>
-                        <eac:agencyName>National Archives at Washington, DC</eac:agencyName>
-                        <eac:otherAgencyCode>RDTP1</eac:otherAgencyCode>
+                        <eac:agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-ctybr</eac:agencyCode>
+                        <eac:agencyName>Beinecke Rare Book and Manuscript Library</eac:agencyName>
+                        <eac:otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">CtY-BR</eac:otherAgencyCode>
+                        <eac:otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">Q814779</eac:otherAgencyCode>
                      </eac:maintenanceAgency>
                   </egXML>
                </div>
@@ -6978,7 +6953,7 @@
                      combined together within a single EAC-CPF instance.</p>
                   <p>The <gi>componentEntry</gi> child element allows for the provision of a name or
                      title for the alternative authority record and the inclusion of a link to the
-                     record in an external system, if using a vocabulary or similar..</p>
+                     record in an external system, if using a vocabulary or similar.</p>
                   <p>Use the optional <gi>descriptiveNote</gi> for a textual note providing further
                      information about the record referenced in <gi>setComponent</gi>.</p>
                   <p>Use the optional <gi>objectXMLWrap</gi> child element when including the entire
@@ -7137,12 +7112,6 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:sources>
-                        <eac:source>
-                           <eac:reference>B 1996</eac:reference>
-                        </eac:source>
-                        <eac:source>
-                           <eac:reference>LCAuth</eac:reference>
-                        </eac:source>
                         <eac:source>
                            <eac:reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">Wikipedia</eac:reference>
                         </eac:source>
