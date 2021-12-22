@@ -329,8 +329,15 @@
     <xsl:template name="secondpage">
         <fo:block font-weight="bold" space-after="6pt" padding-before="-50pt">
             <xsl:for-each select="tei:docTitle/tei:titlePart">
-                <xsl:value-of select="."/>
-                <xsl:text> </xsl:text>
+                <xsl:choose>
+                    <xsl:when test="not(position() ne last())">
+                        <xsl:value-of select="."/>
+                    </xsl:when>
+                    <xsl:otherwise>    
+                        <xsl:value-of select="."/>
+                        <xsl:text> </xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:for-each>
             <xsl:text>, </xsl:text>
             <xsl:value-of select="tei:docEdition"/>
