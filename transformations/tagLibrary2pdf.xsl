@@ -1501,40 +1501,48 @@
         <xsl:variable name="myDepth"
             select="count(ancestor::*[not(namespace-uri() = 'http://www.tei-c.org/ns/1.0')]) * 5"/>
         <fo:block start-indent="body-start() + {$myDepth}mm" wrap-option="wrap">
-            <xsl:call-template name="newLine"/>
-            <xsl:text>&lt;</xsl:text>
-            <xsl:value-of select="local-name()"/>
-            <xsl:for-each select="@*">
-                <xsl:text>&#x20;</xsl:text>
-                <xsl:choose>
-                    <xsl:when
-                        test="namespace-uri() = 'http://workaround for xml namespace restriction/namespace'">
-                        <xsl:text>xml:</xsl:text>
+             
+                    <xsl:call-template name="newLine"/>
+                    <xsl:text>&lt;</xsl:text>
+                    <xsl:value-of select="local-name()"/>
+                    <xsl:for-each select="@*">
+                        <xsl:text>&#x20;</xsl:text>
+                        <xsl:choose>
+                            <xsl:when
+                                test="namespace-uri() = 'http://workaround for xml namespace restriction/namespace'">
+                                <xsl:text>xml:</xsl:text>
+                                <xsl:value-of select="local-name()"/>
+                            </xsl:when>
+                            <xsl:when test="namespace-uri() = 'http://www.w3c.org/1999/xlink'">
+                                <xsl:text>xlink:</xsl:text>
+                                <xsl:value-of select="local-name()"/>
+                            </xsl:when>
+                            <xsl:when test="local-name() = 'schemaLocation'">
+                                <xsl:text>xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" </xsl:text>
+                                <xsl:text>xsi:schemaLocation</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="local-name()"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:text>="</xsl:text>
+                        <xsl:value-of select="."/>
+                        <xsl:text>"</xsl:text>
+                    </xsl:for-each>
+            <xsl:choose>    
+            <xsl:when test="exists(text())">
+                    <xsl:text>&gt;</xsl:text>
+                    <xsl:apply-templates select="* | text()"/>
+                    <fo:inline keep-together.within-line="always" keep-with-previous.within-line="always">
+                        <xsl:text>&lt;/</xsl:text>
                         <xsl:value-of select="local-name()"/>
-                    </xsl:when>
-                    <xsl:when test="namespace-uri() = 'http://www.w3c.org/1999/xlink'">
-                        <xsl:text>xlink:</xsl:text>
-                        <xsl:value-of select="local-name()"/>
-                    </xsl:when>
-                    <xsl:when test="local-name() = 'schemaLocation'">
-                        <xsl:text>xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" </xsl:text>
-                        <xsl:text>xsi:schemaLocation</xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="local-name()"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-                <xsl:text>="</xsl:text>
-                <xsl:value-of select="."/>
-                <xsl:text>"</xsl:text>
-            </xsl:for-each>
-            <xsl:text>&gt;</xsl:text>
-            <xsl:apply-templates select="* | text()"/>
-            <fo:inline keep-together.within-line="always" keep-with-previous.within-line="always">
-                <xsl:text>&lt;/</xsl:text>
-                <xsl:value-of select="local-name()"/>
-                <xsl:text>&gt;</xsl:text>
-            </fo:inline>
+                        <xsl:text>&gt;</xsl:text>
+                    </fo:inline>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>/&gt;</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
         </fo:block>
     </xsl:template>
 
