@@ -4837,7 +4837,7 @@
                </div>
                <div type="description">
                   <p><gi>mandate</gi> is used to identify the source of authority or mandate for the
-                     corporate body in terms of its powers, functions, responsibilities or sphere of
+                     entity being described in terms of its powers, functions, responsibilities or sphere of
                      activities, such as a law, directive, or charter.</p>
                   <p><gi>mandate</gi> must include at least one <gi>term</gi> element. Terms may be
                      drawn from controlled vocabularies or may be natural language terms.
@@ -7972,12 +7972,15 @@
                   <p>Audience</p>
                </div>
                <div type="summary">
-                  <p>An attribute that helps control whether the information contained in the
+                  <p>An optional attribute that helps control whether the information contained in the
                      element should be available to all viewers or only to repository staff.
-                     Available as global attribute for all elements. The attribute can be set to
+                     </p>
+               </div>
+               <div type="description">
+                  <p>Available as global attribute for all elements. The attribute can be set to
                      "external" in <gi>cpfDescription</gi> to allow access to all the information
                      about the entity being described, but specific elements within
-                        <gi>cpfDescription</gi> can be set to "internal" to reserve that information
+                     <gi>cpfDescription</gi> can be set to "internal" to reserve that information
                      for repository access only. This feature is intended to assist application
                      software in restricting access to particular information by explicitly
                      identifying data that is potentially sensitive or may otherwise have a limited
@@ -8002,13 +8005,14 @@
                   <p>Base</p>
                </div>
                <div type="summary">
-                  <p>Used to specify a base URI that is different than the base URI of the EAC-CPF
-                     instance. This allows any relative URIs provided on attributes of a specific
-                     element or its descendants to be resolved using the URI provided in that
-                     element's <att>base</att>. Available on <gi>alternativeSet</gi>,
-                        <gi>control</gi>, <gi>cpfDescription</gi>, <gi>description</gi>,
-                        <gi>eac</gi>, <gi>identity</gi>, <gi>multipleIdentities</gi>,
-                        <gi>relations</gi>, and <gi>sources</gi>.</p>
+                  <p>Optional attribute used to specify a base URI that is different to the base URI of the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
+                  <p>Using the optional attribute <att>base</att> allows any relative URIs provided on attributes of a specific element, or its descendants, to be resolved using the URI provided in that element's or its parent element's <att>base</att>.</p>
+                  <p>Available on <gi>alternativeSet</gi>,
+                     <gi>control</gi>, <gi>cpfDescription</gi>, <gi>description</gi>,
+                     <gi>eac</gi>, <gi>identity</gi>, <gi>multipleIdentities</gi>,
+                     <gi>relations</gi>, and <gi>sources</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -8028,8 +8032,12 @@
                </div>
                <div type="summary">
                   <p>System of reckoning time, such as Gregorian calendar or Julian calendar.
-                     Suggested values include, but are not limited to, "gregorian" and "julian".
-                     Available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
+                     </p>
+               </div>
+               <div type="description">
+                  <p>Suggested values include, but are not limited to, "gregorian" and "julian".
+                     Available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.
+                  </p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8053,8 +8061,13 @@
                   <p>Certainty</p>
                </div>
                <div type="summary">
-                  <p>The level of confidence for the information given in <gi>date</gi>,
-                        <gi>fromDate</gi>, or <gi>toDate</gi>, e.g., approximate or circa.</p>
+                  <p>The level of confidence for a date.</p>
+               </div>
+               <div type="description">
+                  <p>
+                     The optional attribute <att>certainty</att> provides level of confidence for the information given in <gi>date</gi>,
+                     <gi>fromDate</gi>, or <gi>toDate</gi>, e.g., approximate or circa.
+                  </p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8102,12 +8115,16 @@
                </div>
                <div type="summary">
                   <p>Use <att>conventionDeclarationReference</att> to provide a direct link to a
-                        <gi>conventionDeclaration</gi> element within <gi>control</gi> from any
-                     non-empty elements in the EAC-CPF instance. The attribute can be used to link
-                     to a convention or rule that prescribes a method for converting one script into
-                     another script (transliteration). It also can be used to link to a national,
-                     international or other rule that governs the construction of an EAC-CPF
-                     name.</p>
+                        <gi>conventionDeclaration</gi> element within <gi>control</gi>.
+                  </p>  
+               </div>
+               <div type="description">
+                  <p>
+                     The attribute can be used to link to a convention or rule that prescribes a method for converting one script into another script (transliteration). It also can be used to link to a national, international or other rule that governs the construction of an EAC-CPF name.
+                  </p>
+                  <p>
+                     This optional attribute is available in all elements in the identity area (except <gi>entityType</gi>), in the description area and in relations. 
+                  </p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
@@ -8136,6 +8153,9 @@
                   <p>Coordinate System</p>
                </div>
                <div type="summary">
+                  <p>A code for a system used to express geographic coordinates.</p>
+               </div>
+               <div type="description">
                   <p>A code for a system used to express geographic coordinates, for example WGS84,
                      (World Geodetic System), OSGB36 (Ordnance Survey Great Britain), or ED50
                      (European Datum). Required in <gi>geographicCoordinates</gi>.</p>
@@ -8160,7 +8180,10 @@
                   <p>Country Code</p>
                </div>
                <div type="summary">
-                  <p>A unique code representing a country. Content of the attribute should be a code
+                  <p>A unique code representing a country.</p>
+               </div>
+               <div type="description">      
+                     <p>Content of the optional attribute should be a code
                      taken from ISO 3166-1 Codes for the Representation of Names of Countries and
                      their Subdivisions, column A2, or another controlled list, as specified in the
                         <att>countryEncoding</att> attribute in <gi>control</gi>. Available in
@@ -8193,10 +8216,13 @@
                   <p>Country Encoding</p>
                </div>
                <div type="summary">
+                  <p>The authoritative source or rules for values supplied in <att>countryCode</att>.</p>
+               </div>
+               <div type="description">
                   <p>The authoritative source or rules for values supplied in <att>countryCode</att>
                      in <gi>maintenanceAgency</gi> and <gi>placeName</gi>. If the value
                      "otherCountryEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. Available only in <gi>control</gi>.</p>
+                     in <gi>conventionDeclaration</gi>. This optional attrivute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso3166-1, otherCountryEncoding</p>
@@ -8218,9 +8244,13 @@
                </div>
                <div type="summary">
                   <p>The authoritative source or rules for values provided in
-                        <att>standardDate</att> in <gi>date</gi>, <gi>fromDate</gi> and
-                        <gi>toDate</gi>. If the value "otherDateEncoding" is selected an alternate
-                     code list should be specified in <gi>conventionDeclaration</gi>. Available only
+                        <att>standardDate</att>.</p>
+               </div>
+               <div type="description">
+                  <p>The authoritative source or rules for values provided in
+                     <att>standardDate</att> in <gi>date</gi>, <gi>fromDate</gi> and
+                     <gi>toDate</gi>. If the value "otherDateEncoding" is selected an alternate
+                     code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only
                      in <gi>control</gi>.</p>
                </div>
                <div type="values">
@@ -8242,8 +8272,11 @@
                   <p>Level of Detail</p>
                </div>
                <div type="summary">
+                  <p>Provides information about the level of detail of the entity’s description within the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
                   <p>An optional attribute within <gi>control</gi>, used to provide information
-                     about the level of detail of the entity's description, from a fixed set of
+                     about the level of detail in accordance with relevent description guidelines and/or rules of the entity's description, from a fixed set of
                      values. </p>
                </div>
                <div type="values">
@@ -8265,9 +8298,12 @@
                   <p>Era</p>
                </div>
                <div type="summary">
+                  <p>Period during which years are numbered and dates reckoned.</p>
+               </div>
+               <div type="description">
                   <p>Period during which years are numbered and dates reckoned, such as CE (Common
                      Era) or BCE (Before Common Era). Suggested values include "ce" and "bce".
-                     Available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
+                     This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8288,13 +8324,16 @@
                   <att>href</att>
                </head>
                <div type="fullName">
-                  <p>hypertext Reference</p>
+                  <p>Hypertext Reference</p>
                </div>
                <div type="summary">
-                  <p>The address for a remote resource. <att>href</att> takes the form of a Uniform
+                  <p>The address for a remote resource. </p>
+               </div>
+               <div type="description">
+                  <p>The optional <att>href</att> attribute takes the form of a Uniform
                      Resource Identifier (URI). Available in <gi>contactLine</gi>,
-                        <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi>, and
-                        <gi>source</gi>.</p>
+                     <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi> and
+                     <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -8315,10 +8354,16 @@
                   <p>ID</p>
                </div>
                <div type="summary">
+                  <p>A unique identifer to name the element.</p>
+               </div>
+               <div type="description">
                   <p>An identifier that must be unique within the current document and is used to
                      name the element so that it can be referred to, or referenced from, somewhere
                      else. This facilitates building links between the element and other
                      resources.</p>
+                  <p>
+                     Use <att>target</att>, <att>conventionDeclarationReference</att>, <att>localTypeDeclarationReference</att>, <att>maintenanceEventReference</att>, or <att>sourceReference</att> to link to an <att>id</att> attribute within the EAC-CPF instance.
+                  </p>
                </div>
                <div type="datatype">
                   <p>ID</p>
@@ -8376,7 +8421,11 @@
                </div>
                <div type="summary">
                   <p>The code for the language used in the EAC-CPF instance or in the creative work
-                     of the CPF entity being described. Content of the attribute should be a code
+                     of the CPF entity being described.
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Content of the attribute should be a code
                      taken from ISO 639-1, ISO 639-2b, ISO 639-3, or another controlled list, as
                      specified in the <att>languageEncoding</att> attribute in <gi>control</gi>.
                      Required in <gi>languageDeclaration</gi> and optionally available in
@@ -8413,11 +8462,14 @@
                <div type="summary">
                   <p>Specifies which standard list of codes is used to identify the language of the
                      EAC-CPF instance and languages represented in the creative work of the CPF
-                     entity being described. The codes themselves are specified in
-                        <att>languageCode</att> in <gi>language</gi> and <gi>languageOfElement</gi>
+                     entity being described. 
+                  </p>
+               </div>
+               <div type="description">
+                  <p>The codes themselves are specified in <att>languageCode</att> in <gi>language</gi> and <att>languageOfElement</att>
                      in all non-empty elements. Available in <gi>control</gi>. If the value
                      "otherLanguageEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>.</p>
+                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>ietf-bcp-47, iso639-1, iso639-2b, iso639-3, otherLanguageEncoding</p>
@@ -8438,11 +8490,14 @@
                   <p>Language of Element</p>
                </div>
                <div type="summary">
-                  <p>Indicates the language of the content of an element. Content of the attribute
-                     should be a code taken from ietf-bcp-47, ISO 639-1, ISO 639-2b, ISO 639-3, or another
+                  <p>Indicates the language of the content of an element. 
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Content of the attribute should be a code taken from ietf-bcp-47, ISO 639-1, ISO 639-2b, ISO 639-3, or another
                      controlled list, as specified in the <att>languageEncoding</att> attribute in
                         <gi>control</gi>. May be used consistently in a multi-lingual entity
-                     description to specify which elements are written in which language. Available
+                     description to specify which elements are written in which language. Optionally available
                      on all non-empty elements.</p>
                </div>
                <div type="datatype">
@@ -8463,8 +8518,12 @@
                </div>
                <div type="summary">
                   <p>A URI that characterizes the nature of the remote resource to which a linking
-                     element refers. Available in <gi>contactLine</gi>, <gi>reference</gi>,
-                        <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
+                     element refers. </p>
+               </div>
+               <div type="description">
+                  <p>A URI that characterizes the nature of the remote resource to which a linking
+                     element refers. Optionally available in <gi>contactLine</gi>, <gi>reference</gi>,
+                     <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -8483,9 +8542,12 @@
                   <p>Link Title</p>
                </div>
                <div type="summary">
+                  <p>Viewable caption of a link text.</p>
+               </div>
+               <div type="description">
                   <p>Information that serves as a viewable caption which explains to users the part
                      that a resource plays in a link. May be useful for meeting accessibility
-                     requirements when rendering content in a web browser. Available in
+                     requirements when rendering content in a web browser. Optionally available next to <att>href</att> in
                         <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>,
                         <gi>setComponent</gi>, and <gi>source</gi>.</p>
                </div>
@@ -8508,9 +8570,12 @@
                   <p>List Type</p>
                </div>
                <div type="summary">
-                  <p>Specifies the type of list: an ordered list is a numbered or lettered list; an
+                  <p>Specifies the type of list.</p>
+               </div>
+               <div type="summary">
+                  <p>An ordered list is a numbered or lettered list; an
                      unordered list is one in which sequence is not critical (e.g., a bulleted
-                     list). Available only on <gi>list</gi>.</p>
+                     list). Optionally available only on <gi>list</gi>.</p>
                </div>
                <div type="values">
                   <p>ordered, unordered</p>
@@ -8580,8 +8645,11 @@
                   <p>Use <att>localTypeDeclarationReference</att> to provide a direct link to a
                         <gi>localTypeDeclaration</gi> element within <gi>control</gi> from another
                      element using <att>localType</att> within the EAC-CPF instance.
-                        <att>localTypeDeclarationReference</att> should always be used when
-                        <att>localType</att> is used, in order to link to the local type
+                  </p>
+               </div>
+               <div type="description">
+                  <p><att>localTypeDeclarationReference</att> should always be used when 
+                     <att>localType</att> is used, in order to link to the local type
                      declaration.</p>
                </div>
                <div type="datatype">
