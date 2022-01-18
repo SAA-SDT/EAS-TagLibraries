@@ -8572,7 +8572,7 @@
                <div type="summary">
                   <p>Specifies the type of list.</p>
                </div>
-               <div type="summary">
+               <div type="description">
                   <p>An ordered list is a numbered or lettered list; an
                      unordered list is one in which sequence is not critical (e.g., a bulleted
                      list). Optionally available only on <gi>list</gi>.</p>
@@ -8673,9 +8673,12 @@
                </div>
                <div type="summary">
                   <p>Use <att>maintenanceEventReference</att> to provide a direct link to a
-                        <gi>maintenanceEvent</gi> element within <gi>maintenanceHistory</gi> from
-                     any non-empty element in the EAC-CPF instance. Thus any detailed information
-                     about the described entity can be referenced with a maintenance event.</p>
+                        <gi>maintenanceEvent</gi> element within <gi>maintenanceHistory</gi></p>
+               </div>
+               <div type="description">
+                  <p>The attribute can be used to link to a maintenance event in order to verify any assertion added to the entity’s description.</p> 
+                     <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations. 
+                  </p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
@@ -8785,10 +8788,13 @@
                </div>
                <div type="summary">
                   <p>A standard numerical form of an approximate date for which a latest possible
-                     date is known. Available in <gi>date</gi>, <gi>fromDate</gi>, and
-                        <gi>toDate</gi>. It is recommended that <att>notAfter</att> values follow
+                     date is known.</p>
+               </div>
+               <div type="description">
+                  <p>Optionally available in <gi>date</gi>, <gi>fromDate</gi>, and
+                     <gi>toDate</gi>. It is recommended that <att>notAfter</att> values follow
                      ISO 8601 or another standard date format as specified in
-                        <att>dateEncoding</att>.</p>
+                     <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -8811,10 +8817,13 @@
                </div>
                <div type="summary">
                   <p>A standard numerical form of an approximate date for which an earliest possible
-                     date is known. Available in <gi>date</gi>, <gi>fromDate</gi>, and
-                        <gi>toDate</gi>. It is recommended that <att>notBefore</att> values follow
+                     date is known.</p>
+               </div>
+               <div type="description">
+                  <p>Optionally available in <gi>date</gi>, <gi>fromDate</gi>, and
+                     <gi>toDate</gi>. It is recommended that <att>notBefore</att> values follow
                      ISO 8601 or another standard date format as specified in
-                        <att>dateEncoding</att>.</p>
+                     <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -8836,9 +8845,13 @@
                   <p>Preferred Form</p>
                </div>
                <div type="summary">
+                  <p>Attribute that specifies whether or not a name provides the preferred form of the entity's name for display purposes</p>
+               </div>
+               <div type="description">
                   <p>Attribute that specifies whether or not a <gi>nameEntry</gi> provides the
                      preferred form of the name of the EAC-CPF entity for display purposes in a
-                     given context.</p>
+                     given context. Use the value "true" if the name entry is preferred for any display purposed.</p>
+                  <p>This optional attribute is only available in <gi>nameEntry</gi>.</p>
                </div>
                <div type="values">
                   <p>false, true</p>
@@ -8867,8 +8880,12 @@
                   <p>Publication Status</p>
                </div>
                <div type="summary">
-                  <p>The current publication status of the EAC-CPF instance. Available only in
-                        <gi>control</gi>.</p>
+                  <p>The current publication status of the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
+                  <p>The publication status may occur on <gi>control</gi> to indicate the current publication status of the EAC-CPF instance, whether in process, approved or final. As an EAC-CPF instance is modified or other events happen to it (as recorded in the <gi>maintenanceHistory</gi> element), the publication status should also be updated. </p>
+                     <p>A newly created EAC-CPF instance will usually start with a publication status of "inProcess". This partial and preliminary status will be applicable as long as the author or the creating agency is working on the document. Depending on the context, the document might first reach a pre-publication level, awaiting approval e.g. by a higher level manager or an authorizing agency. Once such approval has been given, the status "approved" could be assigned for internal purposes while the EAC-CPF instance is not publicly available yet. When the EAC-CPF instance has been published on the institution’s own website or via the authorizing agency, the status "published" can be assigned.
+                  </p>
                </div>
                <div type="values">
                   <p>approved, inProcess, published</p>
@@ -8888,10 +8905,13 @@
                   <p>Repository Encoding</p>
                </div>
                <div type="summary">
+                  <p>The authoritative source or rules for values supplied in <gi>agencyCode</gi>.</p>
+               </div>
+               <div type="description">
                   <p>The authoritative source or rules for values supplied in <gi>agencyCode</gi>.
                      If the value "otherRepositoryEncoding" is selected an alternate code list
-                     should be specified in <gi>conventionDeclaration</gi>. Available only in
-                        <gi>control</gi>.</p>
+                     should be specified in <gi>conventionDeclaration</gi>. OPtionally available only in
+                     <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso15511, otherRepositoryEncoding</p>
@@ -8913,10 +8933,12 @@
                </div>
                <div type="summary">
                   <p>The code for the writing system, or script, used in the EAC-CPF instance or in
-                     which the CPF entity being described was creative or productive. Content of the
-                     attribute should be a code taken from ISO 15924, or another controlled list, as
+                     which the CPF entity being described was creative or productive.</p>
+                  </div>
+               <div type="description">
+                  <p>Content of the attribute should be a code taken from ISO 15924, or another controlled list, as
                      specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>.
-                     Available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
+                     Optionally available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8948,9 +8970,13 @@
                </div>
                <div type="summary">
                   <p>The authoritative source or rules for values supplied in
-                        <att>scriptOfElement</att> and <att>scriptCode</att>. If the value
+                        <att>scriptOfElement</att> and <att>scriptCode</att>.</p>
+               </div>
+               <div type="description">
+                  <p>The authoritative source or rules for values supplied in
+                     <att>scriptOfElement</att> and <att>scriptCode</att>. If the value
                      "otherScriptEncoding" is selected, an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. Available only in <gi>control</gi>.</p>
+                     in <gi>conventionDeclaration</gi>. Optionally available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso15924, otherScriptEncoding</p>
@@ -8972,11 +8998,13 @@
                </div>
                <div type="summary">
                   <p>Indicates the writing script of the content of an element (e.g., Cyrillic,
-                     Katakana). Content should be taken from ISO 15924 Codes for the Representation
-                     of Names of Scripts, or another controlled list, as specified in the
+                     Katakana).</p>
+               </div>
+               <div type="description">
+                     <p>Content should be taken from ISO 15924, or another controlled list, as specified in the
                         <att>scriptEncoding</att> attribute in <gi>control</gi>. May be used
                      consistently in a multi-lingual finding aid to specify which elements are
-                     written in which script. Available on all non-empty elements.</p>
+                     written in which script. Optionally available on all non-empty elements.</p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8999,8 +9027,12 @@
                <div type="summary">
                   <p>Use <att>sourceReference</att> to provide a direct link to a <gi>source</gi>
                      element within <gi>sources</gi> in <gi>control</gi> from an element within the
-                     EAC-CPF instance that uses the source. Thus any detailed information about the
-                     described entity can be referenced with a source.</p>
+                     EAC-CPF instance that uses the source. 
+                  </p>
+               </div>
+               <div type="description">
+                  <p>The attribute can be used to reference any detailed information about the described entity with a source.</p>
+                  <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations.</p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
@@ -9019,6 +9051,9 @@
                   <p>Standard Date</p>
                </div>
                <div type="summary">
+                  <p>The standardized form of date.</p>
+               </div>
+               <div type="description">
                   <p>The standardized form of date expressed in <gi>date</gi>, <gi>fromDate</gi>,
                      and <gi>toDate</gi>. It is recommended that <att>standardDate</att> values
                      follow ISO 8601, for example, 2011-07-22, 1963, or 1912-11, or another standard
@@ -9044,9 +9079,12 @@
                   <p>Standard Date and Time</p>
                </div>
                <div type="summary">
+                  <p>Standardized form of a date, or date and time in <gi>eventDateTime</gi>.</p>
+               </div>
+               <div type="description">
                   <p>An ISO 8601-compliant form of the date, or date and time, of a specific
                      maintenance event expressed in <gi>eventDateTime</gi>. For example, 2021-12-31,
-                     2021, 2021-12, 2021-12-31T23:59:59. Available only in
+                     2021, 2021-12, 2021-12-31T23:59:59. Optionally available only in
                      <gi>eventDateTime</gi>.</p>
                </div>
                <div type="datatype">
@@ -9073,10 +9111,13 @@
                </div>
                <div type="summary">
                   <p>Attribute that provides controlled terminology detailing the status of
-                     elements. Available in <gi>agencyCode</gi>, <gi>fromDate</gi>,
-                        <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>, and <gi>toDate</gi>. The terms
-                     available for <att>status</att> are defined in closed lists that vary by
-                     element.</p>
+                     elements.</p> 
+               </div>
+               <div type="description">
+                  <p><att>status</att> provides controlled terminology detailing the status of specific
+                     elements. The terms available for <att>status</att> are defined in closed lists that vary by
+                     element. Optionally available only in <gi>agencyCode</gi>, <gi>fromDate</gi>,
+                        <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>, and <gi>toDate</gi>. </p>
                </div>
                <div type="values">
                   <p>Values in <gi>agencyCode</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>:
@@ -9158,8 +9199,11 @@
                   <p>Target</p>
                </div>
                <div type="summary">
-                  <p>A pointer to the ID of another element. Used to create internal links within an
-                     XML instance. Available in all elements except <gi>eac</gi>.</p>
+                  <p>A pointer to the ID of another element. </p>
+               </div>
+               <div type="description">
+                     <p>Used to create internal links within an
+                     XML instance. Optionally available in all elements except <gi>eac</gi>.</p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
@@ -9189,6 +9233,9 @@
                   <p>Target Type</p>
                </div>
                <div type="summary">
+                  <p>Identifies the type of entity that is relate to the CPF entity being described.</p>
+               </div>
+               <div type="description">
                   <p>Required attribute within <gi>targetEntity</gi> which identifies the type of
                      entity that is related to the CPF entity being described. Use the value "agent"
                      only for migration from EAC-CPF 2010 to EAC 2.0.</p>
@@ -9219,6 +9266,9 @@
                   <p>Unit</p>
                </div>
                <div type="summary">
+                  <p>Defines the format or unit that is specified in <gi>citedRange</gi>.</p>
+               </div>
+               <div type="description">
                   <p>Use <att>unit</att> to document the format or unit that is specified in
                         <gi>citedRange</gi>, for example page number ("pageNumber") or volume number
                      ("volumeNumber").</p>
@@ -9240,6 +9290,9 @@
                   <p>Value</p>
                </div>
                <div type="summary">
+                  <p>Defines the tupe of entity described in the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
                   <p>Required attribute within the <gi>entityType</gi> element that defines the type
                      of entity described in the EAC-CPF instance. </p>
                </div>
@@ -9260,8 +9313,11 @@
                   <p>Value URI</p>
                </div>
                <div type="summary">
-                  <p>An optional attribute for including a URI identifying the resource to be used
-                     as the element's value.</p>
+                  <p>An attribute for including a URI identifying the resource to be used as the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional <att>valueURI</att> attribute to provide the URI identifying the authority resource to be used as the element's content. Available in all elements that can contain any type of entity. 
+                  </p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -9283,8 +9339,10 @@
                   <p>Vocabulary Source</p>
                </div>
                <div type="summary">
-                  <p>An optional attribute for identifying a vocabulary that is the source of the
-                     element's value.</p>
+                  <p>An attribute for identifying a vocabulary that is the source of the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional attribute to provide a name or title of the authority or vocabulary source of the element’s content given in <att>valueURI</att>. Available in all elements that can contain any type of entity. </p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -9307,6 +9365,10 @@
                <div type="summary">
                   <p>An optional attribute for including a URI identifying the vocabulary source for
                      the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional attribute to provide the URI of the authority or vocabulary source given in @vocabularySource. Available in all elements that can contain any type of entity.
+                  </p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>

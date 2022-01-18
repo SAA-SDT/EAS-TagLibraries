@@ -8157,8 +8157,8 @@
                   <div class="content">
                      <div class="p">Specifies the type of list.</div>
                   </div>
-                  <div class="leftcol">Summary: </div>
-                  <div class="content">
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">An ordered list is a numbered or lettered list; an
                         unordered list is one in which sequence is not critical (e.g., a bulleted
                         list). Optionally available only on &lt;list&gt;.</div>
@@ -8249,9 +8249,15 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">Use maintenanceEventReference to provide a direct link to a
-                        &lt;maintenanceEvent&gt; element within &lt;maintenanceHistory&gt; from
-                        any non-empty element in the EAC-CPF instance. Thus any detailed information
-                        about the described entity can be referenced with a maintenance event.</div>
+                        &lt;maintenanceEvent&gt; element within &lt;maintenanceHistory&gt;</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">The attribute can be used to link to a maintenance event in order to verify any assertion
+                        added to the entity’s description.</div>
+                     <div class="p">The attribute is optionally available in all elements in the identity area (except
+                        &lt;entityType&gt;), in the description area, and in the relations. 
+                        </div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -8340,7 +8346,11 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">A standard numerical form of an approximate date for which a latest possible
-                        date is known. Available in &lt;date&gt;, &lt;fromDate&gt;, and
+                        date is known.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">Optionally available in &lt;date&gt;, &lt;fromDate&gt;, and
                         &lt;toDate&gt;. It is recommended that notAfter values follow
                         ISO 8601 or another standard date format as specified in
                         dateEncoding.</div>
@@ -8362,7 +8372,11 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">A standard numerical form of an approximate date for which an earliest possible
-                        date is known. Available in &lt;date&gt;, &lt;fromDate&gt;, and
+                        date is known.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">Optionally available in &lt;date&gt;, &lt;fromDate&gt;, and
                         &lt;toDate&gt;. It is recommended that notBefore values follow
                         ISO 8601 or another standard date format as specified in
                         dateEncoding.</div>
@@ -8383,9 +8397,16 @@
                   <div class="content"> <span class="label">Preferred Form</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
+                     <div class="p">Attribute that specifies whether or not a name provides the preferred form of the
+                        entity's name for display purposes</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">Attribute that specifies whether or not a &lt;nameEntry&gt; provides the
                         preferred form of the name of the EAC-CPF entity for display purposes in a
-                        given context.</div>
+                        given context. Use the value "true" if the name entry is preferred for any display
+                        purposed.</div>
+                     <div class="p">This optional attribute is only available in &lt;nameEntry&gt;.</div>
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
@@ -8407,8 +8428,22 @@
                   <div class="content"> <span class="label">Publication Status</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">The current publication status of the EAC-CPF instance. Available only in
-                        &lt;control&gt;.</div>
+                     <div class="p">The current publication status of the EAC-CPF instance.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">The publication status may occur on &lt;control&gt; to indicate the current publication status of the EAC-CPF instance, whether in process,
+                        approved or final. As an EAC-CPF instance is modified or other events happen to it
+                        (as recorded in the &lt;maintenanceHistory&gt; element), the publication status should also be updated. </div>
+                     <div class="p">A newly created EAC-CPF instance will usually start with a publication status of "inProcess".
+                        This partial and preliminary status will be applicable as long as the author or the
+                        creating agency is working on the document. Depending on the context, the document
+                        might first reach a pre-publication level, awaiting approval e.g. by a higher level
+                        manager or an authorizing agency. Once such approval has been given, the status "approved"
+                        could be assigned for internal purposes while the EAC-CPF instance is not publicly
+                        available yet. When the EAC-CPF instance has been published on the institution’s own
+                        website or via the authorizing agency, the status "published" can be assigned.
+                        </div>
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
@@ -8424,9 +8459,13 @@
                   <div class="content"> <span class="label">Repository Encoding</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
+                     <div class="p">The authoritative source or rules for values supplied in &lt;agencyCode&gt;.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">The authoritative source or rules for values supplied in &lt;agencyCode&gt;.
                         If the value "otherRepositoryEncoding" is selected an alternate code list
-                        should be specified in &lt;conventionDeclaration&gt;. Available only in
+                        should be specified in &lt;conventionDeclaration&gt;. OPtionally available only in
                         &lt;control&gt;.</div>
                   </div>
                   <div class="leftcol">Values: </div>
@@ -8444,10 +8483,14 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">The code for the writing system, or script, used in the EAC-CPF instance or in
-                        which the CPF entity being described was creative or productive. Content of the
-                        attribute should be a code taken from ISO 15924, or another controlled list, as
+                        which the CPF entity being described was creative or productive.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">Content of the attribute should be a code taken from ISO 15924, or another controlled
+                        list, as
                         specified in the scriptEncoding attribute in &lt;control&gt;.
-                        Available in &lt;languageDeclaration&gt; and &lt;writingSystem&gt;.</div>
+                        Optionally available in &lt;languageDeclaration&gt; and &lt;writingSystem&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -8472,9 +8515,14 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">The authoritative source or rules for values supplied in
+                        scriptOfElement and scriptCode.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">The authoritative source or rules for values supplied in
                         scriptOfElement and scriptCode. If the value
                         "otherScriptEncoding" is selected, an alternate code list should be specified
-                        in &lt;conventionDeclaration&gt;. Available only in &lt;control&gt;.</div>
+                        in &lt;conventionDeclaration&gt;. Optionally available only in &lt;control&gt;.</div>
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
@@ -8491,11 +8539,15 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">Indicates the writing script of the content of an element (e.g., Cyrillic,
-                        Katakana). Content should be taken from ISO 15924 Codes for the Representation
-                        of Names of Scripts, or another controlled list, as specified in the
+                        Katakana).</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">Content should be taken from ISO 15924, or another controlled list, as specified in
+                        the
                         scriptEncoding attribute in &lt;control&gt;. May be used
                         consistently in a multi-lingual finding aid to specify which elements are
-                        written in which script. Available on all non-empty elements.</div>
+                        written in which script. Optionally available on all non-empty elements.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -8514,8 +8566,15 @@
                   <div class="content">
                      <div class="p">Use sourceReference to provide a direct link to a &lt;source&gt;
                         element within &lt;sources&gt; in &lt;control&gt; from an element within the
-                        EAC-CPF instance that uses the source. Thus any detailed information about the
-                        described entity can be referenced with a source.</div>
+                        EAC-CPF instance that uses the source. 
+                        </div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">The attribute can be used to reference any detailed information about the described
+                        entity with a source.</div>
+                     <div class="p">The attribute is optionally available in all elements in the identity area (except
+                        &lt;entityType&gt;), in the description area, and in the relations.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -8530,6 +8589,10 @@
                   <div class="content"> <span class="label">Standard Date</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
+                     <div class="p">The standardized form of date.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">The standardized form of date expressed in &lt;date&gt;, &lt;fromDate&gt;,
                         and &lt;toDate&gt;. It is recommended that standardDate values
                         follow ISO 8601, for example, 2011-07-22, 1963, or 1912-11, or another standard
@@ -8551,9 +8614,13 @@
                   <div class="content"> <span class="label">Standard Date and Time</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
+                     <div class="p">Standardized form of a date, or date and time in &lt;eventDateTime&gt;.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">An ISO 8601-compliant form of the date, or date and time, of a specific
                         maintenance event expressed in &lt;eventDateTime&gt;. For example, 2021-12-31,
-                        2021, 2021-12, 2021-12-31T23:59:59. Available only in
+                        2021, 2021-12, 2021-12-31T23:59:59. Optionally available only in
                         &lt;eventDateTime&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
@@ -8576,10 +8643,14 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">Attribute that provides controlled terminology detailing the status of
-                        elements. Available in &lt;agencyCode&gt;, &lt;fromDate&gt;,
-                        &lt;nameEntry&gt;, &lt;otherAgencyCode&gt;, and &lt;toDate&gt;. The terms
-                        available for status are defined in closed lists that vary by
-                        element.</div>
+                        elements.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">status provides controlled terminology detailing the status of specific
+                        elements. The terms available for status are defined in closed lists that vary by
+                        element. Optionally available only in &lt;agencyCode&gt;, &lt;fromDate&gt;,
+                        &lt;nameEntry&gt;, &lt;otherAgencyCode&gt;, and &lt;toDate&gt;. </div>
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
@@ -8656,8 +8727,12 @@
                   <div class="content"> <span class="label">Target</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">A pointer to the ID of another element. Used to create internal links within an
-                        XML instance. Available in all elements except &lt;eac&gt;.</div>
+                     <div class="p">A pointer to the ID of another element. </div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">Used to create internal links within an
+                        XML instance. Optionally available in all elements except &lt;eac&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -8680,6 +8755,10 @@
                   <div class="content"> <span class="label">Target Type</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
+                     <div class="p">Identifies the type of entity that is relate to the CPF entity being described.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">Required attribute within &lt;targetEntity&gt; which identifies the type of
                         entity that is related to the CPF entity being described. Use the value "agent"
                         only for migration from EAC-CPF 2010 to EAC 2.0.</div>
@@ -8705,6 +8784,10 @@
                   <div class="content"> <span class="label">Unit</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
+                     <div class="p">Defines the format or unit that is specified in &lt;citedRange&gt;.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">Use unit to document the format or unit that is specified in
                         &lt;citedRange&gt;, for example page number ("pageNumber") or volume number
                         ("volumeNumber").</div>
@@ -8723,6 +8806,10 @@
                   <div class="content"> <span class="label">Value</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
+                     <div class="p">Defines the tupe of entity described in the EAC-CPF instance.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
                      <div class="p">Required attribute within the &lt;entityType&gt; element that defines the type
                         of entity described in the EAC-CPF instance. </div>
                   </div>
@@ -8740,8 +8827,15 @@
                   <div class="content"> <span class="label">Value URI</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">An optional attribute for including a URI identifying the resource to be used
-                        as the element's value.</div>
+                     <div class="p">An attribute for including a URI identifying the resource to be used as the element's
+                        value.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">Use the optional valueURI attribute to provide the URI identifying the authority resource to be used as the
+                        element's content. Available in all elements that can contain any type of entity.
+                        
+                        </div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -8759,8 +8853,12 @@
                   <div class="content"> <span class="label">Vocabulary Source</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">An optional attribute for identifying a vocabulary that is the source of the
-                        element's value.</div>
+                     <div class="p">An attribute for identifying a vocabulary that is the source of the element's value.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">Use the optional attribute to provide a name or title of the authority or vocabulary
+                        source of the element’s content given in valueURI. Available in all elements that can contain any type of entity. </div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
@@ -8779,6 +8877,13 @@
                   <div class="content">
                      <div class="p">An optional attribute for including a URI identifying the vocabulary source for
                         the element's value.</div>
+                  </div>
+                  <div class="span">
+                     <div class="descriptionHead">Description and Usage: </div>
+                     <div class="p">Use the optional attribute to provide the URI of the authority or vocabulary source
+                        given in @vocabularySource. Available in all elements that can contain any type of
+                        entity.
+                        </div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">
