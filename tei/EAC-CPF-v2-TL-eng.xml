@@ -163,15 +163,15 @@
                      may be empty (e.g., an element which allows no child text or element nodes), or
                      they may contain text (listed as [text]), other elements, or a mixture of text
                      and other elements.<lb/>Text content cannot include characters that would be
-                     interpreted by a parser as action codes. For example, a left angle bracket has
-                     to be represented as the character entity reference &amp;lt; so that it is not
+                     interpreted by a parser as action codes. For example, a left angle bracket must 
+                     be represented as the character entity reference &amp;lt; so that it is not
                      misinterpreted as the start of an element name. <lb/>The technical availability
                      of child elements is listed in brackets beside each element, e.g. place (0..1).
                      The first character represents the minimum occurrences of the child element and
                      the final character represents the maximum occurrences of the child element,
                      with 'n' representing unlimited occurrences.</item>
                   <label>May Occur Within:</label>
-                  <item>Identifies all of the parent elements within which the described element may
+                  <item>Identifies all the parent elements within which the described element may
                      appear, listed in alphabetical order by tag name. This information conveys
                      information about where and how often an element is available throughout the
                      schema. The definitions for parent elements may provide additional information
@@ -201,7 +201,7 @@
                   <label>Examples:</label>
                   <item>Element and attribute descriptions include a tagged example to indicate how
                      attributes and elements can be used together. Many of the examples are taken
-                     from real finding aids; others have been specially constructed for the Tag
+                     from real authory records; others have been specially constructed for the Tag
                      Library. The examples illustrate any required sequences of elements, as in the
                      case of children within <gi>control</gi>, or required attributes such as
                         <att>part</att> in <gi>nameEntry</gi>. In other cases, the examples simply
@@ -365,7 +365,7 @@
                   <p><gi>address</gi> must include one or more <gi>addressLine</gi> element(s) that
                      provide full or sufficient information identifying a postal or other physical
                      address related to the entity being described.</p>
-                  <p>One of <gi>address</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
+                  <p> At least one of <gi>address</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
                         <gi>geographicCoordinates</gi>, or <gi>contact</gi> is required within
                         <gi>place</gi>.</p>
                </div>
@@ -1121,7 +1121,7 @@
                      </eac:chronItem>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:chronitem>
+                     <eac:chronItem>
                         <eac:date>March 1957</eac:date>
                         <eac:chronItemSet>
                            <eac:event>Dies</eac:event>
@@ -1135,7 +1135,7 @@
                               <eac:placeName>Minneapolis, Minnesota</eac:placeName>
                            </eac:place>
                         </eac:chronItemSet>
-                     </eac:chronitem>
+                     </eac:chronItem>
                   </egXML>
                </div>
             </div>
@@ -1420,7 +1420,7 @@
                      encode digital addresses and contact information.</p>
                   <p><gi>contact</gi> must include one or more <gi>contactLine</gi> element(s) that
                      provide relevant contact details for the entity being described.</p>
-                  <p>One of <gi>contact</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
+                  <p>At least one of <gi>contact</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
                         <gi>geographicCoordinates</gi>, or <gi>address</gi> is required within
                         <gi>place</gi>.</p>
                </div>
@@ -1591,7 +1591,7 @@
                      necessary but not otherwise included may be given in the <gi>localControl</gi>
                      element. Similarly, local types for certain elements used throughout the
                      EAC-CPF instance are recommended to be defined in the
-                        <gi>localTypeDeclaration</gi> element</p>
+                        <gi>localTypeDeclaration</gi> element.</p>
                   <p>The available child elements (both required and optional), in their prescribed
                      order, are:</p>
                   <list type="simple">
@@ -1952,8 +1952,7 @@
                         date is uncertain.</item>
                      <item>Use <att>standardDate</att> to provide a machine-processable form of the
                         date.</item>
-                     <item>Use <att>status</att> with the value "unknown" to indicate where the a
-                        date is unknown.</item>
+                     <item>Use <att>status</att> with the value "unknown" to indicate where a date is unknown.</item>
                   </list>
                </div>
                <div type="availability">
@@ -2169,7 +2168,7 @@
                </div>
                <div type="summary">
                   <p>A required child element of <gi>demographicDescriptions</gi> that can be used
-                     to provide demographic intformation about the CPF entity being described.</p>
+                     to provide demographic information about the CPF entity being described.</p>
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..n), placeName (0..n), term (1..n)</p>
@@ -2237,7 +2236,21 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:demographicDescriptions>
+                        <eac:demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
+                           <eac:term>Age 30 to 44</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
+                           <eac:term>Level 4 qualifications and above</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
+                           <eac:term>In a registered same-sex civil partnership</eac:term>
+                        </eac:demographicDescription>
+                        <eac:descriptiveNote>
+                           <eac:p>As part of the Census 2011, various demographic variables have been evaluated. 
+                              Among others, this included the age, the level of qualifications, and the marital status of the participants.</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:demographicDescriptions>
                   </egXML>
                </div>
             </div>
@@ -2281,12 +2294,6 @@
                         <item>Optional</item>
                         <label>target</label>
                         <item>Optional</item>
-                        <label>valueURI</label>
-                        <item>Optional</item>
-                        <label>vocabularySource</label>
-                        <item>Optional</item>
-                        <label>vocabularySourceURI</label>
-                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2306,7 +2313,21 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:demographicDescriptions>
+                        <eac:demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
+                           <eac:term>Age 30 to 44</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
+                           <eac:term>Level 4 qualifications and above</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
+                           <eac:term>In a registered same-sex civil partnership</eac:term>
+                        </eac:demographicDescription>
+                        <eac:descriptiveNote>
+                           <eac:p>As part of the Census 2011, various demographic variables have been evaluated. 
+                              Among others, this included the age, the level of qualifications, and the marital status of the participants.</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:demographicDescriptions>
                   </egXML>
                </div>
             </div>
@@ -3019,7 +3040,7 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:dateRange>
                         <eac:fromDate status="unknown"/>
-                        <eac:todate certainty="uncertain" standardDate="2010?">c.2010</eac:todate>
+                        <eac:toDate certainty="uncertain" standardDate="2010?">c.2010</eac:toDate>
                      </eac:dateRange>
                   </egXML>
                </div>
@@ -3310,7 +3331,7 @@
                      on the surface of the earth.</p>
                   <p>It is recommended that the values included in <gi>geographicCoordinates</gi>
                      are based on a commonly used system for expressing geographic coordinates.</p>
-                  <p>One of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
+                  <p>At least one of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
                         <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="attributeusage">
@@ -3558,7 +3579,7 @@
                   <p><gi>identityId</gi> may be used to record any identifier associated with the
                      CPF entity being described in the EAC-CPF instance. Identifiers such as legal
                      identifiers, typically assigned by an authoritative agency, may be recorded in
-                     this element.</p>
+                     this element. If multiple identifiers are recorded, each should be in its own <gi>identityID</gi>.</p>
                </div>
                <div type="seealso">
                   <list type="simple">
@@ -3632,7 +3653,7 @@
                <div type="seealso">
                   <list type="simple">
                      <item>Do not confuse with <gi>chronItem</gi>, which encodes entries within a
-                        structured chronology, <gi>chronList</gi>.</item>
+                        structured chronology (<gi>chronList</gi>).</item>
                   </list>
                </div>
                <div type="availability">
@@ -3927,7 +3948,7 @@
                      <eac:languagesUsed>
                         <eac:languageUsed>
                            <eac:language languageCode="eng">English</eac:language>
-                           <eac:writingSystem sriptCode="Latn">Latin</eac:writingSystem>
+                           <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
                         </eac:languageUsed>
                         <eac:languageUsed>
                            <eac:language languageCode="spa">Spanish</eac:language>
@@ -4188,7 +4209,7 @@
                      large number of descriptive elements.</p>
                   <p>To encode a simple list, include one or more <gi>item</gi> elements within
                         <gi>list</gi>. To encode more complex lists, such as hierarchies, additional
-                        <gi>list</gi> elements can be included within <gi>list</gi>. <gi>head</gi>
+                        <gi>list</gi> elements can be nested within <gi>list</gi>. <gi>head</gi>
                      can be used to encode a title or caption within a <gi>list</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
@@ -4984,7 +5005,7 @@
                <div type="description">
                   <p>A grouping element used to encode more than one <gi>cpfDescription</gi> in a
                      single EAC-CPF instance.</p>
-                  <p>The use of the <gi>multipleIdentities</gi> element can resolve two identity
+                  <p>The <gi>multipleIdentities</gi> element can be used to resolve two identity
                      circumstances. Firstly, it can be used to represent more than one identity
                      (including official identities) of the same CPF entity, each with a separate
                         <gi>cpfDescription</gi>. Secondly, it can be used to represent a
@@ -5295,7 +5316,7 @@
                   <p>To facilitate interoperability the XML should conform to an open, standard XML
                      schema and a namespace attribute should be present on the root element
                      referencing the namespace of the standard.</p>
-                  <p>It is also possible to encode data in XML without a namespace within the <gi>objectXML</gi> element.</p>
+                  <p>It is also possible to encode data in XML without a namespace within the <gi>objectXMLWrap</gi> element.</p>
                   <p><gi>objectXMLWrap</gi> may be used to store related XML data locally rather
                      than linking to external resources in order to facilitate processing or in
                      cases where the related data may not be reliably accessible.</p>
@@ -6137,7 +6158,7 @@
                      entity. Furthermore a companion <gi>geographicCoordinates</gi> is available
                      beside <gi>placeName</gi>, when used within <gi>place</gi>, to encode latitude,
                      longitude and altitude information.</p>
-                  <p>One of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>,
+                  <p>At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>,
                         <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                   <p>The <gi>placeName</gi> element is repeatable. It is strongly recommended that
                      within <gi>place</gi>, the <gi>placeName</gi> element be repeated only to
@@ -6219,10 +6240,10 @@
                   <p><gi>placeRole</gi> provides a contextual role for a <gi>placeName</gi> within
                         <gi>place</gi>. Places should be identified in <gi>placeName</gi> by the
                      proper noun that commonly designates the place, natural feature, or political
-                     jurisdiction. It is strongly recommended that each place name is accompanied by
+                     jurisdiction. It is strongly recommended that each <gi>placeName</gi> is accompanied by
                      a <gi>placeRole</gi> element in order to describe the nature of the association
                      of the place to the CPF entity.</p>
-                  <p>One of <gi>placeRole</gi>, <gi>placeName</gi>, <gi>geographicCoordinates</gi>,
+                  <p>At least one of <gi>placeRole</gi>, <gi>placeName</gi>, <gi>geographicCoordinates</gi>,
                         <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="attributeusage">
@@ -7980,12 +8001,12 @@
                   <p>Available as global attribute for all elements. The attribute can be set to
                      "external" in <gi>cpfDescription</gi> to allow access to all the information
                      about the entity being described, but specific elements within
-                     <gi>cpfDescription</gi> can be set to "internal" to reserve that information
+                     <gi>cpfDescription</gi> can also be set to "internal" to reserve that information
                      for repository access only. This feature is intended to assist application
                      software in restricting access to particular information by explicitly
                      identifying data that is potentially sensitive or may otherwise have a limited
                      audience. Special software capability may be needed, however, to prevent the
-                     display or export of an element marked "internal" when a whole finding aid is
+                     display or export of an element marked "internal" when a whole EAC-CPF instance is
                      displayed in a networked environment.</p>
                </div>
                <div type="values">
@@ -8090,7 +8111,7 @@
                </div>
                <div type="description">
                   <p>Use one of the set values to specify the type of contact line encoded in
-                        <gi>contactLine</gi>. Use the attribute <att>localType</att> in order to
+                        <gi>contactLine</gi>. Use the attribute <att>localType</att> to
                      encode a local type of contact line.</p>
                </div>
                <div type="values">
@@ -8120,7 +8141,7 @@
                </div>
                <div type="description">
                   <p>
-                     The attribute can be used to link to a convention or rule that prescribes a method for converting one script into another script (transliteration). It also can be used to link to a national, international or other rule that governs the construction of an EAC-CPF name.
+                     The attribute can be used to link to a convention or rule that prescribes a method for converting one script into another script (transliteration). It also can be used to link to a national, international, or other rule that governs the construction of an EAC-CPF name.
                   </p>
                   <p>
                      This optional attribute is available in all elements in the identity area (except <gi>entityType</gi>), in the description area and in relations. 
@@ -8194,10 +8215,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:maintenanceagency countrycode="IE">
-                        <eac:agencycode>IE-NAI</eac:agencycode>
-                        <eac:agencyname>National Archives of Ireland</eac:agencyname>
-                     </eac:maintenanceagency>
+                     <eac:maintenanceAgency countrycode="IE">
+                        <eac:agencyCode>IE-NAI</eac:agencyCode>
+                        <eac:agencyName>National Archives of Ireland</eac:agencyName>
+                     </eac:maintenanceAgency>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:place>
@@ -8222,7 +8243,7 @@
                   <p>The authoritative source or rules for values supplied in <att>countryCode</att>
                      in <gi>maintenanceAgency</gi> and <gi>placeName</gi>. If the value
                      "otherCountryEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attrivute is available only in <gi>control</gi>.</p>
+                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso3166-1, otherCountryEncoding</p>
@@ -8276,7 +8297,7 @@
                </div>
                <div type="description">
                   <p>An optional attribute within <gi>control</gi>, used to provide information
-                     about the level of detail in accordance with relevent description guidelines and/or rules of the entity's description, from a fixed set of
+                     about the level of detail in accordance with relevant description guidelines and/or rules of the entity's description, from a fixed set of
                      values. </p>
                </div>
                <div type="values">
@@ -8354,7 +8375,7 @@
                   <p>ID</p>
                </div>
                <div type="summary">
-                  <p>A unique identifer to name the element.</p>
+                  <p>A unique identifier to name the element.</p>
                </div>
                <div type="description">
                   <p>An identifier that must be unique within the current document and is used to
@@ -8496,8 +8517,8 @@
                <div type="description">
                   <p>Content of the attribute should be a code taken from ietf-bcp-47, ISO 639-1, ISO 639-2b, ISO 639-3, or another
                      controlled list, as specified in the <att>languageEncoding</att> attribute in
-                        <gi>control</gi>. May be used consistently in a multi-lingual entity
-                     description to specify which elements are written in which language. Optionally available
+                        <gi>control</gi>. May be used consistently in a multi-lingual EAC-CPF instance 
+                     to specify which elements are written in which language. Optionally available
                      on all non-empty elements.</p>
                </div>
                <div type="datatype">
@@ -8546,7 +8567,7 @@
                </div>
                <div type="description">
                   <p>Information that serves as a viewable caption which explains to users the part
-                     that a resource plays in a link. May be useful for meeting accessibility
+                     that a remote resource plays in a link. May be useful for meeting accessibility
                      requirements when rendering content in a web browser. Optionally available next to <att>href</att> in
                         <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>,
                         <gi>setComponent</gi>, and <gi>source</gi>.</p>
@@ -8910,7 +8931,7 @@
                <div type="description">
                   <p>The authoritative source or rules for values supplied in <gi>agencyCode</gi>.
                      If the value "otherRepositoryEncoding" is selected an alternate code list
-                     should be specified in <gi>conventionDeclaration</gi>. OPtionally available only in
+                     should be specified in <gi>conventionDeclaration</gi>. Optionally available only in
                      <gi>control</gi>.</p>
                </div>
                <div type="values">
@@ -9003,7 +9024,7 @@
                <div type="description">
                      <p>Content should be taken from ISO 15924, or another controlled list, as specified in the
                         <att>scriptEncoding</att> attribute in <gi>control</gi>. May be used
-                     consistently in a multi-lingual finding aid to specify which elements are
+                     consistently in a multi-lingual EAC-CPF instance to specify which elements are
                      written in which script. Optionally available on all non-empty elements.</p>
                </div>
                <div type="datatype">
@@ -9290,7 +9311,7 @@
                   <p>Value</p>
                </div>
                <div type="summary">
-                  <p>Defines the tupe of entity described in the EAC-CPF instance.</p>
+                  <p>Defines the type of entity described in the EAC-CPF instance.</p>
                </div>
                <div type="description">
                   <p>Required attribute within the <gi>entityType</gi> element that defines the type
