@@ -8,7 +8,7 @@
          <titleStmt>
             <title xml:lang="eng" type="main">Encoded Archival Context - Corporate Bodies, Persons,
                and Families (EAC-CPF) <lb/> Tag Library</title>
-            <title xml:lang="eng" type="additional">draft Version EAC-CPF 2.0</title>
+            <title xml:lang="eng" type="additional">Version EAC-CPF 2.0</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
                <name>Technical Subcommittee for Encoded Archival Standard of the Society of American
@@ -16,8 +16,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <!--<edition>2021 Edition</edition>-->
-            <p>2021 Edition</p>
+            <!--<edition>2022 Edition</edition>-->
+            <p>2022 Edition</p>
          </editionStmt>
          <publicationStmt>
             <publisher>Society of American Archivists in collaboration with Staatsbibliothek zu
@@ -31,7 +31,7 @@
                <addrLine>info@archivists.org</addrLine>
                <addrLine>www.archivists.org</addrLine>
             </address>
-            <date when="2021"/>
+            <date when="2022"/>
             <idno>ISBN Number</idno>
             <availability>
                <licence>This work is licensed under a Creative Commons Attribution 4.0 International
@@ -53,9 +53,9 @@
             <docTitle>
                <titlePart type="main">Encoded Archival Context - Corporate Bodies, Persons, and
                   Families (EAC-CPF) <lb/> Tag Library</titlePart>
-               <titlePart type="additional">draft Version EAC-CPF 2.0</titlePart>
+               <titlePart type="additional">Version EAC-CPF 2.0</titlePart>
             </docTitle>
-            <docEdition>2021 Edition</docEdition>
+            <docEdition>2022 Edition</docEdition>
             <byline>Prepared and maintained by the</byline>
             <docAuthor>Technical Subcommittee for Encoded Archival Standards of the Society of
                American Archivists</docAuthor>
@@ -67,80 +67,50 @@
          <div>
             <div xml:id="preface">
                <head>Related Standards</head>
-               <p>The standards maintained by the Society of American Archivists’ Technical Subcommittee on Encoded Archival Standards (TS-EAS) are XML schemas based on established models developed by the International Council on Archives (ICA).</p> 
-               <p>Encoded Archival Description (EAD) is based on the General International Standard Archival Description (ISAD(G)), while Encoded Archival Context for Corporate Bodies, Persons, and Families (EAC-CPF) is based on the International Standard Archival Authority Record for Corporate Bodies, Persons and Families (ISAAR-CPF). The current revisions to the EAD and EAC-CPF standards are being undertaken by TS-EAS based on the requirements of the Society of American Archivists’ standards maintenance schedule and policies, and are not tied to ongoing development of standards by the ICA, though keeping close connections to the ICA Experts Group on Archival Description as a related standards body.</p> 
-               <p>For this reason, the upcoming release of EAC-CPF 2.0 will continue to be based on ISAAR-CPF rather than the draft versions of Records in Contexts (RiC). We anticipate that future versions of EAC-CPF and other standards maintained by TS-EAS will take the RiC Conceptual Model into account once it is finalized and approved.</p>
+               <p>The standards maintained by the Society of American Archivists’ <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas">Technical Subcommittee on Encoded Archival Standards</ref> (TS-EAS) are XML schemas based on established models developed by the <ref target="https://www.ica.org/en">International Council on Archives</ref> (ICA).</p>
+               <p>EAC-CPF is based on the <ref target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd">International Standard Archival Authority Record for Corporate Bodies, Persons and Families</ref> (ISAAR-CPF). Revisions to the EAD and EAC-CPF standards are being undertaken by TS-EAS based on the requirements of the Society of American Archivists’ standards maintenance schedule and policies, and are not tied to ongoing development of standards by the ICA, though keeping close connections to the ICA <ref target="https://www.ica.org/en/about-egad">Experts Group on Archival Description</ref> as a related standards body.</p>
+               <p>For this reason, the EAC-CPF 2.0 continues to be based on ISAAR(CPF) rather than the draft versions of Records in Contexts. We anticipate that future versions of EAC-CPF and other standards maintained by TS-EAS will take the Records in Contexts - Conceptual Model into account once it is finalized and approved.</p>
+               
                <list type="gloss">
                   <label>International Standard Archival Authority Record for Corporate Bodies, Persons and Families (ISAAR(CPF))</label>
-                  <item>ISAAR(CPF) is a descriptive standard for descriptions of entities (corporate bodies, persons and families) associated with the creation and maintenance of archives. ISAAR(CPF) is maintained by the International Council on Archives.</item>
+                  <item><ref target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd">ISAAR(CPF)</ref> is a descriptive standard for descriptions of agent entities (corporate bodies, persons and families) associated with the creation and maintenance of archives. ISAAR(CPF) is maintained by the ICA.</item>
                   <label>Encoded Archival Description (EAD)</label>
-                  <item><ref target="https://www.loc.gov/ead/">Encoded Archival Description (EAD)</ref> is an XML standard for encoding archival finding aids, maintained by the Technical Subcommittee for Encoded Archival Standards of the Society of American Archivists, in partnership with the Library of Congress.</item>
+                  <item><ref target="https://loc.gov/ead/">EAD</ref> is an XML standard for encoding archival finding aids, maintained by the TS-EAS of the Society of American Archivists, in partnership with the Library of Congress.</item>
                   <label>Encoded Archival Guide (EAG)</label>
-                  <item><ref target="http://www.archivesportaleurope.net/eag">Encoded Archival Guide (EAG)</ref> is an XML standard for encoding data about archives and related organizations. EAG is maintained by the Archives Portal Europe Foundation and its Working Group on Standards (WGoS). The development of EAG is coordinated in close cooperation with the Technical Subcommittee on Encoded Archival Standards (TS-EAS), which is responsible for EAD and EAC-CPF.</item>
+                  <item><ref target="https://www.archivesportaleurope.net/eag">EAG</ref> is an XML standard for encoding data about archives and related organizations. EAG is maintained by the Archives Portal Europe Foundation and its Working Group on Standards (WGoS). The development of EAG is coordinated in close cooperation with the TS-EAS, which is responsible
+                     for EAD and EAC-CPF.</item>
                   <label>Encoding Standards</label>
                   <item>The international community of cultural heritage organizations is working on a broad set of diverse standards to meet the challenges of the digital age. Established standards concerning digitization and metadata are maintained by the <ref target="https://www.loc.gov/librarians/standards">Library of Congress</ref>.</item>
-                  <label>Records in Context Conceptual Model</label>
-                  <item>RiC-CM is a high-level conceptual model that focuses on intellectually identifying and describing records, the people that created and use(d) them, and the activities pursued by the people that the records both facilitate and document. RiC-CM is maintained by the International Council on Archives.</item>
+                  <label>Records in Contexts - Conceptual Model (RiC-CM)</label>
+                  <item><ref target="https://www.ica.org/en/records-in-contexts-conceptual-model">RiC-CM</ref> is a high-level conceptual model that focuses on intellectually identifying and describing records, the people that created and use(d) them, and the activities pursued by the people that the records both facilitate and document. RiC-CM is maintained by the ICA.</item>
                </list>   
             </div>
             <div xml:id="release">
                <head>Release and Revision Notes</head>
-               <p>This is the draft release of the Tag Library for EAC-CPF 2.0. The current release
-                  includes changes and updates in the schema undertaken by the Technical
-                  Subcommittee on Encoded Archival Standards reflecting comments received by the
-                  international community of professionals.</p>
-               <p>The EAC-CPF Tag Library is a living document. As such, it will continue to be
-                  developed as users suggest areas in need of clarification or expansion. The
-                  Technical Subcommittee for Encoded Archival Standards (TS-EAS) still encourages
-                  implementers to provide any queries, comments, and suggestions regarding the tag
-                  library and its content. In addition, the contribution of examples is highly
-                  encouraged. Questions, comments or examples may be directed to the TS-EAS (ts-eas[at]archivists.org). The
-                  underlying encoding of the Tag Library is based on TEI P5 and is designed to
-                  facilitate incorporating documentation into the schema to provide guidance in XML
-                  editors. While the initial release of the Tag Library is in English, the
-                  underlying encoding is designed to facilitate providing the Tag Library in
-                  additional languages at later dates.</p>
-               <p>The latest version of the EAC-CPF schema and tag library was adopted in 2010 and
-                  updated in late 2018. This version is called <ref
-                     target="https://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/"
-                     >EAC-CPF 2010 edition 2018</ref>.</p>
-               <p>The process for a major revision started in 2017, following the 2015 merger of the
-                  Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on
-                  Encoded Archival Standards (TS-EAS). This major revision aims to modernize the
-                  schema in terms of: <list type="simple">
+               <p>This is the release of the Tag Library for EAC-CPF 2.0. This major release includes changes and updates in the schema undertaken by the SAA <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas">Technical Subcommittee on Encoded Archival Standards</ref> (TS EAS) for the second major revision of the standard EAC-CPF. It supersedes the standard version EAC-CPF 2010 edition 2018.</p>
+               <p>The release is reflecting comments received by the international community of professionals between 2018 and 2021.</p>
+               <p>The EAC-CPF Tag Library is a living document. As such, it will continue to be developed as users suggest areas in need of clarification or expansion. The TS-EAS still encourages implementers to provide any queries, comments, and suggestions regarding the tag library and its content. In addition, the contribution of examples is highly encouraged. Questions, comments or examples may be directed to the TS-EAS (ts-eas[at]archivists.org). The underlying encoding of the Tag Library is based on TEI P5 and is designed to facilitate incorporating documentation into the schema to provide guidance in XML editors. While the initial release of the Tag Library is in English, the underlying encoding is designed to facilitate providing the Tag Library in additional languages at later dates.</p>
+               <p>The latest version of the EAC-CPF schema and tag library was adopted in 2010 and updated in late 2018. This version is called EAC-CPF 2010 edition 2018. The process for a major revision started in 2017, following the 2015 merger of the Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on Encoded Archival Standards (TS-EAS). This major revision aims to modernise the schema in terms of:
+                  <list type="simple">
                      <item>- simplifying where possible,</item>
                      <item>- alignment with EAD where useful,</item>
                      <item>- implementing features and solutions upon users’ request,</item>
-                     <item>- clearing up unused components.</item>
-                  </list>
-               </p>
-               <p>All elements and attributes in EAC-CPF 2010 were evaluated. Bugs and slight
-                  changes were made in a minor update of the Schema in 2018. The present version,
-                  EAC-CPF 2.0, is the result of a major overhaul of the standard and a
-                  reconciliation with EAD3.</p>
-               <p>Following <ref
-                     target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd"
-                     >ISAAR(CPF)</ref>, the established structure of control area, identity area,
-                  description area, and relations is still available, as is the idea of encoding
-                  multiple identities in one EAC-CPF instance.</p>
-               <p>Working in parallel with the ICA Experts Group on Archival Description (ICA EGAD),
-                  who is working on a 2nd draft of <ref
-                     target="https://www.ica.org/en/egad-ric-conceptual-model">Records in
-                     Contexts</ref> (RiC) which is being designed as the next comprehensive
-                  description standard for archives, EAC-CPF 2.0 tries to include the ideas of RiC
-                  where feasible.</p>
-               <p>Widely discussed was the question of spelling since the related standard, EAD,
-                  uses lower-case for element and attribute names. For easier reading and teaching
-                  it was agreed to keep the camel case spelling for element and attribute names and
-                  also for fixed values.</p>
+                     <item>- clearing up unused components.</item></list></p>
+               <p>All elements and attributes in EAC-CPF 2010 were evaluated. Bugs and slight changes were made in a minor update of the Schema in 2018. The present version, EAC-CPF 2.0, is the result of a major overhaul of the standard and a reconciliation with EAD.</p> 
+               <p>Following ISAAR(CPF), the established structure of control area, identity area, description area, and relations is still available, as is the idea of encoding multiple identities in one EAC-CPF instance.</p>
+               <p>The user communities of EAD and EAC-CPF overlap; therefore, the alignment of both schemas, where possible, shall ease the standards’ maintenance, usage, teaching, and learning. Elements and attributes used in both standards are harmonized by name, description and technical definition. </p>
+               <p>With the goal of simplifying the schema and aligning it with EAD, some encoding concepts were modified:linking and referencing, formatting, date encoding, language encoding, transliteration, control area, identity area, description area, and relations, cf <ref target="https://eac.staatsbibliothek-berlin.de/schema-revision-2021/revision-notes/">Revision notes</ref>.</p>
+               <p>Working in parallel with the ICA Experts Group on Archival Description (ICA EGAD), who is working on a 2nd draft of Records in Contexts (RiC) which is being designed as the next comprehensive description standard for archives, EAC-CPF 2.0 tries to include the ideas of RiC-CM where feasible, see also <ref target="https://eac.staatsbibliothek-berlin.de/related-standards/">TS EAS statement on related standards</ref>.</p>
+               <p>Widely discussed was the question of spelling since the related standard, EAD, uses lower-case for element and attribute names. For easier reading and teaching it was agreed to keep the camel case spelling for element and attribute names and also for fixed values.</p>
+               
             </div>
             <div xml:id="conventions">
                <head>Tag Library Conventions</head>
                <p>The EAC-CPF Elements section of the Tag Library contains descriptions of 91
                   elements, arranged alphabetically by element name.</p>
-               <p>Entries in the Tag Library that have been updated in the latest revision will be
+               <!--p>Entries in the Tag Library that have been updated in the latest revision will be
                   marked with "(revised in [revision number])". Updates that predate the most recent
-                  revision will not be marked in the text.</p>
+                  revision will not be marked in the text.</p-->
                <list type="gloss">
                   <label>Tag Name: </label>
                   <item>Short, mnemonic form of the element name that is used in the
@@ -1857,7 +1827,13 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:cpfDescription>
-                        <eac:identity> [...] </eac:identity>
+                        <eac:identity>
+                           <eac:entityType value="person"/>
+                           <eac:nameEntry>
+                              <eac:part localType="familyname">Hill</eac:part>
+                              <eac:part localType="givenname">Dorothy</eac:part>
+                           </eac:nameEntry>
+                        </eac:identity>
                         <eac:description> [...] </eac:description>
                         <eac:relations> [...] </eac:relations>
                      </eac:cpfDescription>
@@ -3280,7 +3256,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:generalContext>
+                        <eac:p> In September 2017, the American Museum of Natural History announced a multi-year project to update, restore, and conserve the Northwest Coast Hall. In October 2018, renowned Nuu-chah-nulth artist and cultural historian Haa'yuups was named co-curator, along with AMNH Division of Anthropology Curator of North American Ethnology Curator Peter Whiteley, in the restoration of the hall.</eac:p>
+                     </eac:generalContext>
                   </egXML>
                </div>
             </div>
@@ -4317,7 +4295,8 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <xml>No example has been provided for <gi>localControl</gi>. If you have any examples or use cases, please send them to TS-EAS.
+                     </xml>
                   </egXML>
                </div>
             </div>
@@ -8040,7 +8019,36 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:description base="https://d-nb.info/gnd/">
+                        <eac:occupations>
+                           <eac:occupation vocabularySource="GND" valueURI="4393865-6">
+                              <eac:term languageOfElement="de">Soziologin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4629643-8">
+                              <eac:term languageOfElement="de">Politologin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4174285-0">
+                              <eac:term languageOfElement="de">Philosophin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4333423-4">
+                              <eac:term languageOfElement="de">Historikerin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4053311-6">
+                              <eac:term languageOfElement="de">Schriftstellerin</eac:term>
+                           </eac:occupation>
+                        </eac:occupations>
+                        <eac:places>
+                           <eac:place vocabularySource="GND" valueURI="4099668-2">
+                              <eac:placeName>Linden (Hannover)</eac:placeName>
+                           </eac:place>
+                           <eac:place vocabularySource="GND" valueURI="4042011-5">
+                              <eac:placeName>New York, NY</eac:placeName>
+                           </eac:place>
+                           <eac:place vocabularySource="GND" valueURI="4537442-9">
+                              <eac:placeName>Tegna</eac:placeName>
+                           </eac:place>
+                        </eac:places>
+                     </eac:description>
                   </egXML>
                </div>
             </div>
@@ -8706,7 +8714,15 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:relation sourceReference="source1" maintenanceEventReference="me2">
+                        <eac:targetEntity targetType="corporateBody"  
+                           valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" 
+                           vocabularySourceURI="https://snaccooperative.org">
+                           <eac:part>Princeton University</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType valueURI="https://www.wikidata.org/wiki/Property:P69" 
+                           vocabularySourceURI="https://www.wikidata.org/">educated at</eac:relationType>
+                     </eac:relation>
                   </egXML>
                </div>
             </div>
@@ -9060,7 +9076,15 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:relation sourceReference="source1" maintenanceEventReference="me2">
+                        <eac:targetEntity targetType="corporateBody"  
+                           valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" 
+                           vocabularySourceURI="https://snaccooperative.org">
+                           <eac:part>Princeton University</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType valueURI="https://www.wikidata.org/wiki/Property:P69" 
+                           vocabularySourceURI="https://www.wikidata.org/">educated at</eac:relationType>
+                     </eac:relation>
                   </egXML>
                </div>
             </div>
