@@ -151,7 +151,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e7955">Attributes</a></div>
+            <div class="toc1"><a href="#d1e7957">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -3411,7 +3411,8 @@
                      <div class="p">Within &lt;identity&gt;, a &lt;descriptiveNote&gt; element may be used to
                         record other information in a textual form that assists in the identification
                         of the CPF entity.</div>
-                     <div class="p">In case of multiple identities of the same entity in one EAC-CPF instance, a
+                     <div class="p">In case of multiple identities of the same entity in one EAC-CPF instance, such that
+                        multiple &lt;cpfDescription&gt; elements are used, a
                         separate &lt;identity&gt; element is contained in each of the
                         &lt;cpfDescription&gt; elements of the EAC-CPF instance.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
@@ -5687,7 +5688,7 @@
                   <div class="content">
                      <div class="p">A required and repeatable child of &lt;nameEntry&gt; and &lt;targetEntity&gt;
                         used to distinguish components of the CPF entity's name, or the name of a
-                        related entity.</div>
+                        related entity, respectively.</div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
                   <div class="content">The designation of the information contained in the &lt;part&gt; can be
@@ -6576,9 +6577,9 @@
                      <div class="p">Use &lt;rightsDeclaration&gt; to provide structured information about the
                         usage rights of the EAC-CPF instance. &lt;rightsDeclaration&gt; should only be
                         used to reference shared published licenses, such as Creative Commons,
-                        RightsStatements.org, and published locally-defined licenses.</div>
+                        RightsStatements.org, or published locally-defined licenses.</div>
                      <div class="p">&lt;reference&gt; must be used to provide a machine-readable reference to a
-                        license statement (for example, a dereferenceable URI). It may also be used to
+                        license statement (for example, a URI). It may also be used to
                         encode the name of the license statement.</div>
                      <div class="p">&lt;shortCode&gt; may be used to provide the abbreviated name for the rights
                         statement. The value of &lt;shortCode&gt; should align with the rights
@@ -7175,7 +7176,7 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">
                      <div class="p">An optional child element of &lt;relation&gt; used to specify the role of a
-                        related entity towards the CPF entity being described.</div>
+                        related entity with respect to the CPF entity being described.</div>
                   </div>
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
@@ -7184,7 +7185,7 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">&lt;targetRole&gt; is used with &lt;relation&gt; to specify the role of a
-                        related entity towards the CPF entity being described.</div>
+                        related entity with respect to the CPF entity being described.</div>
                      <div class="p">The &lt;targetRole&gt; element contains a textual description of the relation.
                         It is recommended that the terms in &lt;targetRole&gt; be taken from
                         authorized vocabularies.</div>
@@ -7249,7 +7250,7 @@
                   <div class="content"><span class="label">Term</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">An element used to specify a descriptive term in accordance with authorized
+                     <div class="p">An element used to encode a descriptive term in accordance with authorized
                         vocabularies or local rules.</div>
                   </div>
                   <div class="leftcol">May contain: </div>
@@ -7571,8 +7572,66 @@
                      <div class="innerExample">&lt;languageUsed&gt;
                         <div class="innerExample">&lt;language languageCode="eng"&gt;English&lt;/language&gt;<br></br></div>
                         <div class="innerExample">&lt;writingSystem scriptCode="Latn"&gt;Latin&lt;/writingSystem&gt;<br></br></div>&lt;/languageUsed&gt;<br></br></div><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e7955">
+            <div class="section" id="d1e7957">
                <div class="head03">Attributes</div>
+               <div class="head03">Introduction  <a class="tocReturn" href="#toc">[toc]</a></div>
+               <div class="p">Attributes are associated with most of the elements contained in EAC-CPF. Attributes
+                  reflect named properties of an element and may take on different values, depending
+                  on the context in which they occur. In order to set one or more attributes, an encoder
+                  should include the name of the attribute(s) within the same angle brackets as the
+                  start tag, together with the value(s) to which the attribute(s) is/are to be set.
+                  That is,[tag] [attribute]="[value]"or[tag] [attribute1]="[value1]" [attribute2]="[value2]"</div>
+               <div class="p">For example:
+                  <div class="innerExample">&lt;fromDate standardDate="1939"&gt;1939&lt;/fromDate&gt;<br></br></div>or
+                  <div class="innerExample">&lt;fromDate certainty="approximate" standardDate="1939"&gt;c. 1939&lt;/fromDate&gt;<br></br></div>
+               </div>
+               <div class="p">Most attributes are optional, though some are required. The attribute description
+                  indicates whether an attribute is required. This information is also available in
+                  the Attributes section of each element description.</div>
+               <div class="p">The value of attributes may be constrained by the schema using specific attribute
+                  type values. For example, id attribute is of type ID, which constrains its value to
+                  a string beginning with an alphabetic character. An id value must be unique within
+                  the EAD instance within which it occurs, that is, no other tag in the entire document
+                  can have the same id value. EAD attributes have the following data types (capitalization
+                  of data types follows the documentation found in the W3C Recommendation XML Schema
+                  Part 2: Datatypes Second Edition (<a href="http://www.w3.org/TR/xmlschema-2/" target="new">http://www.w3.org/TR/xmlschema-2/)</a>:
+                  
+                  <div class="leftcol">anyURI:</div>
+                  <div class="content">A Uniform Resource Identifier. This may be a Uniform Resource Locator (URL) or a Uniform
+                     Resource Name (URN). Both relative and absolute URIs are allowed.</div>
+                  <div class="leftcol">ID:</div>
+                  <div class="content">Unique identifier. For example, most elements have an id, so that a unique code can
+                     be established for and used to refer to that specific element. The content of the
+                     id is of the type called "ID". Parsers verify that the value of attributes of type
+                     "ID" are unique. The values of id must begin with an alpha, not numeric, character,
+                     either upper or lowercase, and may contain a . (period), : (colon), - (hyphen), or
+                     _ (underscore), but not a blank space. See also attributes of type "IDREF."</div>
+                  <div class="leftcol">IDREFS:</div>
+                  <div class="content">List of ID reference values; values must match an existing ID of another element in
+                     the document.</div>
+                  <div class="leftcol">NMTOKEN:</div>
+                  <div class="content">A name token, which can consist of any alpha or numeric character, as well as a .
+                     (period), : (colon), - (hyphen), or _ (underscore), but not a blank space. A number
+                     of attributes in EAD where a character string from a code list is to be used are of
+                     the type "NMTOKEN".</div>
+                  <div class="leftcol">normalizedString:</div>
+                  <div class="content">The most general data type, a string can contain any sequence of characters allowed
+                     in XML. Certain characters may have to be represented with an entity reference, for
+                     example &amp;lt; for &lt;, and &amp;amp; for &amp;.</div>
+                  <div class="leftcol">token:</div>
+                  <div class="content">A type of string that may not contain carriage return, line feed or tab characters,
+                     leading or trailing spaces, and any internal sequence of two or more spaces.</div>
+               </div>
+               <div class="p">When the EAC-CPF schema limits attribute values to a few choices, those values are
+                  declared in the schema in what is known as a "closed list." For example, the values
+                  of audience are limited to either "external" or "internal." Other attributes are associated with
+                  semi-closed lists. Such lists include those values believed to be the most useful
+                  in many contexts, but other values are allowed. For example, &lt;language&gt; defines several values for languageEncoding, including "otherLanguageEncoding" which may be used to specify values that are not
+                  in the semi-closed list for languageEncoding. The definitions for some values in the closed and semi-closed lists appear below.</div>
+               <div class="p">The following is a complete list of all the attributes that occur in EAC-CPF, and
+                  some discussion of how they may be used. Further, context-specific information about
+                  the use of certain attributes may be found in the "Attribute usage" section of the
+                  element descriptions.</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType"><span class="label">@addressLineType</span></div>
                   <div class="content"> <span class="label">Address Line Type</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -8158,7 +8217,9 @@
                   </div>
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
-                  <div class="example"><br></br></div><br></br></div>
+                  <div class="example">
+                     <div class="innerExample">&lt;reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf" linkRole="document/pdf"&gt;DELIBERATION N° 17-1166, 15
+                        DECEMBRE 2017&lt;/reference&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-linkTitle"><span class="label">@linkTitle</span></div>

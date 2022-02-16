@@ -187,7 +187,7 @@
          </div>
       </front>
       <body>
-         <div type="elements">
+         <div type="elements" xml:id="EACCPFelements">
             <div type="elementDocumentation" xml:id="elem-abstract">
                <head>
                   <gi>abstract</gi>
@@ -3477,7 +3477,7 @@
                   <p>Within <gi>identity</gi>, a <gi>descriptiveNote</gi> element may be used to
                      record other information in a textual form that assists in the identification
                      of the CPF entity.</p>
-                  <p>In case of multiple identities of the same entity in one EAC-CPF instance, a
+                  <p>In case of multiple identities of the same entity in one EAC-CPF instance, such that multiple <gi>cpfDescription</gi> elements are used, a
                      separate <gi>identity</gi> element is contained in each of the
                         <gi>cpfDescription</gi> elements of the EAC-CPF instance.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
@@ -5892,7 +5892,7 @@
                   </egXML>
                </div>
             </div>
-            <div type="elementDocumentation" xml:id="part">
+            <div type="elementDocumentation" xml:id="elem-part">
                <head>
                   <gi>part</gi>
                </head>
@@ -5902,7 +5902,7 @@
                <div type="summary">
                   <p>A required and repeatable child of <gi>nameEntry</gi> and <gi>targetEntity</gi>
                      used to distinguish components of the CPF entity's name, or the name of a
-                     related entity.</p>
+                     related entity, respectively.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -6872,9 +6872,9 @@
                   <p>Use <gi>rightsDeclaration</gi> to provide structured information about the
                      usage rights of the EAC-CPF instance. <gi>rightsDeclaration</gi> should only be
                      used to reference shared published licenses, such as Creative Commons,
-                     RightsStatements.org, and published locally-defined licenses.</p>
+                     RightsStatements.org, or published locally-defined licenses.</p>
                   <p><gi>reference</gi> must be used to provide a machine-readable reference to a
-                     license statement (for example, a dereferenceable URI). It may also be used to
+                     license statement (for example, a URI). It may also be used to
                      encode the name of the license statement.</p>
                   <p><gi>shortCode</gi> may be used to provide the abbreviated name for the rights
                      statement. The value of <gi>shortCode</gi> should align with the rights
@@ -7487,7 +7487,7 @@
                </div>
                <div type="summary">
                   <p>An optional child element of <gi>relation</gi> used to specify the role of a
-                     related entity towards the CPF entity being described.</p>
+                     related entity with respect to the CPF entity being described.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -7529,7 +7529,7 @@
                </div>
                <div type="description">
                   <p><gi>targetRole</gi> is used with <gi>relation</gi> to specify the role of a
-                     related entity towards the CPF entity being described.</p>
+                     related entity with respect to the CPF entity being described.</p>
                   <p>The <gi>targetRole</gi> element contains a textual description of the relation.
                      It is recommended that the terms in <gi>targetRole</gi> be taken from
                      authorized vocabularies.</p>
@@ -7558,7 +7558,7 @@
                   <p>Term</p>
                </div>
                <div type="summary">
-                  <p>An element used to specify a descriptive term in accordance with authorized
+                  <p>An element used to encode a descriptive term in accordance with authorized
                      vocabularies or local rules.</p>
                </div>
                <div type="mayContain">
@@ -7898,7 +7898,43 @@
                </div>
             </div>
          </div>
-         <div type="attributes">
+         <div type="attributes" xml:id="EACCPFattributes">
+            <div type="Introduction">
+               <head>Introduction</head>
+               <p>Attributes are associated with most of the elements contained in EAC-CPF. Attributes reflect named properties of an element and may take on different values, depending on the context in which they occur. In order to set one or more attributes, an encoder should include the name of the attribute(s) within the same angle brackets as the start tag, together with the value(s) to which the attribute(s) is/are to be set. That is,<lb/>
+                  <code>[tag] [attribute]="[value]"</code> 
+                  <lb/>or<lb/>
+                  <code>[tag] [attribute1]="[value1]" [attribute2]="[value2]"</code></p>
+                  <p>For example:<lb/>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                        <eac:fromDate standardDate="1939">1939</eac:fromDate>
+                     </egXML>
+                     <lb/>or<lb/>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                        <eac:fromDate certainty="approximate" standardDate="1939">c. 1939</eac:fromDate>
+                     </egXML>
+                  </p>
+                  <p>Most attributes are optional, though some are required. The attribute description indicates whether an attribute is required. This information is also available in the Attributes section of each element description.</p>
+                  <p>The value of attributes may be constrained by the schema using specific attribute type values. For example, id attribute is of type ID, which constrains its value to a string beginning with an alphabetic character. An id value must be unique within the EAD instance within which it occurs, that is, no other tag in the entire document can have the same id value. EAD attributes have the following data types (capitalization of data types follows the documentation found in the W3C Recommendation XML Schema Part 2: Datatypes Second Edition (<ref target="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/)</ref>:
+                     <list type="gloss">
+                        <label>anyURI:</label>
+                        <item>A Uniform Resource Identifier. This may be a Uniform Resource Locator (URL) or a Uniform Resource Name (URN). Both relative and absolute URIs are allowed.</item>
+                        <label>ID:</label>
+                        <item>Unique identifier. For example, most elements have an id, so that a unique code can be established for and used to refer to that specific element. The content of the id is of the type called "ID". Parsers verify that the value of attributes of type "ID" are unique. The values of id must begin with an alpha, not numeric, character, either upper or lowercase, and may contain a . (period), : (colon), - (hyphen), or _ (underscore), but not a blank space. See also attributes of type "IDREF."</item>
+                        <label>IDREFS:</label>
+                        <item>List of ID reference values; values must match an existing ID of another element in the document.</item>
+                        <label>NMTOKEN:</label>
+                        <item>A name token, which can consist of any alpha or numeric character, as well as a . (period), : (colon), - (hyphen), or _ (underscore), but not a blank space. A number of attributes in EAD where a character string from a code list is to be used are of the type "NMTOKEN".</item>
+                        <label>normalizedString:</label>
+                        <item>The most general data type, a string can contain any sequence of characters allowed in XML. Certain characters may have to be represented with an entity reference, for example &amp;lt; for &lt;, and &amp;amp; for &amp;.</item>
+                        <label>token:</label>
+                        <item>A type of string that may not contain carriage return, line feed or tab characters, leading or trailing spaces, and any internal sequence of two or more spaces.</item>
+                     </list>
+                  </p>
+               <p>When the EAC-CPF schema limits attribute values to a few choices, those values are declared in the schema in what is known as a "closed list." For example, the values of <att>audience</att> are limited to either "external" or "internal." Other attributes are associated with semi-closed lists. Such lists include those values believed to be the most useful in many contexts, but other values are allowed. For example, <gi>language</gi> defines several values for <att>languageEncoding</att>, including "otherLanguageEncoding" which may be used to specify values that are not in the semi-closed list for <att>languageEncoding</att>. The definitions for some values in the closed and semi-closed lists appear below.</p>
+               <p>The following is a complete list of all the attributes that occur in EAC-CPF, and some discussion of how they may be used. Further, context-specific information about the use of certain attributes may be found in the "Attribute usage" section of the element descriptions.</p>
+                  
+            </div>
             <div type="attributeDocumentation" xml:id="attr-addressLineType">
                <head>
                   <att>addressLineType</att>
@@ -8559,7 +8595,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf" linkRole="document/pdf">DELIBERATION N° 17-1166, 15
+                        DECEMBRE 2017</eac:reference>
+                     
                   </egXML>
                </div>
             </div>
