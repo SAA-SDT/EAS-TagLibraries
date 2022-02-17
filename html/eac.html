@@ -7580,21 +7580,18 @@
                   on the context in which they occur. In order to set one or more attributes, an encoder
                   should include the name of the attribute(s) within the same angle brackets as the
                   start tag, together with the value(s) to which the attribute(s) is/are to be set.
-                  That is,[tag] [attribute]="[value]"or[tag] [attribute1]="[value1]" [attribute2]="[value2]"</div>
-               <div class="p">For example:
-                  <div class="innerExample">&lt;fromDate standardDate="1939"&gt;1939&lt;/fromDate&gt;<br></br></div>or
-                  <div class="innerExample">&lt;fromDate certainty="approximate" standardDate="1939"&gt;c. 1939&lt;/fromDate&gt;<br></br></div>
-               </div>
+                  That is,&lt;[tag] [attribute]="[value]"&gt;or&lt;[tag] [attribute1]="[value1]" [attribute2]="[value2]"&gt;</div>
+               <div class="p">For example:&lt;fromDate standardDate="1939"&gt;1939&lt;/fromDate&gt;or&lt;fromDate certainty="approximate" standardDate="1939"&gt;1939&lt;/fromDate&gt;</div>
                <div class="p">Most attributes are optional, though some are required. The attribute description
                   indicates whether an attribute is required. This information is also available in
                   the Attributes section of each element description.</div>
                <div class="p">The value of attributes may be constrained by the schema using specific attribute
-                  type values. For example, id attribute is of type ID, which constrains its value to
-                  a string beginning with an alphabetic character. An id value must be unique within
-                  the EAD instance within which it occurs, that is, no other tag in the entire document
-                  can have the same id value. EAD attributes have the following data types (capitalization
-                  of data types follows the documentation found in the W3C Recommendation XML Schema
-                  Part 2: Datatypes Second Edition (<a href="http://www.w3.org/TR/xmlschema-2/" target="new">http://www.w3.org/TR/xmlschema-2/)</a>:
+                  type values. For example, the id attribute is of type ID, which constrains its value to a string beginning with an
+                  alphabetic character. An id value must be unique within the EAC-CPF instance within
+                  which it occurs, that is, no other tag in the entire document can have the same id
+                  value. EAC-CPF attributes have the following data types (capitalization of data types
+                  follows the documentation found in the W3C Recommendation XML Schema Part 2: Datatypes
+                  Second Edition (<a href="http://www.w3.org/TR/xmlschema-2/" target="new">http://www.w3.org/TR/xmlschema-2/)</a>:
                   
                   <div class="leftcol">anyURI:</div>
                   <div class="content">A Uniform Resource Identifier. This may be a Uniform Resource Locator (URL) or a Uniform
@@ -7612,8 +7609,8 @@
                   <div class="leftcol">NMTOKEN:</div>
                   <div class="content">A name token, which can consist of any alpha or numeric character, as well as a .
                      (period), : (colon), - (hyphen), or _ (underscore), but not a blank space. A number
-                     of attributes in EAD where a character string from a code list is to be used are of
-                     the type "NMTOKEN".</div>
+                     of attributes in EAC-CPF where a character string from a code list is to be used are
+                     of the type "NMTOKEN".</div>
                   <div class="leftcol">normalizedString:</div>
                   <div class="content">The most general data type, a string can contain any sequence of characters allowed
                      in XML. Certain characters may have to be represented with an entity reference, for
