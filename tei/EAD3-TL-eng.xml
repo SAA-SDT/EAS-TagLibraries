@@ -4585,11 +4585,13 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
-                     <ead:p>The Archibald MacLeish Papers are described in <ead:bibref>
-                           <ead:title render="italic">
-                              <ead:part>Library of Congress Acquisitions: Manuscript Division, 1982</ead:part>
-                           </ead:title>, p. 29. </ead:bibref>
-                     </ead:p>
+                     <ead:otherfindaid>
+                           <ead:bibref>
+                              <ead:title render="italic">
+                                 <ead:part>Library of Congress Acquisitions: Manuscript Division, 1982</ead:part>
+                              </ead:title>, p. 29. 
+                           </ead:bibref>
+                     </ead:otherfindaid>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
                      <ead:bibliography>
