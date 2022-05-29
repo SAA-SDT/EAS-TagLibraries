@@ -6895,7 +6895,8 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:rightsDeclaration>
-                        <eac:reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0 Universell</eac:reference>
+                        <eac:reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</eac:reference>
+                        <eac:shortCode>CC0 1.0</eac:shortCode>
                      </eac:rightsDeclaration>
                   </egXML>
                </div>
