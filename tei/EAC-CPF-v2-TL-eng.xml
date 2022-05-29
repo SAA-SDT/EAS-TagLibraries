@@ -9,7 +9,7 @@
          <titleStmt>
             <title xml:lang="eng" type="main">Encoded Archival Context - Corporate Bodies, Persons,
                and Families (EAC-CPF) <lb/> Tag Library</title>
-            <title xml:lang="eng" type="additional">draft Version EAC-CPF 2.0</title>
+            <title xml:lang="eng" type="additional">Version EAC-CPF 2.0</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
                <name>Technical Subcommittee for Encoded Archival Standard of the Society of American
@@ -17,8 +17,8 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <!--<edition>2021 Edition</edition>-->
-            <p>2021 Edition</p>
+            <!--<edition>2022 Edition</edition>-->
+            <p>2022 Edition</p>
          </editionStmt>
          <publicationStmt>
             <publisher>Society of American Archivists in collaboration with Staatsbibliothek zu
@@ -32,7 +32,7 @@
                <addrLine>info@archivists.org</addrLine>
                <addrLine>www.archivists.org</addrLine>
             </address>
-            <date when="2021"/>
+            <date when="2022"/>
             <idno>ISBN Number</idno>
             <availability>
                <licence>This work is licensed under a Creative Commons Attribution 4.0 International
@@ -54,9 +54,9 @@
             <docTitle>
                <titlePart type="main">Encoded Archival Context - Corporate Bodies, Persons, and
                   Families (EAC-CPF) <lb/> Tag Library</titlePart>
-               <titlePart type="additional">draft Version EAC-CPF 2.0</titlePart>
+               <titlePart type="additional">Version EAC-CPF 2.0</titlePart>
             </docTitle>
-            <docEdition>2021 Edition</docEdition>
+            <docEdition>2022 Edition</docEdition>
             <byline>Prepared and maintained by the</byline>
             <docAuthor>Technical Subcommittee for Encoded Archival Standards of the Society of
                American Archivists</docAuthor>
@@ -68,80 +68,50 @@
          <div>
             <div xml:id="preface">
                <head>Related Standards</head>
-               <p>The standards maintained by the Society of American Archivists’ Technical Subcommittee on Encoded Archival Standards (TS-EAS) are XML schemas based on established models developed by the International Council on Archives (ICA).</p> 
-               <p>Encoded Archival Description (EAD) is based on the General International Standard Archival Description (ISAD(G)), while Encoded Archival Context for Corporate Bodies, Persons, and Families (EAC-CPF) is based on the International Standard Archival Authority Record for Corporate Bodies, Persons and Families (ISAAR-CPF). The current revisions to the EAD and EAC-CPF standards are being undertaken by TS-EAS based on the requirements of the Society of American Archivists’ standards maintenance schedule and policies, and are not tied to ongoing development of standards by the ICA, though keeping close connections to the ICA Experts Group on Archival Description as a related standards body.</p> 
-               <p>For this reason, the upcoming release of EAC-CPF 2.0 will continue to be based on ISAAR-CPF rather than the draft versions of Records in Contexts (RiC). We anticipate that future versions of EAC-CPF and other standards maintained by TS-EAS will take the RiC Conceptual Model into account once it is finalized and approved.</p>
+               <p>The standards maintained by the Society of American Archivists’ <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas">Technical Subcommittee on Encoded Archival Standards</ref> (TS-EAS) are XML schemas based on established models developed by the <ref target="https://www.ica.org/en">International Council on Archives</ref> (ICA).</p>
+               <p>EAC-CPF is based on the <ref target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd">International Standard Archival Authority Record for Corporate Bodies, Persons and Families</ref> (ISAAR-CPF). Revisions to the EAD and EAC-CPF standards are being undertaken by TS-EAS based on the requirements of the Society of American Archivists’ standards maintenance schedule and policies, and are not tied to ongoing development of standards by the ICA, though keeping close connections to the ICA <ref target="https://www.ica.org/en/about-egad">Experts Group on Archival Description</ref> as a related standards body.</p>
+               <p>For this reason, the EAC-CPF 2.0 continues to be based on ISAAR(CPF) rather than the draft versions of Records in Contexts. We anticipate that future versions of EAC-CPF and other standards maintained by TS-EAS will take the Records in Contexts - Conceptual Model into account once it is finalized and approved.</p>
+               
                <list type="gloss">
                   <label>International Standard Archival Authority Record for Corporate Bodies, Persons and Families (ISAAR(CPF))</label>
-                  <item>ISAAR(CPF) is a descriptive standard for descriptions of entities (corporate bodies, persons and families) associated with the creation and maintenance of archives. ISAAR(CPF) is maintained by the International Council on Archives.</item>
+                  <item><ref target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd">ISAAR(CPF)</ref> is a descriptive standard for descriptions of agent entities (corporate bodies, persons and families) associated with the creation and maintenance of archives. ISAAR(CPF) is maintained by the ICA.</item>
                   <label>Encoded Archival Description (EAD)</label>
-                  <item><ref target="https://www.loc.gov/ead/">Encoded Archival Description (EAD)</ref> is an XML standard for encoding archival finding aids, maintained by the Technical Subcommittee for Encoded Archival Standards of the Society of American Archivists, in partnership with the Library of Congress.</item>
+                  <item><ref target="https://loc.gov/ead/">EAD</ref> is an XML standard for encoding archival finding aids, maintained by the TS-EAS of the Society of American Archivists, in partnership with the Library of Congress.</item>
                   <label>Encoded Archival Guide (EAG)</label>
-                  <item><ref target="http://www.archivesportaleurope.net/eag">Encoded Archival Guide (EAG)</ref> is an XML standard for encoding data about archives and related organizations. EAG is maintained by the Archives Portal Europe Foundation and its Working Group on Standards (WGoS). The development of EAG is coordinated in close cooperation with the Technical Subcommittee on Encoded Archival Standards (TS-EAS), which is responsible for EAD and EAC-CPF.</item>
+                  <item><ref target="https://www.archivesportaleurope.net/eag">EAG</ref> is an XML standard for encoding data about archives and related organizations. EAG is maintained by the Archives Portal Europe Foundation and its Working Group on Standards (WGoS). The development of EAG is coordinated in close cooperation with the TS-EAS, which is responsible
+                     for EAD and EAC-CPF.</item>
                   <label>Encoding Standards</label>
                   <item>The international community of cultural heritage organizations is working on a broad set of diverse standards to meet the challenges of the digital age. Established standards concerning digitization and metadata are maintained by the <ref target="https://www.loc.gov/librarians/standards">Library of Congress</ref>.</item>
-                  <label>Records in Context Conceptual Model</label>
-                  <item>RiC-CM is a high-level conceptual model that focuses on intellectually identifying and describing records, the people that created and use(d) them, and the activities pursued by the people that the records both facilitate and document. RiC-CM is maintained by the International Council on Archives.</item>
+                  <label>Records in Contexts - Conceptual Model (RiC-CM)</label>
+                  <item><ref target="https://www.ica.org/en/records-in-contexts-conceptual-model">RiC-CM</ref> is a high-level conceptual model that focuses on intellectually identifying and describing records, the people that created and use(d) them, and the activities pursued by the people that the records both facilitate and document. RiC-CM is maintained by the ICA.</item>
                </list>   
             </div>
             <div xml:id="release">
                <head>Release and Revision Notes</head>
-               <p>This is the draft release of the Tag Library for EAC-CPF 2.0. The current release
-                  includes changes and updates in the schema undertaken by the Technical
-                  Subcommittee on Encoded Archival Standards reflecting comments received by the
-                  international community of professionals.</p>
-               <p>The EAC-CPF Tag Library is a living document. As such, it will continue to be
-                  developed as users suggest areas in need of clarification or expansion. The
-                  Technical Subcommittee for Encoded Archival Standards (TS-EAS) still encourages
-                  implementers to provide any queries, comments, and suggestions regarding the tag
-                  library and its content. In addition, the contribution of examples is highly
-                  encouraged. Questions, comments or examples may be directed to the TS-EAS (ts-eas[at]archivists.org). The
-                  underlying encoding of the Tag Library is based on TEI P5 and is designed to
-                  facilitate incorporating documentation into the schema to provide guidance in XML
-                  editors. While the initial release of the Tag Library is in English, the
-                  underlying encoding is designed to facilitate providing the Tag Library in
-                  additional languages at later dates.</p>
-               <p>The latest version of the EAC-CPF schema and tag library was adopted in 2010 and
-                  updated in late 2018. This version is called <ref
-                     target="https://eac.staatsbibliothek-berlin.de/schemata-and-tag-library/"
-                     >EAC-CPF 2010 edition 2018</ref>.</p>
-               <p>The process for a major revision started in 2017, following the 2015 merger of the
-                  Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on
-                  Encoded Archival Standards (TS-EAS). This major revision aims to modernize the
-                  schema in terms of: <list type="simple">
+               <p>This is the release of the Tag Library for EAC-CPF 2.0. This major release includes changes and updates in the schema undertaken by the SAA <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas">Technical Subcommittee on Encoded Archival Standards</ref> (TS EAS) for the second major revision of the standard EAC-CPF. It supersedes the standard version EAC-CPF 2010 edition 2018.</p>
+               <p>The release is reflecting comments received by the international community of professionals between 2018 and 2021.</p>
+               <p>The EAC-CPF Tag Library is a living document. As such, it will continue to be developed as users suggest areas in need of clarification or expansion. The TS-EAS still encourages implementers to provide any queries, comments, and suggestions regarding the tag library and its content. In addition, the contribution of examples is highly encouraged. Questions, comments or examples may be directed to the TS-EAS (ts-eas[at]archivists.org). The underlying encoding of the Tag Library is based on TEI P5 and is designed to facilitate incorporating documentation into the schema to provide guidance in XML editors. While the initial release of the Tag Library is in English, the underlying encoding is designed to facilitate providing the Tag Library in additional languages at later dates.</p>
+               <p>The latest version of the EAC-CPF schema and tag library was adopted in 2010 and updated in late 2018. This version is called EAC-CPF 2010 edition 2018. The process for a major revision started in 2017, following the 2015 merger of the Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on Encoded Archival Standards (TS-EAS). This major revision aims to modernise the schema in terms of:
+                  <list type="simple">
                      <item>- simplifying where possible,</item>
                      <item>- alignment with EAD where useful,</item>
                      <item>- implementing features and solutions upon users’ request,</item>
-                     <item>- clearing up unused components.</item>
-                  </list>
-               </p>
-               <p>All elements and attributes in EAC-CPF 2010 were evaluated. Bugs and slight
-                  changes were made in a minor update of the Schema in 2018. The present version,
-                  EAC-CPF 2.0, is the result of a major overhaul of the standard and a
-                  reconciliation with EAD3.</p>
-               <p>Following <ref
-                     target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd"
-                     >ISAAR(CPF)</ref>, the established structure of control area, identity area,
-                  description area, and relations is still available, as is the idea of encoding
-                  multiple identities in one EAC-CPF instance.</p>
-               <p>Working in parallel with the ICA Experts Group on Archival Description (ICA EGAD),
-                  who is working on a 2nd draft of <ref
-                     target="https://www.ica.org/en/egad-ric-conceptual-model">Records in
-                     Contexts</ref> (RiC) which is being designed as the next comprehensive
-                  description standard for archives, EAC-CPF 2.0 tries to include the ideas of RiC
-                  where feasible.</p>
-               <p>Widely discussed was the question of spelling since the related standard, EAD,
-                  uses lower-case for element and attribute names. For easier reading and teaching
-                  it was agreed to keep the camel case spelling for element and attribute names and
-                  also for fixed values.</p>
+                     <item>- clearing up unused components.</item></list></p>
+               <p>All elements and attributes in EAC-CPF 2010 were evaluated. Bugs and slight changes were made in a minor update of the Schema in 2018. The present version, EAC-CPF 2.0, is the result of a major overhaul of the standard and a reconciliation with EAD.</p> 
+               <p>Following ISAAR(CPF), the established structure of control area, identity area, description area, and relations is still available, as is the idea of encoding multiple identities in one EAC-CPF instance.</p>
+               <p>The user communities of EAD and EAC-CPF overlap; therefore, the alignment of both schemas, where possible, shall ease the standards’ maintenance, usage, teaching, and learning. Elements and attributes used in both standards are harmonized by name, description and technical definition. </p>
+               <p>With the goal of simplifying the schema and aligning it with EAD, some encoding concepts were modified:linking and referencing, formatting, date encoding, language encoding, transliteration, control area, identity area, description area, and relations, cf <ref target="https://eac.staatsbibliothek-berlin.de/schema-revision-2021/revision-notes/">Revision notes</ref>.</p>
+               <p>Working in parallel with the ICA Experts Group on Archival Description (ICA EGAD), who is working on a 2nd draft of Records in Contexts (RiC) which is being designed as the next comprehensive description standard for archives, EAC-CPF 2.0 tries to include the ideas of RiC-CM where feasible, see also <ref target="https://eac.staatsbibliothek-berlin.de/related-standards/">TS EAS statement on related standards</ref>.</p>
+               <p>Widely discussed was the question of spelling since the related standard, EAD, uses lower-case for element and attribute names. For easier reading and teaching it was agreed to keep the camel case spelling for element and attribute names and also for fixed values.</p>
+               
             </div>
             <div xml:id="conventions">
                <head>Tag Library Conventions</head>
                <p>The EAC-CPF Elements section of the Tag Library contains descriptions of 91
                   elements, arranged alphabetically by element name.</p>
-               <p>Entries in the Tag Library that have been updated in the latest revision will be
+               <!--p>Entries in the Tag Library that have been updated in the latest revision will be
                   marked with "(revised in [revision number])". Updates that predate the most recent
-                  revision will not be marked in the text.</p>
+                  revision will not be marked in the text.</p-->
                <list type="gloss">
                   <label>Tag Name: </label>
                   <item>Short, mnemonic form of the element name that is used in the
@@ -164,15 +134,15 @@
                      may be empty (e.g., an element which allows no child text or element nodes), or
                      they may contain text (listed as [text]), other elements, or a mixture of text
                      and other elements.<lb/>Text content cannot include characters that would be
-                     interpreted by a parser as action codes. For example, a left angle bracket has
-                     to be represented as the character entity reference &amp;lt; so that it is not
+                     interpreted by a parser as action codes. For example, a left angle bracket must 
+                     be represented as the character entity reference &amp;lt; so that it is not
                      misinterpreted as the start of an element name. <lb/>The technical availability
                      of child elements is listed in brackets beside each element, e.g. place (0..1).
                      The first character represents the minimum occurrences of the child element and
                      the final character represents the maximum occurrences of the child element,
                      with 'n' representing unlimited occurrences.</item>
                   <label>May Occur Within:</label>
-                  <item>Identifies all of the parent elements within which the described element may
+                  <item>Identifies all the parent elements within which the described element may
                      appear, listed in alphabetical order by tag name. This information conveys
                      information about where and how often an element is available throughout the
                      schema. The definitions for parent elements may provide additional information
@@ -202,7 +172,7 @@
                   <label>Examples:</label>
                   <item>Element and attribute descriptions include a tagged example to indicate how
                      attributes and elements can be used together. Many of the examples are taken
-                     from real finding aids; others have been specially constructed for the Tag
+                     from real authory records; others have been specially constructed for the Tag
                      Library. The examples illustrate any required sequences of elements, as in the
                      case of children within <gi>control</gi>, or required attributes such as
                         <att>part</att> in <gi>nameEntry</gi>. In other cases, the examples simply
@@ -218,7 +188,7 @@
          </div>
       </front>
       <body>
-         <div type="elements">
+         <div type="elements" xml:id="EACCPFelements">
             <div type="elementDocumentation" xml:id="elem-abstract">
                <head>
                   <gi>abstract</gi>
@@ -366,7 +336,7 @@
                   <p><gi>address</gi> must include one or more <gi>addressLine</gi> element(s) that
                      provide full or sufficient information identifying a postal or other physical
                      address related to the entity being described.</p>
-                  <p>One of <gi>address</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
+                  <p> At least one of <gi>address</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
                         <gi>geographicCoordinates</gi>, or <gi>contact</gi> is required within
                         <gi>place</gi>.</p>
                </div>
@@ -1122,7 +1092,7 @@
                      </eac:chronItem>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:chronitem>
+                     <eac:chronItem>
                         <eac:date>March 1957</eac:date>
                         <eac:chronItemSet>
                            <eac:event>Dies</eac:event>
@@ -1136,7 +1106,7 @@
                               <eac:placeName>Minneapolis, Minnesota</eac:placeName>
                            </eac:place>
                         </eac:chronItemSet>
-                     </eac:chronitem>
+                     </eac:chronItem>
                   </egXML>
                </div>
             </div>
@@ -1421,7 +1391,7 @@
                      encode digital addresses and contact information.</p>
                   <p><gi>contact</gi> must include one or more <gi>contactLine</gi> element(s) that
                      provide relevant contact details for the entity being described.</p>
-                  <p>One of <gi>contact</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
+                  <p>At least one of <gi>contact</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
                         <gi>geographicCoordinates</gi>, or <gi>address</gi> is required within
                         <gi>place</gi>.</p>
                </div>
@@ -1592,7 +1562,7 @@
                      necessary but not otherwise included may be given in the <gi>localControl</gi>
                      element. Similarly, local types for certain elements used throughout the
                      EAC-CPF instance are recommended to be defined in the
-                        <gi>localTypeDeclaration</gi> element</p>
+                        <gi>localTypeDeclaration</gi> element.</p>
                   <p>The available child elements (both required and optional), in their prescribed
                      order, are:</p>
                   <list type="simple">
@@ -1858,7 +1828,13 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:cpfDescription>
-                        <eac:identity> [...] </eac:identity>
+                        <eac:identity>
+                           <eac:entityType value="person"/>
+                           <eac:nameEntry>
+                              <eac:part localType="familyname">Hill</eac:part>
+                              <eac:part localType="givenname">Dorothy</eac:part>
+                           </eac:nameEntry>
+                        </eac:identity>
                         <eac:description> [...] </eac:description>
                         <eac:relations> [...] </eac:relations>
                      </eac:cpfDescription>
@@ -1953,8 +1929,7 @@
                         date is uncertain.</item>
                      <item>Use <att>standardDate</att> to provide a machine-processable form of the
                         date.</item>
-                     <item>Use <att>status</att> with the value "unknown" to indicate where the a
-                        date is unknown.</item>
+                     <item>Use <att>status</att> with the value "unknown" to indicate where a date is unknown.</item>
                   </list>
                </div>
                <div type="availability">
@@ -2170,7 +2145,7 @@
                </div>
                <div type="summary">
                   <p>A required child element of <gi>demographicDescriptions</gi> that can be used
-                     to provide demographic intformation about the CPF entity being described.</p>
+                     to provide demographic information about the CPF entity being described.</p>
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..n), placeName (0..n), term (1..n)</p>
@@ -2238,7 +2213,21 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:demographicDescriptions>
+                        <eac:demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
+                           <eac:term>Age 30 to 44</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
+                           <eac:term>Level 4 qualifications and above</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
+                           <eac:term>In a registered same-sex civil partnership</eac:term>
+                        </eac:demographicDescription>
+                        <eac:descriptiveNote>
+                           <eac:p>As part of the Census 2011, various demographic variables have been evaluated. 
+                              Among others, this included the age, the level of qualifications, and the marital status of the participants.</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:demographicDescriptions>
                   </egXML>
                </div>
             </div>
@@ -2282,12 +2271,6 @@
                         <item>Optional</item>
                         <label>target</label>
                         <item>Optional</item>
-                        <label>valueURI</label>
-                        <item>Optional</item>
-                        <label>vocabularySource</label>
-                        <item>Optional</item>
-                        <label>vocabularySourceURI</label>
-                        <item>Optional</item>
                      </list>
                   </p>
                </div>
@@ -2307,7 +2290,21 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:demographicDescriptions>
+                        <eac:demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
+                           <eac:term>Age 30 to 44</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
+                           <eac:term>Level 4 qualifications and above</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
+                           <eac:term>In a registered same-sex civil partnership</eac:term>
+                        </eac:demographicDescription>
+                        <eac:descriptiveNote>
+                           <eac:p>As part of the Census 2011, various demographic variables have been evaluated. 
+                              Among others, this included the age, the level of qualifications, and the marital status of the participants.</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:demographicDescriptions>
                   </egXML>
                </div>
             </div>
@@ -3020,7 +3017,7 @@
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:dateRange>
                         <eac:fromDate status="unknown"/>
-                        <eac:todate certainty="uncertain" standardDate="2010?">c.2010</eac:todate>
+                        <eac:toDate certainty="uncertain" standardDate="2010?">c.2010</eac:toDate>
                      </eac:dateRange>
                   </egXML>
                </div>
@@ -3260,7 +3257,9 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:generalContext>
+                        <eac:p> In September 2017, the American Museum of Natural History announced a multi-year project to update, restore, and conserve the Northwest Coast Hall. In October 2018, renowned Nuu-chah-nulth artist and cultural historian Haa'yuups was named co-curator, along with AMNH Division of Anthropology Curator of North American Ethnology Curator Peter Whiteley, in the restoration of the hall.</eac:p>
+                     </eac:generalContext>
                   </egXML>
                </div>
             </div>
@@ -3311,7 +3310,7 @@
                      on the surface of the earth.</p>
                   <p>It is recommended that the values included in <gi>geographicCoordinates</gi>
                      are based on a commonly used system for expressing geographic coordinates.</p>
-                  <p>One of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
+                  <p>At least one of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
                         <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="attributeusage">
@@ -3479,7 +3478,7 @@
                   <p>Within <gi>identity</gi>, a <gi>descriptiveNote</gi> element may be used to
                      record other information in a textual form that assists in the identification
                      of the CPF entity.</p>
-                  <p>In case of multiple identities of the same entity in one EAC-CPF instance, a
+                  <p>In case of multiple identities of the same entity in one EAC-CPF instance, such that multiple <gi>cpfDescription</gi> elements are used, a
                      separate <gi>identity</gi> element is contained in each of the
                         <gi>cpfDescription</gi> elements of the EAC-CPF instance.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
@@ -3559,7 +3558,7 @@
                   <p><gi>identityId</gi> may be used to record any identifier associated with the
                      CPF entity being described in the EAC-CPF instance. Identifiers such as legal
                      identifiers, typically assigned by an authoritative agency, may be recorded in
-                     this element.</p>
+                     this element. If multiple identifiers are recorded, each should be in its own <gi>identityID</gi>.</p>
                </div>
                <div type="seealso">
                   <list type="simple">
@@ -3633,7 +3632,7 @@
                <div type="seealso">
                   <list type="simple">
                      <item>Do not confuse with <gi>chronItem</gi>, which encodes entries within a
-                        structured chronology, <gi>chronList</gi>.</item>
+                        structured chronology (<gi>chronList</gi>).</item>
                   </list>
                </div>
                <div type="availability">
@@ -3928,7 +3927,7 @@
                      <eac:languagesUsed>
                         <eac:languageUsed>
                            <eac:language languageCode="eng">English</eac:language>
-                           <eac:writingSystem sriptCode="Latn">Latin</eac:writingSystem>
+                           <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
                         </eac:languageUsed>
                         <eac:languageUsed>
                            <eac:language languageCode="spa">Spanish</eac:language>
@@ -4189,7 +4188,7 @@
                      large number of descriptive elements.</p>
                   <p>To encode a simple list, include one or more <gi>item</gi> elements within
                         <gi>list</gi>. To encode more complex lists, such as hierarchies, additional
-                        <gi>list</gi> elements can be included within <gi>list</gi>. <gi>head</gi>
+                        <gi>list</gi> elements can be nested within <gi>list</gi>. <gi>head</gi>
                      can be used to encode a title or caption within a <gi>list</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
@@ -4297,7 +4296,8 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <xml>No example has been provided for <gi>localControl</gi>. If you have any examples or use cases, please send them to TS-EAS.
+                     </xml>
                   </egXML>
                </div>
             </div>
@@ -4838,7 +4838,7 @@
                </div>
                <div type="description">
                   <p><gi>mandate</gi> is used to identify the source of authority or mandate for the
-                     corporate body in terms of its powers, functions, responsibilities or sphere of
+                     entity being described in terms of its powers, functions, responsibilities or sphere of
                      activities, such as a law, directive, or charter.</p>
                   <p><gi>mandate</gi> must include at least one <gi>term</gi> element. Terms may be
                      drawn from controlled vocabularies or may be natural language terms.
@@ -4985,7 +4985,7 @@
                <div type="description">
                   <p>A grouping element used to encode more than one <gi>cpfDescription</gi> in a
                      single EAC-CPF instance.</p>
-                  <p>The use of the <gi>multipleIdentities</gi> element can resolve two identity
+                  <p>The <gi>multipleIdentities</gi> element can be used to resolve two identity
                      circumstances. Firstly, it can be used to represent more than one identity
                      (including official identities) of the same CPF entity, each with a separate
                         <gi>cpfDescription</gi>. Secondly, it can be used to represent a
@@ -5296,7 +5296,7 @@
                   <p>To facilitate interoperability the XML should conform to an open, standard XML
                      schema and a namespace attribute should be present on the root element
                      referencing the namespace of the standard.</p>
-                  <p>It is also possible to encode data in XML without a namespace within the <gi>objectXML</gi> element.</p>
+                  <p>It is also possible to encode data in XML without a namespace within the <gi>objectXMLWrap</gi> element.</p>
                   <p><gi>objectXMLWrap</gi> may be used to store related XML data locally rather
                      than linking to external resources in order to facilitate processing or in
                      cases where the related data may not be reliably accessible.</p>
@@ -5893,7 +5893,7 @@
                   </egXML>
                </div>
             </div>
-            <div type="elementDocumentation" xml:id="part">
+            <div type="elementDocumentation" xml:id="elem-part">
                <head>
                   <gi>part</gi>
                </head>
@@ -5903,7 +5903,7 @@
                <div type="summary">
                   <p>A required and repeatable child of <gi>nameEntry</gi> and <gi>targetEntity</gi>
                      used to distinguish components of the CPF entity's name, or the name of a
-                     related entity.</p>
+                     related entity, respectively.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -6138,7 +6138,7 @@
                      entity. Furthermore a companion <gi>geographicCoordinates</gi> is available
                      beside <gi>placeName</gi>, when used within <gi>place</gi>, to encode latitude,
                      longitude and altitude information.</p>
-                  <p>One of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>,
+                  <p>At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>,
                         <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                   <p>The <gi>placeName</gi> element is repeatable. It is strongly recommended that
                      within <gi>place</gi>, the <gi>placeName</gi> element be repeated only to
@@ -6220,10 +6220,10 @@
                   <p><gi>placeRole</gi> provides a contextual role for a <gi>placeName</gi> within
                         <gi>place</gi>. Places should be identified in <gi>placeName</gi> by the
                      proper noun that commonly designates the place, natural feature, or political
-                     jurisdiction. It is strongly recommended that each place name is accompanied by
+                     jurisdiction. It is strongly recommended that each <gi>placeName</gi> is accompanied by
                      a <gi>placeRole</gi> element in order to describe the nature of the association
                      of the place to the CPF entity.</p>
-                  <p>One of <gi>placeRole</gi>, <gi>placeName</gi>, <gi>geographicCoordinates</gi>,
+                  <p>At least one of <gi>placeRole</gi>, <gi>placeName</gi>, <gi>geographicCoordinates</gi>,
                         <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="attributeusage">
@@ -6873,9 +6873,9 @@
                   <p>Use <gi>rightsDeclaration</gi> to provide structured information about the
                      usage rights of the EAC-CPF instance. <gi>rightsDeclaration</gi> should only be
                      used to reference shared published licenses, such as Creative Commons,
-                     RightsStatements.org, and published locally-defined licenses.</p>
+                     RightsStatements.org, or published locally-defined licenses.</p>
                   <p><gi>reference</gi> must be used to provide a machine-readable reference to a
-                     license statement (for example, a dereferenceable URI). It may also be used to
+                     license statement (for example, a URI). It may also be used to
                      encode the name of the license statement.</p>
                   <p><gi>shortCode</gi> may be used to provide the abbreviated name for the rights
                      statement. The value of <gi>shortCode</gi> should align with the rights
@@ -7488,7 +7488,7 @@
                </div>
                <div type="summary">
                   <p>An optional child element of <gi>relation</gi> used to specify the role of a
-                     related entity towards the CPF entity being described.</p>
+                     related entity with respect to the CPF entity being described.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -7530,7 +7530,7 @@
                </div>
                <div type="description">
                   <p><gi>targetRole</gi> is used with <gi>relation</gi> to specify the role of a
-                     related entity towards the CPF entity being described.</p>
+                     related entity with respect to the CPF entity being described.</p>
                   <p>The <gi>targetRole</gi> element contains a textual description of the relation.
                      It is recommended that the terms in <gi>targetRole</gi> be taken from
                      authorized vocabularies.</p>
@@ -7559,7 +7559,7 @@
                   <p>Term</p>
                </div>
                <div type="summary">
-                  <p>An element used to specify a descriptive term in accordance with authorized
+                  <p>An element used to encode a descriptive term in accordance with authorized
                      vocabularies or local rules.</p>
                </div>
                <div type="mayContain">
@@ -7899,7 +7899,46 @@
                </div>
             </div>
          </div>
-         <div type="attributes">
+         <div type="attributes" xml:id="EACCPFattributes">
+            <div type="Introduction">
+               <head>Introduction</head>
+               <p>Attributes are associated with most of the elements contained in EAC-CPF. Attributes reflect named properties of an element and may take on different values, depending on the context in which they occur. In order to set one or more attributes, an encoder should include the name of the attribute(s) within the same angle brackets as the start tag, together with the value(s) to which the attribute(s) is/are to be set. That is,<lb/>
+                  <code>&lt;[tag] [attribute]="[value]"&gt;</code> 
+                  <lb/>or<lb/>
+                  <code>&lt;[tag] [attribute1]="[value1]" [attribute2]="[value2]"&gt;</code></p>
+                  <p>For example:<lb/>
+                     <!--<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                        <eac:fromDate standardDate="1939">1939</eac:fromDate>
+                     </egXML>
+                     <lb/>or<lb/>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                        <eac:fromDate certainty="approximate" standardDate="1939">c. 1939</eac:fromDate>
+                     </egXML>-->
+                     <code>&lt;fromDate standardDate="1939"&gt;</code>1939<code>&lt;/fromDate&gt;</code>
+                     <lb/>or<lb/>
+                     <code>&lt;fromDate certainty="approximate" standardDate="1939"&gt;</code>1939<code>&lt;/fromDate&gt;</code>
+                  </p>
+                  <p>Most attributes are optional, though some are required. The attribute description indicates whether an attribute is required. This information is also available in the Attributes section of each element description.</p>
+               <p>The value of attributes may be constrained by the schema using specific attribute type values. For example, the <att>id</att> attribute is of type ID, which constrains its value to a string beginning with an alphabetic character. An id value must be unique within the EAC-CPF instance within which it occurs, that is, no other tag in the entire document can have the same id value. EAC-CPF attributes have the following data types (capitalization of data types follows the documentation found in the W3C Recommendation XML Schema Part 2: Datatypes Second Edition (<ref target="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/)</ref>:
+                     <list type="gloss">
+                        <label>anyURI:</label>
+                        <item>A Uniform Resource Identifier. This may be a Uniform Resource Locator (URL) or a Uniform Resource Name (URN). Both relative and absolute URIs are allowed.</item>
+                        <label>ID:</label>
+                        <item>Unique identifier. For example, most elements have an id, so that a unique code can be established for and used to refer to that specific element. The content of the id is of the type called "ID". Parsers verify that the value of attributes of type "ID" are unique. The values of id must begin with an alpha, not numeric, character, either upper or lowercase, and may contain a . (period), : (colon), - (hyphen), or _ (underscore), but not a blank space. See also attributes of type "IDREF."</item>
+                        <label>IDREFS:</label>
+                        <item>List of ID reference values; values must match an existing ID of another element in the document.</item>
+                        <label>NMTOKEN:</label>
+                        <item>A name token, which can consist of any alpha or numeric character, as well as a . (period), : (colon), - (hyphen), or _ (underscore), but not a blank space. A number of attributes in EAC-CPF where a character string from a code list is to be used are of the type "NMTOKEN".</item>
+                        <label>normalizedString:</label>
+                        <item>The most general data type, a string can contain any sequence of characters allowed in XML. Certain characters may have to be represented with an entity reference, for example &amp;lt; for &lt;, and &amp;amp; for &amp;.</item>
+                        <label>token:</label>
+                        <item>A type of string that may not contain carriage return, line feed or tab characters, leading or trailing spaces, and any internal sequence of two or more spaces.</item>
+                     </list>
+                  </p>
+               <p>When the EAC-CPF schema limits attribute values to a few choices, those values are declared in the schema in what is known as a "closed list." For example, the values of <att>audience</att> are limited to either "external" or "internal." Other attributes are associated with semi-closed lists. Such lists include those values believed to be the most useful in many contexts, but other values are allowed. For example, <gi>language</gi> defines several values for <att>languageEncoding</att>, including "otherLanguageEncoding" which may be used to specify values that are not in the semi-closed list for <att>languageEncoding</att>. The definitions for some values in the closed and semi-closed lists appear below.</p>
+               <p>The following is a complete list of all the attributes that occur in EAC-CPF, and some discussion of how they may be used. Further, context-specific information about the use of certain attributes may be found in the "Attribute usage" section of the element descriptions.</p>
+                  
+            </div>
             <div type="attributeDocumentation" xml:id="attr-addressLineType">
                <head>
                   <att>addressLineType</att>
@@ -7973,17 +8012,20 @@
                   <p>Audience</p>
                </div>
                <div type="summary">
-                  <p>An attribute that helps control whether the information contained in the
+                  <p>An optional attribute that helps control whether the information contained in the
                      element should be available to all viewers or only to repository staff.
-                     Available as global attribute for all elements. The attribute can be set to
+                     </p>
+               </div>
+               <div type="description">
+                  <p>Available as global attribute for all elements. The attribute can be set to
                      "external" in <gi>cpfDescription</gi> to allow access to all the information
                      about the entity being described, but specific elements within
-                        <gi>cpfDescription</gi> can be set to "internal" to reserve that information
+                     <gi>cpfDescription</gi> can also be set to "internal" to reserve that information
                      for repository access only. This feature is intended to assist application
                      software in restricting access to particular information by explicitly
                      identifying data that is potentially sensitive or may otherwise have a limited
                      audience. Special software capability may be needed, however, to prevent the
-                     display or export of an element marked "internal" when a whole finding aid is
+                     display or export of an element marked "internal" when a whole EAC-CPF instance is
                      displayed in a networked environment.</p>
                </div>
                <div type="values">
@@ -8003,20 +8045,50 @@
                   <p>Base</p>
                </div>
                <div type="summary">
-                  <p>Used to specify a base URI that is different than the base URI of the EAC-CPF
-                     instance. This allows any relative URIs provided on attributes of a specific
-                     element or its descendants to be resolved using the URI provided in that
-                     element's <att>base</att>. Available on <gi>alternativeSet</gi>,
-                        <gi>control</gi>, <gi>cpfDescription</gi>, <gi>description</gi>,
-                        <gi>eac</gi>, <gi>identity</gi>, <gi>multipleIdentities</gi>,
-                        <gi>relations</gi>, and <gi>sources</gi>.</p>
+                  <p>Optional attribute used to specify a base URI that is different to the base URI of the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
+                  <p>Using the optional attribute <att>base</att> allows any relative URIs provided on attributes of a specific element, or its descendants, to be resolved using the URI provided in that element's or its parent element's <att>base</att>.</p>
+                  <p>Available on <gi>alternativeSet</gi>,
+                     <gi>control</gi>, <gi>cpfDescription</gi>, <gi>description</gi>,
+                     <gi>eac</gi>, <gi>identity</gi>, <gi>multipleIdentities</gi>,
+                     <gi>relations</gi>, and <gi>sources</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:description base="https://d-nb.info/gnd/">
+                        <eac:occupations>
+                           <eac:occupation vocabularySource="GND" valueURI="4393865-6">
+                              <eac:term languageOfElement="de">Soziologin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4629643-8">
+                              <eac:term languageOfElement="de">Politologin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4174285-0">
+                              <eac:term languageOfElement="de">Philosophin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4333423-4">
+                              <eac:term languageOfElement="de">Historikerin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4053311-6">
+                              <eac:term languageOfElement="de">Schriftstellerin</eac:term>
+                           </eac:occupation>
+                        </eac:occupations>
+                        <eac:places>
+                           <eac:place vocabularySource="GND" valueURI="4099668-2">
+                              <eac:placeName>Linden (Hannover)</eac:placeName>
+                           </eac:place>
+                           <eac:place vocabularySource="GND" valueURI="4042011-5">
+                              <eac:placeName>New York, NY</eac:placeName>
+                           </eac:place>
+                           <eac:place vocabularySource="GND" valueURI="4537442-9">
+                              <eac:placeName>Tegna</eac:placeName>
+                           </eac:place>
+                        </eac:places>
+                     </eac:description>
                   </egXML>
                </div>
             </div>
@@ -8029,8 +8101,12 @@
                </div>
                <div type="summary">
                   <p>System of reckoning time, such as Gregorian calendar or Julian calendar.
-                     Suggested values include, but are not limited to, "gregorian" and "julian".
-                     Available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
+                     </p>
+               </div>
+               <div type="description">
+                  <p>Suggested values include, but are not limited to, "gregorian" and "julian".
+                     Available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.
+                  </p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8054,8 +8130,13 @@
                   <p>Certainty</p>
                </div>
                <div type="summary">
-                  <p>The level of confidence for the information given in <gi>date</gi>,
-                        <gi>fromDate</gi>, or <gi>toDate</gi>, e.g., approximate or circa.</p>
+                  <p>The level of confidence for a date.</p>
+               </div>
+               <div type="description">
+                  <p>
+                     The optional attribute <att>certainty</att> provides level of confidence for the information given in <gi>date</gi>,
+                     <gi>fromDate</gi>, or <gi>toDate</gi>, e.g., approximate or circa.
+                  </p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8078,7 +8159,7 @@
                </div>
                <div type="description">
                   <p>Use one of the set values to specify the type of contact line encoded in
-                        <gi>contactLine</gi>. Use the attribute <att>localType</att> in order to
+                        <gi>contactLine</gi>. Use the attribute <att>localType</att> to
                      encode a local type of contact line.</p>
                </div>
                <div type="values">
@@ -8103,12 +8184,16 @@
                </div>
                <div type="summary">
                   <p>Use <att>conventionDeclarationReference</att> to provide a direct link to a
-                        <gi>conventionDeclaration</gi> element within <gi>control</gi> from any
-                     non-empty elements in the EAC-CPF instance. The attribute can be used to link
-                     to a convention or rule that prescribes a method for converting one script into
-                     another script (transliteration). It also can be used to link to a national,
-                     international or other rule that governs the construction of an EAC-CPF
-                     name.</p>
+                        <gi>conventionDeclaration</gi> element within <gi>control</gi>.
+                  </p>  
+               </div>
+               <div type="description">
+                  <p>
+                     The attribute can be used to link to a convention or rule that prescribes a method for converting one script into another script (transliteration). It also can be used to link to a national, international, or other rule that governs the construction of an EAC-CPF name.
+                  </p>
+                  <p>
+                     This optional attribute is available in all elements in the identity area (except <gi>entityType</gi>), in the description area and in relations. 
+                  </p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
@@ -8137,6 +8222,9 @@
                   <p>Coordinate System</p>
                </div>
                <div type="summary">
+                  <p>A code for a system used to express geographic coordinates.</p>
+               </div>
+               <div type="description">
                   <p>A code for a system used to express geographic coordinates, for example WGS84,
                      (World Geodetic System), OSGB36 (Ordnance Survey Great Britain), or ED50
                      (European Datum). Required in <gi>geographicCoordinates</gi>.</p>
@@ -8161,7 +8249,10 @@
                   <p>Country Code</p>
                </div>
                <div type="summary">
-                  <p>A unique code representing a country. Content of the attribute should be a code
+                  <p>A unique code representing a country.</p>
+               </div>
+               <div type="description">      
+                     <p>Content of the optional attribute should be a code
                      taken from ISO 3166-1 Codes for the Representation of Names of Countries and
                      their Subdivisions, column A2, or another controlled list, as specified in the
                         <att>countryEncoding</att> attribute in <gi>control</gi>. Available in
@@ -8172,10 +8263,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:maintenanceagency countrycode="IE">
-                        <eac:agencycode>IE-NAI</eac:agencycode>
-                        <eac:agencyname>National Archives of Ireland</eac:agencyname>
-                     </eac:maintenanceagency>
+                     <eac:maintenanceAgency countrycode="IE">
+                        <eac:agencyCode>IE-NAI</eac:agencyCode>
+                        <eac:agencyName>National Archives of Ireland</eac:agencyName>
+                     </eac:maintenanceAgency>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
                      <eac:place>
@@ -8194,10 +8285,13 @@
                   <p>Country Encoding</p>
                </div>
                <div type="summary">
+                  <p>The authoritative source or rules for values supplied in <att>countryCode</att>.</p>
+               </div>
+               <div type="description">
                   <p>The authoritative source or rules for values supplied in <att>countryCode</att>
                      in <gi>maintenanceAgency</gi> and <gi>placeName</gi>. If the value
                      "otherCountryEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. Available only in <gi>control</gi>.</p>
+                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso3166-1, otherCountryEncoding</p>
@@ -8219,9 +8313,13 @@
                </div>
                <div type="summary">
                   <p>The authoritative source or rules for values provided in
-                        <att>standardDate</att> in <gi>date</gi>, <gi>fromDate</gi> and
-                        <gi>toDate</gi>. If the value "otherDateEncoding" is selected an alternate
-                     code list should be specified in <gi>conventionDeclaration</gi>. Available only
+                        <att>standardDate</att>.</p>
+               </div>
+               <div type="description">
+                  <p>The authoritative source or rules for values provided in
+                     <att>standardDate</att> in <gi>date</gi>, <gi>fromDate</gi> and
+                     <gi>toDate</gi>. If the value "otherDateEncoding" is selected an alternate
+                     code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only
                      in <gi>control</gi>.</p>
                </div>
                <div type="values">
@@ -8243,8 +8341,11 @@
                   <p>Level of Detail</p>
                </div>
                <div type="summary">
+                  <p>Provides information about the level of detail of the entity’s description within the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
                   <p>An optional attribute within <gi>control</gi>, used to provide information
-                     about the level of detail of the entity's description, from a fixed set of
+                     about the level of detail in accordance with relevant description guidelines and/or rules of the entity's description, from a fixed set of
                      values. </p>
                </div>
                <div type="values">
@@ -8266,9 +8367,12 @@
                   <p>Era</p>
                </div>
                <div type="summary">
+                  <p>Period during which years are numbered and dates reckoned.</p>
+               </div>
+               <div type="description">
                   <p>Period during which years are numbered and dates reckoned, such as CE (Common
                      Era) or BCE (Before Common Era). Suggested values include "ce" and "bce".
-                     Available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
+                     This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8289,13 +8393,16 @@
                   <att>href</att>
                </head>
                <div type="fullName">
-                  <p>hypertext Reference</p>
+                  <p>Hypertext Reference</p>
                </div>
                <div type="summary">
-                  <p>The address for a remote resource. <att>href</att> takes the form of a Uniform
+                  <p>The address for a remote resource. </p>
+               </div>
+               <div type="description">
+                  <p>The optional <att>href</att> attribute takes the form of a Uniform
                      Resource Identifier (URI). Available in <gi>contactLine</gi>,
-                        <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi>, and
-                        <gi>source</gi>.</p>
+                     <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi> and
+                     <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -8316,10 +8423,16 @@
                   <p>ID</p>
                </div>
                <div type="summary">
+                  <p>A unique identifier to name the element.</p>
+               </div>
+               <div type="description">
                   <p>An identifier that must be unique within the current document and is used to
                      name the element so that it can be referred to, or referenced from, somewhere
                      else. This facilitates building links between the element and other
                      resources.</p>
+                  <p>
+                     Use <att>target</att>, <att>conventionDeclarationReference</att>, <att>localTypeDeclarationReference</att>, <att>maintenanceEventReference</att>, or <att>sourceReference</att> to link to an <att>id</att> attribute within the EAC-CPF instance.
+                  </p>
                </div>
                <div type="datatype">
                   <p>ID</p>
@@ -8377,7 +8490,11 @@
                </div>
                <div type="summary">
                   <p>The code for the language used in the EAC-CPF instance or in the creative work
-                     of the CPF entity being described. Content of the attribute should be a code
+                     of the CPF entity being described.
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Content of the attribute should be a code
                      taken from ISO 639-1, ISO 639-2b, ISO 639-3, or another controlled list, as
                      specified in the <att>languageEncoding</att> attribute in <gi>control</gi>.
                      Required in <gi>languageDeclaration</gi> and optionally available in
@@ -8414,11 +8531,14 @@
                <div type="summary">
                   <p>Specifies which standard list of codes is used to identify the language of the
                      EAC-CPF instance and languages represented in the creative work of the CPF
-                     entity being described. The codes themselves are specified in
-                        <att>languageCode</att> in <gi>language</gi> and <gi>languageOfElement</gi>
+                     entity being described. 
+                  </p>
+               </div>
+               <div type="description">
+                  <p>The codes themselves are specified in <att>languageCode</att> in <gi>language</gi> and <att>languageOfElement</att>
                      in all non-empty elements. Available in <gi>control</gi>. If the value
                      "otherLanguageEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>.</p>
+                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>ietf-bcp-47, iso639-1, iso639-2b, iso639-3, otherLanguageEncoding</p>
@@ -8439,11 +8559,14 @@
                   <p>Language of Element</p>
                </div>
                <div type="summary">
-                  <p>Indicates the language of the content of an element. Content of the attribute
-                     should be a code taken from ietf-bcp-47, ISO 639-1, ISO 639-2b, ISO 639-3, or another
+                  <p>Indicates the language of the content of an element. 
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Content of the attribute should be a code taken from ietf-bcp-47, ISO 639-1, ISO 639-2b, ISO 639-3, or another
                      controlled list, as specified in the <att>languageEncoding</att> attribute in
-                        <gi>control</gi>. May be used consistently in a multi-lingual entity
-                     description to specify which elements are written in which language. Available
+                        <gi>control</gi>. May be used consistently in a multi-lingual EAC-CPF instance 
+                     to specify which elements are written in which language. Optionally available
                      on all non-empty elements.</p>
                </div>
                <div type="datatype">
@@ -8464,15 +8587,21 @@
                </div>
                <div type="summary">
                   <p>A URI that characterizes the nature of the remote resource to which a linking
-                     element refers. Available in <gi>contactLine</gi>, <gi>reference</gi>,
-                        <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
+                     element refers. </p>
+               </div>
+               <div type="description">
+                  <p>A URI that characterizes the nature of the remote resource to which a linking
+                     element refers. Optionally available in <gi>contactLine</gi>, <gi>reference</gi>,
+                     <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf" linkRole="document/pdf">DELIBERATION N° 17-1166, 15
+                        DECEMBRE 2017</eac:reference>
+                     
                   </egXML>
                </div>
             </div>
@@ -8484,9 +8613,12 @@
                   <p>Link Title</p>
                </div>
                <div type="summary">
+                  <p>Viewable caption of a link text.</p>
+               </div>
+               <div type="description">
                   <p>Information that serves as a viewable caption which explains to users the part
-                     that a resource plays in a link. May be useful for meeting accessibility
-                     requirements when rendering content in a web browser. Available in
+                     that a remote resource plays in a link. May be useful for meeting accessibility
+                     requirements when rendering content in a web browser. Optionally available next to <att>href</att> in
                         <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>,
                         <gi>setComponent</gi>, and <gi>source</gi>.</p>
                </div>
@@ -8509,9 +8641,12 @@
                   <p>List Type</p>
                </div>
                <div type="summary">
-                  <p>Specifies the type of list: an ordered list is a numbered or lettered list; an
+                  <p>Specifies the type of list.</p>
+               </div>
+               <div type="description">
+                  <p>An ordered list is a numbered or lettered list; an
                      unordered list is one in which sequence is not critical (e.g., a bulleted
-                     list). Available only on <gi>list</gi>.</p>
+                     list). Optionally available only on <gi>list</gi>.</p>
                </div>
                <div type="values">
                   <p>ordered, unordered</p>
@@ -8581,8 +8716,11 @@
                   <p>Use <att>localTypeDeclarationReference</att> to provide a direct link to a
                         <gi>localTypeDeclaration</gi> element within <gi>control</gi> from another
                      element using <att>localType</att> within the EAC-CPF instance.
-                        <att>localTypeDeclarationReference</att> should always be used when
-                        <att>localType</att> is used, in order to link to the local type
+                  </p>
+               </div>
+               <div type="description">
+                  <p><att>localTypeDeclarationReference</att> should always be used when 
+                     <att>localType</att> is used, in order to link to the local type
                      declaration.</p>
                </div>
                <div type="datatype">
@@ -8606,16 +8744,27 @@
                </div>
                <div type="summary">
                   <p>Use <att>maintenanceEventReference</att> to provide a direct link to a
-                        <gi>maintenanceEvent</gi> element within <gi>maintenanceHistory</gi> from
-                     any non-empty element in the EAC-CPF instance. Thus any detailed information
-                     about the described entity can be referenced with a maintenance event.</p>
+                        <gi>maintenanceEvent</gi> element within <gi>maintenanceHistory</gi></p>
+               </div>
+               <div type="description">
+                  <p>The attribute can be used to link to a maintenance event in order to verify any assertion added to the entity’s description.</p> 
+                     <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations. 
+                  </p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:relation sourceReference="source1" maintenanceEventReference="me2">
+                        <eac:targetEntity targetType="corporateBody"  
+                           valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" 
+                           vocabularySourceURI="https://snaccooperative.org">
+                           <eac:part>Princeton University</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType valueURI="https://www.wikidata.org/wiki/Property:P69" 
+                           vocabularySourceURI="https://www.wikidata.org/">educated at</eac:relationType>
+                     </eac:relation>
                   </egXML>
                </div>
             </div>
@@ -8718,10 +8867,13 @@
                </div>
                <div type="summary">
                   <p>A standard numerical form of an approximate date for which a latest possible
-                     date is known. Available in <gi>date</gi>, <gi>fromDate</gi>, and
-                        <gi>toDate</gi>. It is recommended that <att>notAfter</att> values follow
+                     date is known.</p>
+               </div>
+               <div type="description">
+                  <p>Optionally available in <gi>date</gi>, <gi>fromDate</gi>, and
+                     <gi>toDate</gi>. It is recommended that <att>notAfter</att> values follow
                      ISO 8601 or another standard date format as specified in
-                        <att>dateEncoding</att>.</p>
+                     <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -8744,10 +8896,13 @@
                </div>
                <div type="summary">
                   <p>A standard numerical form of an approximate date for which an earliest possible
-                     date is known. Available in <gi>date</gi>, <gi>fromDate</gi>, and
-                        <gi>toDate</gi>. It is recommended that <att>notBefore</att> values follow
+                     date is known.</p>
+               </div>
+               <div type="description">
+                  <p>Optionally available in <gi>date</gi>, <gi>fromDate</gi>, and
+                     <gi>toDate</gi>. It is recommended that <att>notBefore</att> values follow
                      ISO 8601 or another standard date format as specified in
-                        <att>dateEncoding</att>.</p>
+                     <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -8769,9 +8924,13 @@
                   <p>Preferred Form</p>
                </div>
                <div type="summary">
+                  <p>Attribute that specifies whether or not a name provides the preferred form of the entity's name for display purposes</p>
+               </div>
+               <div type="description">
                   <p>Attribute that specifies whether or not a <gi>nameEntry</gi> provides the
                      preferred form of the name of the EAC-CPF entity for display purposes in a
-                     given context.</p>
+                     given context. Use the value "true" if the name entry is preferred for any display purposed.</p>
+                  <p>This optional attribute is only available in <gi>nameEntry</gi>.</p>
                </div>
                <div type="values">
                   <p>false, true</p>
@@ -8800,8 +8959,12 @@
                   <p>Publication Status</p>
                </div>
                <div type="summary">
-                  <p>The current publication status of the EAC-CPF instance. Available only in
-                        <gi>control</gi>.</p>
+                  <p>The current publication status of the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
+                  <p>The publication status may occur on <gi>control</gi> to indicate the current publication status of the EAC-CPF instance, whether in process, approved or final. As an EAC-CPF instance is modified or other events happen to it (as recorded in the <gi>maintenanceHistory</gi> element), the publication status should also be updated. </p>
+                     <p>A newly created EAC-CPF instance will usually start with a publication status of "inProcess". This partial and preliminary status will be applicable as long as the author or the creating agency is working on the document. Depending on the context, the document might first reach a pre-publication level, awaiting approval e.g. by a higher level manager or an authorizing agency. Once such approval has been given, the status "approved" could be assigned for internal purposes while the EAC-CPF instance is not publicly available yet. When the EAC-CPF instance has been published on the institution’s own website or via the authorizing agency, the status "published" can be assigned.
+                  </p>
                </div>
                <div type="values">
                   <p>approved, inProcess, published</p>
@@ -8821,10 +8984,13 @@
                   <p>Repository Encoding</p>
                </div>
                <div type="summary">
+                  <p>The authoritative source or rules for values supplied in <gi>agencyCode</gi>.</p>
+               </div>
+               <div type="description">
                   <p>The authoritative source or rules for values supplied in <gi>agencyCode</gi>.
                      If the value "otherRepositoryEncoding" is selected an alternate code list
-                     should be specified in <gi>conventionDeclaration</gi>. Available only in
-                        <gi>control</gi>.</p>
+                     should be specified in <gi>conventionDeclaration</gi>. Optionally available only in
+                     <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso15511, otherRepositoryEncoding</p>
@@ -8846,10 +9012,12 @@
                </div>
                <div type="summary">
                   <p>The code for the writing system, or script, used in the EAC-CPF instance or in
-                     which the CPF entity being described was creative or productive. Content of the
-                     attribute should be a code taken from ISO 15924, or another controlled list, as
+                     which the CPF entity being described was creative or productive.</p>
+                  </div>
+               <div type="description">
+                  <p>Content of the attribute should be a code taken from ISO 15924, or another controlled list, as
                      specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>.
-                     Available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
+                     Optionally available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8881,9 +9049,13 @@
                </div>
                <div type="summary">
                   <p>The authoritative source or rules for values supplied in
-                        <att>scriptOfElement</att> and <att>scriptCode</att>. If the value
+                        <att>scriptOfElement</att> and <att>scriptCode</att>.</p>
+               </div>
+               <div type="description">
+                  <p>The authoritative source or rules for values supplied in
+                     <att>scriptOfElement</att> and <att>scriptCode</att>. If the value
                      "otherScriptEncoding" is selected, an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. Available only in <gi>control</gi>.</p>
+                     in <gi>conventionDeclaration</gi>. Optionally available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso15924, otherScriptEncoding</p>
@@ -8905,11 +9077,13 @@
                </div>
                <div type="summary">
                   <p>Indicates the writing script of the content of an element (e.g., Cyrillic,
-                     Katakana). Content should be taken from ISO 15924 Codes for the Representation
-                     of Names of Scripts, or another controlled list, as specified in the
+                     Katakana).</p>
+               </div>
+               <div type="description">
+                     <p>Content should be taken from ISO 15924, or another controlled list, as specified in the
                         <att>scriptEncoding</att> attribute in <gi>control</gi>. May be used
-                     consistently in a multi-lingual finding aid to specify which elements are
-                     written in which script. Available on all non-empty elements.</p>
+                     consistently in a multi-lingual EAC-CPF instance to specify which elements are
+                     written in which script. Optionally available on all non-empty elements.</p>
                </div>
                <div type="datatype">
                   <p>NMTOKEN</p>
@@ -8932,15 +9106,27 @@
                <div type="summary">
                   <p>Use <att>sourceReference</att> to provide a direct link to a <gi>source</gi>
                      element within <gi>sources</gi> in <gi>control</gi> from an element within the
-                     EAC-CPF instance that uses the source. Thus any detailed information about the
-                     described entity can be referenced with a source.</p>
+                     EAC-CPF instance that uses the source. 
+                  </p>
+               </div>
+               <div type="description">
+                  <p>The attribute can be used to reference any detailed information about the described entity with a source.</p>
+                  <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations.</p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+                     <eac:relation sourceReference="source1" maintenanceEventReference="me2">
+                        <eac:targetEntity targetType="corporateBody"  
+                           valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" 
+                           vocabularySourceURI="https://snaccooperative.org">
+                           <eac:part>Princeton University</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType valueURI="https://www.wikidata.org/wiki/Property:P69" 
+                           vocabularySourceURI="https://www.wikidata.org/">educated at</eac:relationType>
+                     </eac:relation>
                   </egXML>
                </div>
             </div>
@@ -8952,6 +9138,9 @@
                   <p>Standard Date</p>
                </div>
                <div type="summary">
+                  <p>The standardized form of date.</p>
+               </div>
+               <div type="description">
                   <p>The standardized form of date expressed in <gi>date</gi>, <gi>fromDate</gi>,
                      and <gi>toDate</gi>. It is recommended that <att>standardDate</att> values
                      follow ISO 8601, for example, 2011-07-22, 1963, or 1912-11, or another standard
@@ -8977,9 +9166,12 @@
                   <p>Standard Date and Time</p>
                </div>
                <div type="summary">
+                  <p>Standardized form of a date, or date and time in <gi>eventDateTime</gi>.</p>
+               </div>
+               <div type="description">
                   <p>An ISO 8601-compliant form of the date, or date and time, of a specific
                      maintenance event expressed in <gi>eventDateTime</gi>. For example, 2021-12-31,
-                     2021, 2021-12, 2021-12-31T23:59:59. Available only in
+                     2021, 2021-12, 2021-12-31T23:59:59. Optionally available only in
                      <gi>eventDateTime</gi>.</p>
                </div>
                <div type="datatype">
@@ -9006,10 +9198,13 @@
                </div>
                <div type="summary">
                   <p>Attribute that provides controlled terminology detailing the status of
-                     elements. Available in <gi>agencyCode</gi>, <gi>fromDate</gi>,
-                        <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>, and <gi>toDate</gi>. The terms
-                     available for <att>status</att> are defined in closed lists that vary by
-                     element.</p>
+                     elements.</p> 
+               </div>
+               <div type="description">
+                  <p><att>status</att> provides controlled terminology detailing the status of specific
+                     elements. The terms available for <att>status</att> are defined in closed lists that vary by
+                     element. Optionally available only in <gi>agencyCode</gi>, <gi>fromDate</gi>,
+                        <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>, and <gi>toDate</gi>. </p>
                </div>
                <div type="values">
                   <p>Values in <gi>agencyCode</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>:
@@ -9091,8 +9286,11 @@
                   <p>Target</p>
                </div>
                <div type="summary">
-                  <p>A pointer to the ID of another element. Used to create internal links within an
-                     XML instance. Available in all elements except <gi>eac</gi>.</p>
+                  <p>A pointer to the ID of another element. </p>
+               </div>
+               <div type="description">
+                     <p>Used to create internal links within an
+                     XML instance. Optionally available in all elements except <gi>eac</gi>.</p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
@@ -9122,6 +9320,9 @@
                   <p>Target Type</p>
                </div>
                <div type="summary">
+                  <p>Identifies the type of entity that is relate to the CPF entity being described.</p>
+               </div>
+               <div type="description">
                   <p>Required attribute within <gi>targetEntity</gi> which identifies the type of
                      entity that is related to the CPF entity being described. Use the value "agent"
                      only for migration from EAC-CPF 2010 to EAC 2.0.</p>
@@ -9152,6 +9353,9 @@
                   <p>Unit</p>
                </div>
                <div type="summary">
+                  <p>Defines the format or unit that is specified in <gi>citedRange</gi>.</p>
+               </div>
+               <div type="description">
                   <p>Use <att>unit</att> to document the format or unit that is specified in
                         <gi>citedRange</gi>, for example page number ("pageNumber") or volume number
                      ("volumeNumber").</p>
@@ -9173,6 +9377,9 @@
                   <p>Value</p>
                </div>
                <div type="summary">
+                  <p>Defines the type of entity described in the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
                   <p>Required attribute within the <gi>entityType</gi> element that defines the type
                      of entity described in the EAC-CPF instance. </p>
                </div>
@@ -9193,8 +9400,11 @@
                   <p>Value URI</p>
                </div>
                <div type="summary">
-                  <p>An optional attribute for including a URI identifying the resource to be used
-                     as the element's value.</p>
+                  <p>An attribute for including a URI identifying the resource to be used as the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional <att>valueURI</att> attribute to provide the URI identifying the authority resource to be used as the element's content. Available in all elements that can contain any type of entity. 
+                  </p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
@@ -9216,8 +9426,10 @@
                   <p>Vocabulary Source</p>
                </div>
                <div type="summary">
-                  <p>An optional attribute for identifying a vocabulary that is the source of the
-                     element's value.</p>
+                  <p>An attribute for identifying a vocabulary that is the source of the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional attribute to provide a name or title of the authority or vocabulary source of the element’s content given in <att>valueURI</att>. Available in all elements that can contain any type of entity. </p>
                </div>
                <div type="datatype">
                   <p>token</p>
@@ -9240,6 +9452,10 @@
                <div type="summary">
                   <p>An optional attribute for including a URI identifying the vocabulary source for
                      the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional attribute to provide the URI of the authority or vocabulary source given in @vocabularySource. Available in all elements that can contain any type of entity.
+                  </p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
