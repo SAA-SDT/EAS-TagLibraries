@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- test -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
    xmlns:exml="http://workaround for xml namespace restriction/namespace"
    xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:eac="http://archivists.org/ns/eac/v2">
@@ -6896,7 +6897,8 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:rightsDeclaration>
-                        <eac:reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0 Universell</eac:reference>
+                        <eac:reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</eac:reference>
+                        <eac:shortCode>CC0 1.0</eac:shortCode>
                      </eac:rightsDeclaration>
                   </egXML>
                </div>
