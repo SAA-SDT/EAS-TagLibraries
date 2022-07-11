@@ -5811,7 +5811,12 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                 
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <otherRecordId localType="PARES" localTypeDeclarationReference="lTD1">140149</otherRecordId>	
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <otherRecordId localType="original">AUBT-ISAAR-C-002</otherRecordId>	
+                  </egXML>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-p">
@@ -6373,6 +6378,12 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:recordId>F10219</eac:recordId>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:recordId>ES-28079-PARES-AUT-140149</eac:recordId>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:recordId>DE-1981_EAC-CPF_C002</eac:recordId>
                   </egXML>
                </div>
             </div>
