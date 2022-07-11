@@ -5812,10 +5812,10 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <otherRecordId localType="PARES" localTypeDeclarationReference="lTD1">140149</otherRecordId>	
+                     <eac:otherRecordId localType="PARES" localTypeDeclarationReference="lTD1">140149</eac:otherRecordId>	
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <otherRecordId localType="original">AUBT-ISAAR-C-002</otherRecordId>	
+                     <eac:otherRecordId localType="original">AUBT-ISAAR-C-002</eac:otherRecordId>	
                   </egXML>
                </div>
             </div>
