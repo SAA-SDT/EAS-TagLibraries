@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
         xmlns:fo="http://www.w3.org/1999/XSL/Format" 
         xmlns:eac-cpf="urn:isbn:1-931666-33-4"
+        xmlns:eac="http://archivists.org/ns/eac/v2"
         xmlns:ead="urn:isbn:1-931666-22-9"
         xmlns:ead3="http://ead3.archivists.org/schema/"
         xmlns:premis="http://www.loc.gov/premis/v3"
@@ -13,7 +14,7 @@
         xmlns:mods="http://www.loc.gov/mods/v3" xmlns:text="http://www.tei.org/ns/1.0"
         xmlns:example="example" xmlns:term="term" xmlns:exslt="http://exslt.org/common"
         xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-        exclude-result-prefixes="xs xlink eac-cpf ex eg exml example ead ead3 mods text term dc oai_dc fo premis tei"
+        exclude-result-prefixes="xs xlink eac-cpf eac ex eg exml example ead ead3 mods text term dc oai_dc fo premis tei"
         xpath-default-namespace="http://www.w3.org/1999/xhtml" extension-element-prefixes="exslt"
         version="2.0">
 
@@ -25,8 +26,8 @@
 
         <!-- variables passed from the build script to the XSLT -->
         <xsl:param name="SAA" as="xs:string" required="yes"/>
-
-        <xsl:variable name="currentLanguage">en</xsl:variable> <!-- xml:lang from taglibrary -->       
+        <xsl:param name="currentLanguage" as="xs:string" required="yes"/>
+     
         <xsl:variable name="toctype">short</xsl:variable><!-- Used for the look of the toc Values: long | short -->
         <xsl:param name="spaceCharacter"> </xsl:param> <!-- For egxml formatting -->       
         <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
@@ -232,7 +233,7 @@
                                         </div>
                                         <div class="toc2">
                                             <table>
-                                                    <xsl:for-each-group select="tei:div[@type='elementDocumentation']" group-ending-with="tei:div[@type='elementDocumentation'][position() mod 7 = 0]">
+                                                    <xsl:for-each-group select="tei:div[@type='elementDocumentation']" group-by="position() mod 20">
                                                         <tr>
                                                             <xsl:for-each select="current-group()">
                                                                 <td>
@@ -258,7 +259,7 @@
                                         </div>
                                         <div class="toc2">
                                             <table>
-                                                    <xsl:for-each-group select="tei:div[@type='attributeDocumentation']" group-ending-with="tei:div[@type='attributeDocumentation'][position() mod 7 = 0]">
+                                                    <xsl:for-each-group select="tei:div[@type='attributeDocumentation']" group-by="position() mod 15">
                                                         <tr>
                                                             <xsl:for-each select="current-group()">
                                                                 <td>
@@ -283,22 +284,17 @@
                                                 </a>
                                         </div>
                                         <div class="toc2">
+                                                <table>
                                                 <xsl:for-each select="tei:div/tei:head">
-                                                  <span>
-                                                          <a href="#{translate(translate(concat('appendix-' , .), ':',''), ' ','')}">
-                                                                  <xsl:value-of select="."/>
-                                                          </a>
-                                                  <xsl:text> &#xA0; </xsl:text>
-                                                  </span>
-                                                  <xsl:for-each select="parent::tei:div">
-                                                  <xsl:variable name="count">
-                                                  <xsl:number/>
-                                                  </xsl:variable>
-                                                  <xsl:if test="($count mod 6) = 0">
-                                                  <br/>
-                                                  </xsl:if>
-                                                  </xsl:for-each>
+                                                        <tr>
+                                                                <td>
+                                                                        <a href="#{translate(translate(concat('appendix-' , .), ':',''), ' ','')}">
+                                                                                <xsl:value-of select="."/>
+                                                                        </a>
+                                                                </td>
+                                                        </tr>
                                                 </xsl:for-each>
+                                                </table>
                                         </div>
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -1121,7 +1117,7 @@
         </xsl:template>
 
         <!-- In this template all occuring other namespaceprefixis needs to be added -->
-        <xsl:template match="eac-cpf:* | example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
+        <xsl:template match="eac-cpf:* |eac:* |example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
                 <div class="innerExample">
                         <xsl:text>&lt;</xsl:text>
                         <xsl:value-of select="local-name()"/>

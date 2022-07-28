@@ -1,0 +1,636 @@
+# Contributors.txt
+# -*- encoding: UTF-8 -*-
+
+*** Kurinto Font Folio v2.197 [Full] - Contributors
+
+This information should be distributed along with the Kurinto fonts as well as
+distributions of any derivative works. If you modify this font software, please
+include this file and augment the information as appropriate.
+
+** Source Fonts
+
+These source fonts are incorporated in Kurinto v2.197. The version and
+last-modified dates of each font in GMT is shown in yyyy-mm-dd format:
+
+  Abydos (v1.96 - 2017-12-17)
+  
+  Abyssinica SIL (v1.5 - 2013-12-13)
+  
+  Aegean (v9.81 - 2018-01-08)
+  
+  Akkadian (v7.17 - 2017-01-23)
+  
+  Aksara Bali Galang (v1.0 - 2012-11-12)
+  
+  Amiri (v0.112 - 1970-01-01)
+  
+  Amiri Quran Colored (v0.112 - 1970-01-01)
+  
+  Analecta (v5.17 - 2017-01-23)
+  
+  Anatolian (v5.67 - 2018-01-09)
+  
+  Annapurna SIL (v1.203 - 2017-12-08)
+  
+  Arimo (v1.32 - 2015-11-04)
+  
+  Bravura Text (v1.277 - 2019-01-29)
+  
+  Caladea (v1.001 - 2013-02-11)
+  
+  Cardo (v1.045 - 2011-04-20)
+  
+  Carlito (v1.103 - 2013-08-12)
+  
+  Charis SIL (v5.0 - 2014-10-24)
+  
+  Chomsky (v1.33 - 2020-06-19)
+  
+  Constructium (v1.13 - 2019-12-08)
+  
+  Courier Prime (v1.203 - 2018-10-31)
+  
+  Courier Prime (v1.203 - 2020-05-23)
+  
+  Cousine (v1.22 - 2015-09-23)
+  
+  Creative Commons (v1.0 - 2020-05-28)
+  
+  CyfiCG (v2.001 - 2020-07-09)
+  
+  Dai Banna SIL (v2.2 - 2011-02-21)
+  
+  DrawCG 2816x2816 (v1.0 - 2020-07-16)
+  
+  EB Garamond (v1.0 - 2017-10-29)
+  
+  Egypt Format Controls (v1.001 - 2020-03-29)
+  
+  Fairfax HD (v2020.05 - 2020-05-08)
+  
+  Fira Sans (v4.301 - 2018-03-20)
+  
+  Font Awesome 5 Brands Regular (v329.729 - 2019-03-21)
+  
+  Font Awesome 5 Free Regular (v329.729 - 2019-03-21)
+  
+  Font Awesome 5 Free Solid (v329.729 - 2019-03-21)
+  
+  Gelasio (v1.006 - 2019-11-18)
+  
+  Gentium Plus (v5.0 - 2014-10-25)
+  
+  Hack (v3.003 - 2018-03-06)
+  
+  HanaMinA <花園明朝A> (v1.0 - 2017-08-31)
+  
+  HanaMinB <花園明朝B> (v1.0 - 2017-08-30)
+  
+  Hind Siliguri (v1.001 - 2017-05-05)
+  
+  Junicode (v1.002 - 2020-07-24)
+  
+  Jura (v5.101 - 2017-03-07)
+  
+  KCurvCG (v1.0 - 2020-06-16)
+  
+  Kelvinch (v3.4 - 2020-06-19)
+  
+  Khmer Busra (v7.1 - 2014-09-01)
+  
+  Kurinto Arte Core (v2.196 - 2020-07-25)
+  
+  Kurinto Book Core (v2.196 - 2020-07-25)
+  
+  Kurinto Curv Core (v2.196 - 2020-07-25)
+  
+  Kurinto News Core (v2.196 - 2020-07-25)
+  
+  Kurinto Roma Core (v2.196 - 2020-07-25)
+  
+  Kurinto Sans Core (v2.196 - 2020-07-25)
+  
+  Kurinto Seri Core (v2.196 - 2020-07-25)
+  
+  Kurinto Text Core (v2.196 - 2020-07-25)
+  
+  Kurinto Type Core (v2.196 - 2020-07-25)
+  
+  Libertinus Sans (v6.11 - 2020-06-16)
+  
+  M+ 1mn (v1.063 - 2017-10-25)
+  
+  MPH 2B Damase <MPH 2B 大媽賊, MPH 2B ダマセ, MPH 2B 다마세, MPH 2B 大妈贼> (v1.0 -
+  2005-10-18)
+  
+  MathSymCG Multi1229 (v2.001 - 2020-05-11)
+  
+  MathSymCG Sans (v2.001 - 2020-06-12)
+  
+  MathSymCG Serif (v10.23 - 2020-05-08)
+  
+  Nilus (v6.54 - 2018-01-09)
+  
+  Nishiki-teki (v3.0 - 2019-08-22)
+  
+  Noto Sans (v2.002 - 2020-06-15)
+  
+  Noto Sans Adlam (v2.0 - 2018-10-19)
+  
+  Noto Sans Arabic (v2.0 - 2019-10-23)
+  
+  Noto Sans Armenian (v2.04 - 2018-12-20)
+  
+  Noto Sans Avestan (v2.0 - 2018-10-19)
+  
+  Noto Sans Bamum (v2.0 - 2018-10-19)
+  
+  Noto Sans Bassa Vah (v2.0 - 2018-10-19)
+  
+  Noto Sans Batak (v2.0 - 2018-10-19)
+  
+  Noto Sans Bhaiksuki (v2.0 - 2018-10-19)
+  
+  Noto Sans Brahmi (v2.0 - 2018-10-19)
+  
+  Noto Sans Buginese (v2.0 - 2018-10-19)
+  
+  Noto Sans Buhid (v2.0 - 2018-10-19)
+  
+  Noto Sans CanAborig (v2.0 - 2018-10-19)
+  
+  Noto Sans CaucAlban (v2.0 - 2018-10-19)
+  
+  Noto Sans Chakma (v2.001 - 2018-10-19)
+  
+  Noto Sans Cham (v2.0 - 2018-10-19)
+  
+  Noto Sans Cherokee (v2.0 - 2018-10-19)
+  
+  Noto Sans Devanagari (v2.0 - 2018-10-19)
+  
+  Noto Sans Duployan (v2.0 - 2018-10-19)
+  
+  Noto Sans Elbasan (v2.0 - 2018-10-19)
+  
+  Noto Sans Elymaic (v1.0 - 2020-03-18)
+  
+  Noto Sans Georgian (v2.0 - 2018-12-20)
+  
+  Noto Sans Gothic (v2.0 - 2019-10-23)
+  
+  Noto Sans Grantha (v2.0 - 2019-10-23)
+  
+  Noto Sans Gujarati (v1.03 - 2015-09-23)
+  
+  Noto Sans Gunjala Gondi (v1.001 - 2019-10-24)
+  
+  Noto Sans Gurmukhi (v1.03 - 2016-03-10)
+  
+  Noto Sans HK (v2.001 - 2019-05-17)
+  
+  Noto Sans HanifiRohg (v2.002 - 2019-10-23)
+  
+  Noto Sans Hanunoo (v2.0 - 2018-10-19)
+  
+  Noto Sans Hatran (v2.0 - 2018-10-19)
+  
+  Noto Sans ImpAramaic (v2.0 - 2018-10-19)
+  
+  Noto Sans InsPahlavi (v2.0 - 2018-10-19)
+  
+  Noto Sans InsParthi (v2.0 - 2018-10-19)
+  
+  Noto Sans JP (v2.001 - 2019-05-17)
+  
+  Noto Sans Javanese (v2.0 - 2018-12-20)
+  
+  Noto Sans Kaithi (v2.0 - 2018-10-19)
+  
+  Noto Sans Kannada (v2.0 - 2018-10-19)
+  
+  Noto Sans Khojki (v2.0 - 2018-11-13)
+  
+  Noto Sans Khudawadi (v2.0 - 2018-10-19)
+  
+  Noto Sans Lao (v2.0 - 2018-10-19)
+  
+  Noto Sans Lepcha (v2.0 - 2018-10-19)
+  
+  Noto Sans Mahajani (v2.0 - 2018-10-19)
+  
+  Noto Sans Malayalam (v2.0 - 2018-10-19)
+  
+  Noto Sans Mandaic (v2.0 - 2018-10-19)
+  
+  Noto Sans Manichaean (v2.0 - 2018-10-19)
+  
+  Noto Sans Marchen (v2.0 - 2018-10-19)
+  
+  Noto Sans Masaram Gondi (v1.0 - 2019-10-24)
+  
+  Noto Sans MeeteiMayek (v2.0 - 2018-10-19)
+  
+  Noto Sans Mende Kikakui (v2.0 - 2018-10-19)
+  
+  Noto Sans Miao (v2.0 - 2018-10-19)
+  
+  Noto Sans Modi (v2.0 - 2018-10-19)
+  
+  Noto Sans Mongolian (v1.04 - 2015-09-23)
+  
+  Noto Sans Mono (v2.002 - 2020-06-16)
+  
+  Noto Sans Mro (v2.0 - 2018-10-19)
+  
+  Noto Sans Multani (v2.0 - 2018-10-19)
+  
+  Noto Sans N'Ko (v2.0 - 2018-10-19)
+  
+  Noto Sans Nabataean (v2.0 - 2018-10-19)
+  
+  Noto Sans Newa (v2.0 - 2018-10-19)
+  
+  Noto Sans Ol Chiki (v2.0 - 2018-10-19)
+  
+  Noto Sans Old Permic (v2.0 - 2018-10-19)
+  
+  Noto Sans OldHung (v2.0 - 2018-10-19)
+  
+  Noto Sans OldNorArab (v2.0 - 2018-10-19)
+  
+  Noto Sans OldSogdian (v2.0 - 2019-10-23)
+  
+  Noto Sans Oriya (v1.01 - 2015-09-23)
+  
+  Noto Sans Osage (v2.0 - 2018-10-19)
+  
+  Noto Sans Pahawh Hmong (v2.0 - 2018-10-19)
+  
+  Noto Sans Palmyrene (v2.0 - 2018-10-19)
+  
+  Noto Sans PauCinHau (v2.0 - 2018-10-19)
+  
+  Noto Sans PhagsPa (v2.0 - 2018-10-19)
+  
+  Noto Sans PsaPahlavi (v2.0 - 2018-10-19)
+  
+  Noto Sans Rejang (v2.0 - 2018-10-19)
+  
+  Noto Sans Samaritan (v2.0 - 2018-10-19)
+  
+  Noto Sans Saurashtra (v2.0 - 2018-10-19)
+  
+  Noto Sans Sharada (v2.0 - 2018-10-19)
+  
+  Noto Sans Siddham (v2.001 - 2019-10-23)
+  
+  Noto Sans Sinhala (v2.0 - 2018-10-19)
+  
+  Noto Sans Sogdian (v2.0 - 2019-11-12)
+  
+  Noto Sans SoraSomp (v2.0 - 2018-10-19)
+  
+  Noto Sans Soyombo (v2.0 - 2019-11-12)
+  
+  Noto Sans Sundanese (v2.0 - 2018-10-19)
+  
+  Noto Sans Syriac (v2.0 - 2018-10-19)
+  
+  Noto Sans Tagalog (v2.0 - 2018-10-19)
+  
+  Noto Sans Tagbanwa (v2.0 - 2018-10-19)
+  
+  Noto Sans Tai Tham (v1.04 - 2015-12-29)
+  
+  Noto Sans Takri (v2.0 - 2018-10-19)
+  
+  Noto Sans Telugu (v1.05 - 2015-09-23)
+  
+  Noto Sans Thai (v2.0 - 2018-10-19)
+  
+  Noto Sans Tibetan (v1.01 - 2015-09-23)
+  
+  Noto Sans Tifinagh (v2.001 - 2019-10-23)
+  
+  Noto Sans Tirhuta (v2.0 - 2018-10-19)
+  
+  Noto Sans Vai (v2.0 - 2018-10-19)
+  
+  Noto Sans Wancho (v2.0 - 2019-10-29)
+  
+  Noto Sans WarangCiti (v2.0 - 2018-10-19)
+  
+  Noto Sans Yi (v2.0 - 2018-10-19)
+  
+  Noto Sans Zanabazar (v2.0 - 2019-10-23)
+  
+  Noto Serif (v2.001 - 2018-10-19)
+  
+  Noto Serif Ahom (v2.001 - 2018-10-19)
+  
+  Noto Serif Armenian (v2.04 - 2018-12-20)
+  
+  Noto Serif Devanagari (v1.01 - 2016-05-31)
+  
+  Noto Serif Dogra (v1.0 - 2019-10-24)
+  
+  Noto Serif Georgian (v2.0 - 2018-12-20)
+  
+  Noto Serif Grantha (v2.0 - 2020-03-19)
+  
+  Noto Serif Gujarati (v2.0 - 2018-10-19)
+  
+  Noto Serif Gurmukhi (v2.0 - 2018-10-19)
+  
+  Noto Serif JP (v1.001 - 2019-05-17)
+  
+  Noto Serif KR (v1.001 - 2019-05-17)
+  
+  Noto Serif Kannada (v2.001 - 2018-10-19)
+  
+  Noto Serif Lao (v2.0 - 2018-10-19)
+  
+  Noto Serif Myanmar (v2.001 - 2018-10-19)
+  
+  Noto Serif SC (v1.001 - 2019-05-17)
+  
+  Noto Serif Sinhala (v2.001 - 2018-10-19)
+  
+  Noto Serif TC (v1.001 - 2019-05-17)
+  
+  Noto Serif Tamil (v2.0 - 2018-10-19)
+  
+  Noto Serif Tangut (v2.001 - 2019-10-29)
+  
+  Noto Serif Telugu (v1.01 - 2016-05-27)
+  
+  Noto Serif Thai (v2.0 - 2018-10-19)
+  
+  Noto Serif Tibetan (v2.0 - 2018-10-19)
+  
+  Roboto Slab (v2.0 - 2019-11-11)
+  
+  STIX (v1.1 - 2020-02-13)
+  
+  STIX Two Text (v2.02 - 2020-06-19)
+  
+  Source Han Mono (v1.002 - 2020-03-27)
+  
+  Source Han Mono HC (v1.002 - 2020-03-27)
+  
+  Source Han Mono K (v1.002 - 2020-03-27)
+  
+  Source Han Mono SC (v1.002 - 2020-03-27)
+  
+  Source Han Mono TC (v1.002 - 2020-03-27)
+  
+  Sylphyo Finger Diagrams CG (v1.32 - 2021-02-15)
+  
+  Sylphyo Finger Diagrams Hzt CG (v1.32 - 2021-02-15)
+  
+  Symbola (v10.23 - 2017-12-01)
+  
+  Tai Heritage Pro (v2.6 - 2017-10-04)
+  
+  Tinos (v1.32 - 2015-11-04)
+  
+  TopCG (v2.001 - 2020-07-15)
+
+
+** Font Designers
+
+These designers contributed to the development of the source fonts listed
+above:
+
+  Walt Agee
+  
+  Faah Baccam
+  
+  Peter S. Baker [Peter Baker]
+  
+  Rebecca G. Bettencourt <http://www.kreativekorp.com/> [Rebecca Bettencourt]
+  
+  Jelle Bosma
+  
+  Fredrick Brennan
+  
+  Carrois Corporate GbR
+  
+  Alan Dague-Greene <http://basicrecipe.com>
+  
+  George Douros
+  
+  Georg Duffner <g.duffner@gmail.com> [Georg Mayr-Duffner]
+  
+  Łukasz Dziedzic <http://www.lukaszdziedzic.eu/>
+  
+  Edenspiekermann AG
+  
+  Ek Type <https://ektype.in/>
+  
+  Edward Emanuel <https://github.com/ej2>
+  
+  Marc Foley <m.foley.88@gmail.com>
+  
+  Dave Gandy <https://github.com/davegandy>
+  
+  Victor Gaultney <victor_gaultney@sil.org> [J. Victor Gaultney] (SIL
+  International)
+  
+  Patrick Giasson
+  
+  Carolina Giovagnoli <https://www.huertatipografica.com/>
+  
+  Ivan Gladkikh <http://www.jovanny.ru/> [Jovanny Lemonad]
+  
+  Clint Goss <clint@goss.com> [Clinton F. Goss]
+  
+  Frank Grießhammer
+  
+  Donghoon Han [한동훈]
+  
+  Paul Hanslow <hello@paulhanslow.com>
+  
+  Masataka Hattori [服部正貴]
+  
+  Becca Hirsbrunner
+  
+  Coen Hoffman
+  
+  Khaled Hosny <https://amirifont.org/>
+  
+  John Hudson <john@tiro.ca>
+  
+  Julius Hui <http://luc.devroye.org/fonts-63820.html>
+  
+  Paul D. Hunt
+  
+  Indian Type
+  
+  Soo-young Jang [장수영]
+  
+  Daniel Johnson
+  
+  Koichi Kamichi <kamichi@ic.daito.ac.jp>
+  
+  Joo-yeon Kang [강주연]
+  
+  D. Kanjahn
+  
+  Sebastian Kosch <sebastian@aldusleaf.org>
+  
+  Ken Lunde
+  
+  Jason Lundien <https://github.com/jasonlundien>
+  
+  Rob Madole <https://github.com/robmadole>
+  
+  Peter Martin
+  
+  Steve Matteson <https://www.monotype.com/studio/steve-matteson> [Steven R.
+  Matteson]
+  
+  MicroPress, Inc. <http://www.micropress-inc.com/>
+  
+  Paul James Miller <kelvinch@virginmedia.com>
+  
+  Ross Mills <ross@tiro.com>
+  
+  Ben Mitchell
+  
+  Monotype Design Team
+  
+  Coji Morishita <coz@users.sourceforge.jp> [森下 浩司]
+  
+  Bemby Bantara Narendra
+  
+  Ryoko Nishizuka [西塚涼子]
+  
+  Dmitry Novikov <to@dimkanovikov.pro>
+  
+  Annie Olsen <nrsi@sil.org>
+  
+  Jason Otero <https://github.com/deathnfudge>
+  
+  Octavio Pardo <octaviopardo@gmail.com>
+  
+  Soohyun Park [박수현]
+  
+  David J. Perry
+  
+  Bhikkhu Pesala
+  
+  Philipp H. Poll <gillian@linuxlibertine.org>
+  
+  Lorna Priest
+  
+  Jory Raphael <https://github.com/sensibleworld>
+  
+  Iska Routamaa
+  
+  Sandoll Communications [산돌커뮤니케이션]
+  
+  Vaibhav Singh
+  
+  Jyotish Sonowal
+  
+  Eben Sorkin <http://sorkintype.com/>
+  
+  Source Foundary <https://sourcefoundry.org/>
+  
+  Daniel Spreadbury <D.Spreadbury@steinberg.de>
+  
+  Steinberg Media <https://www.steinberg.net/>
+  
+  Made Suatjana {ph: 62-361-427520} [I Made Suatjana, Madé Suatjana]
+  
+  Geremia Taglialatela <https://github.com/tagliala>
+  
+  Brian Talbot <https://github.com/talbs>
+  
+  Bob Tennent <rdt@cs.queensu.ca>
+  
+  Tiro Typeworks Ltd. <http://tiro.com/>
+  
+  Andres Torresi <https://www.huertatipografica.com/>
+  
+  Travis Chase <https://github.com/supercodepoet>
+  
+  Trevor Chase <https://github.com/trevorchase>
+  
+  Umihotaru
+  
+  Universal Thirst
+  
+  Alexei Vanyashin
+  
+  Herbert Voss
+  
+  Mike Wilkerson <https://github.com/mlwilkerson>
+  
+  Yejin We [위예진]
+  
+  Mark Williamson
+  
+  Wenlong Zhang [张文龙]
+  
+  bBox Type GmbH
+
+
+** Acknowledgments
+
+We would also like to acknowledge the assistance and advice provided by many
+people, who have *greatly* assisted in this effort:
+
+  Peter S. Baker [Peter Baker]
+  
+  Tom Ciesla <tom_bar@comcast.net>
+  
+  Stephen Coles <http://stephencoles.org>
+  
+  Erwin Denissen (High-Logic B.V.)
+  
+  Anne DiFrancesco <https://ctwbdc.org/book-coaching-session/anne-difrancesco/>
+  
+  Behdad Esfahbod <behdad@behdad.org> [Seyed Behdad Esfahbod MirHosseinZadeh
+  Sarabi]
+  
+  Simon Garfield <https://www.simongarfield.com/> [Simon Frank Garfield]
+  
+  Victor Gaultney <victor_gaultney@sil.org> [J. Victor Gaultney] (SIL
+  International)
+  
+  Joshual Hadley
+  
+  Bob Hallissy (SIL International)
+  
+  Khaled Hosny <https://amirifont.org/>
+  
+  André G. Isaak
+  
+  Vásken Kalayjian <vkalayjian@gkbrand.com> [Vasken Kalayjian]
+  
+  Abraham Lee
+  
+  Bhikkhu Pesala
+  
+  Thomas Phinney <tphinney@cal.berkeley.edu>
+  
+  Richard Rutter <http://clagnut.com>
+  
+  Felipe Corrêa da Silva Sanches <juca@members.fsf.org>
+  
+  John Savard <http://www.quadibloc.com/desk.htm>
+  
+  David Schwartz
+  
+  Rawy Shediac <rshediac@me.com>
+  
+  Mark Simonson
+  
+  Miguel Sousa
+  
+  Aharon Varady <https://aharon.varady.net/>
+
+... Thank You!!
