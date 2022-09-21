@@ -9,6 +9,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Σ&#973;νοψη</translation>
         <translation lang="de">Zusammenfassung</translation>
         <translation lang="it">Sommario</translation>
+        <translation lang="cn">摘要</translation>
     </term>
     <term name="description">
         <translation lang="en">Description and Usage</translation>
@@ -16,6 +17,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Περιγραφ&#942; και Χρ&#942;ση</translation>
         <translation lang="de">Beschreibung und Verwendung</translation>
         <translation lang="it">Descrizione e Uso</translation>
+        <translation lang="cn">描述和用途</translation>
     </term>
     <term name="mayOccurWithin">
         <translation lang="en">May occur within</translation>
@@ -23,6 +25,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Μπορε&#943; να εμφαν&#943;ζεται μέσα σε</translation>
         <translation lang="de">Kann verwendet werden innerhalb von</translation>
         <translation lang="it">Ricorrere in</translation>
+        <translation lang="cn">可能出现在</translation>
     </term>
     <term name="mandatory">
         <translation lang="en">Mandatory</translation>
@@ -30,6 +33,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Υποχρεωτικ&#972;</translation>
         <translation lang="de">obligatorisch</translation>
         <translation lang="it">Obbligatorio</translation>
+        <translation lang="cn">必备</translation>
     </term>
     <term name="optional">
         <translation lang="en">Optional</translation>
@@ -37,6 +41,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Προαιρετικ&#972;</translation>
         <translation lang="de">optional</translation>
         <translation lang="it">Opzionale</translation>
+        <translation lang="cn">可选</translation>
     </term>
     <term name="repeatable">
         <translation lang="en">Repeatable</translation>
@@ -44,6 +49,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Επαναλαμβαν&#972;μενο</translation>
         <translation lang="de">wiederholbar</translation>
         <translation lang="it">Ripetibile</translation>
+        <translation lang="cn">可重复</translation>
     </term>
     <term name="nonrepeatable">
         <translation lang="en">Non-repeatable</translation>
@@ -51,6 +57,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Μη επαναλαμβαν&#972;μενο</translation>
         <translation lang="de">nicht wiederholbar</translation>
         <translation lang="it">Non ripetibile</translation>
+        <translation lang="cn">不可重复</translation>
     </term>
     <term name="attributes">
         <translation lang="en">Attributes</translation>
@@ -58,20 +65,23 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Γνωρ&#943;σματα</translation>
         <translation lang="de">Attribute</translation>
         <translation lang="it">Attributi</translation>
+        <translation lang="cn">属性</translation>
     </term>
     <term name="reference">
         <translation lang="en">References</translation>
         <translation lang="fr">Références</translation>
         <translation lang="gr">Αναφορ&#941;ς</translation>
         <translation lang="de">Entspricht</translation>
-        <translation lang="it">Riferimenti</translation>        
+        <translation lang="it">Riferimenti</translation>
+        <translation lang="cn">引文</translation>        
     </term>
     <term name="references">
         <translation lang="en">References</translation>
         <translation lang="fr">Références</translation>
         <translation lang="gr">Αναφορ&#941;ς</translation>
         <translation lang="de">Entspricht</translation>
-        <translation lang="it">Riferimenti</translation>        
+        <translation lang="it">Riferimenti</translation>
+        <translation lang="cn">引文</translation>        
     </term>
     <term name="datatype">
         <translation lang="en">Data Type</translation>
@@ -79,6 +89,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Τ&#973;πος δεδομ&#941;νων</translation>
         <translation lang="de">Datentyp</translation>
         <translation lang="it">Tipo di dato</translation>
+        <translation lang="cn">日期类型</translation>
     </term>
     <term name="toc">
         <translation lang="en">Table of Contents</translation>
@@ -86,6 +97,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Π&#943;νακας Περιεχομ&#941;νων</translation>
         <translation lang="de">Inhaltsverzeichnis</translation>
         <translation lang="it">Indice</translation>
+        <translation lang="cn">目录</translation>
     </term>
     <term name="elements">
         <translation lang="en">Elements</translation>
@@ -93,6 +105,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Στοιχε&#943;α</translation>
         <translation lang="de">Elemente</translation>
         <translation lang="it">Elementi</translation>
+        <translation lang="cn">元素</translation>
     </term>
     <term name="mayContain">
         <translation lang="en">May contain</translation>
@@ -100,6 +113,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Μπορε&#943; να περι&#941;χει</translation>
         <translation lang="de">Kann enthalten</translation>
         <translation lang="it">Può contenere</translation>
+        <translation lang="cn">可能包含</translation>
     </term>
     <term name="occurrence">
         <translation lang="en">Occurrence</translation>
@@ -107,6 +121,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Συχν&#972;τητα</translation>
         <translation lang="de">Auftreten</translation>
         <translation lang="it">Occorrenze</translation>
+        <translation lang="cn">必备性</translation>
     </term>
     <term name="appendix">
         <translation lang="en">Appendix</translation>
@@ -114,6 +129,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Παρ&#940;ρτημα</translation>
         <translation lang="de">Anhang</translation>
         <translation lang="it">Appendice</translation>
+        <translation lang="cn">附录</translation>
     </term>
     <term name="examples">
         <translation lang="en">Examples</translation>
@@ -121,6 +137,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Παραδε&#943;γματα</translation>
         <translation lang="de">Beispiele</translation>
         <translation lang="it">Esempi</translation>
+        <translation lang="cn">示例</translation>
     </term>
     <term name="example">
         <translation lang="en">Example</translation>
@@ -128,6 +145,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Παρ&#940;δειγμα</translation>
         <translation lang="de">Beispiel</translation>
         <translation lang="it">Esempio</translation>
+        <translation lang="cn">示例</translation>
     </term>
     <term name="desc">
         <translation lang="en">Description</translation>
@@ -135,6 +153,7 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Περιγραφ&#942;</translation>
         <translation lang="de">Beschreibung</translation>
         <translation lang="it">Descrizione</translation>
+        <translation lang="cn">描述</translation>
     </term>
     <term name="usage">
         <translation lang="en">Usage</translation>
@@ -142,84 +161,98 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="gr">Χρ&#942;ση</translation>
         <translation lang="de">Verwendung</translation>
         <translation lang="it">Uso</translation>
+        <translation lang="cn">用途</translation>
     </term>
     <term name="and">
         <translation lang="en">and</translation>
         <translation lang="fr">et</translation>
         <translation lang="gr">και</translation>
         <translation lang="de">und</translation>
+        <translation lang="cn">和</translation>
     </term>
     <term name="availability">
         <translation lang="en">Availability</translation>
         <translation lang="fr">Disponibilité</translation>
         <translation lang="gr">Διαθεσιμ&#972;τητα</translation>
         <translation lang="de">Verfügbarkeit</translation>
+        <translation lang="cn">利用范围</translation>
     </term>
     <term name="occurence">
         <translation lang="en">Availability</translation>
         <translation lang="fr">Disponibilité</translation>
         <translation lang="gr">Διαθεσιμ&#972;τητα</translation>
         <translation lang="de">Verfügbarkeit</translation>
+        <translation lang="cn">利用范围</translation>
     </term>
     <term name="values">
         <translation lang="en">Values</translation>
         <translation lang="fr">Valeurs</translation>
         <translation lang="gr">Τιμ&#941;ς</translation>
         <translation lang="de">Werte</translation>
+        <translation lang="cn">值</translation>
     </term>
     <term name="value">
         <translation lang="en">Value</translation>
         <translation lang="fr">Valeur</translation>
         <translation lang="gr">Τιμ&#942;</translation>
         <translation lang="de">Wert</translation>
+        <translation lang="cn">值</translation>
     </term>
     <term name="tl">
         <translation lang="en">Tag Library</translation>
         <translation lang="fr">Dictionnaire des balises</translation>
         <translation lang="gr">Βιβλιοθ&#942;κη Ετικετ&#974;ν</translation>
         <translation lang="de">Tag-Library</translation>
+        <translation lang="cn">元素字典</translation>
     </term>
     <term name="seealso">
         <translation lang="en">See also</translation>
         <translation lang="fr">Voir aussi</translation>
         <translation lang="gr">Βλ&#941;πε επ&#943;σης</translation>
         <translation lang="de">Siehe auch</translation>
+        <translation lang="cn">另见</translation>
     </term>
     <term name="attributeusage">
         <translation lang="en">Attribute usage</translation>
         <translation lang="fr">Usage des attributs</translation>
         <translation lang="gr">Χρ&#942;ση γνωρισμ&#940;των</translation>
         <translation lang="de">Verwendung des Attributs</translation>
+        <translation lang="cn">属性用途</translation>
     </term>
     <term name="allrightsreserved">
         <translation lang="en">All rights reserved</translation>
         <translation lang="fr">Tous les droits sont réservés</translation>
         <translation lang="gr">Με την επιφ&#973;λαξη παντός δικαι&#974;ματος</translation>
         <translation lang="de">Alle Rechte vorbehalten</translation>
+        <translation lang="cn">版权所有</translation>
     </term>
     <term name="printedinusa">
         <translation lang="en">Printed in the United States of America</translation>
         <translation lang="fr">Imprimé aux États-Unis d'Amérique</translation>
         <translation lang="gr">Τυπ&#974;θηκε στις Ηνωμένες Πολιτε&#943;ες της Αμερικ&#942;ς</translation>
         <translation lang="de">Gedruckt in den Vereinigten Staaten von Amerika</translation>
+        <translation lang="cn">印刷于美国</translation>
     </term>
     <term name="printed">
         <translation lang="en">Printed</translation>
         <translation lang="fr">Imprimé</translation>
         <translation lang="gr">Τυπωμ&#941;νο</translation>
         <translation lang="de">Gedruckt</translation>
+        <translation lang="cn">印刷</translation>
     </term>
     <term name="edition">
         <translation lang="en">Edition</translation>
         <translation lang="fr">Édition</translation>
         <translation lang="gr">&#904;κδοση</translation>
         <translation lang="de">Ausgabe</translation>
+        <translation lang="cn">版本</translation>
     </term>
     <term name="availableFrom">
         <translation lang="en">Available from</translation>
         <translation lang="fr">Disponible depuis</translation>
         <translation lang="gr">Διαθ&#941;σιμο απ&#972;</translation>
         <translation lang="de">Verfügbar ab</translation>
+        <translation lang="cn">获取于</translation>
     </term>
     <term name="usagenotes">
         <translation lang="en">Usage notes</translation>
