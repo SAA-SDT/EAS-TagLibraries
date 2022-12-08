@@ -2181,7 +2181,7 @@
                         <gi>physdescset</gi>.</p>
                </div>
                <div type="values">
-                  <p>part, whole</p>
+                  <p>false, true</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
