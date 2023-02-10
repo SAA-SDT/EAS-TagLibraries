@@ -4585,11 +4585,13 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
-                     <ead:p>The Archibald MacLeish Papers are described in <ead:bibref>
-                           <ead:title render="italic">
-                              <ead:part>Library of Congress Acquisitions: Manuscript Division, 1982</ead:part>
-                           </ead:title>, p. 29. </ead:bibref>
-                     </ead:p>
+                     <ead:otherfindaid>
+                           <ead:bibref>
+                              <ead:title render="italic">
+                                 <ead:part>Library of Congress Acquisitions: Manuscript Division, 1982</ead:part>
+                              </ead:title>, p. 29. 
+                           </ead:bibref>
+                     </ead:otherfindaid>
                   </egXML>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
                      <ead:bibliography>
@@ -13618,6 +13620,7 @@
                </div>
                <div type="availability">
                   <p>Within <gi>ptrgrp</gi>: One of <gi>ptr</gi> or <gi>ref</gi> is required, repeatable</p>
+                  <p>Within <gi>indexentry</gi>: Optional, not repeatable</p>
                   <p>Within all other parents: Optional, repeatable</p>
                </div>
                <div type="examples">
@@ -14115,7 +14118,7 @@
                   <p>
                      <gi>recordid</gi> is used for recording a unique identifier for the EAD instance. The institution assigning the identifier ensures uniqueness of the <gi>recordid</gi> value within the archival
                      descriptions under its control. A globally unique identifier may be constructed within <gi>recordid</gi> according various external protocols (i.e. HTTP URI, DOI, PURL, or UUID), or in combination
-                     with <gi>agencycode</gi>, which is a required child element of <gi>maintenanceagency</gi>.</p>
+                     with <gi>agencycode</gi>, which is a recommended child element of <gi>maintenanceagency</gi>.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
@@ -14231,6 +14234,7 @@
                </div>
                <div type="availability">
                   <p>Within <gi>ptrgrp</gi>: One of <gi>ptr</gi> or <gi>ref</gi> is required, repeatable</p>
+                  <p>Within <gi>indexentry</gi>: Optional, not repeatable</p>
                   <p>Within all other parents: Optional, repeatable</p>
                </div>
                <div type="examples">
@@ -14432,7 +14436,7 @@
                   <p>Experimental in EAD3</p>
                </div>
                <div type="examples">
-                  <p>See examples under <gi>relation</gi>.</p>
+                  <p>See examples under <gi>relations</gi>.</p>
                </div>
             </div>
             <div type="elementDocumentation" xml:id="elem-relationentry">

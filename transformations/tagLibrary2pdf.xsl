@@ -1379,34 +1379,13 @@
     </xsl:template>
 
     <!-- Terrible hack to account for an egXML called from within some front matter (EAD TEI).
-        body-start() is only valid from within a list context (although you can call it from a fo:block from there!), so
-        this re-uses the above XPath to achieve that (and monospaces the example for kicks) -->
+        The apply-templates will try to call body-start() and fail...but that's okay, since we don't
+        really need that block anyway.  Once we rewrite the examples it'll be irrelevant :)  -->
     <xsl:template
         match="tei:body/tei:div[@type = 'attributes']/tei:div[@type = 'Introduction']/tei:p/ex:egXML">
-        <fo:block>
-            <xsl:text> </xsl:text>
-        </fo:block>
-        <fo:list-block provisional-distance-between-starts="0">
-            <fo:list-item>
-                <fo:list-item-label start-indent="0" end-indent="0">
-                    <fo:block>
-                        <xsl:text> </xsl:text>
-                    </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
-                    <xsl:for-each select="*">
-                        <xsl:variable name="myDepth"
-                            select="count(ancestor::*[not(namespace-uri() = 'http://www.tei-c.org/ns/1.0')]) * 5"/>
-                        <fo:block start-indent="body-start() + {$myDepth}mm" font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC"
-                            font-size="10pt">
-                            <xsl:call-template name="eg"/>
-                        </fo:block>
-                    </xsl:for-each>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block>
-        <fo:block>
-            <xsl:text> </xsl:text>
+        <fo:block start-indent="5mm" font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC"
+            font-size="10pt">
+            <xsl:apply-templates/>
         </fo:block>
     </xsl:template>
 
