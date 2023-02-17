@@ -1252,9 +1252,9 @@
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <eac:source xml:id="source1" xlink:href="https://www.theguardian.com/books/2018/aug/10/langston-hughes-born-a-year-before-accepted-date-poet">
-                        <eac:reference>Flood, Alison <eac:span localType="http://id.loc.gov/ontologies/bibframe/title">"Langston Hughes
+                        <eac:citation>Flood, Alison <eac:span localType="http://id.loc.gov/ontologies/bibframe/title">"Langston Hughes
                            'born a year before accepted date', researcher finds,"</eac:span> The Guardian.
-                           Published 10 August 2018.</eac:reference>
+                           Published 10 August 2018.</eac:citation>
                         <eac:citedRange unit="page">1</eac:citedRange>
                         <eac:descriptiveNote>
                            <eac:p>Poet researching archives of local African American newspaper finds story reporting on 'little Langston' before his recorded birth date</eac:p>
@@ -8796,7 +8796,7 @@
                      <item>revised: any type of general modification to the EAC-CPF instance</item>
                      <item>unknown: when the type of event is not known</item>
                      <item>updated: when an instance has been brought up to date with significant
-                        changes to the entity's description or to the version of EAC-CPF
+                        changes to the materials being described or to the version of EAC-CPF
                         used</item>
                   </list>
                </div>
@@ -9325,7 +9325,7 @@
                   <p>Target Type</p>
                </div>
                <div type="summary">
-                  <p>Identifies the type of entity that is related to the CPF entity being described.</p>
+                  <p>Identifies the type of entity that is relate to the CPF entity being described.</p>
                </div>
                <div type="description">
                   <p>Required attribute within <gi>targetEntity</gi> which identifies the type of
@@ -9459,7 +9459,7 @@
                      the element's value.</p>
                </div>
                <div type="description">
-                  <p>Use the optional attribute to provide the URI of the authority or vocabulary source given in <att>vocabularySource</att>. Available in all elements that can contain any type of entity.
+                  <p>Use the optional attribute to provide the URI of the authority or vocabulary source given in @vocabularySource. Available in all elements that can contain any type of entity.
                   </p>
                </div>
                <div type="datatype">
