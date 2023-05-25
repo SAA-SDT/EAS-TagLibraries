@@ -1616,7 +1616,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
-                     <ead:representation href="http://drs.library.yale.edu:8083/fedora/get/beinecke:jonesss/PDF" linkrole="application/pdf">PDF version of finding aid</ead:representation>
+                     <ead:representation href="http://drs.library.yale.edu:8083/fedora/get/beinecke:jonesss/PDF" linkrole="https://www.iana.org/assignments/media-types/application/pdf">PDF version of finding aid</ead:representation>
                   </egXML>
                </div>
             </div>
@@ -1642,6 +1642,7 @@
                            <ead:sourceentry>Dictionary of American biography: including men of the time ... and a supplement</ead:sourceentry> [. . .] </ead:source>
                      </ead:sources>
                   </egXML>
+                  
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-listtype">
