@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-processinfo" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>processinfo</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Processing Information</p>
+               </div>
+               <div type="summary">
+                  <p>For encoding information about archival activities related to the described materials.</p>
+               </div>
+               <div type="mayContain">
+                  <p>blockquote, chronlist, head, list, p, processinfo, table</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>archdesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, processinfo</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>processinfo</gi> is used for basic information about accessioning, arranging, describing, preserving, storing, conserving, or otherwise preparing the described materials for research use. Where
+                     appropriate, encode more specific information about each of these activities separately within other elements, such as <gi>acqinfo</gi>, <gi>appraisal</gi>, <gi>arrangement</gi>, <gi>physloc</gi>,
+                     etc.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>ISAD(G) 3.7.1</p>
+                  <p>MARC 583</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:processinfo>
+                        <ead:head>Processing Information:</ead:head>
+                        <ead:p>These records were organized and cataloged in <ead:date>1977</ead:date> by Lydia Lucas.</ead:p>
+                     </ead:processinfo>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:processinfo>
+                        <ead:head>Processing Information:</ead:head>
+                        <ead:p>Material was processed over several years.</ead:p>
+                        <ead:chronlist>
+                           <ead:chronitem>
+                              <ead:datesingle>1982</ead:datesingle>
+                              <ead:event>Correspondence processed</ead:event>
+                           </ead:chronitem>
+                           <ead:chronitem>
+                              <ead:datesingle>1984</ead:datesingle>
+                              <ead:event>Published material transferred to Rare Books for cataloging.</ead:event>
+                           </ead:chronitem>
+                           <ead:chronitem>
+                              <ead:datesingle>1989</ead:datesingle>
+                              <ead:event>Processing completed, including integration of 1986 and 1987 accessions</ead:event>
+                           </ead:chronitem>
+                        </ead:chronlist>
+                     </ead:processinfo>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:processinfo>
+                        <ead:p>Re-bound in 1987 as two volumes for conservation purposes.</ead:p>
+                     </ead:processinfo>
+                  </egXML>
+               </div>
+            </div>

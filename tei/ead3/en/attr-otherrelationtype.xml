@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-otherrelationtype" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>otherrelationtype</att>
+               </head>
+               <div type="fullName">
+                  <p>Other Relation Type</p>
+               </div>
+               <div type="summary">
+                  <p>The type of relation provided in <gi>relation</gi>, when <att>relationtype</att> is set to "otherrelationtype."</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                           <ead:relation relationtype="otherrelationtype" otherrelationtype="Creator">
+                              <ead:relationentry>Exxon Valdez oil spill</ead:relationentry>
+                              <ead:geogname>
+                                 <ead:part>Bligh Reef, Prince William Sound, Alaska</ead:part>
+                                 <ead:geographiccoordinates coordinatesystem="utm">6V 490800mE 6719917mN</ead:geographiccoordinates>
+                              </ead:geogname>
+                           </ead:relation>
+                  </egXML>
+               </div>
+            </div>

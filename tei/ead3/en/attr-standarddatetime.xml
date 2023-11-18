@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-standarddatetime" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>standarddatetime</att>
+               </head>
+               <div type="fullName">
+                  <p>Standard Date Time</p>
+               </div>
+               <div type="summary">
+                  <p>An ISO 8601-compliant form of the date or date and time of a specific maintenance event expressed in <gi>eventdatetime</gi>. For example, 2009-12-31, 2009, 2009-12, 2009-12-31T23:59:59. Available
+                     only in <gi>eventdatetime</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>Constrained to the following patterns: YYYY-MM-DD, YYYY-MM, YYYY, or YYYY-MM-DDThh:mm:ss [with optional timezone offset from UTC in the form of [+|-][hh:mm], or "Z" to indicate the dateTime is UTC.
+                     No timezone implies the dateTime is UTC.]</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenancehistory>
+                        <ead:maintenanceevent>
+                           <ead:eventtype value="derived"/>
+                           <ead:eventdatetime standarddatetime="2015-09-13T08:05:33-05:00">13 September 2015</ead:eventdatetime>
+                           <ead:agenttype value="machine"/>
+                           <ead:agent>EAD2002_to_EAD3.xsl</ead:agent>
+                           <ead:eventdescription>Conversion from EAD 2002 finding aid using XSL transformation.</ead:eventdescription>
+                        </ead:maintenanceevent>
+                        <ead:maintenanceevent>
+                           <ead:eventtype value="revised"/>
+                           <ead:eventdatetime standarddatetime="2015-09-14T10:05:23-05:00">14 September 2014</ead:eventdatetime>
+                           <ead:agenttype value="human"/>
+                           <ead:agent>Lisa Bolkonskaya</ead:agent>
+                           <ead:eventdescription>Conversion from EAD 2002 revised. Conventions and local control added..</ead:eventdescription>
+                        </ead:maintenanceevent>
+                        <ead:maintenanceevent>
+                           <ead:eventtype value="revised"/>
+                           <ead:eventdatetime standarddatetime="2015-09-16T14:23:42-05:00">16 September 2014</ead:eventdatetime>
+                           <ead:agenttype value="human"/>
+                           <ead:agent>Lisa Bolkonskaya</ead:agent>
+                           <ead:eventdescription>Minor revisions. Added sources.</ead:eventdescription>
+                        </ead:maintenanceevent>
+                     </ead:maintenancehistory>
+                  </egXML>
+               </div>
+            </div>

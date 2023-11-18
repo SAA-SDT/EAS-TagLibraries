@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-occupation" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>occupation</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Occupation</p>
+               </div>
+               <div type="summary">
+                  <p>An element for specifying a profession.</p>
+               </div>
+               <div type="mayContain">
+                  <p>part</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>abstract, archref, bibref, controlaccess, entry, event, indexentry, item, namegrp, p, physfacet, ref, unittitle</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience </label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>identifier</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>normal</label>
+                        <item>Optional</item>
+                        <label>relator</label>
+                        <item>Optional</item>
+                        <label>rules</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                        <label>source</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>A type of work, profession, trade, business, or avocation significantly reflected in the materials being described.</p>
+                  <p>
+                     <gi>occupation</gi> must contain one or more <gi>part</gi> elements. A single <gi>part</gi> may be used for the entire string, or if more granularity is desired, multiple <gi>part</gi> elements may
+                     be used to capture each component of the occupation term, e.g.,</p>
+                  <p>Part 1:Public officers</p>
+                  <p>Part 2:Maryland</p>
+                  <p>Use <gi>occupation</gi> within <gi>controlaccess</gi> for encoding occupations as defined by controlled vocabularies or according to appropriate rules. You may also use <gi>occupation</gi> for
+                     encoding occupations as they appear within text.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>encodinganalog</att> to indicate corresponding data elements in another data format, such as MARC.</item>
+                     <item>Use <att>identifier</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the occupation in a controlled vocabulary, taxonomy, ontology, or other knowledge
+                        organization system. Do not confuse with <att>id</att>, which provides a unique id for the element within the XML instance.</item>
+                     <item>Use <att>localtype</att>, if local practice requires specification of the type of occupation.</item>
+                     <item>Use <att>normal</att> to identify a standardized form of the occupation if not provided in the element itself.</item>
+                     <item>Use <att>relator</att> to specify, either as a URI or a string, other relationship(s) the occupation has to the described materials. The schema does not limit possible values of
+                           <att>relator</att>, but an institution could define and enforce values elsewhere if desired.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse <gi>occupation</gi> with <att>relator</att>, which is used to indicate a certain relationship between a name and the materials being described.</item>
+                     <item>Do not confuse <gi>occupation</gi> with <gi>function</gi>, which names activities and processes, but not professions.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Within <gi>indexentry</gi>: Optional, not repeatable</p>
+                  <p>Within all other elements: Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>MARC 656</p>
+                  <p>MODS <gi>occupation</gi>
+                  </p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:controlaccess>
+                        <ead:occupation encodinganalog="656" source="aat">
+                           <ead:part>Politicians</ead:part>
+                        </ead:occupation>
+                     </ead:controlaccess>
+                  </egXML>
+               </div>
+            </div>

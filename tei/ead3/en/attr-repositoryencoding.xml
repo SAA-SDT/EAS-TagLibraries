@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-repositoryencoding" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>repositoryencoding</att>
+               </head>
+               <div type="fullName">
+                  <p>Repository Encoding</p>
+               </div>
+               <div type="summary">
+                  <p>The authoritative source or rules for values supplied in <gi>agencycode</gi> and <att>repositorycode</att> in <gi>unitid</gi>. If the value "otherrepositoryencoding" is selected an alternate code
+                     list should be specified in <gi>conventiondeclaration</gi>. Available only in <gi>control</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>iso15511, otherrepositoryencoding </p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
+                        <ead:recordid>DFA/PREU</ead:recordid>
+                        <ead:filedesc>
+                           <ead:titlestmt>
+                              <ead:titleproper encodinganalog="245">Permanent Representation of Ireland to the European Union</ead:titleproper>
+                           </ead:titlestmt>
+                        </ead:filedesc>
+                        <ead:maintenancestatus value="derived"/>
+                        <ead:maintenanceagency countrycode="IE">
+                           <ead:agencycode>IE-NAI</ead:agencycode>
+                           <ead:agencyname>National Archives of Ireland</ead:agencyname>
+                        </ead:maintenanceagency>
+                        <ead:maintenancehistory>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="derived"/>
+                              <ead:eventdatetime standarddatetime="2014-05-12T23:59:59">12 May 2014</ead:eventdatetime>
+                              <ead:agenttype value="machine"/>
+                              <ead:agent>Converted_apeEAD_version_1.4.8</ead:agent>
+                           </ead:maintenanceevent>
+                        </ead:maintenancehistory>
+                     </ead:control>
+                  </egXML>
+               </div>
+            </div>

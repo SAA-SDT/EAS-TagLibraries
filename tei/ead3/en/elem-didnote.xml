@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-didnote" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>didnote</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Descriptive Identification Note</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>did</gi> that can express any kind of explanatory information.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text], abbr, emph, expan, foreign, lb, ptr, ref</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>did</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience </label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>label</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>didnote</gi> can encode textual notes within <gi>did</gi> that are not more appropriately encoded in the other available elements.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>ISAD(G) 3.6.1</p>
+                  <p>MARC 500</p>
+                  <p>MODS <gi>note</gi>
+                  </p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="collection">
+                        <ead:did>
+                           <ead:repository label="repository" encodinganalog="852">
+                              <ead:corpname>
+                                 <ead:part>Library of Congress, </ead:part>
+                                 <ead:part>Prints and Photographs Division,</ead:part>
+                              </ead:corpname>
+                              <ead:address>
+                                 <ead:addressline>Washington, D.C. 20540</ead:addressline>
+                              </ead:address>
+                           </ead:repository>
+                           <ead:didnote> For information about Prints and Photographs Division collections and services, see the Prints and Photographs Division's Reading Room Home Page: <ead:ptr actuate="onrequest" href="http://lcweb.loc.gov/rr/print.htm" show="new" linkrole="text/html"/>
+                           </ead:didnote>
+                        </ead:did>
+                     </ead:archdesc>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:did>
+                        <ead:unittitle>Class Notes, Undergraduate</ead:unittitle>
+                        <ead:unitdatestructured unitdatetype="inclusive">
+                           <ead:daterange>
+                              <ead:fromdate notafter="1962">1962</ead:fromdate>
+                              <ead:todate notafter="1968">1968</ead:todate>
+                           </ead:daterange>
+                        </ead:unitdatestructured>
+                        <ead:physdesc>12 notebooks</ead:physdesc>
+                        <ead:container localtype="boxes">5-6</ead:container>
+                        <ead:didnote> The notebooks contain months and days, not years. Estimated dates are based on the years Scully attended the University of Maryland. </ead:didnote>
+                     </ead:did>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-defitem" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>defitem</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Definition List Item</p>
+               </div>
+               <div type="summary">
+                  <p>A wrapper element for binding pairs of labels and items within a list.</p>
+               </div>
+               <div type="mayContain">
+                  <p>item, label</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>list</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>An element, used within a definition list, that pairs a required <gi>label</gi> and <gi>item</gi>. The item may be an expansion of the label, as in a list of abbreviations. Definition lists are often
+                     displayed in two columns.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:list listtype="deflist">
+                        <ead:listhead>
+                           <ead:head01>Abbreviation</ead:head01>
+                           <ead:head02>Expansion</ead:head02>
+                        </ead:listhead>
+                        <ead:defitem>
+                           <ead:label>ALS</ead:label>
+                           <ead:item>Autograph Letter Signed</ead:item>
+                        </ead:defitem>
+                        <ead:defitem>
+                           <ead:label>TLS</ead:label>
+                           <ead:item>Typewritten Letter Signed</ead:item>
+                        </ead:defitem>
+                     </ead:list>
+                  </egXML>
+               </div>
+            </div>

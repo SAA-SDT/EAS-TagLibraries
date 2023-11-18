@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-relator" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>relator</att>
+               </head>
+               <div type="fullName">
+                  <p>Relator</p>
+               </div>
+               <div type="summary">
+                  <p>A contextual role or relationship that a controlled access term has with the materials described. For example, <gi>persname</gi> may have a <att>relator</att> value of "creator" or "photographer."
+                     EAD does not supply a controlled list of values for this attribute, but use of some other controlled vocabulary (e.g., MARC relator codes), is encouraged. </p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bibref>
+                        <ead:persname relator="author">
+                           <ead:part>Kinder, Dolores.</ead:part>
+                        </ead:persname>
+                        <ead:title>
+                           <ead:part>Once Upon a Lullaby.</ead:part>
+                        </ead:title>
+                        <ead:geogname>
+                           <ead:part>New York: </ead:part>
+                        </ead:geogname>
+                        <ead:corpname relator="publisher">
+                           <ead:part>Wells &amp; Sons, </ead:part>
+                        </ead:corpname>
+                        <ead:date localtype="publication"> 1931 </ead:date>
+                     </ead:bibref>
+                  </egXML>
+               </div>
+            </div>

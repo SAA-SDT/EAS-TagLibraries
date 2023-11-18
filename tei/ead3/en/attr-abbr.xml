@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-abbr" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <att>abbr</att>
+   </head>
+   <div type="fullName">
+      <p>Abbrevation</p>
+   </div>
+   <div type="summary">
+      <p>An abbreviation for a word or phrase that is expressed in an expanded form in the text of the current element; used for searching and indexing purposes. Available only in <gi>expan</gi>.</p>
+   </div>
+   <div type="datatype">
+      <p>token</p>
+   </div>
+   <div type="examples">
+      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+         <ead:didnote>File also contains materials from the <ead:expan abbr="ACLU"> American Civil Liberties Union </ead:expan>. </ead:didnote>
+      </egXML>
+
+      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+         <ead:c02>
+            <ead:did>
+               <ead:unittitle>
+                  <ead:expan abbr="UNESCO"> United Nations Educational, Scientific and Cultural Organization </ead:expan>
+               </ead:unittitle> [. . .] </ead:did>
+         </ead:c02>
+      </egXML>
+   </div>
+</div>

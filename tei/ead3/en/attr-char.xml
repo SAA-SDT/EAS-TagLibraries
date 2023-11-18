@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-char" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>char</att>
+               </head>
+               <div type="fullName">
+                  <p>Character</p>
+               </div>
+               <div type="summary">
+                  <p>Used for horizontal alignment of a single character, such as decimal alignment. This attribute names the character on which the text will be aligned, for example a decimal point, an asterisk, or an
+                     em-dash. Available in <gi>colspec</gi> and <gi>entry</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bioghist>
+                        <ead:head althead="Family relations">Bach family relations listing spouses and children of the major family members</ead:head>
+                        <ead:table pgwide="true">
+                           <ead:tgroup cols="3">
+                              <ead:colspec colnum="1" colname="member"/>
+                              <ead:colspec colnum="2" colname="spouse"/>
+                              <ead:colspec colnum="3" colname="child" align="char" char="*" charoff="2"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="member">Major family members</ead:entry>
+                                    <ead:entry colname="spouse">Spouses</ead:entry>
+                                    <ead:entry colname="child">Children</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 [...]
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:bioghist>
+                  </egXML>
+               </div>
+
+</div>

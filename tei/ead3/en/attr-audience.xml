@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-audience" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>audience</att>
+               </head>
+               <div type="fullName">
+                  <p>Audience</p>
+               </div>
+               <div type="summary">
+                  <p>An attribute that helps control whether the information contained in the element should be available to all viewers or only to repository staff. Available for all elements except <gi>lb</gi> and
+                        <gi>colspec</gi>. The attribute can be set to "external" in <gi>archdesc</gi> to allow access to all the information about the materials being described in the finding aid, but specific elements
+                     within <gi>archdesc</gi> can be set to "internal" to reserve that information for repository access only. This feature is intended to assist application software in restricting access to particular
+                     information by explicitly identifying data that is potentially sensitive or may otherwise have a limited audience. Special software capability may be needed, however, to prevent the display or export
+                     of an element marked "internal" when a whole finding aid is displayed in a networked environment.</p>
+               </div>
+               <div type="values">
+                  <p>external, internal </p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:titlestmt>
+                        <ead:titleproper localtype="formal"> Guide to the Abraham Hayward Collection </ead:titleproper>
+                        <ead:titleproper localtype="filing" render="altrender" altrender="nodisplay" audience="internal"> Hayward (Abraham) Collection </ead:titleproper>
+                        <ead:author>by Michael Rush</ead:author>
+                     </ead:titlestmt>
+                  </egXML>
+               </div>
+</div>

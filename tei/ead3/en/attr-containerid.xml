@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-containerid" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>containerid</att>
+               </head>
+               <div type="fullName">
+                  <p>Container ID</p>
+               </div>
+               <div type="summary">
+                  <p>An attribute for <gi>container</gi> that takes as its value a locally assigned identifier (e.g. barcode) for the container described. Unlike <att>id</att>, the value of <att>containerid</att> need
+                     not be unique within the document, and does not have to conform to the rules for the ID data type.</p>
+               </div>
+               <div type="datatype">
+                  <p>string</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:container altrender="Slim Legal Document Box (1/2 AB)" containerid="33433117009781" id="aspace_3e98d60dfc5e7ef6c017b677f6616965" label="Mixed Materials" localtype="box">3</ead:container>
+                  </egXML>
+               </div>
+
+</div>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-custodhist" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>custodhist</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Custodial History</p>
+               </div>
+               <div type="summary">
+                  <p>An element for information about the chain of ownership or custody of the materials being described, before they reached the archives.</p>
+               </div>
+               <div type="mayContain">
+                  <p>blockquote, chronlist, custodhist, head, list, p, table</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>archdesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, custodhist</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog </label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>custodhist</gi> may be used to describe both physical possession and intellectual ownership, providing details of changes of ownership and/or custody that may be significant in terms of
+                     authority, integrity, and interpretation.</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Use <gi>acqinfo</gi> to record information about the immediate source of the described materials and the circumstances under which they were received by the repository.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>ISAD(G) 3.2.3</p>
+                  <p>MARC 561</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:custodhist>
+                        <ead:p>The George Franklin Papers were maintained by the staff of the Mayor's Office, City of Irvine, California, in the records storage facility at City Hall from the time of Franklin's death in
+                           1972 until they were transferred, at his family's request, to Special Collections and Archives, The UC Irvine Libraries, in 1988.</ead:p>
+                     </ead:custodhist>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:custodhist>
+                        <ead:chronlist>
+                           <ead:chronitem>
+                              <ead:daterange>
+                                 <ead:fromdate standarddate="1972">1972</ead:fromdate>
+                                 <ead:todate standarddate="1988">1988</ead:todate>
+                              </ead:daterange>
+                              <ead:geogname>
+                                 <ead:part>Irvine, California</ead:part>
+                              </ead:geogname>
+                              <ead:event>Held by Mayor's office</ead:event>
+                           </ead:chronitem>
+                           <ead:chronitem>
+                              <ead:daterange>
+                                 <ead:fromdate standarddate="1988">1988</ead:fromdate>
+                                 <ead:todate standarddate="2008">2008</ead:todate>
+                              </ead:daterange>
+                              <ead:geogname>
+                                 <ead:part>Irvine, California</ead:part>
+                              </ead:geogname>
+                              <ead:event>Held by Special Collections and Archives, The UC Irvine Libraries</ead:event>
+                           </ead:chronitem>
+                           <ead:chronitem>
+                              <ead:datesingle standarddate="2009">2009</ead:datesingle>
+                              <ead:geogname>
+                                 <ead:part>Austin, Texas</ead:part>
+                              </ead:geogname>
+                              <ead:event>Held by Harry Ransom Center</ead:event>
+                           </ead:chronitem>
+                        </ead:chronlist>
+                     </ead:custodhist>
+                  </egXML>
+               </div>
+            </div>

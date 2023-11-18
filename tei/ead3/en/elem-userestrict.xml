@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-userestrict" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>userestrict</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Conditions Governing Use</p>
+               </div>
+               <div type="summary">
+                  <p>An element for indicating any conditions that affect the use of the described materials, such as in publications.</p>
+               </div>
+               <div type="mayContain">
+                  <p>blockquote, chronlist, head, list, p, table, userestrict</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>archdesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, userestrict</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>userestrict</gi> for information about any limitations, regulations, or special procedures imposed by a repository, donor, legal statute, or other agency. These conditions may be related to
+                     reproduction, publication, or quotation of the described materials after access to the materials has been granted. <gi>userestrict</gi> may also be used to indicate the absence of restrictions, such
+                     as when intellectual property rights have been dedicated to the public.</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse with <gi>accessrestrict</gi>, which contains information about conditions affecting the availability of the described materials.</item>
+                     <item>
+                        <gi>prefercite</gi> may be used to specify how the described materials should be referenced.</item>
+                     <item>Do not confused with <gi>rightsdeclaration</gi>, which provides information about the rights of the finding aid itself.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>ISAD(G) 3.4.2</p>
+                  <p>MARC 540</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:userestrict>
+                        <ead:p>Until 2015 permission to photocopy some materials from this collection has been limited at the request of the donor. Please ask repository staff for details if you are interested in
+                           obtaining photocopies from Series 1: Correspondence.</ead:p>
+                     </ead:userestrict>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:userestrict>
+                        <ead:p>Copyright to the collection has been transferred to the Regents of the University of Michigan.</ead:p>
+                     </ead:userestrict>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:userestrict>
+                        <ead:head>Restrictions on usage</ead:head>
+                        <ead:p>Per the deed of gift:</ead:p>
+                        <ead:blockquote>Any use of quotations, excerpts, reproductions, or any other portion of the collection, either in print or electronically, requires permission of the heirs of the Smith
+                           Estate.</ead:blockquote>
+                     </ead:userestrict>
+                  </egXML>
+               </div>
+            </div>

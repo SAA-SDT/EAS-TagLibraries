@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-physdescstructured" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>physdescstructured</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Structured Physical Description</p>
+               </div>
+               <div type="summary">
+                  <p>An element that provides a method for expressing structured statements about the extent and physical characteristics of the materials being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>descriptivenote, dimensions, physfacet, quantity, unittype</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>did, physdescset</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>coverage</label>
+                        <item>Required (values limited to: part, whole)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>label</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>otherphysdescstructuredtype</label>
+                        <item>Optional</item>
+                        <label>physdescstructuredtype</label>
+                        <item>Required (values limited to: carrier, materialtype, otherphysdescstructuredtype, spaceoccupied)</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>physdescstructured</gi> creates structured statements describing the physical or logical extent or the medium of the materials being described. The use of <gi>physdescstructured</gi> allows for
+                     quantifying the extent of the whole or a part of the materials described in a form that will be machine processable and that will facilitate reporting, statistics, sorting, and importing and
+                     exporting data in a collection management system.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item>
+                        <gi>quantity</gi>
+                     </item>
+                     <item>
+                        <gi>unittype</gi>
+                     </item>
+                     <item>
+                        <gi>physfacet</gi> or <gi>dimensions</gi>
+                     </item>
+                     <item>
+                        <gi>descriptivenote</gi>
+                     </item>
+                  </list>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use the required <att>physdescstructuredtype</att> to specify the nature of the statement about the materials being described.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Use <gi>physdesc</gi> to express physical description in a non-machine-processable form and in instances where data exchange is not a concern.</item>
+                     <item>Use <gi>physdescset</gi> to bind two or more <gi>physdescstructured</gi> elements in order to convey parallel or coverage relationships between them.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>ISAD(G) 3.1.5</p>
+                  <p>MARC 300</p>
+                  <p>MODS <gi>physicalDescription</gi>
+                     <gi>extent</gi>
+                  </p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="whole" physdescstructuredtype="spaceoccupied">
+                        <ead:quantity>12</ead:quantity>
+                        <ead:unittype>linear feet</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="whole" physdescstructuredtype="carrier">
+                        <ead:quantity>24</ead:quantity>
+                        <ead:unittype>boxes</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                        <ead:quantity>5</ead:quantity>
+                        <ead:unittype>dageurreotypes</ead:unittype>
+                        <ead:physfacet>hand-tinted</ead:physfacet>
+                        <ead:dimensions>6.5 x 8.5 inches</ead:dimensions>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                        <ead:quantity/>
+                        <ead:unittype identifier="http://vocab.getty.edu/aat/300247651"> Volvelles</ead:unittype>
+                        <ead:dimensions>10 cm in diameter</ead:dimensions>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="true" coverage="part">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="spaceoccupied">
+                           <ead:quantity>6</ead:quantity>
+                           <ead:unittype>terabytes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>12</ead:quantity>
+                           <ead:unittype>hard drives</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                           <ead:quantity>1800</ead:quantity>
+                           <ead:unittype>electronic files</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="whole" physdescstructuredtype="otherphysdescstructuredtype" otherphysdescstructuredtype="duration">
+                        <ead:quantity>30</ead:quantity>
+                        <ead:unittype>minutes</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
+               </div>
+            </div>

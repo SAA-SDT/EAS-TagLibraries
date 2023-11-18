@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-numeration" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>numeration</att>
+               </head>
+               <div type="fullName">
+                  <p>Numeration</p>
+               </div>
+               <div type="summary">
+                  <p>For lists with a <att>listtype</att> value of "ordered," <att>numeration</att> specifies the type of numeration. </p>
+               </div>
+               <div type="values">
+                  <p>armenian, decimal, decimal-leading-zero, georgian, inherit, lower-alpha, lower-greek, lower-latin, lower-roman, upper-alpha, upper-latin, upper-roman</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                        <ead:fileplan>
+                           <ead:head>AGRICULTURE (AG)</ead:head>
+                           <ead:list listtype="ordered" numeration="arabic">
+                              <ead:item>Home Economics</ead:item>
+                              <ead:item>Horticulture</ead:item>
+                              <ead:item>Marketing</ead:item>
+                              <ead:item>Price Support</ead:item>
+                           </ead:list>
+                        </ead:fileplan>
+                  </egXML>
+               </div>
+            </div>

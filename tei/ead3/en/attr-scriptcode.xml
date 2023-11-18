@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-scriptcode" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>scriptcode</att>
+               </head>
+               <div type="fullName">
+                  <p>Script Code</p>
+               </div>
+               <div type="summary">
+                  <p>The code for the writing script used with a given language. Content should be taken from ISO 15924 Codes for the Representation of Names of Scripts, or another controlled list, as specified in the
+                        <att>scriptencoding</att> attribute in <gi>control</gi>. Available in <gi>script</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:langmaterial>
+                        <ead:languageset>
+                           <ead:language langcode="jpn">Japanese</ead:language>
+                           <ead:script scriptcode="Hira">hiragana</ead:script>
+                           <ead:script scriptcode="Kana">katakana</ead:script>
+                        </ead:languageset>
+                        <ead:descriptivenote>
+                           <ead:p>This file contains documents in Japanese, in both the hiragana and katakana scripts.</ead:p>
+                        </ead:descriptivenote>
+                     </ead:langmaterial>
+                  </egXML>
+               </div>
+            </div>

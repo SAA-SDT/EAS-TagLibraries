@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-localcontrol" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>localcontrol</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Local Control</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>control</gi>, used to specify any control information necessary to accommodate local practice.</p>
+               </div>
+               <div type="mayContain">
+                  <p>daterange, datesingle, term</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>control</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Administrative information about an EAD instance that is not accommodated by other elements but is required to support local needs. The value of the element should be given in a child <gi>term</gi>,
+                     and an associated date or range of dates can be given as either <gi>datesingle</gi> or <gi>daterange</gi>.</p>
+                  <p>Child elements of <gi>localcontrol</gi> must be provided in a specific order:</p>
+                  <list type="simple">
+                     <item>
+                        <gi>term</gi>
+                     </item>
+                     <item>
+                        <gi>datesingle</gi> or <gi>daterange</gi>
+                     </item>
+                  </list>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>localtype</att> if local practice requires recording the type of entry.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control> [. . .] <ead:languagedeclaration>
+                           <ead:language langcode="eng">English</ead:language>
+                           <ead:script scriptcode="Latn">Latin</ead:script>
+                        </ead:languagedeclaration>
+                        <ead:localcontrol localtype="levelofdetail">
+                           <ead:term>Minimum</ead:term>
+                        </ead:localcontrol>
+                        <ead:maintenancehistory>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="derived"/>
+                              <ead:eventdatetime standarddatetime="2013-04-20T16:19:24Z"/>
+                              <ead:agenttype value="machine">machine</ead:agenttype>
+                              <ead:agent>IAMS</ead:agent>
+                           </ead:maintenanceevent>
+                        </ead:maintenancehistory>
+                     </ead:control>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localcontrol localtype="fileSize">
+                        <ead:term>8 MB</ead:term>
+                     </ead:localcontrol>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localcontrol localtype="daoFlag">
+                        <ead:term>true</ead:term>
+                     </ead:localcontrol>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localcontrol localtype="maxComponentID">
+                        <ead:term>414</ead:term>
+                     </ead:localcontrol>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localcontrol localtype="processinglevel">
+                        <ead:term>item</ead:term>
+                     </ead:localcontrol>
+                  </egXML>
+               </div>
+            </div>

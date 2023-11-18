@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-editionstmt" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>editionstmt</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Edition Statement</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>filedesc</gi>, used to provide information about the version of an EAD instance.</p>
+               </div>
+               <div type="mayContain">
+                  <p>edition, p</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>filedesc</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>editionstmt</gi> to indicate the version of an EAD instance, as well as providing any related narrative information. Generally, a new edition of a finding aid represents substantial additions
+                     or changes and should supersede previous online versions.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:filedesc>
+                        <ead:titlestmt>
+                           <ead:titleproper>Register of the Emily Higby Collection</ead:titleproper>
+                        </ead:titlestmt>
+                        <ead:editionstmt>
+                           <ead:edition>2nd ed.</ead:edition>
+                           <ead:p>This edition reflects substantial additions to the collection in 1994.</ead:p>
+                        </ead:editionstmt>
+                     </ead:filedesc>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-nameend" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>nameend</att>
+               </head>
+               <div type="fullName">
+                  <p>Name End</p>
+               </div>
+               <div type="summary">
+                  <p>Name of the rightmost column of a span. The value must be a column name, as defined by <att>colname</att> on <gi>colspec</gi>. Available only in <gi>entry</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:scopecontent>
+                        <ead:table pgwide="false">
+                           <ead:tgroup cols="4">
+                              <ead:colspec colnum="1" colname="correspondent"/>
+                              <ead:colspec colnum="2" colname="total"/>
+                              <ead:colspec colnum="3" colname="sent"/>
+                              <ead:colspec colnum="4" colname="received"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Correspondent</ead:entry>
+                                    <ead:entry colname="total">Total number of letters</ead:entry>
+                                    <ead:entry namest="sent" nameend="received">Letters sent and received</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 <!-- [...] -->
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Douglass, Frederick</ead:entry>
+                                    <ead:entry colname="total">93</ead:entry>
+                                    <ead:entry colname="sent">47</ead:entry>
+                                    <ead:entry colname="received">46</ead:entry>
+                                 </ead:row>
+                                 <ead:row>
+                                    <ead:entry colname="correspondent">Phillips, Wendell</ead:entry>
+                                    <ead:entry colname="total">17</ead:entry>
+                                    <ead:entry colname="sent">12</ead:entry>
+                                    <ead:entry colname="received">5</ead:entry>
+                                 </ead:row>
+                                 <!-- [...] -->
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:scopecontent>
+                  </egXML>
+               </div>
+            </div>

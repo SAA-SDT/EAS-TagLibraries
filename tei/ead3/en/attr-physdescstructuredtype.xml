@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-physdescstructuredtype" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>physdescstructuredtype</att>
+               </head>
+               <div type="fullName">
+                  <p>Structured Physical Description Type</p>
+               </div>
+               <div type="summary">
+                  <p>A required attribute of <gi>physdescstructured</gi> that specifies the nature of the statement being provided. "Carrier" refers to the number of containers; "materialtype" indicates the type and/or
+                     number of the material types; "spaceoccupied" denotes the two- or three-dimensional volume of the materials. If none of these values are appropriate, the value "otherphysdescstructuredtype" may be
+                     chosen and some other value specified in <att>otherphysdescstructuredtype</att>.</p>
+               </div>
+               <div type="values">
+                  <p>carrier, materialtype, otherphysdescstructuredtype, spaceoccupied</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="true" coverage="part">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="spaceoccupied">
+                           <ead:quantity>6</ead:quantity>
+                           <ead:unittype>terabytes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>12</ead:quantity>
+                           <ead:unittype>hard drives</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                           <ead:quantity>1800</ead:quantity>
+                           <ead:unittype>electronic files</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-controlaccess" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>controlaccess</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Controlled Access Headings</p>
+               </div>
+               <div type="summary">
+                  <p>An element that binds together elements containing access headings for the described materials.</p>
+               </div>
+               <div type="mayContain">
+                  <p>blockquote, chronlist, controlaccess, corpname, famname, function, genreform, geogname, head, list, name, occupation, p, persname, subject, table, title</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>archdesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, controlaccess</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>controlaccess</gi> to bundle in a single group access points — names, topics, places, functions, occupations, titles, and genre terms — that represent the contexts and contents of the
+                     materials described. Although <gi>controlaccess</gi> is often used within <gi>archdesc</gi> to provide significant access terms for the entirety of the materials described, it may be used at the
+                     component level to provide terms specific to a component if so desired.</p>
+                  <p>
+                     <gi>controlaccess</gi> helps to enable authority-controlled searching across finding aids, particularly when its children contain terms drawn from nationally or internationally controlled
+                     vocabularies such as the Library of Congress Subject Headings (LCSH) or the UK Archival Thesaurus (UKAT) for topics, the Virtual International Authority File (VIAF) for names, or GeoNames for
+                     places.</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>
+                        <gi>relations</gi> contains one or more <gi>relation</gi> elements that identify an external entity or concept, and describe the nature of the relationship of the described materials to that
+                        entity or concept.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="collection">
+                        <ead:did>[...]</ead:did>
+                        <ead:scopecontent>[...]</ead:scopecontent>
+                        <ead:controlaccess>
+                           <ead:head>Index Terms</ead:head>
+                           <ead:p>These records are indexed under the following headings in the catalog of the
+                              Minnesota Historical Society. Researchers wishing to find related materials should
+                              search the catalog under these index terms.</ead:p>
+                           <ead:controlaccess>
+                              <ead:head>Organizations:</ead:head>
+                              <ead:corpname encodinganalog="610" source="lcnaf">
+                                 <ead:part>Board of Game and Fish Commissioners of Minnesota.</ead:part>
+                              </ead:corpname>
+                           </ead:controlaccess>
+                           <ead:controlaccess>
+                              <ead:head>Topics:</ead:head>
+                              <ead:subject encodinganalog="650" source="lcsh">
+                                 <ead:part>Fishery law and legislation</ead:part>
+                                 <ead:part>Minnesota</ead:part> 
+                              </ead:subject>
+                              <ead:subject encodinganalog="650" source="lcsh">
+                                 <ead:part>Game-law</ead:part>
+                                 <ead:part>Minnesota</ead:part> 
+                              </ead:subject>
+                              <ead:subject encodinganalog="650" source="lcsh">
+                                 <ead:part>Law enforcement</ead:part>
+                                 <ead:part>Minnesota</ead:part> 
+                              </ead:subject>
+                           </ead:controlaccess>
+                           <ead:controlaccess>
+                              <ead:head>Government Functions:</ead:head>
+                              <ead:function encodinganalog="657" source="aat">
+                                 <ead:part>Law enforcing.</ead:part>
+                              </ead:function>
+                              <ead:function encodinganalog="657" source="aat">
+                                 <ead:part>Convicting.</ead:part>
+                              </ead:function>
+                           </ead:controlaccess>
+                        </ead:controlaccess>
+                        [...]
+                     </ead:archdesc>
+                  </egXML>
+               </div>
+            </div>

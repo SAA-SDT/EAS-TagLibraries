@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-target" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>target</att>
+               </head>
+               <div type="fullName">
+                  <p>Target</p>
+               </div>
+               <div type="summary">
+                  <p>A pointer to the ID of another element. Used to create internal links within an XML instance. Available in <gi>ptr</gi> and <gi>ref</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>IDREF</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:indexentry>
+                        <ead:famname>
+                           <ead:part>Hely-Hutchinson family</ead:part>
+                        </ead:famname>
+                        <ead:indexentry>
+                           <ead:genreform>
+                              <ead:part>Pedigree, 20th cent.</ead:part>
+                           </ead:genreform>
+                           <ead:ref target="EngC5769-f74" show="replace" actuate="onrequest">MS. Eng. c. 5769, fol. 74</ead:ref>
+                        </ead:indexentry>
+                     </ead:indexentry>
+                  </egXML>
+               </div>
+            </div>

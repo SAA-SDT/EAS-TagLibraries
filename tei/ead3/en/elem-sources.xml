@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-sources" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+               <head>
+                  <gi>sources</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Sources</p>
+               </div>
+               <div type="summary">
+                  <p>An optional child element of <gi>control</gi> that groups one or more <gi>source</gi>s of evidence used in describing the archival material.</p>
+               </div>
+               <div type="mayContain">
+                  <p>source </p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>control</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>base</label>
+                        <item>Optional</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>sources</gi> to bind together one or more <gi>source</gi> elements.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>base</att> to specify a URI (other than the base URI of the EAD instance) to be used for resolving relative URIs within <gi>sources</gi> or descendant elements.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control> [. . .] <ead:sources>
+                           <ead:source>
+                              <ead:sourceentry>HMC, Principal Family and Estate Collections: Family Names L-W, 1999</ead:sourceentry>
+                           </ead:source>
+                           <ead:source>
+                              <ead:sourceentry>HMC, Complete Peerage, 1936</ead:sourceentry>
+                           </ead:source>
+                        </ead:sources>
+                     </ead:control>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:sources>
+                        <ead:source lastdatetimeverified="2015-07-03T14:36:00-05:00" href="https://archive.org/details/dictionaryofamer00drakrich" actuate="onrequest" linktitle="Dictionary of American                     biography">
+                           <ead:sourceentry>Dictionary of American biography: including men of the time ... and a supplement</ead:sourceentry>
+                           <ead:objectxmlwrap>
+                              <oai_dc:dc>
+                                 <dc:title>Dictionary of American biography, including men of the time; containing nearly ten thousand notices of persons of both sexes, of native and foreign birth, who have been
+                                    remarkable, or prominently connected with the arts, sciences, literature, politics, or history of the American continent. Giving also the pronunciation of many of the foreign and
+                                    peculiar American names, a key to the assumed names of writers, and a supplement</dc:title>
+                                 <dc:creator>Drake, Francis S. (Francis Samuel), 1828-1885</dc:creator>
+                                 <dc:date>1872</dc:date>
+                                 <dc:identifier>E176 .D725 1872</dc:identifier>
+                                 <dc:identifier> https://archive.org/details/dictionaryofamer00drakrich </dc:identifier>
+                              </oai_dc:dc>
+                           </ead:objectxmlwrap>
+                           <ead:descriptivenote>
+                              <ead:p>Basic biographical information about <ead:persname source="lcnaf" normal="Freeman, Nathaniel,                     1741-1827">
+                                    <ead:part>Nathaniel Freeman</ead:part>
+                                 </ead:persname> was taken from <ead:title>
+                                    <ead:part>Dictionary of American biography: including men of the time ... and a supplement</ead:part>
+                                 </ead:title>, page 340.</ead:p>
+                           </ead:descriptivenote>
+                        </ead:source>
+                     </ead:sources>
+                  </egXML>
+               </div>
+            </div>

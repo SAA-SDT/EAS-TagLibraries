@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-unit" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>unit</att>
+               </head>
+               <div type="fullName">
+                  <p>Unit</p>
+               </div>
+               <div type="summary">
+                  <p>The type of measurement used to calculate the value provided in <gi>dimensions</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="whole" physdescstructuredtype="materialtype">
+                        <ead:quantity>10</ead:quantity>
+                        <ead:unittype>posters</ead:unittype>
+                        <ead:dimensions>
+                           <ead:dimentions unit="inches" localtype="height">23</ead:dimentions>
+                           <ead:dimentions unit="inches" localtype="width">35</ead:dimentions>
+                        </ead:dimensions>
+                     </ead:physdescstructured>
+                  </egXML>
+               </div>
+            </div>

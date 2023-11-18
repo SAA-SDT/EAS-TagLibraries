@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-normal" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>normal</att>
+               </head>
+               <div type="fullName">
+                  <p>Normal</p>
+               </div>
+               <div type="summary">
+                  <p>A standardized form of the content of an element that is in uncontrolled or natural language. A standardized form, usually from a controlled vocabulary list, of the content of the following elements
+                     can be provided to facilitate retrieval: <gi>corpname</gi>, <gi>famname</gi>, <gi>function</gi>, <gi>genreform</gi>, <gi>geogname</gi>, <gi>name</gi>, <gi>occupation</gi>, <gi>persname</gi>,
+                        <gi>subject</gi>, and <gi>title</gi>.In <gi>unittitle</gi>, <att>normal</att> may be used to provide a sorting form of a unit title with initial articles.</p>
+               </div>
+               <div type="summary">
+                  <p>In <gi>date</gi> and <gi>unitdate</gi>, it is recommended that <att>normal</att> follows ISO 8601 Representation of Dates and Times or other standard date format. An alternate date normalization
+                     pattern may be specified by selecting "otherdateencoding" as the value for <att>dateencoding</att> in <gi>control</gi> and specifying the alternate date encoding pattern in
+                        <gi>conventiondeclaration</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc type="analyticover">
+                        <ead:c level="subseries">
+                           <ead:did>
+                              <ead:unittitle>Documentary Movies</ead:unittitle>
+                              <ead:unitdate unitdatetype="inclusive" normal="1952/1964"> 1952-1964 </ead:unitdate>
+                              <ead:abstract>Includes scores, arranged alphabetically by movie title, and some correspondence, arranged chronologically.</ead:abstract>
+                           </ead:did>
+                        </ead:c> [. . .] </ead:dsc>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                           <ead:descriptivenote>
+                              <ead:p>Basic biographical information about <ead:persname source="lcnaf" normal="Freeman, Nathaniel, 1741-1827">
+                                    <ead:part>Nathaniel Freeman</ead:part>
+                                 </ead:persname> was taken from <ead:title>
+                                    <ead:part>Dictionary of American biography: including men of the time ... and a supplement</ead:part>
+                                 </ead:title>, page 340.</ead:p>
+                           </ead:descriptivenote>
+                  </egXML>
+               </div>
+            </div>

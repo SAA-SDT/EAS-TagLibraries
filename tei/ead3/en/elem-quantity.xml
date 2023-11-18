@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-quantity" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>quantity</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Quantity</p>
+               </div>
+               <div type="summary">
+                  <p>A required child element of <gi>physdescstructured</gi> that indicates the number of units present as described by <gi>unittype</gi>.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>physdescstructured</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>approximate</label>
+                        <item>Optional (values limited to: false, true)</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>quantity</gi> is for indicating the number of <gi>unittype</gi>s being described. The content of <gi>quantity</gi> should be a number. Use of <gi>quantity</gi> enables extent statements to be
+                     machine processable. If the quantity is unknown, the element should remain empty.</p>
+               </div>
+               <div type="availability">
+                  <p>Required, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured physdescstructuredtype="materialtype" coverage="whole">
+                        <ead:quantity> 15 </ead:quantity>
+                        <ead:unittype>daguerreotypes</ead:unittype>
+                        <ead:dimensions>3.25" x 4.25"</ead:dimensions>
+                        <ead:physfacet>hand colored</ead:physfacet>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                        <ead:quantity> 1 </ead:quantity>
+                        <ead:unittype>hard disk</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                        <ead:quantity> 7500 </ead:quantity>
+                        <ead:unittype>electronic files</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                        <ead:quantity> 50 </ead:quantity>
+                        <ead:unittype>boxes</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                        <ead:quantity> 5 </ead:quantity>
+                        <ead:unittype>broadside folders</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                        <ead:quantity> 10 </ead:quantity>
+                        <ead:unittype>videocassettes</ead:unittype>
+                        <ead:physfacet>tabs removed</ead:physfacet>
+                     </ead:physdescstructured>
+                  </egXML>
+               </div>
+            </div>

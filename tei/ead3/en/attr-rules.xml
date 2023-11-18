@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-rules" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>rules</att>
+               </head>
+               <div type="fullName">
+                  <p>Rules</p>
+               </div>
+               <div type="summary">
+                  <p>Name of the descriptive rules or conventions that govern the formulation of the content of the element. Available in <gi>corpname</gi>, <gi>famname</gi>, <gi>function</gi>, <gi>genreform</gi>,
+                        <gi>geogname</gi>, <gi>name</gi>, <gi>occupation</gi>, <gi>part</gi>, <gi>persname</gi>, <gi>physfacet</gi>, <gi>subject</gi>, <gi>term</gi>, <gi>title</gi>, <gi>unitid</gi>,
+                     <gi>unittype</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="fonds">
+                        <ead:did>
+                           <ead:head>Descriptive Summary</ead:head>
+                           <ead:unittitle label="Title">Richard Egan manuscript maps of Orange County</ead:unittitle>
+                           <ead:unitdate unitdatetype="inclusive" normal="1878/1879">Circa 1878-1879</ead:unitdate>
+                           <ead:unitid countrycode="US" repositorycode="cu-i" label="Collection number">MS-R72</ead:unitid>
+                           <ead:origination label="Creator">
+                              <ead:persname rules="aacr2">
+                                 <ead:part>Egan, Richard</ead:part>
+                                 <ead:part>1842-1923</ead:part>
+                              </ead:persname>
+                           </ead:origination>
+                           <ead:repository label="Repository">
+                              <ead:corpname rules="aacr2">
+                                 <ead:part>University of California, Irvine</ead:part>
+                                 <ead:part>Library</ead:part>
+                                 <ead:part>Special Collections and Archives</ead:part>
+                              </ead:corpname>
+                           </ead:repository>
+                        </ead:did>
+                     </ead:archdesc>
+                  </egXML>
+               </div>
+            </div>

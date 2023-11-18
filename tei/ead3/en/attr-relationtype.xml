@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-relationtype" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>relationtype</att>
+               </head>
+               <div type="fullName">
+                  <p>Relation Type</p>
+               </div>
+               <div type="summary">
+                  <p>A required attribute of <gi>relation</gi> used to indicate the type of entity that is related to the materials being described. </p>
+               </div>
+               <div type="values">
+                  <p>cpfrelation, resourcerelation, functionrelation, otherrelationtype</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc>
+                        <ead:did>
+                           <ead:unittitle>Michael Butterworth Papers</ead:unittitle> [...] </ead:did>
+                        <ead:relations>
+                           <ead:relation relationtype="resourcerelation" href="http://resolver.bl.uk/ark:/81055/vdc_100000000035.0x000122" actuate="onrequest" show="new" arcrole="http://www.w3c.org/2000/01/rdf-schema#seeAlso" linkrole="http://purl.org/archival/vocab/arch#Collection">
+                              <ead:relationentry>Add MS 88967: Michael Butterworth and J G Ballard: Correspondence, 1965-2011</ead:relationentry>
+                           </ead:relation>
+                        </ead:relations> [...] </ead:archdesc>
+                  </egXML>
+               </div>
+            </div>

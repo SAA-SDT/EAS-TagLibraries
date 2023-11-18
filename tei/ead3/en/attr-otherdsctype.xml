@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-otherdsctype" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>otherdsctype</att>
+               </head>
+               <div type="fullName">
+                  <p>Other Description of Subordinate Components Type</p>
+               </div>
+               <div type="summary">
+                  <p>The type of <gi>dsc</gi>, when <att>dsctype</att> is set to "otherdsctype."</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc dsctype="otherdsctype" otherdsctype="structural">
+                        <ead:c level="subseries">
+                           <ead:did>
+                              <ead:unittitle>Clippings</ead:unittitle>
+                           </ead:did>
+                           <ead:c level="otherlevel" otherlevel="sub-subseries">
+                              <ead:did>
+                                 <ead:unittitle>Clippings (chronological)</ead:unittitle>
+                              </ead:did>
+                           </ead:c>
+                           <ead:c level="otherlevel" otherlevel="sub-subseries">
+                              <ead:did>
+                                 <ead:unittitle>Clippings (persons)</ead:unittitle>
+                              </ead:did>
+                           </ead:c>
+                        </ead:c>
+                        <ead:c level="subseries">
+                           <ead:did>
+                              <ead:unittitle>Notes</ead:unittitle>
+                           </ead:did>
+                        </ead:c>
+                     </ead:dsc>
+                  </egXML>
+               </div>
+            </div>

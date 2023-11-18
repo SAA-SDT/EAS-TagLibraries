@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-href" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>href</att>
+               </head>
+               <div type="fullName">
+                  <p>hypertext Reference</p>
+               </div>
+               <div type="summary">
+                  <p>The locator for a remote resource in a link. When linking to an external file, <att>href</att> takes the form of a Uniform Resource Identifier (URI). If the value is not in the form of a URI, the
+                     locator is assumed to be within the document that contains the linking element. </p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:rightsdeclaration>
+                        <ead:abbr>CC0</ead:abbr>
+                        <ead:citation href="https://creativecommons.org/publicdomain/zero/1.0/"/>
+                        <ead:descriptivenote><ead:p>CC0 1.0 Universal (CC0 1.0)</ead:p></ead:descriptivenote>
+                     </ead:rightsdeclaration>
+                  </egXML>
+               </div>
+            </div>

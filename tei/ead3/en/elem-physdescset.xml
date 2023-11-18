@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-physdescset" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>physdescset</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Physical Description Set</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>did</gi> used to bind two or more structured expressions of the physical description of the materials.</p>
+               </div>
+               <div type="mayContain">
+                  <p>physdescstructured</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>did</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience </label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>coverage</label>
+                        <item>Optional (values limited to: part, whole)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>label</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>parallel</label>
+                        <item>Optional (values limited to: false, true)</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>physdescset</gi> binds together two or more <gi>physdescstructured</gi> elements. A set of <gi>physdescstructured</gi> elements may relate in one of two ways: they may be parallel to each other
+                     or they may describe disparate parts that together represent the whole or part of the material described.</p>
+                  <p>For example, a <gi>physdescset</gi> with @parallel="true" might bind a <gi>physdescstructured</gi> element with @physdescstructuredtype="carrier" and a <gi>physdescstructured</gi> element with
+                     @physdescstructuredtype="spaceoccupied," indicating that the two <gi>physdescstrutured</gi> elements describe the same materials in different ways and are therefore parallel statements of extent.
+                     @parallel="true" denotes that <gi>physdescset</gi> and its child <gi>physdescstructured</gi> elements share the same <att>coverage</att> value, i.e., a statement of extent for part of the materials
+                     described cannot be parallel to a statement of extent for the whole of the materials described.</p>
+                  <p>Alternately, a <gi>physdescset</gi> with @parallel="false" may combine two or more <gi>physdescstructured</gi> elements that do not describe the same materials. @parallel="false" denotes that
+                        <gi>physdescstructured</gi> elements that comprise the set all share @coverage="part" (two or more extent statements with @coverage="whole" are by definition parallel). </p>
+                  <p>A <gi>physdescset</gi> with @parallel="false" and @coverage="whole" indicates multiple statements of extent that in sum represent the whole of the materials being described. </p>
+                  <p>A <gi>physdescset</gi> with @parallel="false" and @coverage="part" indicates multiple statements of extent that in sum represent a part of the materials being described.</p>
+                  <p>It is not necessary to bind multiple <gi>physdescstructured</gi> elements within <gi>physdescset</gi>. Only do so when you need to convey the relationships indicated by <att>parallel</att> and
+                        <att>coverage</att>.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="true">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="spaceoccupied">
+                           <ead:quantity>650</ead:quantity>
+                           <ead:unittype>gigabytes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>1</ead:quantity>
+                           <ead:unittype>hard disk</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                           <ead:quantity>7500</ead:quantity>
+                           <ead:unittype>electronic files</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="false" coverage="whole">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>50</ead:quantity>
+                           <ead:unittype>boxes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>5</ead:quantity>
+                           <ead:unittype>broadside folders</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="false" coverage="part">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                           <ead:quantity>10</ead:quantity>
+                           <ead:unittype>videocassettes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                           <ead:quantity>25</ead:quantity>
+                           <ead:unittype>audiocassettes</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset>
+                        <ead:physdescstructured label="Quantity: " physdescstructuredtype="carrier" coverage="whole" encodinganalog="300">
+                           <ead:quantity>3 </ead:quantity>
+                           <ead:unittype>boxes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured label="Quantity: " physdescstructuredtype="spaceoccupied" coverage="whole" encodinganalog="300">
+                           <ead:quantity>1.2</ead:quantity>
+                           <ead:unittype>cubic feet</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured label="Quantity: " physdescstructuredtype="materialtype" coverage="whole" encodinganalog="300">
+                           <ead:quantity>50</ead:quantity>
+                           <ead:unittype>diaries</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+               </div>
+            </div>

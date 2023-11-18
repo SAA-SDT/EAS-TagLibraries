@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-ead" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>ead</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Encoded Archival Description</p>
+               </div>
+               <div type="summary">
+                  <p>The required root element of an EAD instance.</p>
+               </div>
+               <div type="mayContain">
+                  <p>archdesc, control</p>
+               </div>
+               <!--
+               <div type="mayOccurWithin">
+                  <p>ROOT</p>
+               </div>
+               -->
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>base</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>relatedencoding</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>ead</gi> wraps all other elements in an Encoded Archival Description document or finding aid. Also referred to more specifically as an inventory or register, a finding aid establishes physical
+                     and intellectual control over many types of archival materials and helps researchers understand and access the materials being described. <gi>ead</gi> must contain <gi>control</gi> followed by
+                        <gi>archdesc</gi>.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>The <att>audience</att> value may be set to "external" to display data in all descendant elements, unless the value is changed for a specific element.</item>
+                     <item>Use <att>base</att> to specify a URI (other than the base URI of the EAD instance) to be used for resolving relative URIs within <gi>ead</gi> or descendant elements.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Required, not repeatable</p>
+               </div>
+            </div>

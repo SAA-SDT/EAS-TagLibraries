@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-instanceurl" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>instanceurl</att>
+               </head>
+               <div type="fullName">
+                  <p>Instance URL</p>
+               </div>
+               <div type="summary">
+                  <p>The URL for the EAD instance itself (as opposed to HTML or other derivatives, which may be captured in <gi>representation</gi> elements). Available on <gi>recordid</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>anyURI</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control>
+                        <ead:recordid instanceurl="http://drs.library.yale.edu/findaids/wa-mss-s-2636.xml">WA MSS S-2636</ead:recordid>
+                        <ead:otherrecordid localtype="mss"> S-2636 </ead:otherrecordid>
+                        <ead:filedesc>[. . .]</ead:filedesc> [. . .] </ead:control>
+                  </egXML>
+               </div>
+            </div>

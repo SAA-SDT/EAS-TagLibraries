@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-frame" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>frame</att>
+               </head>
+               <div type="fullName">
+                  <p>Frame</p>
+               </div>
+               <div type="summary">
+                  <p>An indication of the position of the external borders (rules) surrounding a table when displayed. Available in <gi>table</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>all, bottom, none, sides, top, topbot</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="none">
+                        <ead:tgroup cols="3">
+                           <ead:colspec colnum="1" colname="1" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="2" colname="2" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="3" colname="3" align="left" colwidth="50pt"/>
+                           <ead:thead>
+                              <ead:row>
+                                 <ead:entry colname="1">Major Family Members</ead:entry>
+                                 <ead:entry colname="2">Spouses</ead:entry>
+                                 <ead:entry colname="3">Children</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody>
+                              <ead:row>
+                                 <ead:entry colname="1">John Albemarle (1760-1806)</ead:entry>
+                                 <ead:entry colname="2">Mary Frances Delaney (1769-1835)</ead:entry>
+                                 <ead:entry colname="3">John Delaney Albemarle (1787-1848)</ead:entry>
+                              </ead:row> . . . </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
+               </div>
+            </div>

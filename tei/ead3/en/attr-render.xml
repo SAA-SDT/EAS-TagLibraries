@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-render" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>render</att>
+               </head>
+               <div type="fullName">
+                  <p>Render</p>
+               </div>
+               <div type="summary">
+                  <p>Controls the formatting of the content of an element for display and print purposes. Available in <gi>emph</gi>, <gi>foreign</gi>, <gi>quote</gi>, <gi>title</gi>, and
+                        <gi>titleproper</gi>. See also <att>altrender</att>.</p>
+               </div>
+               <div type="values">
+                  <p>altrender, bold, bolddoublequote, bolditalic, boldsinglequote, boldsmcaps, boldunderline, doublequote, italic, nonproport, singlequote, smcaps, sub, super, underline</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bibliography>
+                        <ead:head>Bibliography</ead:head>
+                        <ead:p>Sources consulted by John Kobler.</ead:p>
+                        <ead:bibliography>
+                           <ead:head>Monographs</ead:head>
+                           <ead:bibref>
+                              <ead:title render="italic">
+                                 <ead:part>Affiches americaines</ead:part>
+                              </ead:title> San Domingo: Imprimerie royale du Cap, 1782. Nos. 30, 35.</ead:bibref>
+                           <ead:bibref>Ardouin, Charles Nicholas Celigny. <ead:title render="italic">
+                                 <ead:part>Essais sur l'histoire d'Haiti</ead:part>
+                              </ead:title>. Port-au-Prince, 1865.</ead:bibref>
+                           <ead:bibref>Bastien, Remy. <ead:title render="italic">
+                                 <ead:part>Anthologie du folklore haitien</ead:part>
+                              </ead:title>, <ead:title render="doublequote">
+                                 <ead:part>Proverbes</ead:part>
+                              </ead:title>.Mexico, 1946. pp.83-91.</ead:bibref>
+                           <ead:bibref>Bellegarde, Dantes. <ead:title render="italic">
+                                 <ead:part>Dessalines a parle</ead:part>
+                              </ead:title>. Port-au-Prince, 1948.Chap. IV: pp. 47-54.</ead:bibref>
+                        </ead:bibliography>
+                        <ead:bibliography>
+                           <ead:head>Serial publications</ead:head> [. . .] </ead:bibliography>
+                     </ead:bibliography>
+                  </egXML>
+               </div>
+            </div>

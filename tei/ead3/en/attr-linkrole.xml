@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-linkrole" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>linkrole</att>
+               </head>
+               <div type="fullName">
+                  <p>Link Role</p>
+               </div>
+               <div type="summary">
+                  <p>A URI that characterizes the nature of the remote resource to which a linking element refers.</p>
+               </div>
+               <div type="datatype">
+                  <p>anyURI</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:representation href="http://drs.library.yale.edu:8083/fedora/get/beinecke:jonesss/PDF" linkrole="https://www.iana.org/assignments/media-types/application/pdf">PDF version of finding aid</ead:representation>
+                  </egXML>
+               </div>
+            </div>

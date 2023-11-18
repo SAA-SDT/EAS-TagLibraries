@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-rowsep" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>rowsep</att>
+               </head>
+               <div type="fullName">
+                  <p>Row Separator</p>
+               </div>
+               <div type="summary">
+                  <p>Specifies whether the rows in a table are to be separated by horizontal lines. A value of "false" indicates that no line is displayed, and "true" indicates that a line should be displayed below the
+                     row.</p>
+               </div>
+               <div type="values">
+                  <p>false, true</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="all" colsep="true" rowsep="true">
+                        <ead:head>Dates of Existence for Local Chapters</ead:head>
+                        <ead:tgroup align="center" cols="3">
+                           <ead:colspec colname="chaptertitle" colnum="1"/>
+                           <ead:colspec colname="yearformed" colnum="2"/>
+                           <ead:colspec colname="yeardisbanded" colnum="3"/>
+                           <ead:thead valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Chapter Title</ead:entry>
+                                 <ead:entry colname="yearformed">Year Formed</ead:entry>
+                                 <ead:entry colname="yeardisbanded">Year Disbanded</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody valign="middle">
+                              <ead:row>
+                                 <ead:entry colname="chaptertitle">Local Chapter 543</ead:entry>
+                                 <ead:entry colname="yearformed">1923</ead:entry>
+                                 <ead:entry colname="yeardisbanded">1967</ead:entry>
+                              </ead:row>
+                           </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
+               </div>
+            </div>

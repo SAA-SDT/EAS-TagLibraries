@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-datechar" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>datechar</att>
+               </head>
+               <div type="fullName">
+                  <p>Date Characterization</p>
+               </div>
+               <div type="summary">
+                  <p>Term characterizing the nature of a date, such as dates of creation, accumulation, or modification. Available in <gi>unitdate</gi> and <gi>unitdatestructured</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured calendar="gregorian" certainty="approximate" datechar="creation" era="ce" unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate standarddate="1950">1950</ead:fromdate>
+                           <ead:todate standarddate="2000">2000</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
+               </div>
+            </div>

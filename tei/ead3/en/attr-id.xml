@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-id" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>id</att>
+               </head>
+               <div type="fullName">
+                  <p>ID</p>
+               </div>
+               <div type="summary">
+                  <p>An identifier that must be unique within the current document and is used to name the element so that it can be referred to, or referenced from, somewhere else. This facilitates building links
+                     between the element and other resources. Do not confuse with <att>identifier</att>, which provides a machine-processable identifier for an entity or concept in an external system.</p>
+               </div>
+               <div type="datatype">
+                  <p>ID</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:container altrender="Slim Legal Document Box (1/2 AB)" containerid="33433117009781" id="aspace_3e98d60dfc5e7ef6c017b677f6616965" label="Mixed Materials" localtype="box">3</ead:container>
+                  </egXML>
+               </div>
+            </div>

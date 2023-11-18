@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-althead" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>althead</att>
+               </head>
+               <div type="fullName">
+                  <p>Alternative Heading</p>
+               </div>
+               <div type="summary">
+                  <p>An alternative short form of the heading element <gi>head</gi> that may be used, for example, to create a running header.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bioghist>
+                        <ead:head althead="Family relations">Bach family relations listing spouses and children of the major family members</ead:head>
+                        <ead:table pgwide="true">
+                           <ead:tgroup cols="3">
+                              <ead:colspec colnum="1" colname="member"/>
+                              <ead:colspec colnum="2" colname="spouse"/>
+                              <ead:colspec colnum="3" colname="child" align="char" char="*" charoff="2"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="member">Major family members</ead:entry>
+                                    <ead:entry colname="spouse">Spouses</ead:entry>
+                                    <ead:entry colname="child">Children</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 <!-- [...] -->
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:bioghist>
+                  </egXML>
+               </div>
+</div>

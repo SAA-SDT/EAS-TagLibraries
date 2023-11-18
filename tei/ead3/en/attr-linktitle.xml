@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-linktitle" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>linktitle</att>
+               </head>
+               <div type="fullName">
+                  <p>Link Title</p>
+               </div>
+               <div type="summary">
+                  <p>Information that serves as a viewable caption which explains to users the part that a resource plays in a link. May be useful for meeting accessibility requirements when rendering finding aids in a
+                     web browser.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:sources>
+                        <ead:source lastdatetimeverified="2015-07-03T14:36:00-05:00" href="https://archive.org/details/dictionaryofamer00drakrich" actuate="onrequest" linktitle="Dictionary of American biography">
+                           <ead:sourceentry>Dictionary of American biography: including men of the time ... and a supplement</ead:sourceentry> [. . .] </ead:source>
+                     </ead:sources>
+                  </egXML>
+                  
+               </div>
+            </div>

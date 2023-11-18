@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-actuate" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+    <head>
+        <att>actuate</att>
+    </head>
+    <div type="fullName">
+        <p>Actuate</p>
+    </div>
+    <div type="summary">
+        <p>A control that defines whether a rendering application should present an actionable link automatically (onload) or when requested by the user (onrequest). It is used in conjunction with <att>show</att> to determine link behavior. </p>
+    </div>
+    <div type="values">
+        <p>none, onload, onrequest, other</p>
+    </div>
+    <div type="examples">
+        <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+            <ead:daoset label="Digital Objects" coverage="part">
+                <ead:dao daotype="derived" coverage="part" actuate="onload" show="embed" linktitle="Chapter 1" localtype="thumbnail" href="http://imgs.ud.edu/archives/image/f12001_1thumb.gif"/>
+                <ead:dao daotype="derived" coverage="part" actuate="onrequest" show="new" linktitle="Chapter 1" localtype="fullsize" href="http://imgs.ud.edu/archives/image/f12001_1.jpg"/>
+            </ead:daoset>
+        </egXML>
+    </div>
+</div>
