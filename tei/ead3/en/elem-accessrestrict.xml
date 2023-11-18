@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-accessrestrict" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>accessrestrict</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Conditions Governing Access</p>
+               </div>
+               <div type="summary">
+                  <p>An element for information about conditions that affect the availability of the materials being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>accessrestrict, blockquote, chronlist, head, list, p, table</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>accessrestrict, archdesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Record in <gi>accessrestrict</gi> information about the availability of the described materials, whether due to the nature of the information in the materials being described, the physical condition
+                     of the materials, or the location of the materials. Examples include restrictions imposed by the donor, legal statute, repository, or other agency, as well as the need to make an appointment with
+                     repository staff. May also indicate that the materials are not restricted.</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse with <gi>userestrict</gi>, which records information about limitations on the use of the described materials after access has been granted.</item>
+                     <item>Do not confuse with <gi>legalstatus</gi>, which records the statutorily-defined status of the materials being described.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>ISAD(G) 3.4.1</p>
+                  <p>MARC 355, 506</p>
+                  <p>MODS <gi>accessCondition</gi>
+                  </p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:accessrestrict>
+                        <ead:p>There are no access restrictions on this collection.</ead:p>
+                     </ead:accessrestrict>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:accessrestrict>
+                        <ead:p>University records are public records and once fully processed are generally open to research use. Records that contain personally identifiable information will be closed to protect
+                           individual privacy. The closure of university records is subject to compliance with applicable laws.</ead:p>
+                     </ead:accessrestrict>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c02 level="file">
+                        <ead:did>
+                           <ead:container label="Box">104</ead:container>
+                           <ead:container label="Folder(s)">6578-6579</ead:container>
+                           <ead:unittitle>
+                              <ead:emph render="italic">Technics and Civilization (Form and Personality)</ead:emph>
+                           </ead:unittitle>
+                           <ead:unitdate unitdatetype="inclusive" normal="1931/1933">1931-1933</ead:unitdate>
+                        </ead:did>
+                        <ead:scopecontent>
+                           <ead:p>Draft fragments.</ead:p>
+                        </ead:scopecontent>
+                        <ead:accessrestrict>
+                           <ead:p>Only the photocopies (housed in Box 105) of these fragile materials may be used.</ead:p>
+                        </ead:accessrestrict>
+                     </ead:c02>
+                  </egXML>
+               </div>
+            </div>

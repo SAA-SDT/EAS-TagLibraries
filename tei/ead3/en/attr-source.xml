@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-source" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>source</att>
+               </head>
+               <div type="fullName">
+                  <p>Source</p>
+               </div>
+               <div type="summary">
+                  <p>The controlled vocabulary that is the source of the term contained in the element. Available in <gi>corpname</gi>, <gi>famname</gi>, <gi>function</gi>, <gi>genreform</gi>, <gi>geogname</gi>,
+                        <gi>name</gi>, <gi>occupation</gi>, <gi>part</gi>, <gi>persname</gi>, <gi>physfacet</gi>, <gi>subject</gi>, <gi>term</gi>, <gi>title</gi>, <gi>unitid</gi>, and <gi>unittype</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:controlaccess>
+                        <ead:function encodinganalog="657" source="aat">
+                           <ead:part>Legislating</ead:part>
+                        </ead:function>
+                        <ead:function encodinganalog="657" source="aat">
+                           <ead:part>Law enforcing</ead:part>
+                        </ead:function>
+                        <ead:function encodinganalog="657" source="aat">
+                           <ead:part>Convicting</ead:part>
+                        </ead:function>
+                     </ead:controlaccess>
+                  </egXML>
+               </div>
+            </div>

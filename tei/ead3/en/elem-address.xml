@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-address" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>address</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Address</p>
+               </div>
+               <div type="summary">
+                  <p>An element that binds together one or more <gi>addressline</gi> elements that provide contact information for a repository or publisher.</p>
+               </div>
+               <div type="mayContain">
+                  <p>addressline</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>publicationstmt, repository</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use to record information about the place where a repository or publisher is located and may be contacted. Examples include a postal address, electronic mail address, and/or phone number.</p>
+                  <p>Use <gi>address</gi> within <gi>repository</gi> when encoding the contact information of the institution or agency providing intellectual access to the materials being described. Use <gi>address</gi>
+                     within <gi>publicationstmt</gi> when it contains the address of the publisher of the encoded archival description.</p>
+                  <p>Consider using a style sheet to store address information that occurs in many archival descriptions, as it is easier to update the information when located in a single, shared file.</p>
+               </div>
+               <div type="availability">
+                  <p>Within <gi>publicationstmt</gi>:One of <gi>address</gi>, <gi>date</gi>, <gi>num</gi>, <gi>p</gi>, or <gi>publisher</gi> is required, repeatable</p>
+                  <p>Within <gi>repository</gi>:Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:publicationstmt>
+                        <ead:publisher>The British Library</ead:publisher>
+                        <ead:address>
+                           <ead:addressline>96 Euston Road</ead:addressline>
+                           <ead:addressline>London</ead:addressline>
+                           <ead:addressline>NW1 2DB</ead:addressline>
+                           <ead:addressline>United Kingdom</ead:addressline>
+                        </ead:address>
+                     </ead:publicationstmt>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:publicationstmt>
+                        <ead:publisher>The Bancroft Library.</ead:publisher>
+                        <ead:address>
+                           <ead:addressline>University of California, Berkeley.</ead:addressline>
+                           <ead:addressline>Berkeley, California 94720-6000</ead:addressline>
+                           <ead:addressline>Phone: 510/642-6481</ead:addressline>
+                           <ead:addressline>Fax: 510/642-7589</ead:addressline>
+                           <ead:addressline>Email: bancref@library.berkeley.edu</ead:addressline>
+                        </ead:address>
+                     </ead:publicationstmt>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:repository>
+                        <ead:corpname>
+                           <ead:part>University of California, Irvine. Library. Special Collections and Archives.</ead:part>
+                        </ead:corpname>
+                        <ead:address>
+                           <ead:addressline>Irvine, California 92623-9557</ead:addressline>
+                        </ead:address>
+                     </ead:repository>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-mark" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>mark</att>
+               </head>
+               <div type="fullName">
+                  <p>Mark</p>
+               </div>
+               <div type="summary">
+                  <p>For lists with a <att>listtype</att> value "unordered," <att>mark</att> may be used to indicate the character to be used in marking each list entry. Values are drawn from the CSS "list-style-type"
+                     property list.</p>
+               </div>
+               <div type="values">
+                  <p>disc, circle, inherit, none, square</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:list listtype="unordered" mark="circle">
+                        <ead:head>List of ministers of May Memorial Unitarian Universalist Church</ead:head>
+                        <ead:item>John Storer, Minister 1839-1844</ead:item>
+                        <ead:item>Samuel Joseph May, Minister 1845-1868</ead:item>
+                        <ead:item>Samuel R. Calthrop, Minister 1868-1911</ead:item>
+                        <ead:item>John H. Applebee, Minister 1911-1929</ead:item>
+                        <ead:item>Waldemar W. Argow, Minister 1930-1941</ead:item>
+                        <ead:item>Robert E. Romig, Minister 1941-1946</ead:item>
+                        <ead:item>Glenn O. Canfield, Minister 1946-1952</ead:item>
+                        <ead:item>John Fuller, Minister, 1961-1973</ead:item>
+                     </ead:list>
+                  </egXML>
+               </div>
+            </div>

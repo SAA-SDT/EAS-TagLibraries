@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-relatedencoding" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>relatedencoding</att>
+               </head>
+               <div type="fullName">
+                  <p>Related Encoding</p>
+               </div>
+               <div type="summary">
+                  <p>A descriptive encoding system, such as MARC21, ISAD(G), or Dublin Core, to which certain EAD elements can be mapped using <att>encodinganalog</att>. Available in <gi>ead</gi>, <gi>control</gi>, and
+                        <gi>archdesc</gi>; <gi>control</gi> and <gi>archdesc</gi> may be mapped to different encoding systems, for example <gi>control</gi> mapped to Dublin Core and <gi>archdesc</gi> mapped to MARC21 or
+                     ISAD(G) instead. </p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="fonds" localtype="inventory" relatedencoding="ISAD(G)v2" encodinganalog="3.1.4" lang="dut" script="Latn">
+                        <ead:did>
+                           <ead:unittitle encodinganalog="3.1.2">Nederlandsche Gist- en Spiritusfabriek en Pharmaceutische Fabrieken voorheen Brocades-Stheeman &amp; Pharmacia, in 1967 gefuseerd tot
+                              Gist-Brocades</ead:unittitle>
+                           <ead:unitdate calendar="gregorian" era="ce" encodinganalog="3.1.3" normal="1860/1967"> 1860-1967 (1987)</ead:unitdate>
+                        </ead:did> [...] </ead:archdesc>
+                  </egXML>
+               </div>
+            </div>

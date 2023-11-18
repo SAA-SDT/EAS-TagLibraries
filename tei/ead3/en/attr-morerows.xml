@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-morerows" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>morerows</att>
+               </head>
+               <div type="fullName">
+                  <p>More Rows</p>
+               </div>
+               <div type="summary">
+                  <p>Number of additional rows in a vertical straddle. Value is a number; default value is "0" to indicate one row only, no vertical span. Available only in <gi>entry</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bioghist>
+                        <ead:head althead="Family relations">Bach family relations listing spouses and children of the major family members</ead:head>
+                        <ead:table pgwide="true">
+                           <ead:tgroup cols="3">
+                              <ead:colspec colnum="1" colname="member"/>
+                              <ead:colspec colnum="2" colname="spouse"/>
+                              <ead:colspec colnum="3" colname="child" align="char" char="*" charoff="2"/>
+                              <ead:thead>
+                                 <ead:row>
+                                    <ead:entry colname="member">Major family members</ead:entry>
+                                    <ead:entry colname="spouse">Spouses</ead:entry>
+                                    <ead:entry colname="child">Children</ead:entry>
+                                 </ead:row>
+                              </ead:thead>
+                              <ead:tbody>
+                                 <ead:row>
+                                    <ead:entry colname="member"/>
+                                    <ead:entry colname="spouse" morerows="2" valign="top">Anna Magdalena, geb. Wilcke (1701–1760)</ead:entry>
+                                    <ead:entry colname="child">* Gottfried Heinrich Bach (1724–1763)</ead:entry>
+                                 </ead:row>
+                              </ead:tbody>
+                           </ead:tgroup>
+                        </ead:table>
+                     </ead:bioghist>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-fileplan" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>fileplan</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">File Plan</p>
+               </div>
+               <div type="summary">
+                  <p>An element for information about any classification scheme used by the original creator to arrange, store, and retrieve the materials described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>blockquote, chronlist, fileplan, head, list, p, table</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>archdesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, fileplan</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>A filing plan is usually identified by the type of system used, e.g., alphabetical, numerical, alpha-numerical, decimal, color-coded, etc. It is often hierarchical and may include the filing
+                     guidelines of the originating entity. Additional types include a drawing of a room layout or a scientific scheme.</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse with <gi>arrangement</gi>, which describes the current organization and/or filing sequence of the materials, as opposed to that imposed by the original creator.</item>
+                     <item>Do not confuse with <gi>otherfindaid</gi>, which contains references to additional descriptions of the material rather than descriptions of classification schemes by which the materials might
+                        still be arranged.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:fileplan>
+                        <ead:head>File List</ead:head>
+                        <ead:p> The list below outlines the classification system used for the central files of Vice President Mondale's office. This structure assigned alpha-numeric codes to primary subjects and to
+                           secondary and tertiary subdivisions thereunder.</ead:p>
+                        <ead:fileplan>
+                           <ead:head>AGRICULTURE (AG)</ead:head>
+                           <ead:list listtype="ordered" numeration="arabic">
+                              <ead:item>Home Economics</ead:item>
+                              <ead:item>Horticulture</ead:item>
+                              <ead:item>Marketing</ead:item>
+                              <ead:item>Price Support</ead:item>
+                           </ead:list>
+                        </ead:fileplan>
+                        <ead:fileplan>
+                           <ead:head>ARTS (AR)</ead:head>
+                           <ead:list listtype="ordered" numeration="arabic">
+                              <ead:item>Languages</ead:item>
+                              <ead:item>Museums</ead:item>
+                              <ead:item>Music</ead:item>
+                           </ead:list>
+                        </ead:fileplan>
+                     </ead:fileplan>
+                  </egXML>
+               </div>
+            </div>

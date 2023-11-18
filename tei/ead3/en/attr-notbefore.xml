@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-notbefore" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>notbefore</att>
+               </head>
+               <div type="fullName">
+                  <p>Not Before</p>
+               </div>
+               <div type="summary">
+                  <p>A standard numerical form of an approximate date for which an earliest possible date is known. Available in <gi>datesingle</gi>, <gi>fromdate</gi>, and <gi>todate</gi>. It is recommened that
+                        <att>notbefore</att> values follow ISO 8601 or another standard date format as specified in <att>dateencoding</att>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate notafter="1962">1962</ead:fromdate>
+                           <ead:todate notafter="1968">1968</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured certainty="circa" unitdatetype="inclusive">
+                        <ead:daterange>
+                           <ead:fromdate notbefore="1971" notafter="1975">around 1973</ead:fromdate>
+                           <ead:todate standarddate="1992">1992</ead:todate>
+                        </ead:daterange>
+                     </ead:unitdatestructured>
+                  </egXML>
+               </div>
+            </div>

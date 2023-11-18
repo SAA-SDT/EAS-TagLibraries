@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-dimensions" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>dimensions</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Dimensions</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>physdescstructured</gi> that provides information about the size of the material being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text], abbr, dimensions, emph, expan, foreign, lb, ptr, ref</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>dimensions, physdescstructured</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience </label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                        <label>unit</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>dimensions</gi> may be used to specify the size, in two or three dimensions, of the units identified by <gi>unittype</gi> within <gi>physdescstructured</gi>. It usually includes numerical data.
+                     Express measurements in any convenient unit as indicated in the <att>unit</att> attribute. Multiple dimensions, for example, height-by-width, can be encoded in a single <gi>dimensions</gi> or in
+                     separate <gi>dimensions</gi> with distinctive <att>localtype</att> values.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>If the kind of measurement is not clear in the text, <att>unit</att> may be used to specify this information, for example, "inches" or "centimeters."</item>
+                     <item>If desired, <att>localtype</att> may be used to capture the kind of dimensions being measured, such as "height" or "circumference."</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                        <ead:quantity>5</ead:quantity>
+                        <ead:unittype>dageurreotypes</ead:unittype>
+                        <ead:physfacet>hand-tinted</ead:physfacet>
+                        <ead:dimensions>6.5 x 8.5 inches</ead:dimensions>
+                     </ead:physdescstructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="whole" physdescstructuredtype="materialtype">
+                        <ead:quantity>10</ead:quantity>
+                        <ead:unittype>posters</ead:unittype>
+                        <ead:dimensions>
+                           <ead:dimentions unit="inches" localtype="height">23</ead:dimentions>
+                           <ead:dimentions unit="inches" localtype="width">35</ead:dimentions>
+                        </ead:dimensions>
+                     </ead:physdescstructured>
+                  </egXML>
+               </div>
+            </div>

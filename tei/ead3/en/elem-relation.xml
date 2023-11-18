@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-relation" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>relation</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Relation</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>relations</gi> for describing a relationship between the materials described in the EAD instance and a related entity.</p>
+               </div>
+               <div type="mayContain">
+                  <p>daterange, dateset, datesingle, descriptivenote, objectxmlwrap, geogname, relationentry</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>relations</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>actuate</label>
+                        <item>Optional (values limited to: none, onload, onrequest, other)</item>
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>arcrole</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>href</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>lastdatetimeverified</label>
+                        <item>Optional (must follow pattern based on ISO 8601)</item>
+                        <label>linkrole</label>
+                        <item>Optional </item>
+                        <label>linktitle</label>
+                        <item>Optional</item>
+                        <label>otherrelationtype</label>
+                        <item>Optional</item>
+                        <label>relationtype</label>
+                        <item>Required (values limited to: cpfrelation, functionrelation, resourcerelation, otherrelationtype)</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                        <label>show</label>
+                        <item>Optional (values limited to: embed, new, none, other, replace)</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>relation</gi> records descriptive information about a relationship between the materials being described and a related entity, such as: an archival, bibliographic, or other resource; a corporate
+                     body, person, or family; a function; or any other entity.</p>
+                  <p>Use <gi>relationentry</gi> to provide a textual description of the related entity. Use <gi>objectxmlwrap</gi> to embed XML documenting the related entity from any namespace other than EAD. Use
+                        <gi>date</gi>, <gi>daterange</gi>, or <gi>dateset</gi> for specifying the time period of the relationship and <gi>geogname</gi> for relevant location information. <gi>descriptivenote</gi> may be
+                     included for more detailed specifications or explanations of the relationship.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item>
+                        <gi>relationentry</gi>
+                     </item>
+                     <item>
+                        <gi>objectxmlwrap</gi>
+                     </item>
+                     <item>
+                        <gi>datesingle</gi>, <gi>daterange</gi>, and/or <gi>dateset</gi>
+                     </item>
+                     <item>
+                        <gi>geogname</gi>
+                     </item>
+                     <item>
+                        <gi>descriptivenote</gi>
+                     </item>
+                  </list>
+                  <p>Element status:</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>relationtype</att> to specify the kind of relationship being encoded.</item>
+                     <item>Use <att>otherrelationtype</att> to specify the alternate type of relationship, when <att>relationtype</att> is set to "otherrelationtype"</item>
+                     <item>Use <att>arcrole</att> to supply a URI that describes the nature of the relationship between the materials being described and the related entity.</item>
+                     <item>Use <att>linkrole</att> to supply a URI that describes the nature of the remote resource.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>The children of <gi>controlaccess</gi>, which can be used to specify the individuals, organizations, families, topics, and functions related to the materials being described using controlled
+                        vocabularies.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Required, repeatable</p>
+                  <p>Experimental in EAD3</p>
+               </div>
+               <div type="examples">
+                  <p>See examples under <gi>relations</gi>.</p>
+               </div>
+            </div>

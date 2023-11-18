@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-legalstatus" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>legalstatus</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Legal Status</p>
+               </div>
+               <div type="summary">
+                  <p>An element for indicating the statutorily defined status of the materials being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>blockquote, chronlist, head, legalstatus, list, p, table</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>archdesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, legalstatus</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>legalstatus</gi> to identify the status of the material being described as defined by law, for example, the Public Records Act of 1958 in the United Kingdom.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>MARC 506</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:did>
+                        <ead:unitid label="Reference Code">PREM 8</ead:unitid>
+                        <ead:unittitle label="Title">Prime Minister's Office: Correspondence and Papers</ead:unittitle>
+                        <ead:unitdate label="Creation Dates" unitdatetype="inclusive">1935-1951</ead:unitdate>
+                     </ead:did>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:legalstatus>
+                        <ead:p>Public Record(s)</ead:p>
+                     </ead:legalstatus>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:legalstatus>
+                        <ead:head>Legal status of records</ead:head>
+                        <ead:p>Federal, state and local laws apply, as follows.</ead:p>
+                        <ead:legalstatus>
+                           <ead:head>Student records</ead:head>
+                           <ead:p>Student records are governed by the Family Educational Rights and Privacy Act (FERPA), <ead:num localtype="us.usc">20 U.S.C. § 1232g</ead:num>.</ead:p>
+                        </ead:legalstatus>
+                        <ead:legalstatus>
+                           <ead:head>Patient records</ead:head>
+                           <ead:p>Patient records are governed by the Health Insurance Portability and Accountability Act, <ead:num localtype="us.pub.l">Pub.L. 104–191</ead:num>and <ead:num localtype="us.stat">110 Stat.
+                                 1936</ead:num>. <ead:num localtype="eu.echr">Article 8 ECHR</ead:num> may also apply.</ead:p>
+                        </ead:legalstatus>
+                     </ead:legalstatus>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:legalstatus>
+                        <ead:p>On deposit until 2025. See Deed of Gift for more information.</ead:p>
+                     </ead:legalstatus>
+                  </egXML>
+               </div>
+            </div>

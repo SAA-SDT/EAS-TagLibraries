@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-localtype" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>localtype</att>
+               </head>
+               <div type="fullName">
+                  <p>Local Type</p>
+               </div>
+               <div type="summary">
+                  <p>This optional attribute provides a means to narrow the semantics of an element, or provide semantics for elements that are primarily structural or semantically weak. The value of <att>localtype</att>
+                     may be from a local or generally used external vocabulary. While the value of <att>localtype</att> may be any string, to facilitate exchange of data, it is recommended that the value be either the
+                     URI or the preferred label for a term defined in a formal vocabulary (e.g., SKOS), which is identified by an absolute URI, and is resolvable to a web resource that describes the semantic scope and
+                     use of the value. Local conventions or controlled vocabularies used in <att>localtype</att> may be declared in <gi>localtypedeclaration</gi> within <gi>control</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c01 level="series">
+                        <ead:did>
+                           <ead:unittitle>...</ead:unittitle>
+                        </ead:did>
+                        <ead:c02 level="file">
+                           <ead:did>
+                              <ead:container localtype="box"> 3 </ead:container>
+                              <ead:container localtype="folder"> 18 </ead:container>
+                              <ead:unittitle>Parent-Teacher Association of Fondsville</ead:unittitle>
+                              <ead:unitdate unitdatetype="inclusive" normal="1959/1972">1959-1972</ead:unitdate>
+                           </ead:did>
+                        </ead:c02>
+                     </ead:c01>
+                  </egXML>
+               </div>
+            </div>

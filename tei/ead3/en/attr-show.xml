@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-show" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>show</att>
+               </head>
+               <div type="fullName">
+                  <p>Show</p>
+               </div>
+               <div type="summary">
+                  <p>A control that defines whether a remote resource that is the target of a link appears in a new window, replaces the local resource that initiated the link, appears at the point of the link (embed),
+                     initiates some other action, or causes no target resource to display. It is used in conjunction with <att>actuate</att> to determine link behavior.</p>
+               </div>
+               <div type="values">
+                  <p>new, replace, embed, other, none</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control> [. . .] <ead:conventiondeclaration>
+                           <ead:abbr>DACS</ead:abbr>
+                           <ead:citation href="http://www2.archivists.org/standards/DACS" lastdatetimeverified="2015-07-02T16:30:21-5:00" linktitle="DACS in HTML on SAA website" actuate="onload" show="new">Describing Archives: a Content Standard</ead:citation>
+                           <ead:descriptivenote>
+                              <ead:p>DACS was used as the primary description standard.</ead:p>
+                           </ead:descriptivenote>
+                        </ead:conventiondeclaration> [. . .] </ead:control>
+                  </egXML>
+               </div>
+            </div>
