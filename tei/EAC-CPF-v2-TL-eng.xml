@@ -8,7 +8,7 @@
          <titleStmt>
             <title xml:lang="eng" type="main">Encoded Archival Context - Corporate Bodies, Persons,
                and Families (EAC-CPF) <lb/> Tag Library</title>
-            <title xml:lang="eng" type="additional">Version EAC-CPF 2.1</title>
+            <title xml:lang="eng" type="additional">Version EAC-CPF 2.0.1</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
                <name>Technical Subcommittee for Encoded Archival Standard of the Society of American
@@ -52,7 +52,7 @@
             <docTitle>
                <titlePart type="main">Encoded Archival Context - Corporate Bodies, Persons, and
                   Families (EAC-CPF) <lb/> Tag Library</titlePart>
-               <titlePart type="additional">Version EAC-CPF 2.1</titlePart>
+               <titlePart type="additional">Version EAC-CPF 2.0.1</titlePart>
             </docTitle>
             <docEdition>2023 Edition</docEdition>
             <byline>Prepared and maintained by the</byline>
