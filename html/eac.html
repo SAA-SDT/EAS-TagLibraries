@@ -12,8 +12,8 @@
          <div>
             <div class="titlePage">
                <div class="title">Encoded Archival Context - Corporate Bodies, Persons, and
-                  Families (EAC-CPF)  Tag Library Version EAC-CPF 2.0</div>
-               <div class="edition">2022 Edition</div>
+                  Families (EAC-CPF)  Tag Library Version EAC-CPF 2.0.1</div>
+               <div class="edition">2023 Edition</div>
                <div class="edition">
                   <div>Prepared and maintained by the</div>
                   <div>Technical Subcommittee for Encoded Archival Standards of the Society of
@@ -26,10 +26,10 @@
          </div>
          <div>
             <div class="head03" id="toc">Table of Contents</div>
-            <div class="toc1"><a href="#d1e55">Related Standards</a></div>
-            <div class="toc1"><a href="#d1e101">Release and Revision Notes</a></div>
-            <div class="toc1"><a href="#d1e131">Tag Library Conventions</a></div>
-            <div class="toc1"><a href="#d1e180">Elements</a></div>
+            <div class="toc1"><a href="#d1e54">Related Standards</a></div>
+            <div class="toc1"><a href="#d1e100">Release and Revision Notes</a></div>
+            <div class="toc1"><a href="#d1e130">Tag Library Conventions</a></div>
+            <div class="toc1"><a href="#d1e179">Elements</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -151,7 +151,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e7957">Attributes</a></div>
+            <div class="toc1"><a href="#d1e7945">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -220,8 +220,8 @@
             </div>
          </div>
          <div>
-            <div class="section" id="d1e54">
-               <div id="d1e55">
+            <div class="section" id="d1e53">
+               <div id="d1e54">
                   <div class="head03">Related Standards  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="p">The standards maintained by the Society of American Archivists’ <a href="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas" target="new">Technical Subcommittee on Encoded Archival Standards</a> (TS-EAS) are XML schemas based on established models developed by the <a href="https://www.ica.org/en" target="new">International Council on Archives</a> (ICA).</div>
                   <div class="p">EAC-CPF is based on the <a href="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd" target="new">International Standard Archival Authority Record for Corporate Bodies, Persons and
@@ -257,7 +257,7 @@
                      people that the records both facilitate and document. RiC-CM is maintained by the
                      ICA.</div>
                </div>
-               <div id="d1e101">
+               <div id="d1e100">
                   <div class="head03">Release and Revision Notes  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="p">This is the release of the Tag Library for EAC-CPF 2.0. This major release includes
                      changes and updates in the schema undertaken by the SAA <a href="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas" target="new">Technical Subcommittee on Encoded Archival Standards</a> (TS EAS) for the second major revision of the standard EAC-CPF. It supersedes the
@@ -304,7 +304,7 @@
                      agreed to keep the camel case spelling for element and attribute names and also for
                      fixed values.</div>
                </div>
-               <div id="d1e131">
+               <div id="d1e130">
                   <div class="head03">Tag Library Conventions  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="p">The EAC-CPF Elements section of the Tag Library contains descriptions of 91
                      elements, arranged alphabetically by element name.</div>
@@ -382,7 +382,7 @@
             </div>
          </div>
          <div>
-            <div class="section" id="d1e180">
+            <div class="section" id="d1e179">
                <div class="head03">Elements</div>
                <div class="element">
                   <div class="leftcol" id="elem-abstract"><span class="label">&lt;abstract&gt;</span></div>
@@ -2429,8 +2429,8 @@
                               <div class="innerExample">&lt;placeName vocabularySource="local" id="IDPlaceName1"&gt;East Side (Buffalo, N.Y.)&lt;/placeName&gt;<br></br></div>
                               <div class="innerExample">&lt;geographicCoordinates coordinateSystem="WGS84"&gt;N 42°53′48" W 78°50′2"&lt;/geographicCoordinates&gt;<br></br></div>&lt;/place&gt;<br></br></div>&lt;/places&gt;<br></br></div>
                         <div class="innerExample">&lt;functions&gt;
-                           <div class="innerExample">&lt;function&gt;
-                              <div class="innerExample">&lt;term valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/"&gt;community development&lt;/term&gt;<br></br></div>
+                           <div class="innerExample">&lt;function valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/"&gt;
+                              <div class="innerExample">&lt;term&gt;community development&lt;/term&gt;<br></br></div>
                               <div class="innerExample">&lt;placeName target="IDPlaceName1"&gt;East Side (Buffalo, N.Y.)&lt;/placeName&gt;<br></br></div>
                               <div class="innerExample">&lt;descriptiveNote&gt;
                                  <div class="innerExample">&lt;p&gt;The organization’s mission is to create programs to improve the quality of
@@ -2488,8 +2488,8 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;function&gt;
-                        <div class="innerExample">&lt;term valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/"&gt;community development&lt;/term&gt;<br></br></div>
+                     <div class="innerExample">&lt;function valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/"&gt;
+                        <div class="innerExample">&lt;term&gt;community development&lt;/term&gt;<br></br></div>
                         <div class="innerExample">&lt;placeName target="IDPlaceName1"&gt;East Side (Buffalo, N.Y.)&lt;/placeName&gt;<br></br></div>
                         <div class="innerExample">&lt;descriptiveNote&gt;
                            <div class="innerExample">&lt;p&gt;The organization’s mission is to create programs to improve the quality of
@@ -4299,14 +4299,14 @@
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;localDescriptions&gt;
-                        <div class="innerExample">&lt;localDescription&gt;
-                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#academicDegree" localTypeDeclarationReference="GNDO"&gt;Prof. Dr.&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
-                        <div class="innerExample">&lt;localDescription&gt;
-                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#4.7p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;Personen zu Philosophie&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
-                        <div class="innerExample">&lt;localDescription&gt;
-                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#8.1p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;Personen (Politologen, Staatstheoretiker)&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
-                        <div class="innerExample">&lt;localDescription&gt;
-                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#9.5p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;Personen zu Soziologie, Gesellschaft, Arbeit, Sozialgeschichte&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>&lt;/localDescriptions&gt;<br></br></div><br></br></div><br></br></div>
+                        <div class="innerExample">&lt;localDescription localType="https://d-nb.info/standards/elementset/gnd#academicDegree" localTypeDeclarationReference="GNDO"&gt;
+                           <div class="innerExample">&lt;term&gt;Prof. Dr.&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#4.7p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;
+                           <div class="innerExample">&lt;term&gt;Personen zu Philosophie&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#8.1p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;
+                           <div class="innerExample">&lt;term&gt;Personen (Politologen, Staatstheoretiker)&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#9.5p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;
+                           <div class="innerExample">&lt;term&gt;Personen zu Soziologie, Gesellschaft, Arbeit, Sozialgeschichte&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>&lt;/localDescriptions&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-localDescriptions"><span class="label">&lt;localDescriptions&gt;</span></div>
                   <div class="content"><span class="label">Local Descriptions</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -4368,14 +4368,14 @@
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;localDescriptions&gt;
-                        <div class="innerExample">&lt;localDescription&gt;
-                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DXDE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#"&gt;Deutsches Reich&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
-                        <div class="innerExample">&lt;localDescription&gt;
-                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE-BE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#"&gt;Berlin&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
-                        <div class="innerExample">&lt;localDescription&gt;
-                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#broaderTermInstantial" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/gnd/4066573-2" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;Wissenschaftliche Bibliothek&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
-                        <div class="innerExample">&lt;localDescription&gt;
-                           <div class="innerExample">&lt;term localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#6.7" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;Bibliothek, Information und Dokumentation&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>&lt;/localDescriptions&gt;<br></br></div><br></br></div><br></br></div>
+                        <div class="innerExample">&lt;localDescription localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DXDE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#"&gt;
+                           <div class="innerExample">&lt;term&gt;Deutsches Reich&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE-BE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#"&gt;
+                           <div class="innerExample">&lt;term&gt;Berlin&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription localType="https://d-nb.info/standards/elementset/gnd#broaderTermInstantial" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/gnd/4066573-2" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                           <div class="innerExample">&lt;term&gt;Wissenschaftliche Bibliothek&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>
+                        <div class="innerExample">&lt;localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#6.7" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#"&gt;
+                           <div class="innerExample">&lt;term&gt;Bibliothek, Information und Dokumentation&lt;/term&gt;<br></br></div>&lt;/localDescription&gt;<br></br></div>&lt;/localDescriptions&gt;<br></br></div><br></br></div><br></br></div>
                <div class="element">
                   <div class="leftcol" id="elem-localTypeDeclaration"><span class="label">&lt;localTypeDeclaration&gt;</span></div>
                   <div class="content"><span class="label">Local Type Declaration</span>  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -7321,12 +7321,12 @@
                               Admiralty 1805).&lt;/p&gt;<br></br></div>&lt;/descriptiveNote&gt;<br></br></div>&lt;/function&gt;<br></br></div><br></br></div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;function&gt;
-                        <div class="innerExample">&lt;term vocabularySource="AGIFT"&gt;Education and training&lt;/term&gt;<br></br></div>&lt;/function&gt;<br></br></div><br></br></div>
+                     <div class="innerExample">&lt;function vocabularySource="AGIFT"&gt;
+                        <div class="innerExample">&lt;term&gt;Education and training&lt;/term&gt;<br></br></div>&lt;/function&gt;<br></br></div><br></br></div>
                   <div class="leftcol"> </div>
                   <div class="example">
                      <div class="innerExample">&lt;legalStatus&gt;
-                        <div class="innerExample">&lt;term scriptCode="Latn"&gt;Organismo de la Administracion Central del
+                        <div class="innerExample">&lt;term scriptOfElement="Latn"&gt;Organismo de la Administracion Central del
                            Estado&lt;/term&gt;<br></br></div>
                         <div class="innerExample">&lt;date standardDate="1769"&gt;1769&lt;/date&gt;<br></br></div>&lt;/legalStatus&gt;<br></br></div><br></br></div>
                   <div class="leftcol"> </div>
@@ -7578,7 +7578,7 @@
                      <div class="innerExample">&lt;languageUsed&gt;
                         <div class="innerExample">&lt;language languageCode="eng"&gt;English&lt;/language&gt;<br></br></div>
                         <div class="innerExample">&lt;writingSystem scriptCode="Latn"&gt;Latin&lt;/writingSystem&gt;<br></br></div>&lt;/languageUsed&gt;<br></br></div><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e7957">
+            <div class="section" id="d1e7945">
                <div class="head03">Attributes</div>
                <div class="head03">Introduction  <a class="tocReturn" href="#toc">[toc]</a></div>
                <div class="p">Attributes are associated with most of the elements contained in EAC-CPF. Attributes
@@ -8975,8 +8975,8 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;occupation&gt;
-                        <div class="innerExample">&lt;term valueURI="https://d-nb.info/gnd/4053311-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;Schriftstellerin&lt;/term&gt;<br></br></div>&lt;/occupation&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;occupation valueURI="https://d-nb.info/gnd/4053311-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/"&gt;
+                        <div class="innerExample">&lt;term&gt;Schriftstellerin&lt;/term&gt;<br></br></div>&lt;/occupation&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-vocabularySourceURI"><span class="label">@vocabularySourceURI</span></div>

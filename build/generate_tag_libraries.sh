@@ -32,7 +32,7 @@ fi
 case $1 in
 	"eac")
 		echo "generating EAC-CPF tag libraries"
-		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="978-1-945246-84-5" currentLanguage=$lang
+		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="978-1-958954-16-4" currentLanguage=$lang
 		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes" currentLanguage=$lang
 		;;
 	"ead")
