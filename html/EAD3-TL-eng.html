@@ -11,8 +11,8 @@
       <div>
          <div>
             <div class="titlePage">
-               <div class="title">Encoded Archival Description Tag Library Version EAD3 1.1.1</div>
-               <div class="edition">Edition 2019</div>
+               <div class="title">Encoded Archival Description Tag Library Version EAD3 1.1.2</div>
+               <div class="edition">Edition 2023</div>
                <div class="edition">
                   <div>Prepared and maintained by</div>
                   <div>the Technical Subcommittee for Encoded Archival Standards of the Society of American Archivists</div>
@@ -22,9 +22,9 @@
                   <div class="image"><img src="../images/SAA.png" alt="SAA.png"></img></div>
                </div>
                <div>
-                  <div class="p">This tag library represents version EAD3 1.1.1 of the Encoded Archival Description
-                     schemas, released in December 2019. It supersedes the Version EAD3 1.1.0 tag library
-                     published in 2018.</div>
+                  <div class="p">This tag library represents version EAD3 1.1.2 of the Encoded Archival Description
+                     schemas, released in June 2023. It supersedes the Version EAD3 1.1.1 tag library published
+                     in 2019 and the 1.1.0 tag library published in 2018.</div>
                   <div class="p">The SAA Technical Subcommittee for Encoded Archival Standards is responsible for updating
                      and editing the EAD schemas and tag library.</div>
                   <div class="p">The Network Development and MARC Standards Office of the Library of Congress serves
@@ -39,8 +39,9 @@
             <div class="toc1"><a href="#d1e75">Preface</a></div>
             <div class="toc1"><a href="#d1e292">Preface to Revision 1.1.0</a></div>
             <div class="toc1"><a href="#d1e297">Preface to Revision 1.1.1</a></div>
-            <div class="toc1"><a href="#d1e306">Tag Library Conventions</a></div>
-            <div class="toc1"><a href="#d1e364">Attributes</a></div>
+            <div class="toc1"><a href="#d1e306">Preface to Revision 1.1.2</a></div>
+            <div class="toc1"><a href="#d1e314">Tag Library Conventions</a></div>
+            <div class="toc1"><a href="#d1e372">Attributes</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -160,7 +161,7 @@
                   </tr>
                </table>
             </div>
-            <div class="toc1"><a href="#d1e3201">Elements</a></div>
+            <div class="toc1"><a href="#d1e3209">Elements</a></div>
             <div class="toc2">
                <table>
                   <tr>
@@ -628,8 +629,8 @@
                      Development Team members included Terry Catapano, chair, Columbia University; Karin
                      Bredenberg, Riksarkivet of Sweden; Florence Clavaud, National Archives of France;
                      Michele Combs, Syracuse University;
-                     Mark Matienzo, Yale University and DPLA; Daniel Pitti, University of Virginia; and
-                     Salvatore Vassallo, Università degli Studi di Pavia (Italy).</div>
+                     María A. Matienzo, Yale University and DPLA; Daniel Pitti, University of Virginia;
+                     and Salvatore Vassallo, Università degli Studi di Pavia (Italy).</div>
                </div>
                <div id="d1e292">
                   <div class="head03">Preface to Revision 1.1.0  <a class="tocReturn" href="#toc">[toc]</a></div>
@@ -655,6 +656,11 @@
                      examples for certain elements.</div>
                </div>
                <div id="d1e306">
+                  <div class="head03">Preface to Revision 1.1.2  <a class="tocReturn" href="#toc">[toc]</a></div>
+                  <div class="p">EAD3 underwent its second minor revision in 2023. This patch includes updates to external
+                     controlled vocabularies, a fix to the @parallel attribute, and an example update to @linkrole.</div>
+               </div>
+               <div id="d1e314">
                   <div class="head03">Tag Library Conventions  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="p">The EAD Elements section of the Tag Library contains descriptions of 165 elements,
                      arranged alphabetically by element name. It presents information for each element
@@ -744,7 +750,7 @@
             </div>
          </div>
          <div>
-            <div class="section" id="d1e364">
+            <div class="section" id="d1e372">
                <div class="head03">Attributes</div>
                <div class="head03">Introduction  <a class="tocReturn" href="#toc">[toc]</a></div>
                <div class="p">Attributes are associated with most of the elements contained in EAD. Attributes reflect
@@ -1964,7 +1970,7 @@
                   <div class="leftcol">Example:</div>
                   <div class="leftcol"> </div>
                   <div class="example">
-                     <div class="innerExample">&lt;representation href="http://drs.library.yale.edu:8083/fedora/get/beinecke:jonesss/PDF" linkrole="application/pdf"&gt;PDF version of finding aid&lt;/representation&gt;<br></br></div><br></br></div><br></br></div>
+                     <div class="innerExample">&lt;representation href="http://drs.library.yale.edu:8083/fedora/get/beinecke:jonesss/PDF" linkrole="https://www.iana.org/assignments/media-types/application/pdf"&gt;PDF version of finding aid&lt;/representation&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>
                <div class="attribute">
                   <div class="leftcol" id="attr-linktitle"><span class="label">@linktitle</span></div>
@@ -2428,7 +2434,7 @@
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">
-                     <div class="p">part, whole</div>
+                     <div class="p">false, true (revised in 1.1.2)</div>
                   </div>
                   <div class="leftcol">Examples:</div>
                   <div class="leftcol"> </div>
@@ -3208,7 +3214,7 @@
                      <div class="innerExample">&lt;relatedmaterial&gt;
                         <div class="innerExample">&lt;p&gt;See the letters from Frederick Douglass, 1870-1886&lt;/p&gt;<br></br></div>&lt;/relatedmaterial&gt;<br></br></div><br></br></div><br></br></div>
                <div class="spacer"> </div>  <a class="tocReturn" href="#toc">[toc]</a></div>
-            <div class="section" id="d1e3201">
+            <div class="section" id="d1e3209">
                <div class="head03">Elements</div>
                <div class="element">
                   <div class="leftcol" id="elem-abbr"><span class="label">&lt;abbr&gt;</span></div>
@@ -8903,7 +8909,7 @@
                   <div class="leftcol">May contain: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-addressline">addressline</a>, <a href="#elem-archref">archref</a>, <a href="#elem-author">author</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-citation">citation</a>, <a href="#elem-container">container</a>, <a href="#elem-date">date</a>, <a href="#elem-datesingle">datesingle</a>, <a href="#elem-didnote">didnote</a>, <a href="#elem-dimensions">dimensions</a>, <a href="#elem-edition">edition</a>, <a href="#elem-emph">emph</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-fromdate">fromdate</a>, <a href="#elem-head">head</a>, <a href="#elem-head01">head01</a>, <a href="#elem-head02">head02</a>, <a href="#elem-head03">head03</a>, <a href="#elem-item">item</a>, <a href="#elem-label">label</a>, <a href="#elem-materialspec">materialspec</a>, <a href="#elem-num">num</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part</a>, <a href="#elem-physdesc">physdesc</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-physloc">physloc</a>, <a href="#elem-publisher">publisher</a>, <a href="#elem-quote">quote</a>, <a href="#elem-ref">ref (revised in 1.1.1)</a>, <a href="#elem-sponsor">sponsor</a>, <a href="#elem-subtitle">subtitle</a>, <a href="#elem-titleproper">titleproper</a>, <a href="#elem-todate">todate</a>, <a href="#elem-unitdate">unitdate</a>, <a href="#elem-unitid">unitid</a>, <a href="#elem-unittitle">unittitle</a></div>
+                  <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-addressline">addressline</a>, <a href="#elem-archref">archref</a>, <a href="#elem-author">author</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-citation">citation</a>, <a href="#elem-container">container</a>, <a href="#elem-date">date</a>, <a href="#elem-datesingle">datesingle</a>, <a href="#elem-didnote">didnote</a>, <a href="#elem-dimensions">dimensions</a>, <a href="#elem-edition">edition</a>, <a href="#elem-emph">emph</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-fromdate">fromdate</a>, <a href="#elem-head">head</a>, <a href="#elem-head01">head01</a>, <a href="#elem-head02">head02</a>, <a href="#elem-head03">head03</a>, <a href="#elem-item">item</a>, <a href="#elem-label">label</a>, <a href="#elem-materialspec">materialspec</a>, <a href="#elem-num">num</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part</a>, <a href="#elem-physdesc">physdesc</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-physloc">physloc</a>, <a href="#elem-publisher">publisher</a>, <a href="#elem-quote">quote</a>, <a href="#elem-ref">ref</a>, <a href="#elem-sponsor">sponsor</a>, <a href="#elem-subtitle">subtitle</a>, <a href="#elem-titleproper">titleproper</a>, <a href="#elem-todate">todate</a>, <a href="#elem-unitdate">unitdate</a>, <a href="#elem-unitid">unitid</a>, <a href="#elem-unittitle">unittitle</a></div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">Use &lt;foreign&gt; to indicate a language and/or script that differs from that of the text surrounding
@@ -13451,7 +13457,7 @@
                      object are not needed, for example, when providing an image to be embedded in the
                      finding aid.<br></br></div>
                   <div class="leftcol">May contain: </div>
-                  <div class="content">[text], <a href="#elem-abbr">abbr</a>, <a href="#elem-corpname">corpname</a>, <a href="#elem-date">date</a>, <a href="#elem-emph">emph</a>, <a href="#elem-expan">expan</a>, <a href="#elem-famname">famname</a>, <a href="#elem-footnote">footnote</a>, <a href="#elem-foreign">foreign (revised in 1.1.1)</a>, <a href="#elem-function">function</a>, <a href="#elem-genreform">genreform</a>, <a href="#elem-geogname">geogname</a>, <a href="#elem-lb">lb</a>, <a href="#elem-name">name</a>, <a href="#elem-num">num</a>, <a href="#elem-occupation">occupation</a>, <a href="#elem-persname">persname</a>, <a href="#elem-ptr">ptr</a>, <a href="#elem-quote">quote</a>, <a href="#elem-subject">subject</a>, <a href="#elem-title">title</a></div>
+                  <div class="content">[text], <a href="#elem-abbr">abbr</a>, <a href="#elem-corpname">corpname</a>, <a href="#elem-date">date</a>, <a href="#elem-emph">emph</a>, <a href="#elem-expan">expan</a>, <a href="#elem-famname">famname</a>, <a href="#elem-footnote">footnote</a>, <a href="#elem-foreign">foreign</a>, <a href="#elem-function">function</a>, <a href="#elem-genreform">genreform</a>, <a href="#elem-geogname">geogname</a>, <a href="#elem-lb">lb</a>, <a href="#elem-name">name</a>, <a href="#elem-num">num</a>, <a href="#elem-occupation">occupation</a>, <a href="#elem-persname">persname</a>, <a href="#elem-ptr">ptr</a>, <a href="#elem-quote">quote</a>, <a href="#elem-subject">subject</a>, <a href="#elem-title">title</a></div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content"><a href="#elem-abstract">abstract</a>, <a href="#elem-addressline">addressline</a>, <a href="#elem-archref">archref</a>, <a href="#elem-author">author</a>, <a href="#elem-bibref">bibref</a>, <a href="#elem-citation">citation</a>, <a href="#elem-container">container</a>, <a href="#elem-date">date</a>, <a href="#elem-datesingle">datesingle</a>, <a href="#elem-didnote">didnote</a>, <a href="#elem-dimensions">dimensions</a>, <a href="#elem-edition">edition</a>, <a href="#elem-emph">emph</a>, <a href="#elem-entry">entry</a>, <a href="#elem-event">event</a>, <a href="#elem-fromdate">fromdate</a>, <a href="#elem-head">head</a>, <a href="#elem-head01">head01</a>, <a href="#elem-head02">head02</a>, <a href="#elem-head03">head03</a>, <a href="#elem-indexentry">indexentry</a>, <a href="#elem-item">item</a>, <a href="#elem-label">label</a>, <a href="#elem-materialspec">materialspec</a>, <a href="#elem-num">num</a>, <a href="#elem-p">p</a>, <a href="#elem-part">part</a>, <a href="#elem-physdesc">physdesc</a>, <a href="#elem-physfacet">physfacet</a>, <a href="#elem-physloc">physloc</a>, <a href="#elem-ptrgrp">ptrgrp</a>, <a href="#elem-publisher">publisher</a>, <a href="#elem-quote">quote</a>, <a href="#elem-sponsor">sponsor</a>, <a href="#elem-subtitle">subtitle</a>, <a href="#elem-titleproper">titleproper</a>, <a href="#elem-todate">todate</a>, <a href="#elem-unitdate">unitdate</a>, <a href="#elem-unitid">unitid</a>, <a href="#elem-unittitle">unittitle</a></div>
                   <div class="leftcol">Description and Usage: </div>
@@ -16312,10 +16318,10 @@
                            Estate.&lt;/blockquote&gt;<br></br></div>&lt;/userestrict&gt;<br></br></div><br></br></div><br></br></div>  <a class="tocReturn" href="#toc">[toc]</a></div>
          </div>
          <div>
-            <div class="section" id="d1e17917">
+            <div class="section" id="d1e17925">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-AppendixAEADCrosswalks">Appendix A : EAD Crosswalks  <a class="tocReturn" href="#toc">[toc]</a></div>
-               <div class="section" id="d1e17919">
+               <div class="section" id="d1e17927">
                   <div class="head03">Appendix   </div>
                   <div class="head03" id="appendix-ISADGtoEAD3">ISAD(G) to EAD3  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">ISAD(G)</div>
@@ -16373,7 +16379,7 @@
                   <div class="leftcol">3.7.3 Date(s) of descriptions</div>
                   <div class="content">&lt;maintenanceevent&gt;/&lt;eventdatetime&gt;</div>
                </div>
-               <div class="section" id="d1e18029">
+               <div class="section" id="d1e18037">
                   <div class="head03">Appendix   </div>
                   <div class="head03" id="appendix-MARC21toEAD3">MARC21 to EAD3  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">MARC</div>
@@ -16493,7 +16499,7 @@
                   <div class="leftcol">852 Location</div>
                   <div class="content">&lt;repository&gt;, &lt;physloc&gt;</div>
                </div>
-               <div class="section" id="d1e18266">
+               <div class="section" id="d1e18274">
                   <div class="head03">Appendix   </div>
                   <div class="head03" id="appendix-MODStoEAD3">MODS to EAD3  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="leftcol">MODS</div>
@@ -16558,7 +16564,7 @@
                   <div class="content">&lt;unittitle&gt;</div>
                </div>
             </div>
-            <div class="section" id="d1e18466">
+            <div class="section" id="d1e18474">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-AppendixBDeprecatedandObsoleteElementsandAttributes">Appendix B : Deprecated and Obsolete Elements and Attributes  <a class="tocReturn" href="#toc">[toc]</a></div>
                <div class="p">The revision of EAD 1.0 to EAD 2002 established a precedent that elements to be removed
@@ -16598,7 +16604,7 @@
                <div class="blockIndent">authfilenumber<br></br><br></br>continuation<br></br><br></br>findaidstatus<br></br><br></br>from / xlink:from<br></br><br></br>linktype / xlink:type<br></br><br></br>mainagencycode<br></br><br></br>othertype<br></br><br></br>publicid<br></br><br></br>role / xlink:role<br></br><br></br>to / xlink:to<br></br><br></br>type<br></br><br></br>urn<br></br><br></br>url<br></br><br></br></div>
                <div>Obsolete Elements</div>
                <div class="blockIndent">&lt;arc&gt;<br></br><br></br>&lt;change&gt;<br></br><br></br>&lt;creation&gt;<br></br><br></br>&lt;daodesc&gt;<br></br><br></br>&lt;daogrp&gt;<br></br><br></br>&lt;daoloc&gt;<br></br><br></br>&lt;descrules&gt;<br></br><br></br>&lt;eadheader&gt;<br></br><br></br>&lt;eadid&gt;<br></br><br></br>&lt;eventgrp&gt;<br></br><br></br>&lt;extptr&gt;<br></br><br></br>&lt;extptrloc&gt;<br></br><br></br>&lt;extref&gt;<br></br><br></br>&lt;extrefloc&gt;<br></br><br></br>&lt;langusage&gt;<br></br><br></br>&lt;linkgrp&gt;<br></br><br></br>&lt;note&gt;<br></br><br></br>&lt;ptrloc&gt;<br></br><br></br>&lt;refloc&gt;<br></br><br></br>&lt;resource&gt;<br></br><br></br>&lt;revisiondesc&gt;<br></br><br></br>&lt;subarea&gt;<br></br><br></br></div>
-               <div class="section" id="d1e18622">
+               <div class="section" id="d1e18630">
                   <div class="head03">Appendix   </div>
                   <div class="head03" id="appendix-DeprecatedAttributes">Deprecated Attributes  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="attribute">
@@ -16629,7 +16635,7 @@
                   </div>
                   <div class="spacer"> </div>
                </div>
-               <div class="section" id="d1e18650">
+               <div class="section" id="d1e18658">
                   <div class="head03">Appendix   </div>
                   <div class="head03" id="appendix-DeprecatedElements">Deprecated Elements  <a class="tocReturn" href="#toc">[toc]</a></div>
                   <div class="element">
@@ -17091,10 +17097,26 @@
                   </div>
                </div>
             </div>
-            <div class="section" id="d1e19124">
+            <div class="section" id="d1e19132">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-AppendixCRevisionHistory">Appendix C: Revision History  <a class="tocReturn" href="#toc">[toc]</a></div>
-               <div class="section" id="d1e19126">
+               <div class="section" id="d1e19134">
+                  <div class="head03">Appendix   </div>
+                  <div class="p">
+                     <div class="listOrdered">
+                        <div class="head04">
+                           <div class="head03">EAD3 1.1.2 (2023 June)  <a class="tocReturn" href="#toc">[toc]</a></div>
+                        </div>
+                        <div class="listOrder">1.</div>
+                        <div class="listContent">Updated external controlled vocabularies.</div>
+                        <div class="listOrder">2.</div>
+                        <div class="listContent">Updated example for @linkrole to match URI expectations.</div>
+                        <div class="listOrder">3.</div>
+                        <div class="listContent">Fixed values for @parallel.</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="section" id="d1e19142">
                   <div class="head03">Appendix   </div>
                   <div class="p">
                      <div class="listOrdered">
@@ -17111,7 +17133,7 @@
                      </div>
                   </div>
                </div>
-               <div class="section" id="d1e19134">
+               <div class="section" id="d1e19150">
                   <div class="head03">Appendix   </div>
                   <div class="p">
                      <div class="listOrdered">
@@ -17137,7 +17159,7 @@
                      </div>
                   </div>
                </div>
-               <div class="section" id="d1e19146">
+               <div class="section" id="d1e19162">
                   <div class="head03">Appendix   </div>
                   <div class="p">
                      <div class="listOrdered">
