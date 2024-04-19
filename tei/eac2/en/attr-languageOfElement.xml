@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-languageOfElement" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>languageOfElement</att>
+               </head>
+               <div type="fullName">
+                  <p>Language of Element</p>
+               </div>
+               <div type="summary">
+                  <p>Indicates the language of the content of an element. 
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Content of the attribute should be a code taken from ietf-bcp-47, ISO 639-1, ISO 639-2b, ISO 639-3, or another
+                     controlled list, as specified in the <att>languageEncoding</att> attribute in
+                        <gi>control</gi>. May be used consistently in a multi-lingual EAC-CPF instance 
+                     to specify which elements are written in which language. Optionally available
+                     on all non-empty elements.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</eac:agencyName>
+                  </egXML>
+               </div>
+            </div>

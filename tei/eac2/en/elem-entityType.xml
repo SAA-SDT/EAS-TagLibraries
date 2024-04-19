@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-entityType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>entityType</gi>
+               </head>
+               <div type="fullName">
+                  <p>Entity Type</p>
+               </div>
+               <div type="summary">
+                  <p>A required child element of <gi>identity</gi> encoding the type of CPF entity
+                     being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[empty]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>identity</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>value</label>
+                        <item>Required (values limited to: corporateBody, family, person)</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Within <gi>identity</gi> the required <gi>entityType</gi> element specifies the
+                     type of CPF entity being described in the EAC-CPF instance as being a corporate
+                     body, family or person.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use the required <att>value</att> attribute with one of the values
+                        "corporateBody", "family", or "person" to identify the type of
+                        entity.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Use <gi>otherEntityType</gi> to encode additional or alternative entity
+                        types, such as a translation or a specification of the default entity
+                        types.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Required, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:identity>
+                        <eac:entityType value="corporateBody"/>
+                        <eac:nameEntry status="authorized">
+                           <eac:part localType="https://d-nb.info/standards/elementset/gnd#preferredNameForTheCorporateBody" localTypeDeclarationReference="MARC21">Preußische Staatsbibliothek</eac:part>
+                        </eac:nameEntry>
+                     </eac:identity>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:identity>
+                        <eac:entityType value="person"/>
+                        <eac:nameEntry status="authorized">
+                           <eac:part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">Arendt, Hannah</eac:part>
+                           <eac:part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO">1906-1975</eac:part>						
+                        </eac:nameEntry>
+                     </eac:identity>      
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:identity>
+                        <eac:entityType value="family"/>		
+                        <eac:nameEntry status="authorized">
+                           <eac:part localType="100$a">Mozart</eac:part>
+                           <eac:part localType="100$c">Familie : 17.-19. Jh.</eac:part>
+                        </eac:nameEntry>
+                     </eac:identity>
+                  </egXML>
+               </div>
+            </div>

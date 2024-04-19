@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-vocabularySourceURI" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>vocabularySourceURI</att>
+               </head>
+               <div type="fullName">
+                  <p>Vocabulary Source URI</p>
+               </div>
+               <div type="summary">
+                  <p>An optional attribute for including a URI identifying the vocabulary source for
+                     the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional attribute to provide the URI of the authority or vocabulary source given in @vocabularySource. Available in all elements that can contain any type of entity.
+                  </p>
+               </div>
+               <div type="datatype">
+                  <p>anyURI</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:place>
+                        <eac:placeName valueURI="https://d-nb.info/gnd/4005728-8" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Berlin</eac:placeName>		
+                        <eac:placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBusiness" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Sitz</eac:placeRole>
+                     </eac:place>
+                  </egXML>
+               </div>
+            </div>

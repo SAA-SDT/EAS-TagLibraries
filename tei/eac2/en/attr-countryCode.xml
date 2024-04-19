@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-countryCode" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>countryCode</att>
+               </head>
+               <div type="fullName">
+                  <p>Country Code</p>
+               </div>
+               <div type="summary">
+                  <p>A unique code representing a country.</p>
+               </div>
+               <div type="description">      
+                     <p>Content of the optional attribute should be a code
+                     taken from ISO 3166-1 Codes for the Representation of Names of Countries and
+                     their Subdivisions, column A2, or another controlled list, as specified in the
+                        <att>countryEncoding</att> attribute in <gi>control</gi>. Available in
+                        <gi>maintenanceAgency</gi> and <gi>placeName</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:maintenanceAgency countrycode="IE">
+                        <eac:agencyCode>IE-NAI</eac:agencyCode>
+                        <eac:agencyName>National Archives of Ireland</eac:agencyName>
+                     </eac:maintenanceAgency>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:place>
+                        <eac:placeRole>Residence</eac:placeRole>
+                        <eac:placeName countryCode="GR" vocabularySource="ISO3166-2">Greece</eac:placeName>
+                     </eac:place>
+                  </egXML>
+               </div>
+            </div>

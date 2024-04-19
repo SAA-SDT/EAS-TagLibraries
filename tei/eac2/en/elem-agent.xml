@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-agent" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+
+               <head>
+                  <gi>agent</gi>
+               </head>
+               <div type="fullName">
+                  <p>Agent</p>
+               </div>
+               <div type="summary">
+                  <p>A required child element of <gi>maintenanceEvent</gi> that provides the name of
+                     a person, institution, or system responsible for a specific event in the
+                     EAC-CPF instance's maintenance history, such as its creation, modification, or
+                     deletion.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>maintenanceEvent</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>agentType</label>
+                        <item>Required (values limited to: human, machine, unknown)</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>agent</gi> to indicate the person, institution, or system responsible
+                     for a maintenance event. Examples include the name of the author or encoder,
+                     the database responsible for creating the EAC-CPF instance, and the style sheet
+                     used to update an instance to a new version of EAC-CPF.</p>
+                  <p>Each <gi>maintenanceEvent</gi> element must have a child <gi>agent</gi>
+                     element.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use the required <att>agentType</att> attribute to specify whether the
+                        agent is "human", "machine", or "unknown".</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Required, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:maintenanceHistory>
+                        <eac:maintenanceEvent maintenanceEventType="derived">
+                           <eac:agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</eac:agent>
+                           <eac:eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
+                           <eac:eventDescription>Derived from EAD instance.</eac:eventDescription>
+                        </eac:maintenanceEvent>
+                        <eac:maintenanceEvent maintenanceEventType="revised">
+                           <eac:agent agentType="unknown"/>
+                           <eac:eventDateTime standardDateTime="2021-11-27"/>
+                        </eac:maintenanceEvent>
+                        <eac:maintenanceEvent maintenanceEventType="updated">
+                           <eac:agent agentType="human">K. Bredenberg</eac:agent>
+                           <eac:eventDateTime>December 2021</eac:eventDateTime>
+                        </eac:maintenanceEvent>
+                     </eac:maintenanceHistory>
+                  </egXML>
+               </div>
+            </div>

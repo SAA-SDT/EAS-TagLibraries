@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-status" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>status</att>
+               </head>
+               <div type="fullName">
+                  <p>Status</p>
+               </div>
+               <div type="summary">
+                  <p>Attribute that provides controlled terminology detailing the status of
+                     elements.</p> 
+               </div>
+               <div type="description">
+                  <p><att>status</att> provides controlled terminology detailing the status of specific
+                     elements. The terms available for <att>status</att> are defined in closed lists that vary by
+                     element. Optionally available only in <gi>agencyCode</gi>, <gi>fromDate</gi>,
+                        <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>, and <gi>toDate</gi>. </p>
+               </div>
+               <div type="values">
+                  <p>Values in <gi>agencyCode</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>:
+                     alternative, authorized</p>
+                  <p>Values in <gi>date</gi>, <gi>fromDate</gi>: unknown</p>
+                  <p>Values in <gi>toDate</gi>: unknown, ongoing</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+                        <eac:part localType="surname">Arendt</eac:part>
+                        <eac:part localType="firstname">Hannah</eac:part>
+                     </eac:nameEntry>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:dateRange>
+                        <eac:fromDate standardDate="2016-09">September 2016</eac:fromDate>
+                        <eac:toDate status="ongoing"/>
+                     </eac:dateRange>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:date status="unknown"/>
+                  </egXML>
+               </div>
+            </div>

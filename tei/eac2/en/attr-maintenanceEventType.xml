@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-maintenanceEventType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>maintenanceEventType</att>
+               </head>
+               <div type="fullName">
+                  <p>Maintenance Event Type</p>
+               </div>
+               <div type="summary">
+                  <p>A required attribute of <gi>maintenanceEvent</gi> that provides a controlled
+                     list of values for recording the type of maintenance activity.</p>
+               </div>
+               <div type="description">
+                  <list type="simple">
+                     <item>cancelled: marks an instance as not current (obsolete or rejected), but
+                        retained for reference</item>
+                     <item>created: the initial creation of the EAC-CPF instance</item>
+                     <item>deleted: indication that the instance has been deleted from the
+                        system</item>
+                     <item>derived: indicates that the instance was derived from another descriptive
+                        system</item>
+                     <item>revised: any type of general modification to the EAC-CPF instance</item>
+                     <item>unknown: when the type of event is not known</item>
+                     <item>updated: when an instance has been brought up to date with significant
+                        changes to the materials being described or to the version of EAC-CPF
+                        used</item>
+                  </list>
+               </div>
+               <div type="values">
+                  <p>cancelled, created, deleted, derived, revised, unknown, updated</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:maintenanceHistory>
+                        <eac:maintenanceEvent maintenanceEventType="derived">
+                           <eac:agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</eac:agent>
+                           <eac:eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
+                           <eac:eventDescription>Derived from EAD instance.</eac:eventDescription>
+                        </eac:maintenanceEvent>
+                        <eac:maintenanceEvent maintenanceEventType="revised">
+                           <eac:agent agentType="unknown"/>
+                           <eac:eventDateTime standardDateTime="2021-11-27"/>
+                        </eac:maintenanceEvent>
+                        <eac:maintenanceEvent maintenanceEventType="updated">
+                           <eac:agent agentType="human">K. Bredenberg</eac:agent>
+                           <eac:eventDateTime>December 2021</eac:eventDateTime>
+                        </eac:maintenanceEvent>
+                     </eac:maintenanceHistory>
+                  </egXML>
+               </div>
+            </div>

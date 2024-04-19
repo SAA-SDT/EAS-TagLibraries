@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-languageDeclaration" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>languageDeclaration</gi>
+               </head>
+               <div type="fullName">
+                  <p>Language Declaration</p>
+               </div>
+               <div type="summary">
+                  <p>An optional child element of <gi>control</gi> that indicates the language and
+                     script in which an EAC-CPF instance is written.</p>
+               </div>
+               <div type="mayContain">
+                  <p>descriptiveNote (0..1)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>control</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageCode</label>
+                        <item>Required</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>scriptCode</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>An optional child element of <gi>control</gi> that declares the languages and
+                     scripts in which an EAC-CPF instance is written in the <att>languageCode</att>
+                     and <att>scriptCode</att> attributes. Any comments about the languages and
+                     scripts in which the EAC-CPF instance is written may be included in the
+                     optional <gi>descriptiveNote</gi> element.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use the required <att>languageCode</att> to provide a code for the
+                        language used in the EAC-CPF instance.</item>
+                     <item>Use <att>languageOfElement</att> to provide a code for the language in
+                        which the <gi>languageDeclaration</gi> element is given.</item>
+                     <item>Use <att>scriptCode</att> to provide a code for the writing system used
+                        in the EAC-CPF instance.</item>
+                     <item>Use <att>scriptOfElement</att> to provide a code for the writing system
+                        in which the <gi>languageDeclaration</gi> element is given.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:languageDeclaration languageCode="ger" scriptCode="Latn"/>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-maintenanceAgency" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>maintenanceAgency</gi>
+               </head>
+               <div type="fullName">
+                  <p>Maintenance Agency</p>
+               </div>
+               <div type="summary">
+                  <p>A required child element of <gi>control</gi> that identifies the institution or
+                     service responsible for the EAC-CPF instance.</p>
+               </div>
+               <div type="mayContain">
+                  <p>agencyCode (0..1), agencyName (0..n), descriptiveNote (0..1), otherAgencyCode (0..n)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>control</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>countryCode</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>maintenanceAgency</gi> encodes information about the institution or service
+                     responsible for the creation, maintenance, and/or dissemination of the EAC-CPF
+                     instance.</p>
+                  <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyCode</gi> or
+                        <gi>agencyName</gi> to provide the name of the institution or service. It
+                     may also include the optional child element <gi>otherAgencyCode</gi> to provide
+                     any additional identifiers. Any general information about the institution in
+                     relation to the EAC-CPF instance may be given in <gi>descriptiveNote</gi>.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item><gi>agencyCode</gi></item>
+                     <item><gi>agencyName</gi></item>
+                     <item><gi>otherAgencyCode</gi></item>
+                     <item><gi>descriptiveNote</gi></item>
+                  </list>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>countryCode</att> to indicate a unique code for the country of
+                        the maintenance agency.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Required, not Repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:maintenanceAgency>
+                        <eac:agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-ctybr</eac:agencyCode>
+                        <eac:agencyName>Beinecke Rare Book and Manuscript Library</eac:agencyName>
+                        <eac:otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">CtY-BR</eac:otherAgencyCode>
+                        <eac:otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">Q814779</eac:otherAgencyCode>
+                     </eac:maintenanceAgency>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:maintenanceAgency>
+                        <eac:agencyCode status="alternative" vocabularySource="NAD" vocabularySourceURI="https://sok.riksarkivet.se/">SE/G066</eac:agencyCode>
+                        <eac:agencyName>Kommunalförbundet Sydarkivera</eac:agencyName>
+                     </eac:maintenanceAgency>
+                  </egXML>
+               </div>
+            </div>

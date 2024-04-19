@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-vocabularySource" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>vocabularySource</att>
+               </head>
+               <div type="fullName">
+                  <p>Vocabulary Source</p>
+               </div>
+               <div type="summary">
+                  <p>An attribute for identifying a vocabulary that is the source of the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional attribute to provide a name or title of the authority or vocabulary source of the element’s content given in <att>valueURI</att>. Available in all elements that can contain any type of entity. </p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:occupation valueURI="https://d-nb.info/gnd/4053311-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                        <eac:term>Schriftstellerin</eac:term>
+                     </eac:occupation>
+                  </egXML>
+               </div>
+            </div>

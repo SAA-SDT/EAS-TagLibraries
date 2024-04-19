@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-addressLineType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>addressLineType</att>
+               </head>
+               <div type="fullName">
+                  <p>Address Line Type</p>
+               </div>
+               <div type="summary">
+                  <p>Used to specify the type of address line encoded in <gi>addressLine</gi>. </p>
+               </div>
+               <div type="description">
+                  <p>Use one of the set values to specify the type of address line encoded in
+                        <gi>addressLine</gi>. Use the attribute <att>localType</att> in order to
+                     encode a local type of address line.</p>
+               </div>
+               <div type="values">
+                  <p>county, country, district, municipality, postBox, postalCode, region,
+                     street</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:address>
+                        <eac:addressLine languageOfElement="se">Kungl. Hovstaterna</eac:addressLine>
+                        <eac:addressLine languageOfElement="se">Kungl. Slottet</eac:addressLine>
+                        <eac:addressLine addressLineType="postalCode">10770</eac:addressLine>
+                        <eac:addressLine languageOfElement="se" addressLineType="municipality">Stockholm</eac:addressLine>
+                        <eac:addressLine languageOfElement="se" addressLineType="country">Sverige</eac:addressLine>
+                        <eac:addressLine languageOfElement="en" addressLineType="country">Sweden</eac:addressLine>
+                     </eac:address>
+                  </egXML>
+               </div>
+            </div>
