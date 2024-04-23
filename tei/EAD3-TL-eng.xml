@@ -5,14 +5,14 @@
       <fileDesc>
          <titleStmt>
             <title xml:lang="eng" type="main">Encoded Archival Description <lb/>Tag Library </title>
-            <title xml:lang="eng" type="additional">Version EAD3 1.1.1</title>
+            <title xml:lang="eng" type="additional">Version EAD3 1.1.2</title>
             <respStmt xml:lang="eng">
                <resp>Prepared and maintained by the</resp>
                <name>Technical Subcommittee for Encoded Archival Standards of the Society of American Archivists</name>
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <p xml:lang="eng">2019 Edition</p>
+            <p xml:lang="eng">2023 Edition</p>
          </editionStmt>
          <publicationStmt>
             <publisher xml:lang="eng">Society of American Archivists</publisher>
@@ -48,11 +48,11 @@
          <titlePage>
             <docTitle>
                <titlePart type="main">Encoded Archival Description <lb/>Tag Library</titlePart>
-               <titlePart type="additional">Version EAD3 1.1.1</titlePart>
+               <titlePart type="additional">Version EAD3 1.1.2</titlePart>
             </docTitle>
-            <docEdition>Edition 2019</docEdition>
+            <docEdition>Edition 2023</docEdition>
             <note>
-               <p>This tag library represents version EAD3 1.1.1 of the Encoded Archival Description schemas, released in December 2019. It supersedes the Version EAD3 1.1.0 tag library published in 2018.</p>
+               <p>This tag library represents version EAD3 1.1.2 of the Encoded Archival Description schemas, released in June 2023. It supersedes the Version EAD3 1.1.1 tag library published in 2019 and the 1.1.0 tag library published in 2018.</p>
                <p>The SAA Technical Subcommittee for Encoded Archival Standards is responsible for updating and editing the EAD schemas and tag library.</p>
                <p>The Network Development and MARC Standards Office of the Library of Congress serves as the host for online EAD documentation, including storage and delivery of electronic files and maintenance of the
                   EAD web site, located at <ref target="http://www.loc.gov/ead/">http://www.loc.gov/ead/</ref>. </p>
@@ -171,7 +171,7 @@
                   contributors included Jodi Allison-Bunnell, Orbis Cascade Alliance (EAD Roundtable); Anila Angjeli, Bibliothèque nationale de France (TS-EAC); Hillel Arnold, Rockefeller Archives Center (EAD
                   Roundtable); Mark Custer, Yale University (EAD Roundtable); Merrilee Proffitt, OCLC Research; Ruth Kitchin Tillman, Cadence Group (EAD Roundtable); and Katherine Wisser, Simmons College (TS-EAC). Schema
                   Development Team members included Terry Catapano, chair, Columbia University; Karin Bredenberg, Riksarkivet of Sweden; Florence Clavaud, National Archives of France; Michele Combs, Syracuse University;
-                  Mark Matienzo, Yale University and DPLA; Daniel Pitti, University of Virginia; and Salvatore Vassallo, Università degli Studi di Pavia (Italy).</p>
+                  María A. Matienzo, Yale University and DPLA; Daniel Pitti, University of Virginia; and Salvatore Vassallo, Università degli Studi di Pavia (Italy).</p>
             </div>
             <div xml:id="preface-1.1.0">
                <head>Preface to Revision 1.1.0</head>
@@ -186,6 +186,10 @@
                <head>Preface to Revision 1.1.1</head>
                <p>EAD3 underwent its first patch revision in 2019. This patch includes one change to the <gi>ref</gi> element, which now allows <gi>foreign</gi> as sub-element and two fixes to the XSD schema.</p>
                <p>Furthermore, the updated EAD3 tag library includes additional as well as extended examples for certain elements.</p>
+            </div>
+            <div xml:id="preface-1.1.2">
+               <head>Preface to Revision 1.1.2</head>
+               <p>EAD3 underwent its second minor revision in 2023. This patch includes updates to external controlled vocabularies, a fix to the <att>parallel</att> attribute, and an example update to <att>linkrole</att>.</p>
             </div>
             <div xml:id="conventions">
                <head>Tag Library Conventions</head>
@@ -1616,7 +1620,7 @@
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
-                     <ead:representation href="http://drs.library.yale.edu:8083/fedora/get/beinecke:jonesss/PDF" linkrole="application/pdf">PDF version of finding aid</ead:representation>
+                     <ead:representation href="http://drs.library.yale.edu:8083/fedora/get/beinecke:jonesss/PDF" linkrole="https://www.iana.org/assignments/media-types/application/pdf">PDF version of finding aid</ead:representation>
                   </egXML>
                </div>
             </div>
@@ -1642,6 +1646,7 @@
                            <ead:sourceentry>Dictionary of American biography: including men of the time ... and a supplement</ead:sourceentry> [. . .] </ead:source>
                      </ead:sources>
                   </egXML>
+                  
                </div>
             </div>
             <div type="attributeDocumentation" xml:id="attr-listtype">
@@ -2181,7 +2186,7 @@
                         <gi>physdescset</gi>.</p>
                </div>
                <div type="values">
-                  <p>part, whole</p>
+                  <p>false, true (revised in 1.1.2)</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
@@ -9243,7 +9248,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p>abstract, addressline, archref, author, bibref, citation, container, date, datesingle, didnote, dimensions, edition, emph, entry, event, fromdate, head, head01, head02, head03, item, label,
-                     materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, ref (revised in 1.1.1), sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
+                     materialspec, num, p, part, physdesc, physfacet, physloc, publisher, quote, ref, sponsor, subtitle, titleproper, todate, unitdate, unitid, unittitle</p>
                </div>
                <div type="attributes">
                   <p>
@@ -14172,7 +14177,7 @@
                   <p>An element that provides a link to content that may be internal or external to the finding aid.</p>
                </div>
                <div type="mayContain">
-                  <p>[text], abbr, corpname, date, emph, expan, famname, footnote, foreign (revised in 1.1.1), function, genreform, geogname, lb, name, num, occupation, persname, ptr, quote, subject, title</p>
+                  <p>[text], abbr, corpname, date, emph, expan, famname, footnote, foreign, function, genreform, geogname, lb, name, num, occupation, persname, ptr, quote, subject, title</p>
                </div>
                <div type="mayOccurWithin">
                   <p>abstract, addressline, archref, author, bibref, citation, container, date, datesingle, didnote, dimensions, edition, emph, entry, event, fromdate, head, head01, head02, head03, indexentry, item,
@@ -18494,6 +18499,17 @@
          </div>
          <div type="appendix" xml:id="appendixC">
             <head>Appendix C: Revision History</head>
+            <div>
+               <!--<p>EAD3 1.1.2 (2023 June)</p>-->
+               <p>
+                  <list type="ordered">
+                     <head>EAD3 1.1.2 (2023 June)</head>
+                     <item>Updated external controlled vocabularies.</item>
+                     <item>Updated example for @linkrole to match URI expectations.</item>
+                     <item>Fixed values for @parallel.</item>
+                  </list>
+               </p>
+            </div>
             <div>
                <!--<p>EAD3 1.1.1 (2019 December)</p>-->
                <p>
