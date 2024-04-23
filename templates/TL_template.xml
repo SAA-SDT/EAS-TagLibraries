@@ -3,11 +3,14 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:exml="http://workaround for xml namespace restriction/namespace"
      xmlns:xlink="http://www.w3c.org/1999/xlink"
-     xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+     xmlns:ead="http://ead3.archivists.org/schema/" 
+	xmlns:eac="http://archivists.org/ns/eac/v2"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title type="main">Title</title>
+			<title type="additional">Version</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
                <name>Name</name>
@@ -27,7 +30,7 @@
                <addrLine>info@archivists.org</addrLine>
                <addrLine>www.archivists.org</addrLine>
             </address>
-            <date when="2013"/>
+            <date when="2024"/>
             <idno>ISBN Number</idno>
             <availability>
                <licence>This work is licensed under a Creative Commons Attribution 4.0 International
@@ -48,8 +51,9 @@
          <titlePage>
             <docTitle>
                <titlePart type="main">Document full title</titlePart>
+			   <titlePart type="additional">Version</titlePart>
             </docTitle>
-            <docEdition>Version 2010 (initial release)</docEdition>
+            <docEdition>Edition</docEdition>
             <byline>Prepared and maintained by the</byline>
             <docAuthor>Writer</docAuthor>
             <docAuthor>Writer</docAuthor>
@@ -94,108 +98,13 @@
       </front>
       <body>
          <div type="elements">
-            <div type="elementDocumentation" xml:id="elem-elementname">
-               <!-- Descriptive chapters
-            Consists of a wrapper <div> with the elements:
-            <head> for the title
-            <p>'s for the text
-           
-            In text these elements are possible:
-            <ref> with @target for e-mail, webbpage and so on
-            <tag> with text to create anglebrakets
-            <att> with text to create attributes
-            
-            
-            Possible elements in each <p>:
-            <list type="ordered"> for ordered list 
-               the list contains:
-               <head> for title
-               <item n="number"> for the text and where @number is the ordered number (same number cant occur twice)
-            <list type="simple"> for a simple list
-               the list contains:
-               <item> for the text
-            <note n="number"> for creating footnotes
-            -->
-               <head>
-                  <gi>Title</gi>
-               </head>
-               <div type="fullName">
-                  <p>Full Element Name</p>
-               </div>
-               <div type="summary">
-                  <p>A summary of what the element is used for</p>
-               </div>
-               <div type="mayContain">
-                  <p>List of elements that may be used as children of the element</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>List of elements that may be used as immediate parents of the element</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>Attribute that may be used within this element</label>
-                        <item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>A narrative description of the use of the element</p>
-               </div>
-               <div type="seeAlso">
-                  <list type="simple">
-                     <item>A listing of other elements in the tag library that are relevant to, or similar to, the element</item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Required/Optional, Repeatable/Not Repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
-                  </egXML>
-               </div>
-            </div>
+			<!-- One include for each element href points to the element file -->
+            <xi:include href="./descriptions/elem-abbreviation.xml" parse="xml"/>
          </div>
          <div type="attributes">
-               <!-- Descriptive chapters
-            Consists of a wrapper <div> with the elements:
-            <head> for the title
-            <p>'s for the text
-           
-            In text these elements are possible:
-            <ref> with @target for e-mail, webbpage and so on
-            <tag> with text to create anglebrakets
-            <att> with text to create attributes
-            
-            
-            Possible elements in each <p>:
-            <list type="ordered"> for ordered list 
-               the list contains:
-               <head> for title
-               <item n="number"> for the text and where @number is the ordered number (same number cant occur twice)
-            <list type="simple"> for a simple list
-               the list contains:
-               <item> for the text
-            <note n="number"> for creating footnotes
-            -->
-            <div type="attributeDocumentation" xml:id="attr-elementname">
-               <head>
-                  <att>Title</att>
-               </head>
-               <div type="fullName">
-                  <p>Full Attribute Name</p>
-               </div>
-               <div type="summary">
-                  <p>A summary of what the attribute is used for</p>
-               </div>
-               <div type="description">
-                  <p>A narrative description of the use of the element</p>
-               </div>
-               <div type="datatype">
-                  <p>Datatype of the attribute
-               </div>
-            </div>
+			<!-- One include for each attribute href points to the element file -->
+            <xi:include href="./descriptions/attr-accuracy.xml" parse="xml"/>
+             
          </div>
       </body>
       <back>
