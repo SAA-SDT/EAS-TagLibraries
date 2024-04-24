@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-level" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>level</att>
+               </head>
+               <div type="fullName">
+                  <p>Level</p>
+               </div>
+               <div type="summary">
+                  <p>The hierarchical level of the materials being described by the element. This attribute is available in <gi>archdesc</gi>, where the highest level of material represented in the finding aid must be
+                     declared (e.g., collection, fonds, record group), and in <gi>c</gi> and <gi>c01</gi>-<gi>c12</gi>, where it may be used to declare the level of description represented by each component (e.g.,
+                     subgroup, series, file). If none of the values in the semi-closed list are appropriate, the value "otherlevel" may be chosen and some other value specified in <att>otherlevel</att>. </p>
+               </div>
+               <div type="values">
+                  <p>class, collection, file, fonds, item, otherlevel, recordgrp, series, subfonds, subgrp, subseries</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc dsctype="combined">
+                        <ead:c level="series">
+                           <ead:did>
+                              <ead:unitid>Series 1</ead:unitid>
+                              <ead:unittitle>Correspondence</ead:unittitle>
+                           </ead:did>
+                           <ead:scopecontent>[...]</ead:scopecontent>
+                           <ead:c level="subseries">
+                              <ead:did>
+                                 <ead:unitid>Subseries 1.1</ead:unitid>
+                                 <ead:unittitle>Outgoing Correspondence</ead:unittitle>
+                              </ead:did>
+                              <ead:c level="file">
+                                 <ead:did>
+                                    <ead:unittitle>Abbinger-Aldrich</ead:unittitle>
+                                 </ead:did>
+                              </ead:c> [. . .] </ead:c>
+                        </ead:c>
+                     </ead:dsc>
+                  </egXML>
+               </div>
+            </div>

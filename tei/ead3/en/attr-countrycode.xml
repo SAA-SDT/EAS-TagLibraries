@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-countrycode" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>countrycode</att>
+               </head>
+               <div type="fullName">
+                  <p>Country Code</p>
+               </div>
+               <div type="summary">
+                  <p>A unique code for the country in which the materials being described are held. Content of the attribute should be a code taken from ISO 3166-1 Codes for the Representation of Names of Countries and
+                     their Subdivisions, column A2, or another controlled list, as specified in the <att>countryencoding</att> attribute in <gi>control</gi>. Available in <gi>maintenanceagency</gi> and
+                     <gi>unitid</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitid countrycode="US" repositorycode="cu-i" label="Collection number">MS-R72</ead:unitid>
+                  </egXML>
+                  
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:maintenanceagency countrycode="IE">
+                        <ead:agencycode>IE-NAI</ead:agencycode>
+                        <ead:agencyname>National Archives of Ireland</ead:agencyname>
+                     </ead:maintenanceagency>
+                  </egXML>
+               </div>
+
+</div>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-daotype" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>daotype</att>
+               </head>
+               <div type="fullName">
+                  <p>Digital Archival Object Type</p>
+               </div>
+               <div type="summary">
+                  <p>Specifies the origin of a digital archival object: born digital, derived from non-digital records, other, or not known. Required in <gi>dao</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>borndigital, derived, otherdaotype, unknown</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c>
+                        <ead:did>
+                           <ead:unittitle>Quilting bee, Union Town, Md.</ead:unittitle>
+                           <ead:unitdate>1930</ead:unitdate>
+                           <ead:physdesc>1 photograph</ead:physdesc>
+                           <ead:dao daotype="derived" actuate="onload" show="embed" href="  http://www.lib.utexas.edu/taro/utcah/00462/cah-00462.jpg  "/>
+                        </ead:did>
+                     </ead:c>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-relationentry" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>relationentry</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Relation Entry</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>relation</gi> that identifies an entity related to the materials being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>relation</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                        <label>transliteration</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>relationentry</gi> identifies an entity that has a relationship to the materials being described. The entry may name a corporate body, person, family, resource, function, or other entity as
+                     defined by the <att>relationtype</att> of the parent <gi>relation</gi>.</p>
+                  <p>
+                     <gi>relationentry</gi> should only repeat when necessary to express the same <gi>relationentry</gi> in multiple languages or scripts.</p>
+                  <p>Element status:</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>localtype</att> if local practice requires recording the type of relation entry.</item>
+                     <item>Use <att>transliteration</att> to indicate the conventions or rules that prescribe a method for converting one script to another.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable </p>
+               </div>
+               
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="fonds">
+                        [...]
+                        <ead:relations>
+                           <ead:relation relationtype="resourcerelation" href="http://www.archivesportaleurope.net/ead-display/-/ead/pl/aicode/ES-28079-AHN9/type/hg/id/ES-28079-AHN/unitid/ES-28079-AHN-UD-172341">
+                              <ead:relationentry>Archivo de Vicente Rojo Lluch</ead:relationentry>
+                           </ead:relation>
+                           <ead:relation relationtype="resourcerelation" href="http://www.archivesportaleurope.net/ead-display/-/ead/pl/aicode/ES-37274-CDMH1/type/hg/id/ES-37274-CDMH/unitid/ES-37274-CDMH-UD-3604591">
+                              <ead:relationentry>Rojo Lluch, Vicente (1894-1966)</ead:relationentry>
+                           </ead:relation>
+                        </ead:relations>
+                        </ead:archdesc>
+                  </egXML>
+               </div>
+            </div>

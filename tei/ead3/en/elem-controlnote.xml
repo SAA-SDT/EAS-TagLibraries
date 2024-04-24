@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-controlnote" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>controlnote</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Control Note</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>notestmt</gi>, used to provide a general note related to the EAD instance.</p>
+               </div>
+               <div type="mayContain">
+                  <p>blockquote, chronlist, list, p, table</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>notestmt</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>controlnote</gi> to record general descriptive information about a finding aid. <gi>controlnote</gi> is similar to the "general notes" in traditional bibliographic descriptions. Repeat
+                        <gi>controlnote</gi> if it is necessary to capture multiple but separate general statements about the finding aid.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>localtype</att> if local practice requires recording the type of note.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Use <gi>descriptivenote</gi> for general information about the materials being described.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Required, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:notestmt>
+                        <ead:controlnote localtype="bpg">
+                           <ead:p>This encoded finding aid is compliant with the Yale EAD Best Practice Guidelines, Version 1.0.</ead:p>
+                        </ead:controlnote>
+                     </ead:notestmt>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:notestmt>
+                        <ead:controlnote>
+                           <ead:p>Contact information: <ead:ref show="new" actuate="onrequest" href="http://hdl.loc.gov/loc.mss/mss.contact">http://hdl.loc.gov/loc.mss/mss.contact</ead:ref>
+                           </ead:p>
+                        </ead:controlnote>
+                        <ead:controlnote>
+                           <ead:p>Catalog Record: <ead:ref href="http://lccn.loc.gov/mm82036905" actuate="onrequest" linktitle="MARC record for                     collection">http://lccn.loc.gov/mm82036905</ead:ref>
+                           </ead:p>
+                        </ead:controlnote>
+                     </ead:notestmt>
+                  </egXML>
+               </div>
+            </div>

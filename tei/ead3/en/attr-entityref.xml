@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-entityref" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>entityref</att>
+               </head>
+               <div type="fullName">
+                  <p>Entity Reference</p>
+               </div>
+               <div type="summary">
+                  <p>The name of a nonparsed entity declared in the declaration subset of the document that points to a machine-processable version of the cited reference. Available in <gi>dao</gi>, <gi>ptr</gi>, and
+                        <gi>ref</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>ENTITY</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:publisher> San Joaquin County Historical Society and Museum<ead:lb/> Lodi, California<ead:lb/>
+                        <ead:ptr actuate="onload" show="embed" entityref="sjmlogo"/>
+                     </ead:publisher>
+                  </egXML>
+               </div>
+            </div>

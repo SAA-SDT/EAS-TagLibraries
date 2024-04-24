@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-label" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>label</att>
+               </head>
+               <div type="fullName">
+                  <p>Label</p>
+               </div>
+               <div type="summary">
+                  <p>A display label for an element. Use when a meaningful label cannot be derived by the style sheet from the element name or when a heading element <gi>head</gi> is not available. This attribute is
+                     available in all children of <gi>did</gi>, as well as <gi>language</gi> and <gi>script</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>string</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitid countrycode="US" repositorycode="cu-i" label="Collection number">MS-R72</ead:unitid>
+                  </egXML>
+               </div>
+            </div>

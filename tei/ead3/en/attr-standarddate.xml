@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-standarddate" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>standarddate</att>
+               </head>
+               <div type="fullName">
+                  <p>Standard Date</p>
+               </div>
+               <div type="summary">
+                  <p>The standardized form of date expressed in <gi>datesingle</gi>, <gi>fromdate</gi>, or <gi>todate</gi>. It is recommened that <att>standarddate</att> values follow ISO 8601, for example, 2011-07-22,
+                     1963, or 1912-11, or another standard date format as specified in <att>dateencoding</att>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured calendar="gregorian" era="ce">
+                        <ead:dateset>
+                           <ead:datesingle standarddate="1963-01-22">22 January 1963</ead:datesingle>
+                           <ead:daterange>
+                              <ead:fromdate standarddate="1971-06-01"> 1 June 1971 </ead:fromdate>
+                              <ead:todate standarddate="1974-04-30">30 April 1974</ead:todate>
+                           </ead:daterange>
+                        </ead:dateset>
+                     </ead:unitdatestructured>
+                  </egXML>
+               </div>
+            </div>

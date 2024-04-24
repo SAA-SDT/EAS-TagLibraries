@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-term" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>term</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Term</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>localcontrol</gi> used to specify a descriptive term in accordance with local rules.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>localcontrol</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>identifier</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>lastdatetimeverified</label>
+                        <item>Optional (must follow pattern based on ISO 8601)</item>
+                        <label>rules</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                        <label>source</label>
+                        <item>Optional</item>
+                        <label>transliteration</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>term</gi> to record the value of the entry enabled by the <att>localtype</att> in <gi>localcontrol</gi>. For example, if the content of <att>localtype</att> is "levelofdetail," <gi>term</gi>
+                     might be "minimum."</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>identifier</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the term in a controlled vocabulary, taxonomy, ontology, or other knowledge organization
+                        system. Do not confuse with <att>id</att>, which provides a unique id for the element within the XML instance.</item>
+                     <item>Use <att>lastdatetimeverified</att> to specify when the term captured was last verified for accuracy.</item>
+                     <item>Use <att>rules</att> to indicate any rules used in formulating the term.</item>
+                     <item>Use <att>source</att> to indicate the vocabulary from which the term has been taken.</item>
+                     <item>Use <att>transliteration</att> for indicating the conventions or rules that prescribe a method for converting one script to another.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localcontrol localtype="levelofdetail">
+                        <ead:term> Minimum </ead:term>
+                     </ead:localcontrol>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localcontrol localtype="fileSize">
+                        <ead:term> 8 MB </ead:term>
+                     </ead:localcontrol>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localcontrol localtype="daoFlag">
+                        <ead:term> true </ead:term>
+                     </ead:localcontrol>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localcontrol localtype="maxComponentID">
+                        <ead:term> 414 </ead:term>
+                     </ead:localcontrol>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localcontrol localtype="processinglevel">
+                        <ead:term> item </ead:term>
+                     </ead:localcontrol>
+                  </egXML>
+               </div>
+            </div>

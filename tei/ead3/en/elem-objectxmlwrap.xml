@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-objectxmlwrap" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+               <head>
+                  <gi>objectxmlwrap</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Object XML Wrap</p>
+               </div>
+               <div type="summary">
+                  <p>A sublement of <gi>relation</gi> and <gi>source</gi> that allows for the inclusion of an XML element from any XML namespace other than EAD.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[any element from any namespace other than EAD]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>relation, source</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>A wrapper element that provides a means for incorporating an XML element from any XML encoding language other than EAD3. While not required, to facilitate interoperability the XML included in
+                        <gi>objectxmlwrap</gi> should conform to an open, standard XML schema. An xmlns attribute referencing the namespace URI of the standard should be present, possibly on the <gi>ead</gi> root element
+                     or at the root of the contained foreign element. <gi>objectxmlwrap</gi> may be used to store related XML data locally rather than linking to external resources in order to facilitate processing or in
+                     cases where the related data may not be reliably accessible.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
+                  <p>Available in Relax NG and W3C XML Schema versions only – not available in DTD version of EAD3.</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:sources>
+                        <ead:source lastdatetimeverified="2015-07-03T14:36:00-05:00" href="https://archive.org/details/dictionaryofamer00drakrich" actuate="onrequest" linktitle="Dictionary of American biography">
+                           <ead:sourceentry>Dictionary of American biography: including men of the time ... and a supplement</ead:sourceentry>
+                           <ead:objectxmlwrap>
+                              <oai_dc:dc>
+                                 <dc:title>Dictionary of American biography, including men of the time; containing nearly ten thousand notices of persons of both sexes, of native and foreign birth, who have been
+                                    remarkable, or prominently connected with the arts, sciences, literature, politics, or history of the American continent. Giving also the pronunciation of many of the foreign and
+                                    peculiar American names, a key to the assumed names of writers, and a supplement</dc:title>
+                                 <dc:creator>Drake, Francis S. (Francis Samuel), 1828-1885</dc:creator>
+                                 <dc:date>1872</dc:date>
+                                 <dc:identifier>E176 .D725 1872</dc:identifier>
+                                 <dc:identifier> https://archive.org/details/dictionaryofamer00drakrich </dc:identifier>
+                              </oai_dc:dc>
+                           </ead:objectxmlwrap>
+                           <ead:descriptivenote>
+                              <ead:p>Basic biographical information about <ead:persname source="lcnaf" normal="Freeman, Nathaniel, 1741-1827">
+                                    <ead:part>Nathaniel Freeman</ead:part>
+                                 </ead:persname> was taken from <ead:title>
+                                    <ead:part>Dictionary of American biography: including men of the time ... and a supplement</ead:part>
+                                 </ead:title>, page 340.</ead:p>
+                           </ead:descriptivenote>
+                        </ead:source>
+                     </ead:sources>
+                  </egXML>
+               </div>
+            </div>

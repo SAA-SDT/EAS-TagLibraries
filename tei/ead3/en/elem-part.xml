@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-part" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>part</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Part</p>
+               </div>
+               <div type="summary">
+                  <p>A required and repeatable child of controlled access elements used to encode one or more parts of an access term.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text], <gi>abbr</gi>, <gi>date</gi>, <gi>emph</gi>, <gi>expan</gi>, <gi>foreign</gi>, <gi>lb</gi>, <gi>ptr</gi>, <gi>ref</gi></p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>corpname, famname, function, genreform, geogname, name, occupation, persname, subject, title</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>identifier</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>rules</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                        <label>source</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Identifies a term contained in an access point element. Access point elements may contain a single <gi>part</gi> for an entire string, or multiple <gi>part</gi> elements when more granularity is
+                     desired in delineating and identifying the components of a multi-term string. For post-coordinated access points combining terms from multiple vocabularies, the <att>identifier</att>,
+                        <att>rules</att>, and <att>source</att> attributes may be used to associate individual parts to their respective vocabularies.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>encodinganalog</att> to indicate corresponding data elements in another data format, such as MARC. </item>
+                     <item>Use <att>identifier</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the part in a controlled vocabulary, taxonomy, ontology, or other knowledge organization
+                        system, if different from the <att>identifier</att> for the parent element. Do not confuse with <att>id</att>, which provides a unique id for the element within the XML instance.</item>
+                     <item>Use <att>localtype</att>, if local practice requires specification of the type of part.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Required, repeatable.</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:persname encodinganalog="600" relator="creator" rules="RDA" identifier="http://viaf.org/viaf/23746712">
+                        <ead:part localtype="surname"> Casey </ead:part>
+                        <ead:part localtype="givenname"> Silas </ead:part>
+                        <ead:part localtype="dates"> 1807-1882 </ead:part>
+                     </ead:persname>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:subject encodinganalog="650" rules="RDA" source="lcsh">
+                        <ead:part encodinganalog="a"> Railroads </ead:part>
+                        <ead:part encodinganalog="z"> Washington (State) </ead:part>
+                        <ead:part encodinganalog="x"> History </ead:part>
+                     </ead:subject>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:subject encodinganalog="650" source="lcsh">
+                        <ead:part> Dance schools-- Massachusetts--Boston--Archival resources. </ead:part>
+                     </ead:subject>
+                  </egXML>
+               </div>
+            </div>

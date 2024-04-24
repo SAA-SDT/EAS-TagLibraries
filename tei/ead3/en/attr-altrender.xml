@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-altrender" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>altrender</att>
+               </head>
+               <div type="fullName">
+                  <p>Alternative Render</p>
+               </div>
+               <div type="summary">
+                  <p>Specifies an alternative rendering for the content of the current element. May be used if the element is to be displayed or printed differently than the rendering established in a style sheet for
+                     other occurrences of the element, and the values available for <att>render</att> are insufficient. See also <att>render</att>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:titlestmt>
+                        <ead:titleproper localtype="formal"> Guide to the Abraham Hayward Collection </ead:titleproper>
+                        <ead:titleproper localtype="filing" render="altrender" altrender="nodisplay" audience="internal"> Hayward (Abraham) Collection </ead:titleproper>
+                        <ead:author>by Michael Rush</ead:author>
+                     </ead:titlestmt>
+                  </egXML>
+               </div>
+
+</div>

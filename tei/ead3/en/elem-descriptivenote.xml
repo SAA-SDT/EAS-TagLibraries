@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-descriptivenote" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>descriptivenote</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Descriptive Note</p>
+               </div>
+               <div type="summary">
+                  <p>An element used to provide general descriptive information related to its parent element.</p>
+               </div>
+               <div type="mayContain">
+                  <p>p</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>conventiondeclaration, dao, daoset, langmaterial, languagedeclaration, languageset, localtypedeclaration, maintenanceagency, physdescstructured, relation, source</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>descriptivenote</gi> provides additional descriptive information about the element in which it is contained. Notes must contain one or more <gi>p</gi> elements.</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse with <gi>odd</gi>, which is used for other descriptive data that is not easily incorporated into other named elements within <gi>archdesc</gi> and <gi>c</gi>.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:conventiondeclaration>
+                        <ead:abbr>AU-CRS</ead:abbr>
+                        <ead:citation>Australia’s Commonwealth Records Series (CRS) System</ead:citation>
+                        <ead:descriptivenote>
+                           <ead:p>Series controlled and described under the rules of the National Archives of Australia’s Commonwealth Records Series (CRS) System.</ead:p>
+                        </ead:descriptivenote>
+                     </ead:conventiondeclaration>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:conventiondeclaration>
+                        <ead:abbr>DACS</ead:abbr>
+                        <ead:citation href="http://www2.archivists.org/standards/DACS" lastdatetimeverified="2015-07-02T16:30:21-5:00" linktitle="DACS                     in HTML on SAA website" actuate="onload" show="new">Describing Archives: a Content Standard</ead:citation>
+                        <ead:descriptivenote>
+                           <ead:p>DACS was used as the primary description standard.</ead:p>
+                        </ead:descriptivenote>
+                     </ead:conventiondeclaration>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:langmaterial>
+                        <ead:languageset>
+                           <ead:language langcode="lat">Latin</ead:language>
+                           <ead:script scriptcode="Latn"/>
+                        </ead:languageset>
+                        <ead:languageset>
+                           <ead:language langcode="ang">Old English</ead:language>
+                           <ead:script scriptcode="Latn"/>
+                        </ead:languageset>
+                        <ead:languageset>
+                           <ead:language langcode="eng">English</ead:language>
+                           <ead:script scriptcode="Latn"/>
+                        </ead:languageset>
+                        <ead:descriptivenote>
+                           <ead:p>The majority of the documents are written in Modern English. Roberts copies multiple passages from original manuscripts in Latin and Old English.</ead:p>
+                        </ead:descriptivenote>
+                     </ead:langmaterial>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-colspec" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>colspec</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Table Column Specification</p>
+               </div>
+               <div type="summary">
+                  <p>An empty formatting element that specifies the position and size of a single column in a table.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[empty]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>tgroup</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>align</label>
+                        <item>Optional (values limited to: center, char, justify, left, right)</item>
+                        <label>char</label>
+                        <item>Optional</item>
+                        <label>charoff</label>
+                        <item>Optional</item>
+                        <label>colname</label>
+                        <item>Optional</item>
+                        <label>colnum</label>
+                        <item>Optional</item>
+                        <label>colsep</label>
+                        <item>Optional (values limited to: false, true)</item>
+                        <label>colwidth</label>
+                        <item>Optional</item>
+                        <label>rowsep</label>
+                        <item>Optional (values limited to: false, true)</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>colspec</gi> to specify the position, size, and display aspects of a column. Attributes specify the unique name of the column, its unique number within the table, its width and rules, and the
+                     horizontal alignment of text within the column. Note that the quantity of columns in <gi>table</gi> is determined by the <att>cols</att> of <gi>tgroup</gi>, not by the number of <gi>colspec</gi>
+                     elements present. The values set for <gi>colspec</gi> override any values implied from <gi>tgroup</gi> or <gi>thead</gi>.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>See the Attributes section of the Tag Library for information about specific attributes.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Related elements <gi>table</gi> and <gi>tgroup</gi>.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable </p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:table frame="none">
+                        <ead:tgroup cols="3">
+                           <ead:colspec colnum="1" colname="1" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="2" colname="2" align="left" colwidth="50pt"/>
+                           <ead:colspec colnum="3" colname="3" align="left" colwidth="50pt"/>
+                           <ead:thead>
+                              <ead:row>
+                                 <ead:entry colname="1">Major Family Members</ead:entry>
+                                 <ead:entry colname="2">Spouses</ead:entry>
+                                 <ead:entry colname="3">Children</ead:entry>
+                              </ead:row>
+                           </ead:thead>
+                           <ead:tbody>
+                              <ead:row>
+                                 <ead:entry colname="1">John Albemarle (1760-1806)</ead:entry>
+                                 <ead:entry colname="2">Mary Frances Delaney (1769-1835)</ead:entry>
+                                 <ead:entry colname="3">John Delaney Albemarle (1787-1848)</ead:entry>
+                              </ead:row> . . . </ead:tbody>
+                        </ead:tgroup>
+                     </ead:table>
+                  </egXML>
+               </div>
+            </div>

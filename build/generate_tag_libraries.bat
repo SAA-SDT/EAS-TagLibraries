@@ -23,8 +23,8 @@ goto MAIN
 
 :EAD
 echo Generating EAD tag libraries
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="yes" currentLanguage="en"
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage="en"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="yes" currentLanguage="en"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage="en"
 goto MAIN
 
 :PREMIS

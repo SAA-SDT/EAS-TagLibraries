@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-expan" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>expan</att>
+               </head>
+               <div type="fullName">
+                  <p>Expansion</p>
+               </div>
+               <div type="summary">
+                  <p>The full form of an abbreviation or acronym found in an element's text; used for indexing and searching purposes. Available only in <gi>abbr</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>string</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c02>
+                        <ead:did>
+                           <ead:unittitle>
+                              <ead:abbr expan="United Nations Educational, Scientific and Cultural Organization"> UNESCO </ead:abbr>
+                           </ead:unittitle> [. . .] </ead:did>
+                     </ead:c02>
+                  </egXML>
+               </div>
+            </div>

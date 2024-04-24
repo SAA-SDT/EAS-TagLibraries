@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-repository" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>repository</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Repository</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>did</gi> that names the institution, person, or family responsible for providing intellectual access to the materials being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>address, corpname, famname, name, persname</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>did</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>label</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>repository</gi> records the name of the institution or agency, family, or individual responsible for providing intellectual access to the materials being described. <gi>corpname</gi>,
+                        <gi>famname</gi>, <gi>name</gi>, or <gi>persname</gi> must be used within <gi>repository</gi> to encode the proper name. This may be followed by an optional <gi>address</gi> to provide contact
+                     information for the repository.</p>
+                  <p>Although the repository providing intellectual access usually also has physical custody over the materials, this is not always the case. For example, an archives may assume responsibility for
+                     long-term intellectual access to electronic records, but the actual electronic data files or systems may continue to reside in the office where they were created and maintained, or they may be held
+                     for long-term storage by a unit such as a data library that is able to provide the appropriate technical facilities for storage and remounting.</p>
+                  <p>When it is clear that the physical custodian does not provide intellectual access, use <gi>physloc</gi> to identify the custodian and <gi>repository</gi> to designate the intellectual caretaker. When
+                     a distinction cannot be made, assume that the custodian of the physical objects also provides intellectual access to them and should be recognized as the <gi>repository</gi>.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>MARC 852</p>
+                  <p>MODS <gi>location</gi>
+                     <gi>physicalLocation</gi>
+                  </p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc localtype="inventory" level="subgrp">
+                        <ead:did>
+                           <ead:head>Overview of the Records</ead:head>
+                           <ead:repository label="Repository:">
+                              <ead:corpname>
+                                 <ead:part>Minnesota Historical Society</ead:part>
+                              </ead:corpname>
+                           </ead:repository>
+                           <ead:origination label="Creator:">
+                              <ead:corpname>
+                                 <ead:part>Minnesota. Game and Fish Department</ead:part>
+                              </ead:corpname>
+                           </ead:origination>
+                           <ead:unittitle label="Title:">Game laws violation records,</ead:unittitle>
+                           <ead:unitdate label="Dates:">1908-1928</ead:unitdate>
+                           <ead:abstract label="Abstract:">Records of prosecutions for and seizures of property resulting from violation of the state's hunting and fishing laws.</ead:abstract>
+                           <ead:physdesc label="Quantity:">2.25 cu. ft. (7 v. and 1 folder in 3 boxes)</ead:physdesc>
+                           <ead:physloc label="Location:">See Detailed Description section for box location</ead:physloc>
+                        </ead:did>
+                     </ead:archdesc>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="fonds">
+                        <ead:did>
+                           <ead:unitid>EW</ead:unitid>
+                           <ead:unittitle>Records of the Department of Economic Affairs</ead:unittitle>
+                           <ead:origination>
+                              <ead:corpname>
+                                 <ead:part>Department of Economic Affairs</ead:part>
+                              </ead:corpname>
+                           </ead:origination>
+                           <ead:unitdate>1945-1979</ead:unitdate>
+                           <ead:physdesc>28 series</ead:physdesc>
+                           <ead:repository>
+                              <ead:corpname>
+                                 <ead:part>The National Archives</ead:part>
+                              </ead:corpname>
+                           </ead:repository>
+                        </ead:did>
+                     </ead:archdesc>
+                  </egXML>
+               </div>
+            </div>

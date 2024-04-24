@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-otherphysdescstructuredtype" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>otherphysdescstructuredtype</att>
+               </head>
+               <div type="fullName">
+                  <p>Other Structured Physical Description Type</p>
+               </div>
+               <div type="summary">
+                  <p>The type of physical description provided in <gi>physdescstructured</gi>, when <att>physdescstructuredtype</att> is set to "otherphysdescstructuredtype."</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescstructured coverage="whole" physdescstructuredtype="otherphysdescstructuredtype" otherphysdescstructuredtype="duration">
+                        <ead:quantity>30</ead:quantity>
+                        <ead:unittype>minutes</ead:unittype>
+                     </ead:physdescstructured>
+                  </egXML>
+               </div>
+            </div>
