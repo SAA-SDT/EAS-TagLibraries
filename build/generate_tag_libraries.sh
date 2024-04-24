@@ -32,8 +32,8 @@ fi
 case $1 in
 	"eac")
 		echo "generating EAC-CPF tag libraries"
-		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage=$lang
-		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes" currentLanguage=$lang
+		java -cp $saxon net.sf.saxon.Transform -xi:on -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage=$lang
+		java -cp $saxon net.sf.saxon.Transform -xi:on -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes" currentLanguage=$lang
 		;;
 	"ead")
 		echo "generating EAD3 tag libraries"

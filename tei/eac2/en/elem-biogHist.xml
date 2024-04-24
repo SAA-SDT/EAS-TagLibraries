@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-biogHist" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>biogHist</gi>
+               </head>
+               <div type="fullName">
+                  <p>Biography or History</p>
+               </div>
+               <div type="summary">
+                  <p>A concise essay and/or chronology that provides biographical or historical
+                     information about the EAC-CPF entity.</p>
+               </div>
+               <div type="mayContain">
+                  <p>abstract (0..1), chronList (0..n), head (0..1), list (0..n), p (0..n)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>description</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>biogHist</gi> includes significant details about the life of an individual
+                     or family, or the administrative history of a corporate body.</p>
+                  <p>The <gi>biogHist</gi> element may contain text in a series of paragraphs
+                        (<gi>p</gi>), and/or a chronology list (<gi>chronList</gi>) that matches
+                     dates and date ranges with associated events and/or places. The
+                        <gi>abstract</gi> element is intended to provide a very brief synopsis of
+                     the full <gi>biogHist</gi> content that could be extracted for inclusion in a
+                     remote source, such as a MARC record.</p>
+                  <p>The optional <gi>list</gi> element is used to accommodate greater complexity in
+                     expressing or representing the biography or history of the CPF entity. A
+                     simpler discursive expression of the information may be encoded as one or more
+                        <gi>p</gi> elements. The optional <gi>head</gi> element can be used to add a
+                     title or caption to the text.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item><gi>head</gi></item>
+                     <item><gi>abstract</gi></item>
+                     <item>One or more of <gi>chronList</gi>, <gi>list</gi>, or <gi>p</gi></item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:biogHist>
+                        <eac:abstract>Established in 1961, the United States Peace Corps
+                           administered and coordinated Federal international volunteer and related
+                           domestic volunteer programs in areas of agricultural assistance,
+                           community development, education, environmental protection, and nation
+                           assistance.</eac:abstract>
+                        <eac:p>The Peace Corps was established as an operating agency in the
+                           Department of State Delegation of Authority 85-11, effective March 3,
+                           1961, pursuant to Executive Order (E.O.) 10924, March 1, 1961. It was
+                           recognized legislatively by the Peace Corps Act (75 Stat. 612), approved
+                           September 22, 1961. The Peace Corps was reassigned to the newly
+                           established ACTION by Reorganization Plan No. 1 of 1971, effective July
+                           1, 1971. It was made autonomous within ACTION by E.O. 12137, May 16,
+                           1979, and was made an independent agency by Title VI of the International
+                           Security and Development Corporation Act of 1981 (95 Stat. 1540),
+                           February 21, 1982. The Peace Corps administered and coordinated Federal
+                           international volunteer and related domestic volunteer programs including
+                           the areas of agricultural assistance, community development, education,
+                           environmental protection, and nation assistance.</eac:p>
+                     </eac:biogHist>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:biogHist>
+                        <eac:p>Ilma Mary Brewer, nee Pidgeon, was Lecturer in Botany/Biology,
+                           University of Sydney 1963-70 and Senior Lecturer in Biological Sciences
+                           1970-78. She developed new methods of teaching based on the recognition
+                           that a student learnt more by working at his/her own place and
+                           instruction him/her self. Her findings were published as a book,
+                           "Learning More and Teaching Less."</eac:p>
+                        <eac:chronList>
+                           <eac:chronItem>
+                              <eac:date standardDate="1936">1936</eac:date>
+                              <eac:event>Bachelor of Science (BSc) completed at the University of
+                                 Sydney</eac:event>
+                           </eac:chronItem>
+                           <eac:chronItem>
+                              <eac:date standardDate="1937">1937</eac:date>
+                              <eac:event>Master of Science (MSc) completed at the University of
+                                 Sydney</eac:event>
+                           </eac:chronItem>
+                           <eac:chronItem>
+                              <eac:dateRange>
+                                 <eac:fromDate standardDate="1937">1937</eac:fromDate>
+                                 <eac:toDate standardDate="1941">1941</eac:toDate>
+                              </eac:dateRange>
+                              <eac:event>Linnean Macleay Fellow</eac:event>
+                           </eac:chronItem>
+                        </eac:chronList>
+                     </eac:biogHist>
+                  </egXML>
+               </div>
+            </div>

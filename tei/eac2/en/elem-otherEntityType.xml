@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-otherEntityType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+
+               <head>
+                  <gi>otherEntityType</gi>
+               </head>
+               <div type="fullName">
+                  <p>Other Entity Type</p>
+               </div>
+               <div type="summary">
+                  <p>A required and repeatable child element of <gi>otherEntityTypes</gi> used to
+                     encode additional or alternative entity types.</p>
+               </div>
+               <div type="mayContain">
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>otherEntityTypes</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>otherEntityType</gi> is a required child element of
+                        <gi>otherEntityTypes</gi> used to encode any additional or alternative
+                     entity types used for the CPF instance in addition to the required
+                        <gi>entityType</gi> element with values of corporateBody, person, or family.
+                     For example, in a local context "organization" might be used as an entity type
+                     instead of "corporateBody". <gi>otherEntityType</gi> allows "organization" to
+                     be encoded.</p>
+                  <p><gi>otherEntityType</gi> must include one <gi>term</gi> element containing the
+                     term for the other entity type.</p>
+                  <p>Each CPF instance may include more than one <gi>otherEntityType</gi> element
+                     within the <gi>otherEntityTypes</gi> wrapper element.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item><gi>term</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                     <item><gi>placeName</gi></item>
+                     <item><gi>descriptiveNote</gi></item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Required, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:identity>
+                        <eac:entityType>corporateBody</eac:entityType>
+                        <eac:nameEntry status="authorized">
+                           <eac:part>Ballarat Orphanage</eac:part>
+                        </eac:nameEntry>
+                        <eac:otherEntityTypes>
+                           <eac:otherEntityType>
+                              <eac:term>Organisation</eac:term>
+                           </eac:otherEntityType>
+                        </eac:otherEntityTypes>
+                     </eac:identity>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-sourceReference" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>sourceReference</att>
+               </head>
+               <div type="fullName">
+                  <p>Source Reference</p>
+               </div>
+               <div type="summary">
+                  <p>Use <att>sourceReference</att> to provide a direct link to a <gi>source</gi>
+                     element within <gi>sources</gi> in <gi>control</gi> from an element within the
+                     EAC-CPF instance that uses the source. 
+                  </p>
+               </div>
+               <div type="description">
+                  <p>The attribute can be used to reference any detailed information about the described entity with a source.</p>
+                  <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations.</p>
+               </div>
+               <div type="datatype">
+                  <p>IDREFS</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:relation sourceReference="source1" maintenanceEventReference="me2">
+                        <eac:targetEntity targetType="corporateBody" valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" vocabularySourceURI="https://snaccooperative.org">
+                           <eac:part>Princeton University</eac:part>
+                        </eac:targetEntity>
+                        <eac:relationType valueURI="https://www.wikidata.org/wiki/Property:P69" vocabularySourceURI="https://www.wikidata.org/">educated at</eac:relationType>
+                     </eac:relation>
+                  </egXML>
+               </div>
+            </div>

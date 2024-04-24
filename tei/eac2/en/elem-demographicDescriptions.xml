@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-demographicDescriptions" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>demographicDescriptions</gi>
+               </head>
+               <div type="fullName">
+                  <p>Demographic Descriptions</p>
+               </div>
+               <div type="summary">
+                  <p>An optional child element of <gi>description</gi> used to group together one or
+                     more <gi>demographicDescription</gi> elements.</p>
+               </div>
+               <div type="mayContain">
+                  <p>demographicDescription (1..n), descriptiveNote (0..1)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>description</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use the optional <gi>demographicDescriptions</gi> element to group together one
+                     or more occurrences of <gi>demographicDescription</gi>.
+                        <gi>demographicDescriptions</gi> must include at least one
+                        <gi>demographicDescription</gi> element.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item><gi>demographicDescription</gi></item>
+                     <item><gi>descriptiveNote</gi></item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:demographicDescriptions>
+                        <eac:demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
+                           <eac:term>Age 30 to 44</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
+                           <eac:term>Level 4 qualifications and above</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
+                           <eac:term>In a registered same-sex civil partnership</eac:term>
+                        </eac:demographicDescription>
+                        <eac:descriptiveNote>
+                           <eac:p>As part of the Census 2011, various demographic variables have been evaluated. 
+                              Among others, this included the age, the level of qualifications, and the marital status of the participants.</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:demographicDescriptions>
+                  </egXML>
+               </div>
+            </div>

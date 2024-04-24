@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-eac" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>eac</gi>
+               </head>
+               <div type="fullName">
+                  <p>Encoded Archival Context - Corporate Bodies, Persons, and Families</p>
+               </div>
+               <div type="summary">
+                  <p>The required root element of an EAC-CPF instance.</p>
+               </div>
+               <div type="mayContain">
+                  <p>control (1..1), cpfDescription or multipleIdentities (1..1)</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>base</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>eac</gi> wraps all other elements in a particular instance of an archival
+                     authority record encoded with the EAC-CPF XML Schema.</p>
+                  <p><gi>eac</gi> must contain <gi>control</gi> followed by either a
+                        <gi>cpfDescription</gi> or a <gi>multipleIdentities</gi> element.</p>
+                  <p>In order to validate an EAC-CPF instance, it is highly recommended to include
+                     according information about the EAC-CPF namespace and the EAC-CPF schema
+                     location.</p>
+               </div>
+               <div type="availability">
+                  <p>Required, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:eac audience="external">
+                        <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="extended" languageEncoding="ietf-bcp-47" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </eac:control>
+                        <eac:cpfDescription> [...] </eac:cpfDescription>
+                     </eac:eac>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:eac>
+                        <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="basic" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </eac:control>
+                        <eac:multipleIdentities>
+                           <eac:cpfDescription> [...] </eac:cpfDescription>
+                           <eac:cpfDescription> [...] </eac:cpfDescription>
+                        </eac:multipleIdentities>
+                     </eac:eac>
+                  </egXML>
+               </div>
+            </div>

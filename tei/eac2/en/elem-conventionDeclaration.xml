@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-conventionDeclaration" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>conventionDeclaration</gi>
+               </head>
+               <div type="fullName">
+                  <p>Convention Declaration</p>
+               </div>
+               <div type="summary">
+                  <p>An optional child element of <gi>control</gi>, used to declare the rules or
+                     conventions, including authorized controlled vocabularies and thesauri, applied
+                     in creating the EAC-CPF instance.</p>
+               </div>
+               <div type="mayContain">
+                  <p>descriptiveNote (0..1), reference (1..1), shortCode (0..1)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>control</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>conventionDeclaration</gi> is used for declaring references to any rules
+                     and conventions, including authorized controlled vocabularies or thesauri,
+                     applied in the construction of the description. The element binds together the
+                     required <gi>reference</gi> element with optional <gi>shortCode</gi> and
+                        <gi>descriptiveNote</gi> elements that identify rules or conventions applied
+                     in compiling the EAC-CPF instance.</p>
+                  <p>Each additional rule or set of rules, controlled vocabulary, or standard should
+                     be contained in a separate <gi>conventionDeclaration</gi>.</p>
+                  <p><gi>shortCode</gi> may be used to identify the standard or controlled
+                     vocabulary in a coded structure. Any notes relating to how these rules or
+                     conventions have been used may be given within <gi>descriptiveNote</gi>.</p>
+                  <p>It may not be necessary to include <gi>conventionDeclaration</gi> in such cases
+                     where the above scenarios are addressed in local or consortial
+                     documentation.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item><gi>reference</gi></item>
+                     <item><gi>shortCode</gi></item>
+                     <item><gi>descriptiveNote</gi></item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:conventionDeclaration id="cd1">
+                        <eac:reference href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033553530/">Décret n° 2016-1689 du 8 décembre 2016 fixant le nom, la composition et
+                           le chef-lieu des circonscriptions administratives régionales -
+                           Légifrance</eac:reference>
+                     </eac:conventionDeclaration>
+                     <eac:conventionDeclaration id="cd2">
+                        <eac:reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf">DELIBERATION N° 17-1166, 15 DECEMBRE 2017</eac:reference>
+                     </eac:conventionDeclaration>
+                     <eac:conventionDeclaration id="cd3">
+                        <eac:reference href="cnig.gouv.fr/wp-content/uploads/2015/03/CNT-site-collectivit%C3%A9s-fran%C3%A7aises.pdf">Commission nationale de toponymie: Collectivités territoriales
+                           françaises </eac:reference>
+                     </eac:conventionDeclaration>
+                  </egXML>
+               </div>
+            </div>

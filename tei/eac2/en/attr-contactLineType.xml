@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-contactLineType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>contactLineType</att>
+               </head>
+               <div type="fullName">
+                  <p>Contact Line Type</p>
+               </div>
+               <div type="summary">
+                  <p>Used to specify the type of contact line encoded in <gi>contactLine</gi>.</p>
+               </div>
+               <div type="description">
+                  <p>Use one of the set values to specify the type of contact line encoded in
+                        <gi>contactLine</gi>. Use the attribute <att>localType</att> to
+                     encode a local type of contact line.</p>
+               </div>
+               <div type="values">
+                  <p>directions, email, fax, homepage, mobileNumber, phoneNumber</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:contact>
+                        <eac:contactLine contactLineType="phoneNumber">08-402 60 00</eac:contactLine>
+                        <eac:contactLine languageOfElement="se" contactLineType="homepage">https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html</eac:contactLine>
+                        <eac:contactLine languageOfElement="en" contactLineType="homepage">https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html</eac:contactLine>
+                     </eac:contact>
+                  </egXML>
+               </div>
+            </div>

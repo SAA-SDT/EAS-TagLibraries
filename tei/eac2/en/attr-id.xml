@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-id" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>id</att>
+               </head>
+               <div type="fullName">
+                  <p>ID</p>
+               </div>
+               <div type="summary">
+                  <p>A unique identifier to name the element.</p>
+               </div>
+               <div type="description">
+                  <p>An identifier that must be unique within the current document and is used to
+                     name the element so that it can be referred to, or referenced from, somewhere
+                     else. This facilitates building links between the element and other
+                     resources.</p>
+                  <p>
+                     Use <att>target</att>, <att>conventionDeclarationReference</att>, <att>localTypeDeclarationReference</att>, <att>maintenanceEventReference</att>, or <att>sourceReference</att> to link to an <att>id</att> attribute within the EAC-CPF instance.
+                  </p>
+               </div>
+               <div type="datatype">
+                  <p>ID</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:occupations>
+                        <eac:occupation>
+                           <eac:term>Assistant examiner - level III</eac:term>
+                           <eac:placeName target="#place1">Bern</eac:placeName>
+                        </eac:occupation>
+                     </eac:occupations>
+                     <eac:places>
+                        <eac:place id="place1">
+                           <eac:placeName>Bern</eac:placeName>
+                           <eac:placeRole>Place of work</eac:placeRole>
+                        </eac:place>
+                     </eac:places>
+                  </egXML>
+               </div>
+            </div>

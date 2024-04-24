@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-demographicDescription" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>demographicDescription</gi>
+               </head>
+               <div type="fullName">
+                  <p>Demographic Description</p>
+               </div>
+               <div type="summary">
+                  <p>A required child element of <gi>demographicDescriptions</gi> that can be used
+                     to provide demographic information about the CPF entity being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..n), placeName (0..n), term (1..n)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>demographicDescriptions</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>demographicDescription</gi> is a wrapper element used to encode an index
+                     term, using the required child element <gi>term</gi>.</p>
+                  <p>Terms are used within <gi>demographicDescription</gi> to encode demographic
+                     information about the CPF entity being described. This could include, but is
+                     not limited to, nationality, gender, age group, or religion. They may be drawn
+                     from controlled vocabularies or may be natural language terms.</p>
+                  <p><gi>demographicDescription</gi> must include at least one <gi>term</gi>
+                     element. <gi>term</gi> can be repeated within <gi>demographicDescription</gi>
+                     to include translations of the same term. Use the <att>languageOfElement</att>
+                     attribute to identify the language used in each <gi>term</gi>.</p>
+                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and
+                     place(s) (<gi>placeName</gi>) may be included to further constrain the term's
+                     meaning. A <gi>descriptiveNote</gi> may be included if a fuller textual
+                     explanation is needed.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item><gi>term</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                     <item><gi>placeName</gi></item>
+                     <item><gi>descriptiveNote</gi></item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Required, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:demographicDescriptions>
+                        <eac:demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
+                           <eac:term>Age 30 to 44</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
+                           <eac:term>Level 4 qualifications and above</eac:term>
+                        </eac:demographicDescription>
+                        <eac:demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
+                           <eac:term>In a registered same-sex civil partnership</eac:term>
+                        </eac:demographicDescription>
+                        <eac:descriptiveNote>
+                           <eac:p>As part of the Census 2011, various demographic variables have been evaluated. 
+                              Among others, this included the age, the level of qualifications, and the marital status of the participants.</eac:p>
+                        </eac:descriptiveNote>
+                     </eac:demographicDescriptions>
+                  </egXML>
+               </div>
+            </div>

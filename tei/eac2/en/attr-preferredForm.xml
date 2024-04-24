@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-preferredForm" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>preferredForm</att>
+               </head>
+               <div type="fullName">
+                  <p>Preferred Form</p>
+               </div>
+               <div type="summary">
+                  <p>Attribute that specifies whether or not a name provides the preferred form of the entity's name for display purposes</p>
+               </div>
+               <div type="description">
+                  <p>Attribute that specifies whether or not a <gi>nameEntry</gi> provides the
+                     preferred form of the name of the EAC-CPF entity for display purposes in a
+                     given context. Use the value "true" if the name entry is preferred for any display purposed.</p>
+                  <p>This optional attribute is only available in <gi>nameEntry</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>false, true</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:nameEntrySet languageOfElement="fre">
+                        <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+                           <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry conventionDeclarationReference="cd2">
+                           <eac:part>Région Sud Provence-Alpes-Côte d'Azur</eac:part>
+                        </eac:nameEntry>
+                        <eac:nameEntry conventionDeclarationReference="cd3">
+                           <eac:part>Provence-Alpes-Côte-d'Azur</eac:part>
+                        </eac:nameEntry>
+                     </eac:nameEntrySet>
+                  </egXML>
+               </div>
+            </div>
