@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="http://ead3.archivists.org/schema/" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<att>Title</att>
+	</head>
+	<div type="fullName">
+		<p>Full Attribute Name</p>
+	</div>
+	<div type="summary">
+		<p>A summary of what the attribute is used for</p>
+	</div>
+	<div type="description">
+		<p>A narrative description of the use of the attribute</p>
+	</div>
+	<div type="values">
+		<p>Available values (include either values or datatype)</p>
+	</div>
+	<div type="datatype">
+		<p>Datatype of the attribute (include either values or datatype)</p>
+	</div>
+	<div type="examples">
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+		</egXML>
+	</div>
+</div>
