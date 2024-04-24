@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-container" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>container</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Container</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>did</gi> for indicating the container in which the material being described is housed, e.g., box, folder.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text], abbr, emph, expan, foreign, lb, ptr, ref</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>did</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience </label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>containerid</label>
+                        <item>Optional</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>label</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>parent</label>
+                        <item>Optional (IDREFS)</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>container</gi> contributes to locating the described materials by indicating the kinds of containers that physically hold the materials and identifying any sequential numbers assigned to those
+                     containers. <gi>container</gi> is used most frequently at the component level. This storage information can help researchers understand how extensive the described material is, especially in the
+                     absence of a specific <gi>physdescstructured</gi> or <gi>physdesc</gi> statement at the component level.</p>
+                  <p>Consistency in the use of <gi>container</gi> and its attributes is essential to enabling a style sheet to properly display the information, which often consists of a tabular listing of archival
+                     materials and their associated boxes, folders, etc. For example, &lt;container localtype="Box"&gt; is not necessarily the same as &lt;container localtype="box"&gt; to a style sheet. Also keep in mind
+                     that a style sheet may automatically display column headings based on the <att>localtype</att> value. It is important to establish one method of expressing values in <att>localtype</att> and be
+                     consistent within and across your institution's finding aids.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>parent</att> to indicate the container in which the current container is housed, e.g., a box in which a folder is housed.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Use <gi>physloc</gi> to designate the shelves, stacks, rooms, buildings, or other places where the containers are stored.</item>
+                     <item>Use <gi>unitid</gi> to designate control numbers not associated with a physical container, for example, accession numbers.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c01 level="series">
+                        <ead:did>
+                           <ead:unittitle>...</ead:unittitle>
+                        </ead:did>
+                        <ead:c02 level="file">
+                           <ead:did>
+                              <ead:container localtype="box"> 3 </ead:container>
+                              <ead:container localtype="folder"> 18 </ead:container>
+                              <ead:unittitle>Parent-Teacher Association of Fondsville</ead:unittitle>
+                              <ead:unitdate unitdatetype="inclusive" normal="1959/1972">1959-1972</ead:unitdate>
+                           </ead:did>
+                        </ead:c02>
+                        <ead:c02 level="file">
+                           <ead:did>
+                              <ead:container localtype="box"> 3 </ead:container>
+                              <ead:container localtype="folder"> 19 </ead:container>
+                              <ead:unittitle>Pasta and Politics Club</ead:unittitle>
+                              <ead:unitdate unitdatetype="inclusive" normal="1967/1975">1967-1975</ead:unitdate>
+                           </ead:did>
+                        </ead:c02>
+                     </ead:c01>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:dsc dsctype="combined">
+                        <ead:c level="series">
+                           <ead:did>
+                              <ead:unittitle>Correspondence</ead:unittitle>
+                           </ead:did>
+                           <ead:scopecontent>
+                              <ead:p>[...]</ead:p>
+                           </ead:scopecontent>
+                           <ead:c level="file">
+                              <ead:did>
+                                 <ead:container id="mss1993-043.1.1" localtype="box"> 1 </ead:container>
+                                 <ead:container parent="mss1993-043.1.1" localtype="folder"> 1 </ead:container>
+                                 <ead:unittitle>Family</ead:unittitle>
+                                 <ead:unitdate normal="1942/1947">1942-1947</ead:unitdate>
+                              </ead:did>
+                           </ead:c>
+                           <ead:c level="file">
+                              <ead:did>
+                                 <ead:container parent="mss1993-043.1.1" localtype="folder"> 2 </ead:container>
+                                 <ead:unittitle>General</ead:unittitle>
+                                 <ead:unitdate normal="194401/194408">January-August 1944</ead:unitdate>
+                              </ead:did>
+                           </ead:c>
+                           <ead:c level="file">
+                              <ead:did>
+                                 <ead:container parent="mss1993-043.1.1" localtype="folder"> 3 </ead:container>
+                                 <ead:unittitle>General</ead:unittitle>
+                                 <ead:unitdate normal="194409/194503">August 1944-March 1945</ead:unitdate>
+                              </ead:did>
+                           </ead:c>
+                        </ead:c>
+                     </ead:dsc>
+                  </egXML>
+               </div>
+            </div>

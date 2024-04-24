@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-value" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>value</att>
+               </head>
+               <div type="fullName">
+                  <p>Value</p>
+               </div>
+               <div type="summary">
+                  <p>General attribute, required in a number of children of <gi>control</gi>, that provides controlled terminology related to the management of an EAD instance. The terms available for <att>value</att>
+                     are defined in closed lists that vary by element as follows:</p>
+               </div>
+               <div type="values">
+                  <p>Values in <gi>eventtype</gi>: created, revised, deleted, cancelled, derived, updated, unknown</p>
+               </div>
+               <div type="values">
+                  <p>Values in <gi>agenttype</gi>: human, machine, unknown</p>
+               </div>
+               <div type="values">
+                  <p>Values in <gi>publicationstatus</gi>: inprocess, approved, published</p>
+               </div>
+               <div type="values">
+                  <p>Values in <gi>maintenancestatus</gi>: revised, deleted, new, deletedsplit, deletedmerged, deletedreplaced, cancelled, derived</p>
+               </div>
+               <div type="examples">
+               <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511" scriptencoding="iso15924" relatedencoding="MARC21">
+                        <ead:recordid instanceurl="https://archiveshub.jisc.ac.uk/files/isleofmanpro/im1586-s34.xml">im1586-s34</ead:recordid>
+                        <ead:filedesc>
+                           <ead:titlestmt>
+                              <ead:titleproper encodinganalog="245">Records of the Economic Affairs division: subject files</ead:titleproper>
+                           </ead:titlestmt>
+                        </ead:filedesc>
+                        <ead:maintenancestatus value="derived"/>
+                        <ead:maintenanceagency countrycode="IM">
+                           <ead:agencycode>IM-1586</ead:agencycode>
+                           <ead:agencyname>Isle of Man Public Records Office</ead:agencyname>
+                        </ead:maintenanceagency>
+                        <ead:conventiondeclaration>
+                           <ead:abbr>apeMETSRights</ead:abbr>
+                           <ead:citation href="http://www.archivesportaleurope.net/Portal/profiles/apeMETSRights.xsd">
+                              rts:rightscategory in userestrict/encodinganalog</ead:citation>
+                        </ead:conventiondeclaration>
+                        <ead:maintenancehistory>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="created">Created using the Archives Hub Editor 2017-03-10</ead:eventtype>
+                              <ead:eventdatetime standarddatetime="2017-03-10T23:59:59">10 March 2017</ead:eventdatetime>
+                              <ead:agenttype value="human"/>
+                              <ead:agent/>
+                           </ead:maintenanceevent>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="revised">Normalised for publication by Archives Hub</ead:eventtype>
+                              <ead:eventdatetime standarddatetime="2017-03-10T23:59:59">10 March 2017</ead:eventdatetime>
+                              <ead:agenttype value="machine"/>
+                              <ead:agent>Archives Hub</ead:agent>
+                           </ead:maintenanceevent>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="revised">Last revision by Isle of Man Public Record Office</ead:eventtype>
+                              <ead:eventdatetime standarddatetime="2017-09-26T23:59:59">26 September 2017</ead:eventdatetime>
+                              <ead:agenttype value="human"/>
+                              <ead:agent/>
+                           </ead:maintenanceevent>
+                           <ead:maintenanceevent>
+                              <ead:eventtype value="derived"/>
+                              <ead:eventdatetime standarddatetime="2019-10-16T23:59:59">16 October 2019</ead:eventdatetime>
+                              <ead:agenttype value="machine"/>
+                              <ead:agent>Converted_apeEAD_version_2.7.2</ead:agent>
+                           </ead:maintenanceevent>
+                        </ead:maintenancehistory>
+                     </ead:control>
+                  </egXML>
+               </div>
+            </div>

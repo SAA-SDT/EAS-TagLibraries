@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-acqinfo" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>acqinfo</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Acquisition Information</p>
+               </div>
+               <div type="summary">
+                  <p>An element for encoding the immediate source of acquisition of the materials being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>acqinfo, blockquote, chronlist, head, list, p, table</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>acqinfo, archdesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog </label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>acqinfo</gi> to identify the source of the materials being described and the circumstances under which they were received, including donations, transfers, purchases, and deposits.</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Note that the accession number may be encoded in <gi>unitid</gi> within <gi>did</gi>.</item>
+                     <item>
+                        <gi>separatedmaterial</gi> should be used for indicating items acquired as part of a collection and then subsequently removed from the collection.</item>
+                     <item>Do not confuse with <gi>custodhist</gi>, which should be used for information about the chain of ownership before the materials reached the repository. </item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>ISAD(G) 3.2.4</p>
+                  <p>MARC 541</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:acqinfo>
+                        <ead:chronlist>
+                           <ead:chronitem>
+                              <ead:datesingle>1945</ead:datesingle>
+                              <ead:event>Transfer from <ead:corpname>
+                                    <ead:part>National Park Service</ead:part>
+                                 </ead:corpname>, Accession number 45.22 </ead:event>
+                           </ead:chronitem>
+                        </ead:chronlist>
+                     </ead:acqinfo>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:acqinfo>
+                        <ead:p>Source unknown. Originally deposited in University Library, transferred to Department of Palaeography, <ead:date normal="19580424">24 April 1958</ead:date>. </ead:p>
+                     </ead:acqinfo>
+                  </egXML>
+               </div>
+            </div>

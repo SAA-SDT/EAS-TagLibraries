@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-physloc" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>physloc</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Physical Location</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>did</gi> that specifies the physical location of the materials.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text], abbr, emph, expan, foreign, lb, ptr, ref</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>did</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience </label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>label</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>parent</label>
+                        <item>Optional (IDREFS)</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>physloc</gi> is used to identify where the described materials are stored, and it may contain such information as the name or number of the building, room, stack, shelf, etc., where the materials
+                     may be stored and retrieved. <gi>physloc</gi> can be used to designate onsite and offsite storage locations.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Like all child elements of <gi>did</gi>, <gi>physloc</gi> has <att>label</att> that may be used to provide a readily understandable heading for the element's content.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse with <gi>container</gi>, which is used to identify the cartons, boxes, reels, folders, and other storage devices used to hold the described materials.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>MARC 852</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc localtype="inventory" level="subgrp">
+                        <ead:did>
+                           <ead:head>Overview of the Records</ead:head>
+                           <ead:repository label="Repository:">
+                              <ead:corpname>
+                                 <ead:part>Minnesota Historical Society</ead:part>
+                              </ead:corpname>
+                           </ead:repository>
+                           <ead:origination label="Creator:">
+                              <ead:corpname>
+                                 <ead:part>Minnesota. Game and Fish Department</ead:part>
+                              </ead:corpname>
+                           </ead:origination>
+                           <ead:unittitle label="Title:">Game laws violation records,</ead:unittitle>
+                           <ead:unitdate label="Dates:">1908-1928</ead:unitdate>
+                           <ead:abstract label="Abstract:">Records of prosecutions for and seizures of property resulting from violation of the state's hunting and fishing laws.</ead:abstract>
+                           <ead:physdesc label="Quantity:">2.25 cu. ft. (7 v. and 1 folder in 3 boxes)</ead:physdesc>
+                           <ead:physloc label="Location:"> Offsite </ead:physloc>
+                        </ead:did>
+                     </ead:archdesc>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c02 level="file">
+                        <ead:did>
+                           <ead:physloc localtype="shelf"> 27:A:4 </ead:physloc>
+                           <ead:container localtype="box">2</ead:container>
+                           <ead:unittitle>Printed material</ead:unittitle>
+                           <ead:unitdate unitdatetype="inclusive">December 1908-July 1917</ead:unitdate>
+                        </ead:did>
+                     </ead:c02>
+                  </egXML>
+               </div>
+            </div>

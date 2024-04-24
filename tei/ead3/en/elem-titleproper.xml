@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-titleproper" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>titleproper</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Title Proper of the Finding Aid</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>titlestmt</gi> and <gi>seriesstmt</gi> that indicates the title of a findingc aid or finding aid series.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text] abbr, emph, expan, foreign, lb, ptr, ref</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>seriesstmt, titlestmt</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>render</label>
+                        <item>Optional (values limited to: altrender, bold, bolddoublequote, bolditalic, boldsinglequote, boldsmcaps, boldunderline, doublequote, italic, nonproport, singlequote, smcaps, sub, super,
+                           underline)</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>titleproper</gi> to record the title of a finding aid or finding aid series.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>localtype</att> if local practice requires recording the type of title.</item>
+                     <item>Use <att>render</att> to specify formatting of <gi>titleproper</gi> for display and print purposes.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse with <gi>title</gi>, which is used to encode the formal names of works such as monographs, serials, paintings, etc., mentioned in the finding aid.</item>
+                     <item>Do not confuse with <gi>unittitle</gi>, which identifies the name of the described materials.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Within <gi>seriesstmt</gi>: Required, not repeatable</p>
+                  <p>Within <gi>titlestmt</gi>: Required, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:titlestmt>
+                        <ead:titleproper> The Edgar Holden Papers, 1978-1993 </ead:titleproper>
+                        <ead:subtitle>A Guide to the Holden Papers at the University of Ishtaba</ead:subtitle>
+                        <ead:author>Finding aid prepared by Avery Thimble</ead:author>
+                        <ead:sponsor>Processing sponsored by grant funding from the National Historical Publications and Records Commission, grant number 94-0123</ead:sponsor>
+                     </ead:titlestmt>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:titlestmt>
+                        <ead:titleproper> Catalogue of the Papers of James Graham Ballard </ead:titleproper>
+                     </ead:titlestmt>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:titlestmt>
+                        <ead:titleproper localtype="formal"> Guide to the Abraham Hayward Collection </ead:titleproper>
+                        <ead:titleproper localtype="filing" render="altrender" altrender="nodisplay" audience="internal"> Hayward (Abraham) Collection </ead:titleproper>
+                        <ead:author>by Michael Rush</ead:author>
+                     </ead:titlestmt>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-localtypedeclaration" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>localtypedeclaration</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Local Type Declaration</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>control</gi> used to declare any local conventions or controlled vocabularies used in <att>localtype</att> in the EAD instance.</p>
+               </div>
+               <div type="mayContain">
+                  <p>abbr, citation, descriptivenote</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>control</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>localtypedeclaration</gi> specifies the local conventions and controlled vocabularies used in localtype attributes in the EAD instance. The child <gi>citation</gi> must be used to cite the
+                     resource that lists the local rules or controlled terms. Any notes relating to how these rules or conventions have been used may be given in <gi>descriptivenote</gi>. The child <gi>abbr</gi> may be
+                     used to identify any abbreviation or code representing the local convention or controlled vocabulary.</p>
+                  <p>It may not be necessary to include <gi>localtypedeclaration</gi> if <att>localtype</att> values are documented externally.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item>
+                        <gi>abbr</gi>
+                     </item>
+                     <item>
+                        <gi>citation</gi>
+                     </item>
+                     <item>
+                        <gi>descriptivenote</gi>
+                     </item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control> [. . .] <ead:conventiondeclaration>
+                           <ead:abbr>ISAD(G)</ead:abbr>
+                           <ead:citation>ISAD(G): General International Standard Archival Description, second edition, Ottawa 2000</ead:citation>
+                        </ead:conventiondeclaration>
+                        <ead:localtypedeclaration>
+                           <ead:citation>IAMS Catloguing Guidelines Part 1: Describing Archives and Manuscripts</ead:citation>
+                        </ead:localtypedeclaration>
+                        <ead:localcontrol localtype="levelofdetail">
+                           <ead:term>Minimum</ead:term>
+                        </ead:localcontrol> [. . .] </ead:control>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:localtypedeclaration>
+                        <ead:abbr>PM-AMC</ead:abbr>
+                        <ead:citation>Processing manual for archival and manuscript collections</ead:citation>
+                        <ead:descriptivenote>
+                           <ead:p>This finding aid conforms to the standards of description outlined in the seventh section of the university's <ead:title>
+                                 <ead:part>Processing manual for archival and manuscript collections</ead:part>
+                              </ead:title>.</ead:p>
+                        </ead:descriptivenote>
+                     </ead:localtypedeclaration>
+                  </egXML>
+               </div>
+            </div>

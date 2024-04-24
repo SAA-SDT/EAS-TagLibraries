@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-namegrp" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>namegrp</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Name Group</p>
+               </div>
+               <div type="summary">
+                  <p>An element for binding together multiple access element entries within an <gi>indexentry</gi>.</p>
+               </div>
+               <div type="mayContain">
+                  <p>corpname, famname, function, genreform, geogname, name, occupation, persname, subject, title</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>indexentry</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use <gi>namegrp</gi> to group multiple access elements that share the same <gi>ref</gi>, <gi>ptr</gi>, or <gi>ptrgrp</gi>.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:archdesc level="collection">
+                        <ead:did>[...]</ead:did>
+                        <ead:scopecontent>[...]</ead:scopecontent>
+                        <ead:index>
+                           <ead:head>Correspondent Index</ead:head>
+                           <ead:indexentry>
+                              <ead:namegrp>
+                                 <ead:persname>
+                                    <ead:part localtype="lastname">Bach</ead:part>
+                                    <ead:part localtype="firstname">Johan Sebastian</ead:part>
+                                 </ead:persname>
+                                 <ead:persname>
+                                    <ead:part localtype="lastname">Bach</ead:part>
+                                    <ead:part localtype="firstname">Carl Philipp Emanuel</ead:part>
+                                 </ead:persname>
+                                 <ead:persname>
+                                    <ead:part localtype="lastname">Bach</ead:part>
+                                    <ead:part localtype="firstname">Johann Christian</ead:part>
+                                 </ead:persname>
+                                 <ead:persname>
+                                    <ead:part localtype="lastname">Bach</ead:part>
+                                    <ead:part localtype="firstname">Wilhelm Friedemann</ead:part>
+                                 </ead:persname>
+                                 <ead:persname>
+                                    <ead:part localtype="lastname">Bach</ead:part>
+                                    <ead:part localtype="firstname">Johann Christoph Friedrich</ead:part>
+                                 </ead:persname>
+                              </ead:namegrp>
+                              <ead:ref href="https://en.wikipedia.org/wiki/Bach_family" linktitle="Link to Wikipedia entry about the Bach family">Bach family</ead:ref>
+                           </ead:indexentry>
+                        </ead:index>
+                     </ead:archdesc>
+                  </egXML>
+               </div>
+            </div>

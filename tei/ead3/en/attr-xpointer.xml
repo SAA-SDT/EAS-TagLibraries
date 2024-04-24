@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-xpointer" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>xpointer</att>
+               </head>
+               <div type="fullName">
+                  <p>XPOINTER</p>
+               </div>
+               <div type="summary">
+                  <p>The locator for a remote resource in a simple or locator link. Takes the form of a Uniform Resource Identifier plus a reference, formulated in XPOINTER syntax, to a sub-resource of the remote
+                     resource. XPOINTER enables linking to specific sections of a document that are relative, i.e., based on their position in the document or their content, rather than by reference to a specific
+                     identifier such as an ID.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:relatedmaterial>
+                        <ead:p>See the <ref xpointer="ScMG108.xml#letters">letters from Frederick Douglass, 1870-1886</ref></ead:p>
+                     </ead:relatedmaterial>
+                  </egXML>
+               </div>
+            </div>

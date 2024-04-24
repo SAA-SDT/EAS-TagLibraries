@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-num" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>num</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Number</p>
+               </div>
+               <div type="summary">
+                  <p>A generic element for expressing numeric information.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text], abbr, emph, expan, foreign, lb, ptr, ref</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>abstract, archref, bibref, entry, event, item, p, physfacet, publicationstmt, ref, seriesstmt, unittitle</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional </item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>A generic element for encoding numeric information in any form. <gi>num</gi> may be used when it is necessary to display a number in a special way, or to identify it with <att>localtype</att>. For
+                     example, an accession number in <gi>acqinfo</gi> might be designated as &lt;num localtype="accession"&gt;. A publication number might be designated as <gi>publicationstmt</gi> ... <gi>num</gi>no.
+                     42&lt;/num&gt; ...</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse with <gi>container</gi>, <gi>unitid</gi>, <gi>recordid</gi>, or <gi>otherrecordid</gi> which may also contain numeric information.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:filedesc>
+                        <ead:titlestmt>[...]</ead:titlestmt>
+                        <ead:seriesstmt>
+                           <ead:titleproper encodinganalog="440$a">Archival Inventories and Guides of the World; </ead:titleproper>
+                           <ead:num encodinganalog="440$v"> no. 148 </ead:num>
+                        </ead:seriesstmt>
+                     </ead:filedesc>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:acqinfo>
+                        <ead:p>The collection (Donor No. <ead:num localtype="donor"> 8338 </ead:num> ) was donated by <ead:persname relator="donor">
+                              <ead:part>Vonda Thomas</ead:part>
+                           </ead:persname> and <ead:persname relator="donor">
+                              <ead:part>Francine Farrow</ead:part>
+                           </ead:persname> in March 1995.</ead:p>
+                     </ead:acqinfo>
+                  </egXML>
+               </div>
+            </div>

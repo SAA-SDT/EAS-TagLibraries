@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-datesingle" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>datesingle</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Single Date</p>
+               </div>
+               <div type="summary">
+                  <p>An element for encoding an individual date related to the materials being described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text], abbr, emph, expan, foreign, lb, ptr, ref</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>chronitem, dateset, localcontrol, relation, unitdatestructured</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>notafter</label>
+                        <item>Optional </item>
+                        <label>notbefore</label>
+                        <item>Optional </item>
+                        <label>script</label>
+                        <item>Optional</item>
+                        <label>standarddate</label>
+                        <item>Optional </item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>datesingle</gi> is an element for expressing a single date in the creation, contextual history, or local control of the described materials, or in their relationships to other entities such as
+                     persons, families, corporate bodies, resources, functions, events, places, and topics. <gi>datesingle</gi> may contain actual or approximate dates. The content of the element is intended to be a
+                     human-readable, natural language expression of the date. If, however, indexing or other machine processing of dates is desired, <att>standarddate</att> should be used to record the date in
+                     machine-processable form as well.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>localtype</att> to supply a more specific characterization of the date.</item>
+                     <item>Use <att>notafter</att> and <att>notbefore</att> to capture the earliest and latest possible dates in machine-processable form in cases when the date is uncertain.</item>
+                     <item>Use <att>standarddate</att> to provide a machine-processable form of the date. Note that this attribute is for a single date only, while the <att>normal</att> attribute available on
+                           <gi>unitdate</gi> can express a single date or date range. </item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>If an event or relationship has a range of dates, use <gi>daterange</gi>.</item>
+                     <item>Record a complex date (for example, one that includes single dates and date ranges) in <gi>dateset</gi>.</item>
+                     <item>For the date and time of a maintenance event in the history of the EAD instance, use <gi>eventdatetime</gi>.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Within <gi>chronitem</gi> and <gi>unitdatestructured</gi>: One of <gi>daterange</gi>, <gi>dateset</gi>, or <gi>datesingle</gi> is required, not repeatable</p>
+                  <p>Within <gi>dateset</gi>: One of <gi>daterange</gi> or <gi>datesingle</gi> is required, repeatable</p>
+                  <p>Within <gi>localcontrol</gi> and <gi>relation</gi>: Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:unitdatestructured calendar="gregorian" era="ce">
+                        <ead:dateset>
+                           <ead:datesingle standarddate="1963-01-22">22 January 1963 </ead:datesingle>
+                           <ead:daterange>
+                              <ead:fromdate standarddate="1971-06-01">1 June 1971</ead:fromdate>
+                              <ead:todate standarddate="1974-04-30">30 April 1974</ead:todate>
+                           </ead:daterange>
+                        </ead:dateset>
+                     </ead:unitdatestructured>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:chronitem>
+                        <ead:datesingle> 1793 May 24 </ead:datesingle>
+                        <ead:geogname>
+                           <ead:part>Deerfield, Mass</ead:part>
+                        </ead:geogname>
+                        <ead:event>Born</ead:event>
+                     </ead:chronitem>
+                  </egXML>
+               </div>
+            </div>

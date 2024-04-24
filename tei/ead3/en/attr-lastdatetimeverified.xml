@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-lastdatetimeverified" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>lastdatetimeverified</att>
+               </head>
+               <div type="fullName">
+                  <p>Last Date and Time Verified</p>
+               </div>
+               <div type="summary">
+                  <p>Last date or last date and time the linked resource was verified. Verification may include link resolution as well as verification of the version of the linked object. Available in <gi>citation</gi>,
+                        <gi>relation</gi>, <gi>source</gi>, and <gi>term</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>Constrained to the following patterns: YYYY-MM-DD, YYYY-MM, YYYY, or YYYY-MM-DDThh:mm:ss [with optional timezone offset from UTC in the form of [+|-][hh:mm], or "Z" to indicate the dateTime is UTC.
+                     No timezone implies the dateTime is UTC.]</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:control> [. . .] <ead:conventiondeclaration>
+                           <ead:abbr>DACS</ead:abbr>
+                           <ead:citation href="http://www2.archivists.org/standards/DACS" lastdatetimeverified="2015-07-02T16:30:21-5:00" linktitle="DACS                     in HTML on SAA website" actuate="onload" show="new">Describing Archives: a Content Standard</ead:citation>
+                           <ead:descriptivenote>
+                              <ead:p>DACS was used as the primary description standard.</ead:p>
+                           </ead:descriptivenote>
+                        </ead:conventiondeclaration> [. . .] </ead:control>
+                  </egXML>
+               </div>
+            </div>

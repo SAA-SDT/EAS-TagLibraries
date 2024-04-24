@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-approximate" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>approximate</att>
+               </head>
+               <div type="fullName">
+                  <p>Approximate</p>
+               </div>
+               <div type="summary">
+                  <p>Indicates that the value provided is not exact. Available in <gi>quantity</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>false, true</p>
+               </div>
+
+</div>

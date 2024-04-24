@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-base" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>base</att>
+               </head>
+               <div type="fullName">
+                  <p>Base</p>
+               </div>
+               <div type="summary">
+                  <p>Used to specify a base URI that is different than the base URI of the EAD instance. This allows any relative URIs provided on attributes of a specific element or its descendants to be resolved using
+                     the URI provided in that element’s <att>base</att>. Available on <gi>archdesc</gi>, <gi>c</gi>, <gi>c01</gi>, <gi>c02</gi>, <gi>c03</gi>, <gi>c04</gi>, <gi>c05</gi>, <gi>c06</gi>, <gi>c07</gi>,
+                        <gi>c08</gi>, <gi>c09</gi>, <gi>c10</gi>, <gi>c11</gi>, <gi>c12</gi>, <gi>control</gi>, <gi>daoset</gi>, <gi>ead</gi>, <gi>relations</gi>, <gi>sources</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>anyURI</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:daoset base="https://calisphere.org/item/">
+                        <ead:dao daotype="otherdaotype" otherdaotype="surrogate" href="d3888b77-7d95-4fd0-bcdd-ab5551a4f013"/>
+                        <ead:dao daotype="otherdaotype" otherdaotype="surrogate" href="d5e032bf-57a3-45e9-9f14-1782bc2e95e7"/>
+                        <ead:dao daotype="otherdaotype" otherdaotype="surrogate" href="fd76d8fb-cafb-44c5-a5b5-e34673498b7a"/>
+                     </ead:daoset>
+                  </egXML>
+               </div>
+</div>

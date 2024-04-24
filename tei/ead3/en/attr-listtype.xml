@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-listtype" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>listtype</att>
+               </head>
+               <div type="fullName">
+                  <p>List Type</p>
+               </div>
+               <div type="summary">
+                  <p>Specifies the type of list: a definition list pairs a <gi>label</gi> with a corresponding <gi>item</gi> containing text that describes the term; an ordered list is a numbered or lettered list; an
+                     unordered list is one in which sequence is not critical (e.g., a bulleted list). Available only on <gi>list</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>deflist, ordered, unordered</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:list listtype="unordered" mark="circle">
+                        <ead:head>List of ministers of May Memorial Unitarian Universalist Church</ead:head>
+                        <ead:item>John Storer, Minister 1839-1844</ead:item>
+                        <ead:item>Samuel Joseph May, Minister 1845-1868</ead:item>
+                        <ead:item>Samuel R. Calthrop, Minister 1868-1911</ead:item>
+                        <ead:item>John H. Applebee, Minister 1911-1929</ead:item>
+                        <ead:item>Waldemar W. Argow, Minister 1930-1941</ead:item>
+                        <ead:item>Robert E. Romig, Minister 1941-1946</ead:item>
+                        <ead:item>Glenn O. Canfield, Minister 1946-1952</ead:item>
+                        <ead:item>John Fuller, Minister, 1961-1973</ead:item>
+                     </ead:list>
+                  </egXML>
+               </div>
+            </div>

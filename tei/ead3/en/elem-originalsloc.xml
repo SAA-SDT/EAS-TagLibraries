@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-originalsloc" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>originalsloc</gi>
+               </head>
+               <div type="fullName">
+                  <p xml:lang="eng">Location of Originals</p>
+               </div>
+               <div type="summary">
+                  <p>For conveying information about the existence of originals when the unit described exists of copies.</p>
+               </div>
+               <div type="mayContain">
+                  <p>blockquote, chronlist, head, list, originalsloc, p, table</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>archdesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, originalsloc</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>altrender</label>
+                        <item>Optional</item>
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>encodinganalog</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>lang</label>
+                        <item>Optional</item>
+                        <label>localtype</label>
+                        <item>Optional</item>
+                        <label>script</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>
+                     <gi>originalsloc</gi> may be used to provide information about the location, availability, and/or destruction of originals.</p>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item>Do not confuse with <gi>altformavail</gi>, which is used to encode information about copies of the material being described.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="references">
+                  <p>ISAD(G) 3.5.1</p>
+                  <p>MARC 535</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c01 level="file">
+                        <ead:did>
+                           <ead:unittitle>Dream diary, </ead:unittitle>
+                           <ead:unitdate normal="1947/1948">1947-48</ead:unitdate>
+                        </ead:did>
+                        <ead:originalsloc>
+                           <ead:p>File contains photocopies of original still held by the donor.</ead:p>
+                        </ead:originalsloc>
+                     </ead:c01>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:c01 level="series">
+                        <ead:did>[...]</ead:did>
+                        <ead:originalsloc>
+                           <ead:p>Originals destroyed after microfilming, 1981.</ead:p>
+                        </ead:originalsloc>
+                     </ead:c01>
+                  </egXML>
+               </div>
+            </div>

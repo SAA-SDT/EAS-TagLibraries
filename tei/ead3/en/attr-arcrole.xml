@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-arcrole" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>arcrole</att>
+               </head>
+               <div type="fullName">
+                  <p>Arc Role</p>
+               </div>
+               <div type="summary">
+                  <p>A URI that describes the nature of the source of a link as relative to the target of the link.</p>
+               </div>
+               <div type="datatype">
+                  <p>anyURI</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:relation relationtype="cpfrelation" arcrole="hasSubject">
+                        <ead:relationentry>Carl Philipp Emanuel Bach</ead:relationentry>
+                        <ead:descriptivenote>
+                           <ead:p>Bach's son</ead:p>
+                        </ead:descriptivenote>
+                     </ead:relation>
+                  </egXML>
+               </div>
+</div>

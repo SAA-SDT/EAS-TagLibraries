@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-parallel" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>parallel</att>
+               </head>
+               <div type="fullName">
+                  <p>Parallel</p>
+               </div>
+               <div type="summary">
+                  <p>Specifies if the statements of physical description in a <gi>physdescset</gi> are parallel to one another or not (that is, they are alternate descriptions of the same set of material). Optional in
+                        <gi>physdescset</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>false, true (revised in 1.1.2)</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="true">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="spaceoccupied">
+                           <ead:quantity>650</ead:quantity>
+                           <ead:unittype>gigabytes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>1</ead:quantity>
+                           <ead:unittype>hard disk</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="materialtype">
+                           <ead:quantity>7500</ead:quantity>
+                           <ead:unittype>electronic files</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:physdescset parallel="false" coverage="whole">
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>50</ead:quantity>
+                           <ead:unittype>boxes</ead:unittype>
+                        </ead:physdescstructured>
+                        <ead:physdescstructured coverage="part" physdescstructuredtype="carrier">
+                           <ead:quantity>5</ead:quantity>
+                           <ead:unittype>broadside folders</ead:unittype>
+                        </ead:physdescstructured>
+                     </ead:physdescset>
+                  </egXML>
+               </div>
+            </div>

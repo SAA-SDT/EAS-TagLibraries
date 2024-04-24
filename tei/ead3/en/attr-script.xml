@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-script" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>script</att>
+               </head>
+               <div type="fullName">
+                  <p>Script</p>
+               </div>
+               <div type="summary">
+                  <p>Indicates the writing script of the content of an element (e.g., Cyrillic, Katakana). Content should be taken from ISO 15924 Codes for the Representation of Names of Scripts, or another controlled
+                     list, as specified in the <att>scriptencoding</att> attribute in <gi>control</gi>. May be used consistently in a multi-lingual finding aid to specify which elements are written in which script.
+                     Available on all non-empty elements.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:bioghist> [. . .] <ead:p>Thanatos ( <ead:foreign lang="grc" script="Grek"> Θάνατος </ead:foreign> ) was the personification of death. He was a minor figure in Greek mythology, often referred to,
+                           but rarely appearing in person. </ead:p> [. . .] </ead:bioghist>
+                  </egXML>
+               </div>
+            </div>

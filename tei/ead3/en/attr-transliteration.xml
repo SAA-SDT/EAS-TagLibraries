@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-transliteration" xmlns:ead="http://ead3.archivists.org/schema/" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>transliteration</att>
+               </head>
+               <div type="fullName">
+                  <p>Transliteration</p>
+               </div>
+               <div type="summary">
+                  <p>A value designating the transliteration scheme used in converting one script into another script. For example, the ISO 15919 Transliteration of Devanagari and related Indic scripts into Latin
+                     characters.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" valid="true">
+                     <ead:relations>
+                        <ead:relation relationtype="cpfrelation">
+                           <ead:relationentry localtype="original-language" lang="ger">Hannah Arendt (1906-1975)</ead:relationentry>
+                           <ead:relationentry localtype="translation" lang="jap" transliteration="DIN32708">アーレント, ハナ (1906-1975)</ead:relationentry>
+                        </ead:relation>
+                     </ead:relations>
+                  </egXML>
+               </div>
+            </div>
