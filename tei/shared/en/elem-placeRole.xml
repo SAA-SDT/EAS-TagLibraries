@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-placeRole" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <gi>placeRole</gi>
+               </head>
+               <div type="fullName">
+                  <p>Place Role</p>
+               </div>
+               <div type="summary">
+                  <p>An optional child element of <gi>place</gi> used to identify the contextual
+                     role the place or jurisdiction has in relation to the CPF entity described.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>place</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>placeRole</gi> provides a contextual role for a <gi>placeName</gi> within
+                        <gi>place</gi>. Places should be identified in <gi>placeName</gi> by the
+                     proper noun that commonly designates the place, natural feature, or political
+                     jurisdiction. It is strongly recommended that each <gi>placeName</gi> is accompanied by
+                     a <gi>placeRole</gi> element in order to describe the nature of the association
+                     of the place to the CPF entity.</p>
+                  <p>At least one of <gi>placeRole</gi>, <gi>placeName</gi>, <gi>geographicCoordinates</gi>,
+                        <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>The <att>vocabularySource</att> attribute may be used to indicate the
+                        controlled vocabulary from which the <gi>placeRole</gi> is derived.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:place>
+                        <eac:placeName valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Stockholm</eac:placeName>
+                        <eac:placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBirth" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Geburtsort</eac:placeRole>
+                     </eac:place>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:place>
+                        <eac:placeRole>Residence</eac:placeRole>
+                        <eac:placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01">Kent (county)</eac:placeName>
+                     </eac:place>
+                  </egXML>
+               </div>
+            </div>

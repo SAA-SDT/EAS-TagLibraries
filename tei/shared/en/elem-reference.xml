@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-reference" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <gi>reference</gi>
+               </head>
+               <div type="fullName">
+                  <p>Reference</p>
+               </div>
+               <div type="summary">
+                  <p>An element that cites an external resource.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[text], span (0..n)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>abstract, chronItem, chronItemSet, conventionDeclaration, event,
+                     eventDescription, item, localTypeDeclaration, p, rightsDeclaration, source</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>href</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>linkRole</label>
+                        <item>Optional</item>
+                        <label>linkTitle</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>An element used for referencing external resources that have been used to
+                     compile the EAC-CPF instance, that provide additional context to the EAC-CPF
+                     instance, or that identify rules or conventions that have been applied.</p>
+                  <p><gi>reference</gi> is a required child element of
+                        <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, and
+                        <gi>rightsDeclaration</gi> for identifying any rules and conventions applied
+                     in the compilation of the description. It is also a required child element of
+                        <gi>source</gi>, used to identify any sources used in compiling the
+                     description. <gi>source</gi> may include multiple child <gi>reference</gi>
+                     elements.</p>
+                  <p><gi>reference</gi> is an optional child element of <gi>abstract</gi>,
+                        <gi>chronItem</gi>, <gi>chronItemSet</gi>, <gi>event</gi>,
+                        <gi>eventDescription</gi>, <gi>item</gi>, and <gi>p</gi> where it is used to
+                     reference any external resources that provide additional context to the content
+                     of that element.</p>
+               </div>
+               <div type="attributeusage">
+                  <list type="simple">
+                     <item>Use <att>href</att> to link to the cited resource.</item>
+                  </list>
+               </div>
+               <div type="seealso">
+                  <list type="simple">
+                     <item><gi>reference</gi> is used for external linking only. If any internal
+                        linking is required within the EAC-CPF instance, use the <att>target</att>
+                        attribute.</item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Within <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>,
+                        <gi>rightsDeclaration</gi>: required, not repeatable</p>
+                  <p>Within <gi>source</gi>: required, repeatable</p>
+                  <p>Within <gi>abstract</gi>, <gi>chronItem</gi>, <gi>chronItemSet</gi>,
+                        <gi>event</gi>, <gi>eventDescription</gi>, <gi>item</gi>, <gi>p</gi>:
+                     optional, repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:source>
+                        <eac:reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">Wikipedia</eac:reference>
+                     </eac:source>
+                   </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:conventionDeclaration>
+                        <eac:reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</eac:reference>
+                        <eac:shortCode>RDA</eac:shortCode>
+                     </eac:conventionDeclaration>
+                  </egXML>
+               </div>
+            </div>

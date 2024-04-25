@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-href" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>href</att>
+               </head>
+               <div type="fullName">
+                  <p>Hypertext Reference</p>
+               </div>
+               <div type="summary">
+                  <p>The address for a remote resource. </p>
+               </div>
+               <div type="description">
+                  <p>The optional <att>href</att> attribute takes the form of a Uniform
+                     Resource Identifier (URI). Available in <gi>contactLine</gi>,
+                     <gi>reference</gi>, <gi>representation</gi>, <gi>setComponent</gi> and
+                     <gi>source</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>anyURI</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:conventionDeclaration id="cd1">
+                        <eac:reference href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033553530/">Décret n° 2016-1689 du 8 décembre 2016 fixant le nom, la composition et le chef-lieu des circonscriptions administratives régionales - Légifrance</eac:reference>
+                     </eac:conventionDeclaration>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-dateSet" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <gi>dateSet</gi>
+               </head>
+               <div type="fullName">
+                  <p>Date Set</p>
+               </div>
+               <div type="summary">
+                  <p>A wrapper element for encoding complex dates that cannot be adequately
+                     represented in one <gi>date</gi> or <gi>dateRange</gi>.</p>
+               </div>
+               <div type="mayContain">
+                  <p>date or dateRange (2..n)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>chronItem, demographicDescription, existDates, function, legalStatus,
+                     localDescription, mandate, occupation, otherEntityType, place, relation,
+                     useDates</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>dateSet</gi> binds together single dates and date ranges, multiple single
+                     dates, or multiple date ranges. <gi>dateSet</gi> is used in situations where
+                     complex date information needs to be conveyed and requires at least two child
+                     elements. These can be any combination of <gi>date</gi> and
+                     <gi>dateRange</gi>.</p>
+               </div>
+               <div type="availability">
+                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>,
+                     <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>,
+                        <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
+                        <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
+                        <gi>dateSet</gi> optional, not repeatable</p>
+                  <p>Within <gi>chronItem</gi>, <gi>existDates</gi>, <gi>useDates</gi>: one of
+                        <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
+                     repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:dateSet>
+                        <eac:dateRange>
+                           <eac:fromDate standardDate="1928-09">1928 settembre</eac:fromDate>
+                           <eac:toDate standardDate="1930-08">1930 autunno</eac:toDate>
+                        </eac:dateRange>
+                        <eac:dateRange>
+                           <eac:fromDate standardDate="1947">1947</eac:fromDate>
+                           <eac:toDate standardDate="1949">1949</eac:toDate>
+                        </eac:dateRange>
+                        <eac:date>1950</eac:date>
+                        <eac:date standardDate="1951-10-27">27 of October 1951</eac:date>
+                     </eac:dateSet>
+                  </egXML>
+               </div>
+            </div>

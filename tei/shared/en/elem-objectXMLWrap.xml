@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-objectXMLWrap" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <gi>objectXMLWrap</gi>
+               </head>
+               <div type="fullName">
+                  <p>Object XML Wrap</p>
+               </div>
+               <div type="summary">
+                  <p>An optional child element of <gi>relation</gi>, <gi>setComponent</gi>, and
+                        <gi>source</gi> that allows for the inclusion of an XML element from any XML
+                     namespace other than EAC-CPF.</p>
+               </div>
+               <div type="mayContain">
+                  <p>[any element from any namespace]</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>relation, setComponent, source</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>A wrapper element that provides a place to express data in any XML encoding
+                     language.</p>
+                  <p>To facilitate interoperability the XML should conform to an open, standard XML
+                     schema and a namespace attribute should be present on the root element
+                     referencing the namespace of the standard.</p>
+                  <p>It is also possible to encode data in XML without a namespace within the <gi>objectXMLWrap</gi> element.</p>
+                  <p><gi>objectXMLWrap</gi> may be used to store related XML data locally rather
+                     than linking to external resources in order to facilitate processing or in
+                     cases where the related data may not be reliably accessible.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:objectXMLWrap>
+                        <mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3                            http://www.loc.gov/mods/v3/mods-3-3.xsd">
+                           <mods:titleInfo>
+                              <mods:title>Artisti trentini tra le due guerre</mods:title>
+                           </mods:titleInfo>
+                           <mods:name>
+                              <mods:namePart type="given">Nicoletta</mods:namePart>
+                              <mods:namePart type="family">Boschiero</mods:namePart>
+                              <mods:role>
+                                 <mods:roleTerm type="text">autore</mods:roleTerm>
+                              </mods:role>
+                           </mods:name>
+                        </mods:mods>
+                     </eac:objectXMLWrap>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:objectXMLWrap>
+                        <!-- Karin: Having a tei example is making the transformation mess up so therefore tei is renamed to have namespace text here -->
+                        <text:bibl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:text="http://www.tei.org/ns/1.0" xsi:schemaLocation="http://www.tei.org/ns/1.0 tei.xsd" default="false">
+                           <text:title>
+                              <text:emph rend="italic">Paris d'hier et d'aujourd'hui</text:emph>
+                           </text:title>
+                           <text:respStmt>
+                              <text:resp>photographes</text:resp>
+                              <text:name>Roger Henrard</text:name>
+                              <text:name>Yann Arthus-Bertrand</text:name>
+                           </text:respStmt>
+                        </text:bibl>
+                     </eac:objectXMLWrap>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:objectXMLWrap>
+                        <!-- Ailie: used the eac prefix to get the example to display, even though not EAC elements -->
+                        <eac:note xmlns="">
+                           <eac:to>Tove</eac:to>
+                           <eac:from>Jani</eac:from>
+                           <eac:heading>Reminder</eac:heading>
+                           <eac:body>Don't forget me this weekend!</eac:body>
+                        </eac:note>
+                     </eac:objectXMLWrap>
+                  </egXML>
+               </div>
+            </div>

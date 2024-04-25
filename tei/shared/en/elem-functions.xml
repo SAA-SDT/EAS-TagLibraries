@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-functions" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <gi>functions</gi>
+               </head>
+               <div type="fullName">
+                  <p>Functions</p>
+               </div>
+               <div type="summary">
+                  <p>An optional child element of <gi>description</gi> used for grouping together
+                     one or more <gi>function</gi> elements.</p>
+               </div>
+               <div type="mayContain">
+                  <p>descriptiveNote (0..1), function (1..n)</p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>description</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>Use the optional <gi>functions</gi> element to group together one or more
+                     occurrences of <gi>function</gi>. <gi>functions</gi> must include at least one
+                        <gi>function</gi> element.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item><gi>function</gi></item>
+                     <item><gi>descriptiveNote</gi></item>
+                  </list>
+               </div>
+               <div type="availability">
+                  <p>Optional, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:functions>
+                        <eac:function>
+                           <eac:term>Industrial or Scientific Research</eac:term>
+                        </eac:function>
+                        <eac:function>
+                           <eac:term>Analytical Services</eac:term>
+                        </eac:function>
+                        <eac:function>
+                           <eac:term>Advisory or Regulatory Body</eac:term>
+                        </eac:function>
+                     </eac:functions>
+                  </egXML>
+               </div>
+            </div>

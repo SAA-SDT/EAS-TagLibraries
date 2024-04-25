@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-unit" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>unit</att>
+               </head>
+               <div type="fullName">
+                  <p>Unit</p>
+               </div>
+               <div type="summary">
+                  <p>Defines the format or unit that is specified in <gi>citedRange</gi>.</p>
+               </div>
+               <div type="description">
+                  <p>Use <att>unit</att> to document the format or unit that is specified in
+                        <gi>citedRange</gi>, for example page number ("pageNumber") or volume number
+                     ("volumeNumber").</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:citedRange unit="page">1</eac:citedRange>
+                  </egXML>
+               </div>
+            </div>

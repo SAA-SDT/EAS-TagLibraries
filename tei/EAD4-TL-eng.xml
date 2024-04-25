@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:exml="http://workaround for xml namespace restriction/namespace"
+     xmlns:xlink="http://www.w3c.org/1999/xlink"
+     xmlns:ead="http://archivists.org/ns/ead/v4" 
+	xmlns:eac="http://archivists.org/ns/eac/v2"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Title</title>
+			<title type="additional">Version</title>
+            <respStmt>
+               <resp>Prepared and maintained by the </resp>
+               <name>Name</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>Edition</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Society of American Archivists</publisher>
+            <address>
+               <addrLine>17 North State Street, suite 1425</addrLine>
+               <addrLine>Chicago, IL 60602-3315</addrLine>
+               <addrLine>USA</addrLine>
+               <addrLine>312-606-0722</addrLine>
+               <addrLine>Fax: 312-606-0728</addrLine>
+               <addrLine>info@archivists.org</addrLine>
+               <addrLine>www.archivists.org</addrLine>
+            </address>
+            <date when="2024"/>
+            <idno>ISBN Number</idno>
+            <availability>
+               <licence>This work is licensed under a Creative Commons Attribution 4.0 International
+                  License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/"
+                     >http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No
+                  part of this publication may be reproduced, stored in a retrieval system or
+                  transmitted in any form or by any means, electronic, mechanical or photocopying,
+                  recording, or otherwise without attribution.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage>
+            <docTitle>
+               <titlePart type="main">Document full title</titlePart>
+			   <titlePart type="additional">Version</titlePart>
+            </docTitle>
+            <docEdition>Edition</docEdition>
+            <byline>Prepared and maintained by the</byline>
+            <docAuthor>Writer</docAuthor>
+            <docAuthor>Writer</docAuthor>
+            <docImprint>
+               <docDate>Date of the document</docDate>
+            </docImprint>
+         </titlePage>
+         <div>
+            <!-- Descriptive chapters
+            Consists of a wrapper <div> with the elements:
+            <head> for the title
+            <p>'s for the text
+            <div> for creating next level titles
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"> for examples
+            
+            In text these elements are possible:
+            <ref> with @target for e-mail, webbpage and so on
+            <tag> with text to create anglebrakets
+            <att> with text to create attributes
+            
+            
+            Possible elements in each <p>:
+            <list type="ordered"> for ordered list 
+               the list contains:
+               <head> for title
+               <item n="number"> for the text and where @number is the ordered number (same number cant occur twice)
+            <list type="simple"> for a simple list
+               the list contains:
+               <item> for the text
+            <note n="number"> for creating footnotes
+            -->
+            <div xml:id="front-example">
+               <head>Title</head>
+               <p>Text</p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples"/>
+               <list type="simple">
+                  <item>Item 1</item>
+                  <item>Item 2</item>
+               </list>
+            </div>
+         </div>
+      </front>
+      <body>
+         <div type="elements">
+			<!-- One include for each element href points to the element file -->
+            <xi:include href="shared/en/elem-abstract.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-accessConditions.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-accruals.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-address.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-addressLine.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agencyCode.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agencyName.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agent.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-agentRole.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-agents.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-agentType.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-appraisal.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-archDesc.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-arrangement.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-biogHist.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c01.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c02.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c03.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c04.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c05.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c06.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c07.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c08.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c09.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c10.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c11.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c12.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-citedRange.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-contact.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-contactLine.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-container.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-control.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-conventionDeclaration.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-custodHist.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-date.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-dateRange.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-dateSet.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-descriptiveNote.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-dimensions.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-eventDateTime.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-eventDescription.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-filePlan.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-findAidDesc.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-formattingExtension.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-formAvailable.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-formsAvailable.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-function.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-functions.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-head.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-identificationData.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-identificationDataNote.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-language.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-languageDeclaration.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-languageOfMaterial.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-languageSet.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-legalStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-list.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-localTypeDeclaration.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceAgency.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceEvent.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceHistory.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-materialSpec.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-objectXMLWrap.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-otherAgencyCode.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-otherDescriptiveInfo.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-otherFindAid.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-otherRecordId.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-p.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-part.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-physDesc.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-physDescSet.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-physDescStructured.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-physFacet.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-physicalOrTechnicalRequirements.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-physLoc.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-place.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-placeName.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-placeRole.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-places.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-placeType.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-preferCite.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-processInfo.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-publicationNote.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-quantity.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-recordId.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-reference.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-referringString.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-relatedMaterial.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relation.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relations.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relationType.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-rightsDeclaration.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-scopeContent.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-separatedMaterial.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-shortCode.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-source.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-sourceOfAcquisition.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-sources.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-span.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-subjectHeadings.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-targetEntity.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-targetRole.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-term.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-unitDate.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-unitDateStructured.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-unitId.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-unitTitle.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-useConditions.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-writingSystem.xml" parse="xml"/>
+         </div>
+         <div type="attributes">
+			<!-- One include for each attribute href points to the element file -->
+            <xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-addressLineTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-agentType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-approximate.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-audienceEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-base.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-calendar.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-certainty.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-contactLineType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-contactLineTypeEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-containerId.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-conventionDeclarationReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-coordinateSystem.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-countryCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-countryEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-dateChar.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-dateEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-descriptionOfComponentsType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-descriptionOfComponentsTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-detailLevel.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-detailLevelEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-era.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-href.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-id.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageOfElement.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-level.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-levelEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-linkRole.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-linkTitle.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-localType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-localTypeDeclarationReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-maintenanceEventTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-notAfter.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-notBefore.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-parallel.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-parent.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-physDescStructuredType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-physDescStructuredTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-publicationStatus.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-repositoryCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-repositoryEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptOfElement.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-sourceReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-standardDate.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-standardDateTime.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-status.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-statusEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-style.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-target.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-unit.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-unitDateType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-unitDateTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-value.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-valueURI.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-vocabularySource.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-vocabularySourceURI.xml" parse="xml"/>             
+         </div>
+      </body>
+      <back>
+         <!-- One div for each element same element available as for div in front
+            in the div:
+               @type is always appendix
+               @xml:id is a short name of the appendix
+         -->
+         <div type="appendix" xml:id="appendix1">
+            <head>Title</head>
+            <p>Contents of the appendix; this can also include lists</p>
+         </div>
+      </back>
+   </text>
+</TEI>

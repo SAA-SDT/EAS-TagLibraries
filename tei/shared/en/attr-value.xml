@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-value" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>value</att>
+               </head>
+               <div type="fullName">
+                  <p>Value</p>
+               </div>
+               <div type="summary">
+                  <p>Defines the type of entity described in the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
+                  <p>Required attribute within the <gi>entityType</gi> element that defines the type
+                     of entity described in the EAC-CPF instance. </p>
+               </div>
+               <div type="values">
+                  <p>corporateBody, family, person</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:entityType value="person"/>
+                  </egXML>
+               </div>
+            </div>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-languageEncoding" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>languageEncoding</att>
+               </head>
+               <div type="fullName">
+                  <p>Language Encoding</p>
+               </div>
+               <div type="summary">
+                  <p>Specifies which standard list of codes is used to identify the language of the
+                     EAC-CPF instance and languages represented in the creative work of the CPF
+                     entity being described. 
+                  </p>
+               </div>
+               <div type="description">
+                  <p>The codes themselves are specified in <att>languageCode</att> in <gi>language</gi> and <att>languageOfElement</att>
+                     in all non-empty elements. Available in <gi>control</gi>. If the value
+                     "otherLanguageEncoding" is selected an alternate code list should be specified
+                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>ietf-bcp-47, iso639-1, iso639-2b, iso639-3, otherLanguageEncoding</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </eac:control>
+                  </egXML>
+               </div>
+            </div>

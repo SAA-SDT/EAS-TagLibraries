@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-base" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>base</att>
+               </head>
+               <div type="fullName">
+                  <p>Base</p>
+               </div>
+               <div type="summary">
+                  <p>Optional attribute used to specify a base URI that is different to the base URI of the EAC-CPF instance.</p>
+               </div>
+               <div type="description">
+                  <p>Using the optional attribute <att>base</att> allows any relative URIs provided on attributes of a specific element, or its descendants, to be resolved using the URI provided in that element's or its parent element's <att>base</att>.</p>
+                  <p>Available on <gi>alternativeSet</gi>,
+                     <gi>control</gi>, <gi>cpfDescription</gi>, <gi>description</gi>,
+                     <gi>eac</gi>, <gi>identity</gi>, <gi>multipleIdentities</gi>,
+                     <gi>relations</gi>, and <gi>sources</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>anyURI</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:description base="https://d-nb.info/gnd/">
+                        <eac:occupations>
+                           <eac:occupation vocabularySource="GND" valueURI="4393865-6">
+                              <eac:term languageOfElement="de">Soziologin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4629643-8">
+                              <eac:term languageOfElement="de">Politologin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4174285-0">
+                              <eac:term languageOfElement="de">Philosophin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4333423-4">
+                              <eac:term languageOfElement="de">Historikerin</eac:term>
+                           </eac:occupation>
+                           <eac:occupation vocabularySource="GND" valueURI="4053311-6">
+                              <eac:term languageOfElement="de">Schriftstellerin</eac:term>
+                           </eac:occupation>
+                        </eac:occupations>
+                        <eac:places>
+                           <eac:place vocabularySource="GND" valueURI="4099668-2">
+                              <eac:placeName>Linden (Hannover)</eac:placeName>
+                           </eac:place>
+                           <eac:place vocabularySource="GND" valueURI="4042011-5">
+                              <eac:placeName>New York, NY</eac:placeName>
+                           </eac:place>
+                           <eac:place vocabularySource="GND" valueURI="4537442-9">
+                              <eac:placeName>Tegna</eac:placeName>
+                           </eac:place>
+                        </eac:places>
+                     </eac:description>
+                  </egXML>
+               </div>
+            </div>

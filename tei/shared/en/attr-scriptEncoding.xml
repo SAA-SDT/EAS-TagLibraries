@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-scriptEncoding" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>scriptEncoding</att>
+               </head>
+               <div type="fullName">
+                  <p>Script Encoding</p>
+               </div>
+               <div type="summary">
+                  <p>The authoritative source or rules for values supplied in
+                        <att>scriptOfElement</att> and <att>scriptCode</att>.</p>
+               </div>
+               <div type="description">
+                  <p>The authoritative source or rules for values supplied in
+                     <att>scriptOfElement</att> and <att>scriptCode</att>. If the value
+                     "otherScriptEncoding" is selected, an alternate code list should be specified
+                     in <gi>conventionDeclaration</gi>. Optionally available only in <gi>control</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>iso15924, otherScriptEncoding</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </eac:control>
+                  </egXML>
+               </div>
+            </div>

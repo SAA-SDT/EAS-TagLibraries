@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-era" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>era</att>
+               </head>
+               <div type="fullName">
+                  <p>Era</p>
+               </div>
+               <div type="summary">
+                  <p>Period during which years are numbered and dates reckoned.</p>
+               </div>
+               <div type="description">
+                  <p>Period during which years are numbered and dates reckoned, such as CE (Common
+                     Era) or BCE (Before Common Era). Suggested values include "ce" and "bce".
+                     This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>NMTOKEN</p>
+               </div>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                     <eac:dateRange>
+                        <eac:fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">1950</eac:fromDate>
+                        <eac:toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">2000</eac:toDate>
+                     </eac:dateRange>
+                  </egXML>
+               </div>
+            </div>
