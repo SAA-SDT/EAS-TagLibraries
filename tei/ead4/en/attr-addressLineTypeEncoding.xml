@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<att>Title</att>
+		<att>addressLineTypeEncoding</att>
 	</head>
 	<div type="fullName">
-		<p>Full Attribute Name</p>
+		<p>Address Line Type Encoding</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the attribute is used for</p>
+		<p>Specifies which standard list of terms is used to identify the type of address line given as part of a physical address.</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the attribute</p>
+		<p>The terms themselves are given in <att>addressLineType</att> in <gi>addressLine</gi>. Available in <gi>control</gi>. If the value "otherAddressLineTypeEncoding" is selected an alternate list of terms should be specified in <gi>conventionDeclaration</gi>.</p>
 	</div>
 	<div type="values">
-		<p>Available values (include either values or datatype)</p>
-	</div>
-	<div type="datatype">
-		<p>Datatype of the attribute (include either values or datatype)</p>
+		<p>EASList, otherAddressLineTypeEncoding</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
