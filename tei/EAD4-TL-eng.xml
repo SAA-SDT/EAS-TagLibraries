@@ -158,7 +158,6 @@
             <xi:include href="ead4/en/elem-languageOfMaterial.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-languageSet.xml" parse="xml"/>
             <xi:include href="shared/en/elem-legalStatus.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-list.xml" parse="xml"/>
             <xi:include href="shared/en/elem-localTypeDeclaration.xml" parse="xml"/>
             <xi:include href="shared/en/elem-maintenanceAgency.xml" parse="xml"/>
             <xi:include href="shared/en/elem-maintenanceEvent.xml" parse="xml"/>
@@ -217,7 +216,6 @@
 			<!-- One include for each attribute href points to the element file -->
             <xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-addressLineTypeEncoding.xml" parse="xml"/>
-            <xi:include href="shared/en/attr-agentType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-approximate.xml" parse="xml"/>
             <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-audienceEncoding.xml" parse="xml"/>
@@ -276,7 +274,6 @@
             <xi:include href="shared/en/attr-unit.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-unitDateType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-unitDateTypeEncoding.xml" parse="xml"/>
-            <xi:include href="shared/en/attr-value.xml" parse="xml"/>
             <xi:include href="shared/en/attr-valueURI.xml" parse="xml"/>
             <xi:include href="shared/en/attr-vocabularySource.xml" parse="xml"/>
             <xi:include href="shared/en/attr-vocabularySourceURI.xml" parse="xml"/>             
