@@ -48,7 +48,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p><gi>c04</gi> is a fourth-level wrapper for subordinate components within <gi>descriptionOfComponents</gi>. Its parent must be <gi>c03</04). Numbering components may assist a finding aid encoder in accurately nesting them. </p>
+		<p><gi>c04</gi> is a fourth-level wrapper for subordinate components within <gi>descriptionOfComponents</gi>. Its parent must be <gi>c03</gi>. Numbering components may assist a finding aid encoder in accurately nesting them. </p>
                 <p>The numbering of components indicates hierarchy within the encoded finding aid, not the order of the components or a specific intellectual grouping. For instance, <gi>c03</gi> in one part of a finding aid may designate a series, while in another part of the finding aid it may designate an item. </p>
 	</div>
 	<div type="attributeusage">
