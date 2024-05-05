@@ -10,7 +10,7 @@
 		<p>An element that designates a sixth-level subordinate part of the materials.</p>
 	</div>
 	<div type="mayContain">
-		<p>accessConditions (0..n), accruals (0..n), agents (0..1), appraisal (0..n), arrangement (0..n), biogHist (0..n), c06 (0..n), custodHist (0..n), filePlan (0..n), formsAvailable (0..1), functions (0..1), head (0..n), identificationData (1..n), otherDescriptiveInfo (0..n), otherFindAid (0..n), physicalOrTechnicalRequirements (0..n), places (0..1), preferCite (0..n), processInfo (0..n), publicationNote (0..n), relatedMaterial (0..n), scopeContent (0..n), separatedMaterial (0..n), sourceOfAcquisition (0..n), subjectHeadings (0..n), useConditions (0..n)</p>
+		<p>accessConditions (0..n), accruals (0..n), agents (0..1), appraisal (0..n), arrangement (0..n), biogHist (0..n), c07 (0..n), custodHist (0..n), filePlan (0..n), formsAvailable (0..1), functions (0..1), head (0..n), identificationData (1..n), otherDescriptiveInfo (0..n), otherFindAid (0..n), physicalOrTechnicalRequirements (0..n), places (0..1), preferCite (0..n), processInfo (0..n), publicationNote (0..n), relatedMaterial (0..n), scopeContent (0..n), separatedMaterial (0..n), sourceOfAcquisition (0..n), subjectHeadings (0..n), useConditions (0..n)</p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>c05</p>
