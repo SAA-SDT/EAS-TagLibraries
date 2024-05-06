@@ -12,7 +12,7 @@
 	<div type="description">
 		<p>The authoritative source or rules for values supplied in <att>unitDateType</att>
                      in <gi>unitDate</gi> and <gi>unitDateStructured</gi>. If the value
-                     "otherCountryEncoding" is selected an alternate code list should be specified
+                     "otherUnitDateTypeEncoding" is selected an alternate code list should be specified
                      in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
