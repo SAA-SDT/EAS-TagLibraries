@@ -22,7 +22,15 @@
                   <p>ID</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="ead">
+                     <ead:places>
+                        <ead:place id="place1">
+                           <ead:placeName>Bern</ead:placeName>
+                           <ead:placeRole>Place of origin</ead:placeRole>
+                        </ead:place>
+                     </ead:places>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="eac">
                      <eac:occupations>
                         <eac:occupation>
                            <eac:term>Assistant examiner - level III</eac:term>
