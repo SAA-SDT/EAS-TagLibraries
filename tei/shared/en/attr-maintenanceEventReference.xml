@@ -19,8 +19,32 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:relation sourceReference="source1" maintenanceEventReference="me2">
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="ead">
+                   <ead:maintenanceHistory>
+                        <ead:maintenanceEvent maintenanceEventType="updated" id="me2">
+                           <ead:agent agentType="human">K. Bredenberg</ead:agent>
+                           <ead:eventDateTime>May 2024</ead:eventDateTime>
+                          <ead:eventDescription>Relation added</ead:eventDescription>
+                        </ead:maintenanceEvent>
+                     </ead:maintenanceHistory>
+                   [...]
+                     <ead:relation sourceReference="source1" maintenanceEventReference="me2">
+                        <ead:targetEntity targetType="corporateBody" valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" vocabularySourceURI="https://snaccooperative.org">
+                           <ead:part>Princeton University</ead:part>
+                        </ead:targetEntity>
+                        <ead:relationType valueURI="https://www.wikidata.org/wiki/Q166118" vocabularySourceURI="https://www.wikidata.org/">agency or institution responsible for the preservation and communication of records selected for permanent preservation</ead:relationType>
+                     </ead:relation>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="eac">
+                    <eac:maintenanceHistory>
+                        <eac:maintenanceEvent maintenanceEventType="updated" id="me2">
+                           <eac:agent agentType="human">K. Bredenberg</eac:agent>
+                           <eac:eventDateTime>May 2024</eac:eventDateTime>
+                          <eac:eventDescription>Relation added</eac:eventDescription>
+                        </eac:maintenanceEvent>
+                     </eac:maintenanceHistory> 
+                    [...]
+                    <eac:relation sourceReference="source1" maintenanceEventReference="me2">
                         <eac:targetEntity targetType="corporateBody" valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" vocabularySourceURI="https://snaccooperative.org">
                            <eac:part>Princeton University</eac:part>
                         </eac:targetEntity>
