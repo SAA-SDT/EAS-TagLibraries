@@ -18,8 +18,11 @@
 		<p>EASList, otherMaintenanceEventTypeEncoding</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" unitDateTypeEncoding="EASList" statusEncoding="EASList" contactLineTypeEncoding="EASList" coverageEncoding="EASList" otherDescriptionOfComponentsTypeEncoding="EASList" detailLevelEncoding="EASList" maintenanceEventTypeEncoding="EASList"> [...] </ead:control>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type=ead">
+                     <ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" maintenanceEventTypeEncoding="EASList"> [...] </ead:control>
+                  </egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type=eac">
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" maintenanceEventTypeEncoding="EASList"> [...] </eac:control>
                   </egXML>
 	</div>
 </div>
