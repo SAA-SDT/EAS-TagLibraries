@@ -19,7 +19,7 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" unitDateTypeEncoding="EASList" statusEncoding="EASList" contactLineTypeEncoding="EASList" coverageEncoding="EASList"> [...] </ead:control>
+                     <ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" coverageEncoding="EASList"> [...] </ead:control>
                   </egXML>
 	</div>
 </div>
