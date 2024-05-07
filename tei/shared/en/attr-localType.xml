@@ -28,7 +28,15 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="ead">
+                     <ead:relation>
+                       <ead:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/117145971" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                          <ead:part localType="https://d-nb.info/standards/elementset/gnd#NameOfThePerson" localTypeDeclarationReference="GNDO">Wasa, Gustav</ead:part>
+                       </ead:targetEntity>
+                       [...]
+                     </ead:relation>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="eac">
                      <eac:nameEntry status="authorized">
                         <eac:part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">Arendt, Hannah</eac:part>
                         <eac:part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO">1906-1975</eac:part>						
