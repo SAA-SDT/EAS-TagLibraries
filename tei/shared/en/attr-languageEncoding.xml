@@ -19,11 +19,15 @@
                      in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
-                  <p>ietf-bcp-47, iso639-1, iso639-2b, iso639-3, otherLanguageEncoding</p>
+                 <!-- In eac version two its iso639-2b -->
+                  <p>iso639-1, iso639-2, iso639-3, ietf-bcp-47, otherLanguageEncoding</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </eac:control>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="ead">
+                     <ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-3" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </ead:control>
+                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="eac">
+                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-3" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </eac:control>
                   </egXML>
                </div>
             </div>
