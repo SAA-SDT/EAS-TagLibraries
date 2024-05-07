@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<att>otherDescriptionOfComponentsTypeEncoding</att>
+		<att>descriptionOfComponentsTypeEncoding</att>
 	</head>
 	<div type="fullName">
 		<p>Description Of Components Type Encoding</p>
@@ -19,7 +19,7 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" unitDateTypeEncoding="EASList" statusEncoding="EASList" contactLineTypeEncoding="EASList" coverageEncoding="EASList" otherDescriptionOfComponentsTypeEncoding="EASList"> [...] </ead:control>
+                     <ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" descriptionOfComponentsTypeEncoding="EASList"> [...] </ead:control>
                   </egXML>
 	</div>
 </div>
