@@ -7,17 +7,16 @@
                   <p>Date</p>
                </div>
                <div type="summary">
-                  <p>The single date of an event in the history of the person, family, or corporate
-                     body being described, or in their relationship to, e.g., a name entry, a place,
-                     an occupation, another CPF entity, a resource, or a function.</p>
+                  <p>An element for encoding a single date relating to the entity or materials being described, or in their relationship to other elements.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>chronItem, dateSet, demographicDescription, existDates, function, legalStatus,
+                  <p type="eac">chronItem, dateSet, demographicDescription, existDates, function, legalStatus,
                      localControl, localDescription, mandate, occupation, otherEntityType, place,
                      relation, useDates</p>
+                  <p type="ead">agent, dateSet, findAidDesc, function, legalStatus, place, relation, subject, unitDateStructured</p>
                </div>
                <div type="attributes">
                   <p>
@@ -60,17 +59,19 @@
                   </p>
                </div>
                <div type="description">
-                  <p>An element for expressing the single date of an event in the history of the
+                  <p type="eac">An element for expressing the single date of an event in the history of the
                      person, corporate body or family being described, or in their relationship to,
                      e.g., a name entry, a place, an occupation, another CPF entity, a resource, or
                      a function.</p>
+                  <p type="ead">An element for expressing a single date relating to the materials being described, or in its relationship to,
+                     e.g., a place, a function, a resource, or a subject.</p>
                   <p>The content of the element is intended to be a human-readable natural language
                      date with a machine-readable date provided as the value of the
                         <att>standardDate</att> attribute, formulated according to ISO 8601. Uncertain or approximate dates can be encoded in <att>standardDate</att> using Extended Date/Time Format (EDTF).</p>
                   <p>If the event or relationship has inclusive dates use the <gi>dateRange</gi>
                      element, while more complex dates (combining singles dates and date ranges) can
                      be expressed in <gi>dateSet</gi>.</p>
-                  <p>Dates of existence for the entity being described are encoded with the
+                  <p type="eac">Dates of existence for the entity being described are encoded with the
                         <gi>existDates</gi> element, while the dates of use of a particular name of
                      an entity are encoded in <gi>useDates</gi>. The date and time of a maintenance
                      event in the history of the EAC-CPF instance are given in the
@@ -91,18 +92,27 @@
                   </list>
                </div>
                <div type="availability">
-                  <p>Within <gi>demographicDescription</gi>, <gi>function</gi>,
+                  <p type="eac">Within <gi>demographicDescription</gi>, <gi>function</gi>,
                      <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>,
                         <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
                         <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> optional, not repeatable</p>
-                  <p>Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of
+				          <p type="ead">Within <gi>agent</agent>, <gi>function</gi>,
+                     <gi>legalStatus</gi>, <gi>place</gi>,
+                        <gi>relation</gi>, <gi>subject</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
+                        <gi>dateSet</gi> optional, not repeatable</p>
+				          <p type="ead">Within <gi>unitDateStructured</gi>: one of
+                        <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
+                     repeatable</p>
+                  <p type="eac">Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>
                   <p>Within <gi>dateSet</gi>: at least two of <gi>date</gi> and/or
                         <gi>dateRange</gi> required, repeatable</p>
-                  <p>Within <gi>localControl</gi>: one of <gi>date</gi> or <gi>dateRange</gi>
+                  <p type="eac">Within <gi>localControl</gi>: one of <gi>date</gi> or <gi>dateRange</gi>
                      optional, not repeatable</p>
+				          <p type="ead">Within <gi>findAidDesc</gi>: at least one of <gi>agent</gi>, <gi>citedRange</gi>, 
+                  <gi>date</gi>, <gi>formattingExtension</gi>, <gi>place</gi> or <gi>title</gi> required, repeatable</p>
                </div>
                <div type="examples">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
