@@ -8,11 +8,11 @@
                </div>
                <div type="summary">
                   <p>A required child element of <gi>functions</gi> that provides information about
-                     a function, activity, role, or purpose performed by the CPF entity being
-                     described.</p>
+                     a function, activity, process, role, or purpose.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
+                  <p type="eac">date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
+                  <p type="ead">date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), relationType (0..n), targetRole (0..n), targetType (0..n), term (1..n)</p>
                </div>
                <div type="mayOccurWithin">
                   <p>functions</p>
@@ -50,11 +50,14 @@
                   </p>
                </div>
                <div type="description">
-                  <p>A <gi>function</gi> element is a wrapper element used to encode an index term,
+                  <p type="eac">A <gi>function</gi> element is a wrapper element used to encode an index term,
                      using the required child element <gi>term</gi>. Terms are used to identify the
                      functions, processes, activities, tasks, or transactions performed by the CPF
                      entity. They may be drawn from controlled vocabularies or may be natural
                      language terms.</p>
+                  <p type="ead">A <gi>function</gi> element is a wrapper element used to encode an index term,
+                     using the required child element <gi>term</gi>. Terms are used to identify the
+                     activities and processes that generated the described materials. Such terms often provide useful access points to the materials, especially for corporate, government, or institutional records. Examples include collecting taxes and entertaining. They may be drawn from controlled vocabularies or may be natural language terms.</p>
                   <p><gi>function</gi> must include at least one <gi>term</gi> element.
                         <gi>term</gi> can be repeated within <gi>function</gi> to include
                      translations of the same function. Use the <att>languageOfElement</att>
@@ -63,19 +66,29 @@
                      place(s) (<gi>placeName</gi>) may be included to further constrain the term's
                      meaning. A <gi>descriptiveNote</gi> may be included if a fuller textual
                      explanation is needed.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <p type="eac">The prescribed order of all child elements (both required and optional) is:
                   <list type="simple">
                      <item><gi>term</gi></item>
                      <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
                      <item><gi>placeName</gi></item>
                      <item><gi>descriptiveNote</gi></item>
-                  </list>
+                  </list></p>
+                  <p type="ead">The prescribed order of all child elements (both required and optional) is:
+                  <list type="simple">
+                     <item><gi>term</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                     <item><gi>placeName</gi></item>
+                     <item><gi>targetType</gi></item>
+          					 <item><gi>targetRole</gi></item>
+          					 <item><gi>relationType</gi></item>
+          					 <item><gi>descriptiveNote</gi></item>
+                  </list></p>
                </div>
                <div type="seealso">
                   <list type="simple">
                      <item>Use <gi>relation</gi> with <gi>targetEntity</gi> having the
-                           <att>targetType</att> "function" when describing the relationship between
-                        the function and the CPF entity being described in more detail.</item>
+                           <att>targetType</att> "function" when describing the relationship with
+                        the function in more detail.</item>
                   </list>
                </div>
                <div type="availability">
