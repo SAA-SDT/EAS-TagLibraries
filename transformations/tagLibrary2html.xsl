@@ -20,13 +20,14 @@
 
         <xsl:output doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
                 doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
-                encoding="UTF-8" omit-xml-declaration="yes" indent="yes" method="xhtml"/>
+                encoding="UTF-8" omit-xml-declaration="yes" indent="yes" method="xml"/>
 
         <xsl:strip-space elements="*"/>
 
         <!-- variables passed from the build script to the XSLT -->
         <xsl:param name="SAA" as="xs:string" required="yes"/>
         <xsl:param name="currentLanguage" as="xs:string" required="yes"/>
+        <xsl:param name="currentStandard" as="xs:string" required="yes"/>
      
         <xsl:variable name="toctype">short</xsl:variable><!-- Used for the look of the toc Values: long | short -->
         <xsl:param name="spaceCharacter"> </xsl:param> <!-- For egxml formatting -->       
@@ -664,7 +665,7 @@
                         <xsl:text>: </xsl:text>
                 </div>
                 <div class="content">
-                        <xsl:for-each select="tokenize(tei:p, ',')">
+                        <xsl:for-each select="tokenize((tei:p[not(@type)] | tei:p[@type=$currentStandard]), ',')">
                                 <xsl:choose>
                                         <!-- for anything that has a " or a [, like [text], we'll just output the text as is -->
                                         <xsl:when test="contains(., '&quot;') or contains(., '[')">
@@ -718,6 +719,7 @@
                 </div>
         </xsl:template>-->
         
+        <!--
         <xsl:template match="tei:div[@type='description'][parent::tei:div[@type='attributeDocumentation']]">
                 <div class="span">
                         <div class="descriptionHead">
@@ -726,7 +728,7 @@
                         </div>
                         <xsl:apply-templates/>
                 </div>
-        </xsl:template>
+        </xsl:template>-->
 
         <!-- When we have usage as its own head -->
         <!--<xsl:template match="tei:div[@type='usage']">
@@ -985,11 +987,13 @@
                 </div>
         </xsl:template>
 
-        <xsl:template match="tei:p">
+        <xsl:template match="tei:p[@type=$currentStandard] | tei:p[@type=$currentStandard]">
                 <div class="p">
                         <xsl:apply-templates/>
                 </div>
         </xsl:template>
+
+        <xsl:template match="tei:p[@type!=$currentStandard]"/>
 
         <xsl:template match="tei:att" mode="toc">
                 <xsl:text>@</xsl:text>
@@ -1073,16 +1077,16 @@
                                 </xsl:otherwise>
                         </xsl:choose>
                 </div>
-                <xsl:for-each select="eg:egXML">
-                        <div class="leftcol">
-                                <xsl:text>&#x20;</xsl:text>
-                        </div>
+                <div class="content">
+                <xsl:for-each select="tei:egXML">
                         <div class="example">
-                                <xsl:apply-templates/>
-                                <!--<xsl:call-template name="eg"/>-->
-                                <br/>
+                                <pre lang="xml">
+                                        <xsl:value-of select="."/>
+                                        <!--<xsl:call-template name="eg"/>-->
+                                </pre>
                         </div>
                 </xsl:for-each>
+                </div>
                 <br/>
         </xsl:template>
 
@@ -1117,7 +1121,7 @@
         </xsl:template>
 
         <!-- In this template all occuring other namespaceprefixis needs to be added -->
-        <xsl:template match="eac-cpf:* |eac:* |example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
+        <!-- xsl:template match="eac-cpf:* |eac:* |example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
                 <div class="innerExample">
                         <xsl:text>&lt;</xsl:text>
                         <xsl:value-of select="local-name()"/>
@@ -1153,7 +1157,7 @@
                         <xsl:text>&gt;</xsl:text>
                         <br/>
                 </div>
-        </xsl:template>
+        </xsl:template> -->
         
         <!-- total hack until we determine how best to hande this. but, we don't want to wind up with "LibraryVersion", which is what we have now. -->
         <xsl:template match="tei:titlePart">

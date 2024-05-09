@@ -20,6 +20,7 @@
     <xsl:param name="SAA" as="xs:string" required="yes"/>
     <xsl:param name="ISBN" as="xs:string" required="yes"/>
     <xsl:param name="currentLanguage" as="xs:string" required="yes"/>
+    <xsl:param name="currentStandard" as="xs:string" required="yes"/>
 
     <xsl:output indent="yes"/>
     <!-- Used for inserting SAA logo or not Values: yes | no -->
@@ -118,7 +119,7 @@
 
     <xsl:template match="/">
         <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
-            font-selection-strategy="character-by-character" font-family="KurintoText,KurintoTextJP,KurintoTextKR,KurintoTextSC">
+            font-selection-strategy="character-by-character" font-family="KurintoText,KurintoTextJP,KurintoTextKR,KurintoTextSC" xml:lang="{$currentLanguage}">
             <!-- Replaced Pala with Arial -->
             <fo:layout-master-set>
                 <fo:simple-page-master master-name="taglibrary-even" page-height="297mm"
@@ -976,9 +977,9 @@
                 </fo:list-item-label>
                 <fo:list-item-body start-indent="body-start()">
                     <fo:block>
-                        <xsl:call-template name="tokenize">
-<!--                            <xsl:with-param name="text" select="tei:p"/> -->
-                        </xsl:call-template>
+                        <xsl:for-each select="tei:p[@type=$currentStandard] | tei:p[not(@type)]">
+                            <xsl:call-template name="tokenize"/>
+                        </xsl:for-each>
                     </fo:block>
                 </fo:list-item-body>
             </fo:list-item>
@@ -1253,10 +1254,14 @@
 
     </xsl:template>
 
-    <xsl:template match="tei:p">
+    <xsl:template match="tei:p[@type=$currentStandard]">
         <fo:block space-after="6pt">
             <xsl:apply-templates/>
         </fo:block>
+    </xsl:template>
+
+    <!-- throw these into the void -->
+    <xsl:template match="tei:p[@type!=$currentStandard]">
     </xsl:template>
 
     <xsl:template match="tei:tag">
@@ -1354,25 +1359,11 @@
         <fo:block>
             <xsl:text> </xsl:text>
         </fo:block>
-        <fo:list-block provisional-distance-between-starts="0">
-            <fo:list-item>
-                <fo:list-item-label start-indent="0" end-indent="0">
-                    <fo:block>
-                        <xsl:text> </xsl:text>
-                    </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
-                    <xsl:for-each select="*">
-                        <xsl:variable name="myDepth"
-                            select="count(ancestor::*[not(namespace-uri() = 'http://www.tei-c.org/ns/1.0')]) * 5"/>
-                        <fo:block start-indent="body-start() + {$myDepth}mm" font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC"
-                            font-size="10pt">
-                            <xsl:call-template name="eg"/>
-                        </fo:block>
-                    </xsl:for-each>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block>
+        <fo:block>
+            &lt;![CDATA[
+            <xsl:copy-of select="*"/>
+            ]]&gt;
+        </fo:block>
         <fo:block>
             <xsl:text> </xsl:text>
         </fo:block>
@@ -1408,15 +1399,12 @@
                 </fo:list-item-label>
                 <fo:list-item-body start-indent="body-start()">
                     <xsl:choose>
-                        <xsl:when test="eg:egXML">
-                            <xsl:for-each select="eg:egXML">
-                                <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" font-size="10pt" space-after="12pt">
-                                    <xsl:apply-templates/>
+                        <xsl:when test="egXML">
+                            <xsl:for-each select="egXML">
+                                <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" font-size="10pt" space-after="12pt" white-space-collapse="false" text-align="start" wrap-option="wrap" linefeed-treatment="preserve" white-space-treatment="preserve" background-color="gainsboro" border="outset" padding="2mm">
+                                    <xsl:value-of select="."/>
                                 </fo:block>
                             </xsl:for-each>
-                            <fo:block>
-                                <xsl:call-template name="newLine"/>
-                            </fo:block>
                         </xsl:when>
                         <xsl:otherwise>
                             <fo:block>
@@ -1427,51 +1415,6 @@
                 </fo:list-item-body>
             </fo:list-item>
         </fo:list-block>
-    </xsl:template>
-
-    <xsl:template name="eg">
-        <xsl:choose>
-            <xsl:when test="name() != 'eac-cpf:objectXMLWrap' and name() != 'ead:objectxmlwrap' and name() != 'eac:objectXMLWrap'">
-                <fo:block>
-                    <xsl:call-template name="newLine"/>
-                    <xsl:text>&lt;</xsl:text>
-                    <xsl:value-of select="local-name()"/>
-                    <xsl:for-each select="@*">
-                        <xsl:text>&#x20;</xsl:text>
-                        <xsl:choose>
-                            <xsl:when
-                                test="namespace-uri() = 'http://workaround for xml namespace restriction/namespace'">
-                                <xsl:text>xml:</xsl:text>
-                                <xsl:value-of select="local-name()"/>
-                            </xsl:when>
-                            <xsl:when test="namespace-uri() = 'http://www.w3c.org/1999/xlink'">
-                                <xsl:text>xlink:</xsl:text>
-                                <xsl:value-of select="local-name()"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="local-name()"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                        <xsl:text>="</xsl:text>
-                        <xsl:value-of select="."/>
-                        <xsl:text>"</xsl:text>
-                    </xsl:for-each>
-                    <xsl:text>&gt;</xsl:text>
-                    <xsl:apply-templates select="* | text()"/>
-                    <xsl:text>&lt;/</xsl:text>
-                    <xsl:value-of select="local-name()"/>
-                    <xsl:text>&gt;</xsl:text>
-                    <xsl:call-template name="newLine"/>
-                </fo:block>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>&lt;objectXMLWrap&gt;</xsl:text>
-                <fo:block>
-                    <xsl:apply-templates mode="escape"/>
-                </fo:block>
-                <xsl:text>&lt;/objectXMLWrap&gt;</xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
     </xsl:template>
 
     <!-- In this template all occuring other namespaceprefixis needs to be added -->
@@ -1525,108 +1468,8 @@
         </fo:block>
     </xsl:template>
 
-    <xsl:template match="*" mode="escape">
-        <xsl:variable name="myDepth"
-            select="count(ancestor::*[not(namespace-uri() = 'http://www.tei-c.org/ns/1.0')]) * 5"/>
-        <fo:block start-indent="{$myDepth}mm" wrap-option="wrap">
-            <!-- Begin opening tag -->
-            <xsl:text>&lt;</xsl:text>
-            <xsl:value-of select="name()"/>
-            <!-- Namespaces -->
-            <xsl:variable name="curnode" select="."/>
-            <xsl:for-each select="namespace::*">
-                <xsl:variable name="nsuri" select="."/>
-                <xsl:if
-                    test="
-                        $curnode/descendant-or-self::*[namespace-uri() = $nsuri] and
-                        $curnode/descendant-or-self::*[namespace-uri() != 'http://www.tei-c.org/ns/Examples']
-                        ">
-
-                    <xsl:text> xmlns</xsl:text>
-                    <xsl:if test="name() != ''">
-                        <xsl:text>:</xsl:text>
-                        <xsl:value-of select="name()"/>
-                    </xsl:if>
-                    <xsl:text>='</xsl:text>
-                    <xsl:call-template name="escape-xml">
-                        <xsl:with-param name="text" select="."/>
-                    </xsl:call-template>
-                    <xsl:text>'</xsl:text>
-                </xsl:if>
-            </xsl:for-each>
-
-            <!-- Attributes -->
-            <xsl:for-each select="@*">
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="name()"/>
-                <xsl:text>='</xsl:text>
-                <xsl:call-template name="escape-xml">
-                    <xsl:with-param name="text" select="."/>
-                </xsl:call-template>
-                <xsl:text>'</xsl:text>
-            </xsl:for-each>
-
-            <!-- End opening tag -->
-            <xsl:text>&gt;</xsl:text>
-
-            <!-- Content (child elements, text nodes, and PIs) -->
-            <xsl:apply-templates select="node()" mode="escape"/>
-
-            <!-- Closing tag -->
-            <fo:inline keep-together.within-line="always" keep-with-previous.within-line="always">
-                <xsl:text>&lt;/</xsl:text>
-                <xsl:value-of select="name()"/>
-                <xsl:text>&gt;</xsl:text>
-            </fo:inline>
-        </fo:block>
-    </xsl:template>
-
-    <xsl:template name="escape-xml">
-        <xsl:param name="text"/>
-        <xsl:if test="$text != ''">
-            <xsl:variable name="head" select="substring($text, 1, 1)"/>
-            <xsl:variable name="tail" select="substring($text, 2)"/>
-            <xsl:choose>
-                <xsl:when test="$head = '&amp;'">&amp;amp;</xsl:when>
-                <xsl:when test="$head = '&lt;'">&amp;lt;</xsl:when>
-                <xsl:when test="$head = '&gt;'">&amp;gt;</xsl:when>
-                <xsl:when test="$head = '&quot;'">&amp;quot;</xsl:when>
-                <xsl:when test="$head = &quot;&apos;&quot;">&amp;apos;</xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="$head"/>
-                </xsl:otherwise>
-            </xsl:choose>
-            <xsl:call-template name="escape-xml">
-                <xsl:with-param name="text" select="$tail"/>
-            </xsl:call-template>
-        </xsl:if>
-    </xsl:template>
-
-    <xsl:template name="makeIndent">
-        <xsl:variable name="depth"
-            select="count(ancestor::*[not(namespace-uri() = 'http://www.tei-c.org/ns/1.0')]) + 5"/>
-        <xsl:call-template name="makeSpace">
-            <xsl:with-param name="d">
-                <xsl:value-of select="$depth"/>
-            </xsl:with-param>
-        </xsl:call-template>
-    </xsl:template>
-
-
     <xsl:template name="newLine">
         <fo:block/>
-    </xsl:template>
-
-    <xsl:template name="makeSpace">
-        <xsl:param name="d"/>
-        <xsl:if test="number($d) &gt; 1">
-            <xsl:value-of select="$spaceCharacter"/>
-            <xsl:call-template name="makeSpace">
-                <xsl:with-param name="d">
-                    <xsl:value-of select="$d - 1"/>
-                </xsl:with-param>
-            </xsl:call-template>
-        </xsl:if>
     </xsl:template>
 
     <xsl:template match="tei:head">
@@ -1648,8 +1491,6 @@
             <xsl:text>&#xA;</xsl:text>
         </fo:block>
     </xsl:template>
-
-
 
     <xsl:template name="tokenize">
         <xsl:for-each select="tokenize(., ',')">

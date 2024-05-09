@@ -19,8 +19,8 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                    <eac:date certainty="uncertain" standardDate="1968?">c.1968</eac:date>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<date certainty="uncertain" standardDate="1968?">
+   c.1968
+</date>]]></egXML>
                </div>
             </div>

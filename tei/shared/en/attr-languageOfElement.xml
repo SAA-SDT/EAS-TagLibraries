@@ -21,8 +21,8 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</eac:agencyName>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<agencyName languageOfElement="eng">
+   Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog
+</agencyName>]]></egXML>
                </div>
             </div>

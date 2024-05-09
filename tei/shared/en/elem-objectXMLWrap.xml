@@ -44,47 +44,69 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:objectXMLWrap>
-                        <mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3                            http://www.loc.gov/mods/v3/mods-3-3.xsd">
-                           <mods:titleInfo>
-                              <mods:title>Artisti trentini tra le due guerre</mods:title>
-                           </mods:titleInfo>
-                           <mods:name>
-                              <mods:namePart type="given">Nicoletta</mods:namePart>
-                              <mods:namePart type="family">Boschiero</mods:namePart>
-                              <mods:role>
-                                 <mods:roleTerm type="text">autore</mods:roleTerm>
-                              </mods:role>
-                           </mods:name>
-                        </mods:mods>
-                     </eac:objectXMLWrap>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:objectXMLWrap>
-                        <!-- Karin: Having a tei example is making the transformation mess up so therefore tei is renamed to have namespace text here -->
-                        <text:bibl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:text="http://www.tei.org/ns/1.0" xsi:schemaLocation="http://www.tei.org/ns/1.0 tei.xsd" default="false">
-                           <text:title>
-                              <text:emph rend="italic">Paris d'hier et d'aujourd'hui</text:emph>
-                           </text:title>
-                           <text:respStmt>
-                              <text:resp>photographes</text:resp>
-                              <text:name>Roger Henrard</text:name>
-                              <text:name>Yann Arthus-Bertrand</text:name>
-                           </text:respStmt>
-                        </text:bibl>
-                     </eac:objectXMLWrap>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:objectXMLWrap>
-                        <!-- Ailie: used the eac prefix to get the example to display, even though not EAC elements -->
-                        <eac:note xmlns="">
-                           <eac:to>Tove</eac:to>
-                           <eac:from>Jani</eac:from>
-                           <eac:heading>Reminder</eac:heading>
-                           <eac:body>Don't forget me this weekend!</eac:body>
-                        </eac:note>
-                     </eac:objectXMLWrap>
-                  </egXML>
+                  <egXML> <!-- xmlns="http://www.tei-c.org/ns/Examples"> --><![CDATA[<objectXMLWrap>
+   <mods:mods xmlns:mods="http://www.loc.gov/mods/v3" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 
+      http://www.loc.gov/mods/v3/mods-3-3.xsd">
+      <mods:titleInfo>
+         <mods:title>
+            Artisti trentini tra le due guerre
+         </mods:title>
+      </mods:titleInfo>
+      <mods:name>
+         <mods:namePart type="given">
+            Nicoletta
+         </mods:namePart>
+         <mods:namePart type="family">
+            Boschiero
+         </mods:namePart>
+         <mods:role>
+            <mods:roleTerm type="text">
+               autore
+            </mods:roleTerm>
+         </mods:role>
+      </mods:name>
+   </mods:mods>
+</objectXMLWrap>]]></egXML>
+                  <egXML><![CDATA[<objectXMLWrap>
+   <text:bibl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:text="http://www.tei.org/ns/1.0" 
+      xsi:schemaLocation="http://www.tei.org/ns/1.0 tei.xsd" 
+      default="false">
+      <text:title>
+         <text:emph rend="italic">
+            Paris d'hier et d'aujourd'hui
+         </text:emph>
+      </text:title>
+      <text:respStmt>
+         <text:resp>
+            photographes
+         </text:resp>
+         <text:name>
+            Roger Henrard
+         </text:name>
+         <text:name>
+            Yann Arthus-Bertrand
+         </text:name>
+      </text:respStmt>
+   </text:bibl>
+</objectXMLWrap>]]></egXML>
+                  <egXML><![CDATA[<objectXMLWrap>
+   <note xmlns="">
+      <to>
+         Tove
+      </to>
+      <from>
+         Jani
+      </from>
+      <heading>
+         Reminder
+      </heading>
+      <body>
+         Don't forget me this weekend!
+      </body>
+   </note>
+</objectXMLWrap>]]></egXML>
                </div>
             </div>

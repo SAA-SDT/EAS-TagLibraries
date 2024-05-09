@@ -20,10 +20,10 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:nameEntry status="alternative">
-                        <eac:part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO" scriptOfElement="Hans">阿伦特, 汉娜</eac:part>
-                    </eac:nameEntry>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<nameEntry status="alternative">
+   <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO" scriptOfElement="Hans">
+      阿伦特, 汉娜
+   </part>
+</nameEntry>]]></egXML>
                </div>
             </div>

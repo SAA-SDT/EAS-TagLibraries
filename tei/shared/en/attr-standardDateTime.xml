@@ -22,11 +22,9 @@
                      dateTime is UTC.]</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:maintenanceEvent maintenanceEventType="revised">
-                        <eac:agent agentType="unknown"/>
-                        <eac:eventDateTime standardDateTime="2021-11-27"/>
-                     </eac:maintenanceEvent>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="revised">
+   <agent agentType="unknown"/>
+   <eventDateTime standardDateTime="2021-11-27"/>
+</maintenanceEvent>]]></egXML>
                </div>
             </div>

@@ -18,11 +18,11 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:geographicCoordinates coordinateSystem="mgrs">33UUU9029819737</eac:geographicCoordinates>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">      
-                     <eac:geographicCoordinates coordinateSystem="WGS84">-81.1, 32.2, -81.0, 32.3</eac:geographicCoordinates>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<geographicCoordinates coordinateSystem="mgrs">
+   33UUU9029819737
+</geographicCoordinates>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<geographicCoordinates coordinateSystem="WGS84">
+   -81.1, 32.2, -81.0, 32.3
+</geographicCoordinates>]]></egXML>
                </div>
             </div>

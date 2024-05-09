@@ -18,17 +18,22 @@
                   <p>agent, corporateBody, family, function, person, resource</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:targetEntity targetType="resource">
-                        <eac:part>Mémorial du colonel Gustafsson. - 1829</eac:part>
-                     </eac:targetEntity>
+                  <egXML xml:lang="eng"><![CDATA[<targetEntity targetType="resource">
+   <part>
+      Mémorial du colonel Gustafsson. - 1829
+   </part>
+</targetEntity>]]>
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                        <eac:part>Sophie</eac:part>
-                        <eac:part>Baden, Großherzogin</eac:part>
-                        <eac:part>1801-1865</eac:part>
-                     </eac:targetEntity>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+   <part>
+      Sophie
+   </part>
+   <part>
+      Baden, Großherzogin
+   </part>
+   <part>
+      1801-1865
+   </part>
+</targetEntity>]]></egXML>
                </div>
             </div>

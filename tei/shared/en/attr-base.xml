@@ -20,37 +20,51 @@
                   <p>anyURI</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:description base="https://d-nb.info/gnd/">
-                        <eac:occupations>
-                           <eac:occupation vocabularySource="GND" valueURI="4393865-6">
-                              <eac:term languageOfElement="de">Soziologin</eac:term>
-                           </eac:occupation>
-                           <eac:occupation vocabularySource="GND" valueURI="4629643-8">
-                              <eac:term languageOfElement="de">Politologin</eac:term>
-                           </eac:occupation>
-                           <eac:occupation vocabularySource="GND" valueURI="4174285-0">
-                              <eac:term languageOfElement="de">Philosophin</eac:term>
-                           </eac:occupation>
-                           <eac:occupation vocabularySource="GND" valueURI="4333423-4">
-                              <eac:term languageOfElement="de">Historikerin</eac:term>
-                           </eac:occupation>
-                           <eac:occupation vocabularySource="GND" valueURI="4053311-6">
-                              <eac:term languageOfElement="de">Schriftstellerin</eac:term>
-                           </eac:occupation>
-                        </eac:occupations>
-                        <eac:places>
-                           <eac:place vocabularySource="GND" valueURI="4099668-2">
-                              <eac:placeName>Linden (Hannover)</eac:placeName>
-                           </eac:place>
-                           <eac:place vocabularySource="GND" valueURI="4042011-5">
-                              <eac:placeName>New York, NY</eac:placeName>
-                           </eac:place>
-                           <eac:place vocabularySource="GND" valueURI="4537442-9">
-                              <eac:placeName>Tegna</eac:placeName>
-                           </eac:place>
-                        </eac:places>
-                     </eac:description>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<description base="https://d-nb.info/gnd/">
+   <occupations>
+      <occupation vocabularySource="GND" valueURI="4393865-6">
+         <term languageOfElement="de">
+            Soziologin
+         </term>
+      </occupation>
+      <occupation vocabularySource="GND" valueURI="4629643-8">
+         <term languageOfElement="de">
+            Politologin
+         </term>
+      </occupation>
+      <occupation vocabularySource="GND" valueURI="4174285-0">
+         <term languageOfElement="de">
+            Philosophin
+         </term>
+      </occupation>
+      <occupation vocabularySource="GND" valueURI="4333423-4">
+         <term languageOfElement="de">
+            Historikerin
+         </term>
+      </occupation>
+      <occupation vocabularySource="GND" valueURI="4053311-6">
+         <term languageOfElement="de">
+            Schriftstellerin
+         </term>
+      </occupation>
+   </occupations>
+   <places>
+      <place vocabularySource="GND" valueURI="4099668-2">
+         <placeName>
+            Linden (Hannover)
+         </placeName>
+      </place>
+      <place vocabularySource="GND" valueURI="4042011-5">
+         <placeName>
+            New York, NY
+         </placeName>
+      </place>
+      <place vocabularySource="GND" valueURI="4537442-9">
+         <placeName>
+            Tegna
+         </placeName>
+      </place>
+   </places>
+</description>]]></egXML>
                </div>
             </div>

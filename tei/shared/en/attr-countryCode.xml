@@ -20,17 +20,21 @@
                   <p>NMTOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:maintenanceAgency countrycode="IE">
-                        <eac:agencyCode>IE-NAI</eac:agencyCode>
-                        <eac:agencyName>National Archives of Ireland</eac:agencyName>
-                     </eac:maintenanceAgency>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:place>
-                        <eac:placeRole>Residence</eac:placeRole>
-                        <eac:placeName countryCode="GR" vocabularySource="ISO3166-2">Greece</eac:placeName>
-                     </eac:place>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countrycode="IE">
+   <agencyCode>
+      IE-NAI
+   </agencyCode>
+   <agencyName>
+      National Archives of Ireland
+   </agencyName>
+</maintenanceAgency>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<place>
+   <placeRole>
+      Residence
+   </placeRole>
+   <placeName countryCode="GR" vocabularySource="ISO3166-2">
+      Greece
+   </placeName>
+</place>]]></egXML>
                </div>
             </div>

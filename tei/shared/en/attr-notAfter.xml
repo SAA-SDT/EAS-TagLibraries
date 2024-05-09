@@ -20,11 +20,13 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:dateRange>
-                        <eac:fromDate notBefore="1971" notAfter="1975">around 1973</eac:fromDate>
-                        <eac:toDate standardDate="1992">1992</eac:toDate>
-                     </eac:dateRange>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<dateRange>
+   <fromDate notBefore="1971" notAfter="1975">
+      around 1973
+   </fromDate>
+   <toDate standardDate="1992">
+      1992
+   </toDate>
+</dateRange>]]></egXML>
                </div>
             </div>

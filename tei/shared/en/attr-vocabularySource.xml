@@ -16,10 +16,10 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:occupation valueURI="https://d-nb.info/gnd/4053311-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                        <eac:term>Schriftstellerin</eac:term>
-                     </eac:occupation>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<occupation valueURI="https://d-nb.info/gnd/4053311-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+   <term>
+      Schriftstellerin
+   </term>
+</occupation>]]></egXML>
                </div>
             </div>

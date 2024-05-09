@@ -18,11 +18,13 @@
                   <p>anyURI</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:place>
-                        <eac:placeName valueURI="https://d-nb.info/gnd/4005728-8" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Berlin</eac:placeName>		
-                        <eac:placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBusiness" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Sitz</eac:placeRole>
-                     </eac:place>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<place>
+   <placeName valueURI="https://d-nb.info/gnd/4005728-8" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+      Berlin
+   </placeName>
+   <placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBusiness" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">
+      Sitz
+   </placeRole>
+</place>]]></egXML>
                </div>
             </div>

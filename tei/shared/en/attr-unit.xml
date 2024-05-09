@@ -18,8 +18,8 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:citedRange unit="page">1</eac:citedRange>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<citedRange unit="page">
+   1
+</citedRange>]]></egXML>
                </div>
             </div>
