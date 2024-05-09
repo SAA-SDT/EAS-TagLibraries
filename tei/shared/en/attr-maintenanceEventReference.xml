@@ -19,7 +19,46 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<relation sourceReference="source1" maintenanceEventReference="me2">
+                  <egXML xml:lang="eng" type="ead"><![CDATA[<maintenanceHistory>
+   <maintenanceEvent maintenanceEventType="updated" id="me2">
+      <agent agentType="human">
+         K. Bredenberg
+      </agent>
+      <eventDateTime>
+         May 2024
+      </eventDateTime>
+      <eventDescription>
+         Relation added
+      </eventDescription>
+   </maintenanceEvent>
+</maintenanceHistory>
+[...]
+<relation sourceReference="source1" maintenanceEventReference="me2">
+   <targetEntity targetType="corporateBody" valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" vocabularySourceURI="https://snaccooperative.org">
+      <part>
+         Princeton University
+      </part>
+   </targetEntity>
+   <relationType valueURI="https://www.wikidata.org/wiki/Q166118" vocabularySourceURI="https://www.wikidata.org/">
+      agency or institution responsible for the preservation and communication of records selected for permanent preservation
+   </relationType>
+</relation>]]>
+                  </egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceHistory>
+   <maintenanceEvent maintenanceEventType="updated" id="me2">
+      <agent agentType="human">
+         K. Bredenberg
+      </agent>
+      <eventDateTime>
+         May 2024
+      </eventDateTime>
+      <eventDescription>
+         Relation added
+      </eventDescription>
+   </maintenanceEvent>
+</maintenanceHistory> 
+[...]
+<relation sourceReference="source1" maintenanceEventReference="me2">
    <targetEntity targetType="corporateBody" valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" vocabularySourceURI="https://snaccooperative.org">
       <part>
          Princeton University
@@ -28,6 +67,7 @@
    <relationType valueURI="https://www.wikidata.org/wiki/Property:P69" vocabularySourceURI="https://www.wikidata.org/">
       educated at
    </relationType>
-</relation>]]></egXML>
+</relation>]]>
+                  </egXML>
                </div>
             </div>

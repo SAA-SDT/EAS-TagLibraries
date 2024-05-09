@@ -97,11 +97,11 @@
                         <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
                         <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> optional, not repeatable</p>
-				          <p type="ead">Within <gi>agent</gi>, <gi>function</gi>,
+                  <p type="ead">Within <gi>agent</gi>, <gi>function</gi>,
                      <gi>legalStatus</gi>, <gi>place</gi>,
                         <gi>relation</gi>, <gi>subject</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> optional, not repeatable</p>
-				          <p type="ead">Within <gi>unitDateStructured</gi>: one of
+                 <p type="ead">Within <gi>unitDateStructured</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>
                   <p type="eac">Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of
@@ -111,7 +111,7 @@
                         <gi>dateRange</gi> required, repeatable</p>
                   <p type="eac">Within <gi>localControl</gi>: one of <gi>date</gi> or <gi>dateRange</gi>
                      optional, not repeatable</p>
-				          <p type="ead">Within <gi>findAidDesc</gi>: at least one of <gi>agent</gi>, <gi>citedRange</gi>, 
+		  <p type="ead">Within <gi>findAidDesc</gi>: at least one of <gi>agent</gi>, <gi>citedRange</gi>, 
                   <gi>date</gi>, <gi>formattingExtension</gi>, <gi>place</gi> or <gi>title</gi> required, repeatable</p>
                </div>
                <div type="examples">

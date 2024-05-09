@@ -13,10 +13,10 @@
                </div>
                <div type="description">
                   <p>
-                     The attribute can be used to link to a convention or rule that prescribes a method for converting one script into another script (transliteration). It also can be used to link to a national, international, or other rule that governs the construction of an EAC-CPF name.
+                     The attribute can be used to link to a convention or rule that prescribes a method for converting one script into another script (transliteration). It also can be used to link to a national, international, or other rule that governs the construction of a name.
                   </p>
                   <p>
-                     This optional attribute is available in all elements in the identity area (except <gi>entityType</gi>), in the description area and in relations. 
+                     This optional attribute is available in elements that can contain text. 
                   </p>
                </div>
                <div type="datatype">

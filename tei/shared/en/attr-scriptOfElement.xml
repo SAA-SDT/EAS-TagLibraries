@@ -13,17 +13,27 @@
                <div type="description">
                      <p>Content should be taken from ISO 15924, or another controlled list, as specified in the
                         <att>scriptEncoding</att> attribute in <gi>control</gi>. May be used
-                     consistently in a multi-lingual EAC-CPF instance to specify which elements are
+                     consistently in a multi-lingual EAS instance to specify which elements are
                      written in which script. Optionally available on all non-empty elements.</p>
                </div>
                <div type="datatype">
-                  <p>NMTOKEN</p>
+                 <!-- In eac versin 2 this is NMTOKEN -->
+                  <p>TOKEN</p>
                </div>
                <div type="examples">
+<<<<<<< HEAD
                   <egXML xml:lang="eng"><![CDATA[<nameEntry status="alternative">
    <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO" scriptOfElement="Hans">
       阿伦特, 汉娜
    </part>
 </nameEntry>]]></egXML>
+=======
+                 <!-- ead example needed -->
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="eac">
+                     <eac:nameEntry status="alternative">
+                        <eac:part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO" scriptOfElement="Hans">阿伦特, 汉娜</eac:part>
+                    </eac:nameEntry>
+                  </egXML>
+>>>>>>> eaa8be6021cf830f825c40be4a284e090a98c85e
                </div>
             </div>

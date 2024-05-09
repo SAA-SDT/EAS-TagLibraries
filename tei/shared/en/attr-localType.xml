@@ -28,7 +28,7 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<nameEntry status="authorized">
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry status="authorized">
    <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">
       Arendt, Hannah
    </part>
@@ -36,5 +36,13 @@
       1906-1975
    </part>						
 </nameEntry>]]></egXML>
+                 <egXML xml:lang="eng" type="ead"><![CDATA[<relation>
+   <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/117145971" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+     <part localType="https://d-nb.info/standards/elementset/gnd#NameOfThePerson" localTypeDeclarationReference="GNDO">
+      Wasa, Gustav
+     </part>
+   </targetEntity>
+   [...]
+</relation>]]></egXML>
                </div>
             </div>

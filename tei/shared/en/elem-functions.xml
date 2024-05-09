@@ -7,14 +7,15 @@
                   <p>Functions</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>description</gi> used for grouping together
+                  <p>An optional child element used for grouping together
                      one or more <gi>function</gi> elements.</p>
                </div>
                <div type="mayContain">
                   <p>descriptiveNote (0..1), function (1..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>description</p>
+                  <p type="eac">description</p>
+                  <p type="ead">archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
                </div>
                <div type="attributes">
                   <p>
@@ -46,11 +47,11 @@
                   <p>Use the optional <gi>functions</gi> element to group together one or more
                      occurrences of <gi>function</gi>. <gi>functions</gi> must include at least one
                         <gi>function</gi> element.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:
                   <list type="simple">
                      <item><gi>function</gi></item>
                      <item><gi>descriptiveNote</gi></item>
-                  </list>
+                  </list></p>
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>

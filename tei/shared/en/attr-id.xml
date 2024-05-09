@@ -22,7 +22,7 @@
                   <p>ID</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<occupations>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<occupations>
    <occupation>
       <term>
          Assistant examiner - level III
@@ -32,6 +32,17 @@
       </placeName>
    </occupation>
 </occupations>
+<places>
+   <place id="place1">
+      <placeName>
+         Bern
+      </placeName>
+      <placeRole>
+         Place of work
+      </placeRole>
+   </place>
+</places>]]></egXML>
+                  <egXML xml:lang="eng" type="ead"><![CDATA[<occupations>
 <places>
    <place id="place1">
       <placeName>

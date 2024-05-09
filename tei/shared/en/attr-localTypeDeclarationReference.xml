@@ -9,7 +9,7 @@
                <div type="summary">
                   <p>Use <att>localTypeDeclarationReference</att> to provide a direct link to a
                         <gi>localTypeDeclaration</gi> element within <gi>control</gi> from another
-                     element using <att>localType</att> within the EAC-CPF instance.
+                     element using <att>localType</att> within the EAS instance.
                   </p>
                </div>
                <div type="description">
@@ -21,13 +21,21 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<nameEntry status="authorized">
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry status="authorized">
    <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">
       Arendt, Hannah
    </part>
    <part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO">
       1906-1975
-   </part>						
+   </part>                 
 </nameEntry>]]></egXML>
+                 <egXML xml:lang="eng" type="ead"><![CDATA[<relation>
+   <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/117145971" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+     <part localType="https://d-nb.info/standards/elementset/gnd#NameOfThePerson" localTypeDeclarationReference="GNDO">
+      Wasa, Gustav
+     </part>
+   </targetEntity>
+   [...]
+</relation>]]></egXML>
                </div>
             </div>

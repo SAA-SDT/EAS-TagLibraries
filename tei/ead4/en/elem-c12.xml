@@ -1,43 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>Title</gi>
+		<gi>c12</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Component (twelfth level)</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>An element that designates a twelfth-level subordinate part of the materials.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>accessConditions (0..n), accruals (0..n), agents (0..1), appraisal (0..n), arrangement (0..n), biogHist (0..n), custodHist (0..n), filePlan (0..n), formsAvailable (0..1), functions (0..1), head (0..n), identificationData (1..n), otherDescriptiveInfo (0..n), otherFindAid (0..n), physicalOrTechnicalRequirements (0..n), places (0..1), preferCite (0..n), processInfo (0..n), publicationNote (0..n), relatedMaterial (0..n), scopeContent (0..n), separatedMaterial (0..n), sourceOfAcquisition (0..n), subjectHeadings (0..n), useConditions (0..n)</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>c11</p>
 	</div>
 	<div type="attributes">
 		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
+				<label>audience</label>
+				<item>Optional</item>
+				<label>base</label>
+            			<item>Optional</item>
+				<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>id</label>
+            			<item>Optional</item>
+            			<label>languageOfElement</label>
+            			<item>Optional</item>
+            			<label>level</label>
+           			<item>Optional</item>
+            			<label>maintenanceEventReference</label>
+           			<item>Optional</item>
+           			<label>scriptOfElement</label>
+           			<item>Optional</item>
+            			<label>sourceReference</label>
+            			<item>Optional</item>
+            			<label>target</label>
+            			<item>Optional</item>
+            			<label>valueURI</label>
+            			<item>Optional</item>
+            			<label>vocabularySource</label>
+            			<item>Optional</item>
+            			<label>vocabularySourceURI</label>
+            			<item>Optional</item>
 			</list>
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
+		<p><gi>c12</gi> is a twelfth-level wrapper for subordinate components within <gi>descriptionOfComponents</gi>. Its parent must be <gi>c11</gi>. Numbering components may assist a finding aid encoder in accurately nesting them. </p>
+                <p>The numbering of components indicates hierarchy within the encoded finding aid, not the order of the components or a specific intellectual grouping. For instance, <gi>c12</gi> in one part of a finding aid may designate a file, while in another part of the finding aid it may designate an item. </p>
+		<p><gi>c12</gi> is the lowest hierarchical level permitted when using numbered components.</p>
 	</div>
 	<div type="attributeusage">
 		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
+			<item>Use <att>base</att> to specify a base URI other than the URI of the EAD instance for the purpose of resolving any relative URIs contained within <gi>c02</gi>.</item>
+                        <item>Use <att>level</att> to identify the logical type of the component (for instance, "file" or "item"). </item>
 		</list>
 	</div>	
 	<div type="seealso">
 		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
+			<item>The unnumbered element <gi>c</gi> is an alternative way to designate components. Use either the unnumbered <gi>c</gi> or the numbered alternatives. Do not mix the two in a single EAD instance.</item>
 		</list>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Optional, Repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

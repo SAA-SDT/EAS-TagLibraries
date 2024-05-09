@@ -14,7 +14,7 @@
                </div>
                <div type="description">
                   <p>The attribute can be used to reference any detailed information about the described entity with a source.</p>
-                  <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations.</p>
+                  <p>The attribute is optionally available in elements which can contain text.</p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>

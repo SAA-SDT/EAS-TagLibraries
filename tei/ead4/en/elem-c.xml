@@ -1,43 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>Title</gi>
+		<gi>c</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Component (unnumbered)</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>An element that designates a subordinate part of the materials being described</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>accessConditions (0..n), accruals (0..n), agents (0..1), appraisal (0..n), arrangement (0..n), biogHist (0..n), c (0..n), custodHist (0..n), filePlan (0..n), formsAvailable (0..1), functions (0..1), head (0..n), identificationData (1..n), otherDescriptiveInfo (0..n), otherFindAid (0..n), physicalOrTechnicalRequirements (0..n), places (0..1), preferCite (0..n), processInfo (0..n), publicationNote (0..n), relatedMaterial (0..n), scopeContent (0..n), separatedMaterial (0..n), sourceOfAcquisition (0..n), subjectHeadings (0..n), useConditions (0..n)</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>c, descriptionOfComponents/p>
 	</div>
 	<div type="attributes">
 		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
+				<label>audience</label>
+				<item>Optional</item>
+				<label>base</label>
+            			<item>Optional</item>
+				<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>id</label>
+            			<item>Optional</item>
+            			<label>languageOfElement</label>
+            			<item>Optional</item>
+            			<label>level</label>
+           			<item>Optional</item>
+            			<label>maintenanceEventReference</label>
+           			<item>Optional</item>
+           			<label>scriptOfElement</label>
+           			<item>Optional</item>
+            			<label>sourceReference</label>
+            			<item>Optional</item>
+            			<label>target</label>
+            			<item>Optional</item>
+            			<label>valueURI</label>
+            			<item>Optional</item>
+            			<label>vocabularySource</label>
+            			<item>Optional</item>
+            			<label>vocabularySourceURI</label>
+            			<item>Optional</item>
 			</list>
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
+		<p>As a wrapper for a set of elements, <gi>c</gi> provides information about the content, context, and extent of a subordinate body of materials. It is always a child or descendant of <gi>descriptionOfComponents</gi> and often a child and/or parent of another <gi>c</gi>. </p>
+		<p>Each <gi>c</gi> identifies a logical section, or level, of the described materials. Components may be subdivided into smaller and smaller components and may eventually reach the level of a single item. For example, the components of a collection may be a series, components of series may be subseries, components of subseries may be files, and components of files may be items. </p>
+		<p>The physical filing separations between components need not always coincide with the intellectual separations. For example, a <gi>c</gi> that designates dramatic works might end in the same box in which the next <gi>c</gi> begins with short stories. Also, not every <gi>c</gi> directly corresponds to a folder or other physical entity. Some <gi>c</gi> elements simply represent a logical point in a hierarchical description. </p>
 	</div>
 	<div type="attributeusage">
 		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
+			<item>Use <att>base</att> to specify a base URI other than the URI of the EAD instance for the purpose of resolving any relative URIs contained within <gi>c</gi>.</item>
+                        <item>Use <att>level</att> to identify the logical type of the component (for instance, "series", "file" or "item"). Assigning <att>level</att> is optional but is recommended for the highest <gi>c</gi>. </item>
 		</list>
 	</div>	
 	<div type="seealso">
 		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
+			<item>The numbered elements <gi>c01</gi>, <gi>c02</gi>, etc. are an alternative way to designate components. Use either the unnumbered <gi>c</gi> or the numbered alternatives. Do not mix the two in a single EAD instance.</item>
 		</list>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Optional, Repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
