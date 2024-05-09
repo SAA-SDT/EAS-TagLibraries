@@ -1400,7 +1400,7 @@
                 <fo:list-item-body start-indent="body-start()">
                     <xsl:choose>
                         <xsl:when test="egXML">
-                            <xsl:for-each select="egXML">
+                            <xsl:for-each select="egXML[@type=$currentStandard] | egXML[not(@type)]">
                                 <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" font-size="10pt" space-after="12pt" white-space-collapse="false" text-align="start" wrap-option="wrap" linefeed-treatment="preserve" white-space-treatment="preserve" background-color="gainsboro" border="outset" padding="2mm">
                                     <xsl:value-of select="."/>
                                 </fo:block>

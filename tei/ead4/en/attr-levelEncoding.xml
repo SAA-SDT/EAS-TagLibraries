@@ -11,7 +11,7 @@
 	</div>
 	<div type="description">
 		<p>The authoritative source or rules for values supplied in <att>level</att>
-                     in <gi>archDesc</gi>, <gi>c</gi>, <gi>c01</gi>, <gi>c02</gi>, <gi>c03</gi>, <gi>c04</gi>, <gi>c05</gi>, <gi>c<06/gi>, <gi>c07</gi>, <gi>c08</gi>, <gi>c09</gi>, <gi>c10</gi>, <gi>c11</gi>, <gi>c12</gi>, . If the value "otherLevelEncoding" is selected an alternate code list should be specified
+                     in <gi>archDesc</gi>, <gi>c</gi>, <gi>c01</gi>, <gi>c02</gi>, <gi>c03</gi>, <gi>c04</gi>, <gi>c05</gi>, <gi>c06</gi>, <gi>c07</gi>, <gi>c08</gi>, <gi>c09</gi>, <gi>c10</gi>, <gi>c11</gi>, <gi>c12</gi>, . If the value "otherLevelEncoding" is selected an alternate code list should be specified
                      in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
 	</div>
 	<div type="values">

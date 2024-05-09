@@ -1078,7 +1078,7 @@
                         </xsl:choose>
                 </div>
                 <div class="content">
-                <xsl:for-each select="tei:egXML">
+                <xsl:for-each select="tei:egXML[@type=$currentStandard] | egXML[not(@type)]">
                         <div class="example">
                                 <pre lang="xml">
                                         <xsl:value-of select="."/>

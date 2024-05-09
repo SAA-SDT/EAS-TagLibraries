@@ -44,7 +44,7 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML> <!-- xmlns="http://www.tei-c.org/ns/Examples"> --><![CDATA[<objectXMLWrap>
+                  <egXML xml:lang="en"><![CDATA[<objectXMLWrap>
    <mods:mods xmlns:mods="http://www.loc.gov/mods/v3" 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xsi:schemaLocation="http://www.loc.gov/mods/v3 
@@ -69,7 +69,7 @@
       </mods:name>
    </mods:mods>
 </objectXMLWrap>]]></egXML>
-                  <egXML><![CDATA[<objectXMLWrap>
+                  <egXML xml:lang="en"><![CDATA[<objectXMLWrap>
    <text:bibl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xmlns:text="http://www.tei.org/ns/1.0" 
       xsi:schemaLocation="http://www.tei.org/ns/1.0 tei.xsd" 
@@ -92,7 +92,7 @@
       </text:respStmt>
    </text:bibl>
 </objectXMLWrap>]]></egXML>
-                  <egXML><![CDATA[<objectXMLWrap>
+                  <egXML xml:lang="en"><![CDATA[<objectXMLWrap>
    <note xmlns="">
       <to>
          Tove

@@ -52,7 +52,7 @@
 	</div>
 	<div type="attributeusage">
 		<list type="simple">
-			<item>Use <att>@localtype<att>, if local use requires specification of the type of access conditions.</item>
+			<item>Use <att>@localtype</att>, if local use requires specification of the type of access conditions.</item>
 			<item>Use <att>@valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the access conditions applied in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system.</item>
 			<item>Use <att>@vocabularySource</att> to name the knowledge organization system and <att>@vocabularySourceURI</att> to identify the knowledge organization system as an online resource, if applicable.</item>
 		</list>
