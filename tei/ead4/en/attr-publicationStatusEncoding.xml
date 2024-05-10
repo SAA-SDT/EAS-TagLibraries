@@ -18,11 +18,6 @@
 		<p>EASList, otherPublicationStatusEncoding</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="ead">
-                     <ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" publicationStatusEncoding="EASList"> [...] </ead:control>
-                  </egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="eac">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" publicationStatusEncoding="EASList"> [...] </eac:control>
-                  </egXML>
+		<egXML xml:lang="eng"><![CDATA[<ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" publicationStatusEncoding="EASList"> [...] </ead:control>]]></egXML>
 	</div>
 </div>
