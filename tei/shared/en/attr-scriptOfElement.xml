@@ -21,8 +21,7 @@
                   <p>TOKEN</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="ead"/>
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry status="alternative">
+                 <egXML xml:lang="eng"><![CDATA[<nameEntry status="alternative">
    <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO" scriptOfElement="Hans">
       阿伦特, 汉娜
    </part>
