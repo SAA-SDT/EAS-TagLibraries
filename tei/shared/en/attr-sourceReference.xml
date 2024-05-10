@@ -9,7 +9,7 @@
                <div type="summary">
                   <p>Use <att>sourceReference</att> to provide a direct link to a <gi>source</gi>
                      element within <gi>sources</gi> in <gi>control</gi> from an element within the
-                     EAC-CPF instance that uses the source. 
+                     EAS instance that uses the source. 
                   </p>
                </div>
                <div type="description">
@@ -26,8 +26,8 @@
          Princeton University
       </part>
    </targetEntity>
-   <relationType valueURI="https://www.wikidata.org/wiki/Property:P69" vocabularySourceURI="https://www.wikidata.org/">
-      educated at
+   <relationType valueURI="https://www.wikidata.org/wiki/Q166118" vocabularySourceURI="https://www.wikidata.org/">
+      agency or institution responsible for the preservation and communication of records selected for permanent preservation
    </relationType>
 </relation>]]></egXML>
                </div>
