@@ -20,7 +20,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -50,7 +50,10 @@
                   <p><gi>address</gi> must include one or more <gi>addressLine</gi> element(s) that
                      provide full or sufficient information identifying a postal or other physical
                      address related to the entity being described.</p>
-                  <p> At least one of <gi>address</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
+                  <p type="eac">At least one of <gi>address</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
+                        <gi>geographicCoordinates</gi>, or <gi>contact</gi> is required within
+                        <gi>place</gi>.</p>
+                 <p type="ead">At least one of <gi>address</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, <gi>placeType</gi>, 
                         <gi>geographicCoordinates</gi>, or <gi>contact</gi> is required within
                         <gi>place</gi>.</p>
                </div>
