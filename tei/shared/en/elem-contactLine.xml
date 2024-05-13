@@ -20,10 +20,10 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>contactLineType</label>
-                        <item>Optional (values limited to: directions, email, fax, homepage, mobileNumber,
-                           phoneNumber)</item>
+                        <item>Optional<p type="eac"> (values limited to: directions, email, fax, homepage, mobileNumber,
+                           phoneNumber)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>href</label>
@@ -59,7 +59,7 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use one of the set values in the optional <att>contactLineType</att>
+                     <item>Use the optional <att>contactLineType</att>
                         attribute to encode the type of contact detail that the <gi>contactLine</gi>
                         refers to, for example "phoneNumber".</item>
                   </list>

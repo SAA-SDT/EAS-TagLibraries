@@ -20,7 +20,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>calendar</label>
                         <item>Optional</item>
                         <label>certainty</label>
@@ -48,7 +48,7 @@
                         <label>standardDate</label>
                         <item>Optional</item>
                         <label>status</label>
-                        <item>Optional (values limited to: ongoing, unknown)</item>
+                        <item>Optional<p type="eac"> (values limited to: ongoing, unknown)</p></item>
                         <label>sourceReference</label>
                         <item>Optional</item>
                         <label>target</label>
@@ -90,7 +90,7 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" type="eac">
                      <eac:existDates>
                         <eac:dateRange>
                            <eac:fromDate standardDate="1868">1868</eac:fromDate>

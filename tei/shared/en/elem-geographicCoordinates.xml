@@ -20,7 +20,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>coordinateSystem</label>
@@ -46,8 +46,10 @@
                      on the surface of the earth.</p>
                   <p>It is recommended that the values included in <gi>geographicCoordinates</gi>
                      are based on a commonly used system for expressing geographic coordinates.</p>
-                  <p>At least one of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
+                  <p type="eac">At least one of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
                         <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
+                 <p type="eac">At least one of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, <p>placeType</p>, 
+                   <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">

@@ -10,14 +10,18 @@
                   <p>Used to specify the type of address line encoded in <gi>addressLine</gi>. </p>
                </div>
                <div type="description">
-                  <p>Use one of the set values to specify the type of address line encoded in
+                  <p type="eac">Use one of the set values to specify the type of address line encoded in
                         <gi>addressLine</gi>. Use the attribute <att>localType</att> in order to
                      encode a local type of address line.</p>
+                 <p type="ead">An attribute used to specify the type of address line encoded in
+                        <gi>addressLine</gi>, eg "street", "country" or "postalCode". </p>
                </div>
                <div type="values">
-                  <p>county, country, district, municipality, postBox, postalCode, region,
+                  <p type="eac">county, country, district, municipality, postBox, postalCode, region,
                      street</p>
                </div>
+               <div type="datatype">
+                 <p type="ead">token</p>
                <div type="examples">
                   <egXML><![CDATA[<address>
    <addressLine languageOfElement="se">Kungl. Hovstaterna</addressLine>

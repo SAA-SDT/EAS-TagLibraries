@@ -22,7 +22,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac" (values limited to: external, internal)</p></item>
                         <label>calendar</label>
                         <item>Optional</item>
                         <label>certainty</label>
@@ -50,7 +50,7 @@
                         <label>standardDate</label>
                         <item>Optional</item>
                         <label>status</label>
-                        <item>Optional (values limited to: unknown)</item>
+                        <item>Optional<p type="eac"> (values limited to: unknown)</p></item>
                         <label>sourceReference</label>
                         <item>Optional</item>
                         <label>target</label>

@@ -19,11 +19,11 @@
                      in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
-                 <!-- In eac version two its iso639-2b -->
-                  <p>iso639-1, iso639-2, iso639-3, ietf-bcp-47, otherLanguageEncoding</p>
+                 <p type="eac">iso639-1, iso639-2b, iso639-3, ietf-bcp-47, otherLanguageEncoding</p> 
+                 <p type="ead">iso639-1, iso639-2, iso639-3, ietf-bcp-47, otherLanguageEncoding</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                  <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924">
    [...]
 </control>]]></egXML>
                </div>

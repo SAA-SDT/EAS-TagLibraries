@@ -42,14 +42,13 @@
       </placeRole>
    </place>
 </places>]]></egXML>
-                  <egXML xml:lang="eng" type="ead"><![CDATA[<occupations>
-<places>
+                  <egXML xml:lang="eng" type="ead"><![CDATA[<places>
    <place id="place1">
       <placeName>
          Bern
       </placeName>
       <placeRole>
-         Place of work
+         Place of storage
       </placeRole>
    </place>
 </places>]]></egXML>
