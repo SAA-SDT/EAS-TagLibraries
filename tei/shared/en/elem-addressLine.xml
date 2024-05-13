@@ -20,10 +20,10 @@
                   <p>
                      <list type="gloss">
                         <label>addressLineType</label>
-                        <item>Optional (values limited to: county, country, district, municipality,
-                           postBox, postalCode, region, street)</item>
+                        <item>Optional<p type="eac"> (values limited to: county, country, district, municipality,
+                           postBox, postalCode, region, street)</p></item>
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -53,7 +53,7 @@
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use one of the set values in the optional <att>addressLineType</att>
+                     <item>Use the optional <att>addressLineType</att>
                         attribute to encode the part of the address that the <gi>addressLine</gi>
                         refers to, for example "street".</item>
                   </list>
