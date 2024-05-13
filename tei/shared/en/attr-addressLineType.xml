@@ -22,6 +22,7 @@
                </div>
                <div type="datatype">
                  <p type="ead">token</p>
+               </div>
                <div type="examples">
                   <egXML><![CDATA[<address>
    <addressLine languageOfElement="se">Kungl. Hovstaterna</addressLine>
