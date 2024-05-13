@@ -10,12 +10,17 @@
                   <p>Used to specify the type of contact line encoded in <gi>contactLine</gi>.</p>
                </div>
                <div type="description">
-                  <p>Use one of the set values to specify the type of contact line encoded in
+                  <p type="eac">Use one of the set values to specify the type of contact line encoded in
                         <gi>contactLine</gi>. Use the attribute <att>localType</att> to
                      encode a local type of contact line.</p>
+                 <p type="ead">An attribute used to specify the type of contact line encoded in
+                        <gi>contactLine</gi>, eg "email", "phoneNumber" or "homepage".</p>
                </div>
                <div type="values">
-                  <p>directions, email, fax, homepage, mobileNumber, phoneNumber</p>
+                  <p type="eac">directions, email, fax, homepage, mobileNumber, phoneNumber</p>
+               </div>
+               <div type="datatype">
+                 <p type="ead">token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<contact>
