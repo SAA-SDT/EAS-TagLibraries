@@ -12,7 +12,7 @@
                </div>
                <div type="description">
                   <p>The attribute can be used to link to a maintenance event in order to verify any assertion added to the entity’s description.</p> 
-                     <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations. 
+                     <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations area. 
                   </p>
                </div>
                <div type="datatype">
