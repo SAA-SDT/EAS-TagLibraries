@@ -21,14 +21,10 @@
 	       </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="eac">
-                      <![CDATA[
-		      <eac audience="external"> [...] </eac>
-		      ]]  
+                      <![CDATA[<eac audience="external"> [...] </eac>]]  
 		  </egXML>
 		  <egXML xml:lang="eng" type="ead">
-                      <![CDATA[
-		      <ead audience="external"> [...] </ead>
-		      ]]  
+                      <![CDATA[<ead audience="external"> [...] </ead>]]  
 		  </egXML>
                </div>
             </div>
