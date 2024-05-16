@@ -20,8 +20,10 @@
 		  <p type="ead">token</p>
 	       </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="eac">
-                     <eac:eac audience="external"> [...] </eac:eac>
-                  </egXML>
+                  <egXML xml:lang="eng" type="eac">
+                      <![CDATA[
+		      <eac audience="external"> [...] </eac>
+		      ]]  
+		  </egXML>
                </div>
             </div>
