@@ -13,7 +13,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>The codes themselves are specified in <att>languageCode</att> in <gi>language</gi> and <att>languageOfElement</att>
+                  <p>The codes themselves are specified in <att>languageCode</att> within <gi>language</gi> and <att>languageOfElement</att>
                      in all non-empty elements. Available in <gi>control</gi>. If the value
                      "otherLanguageEncoding" is selected an alternate code list should be specified
                      in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
