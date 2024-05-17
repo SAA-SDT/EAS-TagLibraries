@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-otherAgencyCode" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
-
                <head>
                   <gi>otherAgencyCode</gi>
                </head>
@@ -8,9 +7,7 @@
                   <p>Other Agency Code</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>maintenanceAgency</gi> that provides an
-                     alternative code for the institution or service responsible for the EAC-CPF
-                     instance.</p>
+                  <p>An optional child element of <gi>maintenanceAgency</gi> that provides an alternative code for the institution or service responsible for the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -22,7 +19,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
@@ -34,7 +31,7 @@
                         <label>scriptOfElement</label>
                         <item>Optional</item>
                         <label>status</label>
-                        <item>Optional (values limited to: alternative, authorized)</item>
+                        <item>Optional<p type="eac"> (values limited to: alternative, authorized)</p></item>
                         <label>target</label>
                         <item>Optional</item>
                         <label>valueURI</label>
@@ -47,39 +44,36 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>otherAgencyCode</gi> to provide an alternative and/or local code that
-                     represents the institution or service responsible for the creation,
-                     maintenance, and/or dissemination of the EAC-CPF instance. Any code other than
-                     that given in <gi>agencyCode</gi> may be provided in <gi>otherAgencyCode</gi>.
-                     The addition of an ISO 3166-1 alpha-2 country code as the prefix to a local
-                     code is recommended to ensure international uniqueness.</p>
+                  <p>Use <gi>otherAgencyCode</gi> to provide an alternative and/or local code that represents the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance. Any code other than that given in <gi>agencyCode</gi> may be provided in <gi>otherAgencyCode</gi>. The addition of an ISO 3166-1 alpha-2 country code as the prefix to a local code is recommended to ensure international uniqueness.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use <att>localType</att> to specify the type of code being
-                        provided.</item>
-                     <item>Use <att>status</att> to encode whether the <gi>otherAgencyCode</gi> is
-                        an authorized or alternative code.</item>
+                     <item>Use <att>localType</att> to specify the type of code being provided.</item>
+                     <item>Use <att>status</att> to encode whether the <gi>otherAgencyCode</gi> is for example an authorized or alternative code.</item>
                   </list>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:maintenanceAgency>
-                        <eac:agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-nbuuar</eac:agencyCode>
-                        <eac:agencyName>State University of New York at Buffalo, Archives</eac:agencyName>
-                        <eac:otherAgencyCode status="authorized" valueURI="http://id.loc.gov/vocabulary/organizations/nbuuar" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">NBuU-AR</eac:otherAgencyCode>
-                     </eac:maintenanceAgency>
+                  <egXML xml:lang="eng">
+                     <![CDATA[
+                     <maintenanceAgency>
+                        <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-nbuuar</agencyCode>
+                        <agencyName>State University of New York at Buffalo, Archives</agencyName>
+                        <otherAgencyCode status="authorized" valueURI="http://id.loc.gov/vocabulary/organizations/nbuuar" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">NBuU-AR</otherAgencyCode>
+                     </maintenanceAgency>
+                     ]]>
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:maintenanceAgency>
-                        <eac:agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-ctybr</eac:agencyCode>
-                        <eac:agencyName>Beinecke Rare Book and Manuscript Library</eac:agencyName>
-                        <eac:otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">CtY-BR</eac:otherAgencyCode>
-                        <eac:otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">Q814779</eac:otherAgencyCode>
-                     </eac:maintenanceAgency>
+                  <egXML xml:lang="eng">
+                     <![CDATA[
+                     <maintenanceAgency>
+                        <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-ctybr</agencyCode>
+                        <agencyName>Beinecke Rare Book and Manuscript Library</agencyName>
+                        <otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">CtY-BR</otherAgencyCode>
+                        <therAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">Q814779</otherAgencyCode>
+                     </maintenanceAgency>
+                     ]]>
                   </egXML>
                </div>
             </div>
