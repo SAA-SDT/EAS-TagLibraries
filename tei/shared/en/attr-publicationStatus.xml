@@ -7,19 +7,25 @@
                   <p>Publication Status</p>
                </div>
                <div type="summary">
-                  <p>The current publication status of the EAC-CPF instance.</p>
+                  <p>The current publication status of the EAS instance.</p>
                </div>
                <div type="description">
-                  <p>The publication status may occur on <gi>control</gi> to indicate the current publication status of the EAC-CPF instance, whether in process, approved or final. As an EAC-CPF instance is modified or other events happen to it (as recorded in the <gi>maintenanceHistory</gi> element), the publication status should also be updated. </p>
-                     <p>A newly created EAC-CPF instance will usually start with a publication status of "inProcess". This partial and preliminary status will be applicable as long as the author or the creating agency is working on the document. Depending on the context, the document might first reach a pre-publication level, awaiting approval e.g. by a higher level manager or an authorizing agency. Once such approval has been given, the status "approved" could be assigned for internal purposes while the EAC-CPF instance is not publicly available yet. When the EAC-CPF instance has been published on the institution’s own website or via the authorizing agency, the status "published" can be assigned.
-                  </p>
+                  <p>The publication status may occur on <gi>control</gi> to indicate the current publication status of the EAS instance, for example in process, approved or final. As an EAS instance is modified or other events happen to it (as recorded in the <gi>maintenanceHistory</gi> element), the publication status should also be updated.</p>
+                     <p>A newly created EAS instance will usually start with a publication status of "inProcess". This partial and preliminary status will be applicable as long as the author or the creating agency is working on the document. Depending on the context, the document might first reach a pre-publication level, awaiting approval e.g. by a higher level manager or an authorizing agency. Once such approval has been given, the status "approved" could be assigned for internal purposes while the EAS instance is not publicly available yet. When the EAS instance has been published on the institution’s own website or via the authorizing agency, the status "published" can be assigned.</p>
                </div>
                <div type="values">
-                  <p>approved, inProcess, published</p>
+                  <p type="eac">approved, inProcess, published</p>
                </div>
+               <div type="datatype">
+		              <p type="ead">token</p>
+	             </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
-   [...]
-</control>]]></egXML>
+                  <egXML xml:lang="eng">
+                    <![CDATA[
+                    <control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-3" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                       [...]
+                    </control>
+                    ]]>
+                  </egXML>
                </div>
             </div>
