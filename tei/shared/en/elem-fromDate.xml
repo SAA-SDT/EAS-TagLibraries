@@ -94,7 +94,7 @@
                            <fromDate standardDate="1868">1868</fromDate>
                            <toDate standardDate="1936">1936</toDate>
                         </dateRange>]]></egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang"eng"><![CDATA[<dateRange>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<dateRange>
                         <fromDate status="unknown"/>
                         <toDate certainty="uncertain" standardDate="2010?">c.2010</toDate>
                      </dateRange>]]></egXML>
