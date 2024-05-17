@@ -19,7 +19,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
@@ -34,24 +34,28 @@
                <div type="description">
                   <p>Used to record the shortened form of a word or phrase, for example, an
                      acronym.</p>
-                  <p>Use <gi>shortCode</gi> within <gi>conventionDeclaration</gi> or
-                        <gi>localTypeDeclaration</gi> to identify the code for a thesaurus,
-                     controlled vocabulary, or another standard used in creating the EAC-CPF
-                     description. Use within <gi>rightsDeclaration</gi> to provide an abbreviated
-                     name for the rights statement.</p>
-                  <p>To improve interoperability, it is recommended that the value be selected from
-                     an authorized list of codes such as the MARC Code List
-                     (http://www.loc.gov/marc/sourcelist/).</p>
+                  <p>Use <gi>shortCode</gi> within <gi>conventionDeclaration</gi> or <gi>localTypeDeclaration</gi> to identify the code for a thesaurus, controlled vocabulary, or another standard used in creating the EAS description. Use within <gi>rightsDeclaration</gi> to provide an abbreviated name for the rights statement.</p>
+                  <p>To improve interoperability, it is recommended that the value be selected from an authorized list of codes such as the MARC Code List (http://www.loc.gov/marc/sourcelist/).</p>
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:conventionDeclaration id="conventiondeclaration1">
-                        <eac:reference>Anglo-American Cataloging Rules, Revised</eac:reference>
-                        <eac:shortCode>AACR2</eac:shortCode>
-                     </eac:conventionDeclaration>
+                  <egXML xml:lang="eng">
+                     <![CDATA[
+                     <conventionDeclaration id="conventiondeclaration1">
+                        <reference>Anglo-American Cataloging Rules, Revised</reference>
+                        <shortCode>AACR2</shortCode>
+                     </conventionDeclaration>
+                     ]]>
+                  </egXML>
+                  <egXML xml:lang="eng">
+                     <![CDATA[
+                     <rightsDeclaration>
+                        <reference href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International Public License</reference>
+                        <shortCode>CC BY</shortCode>
+                     </rightsDeclaration>
+                     ]]>
                   </egXML>
                </div>
             </div>
