@@ -115,11 +115,7 @@
                   <gi>date</gi>, <gi>formattingExtension</gi>, <gi>place</gi> or <gi>title</gi> required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:date standardDate="1765-09-18">September 18, 1765</eac:date>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:date certainty="uncertain" standardDate="1968?">c.1968</eac:date>
-                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<date standardDate="1765-09-18">September 18, 1765</date>]]></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<date certainty="uncertain" standardDate="1968?">c.1968</date>]]></egXML>
                </div>
             </div>
