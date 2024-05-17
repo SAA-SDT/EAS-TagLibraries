@@ -7,19 +7,27 @@
                   <p>Unit</p>
                </div>
                <div type="summary">
-                  <p>Defines the format or unit that is specified in <gi>citedRange</gi>.</p>
+                  <p>Defines a unit of measurement to go along with the value provided.</p>
                </div>
                <div type="description">
                   <p>Use <att>unit</att> to document the format or unit that is specified in
                         <gi>citedRange</gi>, for example page number ("pageNumber") or volume number
                      ("volumeNumber").</p>
+                 <p type="ead">Provide a unit of measurement, for example "inches" or "centimeters", when encoding dimensions of the materials being described. Use <att>unit</att> with <gi>dimensions</gi> in the same way as <gi>unitType</gi> is used in combination with <gi>quantity</gi>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<citedRange unit="page">
-   1
-</citedRange>]]></egXML>
+                  <egXML xml:lang="eng">
+                    <![CDATA[
+                    <citedRange unit="page">1</citedRange>
+                    ]]>
+                  </egXML>
+                  <egXML xml:lang="eng" type="ead">
+                    <![CDATA[
+                    <dimensions unit="centimeters">10 x 15</dimensions>
+                    ]]>
+                  </egXML>
                </div>
             </div>
