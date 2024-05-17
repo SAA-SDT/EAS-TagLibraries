@@ -11,7 +11,7 @@
 	</div>
 	<div type="description">
 		<p>The authoritative source or rules for values supplied in <att>coverage</att>
-                     in <gi>physDescStructured</gi> and <gi>formAvailable</gi>. If the value "otherCoverageEncoding" is selected an alternate code list should be specified
+                     within <gi>physDescStructured</gi> and <gi>formAvailable</gi>. If the value "otherCoverageEncoding" is selected an alternate code list should be specified
                      in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
 	</div>
 	<div type="values">

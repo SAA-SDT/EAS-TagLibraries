@@ -62,23 +62,21 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:places>
-                        <eac:place>
-                           <eac:geographicCoordinates coordinateSystem="mgrs">33UUU9029819737</eac:geographicCoordinates>
-                           <eac:placeName>Berlin, Germany</eac:placeName>
-                        </eac:place>
-                        <eac:place>
-                           <eac:placeName localType="place">Clear Spring</eac:placeName>
-                           <eac:placeName localType="state">Maryland</eac:placeName>
-                           <eac:geographicCoordinates coordinateSystem="UTM">18S 248556mE 4393694mN</eac:geographicCoordinates>
-                        </eac:place>
-                        <eac:place>
-                           <eac:placeName localType="place">Hardeeville</eac:placeName>
-                           <eac:placeName localType="state">South Carolina&gt;</eac:placeName>
-                           <eac:geographicCoordinates coordinateSystem="WGS84">-81.1, 32.2, -81.0, 32.3</eac:geographicCoordinates>
-                        </eac:place>
-                     </eac:places>
-                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<places>
+                        <place>
+                           <geographicCoordinates coordinateSystem="mgrs">33UUU9029819737</geographicCoordinates>
+                           <placeName>Berlin, Germany</placeName>
+                        </place>
+                        <place>
+                           <placeName localType="place">Clear Spring</placeName>
+                           <placeName localType="state">Maryland</placeName>
+                           <geographicCoordinates coordinateSystem="UTM">18S 248556mE 4393694mN</geographicCoordinates>
+                        </place>
+                        <place>
+                           <placeName localType="place">Hardeeville</placeName>
+                           <placeName localType="state">South Carolina</placeName>
+                           <geographicCoordinates coordinateSystem="WGS84">-81.1, 32.2, -81.0, 32.3</geographicCoordinates>
+                        </place>
+                     </places>]]></egXML>
                </div>
             </div>

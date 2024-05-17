@@ -21,7 +21,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional<p type="eac" (values limited to: external, internal)</p></item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -57,18 +57,16 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:functions>
-                        <eac:function>
-                           <eac:term>Industrial or Scientific Research</eac:term>
-                        </eac:function>
-                        <eac:function>
-                           <eac:term>Analytical Services</eac:term>
-                        </eac:function>
-                        <eac:function>
-                           <eac:term>Advisory or Regulatory Body</eac:term>
-                        </eac:function>
-                     </eac:functions>
-                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<functions>
+                        <function>
+                           <term>Industrial or Scientific Research</term>
+                        </function>
+                        <function>
+                           <term>Analytical Services</term>
+                        </function>
+                        <function>
+                           <term>Advisory or Regulatory Body</term>
+                        </function>
+                     </functions>]]></egXML>
                </div>
             </div>

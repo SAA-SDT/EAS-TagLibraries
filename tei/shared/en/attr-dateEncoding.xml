@@ -12,7 +12,7 @@
                </div>
                <div type="description">
                   <p>The authoritative source or rules for values provided in
-                     <att>standardDate</att> in <gi>date</gi>, <gi>fromDate</gi> and
+                     <att>standardDate</att> within <gi>date</gi>, <gi>fromDate</gi> and
                      <gi>toDate</gi>. If the value "otherDateEncoding" is selected an alternate
                      code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only
                      in <gi>control</gi>.</p>

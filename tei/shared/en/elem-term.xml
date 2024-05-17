@@ -14,14 +14,15 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>demographicDescription, function, legalStatus, localControl, localDescription,
+                  <p type="eac">demographicDescription, function, legalStatus, localControl, localDescription,
                      mandate, occupation, otherEntityType</p>
+                  <p type="ead">function, legalStatus, subject</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac" (values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -40,9 +41,13 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>term</gi> is a required child element of <gi>function</gi>,
+                  <p type="eac"><gi>term</gi> is a required child element of <gi>function</gi>,
                         <gi>legalStatus</gi>, <gi>localControl</gi>, <gi>localDescription</gi>,
                         <gi>mandate</gi>, <gi>occupation</gi>, and <gi>otherEntityType</gi>, used to
+                     specify a descriptive term in accordance with authorized vocabularies or local
+                     rules.</p>
+                 <p type="ead"><gi>term</gi> is a required child element of <gi>function</gi>,
+                        <gi>legalStatus</gi> and <gi>subject</gi>, used to
                      specify a descriptive term in accordance with authorized vocabularies or local
                      rules.</p>
                   <p><gi>term</gi> can be repeated within its parent element to include translations
@@ -54,49 +59,41 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:function>
-                        <eac:term>Estate ownership</eac:term>
-                        <eac:descriptiveNote>
-                           <eac:p>Social, political, and cultural role typical of landed aristocracy
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<function>
+                        <term>Estate ownership</term>
+                        <descriptiveNote>
+                           <p>Social, political, and cultural role typical of landed aristocracy
                               in England. The first Viscount Campden amassed a large fortune in
                               trade in London and purchased extensive estates, including Exton
                               (Rutland), and Chipping Campden (Gloucestershire). The Barham Court
                               (Kent) estate was the acquisition of the first Baron Barham, a
                               successful admiral and naval administrator (First Lord of the
-                              Admiralty 1805).</eac:p>
-                        </eac:descriptiveNote>
-                     </eac:function>
+                              Admiralty 1805).</p>
+                        </descriptiveNote>
+                     </function>]]></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<function vocabularySource="AGIFT">
+                        <term>Education and training</term>
+                     </function>]]></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<legalStatus>
+                        <term scriptOfElement="Latn">Organismo de la Administracion Central del
+                           Estado</term>
+                        <date standardDate="1769">1769</date>
+                     </legalStatus>
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:function vocabularySource="AGIFT">
-                        <eac:term>Education and training</eac:term>
-                     </eac:function>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:legalStatus>
-                        <eac:term scriptOfElement="Latn">Organismo de la Administracion Central del
-                           Estado</eac:term>
-                        <eac:date standardDate="1769">1769</eac:date>
-                     </eac:legalStatus>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:mandate>
-                        <eac:term>Minnesota. Executive Session Laws 1919 c49</eac:term>
-                        <eac:dateRange>
-                           <eac:fromDate standardDate="1919">1919</eac:fromDate>
-                           <eac:toDate standardDate="1925">1925</eac:toDate>
-                        </eac:dateRange>
-                        <eac:descriptiveNote>
-                           <eac:p>Board created in 1919 to receive and examine applications for
-                              bonuses from Minnesota soldiers.</eac:p>
-                        </eac:descriptiveNote>
-                     </eac:mandate>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:occupation>
-                        <eac:term>Teacher</eac:term>
-                     </eac:occupation>
-                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" type="eac" xml:lang="eng"><![CDATA[>
+                     <mandate>
+                        <term>Minnesota. Executive Session Laws 1919 c49</term>
+                        <dateRange>
+                           <fromDate standardDate="1919">1919</fromDate>
+                           <toDate standardDate="1925">1925</toDate>
+                        </dateRange>
+                        <descriptiveNote>
+                           <p>Board created in 1919 to receive and examine applications for
+                              bonuses from Minnesota soldiers.</p>
+                        </descriptiveNote>
+                     </mandate>]]></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" type="eac" xml:lang="eng"><![CDATA[<occupation>
+                        <term>Teacher</term>
+                     </occupation>]]></egXML>
                </div>
             </div>

@@ -4,14 +4,14 @@
 		<att>unitDateTypeEncoding</att>
 	</head>
 	<div type="fullName">
-		<p>Unit Date Type Encodinge</p>
+		<p>Unit Date Type Encoding</p>
 	</div>
 	<div type="summary">
 		<p>The authoritative source or rules for values supplied in <att>unitDateType</att>.</p>
 	</div>
 	<div type="description">
 		<p>The authoritative source or rules for values supplied in <att>unitDateType</att>
-                     in <gi>unitDate</gi> and <gi>unitDateStructured</gi>. If the value
+                     within <gi>unitDate</gi> and <gi>unitDateStructured</gi>. If the value
                      "otherUnitDateTypeEncoding" is selected an alternate code list should be specified
                      in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
