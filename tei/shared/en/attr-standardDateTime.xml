@@ -10,10 +10,11 @@
                   <p>Standardized form of a date, or date and time in <gi>eventDateTime</gi>.</p>
                </div>
                <div type="description">
-                  <p>An ISO 8601-compliant form of the date, or date and time, of a specific
+                  <p>An ISO 8601 compliant form of the date, or date and time, of a specific
                      maintenance event expressed in <gi>eventDateTime</gi>. For example, 2021-12-31,
                      2021, 2021-12, 2021-12-31T23:59:59. Optionally available only in
-                     <gi>eventDateTime</gi>.</p>
+                     <gi>eventDateTime</gi>. It is recommended to either have the date and time stated as a literal in <gi>eventDateTime</gi> or to provide a standardised date with <att>standardDateTime</att>, if not using both options in parallel.</p>
+                 <p>Note that the requirement of ISO 8601 compliance for <att>standardDateTime</att> is different from the usage of the attribute <att>standardDate</att>, which can also follow other date encoding rules as specified in <att>dateEncoding</att> within <gi>control</gi>.</p>
                </div>
                <div type="datatype">
                   <p>Constrained to the following patterns: YYYY-MM-DD, YYYY-MM, YYYY, or
@@ -22,9 +23,13 @@
                      dateTime is UTC.]</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="revised">
-   <agent agentType="unknown"/>
-   <eventDateTime standardDateTime="2021-11-27"/>
-</maintenanceEvent>]]></egXML>
+                  <egXML xml:lang="eng" type="eac">
+                    <![CDATA[
+                    <maintenanceEvent maintenanceEventType="revised">
+                        <agent agentType="unknown"/>
+                        <eventDateTime standardDateTime="2021-11-27"/>
+                    </maintenanceEvent>
+                    ]]>
+                  </egXML>
                </div>
             </div>
