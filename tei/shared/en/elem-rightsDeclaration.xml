@@ -7,8 +7,7 @@
                   <p>Rights Declaration</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>control</gi> that indicates a standard rights
-                     statement associated with the EAC-CPF instance.</p>
+                  <p>An optional child element of <gi>control</gi> that indicates a standard rights statement associated with the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p>descriptiveNote (0..1), reference (1..1), shortCode (0..1)</p>
@@ -20,7 +19,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
@@ -39,18 +38,10 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>rightsDeclaration</gi> to provide structured information about the
-                     usage rights of the EAC-CPF instance. <gi>rightsDeclaration</gi> should only be
-                     used to reference shared published licenses, such as Creative Commons,
-                     RightsStatements.org, or published locally-defined licenses.</p>
-                  <p><gi>reference</gi> must be used to provide a machine-readable reference to a
-                     license statement (for example, a URI). It may also be used to
-                     encode the name of the license statement.</p>
-                  <p><gi>shortCode</gi> may be used to provide the abbreviated name for the rights
-                     statement. The value of <gi>shortCode</gi> should align with the rights
-                     statement referenced by <gi>reference</gi> and <gi>descriptiveNote</gi>.</p>
-                  <p><gi>descriptiveNote</gi> may be used to provide a human-readable description of
-                     the license statement.</p>
+                  <p>Use <gi>rightsDeclaration</gi> to provide structured information about the usage rights of the EAS instance. <gi>rightsDeclaration</gi> should only be used to reference shared published licenses, such as Creative Commons, RightsStatements.org, or published locally-defined licenses.</p>
+                  <p><gi>reference</gi> must be used to provide a machine-readable reference to a license statement (for example, a URI). It may also be used to encode the name of the license statement.</p>
+                  <p><gi>shortCode</gi> may be used to provide the abbreviated name for the rights statement. The value of <gi>shortCode</gi> should align with the rights statement referenced by <gi>reference</gi> and <gi>descriptiveNote</gi>.</p>
+                  <p><gi>descriptiveNote</gi> may be used to provide a human-readable description of the license statement.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>reference</gi></item>
@@ -62,11 +53,13 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:rightsDeclaration>
-                        <eac:reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</eac:reference>
-                        <eac:shortCode>CC0 1.0</eac:shortCode>
-                     </eac:rightsDeclaration>
+                  <egXML xml:lang="eng">
+                     <![CDATA[
+                     <rightsDeclaration>
+                        <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</reference>
+                        <shortCode>CC0 1.0</shortCode>
+                     </rightsDeclaration>
+                     ]]>
                   </egXML>
                </div>
             </div>
