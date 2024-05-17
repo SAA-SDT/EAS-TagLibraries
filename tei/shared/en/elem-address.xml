@@ -67,15 +67,13 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:address audience="external" id="IDAddress1">
-                        <eac:addressLine languageOfElement="se">Kungl. Hovstaterna</eac:addressLine>
-                        <eac:addressLine languageOfElement="se">Kungl. Slottet</eac:addressLine>
-                        <eac:addressLine addressLineType="postalCode">10770</eac:addressLine>
-                        <eac:addressLine languageOfElement="se" addressLineType="municipality">Stockholm</eac:addressLine>
-                        <eac:addressLine languageOfElement="se" addressLineType="country">Sverige</eac:addressLine>
-                        <eac:addressLine languageOfElement="en" addressLineType="country">Sweden</eac:addressLine>
-                     </eac:address>
-                  </egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<address audience="external" id="IDAddress1">
+                        <addressLine languageOfElement="se">Kungl. Hovstaterna</eac:addressLine>
+                        <addressLine languageOfElement="se">Kungl. Slottet</eac:addressLine>
+                        <addressLine addressLineType="postalCode">10770</eac:addressLine>
+                        <addressLine languageOfElement="se" addressLineType="municipality">Stockholm</eac:addressLine>
+                        <addressLine languageOfElement="se" addressLineType="country">Sverige</eac:addressLine>
+                        <:addressLine languageOfElement="en" addressLineType="country">Sweden</eac:addressLine>
+                     <address>]]></egXML>
                </div>
             </div>
