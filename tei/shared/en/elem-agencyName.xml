@@ -9,7 +9,7 @@
                <div type="summary">
                   <p>A child element of <gi>maintenanceAgency</gi> that provides the name of the
                      institution or service responsible for the creation, maintenance, and/or
-                     dissemination of the EAC-CPF instance.</p>
+                     dissemination of the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -21,7 +21,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
@@ -41,7 +41,7 @@
                </div>
                <div type="description">
                   <p>Use <gi>agencyName</gi> to record the name of the institution or service
-                     responsible for the creation, maintenance, and/or dissemination of the EAC-CPF
+                     responsible for the creation, maintenance, and/or dissemination of the EAS
                      instance. Examples include the repository name or the name of an aggregation
                      service.</p>
                   <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyName</gi> and
@@ -49,7 +49,7 @@
                   <p>It is recommended to use the form of the agency name that is authorized by an
                      appropriate national or international agency or service.</p>
                   <p><gi>agencyName</gi> may be repeated in order to provide the name of the
-                     institution or service responsible for the EAC-CPF instance in multiple
+                     institution or service responsible for the EAS instance in multiple
                      languages. If <gi>agencyName</gi> is repeated it is recommended to indicate the
                      language of each name using <att>languageOfElement</att>.</p>
                </div>
@@ -60,22 +60,23 @@
                   <list type="simple">
                      <item>Use <gi>agencyCode</gi> to record a code representing the institution or
                         service responsible for the creation, maintenance, and/or dissemination of
-                        the EAC-CPF instance.</item>
+                        the EAS instance.</item>
                   </list>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:maintenanceAgency countryCode="DE">
-                        <eac:agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="https://sigel.staatsbibliothek-berlin.de/de/suche/" valueURI="https://ld.zdb-services.de/resource/organisations/DE-611">DE-611</eac:agencyCode>
-                        <eac:agencyName>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund</eac:agencyName>
-                        <eac:agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</eac:agencyName>
-                     </eac:maintenanceAgency>
+                  <egXML xml:lang="eng">
+                     <![CDATA[
+                     <maintenanceAgency countryCode="DE">
+                        <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="https://sigel.staatsbibliothek-berlin.de/de/suche/" valueURI="https://ld.zdb-services.de/resource/organisations/DE-611">DE-611</agencyCode>
+                        <agencyName>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund</agencyName>
+                        <agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</agencyName>
+                     </maintenanceAgency>
                   </egXML>   
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:maintenanceAgency>
-                        <eac:agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-nnmnh</eac:agencyCode>
-                        <eac:agencyName>American Museum of Natural History</eac:agencyName>
-                     </eac:maintenanceAgency>
+                  <egXML xml:lang="eng">
+                     <maintenanceAgency>
+                        <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-nnmnh</agencyCode>
+                        <agencyName>American Museum of Natural History</agencyName>
+                     </maintenanceAgency>
                   </egXML>
                </div>
             </div>
