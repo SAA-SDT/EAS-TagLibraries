@@ -14,13 +14,13 @@
                   <p>descriptiveNote (0..1), place (1..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>description</p>
+                  <p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, description</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
