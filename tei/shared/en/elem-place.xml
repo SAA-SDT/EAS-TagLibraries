@@ -15,7 +15,7 @@
                   <p>address (0..n), contact (0..n), date or dateRange or dateSet (0..1), descriptiveNote (0..1), geographicCoordinates (0..n), placeName (0..n), placeType (0..n),placeRole (0..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>chronItem, chronItemSet, places, relation</p>
+                  <p>findAidDesc, chronItem, chronItemSet, places, relation</p>
                </div>
                <div type="attributes">
                   <p>
