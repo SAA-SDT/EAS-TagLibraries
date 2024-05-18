@@ -14,14 +14,14 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>demographicDescription, function, legalStatus, localDescription, mandate,
-                     occupation, otherEntityType, place</p>
+                  <p>agent, demographicDescription, function, languageUsed, legalStatus, localDescription, mandate,
+                     occupation, otherEntityType, subject, place</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>countryCode</label>
