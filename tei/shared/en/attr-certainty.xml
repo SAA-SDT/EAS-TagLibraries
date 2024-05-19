@@ -12,15 +12,20 @@
                <div type="description">
                   <p>
                      The optional attribute <att>certainty</att> provides level of confidence for the information given in <gi>date</gi>,
-                     <gi>fromDate</gi>, or <gi>toDate</gi>, e.g., approximate or circa.
+                     <gi>fromDate</gi>, or <gi>toDate</gi> in both EAC-CPF and EAD, and unitDate and unitDateStructured in EAD, e.g., approximate or circa.
                   </p>
                </div>
                <div type="datatype">
-                  <p>NMTOKEN</p>
+                  <p type="eac">NMTOKEN</p>
+               </div>
+               <div type="datatype">
+                  <p type="ead">token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<date certainty="uncertain" standardDate="1968?">
-   c.1968
-</date>]]></egXML>
+                  <egXML xml:lang="eng">
+                    <![CDATA[
+                      <date certainty="uncertain" standardDate="1968?">c.1968</date>
+                    ]]>
+                  </egXML>
                </div>
             </div>
