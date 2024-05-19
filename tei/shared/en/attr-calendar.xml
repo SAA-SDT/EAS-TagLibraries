@@ -11,13 +11,15 @@
                      </p>
                </div>
                <div type="description">
-                  <p>Suggested values include, but are not limited to, "gregorian" and "julian". Available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi> in EAC-CPF and EAD, and in unitDate and unitDateStructured in EAD.
+                  <p type="eac">Suggested values include, but are not limited to, "gregorian" and "julian". 
+                    Available in <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>. 
+                  </p>
+                  <p type="ead">Suggested values include, but are not limited to, "gregorian" and "julian". 
+                    Available in <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>, <gi>unitDate</gi>, <gi>unitDateStructured</gi>.
                   </p>
                </div>
                <div type="datatype">
                   <p type="eac">NMTOKEN</p>
-               </div>
-               <div type="datatype">
                   <p type="ead">token</p>
                </div>
                <div type="examples">
