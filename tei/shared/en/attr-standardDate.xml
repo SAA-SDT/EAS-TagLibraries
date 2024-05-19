@@ -11,7 +11,7 @@
                </div>
                <div type="description">
                   <p>The standardized form of date expressed in <gi>date</gi>, <gi>fromDate</gi>,
-                     and <gi>toDate</gi>. It is recommended that <att>standardDate</att> values
+                     and <gi>toDate</gi> in both EAC-CPF and EAD, and in unitDate in EAD. It is recommended that <att>standardDate</att> values
                      follow ISO 8601, for example, 2011-07-22, 1963, or 1912-11, or another standard
                      date format as specified in <att>dateEncoding</att>.</p>
                </div>
@@ -19,13 +19,13 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<dateRange>
-   <fromDate standardDate="1609-07-04">
-      4 juillet 1609
-   </fromDate>
-   <toDate standardDate="1640-07-07">
-      7 juillet 1640
-   </toDate>
-</dateRange>]]></egXML>
+                  <egXML xml:lang="eng">
+                    <![CDATA[
+                      <dateRange>
+                       <fromDate standardDate="1609-07-04">4 juillet 1609</fromDate>
+                       <toDate standardDate="1640-07-07">7 juillet 1640</toDate>
+                      </dateRange>
+                    ]]>
+                  </egXML>
                </div>
             </div>
