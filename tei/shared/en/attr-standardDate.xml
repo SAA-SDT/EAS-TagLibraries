@@ -10,10 +10,12 @@
                   <p>The standardized form of date.</p>
                </div>
                <div type="description">
-                  <p>The standardized form of date expressed in <gi>date</gi>, <gi>fromDate</gi>,
-                     and <gi>toDate</gi> in both EAC-CPF and EAD, and in unitDate in EAD. It is recommended that <att>standardDate</att> values
-                     follow ISO 8601, for example, 2011-07-22, 1963, or 1912-11, or another standard
-                     date format as specified in <att>dateEncoding</att>.</p>
+                  <p type="eac">The standardized form of date expressed in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>. 
+                    It is recommended that <att>standardDate</att> values follow ISO 8601, for example, 2011-07-22, 1963, or 1912-11, 
+                    or another standard date format as specified in <att>dateEncoding</att>.</p>
+                  <p type="ead">The standardized form of date expressed in <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi> and <gi>unitDate</gi>. 
+                    It is recommended that <att>standardDate</att> values follow ISO 8601, for example, 2011-07-22, 1963, or 1912-11, 
+                    or another standard date format as specified in <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
