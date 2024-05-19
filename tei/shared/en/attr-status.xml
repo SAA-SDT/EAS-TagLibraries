@@ -17,7 +17,7 @@
                     <gi>fromDate</gi>, <gi>nameEntry</gi>, <gi>toDate</gi>.</p>
                  <p type="ead"><att>status</att> provides controlled terminology detailing the status of specific
                      elements. The terms available for <att>status</att> are defined in closed lists that vary by
-                     element. Optionally available in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, 
+                     element. With <att>statusEncoding</att> in <gi>control</gi> it is also possible to define one's own lists or extend on the predefined EAS lists; use value "otherStatusEncoding" in that case. Optionally available in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, 
                     <gi>fromDate</gi>, <gi>toDate</gi>, <gi>unitDate</gi>.</p>
                </div>
                <div type="values">
@@ -26,7 +26,7 @@
                   <p type="eac">Values in <gi>toDate</gi>: unknown, ongoing</p>
                </div>
               <div type="datatype">
-                  <p type="ead">Datatype for <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>nameEntry</gi>, <gi>date</gi>, 
+                  <p type="ead">Datatype for <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, 
                     <gi>fromDate</gi>, <gi>toDate</gi>, <gi>unitDate</gi>: token</p>
                </div>
                <div type="examples">
