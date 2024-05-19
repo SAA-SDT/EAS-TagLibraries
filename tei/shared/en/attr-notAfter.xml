@@ -10,7 +10,12 @@
                   <p>A standard numerical form of an approximate date for which a latest possible date is known.</p>
                </div>
                <div type="description">
-                  <p>Optionally available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi> in both EAC-CPF and EAD, and in unitDate in EAD. It is recommended that <att>notAfter</att> values follow ISO 8601 or another standard date format as specified in <att>dateEncoding</att>.</p>
+                  <p type="eac">Optionally available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>. 
+                    It is recommended that <att>notAfter</att> values follow ISO 8601 or another standard date format 
+                    as specified in <att>dateEncoding</att>.</p>
+                 <p type="ead">Optionally available in <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi> and <gi>unitDate</gi>. 
+                   It is recommended that <att>notAfter</att> values follow ISO 8601 or another standard date format 
+                   as specified in <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
