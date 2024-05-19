@@ -7,7 +7,7 @@
 		<p>Description of Subordinate Components Type</p>
 	</div>
 	<div type="summary">
-		<p>An optional attribute in <gi>descriptionOfComponents</gi> that indicates the approach used in describing components within a finding aid. Use the attribute <att>descriptionOfComponentsTypeEncoding</att> in <gi>control</gi> to identify the list of terms to be used as values of <att>descriptionOfComponentsType</att>.</p>
+		<p>An optional attribute in <gi>descriptionOfComponents</gi> that indicates the approach used in describing components within a finding aid. Use the attribute <att>descriptionOfComponentsTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>descriptionOfComponentsType</att>.</p>
 	</div>
 	<div type="datatype">
 		<p>token</p>
