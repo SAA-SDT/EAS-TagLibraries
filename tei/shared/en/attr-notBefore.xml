@@ -7,12 +7,11 @@
                   <p>Not Before</p>
                </div>
                <div type="summary">
-                  <p>A standard numerical form of an approximate date for which an earliest possible
-                     date is known.</p>
+                  <p>A standard numerical form of an approximate date for which an earliest possible date is known.</p>
                </div>
                <div type="description">
                   <p>Optionally available in <gi>date</gi>, <gi>fromDate</gi>, and
-                     <gi>toDate</gi>. It is recommended that <att>notBefore</att> values follow
+                     <gi>toDate</gi> in both EAC-CPF and EAD, and in unitDate in EAD. It is recommended that <att>notBefore</att> values follow
                      ISO 8601 or another standard date format as specified in
                      <att>dateEncoding</att>.</p>
                </div>
@@ -20,13 +19,13 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<dateRange>
-   <fromDate notBefore="1971" notAfter="1975">
-      around 1973
-   </fromDate>
-   <toDate standardDate="1992">
-      1992
-   </toDate>
-</dateRange>]]></egXML>
+                  <egXML xml:lang="eng">
+                    <![CDATA[
+                      <dateRange>
+                       <fromDate notBefore="1971" notAfter="1975">around 1973</fromDate>
+                       <toDate standardDate="1992">1992</toDate>
+                      </dateRange>
+                    ]]>
+                  </egXML>
                </div>
             </div>
