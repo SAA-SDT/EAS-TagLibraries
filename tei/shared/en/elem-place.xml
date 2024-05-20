@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-place" xmlns:eac="http://archivists.org/ns/eac/v2" https://github.com/SAA-SDT/EAS-TagLibraries/blob/ead4/tei/shared/en/elem-place.xml xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div type="elementDocumentation" xml:id="elem-place" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:ead="https://archivists.org/ns/ead/v4">
                <head>
                   <gi>place</gi>
                </head>
