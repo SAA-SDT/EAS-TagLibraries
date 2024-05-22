@@ -7,14 +7,18 @@
                   <p>Target Role</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>relation</gi> used to specify the role of a
+                  <p type="eac">An optional child element of <gi>relation</gi> used to specify the role of a
                      related entity with respect to the CPF entity being described.</p>
+                  <p type="ead">An optional child element of <gi>function</gi>, <gi>relation</gi>, and <gi>subject</gi> used to specify the role of a
+                     related entity, function, or subject with respect to the records being described.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
+                  <p type="ead">function</p>
                   <p>relation</p>
+                  <p type="ead">subject</p>
                </div>
                <div type="attributes">
                   <p>
@@ -49,8 +53,10 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>targetRole</gi> is used with <gi>relation</gi> to specify the role of a
+                  <p type="eac"><gi>targetRole</gi> is used with <gi>relation</gi> to specify the role of a
                      related entity with respect to the CPF entity being described.</p>
+                  <p type="ead"><gi>targetRole</gi> is used with <gi>function</gi>, <gi>relation</gi>, and <gi>subject</gi> to specify the role of a
+                     related function, entity, or subject with respect to the records being described.</p>
                   <p>The <gi>targetRole</gi> element contains a textual description of the relation.
                      It is recommended that the terms in <gi>targetRole</gi> be taken from
                      authorized vocabularies.</p>
