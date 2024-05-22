@@ -8,13 +8,14 @@
                </div>
                <div type="summary">
                   <p>An optional child element of <gi>languageUsed</gi> that identifies a particular
-                     language used in the creative work of the CPF entity being described.</p>
+                     language used by the entity or records being described.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>languageUsed</p>
+                  <p type="eac">languageUsed</p>
+                  <p type="ead">languageOfMaterial, languageSet</p>
                </div>
                <div type="attributes">
                   <p>
@@ -42,7 +43,7 @@
                </div>
                <div type="description">
                   <p>An optional element within <gi>languageUsed</gi> that gives the language or
-                     languages used by the CPF entity being described.</p>
+                     languages used by the records or entity being described.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
