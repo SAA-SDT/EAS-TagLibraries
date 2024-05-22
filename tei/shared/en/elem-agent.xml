@@ -10,14 +10,15 @@
                <div type="summary">
                   <p>A required child element of <gi>maintenanceEvent</gi> that provides the name of
                      a person, institution, or system responsible for a specific event in the
-                     EAC-CPF instance's maintenance history, such as its creation, modification, or
+                     EAS instance's maintenance history, such as its creation, modification, or
                      deletion.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>maintenanceEvent</p>
+                  <p type="eac">maintenanceEvent</p>
+                  <p type="ead">agents, findAidDesc, maintenanceEvent</p>
                </div>
                <div type="attributes">
                   <p>
@@ -46,8 +47,8 @@
                <div type="description">
                   <p>Use <gi>agent</gi> to indicate the person, institution, or system responsible
                      for a maintenance event. Examples include the name of the author or encoder,
-                     the database responsible for creating the EAC-CPF instance, and the style sheet
-                     used to update an instance to a new version of EAC-CPF.</p>
+                     the database responsible for creating the EAS instance, and the style sheet
+                     used to update an instance to a new version of the EAS.</p>
                   <p>Each <gi>maintenanceEvent</gi> element must have a child <gi>agent</gi>
                      element.</p>
                </div>
