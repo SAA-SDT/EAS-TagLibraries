@@ -7,16 +7,17 @@
                   <p>Relations</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>cpfDescription</gi> that groups one or more
+                  <p>An optional element that groups one or more
                         <gi>relation</gi> elements, which identify external entities and
-                     characterize the nature of their relationships to the entity being
+                     characterize the nature of their relationships to the entity or records being
                      described.</p>
                </div>
                <div type="mayContain">
                   <p>descriptiveNote (0..1), relation (1..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>cpfDescription</p>
+                  <p type="eac">cpfDescription</p>
+                  <p type="ead">formAvailable, otherFindAid, publicationNote, relatedMaterial, separatedMaterial</p>
                </div>
                <div type="attributes">
                   <p>
