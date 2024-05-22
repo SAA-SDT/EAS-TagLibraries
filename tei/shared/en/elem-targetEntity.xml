@@ -49,7 +49,7 @@
                </div>
                <div type="description">
                   <p><gi>targetEntity</gi> is used within <gi>relation</gi> to identify an entity
-                     that is related to the subject of the EAC-CPF instance.</p>
+                     that is related to the source entity or records.</p>
                   <p><gi>targetEntity</gi> must include at least one <gi>part</gi> element, encoding
                      the name or term for the related entity.</p>
                </div>
