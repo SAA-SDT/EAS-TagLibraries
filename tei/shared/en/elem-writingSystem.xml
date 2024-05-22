@@ -8,8 +8,7 @@
                </div>
                <div type="summary">
                   <p>An optional child element of <gi>languageUsed</gi> that identifies the writing
-                     script for a language in which the CPF entity being described was creative or
-                     productive.</p>
+                     script for a language used by the described entity or records.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
@@ -44,8 +43,7 @@
                </div>
                <div type="description">
                   <p>An optional element within <gi>languageUsed</gi> that gives the main script
-                     used by the CPF entity being described in his/her creative or productive
-                     work.</p>
+                     used by the entity or records being described.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
