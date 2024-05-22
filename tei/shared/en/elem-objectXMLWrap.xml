@@ -9,13 +9,14 @@
                <div type="summary">
                   <p>An optional child element of <gi>relation</gi>, <gi>setComponent</gi>, and
                         <gi>source</gi> that allows for the inclusion of an XML element from any XML
-                     namespace other than EAC-CPF.</p>
+                     namespace.</p>
                </div>
                <div type="mayContain">
                   <p>[any element from any namespace]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>relation, setComponent, source</p>
+                  <p type="eac">relation, setComponent, source</p>
+                  <p type="ead">relation, source</p>
                </div>
                <div type="attributes">
                   <p>
