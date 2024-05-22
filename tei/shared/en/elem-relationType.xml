@@ -7,15 +7,16 @@
                   <p>Relation Type</p>
                </div>
                <div type="summary">
-                  <p>A child element of <gi>relation</gi> used to specify the type of relation that
-                     the entity being described within the EAC-CPF instance has to the
+                  <p>An element used to specify the type of relation that
+                     the described entity or records have to the
                         <gi>targetEntity</gi>.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>relation</p>
+                  <p type="eac">relation</p>
+                  <p type="ead">agent, function, place, relation, subject</p>
                </div>
                <div type="attributes">
                   <p>
@@ -50,8 +51,8 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>relationType</gi> within <gi>relation</gi> to specify the type of
-                     relation that the entity being described has to the <gi>targetEntity</gi>.</p>
+                  <p>Use <gi>relationType</gi> to specify the type of
+                     relation that the entity or records being described have to the <gi>targetEntity</gi>.</p>
                   <p>The <gi>relationType</gi> element contains a textual description of the
                      relation. It is recommended that values used in <gi>relationType</gi> be taken
                      from an authorized vocabulary.
