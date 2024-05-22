@@ -8,8 +8,7 @@
                </div>
                <div type="summary">
                   <p>A required and repeatable child of <gi>nameEntry</gi> and <gi>targetEntity</gi>
-                     used to distinguish components of the CPF entity's name, or the name of a
-                     related entity, respectively.</p>
+                     used to distinguish components of a name.</p>
                </div>
                <div type="mayContain">
                   <p>[text]</p>
