@@ -7,8 +7,7 @@
                   <p>Language Code</p>
                </div>
                <div type="summary">
-                  <p>The code for the language used in the EAC-CPF instance or in the creative work
-                     of the CPF entity being described.
+                  <p>The code for the language used in the EAS instance or by the records or entity being described.
                   </p>
                </div>
                <div type="description">
