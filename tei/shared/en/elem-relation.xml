@@ -8,7 +8,7 @@
                </div>
                <div type="summary">
                   <p>A required child element of <gi>relations</gi> for describing a relationship
-                     between the entity described in the EAC-CPF instance and a related entity.</p>
+                     between the entity or records described and a related entity.</p>
                </div>
                <div type="mayContain">
                   <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), objectXMLWrap (0..1), place (0..n), relationType (0..n), targetEntity (1..1), targetRole (0..n)</p>
@@ -40,7 +40,7 @@
                </div>
                <div type="description">
                   <p><gi>relation</gi> records descriptive information about a relationship between
-                     the entity being described and a related entity, such as: a corporate body,
+                     the entity or records being described and a related entity, such as: a corporate body,
                      person, or family; a function; or an archival, bibliographic, or other
                      resource.</p>
                   <p>Use the required child element <gi>targetEntity</gi> to provide a textual
