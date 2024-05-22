@@ -15,7 +15,8 @@
                   <p>[text]</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>languageUsed</p>
+                  <p type="eac">languageUsed</p>
+                  <p type="ead">languageSet</p>
                </div>
                <div type="attributes">
                   <p>
