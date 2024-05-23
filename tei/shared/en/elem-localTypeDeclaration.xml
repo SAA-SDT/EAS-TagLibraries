@@ -21,7 +21,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
@@ -40,9 +40,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>localTypeDeclaration</gi> specifies the local conventions and controlled
-                     vocabularies used in <att>localType</att> attributes in the EAC-CPF
-                     instance.</p>
+                  <p><gi>localTypeDeclaration</gi> specifies the local conventions and controlled vocabularies used in <att>localType</att> attributes in the EAS instance.</p>
                   <p>The child <gi>reference</gi> must be used to cite the resource that lists the
                      local rules or controlled terms. Any notes relating to how these rules or
                      conventions have been used may be given in <gi>descriptiveNote</gi>. The child
@@ -59,7 +57,8 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                   <egXML xml:lang="eng">
+                     <![CDATA[
                      <eac:localTypeDeclaration>
                         <eac:reference href="https://d-nb.info/standards/elementset/gnd_20191015">GNDO</eac:reference>
                         <eac:descriptiveNote>
@@ -70,7 +69,8 @@
                      </eac:localTypeDeclaration>
                      <eac:localTypeDeclaration>
                         <eac:reference href="https://www.loc.gov/marc/authority/">MARC21</eac:reference>
-                     </eac:localTypeDeclaration>	
+                     </eac:localTypeDeclaration>
+                      ]]>
                   </egXML>
                </div>
             </div>
