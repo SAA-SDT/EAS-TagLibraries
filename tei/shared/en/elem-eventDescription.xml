@@ -8,7 +8,7 @@
                </div>
                <div type="summary">
                   <p>An optional child element of <gi>maintenanceEvent</gi> that provides the
-                     description of a maintenance event in the life of the EAC-CPF instance.</p>
+                     description of a maintenance event in the life of the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p>[text], reference (0..n), span (0..n)</p>
@@ -20,7 +20,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item><p type="eac">(values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
@@ -42,12 +42,14 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:maintenanceEvent maintenanceEventType="derived">
-                        <eac:agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</eac:agent>
-                        <eac:eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
-                        <eac:eventDescription>Derived from EAD instance.</eac:eventDescription>
-                     </eac:maintenanceEvent>
+                  <egXML xml:lang="eng">
+                     <![CDATA[
+                     <maintenanceEvent maintenanceEventType="derived">
+                        <agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</eac:agent>
+                        <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
+                        <eventDescription>Derived from EAD instance.</eventDescription>
+                     </maintenanceEvent>
+                    ]]>
                   </egXML>
                </div>
             </div>
