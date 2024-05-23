@@ -7,7 +7,7 @@
                   <p>Level of Detail</p>
                </div>
                <div type="summary">
-                  <p>Provides information about the level of detail of the entity’s description within the EAC-CPF instance.</p>
+                  <p>Provides information about the level of detail of the entity’s description within the EAS instance.</p>
                </div>
                <div type="description">
                   <p>An optional attribute within <gi>control</gi>, used to provide information
