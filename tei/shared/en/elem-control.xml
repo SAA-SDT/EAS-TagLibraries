@@ -9,37 +9,50 @@
                <div type="summary">
                   <p>A required child element of <gi>eac</gi> that contains information about the
                      creation, maintenance, status and the rules and authorities used in the
-                     composition of the EAC-CPF instance.</p>
+                     composition of the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p>conventionDeclaration (0..n), languageDeclaration (0..n), localControl (0..n), localTypeDeclaration (0..n), maintenanceAgency (1..1), maintenanceHistory (1..1), otherRecordId (0..n), recordId (1..1), rightsDeclaration (0..n), representation (0..n), sources (0..1)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>eac</p>
+                  <p>ead</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
+                        <label>addressLineTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherAddressLineTypeEncoding)</item>
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>base</label>
                         <item>Optional</item>
+                        <label>contactLineTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherContactLineTypeEncoding)</item>
                         <label>countryEncoding</label>
                         <item>Optional (values limited to: iso3166-1, otherCountryEncoding)</item>
+                        <label>coverageEncoding</label>
+                        <item>Optional (values limited to: EASList, otherCoverageEncoding)</item>
                         <label>dateEncoding</label>
                         <item>Optional (values limited to: iso8601, otherDateEncoding)</item>
-                        <label>detailLevel</label>
-                        <item>Optional (values limited to: basic, extended, minimal)</item>
+                        <label>descriptionOfComponentsTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherDescriptionOfComponentsTypeEncoding)</item>
+                        <label>detailLevelEncoding</label>
+                        <item><p type="eac">Optional (values limited to: basic, extended, minimal)</p></item>
+                       <item>Optional (values limited to: EASList, otherDetailLevelEncoding)</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageEncoding</label>
-                        <item>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2b,
-                           iso639-3, otherLanguageEncoding)</item>
+                        <item>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2, iso639-3, otherLanguageEncoding)</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
+                        <label>levelEncoding</label>
+                        <item>Optional (values limited to: EASList, otherLevelEncoding)</item>
+                        <label>maintenanceEventTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, maintenanceEventTypeEncoding)</item>
                         <label>maintenanceStatus</label>
-                        <item>Required (values limited to: cancelled, deleted, deletedMerged,
-                           deletedReplaced, deletedSplit, derived, new, revised)</item>
+                        <item>Required (values limited to: cancelled, deleted, deletedMerged, deletedReplaced, deletedSplit, derived, new, revised)</item>
+                         <label>physDescStructuredTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherPhysDescStructuredTypeEncoding)</item>
                         <label>publicationStatus</label>
                         <item>Optional (values limited to: approved, inProcess, published)</item>
                         <label>repositoryEncoding</label>
@@ -48,8 +61,12 @@
                         <item>Optional (values limited to: iso15924, otherScriptEncoding)</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
+                        <label>statusEncoding</label>
+                        <item>Optional (values limited to: EASList, otherStatusEncoding)</item>
                         <label>target</label>
                         <item>Optional</item>
+                       <label>unitDateTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherUnitDateTypeEncoding)</item>
                      </list>
                   </p>
                </div>
@@ -66,31 +83,31 @@
                         <att>maintenanceStatus</att> and the creation, maintenance, and disposition
                      of the instance in <gi>maintenanceHistory</gi>.</p>
                   <p>There are optional elements available to declare languages, rules, conventions
-                     and sources used in the EAC-CPF instance. Other control elements considered
+                     and sources used in the EAS instance. Other control elements considered
                      necessary but not otherwise included may be given in the <gi>localControl</gi>
                      element. Similarly, local types for certain elements used throughout the
-                     EAC-CPF instance are recommended to be defined in the
+                     EAS instance are recommended to be defined in the
                         <gi>localTypeDeclaration</gi> element.</p>
                   <p>The available child elements (both required and optional), in their prescribed
                      order, are:</p>
                   <list type="simple">
                      <item><gi>recordId</gi> - Required. Contains the unique identifier for the
-                        EAC-CPF instance.</item>
+                        EAS instance.</item>
                      <item><gi>maintenanceAgency</gi> - Required. Contains the name and coded
                         information about the institution or service responsible for the creation,
-                        maintenance, and/or dissemination of the EAC-CPF instance.</item>
+                        maintenance, and/or dissemination of the EAS instance.</item>
                      <item><gi>maintenanceHistory</gi> - Required. Contains information about the
-                        date, type and events within the life cycle of an EAC-CPF instance.</item>
+                        date, type and events within the life cycle of an EAS instance.</item>
                      <item><gi>sources</gi> - Optional. Contains information about the sources
                         consulted in creating the description of the entity or entities in the
-                        EAC-CPF instance.</item>
+                        EAS instance.</item>
                      <item>The following elements may appear in any order after the above elements:
                            <list type="simple">
                            <item><gi>conventionDeclaration</gi> - Optional. Contains information on
-                              the rules or conventions used to construct the EAC-CPF
+                              the rules or conventions used to construct the EAS
                               instance.</item>
                            <item><gi>languageDeclaration</gi> - Optional. Contains coded and natural
-                              language information about the language or languages of the EAC-CPF
+                              language information about the language or languages of the EAS
                               instance.</item>
                            <item><gi>localControl</gi> - Optional. Contains any administrative
                               metadata necessary due to local practice that are not represented by
@@ -100,27 +117,26 @@
                               attribute.</item>
                            <item><gi>otherRecordId</gi> - Optional. An element that allows the
                               recording of additional identifiers that may be associated with the
-                              EAC-CPF instance.</item>
+                              EAS instance.</item>
                            <item><gi>representation</gi> - Optional. Used for recording a link to a
-                              transformed and deliverable version of the EAC-CPF instance.</item>
+                              transformed and deliverable version of the EAS instance.</item>
                            <item><gi>rightsDeclaration</gi> - Optional. Contains information about
-                              the usage rights of the EAC-CPF instance.</item>
+                              the usage rights of the EAS instance.</item>
                         </list></item>
                   </list>
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use the required <att>maintenanceStatus</att> attribute to document the
-                        current version status of the EAC-CPF instance.</item>
-                     <item>Use the optional <att>publicationStatus</att> attribute to record the
-                        editorial status of the EAC-CPF instance.</item>
+                     <item>Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</item>
+                     <item>Use the optional <att>publicationStatus</att> attribute to record the editorial status of the EAS instance.</item>
                   </list>
                </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  egXML xml:lang="eng">
+                     <![CDATA[
                      <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
                         <eac:recordId>https://kalliope-verbund.info/gnd/118584618</eac:recordId>
                         <eac:maintenanceAgency countryCode="DE">
@@ -169,5 +185,6 @@
                         </eac:rightsDeclaration>
                      </eac:control>
                   </egXML>
+                 ]]>
                </div>
             </div>
