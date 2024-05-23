@@ -20,7 +20,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item><p type="eac">(values limited to: external, internal)</p></item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
