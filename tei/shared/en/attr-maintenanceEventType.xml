@@ -14,15 +14,15 @@
                   <list type="simple">
                      <item>cancelled: marks an instance as not current (obsolete or rejected), but
                         retained for reference</item>
-                     <item>created: the initial creation of the EAC-CPF instance</item>
+                     <item>created: the initial creation of the EAS instance</item>
                      <item>deleted: indication that the instance has been deleted from the
                         system</item>
                      <item>derived: indicates that the instance was derived from another descriptive
                         system</item>
-                     <item>revised: any type of general modification to the EAC-CPF instance</item>
+                     <item>revised: any type of general modification to the EAS instance</item>
                      <item>unknown: when the type of event is not known</item>
                      <item>updated: when an instance has been brought up to date with significant
-                        changes to the materials being described or to the version of EAC-CPF
+                        changes to the materials being described or to the version of EAS
                         used</item>
                   </list>
                </div>
