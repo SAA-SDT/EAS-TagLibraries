@@ -8,7 +8,7 @@
                </div>
                <div type="summary">
                   <p>An optional child element of <gi>control</gi> that indicates the language and
-                     script in which an EAC-CPF instance is written.</p>
+                     script in which an EAS instance is written.</p>
                </div>
                <div type="mayContain">
                   <p>descriptiveNote (0..1)</p>
@@ -20,7 +20,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageCode</label>
@@ -38,19 +38,19 @@
                </div>
                <div type="description">
                   <p>An optional child element of <gi>control</gi> that declares the languages and
-                     scripts in which an EAC-CPF instance is written in the <att>languageCode</att>
+                     scripts in which an EAS instance is written in the <att>languageCode</att>
                      and <att>scriptCode</att> attributes. Any comments about the languages and
-                     scripts in which the EAC-CPF instance is written may be included in the
+                     scripts in which the EAS instance is written may be included in the
                      optional <gi>descriptiveNote</gi> element.</p>
                </div>
                <div type="attributeusage">
                   <list type="simple">
                      <item>Use the required <att>languageCode</att> to provide a code for the
-                        language used in the EAC-CPF instance.</item>
+                        language used in the EAS instance.</item>
                      <item>Use <att>languageOfElement</att> to provide a code for the language in
                         which the <gi>languageDeclaration</gi> element is given.</item>
                      <item>Use <att>scriptCode</att> to provide a code for the writing system used
-                        in the EAC-CPF instance.</item>
+                        in the EAS instance.</item>
                      <item>Use <att>scriptOfElement</att> to provide a code for the writing system
                         in which the <gi>languageDeclaration</gi> element is given.</item>
                   </list>
@@ -59,8 +59,10 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                   <egXML xml:lang="eng">
+                     <![CDATA[
                      <eac:languageDeclaration languageCode="ger" scriptCode="Latn"/>
+                      ]]>
                   </egXML>
                </div>
             </div>
