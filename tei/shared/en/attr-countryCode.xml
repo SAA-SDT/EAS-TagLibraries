@@ -17,7 +17,7 @@
                         <gi>maintenanceAgency</gi> and <gi>placeName</gi>.</p>
                </div>
                <div type="datatype">
-                  <p>NMTOKEN</p>
+                  <p>token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countrycode="IE">
