@@ -7,10 +7,10 @@
                   <p>Maintenance Status</p>
                </div>
                <div type="summary">
-                  <p>The current drafting status of the EAC-CPF instance.</p>
+                  <p>The current drafting status of the EAS instance.</p>
                </div>
                <div type="description">
-                  <p>The maintenance status must occur on <gi>control</gi>. As an EAC-CPF instance
+                  <p>The maintenance status must occur on <gi>control</gi>. As an EAS instance
                      is modified or other events happen to it (as recorded in the
                         <gi>maintenanceHistory</gi> element), the maintenance status should also be
                      updated to reflect the current drafting status.</p>
