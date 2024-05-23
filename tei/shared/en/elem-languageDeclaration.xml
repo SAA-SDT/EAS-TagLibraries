@@ -61,7 +61,7 @@
                <div type="examples">
                    <egXML xml:lang="eng">
                      <![CDATA[
-                     <eac:languageDeclaration languageCode="ger" scriptCode="Latn"/>
+                     <languageDeclaration languageCode="ger" scriptCode="Latn"/>
                       ]]>
                   </egXML>
                </div>
