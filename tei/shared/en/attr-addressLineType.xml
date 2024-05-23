@@ -19,9 +19,11 @@
                <div type="values">
                   <p type="eac">county, country, district, municipality, postBox, postalCode, region,
                      street</p>
+                 <p type="ead">Following the value list defined in <att>addressLineTypeEncoding</att> and <att>conventionDeclaration</att>.</p>
                </div>
                <div type="datatype">
                  <p type="ead">token</p>
+                 <p type="eac">predefined value list</p>
                </div>
                <div type="examples">
                   <egXML><![CDATA[<address>
