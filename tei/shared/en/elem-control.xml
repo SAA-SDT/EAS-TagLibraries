@@ -7,23 +7,59 @@
                   <p>Control</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>eac</gi> that contains information about the
+                  <p>A required child element of the root element that contains information about the
                      creation, maintenance, status and the rules and authorities used in the
                      composition of the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>conventionDeclaration (0..n), languageDeclaration (0..n), localControl (0..n), localTypeDeclaration (0..n), maintenanceAgency (1..1), maintenanceHistory (1..1), otherRecordId (0..n), recordId (1..1), rightsDeclaration (0..n), representation (0..n), sources (0..1)</p>
+                  <p type="eac">conventionDeclaration (0..n), languageDeclaration (0..n), localControl (0..n), localTypeDeclaration (0..n), maintenanceAgency (1..1), maintenanceHistory (1..1), otherRecordId (0..n), recordId (1..1), rightsDeclaration (0..n), representation (0..n), sources (0..1)</p>
+                 <p type="ead">conventionDeclaration (0..n), languageDeclaration (0..n), localTypeDeclaration (0..n), maintenanceAgency (1..1), maintenanceHistory (1..1), otherRecordId (0..n), recordId (1..1), rightsDeclaration (0..n), sources (0..1)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>ead</p>
+                  <p type="eac">eac</p>
+                  <p type="ead">ead</p>
                </div>
                <div type="attributes">
-                  <p>
+                  <p type="eac">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>base</label>
+                        <item>Optional</item>
+                        <label>countryEncoding</label>
+                        <item>Optional (values limited to: iso3166-1, otherCountryEncoding)</item>
+                        <label>dateEncoding</label>
+                        <item>Optional (values limited to: iso8601, otherDateEncoding)</item>
+                        <label>detailLevel</label>
+                        <item>Optional (values limited to: basic, extended, minimal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageEncoding</label>
+                        <item>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2b, iso639-3, otherLanguageEncoding)</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>maintenanceStatus</label>
+                        <item>Required (values limited to: cancelled, deleted, deletedMerged, deletedReplaced, deletedSplit, derived, new, revised)</item>
+                        <label>publicationStatus</label>
+                        <item>Optional (values limited to: approved, inProcess, published)</item>
+                        <label>repositoryEncoding</label>
+                        <item>Optional (values limited to: iso15511, otherRepositoryEncoding)</item>
+                        <label>scriptEncoding</label>
+                        <item>Optional (values limited to: iso15924, otherScriptEncoding)</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+                  <p type="ead">
                      <list type="gloss">
                         <label>addressLineTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherAddressLineTypeEncoding)</item>
                         <label>audience</label>
-                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
+                        <item>Optional</item>
+                        <label>audienceEncoding</label>
+                        <item>Optional (values limited to: EASList, otherAudienceEncoding)</item>
                         <label>base</label>
                         <item>Optional</item>
                         <label>contactLineTypeEncoding</label>
@@ -36,9 +72,10 @@
                         <item>Optional (values limited to: iso8601, otherDateEncoding)</item>
                         <label>descriptionOfComponentsTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherDescriptionOfComponentsTypeEncoding)</item>
+                        <label>detailLevel</label>
+                        <item>Optional</item>
                         <label>detailLevelEncoding</label>
-                        <item><p type="eac">Optional (values limited to: basic, extended, minimal)</p></item>
-                       <item>Optional (values limited to: EASList, otherDetailLevelEncoding)</item>
+                        <item>Optional (values limited to: EASList, otherDetailLevelEncoding)</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageEncoding</label>
@@ -50,11 +87,15 @@
                         <label>maintenanceEventTypeEncoding</label>
                         <item>Optional (values limited to: EASList, maintenanceEventTypeEncoding)</item>
                         <label>maintenanceStatus</label>
-                        <item>Required (values limited to: cancelled, deleted, deletedMerged, deletedReplaced, deletedSplit, derived, new, revised)</item>
-                         <label>physDescStructuredTypeEncoding</label>
+                        <item>Optional</item>
+                        <label>maintenanceStatusEncoding</label>
+                        <item>Optional (values limited to: EASList, maintenanceStatusEncoding)</item>
+                        <label>physDescStructuredTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherPhysDescStructuredTypeEncoding)</item>
                         <label>publicationStatus</label>
-                        <item>Optional (values limited to: approved, inProcess, published)</item>
+                        <item>Optional</item>
+                        <label>publicationStatusEncoding</label>
+                        <item>Optional (values limited to: EASList, publicationStatusEncoding)</item>
                         <label>repositoryEncoding</label>
                         <item>Optional (values limited to: iso15511, otherRepositoryEncoding)</item>
                         <label>scriptEncoding</label>
@@ -65,29 +106,38 @@
                         <item>Optional (values limited to: EASList, otherStatusEncoding)</item>
                         <label>target</label>
                         <item>Optional</item>
-                       <label>unitDateTypeEncoding</label>
+                        <label>unitDateTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherUnitDateTypeEncoding)</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p>This required wrapper element within <gi>eac</gi> contains the information
-                     necessary to manage the instance. This includes information about its creation,
+                  <p>This required wrapper element within the root element of an EAS instance contains the information
+                     necessary to manage the instance itself. This includes information about its creation,
                      maintenance and status as well as the languages, rules and authorities used in
                      the composition of the description.</p>
-                  <p>It must contain a unique identifier for the instance within the
+                  <p type="eac">It must contain a unique identifier for the instance within the
                         <gi>recordId</gi> element. Other associated identifiers may be given in
                         <gi>otherRecordId</gi>. There must be a description of the agency
                      responsible for its creation and maintenance in <gi>maintenanceAgency</gi> as
                      well as statements about its current drafting status in
                         <att>maintenanceStatus</att> and the creation, maintenance, and disposition
                      of the instance in <gi>maintenanceHistory</gi>.</p>
-                  <p>There are optional elements available to declare languages, rules, conventions
+                  <p type="ead">It must contain a unique identifier for the instance within the
+                        <gi>recordId</gi> element. Other associated identifiers may be given in
+                        <gi>otherRecordId</gi>. There must be a description of the agency
+                     responsible for its creation and maintenance in <gi>maintenanceAgency</gi> as
+                     well as statements about the creation, maintenance, and disposition
+                     of the instance in <gi>maintenanceHistory</gi>.</p>
+                  <p type="eac">There are optional elements available to declare languages, rules, conventions
                      and sources used in the EAS instance. Other control elements considered
                      necessary but not otherwise included may be given in the <gi>localControl</gi>
                      element. Similarly, local types for certain elements used throughout the
                      EAS instance are recommended to be defined in the
                         <gi>localTypeDeclaration</gi> element.</p>
+                  <p type="ead">There are optional elements available to declare languages, rules, conventions
+                     and sources used in the EAS instance. Local types for certain elements used throughout the
+                     EAS instance are recommended to be defined in the <gi>localTypeDeclaration</gi> element.</p>
                   <p>The available child elements (both required and optional), in their prescribed
                      order, are:</p>
                   <list type="simple">
@@ -99,10 +149,10 @@
                      <item><gi>maintenanceHistory</gi> - Required. Contains information about the
                         date, type and events within the life cycle of an EAS instance.</item>
                      <item><gi>sources</gi> - Optional. Contains information about the sources
-                        consulted in creating the description of the entity or entities in the
-                        EAS instance.</item>
-                     <item>The following elements may appear in any order after the above elements:
-                           <list type="simple">
+                        consulted in creating the descriptive parts of the EAS instance.</item>
+                     <item>
+                       <p type="eac">The following elements may appear in any order after the above elements:
+                         <list type="simple">
                            <item><gi>conventionDeclaration</gi> - Optional. Contains information on
                               the rules or conventions used to construct the EAS
                               instance.</item>
@@ -122,68 +172,90 @@
                               transformed and deliverable version of the EAS instance.</item>
                            <item><gi>rightsDeclaration</gi> - Optional. Contains information about
                               the usage rights of the EAS instance.</item>
-                        </list></item>
+                        </list>
+                       </p>
+                       <p type="ead">The following elements may appear in any order after the above elements:
+                         <list type="simple">
+                           <item><gi>conventionDeclaration</gi> - Optional. Contains information on
+                              the rules or conventions used to construct the EAS
+                              instance.</item>
+                           <item><gi>languageDeclaration</gi> - Optional. Contains coded and natural
+                              language information about the language or languages of the EAS
+                              instance.</item>
+                           <item><gi>localTypeDeclaration</gi> - Optional. Contains information
+                              about local conventions used in the <att>localType</att>
+                              attribute.</item>
+                           <item><gi>otherRecordId</gi> - Optional. An element that allows the
+                              recording of additional identifiers that may be associated with the
+                              EAS instance.</item>
+                           <item><gi>rightsDeclaration</gi> - Optional. Contains information about
+                              the usage rights of the EAS instance.</item>
+                         </list>
+                       </p>
+                     </item>
                   </list>
                </div>
                <div type="attributeusage">
                   <list type="simple">
-                     <item>Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</item>
+                     <item><p type="eac">Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p></item>
+                     <item><p type="ead">Use the optional <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p></item>
                      <item>Use the optional <att>publicationStatus</att> attribute to record the editorial status of the EAS instance.</item>
+                     <item><p type="ead">Use the optional encoding attributes such as <att>addressLineTypeEncoding</att>, <att>dateEncoding</att>, <att>languageEncoding</att>, <att>levelEncoding</att>, or <att>unitDateTypeEncoding</att> to specify the list of values used in the related attributes (here: <att>addressLineType</att>, <att>standardDate</att>, <att>notAfter</att>, <att>notBefore</att>, <att>languageCode</att>, <att>languageOfElement</att>, <att>level</att>, and <att>unitDateType</att>) used throughout the EAS instance. Depending on the context, this might be an ISO standard or the value list defined by TS-EAS or a another international, national or institutional list that you have defined for your descriptions.</p></item>
                   </list>
                </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                  egXML xml:lang="eng">
+                  <egXML xml:lang="eng" type="eac">
                      <![CDATA[
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        <eac:recordId>https://kalliope-verbund.info/gnd/118584618</eac:recordId>
-                        <eac:maintenanceAgency countryCode="DE">
-                           <eac:agencyCode status="authorized">DE-611</eac:agencyCode>
-                           <eac:agencyName>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund</eac:agencyName>
-                           <eac:agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</eac:agencyName>
-                        </eac:maintenanceAgency>
-                        <eac:maintenanceHistory>
-                           <eac:maintenanceEvent maintenanceEventType="created">
-                              <eac:agent agentType="unknown">DE-101</eac:agent>
-                              <eac:eventDateTime standardDateTime="1988-07-01"/>
-                           </eac:maintenanceEvent>
-                           <eac:maintenanceEvent maintenanceEventType="revised">
-                              <eac:agent agentType="unknown">1400</eac:agent>
-                              <eac:eventDateTime standardDateTime="2015-10-15"/>
-                           </eac:maintenanceEvent>
-                        </eac:maintenanceHistory>
-                        <eac:sources>
-                           <eac:source>
-                              <eac:reference>Szb. Mozart-Lex.</eac:reference>
-                           </eac:source>
-                        </eac:sources>
-                        <eac:conventionDeclaration>
-                           <eac:reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</eac:reference>
-                           <eac:shortCode>RDA</eac:shortCode>
-                        </eac:conventionDeclaration>
-                        <eac:languageDeclaration languageCode="ger" scriptCode="Latn"/>
-                        <eac:localTypeDeclaration>
-                           <eac:reference href="https://d-nb.info/standards/elementset/gnd_20191015">GNDO</eac:reference>
-                           <eac:descriptiveNote>
-                              <eac:p>Gemeinsame Normdatei Ontologie</eac:p>
-                              <eac:p languageOfElement="eng">Integrated Authority File Ontology</eac:p>
-                              <eac:p>Version 2019-10-15</eac:p>
-                           </eac:descriptiveNote>
-                        </eac:localTypeDeclaration>
-                        <eac:localTypeDeclaration>
-                           <eac:reference href="https://www.loc.gov/marc/authority/">MARC21</eac:reference>
-                        </eac:localTypeDeclaration>
-                        <eac:otherRecordId localType="024$a" localTypeDeclarationReference="MARC21">http://d-nb.info/gnd/118584618"</eac:otherRecordId>		
-                        <eac:otherRecordId localType="035$a" localTypeDeclarationReference="MARC21">(DE-101)118584618</eac:otherRecordId>
-                        <eac:otherRecordId localType="https://d-nb.info/standards/elementset/gnd#gndIdentifier" localTypeDeclarationReference="GNDO">(DE-588)118584618</eac:otherRecordId>
-                        <eac:otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">(DE-588a)118584618</eac:otherRecordId>	
-                        <eac:otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">(DE-588c)4040426-2</eac:otherRecordId>
-                        <eac:rightsDeclaration>
-                           <eac:reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0 Universell</eac:reference>
-                        </eac:rightsDeclaration>
-                     </eac:control>
+                     <control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                        <recordId>https://kalliope-verbund.info/gnd/118584618</recordId>
+                        <maintenanceAgency countryCode="DE">
+                           <agencyCode status="authorized">DE-611</agencyCode>
+                           <agencyName>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund</agencyName>
+                           <agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</agencyName>
+                        </maintenanceAgency>
+                        <maintenanceHistory>
+                           <maintenanceEvent maintenanceEventType="created">
+                              <agent agentType="unknown">DE-101</eac:agent>
+                              <eventDateTime standardDateTime="1988-07-01"/>
+                           </maintenanceEvent>
+                           <maintenanceEvent maintenanceEventType="revised">
+                              <agent agentType="unknown">1400</eac:agent>
+                              <eventDateTime standardDateTime="2015-10-15"/>
+                           </maintenanceEvent>
+                        </maintenanceHistory>
+                        <sources>
+                           <source>
+                              <reference>Szb. Mozart-Lex.</reference>
+                           </source>
+                        </sources>
+                        <conventionDeclaration>
+                           <reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</reference>
+                           <shortCode>RDA</shortCode>
+                        </conventionDeclaration>
+                        <languageDeclaration languageCode="ger" scriptCode="Latn"/>
+                        <localTypeDeclaration>
+                           <reference href="https://d-nb.info/standards/elementset/gnd_20191015">GNDO</reference>
+                           <descriptiveNote>
+                              <p languageOfElement="ger">Gemeinsame Normdatei Ontologie</p>
+                              <p languageOfElement="eng">Integrated Authority File Ontology</p>
+                              <p>Version 2019-10-15</p>
+                           </descriptiveNote>
+                        </localTypeDeclaration>
+                        <localTypeDeclaration>
+                           <reference href="https://www.loc.gov/marc/authority/">MARC21</reference>
+                        </localTypeDeclaration>
+                        <otherRecordId localType="024$a" localTypeDeclarationReference="MARC21">http://d-nb.info/gnd/118584618"</otherRecordId>		
+                        <otherRecordId localType="035$a" localTypeDeclarationReference="MARC21">(DE-101)118584618</otherRecordId>
+                        <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#gndIdentifier" localTypeDeclarationReference="GNDO">(DE-588)118584618</otherRecordId>
+                        <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">(DE-588a)118584618</otherRecordId>	
+                        <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">(DE-588c)4040426-2</otherRecordId>
+                        <rightsDeclaration>
+                           <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0 Universell</reference>
+                        </rightsDeclaration>
+                     </control>
                   </egXML>
                  ]]>
                </div>
