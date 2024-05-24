@@ -10,8 +10,9 @@
                   <p>The current drafting status of the EAS instance.</p>
                </div>
                <div type="description">
-                  <p>The maintenance status must occur on <gi>control</gi>. As an EAS instance
-                     is modified or other events happen to it (as recorded in the
+                  <p type="eac">The maintenance status must occur on <gi>control</gi>.</p>
+                  <p type="ead">The maintenance status may occur on <gi>control</gi>.</p>
+                  <p>As an EAS instance is modified or other events happen to it (as recorded in the
                         <gi>maintenanceHistory</gi> element), the maintenance status should also be
                      updated to reflect the current drafting status.</p>
                   <p>On first creation the status would be "new", which on revision can be changed
@@ -27,13 +28,20 @@
                      is deleted because it has been merged with another record, its status should be
                      given as "deletedMerged". A "derived" status value is available to indicate
                      that the record was derived from another descriptive system.</p>
+                 <p type="ead">Use the attribute <att>maintenanceStatusEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>maintenanceStatus</att>.</p>
                </div>
                <div type="values">
-                  <p>cancelled, deleted, deletedMerged, deletedReplaced, deletedSplit, derived, new,
+                  <p type="eac">cancelled, deleted, deletedMerged, deletedReplaced, deletedSplit, derived, new,
                      revised</p>
                </div>
+               <div type="datatype">
+		              <p type="ead">token</p>
+	             </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+   [...]
+</control>]]></egXML>
+                 <egXML xml:lang="eng" type="ead"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2" maintenanceStatus="new" maintenanceStatusEncoding="EASList" publicationStatus="published" publicationStatusEncoding="EASList" repositoryEncoding="iso15511" scriptEncoding="iso15924">
    [...]
 </control>]]></egXML>
                </div>
