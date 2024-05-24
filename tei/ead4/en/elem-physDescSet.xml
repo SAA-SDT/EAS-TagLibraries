@@ -1,43 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>Title</gi>
+		<gi>physDescSet</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Physical Description Set</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>A child element of <gi>identificationData</gi> used to bind two or more structured expressions of the physical description of the materials.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>physDescStructured (1..n)</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>identificationData</p>
 	</div>
 	<div type="attributes">
-		<p>
+    		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
+            			<label>audience</label>
+            			<item>Optional</item>
+           			<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>coverage</label>
+				<item>Optional</item>
+				<label>id</label>
+            			<item>Optional</item>
+            			<label>languageOfElement</label>
+            			<item>Optional</item>
+				<label>maintenanceEventReference</label>
+            			<item>Optional</item>
+            			<label>parallel</label>
+            			<item>Optional (values limited to: false, true)</item>
+            			<label>scriptOfElement</label>
+            			<item>Optional</item>
+            			<label>sourceReference</label>
+            			<item>Optional</item>
+            			<label>target</label>
+            			<item>Optional</item>
 			</list>
-		</p>
+    		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
-	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
-		</list>
+		<p><gi>physDescSet</gi> binds together two or more <gi>physDescStructured</gi> elements. A set of <gi>physDescStructured</gi> elements may relate in one of two ways: they may be parallel to each other or they may describe disparate parts that together represent the whole or part of the material described.
+For example, a <gi>physDescSet</gi> with <att>parallel</att> with value "true" might bind a <gi>physDescStructured</gi> element with <att>physDescStructuredType</att> with value "carrier" and a <gi>physDescStructured</gi> element with <att>physDescStructuredType</att> with value "spaceOccupied," indicating that the two <gi>physDescStructured</gi> elements describe the same materials in different ways and are therefore parallel statements of extent. <att>parallel</att> with value "true" denotes that <gi>physDescSet</gi> and its child <gi>physDescStructured</gi> elements share the same coverage value, i.e., a statement of extent for part of the materials described cannot be parallel to a statement of extent for the whole of the materials described.</p>
+<p>Alternately, a <gi>physDescSet</gi> with <att>parallel</att> with value "false" may combine two or more <gi>physDescStructured</gi> elements that do not describe the same materials. <att>parallel</att> with value "false" denotes that <gi>physDescStructured</gi> elements that comprise the set all share <att>coverage</att> with value "part" (two or more extent statements with <att>coverage</att> with value "whole" are by definition parallel).</p>
+<p>A <gi>physDescSet</gi> with <att>parallel</att> with value "false" and <att>coverage</att> with value "whole" indicates multiple statements of extent that in sum represent the whole of the materials being described.</p>
+<p>A <gi>physDescSet</gi> with <att>parallel</att> with value "false" and <att>coverage</att> with value "part" indicates multiple statements of extent that in sum represent a part of the materials being described.</p>
+<p>It is not necessary to bind multiple <gi>physDescStructured</gi> elements within <gi>physDescSet</gi>. Only do so when you need to convey the relationships indicated by parallel and coverage.</p>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
