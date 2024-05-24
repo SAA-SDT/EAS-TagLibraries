@@ -10,7 +10,7 @@
 		<p>Specifies whether a statement of physical description or analog respectively digital instantiation(s) relates to the entire unit being described or only a part thereof.</p>
 	</div>
 	<div type="description">
-		<p>Use <att>coverage</att> with <gi>physDescStructured</gi> to indicate whether the statement of physical description refers to the entire unit being described or only a part thereof.</p>
+		<p>Use <att>coverage</att> with <gi>physDescStructured</gi> or <gi>physDescSet</gi> to indicate whether the statement of physical description refers to the entire unit being described or only a part thereof.</p>
 		<p>Use <att>coverage</att> with <gi>formAvailable</gi> to indicate whether the digital archival object or the copy or any other type of instantiation represents the entire set of records being described or a part of it.</p>
 		<p>Use the attribute <att>coverageEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>coverage</att>.</p>
 	</div>
