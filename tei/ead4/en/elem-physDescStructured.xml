@@ -1,43 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>Title</gi>
+		<gi>physDescStructured</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Structured Physical Description</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>An element that provides a method for expressing structured statements about the extent and physical characteristics of the materials being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>descriptiveNote (0..1), dimensions (0..n), physFacet (0..n), quantity (1..1), unitType (1..1)</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>identificationData, physDescSet</p>
 	</div>
 	<div type="attributes">
-		<p>
+    		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
-			</list>
-		</p>
+            			<label>audience</label>
+            			<item>Optional</item>
+           			<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>coverage</label>
+            			<item>Optional</item>
+            			<label>id</label>
+            			<item>Optional</item>
+            			<label>languageOfElement</label>
+            			<item>Optional</item>
+				<label>maintenanceEventReference</label>
+            			<item>Optional</item>
+            			<label>physDescStructuredType</label>
+            			<item>Optional</item>
+            			<label>scriptOfElement</label>
+            			<item>Optional</item>
+            			<label>sourceReference</label>
+            			<item>Optional</item>
+            			<label>target</label>
+            			<item>Optional</item>
+        		</list>
+    		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
+		<p><gi>physDescStructured</gi> creates structured statements describing the physical or logical extent or the medium of the materials being described. The use of <gi>physDescStructured</gi> allows for quantifying the extent of the whole or a part of the materials described in a form that will be machine processable and that will facilitate reporting, statistics, sorting, and importing and exporting data in a collection management system.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+                <list type="simple">
+                	<item><gi>quantity</gi></item>
+                	<item><gi>unitType</gi></item>
+                	<item><gi>dimensions</gi> or <gi>physFacet</gi></item>
+                	<item><gi>descriptiveNote</gi></item>
+                </list>
 	</div>
 	<div type="attributeusage">
 		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
+			<item>Use <att>physDescStructuredType</att> to specify the nature of the statement about the materials being described and <att>coverage</att> to indicate whether the statement applies to all materials grouped in the unit of description or only part of them.</item>
+			<item>Use the attributes <att>coverageEncoding</att> and <att>physDescStructuredTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>coveraged</att> and <att>physDescStructuredType</att> respecively.</item>
 		</list>
 	</div>	
 	<div type="seealso">
 		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
+			<item>Use <gi>physDesc</gi> to express physical description in a non-machine-processable form and in instances where data exchange is not a concern.</item>
+			<item>Use <physDescSet> to bind two or more <physDescStructured> elements in order to convey parallel or coverage relationships between them.</item>
 		</list>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Within identificationDate: Optional, repeatable</p>
+		<p>Within physDescSet: Required, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
