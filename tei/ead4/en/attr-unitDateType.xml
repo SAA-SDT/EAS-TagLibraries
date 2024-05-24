@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<att>Title</att>
+		<att>unitDateType</att>
 	</head>
 	<div type="fullName">
-		<p>Full Attribute Name</p>
+		<p>Unit Date Type</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the attribute is used for</p>
+		<p>Identifies the type of date expressed in <gi>unitDate</gi> or <gi>unitDateStructured</gi>.</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the attribute</p>
-	</div>
-	<div type="values">
-		<p>Available values (include either values or datatype)</p>
+		<p>Use <att>unitDateType</att> with <gi>unitDate</gi> and <gi>unitDateStructured</gi> to specify the nature of the dates mentioned, e.g. "bulk" or "inclusive".</p>
+		<p>Use the attribute <att>unitDateTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>unitDateType</att>.</p>
 	</div>
 	<div type="datatype">
-		<p>Datatype of the attribute (include either values or datatype)</p>
+		<p>token</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
