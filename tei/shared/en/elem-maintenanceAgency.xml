@@ -51,7 +51,7 @@
                      relation to the EAS instance may be given in <gi>descriptiveNote</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
-                     <item><gi>agencyCode (if used)</gi></item>
+                     <item><gi>agencyCode</gi> (if used)</item>
                      <item><gi>agencyName</gi></item>
                      <item><gi>otherAgencyCode</gi></item>
                      <item><gi>descriptiveNote</gi></item>
