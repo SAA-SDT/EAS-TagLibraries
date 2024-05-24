@@ -20,7 +20,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional <p type="eac">(values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>countryCode</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -45,13 +45,13 @@
                      responsible for the creation, maintenance, and/or dissemination of the EAS
                      instance.</p>
                   <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyCode</gi> or
-                        <gi>agencyName</gi> to provide the name of the institution or service. It
+                        <gi>agencyName</gi> to provide the identifier or the name of the institution or service. It
                      may also include the optional child element <gi>otherAgencyCode</gi> to provide
-                     any additional identifiers. Any general information about the institution in
+                     any additional identifiers. Any general information about the institution or service in
                      relation to the EAS instance may be given in <gi>descriptiveNote</gi>.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
-                     <item><gi>agencyCode</gi></item>
+                     <item><gi>agencyCode (if used)</gi></item>
                      <item><gi>agencyName</gi></item>
                      <item><gi>otherAgencyCode</gi></item>
                      <item><gi>descriptiveNote</gi></item>
@@ -64,7 +64,7 @@
                   </list>
                </div>
                <div type="availability">
-                  <p>Required, not Repeatable</p>
+                  <p>Required, not repeatable</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng">
