@@ -45,6 +45,11 @@
 		<p><gi>physDesc</gi> is for describing, in an unstructured statement, the physical or logical extent, medium, appearance, or construction of the described materials, such as their dimensions, a count of their quantity, a statement about the space they occupy, and terms describing their genre, form, or function, as well as any other aspects of their appearance, such as color, substance, style, and technique or method of creation.</p>
 <p>Those who wish to record formally structured elements of physical description in order to enable consistent machine processing and data exchange will want to use <gi>physDescStructured</gi> instead of <gi>physDesc</gi>.</p>
 	</div>
+	<div type="seealso">
+		<list type="simple">
+			<item>Use <gi>physDescStructured</gi> to express physical description in structured statements.</item>
+		</list>
+	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>
