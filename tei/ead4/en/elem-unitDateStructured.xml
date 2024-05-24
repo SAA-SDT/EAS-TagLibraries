@@ -1,43 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>Title</gi>
+		<gi>unitDateStructured</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Structured Date of the Unit</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>A child element of <gi>identificationData</gi> that enables structured, machine-processable expressions of the dates of the materials being described</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>date or dateRange or dateSet (1..1)</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>identificationData</p>
 	</div>
 	<div type="attributes">
-		<p>
+    		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
-			</list>
-		</p>
+            			<label>audience</label>
+            			<item>Optional</item>
+           			<label>calendar</label>
+            			<item>Optional</item>
+           			<label>certainty</label>
+            			<item>Optional</item>
+           			<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>dateChar</label>
+            			<item>Optional</item>
+           			<label>era</label>
+            			<item>Optional</item>
+           			<label>id</label>
+            			<item>Optional</item>
+            			<label>languageOfElement</label>
+            			<item>Optional</item>
+				<label>maintenanceEventReference</label>
+            			<item>Optional</item>
+            			<label>scriptOfElement</label>
+            			<item>Optional</item>
+            			<label>sourceReference</label>
+            			<item>Optional</item>
+            			<label>target</label>
+            			<item>Optional</item>
+				<label>unitDateType</label>
+            			<item>Optional</item>
+           		</list>
+    		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
+		<p><gi>unitDateStructured</gi> provides a machine-processable statement of the date or dates the materials described were created, issued, copyrighted, broadcast, etc. <gi>unitDateStructured</gi> must contain one of the following child elements: <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>.</p>
+<p><gi>unitDateStructured</gi> may contain only one child, therefore <gi>dateSet</gi> must be used in situations where complex date information needs to be conveyed and requires at least two child elements. A date set may combine two or more <gi>date</gi> and <gi>dateRange</gi> elements.</p>
 	</div>
 	<div type="attributeusage">
 		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
+			<item>Use <att>unitDateType</att> to indicate if <gi>unitDateStructured</gi> represents inclusive dates or bulk (predominant) dates.</item>
 		</list>
 	</div>	
 	<div type="seealso">
 		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
+			<item>Use <gi>unitDate</gi> to provide an unstructured statement of the dates of the material being described.</item>
 		</list>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
