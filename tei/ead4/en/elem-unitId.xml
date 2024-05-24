@@ -1,43 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>Title</gi>
+		<gi>unitId</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Identifier of the Unit</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>A child element of <gi>identificationData</gi> that provides an identifier for the materials being described, such as an accession number or a reference code.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>[text], reference (0..n), referringString (0..n), span (0..n)</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>identificationData</p>
 	</div>
 	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
-			</list>
-		</p>
-	</div>
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>countryCode</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>repositoryCode</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+        </div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
+		<p><gi>unitId</gi> may contain any alpha-numeric text string that serves as a unique reference point or control number for the described material, such as a lot number, an accession number, a classification number, a reference code, or an entry number in a bibliography or catalog. <gi>unitId</gi> is primarily a logical designation, which sometimes indirectly provides location information, as in the case of a classification number.</p>
 	</div>
 	<div type="attributeusage">
 		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
+			<item>Although not required, the <att>countryCode</att> and <att>repositoryCode</att> should be used in <gi>unitId</gi> to comply with ISAD(G) element 3.1.1.</item>
+			<item>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely and persistently identifies the described materials such as an Archival Resource Key (ARK) or a Digital Object Identifier (DOI). Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the persistent identifier scheme used.</item>
 		</list>
 	</div>	
 	<div type="seealso">
 		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
+			<item>Use <gi>container</gi> and <gi>physLoc</gi> to designate the physical housing or location of the described materials.</item>
+			<item>Do not confuse with <gi>recordId</gi> or <gi>otherRecordId</gi>, which are identifiers for the EAS instance itself, not the materials described therein.</item>
 		</list>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
