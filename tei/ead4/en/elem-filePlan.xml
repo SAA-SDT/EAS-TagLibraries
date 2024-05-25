@@ -44,6 +44,11 @@
 	<div type="description">
 		<p>A filing plan is usually identified by the type of system used, e.g., alphabetical, numerical, alpha-numerical, decimal, color-coded, etc. It is often hierarchical and may include the filing guidelines of the originating entity. Additional types include a drawing of a room layout or a scientific scheme.</p>
 		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>filePlan</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                     <item><gi>abstract</gi> (if used)</item>
+                     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+                </list>
 	</div>
 	<div type="seealso">
 		<list type="simple">
