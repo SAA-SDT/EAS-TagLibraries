@@ -45,6 +45,11 @@
 		<p>Use <gi>arrangement</gi> to record the logical or physical groupings within a hierarchical structure and their relationships. This includes how the described materials have been subdivided into smaller units, e.g., record groups into series. May also indicate the filing sequence of the described materials, for example chronological or alphabetical arrangement.</p>
 		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>arrangement</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
 	</div>
+	<div type="seealso">
+		<list type="simple">
+			<item>Do not confuse with <gi>filePlan</gi>, which includes information about any classification scheme used by the original creator.</item>
+		</list>
+	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>
