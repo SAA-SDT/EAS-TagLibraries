@@ -43,8 +43,13 @@
 	</div>
 	<div type="description">
 		<p><gi>otherDescriptiveInfo</gi> may be useful in converting legacy finding aids to the EAD format, by designating as "other" information everything that does not easily map to a more specific element. <gi>otherDescriptiveInfo</gi> may be used when information about the described materials does not correspond to another element’s definition, when the information is heterogeneous enough to make a single classification difficult, and when shifting the information to permit more specific content designation would be too costly or burdensome.</p>
-		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>otherDescriptiveInfo</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
 		<p>Use <gi>otherDescriptiveInfo</gi> only after considering how the existence of unspecified content will affect search, retrieval, and display.</p>
+		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>otherDescriptiveInfo</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                     <item><gi>abstract</gi> (if used)</item>
+                     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+                </list>
 	</div>
 	<div type="attributeusage">
 		<list type="simple">
