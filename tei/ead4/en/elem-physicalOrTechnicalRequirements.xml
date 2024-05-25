@@ -44,6 +44,11 @@
 	<div type="description">
 		<p><gi>physicalOrTechnicalRequirements</gi> is used to capture any physical or technical characteristics that affect the storage or use of the materials described. This may include details of their physical composition, preservation requirements, or particular hardware or software needed to access the materials.</p>
 		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>physicalOrTechnicalRequirements</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                     <item><gi>abstract</gi> (if used)</item>
+                     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+                </list>
 	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
