@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>Title</gi>
+		<gi>identificationData</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Identification Data</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>A wrapper element that encloses information essential for identifying the material being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>container (0..n), head (0..1), identificationDataNote (0..n), languageOfMaterial (0..n), legalStatus (0..n), materialSpec (0..n), physDescSet (0..n), physDesc (0..n), physDescStructured (0..n), physLoc (0..n), unitDate (0..n), unitDateStructured (0..n), unitId (0..n), unitTitle (0..n)</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
 	</div>
 	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
-			</list>
-		</p>
+    		<p>
+        		<list type="gloss">
+            			<label>audience</label>
+            			<item>Optional</item>
+            			<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>id</label>
+            			<item>Optional</item>
+            			<label>languageOfElement</label>
+            			<item>Optional</item>
+            			<label>maintenanceEventReference</label>
+            			<item>Optional</item>
+            			<label>scriptOfElement</label>
+            			<item>Optional</item>
+            			<label>sourceReference</label>
+            			<item>Optional</item>
+            			<label>target</label>
+            			<item>Optional</item>
+        		</list>
+    		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
-	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
-		</list>
+		<p><gi>identificationData</gi> binds together other elements that provide core information needed for identifying the described materials. <gi>identificationData</gi> occurs in <gi>archDesc</gi> and <gi>c</gi> respectively <gi>c01</gi> to <gi>c12</gi>. The various <gi>identificationData</gi> child elements are intended for brief, clearly designated statements of information, whereas following sibling elements of <gi>identificationData</gi> such as <gi>custodHist</gi>, <gi>arrangement</gi>, or <gi>scopeContent</gi> allow for more detailed, narrative description.</p>
+		<p><gi>identificationData</gi> groups elements that constitute a good basic description of an archival unit. This grouping ensures that the same data elements and structure are available at every level of description within the EAD hierarchy. It facilitates the retrieval or output of a coherent body of elements for resource discovery and recognition.</p>
+		<p>The <gi>identificationData</gi> in <gi>archDesc</gi> is sometimes called the high-level <gi>identificationData</gi>, because it covers the entirety of the materials described by the EAD instance. Consider using the following child elements in the high-level <gi>identificationData</gi>: <gi>unitTitle</gi>, <gi>unitId</gi>, <gi>unitDate</gi> or <gi>unitDateStructured</gi>, <gi>physDesc</gi> or <gi>physDescStructured</gi>, and <gi>physLoc</gi> (if applicable to a repository's practice). <gi>identificationData</gi> within components can have fewer elements, and might have only <gi>container</gi> or <gi>unitId</gi> and <gi>unitTitle</gi>.</p>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Required, not repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
