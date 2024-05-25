@@ -44,6 +44,11 @@
 	<div type="description">
 		<p>A statement of the rationale for decisions related to appraisal and disposition of the materials being described. Such decisions may be based upon the records’ current administrative, legal, and fiscal use; their evidential, intrinsic, and informational value; their arrangement and condition; and their relationship to other records. May include information about destruction actions, sampling, and disposition schedules.</p>
 		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>appraisal</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                     <item><gi>abstract</gi> (if used)</item>
+                     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+                </list>
 	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
