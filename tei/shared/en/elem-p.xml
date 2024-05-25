@@ -10,16 +10,18 @@
                   <p>A general purpose element used to encode blocks of text.</p>
                </div>
                <div type="mayContain">
-                  <p>[text], reference (0..n), span (0..n)</p>
+                  <p type="eac">[text], reference (0..n), span (0..n)</p>
+                  <p type="ead">[text], reference (0..n), referringString (0..n), span (0..n)</p>
                </div>
                <div type="mayOccurWithin">
-                  <p>biogHist, descriptiveNote, generalContext, structureOrGenealogy</p>
+                  <p type="eac">biogHist, descriptiveNote, generalContext, structureOrGenealogy</p>
+                  <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, descriptiveNote, filePlan, formAvailable, identificationDataNote, otherDescriptiveInfo, otherFindAid, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -38,34 +40,21 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>p</gi> for blocks of text. A paragraph may be a subdivision of a larger
-                     composition or it may exist alone. It is usually typographically distinguished:
-                     A line space is often left blank before it; the text begins on a new line; and
-                     the first letter of the first word may be indented, enlarged, or both.</p>
+                  <p>Use <gi>p</gi> for blocks of text. A paragraph may be a subdivision of a larger composition or it may exist alone. It is usually typographically distinguished: A line space is often left blank before it; the text begins on a new line; and the first letter of the first word may be indented, enlarged, or both.</p>
                </div>
                <div type="availability">
-                  <p>Within <gi>descriptiveNote</gi>: required, repeatable.</p>
+                  <p type="eac">Within <gi>descriptiveNote</gi>: required, repeatable.</p>
+                  <p type="ead">Within <gi>descriptiveNote</gi> and <gi>identificationDataNote</gi>: required, repeatable.</p>
                   <p>Within all other parents: optional, repeatable.</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:biogHist>
-                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and
-                           traveler. From 1908 to 1917, he wrote poetry and prose for numerous
-                           magazines and newspapers in New York City, publishing two pulp novels,
-                              <eac:span style="font-style:italic">What Happened to Mary</eac:span>
-                           and <eac:span style="font-style:italic">The Remarkable Adventures of
-                              Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
-                        <eac:p>During 1918, he traveled extensively in Mexico and Central America,
-                           writing for the U.S. Committee of Public Information in Santiago de
-                           Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro,
-                           where they founded <eac:span style="font-style:italic">Brazilian
-                              American</eac:span>, a weekly magazine that ran until 1929. With
-                           Brown's mother, Cora, the Browns also established magazines in Mexico
-                           City and London: <eac:span style="font-style:italic">Mexican
-                              American</eac:span> (1924-1929) and <eac:span style="font-style:italic">British American</eac:span>
-                           (1926-1929).</eac:p>
-                     </eac:biogHist>
+                  <egXML xml:lang="eng">
+                     <![CDATA[
+                     <biogHist>
+                        <p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).</p>
+                        <p>During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <pan style="font-style:italic">Brazilian American</span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <pan style="font-style:italic">Mexican American</span> (1924-1929) and <span style="font-style:italic">British American</span> (1926-1929).</p>
+                     </biogHist>
+                     ]]>
                   </egXML>
                </div>
             </div>
