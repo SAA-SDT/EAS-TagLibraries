@@ -51,7 +51,7 @@
 	
 	<div type="seealso">
 		<list type="simple">
-			<item>Use the sibling element <gi>agent</gi> to encode the agent’s name.</item>
+			<item>Use the element <gi>agentName</gi> to encode the agent’s name.</item>
 		</list>
 	</div>
 	<div type="availability">
