@@ -7,10 +7,10 @@
 		<p>Agent Name</p>
 	</div>
 	<div type="summary">
-		<p>A required child element of <gi>agent</gi> that indicates the name of the agent responsible for the creation, modification, or deletion of an EAD instance.</p>
+		<p>A required child element of <gi>agent</gi> that indicates the name of the agent responsible for the creation, modification, or deletion of an EAD instance, the materials described therein, and/or any type of finding aid for those materials.</p>
 	</div>
 	<div type="mayContain">
-		<p>text</p>
+		<p>[text]</p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>agent</p>
@@ -48,12 +48,18 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>agentName</gi> to indicate the name of the agent responsible for the creation, modification, or deletion of an EAD instance, as captured in <gi>maintenanceEvent</gi>.</p>
-	</div>
+		<p>Use <gi>agentName</gi> to indicate the name of the agent responsible for the creation, modification, or deletion of an EAD instance, as captured in <gi>maintenanceEvent</gi>. It is recommended to use authorized vocabularies in cases where the element is valorized with a well-known corporation (i.e. "Library of Congress").</p> 
+		<p><gi>agentName</gi> might also be used to name the agent responsible for the creation, modification, or publication of a finding aid of the materials being described (in <gi>findAidDesc</gi>) or to name an agent related in some way to the materials being described themselves, e.g. as the creator of such materials, as the previous or current holder of the materials, or as the subject of the materials etc. (in <gi>agents</gi>).</p>
 	
+	</div>
+	<div type="attributeusage">
+		<list type="simple">
+			<item>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</item>
+		</list>
+	</div>	
 	<div type="seealso">
 		<list type="simple">
-			<item>Use the element <gi>agentType</gi> to encode the agent’s type.</item>
+			<item>Use this element in combination with <gi>agentType</gi> and <gi>agentRole</gi> to encode also the agent’s type and role. I.e.: <gi>agentName</gi>: "John Bianchi",<gi>agentType</gi>: "person", <gi>agentRole</gi>: "author" (in <gi>findingAidDesc</gi>).</item>
 		</list>
 	</div>
 	<div type="availability">
