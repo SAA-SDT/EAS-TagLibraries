@@ -7,7 +7,7 @@
 		<p>Agent Type</p>
 	</div>
 	<div type="summary">
-		<p>A required child element of <gi>maintenanceevent</gi> that indicates the type of agent responsible for the creation, modification, or deletion of an EAD instance.</p>
+		<p>An optional child element of <gi>agent</gi> that indicates the type of agent responsible for the creation, modification, or deletion of an EAD instance.</p>
 	</div>
 	<div type="mayContain">
 		<p>text</p>
