@@ -46,16 +46,6 @@
 		<p>Although <gi>subjectHeadings</gi> is often used within <archdesc> to provide significant access terms for the entirety of the materials described, it may be used at the component level to provide terms specific to a component if so desired.</p>
 		<p> This element helps to provide more standardization enabling an authority-controlled searching across finding aids, in particular where terms are taken from internationally or nationally controlled vocabularies such as the Library of Congress Subject Headings (LCSH) or the UK Archival Thesaurus (UKAT) for topics, the Virtual International Authority File (VIAF) for names, or GeoNames for places. </p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
-		</list>
-	</div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>
