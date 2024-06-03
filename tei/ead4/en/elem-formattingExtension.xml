@@ -15,7 +15,7 @@
 			namespace.</p>
 	</div>
 	<div type="mayContain">
-		<p>Any element that is a namespace other than the current namespace.</p>
+		<p>Any element that is in a namespace other than the current namespace.</p>
 	</div>
 	<div type="mayOccurWithin">
 		<!--It seems like we're encoding for display here, so perhaps we should go with an automated Schema-to-TEI approach at some point, rather than keeping these files in sync by hand moving forward
@@ -43,12 +43,12 @@
 		</p>
 	</div>
 	<div type="description">
-		<p><gi>formattingExtension</gi> provides the optoin to embed external namespaces directly within the source file, when complex formatting is required. It should preferably be used for embedding XHTML data.</p>
+		<p><gi>formattingExtension</gi> provides the option to embed external namespaces directly within the source file, when complex formatting is required. It should preferably be used for embedding XHTML data.</p>
 		<p>When using this element, it is recommended that the EAS file is associated with the EAS NVDL for validation purposes.</p>
 	</div>
 	<div type="availability">
 		<p>Optional. Only repeatable within the context of <gi>findAidDesc</gi>.</p>
-		<p>When used outside of <gi>findAidDesc</gi>, the encoder must choose to use this wrapping element or to use the <gi>p</gi> elements that are defined within the current EAS schema.</p>
+		<p>When used outside of <gi>findAidDesc</gi> to encode a narrative description, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or to use one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
