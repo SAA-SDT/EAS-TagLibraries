@@ -1,43 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="elementDocumentation" xml:id="elem-formattingExtension"
+	xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2"
+	xmlns="http://www.tei-c.org/ns/1.0">
 	<head>
-		<gi>Title</gi>
+		<gi>formattingExtension</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Formatting Extension</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>An optional, wrapping element that may be utilized to encode formatting features that are
+			not part of the EAS data model. When using the EAS-provided NVDL Schema validaiton
+			procedure, this element will require that all elements encoded within are from the XHTML
+			namespace.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>Any element that is a namespace other than the current namespace.</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<!--It seems like we're encoding for display here, so perhaps we should go with an automated Schema-to-TEI approach at some point, rather than keeping these files in sync by hand moving forward
+		...especially with EAF, etc. Yikes! -->
+		<!-- rather that sort A-Z in one list, would it be better to break out by type?  e.g. narrative appearance vs. findingAidDesc vs. former dsc + new formAvailable ? -->
+		<!-- also, in this case, i think we should take a harder line and *only* allow this extension on narrative elements, but also to be more flexible and allow it to sit side-by-side with paragraphs. i can certainly see the benefit of having a formattingExtension follow a local set of "paragraphs". -->
+		<p>accessConditions (0..1), accruals (0..1), abstract (0..1), appraisal (0..1), arrangement
+			(0..1), bioghist (0..1), custodHist (0..1), descriptionOfComponents (0..1), filePlan
+			(0..1), findAidDesc (0..n), formAvailable (0..1), otherDescriptiveInfo (0..1),
+			otherFindAid (0..1), physicalOrTechnicalRequirements (0..1), preferCite (0..1),
+			processInfo (0..1), publicationNote (0..1), relatedMaterial (0..1), scopeContent (0..1),
+			separatedMaterial (0..1), sourceOfAcquisition (0..1), subjectHeadings (0..1),
+			useConditions (0..1)</p>
 	</div>
 	<div type="attributes">
 		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
+				<label>audience</label>
+				<item>Optional</item>
+				<label>id</label>
+				<item>Optional</item>
+				<label>target</label>
+				<item>Optional</item>
 			</list>
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
-	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
-		</list>
+		<p><gi>formattingExtension</gi> provides the optoin to embed external namespaces directly within the source file, when complex formatting is required. It should preferably be used for embedding XHTML data.</p>
+		<p>When using this element, it is recommended that the EAS file is associated with the EAS NVDL for validation purposes.</p>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Optional. Only repeatable within the context of <gi>findAidDesc</gi>.</p>
+		<p>When used outside of <gi>findAidDesc</gi>, the encoder must choose to use this wrapping element or to use the <gi>p</gi> elements that are defined within the current EAS schema.</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
