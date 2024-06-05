@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="elementDocumentation" xml:id="elem-subject" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
 		<gi>subject</gi>
 	</head>
@@ -28,7 +28,7 @@
             		<item>Optional</item>
             		<label>localType</label>
             		<item>Optional</item>
-            		<label>localTypeDeclarationReference</item>
+            		<label>localTypeDeclarationReference</label>
             		<item>Optional</item>
             		<label>maintenanceEventReference</label>
             		<item>Optional</item>
@@ -48,7 +48,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>                  <p>Indicates a controlled topic reflected in the described materials.</p>
+		<p>Indicates a controlled topic reflected in the described materials.</p>
                   <p>
                      <gi>subject</gi> must contain one or more <gi>term</gi> elements. A single <gi>term</gi> may be used for the entire string, or if more granularity is desired, multiple <gi>term</gi> elements may be
                      used to capture each component of the subject term, e.g.,</p>

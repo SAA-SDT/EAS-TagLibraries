@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="attributeDocumentation" xml:id="attr-statusEncoding" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
 		<att>statusEncoding</att>
 	</head>
@@ -19,6 +19,6 @@
 		<p>EASList, otherStatusEncoding</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" statusEncoding="EASList"> [...] </ead:control>]]></egXML>		
+		<egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924" statusEncoding="EASList"> [...] </control>]]></egXML>		
 	</div>
 </div>
