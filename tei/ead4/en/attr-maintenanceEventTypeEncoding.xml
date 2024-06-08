@@ -7,12 +7,10 @@
 		<p>Maintenance Event Type Encoding</p>
 	</div>
 	<div type="summary">
-		<p>The authoritative source or rules for values supplied in <att>maintenanceEventType</att>.</p>
+		<p>Specifies the authoritative source or rules for values used to identify the type of maintenance activity.</p>
 	</div>
 	<div type="description">
-		<p>The authoritative source or rules for values supplied in <att>maintenanceEventType</att>
-                     within <gi>maintenanceEvent</gi>. If the value "otherMaintenanceEventTypeEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
+		<p><att>maintenanceEventTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>maintenanceEventType</att> within <gi>maintenanceEvent</gi>. If the value "EASList" is selected, <att>maintenanceEventType</att> will be expected with the values "cancelled", "created", "deleted", "derived", "revised", "unknown", or "updated". If the value "otherMaintenanceEventTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherMaintenanceEventTypeEncoding</p>
