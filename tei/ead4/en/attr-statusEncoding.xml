@@ -9,11 +9,11 @@
 	<div type="summary">
 		<p>The authoritative source or rules for values supplied in <att>status</att>.</p>
 	</div>
+	<div type="summary">
+		<p>Specifies the authoritative source or rules for values used to indicate the status and certainty of the information provided in various elements.</p>
+	</div>
 	<div type="description">
-		<p>The authoritative source or rules for values supplied in <att>status</att>
-                     within <gi>date</gi>, <gi>agencyCode</gi>, <gi>itherAgencyCode</gi>, <gi>unitDate</gi>, <gi>fromDate</gi> and <gi>toDate</gi>. If the value
-                     "otherStatusEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
+		<p><att>statusEncoding</att> specifies the authoritative source or rules for values supplied in <att>status</att> within <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>, and <gi>unitDate</gi>. If the value "EASList" is selected, <att>status</att> will be expected with the values "authorized" and "alternative" (for agency codes), "unknown" or "ongoing" (for dates). If the value "otherStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherStatusEncoding</p>
