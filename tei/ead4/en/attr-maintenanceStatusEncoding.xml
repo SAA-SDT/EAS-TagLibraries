@@ -7,12 +7,10 @@
 		<p>Maintenance Status Encoding</p>
 	</div>
 	<div type="summary">
-		<p>The authoritative source or rules for values supplied in <att>maintenanceStatus</att>.</p>
+		<p>Specifies the authoritative source or rules for values used to indicate the current version status of the XML document.</p>
 	</div>
 	<div type="description">
-		<p>The authoritative source or rules for values supplied in <att>maintenanceStatus</att>
-                     within <gi>control</gi>. If the value "otherMaintenanceStatusEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
+		<p><att>maintenanceEventTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>maintenanceStatus</att> within <gi>control</gi>. If the value "EASList" is selected, <att>maintenanceStatus</att> will be expected with the values "cancelled", "deleted", "deletedMerged", "deletedReplaced", "deletedSplit", "derived", "new", or "revised". If the value "otherMaintenanceStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherMaintenanceStatusEncoding</p>
@@ -21,6 +19,5 @@
 		<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="ead">
                      <![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" maintenanceStatusEncoding="EASList"> [...] </control>]]>
                   </egXML>
-		
 	</div>
 </div>
