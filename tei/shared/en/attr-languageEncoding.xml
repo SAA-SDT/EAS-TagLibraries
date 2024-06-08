@@ -7,16 +7,13 @@
                   <p>Language Encoding</p>
                </div>
                <div type="summary">
-                  <p>Specifies which standard list of codes is used to identify the language of the
-                     EAC-CPF instance and languages represented in the creative work of the CPF
-                     entity being described. 
-                  </p>
+		              <p type="eac">Specifies the authoritative source or rules for codes used to identify the language of the EAS instance as a whole, of a specific element, or represented in the creative work of the CPF entity being described.</p>
+                 <p type="ead">Specifies the authoritative source or rules for codes used to identify the language of the EAS instance as a whole, of a specific element, or represented in the materials being described.</p>
                </div>
-               <div type="description">
-                  <p>The codes themselves are specified in <att>languageCode</att> within <gi>language</gi> and <att>languageOfElement</att>
-                     in all non-empty elements. Available in <gi>control</gi>. If the value
-                     "otherLanguageEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+	             <div type="description">
+                  <p><att>languageEncoding</att> specifies the authoritative source or rules for values supplied in <att>languageCode</att> within <gi>languageDeclaration</gi> and <gi>language</gi> and in <att>languageOfElement</att> available in all non-empty elements.</p>
+                  <p type="eac">This can either be one of the ISO standards 639-1, 639-2b, and 639-3, the IETF BCP 47 language tag or an alternative code list. If the value "otherDateEncoding" is selected, such an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+                 <p type="ead">This can either be one of the ISO standards 639-1, 639-2, and 639-3, the IETF BCP 47 language tag or an alternative code list. If the value "otherDateEncoding" is selected, such an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                  <p type="eac">iso639-1, iso639-2b, iso639-3, ietf-bcp-47, otherLanguageEncoding</p> 
