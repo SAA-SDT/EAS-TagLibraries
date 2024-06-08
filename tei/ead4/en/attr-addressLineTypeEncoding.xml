@@ -7,11 +7,10 @@
 		<p>Address Line Type Encoding</p>
 	</div>
 	<div type="summary">
-		<p>Specifies which standard list of terms is used to identify the type of address line given as part of a physical address.</p>
+		<p>Specifies the authoritative source or rules for values used to identify the type of address line given as part of a physical address.</p>
 	</div>
 	<div type="description">
-		<p>The terms themselves are given in <att>addressLineType</att> in <gi>addressLine</gi>. Available in <gi>control</gi>. If the value "otherAddressLineTypeEncoding" is selected an alternate list of terms should be specified in <gi>conventionDeclaration</gi>.</p>
-		<p>The authoritative source or rules for values supplied in <att>addressLineTpye</att> in <gi>addressLine</gi>. If the value "EASList" is selected, <att>addressLineType</att> will be expected with the values "county", "country", "district", "municipality", "postBox", "postalCode", "region", or "street". If the value "otherAddressLineTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
+		<p><att>addressLineTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>addressLineTpye</att> in <gi>addressLine</gi>. If the value "EASList" is selected, <att>addressLineType</att> will be expected with the values "county", "country", "district", "municipality", "postBox", "postalCode", "region", or "street". If the value "otherAddressLineTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
 	</div>
 	<div type="values">
 		<p>EASList, otherAddressLineTypeEncoding</p>
