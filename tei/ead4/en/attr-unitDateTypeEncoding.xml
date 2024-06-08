@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="attributeDocumentation" xml:id="attr-unitDateTypeEncoding" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
 		<att>unitDateTypeEncoding</att>
 	</head>
@@ -7,18 +7,15 @@
 		<p>Unit Date Type Encoding</p>
 	</div>
 	<div type="summary">
-		<p>The authoritative source or rules for values supplied in <att>unitDateType</att>.</p>
+		<p>Specifies the authoritative source or rules for values used to identify the type of date expressed.</p>
 	</div>
 	<div type="description">
-		<p>The authoritative source or rules for values supplied in <att>unitDateType</att>
-                     within <gi>unitDate</gi> and <gi>unitDateStructured</gi>. If the value
-                     "otherUnitDateTypeEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+		<p><att>unitDateTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>unitDateType</att> within <gi>unitDate</gi> and <gi>unitDateStructured</gi>. If the value "EASList" is selected, <att>unitDateType</att> will be expected with the values "bulk" or "inclusive". If the value "otherUnitDateTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherUnitDateTypeEncoding</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" unitDateTypeEncoding="EASList"> [...] </ead:control>]]></egXML>
+		<egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" unitDateTypeEncoding="EASList"> [...] </control>]]></egXML>
 	</div>
 </div>

@@ -7,13 +7,13 @@
                   <p>Repository Encoding</p>
                </div>
                <div type="summary">
-                  <p>The authoritative source or rules for values supplied in <gi>agencyCode</gi>.</p>
+		              <p type="eac">Specifies the authoritative source or rules for codes used to identify the maintenance agency of an EAS instance.</p>
+                 <p type="ead">Specifies the authoritative source or rules for codes used to identify the maintenance agency of an EAS instance or the institution holding the materials being described.</p>
                </div>
-               <div type="description">
-                  <p>The authoritative source or rules for values supplied in <gi>agencyCode</gi>.
-                     If the value "otherRepositoryEncoding" is selected an alternate code list
-                     should be specified in <gi>conventionDeclaration</gi>. Optionally available only in
-                     <gi>control</gi>.</p>
+	             <div type="description">
+                  <p type="eac"><att>repositoryEncoding</att> specifies the authoritative source or rules for values used within <gi>agencyCode</gi>.</p>
+                 <p type="ead"><att>repositoryEncoding</att> specifies the authoritative source or rules for values used within <gi>agencyCode</gi> and supplied in <att>repositoryCode</att> within <gi>unitId</gi>.</p>
+                  <p>This can either be the ISO standard 15511 or an alternative code list. If the value "otherRepositoryEncoding" is selected, such an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso15511, otherRepositoryEncoding</p>

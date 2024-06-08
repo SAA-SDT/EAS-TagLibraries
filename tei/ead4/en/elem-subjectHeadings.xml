@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="elementDocumentation" xml:id="elem-subjectHeadings" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
 		<gi>subjectHeadings</gi>
 	</head>
@@ -43,7 +43,7 @@
 	</div>
 	<div type="description">
 		<p>Use <gi>subjectHeadings</gi> to bundle in a single group access points — names, topics, places, functions, occupations, titles, and genre terms — that represent the contexts and contents of the materials described.</p> 
-		<p>Although <gi>subjectHeadings</gi> is often used within <archdesc> to provide significant access terms for the entirety of the materials described, it may be used at the component level to provide terms specific to a component if so desired.</p>
+		<p>Although <gi>subjectHeadings</gi> is often used within <gi>archdesc</gi> to provide significant access terms for the entirety of the materials described, it may be used at the component level to provide terms specific to a component if so desired.</p>
 		<p> This element helps to provide more standardization enabling an authority-controlled searching across finding aids, in particular where terms are taken from internationally or nationally controlled vocabularies such as the Library of Congress Subject Headings (LCSH) or the UK Archival Thesaurus (UKAT) for topics, the Virtual International Authority File (VIAF) for names, or GeoNames for places. </p>
 	</div>
 	<div type="availability">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="elementDocumentation" xml:id="elem-targetType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
 		<gi>targetType</gi>
 	</head>
@@ -49,7 +49,6 @@
 	</div>
 	<div type="description">
 		<p>The element <gi>targetType</gi> may be used to identify the type of the target entities associated with the archival descriptions, and in particular to refer to a born-digital archival object. It is recommended that the terms in <gi>targetType</gi> be taken from authorized vocabularies or other knowledge information sources.</p>
-               </div>
 	</div>
 	<div type="attributeusage">
 		<list type="simple">

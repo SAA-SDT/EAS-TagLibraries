@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="elementDocumentation" xml:id="elem-separatedMaterial" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
 		<gi>separatedMaterial</gi>
 	</head>
@@ -18,7 +18,7 @@
 	<div type="attributes">
 		<p>
 			<list type="gloss">
-					<label>audience</label>
+			<label>audience</label>
             		<item>Optional</item>
             		<label>conventionDeclarationReference</label>
             		<item>Optional</item>
@@ -28,7 +28,7 @@
             		<item>Optional</item>
             		<label>localType</label>
             		<item>Optional</item>
-            		<label>localTypeDeclarationReference</item>
+            		<label>localTypeDeclarationReference</label>
             		<item>Optional</item>
             		<label>maintenanceEventReference</label>
             		<item>Optional</item>
@@ -49,7 +49,7 @@
 	</div>
 	<div type="description">
 		<p>                     <gi>separatedMaterial</gi> identifies materials that are associated by provenance to the described materials that have been physically separated or removed. Examples include the separation of special
-                     formats; the destruction of duplicate or nonessential material; and the deliberate or unintentional dispersal of a creator’s records among different repositories.</p></p>
+                     formats; the destruction of duplicate or nonessential material; and the deliberate or unintentional dispersal of a creator’s records among different repositories.</p>
 	</div>
 	<div type="seealso">
 		<list type="simple">

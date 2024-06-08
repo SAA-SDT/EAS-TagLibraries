@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="elementDocumentation" xml:id="elem-quantity" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
 		<gi>quantity</gi>
 	</head>
