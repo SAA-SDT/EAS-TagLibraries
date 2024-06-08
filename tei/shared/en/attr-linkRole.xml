@@ -12,21 +12,19 @@
       <p>A URI that characterizes the nature of the remote resource to which a linking element
          refers.</p>
    </div>
-   <div type="description" subtype="eac">
-      <p>A URI that characterizes the nature of the remote resource to which a linking element
+   <div type="description">
+      <p type="eac">A URI that characterizes the nature of the remote resource to which a linking element
          refers. Optionally available in <gi>contactLine</gi>, <gi>reference</gi>,
             <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
-   </div>
-   <div type="description" subtype="ead">
-      <p>A URI that characterizes the nature of the remote resource to which a linking element
+      <p type="ead">A URI that characterizes the nature of the remote resource to which a linking element
          refers. Optionally available in <gi>contactLine</gi>, <gi>findAidDesc</gi>,
-            <gi>reference</gi>, and <gi>source</gi>.</p>
+         <gi>reference</gi>, and <gi>source</gi>.</p>
    </div>
    <div type="datatype">
       <p>anyURI</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng">
+      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
          <![CDATA[
          <reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf" linkRole="document/pdf">
             DELIBERATION N° 17-1166, 15 DECEMBRE 2017
