@@ -7,7 +7,7 @@
 		<p>Detail Level Encoding</p>
 	</div>
 	<div type="summary">
-		<p>Specifies the authoritative source or rules for values used to indicate whether the EAS document encodes minimal, basic, or extended information.</p>
+		<p>Specifies the authoritative source or rules for values used to indicate whether the EAS instance encodes minimal, basic, or extended information.</p>
 	</div>
 	<div type="description">
 		<p><att>detailLevelEncoding</att> specifies the authoritative source or rules for values supplied in <att>detailLevel</att> within <gi>control</gi>. If the value "EASList" is selected, <att>detailLevel</att> will be expected with the values "basic", "extended" or "minimal". If the value "otherDetailLevelEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
