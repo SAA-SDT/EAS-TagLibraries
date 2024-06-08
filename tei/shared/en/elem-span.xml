@@ -1,83 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-span" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
-               <head>
-                  <gi>span</gi>
-               </head>
-               <div type="fullName">
-                  <p>span</p>
-               </div>
-               <div type="summary">
-                  <p>Specifies the beginning and the end of a span of text.</p>
-               </div>
-               <div type="mayContain">
-                  <p>[text]</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>abstract, event, eventDescription, head, item, reference, p</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>style</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p><gi>span</gi> is an optional formatting element for distinguishing words or
-                     phrases that are intentionally stressed or emphasized for linguistic effect or
-                     identifying some qualities of the words or phrases.</p>
-               </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use the optional <att>style</att> attribute to affect an arbitrary
-                        stylistic difference. </item>
-                     <item>Use the optional <att>localType</att> attribute to identify qualities of
-                        words or phrases.</item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Optional, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:biogHist>
-                        <eac:p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and
-                           traveler. From 1908 to 1917, he wrote poetry and prose for numerous
-                           magazines and newspapers in New York City, publishing two pulp novels,
-                              <eac:span style="font-style:italic">What Happened to Mary</eac:span>
-                           and <eac:span style="font-style:italic">The Remarkable Adventures of
-                              Christopher Poe</eac:span> (1913), and one volume of poetry, <eac:span style="font-style:italic">My Marjonary</eac:span> (1916).</eac:p>
-                        <eac:p>During 1918, he traveled extensively in Mexico and Central America,
-                           writing for the U.S. Committee of Public Information in Santiago de
-                           Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro,
-                           where they founded <eac:span style="font-style:italic">Brazilian
-                              American</eac:span>, a weekly magazine that ran until 1929. With
-                           Brown's mother, Cora, the Browns also established magazines in Mexico
-                           City and London: <eac:span style="font-style:italic">Mexican
-                              American</eac:span> (1924-1929) and <eac:span style="font-style:italic">British American</eac:span>
-                           (1926-1929).</eac:p>
-                     </eac:biogHist>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-span" xmlns:eac="http://archivists.org/ns/eac/v2"
+   xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+   <head>
+      <gi>span</gi>
+   </head>
+   <div type="fullName">
+      <p>span</p>
+   </div>
+   <div type="summary">
+      <p>Specifies the beginning and the end of a span of text.</p>
+   </div>
+   <div type="mayContain">
+      <p>[text]</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p type="eac">abstract, event, eventDescription, head, item, reference, p</p>
+      <p type="ead">abstract, container, eventDescription, dimensions, head, materialSpec, physDesc,
+         physFacet, physLoc, reference, p, unitDate, unitId, unitTitle</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>localTypeDeclarationReference</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>style</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p><gi>span</gi> is an optional formatting element for distinguishing words or phrases that
+         are intentionally stressed or emphasized for linguistic effect or identifying some
+         qualities of the words or phrases.</p>
+   </div>
+   <div type="attributeusage">
+      <list type="simple">
+         <item>Use the optional <att>style</att> attribute to affect an arbitrary stylistic
+            difference.</item>
+         <item>Use the optional <att>localType</att> attribute to identify qualities of words or
+            phrases.</item>
+      </list>
+   </div>
+   <div type="availability">
+      <p>Optional, repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <![CDATA[
+         <biogHist>
+            <p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler.
+               From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in
+               New York City, publishing two pulp novels, <span style="font-style:italic">What
+                  Happened to Mary</span> and <span style="font-style:italic">The Remarkable
+                  Adventures of Christopher Poe</span> (1913), and one volume of poetry,
+                  <span style="font-style:italic">My Marjonary</span> (1916).</p>
+            <p>During 1918, he traveled extensively in Mexico and Central America, writing for
+               the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with
+               his wife, Rose Brown, to Rio de Janeiro, where they founded <span
+                  style="font-style:italic">Brazilian American</span>, a weekly magazine that
+               ran until 1929. With Brown's mother, Cora, the Browns also established magazines in
+               Mexico City and London: <span style="font-style:italic">Mexican
+                  American</span> (1924-1929) and <span style="font-style:italic">British
+                  American</span> (1926-1929).</p>
+         </biogHist>
+         ]]>
+      </egXML>
+   </div>
+</div>
