@@ -7,13 +7,13 @@
                   <p>Country Encoding</p>
                </div>
                <div type="summary">
-                  <p>The authoritative source or rules for values supplied in <att>countryCode</att>.</p>
-               </div>
-               <div type="description">
-                  <p>The authoritative source or rules for values supplied in <att>countryCode</att>
-                     within <gi>maintenanceAgency</gi> and <gi>placeName</gi>. If the value
-                     "otherCountryEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+		              <p type="eac">Specifies the authoritative source or rules for codes used to identify a country as part of the maintenance agency's location or of describing a geographic feature.</p>
+                  <p type="ead">Specifies the authoritative source or rules for codes used to identify a country as part of the maintenance agency's location, of describing a geographic feature, or of the identifier of the materials described.</p>
+	            </div>
+	            <div type="description">
+                  <p type="eac"><att>countryEncoding</att> specifies the authoritative source or rules for values supplied in <att>countryCode</att> within <gi>maintenanceAgency</gi> and <gi>placeName</gi>.</p>
+                  <p type="ead"><att>countryEncoding</att> specifies the authoritative source or rules for values supplied in <att>countryCode</att> within <gi>maintenanceAgency</gi>, <gi>placeName</gi>, and <gi>unitId</gi>.</p>
+                  <p>This can either be the ISO standard 3166-1 or an alternative code list. If the value "otherCountryEncoding" is selected, such an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso3166-1, otherCountryEncoding</p>
