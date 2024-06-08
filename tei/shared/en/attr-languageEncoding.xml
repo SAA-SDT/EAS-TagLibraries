@@ -12,7 +12,7 @@
                </div>
 	             <div type="description">
                   <p><att>languageEncoding</att> specifies the authoritative source or rules for values supplied in <att>languageCode</att> within <gi>languageDeclaration</gi> and <gi>language</gi> and in <att>languageOfElement</att> available in all non-empty elements.</p>
-                  <p type="eac">This can either be one of the ISO standards 639-1, 639-2b, and 639-3, the IETF BCP 47 language tag or an alternative code list. If the value "otherDateEncoding" is selected, such an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+                  <p type="eac">This can either be one of the ISO standards 639-1, 639-2b, and 639-3, the IETF BCP 47 language tag or an alternative code list. If the value "otherLanguageEncoding" is selected, such an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                  <p type="ead">This can either be one of the ISO standards 639-1, 639-2, and 639-3, the IETF BCP 47 language tag or an alternative code list. If the value "otherLanguageEncoding" is selected, such an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
