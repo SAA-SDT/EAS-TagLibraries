@@ -7,13 +7,10 @@
 		<p>Unit Date Type Encoding</p>
 	</div>
 	<div type="summary">
-		<p>The authoritative source or rules for values supplied in <att>unitDateType</att>.</p>
+		<p>Specifies the authoritative source or rules for values used to identify the type of date expressed.</p>
 	</div>
 	<div type="description">
-		<p>The authoritative source or rules for values supplied in <att>unitDateType</att>
-                     within <gi>unitDate</gi> and <gi>unitDateStructured</gi>. If the value
-                     "otherUnitDateTypeEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+		<p><att>unitDateTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>unitDateType</att> within <gi>unitDate</gi> and <gi>unitDateStructured</gi>. If the value "EASList" is selected, <att>unitDateType</att> will be expected with the values "bulk" or "inclusive". If the value "otherUnitDateTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherUnitDateTypeEncoding</p>
