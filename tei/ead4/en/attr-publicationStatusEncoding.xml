@@ -10,7 +10,7 @@
 		<p>Specifies the authoritative source or rules for values used to indicate the current publishing status of the EAS instance.</p>
 	</div>
 	<div type="description">
-		<p><att>publicationStatusEncoding</att> specifies the authoritative source or rules for values supplied in <att>publicationStatus</att> within <gi>control</gi>. If the value "EASList" is selected, <att>publicationStatus</att> will be expected with the values "approved, "inProcess", or "published". If the value "otherPublicationStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+		<p><att>publicationStatusEncoding</att> specifies the authoritative source or rules for values supplied in <att>publicationStatus</att> within <gi>control</gi>. If the value "EASList" is selected, <att>publicationStatus</att> will be expected with the values "approved", "inProcess", or "published". If the value "otherPublicationStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherPublicationStatusEncoding</p>
