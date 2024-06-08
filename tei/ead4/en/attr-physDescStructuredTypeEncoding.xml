@@ -10,7 +10,7 @@
 		<p>Specifies the authoritative source or rules for values used to specify the nature of the physical description statement being provided.</p>
 	</div>
 	<div type="description">
-		<p><att>physDescStructuredTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>physDescStructuredType</att> within <gi>physDescStructured</gi>. If the value "EASList" is selected, <att>maintenanceStatus</att> will be expected with the values "carrier, "materialType", or "spaceOccupied". If the value "otherPhysDescStructuredTypeEncoding" is selected an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+		<p><att>physDescStructuredTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>physDescStructuredType</att> within <gi>physDescStructured</gi>. If the value "EASList" is selected, <att>physDescStructuredType</att> will be expected with the values "carrier, "materialType", or "spaceOccupied". If the value "otherPhysDescStructuredTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherPhysDescStructuredTypeEncoding</p>
