@@ -7,12 +7,10 @@
 		<p>Audience Encoding</p>
 	</div>
 	<div type="summary">
-		<p>The authoritative source or rules for values supplied in <att>audience</att>.</p>
+		<p>Specifies the authoritative source or rules for values used to indicate whether information encoded in a specific element is available for all or only for a restricted audience.</p>
 	</div>
 	<div type="description">
-		<p>The authoritative source or rules for values supplied in <att>audience</att> available
-                     in all elements. If the value "otherAudienceEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
+		<p><att>audienceEncoding</att> specifies the authoritative source or rules for values supplied in <att>audience</att> available in all elements. If the value "EASList" is selected, <att>audience</att> will be expected with the values "external" or "internal". If the value "otherAudienceEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
 	</div>
 	<div type="values">
 		<p>EASList, otherAudienceEncoding</p>
