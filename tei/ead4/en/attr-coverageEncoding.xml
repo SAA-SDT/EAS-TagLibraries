@@ -10,7 +10,7 @@
 		<p>Specifies the authoritative source or rules for values used to indicate whether extent information refers to or an instantiation reflects all the materials described or only part of them.</p>
 	</div>
 	<div type="description">
-		<p><att>coverageEncoding</att> specifies the authoritative source or rules for values supplied in <att>coverage</att> within <gi>physDescStructured</gi> and <gi>formAvailable</gi>. If the value "EASList" is selected, <att>coverage</att> will be expected with the values "part" or "whole". If the value "otherCoverageEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
+		<p><att>coverageEncoding</att> specifies the authoritative source or rules for values supplied in <att>coverage</att> within <gi>physDescStructured</gi> and <gi>formAvailable</gi>. If the value "EASList" is selected, <att>coverage</att> will be expected with the values "part" or "whole". If the value "otherCoverageEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherCoverageEncoding</p>
