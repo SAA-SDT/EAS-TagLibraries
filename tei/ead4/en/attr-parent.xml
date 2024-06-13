@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-parent" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<att>Title</att>
+		<att>parent</att>
 	</head>
 	<div type="fullName">
-		<p>Full Attribute Name</p>
+		<p>parent</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the attribute is used for</p>
+		<p>On <gi>container</gi>, the values of the id attributes of one or more other <gi>container</gi>s that hold the container item being described in the current element. For a folder this might point to the <gi>container</gi> that describes the box in which that folder is housed. On <gi>physLoc</gi>, the values of the id attributes of one or more other <gi>physLoc</gi>s that represent a larger physical location. For a shelf, this might point to the <gi>physLoc</gi> that describes the range in which the shelf is found. Available in <gi>container</gi> and <gi>physLoc</gi>.</p>
 	</div>
-	<div type="description">
-		<p>A narrative description of the use of the attribute</p>
-	</div>
-	<div type="values">
-		<p>Available values (include either values or datatype)</p>
-	</div>
+	
 	<div type="datatype">
-		<p>Datatype of the attribute (include either values or datatype)</p>
+		<p>IDREFS</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
