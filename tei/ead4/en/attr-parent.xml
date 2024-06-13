@@ -4,7 +4,7 @@
 		<att>parent</att>
 	</head>
 	<div type="fullName">
-		<p>parent</p>
+		<p>Parent</p>
 	</div>
 	<div type="summary">
 		<p>On <gi>container</gi>, the values of the id attributes of one or more other <gi>container</gi>s that hold the container item being described in the current element. For a folder this might point to the <gi>container</gi> that describes the box in which that folder is housed. On <gi>physLoc</gi>, the values of the id attributes of one or more other <gi>physLoc</gi>s that represent a larger physical location. For a shelf, this might point to the <gi>physLoc</gi> that describes the range in which the shelf is found. Available in <gi>container</gi> and <gi>physLoc</gi>.</p>
