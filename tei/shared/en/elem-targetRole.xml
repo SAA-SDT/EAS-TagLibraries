@@ -65,15 +65,13 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:relation>
-                        <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                           <eac:part>Arendt, Max</eac:part>
-                           <eac:part>1843-1913</eac:part>
-                        </eac:targetEntity>
-                        <eac:relationType>family</eac:relationType>
-                        <eac:targetRole>grandfather</eac:targetRole>
-                     </eac:relation>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<relation>
+   <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+      <part>Arendt, Max</part>
+      <part>1843-1913</part>
+   </targetEntity>
+   <relationType>family</relationType>
+   <targetRole>grandfather</targetRole>
+</relation>]]></egXML>
                </div>
             </div>

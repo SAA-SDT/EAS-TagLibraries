@@ -53,15 +53,7 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                     <otherRecordId localType="PARES" localTypeDeclarationReference="lTD1">140149</otherRecordId>
-                     ]]>
-                  </egXML>
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                     <otherRecordId localType="original">AUBT-ISAAR-C-002</otherRecordId>
-                     ]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<otherRecordId localType="PARES" localTypeDeclarationReference="lTD1">140149</otherRecordId>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<otherRecordId localType="original">AUBT-ISAAR-C-002</otherRecordId>]]></egXML>
                </div>
             </div>

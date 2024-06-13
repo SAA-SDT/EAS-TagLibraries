@@ -45,20 +45,8 @@
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="en">
-                     <![CDATA[
-                     <recordId>F10219</recordId>
-                     ]]>
-                  </egXML>
-                  <egXML xml:lang="en">
-                     <![CDATA[
-                     <recordId>ES-28079-PARES-AUT-140149</recordId>
-                     ]]>
-                  </egXML>
-                  <egXML xml:lang="en">
-                     <![CDATA[
-                     <recordId>DE-1981_C002</recordId>
-                     ]]>
-                  </egXML>
+                  <egXML xml:lang="en"><![CDATA[<recordId>F10219</recordId>]]></egXML>
+                  <egXML xml:lang="en"><![CDATA[<recordId>ES-28079-PARES-AUT-140149</recordId>]]></egXML>
+                  <egXML xml:lang="en"><![CDATA[<recordId>DE-1981_C002</recordId>]]></egXML>
                </div>
             </div>

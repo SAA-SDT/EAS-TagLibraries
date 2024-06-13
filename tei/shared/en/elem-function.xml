@@ -95,15 +95,11 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" type="eac" xml:lang="eng"><![CDATA[<function>
-                        <term>Estate ownership</term>
-                        <descriptiveNote><p>Social, political, and cultural role typical of
-                              landed aristocracy in England. The first Viscount Campden amassed a
-                              large fortune in trade in London and purchased extensive estates,
-                              including Exton (Rutland), and Chipping Campden (Gloucestershire). The
-                              Barham Court (Kent) estate was the acquisition of the first Baron
-                              Barham, a successful admiral and naval administrator (First Lord of
-                              the Admiralty 1805).</p></descriptiveNote>
-                     </function>]]></egXML>
+                  <egXML type="eac" xml:lang="eng"><![CDATA[<function>
+   <term>Estate ownership</term>
+   <descriptiveNote>
+      <p>Social, political, and cultural role typical of landed aristocracy in England. The first Viscount Campden amassed a large fortune in trade in London and purchased extensive estates, including Exton (Rutland), and Chipping Campden (Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron Barham, a successful admiral and naval administrator (First Lord of the Admiralty 1805).</p>
+   </descriptiveNote>
+</function>]]></egXML>
                </div>
             </div>

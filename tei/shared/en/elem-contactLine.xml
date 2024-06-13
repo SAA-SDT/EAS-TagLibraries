@@ -68,10 +68,10 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<contact>
-                        <contactLine contactLineType="phoneNumber">08-402 60 00</contactLine>
-                        <contactLine languageOfElement="se" contactLineType="homepage">https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html</contactLine>
-                        <contactLine languageOfElement="en" contactLineType="homepage">https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html</contactLine>
-                     </contact>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<contact>
+   <contactLine contactLineType="phoneNumber">08-402 60 00</contactLine>
+   <contactLine languageOfElement="se" contactLineType="homepage">https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html</contactLine>
+   <contactLine languageOfElement="en" contactLineType="homepage">https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html</contactLine>
+</contact>]]></egXML>
                </div>
             </div>

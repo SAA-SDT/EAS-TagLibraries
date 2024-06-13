@@ -53,13 +53,9 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                     <rightsDeclaration>
-                        <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</reference>
-                        <shortCode>CC0 1.0</shortCode>
-                     </rightsDeclaration>
-                     ]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<rightsDeclaration>
+   <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</reference>
+   <shortCode>CC0 1.0</shortCode>
+</rightsDeclaration>]]></egXML>
                </div>
             </div>

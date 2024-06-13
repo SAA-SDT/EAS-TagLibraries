@@ -64,11 +64,9 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:place>
-                        <eac:placeRole>Residence</eac:placeRole>
-                        <eac:placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01">Kent (county)</eac:placeName>
-                     </eac:place>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<place>
+   <placeRole>Residence</placeRole>
+   <placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01">Kent (county)</placeName>
+</place>]]></egXML>
                </div>
             </div>

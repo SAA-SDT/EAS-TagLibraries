@@ -50,21 +50,17 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                     <sources>
-                        <source>
-                           <reference>Provenienzmerkmal</reference>
-                        </source>
-                        <source>
-                           <reference href="http://staatsbibliothek-berlin.de/die-staatsbibliothek/geschichte/">
-                              <descriptiveNote>
-                                 <p>Stand: 31.07.2018</p>
-                              </descriptiveNote>
-                           </reference>
-                        </source>
-                     </sources>
-                     ]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<sources>
+   <source>
+      <reference>Provenienzmerkmal</reference>
+   </source>
+   <source>
+      <reference href="http://staatsbibliothek-berlin.de/die-staatsbibliothek/geschichte/">
+         <descriptiveNote>
+            <p>Stand: 31.07.2018</p>
+         </descriptiveNote>
+      </reference>
+   </source>
+</sources>]]></egXML>
                </div>
             </div>

@@ -69,20 +69,12 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="ead"/>
-		  <egXML xml:lang="eng" type="eac">
-                     <![CDATA[
-                     <legalStatus>
-                        <term>Department of State</term>
-                     </legalStatus>
-                     ]]>
-                  </egXML>
-                  <egXML xml:lang="eng" type="eac">
-                     <![CDATA[
-                     <legalStatus>
-                        <term>Organismo de la Administracion Central del Estado</term>
-                        <date standardDate="1769">1769</date>
-                     </legalStatus>
-                     ]]>
-                  </egXML>
+		  <egXML xml:lang="eng" type="eac"><![CDATA[<legalStatus>
+   <term>Department of State</term>
+</legalStatus>]]></egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<legalStatus>
+   <term>Organismo de la Administracion Central del Estado</term>
+   <date standardDate="1769">1769</date>
+</legalStatus>]]></egXML>
                </div>
             </div>

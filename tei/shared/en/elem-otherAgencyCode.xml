@@ -56,24 +56,16 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                     <maintenanceAgency>
-                        <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-nbuuar</agencyCode>
-                        <agencyName>State University of New York at Buffalo, Archives</agencyName>
-                        <otherAgencyCode status="authorized" valueURI="http://id.loc.gov/vocabulary/organizations/nbuuar" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">NBuU-AR</otherAgencyCode>
-                     </maintenanceAgency>
-                     ]]>
-                  </egXML>
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                     <maintenanceAgency>
-                        <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-ctybr</agencyCode>
-                        <agencyName>Beinecke Rare Book and Manuscript Library</agencyName>
-                        <otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">CtY-BR</otherAgencyCode>
-                        <therAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">Q814779</otherAgencyCode>
-                     </maintenanceAgency>
-                     ]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceAgency>
+   <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-nbuuar</agencyCode>
+   <agencyName>State University of New York at Buffalo, Archives</agencyName>
+   <otherAgencyCode status="authorized" valueURI="http://id.loc.gov/vocabulary/organizations/nbuuar" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">NBuU-AR</otherAgencyCode>
+</maintenanceAgency>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceAgency>
+   <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-ctybr</agencyCode>
+   <agencyName>Beinecke Rare Book and Manuscript Library</agencyName>
+   <otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">CtY-BR</otherAgencyCode>
+   <otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">Q814779</otherAgencyCode>
+</maintenanceAgency>]]></egXML>
                </div>
             </div>

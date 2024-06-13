@@ -62,16 +62,12 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
-                        <eac:part localType="surname">Arendt</eac:part>
-                        <eac:part localType="firstname">Hannah</eac:part>
-                     </eac:nameEntry>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
-                        <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
-                     </eac:nameEntry>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+   <part localType="surname">Arendt</part>
+   <part localType="firstname">Hannah</part>
+</nameEntry>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+   <part>Provence-Alpes-Côte d'Azur</part>
+</nameEntry>]]></egXML>
                </div>
             </div>
