@@ -46,7 +46,8 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac">
+                  <egXML xml:lang="eng" type="ead"/>
+		  <egXML xml:lang="eng" type="eac">
                      <![CDATA[
                      <list listType="unordered">
                         <head>List of ministers of May Memorial Unitarian Universalist
