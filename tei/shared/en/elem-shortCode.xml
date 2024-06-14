@@ -42,12 +42,20 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<conventionDeclaration id="conventiondeclaration1">
-   <reference>Anglo-American Cataloging Rules, Revised</reference>
-   <shortCode>AACR2</shortCode>
+   <reference>
+      Anglo-American Cataloging Rules, Revised
+   </reference>
+   <shortCode>
+      AACR2
+   </shortCode>
 </conventionDeclaration>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<rightsDeclaration>
-   <reference href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International Public License</reference>
-   <shortCode>CC BY</shortCode>
+   <reference href="https://creativecommons.org/licenses/by/4.0/">
+      Creative Commons Attribution 4.0 International Public License
+   </reference>
+   <shortCode>
+      CC BY
+   </shortCode>
 </rightsDeclaration>]]></egXML>
                </div>
             </div>

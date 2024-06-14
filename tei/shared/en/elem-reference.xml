@@ -83,11 +83,17 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<source>
-   <reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">Wikipedia</reference>
+   <reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">
+      Wikipedia
+   </reference>
 </source>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<conventionDeclaration>
-   <reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</reference>
-   <shortCode>RDA</shortCode>
+   <reference href="https://www.loc.gov/aba/rda/">
+      Resource Description and Access
+   </reference>
+   <shortCode>
+      RDA
+   </shortCode>
 </conventionDeclaration>]]></egXML>
                </div>
             </div>

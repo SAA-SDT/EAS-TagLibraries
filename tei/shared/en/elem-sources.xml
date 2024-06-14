@@ -52,12 +52,16 @@
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<sources>
    <source>
-      <reference>Provenienzmerkmal</reference>
+      <reference>
+         Provenienzmerkmal
+      </reference>
    </source>
    <source>
       <reference href="http://staatsbibliothek-berlin.de/die-staatsbibliothek/geschichte/">
          <descriptiveNote>
-            <p>Stand: 31.07.2018</p>
+            <p>
+               Stand: 31.07.2018
+            </p>
          </descriptiveNote>
       </reference>
    </source>

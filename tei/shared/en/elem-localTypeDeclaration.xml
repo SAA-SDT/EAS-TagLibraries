@@ -58,15 +58,25 @@
                </div>
                <div type="examples">
                    <egXML xml:lang="eng"><![CDATA[<localTypeDeclaration>
-   <reference href="https://d-nb.info/standards/elementset/gnd_20191015">GNDO</reference>
+   <reference href="https://d-nb.info/standards/elementset/gnd_20191015">
+      GNDO
+   </reference>
    <descriptiveNote>
-      <p>Gemeinsame Normdatei Ontologie</p>
-      <p languageOfElement="eng">Integrated Authority File Ontology</p>
-      <p>Version 2019-10-15</p>
+      <p>
+         Gemeinsame Normdatei Ontologie
+      </p>
+      <p languageOfElement="eng">
+         Integrated Authority File Ontology
+      </p>
+      <p>
+         Version 2019-10-15
+      </p>
    </descriptiveNote>
 </localTypeDeclaration>
 <localTypeDeclaration>
-   <reference href="https://www.loc.gov/marc/authority/">MARC21</reference>
+   <reference href="https://www.loc.gov/marc/authority/">
+      MARC21
+   </reference>
 </localTypeDeclaration>]]></egXML>
                </div>
             </div>

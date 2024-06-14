@@ -52,10 +52,16 @@
                </div>
                <div type="examples">
                  <egXML xml:lang="eng"><![CDATA[<source xml:id="source1" xlink:href="https://www.theguardian.com/books/2018/aug/10/langston-hughes-born-a-year-before-accepted-date-poet">
-   <citation>Flood, Alison <span localType="http://id.loc.gov/ontologies/bibframe/title">"Langston Hughes 'born a year before accepted date', researcher finds,"</span> The Guardian. Published 10 August 2018.</citation>
-   <citedRange unit="page">1</citedRange>
+   <citation>
+      Flood, Alison <span localType="http://id.loc.gov/ontologies/bibframe/title">"Langston Hughes 'born a year before accepted date', researcher finds,"</span> The Guardian. Published 10 August 2018.
+   </citation>
+   <citedRange unit="page">
+      1
+   </citedRange>
    <descriptiveNote>
-      <p>Poet researching archives of local African American newspaper finds story reporting on 'little Langston' before his recorded birth date</p>
+      <p>
+         Poet researching archives of local African American newspaper finds story reporting on 'little Langston' before his recorded birth date
+      </p>
    </descriptiveNote>
 </source>]]></egXML>
                </div>

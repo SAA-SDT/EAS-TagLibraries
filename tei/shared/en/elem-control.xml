@@ -209,50 +209,90 @@
                <div type="examples">
                   <egXML xml:lang="eng" type="ead"/>
                   <egXML xml:lang="eng" type="eac"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
-   <recordId>https://kalliope-verbund.info/gnd/118584618</recordId>
+   <recordId>
+      https://kalliope-verbund.info/gnd/118584618
+   </recordId>
    <maintenanceAgency countryCode="DE">
-      <agencyCode status="authorized">DE-611</agencyCode>
-      <agencyName>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund</agencyName>
-      <agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</agencyName>
+      <agencyCode status="authorized">
+         DE-611
+      </agencyCode>
+      <agencyName>
+         Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund
+      </agencyName>
+      <agencyName languageOfElement="eng">
+         Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog
+      </agencyName>
    </maintenanceAgency>
    <maintenanceHistory>
       <maintenanceEvent maintenanceEventType="created">
-         <agent agentType="unknown">DE-101</agent>
+         <agent agentType="unknown">
+            DE-101
+         </agent>
          <eventDateTime standardDateTime="1988-07-01"/>
       </maintenanceEvent>
       <maintenanceEvent maintenanceEventType="revised">
-         <agent agentType="unknown">1400</agent>
+         <agent agentType="unknown">
+            1400
+         </agent>
          <eventDateTime standardDateTime="2015-10-15"/>
       </maintenanceEvent>
    </maintenanceHistory>
    <sources>
       <source>
-         <reference>Szb. Mozart-Lex.</reference>
+         <reference>
+            Szb. Mozart-Lex.
+         </reference>
       </source>
    </sources>
    <conventionDeclaration>
-      <reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</reference>
-      <shortCode>RDA</shortCode>
+      <reference href="https://www.loc.gov/aba/rda/">
+         Resource Description and Access
+      </reference>
+      <shortCode>
+         RDA
+      </shortCode>
    </conventionDeclaration>
    <languageDeclaration languageCode="ger" scriptCode="Latn"/>
       <localTypeDeclaration>
-         <reference href="https://d-nb.info/standards/elementset/gnd_20191015">GNDO</reference>
+         <reference href="https://d-nb.info/standards/elementset/gnd_20191015">
+            GNDO
+         </reference>
          <descriptiveNote>
-            <p languageOfElement="ger">Gemeinsame Normdatei Ontologie</p>
-            <p languageOfElement="eng">Integrated Authority File Ontology</p>
-            <p>Version 2019-10-15</p>
+            <p languageOfElement="ger">
+               Gemeinsame Normdatei Ontologie
+            </p>
+            <p languageOfElement="eng">
+               Integrated Authority File Ontology
+            </p>
+            <p>
+               Version 2019-10-15
+            </p>
          </descriptiveNote>
       </localTypeDeclaration>
       <localTypeDeclaration>
-         <reference href="https://www.loc.gov/marc/authority/">MARC21</reference>
+         <reference href="https://www.loc.gov/marc/authority/">
+            MARC21
+         </reference>
       </localTypeDeclaration>
-      <otherRecordId localType="024$a" localTypeDeclarationReference="MARC21">http://d-nb.info/gnd/118584618"</otherRecordId>		
-      <otherRecordId localType="035$a" localTypeDeclarationReference="MARC21">(DE-101)118584618</otherRecordId>
-      <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#gndIdentifier" localTypeDeclarationReference="GNDO">(DE-588)118584618</otherRecordId>
-      <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">(DE-588a)118584618</otherRecordId>	
-      <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">(DE-588c)4040426-2</otherRecordId>
+      <otherRecordId localType="024$a" localTypeDeclarationReference="MARC21">
+         http://d-nb.info/gnd/118584618
+      </otherRecordId>		
+      <otherRecordId localType="035$a" localTypeDeclarationReference="MARC21">
+         (DE-101)118584618
+      </otherRecordId>
+      <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#gndIdentifier" localTypeDeclarationReference="GNDO">
+         (DE-588)118584618
+      </otherRecordId>
+      <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">
+         (DE-588a)118584618
+      </otherRecordId>	
+      <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">
+         (DE-588c)4040426-2
+      </otherRecordId>
       <rightsDeclaration>
-         <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0 Universell</reference>
+         <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">
+            CC0 1.0 Universell
+         </reference>
       </rightsDeclaration>
 </control>]]></egXML>
                </div>

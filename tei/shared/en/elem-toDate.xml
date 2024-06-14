@@ -91,15 +91,23 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<dateRange>
-   <fromDate standardDate="1868">1868</fromDate>
-   <toDate standardDate="1936">1936</toDate>
+   <fromDate standardDate="1868">
+      1868
+   </fromDate>
+   <toDate standardDate="1936">
+      1936
+   </toDate>
 </dateRange>]]></egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<dateRange>
+                  <egXML xml:lang="eng"><![CDATA[<dateRange>
    <fromDate status="unknown"/>
-   <todate certainty="uncertain" standardDate="2010?">c.2010</todate>
+   <todate certainty="uncertain" standardDate="2010?">
+      c.2010
+   </todate>
 </dateRange>]]></egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<dateRange>
-   <fromDate standardDate="2016-09">September 2016</fromDate>
+                  <egXML xml:lang="eng"><![CDATA[<dateRange>
+   <fromDate standardDate="2016-09">
+      September 2016
+   </fromDate>
    <toDate status="ongoing"/>
 </dateRange>]]></egXML>
                </div>

@@ -59,27 +59,51 @@
                   <egXML xml:lang="eng"><![CDATA[<relations>
    <relation>
       <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-         <part>Arendt, Max</part>
-         <part>1843-1913</part>
+         <part>
+            Arendt, Max
+         </part>
+         <part>
+            1843-1913
+         </part>
       </targetEntity>
-      <relationType>family</relationType>
-      <targetRole>grandfather</targetRole>
+      <relationType>
+         family
+      </relationType>
+      <targetRole>
+         grandfather
+      </targetRole>
    </relation>
    <relation>
       <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/1190672170" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-         <part>Arendt-Beerwald, Martha</part>
-         <part>1874-1948</part>
+         <part>
+            Arendt-Beerwald, Martha
+         </part>
+         <part>
+            1874-1948
+         </part>
       </targetEntity>
-      <relationType>family</relationType>
-      <targetRole>mother</targetRole>
+      <relationType>
+         family
+      </relationType>
+      <targetRole>
+         mother
+      </targetRole>
    </relation>
    <relation>
       <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/1190671301" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-         <part>Arendt, Paul</part>
-         <part>1873-1913</part>
+         <part>
+            Arendt, Paul
+         </part>
+         <part>
+            1873-1913
+         </part>
       </targetEntity>
-      <relationType>family</relationType>
-      <targetRole>father</targetRole>
+      <relationType>
+         family
+      </relationType>
+      <targetRole>
+         father
+      </targetRole>
    </relation>
 </relations>]]></egXML>
                </div>

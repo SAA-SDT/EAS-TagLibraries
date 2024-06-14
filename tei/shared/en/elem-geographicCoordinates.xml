@@ -64,18 +64,34 @@
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<places>
    <place>
-      <geographicCoordinates coordinateSystem="mgrs">33UUU9029819737</geographicCoordinates>
-      <placeName>Berlin, Germany</placeName>
+      <geographicCoordinates coordinateSystem="mgrs">
+         33UUU9029819737
+      </geographicCoordinates>
+      <placeName>
+         Berlin, Germany
+      </placeName>
    </place>
    <place>
-      <placeName localType="place">Clear Spring</placeName>
-      <placeName localType="state">Maryland</placeName>
-      <geographicCoordinates coordinateSystem="UTM">18S 248556mE 4393694mN</geographicCoordinates>
+      <placeName localType="place">
+         Clear Spring
+      </placeName>
+      <placeName localType="state">
+         Maryland
+      </placeName>
+      <geographicCoordinates coordinateSystem="UTM">
+         18S 248556mE 4393694mN
+      </geographicCoordinates>
    </place>
    <place>
-      <placeName localType="place">Hardeeville</placeName>
-      <placeName localType="state">South Carolina</placeName>
-      <geographicCoordinates coordinateSystem="WGS84">-81.1, 32.2, -81.0, 32.3</geographicCoordinates>
+      <placeName localType="place">
+         Hardeeville
+      </placeName>
+      <placeName localType="state">
+         South Carolina
+      </placeName>
+      <geographicCoordinates coordinateSystem="WGS84">
+         -81.1, 32.2, -81.0, 32.3
+      </geographicCoordinates>
    </place>
 </places>]]></egXML>
                </div>

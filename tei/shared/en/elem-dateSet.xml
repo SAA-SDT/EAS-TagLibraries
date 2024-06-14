@@ -67,15 +67,27 @@
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<dateSet>
    <dateRange>
-      <fromDate standardDate="1928-09">1928 settembre</fromDate>
-      <toDate standardDate="1930-08">1930 autunno</toDate>
+      <fromDate standardDate="1928-09">
+         1928 settembre
+      </fromDate>
+      <toDate standardDate="1930-08">
+         1930 autunno
+      </toDate>
    </dateRange>
    <dateRange>
-      <fromDate standardDate="1947">1947</fromDate>
-      <toDate standardDate="1949">1949</toDate>
+      <fromDate standardDate="1947">
+         1947
+      </fromDate>
+      <toDate standardDate="1949">
+         1949
+      </toDate>
    </dateRange>
-   <date>1950</date>
-   <date standardDate="1951-10-27">27 of October 1951</date>
+   <date>
+      1950
+   </date>
+   <date standardDate="1951-10-27">
+      27 of October 1951
+   </date>
 </dateSet>]]></egXML>
                </div>
             </div>

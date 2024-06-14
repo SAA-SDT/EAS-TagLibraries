@@ -90,12 +90,20 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<place>
-   <placeRole>Residence</placeRole>
-   <placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01">Kent (county)</placeName>
+   <placeRole>
+      Residence
+   </placeRole>
+   <placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01">
+      Kent (county)
+   </placeName>
 </place>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<place>
-   <placeName vocabularySource="local" id="IDPlaceName1">East Side (Buffalo, N.Y.)</placeName>
-   <geographicCoordinates coordinateSystem="WGS84">N 42°53′48" W 78°50′2"</geographicCoordinates>
+   <placeName vocabularySource="local" id="IDPlaceName1">
+      East Side (Buffalo, N.Y.)
+   </placeName>
+   <geographicCoordinates coordinateSystem="WGS84">
+      N 42°53′48" W 78°50′2"
+   </geographicCoordinates>
 </place>]]></egXML>
                </div>
             </div>

@@ -21,12 +21,8 @@
 		              <p type="ead">token</p>
 	             </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                    <![CDATA[
-                    <control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-3" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                       [...]
-                    </control>
-                    ]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-3" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+   [...]
+</control>]]></egXML>
                </div>
             </div>

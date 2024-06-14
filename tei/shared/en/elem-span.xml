@@ -61,8 +61,12 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<biogHist>
-   <p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).</p>
-   <p>During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <span style="font-style:italic">Brazilian American</span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <span style="font-style:italic">Mexican American</span> (1924-1929) and <span style="font-style:italic">British American</span> (1926-1929).</p>
+   <p>
+      Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).
+   </p>
+   <p>
+      During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <span style="font-style:italic">Brazilian American</span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <span style="font-style:italic">Mexican American</span> (1924-1929) and <span style="font-style:italic">British American</span> (1926-1929).
+   </p>
 </biogHist>]]></egXML>
                </div>
             </div>

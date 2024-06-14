@@ -91,12 +91,18 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<dateRange>
-   <fromDate standardDate="1868">1868</fromDate>
-   <toDate standardDate="1936">1936</toDate>
+   <fromDate standardDate="1868">
+      1868
+   </fromDate>
+   <toDate standardDate="1936">
+      1936
+   </toDate>
 </dateRange>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<dateRange>
    <fromDate status="unknown"/>
-   <toDate certainty="uncertain" standardDate="2010?">c.2010</toDate>
+   <toDate certainty="uncertain" standardDate="2010?">
+      c.2010
+   </toDate>
 </dateRange>]]></egXML>
                </div>
             </div>

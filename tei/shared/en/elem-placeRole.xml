@@ -65,8 +65,12 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<place>
-   <placeRole>Residence</placeRole>
-   <placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01">Kent (county)</placeName>
+   <placeRole>
+      Residence
+   </placeRole>
+   <placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01">
+      Kent (county)
+   </placeName>
 </place>]]></egXML>
                </div>
             </div>

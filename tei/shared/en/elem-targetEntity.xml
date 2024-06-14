@@ -67,17 +67,29 @@
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<relation>
    <targetEntity targetType="resource">
-      <part>La journée du treize mars. - 1835</part>
+      <part>
+         La journée du treize mars. - 1835
+      </part>
    </targetEntity>
 </relation>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<relation>
    <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/117145971" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-      <part>Wasa, Gustav</part>
-      <part>Prinz von</part>
-      <part>1799-1877</part>
+      <part>
+         Wasa, Gustav
+      </part>
+      <part>
+         Prinz von
+      </part>
+      <part>
+         1799-1877
+      </part>
    </targetEntity>
-   <relationType>family</relationType>
-   <targetRole>son</targetRole>					
+   <relationType>
+      family
+   </relationType>
+   <targetRole>
+      son
+   </targetRole>					
 </relation>]]></egXML>
                </div>
             </div>

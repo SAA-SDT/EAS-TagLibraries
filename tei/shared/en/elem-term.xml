@@ -60,30 +60,50 @@
                </div>
                <div type="examples">
                   <egXML type="eac" xml:lang="eng"><![CDATA[<function>
-   <term>Estate ownership</term>
+   <term>
+      Estate ownership
+   </term>
    <descriptiveNote>
-      <p>Social, political, and cultural role typical of landed aristocracy in England. The first Viscount Campden amassed a large fortune in trade in London and purchased extensive estates, including Exton (Rutland), and Chipping Campden (Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron Barham, a successful admiral and naval administrator (First Lord of the Admiralty 1805).</p>
+      <p>
+         Social, political, and cultural role typical of landed aristocracy in England. The first Viscount Campden amassed a large fortune in trade in London and purchased extensive estates, including Exton (Rutland), and Chipping Campden (Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron Barham, a successful admiral and naval administrator (First Lord of the Admiralty 1805).
+      </p>
    </descriptiveNote>
 </function>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<function vocabularySource="AGIFT">
-   <term>Education and training</term>
+   <term>
+      Education and training
+   </term>
 </function>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<legalStatus>
-   <term scriptOfElement="Latn">Organismo de la Administracion Central del Estado</term>
-   <date standardDate="1769">1769</date>
+   <term scriptOfElement="Latn">
+      Organismo de la Administracion Central del Estado
+   </term>
+   <date standardDate="1769">
+      1769
+   </date>
 </legalStatus>]]></egXML>
                   <egXML type="eac" xml:lang="eng"><![CDATA[<mandate>
-   <term>Minnesota. Executive Session Laws 1919 c49</term>
+   <term>
+      Minnesota. Executive Session Laws 1919 c49
+   </term>
    <dateRange>
-      <fromDate standardDate="1919">1919</fromDate>
-      <toDate standardDate="1925">1925</toDate>
+      <fromDate standardDate="1919">
+         1919
+      </fromDate>
+      <toDate standardDate="1925">
+         1925
+      </toDate>
    </dateRange>
    <descriptiveNote>
-      <p>Board created in 1919 to receive and examine applications for bonuses from Minnesota soldiers.</p>
+      <p>
+         Board created in 1919 to receive and examine applications for bonuses from Minnesota soldiers.
+      </p>
    </descriptiveNote>
 </mandate>]]></egXML>
                   <egXML type="eac" xml:lang="eng"><![CDATA[<occupation>
-   <term>Teacher</term>
+   <term>
+      Teacher
+   </term>
 </occupation>]]></egXML>
                </div>
             </div>

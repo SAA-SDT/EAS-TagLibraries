@@ -59,13 +59,19 @@
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<functions>
    <function>
-      <term>Industrial or Scientific Research</term>
+      <term>
+         Industrial or Scientific Research
+      </term>
    </function>
    <function>
-      <term>Analytical Services</term>
+      <term>
+         Analytical Services
+      </term>
    </function>
    <function>
-      <term>Advisory or Regulatory Body</term>
+      <term>
+         Advisory or Regulatory Body
+      </term>
    </function>
 </functions>]]></egXML>
                </div>

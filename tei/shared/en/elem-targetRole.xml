@@ -70,8 +70,12 @@
       <part>Arendt, Max</part>
       <part>1843-1913</part>
    </targetEntity>
-   <relationType>family</relationType>
-   <targetRole>grandfather</targetRole>
+   <relationType>
+      family
+   </relationType>
+   <targetRole>
+      grandfather
+   </targetRole>
 </relation>]]></egXML>
                </div>
             </div>

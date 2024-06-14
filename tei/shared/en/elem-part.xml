@@ -63,11 +63,17 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
-   <part localType="surname">Arendt</part>
-   <part localType="firstname">Hannah</part>
+   <part localType="surname">
+      Arendt
+   </part>
+   <part localType="firstname">
+      Hannah
+   </part>
 </nameEntry>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
-   <part>Provence-Alpes-Côte d'Azur</part>
+   <part>
+      Provence-Alpes-Côte d'Azur
+   </part>
 </nameEntry>]]></egXML>
                </div>
             </div>

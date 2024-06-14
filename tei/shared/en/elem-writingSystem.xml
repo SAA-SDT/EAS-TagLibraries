@@ -58,8 +58,12 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<languageUsed>
-   <language languageCode="eng">English</language>
-   <writingSystem scriptCode="Latn">Latin</writingSystem>
+   <language languageCode="eng">
+      English
+   </language>
+   <writingSystem scriptCode="Latn">
+      Latin
+   </writingSystem>
 </languageUsed>]]></egXML>
                </div>
             </div>
