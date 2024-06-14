@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="attributeDocumentation" xml:id="attr-linkRole" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
-               <head>
-                  <att>linkRole</att>
-               </head>
-               <div type="fullName">
-                  <p>Link Role</p>
-               </div>
-               <div type="summary">
-                  <p>A URI that characterizes the nature of the remote resource to which a linking
-                     element refers. </p>
-               </div>
-               <div type="description">
-                  <p>A URI that characterizes the nature of the remote resource to which a linking
-                     element refers. Optionally available in <gi>contactLine</gi>, <gi>reference</gi>,
-                     <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
-               </div>
-               <div type="datatype">
-                  <p>anyURI</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf" linkRole="document/pdf">
-   DELIBERATION N° 17-1166, 15 DECEMBRE 2017
-</reference>]]></egXML>
-               </div>
-            </div>
+<div type="attributeDocumentation" xml:id="attr-linkRole"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:ead="https://archivists.org/ns/ead/v4">
+   <head>
+      <att>linkRole</att>
+   </head>
+   <div type="fullName">
+      <p>Link Role</p>
+   </div>
+   <div type="summary">
+      <p>A URI that characterizes the nature of the remote resource to which a linking element
+         refers.</p>
+   </div>
+   <div type="description">
+      <p type="eac">A URI that characterizes the nature of the remote resource to which a linking element
+         refers. Optionally available in <gi>contactLine</gi>, <gi>reference</gi>,
+            <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
+      <p type="ead">A URI that characterizes the nature of the remote resource to which a linking element
+         refers. Optionally available in <gi>contactLine</gi>, <gi>findAidDesc</gi>,
+         <gi>reference</gi>, and <gi>source</gi>.</p>
+   </div>
+   <div type="datatype">
+      <p>anyURI</p>
+   </div>
+   <div type="examples">
+      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <![CDATA[
+         <reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf" linkRole="document/pdf">
+            DELIBERATION N° 17-1166, 15 DECEMBRE 2017
+         </reference>]]>
+      </egXML>
+   </div>
+</div>
