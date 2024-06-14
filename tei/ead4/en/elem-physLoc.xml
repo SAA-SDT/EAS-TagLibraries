@@ -20,16 +20,16 @@
 			<list type="gloss">
             			<label>audience</label>
             			<item>Optional</item>
-           			<label>conventionDeclarationReference</label>
+	           			<label>conventionDeclarationReference</label>
             			<item>Optional</item>
             			<label>id</label>
             			<item>Optional</item>
             			<label>languageOfElement</label>
             			<item>Optional</item>
-				<label>localType</label>
+						<label>localType</label>
             			<item>Optional</item>
             			<label>localTypeDeclarationReference</label>
-           			<item>Optional</item>
+           				<item>Optional</item>
             			<label>maintenanceEventReference</label>
             			<item>Optional</item>
             			<label>scriptOfElement</label>
@@ -46,8 +46,9 @@
 	</div>
 	
 	<div type="seealso">
-		<list type="simple">Do not confuse with <gi>container</gi>, which is used to identify the cartons, boxes, reels, folders, and other storage devices used to hold the described materials.</list>
-
+		<list type="simple">
+			<item>Do not confuse with <gi>container</gi>, which is used to identify the cartons, boxes, reels, folders, and other storage devices used to hold the described materials.</item>
+		</list>
 	</div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
