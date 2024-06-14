@@ -25,21 +25,13 @@
       <p>token</p>
    </div>
    <div type="examples">
-      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="eac">
-         <![CDATA[
-         <setComponent href="http://nla.gov.au/anbd.aut-an35995526" linkTitle="Hill, Dorothy, 1907-1997 - Full record view - Libraries Australia Search">
-            <componentEntry>
-               Libraries Australia record.
-            </componentEntry>
-         </setComponent>
-         ]]>
-      </egXML>
-      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng" type="ead">
-         <![CDATA[
-         <p>
-            More information is available on our <ref linkTitle="Archives at Yale, Help Page" href="https://archives.yale.edu/help">Help page</ref>.
-         </p>
-         ]]>
-      </egXML>
+      <egXML xml:lang="eng" type="eac"><![CDATA[<setComponent href="http://nla.gov.au/anbd.aut-an35995526" linkTitle="Hill, Dorothy, 1907-1997 - Full record view - Libraries Australia Search">
+   <componentEntry>
+      Libraries Australia record.
+   </componentEntry>
+</setComponent>]]></egXML>
+      <egXML xml:lang="eng" type="ead"><![CDATA[<p>
+   More information is available on our <ref linkTitle="Archives at Yale, Help Page" href="https://archives.yale.edu/help">Help page</ref>.
+</p>]]></egXML>
    </div>
 </div>

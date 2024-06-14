@@ -57,7 +57,7 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<places>
+                  <egXML xml:lang="eng"><![CDATA[<places>
    <place>
       <placeName valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
          Stockholm

@@ -24,11 +24,8 @@
       <p>anyURI</p>
    </div>
    <div type="examples">
-      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-         <![CDATA[
-         <reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf" linkRole="document/pdf">
-            DELIBERATION N° 17-1166, 15 DECEMBRE 2017
-         </reference>]]>
-      </egXML>
+      <egXML xml:lang="eng"><![CDATA[<reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf" linkRole="document/pdf">
+   DELIBERATION N° 17-1166, 15 DECEMBRE 2017
+</reference>]]></egXML>
    </div>
 </div>
