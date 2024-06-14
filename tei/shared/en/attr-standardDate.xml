@@ -21,13 +21,13 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                    <![CDATA[
-                      <dateRange>
-                       <fromDate standardDate="1609-07-04">4 juillet 1609</fromDate>
-                       <toDate standardDate="1640-07-07">7 juillet 1640</toDate>
-                      </dateRange>
-                    ]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<dateRange>
+   <fromDate standardDate="1609-07-04">
+      4 juillet 1609
+   </fromDate>
+   <toDate standardDate="1640-07-07">
+      7 juillet 1640
+   </toDate>
+</dateRange>]]></egXML>
                </div>
             </div>

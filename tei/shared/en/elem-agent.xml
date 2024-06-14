@@ -62,22 +62,28 @@
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <maintenanceHistory>
-                        <maintenanceEvent maintenanceEventType="derived">
-                           <agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</agent>
-                           <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
-                           <eventDescription>Derived from EAD instance.</eventDescription>
-                        </maintenanceEvent>
-                        <maintenanceEvent maintenanceEventType="revised">
-                           <agent agentType="unknown"/>
-                           <eventDateTime standardDateTime="2021-11-27"/>
-                        </maintenanceEvent>
-                        <maintenanceEvent maintenanceEventType="updated">
-                           <agent agentType="human">K. Bredenberg</agent>
-                           <eventDateTime>December 2021</eventDateTime>
-                        </maintenanceEvent>
-                     </maintenanceHistory>
-                  </egXML>
+                  <egXML xml:lang="en"><![CDATA[<maintenanceHistory>
+   <maintenanceEvent maintenanceEventType="derived">
+      <agent agentType="machine">
+         XSLT ead2cpf.xsl/Saxon B9
+      </agent>
+      <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
+      <eventDescription>
+         Derived from EAD instance.
+      </eventDescription>
+   </maintenanceEvent>
+   <maintenanceEvent maintenanceEventType="revised">
+      <agent agentType="unknown"/>
+      <eventDateTime standardDateTime="2021-11-27"/>
+   </maintenanceEvent>
+   <maintenanceEvent maintenanceEventType="updated">
+      <agent agentType="human">
+         K. Bredenberg
+      </agent>
+      <eventDateTime>
+         December 2021
+      </eventDateTime>
+   </maintenanceEvent>
+</maintenanceHistory>]]></egXML>
                </div>
             </div>

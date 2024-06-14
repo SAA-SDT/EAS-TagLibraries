@@ -79,32 +79,41 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                    <egXML xml:lang="eng">
-                     <![CDATA[
-                     <maintenanceAgency>
-                        <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-ctybr</agencyCode>
-                        <agencyName>Beinecke Rare Book and Manuscript Library</agencyName>
-                        <otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">CtY-BR</otherAgencyCode>
-                        <otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">Q814779</otherAgencyCode>
-                     </maintenanceAgency>
-                       ]]>
+                    <egXML xml:lang="eng"><![CDATA[<maintenanceAgency>
+   <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">
+      US-ctybr
+   </agencyCode>
+   <agencyName>
+      Beinecke Rare Book and Manuscript Library
+   </agencyName>
+   <otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">
+      CtY-BR
+   </otherAgencyCode>
+   <otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">
+      Q814779
+   </otherAgencyCode>
+</maintenanceAgency>]]>
                   </egXML>
-                    <egXML xml:lang="eng">
-                     <![CDATA[
-                     <maintenanceAgency>
-                        <agencyCode status="alternative" vocabularySource="NAD" vocabularySourceURI="https://sok.riksarkivet.se/">SE/G066</agencyCode>
-                        <agencyName>Kommunalförbundet Sydarkivera</agencyName>
-                     </maintenanceAgency>
-                       ]]>
+                    <egXML xml:lang="eng"><![CDATA[<maintenanceAgency>
+   <agencyCode status="alternative" vocabularySource="NAD" vocabularySourceURI="https://sok.riksarkivet.se/">
+      SE/G066
+   </agencyCode>
+   <agencyName>
+      Kommunalförbundet Sydarkivera
+   </agencyName>
+</maintenanceAgency>]]>
                   </egXML>
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                   <maintenanceAgency countryCode="DE">
-                      <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="https://sigel.staatsbibliothek-berlin.de/de/suche/" valueURI="https://ld.zdb-services.de/resource/organisations/DE-611">DE-611</agencyCode>
-                      <agencyName>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund</agencyName>
-                      <agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</agencyName>
-                   </maintenanceAgency>
-                    ]]>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countryCode="DE">
+   <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="https://sigel.staatsbibliothek-berlin.de/de/suche/" valueURI="https://ld.zdb-services.de/resource/organisations/DE-611">
+      DE-611
+   </agencyCode>
+   <agencyName>
+      Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund
+   </agencyName>
+   <agencyName languageOfElement="eng">
+      Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog
+   </agencyName>
+</maintenanceAgency>]]>
                   </egXML>
                </div>
             </div>

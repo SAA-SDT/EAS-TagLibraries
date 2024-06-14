@@ -24,10 +24,8 @@
                   <p type="ead">token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                    <![CDATA[
-                      <date certainty="uncertain" standardDate="1968?">c.1968</date>
-                    ]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<date certainty="uncertain" standardDate="1968?">
+   c.1968
+</date>]]></egXML>
                </div>
             </div>

@@ -23,13 +23,13 @@
                   <p type="ead">token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                    <![CDATA[
-                      <dateRange>
-                        <fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">1950</fromDate>
-                        <toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">2000</toDate>
-                      </dateRange>
-                    ]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<dateRange>
+   <fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">
+      1950
+   </fromDate>
+   <toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">
+      2000
+   </toDate>
+</dateRange>]]></egXML>
                </div>
             </div>

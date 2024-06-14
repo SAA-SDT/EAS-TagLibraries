@@ -69,25 +69,37 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:relation>
-                        <eac:targetEntity targetType="resource">
-                           <eac:part>Mémorial du colonel Gustafsson. - 1829</eac:part>
-                        </eac:targetEntity>
-                        <eac:relationType>creation</eac:relationType>
-                        <eac:targetRole>Publication</eac:targetRole>
-                     </eac:relation>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:relation>
-                        <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                           <eac:part>Sophie</eac:part>
-                           <eac:part>Baden, Großherzogin</eac:part>
-                           <eac:part>1801-1865</eac:part>
-                        </eac:targetEntity>
-                        <eac:relationType>family</eac:relationType>
-                        <eac:targetRole>daughter</eac:targetRole>
-                     </eac:relation>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<relation>
+   <targetEntity targetType="resource">
+      <part>
+         Mémorial du colonel Gustafsson. - 1829
+      </part>
+   </targetEntity>
+   <relationType>
+      creation
+   </relationType>
+   <targetRole>
+      Publication
+   </targetRole>
+</relation>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<relation>
+   <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+      <part>
+         Sophie
+      </part>
+      <part>
+         Baden, Großherzogin
+      </part>
+      <part>
+         1801-1865
+      </part>
+   </targetEntity>
+   <relationType>
+      family
+   </relationType>
+   <targetRole>
+      daughter
+   </targetRole>
+</relation>]]></egXML>
                </div>
             </div>

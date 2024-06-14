@@ -57,20 +57,26 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                   <egXML xml:lang="eng">
-                     <![CDATA[
-                     <eac:localTypeDeclaration>
-                        <eac:reference href="https://d-nb.info/standards/elementset/gnd_20191015">GNDO</eac:reference>
-                        <eac:descriptiveNote>
-                           <eac:p>Gemeinsame Normdatei Ontologie</eac:p>
-                           <eac:p languageOfElement="eng">Integrated Authority File Ontology</eac:p>
-                           <eac:p>Version 2019-10-15</eac:p>
-                        </eac:descriptiveNote>
-                     </eac:localTypeDeclaration>
-                     <eac:localTypeDeclaration>
-                        <eac:reference href="https://www.loc.gov/marc/authority/">MARC21</eac:reference>
-                     </eac:localTypeDeclaration>
-                      ]]>
-                  </egXML>
+                   <egXML xml:lang="eng"><![CDATA[<localTypeDeclaration>
+   <reference href="https://d-nb.info/standards/elementset/gnd_20191015">
+      GNDO
+   </reference>
+   <descriptiveNote>
+      <p>
+         Gemeinsame Normdatei Ontologie
+      </p>
+      <p languageOfElement="eng">
+         Integrated Authority File Ontology
+      </p>
+      <p>
+         Version 2019-10-15
+      </p>
+   </descriptiveNote>
+</localTypeDeclaration>
+<localTypeDeclaration>
+   <reference href="https://www.loc.gov/marc/authority/">
+      MARC21
+   </reference>
+</localTypeDeclaration>]]></egXML>
                </div>
             </div>

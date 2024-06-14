@@ -18,6 +18,7 @@
                   <p>anyURI</p>
                </div>
                <div type="examples">
+		  <egXML xml:lang="eng" type="ead"/>
                   <egXML xml:lang="eng" type="eac"><![CDATA[<description base="https://d-nb.info/gnd/">
    <occupations>
       <occupation vocabularySource="GND" valueURI="4393865-6">

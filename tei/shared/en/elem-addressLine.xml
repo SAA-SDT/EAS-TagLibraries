@@ -62,13 +62,13 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<address>
-                        <addressLine languageOfElement="se">Kungl. Hovstaterna</addressLine>
-                        <addressLine languageOfElement="se">Kungl. Slottet</addressLine>
-                        <addressLine addressLineType="postalCode">10770</addressLine>
-                        <addressLine languageOfElement="se" addressLineType="municipality">Stockholm</addressLine>
-                        <addressLine languageOfElement="se" addressLineType="country">Sverige</addressLine>
-                        <addressLine languageOfElement="en" addressLineType="country">Sweden</addressLine>
-                     </address>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<address>
+   <addressLine languageOfElement="se">Kungl. Hovstaterna</addressLine>
+   <addressLine languageOfElement="se">Kungl. Slottet</addressLine>
+   <addressLine addressLineType="postalCode">10770</addressLine>
+   <addressLine languageOfElement="se" addressLineType="municipality">Stockholm</addressLine>
+   <addressLine languageOfElement="se" addressLineType="country">Sverige</addressLine>
+   <addressLine languageOfElement="en" addressLineType="country">Sweden</addressLine>
+</address>]]></egXML>
                </div>
             </div>

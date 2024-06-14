@@ -55,21 +55,17 @@
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                     <maintenanceEvent maintenanceEventType="revised">
-                        <agent agentType="unknown"/>
-                        <eventDateTime standardDateTime="2021-11-27"/>
-                     </maintenanceEvent>
-                    ]]>
-                  </egXML>
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                     <maintenanceEvent maintenanceEventType="updated">
-                        <agent agentType="human">K. Bredenberg</agent>
-                        <eventDateTime>December 2021</eventDateTime>
-                     </maintenanceEvent>
-                    ]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="revised">
+   <agent agentType="unknown"/>
+   <eventDateTime standardDateTime="2021-11-27"/>
+</maintenanceEvent>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="updated">
+   <agent agentType="human">
+      K. Bredenberg
+   </agent>
+   <eventDateTime>
+      December 2021
+   </eventDateTime>
+</maintenanceEvent>]]></egXML>
                </div>
             </div>

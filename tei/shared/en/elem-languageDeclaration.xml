@@ -59,10 +59,6 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                   <egXML xml:lang="eng">
-                     <![CDATA[
-                     <languageDeclaration languageCode="ger" scriptCode="Latn"/>
-                      ]]>
-                  </egXML>
+                   <egXML xml:lang="eng"><![CDATA[<languageDeclaration languageCode="ger" scriptCode="Latn"/>]]></egXML>
                </div>
             </div>

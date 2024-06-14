@@ -42,14 +42,15 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng">
-                     <![CDATA[
-                     <maintenanceEvent maintenanceEventType="derived">
-                        <agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</eac:agent>
-                        <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
-                        <eventDescription>Derived from EAD instance.</eventDescription>
-                     </maintenanceEvent>
-                    ]]>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="derived">
+   <agent agentType="machine">
+      XSLT ead2cpf.xsl/Saxon B9
+   </agent>
+   <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
+   <eventDescription>
+      Derived from EAD instance.
+   </eventDescription>
+</maintenanceEvent>]]>
                   </egXML>
                </div>
             </div>
