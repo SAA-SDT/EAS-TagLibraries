@@ -445,7 +445,7 @@
                         <fo:page-number-citation ref-id="{generate-id(.)}"/>
                     </fo:block>
                     <xsl:for-each select="tei:div[@type = 'elementDocumentation']">
-                        <fo:block font-size="10pt" text-align="left" text-align-last="justify" text-indent="10pt">
+                        <fo:block font-size="8.75pt" text-align="left" text-align-last="justify">
                            <fo:inline>
                                 <fo:basic-link internal-destination="{generate-id(.)}">
                                     <xsl:value-of select="tei:head/tei:gi"/>
@@ -464,7 +464,7 @@
                         <fo:page-number-citation ref-id="{generate-id(.)}"/>
                     </fo:block>
                     <xsl:for-each select="tei:div[@type = 'attributeDocumentation']">
-                        <fo:block font-size="10pt" text-align="left" text-align-last="justify" text-indent="10pt">
+                        <fo:block font-size="8.75pt" text-align="left" text-align-last="justify">
                             <fo:inline>
                                 <fo:basic-link internal-destination="{generate-id(.)}">
                                     <xsl:value-of select="tei:head/tei:att"/>
@@ -1115,7 +1115,7 @@
     <xsl:template match="tei:div[@type = 'attributes']/tei:p">
         <xsl:choose>
             <xsl:when test="tei:list[@type = 'gloss']">
-                <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
+                <fo:list-block provisional-distance-between-starts="22.5mm" space-after="6pt">
                     <fo:list-item>
                         <fo:list-item-label end-indent="label-end()">
                             <fo:block font-weight="bold">
@@ -1124,20 +1124,20 @@
                             </fo:block>
                         </fo:list-item-label>
                         <fo:list-item-body start-indent="body-start()">
-                            <fo:table start-indent="body-start()-22.5mm" table-layout="fixed"
+                            <fo:table start-indent="body-start()" table-layout="fixed"
                                 width="85%">
                                 <fo:table-body>
                                     <xsl:for-each select="tei:list/tei:label[1]">
                                         <fo:table-row>
-                                            <fo:table-cell width="62mm">
-                                                <fo:block>
+                                            <fo:table-cell>
+                                                <fo:block hyphenate="true">
                                                   <xsl:call-template name="tokenizeattributes">
-                                                  <xsl:with-param name="text" select="."/>
+                                                    <xsl:with-param name="text" select="."/>
                                                   </xsl:call-template>
                                                 </fo:block>
                                             </fo:table-cell>
                                             <fo:table-cell>
-                                                <fo:block>
+                                                <fo:block hyphenate="true">
                                                   <xsl:apply-templates
                                                   select="following-sibling::tei:item[1]"/>
                                                 </fo:block>
@@ -1147,14 +1147,14 @@
                                     <xsl:for-each select="tei:list/tei:label[position() &gt; 1]">
                                         <fo:table-row>
                                             <fo:table-cell>
-                                                <fo:block>
+                                                <fo:block hyphenate="true">
                                                   <xsl:call-template name="tokenizeattributes">
-                                                  <xsl:with-param name="text" select="."/>
+                                                    <xsl:with-param name="text" select="."/>
                                                   </xsl:call-template>
                                                 </fo:block>
                                             </fo:table-cell>
                                             <fo:table-cell>
-                                                <fo:block>
+                                                <fo:block hyphenate="true">
                                                   <xsl:apply-templates
                                                   select="following-sibling::tei:item[1]"/>
                                                 </fo:block>
@@ -1254,7 +1254,8 @@
 
     </xsl:template>
 
-    <xsl:template match="tei:p[@type=$currentStandard]">
+    <!-- div@type="attributes"/p has special handling, so we don't want this to match it -->
+    <xsl:template match="tei:p[@type=$currentStandard and not(ancestor::div[@type='attributes'])]">
         <fo:block space-after="6pt">
             <xsl:apply-templates/>
         </fo:block>
@@ -1401,7 +1402,7 @@
                     <xsl:choose>
                         <xsl:when test="egXML">
                             <xsl:for-each select="egXML[@type=$currentStandard] | egXML[not(@type)]">
-                                <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" font-size="10pt" space-after="12pt" white-space-collapse="false" text-align="start" wrap-option="wrap" linefeed-treatment="preserve" white-space-treatment="preserve" background-color="gainsboro" border="outset" padding="2mm">
+                                <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" font-size="9pt" space-after="12pt" white-space-collapse="false" text-align="start" wrap-option="wrap" linefeed-treatment="preserve" white-space-treatment="preserve" background-color="gainsboro" border="outset" padding="2mm">
                                     <xsl:value-of select="."/>
                                 </fo:block>
                             </xsl:for-each>
