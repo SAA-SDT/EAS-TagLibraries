@@ -16,8 +16,8 @@
 		<p>EASList, otherContactLineTypeEncoding</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" contactLineTypeEncoding="EASList"> [...] </control>]]>
-		</egXML>
+		<egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" contactLineTypeEncoding="EASList">
+	[...]
+</control>]]></egXML>
 	</div>
 </div>

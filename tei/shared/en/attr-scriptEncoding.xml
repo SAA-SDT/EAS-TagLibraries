@@ -19,7 +19,6 @@
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924">
    [...]
-</control>]]>
-                  </egXML>
+</control>]]></egXML>
                </div>
             </div>

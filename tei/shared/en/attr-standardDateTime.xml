@@ -24,13 +24,9 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="ead"/>
-		  <egXML xml:lang="eng" type="eac">
-                    <![CDATA[
-                    <maintenanceEvent maintenanceEventType="revised">
-                        <agent agentType="unknown"/>
-                        <eventDateTime standardDateTime="2021-11-27"/>
-                    </maintenanceEvent>
-                    ]]>
-                  </egXML>
+		  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceEvent maintenanceEventType="revised">
+    <agent agentType="unknown"/>
+    <eventDateTime standardDateTime="2021-11-27"/>
+</maintenanceEvent>]]></egXML>
                </div>
             </div>

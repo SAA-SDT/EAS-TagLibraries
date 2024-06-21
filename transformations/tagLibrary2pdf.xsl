@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:eac-cpf="urn:isbn:1-931666-33-4" xmlns:eac="http://archivists.org/ns/eac/v2"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:fox="http://xmlgraphics.apache.org/fop/extensions"
+    xmlns:eac-cpf="urn:isbn:1-931666-33-4" xmlns:eac="http://archivists.org/ns/eac/v2"
     xmlns:ead="urn:isbn:1-931666-22-9"
     xmlns:ead3="http://ead3.archivists.org/schema/"
     xmlns:premis="http://www.loc.gov/premis/v3"
@@ -118,24 +119,20 @@
         select="$headingtranslations//*:terms/*:term[@name = 'entity']/*:translation[@lang = $currentLanguage]"/>
 
     <xsl:template match="/">
-        <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"
+        <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:fox="http://xmlgraphics.apache.org/fop/extensions"
             font-selection-strategy="character-by-character" font-family="KurintoText,KurintoTextJP,KurintoTextKR,KurintoTextSC" xml:lang="{$currentLanguage}">
             <!-- Replaced Pala with Arial -->
             <fo:layout-master-set>
                 <fo:simple-page-master master-name="taglibrary-even" page-height="297mm"
-                    page-width="210mm" margin-top="1.5cm" margin-bottom="1.5cm" margin-left="1.5cm"
-                    margin-right="1.5cm">
-                    <fo:region-body region-name="taglibrary-region-body" margin-top="2.0cm"
-                        margin-bottom="1.5cm" margin-left="1.5cm" margin-right="1.5cm"/>
-                    <fo:region-before region-name="taglibrary-region-before-even" extent="1.3cm"/>
+                    page-width="210mm" margin="1.5cm">
+                    <fo:region-body region-name="taglibrary-region-body" margin-top="1cm" margin-left="1.5cm" margin-right="1.5cm" margin-bottom="1.5cm"/>
+                    <fo:region-before region-name="taglibrary-region-before-even" extent="0.5cm"/>
                     <fo:region-after region-name="taglibrary-region-after-even" extent="0.5cm"/>
                 </fo:simple-page-master>
                 <fo:simple-page-master master-name="taglibrary-odd" page-height="297mm"
-                    page-width="210mm" margin-top="1.5cm" margin-bottom="1.5cm" margin-left="1.5cm"
-                    margin-right="1.5cm">
-                    <fo:region-body region-name="taglibrary-region-body" margin-top="2.0cm"
-                        margin-bottom="1.5cm" margin-left="1.5cm" margin-right="1.5cm"/>
-                    <fo:region-before region-name="taglibrary-region-before-odd" extent="1.3cm"/>
+                    page-width="210mm" margin="1.5cm">
+                    <fo:region-body region-name="taglibrary-region-body" margin-top="1cm" margin-left="1.5cm" margin-right="1.5cm" margin-bottom="1.5cm"/>
+                    <fo:region-before region-name="taglibrary-region-before-odd" extent="0.5cm"/>
                     <fo:region-after region-name="taglibrary-region-after-odd" extent="0.5cm"/>
                 </fo:simple-page-master>
                 <fo:page-sequence-master master-name="frames">
@@ -147,22 +144,57 @@
                     </fo:repeatable-page-master-alternatives>
                 </fo:page-sequence-master>
                 <fo:simple-page-master master-name="Frontmatter" page-height="29.7cm"
-                    page-width="21cm" margin-top="2.5cm" margin-bottom="2.5cm" margin-left="2.5cm"
-                    margin-right="2.5cm">
+                    page-width="21cm" margin="2.5cm">
                     <fo:region-body region-name="frontmatter-body" margin-top="2.4cm"
                         margin-bottom="2.4cm" margin-left="0cm" margin-right="2.4cm"
                         column-count="1" display-align="center"/>
                     <fo:region-before region-name="frontmatter-region-before" extent="2.3cm"/>
                     <fo:region-after region-name="frontmatter-region-after" extent="2.3cm"/>
                 </fo:simple-page-master>
-                <fo:simple-page-master master-name="toc-region" page-height="29.7cm"
-                    page-width="21cm" margin-top="2.5cm" margin-bottom="2.5cm" margin-left="2.5cm"
-                    margin-right="2.5cm">
-                    <fo:region-body region-name="toc-region-body" margin-top="2.4cm"
-                        margin-bottom="2.4cm" margin-left="0cm" margin-right="2.4cm"
-                        column-count="2" />
+                <fo:simple-page-master master-name="toc-region" page-height="297mm"
+                    page-width="210mm" margin="1.5cm">
+                    <fo:region-body region-name="toc-region-body" margin="1.5cm"/>
                 </fo:simple-page-master>
             </fo:layout-master-set>
+
+            <fo:declarations>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/">
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                        <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                            <dc:title>
+                                <xsl:value-of select="tei:TEI/tei:text/tei:front/tei:titlePage/tei:docTitle"/>
+                            </dc:title>
+                            <dc:creator>
+                                <xsl:value-of select="tei:TEI/tei:text/tei:front/tei:titlePage/tei:docAuthor"/>
+                            </dc:creator>
+                            <dc:description>Document subject</dc:description>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </x:xmpmeta>
+            </fo:declarations>
+
+            <fo:bookmark-tree>
+                <fo:bookmark internal-destination="tocpage">
+                    <fo:bookmark-title>Table of Contents</fo:bookmark-title>
+                </fo:bookmark>
+                <xsl:for-each select="tei:TEI/tei:text/tei:body/tei:div">
+                    <fo:bookmark internal-destination="{generate-id(.)}">
+                        <fo:bookmark-title>
+                            <xsl:variable name="parttitle">
+                                <xsl:value-of select="current()/@type"/>
+                            </xsl:variable>
+                            <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $parttitle]/*:translation[@lang = $currentLanguage]"/>
+                        </fo:bookmark-title>
+                        <xsl:for-each select="tei:div">
+                            <fo:bookmark internal-destination="{generate-id(.)}">
+                                <fo:bookmark-title>
+                                    <xsl:value-of select="normalize-space(tei:head)"/>
+                                </fo:bookmark-title>
+                            </fo:bookmark>
+                        </xsl:for-each>
+                    </fo:bookmark>
+                </xsl:for-each>
+            </fo:bookmark-tree>
 
             <fo:page-sequence master-reference="Frontmatter">
                 <fo:flow flow-name="frontmatter-body">
@@ -218,8 +250,8 @@
     </xsl:template>
 
     <xsl:template name="toc">
-        <fo:block font-size="14pt" font-weight="bold" space-before="8pt" space-after="6pt"
-            text-align="center" page-break-before="always" id="tocpage" span="all">
+        <fo:block role="H1" font-size="2em" font-weight="bold"
+                text-align="left" page-break-before="always" id="tocpage" margin-top=".67em" margin-bottom=".67em">
             <fo:marker marker-class-name="taglibrary-head">
                 <fo:block>
                     <xsl:value-of select="$toc"/>
@@ -241,7 +273,7 @@
 
     <xsl:template match="tei:div" mode="toclong">
         <xsl:for-each select="tei:div">
-            <fo:block font-size="14pt" font-weight="bold" space-before="8pt" space-after="6pt"
+            <fo:block role="H2" font-size="1.5em" font-weight="bold" margin-top=".83em" margin-bottom=".83em"
                 text-align="left" text-align-last="justify" span="all">
                 <fo:inline>
                     <fo:basic-link internal-destination="{generate-id()}">
@@ -267,7 +299,7 @@
 
     <xsl:template match="tei:div" mode="tocshort">
         <xsl:for-each select="tei:div">
-            <fo:block font-size="14pt" font-weight="bold" space-before="8pt" space-after="6pt"
+            <fo:block role="H2" font-size="1.5em" font-weight="bold" margin-top=".83em" margin-bottom=".83em"
                 text-align="left" text-align-last="justify">
                 <fo:inline>
                     <fo:basic-link internal-destination="{generate-id(.)}">
@@ -318,7 +350,7 @@
         <fo:block text-align="center" page-break-after="always" padding-before="120pt">
             <xsl:choose>
                 <xsl:when test="starts-with($SAA, 'yes')">
-                    <fo:external-graphic src="../images/SAAVert540.jpg" alignment-adjust="middle"/>
+                    <fo:external-graphic src="../images/SAAVert540.jpg" alignment-adjust="middle" fox:alt-text="Society of American Archivists logo"/>
                     <fo:block>Chicago</fo:block>
                 </xsl:when>
             </xsl:choose>
@@ -349,82 +381,36 @@
         <xsl:variable name="TheWholeDocument" select="ancestor::tei:TEI/tei:teiHeader/tei:fileDesc"/>
         <fo:block padding-before="1cm" font-weight="bold">
             <xsl:value-of select="$availableFrom"/>
-            <xsl:text>:</xsl:text>
         </fo:block>
-        <fo:block>
-            <fo:table table-layout="fixed" width="100%">
-                <fo:table-body>
-                    <xsl:for-each
-                        select="$TheWholeDocument/tei:publicationStmt/tei:address/tei:addrLine">
-                        <fo:table-row>
-                            <fo:table-cell width="3.5cm">
-                                <fo:block> </fo:block>
-                            </fo:table-cell>
-                            <fo:table-cell>
-                                <fo:block>
-                                    <xsl:value-of select="."/>
-                                </fo:block>
-                            </fo:table-cell>
-                        </fo:table-row>
-                    </xsl:for-each>
-                </fo:table-body>
-            </fo:table>
-        </fo:block>
+        <xsl:for-each select="$TheWholeDocument/tei:publicationStmt/tei:address/tei:addrLine">
+            <fo:block>
+                <xsl:value-of select="."/>
+            </fo:block>
+        </xsl:for-each>
         <fo:block padding-before="1cm">
-            <fo:table table-layout="fixed" width="100%">
-                <fo:table-body>
-                    <fo:table-row>
-                        <fo:table-cell width=".5cm">
-                            <fo:block>&#169;</fo:block>
-                        </fo:table-cell>
-                        <fo:table-cell>
-                            <fo:block>
-                                <xsl:value-of
-                                    select="$TheWholeDocument/tei:publicationStmt/tei:publisher"/>
-                                <xsl:text>, </xsl:text>
-                                <xsl:value-of
-                                    select="$TheWholeDocument/tei:publicationStmt/tei:date/@when"/>
-                                <xsl:text>.</xsl:text>
-                            </fo:block>
-                        </fo:table-cell>
-                    </fo:table-row>
-                    <fo:table-row>
-                        <fo:table-cell>
-                            <fo:block wrap-option="no-wrap"><xsl:value-of select="$edition"/>:
-                                    <xsl:value-of select="$TheWholeDocument/tei:editionStmt/tei:p"
-                                /></fo:block>
-                        </fo:table-cell>
-                    </fo:table-row>
-                    <fo:table-row>
-                        <fo:table-cell>
-                            <fo:block wrap-option="no-wrap"><xsl:value-of select="$printed"/>:
-                                    <xsl:value-of select="$printedinusa"/></fo:block>
-                        </fo:table-cell>
-                    </fo:table-row>
-                </fo:table-body>
-            </fo:table>
+            <fo:block>
+                <xsl:text>&#169;</xsl:text>
+                <xsl:value-of select="$TheWholeDocument/tei:publicationStmt/tei:publisher"/>
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="$TheWholeDocument/tei:publicationStmt/tei:date/@when"/>
+                <xsl:text>.</xsl:text>
+            </fo:block>
+            <fo:block wrap-option="no-wrap">
+                <xsl:value-of select="$edition"/>
+                :
+                <xsl:value-of select="$TheWholeDocument/tei:editionStmt/tei:p"/>
+            </fo:block>
+            <fo:block wrap-option="no-wrap">
+                <xsl:value-of select="$printed"/>
+                :
+                <xsl:value-of select="$printedinusa"/>
+            </fo:block>
         </fo:block>
         <fo:block padding-before=".5cm">
-            <fo:table table-layout="fixed" width="100%">
-                <fo:table-body>
-                    <fo:table-row>
-                        <fo:table-cell width="3.5cm">
-                            <!-- Is it always this picture???? -->
-                            <fo:block>
-                                <fo:external-graphic src="../images/CCommons.png"/>
-                                <xsl:text> </xsl:text>
-                            </fo:block>
-                        </fo:table-cell>
-                        <fo:table-cell>
-                            <fo:block>
-                                <xsl:apply-templates
-                                    select="$TheWholeDocument/tei:publicationStmt/tei:availability/tei:licence"
-                                />
-                            </fo:block>
-                        </fo:table-cell>
-                    </fo:table-row>
-                </fo:table-body>
-            </fo:table>
+            <fo:external-graphic src="../images/CCommons.png" fox:alt-text="Creative Commons CC-BY badge"/>
+        </fo:block>
+        <fo:block>
+            <xsl:apply-templates select="$TheWholeDocument/tei:publicationStmt/tei:availability/tei:licence"/>
         </fo:block>
         <fo:block padding-before=".25cm">
             <xsl:value-of select="$ISBN"/>
@@ -437,15 +423,14 @@
             <xsl:choose>
                 <!-- Karin få in valet här! -->
                 <xsl:when test="@type = ['elements', 'rights', 'agents', 'objects', 'events']">
-                    <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
-                        space-after="6pt" text-align="left" text-align-last="justify" span="all">
+                    <fo:block role="H2" font-size="1.5em" font-weight="bold" text-align="left" text-align-last="justify">
                         <!-- Karin: Add selection of value based upon the xml:id??? -->
                         <xsl:value-of select="$elements"/>
                         <fo:leader leader-pattern="dots"/>
                         <fo:page-number-citation ref-id="{generate-id(.)}"/>
                     </fo:block>
                     <xsl:for-each select="tei:div[@type = 'elementDocumentation']">
-                        <fo:block font-size="8.75pt" text-align="left" text-align-last="justify">
+                        <fo:block text-align="left" text-align-last="justify">
                            <fo:inline>
                                 <fo:basic-link internal-destination="{generate-id(.)}">
                                     <xsl:value-of select="tei:head/tei:gi"/>
@@ -457,14 +442,13 @@
                     </xsl:for-each>
                 </xsl:when>
                 <xsl:when test="@type = 'attributes'">
-                    <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
-                        space-after="6pt" text-align="left" text-align-last="justify" span="all">
+                    <fo:block role="H2" font-size="1.5em" font-weight="bold" text-align="left" text-align-last="justify">
                         <xsl:value-of select="$attributes"/>
                         <fo:leader leader-pattern="dots"/>
                         <fo:page-number-citation ref-id="{generate-id(.)}"/>
                     </fo:block>
                     <xsl:for-each select="tei:div[@type = 'attributeDocumentation']">
-                        <fo:block font-size="8.75pt" text-align="left" text-align-last="justify">
+                        <fo:block text-align="left" text-align-last="justify">
                             <fo:inline>
                                 <fo:basic-link internal-destination="{generate-id(.)}">
                                     <xsl:value-of select="tei:head/tei:att"/>
@@ -496,8 +480,7 @@
             <xsl:choose>
                 <!-- få in valet här! -->
                 <xsl:when test="@type = ['elements', 'rights', 'agents', 'objects', 'events']">
-                    <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
-                        space-after="6pt" text-align="left" text-align-last="justify">
+                    <fo:block role="H2" font-size="1.5em" font-weight="bold" margin-top=".83em" margin-bottom=".83em" text-align="left" text-align-last="justify">
                         <fo:inline>
                             <fo:basic-link internal-destination="{generate-id(.)}">
                                 <!-- Karin: Add selection of value based upon the xml:id??? -->
@@ -509,8 +492,7 @@
                     </fo:block>
                 </xsl:when>
                 <xsl:when test="@type = 'attributes'">
-                    <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
-                        space-after="6pt" text-align="left" text-align-last="justify">
+                    <fo:block role="H2" font-size="1.5em" font-weight="bold" margin-top=".83em" margin-bottom=".83em" text-align="left" text-align-last="justify">
                         <fo:inline>
                             <fo:basic-link internal-destination="{generate-id(.)}">
                                 <xsl:value-of select="$attributes"/>
@@ -521,8 +503,7 @@
                     </fo:block>
                 </xsl:when>
                 <xsl:when test="@type = 'appendix'">
-                    <fo:block font-size="14pt" font-weight="bold" space-before="8pt"
-                        space-after="6pt" text-align="left" text-align-last="justify">
+                    <fo:block role="H2" font-size="1.5em" font-weight="bold" margin-top=".83em" margin-bottom=".83em" text-align="left" text-align-last="justify">
                         <fo:inline>
                             <fo:basic-link internal-destination="{generate-id(.)}">
                                 <xsl:value-of select="tei:head"/>
@@ -650,22 +631,18 @@
                     <xsl:variable name="parttitle">
                         <xsl:value-of select="current()/@type"/>
                     </xsl:variable>
-                    <xsl:value-of
-                        select="$headingtranslations/*:terms/*:term[@name = $parttitle]/*:translation[@lang = $currentLanguage]"
-                    />
+                    <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $parttitle]/*:translation[@lang = $currentLanguage]"/>
                 </fo:block>
             </fo:marker>
             <!-- Karin: Add selection of value based upon the xml:id??? -->
             <xsl:variable name="parttitle">
                 <xsl:value-of select="current()/@type"/>
             </xsl:variable>
-            <xsl:value-of
-                select="$headingtranslations/*:terms/*:term[@name = $parttitle]/*:translation[@lang = $currentLanguage]"
-            />
+            <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $parttitle]/*:translation[@lang = $currentLanguage]"/>
         </fo:block>
         <xsl:for-each select="tei:div[@type = 'elementDocumentation']">
-            <fo:block font-size="18pt" font-weight="bold" space-before="18pt" space-after="12pt"
-                text-align="left" page-break-before="always" id="{generate-id()}">
+            <fo:block role="H1" font-size="2em" font-weight="bold"
+                text-align="left" page-break-before="always" id="{generate-id()}" margin-top=".67em" margin-bottom=".67em">
                 <fo:marker marker-class-name="taglibrary-head">
                     <!-- elements have an id starting with elem- @xml:id-->
                     <fo:block id="{concat('elem-', tei:head/tei:gi)}">
@@ -684,17 +661,9 @@
                         <xsl:text>&gt;</xsl:text>
                     </xsl:otherwise>
                 </xsl:choose>
-                <xsl:text>&#xA0;&#xA0;</xsl:text>
+            </fo:block>
+            <fo:block role="H2" font-size="1.5em" font-weight="bold" margin-top=".83em" margin-bottom=".83em">
                 <xsl:value-of select="tei:div[@type = 'fullName']/tei:p"/>
-                <xsl:if test="starts-with($returntotoc, 'yes')">
-                    <fo:inline font-size="12pt" start-indent="10pt" font-weight="normal">
-                        <fo:basic-link internal-destination="tocpage">
-                            <xsl:text>(</xsl:text>
-                            <xsl:value-of select="$toc"/>
-                            <xsl:text>)</xsl:text>
-                        </fo:basic-link>
-                    </fo:inline>
-                </xsl:if>
             </fo:block>
             <xsl:apply-templates select="tei:div[@type = 'summary']"/>
             <xsl:apply-templates select="tei:div[@type = 'mayContain']"/>
@@ -719,6 +688,13 @@
             <xsl:apply-templates select="tei:div[@type = 'examples']"/>
             <xsl:apply-templates select="tei:div[@type = 'creationmaintenance']"/>
             <xsl:apply-templates select="tei:div[@type = 'usagenotes']"/>
+            <xsl:if test="starts-with($returntotoc, 'yes')">
+                <fo:block>
+                    <fo:basic-link internal-destination="tocpage" color="blue">
+                        <xsl:value-of select="$toc"/>
+                    </fo:basic-link>
+                </fo:block>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
 
@@ -735,8 +711,7 @@
         </fo:block>
         <xsl:apply-templates select="tei:div[@type = 'Introduction']"/>
         <xsl:for-each select="tei:div[@type = 'attributeDocumentation']">
-            <fo:block font-size="18pt" font-weight="bold" space-before="18pt" space-after="12pt"
-                text-align="left" page-break-before="always" id="{generate-id(.)}">
+            <fo:block  role="H1" font-size="2em" font-weight="bold" text-align="left" page-break-before="always" id="{generate-id()}" margin-top=".67em" margin-bottom=".67em">
                 <fo:marker marker-class-name="taglibrary-head">
                     <!-- atttributes have an id starting with attr- @xml:id-->
                     <fo:block
@@ -747,17 +722,9 @@
                 </fo:marker>
                 <xsl:text>@</xsl:text>
                 <xsl:value-of select="tei:head/tei:att"/>
-                <xsl:text>&#xA0;&#xA0;</xsl:text>
+            </fo:block>
+            <fo:block role="H2" font-size="1.5em" font-weight="bold" margin-top=".83em" margin-bottom=".83em">
                 <xsl:value-of select="tei:div[@type = 'fullName']/tei:p"/>
-                <xsl:if test="starts-with($returntotoc, 'yes')">
-                    <fo:inline font-size="12pt" start-indent="10pt" font-weight="normal">
-                        <fo:basic-link internal-destination="tocpage">
-                            <xsl:text>(</xsl:text>
-                            <xsl:value-of select="$toc"/>
-                            <xsl:text>)</xsl:text>
-                        </fo:basic-link>
-                    </fo:inline>
-                </xsl:if>
             </fo:block>
             <xsl:apply-templates select="tei:div[@type = 'summary']"/>
             <xsl:apply-templates select="tei:div[@type = 'description']"/>
@@ -766,6 +733,13 @@
             <xsl:apply-templates select="tei:div[@type = 'datatype']"/>
             <xsl:apply-templates select="tei:div[@type = 'values']"/>
             <xsl:apply-templates select="tei:div[@type = 'examples']"/>
+            <xsl:if test="starts-with($returntotoc, 'yes')">
+                <fo:block>
+                    <fo:basic-link internal-destination="tocpage" color="blue">
+                        <xsl:value-of select="$toc"/>
+                    </fo:basic-link>
+                </fo:block>
+            </xsl:if>
         </xsl:for-each>
     </xsl:template>
 
@@ -915,75 +889,33 @@
 
     <!-- Non-tokenized note divs -->
     <xsl:template
-        match="tei:div[@type = ('summary', 'definition', 'rationale', 'creationmaintenance', 'usagenotes', 'datatype', 'values', 'availability', 'reference', 'references', 'desc', 'usage', 'description')]">
-        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
-            <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                    <fo:block font-weight="bold">
+        match="tei:div[@type = ('summary', 'definition', 'rationale', 'creationmaintenance', 'usagenotes', 'datatype', 'values', 'availability', 'reference', 'references', 'desc', 'usage', 'description', 'attributeusage', 'seealso')]">
+                    <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                         <xsl:variable name="termtitle">
                             <xsl:value-of select="current()/@type"/>
                         </xsl:variable>
                         <xsl:value-of
                             select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage]"/>
-                        <xsl:text>: </xsl:text>
                     </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
                     <fo:block>
                         <xsl:apply-templates/>
                     </fo:block>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block>
-    </xsl:template>
-
-    <!-- Note divs with lists, which get a special indent -->
-    <xsl:template
-        match="tei:div[@type = ('attributeusage', 'seealso')]">
-        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
-            <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                    <fo:block font-weight="bold">
-                        <xsl:variable name="termtitle">
-                            <xsl:value-of select="current()/@type"/>
-                        </xsl:variable>
-                        <xsl:value-of
-                            select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage]"/>
-                        <xsl:text>: </xsl:text>
-                    </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="25mm">
-                    <fo:block>
-                        <xsl:apply-templates/>
-                    </fo:block>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block>
     </xsl:template>
 
     <!-- Tokenized note divs -->
     <xsl:template match="tei:div[@type = ('semanticcomponents', 'mayOccurWithin', 'mayContain')]">
-        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
-            <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                    <fo:block font-weight="bold">
+                    <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                         <xsl:variable name="termtitle">
                             <xsl:value-of select="current()/@type"/>
                         </xsl:variable>
                         <xsl:value-of
                             select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage]"/>
-                        <xsl:text>: </xsl:text>
                     </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
                     <fo:block>
                         <xsl:for-each select="tei:p[@type=$currentStandard] | tei:p[not(@type)]">
                             <xsl:call-template name="tokenize"/>
                         </xsl:for-each>
                     </fo:block>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block>
     </xsl:template>
 
     <!-- Deprecated (non-tokenized) note divs -->
@@ -1012,15 +944,9 @@
 
     <!-- occurrence has some special rules, so it gets a special template -->
     <xsl:template match="tei:div[@type = 'occurrence']">
-        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
-            <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                    <fo:block font-weight="bold">
+                    <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                         <xsl:value-of select="$occurrence"/>
-                        <xsl:text>: </xsl:text>
                     </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
                     <xsl:choose>
                         <xsl:when test="tei:div[@type = 'occurenceSpecifikation']">
                             <fo:block>
@@ -1035,9 +961,6 @@
                             </fo:block>
                         </xsl:otherwise>
                     </xsl:choose>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block>
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'entity'][parent::tei:div[@type = 'elementDocumentation']]">
@@ -1115,17 +1038,24 @@
     <xsl:template match="tei:div[@type = 'attributes']/tei:p">
         <xsl:choose>
             <xsl:when test="tei:list[@type = 'gloss']">
-                <fo:list-block provisional-distance-between-starts="22.5mm" space-after="6pt">
-                    <fo:list-item>
-                        <fo:list-item-label end-indent="label-end()">
-                            <fo:block font-weight="bold">
+                            <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                                 <xsl:value-of select="$attributes"/>
-                                <xsl:text>: </xsl:text>
                             </fo:block>
-                        </fo:list-item-label>
-                        <fo:list-item-body start-indent="body-start()">
-                            <fo:table start-indent="body-start()" table-layout="fixed"
-                                width="85%">
+                            <fo:table table-layout="fixed" width="100%">
+                                <fo:table-header>
+                                    <fo:table-row>
+                                        <fo:table-cell>
+                                            <fo:block font-style="italic">
+                                                Attribute name
+                                            </fo:block>
+                                        </fo:table-cell>
+                                        <fo:table-cell>
+                                            <fo:block font-style="italic">
+                                                Attribute values
+                                            </fo:block>
+                                        </fo:table-cell>
+                                    </fo:table-row>
+                                </fo:table-header>
                                 <fo:table-body>
                                     <xsl:for-each select="tei:list/tei:label[1]">
                                         <fo:table-row>
@@ -1163,13 +1093,9 @@
                                     </xsl:for-each>
                                 </fo:table-body>
                             </fo:table>
-                        </fo:list-item-body>
-                    </fo:list-item>
-                </fo:list-block>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$attributes"/>
-                <xsl:text>: </xsl:text>
                 <xsl:apply-templates/>
             </xsl:otherwise>
         </xsl:choose>
@@ -1256,7 +1182,7 @@
 
     <!-- div@type="attributes"/p has special handling, so we don't want this to match it -->
     <xsl:template match="tei:p[@type=$currentStandard and not(ancestor::div[@type='attributes'])]">
-        <fo:block space-after="6pt">
+        <fo:block>
             <xsl:apply-templates/>
         </fo:block>
     </xsl:template>
@@ -1382,27 +1308,20 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'examples']">
-        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
-            <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                    <fo:block font-weight="bold">
+                    <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                         <xsl:choose>
                             <xsl:when test="count(*) &gt; 1">
                                 <xsl:value-of select="$examples"/>
-                                <xsl:text>:</xsl:text>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:value-of select="$example"/>
-                                <xsl:text>:</xsl:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
                     <xsl:choose>
                         <xsl:when test="egXML">
                             <xsl:for-each select="egXML[@type=$currentStandard] | egXML[not(@type)]">
-                                <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" font-size="9pt" space-after="12pt" white-space-collapse="false" text-align="start" wrap-option="wrap" linefeed-treatment="preserve" white-space-treatment="preserve" background-color="gainsboro" border="outset" padding="2mm">
+                                <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" white-space-collapse="false" text-align="start" wrap-option="wrap" linefeed-treatment="preserve" white-space-treatment="preserve" background-color="gainsboro" border="outset" font-size="0.83em" padding="2mm" margin="0mm" space-after="3mm">
                                     <xsl:value-of select="."/>
                                 </fo:block>
                             </xsl:for-each>
@@ -1413,9 +1332,6 @@
                             </fo:block>
                         </xsl:otherwise>
                     </xsl:choose>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block>
     </xsl:template>
 
     <!-- In this template all occuring other namespaceprefixis needs to be added -->

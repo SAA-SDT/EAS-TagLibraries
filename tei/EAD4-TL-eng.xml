@@ -9,15 +9,15 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Title</title>
-			<title type="additional">Version</title>
+            <title type="main">Encoded Archival Description 4 Tag Library</title>
+			<title type="additional">DRAFT</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
-               <name>Name</name>
+               <name>Society of American Archivists</name>
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Edition</edition>
+            <edition>Draft Release</edition>
          </editionStmt>
          <publicationStmt>
             <publisher>Society of American Archivists</publisher>
@@ -50,15 +50,15 @@
       <front>
          <titlePage>
             <docTitle>
-               <titlePart type="main">Document full title</titlePart>
-			   <titlePart type="additional">Version</titlePart>
+               <titlePart type="main">Encoded Archival Description 4 Tag Library</titlePart>
+			   <titlePart type="additional">DRAFT</titlePart>
             </docTitle>
-            <docEdition>Edition</docEdition>
+            <docEdition>Draft Release</docEdition>
             <byline>Prepared and maintained by the</byline>
-            <docAuthor>Writer</docAuthor>
-            <docAuthor>Writer</docAuthor>
+            <docAuthor>Technical Subcommittee - Encoded Archival Standards</docAuthor>
+            <docAuthor>Society of American Archivists</docAuthor>
             <docImprint>
-               <docDate>Date of the document</docDate>
+               <docDate>July 2024</docDate>
             </docImprint>
          </titlePage>
          <div>
@@ -84,7 +84,7 @@
                the list contains:
                <item> for the text
             <note n="number"> for creating footnotes
-            -->
+            
             <div xml:id="front-example">
                <head>Title</head>
                <p>Text</p>
@@ -93,7 +93,7 @@
                   <item>Item 1</item>
                   <item>Item 2</item>
                </list>
-            </div>
+            </div>-->
          </div>
       </front>
       <body>
@@ -294,11 +294,11 @@
             in the div:
                @type is always appendix
                @xml:id is a short name of the appendix
-         -->
+         
          <div type="appendix" xml:id="appendix1">
             <head>Title</head>
             <p>Contents of the appendix; this can also include lists</p>
-         </div>
+         </div>-->
       </back>
    </text>
 </TEI>
