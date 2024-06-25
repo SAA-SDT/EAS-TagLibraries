@@ -14,7 +14,7 @@
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
-  <label>Any element that is in a namespace other than the current namespace.</label>
+  <label>[Any element that is in a namespace other than the current namespace]</label>
   <item/>
 </list></p>
 	</div>
@@ -23,13 +23,9 @@
 		...especially with EAF, etc. Yikes! -->
 		<!-- rather that sort A-Z in one list, would it be better to break out by type?  e.g. narrative appearance vs. findingAidDesc vs. former dsc + new formAvailable ? -->
 		<!-- also, in this case, i think we should take a harder line and *only* allow this extension on narrative elements, but also to be more flexible and allow it to sit side-by-side with paragraphs. i can certainly see the benefit of having a formattingExtension follow a local set of "paragraphs". -->
-		<p>accessConditions (0..1), accruals (0..1), abstract (0..1), appraisal (0..1), arrangement
-			(0..1), bioghist (0..1), custodHist (0..1), descriptionOfComponents (0..1), filePlan
-			(0..1), findAidDesc (0..n), formAvailable (0..1), otherDescriptiveInfo (0..1),
-			otherFindAid (0..1), physicalOrTechnicalRequirements (0..1), preferCite (0..1),
-			processInfo (0..1), publicationNote (0..1), relatedMaterial (0..1), scopeContent (0..1),
-			separatedMaterial (0..1), sourceOfAcquisition (0..1), subjectHeadings (0..1),
-			useConditions (0..1)</p>
+		<p>
+				accessConditions, accruals, abstract, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, filePlan, findAidDesc, formAvailable, otherDescriptiveInfo, otherFindAid, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions
+		</p>
 	</div>
 	<div type="attributes">
 		<p>
