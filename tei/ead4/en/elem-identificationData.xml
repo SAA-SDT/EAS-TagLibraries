@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-identificationData" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-identificationData">
 	<head>
 		<gi>identificationData</gi>
 	</head>
@@ -10,7 +10,36 @@
 		<p>A wrapper element that encloses information essential for identifying the material being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>container (0..n), head (0..1), identificationDataNote (0..n), languageOfMaterial (0..n), legalStatus (0..n), materialSpec (0..n), physDescSet (0..n), physDesc (0..n), physDescStructured (0..n), physLoc (0..n), unitDate (0..n), unitDateStructured (0..n), unitId (0..n), unitTitle (0..n)</p>
+		<p><list type="gloss">
+  <label>container</label>
+  <item>0..n</item>
+  <label>head</label>
+  <item>0..1</item>
+  <label>identificationDataNote</label>
+  <item>0..n</item>
+  <label>languageOfMaterial</label>
+  <item>0..n</item>
+  <label>legalStatus</label>
+  <item>0..n</item>
+  <label>materialSpec</label>
+  <item>0..n</item>
+  <label>physDescSet</label>
+  <item>0..n</item>
+  <label>physDesc</label>
+  <item>0..n</item>
+  <label>physDescStructured</label>
+  <item>0..n</item>
+  <label>physLoc</label>
+  <item>0..n</item>
+  <label>unitDate</label>
+  <item>0..n</item>
+  <label>unitDateStructured</label>
+  <item>0..n</item>
+  <label>unitId</label>
+  <item>0..n</item>
+  <label>unitTitle</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>

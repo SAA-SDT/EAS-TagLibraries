@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-control" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-control">
                <head>
                   <gi>control</gi>
                </head>
@@ -12,8 +12,50 @@
                      composition of the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p type="eac">conventionDeclaration (0..n), languageDeclaration (0..n), localControl (0..n), localTypeDeclaration (0..n), maintenanceAgency (1..1), maintenanceHistory (1..1), otherRecordId (0..n), recordId (1..1), rightsDeclaration (0..n), representation (0..n), sources (0..1)</p>
-                 <p type="ead">conventionDeclaration (0..n), languageDeclaration (0..n), localTypeDeclaration (0..n), maintenanceAgency (1..1), maintenanceHistory (1..1), otherRecordId (0..n), recordId (1..1), rightsDeclaration (0..n), sources (0..1)</p>
+                  <p type="eac"><list type="gloss">
+  <label>conventionDeclaration</label>
+  <item>0..n</item>
+  <label>languageDeclaration</label>
+  <item>0..n</item>
+  <label>localControl</label>
+  <item>0..n</item>
+  <label>localTypeDeclaration</label>
+  <item>0..n</item>
+  <label>maintenanceAgency</label>
+  <item>1..1</item>
+  <label>maintenanceHistory</label>
+  <item>1..1</item>
+  <label>otherRecordId</label>
+  <item>0..n</item>
+  <label>recordId</label>
+  <item>1..1</item>
+  <label>rightsDeclaration</label>
+  <item>0..n</item>
+  <label>representation</label>
+  <item>0..n</item>
+  <label>sources</label>
+  <item>0..1</item>
+</list></p>
+                 <p type="ead"><list type="gloss">
+  <label>conventionDeclaration</label>
+  <item>0..n</item>
+  <label>languageDeclaration</label>
+  <item>0..n</item>
+  <label>localTypeDeclaration</label>
+  <item>0..n</item>
+  <label>maintenanceAgency</label>
+  <item>1..1</item>
+  <label>maintenanceHistory</label>
+  <item>1..1</item>
+  <label>otherRecordId</label>
+  <item>0..n</item>
+  <label>recordId</label>
+  <item>1..1</item>
+  <label>rightsDeclaration</label>
+  <item>0..n</item>
+  <label>sources</label>
+  <item>0..1</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">eac</p>
@@ -195,14 +237,9 @@
                      </item>
                   </list>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item><p type="eac">Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p></item>
-                     <item><p type="ead">Use the optional <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p></item>
-                     <item>Use the optional <att>publicationStatus</att> attribute to record the editorial status of the EAS instance.</item>
-                     <item><p type="ead">Use the optional encoding attributes such as <att>addressLineTypeEncoding</att>, <att>dateEncoding</att>, <att>languageEncoding</att>, <att>levelEncoding</att>, or <att>unitDateTypeEncoding</att> to specify the list of values used in the related attributes (here: <att>addressLineType</att>, <att>standardDate</att>, <att>notAfter</att>, <att>notBefore</att>, <att>languageCode</att>, <att>languageOfElement</att>, <att>level</att>, and <att>unitDateType</att>) used throughout the EAS instance. Depending on the context, this might be an ISO standard or the value list defined by TS-EAS or a another international, national or institutional list that you have defined for your descriptions.</p></item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>
+  <p type="eac">Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p>
+</p></div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>

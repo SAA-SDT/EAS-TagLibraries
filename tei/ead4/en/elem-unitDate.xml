@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-unitDate" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-unitDate">
 	<head>
 		<gi>unitDate</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>A child element of <gi>identificationData</gi> that provides a simple statement of the date(s) covered by the described materials.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text], reference (0..n), referringString (0..n), span (0..n)</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>identificationData</p>
@@ -58,16 +67,8 @@
 	<div type="description">
 		<p><gi>unitDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc. <gi>unitDate</gi> may be in the form of text or numbers, and may consist of a single date, a date range, or a combination of single dates and date ranges.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>unitDateType</att> to indicate if <gi>unitDate</gi> represents inclusive dates or bulk (predominant) dates.</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>Use <gi>unitDateStructured</gi> to provide a more granular, machine-processable statement for the dates of the materials being described.</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>unitDateType</att> to indicate if <gi>unitDate</gi> represents inclusive dates or bulk (predominant) dates.</p></div>	
+	<div type="seealso"><p>Use <gi>unitDateStructured</gi> to provide a more granular, machine-processable statement for the dates of the materials being described.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

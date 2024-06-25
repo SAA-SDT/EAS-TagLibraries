@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-address" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-address">
                <head>
                   <gi>address</gi>
                </head>
@@ -11,7 +11,10 @@
                         <gi>addressLine</gi> elements to encode a postal or other address.</p>
                </div>
                <div type="mayContain">
-                  <p>addressLine (1..n)</p>
+                  <p><list type="gloss">
+  <label>addressLine</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>place</p>
@@ -57,12 +60,8 @@
                         <gi>geographicCoordinates</gi>, or <gi>contact</gi> is required within
                         <gi>place</gi>.</p>
                </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>Use <gi>contact</gi> to encode digital addresses and contact
-                        information.</item>
-                  </list>
-               </div>
+               <div type="seealso"><p>Use <gi>contact</gi> to encode digital addresses and contact
+                        information.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>

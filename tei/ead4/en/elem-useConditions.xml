@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-useConditions" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-useConditions">
 	<head>
 		<gi>useConditions</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>An element for indicating any conditions that affect the use of the described materials, such as in publications.</p>
 	</div>
 	<div type="mayContain">
-		<p>abstract (0..1), dateRange (0..1), formattingExtension (0..1), p (0..n)</p>
+		<p><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>dateRange</label>
+  <item>0..1</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>archDesc, c</p>
@@ -43,14 +52,7 @@
 <p>Use <gi>useConditions</gi> for information about any limitations, regulations, or special procedures imposed by a repository, donor, legal statute, or other agency. These conditions may be related to
                      reproduction, publication, or quotation of the described materials after access to the materials has been granted. <gi>useConditions</gi> may also be used to indicate the absence of restrictions, such
                      as when intellectual property rights have been dedicated to the public.</p>	</div>
-	<div type="seealso">
-		<list type="simple">
-                     <item>Do not confuse with <gi>accessConditions</gi>, which contains information about conditions affecting the availability of the described materials.</item>
-                     <item>
-                        <gi>preferCite</gi> may be used to specify how the described materials should be referenced.</item>
-                     <item>Do not confused with <gi>rightsDeclaration</gi>, which provides information about the rights of the finding aid itself.</item>
-                  </list>
-	</div>
+	<div type="seealso"><p>Do not confuse with <gi>accessConditions</gi>, which contains information about conditions affecting the availability of the described materials.</p></div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>

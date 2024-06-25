@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-maintenanceEvent" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-maintenanceEvent">
                <head>
                   <gi>maintenanceEvent</gi>
                </head>
@@ -12,7 +12,14 @@
                      instance.</p>
                </div>
                <div type="mayContain">
-                  <p>agent (1..1), eventDateTime (1..1), eventDescription (0..n)</p>
+                  <p><list type="gloss">
+  <label>agent</label>
+  <item>1..1</item>
+  <label>eventDateTime</label>
+  <item>1..1</item>
+  <label>eventDescription</label>
+  <item>0..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>maintenanceHistory</p>
@@ -53,13 +60,9 @@
                      <item><gi>eventDescription</gi></item>
                   </list>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use the required <att>maintenanceEventType</att> to document the type of
+               <div type="attributeusage"><p>Use the required <att>maintenanceEventType</att> to document the type of
                         maintenance activity that the <gi>maintenanceEvent</gi> is recording, using
-                        one of the values from the available controlled list. </item>
-                  </list>
-               </div>
+                        one of the values from the available controlled list. </p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>

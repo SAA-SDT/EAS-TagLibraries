@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-materialSpec" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-materialSpec">
 	<head>
 		<gi>materialSpec</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>A child elementof <gi>identificationData</gi> for providing material specific details for a small group of materials or an item.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text], reference (0..n), referringString (0..n), span (0..n)</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>identificationData</p>
@@ -51,12 +60,7 @@
 		<p><gi>materialSpec</gi> is for recording material specific details that are unique to a particular class or form of material and which are not recorded in any other element of description. Examples of material specific details include mathematical data, such as scale for cartographic and architectural records, jurisdictional and denominational data for philatelic records, and presentation data that describes the format of music manuscripts.</p>
 		<p>Most likely <gi>materialSpec</gi> will be useful at the item or small group level of description, such as a file of maps, a group of sound recordings, etc.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>localType</att> to specify the type of data being conveyed in the element, e.g., &lt;materialSpec localType="scale" localTypeDeclarationReference="lTDR1"&gt;1:200&lt;/materialspec&gt;.</item>
-			<item>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the material specific details in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</item>
-		</list>
-	</div>	
+	<div type="attributeusage"><p>Use <att>localType</att> to specify the type of data being conveyed in the element, e.g., &lt;materialSpec localType="scale" localTypeDeclarationReference="lTDR1"&gt;1:200&lt;/materialspec&gt;.</p></div>	
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

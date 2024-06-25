@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-physLoc" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-physLoc">
 	<head>
 		<gi>physLoc</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>A child element of <gi>identificationData</gi> that specifies the physical location of the materials.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text], reference (0..n), referringString (0..n), span (0..n)</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>identificationData</p>
@@ -45,11 +54,7 @@
 		<p><gi>physLoc</gi> is used to identify where the described materials are stored, and it may contain such information as the name or number of the building, room, stack, shelf, etc., where the materials may be stored and retrieved. <gi>physLoc</gi> can be used to designate onsite and offsite storage locations.</p>
 	</div>
 	
-	<div type="seealso">
-		<list type="simple">
-			<item>Do not confuse with <gi>container</gi>, which is used to identify the cartons, boxes, reels, folders, and other storage devices used to hold the described materials.</item>
-		</list>
-	</div>
+	<div type="seealso"><p>Do not confuse with <gi>container</gi>, which is used to identify the cartons, boxes, reels, folders, and other storage devices used to hold the described materials.</p></div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>

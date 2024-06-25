@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-legalStatus" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-legalStatus">
                <head>
                   <gi>legalStatus</gi>
                </head>
@@ -12,7 +12,16 @@
                  <p type="ead">An element for indicating the statutorily defined status of the materials being described.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
+                  <p><list type="gloss">
+  <label>date</label>
+  <item>or</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>placeName</label>
+  <item>0..n</item>
+  <label>term</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">legalStatuses</p>

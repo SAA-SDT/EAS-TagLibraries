@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-formAvailable" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-formAvailable">
 	<head>
 		<gi>formAvailable</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>The required child element of <gi>formsAvailable</gi> that is used to identify how the described archival entity or entities related to it within the numbered <gi>c</gi> elements are made available.</p>
 	</div>
 	<div type="mayContain">
-		<p>abstract (0..1), formattingExtension (0..1), p (0..n), relations (0..1)</p>
+		<p><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+  <label>relations</label>
+  <item>0..1</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>formsAvailable</p>
@@ -52,16 +61,8 @@
 	<div type="description">
 		<p>Use <gi>formAvailable</gi> within the wrapper element <gi>formsAvailable</gi> to specify single instances concerning the available form(s) of the described entities in <gi>archDesc</gi> or in numbered <gi>c</gi> elements.  A narrative description of the use of the element</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item> <gi>formAvailable</gi> might be used in combination with <gi>descriptiveNote</gi> to provide general descriptive information related to the wrapper element <gi>formsAvailable</gi>.</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>A listing of usage of attributes with the element (optional)</p></div>	
+	<div type="seealso"><p> <gi>formAvailable</gi> might be used in combination with <gi>descriptiveNote</gi> to provide general descriptive information related to the wrapper element <gi>formsAvailable</gi>.</p></div>
 	<div type="availability">
 		<p>Required, Repeatable</p>
 	</div>

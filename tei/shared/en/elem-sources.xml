@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-sources" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-sources">
                <head>
                   <gi>sources</gi>
                </head>
@@ -10,7 +10,12 @@
                   <p>An optional child element of <gi>control</gi> that groups one or more <gi>source</gi>s of evidence used in the descriptive parts in the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>descriptiveNote (0..1), source (1..n)</p>
+                  <p><list type="gloss">
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>source</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>control</p>
@@ -41,11 +46,7 @@
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>base</att> to specify a URI (other than the base URI of the EAS instance) to be used for resolving relative URIs within <gi>sources</gi> or descendant elements.</item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>Use <att>base</att> to specify a URI (other than the base URI of the EAS instance) to be used for resolving relative URIs within <gi>sources</gi> or descendant elements.</p></div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-addressLine" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-addressLine">
                <head>
                   <gi>addressLine</gi>
                </head>
@@ -11,7 +11,10 @@
                      postal or other address.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>address</p>
@@ -51,13 +54,9 @@
                   <p><gi>addressLine</gi> may be repeated as many times as necessary to enter all
                      parts of an address.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use the optional <att>addressLineType</att>
+               <div type="attributeusage"><p>Use the optional <att>addressLineType</att>
                         attribute to encode the part of the address that the <gi>addressLine</gi>
-                        refers to, for example "street".</item>
-                  </list>
-               </div>
+                        refers to, for example "street".</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>

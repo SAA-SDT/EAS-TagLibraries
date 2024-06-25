@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-title" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-title">
 	<head>
 		<gi>title</gi>
 	</head>
@@ -10,7 +10,10 @@
 		<p>An element for encoding the formal name of a finding aid. </p>
 	</div>
 	<div type="mayContain">
-		<p>part (1..n)</p>
+		<p><list type="gloss">
+  <label>part</label>
+  <item>1..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>findAidDesc</p>
@@ -54,17 +57,8 @@
 		<p>Use the sub-element <gi>part</gi> to break a title down into aspects such as an edition statement (e.g. "2nd edition"). </p>
 		<p>Use repeated <gi>title</gi> elements distinguished by their <att>@localType</att>-s when describing e.g. a .pdf or a .docx instantiation of a finding aid to give the publication title for display on the one hand and the file title of the .pdf or the .docx file on the other hand. </p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>@localType</att> to differentiate between the general title and a subtitle or the title of an overarching series. </item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>Do not confuse with <gi>unitTitle</gi>, which is used to encode the name of the described materials, such as the title of a collection or the title or an individual item. </item>
-			<item>Titles of published works being cited within the finding aid belong in <gi>publicationNote</gi> and its sub-elements. </item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>@localType</att> to differentiate between the general title and a subtitle or the title of an overarching series. </p></div>	
+	<div type="seealso"><p>Do not confuse with <gi>unitTitle</gi>, which is used to encode the name of the described materials, such as the title of a collection or the title or an individual item. </p></div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>

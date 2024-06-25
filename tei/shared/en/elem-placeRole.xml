@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-placeRole" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-placeRole">
                <head>
                   <gi>placeRole</gi>
                </head>
@@ -11,7 +11,10 @@
                      role the place or jurisdiction being encoded.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>place</p>
@@ -54,12 +57,8 @@
                   <p>At least one of <gi>placeRole</gi>, <gi>placeName</gi>, <gi>geographicCoordinates</gi>,
                         <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>The <att>vocabularySource</att> attribute may be used to indicate the
-                        controlled vocabulary from which the <gi>placeRole</gi> is derived.</item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>The <att>vocabularySource</att> attribute may be used to indicate the
+                        controlled vocabulary from which the <gi>placeRole</gi> is derived.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>

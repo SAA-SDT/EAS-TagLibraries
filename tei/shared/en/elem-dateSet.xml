@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-dateSet" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-dateSet">
                <head>
                   <gi>dateSet</gi>
                </head>
@@ -11,7 +11,10 @@
                      represented in one <gi>date</gi> or <gi>dateRange</gi>.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange (2..n)</p>
+                  <p><list type="gloss">
+  <label>date</label>
+  <item>or</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">chronItem, demographicDescription, existDates, function, legalStatus,

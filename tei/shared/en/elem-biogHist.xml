@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-biogHist" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-biogHist">
                <head>
                   <gi>biogHist</gi>
                </head>
@@ -11,8 +11,26 @@
                  <p type="ead">A concise essay and/or chronology that provides biographical or historical information about the creator(s) of the materials being described.</p>
                </div>
                <div type="mayContain">
-                  <p type="eac">abstract (0..1), chronList (0..n), head (0..1), list (0..n), p (0..n)</p>
-                  <p type="ead">abstract (0..1), formattingExtension (0..1), p (0..n)</p>
+                  <p type="eac"><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>chronList</label>
+  <item>0..n</item>
+  <label>head</label>
+  <item>0..1</item>
+  <label>list</label>
+  <item>0..n</item>
+  <label>p</label>
+  <item>0..n</item>
+</list></p>
+                  <p type="ead"><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">description</p>

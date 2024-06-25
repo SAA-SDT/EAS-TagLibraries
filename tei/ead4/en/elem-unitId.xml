@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-unitId" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-unitId">
 	<head>
 		<gi>unitId</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>A child element of <gi>identificationData</gi> that provides an identifier for the materials being described, such as an accession number or a reference code.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text], reference (0..n), referringString (0..n), span (0..n)</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>identificationData</p>
@@ -54,18 +63,8 @@
 	<div type="description">
 		<p><gi>unitId</gi> may contain any alpha-numeric text string that serves as a unique reference point or control number for the described material, such as a lot number, an accession number, a classification number, a reference code, or an entry number in a bibliography or catalog. <gi>unitId</gi> is primarily a logical designation, which sometimes indirectly provides location information, as in the case of a classification number.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Although not required, the <att>countryCode</att> and <att>repositoryCode</att> should be used in <gi>unitId</gi> to comply with ISAD(G) element 3.1.1.</item>
-			<item>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely and persistently identifies the described materials such as an Archival Resource Key (ARK) or a Digital Object Identifier (DOI). Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the persistent identifier scheme used.</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>Use <gi>container</gi> and <gi>physLoc</gi> to designate the physical housing or location of the described materials.</item>
-			<item>Do not confuse with <gi>recordId</gi> or <gi>otherRecordId</gi>, which are identifiers for the EAS instance itself, not the materials described therein.</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Although not required, the <att>countryCode</att> and <att>repositoryCode</att> should be used in <gi>unitId</gi> to comply with ISAD(G) element 3.1.1.</p></div>	
+	<div type="seealso"><p>Use <gi>container</gi> and <gi>physLoc</gi> to designate the physical housing or location of the described materials.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

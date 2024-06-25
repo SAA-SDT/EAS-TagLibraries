@@ -60,12 +60,15 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="cn">不可重复</translation>
     </term>
     <term name="attributes">
-        <translation lang="en">Attributes</translation>
-        <translation lang="fr">Attributs</translation>
-        <translation lang="gr">Γνωρ&#943;σματα</translation>
-        <translation lang="de">Attribute</translation>
-        <translation lang="it">Attributi</translation>
-        <translation lang="cn">属性</translation>
+        <translation lang="en" type="0">Attributes</translation>
+        <translation lang="fr" type="0">Attributs</translation>
+        <translation lang="gr" type="0">Γνωρ&#943;σματα</translation>
+        <translation lang="de" type="0">Attribute</translation>
+        <translation lang="it" type="0">Attributi</translation>
+        <translation lang="cn" type="0">属性</translation>
+    
+        <translation lang="en" type="1">Attribute name</translation>
+        <translation lang="en" type="2">Attribute values</translation>
     </term>
     <term name="reference">
         <translation lang="en">References</translation>
@@ -108,12 +111,15 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="cn">元素</translation>
     </term>
     <term name="mayContain">
-        <translation lang="en">May contain</translation>
-        <translation lang="fr">Peut contenir</translation>
-        <translation lang="gr">Μπορε&#943; να περι&#941;χει</translation>
-        <translation lang="de">Kann enthalten</translation>
-        <translation lang="it">Può contenere</translation>
-        <translation lang="cn">可能包含</translation>
+        <translation lang="en" type="0">May contain</translation>
+        <translation lang="fr" type="0">Peut contenir</translation>
+        <translation lang="gr" type="0">Μπορε&#943; να περι&#941;χει</translation>
+        <translation lang="de" type="0">Kann enthalten</translation>
+        <translation lang="it" type="0">Può contenere</translation>
+        <translation lang="cn" type="0">可能包含</translation>
+
+        <translation lang="en" type="1">Element/content type</translation>
+        <translation lang="en" type="2">Occurrences</translation>
     </term>
     <term name="occurrence">
         <translation lang="en">Occurrence</translation>

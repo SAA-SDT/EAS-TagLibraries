@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-head" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-head">
                <head>
                   <gi>head</gi>
                </head>
@@ -10,8 +10,22 @@
                   <p>An element that encodes a title or caption for a section of text.</p>
                </div>
                <div type="mayContain">
-                  <p type="eac">[text], span (0..n)</p>
-                  <p type="ead">[text], reference (0..n), referringString (0..n), span (0..n)</p>
+                  <p type="eac"><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
+                  <p type="ead"><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">biogHist, generalContext, list, structureOrGenealogy</p>

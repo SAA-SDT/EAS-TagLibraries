@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-quantity" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-quantity">
 	<head>
 		<gi>quantity</gi>
 	</head>
@@ -10,7 +10,10 @@
 		<p>A required child element of <gi>physDescStructured</gi> that indicates the number of units present as described by <gi>unitType</gi>.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text]</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>physDescStructured</p>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-unitDateStructured" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-unitDateStructured">
 	<head>
 		<gi>unitDateStructured</gi>
 	</head>
@@ -10,7 +10,10 @@
 		<p>A child element of <gi>identificationData</gi> that enables structured, machine-processable expressions of the dates of the materials being described</p>
 	</div>
 	<div type="mayContain">
-		<p>date or dateRange or dateSet (1..1)</p>
+		<p><list type="gloss">
+  <label>date</label>
+  <item>or</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>identificationData</p>
@@ -51,16 +54,8 @@
 		<p><gi>unitDateStructured</gi> provides a machine-processable statement of the date or dates the materials described were created, issued, copyrighted, broadcast, etc. <gi>unitDateStructured</gi> must contain one of the following child elements: <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>.</p>
 <p><gi>unitDateStructured</gi> may contain only one child, therefore <gi>dateSet</gi> must be used in situations where complex date information needs to be conveyed and requires at least two child elements. A date set may combine two or more <gi>date</gi> and <gi>dateRange</gi> elements.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>unitDateType</att> to indicate if <gi>unitDateStructured</gi> represents inclusive dates or bulk (predominant) dates.</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>Use <gi>unitDate</gi> to provide an unstructured statement of the dates of the material being described.</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>unitDateType</att> to indicate if <gi>unitDateStructured</gi> represents inclusive dates or bulk (predominant) dates.</p></div>	
+	<div type="seealso"><p>Use <gi>unitDate</gi> to provide an unstructured statement of the dates of the material being described.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

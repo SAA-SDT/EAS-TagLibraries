@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-sourceOfAcquisition" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-sourceOfAcquisition">
 	<head>
 		<gi>sourceOfAcquisition</gi>
 	</head>
@@ -10,7 +10,14 @@
 		<p>An element for encoding the immediate source of acquisition of the materials being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>abstract (0..1), formattingExtension (0..1), p (0..n)</p>
+		<p><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
@@ -45,13 +52,7 @@
 		<p>Use <gi>sourceOfAcquisition</gi> to identify the source of the materials being described and the circumstances under which they were received, including donations, transfers, purchases, and deposits.</p>
 		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>sourceOfAcquisition</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
 	</div>
-	<div type="seealso">
-		<list type="simple">
-			<item>Note that the accession number may be encoded in <gi>unitId</gi> within <gi>identificationData</gi>.</item>
-			<item><gi>separatedMaterial</gi> should be used for indicating items acquired as part of a collection and then subsequently removed from the collection.</item>
-			<item>Do not confuse with <gi>custodHist</gi>, which should be used for information about the chain of ownership before the materials reached the repository.</item>
-		</list>
-	</div>
+	<div type="seealso"><p>Note that the accession number may be encoded in <gi>unitId</gi> within <gi>identificationData</gi>.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

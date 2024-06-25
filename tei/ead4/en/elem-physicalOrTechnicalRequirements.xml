@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-physicalOrTechnicalRequirements" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-physicalOrTechnicalRequirements">
 	<head>
 		<gi>physicalOrTechnicalRequirements</gi>
 	</head>
@@ -10,7 +10,14 @@
 		<p>For describing the physical condition of the materials and/or technical requirements that affect their use.</p>
 	</div>
 	<div type="mayContain">
-		<p>abstract (0..1), formattingExtension (0..1), p (0..n)</p>
+		<p><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-agents" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-agents">
 	<head>
 		<gi>agents</gi>
 	</head>
@@ -10,7 +10,12 @@
 		<p>An optional child of <gi>archDesc</gi> and <gi>c</gi> that groups together agents related to the described records.</p>
 	</div>
 	<div type="mayContain">
-		<p>agent (1..n), descriptiveNote (0..1)</p>
+		<p><list type="gloss">
+  <label>agent</label>
+  <item>1..n</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>

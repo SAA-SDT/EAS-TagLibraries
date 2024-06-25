@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-archDesc" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-archDesc">
 	<head>
 		<gi>archDesc</gi>
 	</head>
@@ -10,7 +10,56 @@
 		<p>A required child element of <gi>ead</gi> that binds together all of the archival descriptive information in an EAD instance</p>
 	</div>
 	<div type="mayContain">
-		<p>accessConditions (0..n), accruals (0..n), agents (0..1), appraisal (0..n), arrangement (0..n), biogHist (0..n), custodHist (0..n), filePlan (0..n), formsAvailable (1..1), functions (0..1), identificationData (1..1), otherDescriptiveInfo (0..n), otherFindAid (0..n), physicalOrTechnicalRequirements (0..n), places (0..1), preferCite (0..n), processInfo (0..n), publicationNote (0..n), relatedMaterial (0..n), scopeContent (0..n), separatedMaterial (0..n), sourceOfAcquisition (0..n), subjectHeadings (0..n), useConditions (0..n)</p>
+		<p><list type="gloss">
+  <label>accessConditions</label>
+  <item>0..n</item>
+  <label>accruals</label>
+  <item>0..n</item>
+  <label>agents</label>
+  <item>0..1</item>
+  <label>appraisal</label>
+  <item>0..n</item>
+  <label>arrangement</label>
+  <item>0..n</item>
+  <label>biogHist</label>
+  <item>0..n</item>
+  <label>custodHist</label>
+  <item>0..n</item>
+  <label>filePlan</label>
+  <item>0..n</item>
+  <label>formsAvailable</label>
+  <item>1..1</item>
+  <label>functions</label>
+  <item>0..1</item>
+  <label>identificationData</label>
+  <item>1..1</item>
+  <label>otherDescriptiveInfo</label>
+  <item>0..n</item>
+  <label>otherFindAid</label>
+  <item>0..n</item>
+  <label>physicalOrTechnicalRequirements</label>
+  <item>0..n</item>
+  <label>places</label>
+  <item>0..1</item>
+  <label>preferCite</label>
+  <item>0..n</item>
+  <label>processInfo</label>
+  <item>0..n</item>
+  <label>publicationNote</label>
+  <item>0..n</item>
+  <label>relatedMaterial</label>
+  <item>0..n</item>
+  <label>scopeContent</label>
+  <item>0..n</item>
+  <label>separatedMaterial</label>
+  <item>0..n</item>
+  <label>sourceOfAcquisition</label>
+  <item>0..n</item>
+  <label>subjectHeadings</label>
+  <item>0..n</item>
+  <label>useConditions</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>ead</p>

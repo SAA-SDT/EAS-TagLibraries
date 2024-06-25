@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-language" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-language">
                <head>
                   <gi>language</gi>
                </head>
@@ -11,7 +11,10 @@
                      language used by the entity or records being described.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">languageUsed</p>
@@ -45,14 +48,8 @@
                   <p>An optional element within <gi>languageUsed</gi> that gives the language or
                      languages used by the records or entity being described.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>languageCode</att> to provide a code for the language
-                        itself.</item>
-                     <item>Use <att>languageOfElement</att> to provide a code for the language in
-                        which the element is given.</item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>Use <att>languageCode</att> to provide a code for the language
+                        itself.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>

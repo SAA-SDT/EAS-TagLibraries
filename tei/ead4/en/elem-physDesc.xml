@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-physDesc" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-physDesc">
 	<head>
 		<gi>physDesc</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>A child element of <gi>identificationData</gi> that provides a simple, unstructured statement about the physical characteristics of the material being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text], reference (0..n), referringString (0..n), span (0..n)</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>identificationData</p>
@@ -45,11 +54,7 @@
 		<p><gi>physDesc</gi> is for describing, in an unstructured statement, the physical or logical extent, medium, appearance, or construction of the described materials, such as their dimensions, a count of their quantity, a statement about the space they occupy, and terms describing their genre, form, or function, as well as any other aspects of their appearance, such as color, substance, style, and technique or method of creation.</p>
 <p>Those who wish to record formally structured elements of physical description in order to enable consistent machine processing and data exchange will want to use <gi>physDescStructured</gi> instead of <gi>physDesc</gi>.</p>
 	</div>
-	<div type="seealso">
-		<list type="simple">
-			<item>Use <gi>physDescStructured</gi> to express physical description in structured statements.</item>
-		</list>
-	</div>
+	<div type="seealso"><p>Use <gi>physDescStructured</gi> to express physical description in structured statements.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

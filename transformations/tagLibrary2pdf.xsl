@@ -56,7 +56,7 @@
     <xsl:variable name="nonrepeatable"
         select="$headingtranslations//*:terms/*:term[@name = 'nonrepeatable']/*:translation[@lang = $currentLanguage]"/>
     <xsl:variable name="attributes"
-        select="$headingtranslations//*:terms/*:term[@name = 'attributes']/*:translation[@lang = $currentLanguage]"/>
+        select="$headingtranslations//*:terms/*:term[@name = 'attributes']/*:translation[@lang = $currentLanguage and @type = '0']"/>
     <xsl:variable name="references"
         select="$headingtranslations//*:terms/*:term[@name = 'references']/*:translation[@lang = $currentLanguage]"/>
     <xsl:variable name="datatype"
@@ -65,7 +65,7 @@
         select="$headingtranslations//*:terms/*:term[@name = 'toc']/*:translation[@lang = $currentLanguage]"/>
     <xsl:variable name="elements"
         select="$headingtranslations//*:terms/*:term[@name = 'elements']/*:translation[@lang = $currentLanguage]"/>
-    <xsl:variable name="maycontain"
+    <xsl:variable name="mayContain"
         select="$headingtranslations//*:terms/*:term[@name = 'mayContain']/*:translation[@lang = $currentLanguage]"/>
     <xsl:variable name="occurrence"
         select="$headingtranslations//*:terms/*:term[@name = 'occurrence']/*:translation[@lang = $currentLanguage]"/>
@@ -894,8 +894,7 @@
                         <xsl:variable name="termtitle">
                             <xsl:value-of select="current()/@type"/>
                         </xsl:variable>
-                        <xsl:value-of
-                            select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage]"/>
+                        <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage]"/>
                     </fo:block>
                     <fo:block>
                         <xsl:apply-templates/>
@@ -903,7 +902,7 @@
     </xsl:template>
 
     <!-- Tokenized note divs -->
-    <xsl:template match="tei:div[@type = ('semanticcomponents', 'mayOccurWithin', 'mayContain')]">
+    <xsl:template match="tei:div[@type = ('semanticcomponents', 'mayOccurWithin')]">
                     <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                         <xsl:variable name="termtitle">
                             <xsl:value-of select="current()/@type"/>
@@ -919,7 +918,7 @@
     </xsl:template>
 
     <!-- Deprecated (non-tokenized) note divs -->
-    <xsl:template match="tei:div[@type = ('semanticcomponents', 'mayOccurWithin', 'mayContain')]"
+    <xsl:template match="tei:div[@type = ('semanticcomponents', 'mayOccurWithin')]"
         mode="deprecated">
         <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
             <fo:list-item>
@@ -1035,64 +1034,79 @@
         <xsl:value-of select="tei:p/text()"/>
     </xsl:template> -->
 
-    <xsl:template match="tei:div[@type = 'attributes']/tei:p">
+    <xsl:template match="tei:div[@type = 'mayContain']/tei:p | tei:div[@type = 'attributes']/tei:p">
         <xsl:choose>
             <xsl:when test="tei:list[@type = 'gloss']">
-                            <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
-                                <xsl:value-of select="$attributes"/>
-                            </fo:block>
-                            <fo:table table-layout="fixed" width="100%">
-                                <fo:table-header>
-                                    <fo:table-row>
-                                        <fo:table-cell>
-                                            <fo:block font-style="italic">
-                                                Attribute name
-                                            </fo:block>
-                                        </fo:table-cell>
-                                        <fo:table-cell>
-                                            <fo:block font-style="italic">
-                                                Attribute values
-                                            </fo:block>
-                                        </fo:table-cell>
-                                    </fo:table-row>
-                                </fo:table-header>
-                                <fo:table-body>
-                                    <xsl:for-each select="tei:list/tei:label[1]">
-                                        <fo:table-row>
-                                            <fo:table-cell>
-                                                <fo:block hyphenate="true">
-                                                  <xsl:call-template name="tokenizeattributes">
+                <xsl:variable name="termtitle">
+                    <xsl:value-of select="../@type"/>
+                </xsl:variable>
+                <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
+                    <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage and @type='0']"/>
+                </fo:block>
+                <fo:table table-layout="fixed" width="100%">
+                    <fo:table-header>
+                        <fo:table-row>
+                            <fo:table-cell>
+                                <fo:block font-style="italic">
+                                    <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage and @type = '1']"/>
+                                </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell>
+                                <fo:block font-style="italic">
+                                    <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage and @type = '2']"/>
+                                </fo:block>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-header>
+                    <fo:table-body>
+                        <xsl:for-each select="tei:list/tei:label[1]">
+                            <fo:table-row>
+                                <fo:table-cell>
+                                    <fo:block hyphenate="true">
+                                        <xsl:choose>
+                                            <xsl:when test="$termtitle = 'attributes'">
+                                                <xsl:call-template name="tokenizeattributes">
                                                     <xsl:with-param name="text" select="."/>
-                                                  </xsl:call-template>
-                                                </fo:block>
-                                            </fo:table-cell>
-                                            <fo:table-cell>
-                                                <fo:block hyphenate="true">
-                                                  <xsl:apply-templates
-                                                  select="following-sibling::tei:item[1]"/>
-                                                </fo:block>
-                                            </fo:table-cell>
-                                        </fo:table-row>
-                                    </xsl:for-each>
-                                    <xsl:for-each select="tei:list/tei:label[position() &gt; 1]">
-                                        <fo:table-row>
-                                            <fo:table-cell>
-                                                <fo:block hyphenate="true">
-                                                  <xsl:call-template name="tokenizeattributes">
+                                                </xsl:call-template>
+                                            </xsl:when>
+                                            <xsl:when test="$termtitle = 'mayContain'">
+                                                <xsl:call-template name="tokenize"/>
+                                            </xsl:when>
+                                        </xsl:choose>
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell>
+                                    <fo:block hyphenate="true">
+                                        <xsl:apply-templates select="following-sibling::tei:item[1]"/>
+                                    </fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </xsl:for-each>
+                        <xsl:for-each select="tei:list/tei:label[position() &gt; 1]">
+                            <fo:table-row>
+                                <fo:table-cell>
+                                    <fo:block hyphenate="true">
+                                        <xsl:choose>
+                                            <xsl:when test="$termtitle = 'attributes'">
+                                                <xsl:call-template name="tokenizeattributes">
                                                     <xsl:with-param name="text" select="."/>
-                                                  </xsl:call-template>
-                                                </fo:block>
-                                            </fo:table-cell>
-                                            <fo:table-cell>
-                                                <fo:block hyphenate="true">
-                                                  <xsl:apply-templates
-                                                  select="following-sibling::tei:item[1]"/>
-                                                </fo:block>
-                                            </fo:table-cell>
-                                        </fo:table-row>
-                                    </xsl:for-each>
-                                </fo:table-body>
-                            </fo:table>
+                                                </xsl:call-template>
+                                            </xsl:when>
+                                            <xsl:when test="$termtitle = 'mayContain'">
+                                                <xsl:call-template name="tokenize"/>
+                                            </xsl:when>
+                                        </xsl:choose>
+                                    </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell>
+                                    <fo:block hyphenate="true">
+                                        <xsl:apply-templates select="following-sibling::tei:item[1]"/>
+                                    </fo:block>
+                                </fo:table-cell>
+                            </fo:table-row>
+                        </xsl:for-each>
+                    </fo:table-body>
+                </fo:table>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$attributes"/>
@@ -1181,7 +1195,7 @@
     </xsl:template>
 
     <!-- div@type="attributes"/p has special handling, so we don't want this to match it -->
-    <xsl:template match="tei:p[@type=$currentStandard and not(ancestor::div[@type='attributes'])]">
+    <xsl:template match="tei:p[@type=$currentStandard and not(ancestor::div[@type='mayContain']) and not(ancestor::div[@type='attributes'])]">
         <fo:block>
             <xsl:apply-templates/>
         </fo:block>
@@ -1444,7 +1458,7 @@
                 </xsl:when>
                 <xsl:otherwise>
                     <fo:basic-link
-                            internal-destination="{concat('elem-', translate(normalize-space(.), ':',''))}">
+                            internal-destination="{concat('elem-', translate(normalize-space(.), ':',''))}" color="blue">
                             <xsl:value-of select="normalize-space(.)"/>
                         </fo:basic-link>
                 </xsl:otherwise>
@@ -1464,14 +1478,14 @@
                     <xsl:when test="contains($text, '(revised')">
                         <!-- remove "(revised in x.y.z)" text from title -->
                         <fo:basic-link
-                            internal-destination="{concat('attr-', substring-before($text, ' '))}">
+                            internal-destination="{concat('attr-', substring-before($text, ' '))}" color="blue">
                             <xsl:value-of select="normalize-space($text)"/>
                         </fo:basic-link>
                     </xsl:when>
                     <xsl:when test="not(contains($text, '['))">
                         <!-- attributes have an id with attr- first -->
                         <fo:basic-link
-                            internal-destination="{concat('attr-', translate(normalize-space($text), ':',''))}">
+                            internal-destination="{concat('attr-', translate(normalize-space($text), ':',''))}" color="blue">
                             <xsl:value-of select="normalize-space($text)"/>
                         </fo:basic-link>
                     </xsl:when>
@@ -1485,14 +1499,14 @@
                     <xsl:when test="contains($text, '(revised')">
                         <!-- remove "(revised in x.y.z)" text from title -->
                         <fo:basic-link
-                            internal-destination="{concat('attr-', substring-before($text, ' '))}">
+                            internal-destination="{concat('attr-', substring-before($text, ' '))}" color="blue">
                             <xsl:value-of select="normalize-space($text)"/>
                         </fo:basic-link>
                     </xsl:when>
                     <xsl:when test="not(contains($text, '['))">
                         <!-- attributes have an id with attr- first -->
                         <fo:basic-link
-                            internal-destination="{concat('attr-', translate(normalize-space(substring-before($text, $separator)), ':',''))}">
+                            internal-destination="{concat('attr-', translate(normalize-space(substring-before($text, $separator)), ':',''))}" color="blue">
                             <xsl:value-of
                                 select="normalize-space(substring-before($text, $separator))"/>
                         </fo:basic-link>

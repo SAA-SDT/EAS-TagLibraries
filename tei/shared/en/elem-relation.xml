@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-relation" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-relation">
                <head>
                   <gi>relation</gi>
                </head>
@@ -11,7 +11,22 @@
                      between the entity or records described and a related entity.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), objectXMLWrap (0..1), place (0..n), relationType (0..n), targetEntity (1..1), targetRole (0..n)</p>
+                  <p><list type="gloss">
+  <label>date</label>
+  <item>or</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>objectXMLWrap</label>
+  <item>0..1</item>
+  <label>place</label>
+  <item>0..n</item>
+  <label>relationType</label>
+  <item>0..n</item>
+  <label>targetEntity</label>
+  <item>1..1</item>
+  <label>targetRole</label>
+  <item>0..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>relations</p>

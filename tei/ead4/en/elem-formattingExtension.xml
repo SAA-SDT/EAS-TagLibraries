@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-formattingExtension"
-	xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2"
-	xmlns="http://www.tei-c.org/ns/1.0">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" type="elementDocumentation" xml:id="elem-formattingExtension">
 	<head>
 		<gi>formattingExtension</gi>
 	</head>
@@ -15,7 +13,10 @@
 			namespace.</p>
 	</div>
 	<div type="mayContain">
-		<p>Any element that is in a namespace other than the current namespace.</p>
+		<p><list type="gloss">
+  <label>Any element that is in a namespace other than the current namespace.</label>
+  <item/>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<!--It seems like we're encoding for display here, so perhaps we should go with an automated Schema-to-TEI approach at some point, rather than keeping these files in sync by hand moving forward

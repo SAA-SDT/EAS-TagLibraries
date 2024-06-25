@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-eventDateTime" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-eventDateTime">
                <head>
                   <gi>eventDateTime</gi>
                </head>
@@ -11,7 +11,10 @@
                      time of a specific maintenance action for an EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>maintenanceEvent</p>
@@ -44,13 +47,9 @@
                         <gi>eventDateTime</gi> directly or a machine-processable date in
                         <att>standardDateTime</att>, in case it is not possible to provide both.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>standardDateTime</att> to provide a machine-processable
+               <div type="attributeusage"><p>Use <att>standardDateTime</att> to provide a machine-processable
                         expression of the date or date and time, formulated according to the ISO
-                        8601 standard.</item>
-                  </list>
-               </div>
+                        8601 standard.</p></div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-publicationNote" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-publicationNote">
 	<head>
 		<gi>publicationNote</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>For citing works based on the use or analysis of the materials being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>abstract (0..1), formattingExtension (0..1), p (0..n), relations (0..1)</p>
+		<p><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+  <label>relations</label>
+  <item>0..1</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
@@ -50,16 +59,8 @@
 	<div type="description">
 		<p>Use <gi>publicationNote</gi> to identify works that are based on, about, or of special value when using the materials being described, or works in which a citation to or brief description of the materials occurs.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>The element <gi>reference</gi> might be used within <gi>publicationNote</gi> via the sub-element <gi>p</gi></item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>	
+	<div type="seealso"><p>The element <gi>reference</gi> might be used within <gi>publicationNote</gi> via the sub-element <gi>p</gi></p></div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>

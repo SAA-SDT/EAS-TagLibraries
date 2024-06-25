@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-part" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-part">
                <head>
                   <gi>part</gi>
                </head>
@@ -11,7 +11,10 @@
                      used to distinguish components of a name.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>nameEntry, targetEntity</p>
@@ -52,12 +55,8 @@
                   <p>Within <gi>targetEntity</gi> the name or term for the related entity is encoded
                      within <gi>part</gi> elements.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>The designation of the information contained in the <gi>part</gi> can be
-                        specified by the attribute <att>localType</att>.</item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>The designation of the information contained in the <gi>part</gi> can be
+                        specified by the attribute <att>localType</att>.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>

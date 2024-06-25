@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-agentRole" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-agentRole">
 	<head>
 		<gi>agentRole</gi>
 	</head>
@@ -10,7 +10,10 @@
 		<p>An optional child element of <gi>agent</gi> that indicates the role of the agent responsible for the creation, modification, or deletion of an EAD instance, the materials described therein, and/or any type of finding aid for those materials.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text]</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>agent</p>
@@ -52,12 +55,7 @@
 		<p><gi>agentRole</gi> might also be used to identify the role of the agent responsible for the creation, modification, or publication of a finding aid of the materials being described (in <gi>findAidDesc</gi>) or the role of an agent related in some way to the materials being described themselves, e.g. as the creator of such materials, as the previous or current holder of the materials, or as the subject of the materials etc. (in <gi>agents</gi>).</p>
 		</div>
 	
-	<div type="seealso">
-		<list type="simple">
-			<item>Use the element <gi>agentName</gi> to encode the agent’s name.</item>
-			<item>This element might be used in combination with the element <gi>agentType</gi> to specify both the type and role of the agent. I.e.: <gi>agentType</gi>: "person", <gi>agentRole</gi>: "archivist" (in <gi>maintenanceEvent</gi>)</item>.
-		</list>
-	</div>
+	<div type="seealso"><p>Use the element <gi>agentName</gi> to encode the agent’s name.</p></div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>

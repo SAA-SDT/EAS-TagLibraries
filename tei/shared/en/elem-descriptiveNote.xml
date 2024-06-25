@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-descriptiveNote" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-descriptiveNote">
                <head>
                   <gi>descriptiveNote</gi>
                </head>
@@ -10,7 +10,10 @@
                   <p>An element used to provide general descriptive information related to its parent element.</p>
                </div>
                <div type="mayContain">
-                  <p>p (1..n)</p>
+                  <p><list type="gloss">
+  <label>p</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">conventionDeclaration, demographicDescription, demographicDescriptions, existDates, function, functions, identity, languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses, localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency, mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes, place, places, relation, relations, rightsDeclaration, setComponent, source, sources</p>

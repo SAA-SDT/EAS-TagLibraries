@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-conventionDeclaration" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-conventionDeclaration">
                <head>
                   <gi>conventionDeclaration</gi>
                </head>
@@ -10,7 +10,14 @@
                   <p>An optional child element of <gi>control</gi>, used to declare the rules or conventions, including authorized controlled vocabularies and thesauri, applied in creating the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>descriptiveNote (0..1), reference (1..1), shortCode (0..1)</p>
+                  <p><list type="gloss">
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>reference</label>
+  <item>1..1</item>
+  <label>shortCode</label>
+  <item>0..1</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>control</p>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-source" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-source">
                <head>
                   <gi>source</gi>
                </head>
@@ -11,7 +11,16 @@
                      source of evidence used for the establishment of the descriptive parts in an EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>citedRange (0..n), descriptiveNote (0..1), objectXMLWrap (0..1), reference (1..n)</p>
+                  <p><list type="gloss">
+  <label>citedRange</label>
+  <item>0..n</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>objectXMLWrap</label>
+  <item>0..1</item>
+  <label>reference</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>sources</p>

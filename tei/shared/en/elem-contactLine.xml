@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-contactLine" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-contactLine">
                <head>
                   <gi>contactLine</gi>
                </head>
@@ -11,7 +11,10 @@
                      contact details or digital addresses.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>contact</p>
@@ -57,13 +60,9 @@
                   <p><gi>contactLine</gi> may be repeated as many times as necessary to enter all
                      relevant contact details.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use the optional <att>contactLineType</att>
+               <div type="attributeusage"><p>Use the optional <att>contactLineType</att>
                         attribute to encode the type of contact detail that the <gi>contactLine</gi>
-                        refers to, for example "phoneNumber".</item>
-                  </list>
-               </div>
+                        refers to, for example "phoneNumber".</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>

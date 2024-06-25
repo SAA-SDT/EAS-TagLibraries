@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-places" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-places">
                <head>
                   <gi>places</gi>
                </head>
@@ -11,7 +11,12 @@
                      one or more <gi>place</gi> elements.</p>
                </div>
                <div type="mayContain">
-                  <p>descriptiveNote (0..1), place (1..n)</p>
+                  <p><list type="gloss">
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>place</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, description</p>

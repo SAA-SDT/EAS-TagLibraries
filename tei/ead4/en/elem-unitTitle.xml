@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-unitTitle" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-unitTitle">
 	<head>
 		<gi>unitTitle</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>A child element of <gi>identificationData</gi> that specifies a title for the described materials.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text], reference (0..n), referringString (0..n), span (0..n)</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>identificationData</p>
@@ -50,12 +59,7 @@
 	<div type="description">
 		<p><gi>unitTitle</gi> is for recording the title statement, either formal or supplied, of the described materials. The title statement may consist of a word or phrase. <gi>unitTitle</gi> is used at both the highest unit or <gi>archDesc</gi> level (e.g., collection, record set, or fonds) and at all the subordinate <gi>c</gi> levels (e.g., subseries, files, records, items, or other intervening stages within a hierarchical description).</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>localType</att> if local use requires recording the type of <gi>unitTitle</gi>.</item>
-			<item>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the title of the unit in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</item>
-		</list>
-	</div>	
+	<div type="attributeusage"><p>Use <att>localType</att> if local use requires recording the type of <gi>unitTitle</gi>.</p></div>	
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

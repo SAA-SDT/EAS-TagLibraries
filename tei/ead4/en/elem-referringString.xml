@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-referringString" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-referringString">
 	<head>
 		<gi>referringString</gi>
 	</head>
@@ -10,7 +10,10 @@
 		<p>An element for marking words or phrases in a longer text as named entities.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text]</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>abstract, container, dimensions, eventDescription, head, materialSpec, p, physDesc, physFacet, physLoc, reference, unitDate, unitId, unitTitle</p>
@@ -51,16 +54,8 @@
 		<p>Use <gi>referringString</gi> in longer texts to indicate that certain words or phrases within these texts represent named entities such as persons, organisations, places, functions, dates, etc.</p>
 		<p>Use <gi>referringString</gi> e.g. when the identification of such named entities within existing archival descriptions is the result of some natural language processing or when capturing the results of named entity recognition having been conducted as part of Optical Character Recognition or Handwritten Text Recognition tasks.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>Only fall back on using <gi>referringString</gi> in the contexts mentioned above. Use dedicated elements such as <gi>agents</gi>, <gi>functions</gi>, <gi>places</gi>, <gi>formsAvailable</gi>, <gi>relatedMaterial</gi>, <gi>separatedMaterial</gi>, <gi>otherFindAid</gi>, or <gi>publicationNote</gi> to name related entities central to the understanding of the materials described and to provide more information about their relationship with the materials.</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p></div>	
+	<div type="seealso"><p>Only fall back on using <gi>referringString</gi> in the contexts mentioned above. Use dedicated elements such as <gi>agents</gi>, <gi>functions</gi>, <gi>places</gi>, <gi>formsAvailable</gi>, <gi>relatedMaterial</gi>, <gi>separatedMaterial</gi>, <gi>otherFindAid</gi>, or <gi>publicationNote</gi> to name related entities central to the understanding of the materials described and to provide more information about their relationship with the materials.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

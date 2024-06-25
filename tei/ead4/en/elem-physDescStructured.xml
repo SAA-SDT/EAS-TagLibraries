@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-physDescStructured" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-physDescStructured">
 	<head>
 		<gi>physDescStructured</gi>
 	</head>
@@ -10,7 +10,18 @@
 		<p>An element that provides a method for expressing structured statements about the extent and physical characteristics of the materials being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>descriptiveNote (0..1), dimensions (0..n), physFacet (0..n), quantity (1..1), unitType (1..1)</p>
+		<p><list type="gloss">
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>dimensions</label>
+  <item>0..n</item>
+  <label>physFacet</label>
+  <item>0..n</item>
+  <label>quantity</label>
+  <item>1..1</item>
+  <label>unitType</label>
+  <item>1..1</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>identificationData, physDescSet</p>
@@ -51,18 +62,8 @@
                 	<item><gi>descriptiveNote</gi></item>
                 </list>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>physDescStructuredType</att> to specify the nature of the statement about the materials being described and <att>coverage</att> to indicate whether the statement applies to all materials grouped in the unit of description or only part of them.</item>
-			<item>Use the attributes <att>coverageEncoding</att> and <att>physDescStructuredTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>coveraged</att> and <att>physDescStructuredType</att> respecively.</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>Use <gi>physDesc</gi> to express physical description in a non-machine-processable form and in instances where data exchange is not a concern.</item>
-			<item>Use <gi>physDescSet</gi> to bind two or more <gi>physDescStructured</gi> elements in order to convey parallel or coverage relationships between them.</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>physDescStructuredType</att> to specify the nature of the statement about the materials being described and <att>coverage</att> to indicate whether the statement applies to all materials grouped in the unit of description or only part of them.</p></div>	
+	<div type="seealso"><p>Use <gi>physDesc</gi> to express physical description in a non-machine-processable form and in instances where data exchange is not a concern.</p></div>
 	<div type="availability">
 		<p>Within identificationDate: Optional, repeatable</p>
 		<p>Within physDescSet: Required, repeatable</p>

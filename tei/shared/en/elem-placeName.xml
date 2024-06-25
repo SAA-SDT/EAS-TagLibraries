@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-placeName" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-placeName">
                <head>
                   <gi>placeName</gi>
                </head>
@@ -11,7 +11,10 @@
                      or geographic feature that is related to the CPF entity described.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>agent, demographicDescription, function, languageUsed, legalStatus, localDescription, mandate,
@@ -67,13 +70,9 @@
                      represent the same place name in various languages, with an accompanying
                         <att>languageOfElement</att> attribute.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>The <att>vocabularySource</att> attribute may be used to indicate the
+               <div type="attributeusage"><p>The <att>vocabularySource</att> attribute may be used to indicate the
                         controlled vocabulary from which the <gi>placeName</gi> term is
-                        derived.</item>
-                  </list>
-               </div>
+                        derived.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>

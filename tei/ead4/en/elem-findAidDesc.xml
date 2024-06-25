@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-findAidDesc" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-findAidDesc">
 	<head>
 		<gi>findAidDesc</gi>
 	</head>
@@ -10,7 +10,20 @@
 		<p>An optional element that binds together a bibliographic description of an EAD instance. </p>
 	</div>
 	<div type="mayContain">
-		<p>agent (0..n), citedRange (0..n), date (0..n), formattingExtension (0..n), place (0..n), title (0..n)</p>
+		<p><list type="gloss">
+  <label>agent</label>
+  <item>0..n</item>
+  <label>citedRange</label>
+  <item>0..n</item>
+  <label>date</label>
+  <item>0..n</item>
+  <label>formattingExtension</label>
+  <item>0..n</item>
+  <label>place</label>
+  <item>0..n</item>
+  <label>title</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>ead</p>
@@ -47,12 +60,7 @@
 		<p>Use <gi>findAidDesc</gi> to record a bibliographic description of the finding aid. This may include its author, title, subtitle, sponsor, edition, publisher, publishing series, and related notes, each within apppropriate sub-elements. </p>
 		<p>If <gi>findAidDesc</gi> is used, at least one sub-element must be included.</p>
 	</div>
-	<div type="seealso">
-		<list type="simple">
-			<item>Do not confuse with <gi>control</gi>, which contains administrative information about the management of the EAD instance. </item>
-			<item>Descriptions of the archive materials themselves belong within <gi>archDesc</gi> and its descendants. </item>
-		</list>
-	</div>
+	<div type="seealso"><p>Do not confuse with <gi>control</gi>, which contains administrative information about the management of the EAD instance. </p></div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>

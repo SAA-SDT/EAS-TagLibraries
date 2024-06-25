@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-identificationDataNote" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-identificationDataNote">
 	<head>
 		<gi>identificationDataNote</gi>
 	</head>
@@ -10,7 +10,10 @@
 		<p>A child element of <gi>identificationData</gi> that can express any kind of explanatory information.</p>
 	</div>
 	<div type="mayContain">
-		<p>p (1..n)</p>
+		<p><list type="gloss">
+  <label>p</label>
+  <item>1..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>identificationData</p>

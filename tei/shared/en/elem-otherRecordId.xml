@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-otherRecordId" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-otherRecordId">
                <head>
                   <gi>otherRecordId</gi>
                </head>
@@ -10,7 +10,10 @@
                   <p>An optional child element of <gi>control</gi> that encodes any local identifier for the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>control</p>
@@ -44,11 +47,7 @@
                <div type="description">
                   <p><gi>otherRecordId</gi> can be used to record an identifier that is an alternative to the mandatory identifier provided in <gi>recordId</gi>. These might include the identifiers of merged EAS instances representing the same entity or those of records that are no longer current but had some part in the history and maintenance of the EAS instance.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>localType</att> to identify the institution or service responsible for providing the associated record identifier, if not the same as that given in <gi>maintenanceAgency</gi>.</item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>Use <att>localType</att> to identify the institution or service responsible for providing the associated record identifier, if not the same as that given in <gi>maintenanceAgency</gi>.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>

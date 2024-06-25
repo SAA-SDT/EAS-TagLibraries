@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-separatedMaterial" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-separatedMaterial">
 	<head>
 		<gi>separatedMaterial</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>An element identifying materials associated by provenance that have been physically separated or removed.</p>
 	</div>
 	<div type="mayContain">
-		<p>abstract (0..1), formattingExtension (0..1), p (0..n), relations (0..1)</p>
+		<p><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+  <label>relations</label>
+  <item>0..1</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>archDesc, c</p>
@@ -51,11 +60,7 @@
 		<p>                     <gi>separatedMaterial</gi> identifies materials that are associated by provenance to the described materials that have been physically separated or removed. Examples include the separation of special
                      formats; the destruction of duplicate or nonessential material; and the deliberate or unintentional dispersal of a creator’s records among different repositories.</p>
 	</div>
-	<div type="seealso">
-		<list type="simple">
-			<item>Do not confuse with <gi>relatedMaterial</gi>, which is used for references to materials that are not physically or logically included in the material described in the finding aid.</item>
-		</list>
-	</div>
+	<div type="seealso"><p>Do not confuse with <gi>relatedMaterial</gi>, which is used for references to materials that are not physically or logically included in the material described in the finding aid.</p></div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>

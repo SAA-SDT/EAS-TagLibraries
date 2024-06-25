@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-fromDate" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-fromDate">
                <head>
                   <gi>fromDate</gi>
                </head>
@@ -11,7 +11,10 @@
                      range of dates.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>dateRange</p>
@@ -66,26 +69,9 @@
                      may be omitted from <gi>dateRange</gi>, or the <att>status</att> attribute
                      used.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>certainty</att> to indicate the degree of precision in the
-                        dating, for example, "uncertain" or "approximate".</item>
-                     <item>Use <att>localType</att> to supply a more specific characterization of
-                        the start date.</item>
-                     <item>Use <att>notAfter</att> and <att>notBefore</att> to capture the latest
-                        and earliest possible dates in machine-processable form in cases when the
-                        date is uncertain.</item>
-                     <item>Use <att>standardDate</att> to provide a machine-processable form of the
-                        date.</item>
-                     <item>Use <att>status</att> with the value "unknown" to indicate where the
-                        start of a date range is unknown.</item>
-                  </list>
-               </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>Use <gi>toDate</gi> to record the ending point of a date range.</item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>Use <att>certainty</att> to indicate the degree of precision in the
+                        dating, for example, "uncertain" or "approximate".</p></div>
+               <div type="seealso"><p>Use <gi>toDate</gi> to record the ending point of a date range.</p></div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>

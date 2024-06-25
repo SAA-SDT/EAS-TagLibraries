@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-agencyCode" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-agencyCode">
                <head>
                   <gi>agencyCode</gi>
                </head>
@@ -12,7 +12,10 @@
                      dissemination of the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>maintenanceAgency</p>
@@ -59,22 +62,10 @@
                      institution codes may be given with the <ref target="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</ref> country code as the
                      prefix to ensure international uniqueness in <gi>agencyCode</gi>.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>status</att> with the value "authorized" or "alternative" to
+               <div type="attributeusage"><p>Use <att>status</att> with the value "authorized" or "alternative" to
                         declare whether the <gi>agencyCode</gi> is using an authorized value, e.g. a
-                        registered ISIL code, or an alternative one.</item>
-                  </list>
-               </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>Use <gi>agencyName</gi> to record the name of the agency.</item>
-                     <item>Use <gi>otherAgencyCode</gi> to record any alternative codes representing
-                        the agency.</item>
-                     <item>Use <gi>recordId</gi> in combination with <gi>agencyCode</gi> to provide
-                        a globally unique identifier for the EAS instance.</item>
-                  </list>
-               </div>
+                        registered ISIL code, or an alternative one.</p></div>
+               <div type="seealso"><p>Use <gi>agencyName</gi> to record the name of the agency.</p></div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>

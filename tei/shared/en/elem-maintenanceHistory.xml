@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-maintenanceHistory" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-maintenanceHistory">
                <head>
                   <gi>maintenanceHistory</gi>
                </head>
@@ -11,7 +11,10 @@
                      creation and maintenance of the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>maintenanceEvent (1..n)</p>
+                  <p><list type="gloss">
+  <label>maintenanceEvent</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>control</p>

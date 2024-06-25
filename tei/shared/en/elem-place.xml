@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-place" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns="http://www.tei-c.org/ns/1.0" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-place">
                <head>
                   <gi>place</gi>
                </head>
@@ -12,7 +12,24 @@
                      significant connection.</p>
                </div>
                <div type="mayContain">
-                  <p>address (0..n), contact (0..n), date or dateRange or dateSet (0..1), descriptiveNote (0..1), geographicCoordinates (0..n), placeName (0..n), placeType (0..n),placeRole (0..n)</p>
+                  <p><list type="gloss">
+  <label>address</label>
+  <item>0..n</item>
+  <label>contact</label>
+  <item>0..n</item>
+  <label>date</label>
+  <item>or</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>geographicCoordinates</label>
+  <item>0..n</item>
+  <label>placeName</label>
+  <item>0..n</item>
+  <label>placeType</label>
+  <item>0..n</item>
+  <label>placeRole</label>
+  <item>0..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>findAidDesc, chronItem, chronItemSet, places, relation</p>

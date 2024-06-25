@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-dimensions" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-dimensions">
 	<head>
 		<gi>dimensions</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>A child element of <gi>physDescStructured</gi> that provides information about the size of the material being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text], reference (0..n), referringString (0..n), span (0..n)</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>physDescStructured</p>
@@ -46,12 +55,7 @@
 	<div type="description">
 		<p><gi>dimensions</gi> may be used to specify the size, in two or three dimensions, of the units identified by <gi>unitType</gi> within <gi>physDescStructured</gi>. It usually includes numerical data. Express measurements in any convenient unit as indicated in the <att>unit</att> attribute. Multiple dimensions, for example, height-by-width, can be encoded in a single <gi>dimensions</gi> or in separate <gi>dimensions</gi> with distinctive <att>localType</att> values.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>If the kind of measurement is not clear in the text, <att>unit</att> may be used to specify this information, for example, "inches" or "centimeters."</item>
-			<item>If desired, <att>localType</att> may be used to capture the kind of dimensions being measured, such as "height" or "circumference."</item>
-		</list>
-	</div>	
+	<div type="attributeusage"><p>If the kind of measurement is not clear in the text, <att>unit</att> may be used to specify this information, for example, "inches" or "centimeters."</p></div>	
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-descriptionOfComponents" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-descriptionOfComponents">
 	<head>
 		<gi>descriptionOfComponents</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>A wrapper element that bundles information about the hierarchical groupings of the materials being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>c (0..n), c01 (0..n), formattingExtension (0..1), p (0..n)</p>
+		<p><list type="gloss">
+  <label>c</label>
+  <item>0..n</item>
+  <label>c01</label>
+  <item>0..n</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>archDesc</p>
@@ -46,11 +55,7 @@
 		<p>A hierarchy of subordinate components should be nested within either unnumbered <gi>c</gi> elements or numbered <gi>c01</gi>, <gi>c02</gi>, etc. elements. Do not mix unnumbered and numbered component elements within a single EAD instance. </p>
 		<p>If <gi>p</gi> or <gi>formattingExtension</gi> elements are used they should come first, before any <gi>c</gi> or <gi>c01</gi> elements. </p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>@descriptionOfComponentsType</att> to identify the format or level of descriptive detail used in this <gi>descriptionOfComponents</gi>. </item>
-		</list>
-	</div>	
+	<div type="attributeusage"><p>Use <att>@descriptionOfComponentsType</att> to identify the format or level of descriptive detail used in this <gi>descriptionOfComponents</gi>. </p></div>	
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>

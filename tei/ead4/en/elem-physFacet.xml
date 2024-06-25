@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-physFacet" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-physFacet">
 	<head>
 		<gi>physFacet</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>A child element of <gi>physDescStructured</gi> that provides more detailed information about the physical nature of or techniques and methods of creation of the material described in terms that are often taken from a controlled vocabulary list.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text], reference (0..n), referringString (0..n), span (0..n)</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>physDescStructured</p>
@@ -51,11 +60,7 @@
 		<p><gi>physFacet</gi> records information about an aspect of the physical nature – such as color, style, marks, substances, materials, playback speed, duration, track configuration, and motion picture presentation format – or techniques and methods of creation of the units identified by <gi>unitType</gi> within <gi>physDescStructured</gi>. It generally should not be used for aspects of physical description that are covered more directly by <gi>unitType</gi> and <gi>dimensions</gi>.</p>
 <p>Physical facet terminology can be found in the Art and Architecture Thesaurus and other sources for authorized data values.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the physical facet in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</item>
-		</list>
-	</div>	
+	<div type="attributeusage"><p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the physical facet in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p></div>	
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

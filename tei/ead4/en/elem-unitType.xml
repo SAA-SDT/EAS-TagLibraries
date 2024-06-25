@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-unitType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-unitType">
 	<head>
 		<gi>unitType</gi>
 	</head>
@@ -10,7 +10,10 @@
 		<p>A required child element of <gi>physDescStructured</gi> that indicates the type of unit being quantified, e.g., boxes, linear feet, megabyte, gigabyte, etc.</p>
 	</div>
 	<div type="mayContain">
-		<p>[text]</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>physDescStructured</p>
@@ -46,12 +49,7 @@
 	<div type="description">
 		<p>Required in <gi>physDescStructured</gi>, <gi>unitType</gi> identifies the type of unit being quantified. This can cover analog types such as boxes, linear feet or meters, cubic meters, etc. as well as digital types such as megabytes, gigabytes, etc. or types of items that are counted such as maps, photographs, posters, etc.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the unit type in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</item> 
-			<item>Use <att>conventionDeclarationReference</att> to point to a <gi>conventionDeclaration</gi> in <gi>control</gi> that specifies the descriptive rules followed for forming the unit type.</item>
-		</list>
-	</div>	
+	<div type="attributeusage"><p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the unit type in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p></div>	
 	<div type="availability">
 		<p>Required, not repeatable</p>
 	</div>

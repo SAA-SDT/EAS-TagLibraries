@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-function" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-function">
                <head>
                   <gi>function</gi>
                </head>
@@ -11,8 +11,32 @@
                      a function, activity, process, role, or purpose.</p>
                </div>
                <div type="mayContain">
-                  <p type="eac">date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
-                  <p type="ead">date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), relationType (0..n), targetRole (0..n), targetType (0..n), term (1..n)</p>
+                  <p type="eac"><list type="gloss">
+  <label>date</label>
+  <item>or</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>placeName</label>
+  <item>0..n</item>
+  <label>term</label>
+  <item>1..n</item>
+</list></p>
+                  <p type="ead"><list type="gloss">
+  <label>date</label>
+  <item>or</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>placeName</label>
+  <item>0..n</item>
+  <label>relationType</label>
+  <item>0..n</item>
+  <label>targetRole</label>
+  <item>0..n</item>
+  <label>targetType</label>
+  <item>0..n</item>
+  <label>term</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>functions</p>
@@ -84,13 +108,9 @@
           					 <item><gi>descriptiveNote</gi></item>
                   </list></p>
                </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>Use <gi>relation</gi> with <gi>targetEntity</gi> having the
+               <div type="seealso"><p>Use <gi>relation</gi> with <gi>targetEntity</gi> having the
                            <att>targetType</att> "function" when describing the relationship with
-                        the function in more detail.</item>
-                  </list>
-               </div>
+                        the function in more detail.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>

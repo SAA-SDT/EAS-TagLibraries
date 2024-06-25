@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-targetEntity" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-targetEntity">
                <head>
                   <gi>targetEntity</gi>
                </head>
@@ -11,7 +11,10 @@
                      is being targeted by the relation.</p>
                </div>
                <div type="mayContain">
-                  <p>part (1..n)</p>
+                  <p><list type="gloss">
+  <label>part</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>relation</p>
@@ -53,14 +56,10 @@
                   <p><gi>targetEntity</gi> must include at least one <gi>part</gi> element, encoding
                      the name or term for the related entity.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use the required <att>targetType</att>, to identity the type of entity
+               <div type="attributeusage"><p>Use the required <att>targetType</att>, to identity the type of entity
                         related to in <gi>targetEntity</gi>, using one of the following values:
                         "agent", "corporateBody", "family", "function", "person", or
-                        "resource".</item>
-                  </list>
-               </div>
+                        "resource".</p></div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>

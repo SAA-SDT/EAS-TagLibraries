@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-subject" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-subject">
 	<head>
 		<gi>subject</gi>
 	</head>
@@ -10,7 +10,26 @@
 		<p>An element for encoding controlled topics represented in the materials being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>date (0..1), dateRange (0..1), dateSet (0..1), descriptiveNote (0..1), placeName (0..n), relationType (0..n), targetRole (0..n), targetType (0..n), term (1..n)</p>
+		<p><list type="gloss">
+  <label>date</label>
+  <item>0..1</item>
+  <label>dateRange</label>
+  <item>0..1</item>
+  <label>dateSet</label>
+  <item>0..1</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>placeName</label>
+  <item>0..n</item>
+  <label>relationType</label>
+  <item>0..n</item>
+  <label>targetRole</label>
+  <item>0..n</item>
+  <label>targetType</label>
+  <item>0..n</item>
+  <label>term</label>
+  <item>1..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>subjectHeadings</p>

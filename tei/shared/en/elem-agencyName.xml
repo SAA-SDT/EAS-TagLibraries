@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-agencyName" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-agencyName">
                <head>
                   <gi>agencyName</gi>
                </head>
@@ -12,7 +12,10 @@
                      dissemination of the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>maintenanceAgency</p>
@@ -56,13 +59,9 @@
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>Use <gi>agencyCode</gi> to record a code representing the institution or
+               <div type="seealso"><p>Use <gi>agencyCode</gi> to record a code representing the institution or
                         service responsible for the creation, maintenance, and/or dissemination of
-                        the EAS instance.</item>
-                  </list>
-               </div>
+                        the EAS instance.</p></div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countryCode="DE">
    <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="https://sigel.staatsbibliothek-berlin.de/de/suche/" valueURI="https://ld.zdb-services.de/resource/organisations/DE-611">
