@@ -13,7 +13,7 @@
                   <p>An identifier that must be unique within the current document and is used to
                      name the element so that it can be referred to, or referenced from, somewhere else in the record. This facilitates building links between the element and other resources within the current document.</p>
                   <p>
-                     Use <att>target</att>, <att>conventionDeclarationReference</att>, <att>localTypeDeclarationReference</att>, <att>maintenanceEventReference</att>, or <att>sourceReference</att> to link to an <att>id</att> attribute within the EAC-CPF instance.
+                     Use <att>target</att>, <att>conventionDeclarationReference</att>, <att>localTypeDeclarationReference</att>, <att>maintenanceEventReference</att>, or <att>sourceReference</att> to link to an <att>id</att> attribute within the EAS instance.
                   </p>
                </div>
                <div type="datatype">
