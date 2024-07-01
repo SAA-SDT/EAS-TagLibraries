@@ -9,7 +9,7 @@
                <div type="summary">
                   <p>An optional child element of <gi>control</gi> used to declare any local
                      conventions or controlled vocabularies used in <att>localType</att> in the
-                     EAC-CPF instance.</p>
+                     EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
