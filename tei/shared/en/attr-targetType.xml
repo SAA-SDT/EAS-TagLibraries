@@ -7,11 +7,12 @@
                   <p>Target Type</p>
                </div>
                <div type="summary">
-                  <p>Identifies the type of entity that is relate to the CPF entity being described.</p>
+                  <p>Identifies the type of entity related to the entity or records being described.</p>
                </div>
                <div type="description">
                   <p>Required attribute within <gi>targetEntity</gi> which identifies the type of
-                     entity that is related to the CPF entity being described. Use the value "agent"
+                     entity that is related to the entity or records being described.</p>
+                 <p type="eac">Use the value "agent"
                      only for migration from EAC-CPF 2010 to EAC 2.0.</p>
                </div>
                <div type="values">
