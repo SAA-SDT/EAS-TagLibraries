@@ -46,7 +46,7 @@
                <div type="description">
                   <p>A required child element of <gi>maintenanceHistory</gi>,
                         <gi>maintenanceEvent</gi> is used to record an activity in the creation and
-                     ongoing maintenance of an EAC-CPF instance, including revisions, updates, and
+                     ongoing maintenance of an EAS instance, including revisions, updates, and
                      deletions. There will always be at least one maintenance event for each
                      instance, which will typically be its creation.</p>
                   <p><gi>maintenanceEvent</gi> must include <gi>agent</gi> and
