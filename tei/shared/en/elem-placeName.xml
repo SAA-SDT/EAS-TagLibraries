@@ -7,8 +7,10 @@
                   <p>Place Name</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>place</gi> used to encode the name of a place
+                  <p type="eac">An optional child element of <gi>place</gi> used to encode the name of a place
                      or geographic feature that is related to the CPF entity described.</p>
+                  <p type="ead">An optional child element of <gi>place</gi> used to encode the name of a place
+                     or geographic feature that is related to the records being described.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
