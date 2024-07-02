@@ -29,6 +29,8 @@
 				<item>Optional</item>
 				<label>id</label>
 				<item>Optional</item>
+				<label>languageOfElement</label>
+				<item>Optional</item>
 				<label>localType</label>
 				<item>Optional</item>
 				<label>localTypeDeclarationReference</label>
@@ -53,7 +55,7 @@
                   </list>
 	</div>
 	<div type="availability">
-		<p>Optional, Not Repeatable</p>
+		<p>Optional, not repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

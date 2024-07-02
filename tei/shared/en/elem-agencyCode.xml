@@ -64,7 +64,8 @@
                </div>
                <div type="attributeusage"><p>Use <att>status</att> with the value "authorized" or "alternative" to
                         declare whether the <gi>agencyCode</gi> is using an authorized value, e.g. a
-                        registered ISIL code, or an alternative one.</p></div>
+                        registered ISIL code, or an alternative one.</p>
+                        <p type="ead">Use <att>status</att> with values such as “authorised” or “alternative” to declare whether the <gi>agencyCode</gi> is using an authorised value, e.g. a registered ISIL code, or an alternative code. Use <att>statusEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>status</att>.</p></div>
                <div type="seealso"><p>Use <gi>agencyName</gi> to record the name of the agency.</p></div>
                <div type="availability">
                   <p>Optional, not repeatable</p>

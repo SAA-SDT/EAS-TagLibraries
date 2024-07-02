@@ -29,7 +29,7 @@
 			<list type="gloss">
             			<label>audience</label>
             			<item>Optional</item>
-           			<label>containerID</label>
+           			<label>containerId</label>
             			<item>Optional</item>
 				<label>conventionDeclarationReference</label>
             			<item>Optional</item>
@@ -66,7 +66,7 @@
 	<div type="attributeusage"><p>Use <att>parent</att> to indicate the container in which the current container is housed, e.g., a box in which a folder is housed.</p></div>	
 	<div type="seealso"><p>Use <gi>physLoc</gi> to designate the shelves, stacks, rooms, buildings, or other places where the containers are stored.</p></div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

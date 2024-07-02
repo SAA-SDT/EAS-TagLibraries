@@ -55,7 +55,7 @@
 		</p>
 	</div>
 	<div type="availability">
-		<p>Optional Repeatable/Not Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML><![CDATA[<languageOfMaterial>

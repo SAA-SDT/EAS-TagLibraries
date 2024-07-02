@@ -34,9 +34,9 @@
   <label>functions</label>
   <item>0..1</item>
   <label>head</label>
-  <item>0..n</item>
+  <item>0..1</item>
   <label>identificationData</label>
-  <item>1..n</item>
+  <item>1..1</item>
   <label>otherDescriptiveInfo</label>
   <item>0..n</item>
   <label>otherFindAid</label>
@@ -108,7 +108,7 @@
 	<div type="attributeusage"><p>Use <att>base</att> to specify a base URI other than the URI of the EAD instance for the purpose of resolving any relative URIs contained within <gi>c</gi>.</p></div>	
 	<div type="seealso"><p>The numbered elements <gi>c01</gi>, <gi>c02</gi>, etc. are an alternative way to designate components. Use either the unnumbered <gi>c</gi> or the numbered alternatives. Do not mix the two in a single EAD instance.</p></div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

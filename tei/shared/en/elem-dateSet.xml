@@ -12,8 +12,8 @@
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
-  <label>date</label>
-  <item>or</item>
+  <label>date or dateRange</label>
+  <item>2..n</item>
 </list></p>
                </div>
                <div type="mayOccurWithin">
@@ -61,8 +61,7 @@
                         <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
                         <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> optional, not repeatable</p>
-                  <p type="ead">Within <gi>agent</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>place</gi>, <gi>relation</gi>, <gi>subject</gi> and <gi>unitDateStructured</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
-                        <gi>dateSet</gi> optional, not repeatable</p>
+                  <p type="ead">Optional, not repeatable</p>
                   <p type="eac">Within <gi>chronItem</gi>, <gi>existDates</gi>, <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>

@@ -51,13 +51,13 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>agentRole</gi> to indicate the role of the agent responsible for the creation, modification, or deletion of an EAD instance. It is recommended that the terms in <gi>agentType</gi> be taken from authorized vocabularies.</p>
+		<p>Use <gi>agentRole</gi> to indicate the role of the agent responsible for the creation, modification, or deletion of an EAD instance. It is recommended that the terms in <gi>agentRole</gi> be taken from authorized vocabularies.</p>
 		<p><gi>agentRole</gi> might also be used to identify the role of the agent responsible for the creation, modification, or publication of a finding aid of the materials being described (in <gi>findAidDesc</gi>) or the role of an agent related in some way to the materials being described themselves, e.g. as the creator of such materials, as the previous or current holder of the materials, or as the subject of the materials etc. (in <gi>agents</gi>).</p>
 		</div>
 	
 	<div type="seealso"><p>Use the element <gi>agentName</gi> to encode the agent’s name.</p></div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

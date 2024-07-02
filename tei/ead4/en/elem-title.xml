@@ -60,7 +60,7 @@
 	<div type="attributeusage"><p>Use <att>@localType</att> to differentiate between the general title and a subtitle or the title of an overarching series. </p></div>	
 	<div type="seealso"><p>Do not confuse with <gi>unitTitle</gi>, which is used to encode the name of the described materials, such as the title of a collection or the title or an individual item. </p></div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

@@ -54,7 +54,7 @@
                      as when intellectual property rights have been dedicated to the public.</p>	</div>
 	<div type="seealso"><p>Do not confuse with <gi>accessConditions</gi>, which contains information about conditions affecting the availability of the described materials.</p></div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

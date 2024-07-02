@@ -127,17 +127,17 @@
                         <label>levelEncoding</label>
                         <item>Optional (values limited to: EASList, otherLevelEncoding)</item>
                         <label>maintenanceEventTypeEncoding</label>
-                        <item>Optional (values limited to: EASList, maintenanceEventTypeEncoding)</item>
+                        <item>Optional (values limited to: EASList, otherMaintenanceEventTypeEncoding)</item>
                         <label>maintenanceStatus</label>
                         <item>Optional</item>
                         <label>maintenanceStatusEncoding</label>
-                        <item>Optional (values limited to: EASList, maintenanceStatusEncoding)</item>
+                        <item>Optional (values limited to: EASList, otherMaintenanceStatusEncoding)</item>
                         <label>physDescStructuredTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherPhysDescStructuredTypeEncoding)</item>
                         <label>publicationStatus</label>
                         <item>Optional</item>
                         <label>publicationStatusEncoding</label>
-                        <item>Optional (values limited to: EASList, publicationStatusEncoding)</item>
+                        <item>Optional (values limited to: EASList, otherPublicationStatusEncoding)</item>
                         <label>repositoryEncoding</label>
                         <item>Optional (values limited to: iso15511, otherRepositoryEncoding)</item>
                         <label>scriptEncoding</label>

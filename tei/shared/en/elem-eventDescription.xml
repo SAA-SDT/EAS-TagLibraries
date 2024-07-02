@@ -11,10 +11,20 @@
                      description of a maintenance event in the life of the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p><list type="gloss">
+                  <p type="eac"><list type="gloss">
   <label>[text]</label>
   <item/>
   <label>reference</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
+                  <p type="ead"><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
   <item>0..n</item>
   <label>span</label>
   <item>0..n</item>
@@ -49,7 +59,7 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="derived">
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceEvent maintenanceEventType="derived">
    <agent agentType="machine">
       XSLT ead2cpf.xsl/Saxon B9
    </agent>

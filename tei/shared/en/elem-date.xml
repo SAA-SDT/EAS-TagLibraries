@@ -7,7 +7,7 @@
                   <p>Date</p>
                </div>
                <div type="summary">
-                  <p>An element for encoding a single date relating to the entity or materials being described, or in their relationship to other elements.</p>
+                  <p>An element for encoding a single date relating to the entity or materials being described, or in their relationship to other entities.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -70,7 +70,7 @@
                      e.g., a place, a function, a resource, or a subject.</p>
                   <p>The content of the element is intended to be a human-readable natural language
                      date with a machine-readable date provided as the value of the
-                        <att>standardDate</att> attribute, formulated according to ISO 8601. Uncertain or approximate dates can be encoded in <att>standardDate</att> using Extended Date/Time Format (EDTF).</p>
+                        <att>standardDate</att> attribute, formulated according to ISO 8601 or another rule for encoding dates. Uncertain or approximate dates can be encoded in <att>standardDate</att> using Extended Date/Time Format (EDTF).</p>
                   <p>If the event or relationship has inclusive dates use the <gi>dateRange</gi>
                      element, while more complex dates (combining singles dates and date ranges) can
                      be expressed in <gi>dateSet</gi>.</p>

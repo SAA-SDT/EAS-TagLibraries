@@ -56,7 +56,7 @@
 	<div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>	
 	<div type="seealso"><p>It is useful to use the element <gi>targetRole</gi> in combination with <gi>targetType</gi> to specify the role of the described function, entity, or subject.</p></div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

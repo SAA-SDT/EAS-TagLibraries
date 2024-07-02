@@ -56,7 +56,7 @@
 		<p> This element helps to provide more standardization enabling an authority-controlled searching across finding aids, in particular where terms are taken from internationally or nationally controlled vocabularies such as the Library of Congress Subject Headings (LCSH) or the UK Archival Thesaurus (UKAT) for topics, the Virtual International Authority File (VIAF) for names, or GeoNames for places. </p>
 	</div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

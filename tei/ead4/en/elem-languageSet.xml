@@ -51,7 +51,7 @@
 	</div>
 	<div type="attributeusage"><p>Use <att>languageOfElement</att> and <att>scriptOfElement</att> to indicate the language and written scripts of the information in <gi>languageSet</gi>, not the language of materials.</p></div>	
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML><![CDATA[<languageOfMaterial>

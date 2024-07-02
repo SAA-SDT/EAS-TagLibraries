@@ -25,10 +25,12 @@
   <item>0..n</item>
   <label>custodHist</label>
   <item>0..n</item>
+  <label>descriptionOfComponents</label>
+  <item>0..1</item>
   <label>filePlan</label>
   <item>0..n</item>
   <label>formsAvailable</label>
-  <item>1..1</item>
+  <item>0..1</item>
   <label>functions</label>
   <item>0..1</item>
   <label>identificationData</label>
@@ -101,11 +103,11 @@
    		</p>
 	</div>
 	<div type="description">
-		<p>An element for binding together the bulk of an EAD document instance, which typically should include elements describing the content, context, and extent of a body of archival materials, as well as containing administrative and supplemental information that facilitates use of the materials. The elements are organized in hierarchical levels that provide a descriptive overview of the whole,  optionally followed by more specific description of the component parts. Descriptive information is inherited downward, from one hierarchical level to the next.</p>
+		<p>An element for binding together the bulk of an EAD instance, which typically should include elements describing the content, context, and extent of a body of archival materials, as well as containing administrative and supplemental information that facilitates use of the materials. The elements are organized in hierarchical levels that provide a descriptive overview of the whole,  optionally followed by more specific description of the component parts. Descriptive information is inherited downward, from one hierarchical level to the next.</p>
                 <p>The first child of <gi>archDesc</gi> must be the required <gi>identificationData</gi> that provides core information about the overall unit being described in the finding aid. This may be followed by a variety of notes and controlled access elements that describe or provide administrative information about the whole of the materials being described. <gi>archDesc</gi> may also include information about subordinate units, which are bound together within <gi>descriptionOfComponents</gi> containing one or more levels of subordinate components. Data elements available in <gi>archDesc</gi> are repeatable in component(<gi>c</gi> or <gi>c01</gi>-<gi>c12</gi>) within <gi>descriptionOfComponents</gi>.</p>
 	</div>
 	<div type="availability">
-		<p>Required, Not Repeatable</p>
+		<p>Required, not repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

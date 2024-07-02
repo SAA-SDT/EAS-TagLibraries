@@ -61,7 +61,14 @@
                <docDate>July 2024</docDate>
             </docImprint>
          </titlePage>
-         <div>
+         <div xml:lang="eng" type="Introduction">
+            <div xml:id="preface">
+               <head>Preface to the Draft Tag Library</head>
+               <p>Encoded Archival Description (EAD) is the international metadata transmission standard for hierarchical descriptions of archival records.  Developed and maintained by the Technical Subcommittee for Encoded Archival Standards (TS-EAS) of the Society of American Archivists (SAA), EAD is used around the globe for digitally encoding the description of archival records.</p>
+               <p>The fourth revision of EAD (EAD4) recognizes that the methods of developing and maintaining archival description have changed since EAD 1.0 (1998).  The revised standard is designed for a digital-first world, focusing on interoperability with other SAA standards (namely EAC-CPF 2.0), support for linked open data, and incorporating external schemas into EAD.  EAD4 also removes support for "print-first" features, streamlines mixed content, and limits more complex nesting.</p>
+               <p>This tag library reflects the public draft of EAD 4.  For more information, please see the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Editorial_ChangesInEAD4.0.pdf">Editorial Changes</ref>, the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Infograph.pdf">Infograph</ref>, and the <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas/call-for-comments-revision-of-e-0">EAD4 microsite</ref>.</p>
+               <p>Comments on the EAD 4 draft should be sent to TS-EAS at the <ref target="https://www2.archivists.org/standards/TS-EAS-report-an-issue">Report an Issue form</ref>.</p>
+            </div>
             <!-- Descriptive chapters
             Consists of a wrapper <div> with the elements:
             <head> for the title

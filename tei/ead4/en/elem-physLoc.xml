@@ -56,7 +56,7 @@
 	
 	<div type="seealso"><p>Do not confuse with <gi>container</gi>, which is used to identify the cartons, boxes, reels, folders, and other storage devices used to hold the described materials.</p></div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

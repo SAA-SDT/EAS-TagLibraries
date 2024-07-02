@@ -8,7 +8,7 @@
                </div>
                <div type="summary">
                   <p>An optional element within narrative elements such as <gi>biogHist</gi> that contains a brief summary of
-                     the information contained within the biogHist as a whole.</p>
+                     the information contained within the narrative element as a whole.</p>
                </div>
                <div type="mayContain">
                   <p type="eac"><list type="gloss">

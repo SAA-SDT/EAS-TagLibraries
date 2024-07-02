@@ -24,7 +24,7 @@
 		<!-- rather that sort A-Z in one list, would it be better to break out by type?  e.g. narrative appearance vs. findingAidDesc vs. former dsc + new formAvailable ? -->
 		<!-- also, in this case, i think we should take a harder line and *only* allow this extension on narrative elements, but also to be more flexible and allow it to sit side-by-side with paragraphs. i can certainly see the benefit of having a formattingExtension follow a local set of "paragraphs". -->
 		<p>
-				accessConditions, accruals, abstract, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, filePlan, findAidDesc, formAvailable, otherDescriptiveInfo, otherFindAid, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions
+				accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, filePlan, findAidDesc, formAvailable, otherDescriptiveInfo, otherFindAid, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions
 		</p>
 	</div>
 	<div type="attributes">
@@ -44,7 +44,8 @@
 		<p>When using this element, it is recommended that the EAS file is associated with the EAS NVDL for validation purposes.</p>
 	</div>
 	<div type="availability">
-		<p>Optional. Only repeatable within the context of <gi>findAidDesc</gi>.</p>
+		<p>Within <gi>findAidDesc</gi>: optional, repeatable.</p>
+		<p>Within all other elements: optional, not repeatable.</p>
 		<p>When used outside of <gi>findAidDesc</gi> to encode a narrative description, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or to use one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
 	</div>
 	<div type="examples">
