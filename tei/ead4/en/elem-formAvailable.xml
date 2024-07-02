@@ -59,12 +59,14 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>formAvailable</gi> within the wrapper element <gi>formsAvailable</gi> to specify single instances concerning the available form(s) of the described entities in <gi>archDesc</gi> or in numbered <gi>c</gi> elements.  A narrative description of the use of the element</p>
+		<p>Use <gi>formAvailable</gi> within the wrapper element <gi>formsAvailable</gi> to specify single instances concerning the available form(s) of the described entities in <gi>archDesc</gi> or in numbered <gi>c</gi> elements.</p>
+		<p>The available form(s), digital representations, microfiches or microfilms, copies, or originals in case the materials described are copies themselves, can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named as the <gi>targetEntity</gi> of a <gi>relation</gi> within <gi>relations</gi>. This will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
 	</div>
-	<div type="attributeusage"><p>A listing of usage of attributes with the element (optional)</p></div>	
-	<div type="seealso"><p> <gi>formAvailable</gi> might be used in combination with <gi>descriptiveNote</gi> to provide general descriptive information related to the wrapper element <gi>formsAvailable</gi>.</p></div>
+	<div type="attributeusage">
+		<p>Use <att>valueURI</att> to directly link to the representation form in question, e.g. a digital object identified by an ARK (Archival Resource Key) or DOI (Digital Object Identifier). Use <att>vocabularySource</att> to indicate the identifier scheme applied in this case.</p>
+	</div>	
 	<div type="availability">
-		<p>Required, Repeatable</p>
+		<p>Required, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
