@@ -7,7 +7,7 @@
 		<p>Form Available</p>
 	</div>
 	<div type="summary">
-		<p>The required child element of <gi>formsAvailable</gi> that is used to identify how the described archival entity or entities related to it within the numbered <gi>c</gi> elements are made available.</p>
+		<p>A required child element of <gi>formsAvailable</gi> used to name and describe single instantiations of the described records such as digital representations, microfiches, copies, etc.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -59,7 +59,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>formAvailable</gi> within the wrapper element <gi>formsAvailable</gi> to specify single instances concerning the available form(s) of the described entities in <gi>archDesc</gi> or in numbered <gi>c</gi> elements.</p>
+		<p>Use <gi>formAvailable</gi> within the wrapper element <gi>formsAvailable</gi> to specify single instances concerning the available form(s) of the described entities in <gi>archDesc</gi> or in <gi>c</gi> elements.</p>
 		<p>The available form(s), digital representations, microfiches or microfilms, copies, or originals in case the materials described are copies themselves, can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named as the <gi>targetEntity</gi> of a <gi>relation</gi> within <gi>relations</gi>. This will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
 	</div>
 	<div type="attributeusage">
