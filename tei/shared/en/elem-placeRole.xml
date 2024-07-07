@@ -54,8 +54,7 @@
                      jurisdiction. It is strongly recommended that each <gi>placeName</gi> is accompanied by
                      a <gi>placeRole</gi> element in order to describe the nature of the association
                      of the place being encoded.</p>
-                  <p>At least one of <gi>placeRole</gi>, <gi>placeName</gi>, <gi>geographicCoordinates</gi>,
-                        <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
+                  <p type="eac">At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p><p type="ead">At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>placeType</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="attributeusage"><p>The <att>vocabularySource</att> attribute may be used to indicate the
                         controlled vocabulary from which the <gi>placeRole</gi> is derived.</p></div>

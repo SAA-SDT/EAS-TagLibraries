@@ -19,8 +19,9 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>agent, demographicDescription, function, languageUsed, legalStatus, localDescription, mandate,
+                  <p type="eac">agent, demographicDescription, function, languageUsed, legalStatus, localDescription, mandate,
                      occupation, otherEntityType, subject, place</p>
+                     <p type="ead">agent, function, legalStatus, place, subject</p>
                </div>
                <div type="attributes">
                   <p>
@@ -65,8 +66,8 @@
                      entity. Furthermore a companion <gi>geographicCoordinates</gi> is available
                      beside <gi>placeName</gi>, when used within <gi>place</gi>, to encode latitude,
                      longitude and altitude information.</p>
-                  <p>At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>,
-                        <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
+                  <p type="eac">At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
+                  <p type="ead">At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>placeType</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                   <p>The <gi>placeName</gi> element is repeatable. It is strongly recommended that
                      within <gi>place</gi>, the <gi>placeName</gi> element be repeated only to
                      represent the same place name in various languages, with an accompanying

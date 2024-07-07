@@ -16,7 +16,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p><gi>palce</gi></p>
+		<p><gi>place</gi></p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -47,20 +47,10 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>placeType</gi> to specify the type the place or jurisdiction being encoded in a<gi>placeName</gi> within <gi>place</gi>. Places should be identified in <gi>placeName</gi> by the proper noun that commonly designates the place, natural feature, or political jurisdiction. It is strongly recommended that each <gi>placeName</gi> is accompanied by a <gi>placeType</gi> element in order to describe the tyoe of the place.</p>
+		<p>Use <gi>placeType</gi> to specify the type of the place or jurisdiction being encoded in a<gi>placeName</gi> within <gi>place</gi>. Places should be identified in <gi>placeName</gi> by the proper noun that commonly designates the place, natural feature, or political jurisdiction. It is strongly recommended that each <gi>placeName</gi> is accompanied by a <gi>placeType</gi> element in order to describe the tyoe of the place.</p>
 		<p>At least one of <gi>placeType</gi>, <gi>placeRole</gi>, <gi>placeName</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
 	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
-	</div>
-	<div type="examples">
-		  <egXML xml:lang="eng"><![CDATA[<place>
-	<placeName valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-   	Stockholm
-   </placeName>
-   <placeType valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBirth" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">
-   	Geburtsort
-   </placeRole>
-</place>]]></egXML>
 	</div>
 </div>
