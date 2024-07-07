@@ -9,8 +9,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Encoded Archival Description 4 Tag Library</title>
-			<title type="additional">DRAFT</title>
+            <title type="main">Encoded Archival Description 4.0 Tag Library</title>
+	    <title type="additional">DRAFT</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
                <name>Society of American Archivists</name>
@@ -31,14 +31,9 @@
                <addrLine>www.archivists.org</addrLine>
             </address>
             <date when="2024"/>
-            <idno>ISBN Number</idno>
+            <idno>[placeholder for ISBN Number]</idno>
             <availability>
-               <licence>This work is licensed under a Creative Commons Attribution 4.0 International
-                  License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/"
-                     >http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No
-                  part of this publication may be reproduced, stored in a retrieval system or
-                  transmitted in any form or by any means, electronic, mechanical or photocopying,
-                  recording, or otherwise without attribution.</licence>
+               <licence>This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No part of this publication may be reproduced, stored in a retrieval system or transmitted in any form or by any means, electronic, mechanical or photocopying, recording, or otherwise without attribution.</licence>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -50,12 +45,12 @@
       <front>
          <titlePage>
             <docTitle>
-               <titlePart type="main">Encoded Archival Description 4 Tag Library</titlePart>
-			   <titlePart type="additional">DRAFT</titlePart>
+               <titlePart type="main">Encoded Archival Description 4.0 Tag Library</titlePart>
+	       <titlePart type="additional">DRAFT</titlePart>
             </docTitle>
             <docEdition>Draft Release</docEdition>
             <byline>Prepared and maintained by the</byline>
-            <docAuthor>Technical Subcommittee - Encoded Archival Standards</docAuthor>
+            <docAuthor>Technical Subcommittee on Encoded Archival Standards (TS-EAS)</docAuthor>
             <docAuthor>Society of American Archivists</docAuthor>
             <docImprint>
                <docDate>July 2024</docDate>
@@ -64,10 +59,11 @@
          <div xml:lang="eng" type="Introduction">
             <div xml:id="preface">
                <head>Preface to the Draft Tag Library</head>
-               <p>Encoded Archival Description (EAD) is the international metadata transmission standard for hierarchical descriptions of archival records.  Developed and maintained by the Technical Subcommittee for Encoded Archival Standards (TS-EAS) of the Society of American Archivists (SAA), EAD is used around the globe for digitally encoding the description of archival records.</p>
-               <p>The fourth revision of EAD (EAD4) recognizes that the methods of developing and maintaining archival description have changed since EAD 1.0 (1998).  The revised standard is designed for a digital-first world, focusing on interoperability with other SAA standards (namely EAC-CPF 2.0), support for linked open data, and incorporating external schemas into EAD.  EAD4 also removes support for "print-first" features, streamlines mixed content, and limits more complex nesting.</p>
-               <p>This tag library reflects the public draft of EAD 4.  For more information, please see the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Editorial_ChangesInEAD4.0.pdf">Editorial Changes</ref>, the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Infograph.pdf">Infograph</ref>, and the <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas/call-for-comments-revision-of-e-0">EAD4 microsite</ref>.</p>
-               <p>Comments on the EAD 4 draft should be sent to TS-EAS at the <ref target="https://www2.archivists.org/standards/TS-EAS-report-an-issue">Report an Issue form</ref>.</p>
+               <p>Encoded Archival Description (EAD) is the international metadata transmission standard for descriptions of archival records.  Developed and maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS) of the Society of American Archivists (SAA), EAD is used around the globe for digitally encoding the description of archival records.</p>
+               <p>The fourth revision of EAD (EAD 4.0) recognizes that the methods of developing and maintaining archival description have changed since EAD 1.0 (1998). The revised standard is designed for a digital-first world, focusing on interoperability with other SAA standards (namely EAC-CPF 2.0), support for linked open data, and incorporating external schemas into EAD.  EAD 4.0 also removes support for "print-first" features directly within the EAD schema, streamlines mixed content, and limits more complex nesting.</p>
+               <p>This draft tag library reflects the public draft schema of EAD 4.0. For more information, please see the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Editorial_ChangesInEAD4.0.pdf">Editorial Changes</ref>, the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Infograph.pdf">Infograph</ref>, and the <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas/call-for-comments-revision-of-e-0">TS-EAS microsite</ref> gathering other relevant documents that are part of the revision or document the revision process.</p>
+	       <p>With the alignment between EAD and the other Encoded Archival Standards, this draft tag library is the first to combine shared elements and attributes, i.e., those that are available in both EAD and the Encoded Archival Context - Corporate Bodies, Persons, Families (EAC-CPF), with EAD-specific elements and attributes. The descriptions of shared elements and attributes in this draft tag library have been adapted based on their existing versions in the EAC-CPF 2.0.1 tag library, including examples where they fit both standards. Examples for EAD-specific elements and attributes will be added in future iterations of this tag library.</p>	    
+               <p>Comments on the EAD 4.0 draft should be sent to TS-EAS at the <ref target="https://www2.archivists.org/standards/TS-EAS-report-an-issue">Report an Issue form</ref> or via the TS-EAS repositories for the <ref target="https://github.com/SAA-SDT/eas-schemas">EAS schemas</ref> respectively the <ref target="https://github.com/SAA-SDT/EAS-TagLibraries">EAS Tag Libraries</ref> on GitHub.</p>
             </div>
             <!-- Descriptive chapters
             Consists of a wrapper <div> with the elements:
@@ -80,7 +76,6 @@
             <ref> with @target for e-mail, webbpage and so on
             <tag> with text to create anglebrakets
             <att> with text to create attributes
-            
             
             Possible elements in each <p>:
             <list type="ordered"> for ordered list 
@@ -100,12 +95,12 @@
                   <item>Item 1</item>
                   <item>Item 2</item>
                </list>
-            </div>-->
+            </div> -->
          </div>
       </front>
       <body>
          <div type="elements">
-			<!-- One include for each element href points to the element file -->
+	 <!-- One include for each element href points to the element file -->
             <xi:include href="shared/en/elem-abstract.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-accessConditions.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-accruals.xml" parse="xml"/>
@@ -226,7 +221,7 @@
             <xi:include href="shared/en/elem-writingSystem.xml" parse="xml"/>
          </div>
          <div type="attributes">
-			<!-- One include for each attribute href points to the element file -->
+	 <!-- One include for each attribute href points to the element file -->
             <xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-addressLineTypeEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-approximate.xml" parse="xml"/>
@@ -305,7 +300,7 @@
          <div type="appendix" xml:id="appendix1">
             <head>Title</head>
             <p>Contents of the appendix; this can also include lists</p>
-         </div>-->
+         </div> -->
       </back>
    </text>
 </TEI>
