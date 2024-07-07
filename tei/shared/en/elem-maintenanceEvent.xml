@@ -25,7 +25,7 @@
                   <p>maintenanceHistory</p>
                </div>
                <div type="attributes">
-                  <p>
+                  <p type="eac">
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
@@ -36,6 +36,22 @@
                         <label>maintenanceEventType</label>
                         <item>Required (values limited to: cancelled, created, deleted, derived,
                            revised, unknown, updated)</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+                  <p type="ead">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventType</label>
+                        <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
                         <label>target</label>
@@ -60,14 +76,16 @@
                      <item><gi>eventDescription</gi></item>
                   </list>
                </div>
-               <div type="attributeusage"><p>Use the required <att>maintenanceEventType</att> to document the type of
+               <div type="attributeusage">
+                  <p type="eac">Use the required <att>maintenanceEventType</att> to document the type of
                         maintenance activity that the <gi>maintenanceEvent</gi> is recording, using
-                        one of the values from the available controlled list. </p></div>
+                        one of the values from the available controlled list. </p>
+                        <p type="ead">Use <att>maintenanceEventType</att> to document the type of maintenance activity that the <gi>maintenanceEvent</gi> is recording. Use <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>maintenanceEventType</att>.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceHistory>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceHistory>
    <maintenanceEvent maintenanceEventType="derived">
       <agent agentType="machine">
          XSLT ead2cpf.xsl/Saxon B9

@@ -49,7 +49,7 @@
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceHistory>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceHistory>
    <maintenanceEvent maintenanceEventType="derived">
       <agent agentType="machine">
          XSLT ead2cpf.xsl/Saxon B9

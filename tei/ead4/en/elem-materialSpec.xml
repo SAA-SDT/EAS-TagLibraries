@@ -7,7 +7,7 @@
 		<p>Material Specific Details </p>
 	</div>
 	<div type="summary">
-		<p>A child elementof <gi>identificationData</gi> for providing material specific details for a small group of materials or an item.</p>
+		<p>A child element of <gi>identificationData</gi> for providing material specific details for a small group of materials or an item.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">

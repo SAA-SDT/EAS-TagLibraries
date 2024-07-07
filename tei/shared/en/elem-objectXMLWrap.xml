@@ -7,7 +7,10 @@
                   <p>Object XML Wrap</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>relation</gi>, <gi>setComponent</gi>, and
+                  <p type="eac">An optional child element of <gi>relation</gi>, <gi>setComponent</gi>, and
+                        <gi>source</gi> that allows for the inclusion of an XML element from any XML
+                     namespace.</p>
+                  <p type="ead">An optional child element of <gi>relation</gi> and
                         <gi>source</gi> that allows for the inclusion of an XML element from any XML
                      namespace.</p>
                </div>
@@ -22,10 +25,20 @@
                   <p type="ead">relation, source</p>
                </div>
                <div type="attributes">
-                  <p>
+                  <p type="eac">
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+                  <p type="ead">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>target</label>

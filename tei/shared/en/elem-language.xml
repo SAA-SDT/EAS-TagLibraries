@@ -7,8 +7,7 @@
                   <p>Language</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>languageUsed</gi> that identifies a particular
-                     language used by the entity or records being described.</p>
+                  <p>An element that identifies the language or communication system used by the entity or in the materials described.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -45,16 +44,18 @@
                   </p>
                </div>
                <div type="description">
-                  <p>An optional element within <gi>languageUsed</gi> that gives the language or
+                  <p type="eac">An optional element within <gi>languageUsed</gi> that gives the language or
                      languages used by the records or entity being described.</p>
+                     <p type="ead">Use either <gi>language</gi> or <gi>languageSet</gi>, if combining language and script information, as sub-element of <gi>languageOfMaterial</gi> to identify a language or communication system of the materials being described.</p>
                </div>
                <div type="attributeusage"><p>Use <att>languageCode</att> to provide a code for the language
                         itself.</p></div>
+               <div type="seealso"><p>Use <gi>writingSystem</gi> to specify, in a human-readable form, the script corresponding to the language.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<languageUsed>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<languageUsed>
    <language languageCode="eng">
       English
    </language>
