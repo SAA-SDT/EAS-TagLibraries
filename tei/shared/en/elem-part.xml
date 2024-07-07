@@ -7,8 +7,8 @@
                   <p>Part</p>
                </div>
                <div type="summary">
-                  <p>A required and repeatable child of <gi>nameEntry</gi> and <gi>targetEntity</gi>
-                     used to distinguish components of a name.</p>
+                  <p type="eac">A required and repeatable child of <gi>nameEntry</gi> and <gi>targetEntity</gi> used to distinguish components of a name.</p>
+                  <p type="ead">A required and repeatable child of <gi>targetEntity</gi> and <gi>title</gi> used to distinguish components of a name or title.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -17,13 +17,14 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>nameEntry, targetEntity</p>
+                  <p type="eac">nameEntry, targetEntity</p>
+                  <p type="eac">targetEntity, title</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -46,14 +47,10 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Within <gi>nameEntry</gi> each of the components of a name, such as forename,
-                     surname or honorific title, may be recorded in a separate <gi>part</gi>
-                     element. <gi>part</gi> may also contain the full name of the entity when it is
-                     not possible to distinguish the different components of the name.</p>
-                  <p><gi>part</gi> cannot be empty and requires at least one non-whitespace
-                     character, such as a hyphen, if no actual name can be given.</p>
-                  <p>Within <gi>targetEntity</gi> the name or term for the related entity is encoded
-                     within <gi>part</gi> elements.</p>
+                  <p type="eac">Within <gi>nameEntry</gi> each of the components of a name, such as forename, surname or honorific title, may be recorded in a separate <gi>part</gi> element. <gi>part</gi> may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</p>
+                  <p>Within <gi>targetEntity</gi> the name or term for the related entity is encoded within <gi>part</gi> elements.</p>
+                  <p type="ead">Within <gi>title</gi> components such as subtitles or the number of an issue in a serial publication may be recorded in a separate <gi>part</gi> element.</p>
+                  <p><gi>part</gi> cannot be empty and requires at least one non-whitespace character, such as a hyphen, if no actual name can be given.</p>
                </div>
                <div type="attributeusage"><p>The designation of the information contained in the <gi>part</gi> can be
                         specified by the attribute <att>localType</att>.</p></div>
@@ -61,7 +58,7 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
    <part localType="surname">
       Arendt
    </part>
@@ -69,7 +66,7 @@
       Hannah
    </part>
 </nameEntry>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
    <part>
       Provence-Alpes-Côte d'Azur
    </part>
