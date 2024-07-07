@@ -7,8 +7,8 @@
                   <p>Writing System</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>languageUsed</gi> that identifies the writing
-                     script for a language used by the described entity or records.</p>
+                  <p type="eac">An optional child element of <gi>languageUsed</gi> that identifies the writing script for a language used by the described entity.</p>
+                  <p type="ead">An optional child element of <gi>languageSet</gi> that identifies the writing script for a language used in the materials described.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -45,7 +45,9 @@
                   </p>
                </div>
                <div type="description">
-                  <p>An optional element within <gi>languageUsed</gi> that gives the main script
+                  <p type="eac">An optional element within <gi>languageUsed</gi> that gives the main script
+                     used by the entity or records being described.</p>
+                  <p type="ead">An optional element within <gi>languageSet</gi> that gives the main script
                      used by the entity or records being described.</p>
                </div>
                <div type="attributeusage"><p>Use <att>scriptCode</att> to provide a code for the writing system

@@ -81,7 +81,7 @@
                <div type="attributeusage"><p>Use the optional <att>addressLineType</att>
                         attribute to encode the part of the address that the <gi>addressLine</gi>
                         refers to, for example "street".</p>
-                        <p type="ead">Use the optional <att>addressLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>addressLineType</att>.</div>
+                        <p type="ead">Use the optional <att>addressLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>addressLineType</att>.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>

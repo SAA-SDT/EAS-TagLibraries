@@ -7,7 +7,7 @@
 		<p>Forms Available</p>
 	</div>
 	<div type="summary">
-		<p>An optional child of <archDesc> and <c> that groups together single instantiations of the described records such as digital representations, microfiches, copies, etc.</p>
+		<p>An optional child of <gi>archDesc</gi> and <gi>c</gi> that groups together single instantiations of the described records such as digital representations, microfiches, copies, etc.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">

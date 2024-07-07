@@ -22,7 +22,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>archDesc, c</p>
+		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -57,8 +57,8 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>                     <gi>separatedMaterial</gi> identifies materials that are associated by provenance to the described materials that have been physically separated or removed. Examples include the separation of special
-                     formats; the destruction of duplicate or nonessential material; and the deliberate or unintentional dispersal of a creator’s records among different repositories.</p>
+		<p>                     <gi>separatedMaterial</gi> identifies materials that are associated by provenance to the described materials that have been physically separated or removed. Examples include the separation of special formats; the destruction of duplicate or nonessential material; and the deliberate or unintentional dispersal of a creator’s records among different repositories.</p>
+		 <p>These separated materials can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named as the <gi>targetEntity</gi> of a <gi>relation</gi> within <gi>relations</gi>. This will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p><p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> can be used to refer to analog or digital resources.</p>
 	</div>
 	<div type="seealso"><p>Do not confuse with <gi>relatedMaterial</gi>, which is used for references to materials that are not physically or logically included in the material described in the finding aid.</p></div>
 	<div type="availability">

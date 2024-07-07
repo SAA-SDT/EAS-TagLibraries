@@ -58,6 +58,7 @@
 	</div>
 	<div type="description">
 		<p><gi>relatedMaterial</gi>is used to identify associated materials in the same repository or elsewhere. These materials may be related by sphere of activity, or subject matter.</p>
+		<p>These associated materials can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named as the <gi>targetEntity</gi> of a <gi>relation</gi> within <gi>relations</gi>. This will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p><p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> can be used to refer to analog or digital resources.</p>
 	</div>
 	<div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>	
 	<div type="seealso"><p>Do not confuse with <gi>separatedmaterial</gi>, which provides information about materials that have been separated or physically removed from the described materials but that are related to them by provenance.</p></div>

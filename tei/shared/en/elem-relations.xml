@@ -28,7 +28,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>base</label>
                         <item>Optional</item>
                         <label>conventionDeclarationReference</label>
@@ -61,7 +61,7 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<relations>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<relations>
    <relation>
       <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
          <part>

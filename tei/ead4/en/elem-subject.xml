@@ -11,11 +11,7 @@
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
-  <label>date</label>
-  <item>0..1</item>
-  <label>dateRange</label>
-  <item>0..1</item>
-  <label>dateSet</label>
+  <label>date, dateRange, or dateSet</label>
   <item>0..1</item>
   <label>descriptiveNote</label>
   <item>0..1</item>
@@ -71,9 +67,11 @@
                   <p>
                      <gi>subject</gi> must contain one or more <gi>term</gi> elements. A single <gi>term</gi> may be used for the entire string, or if more granularity is desired, multiple <gi>term</gi> elements may be
                      used to capture each component of the subject term, e.g.,</p>
-                  <p>Term 1: Boats</p>
-                  <p>Term 2: California</p>
-                  <p>Term 3: 20th Century</p>
+                     <list type="simple">
+                  		<item>Term 1: Boats</item>
+                  		<item>Term 2: California</item>
+                  		<item>Term 3: 20th Century</item>
+               		</list>
                   <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>), place(s) (<gi>placeName</gi>), and/or relationship information (<gi>relationType</gi>, <gi>targetRole</gi>, and/or <gi>targetType</gi>) may be included to further constrain the term's meaning. A <gi>descriptiveNote</gi> may be included if a fuller textual explanation is needed.</p>
                   <p>The order of child elements of <gi>subject</gi> is:
                   <list type="simple">

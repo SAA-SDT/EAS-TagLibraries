@@ -11,9 +11,9 @@
                      between the entity or records described and a related entity.</p>
                </div>
                <div type="mayContain">
-                  <p><list type="gloss">
-  <label>date</label>
-  <item>or</item>
+                  <p type="eac"><list type="gloss">
+  <label>date or dateRange or dateSet</label>
+  <item>0..1</item>
   <label>descriptiveNote</label>
   <item>0..1</item>
   <label>objectXMLWrap</label>
@@ -25,6 +25,24 @@
   <label>targetEntity</label>
   <item>1..1</item>
   <label>targetRole</label>
+  <item>0..n</item>
+</list></p>
+                  <p type="ead"><list type="gloss">
+  <label>date or dateRange or dateSet</label>
+  <item>0..1</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>objectXMLWrap</label>
+  <item>0..1</item>
+  <label>place</label>
+  <item>0..n</item>
+  <label>relationType</label>
+  <item>0..n</item>
+  <label>targetEntity</label>
+  <item>1..1</item>
+  <label>targetRole</label>
+  <item>0..n</item>
+  <label>targetType</label>
   <item>0..n</item>
 </list></p>
                </div>
@@ -54,10 +72,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>relation</gi> records descriptive information about a relationship between
-                     the entity or records being described and a related entity, such as: a corporate body,
-                     person, or family; a function; or an archival, bibliographic, or other
-                     resource.</p>
+                  <p type="ead"><gi>relation</gi> records descriptive information about a relationship between the materials being described and archival, bibliographic, or other types of resources or any kind of digital representations, microfiches or microfilms, copies, etc. of the materials. Use the required child element <gi>targetEntity</gi> to provide a textual identification of the related entity, such as a name or a title. Use the optional child element <gi>relationType</gi> to specify the type of relation, e.g., derivation. Use the optional child element <gi>targetRole</gi> to specify the role of the related entity, e.g., digital representation, and the optional child element <gi>targetType</gi> to classify the type of the related entity, e.g., JPEG. It is recommended that the terms used in <gi>relationType</gi>, <gi>targetEntity</gi>, <gi>targetRole</gi>, and <gi>targetType</gi> be taken from an authorized vocabulary.</p>
                   <p>Use the required child element <gi>targetEntity</gi> to provide a textual
                      identification of the related entity, such as a name or a title. Use the
                      optional child element <gi>relationType</gi> to specify the type of relation.
@@ -71,20 +86,31 @@
                      location information. <gi>descriptiveNote</gi> may be included for more
                      detailed specifications or explanations of the relationship.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>targetEntity</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
-                     <item>One or more of <gi>place</gi>, <gi>relationType</gi>, and
-                           <gi>targetRole</gi></item>
-                     <item><gi>descriptiveNote</gi></item>
-                     <item><gi>objectXMLWrap</gi></item>
-                  </list>
+                  <p type="eac">
+                     <list type="simple">
+                        <item><gi>targetEntity</gi></item>
+                        <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                        <item>One or more of <gi>place</gi>, <gi>relationType</gi>, and
+                              <gi>targetRole</gi></item>
+                        <item><gi>descriptiveNote</gi></item>
+                        <item><gi>objectXMLWrap</gi></item>
+                     </list>
+                  </p>
+                  <p type="ead">
+                     <list type="simple">
+                        <item><gi>targetEntity</gi></item>
+                        <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                        <item>One or more of <gi>place</gi>, <gi>relationType</gi>, <gi>targetRole</gi>, and <gi>targetType</gi></item>
+                        <item><gi>descriptiveNote</gi></item>
+                        <item><gi>objectXMLWrap</gi></item>
+                     </list>
+                  </p>
                </div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<relation>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<relation>
    <targetEntity targetType="resource">
       <part>
          Mémorial du colonel Gustafsson. - 1829
@@ -97,7 +123,7 @@
       Publication
    </targetRole>
 </relation>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<relation>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<relation>
    <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
       <part>
          Sophie

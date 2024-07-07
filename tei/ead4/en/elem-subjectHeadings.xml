@@ -51,9 +51,12 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>subjectHeadings</gi> to bundle in a single group access points — names, topics, places, functions, occupations, titles, and genre terms — that represent the contexts and contents of the materials described.</p> 
-		<p>Although <gi>subjectHeadings</gi> is often used within <gi>archdesc</gi> to provide significant access terms for the entirety of the materials described, it may be used at the component level to provide terms specific to a component if so desired.</p>
-		<p> This element helps to provide more standardization enabling an authority-controlled searching across finding aids, in particular where terms are taken from internationally or nationally controlled vocabularies such as the Library of Congress Subject Headings (LCSH) or the UK Archival Thesaurus (UKAT) for topics, the Virtual International Authority File (VIAF) for names, or GeoNames for places. </p>
+		<p>Use <gi>subjectHeadings</gi> to bundle topical or thematic access points that represent the contexts of the materials described.</p>
+		<p>Although <gi>subjectHeadings</gi> is often used within <gi>archDesc</gi> to provide significant access terms for the entirety of the materials described, it may be used at the component level to provide terms specific to a component if so desired.</p>
+		<p>This element helps to provide more standardization enabling an authority-controlled searching across finding aids, in particular where terms are taken from internationally or nationally controlled vocabularies such as the Library of Congress Subject Headings (LCSH), the Getty Art &amp; Architecture Thesaurus (Getty AAT), the UNESCO Thesaurus, the UK Archival Thesaurus (UKAT) or Wikidata.</p>
+	</div>
+	<div type="seealso">
+		<p>Use the dedicated elements <gi>agent</gi>, <gi>function</gi>, and <gi>place</gi> to encode information about persons, corporate bodies, families, functions, and geographical locations or features that represent the contexts of the materials described.</p> 
 	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>

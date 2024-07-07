@@ -61,6 +61,7 @@
 	<div type="description">
 		<p>Use <gi>formAvailable</gi> within the wrapper element <gi>formsAvailable</gi> to specify single instances concerning the available form(s) of the described entities in <gi>archDesc</gi> or in <gi>c</gi> elements.</p>
 		<p>The available form(s), digital representations, microfiches or microfilms, copies, or originals in case the materials described are copies themselves, can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named as the <gi>targetEntity</gi> of a <gi>relation</gi> within <gi>relations</gi>. This will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
+		<p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> can be used to refer to analog or digital resources.</p>
 		<p>The prescribed order of all child elements (both required and optional) is:</p>
 		<list type="simple">
                         <item><gi>abstract</gi> (if used)</item>

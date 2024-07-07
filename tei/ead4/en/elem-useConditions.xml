@@ -22,7 +22,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>archDesc, c</p>
+		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -31,11 +31,13 @@
             		<item>Optional</item>
             		<label>conventionDeclarationReference</label>
             		<item>Optional</item>
-            		<label>descriptionOfComponentsType</label>
-            		<item>Optional</item>
             		<label>id</label>
             		<item>Optional</item>
             		<label>languageOfElement</label>
+            		<item>Optional</item>
+            		<label>localType</label>
+            		<item>Optional</item>
+            		<label>localTypeDeclarationReference</label>
             		<item>Optional</item>
             		<label>maintenanceEventReference</label>
             		<item>Optional</item>
@@ -45,13 +47,23 @@
             		<item>Optional</item>
             		<label>target</label>
             		<item>Optional</item>
+            		<label>valueURI</label>
+            		<item>Optional</item>
+            		<label>vocabularySource</label>
+            		<item>Optional</item>
+            		<label>vocabularySourceURI</label>
+            		<item>Optional</item>
         	</list>
 		</p>
 	</div>
 	<div type="description">
-<p>Use <gi>useConditions</gi> for information about any limitations, regulations, or special procedures imposed by a repository, donor, legal statute, or other agency. These conditions may be related to
-                     reproduction, publication, or quotation of the described materials after access to the materials has been granted. <gi>useConditions</gi> may also be used to indicate the absence of restrictions, such
-                     as when intellectual property rights have been dedicated to the public.</p>	</div>
+		<p>Use <gi>useConditions</gi> for information about any limitations, regulations, or special procedures imposed by a repository, donor, legal statute, or other agency. These conditions may be related to reproduction, publication, or quotation of the described materials after access to the materials has been granted. <gi>useConditions</gi> may also be used to indicate the absence of restrictions, such as when intellectual property rights have been dedicated to the public.</p>
+        <p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>useConditions</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <list type="simple">
+           	<item><gi>abstract</gi> if used</item>
+           	<item><gi>formattingExtension</gi> or <gi>p</gi></item>
+         </list></div>
 	<div type="seealso"><p>Do not confuse with <gi>accessConditions</gi>, which contains information about conditions affecting the availability of the described materials.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
