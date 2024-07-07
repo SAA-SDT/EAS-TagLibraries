@@ -1195,7 +1195,7 @@
     </xsl:template>
 
     <!-- div@type="attributes"/p has special handling, so we don't want this to match it -->
-    <xsl:template match="tei:p[@type=$currentStandard and not(ancestor::div[@type='mayContain']) and not(ancestor::div[@type='attributes'])]">
+    <xsl:template match="tei:p[(@type=$currentStandard or not(@type)) and not(ancestor::div[@type='mayContain']) and not(ancestor::div[@type='attributes'])]">
         <fo:block>
             <xsl:apply-templates/>
         </fo:block>
