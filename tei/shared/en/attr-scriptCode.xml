@@ -15,7 +15,8 @@
                      Optionally available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
                </div>
                <div type="datatype">
-                  <p>NMTOKEN</p>
+                  <p type="eac">NMTOKEN</p>
+                  <p type="ead">token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<languagesUsed>

@@ -7,30 +7,28 @@
                   <p>Maintenance Event Type</p>
                </div>
                <div type="summary">
-                  <p>A required attribute of <gi>maintenanceEvent</gi> that provides a controlled
-                     list of values for recording the type of maintenance activity.</p>
+                  <p type="eac">A required attribute of <gi>maintenanceEvent</gi> that provides a controlled list of values for recording the type of maintenance activity.</p>
+                  <p type="ead">An optional attribute of <gi>maintenanceEvent</gi> that identifies the type of maintenance activity.</p>
                </div>
                <div type="description">
+                  <p>Identifies the type of maintenance event with values such as:</p>
                   <list type="simple">
-                     <item>cancelled: marks an instance as not current (obsolete or rejected), but
-                        retained for reference</item>
+                     <item>cancelled: marks an instance as not current (obsolete or rejected), but retained for reference</item>
                      <item>created: the initial creation of the EAS instance</item>
-                     <item>deleted: indication that the instance has been deleted from the
-                        system</item>
-                     <item>derived: indicates that the instance was derived from another descriptive
-                        system</item>
+                     <item>deleted: indication that the instance has been deleted from the system</item>
+                     <item>derived: indicates that the instance was derived from another descriptive system</item>
                      <item>revised: any type of general modification to the EAS instance</item>
                      <item>unknown: when the type of event is not known</item>
-                     <item>updated: when an instance has been brought up to date with significant
-                        changes to the materials being described or to the version of EAS
-                        used</item>
-                  </list>
+                     <item>updated: when an instance has been brought up to date with significant changes to the materials being described or to the version of EAS used</item></list>
                </div>
                <div type="values">
-                  <p>cancelled, created, deleted, derived, revised, unknown, updated</p>
+                  <p type="eac">cancelled, created, deleted, derived, revised, unknown, updated</p>
+               </div>
+               <div type="datatype">
+                  <p type="ead">token
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceHistory>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceHistory>
    <maintenanceEvent maintenanceEventType="derived">
       <agent agentType="machine">
          XSLT ead2cpf.xsl/Saxon B9

@@ -13,7 +13,7 @@
    </div>
    <div type="description">
       <p>Information that serves as a viewable caption which explains to users the part that a
-         remote resource plays in a link. May be used alongside any <gi>href</gi> attribute in order
+         remote resource plays in a link. May be used alongside any <att>href</att> attribute in order
          to support accessibilty guidelines, such as those defined within the W3C's Web Content
          Accessibility Guidelines (WCAG).</p>
       <p type="eac">Optionally available in <gi>contactLine</gi>, <gi>reference</gi>,

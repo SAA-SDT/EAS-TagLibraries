@@ -7,7 +7,7 @@
 		<p>Date Characterization</p>
 	</div>
 	<div type="summary">
-		<p>Term characterizing the nature of a date, such as dates of creation, accumulation, or modification. Available in <gi>unitdate</gi> and <gi>unitdatestructured</gi>.</p>
+		<p>Term characterizing the nature of a date, such as dates of creation, accumulation, or modification. Available in <gi>unitDate</gi> and <gi>unitDateStructured</gi>.</p>
 	</div>
 	<div type="datatype">
 		<p>token</p>

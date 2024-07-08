@@ -7,7 +7,7 @@
                   <p>Status</p>
                </div>
                <div type="summary">
-                  <p>Attribute that provides controlled terminology detailing the status of
+                  <p>Attribute that follows controlled terminology detailing the status of
                      elements.</p> 
                </div>
                <div type="description">
@@ -29,8 +29,7 @@
                   <p type="eac">Values in <gi>toDate</gi>: unknown, ongoing</p>
                </div>
               <div type="datatype">
-                  <p type="ead">Datatype for <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, 
-                    <gi>fromDate</gi>, <gi>toDate</gi>, <gi>unitDate</gi>: token</p>
+                  <p type="ead">token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">

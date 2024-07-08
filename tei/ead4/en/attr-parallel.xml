@@ -10,7 +10,7 @@
 		<p>Specifies if the statements of physical description in a <gi>physDescSet</gi> are parallel to one another or not</p>
 	</div>
 	<div type="description">
-		<p>May be used with <gi>physDescSet</gi> to indicate whether the statements of physical description grouped in its <gi>physDescStructured</gi> child elements are be parallel to one another or not (that is, if they are alternate descriptions of the same set of material).</p>
+		<p>May be used with <gi>physDescSet</gi> to indicate whether the statements of physical description grouped in its <gi>physDescStructured</gi> child elements are parallel to one another or not (that is, if they are alternate descriptions of the same set of material).</p>
 	</div>
 	<div type="values">
 		<p>false, true</p>

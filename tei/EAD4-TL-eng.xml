@@ -287,7 +287,6 @@
             <xi:include href="ead4/en/attr-statusEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-style.xml" parse="xml"/>
             <xi:include href="shared/en/attr-target.xml" parse="xml"/>
-            <xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-unit.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-unitDateType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-unitDateTypeEncoding.xml" parse="xml"/>

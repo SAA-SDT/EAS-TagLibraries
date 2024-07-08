@@ -15,7 +15,10 @@
                      values. </p>
                </div>
                <div type="values">
-                  <p>basic, extended, minimal</p>
+                  <p type="eac">basic, extended, minimal</p>
+               </div>
+               <div type="datatype">
+                  <p type="ead">token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="basic" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924">

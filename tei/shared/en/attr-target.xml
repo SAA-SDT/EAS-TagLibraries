@@ -7,33 +7,15 @@
                   <p>Target</p>
                </div>
                <div type="summary">
-                  <p>A pointer to the ID of another element. </p>
+                  <p>A pointer to the ID of another element.</p>
                </div>
                <div type="description">
                      <p>Used to create internal links within an
-                     XML instance. Optionally available in all elements except <gi>eac</gi>.</p>
+                     XML instance. Optionally available in all elements except the root element.</p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                 <egXML xml:lang="eng" type="ead"><![CDATA[<places>
-   <place id="place1">
-      <placeName>Bern</placeName>
-      <placeRole>Place of work</placeRole>
-   </place>
-</places>]]></egXML>
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<occupations>
-   <occupation>
-      <term>Assistant examiner - level III</term>
-      <placeName target="#place1">Bern</placeName>
-   </occupation>
-</occupations>
-<places>
-   <place id="place1">
-      <placeName>Bern</placeName>
-      <placeRole>Place of work</placeRole>
-   </place>
-</places>]]></egXML>
                </div>
             </div>

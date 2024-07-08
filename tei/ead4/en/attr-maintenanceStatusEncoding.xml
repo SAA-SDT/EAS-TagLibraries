@@ -10,7 +10,7 @@
 		<p>Specifies the authoritative source or rules for values used to indicate the current version status of the EAS instance.</p>
 	</div>
 	<div type="description">
-		<p><att>maintenanceEventTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>maintenanceStatus</att> within <gi>control</gi>. If the value "EASList" is selected, <att>maintenanceStatus</att> will be expected with the values "cancelled", "deleted", "deletedMerged", "deletedReplaced", "deletedSplit", "derived", "new", or "revised". If the value "otherMaintenanceStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+		<p><att>maintenanceStatusEncoding</att> specifies the authoritative source or rules for values supplied in <att>maintenanceStatus</att> within <gi>control</gi>. If the value "EASList" is selected, <att>maintenanceStatus</att> will be expected with the values "cancelled", "deleted", "deletedMerged", "deletedReplaced", "deletedSplit", "derived", "new", or "revised". If the value "otherMaintenanceStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherMaintenanceStatusEncoding</p>
