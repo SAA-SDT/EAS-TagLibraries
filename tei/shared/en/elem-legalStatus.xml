@@ -76,7 +76,7 @@
                   <p type="eac">Required, repeatable</p>
                   <p type="ead">Optional, repeatable</p>
                </div>
-               <div type="examples">
+               <div type="examples" standard="eac">
                   <egXML xml:lang="eng" type="ead"/>
 		  <egXML xml:lang="eng" type="eac"><![CDATA[<legalStatus>
    <term>

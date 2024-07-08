@@ -59,7 +59,7 @@
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>
-               <div type="examples">
+               <div type="examples" standard="eac">
                   <egXML xml:lang="eng" type="ead"/>
 		  <egXML xml:lang="eng" type="eac"><![CDATA[<list listType="unordered">
    <head>

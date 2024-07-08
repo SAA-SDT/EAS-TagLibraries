@@ -22,7 +22,7 @@
                      [+|-][hh:mm], or "Z" to indicate the dateTime is UTC. No timezone implies the
                      dateTime is UTC.]</p>
                </div>
-               <div type="examples">
+               <div type="examples" standard="eac">
                   <egXML xml:lang="eng" type="ead"/>
 		  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceEvent maintenanceEventType="revised">
     <agent agentType="unknown"/>

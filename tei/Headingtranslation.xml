@@ -103,12 +103,12 @@ type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
         <translation lang="cn">目录</translation>
     </term>
     <term name="elements">
-        <translation lang="en">Elements</translation>
-        <translation lang="fr">Éléments</translation>
-        <translation lang="gr">Στοιχε&#943;α</translation>
-        <translation lang="de">Elemente</translation>
-        <translation lang="it">Elementi</translation>
-        <translation lang="cn">元素</translation>
+        <translation lang="en" type="0">Elements</translation>
+        <translation lang="fr" type="0">Éléments</translation>
+        <translation lang="gr" type="0">Στοιχε&#943;α</translation>
+        <translation lang="de" type="0">Elemente</translation>
+        <translation lang="it" type="0">Elementi</translation>
+        <translation lang="cn" type="0">元素</translation>
     </term>
     <term name="mayContain">
         <translation lang="en" type="0">May contain</translation>

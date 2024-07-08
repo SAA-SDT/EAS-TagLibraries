@@ -243,7 +243,7 @@
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
-               <div type="examples">
+               <div type="examples" standard="eac">
                   <egXML xml:lang="eng" type="ead"/>
                   <egXML xml:lang="eng" type="eac"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
    <recordId>

@@ -17,7 +17,7 @@
                <div type="datatype">
                   <p>anyURI</p>
                </div>
-               <div type="examples">
+               <div type="examples" standard="eac">
 		  <egXML xml:lang="eng" type="ead"/>
                   <egXML xml:lang="eng" type="eac"><![CDATA[<description base="https://d-nb.info/gnd/">
    <occupations>

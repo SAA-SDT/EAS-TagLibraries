@@ -14,12 +14,12 @@
                   <p>A newly created EAS instance will usually start with a publication status of "inProcess". This partial and preliminary status will be applicable as long as the author or the creating agency is working on the document. Depending on the context, the document might first reach a pre-publication level, awaiting approval e.g. by a higher level manager or an authorizing agency. Once such approval has been given, the status "approved" could be assigned for internal purposes while the EAS instance is not publicly available yet. When the EAS instance has been published on the institution’s own website or via the authorizing agency, the status "published" can be assigned.</p>
 		  <p type="ead">Use the attribute <att>publicationStatusEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>publicationStatus</att>.</p>
                </div>
-               <div type="values">
-                  <p type="eac">approved, inProcess, published</p>
+               <div type="values" standard="eac">
+                  <p>approved, inProcess, published</p>
                </div>
-               <div type="datatype">
-		              <p type="ead">token</p>
-	             </div>
+               <div type="datatype" standard="ead">
+                  <p>token</p>
+               </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-3" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
    [...]

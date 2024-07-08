@@ -8,7 +8,7 @@
 	</div>
 	<div type="summary">
 		<p>An optional, wrapping element that may be utilized to encode formatting features that are
-			not part of the EAS data model. When using the EAS-provided NVDL Schema validaiton
+			not part of the EAS data model. When using the EAS-provided NVDL Schema validation
 			procedure, this element will require that all elements encoded within are from the XHTML
 			namespace.</p>
 	</div>

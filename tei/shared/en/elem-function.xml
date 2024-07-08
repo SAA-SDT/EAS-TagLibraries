@@ -114,7 +114,7 @@
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
-               <div type="examples">
+               <div type="examples" standard="eac">
                   <egXML type="ead" xml:lang="eng"/>
                   <egXML type="eac" xml:lang="eng"><![CDATA[<function>
    <term>

@@ -183,7 +183,7 @@
                             <xsl:variable name="parttitle">
                                 <xsl:value-of select="current()/@type"/>
                             </xsl:variable>
-                            <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $parttitle]/*:translation[@lang = $currentLanguage]"/>
+                            <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $parttitle]/*:translation[@lang = $currentLanguage and @type='0']"/>
                         </fo:bookmark-title>
                         <xsl:for-each select="tei:div">
                             <fo:bookmark internal-destination="{generate-id(.)}">
@@ -1202,7 +1202,11 @@
     </xsl:template>
 
     <!-- throw these into the void -->
-    <xsl:template match="tei:p[@type!=$currentStandard]">
+    <xsl:template match="tei:p[@type != $currentStandard]">
+    </xsl:template>
+
+    <!-- throw these into the void -->
+    <xsl:template match="tei:div[@standard != $currentStandard]">
     </xsl:template>
 
     <xsl:template match="tei:tag">
