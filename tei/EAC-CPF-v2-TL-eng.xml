@@ -187,97 +187,97 @@
       </front>
       <body>
          <div type="elements" xml:id="EACCPFelements">
-            <xi:include href="eac2/en/elem-abstract.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-address.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-addressLine.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-agencyCode.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-agencyName.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-agent.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-abstract.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-address.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-addressLine.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agencyCode.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agencyName.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agent.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-alternativeSet.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-biogHist.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-biogHist.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-chronItem.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-chronItemSet.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-chronList.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-citedRange.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-citedRange.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-componentEntry.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-contact.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-contactLine.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-control.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-conventionDeclaration.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-contact.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-contactLine.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-control.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-conventionDeclaration.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-cpfDescription.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-date.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-dateRange.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-dateSet.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-date.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-dateRange.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-dateSet.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-demographicDescription.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-demographicDescriptions.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-description.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-descriptiveNote.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-descriptiveNote.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-eac.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-entityType.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-event.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-eventDateTime.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-eventDescription.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-eventDateTime.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-eventDescription.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-existDates.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-fromDate.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-function.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-functions.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-function.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-functions.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-generalContext.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-geographicCoordinates.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-head.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-head.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-identity.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-identityId.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-item.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-language.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-languageDeclaration.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-language.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-languageDeclaration.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-languageUsed.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-languagesUsed.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-legalStatus.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-legalStatuses.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-legalStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-legalStatuses.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-list.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-localControl.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-localDescription.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-localDescriptions.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-localTypeDeclaration.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-maintenanceAgency.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-maintenanceEvent.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-maintenanceHistory.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-localTypeDeclaration.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceAgency.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceEvent.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceHistory.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-mandate.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-mandates.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-multipleIdentities.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-nameEntry.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-nameEntrySet.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-objectXMLWrap.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-objectXMLWrap.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-occupation.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-occupations.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-otherAgencyCode.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-otherAgencyCode.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-otherEntityType.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-otherEntityTypes.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-otherRecordId.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-p.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-part.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-place.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-placeName.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-placeRole.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-places.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-recordId.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-reference.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-relation.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-relationType.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-relations.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-otherRecordId.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-p.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-part.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-place.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-placeName.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-placeRole.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-places.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-recordId.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-reference.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relation.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relationType.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relations.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-representation.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-rightsDeclaration.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-rightsDeclaration.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-setComponent.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-shortCode.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-source.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-sources.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-span.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-shortCode.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-source.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-sources.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-span.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-structureOrGenealogy.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-targetEntity.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-targetRole.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-term.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-toDate.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-targetEntity.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-targetRole.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-term.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-useDates.xml" parse="xml"/>
-            <xi:include href="eac2/en/elem-writingSystem.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-writingSystem.xml" parse="xml"/>
          </div>
          <div type="attributes" xml:id="EACCPFattributes">
             <div type="Introduction">
@@ -319,54 +319,54 @@
                <p>The following is a complete list of all the attributes that occur in EAC-CPF, and some discussion of how they may be used. Further, context-specific information about the use of certain attributes may be found in the "Attribute usage" section of the element descriptions.</p>
                   
             </div>
-            <xi:include href="eac2/en/attr-addressLineType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
             <xi:include href="eac2/en/attr-agentType.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-audience.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-base.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-calendar.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-certainty.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-contactLineType.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-conventionDeclarationReference.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-coordinateSystem.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-countryCode.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-countryEncoding.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-dateEncoding.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-detailLevel.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-era.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-href.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-id.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-base.xml" parse="xml"/>
+            <xi:include href="ehared/en/attr-calendar.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-certainty.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-contactLineType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-conventionDeclarationReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-coordinateSystem.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-countryCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-countryEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-dateEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-detailLevel.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-era.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-href.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-id.xml" parse="xml"/>
             <xi:include href="eac2/en/attr-identityType.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-languageCode.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-languageEncoding.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-languageOfElement.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-linkRole.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-linkTitle.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageOfElement.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-linkRole.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-linkTitle.xml" parse="xml"/>
             <xi:include href="eac2/en/attr-listType.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-localType.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-localTypeDeclarationReference.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-maintenanceEventReference.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-maintenanceEventType.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-maintenanceStatus.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-notAfter.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-notBefore.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-localType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-localTypeDeclarationReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-notAfter.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-notBefore.xml" parse="xml"/>
             <xi:include href="eac2/en/attr-preferredForm.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-publicationStatus.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-repositoryEncoding.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-scriptCode.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-scriptEncoding.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-scriptOfElement.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-sourceReference.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-standardDate.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-standardDateTime.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-status.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-style.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-target.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-targetType.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-unit.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-publicationStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-repositoryEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptOfElement.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-sourceReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-standardDate.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-standardDateTime.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-status.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-style.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-target.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-unit.xml" parse="xml"/>
             <xi:include href="eac2/en/attr-value.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-valueURI.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-vocabularySource.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-vocabularySourceURI.xml" parse="xml"/>            
+            <xi:include href="shared/en/attr-valueURI.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-vocabularySource.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-vocabularySourceURI.xml" parse="xml"/>            
          </div>
       </body>
       <back>
