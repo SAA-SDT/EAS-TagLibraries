@@ -232,7 +232,7 @@
             <xi:include href="eac2/en/elem-languageUsed.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-languagesUsed.xml" parse="xml"/>
             <xi:include href="shared/en/elem-legalStatus.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-legalStatuses.xml" parse="xml"/>
+            <xi:include href="eac2/en/elem-legalStatuses.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-list.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-localControl.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-localDescription.xml" parse="xml"/>
