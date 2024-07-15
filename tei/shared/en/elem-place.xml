@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-place" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns="http://www.tei-c.org/ns/1.0" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-place">
                <head>
                   <gi>place</gi>
                </head>
@@ -7,21 +7,56 @@
                   <p>Place</p>
                </div>
                <div type="summary">
-                  <p>An element that provides information about a place or jurisdiction, including
-                     places where the CPF entity was based, lived, or with which it had some other
-                     significant connection.</p>
+                  <p type="eac">An element that provides information about a place or jurisdiction, including places where the CPF entity was based, lived, or with which it had some other significant connection.</p>
+                 <p type="ead">An element that provides information about a place or jurisdiction, including places where the records being described were created or have some other significant connection.</p>
                </div>
                <div type="mayContain">
-                  <p>address (0..n), contact (0..n), date or dateRange or dateSet (0..1), descriptiveNote (0..1), geographicCoordinates (0..n), placeName (0..n), placeRole (0..n)</p>
+                 <p type="eac"><list type="gloss">
+  <label>address</label>
+  <item>0..n</item>
+  <label>contact</label>
+  <item>0..n</item>
+  <label>date or dateRange or dateSet</label>
+  <item>0..n</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>geographicCoordinates</label>
+  <item>0..n</item>
+  <label>placeName</label>
+  <item>0..n</item>
+  <label>placeRole</label>
+  <item>0..n</item>
+  </list></p> 
+                 <p type="ead"><list type="gloss">
+  <label>address</label>
+  <item>0..n</item>
+  <label>contact</label>
+  <item>0..n</item>
+  <label>date or dateRange or dateSet</label>
+  <item>0..n</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>geographicCoordinates</label>
+  <item>0..n</item>
+  <label>placeName</label>
+  <item>0..n</item>
+  <label>placeRole</label>
+  <item>0..n</item>
+  <label>placeType</label>
+  <item>0..n</item>
+  <label>relationType</label>
+  <item>0..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>chronItem, chronItemSet, places, relation</p>
+                 <p type="eac">chronItem, chronItemSet, places, relation</p> 
+                 <p type="ead">findAidDesc, places, relation</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -50,56 +85,45 @@
                   </p>
                </div>
                <div type="description">
-                  <p>A <gi>place</gi> element is a wrapper element used to encode information about
-                     a place or jurisdiction. This includes identifying the places or jurisdictions
-                     where the CPF entity was based, lived, or with which it had some other
-                     significant connection. It can also be used to encode address and contact
-                     information.</p>
-                  <p><gi>place</gi> must include at least one of <gi>address</gi>, <gi>contact</gi>,
-                        <gi>geographicCoordinates</gi>, <gi>placeName</gi> or
-                     <gi>placeRole</gi>.</p>
-                  <p><gi>placeName</gi> may be used to encode the name of a place that is related to
-                     the CPF entity described. The <gi>placeRole</gi> element is available to
-                     specify the nature of the connection of the place with the CPF entity being
-                     described, and its use is strongly recommended. Terms in <gi>placeName</gi> and
-                        <gi>placeRole</gi> may be drawn from controlled vocabularies or may be
-                     natural language terms. These controlled vocabularies can be identified with
-                     the <att>vocabularySource</att> and <att>vocabularySourceURI</att>
-                     attributes.</p>
-                  <p>The <gi>address</gi> element is available for specifying a postal or other
-                     address. The <gi>contact</gi> element is available for specifying a digital
-                     address or other contact information.</p>
-                  <p>Associated date or date range (<gi>date</gi>, <gi>dateRange</gi>, or
-                        <gi>dateSet</gi>) information may be included to further constrain the
-                     place's meaning. A <gi>descriptiveNote</gi> may be included if a fuller
-                     explanation of the significance of the place to the CPF entity described is
-                     needed.</p>
+                  <p type="eac">A <gi>place</gi> element is a wrapper element used to encode information about a place or jurisdiction. This includes identifying the places or jurisdictions where the CPF entity was based, lived, or with which it had some other significant connection. It can also be used to encode address and contact information.</p>
+                  <p type="ead">A <gi>place</gi> element is a wrapper element used to encode information about a place or jurisdiction. This includes identifying the places or jurisdictions where the records being described were created or with which they have some other significant connection. It can also be used to encode address and contact information.</p>
+                  <p type="eac"><gi>place</gi> must include at least one of <gi>address</gi>, <gi>contact</gi>, <gi>geographicCoordinates</gi>, <gi>placeName</gi> or <gi>placeRole</gi>.</p>
+                  <p type="ead"><gi>place</gi> must include at least one of <gi>address</gi>, <gi>contact</gi>, <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, or <gi>placeType</gi>.</p>
+                  <p type="eac"><gi>placeName</gi> may be used to encode the name of a place that is related to  the CPF entity described. The <gi>placeRole</gi> element is available to specify the nature of the connection of the place with the CPF entity being described, and its use is strongly recommended. Terms in <gi>placeName</gi> and <gi>placeRole</gi> may be drawn from controlled vocabularies or may be natural language terms. These controlled vocabularies can be identified with the <att>vocabularySource</att> and <att>vocabularySourceURI</att> attributes.</p>
+                  <p type="ead"><gi>placeName</gi> may be used to encode the name of a place that is related to the records being described. The <gi>placeRole</gi> element is available to specify the nature of the place in relation with the records being described, and its use is strongly recommended. The <gi>placeType</gi> element may be used to classify the type of place for clarification, e.g., indicating whether the place is a city or town or a first or second-order administrative divistion. Use <gi>relationType</gi> to describe the nature of connection between the place and the records being described. Terms in these elements may be drawn from controlled vocabularies or may be natural language terms. These controlled vocabularies can be identified with the <att>vocabularySource</att> and <att>vocabularySourceURI</att> attributes. </p>
+                  <p>The <gi>address</gi> element is available for specifying a postal or other address. The <gi>contact</gi> element is available for specifying a digital address or other contact information.</p>
+                  <p type="eac">Associated date or date range (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) information may be included to further constrain the place's meaning. A <gi>descriptiveNote</gi> may be included if a fuller explanation of the significance of the place to the CPF entity described is needed.</p>
+                  <p type="ead">Associated date or date range (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) information may be included to further constrain the place's meaning. A <gi>descriptiveNote</gi> may be included if a fuller explanation of the significance of the place to the records being described is needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
-                     <item>One or more of <gi>address</gi>, <gi>contact</gi>,
-                           <gi>geographicCoordinates</gi>, <gi>placeName</gi>, and
-                           <gi>placeRole</gi></item>
+                     <item><p type="eac">One or more of <gi>address</gi>, <gi>contact</gi>, <gi>geographicCoordinates</gi>, <gi>placeName</gi>, and <gi>placeRole</gi></p><p type="ead">One or more of <gi>address</gi>, <gi>contact</gi>, <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, or <gi>placeType</gi></p></item>
                      <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                     <item><p type="ead">relationType</p></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
                <div type="availability">
-                  <p>Within <gi>chronItem</gi>: optional, not repeatable.</p>
-                  <p>Within <gi>chronItemSet</gi>, <gi>relation</gi>: optional, repeatable.</p>
+                  <p type="eac">Within <gi>chronItem</gi>: optional, not repeatable.</p>
+                  <p type="eac">Within <gi>chronItemSet</gi>, <gi>relation</gi>: optional, repeatable.</p>
+                  <p type="ead">Within <gi>findAidDesc</gi>, <gi>relation</gi>: optional, repeatable.</p>
                   <p>Within <gi>places</gi>: required, repeatable.</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:place>
-                        <eac:placeRole>Residence</eac:placeRole>
-                        <eac:placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01">Kent (county)</eac:placeName>
-                     </eac:place>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:place>
-                        <eac:placeName vocabularySource="local" id="IDPlaceName1">East Side (Buffalo, N.Y.)</eac:placeName>
-                        <eac:geographicCoordinates coordinateSystem="WGS84">N 42°53′48" W 78°50′2"</eac:geographicCoordinates>
-                     </eac:place>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<place>
+   <placeRole>
+      Residence
+   </placeRole>
+   <placeName valueURI="http://vocab.getty.edu/page/tgn/7008153" vocabularySource="tgn" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/tgn/index.html" id="IDPlaceName01">
+      Kent (county)
+   </placeName>
+</place>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<place>
+   <placeName vocabularySource="local" id="IDPlaceName1">
+      East Side (Buffalo, N.Y.)
+   </placeName>
+   <geographicCoordinates coordinateSystem="WGS84">
+      N 42°53′48" W 78°50′2"
+   </geographicCoordinates>
+</place>]]></egXML>
                </div>
             </div>

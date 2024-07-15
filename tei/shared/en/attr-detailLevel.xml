@@ -7,15 +7,18 @@
                   <p>Level of Detail</p>
                </div>
                <div type="summary">
-                  <p>Provides information about the level of detail of the entity’s description within the EAC-CPF instance.</p>
+                  <p>Provides information about the level of detail of the entity’s description within the EAS instance.</p>
                </div>
                <div type="description">
                   <p>An optional attribute within <gi>control</gi>, used to provide information
                      about the level of detail in accordance with relevant description guidelines and/or rules of the entity's description, from a fixed set of
                      values. </p>
                </div>
-               <div type="values">
+               <div type="values" standard="eac">
                   <p>basic, extended, minimal</p>
+               </div>
+               <div type="datatype" standard="ead">
+                  <p>token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="basic" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924">

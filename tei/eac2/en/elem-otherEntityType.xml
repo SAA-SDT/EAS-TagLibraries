@@ -73,18 +73,18 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:identity>
-                        <eac:entityType>corporateBody</eac:entityType>
-                        <eac:nameEntry status="authorized">
-                           <eac:part>Ballarat Orphanage</eac:part>
-                        </eac:nameEntry>
-                        <eac:otherEntityTypes>
-                           <eac:otherEntityType>
-                              <eac:term>Organisation</eac:term>
-                           </eac:otherEntityType>
-                        </eac:otherEntityTypes>
-                     </eac:identity>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <identity>
+                        <entityType>corporateBody</entityType>
+                        <nameEntry status="authorized">
+                           <part>Ballarat Orphanage</part>
+                        </nameEntry>
+                        <otherEntityTypes>
+                           <otherEntityType>
+                              <term>Organisation</term>
+                           </otherEntityType>
+                        </otherEntityTypes>
+                     </identity>]]
                   </egXML>
                </div>
             </div>

@@ -7,8 +7,7 @@
                   <p>Script Code</p>
                </div>
                <div type="summary">
-                  <p>The code for the writing system, or script, used in the EAC-CPF instance or in
-                     which the CPF entity being described was creative or productive.</p>
+                  <p>The code for the writing system, or script, used in the EAS instance or by the described entity or records.</p>
                   </div>
                <div type="description">
                   <p>Content of the attribute should be a code taken from ISO 15924, or another controlled list, as
@@ -16,7 +15,8 @@
                      Optionally available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
                </div>
                <div type="datatype">
-                  <p>NMTOKEN</p>
+                  <p type="eac">NMTOKEN</p>
+                  <p type="ead">token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<languagesUsed>

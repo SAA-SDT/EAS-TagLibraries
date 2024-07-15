@@ -1,43 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-formAvailable">
 	<head>
-		<gi>Title</gi>
+		<gi>formAvailable</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Form Available</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>A required child element of <gi>formsAvailable</gi> used to name and describe single instantiations of the described records such as digital representations, microfiches, copies, etc.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+  <label>relations</label>
+  <item>0..1</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>formsAvailable</p>
 	</div>
 	<div type="attributes">
 		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
+				<label>audience</label>
+				<item>Optional</item>
+				<label>conventionDeclarationReference</label>
+				<item>Optional</item>
+				<label>coverage</label>
+				<item>Optional</item>
+				<label>id</label>
+				<item>Optional</item>
+				<label>languageOfElement</label>
+				<item>Optional</item>
+				<label>localType</label>
+				<item>Optional</item>
+				<label>localTypeDeclarationReference</label>
+				<item>Optional</item>
+				<label>maintenanceEventReference</label>
+				<item>Optional</item>
+				<label>scriptOfElement</label>
+				<item>Optional</item>
+				<label>sourceReference</label>
+				<item>Optional</item>
+				<label>target</label>
+				<item>Optional</item>
+				<label>valueURI</label>
+				<item>Optional</item>
+				<label>vocabularySource</label>
+				<item>Optional</item>
+				<label>vocabularySourceURI</label>
+				<item>Optional</item>
 			</list>
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
+		<p>Use <gi>formAvailable</gi> within the wrapper element <gi>formsAvailable</gi> to specify single instances concerning the available form(s) of the described entities in <gi>archDesc</gi> or in <gi>c</gi> elements.</p>
+		<p>The available form(s), digital representations, microfiches or microfilms, copies, or originals in case the materials described are copies themselves, can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named as the <gi>targetEntity</gi> of a <gi>relation</gi> within <gi>relations</gi>. This will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
+		<p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> can be used to refer to analog or digital resources.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                        <item><gi>abstract</gi> (if used)</item>
+                        <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+			<item>relations</item>
+                </list>
 	</div>
 	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
+		<p>Use <att>valueURI</att> to directly link to the representation form in question, e.g. a digital object identified by an ARK (Archival Resource Key) or DOI (Digital Object Identifier). Use <att>vocabularySource</att> to indicate the identifier scheme applied in this case.</p>
 	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
-		</list>
-	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Required, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

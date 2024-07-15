@@ -19,18 +19,32 @@
                <div type="values">
                   <p type="eac">county, country, district, municipality, postBox, postalCode, region,
                      street</p>
+                 <p type="ead">Following the value list defined in <att>addressLineTypeEncoding</att> and <gi>conventionDeclaration</gi>.</p>
                </div>
                <div type="datatype">
                  <p type="ead">token</p>
+                 <p type="eac">predefined value list</p>
                </div>
                <div type="examples">
                   <egXML><![CDATA[<address>
-   <addressLine languageOfElement="se">Kungl. Hovstaterna</addressLine>
-   <addressLine languageOfElement="se">Kungl. Slottet</addressLine>
-   <addressLine addressLineType="postalCode">10770</addressLine>
-   <addressLine languageOfElement="se" addressLineType="municipality">Stockholm</addressLine>
-   <addressLine languageOfElement="se" addressLineType="country">Sverige</addressLine>
-   <addressLine languageOfElement="en" addressLineType="country">Sweden</addressLine>
+   <addressLine languageOfElement="se">
+      Kungl. Hovstaterna
+   </addressLine>
+   <addressLine languageOfElement="se">
+      Kungl. Slottet
+   </addressLine>
+   <addressLine addressLineType="postalCode">
+      10770
+   </addressLine>
+   <addressLine languageOfElement="se" addressLineType="municipality">
+      Stockholm
+   </addressLine>
+   <addressLine languageOfElement="se" addressLineType="country">
+      Sverige
+   </addressLine>
+   <addressLine languageOfElement="en" addressLineType="country">
+      Sweden
+   </addressLine>
  </address>]]></egXML>
                </div>
             </div>

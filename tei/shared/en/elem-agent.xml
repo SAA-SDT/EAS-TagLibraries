@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-agent" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-agent">
 
                <head>
                   <gi>agent</gi>
@@ -8,19 +8,44 @@
                   <p>Agent</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>maintenanceEvent</gi> that provides the name of
+                  <p type="eac">A required child element of <gi>maintenanceEvent</gi> that provides the name of
                      a person, institution, or system responsible for a specific event in the
-                     EAC-CPF instance's maintenance history, such as its creation, modification, or
+                     EAS instance's maintenance history, such as its creation, modification, or
                      deletion.</p>
+                 <p type="ead">An element to name and describe a person, institution, or system related to the archival materials being described or relevant to the EAS instance itself or any instantiation of it, e.g. a printed or online finding aid.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p type="eac">
+                    <list type="gloss">
+                      <label>[text]</label>
+                      <item/>
+                    </list>
+                  </p>
+                  <p type="ead">
+                    <list type="gloss">
+                      <label>agentName</label>
+                      <item>1..n</item>
+                      <label>date or dateRange or dateSet</label>
+                      <item>0..1</item>
+                      <label>agentType</label>
+                      <item>0..n</item>
+                      <label>agentRole</label>
+                      <item>0..n</item>
+                      <label>relationType</label>
+                      <item>0..n</item>
+                      <label>placeName</label>
+                      <item>0..n</item>
+                      <label>descriptiveNote</label>
+                      <item>0..1</item>
+                    </list>
+                  </p>
                </div>
                <div type="mayOccurWithin">
-                  <p>maintenanceEvent</p>
+                  <p type="eac">maintenanceEvent</p>
+                  <p type="ead">agents, findAidDesc, maintenanceEvent</p>
                </div>
                <div type="attributes">
-                  <p>
+                  <p type="eac">
                      <list type="gloss">
                         <label>agentType</label>
                         <item>Required (values limited to: human, machine, unknown)</item>
@@ -42,41 +67,75 @@
                         <item>Optional</item>
                      </list>
                   </p>
+                  <p type="ead">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
                </div>
                <div type="description">
-                  <p>Use <gi>agent</gi> to indicate the person, institution, or system responsible
-                     for a maintenance event. Examples include the name of the author or encoder,
-                     the database responsible for creating the EAC-CPF instance, and the style sheet
-                     used to update an instance to a new version of EAC-CPF.</p>
-                  <p>Each <gi>maintenanceEvent</gi> element must have a child <gi>agent</gi>
-                     element.</p>
+                  <p type="eac">Use <gi>agent</gi> to indicate the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAS instance, and the style sheet used to update an instance to a new version of the EAS. Each <gi>maintenanceEvent</gi> element must have a child <gi>agent</gi> element.</p>
+                 <p type="ead"><gi>agent</gi> is a required and repeatable sub-element of <gi>agents</gi> and can be used to name and describe persons, organizations, and families related to the archival materials being described. The sub-elements <gi>agentType</gi> and <gi>agentRole</gi> allow for specifying the type of agent in question and for to providing information about their role in relation to the materials being described (e.g., if a person is the "creator" of the materials or a "contributor" or if they are the "director" or the "cinematographer" of audiovisual material or the "defendant" or the "plaintiff" in court records). Use the sub-elements <gi>relationType</gi>, <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>, and <gi>placeName></gi> along with the optional <gi>descriptiveNote</gi> to describe the relationship between the agent and the materials being described in more detail.</p>
+                 <p type="ead">Use <gi>agent</gi> as a required sub-element of <gi>maintenanceEvent</gi> to name and describe the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAS instance, and the style sheet used to update an instance to a new version of the EAS. Use <gi>agent</gi> as an optional and repeatable sub-element of <gi>findAidDesc</gi> to indicate any person, institution, or system relevant to the creation, publication, or disseminiation of any instantiations of the EAS instance such as the author, publisher, or sponsor of a printed or online finding aid.</p>
                </div>
                <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use the required <att>agentType</att> attribute to specify whether the
-                        agent is "human", "machine", or "unknown".</item>
-                  </list>
+                 <p type="eac">Use the required <att>agentType</att> attribute to specify whether the agent is "human", "machine", or "unknown".</p>
+                 <p type="ead">Use the attributes <att>valueURI</att>, <att>vocabularySource</att>, and <att>vocabularySourceURI</att> with <gi>agent</gi> when referencing an entry of an external vocabulary, thesaurus, ontology applicable to the agent overall. In case of referencing different vocabularies or different entries within the same vocabulary for the name, the type or the role of the agent, use the three attributes with the sub-elements <gi>agentName</gi>, <gi>agentType</gi> and <gi>agentRole</gi> directly.</p>
                </div>
                <div type="availability">
-                  <p>Required, not repeatable</p>
+                  <p type="eac">Required, not repeatable</p>
+                  <p type="ead">Within <gi>agents</gi>: required, repeatable</p>
+                  <p type="ead">Within <gi>findAidDesc</gi>: optional, repeatable</p>
+                  <p type="ead">Within <gi>maintenanceEvent</gi>: required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <maintenanceHistory>
-                        <maintenanceEvent maintenanceEventType="derived">
-                           <agent agentType="machine">XSLT ead2cpf.xsl/Saxon B9</agent>
-                           <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
-                           <eventDescription>Derived from EAD instance.</eventDescription>
-                        </maintenanceEvent>
-                        <maintenanceEvent maintenanceEventType="revised">
-                           <agent agentType="unknown"/>
-                           <eventDateTime standardDateTime="2021-11-27"/>
-                        </maintenanceEvent>
-                        <maintenanceEvent maintenanceEventType="updated">
-                           <agent agentType="human">K. Bredenberg</agent>
-                           <eventDateTime>December 2021</eventDateTime>
-                        </maintenanceEvent>
-                     </maintenanceHistory>
-                  </egXML>
+                  <egXML xml:lang="en"><![CDATA[<maintenanceHistory>
+   <maintenanceEvent maintenanceEventType="derived">
+      <agent agentType="machine">
+         XSLT ead2cpf.xsl/Saxon B9
+      </agent>
+      <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
+      <eventDescription>
+         Derived from EAD instance.
+      </eventDescription>
+   </maintenanceEvent>
+   <maintenanceEvent maintenanceEventType="revised">
+      <agent agentType="unknown"/>
+      <eventDateTime standardDateTime="2021-11-27"/>
+   </maintenanceEvent>
+   <maintenanceEvent maintenanceEventType="updated">
+      <agent agentType="human">
+         K. Bredenberg
+      </agent>
+      <eventDateTime>
+         December 2021
+      </eventDateTime>
+   </maintenanceEvent>
+</maintenanceHistory>]]></egXML>
                </div>
             </div>

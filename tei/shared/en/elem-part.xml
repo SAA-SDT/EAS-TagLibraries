@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-part" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-part">
                <head>
                   <gi>part</gi>
                </head>
@@ -7,21 +7,24 @@
                   <p>Part</p>
                </div>
                <div type="summary">
-                  <p>A required and repeatable child of <gi>nameEntry</gi> and <gi>targetEntity</gi>
-                     used to distinguish components of the CPF entity's name, or the name of a
-                     related entity, respectively.</p>
+                  <p type="eac">A required and repeatable child of <gi>nameEntry</gi> and <gi>targetEntity</gi> used to distinguish components of a name.</p>
+                  <p type="ead">A required and repeatable child of <gi>targetEntity</gi> and <gi>title</gi> used to distinguish components of a name or title.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>nameEntry, targetEntity</p>
+                  <p type="eac">nameEntry, targetEntity</p>
+                  <p type="eac">targetEntity, title</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -44,35 +47,29 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Within <gi>nameEntry</gi> each of the components of a name, such as forename,
-                     surname or honorific title, may be recorded in a separate <gi>part</gi>
-                     element. <gi>part</gi> may also contain the full name of the entity when it is
-                     not possible to distinguish the different components of the name.</p>
-                  <p><gi>part</gi> cannot be empty and requires at least one non-whitespace
-                     character, such as a hyphen, if no actual name can be given.</p>
-                  <p>Within <gi>targetEntity</gi> the name or term for the related entity is encoded
-                     within <gi>part</gi> elements.</p>
+                  <p type="eac">Within <gi>nameEntry</gi> each of the components of a name, such as forename, surname or honorific title, may be recorded in a separate <gi>part</gi> element. <gi>part</gi> may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</p>
+                  <p>Within <gi>targetEntity</gi> the name or term for the related entity is encoded within <gi>part</gi> elements.</p>
+                  <p type="ead">Within <gi>title</gi> components such as subtitles or the number of an issue in a serial publication may be recorded in a separate <gi>part</gi> element.</p>
+                  <p><gi>part</gi> cannot be empty and requires at least one non-whitespace character, such as a hyphen, if no actual name can be given.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>The designation of the information contained in the <gi>part</gi> can be
-                        specified by the attribute <att>localType</att>.</item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>The designation of the information contained in the <gi>part</gi> can be
+                        specified by the attribute <att>localType</att>.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
-                        <eac:part localType="surname">Arendt</eac:part>
-                        <eac:part localType="firstname">Hannah</eac:part>
-                     </eac:nameEntry>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
-                        <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
-                     </eac:nameEntry>
-                  </egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+   <part localType="surname">
+      Arendt
+   </part>
+   <part localType="firstname">
+      Hannah
+   </part>
+</nameEntry>]]></egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+   <part>
+      Provence-Alpes-Côte d'Azur
+   </part>
+</nameEntry>]]></egXML>
                </div>
             </div>

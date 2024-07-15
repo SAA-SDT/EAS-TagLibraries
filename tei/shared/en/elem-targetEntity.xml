@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-targetEntity" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-targetEntity">
                <head>
                   <gi>targetEntity</gi>
                </head>
@@ -11,13 +11,16 @@
                      is being targeted by the relation.</p>
                </div>
                <div type="mayContain">
-                  <p>part (1..n)</p>
+                  <p><list type="gloss">
+  <label>part</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>relation</p>
                </div>
                <div type="attributes">
-                  <p>
+                  <p type="eac">
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
@@ -46,42 +49,72 @@
                         <item>Optional</item>
                      </list>
                   </p>
+                  <p type="ead">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
                </div>
                <div type="description">
                   <p><gi>targetEntity</gi> is used within <gi>relation</gi> to identify an entity
-                     that is related to the subject of the EAC-CPF instance.</p>
+                     that is related to the source entity or records.</p>
                   <p><gi>targetEntity</gi> must include at least one <gi>part</gi> element, encoding
                      the name or term for the related entity.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use the required <att>targetType</att>, to identity the type of entity
+               <div type="attributeusage"><p type="eac">Use the required <att>targetType</att>, to identity the type of entity
                         related to in <gi>targetEntity</gi>, using one of the following values:
                         "agent", "corporateBody", "family", "function", "person", or
-                        "resource".</item>
-                  </list>
-               </div>
+                        "resource".</p></div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:relation>
-                        <eac:targetEntity targetType="resource">
-                           <eac:part>La journée du treize mars. - 1835</eac:part>
-                        </eac:targetEntity>
-                     </eac:relation>                     
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:relation>
-                        <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/117145971" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                           <eac:part>Wasa, Gustav</eac:part>
-                           <eac:part>Prinz von</eac:part>
-                           <eac:part>1799-1877</eac:part>
-                        </eac:targetEntity>
-                        <eac:relationType>family</eac:relationType>
-                        <eac:targetRole>son</eac:targetRole>					
-                     </eac:relation>	
-                  </egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<relation>
+   <targetEntity targetType="resource">
+      <part>
+         La journée du treize mars. - 1835
+      </part>
+   </targetEntity>
+</relation>]]></egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<relation>
+   <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/117145971" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+      <part>
+         Wasa, Gustav
+      </part>
+      <part>
+         Prinz von
+      </part>
+      <part>
+         1799-1877
+      </part>
+   </targetEntity>
+   <relationType>
+      family
+   </relationType>
+   <targetRole>
+      son
+   </targetRole>					
+</relation>]]></egXML>
                </div>
             </div>

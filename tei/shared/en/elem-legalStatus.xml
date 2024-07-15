@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-legalStatus" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-legalStatus">
                <head>
                   <gi>legalStatus</gi>
                </head>
@@ -7,20 +7,31 @@
                   <p>Legal Status</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>legalStatuses</gi> used to encode information
+                  <p type="eac">A required child element of <gi>legalStatuses</gi> used to encode information
                      about the legal status of a corporate body.</p>
+                 <p type="ead">An element for indicating the statutorily defined status of the materials being described.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
+                  <p><list type="gloss">
+  <label>date or dateRange</label>
+  <item>0..1</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>placeName</label>
+  <item>0..n</item>
+  <label>term</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>legalStatuses</p>
+                  <p type="eac">legalStatuses</p>
+                  <p type="ead">identificationData</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -49,21 +60,10 @@
                   </p>
                </div>
                <div type="description">
-                  <p>The legal status of a corporate body is typically defined and granted by
-                     authorities or through authorized agencies. Enter terms in accordance with
-                     provisions of the controlling legislation. Terms may be drawn from controlled
-                     vocabularies or may be natural language terms.</p>
-                  <p><gi>legalStatus</gi> must include at least one <gi>term</gi> element, where the
-                     legal status of the corporate body is encoded. <gi>term</gi> can be repeated
-                     within <gi>legalStatus</gi> to include translations of the same term. Use the
-                        <att>languageOfElement</att> attribute to identify the language used in each
-                        <gi>term</gi>.</p>
-                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and
-                     place(s) (<gi>placeName</gi>) may be included to further constrain the term's
-                     meaning. A <gi>descriptiveNote</gi> element may be included if a fuller textual
-                     explanation is needed.</p>
-                  <p>Multiple <gi>legalStatus</gi> elements may be grouped within a
-                        <gi>legalStatuses</gi> element.</p>
+                  <p>The legal status is typically defined and granted by authorities or through authorized agencies. Enter terms in accordance with provisions of the controlling legislation. Terms may be drawn from controlled vocabularies or may be natural language terms.</p>
+                  <p><gi>legalStatus</gi> must include at least one <gi>term</gi> element, where the legal status is encoded. <gi>term</gi> can be repeated within <gi>legalStatus</gi> to include translations of the same term. Use the <att>languageOfElement</att> attribute to identify the language used in each <gi>term</gi>.</p>
+                  <p>Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and place(s) (<gi>placeName</gi>) may be included to further constrain the term's meaning. A <gi>descriptiveNote</gi> element may be included if a fuller textual explanation is needed.</p>
+                  <p type="eac">Multiple <gi>legalStatus</gi> elements may be grouped within a <gi>legalStatuses</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>term</gi></item>
@@ -73,19 +73,23 @@
                   </list>
                </div>
                <div type="availability">
-                  <p>Required, repeatable</p>
+                  <p type="eac">Required, repeatable</p>
+                  <p type="ead">Optional, repeatable</p>
                </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:legalStatus>
-                        <eac:term>Department of State</eac:term>
-                     </eac:legalStatus>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:legalStatus>
-                        <eac:term>Organismo de la Administracion Central del Estado</eac:term>
-                        <eac:date standardDate="1769">1769</eac:date>
-                     </eac:legalStatus>
-                  </egXML>
+               <div type="examples" standard="eac">
+                  <egXML xml:lang="eng" type="ead"/>
+		  <egXML xml:lang="eng" type="eac"><![CDATA[<legalStatus>
+   <term>
+      Department of State
+   </term>
+</legalStatus>]]></egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<legalStatus>
+   <term>
+      Organismo de la Administracion Central del Estado
+   </term>
+   <date standardDate="1769">
+      1769
+   </date>
+</legalStatus>]]></egXML>
                </div>
             </div>

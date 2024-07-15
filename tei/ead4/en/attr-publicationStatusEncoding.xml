@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="attributeDocumentation" xml:id="attr-publicationStatusEncoding" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
 		<att>publicationStatusEncoding</att>
 	</head>
@@ -7,17 +7,15 @@
 		<p>Publication Status Encoding</p>
 	</div>
 	<div type="summary">
-		<p>The authoritative source or rules for values supplied in <att>publicationStatus</att>.</p>
+		<p>Specifies the authoritative source or rules for values used to indicate the current publishing status of the EAS instance.</p>
 	</div>
 	<div type="description">
-		<p>The authoritative source or rules for values supplied in <att>publicationStatus</att>
-                     within <gi>control</gi>. If the value "otherPublicationStatusEncoding" is selected an alternate code list should be specified
-                     in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi></p>
+		<p><att>publicationStatusEncoding</att> specifies the authoritative source or rules for values supplied in <att>publicationStatus</att> within <gi>control</gi>. If the value "EASList" is selected, <att>publicationStatus</att> will be expected with the values "approved", "inProcess", or "published". If the value "otherPublicationStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherPublicationStatusEncoding</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<ead:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" publicationStatusEncoding="EASList"> [...] </ead:control>]]></egXML>
+		<egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" publicationStatusEncoding="EASList"> [...] </control>]]></egXML>
 	</div>
 </div>

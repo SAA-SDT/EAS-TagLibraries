@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="attributeDocumentation" xml:id="attr-physDescStructuredType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<att>Title</att>
+		<att>physDescStructuredType</att>
 	</head>
 	<div type="fullName">
-		<p>Full Attribute Name</p>
+		<p>Structured Physical Description Type</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the attribute is used for</p>
+		<p>An optional attribute of <gi>physDescStructured</gi> that specifies the nature of the statement being provided.</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the attribute</p>
-	</div>
-	<div type="values">
-		<p>Available values (include either values or datatype)</p>
+		<p>Use <att>physDescStructuredType</att> with <gi>physDescStructured</gi> to specify the nature of the statement being provided. Use e.g. "carrier" to refer to the number of containers; "materialType" to indicate the type and/or number of the material types; "spaceOccupied" to denote the two- or three-dimensional volume of the materials.</p>
+		<p>Use the attribute <att>physDescStructuredTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>physDescStructuredType</att>.</p>
 	</div>
 	<div type="datatype">
-		<p>Datatype of the attribute (include either values or datatype)</p>
+		<p>token</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

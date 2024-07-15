@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-language" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-language">
                <head>
                   <gi>language</gi>
                </head>
@@ -7,20 +7,23 @@
                   <p>Language</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>languageUsed</gi> that identifies a particular
-                     language used in the creative work of the CPF entity being described.</p>
+                  <p>An element that identifies the language or communication system used by the entity or in the materials described.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>languageUsed</p>
+                  <p type="eac">languageUsed</p>
+                  <p type="ead">languageOfMaterial, languageSet</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -41,26 +44,24 @@
                   </p>
                </div>
                <div type="description">
-                  <p>An optional element within <gi>languageUsed</gi> that gives the language or
-                     languages used by the CPF entity being described.</p>
+                  <p type="eac">An optional element within <gi>languageUsed</gi> that gives the language or
+                     languages used by the records or entity being described.</p>
+                     <p type="ead">Use either <gi>language</gi> or <gi>languageSet</gi>, if combining language and script information, as sub-element of <gi>languageOfMaterial</gi> to identify a language or communication system of the materials being described.</p>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>languageCode</att> to provide a code for the language
-                        itself.</item>
-                     <item>Use <att>languageOfElement</att> to provide a code for the language in
-                        which the element is given.</item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>Use <att>languageCode</att> to provide a code for the language
+                        itself.</p></div>
+               <div type="seealso"><p>Use <gi>writingSystem</gi> to specify, in a human-readable form, the script corresponding to the language.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:languageUsed>
-                        <eac:language languageCode="eng">English</eac:language>
-                        <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
-                     </eac:languageUsed>
-                  </egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<languageUsed>
+   <language languageCode="eng">
+      English
+   </language>
+   <writingSystem scriptCode="Latn">
+      Latin
+   </writingSystem>
+</languageUsed>]]></egXML>
                </div>
             </div>

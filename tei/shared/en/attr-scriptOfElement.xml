@@ -18,7 +18,7 @@
                </div>
                <div type="datatype">
                  <p type="eac">NMTOKEN</p> 
-                 <p type="ead">TOKEN</p>
+                 <p type="ead">token</p>
                </div>
                <div type="examples">
                  <egXML xml:lang="eng"><![CDATA[<nameEntry status="alternative">

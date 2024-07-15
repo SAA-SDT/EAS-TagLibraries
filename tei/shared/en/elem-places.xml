@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-places" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-places">
                <head>
                   <gi>places</gi>
                </head>
@@ -7,20 +7,26 @@
                   <p>Places</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>description</gi> used for grouping together
-                     one or more <gi>place</gi> elements.</p>
+                  <p type="eac">An optional child element of <gi>description</gi> used for grouping together one or more <gi>place</gi> elements.</p>
+                  <p type="ead">An optional child element of <gi>archDesc</gi>, <gi>c</gi>, and <gi>c01</gi> to <gi>c12</gi> used for grouping together one or more <gi>place</gi> elements.</p>
                </div>
                <div type="mayContain">
-                  <p>descriptiveNote (0..1), place (1..n)</p>
+                  <p><list type="gloss">
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>place</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>description</p>
+                  <p type="eac">description</p>
+                  <p type="ead">archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -57,17 +63,23 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:places>
-                        <eac:place>
-                           <eac:placeName valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Stockholm</eac:placeName>
-                           <eac:placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBirth" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Geburtsort</eac:placeRole>
-                        </eac:place>
-                        <eac:place>
-                           <eac:placeName valueURI="https://d-nb.info/gnd/4051594-1" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Sankt Gallen</eac:placeName>	
-                           <placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfDeath" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Sterbeort</placeRole>
-                        </eac:place>
-                     </eac:places>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<places>
+   <place>
+      <placeName valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+         Stockholm
+      </placeName>
+      <placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBirth" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">
+         Geburtsort
+      </placeRole>
+   </place>
+   <place>
+      <placeName valueURI="https://d-nb.info/gnd/4051594-1" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+         Sankt Gallen
+      </placeName>	
+      <placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfDeath" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">
+         Sterbeort
+      </placeRole>
+   </place>
+</places>]]></egXML>
                </div>
             </div>

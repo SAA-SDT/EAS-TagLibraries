@@ -10,12 +10,16 @@
                   <p>Period during which years are numbered and dates reckoned.</p>
                </div>
                <div type="description">
-                  <p>Period during which years are numbered and dates reckoned, such as CE (Common
-                     Era) or BCE (Before Common Era). Suggested values include "ce" and "bce".
-                     This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
+                  <p type="eac">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
+                    Suggested values include "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
+                    and <gi>toDate</gi></p>
+                 <p type="ead">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
+                   Suggested values include "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
+                   <gi>toDate</gi>, <gi>unitDate</gi> and <gi>unitDateStructured</gi>.</p>
                </div>
                <div type="datatype">
-                  <p>NMTOKEN</p>
+                  <p type="eac">NMTOKEN</p>
+                  <p type="ead">token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<dateRange>

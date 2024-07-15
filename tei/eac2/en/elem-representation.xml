@@ -66,19 +66,19 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        <eac:recordId>122651634</eac:recordId>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                        <recordId>122651634</recordId>
                         [...]
-                        <eac:representation href="https://kalliope-verbund.info/gnd/122651634"/>
-                     </eac:control>
+                        <representation href="https://kalliope-verbund.info/gnd/122651634"/>
+                     </control>]]
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="revised" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        <eac:recordId>738070</eac:recordId>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="revised" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                        <recordId>738070</recordId>
                         [...]
-                        <eac:representation href="https://trove.nla.gov.au/people/738070?c=people">Osburn, Lucy (1835-1891) - People and organisations - Trove</eac:representation>
-                     </eac:control>
+                        <representation href="https://trove.nla.gov.au/people/738070?c=people">Osburn, Lucy (1835-1891) - People and organisations - Trove</representation>
+                     </control>]]
                   </egXML>
                </div>
             </div>

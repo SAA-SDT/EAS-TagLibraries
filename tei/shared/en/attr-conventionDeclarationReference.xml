@@ -24,8 +24,12 @@
                </div>
                <div type="examples">
                  <egXML xml:lang="eng"><![CDATA[<agent conventionDeclarationReference="cd2">
-                    <agentName>Karin Bredenberg</agentName>
-                    <agentType>person</agentType>
-                </agent>]]></egXML>
+   <agentName>
+      Karin Bredenberg
+   </agentName>
+   <agentType>
+      person
+   </agentType>
+</agent>]]></egXML>
                </div>
             </div>

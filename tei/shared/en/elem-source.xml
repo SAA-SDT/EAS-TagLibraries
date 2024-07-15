@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-source" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-source">
                <head>
                   <gi>source</gi>
                </head>
@@ -7,12 +7,20 @@
                   <p>Source</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>sources</gi> used to identify a particular
-                     source of evidence used for the establishment of the description of the CPF
-                     entity in the EAC-CPF instance.</p>
+                  <p>A required and repeatable child element of <gi>sources</gi> used to identify a particular
+                     source of evidence used for the establishment of the descriptive parts in an EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p>citedRange (0..n), descriptiveNote (0..1), objectXMLWrap (0..1), reference (1..n)</p>
+                  <p><list type="gloss">
+  <label>citedRange</label>
+  <item>0..n</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>objectXMLWrap</label>
+  <item>0..1</item>
+  <label>reference</label>
+  <item>1..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>sources</p>
@@ -21,7 +29,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>href</label>
@@ -46,15 +54,9 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>source</gi> to cite a published resource used in describing the CPF
-                     entity. Use the required child element <gi>reference</gi>to include a textual
-                     identification of the reference. In the case of online sources, use
-                        <att>href</att> with <gi>reference</gi> to provide a URI.</p>
-                  <p>Use the optional child element <gi>citedRange</gi> to point to a specific
-                     location within a source.</p>
-                  <p>Use the optional <gi>descriptiveNote</gi> for any additional notes about the
-                     source. Use the optional <gi>objectXMLWrap</gi> to embed XML documenting the
-                     source from any namespace.</p>
+                  <p>Use <gi>source</gi> to cite a published resource used in creating the descriptive parts of the EAS instance. Use the required child element <gi>reference</gi>to include a textual identification of the source. In the case of online sources, use <att>href</att> with <gi>reference</gi> to provide a URI.</p>
+                  <p>Use the optional child element <gi>citedRange</gi> to point to a specific location within a source.</p>
+                  <p>Use the optional <gi>descriptiveNote</gi> for any additional notes about the source. Use the optional <gi>objectXMLWrap</gi> to embed XML documenting the source from any namespace.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>reference</gi></item>
@@ -67,18 +69,22 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:sources>
-                        <eac:source>
-                           <eac:reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">Wikipedia</eac:reference>
-                        </eac:source>
-                        <eac:source>
-                           <eac:reference href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13318">Svenskt biografiskt lexikon</eac:reference>
-                           <eac:descriptiveNote>
-                              <eac:p>Stand: 03.12.2020</eac:p>
-                           </eac:descriptiveNote>
-                        </eac:source>
-                     </eac:sources>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<sources>
+   <source>
+      <reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">
+         Wikipedia
+      </reference>
+   </source>
+   <source>
+      <reference href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13318">
+         Svenskt biografiskt lexikon
+      </reference>
+      <descriptiveNote>
+         <p>
+            Stand: 03.12.2020
+         </p>
+      </descriptiveNote>
+   </source>
+</sources>]]></egXML>
                </div>
             </div>

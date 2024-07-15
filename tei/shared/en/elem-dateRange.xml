@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-dateRange" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-dateRange">
                <head>
                   <gi>dateRange</gi>
                </head>
@@ -13,7 +13,12 @@
                      recommended to use both child elements whenever possible.</p>
                </div>
                <div type="mayContain">
-                  <p>fromDate (0..1), toDate (0..1)</p>
+                  <p><list type="gloss">
+  <label>fromDate</label>
+  <item>0..1</item>
+  <label>toDate</label>
+  <item>0..1</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">chronItem, dateSet, demographicDescription, existDates, function, legalStatus,
@@ -74,12 +79,8 @@
                      <item><gi>toDate</gi></item>
                   </list>
                </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>localType</att> to supply a more specific characterization of
-                        the date range.</item>
-                  </list>
-               </div>
+               <div type="attributeusage"><p>Use <att>localType</att> to supply a more specific characterization of
+                        the date range.</p></div>
                <div type="availability">
                  <p type="ead">Within <gi>accessConditions</gi>, <gi>useConditions</gi>: optional, not repeatable</p> 
                  <p type="eac">Within <gi>demographicDescription</gi>, <gi>function</gi>,
@@ -98,9 +99,13 @@
                      optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<dateRange>
-                        <fromDate standardDate="1765-08-18">September 18, 1765</fromDate>
-                        <toDate standardDate="1846-06-01">June 1, 1846</toDate>
-                     </dateRange>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<dateRange>
+   <fromDate standardDate="1765-08-18">
+      September 18, 1765
+   </fromDate>
+   <toDate standardDate="1846-06-01">
+      June 1, 1846
+   </toDate>
+</dateRange>]]></egXML>
                </div>
             </div>

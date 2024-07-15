@@ -1,43 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-identificationDataNote">
 	<head>
-		<gi>Title</gi>
+		<gi>identificationDataNote</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Identification Data Note</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>A child element of <gi>identificationData</gi> that can express any kind of explanatory information.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p><list type="gloss">
+  <label>p</label>
+  <item>1..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>identificationData</p>
 	</div>
 	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
-			</list>
-		</p>
+    		<p>
+        		<list type="gloss">
+            			<label>audience</label>
+            			<item>Optional</item>
+            			<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>id</label>
+            			<item>Optional</item>
+            			<label>languageOfElement</label>
+            			<item>Optional</item>
+            			<label>maintenanceEventReference</label>
+            			<item>Optional</item>
+            			<label>scriptOfElement</label>
+            			<item>Optional</item>
+            			<label>sourceReference</label>
+            			<item>Optional</item>
+            			<label>target</label>
+            			<item>Optional</item>
+        		</list>
+    		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
-	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
-		</list>
+		<p><gi>identificationDataNote</gi> can encode textual notes within <gi>identificationData</gi> that are not more appropriately encoded in the other available elements.</p>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

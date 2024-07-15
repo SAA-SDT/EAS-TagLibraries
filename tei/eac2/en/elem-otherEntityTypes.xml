@@ -57,15 +57,15 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:otherEntityTypes>
-                        <eac:otherEntityType>
-                           <eac:term>Non-governmental organization</eac:term>
-                        </eac:otherEntityType>
-                        <eac:otherEntityType>
-                           <eac:term>Organization</eac:term>
-                        </eac:otherEntityType>
-                     </eac:otherEntityTypes>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <otherEntityTypes>
+                        <otherEntityType>
+                           <term>Non-governmental organization</term>
+                        </otherEntityType>
+                        <otherEntityType>
+                           <term>Organization</term>
+                        </otherEntityType>
+                     </otherEntityTypes>]]
                   </egXML>
                </div>
             </div>

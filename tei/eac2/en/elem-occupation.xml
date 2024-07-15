@@ -72,15 +72,15 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:occupations>
-                        <eac:occupation>
-                           <eac:term>Geologist</eac:term>
-                        </eac:occupation>
-                        <eac:occupation>
-                           <eac:term>Palaeontologist</eac:term>
-                        </eac:occupation>
-                     </eac:occupations>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <occupations>
+                        <occupation>
+                           <term>Geologist</term>
+                        </occupation>
+                        <occupation>
+                           <term>Palaeontologist</term>
+                        </occupation>
+                     </occupations>]]
                   </egXML>
                </div>
             </div>

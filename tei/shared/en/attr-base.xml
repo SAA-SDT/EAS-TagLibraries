@@ -7,20 +7,19 @@
                   <p>Base</p>
                </div>
                <div type="summary">
-                  <p>Optional attribute used to specify a base URI that is different to the base URI of the EAC-CPF instance.</p>
+                  <p>Optional attribute used to specify a base URI that is different to the base URI of the EAS instance.</p>
                </div>
                <div type="description">
                   <p>Using the optional attribute <att>base</att> allows any relative URIs provided on attributes of a specific element, or its descendants, to be resolved using the URI provided in that element's or its parent element's <att>base</att>.</p>
-                  <p>Available on <gi>alternativeSet</gi>,
-                     <gi>control</gi>, <gi>cpfDescription</gi>, <gi>description</gi>,
-                     <gi>eac</gi>, <gi>identity</gi>, <gi>multipleIdentities</gi>,
-                     <gi>relations</gi>, and <gi>sources</gi>.</p>
+                  <p type="eac">Available on <gi>alternativeSet</gi>, <gi>control</gi>, <gi>cpfDescription</gi>, <gi>description</gi>, <gi>eac</gi>, <gi>identity</gi>, <gi>multipleIdentities</gi>, <gi>relations</gi>, and <gi>sources</gi>.</p>
+                 <p type="ead">Available on <gi>archDesc</gi>, <gi>c</gi>, <gi>c01</gi> to <gi>c12</gi>, <gi>control</gi>, <gi>ead</gi>, <gi>relations</gi>, and <gi>sources</gi>.</p>
                </div>
                <div type="datatype">
                   <p>anyURI</p>
                </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<description base="https://d-nb.info/gnd/">
+               <div type="examples" standard="eac">
+		  <egXML xml:lang="eng" type="ead"/>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<description base="https://d-nb.info/gnd/">
    <occupations>
       <occupation vocabularySource="GND" valueURI="4393865-6">
          <term languageOfElement="de">

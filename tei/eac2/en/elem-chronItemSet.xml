@@ -57,49 +57,49 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:chronItem>
-                        <eac:date>2015</eac:date>
-                        <eac:chronItemSet>
-                           <eac:event>Opens additional stores</eac:event>
-                           <eac:place>
-                              <eac:placeName>Woodbury, Minnesota</eac:placeName>
-                           </eac:place>
-                           <eac:place>
-                              <eac:placeName>Roseville, Minnesota</eac:placeName>
-                           </eac:place>
-                        </eac:chronItemSet>
-                     </eac:chronItem>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <chronItem>
+                        <date>2015</date>
+                        <chronItemSet>
+                           <event>Opens additional stores</event>
+                           <place>
+                              <placeName>Woodbury, Minnesota</placeName>
+                           </place>
+                           <place>
+                              <placeName>Roseville, Minnesota</placeName>
+                           </place>
+                        </chronItemSet>
+                     </chronItem>]]
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:chronItem>
-                        <eac:date>1948</eac:date>
-                        <eac:chronItemSet>
-                           <eac:event>Graduates from the University of Minnesota</eac:event>
-                           <eac:event>Begins work as a receptionist for the Humphrey for Senator
-                              Committee</eac:event>
-                           <eac:place>
-                              <eac:placeName>Minneapolis, Minnesota</eac:placeName>
-                           </eac:place>
-                        </eac:chronItemSet>
-                     </eac:chronItem>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <chronItem>
+                        <date>1948</date>
+                        <chronItemSet>
+                           <event>Graduates from the University of Minnesota</event>
+                           <event>Begins work as a receptionist for the Humphrey for Senator
+                              Committee</event>
+                           <place>
+                              <placeName>Minneapolis, Minnesota</placeName>
+                           </place>
+                        </chronItemSet>
+                     </chronItem>]]
                   </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:chronItem>
-                        <eac:date>March 1957</eac:date>
-                        <eac:chronItemSet>
-                           <eac:event>Dies</eac:event>
-                           <eac:place>
-                              <eac:placeName>Biwabik, Minnesota</eac:placeName>
-                           </eac:place>
-                        </eac:chronItemSet>
-                        <eac:chronItemSet>
-                           <eac:event>Buried in Lakewood Cemetery</eac:event>
-                           <eac:place>
-                              <eac:placeName>Minneapolis, Minnesota</eac:placeName>
-                           </eac:place>
-                        </eac:chronItemSet>
-                     </eac:chronItem>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <chronItem>
+                        <date>March 1957</date>
+                        <chronItemSet>
+                           <event>Dies</event>
+                           <place>
+                              <placeName>Biwabik, Minnesota</placeName>
+                           </place>
+                        </chronItemSet>
+                        <chronItemSet>
+                           <event>Buried in Lakewood Cemetery</event>
+                           <place>
+                              <placeName>Minneapolis, Minnesota</placeName>
+                           </place>
+                        </chronItemSet>
+                     </chronItem>]]
                   </egXML>
                </div>
             </div>

@@ -1,47 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-languageSet">
 	<head>
-		<gi>Title</gi>
+		<gi>languageSet</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Language Set</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>Within <gi>identificationData</gi>, <gi>languageSet</gi> is a child element of <gi>languageOfMaterial</gi> that is used to pair languages with their writing systems.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>
+			<list type="gloss">
+				<label>descriptiveNote</label>
+				<item>0..1</item>
+				<label>language</label>
+				<item>1..n</item>
+				<label>writingSystem</label>
+				<item>1..n</item>
+			</list>
+		</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>languageOfMaterial</p>
 	</div>
 	<div type="attributes">
 		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
+				<label>audience</label>
+				<item>Optional</item>
+				<label>conventionDeclarationReference</label>
+				<item>Optional</item>
+				<label>id</label>
+				<item>Optional</item>
+				<label>languageOfElement</label>
+				<item>Optional</item>
+				<label>maintenanceEventReference</label>
+				<item>Optional</item>
+				<label>scriptOfElement</label>
+				<item>Optional</item>
+				<label>sourceReference</label>
+				<item>Optional</item>
+				<label>target</label>
+				<item>Optional</item>
 			</list>
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
+		<p>Use <gi>languageSet</gi> within <gi>languageOfMaterial</gi> when it is necessary to associate <gi>language</gi> and <gi>writingSystem</gi>. Possible combinations include one language and one writing system, multiple languages and one writing system, and one language and multiple writing systems. Although the EAD4 schema allows multiple languages to be associated with multiple writing systems this combination is unlikely to convey useful information. <gi>languageSet</gi> may be repeated as necessary. Optionally, any comments about the language(s) and writing system(s) being recorded may be captured in <gi>descriptiveNote</gi> at the end, particularly for display to finding aid users.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>languageOfElement</att> and <att>scriptOfElement</att> to indicate the language and written scripts of the information in <gi>languageSet</gi>, not the language of materials.</p></div>	
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
-		</egXML>
+		<egXML><![CDATA[<languageOfMaterial>
+	<languageSet>
+		<language languageCode="lat">Latin</language>
+		<writingSystem scriptCode="Latn"/>
+	</languageSet>
+	<languageSet>
+		<language languageCode="ang">Old English</language>
+		<writingSystem scriptCode="Latn"/>
+	</languageSet>
+	<languageSet>
+		<language languageCode="eng">English</language>
+		<writingSystem scriptCode="Latn"/>
+	</languageSet>
+	<descriptiveNote>
+		<p>The majority of the documents are written in Modern English. Roberts copies multiple passages from original manuscripts in Latin and Old English.</p>
+	</descriptiveNote>
+</languageOfMaterial>]]></egXML>
+		<egXML xml:lang="eng"><![CDATA[<languageOfMaterial>
+	<languageSet>
+		<language languageCode="jpn">Japanese</language>
+		<writingSystem scriptCode="Hira">hiragana</writingSystem>
+		<writingSystem scriptCode="Kana">katakana</writingSystem>
+	</languageSet>
+	<descriptiveNote>
+		<p>This file contains documents in Japanese, in both the hiragana and katakana scripts.</p>
+	</descriptiveNote>
+</languageOfMaterial>]]></egXML>
 	</div>
 </div>

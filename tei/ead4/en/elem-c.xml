@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-c">
 	<head>
 		<gi>c</gi>
 	</head>
@@ -10,7 +10,60 @@
 		<p>An element that designates a subordinate part of the materials being described</p>
 	</div>
 	<div type="mayContain">
-		<p>accessConditions (0..n), accruals (0..n), agents (0..1), appraisal (0..n), arrangement (0..n), biogHist (0..n), c (0..n), custodHist (0..n), filePlan (0..n), formsAvailable (0..1), functions (0..1), head (0..n), identificationData (1..n), otherDescriptiveInfo (0..n), otherFindAid (0..n), physicalOrTechnicalRequirements (0..n), places (0..1), preferCite (0..n), processInfo (0..n), publicationNote (0..n), relatedMaterial (0..n), scopeContent (0..n), separatedMaterial (0..n), sourceOfAcquisition (0..n), subjectHeadings (0..n), useConditions (0..n)</p>
+		<p><list type="gloss">
+  <label>accessConditions</label>
+  <item>0..n</item>
+  <label>accruals</label>
+  <item>0..n</item>
+  <label>agents</label>
+  <item>0..1</item>
+  <label>appraisal</label>
+  <item>0..n</item>
+  <label>arrangement</label>
+  <item>0..n</item>
+  <label>biogHist</label>
+  <item>0..n</item>
+  <label>c</label>
+  <item>0..n</item>
+  <label>custodHist</label>
+  <item>0..n</item>
+  <label>filePlan</label>
+  <item>0..n</item>
+  <label>formsAvailable</label>
+  <item>0..1</item>
+  <label>functions</label>
+  <item>0..1</item>
+  <label>head</label>
+  <item>0..1</item>
+  <label>identificationData</label>
+  <item>1..1</item>
+  <label>otherDescriptiveInfo</label>
+  <item>0..n</item>
+  <label>otherFindAid</label>
+  <item>0..n</item>
+  <label>physicalOrTechnicalRequirements</label>
+  <item>0..n</item>
+  <label>places</label>
+  <item>0..1</item>
+  <label>preferCite</label>
+  <item>0..n</item>
+  <label>processInfo</label>
+  <item>0..n</item>
+  <label>publicationNote</label>
+  <item>0..n</item>
+  <label>relatedMaterial</label>
+  <item>0..n</item>
+  <label>scopeContent</label>
+  <item>0..n</item>
+  <label>separatedMaterial</label>
+  <item>0..n</item>
+  <label>sourceOfAcquisition</label>
+  <item>0..n</item>
+  <label>subjectHeadings</label>
+  <item>0..n</item>
+  <label>useConditions</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>c, descriptionOfComponents</p>
@@ -52,19 +105,10 @@
 		<p>Each <gi>c</gi> identifies a logical section, or level, of the described materials. Components may be subdivided into smaller and smaller components and may eventually reach the level of a single item. For example, the components of a collection may be a series, components of series may be subseries, components of subseries may be files, and components of files may be items. </p>
 		<p>The physical filing separations between components need not always coincide with the intellectual separations. For example, a <gi>c</gi> that designates dramatic works might end in the same box in which the next <gi>c</gi> begins with short stories. Also, not every <gi>c</gi> directly corresponds to a folder or other physical entity. Some <gi>c</gi> elements simply represent a logical point in a hierarchical description. </p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>base</att> to specify a base URI other than the URI of the EAD instance for the purpose of resolving any relative URIs contained within <gi>c</gi>.</item>
-                        <item>Use <att>level</att> to identify the logical type of the component (for instance, "series", "file" or "item"). Assigning <att>level</att> is optional but is recommended for the highest <gi>c</gi>. </item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>The numbered elements <gi>c01</gi>, <gi>c02</gi>, etc. are an alternative way to designate components. Use either the unnumbered <gi>c</gi> or the numbered alternatives. Do not mix the two in a single EAD instance.</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>base</att> to specify a base URI other than the URI of the EAD instance for the purpose of resolving any relative URIs contained within <gi>c</gi>.</p></div>	
+	<div type="seealso"><p>The numbered elements <gi>c01</gi>, <gi>c02</gi>, etc. are an alternative way to designate components. Use either the unnumbered <gi>c</gi> or the numbered alternatives. Do not mix the two in a single EAD instance.</p></div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

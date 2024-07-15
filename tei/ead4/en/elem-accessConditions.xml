@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-accessConditions">
 	<head>
 		<gi>accessConditions</gi>
 	</head>
@@ -10,7 +10,16 @@
 		<p>An element for information about conditions that affect the availability of the materials being described.</p>
 	</div>
 	<div type="mayContain">
-		<p>abstract (0..1), dateRange (0..1), formattingExtension (0..1), p (0..n)</p>
+		<p><list type="gloss">
+  <label>abstract</label>
+  <item>0..1</item>
+  <label>dateRange</label>
+  <item>0..1</item>
+  <label>formattingExtension</label>
+  <item>0..1</item>
+  <label>p</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
 		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
@@ -49,22 +58,18 @@
 	</div>
 	<div type="description">
 		<p>Record in <gi>accessConditions</gi> information about the availability of the described materials, whether due to the nature of the information in the materials being described, the physical condition of the materials, or the location of the materials. Examples include restrictions imposed by the donor, legal statute, repository, or other agency, as well as the need to make an appointment with repository staff. May also indicate that the materials are not restricted. Use the sub-element <gi>dateRange</gi> to provide information about the time span during which or until when these access conditions apply.</p>
+		<p>The prescribed order for all child elements is:
+			<list type="simple">
+				<item><gi>abstract</gi></item>
+				<item><gi>formattingExtension</gi> or <gi>p</gi></item>
+				<item><gi>dateRange</gi></item>
+			</list>
+		</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>Use <att>@localtype</att>, if local use requires specification of the type of access conditions.</item>
-			<item>Use <att>@valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the access conditions applied in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system.</item>
-			<item>Use <att>@vocabularySource</att> to name the knowledge organization system and <att>@vocabularySourceURI</att> to identify the knowledge organization system as an online resource, if applicable.</item>
-		</list>
-	</div>
-	<div type="seealso">
-		<list type="simple">
-			<item>Do not confuse with <gi>useConditions</gi>, which records information about the conditions governing the use and re-use of the described materials after access has been granted.</item>
-                     	<item>Do not confuse with <gi>legalStatus</gi>, which records the statutorily-defined status of the materials being described.</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>localType</att>, if local use requires specification of the type of access conditions.</p><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the rules around access in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system.  Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>
+	<div type="seealso"><p>Do not confuse with <gi>useConditions</gi>, which records information about the conditions governing the use and re-use of the described materials after access has been granted.</p></div>
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

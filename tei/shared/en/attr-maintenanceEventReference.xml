@@ -8,18 +8,18 @@
                </div>
                <div type="summary">
                   <p>Use <att>maintenanceEventReference</att> to provide a direct link to a
-                        <gi>maintenanceEvent</gi> element within <gi>maintenanceHistory</gi></p>
+                        <gi>maintenanceEvent</gi> element within <gi>maintenanceHistory</gi>.</p>
                </div>
                <div type="description">
                   <p>The attribute can be used to link to a maintenance event in order to verify any assertion added to the entity’s description.</p> 
-                     <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations area. 
-                  </p>
+                     <p>The attribute is optionally available in all elements in the identity area (except <gi>entityType</gi>), in the description area, and in the relations area.</p>
+                     <p>The attribute is optionally available in all elements that can contain text and are available outside of <gi>control</gi>. </p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="ead"><![CDATA[<maintenanceHistory>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceHistory>
    <maintenanceEvent maintenanceEventType="updated" id="me2">
       <agent agentType="human">
          K. Bredenberg
@@ -42,8 +42,7 @@
    <relationType valueURI="https://www.wikidata.org/wiki/Q166118" vocabularySourceURI="https://www.wikidata.org/">
       agency or institution responsible for the preservation and communication of records selected for permanent preservation
    </relationType>
-</relation>]]>
-                  </egXML>
+</relation>]]></egXML>
                   <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceHistory>
    <maintenanceEvent maintenanceEventType="updated" id="me2">
       <agent agentType="human">
@@ -67,7 +66,6 @@
    <relationType valueURI="https://www.wikidata.org/wiki/Property:P69" vocabularySourceURI="https://www.wikidata.org/">
       educated at
    </relationType>
-</relation>]]>
-                  </egXML>
+</relation>]]></egXML>
                </div>
             </div>

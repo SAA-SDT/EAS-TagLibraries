@@ -73,18 +73,18 @@
                      required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:cpfDescription>
-                        <eac:identity>
-                           <eac:entityType value="person"/>
-                           <eac:nameEntry>
-                              <eac:part localType="familyname">Hill</eac:part>
-                              <eac:part localType="givenname">Dorothy</eac:part>
-                           </eac:nameEntry>
-                        </eac:identity>
-                        <eac:description> [...] </eac:description>
-                        <eac:relations> [...] </eac:relations>
-                     </eac:cpfDescription>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <cpfDescription>
+                        <identity>
+                           <entityType value="person"/>
+                           <nameEntry>
+                              <part localType="familyname">Hill</part>
+                              <part localType="givenname">Dorothy</part>
+                           </nameEntry>
+                        </identity>
+                        <description> [...] </description>
+                        <relations> [...] </relations>
+                     </cpfDescription>]]
                   </egXML>
                </div>
             </div>

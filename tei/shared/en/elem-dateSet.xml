@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-dateSet" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-dateSet">
                <head>
                   <gi>dateSet</gi>
                </head>
@@ -11,7 +11,10 @@
                      represented in one <gi>date</gi> or <gi>dateRange</gi>.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange (2..n)</p>
+                  <p><list type="gloss">
+  <label>date or dateRange</label>
+  <item>2..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">chronItem, demographicDescription, existDates, function, legalStatus,
@@ -58,24 +61,35 @@
                         <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
                         <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> optional, not repeatable</p>
-                  <p type="ead">Within <gi>agent</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>place</gi>, <gi>relation</gi>, <gi>subject</gi> and <gi>unitDateStructured</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
-                        <gi>dateSet</gi> optional, not repeatable</p>
+                  <p type="ead">Optional, not repeatable</p>
                   <p type="eac">Within <gi>chronItem</gi>, <gi>existDates</gi>, <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng"><![CDATA[<dateSet>
-                        <dateRange>
-                           <fromDate standardDate="1928-09">1928 settembre</fromDate>
-                           <toDate standardDate="1930-08">1930 autunno</toDate>
-                        </dateRange>
-                        <dateRange>
-                           <fromDate standardDate="1947">1947</fromDate>
-                           <toDate standardDate="1949">1949</toDate>
-                        </dateRange>
-                        <date>1950</date>
-                        <date standardDate="1951-10-27">27 of October 1951</date>
-                     </dateSet>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<dateSet>
+   <dateRange>
+      <fromDate standardDate="1928-09">
+         1928 settembre
+      </fromDate>
+      <toDate standardDate="1930-08">
+         1930 autunno
+      </toDate>
+   </dateRange>
+   <dateRange>
+      <fromDate standardDate="1947">
+         1947
+      </fromDate>
+      <toDate standardDate="1949">
+         1949
+      </toDate>
+   </dateRange>
+   <date>
+      1950
+   </date>
+   <date standardDate="1951-10-27">
+      27 of October 1951
+   </date>
+</dateSet>]]></egXML>
                </div>
             </div>

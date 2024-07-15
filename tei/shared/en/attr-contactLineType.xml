@@ -18,9 +18,11 @@
                </div>
                <div type="values">
                   <p type="eac">directions, email, fax, homepage, mobileNumber, phoneNumber</p>
+                  <p type="ead">Following the value list defined in <att>contactLineTypeEncoding</att> and <gi>conventionDeclaration</gi>.</p>
                </div>
                <div type="datatype">
                  <p type="ead">token</p>
+                 <p type="eac">predefined value list</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<contact>

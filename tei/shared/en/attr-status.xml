@@ -7,37 +7,45 @@
                   <p>Status</p>
                </div>
                <div type="summary">
-                  <p>Attribute that provides controlled terminology detailing the status of
+                  <p>Attribute that follows controlled terminology detailing the status of
                      elements.</p> 
                </div>
                <div type="description">
-                  <p><att>status</att> provides controlled terminology detailing the status of specific
+                  <p type="eac"><att>status</att> provides controlled terminology detailing the status of specific
                      elements. The terms available for <att>status</att> are defined in closed lists that vary by
-                     element. Optionally available only in <gi>agencyCode</gi>, <gi>fromDate</gi>,
-                        <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>, and <gi>toDate</gi>. </p>
+                     element. Optionally available in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, 
+                    <gi>fromDate</gi>, <gi>nameEntry</gi>, <gi>toDate</gi>.</p>
+                 <p type="ead"><att>status</att> provides controlled terminology detailing the status of specific
+                     elements. The terms available for <att>status</att> are defined in closed lists that vary by
+                     element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of  
+                   terms from EAS lists that can be used as values of <att>status</att>. It is also possible 
+                   to define one's own list by using the value "otherStatusEncoding". Optionally available 
+                   in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, 
+                    <gi>fromDate</gi>, <gi>toDate</gi>, <gi>unitDate</gi>.</p>
                </div>
-               <div type="values">
-                  <p>Values in <gi>agencyCode</gi>, <gi>nameEntry</gi>, <gi>otherAgencyCode</gi>:
-                     alternative, authorized</p>
+               <div type="values" standard="eac">
+                  <p>Values in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>nameEntry</gi>: alternative, authorized</p>
                   <p>Values in <gi>date</gi>, <gi>fromDate</gi>: unknown</p>
                   <p>Values in <gi>toDate</gi>: unknown, ongoing</p>
                </div>
+              <div type="datatype" standard="ead">
+                  <p>token</p>
+               </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
-   <part localType="surname">
-      Arendt
-   </part>
-   <part localType="firstname">
-      Hannah
-   </part>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+    <part localType="surname">
+        Arendt
+    </part>
+    <part localType="firstname">
+        Hannah
+    </part>
 </nameEntry>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<dateRange>
-   <fromDate standardDate="2016-09">
-      September 2016
-   </fromDate>
-   <toDate status="ongoing"/>
+    <fromDate standardDate="2016-09">
+        September 2016
+    </fromDate>
+    <toDate status="ongoing"/>
 </dateRange>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<date status="unknown"/>]]>
-                  </egXML>
+                  <egXML xml:lang="eng"><![CDATA[<date status="unknown"/>]]></egXML>
                </div>
             </div>

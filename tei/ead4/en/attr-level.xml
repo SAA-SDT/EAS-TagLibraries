@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="attributeDocumentation" xml:id="attr-level" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<att>Title</att>
+		<att>level</att>
 	</head>
 	<div type="fullName">
-		<p>Full Attribute Name</p>
+		<p>Level</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the attribute is used for</p>
-	</div>
-	<div type="description">
-		<p>A narrative description of the use of the attribute</p>
-	</div>
-	<div type="values">
-		<p>Available values (include either values or datatype)</p>
+		<p>The hierarchical level of the materials being described by the element. This attribute is available in <gi>archDesc</gi>, where the highest level of material represented in the finding aid can be declared (e.g. collection, fonds, record set), and in <gi>c</gi> and <gi>c01</gi>-<gi>c12</gi>, where it may be used to declare the level of description represented by each component (e.g. subgroup, series, file, record). Use the attribute <att>levelEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>level</att>.</p>
 	</div>
 	<div type="datatype">
-		<p>Datatype of the attribute (include either values or datatype)</p>
+		<p>token</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

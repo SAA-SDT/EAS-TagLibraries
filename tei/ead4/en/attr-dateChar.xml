@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="attributeDocumentation" xml:id="attr-dateChar" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<att>Title</att>
+		<att>dateChar</att>
 	</head>
 	<div type="fullName">
-		<p>Full Attribute Name</p>
+		<p>Date Characterization</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the attribute is used for</p>
-	</div>
-	<div type="description">
-		<p>A narrative description of the use of the attribute</p>
-	</div>
-	<div type="values">
-		<p>Available values (include either values or datatype)</p>
+		<p>Term characterizing the nature of a date, such as dates of creation, accumulation, or modification. Available in <gi>unitDate</gi> and <gi>unitDateStructured</gi>.</p>
 	</div>
 	<div type="datatype">
-		<p>Datatype of the attribute (include either values or datatype)</p>
+		<p>token</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

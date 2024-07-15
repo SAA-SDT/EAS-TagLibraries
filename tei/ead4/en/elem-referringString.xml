@@ -1,43 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-referringString">
 	<head>
-		<gi>Title</gi>
+		<gi>referringString</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Referring String</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>An element for marking words or phrases in a longer text as named entities.</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>abstract, container, dimensions, eventDescription, head, materialSpec, p, physDesc, physFacet, physLoc, reference, unitDate, unitId, unitTitle</p>
 	</div>
 	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
-			</list>
-		</p>
+    		<p>
+        		<list type="gloss">
+            			<label>audience</label>
+            			<item>Optional</item>
+            			<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>id</label>
+            			<item>Optional</item>
+            			<label>languageOfElement</label>
+            			<item>Optional</item>
+            			<label>localType</label>
+            			<item>Optional</item>
+            			<label>localTypeDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>maintenanceEventReference</label>
+            			<item>Optional</item>
+            			<label>scriptOfElement</label>
+            			<item>Optional</item>
+            			<label>sourceReference</label>
+            			<item>Optional</item>
+            			<label>target</label>
+            			<item>Optional</item>
+				<label>valueURI</label>
+            			<item>Optional</item>
+            			<label>vocabularySource</label>
+            			<item>Optional</item>
+            			<label>vocabularySourceURI</label>
+            			<item>Optional</item>
+        		</list>
+    		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
+		<p>Use <gi>referringString</gi> in longer texts to indicate that certain words or phrases within these texts represent named entities such as persons, organisations, places, functions, dates, etc.</p>
+		<p>Use <gi>referringString</gi> e.g. when the identification of such named entities within existing archival descriptions is the result of some natural language processing or when capturing the results of named entity recognition having been conducted as part of Optical Character Recognition or Handwritten Text Recognition tasks.</p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
-	</div>	
-	<div type="seealso">
-		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
-		</list>
-	</div>
+	<div type="attributeusage"><p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p></div>	
+	<div type="seealso"><p>Only fall back on using <gi>referringString</gi> in the contexts mentioned above. Use dedicated elements such as <gi>agents</gi>, <gi>functions</gi>, <gi>places</gi>, <gi>formsAvailable</gi>, <gi>relatedMaterial</gi>, <gi>separatedMaterial</gi>, <gi>otherFindAid</gi>, or <gi>publicationNote</gi> to name related entities central to the understanding of the materials described and to provide more information about their relationship with the materials.</p></div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

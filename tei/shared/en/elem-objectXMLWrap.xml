@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-objectXMLWrap" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-objectXMLWrap">
                <head>
                   <gi>objectXMLWrap</gi>
                </head>
@@ -7,21 +7,38 @@
                   <p>Object XML Wrap</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>relation</gi>, <gi>setComponent</gi>, and
+                  <p type="eac">An optional child element of <gi>relation</gi>, <gi>setComponent</gi>, and
                         <gi>source</gi> that allows for the inclusion of an XML element from any XML
-                     namespace other than EAC-CPF.</p>
+                     namespace.</p>
+                  <p type="ead">An optional child element of <gi>relation</gi> and
+                        <gi>source</gi> that allows for the inclusion of an XML element from any XML
+                     namespace.</p>
                </div>
                <div type="mayContain">
-                  <p>[any element from any namespace]</p>
+                  <p><list type="gloss">
+  <label>[any element from any namespace]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>relation, setComponent, source</p>
+                  <p type="eac">relation, setComponent, source</p>
+                  <p type="ead">relation, source</p>
                </div>
                <div type="attributes">
-                  <p>
+                  <p type="eac">
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+                  <p type="ead">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>target</label>

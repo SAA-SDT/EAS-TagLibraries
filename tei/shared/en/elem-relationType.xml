@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-relationType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-relationType">
                <head>
                   <gi>relationType</gi>
                </head>
@@ -7,21 +7,24 @@
                   <p>Relation Type</p>
                </div>
                <div type="summary">
-                  <p>A child element of <gi>relation</gi> used to specify the type of relation that
-                     the entity being described within the EAC-CPF instance has to the
-                        <gi>targetEntity</gi>.</p>
+                  <p type="eac">An element used to specify the type of relation that the described entity  has to the <gi>targetEntity</gi>.</p>
+                  <p type="ead">An element used to specify the type of relation that the described materials have to the person, corporate body, or family named in <gi>agentName</gi>, the function or subject named in <gi>term</gi>, the geographic location or feature named in <gi>placeName</gi>, or the resource or instance named in <gi>targetEntity</gi>.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>relation</p>
+                  <p type="eac">relation</p>
+                  <p type="ead">agent, function, place, relation, subject</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -50,8 +53,10 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>relationType</gi> within <gi>relation</gi> to specify the type of
-                     relation that the entity being described has to the <gi>targetEntity</gi>.</p>
+                  <p type="eac">Use <gi>relationType</gi> to specify the type of
+                     relation that the entity or records being described have to the <gi>targetEntity</gi>.</p>
+                  <p type="ead">Use <gi>relationType</gi> to specify the type of
+                     relation that the entity or records being described have to the person, corporate body, or family named in <gi>agentName</gi>, the function or subject named in <gi>term</gi>, the geographic location or feature named in <gi>placeName</gi>, or the resource or instance named in <gi>targetEntity</gi>.</p>
                   <p>The <gi>relationType</gi> element contains a textual description of the
                      relation. It is recommended that values used in <gi>relationType</gi> be taken
                      from an authorized vocabulary.
@@ -66,24 +71,34 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:relation>
-                        <eac:targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                           <eac:part>Sophie</eac:part>
-                           <eac:part>Baden, Großherzogin</eac:part>
-                           <eac:part>1801-1865</eac:part>
-                        </eac:targetEntity>
-                        <eac:relationType>family</eac:relationType>
-                        <eac:targetRole>daughter</eac:targetRole>
-                     </eac:relation>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:relation>
-                        <eac:targetEntity targetType="corporateBody" valueURI="https://d-nb.info/gnd/37101-4" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                           <eac:part>Königliche Bibliothek zu Berlin</eac:part>
-                        </eac:targetEntity>
-                        <eac:relationType>has ancestor</eac:relationType>			
-                     </eac:relation>
-                  </egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<relation>
+   <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+      <part>
+         Sophie
+      </part>
+      <part>
+         Baden, Großherzogin
+      </part>
+      <part>
+         1801-1865
+      </part>
+   </targetEntity>
+   <relationType>
+      family
+   </relationType>
+   <targetRole>
+      daughter
+   </targetRole>
+</relation>]]></egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<relation>
+   <targetEntity targetType="corporateBody" valueURI="https://d-nb.info/gnd/37101-4" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+      <part>
+         Königliche Bibliothek zu Berlin
+      </part>
+   </targetEntity>
+   <relationType>
+      has ancestor
+   </relationType>			
+</relation>]]></egXML>
                </div>
             </div>

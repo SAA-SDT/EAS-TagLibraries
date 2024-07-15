@@ -87,18 +87,18 @@
                      repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:nameEntrySet languageOfElement="fre">
-                        <eac:nameEntry conventionDeclarationReference="cd1" preferredForm="true">
-                           <eac:part>Provence-Alpes-Côte d'Azur</eac:part>
-                        </eac:nameEntry>
-                        <eac:nameEntry conventionDeclarationReference="cd2">
-                           <eac:part>Région Sud Provence-Alpes-Côte d'Azur</eac:part>
-                        </eac:nameEntry>
-                        <eac:nameEntry conventionDeclarationReference="cd3">
-                           <eac:part>Provence-Alpes-Côte-d'Azur</eac:part>
-                        </eac:nameEntry>
-                     </eac:nameEntrySet>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <nameEntrySet languageOfElement="fre">
+                        <nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+                           <part>Provence-Alpes-Côte d'Azur</part>
+                        </nameEntry>
+                        <nameEntry conventionDeclarationReference="cd2">
+                           <part>Région Sud Provence-Alpes-Côte d'Azur</part>
+                        </nameEntry>
+                        <nameEntry conventionDeclarationReference="cd3">
+                           <part>Provence-Alpes-Côte-d'Azur</part>
+                        </nameEntry>
+                     </nameEntrySet>]]
                   </egXML>
                </div>
             </div>

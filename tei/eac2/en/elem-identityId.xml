@@ -65,14 +65,14 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:localTypeDeclaration id="localTypeDeclaration1" vocabularySource="SwedishRegistrationCodeVocabulary">
-                        <eac:reference href="https://link.to.source">The Swedish vocabulary for identification codes</eac:reference>
-                     </eac:localTypeDeclaration>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <localTypeDeclaration id="localTypeDeclaration1" vocabularySource="SwedishRegistrationCodeVocabulary">
+                        <reference href="https://link.to.source">The Swedish vocabulary for identification codes</reference>
+                     </localTypeDeclaration>
                      
-                     <eac:identityId localType="RegistrationCode" localTypeDeclarationReference="localTypeDeclaration1">222000-3103</eac:identityId>
-                     <eac:identityId localType="VATRegistrationCode" localTypeDeclarationReference="localTypeDeclaration1">SE222000310301</eac:identityId>
-                     <eac:identityId localType="EInvoiceID" localTypeDeclarationReference="localTypeDeclaration1">2220003103</eac:identityId>
+                     <identityId localType="RegistrationCode" localTypeDeclarationReference="localTypeDeclaration1">222000-3103</identityId>
+                     <identityId localType="VATRegistrationCode" localTypeDeclarationReference="localTypeDeclaration1">SE222000310301</identityId>
+                     <identityId localType="EInvoiceID" localTypeDeclarationReference="localTypeDeclaration1">2220003103</identityId>]]
                   </egXML>
                </div>
             </div>

@@ -1,8 +1,10 @@
 <fop version="1.0">
     <font-base>./fonts</font-base>
     <complex-scripts disabled="true" />
+    <accessibility>true</accessibility>
     <renderers>
         <renderer mime="application/pdf">
+            <pdf-ua-mode>PDF/UA-1</pdf-ua-mode>
             <fonts>
                 <font embed-url="KurintoText-Rg.ttf">
                     <font-triplet name="KurintoText" style="normal" weight="normal"/>

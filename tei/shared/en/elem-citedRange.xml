@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-citedRange" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-citedRange">
                <head>
                   <gi>citedRange</gi>
                </head>
@@ -7,17 +7,21 @@
                   <p>Cited Range</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>source</gi> that identifies precisely where
-                     supporting evidence was found within the source.</p>
+                  <p type="eac">An optional child element of <gi>source</gi> that identifies precisely where supporting evidence was found within the source.</p>
+                  <p type="ead">An optional child element of <gi>source</gi> and <gi>findAidDesc</gi> that identifies precisely where supporting evidence was found within the source or in which compilation the finding aid was published.</p>
                </div>
                <div type="mayContain">
-                  <p>[text]</p>
+                  <p><list type="gloss">
+  <label>[text]</label>
+  <item/>
+</list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>source</p>
+                  <p type="eac">source</p>
+                  <p type="ead">findAidDesc, source</p>
                </div>
                <div type="attributes">
-                  <p>
+                  <p type="eac">
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
@@ -33,34 +37,52 @@
                         <item>Optional</item>
                      </list>
                   </p>
+                  <p type="ead">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>unit</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
                </div>
                <div type="description">
-                  <p>The <gi>citedRange</gi> element can be used to refer to a specific location
-                     within a source where supporting evidence can be found. It may refer to a
-                     specific location such as a single page, or a broader location such as a range
-                     of pages.</p>
+                  <p>The <gi>citedRange</gi> element can be used to refer to a specific location within a source where supporting evidence can be found. It may refer to a specific location such as a single page, or a broader location such as a range of pages.</p>
+                  <p type="ead">When used in <gi>findAidDesc</gi>, <gi>citedRange</gi> might refer to the designated part of a compilation in the context of which a finding aid has been published.</p>
                </div>
                <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use the optional <att>unit</att> attribute to specify the format that the
-                           <gi>citedRange</gi> refers to, for example page number or volume
-                        number.</item>
-                  </list>
+                 <p>Use the optional <att>unit</att> attribute to specify the format that the <gi>citedRange</gi> refers to, for example page number or volume number.</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:source xml:id="source1" xlink:href="https://www.theguardian.com/books/2018/aug/10/langston-hughes-born-a-year-before-accepted-date-poet">
-                        <eac:citation>Flood, Alison <eac:span localType="http://id.loc.gov/ontologies/bibframe/title">"Langston Hughes
-                           'born a year before accepted date', researcher finds,"</eac:span> The Guardian.
-                           Published 10 August 2018.</eac:citation>
-                        <eac:citedRange unit="page">1</eac:citedRange>
-                        <eac:descriptiveNote>
-                           <eac:p>Poet researching archives of local African American newspaper finds story reporting on 'little Langston' before his recorded birth date</eac:p>
-                        </eac:descriptiveNote>
-                     </eac:source>
-                  </egXML>
+                 <egXML xml:lang="eng"><![CDATA[<source xml:id="source1" xlink:href="https://www.theguardian.com/books/2018/aug/10/langston-hughes-born-a-year-before-accepted-date-poet">
+   <reference>
+      Flood, Alison <span localType="http://id.loc.gov/ontologies/bibframe/title">"Langston Hughes 'born a year before accepted date', researcher finds,"</span> The Guardian. Published 10 August 2018.
+   </reference>
+   <citedRange unit="page">
+      1
+   </citedRange>
+   <descriptiveNote>
+      <p>
+         Poet researching archives of local African American newspaper finds story reporting on 'little Langston' before his recorded birth date
+      </p>
+   </descriptiveNote>
+</source>]]></egXML>
                </div>
             </div>

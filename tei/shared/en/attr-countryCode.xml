@@ -10,14 +10,11 @@
                   <p>A unique code representing a country.</p>
                </div>
                <div type="description">      
-                     <p>Content of the optional attribute should be a code
-                     taken from ISO 3166-1 Codes for the Representation of Names of Countries and
-                     their Subdivisions, column A2, or another controlled list, as specified in the
-                        <att>countryEncoding</att> attribute in <gi>control</gi>. Available in
-                        <gi>maintenanceAgency</gi> and <gi>placeName</gi>.</p>
+                     <p>Content of the optional attribute should be a code taken from ISO 3166-1 Codes for the Representation of Names of Countries and their Subdivisions, column A2, or another controlled list, as specified in the <att>countryEncoding</att> attribute in <gi>control</gi>. Available in <gi>maintenanceAgency</gi> and <gi>placeName</gi>.</p>
+                 <p type="ead">Also available in <gi>unitId</gi>, where it can be used together with <att>repositoryCode</att> to comply with ISAD(G) element 3.1.1.</p>
                </div>
                <div type="datatype">
-                  <p>NMTOKEN</p>
+                  <p>token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countrycode="IE">

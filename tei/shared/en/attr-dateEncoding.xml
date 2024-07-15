@@ -7,15 +7,12 @@
                   <p>Date Encoding</p>
                </div>
                <div type="summary">
-                  <p>The authoritative source or rules for values provided in
-                        <att>standardDate</att>.</p>
+		              <p>Specifies the authoritative source or rules used to normalize date information.</p>
                </div>
-               <div type="description">
-                  <p>The authoritative source or rules for values provided in
-                     <att>standardDate</att> within <gi>date</gi>, <gi>fromDate</gi> and
-                     <gi>toDate</gi>. If the value "otherDateEncoding" is selected an alternate
-                     code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only
-                     in <gi>control</gi>.</p>
+	             <div type="description">
+                  <p type="eac"><att>dateEncoding</att> specifies the authoritative source or rules for normalized values supplied in <att>standardDate</att> within <gi>date</gi>, <gi>fromDate</gi> and <gi>toDate</gi> as well as in <att>standardDateTime</att> within <gi>eventDateTime</gi>.</p>
+                  <p type="ead"><att>dateEncoding</att> specifies the authoritative source or rules for normalized values supplied in <att>standardDate</att> within <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>, and <gi>unitDate</gi> as well as in <att>standardDateTime</att> within <gi>eventDateTime</gi>.</p>
+                  <p>This can either be the ISO standard 8601 or an alternative code list. If the value "otherDateEncoding" is selected, such an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
                   <p>iso8601, otherDateEncoding</p>

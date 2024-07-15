@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-ead">
 	<head>
 		<gi>ead</gi>
 	</head>
@@ -10,7 +10,14 @@
 		<p>The required root element of an EAD instance.</p>
 	</div>
 	<div type="mayContain">
-		<p>archDesc (1..1), control (1..1), findAidDesc (0..n)</p>
+		<p><list type="gloss">
+  <label>archDesc</label>
+  <item>1..1</item>
+  <label>control</label>
+  <item>1..1</item>
+  <label>findAidDesc</label>
+  <item>0..n</item>
+</list></p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -32,14 +39,9 @@
 		<p><gi>ead</gi> wraps all other elements in an Encoded Archival Description document (or finding aid). A finding aid (or inventory) establishes intellectual and physical control over many types of archival materials and helps researchers understand and access the materials being described. </p>
 		<p><gi>ead</gi> must contain both <gi>control</gi> and <gi>archDesc</gi> elements. Use <gi>control</gi> first, followed optionally by <gi>findAidDesc</gi> with <gi>archDesc</gi> last. </p>
 	</div>
-	<div type="attributeusage">
-		<list type="simple">
-			<item>If the <att>@audience</att> value is set to "external", data in all descendant elements will be displayed, unless the value is changed individually for specific elements. </item>
-                    	<item>Use <att>@base</att> to specify a URI (other than the base URI of the EAD instance) to be used for resolving relative URIs within <gi>ead</gi> or descendant elements. </item>
-		</list>
-	</div>	
+	<div type="attributeusage"><p>If the <att>@audience</att> value is set to "external", data in all descendant elements will be displayed, unless the value is changed individually for specific elements. </p></div>	
 	<div type="availability">
-		<p>Required, Not Repeatable</p>
+		<p>Required, not repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">

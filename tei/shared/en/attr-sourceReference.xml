@@ -20,7 +20,7 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<relation sourceReference="source1" maintenanceEventReference="me2">
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<relation sourceReference="source1" maintenanceEventReference="me2">
    <targetEntity targetType="corporateBody" valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" vocabularySourceURI="https://snaccooperative.org">
       <part>
          Princeton University
