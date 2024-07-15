@@ -64,10 +64,10 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:generalContext>
-                        <eac:p> In September 2017, the American Museum of Natural History announced a multi-year project to update, restore, and conserve the Northwest Coast Hall. In October 2018, renowned Nuu-chah-nulth artist and cultural historian Haa'yuups was named co-curator, along with AMNH Division of Anthropology Curator of North American Ethnology Curator Peter Whiteley, in the restoration of the hall.</eac:p>
-                     </eac:generalContext>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <generalContext>
+                        <p> In September 2017, the American Museum of Natural History announced a multi-year project to update, restore, and conserve the Northwest Coast Hall. In October 2018, renowned Nuu-chah-nulth artist and cultural historian Haa'yuups was named co-curator, along with AMNH Division of Anthropology Curator of North American Ethnology Curator Peter Whiteley, in the restoration of the hall.</p>
+                     </generalContext>]]
                   </egXML>
                </div>
             </div>
