@@ -21,8 +21,8 @@
                   <p>acquired, given</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:identity identityType="acquired" localType="pseudonym" localTypeDeclarationReference="LT001"> [...] </eac:identity>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <identity identityType="acquired" localType="pseudonym" localTypeDeclarationReference="LT001"> [...] </identity>]]
                   </egXML>
                </div>
             </div>
