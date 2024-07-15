@@ -55,21 +55,21 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:mandates>
-                        <eac:mandate>
-                           <eac:term>Instrucciones de 13-VI-1586 por las que se crean y definen las
-                              secretarias de Tierra y Mar.</eac:term>
-                        </eac:mandate>
-                        <eac:mandate>
-                           <eac:term>Real Decreto de Nueva Planta para el consejo de Guerra de
-                              23-IV-1714.</eac:term>
-                        </eac:mandate>
-                        <eac:mandate>
-                           <eac:term>Real Decreto de Nueva Planta para el consejo de Guerra de
-                              23-VIII-1715.</eac:term>
-                        </eac:mandate>
-                     </eac:mandates>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <mandates>
+                        <mandate>
+                           <term>Instrucciones de 13-VI-1586 por las que se crean y definen las
+                              secretarias de Tierra y Mar.</term>
+                        </mandate>
+                        <mandate>
+                           <term>Real Decreto de Nueva Planta para el consejo de Guerra de
+                              23-IV-1714.</term>
+                        </mandate>
+                        <mandate>
+                           <term>Real Decreto de Nueva Planta para el consejo de Guerra de
+                              23-VIII-1715.</term>
+                        </mandate>
+                     </mandates>]]
                   </egXML>
                </div>
             </div>
