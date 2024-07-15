@@ -22,7 +22,7 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[
-                     <identity identityType="acquired" localType="pseudonym" localTypeDeclarationReference="LT001"> [...] </identity>]]
+                     <identity identityType="acquired" localType="pseudonym" localTypeDeclarationReference="LT001"> [...] </identity>]]>
                   </egXML>
                </div>
             </div>

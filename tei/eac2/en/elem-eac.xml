@@ -45,7 +45,7 @@
                      <eac audience="external">
                         <control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="extended" languageEncoding="ietf-bcp-47" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </control>
                         <cpfDescription> [...] </cpfDescription>
-                     </eac>]]
+                     </eac>]]>
                   </egXML>
                   <egXML xml:lang="eng"><![CDATA[
                      <eac>
@@ -54,7 +54,7 @@
                            <cpfDescription> [...] </cpfDescription>
                            <cpfDescription> [...] </cpfDescription>
                         </multipleIdentities>
-                     </eac>]]
+                     </eac>]]>
                   </egXML>
                </div>
             </div>
