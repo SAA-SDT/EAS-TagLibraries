@@ -59,7 +59,7 @@
                         <nameEntry status="authorized">
                            <part localType="https://d-nb.info/standards/elementset/gnd#preferredNameForTheCorporateBody" localTypeDeclarationReference="MARC21">Preußische Staatsbibliothek</part>
                         </nameEntry>
-                     </identity>]]
+                     </identity>]]>
                   </egXML>
                   <egXML xml:lang="eng"><![CDATA[
                      <identity>
@@ -68,7 +68,7 @@
                            <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">Arendt, Hannah</part>
                            <part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO">1906-1975</part>						
                         </nameEntry>
-                     </identity>]]    
+                     </identity>]]>    
                   </egXML>
                   <egXML xml:lang="eng"><![CDATA[
                      <identity>
@@ -77,7 +77,7 @@
                            <part localType="100$a">Mozart</part>
                            <part localType="100$c">Familie : 17.-19. Jh.</part>
                         </nameEntry>
-                     </identity>]]
+                     </identity>]]>
                   </egXML>
                </div>
             </div>
