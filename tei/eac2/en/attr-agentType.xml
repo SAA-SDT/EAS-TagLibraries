@@ -28,7 +28,7 @@
                      <maintenanceEvent maintenanceEventType="updated">
                         <agent agentType="human">A. Smith</agent>
                         <eventDateTime standardDateTime="2021-12">December 2021</eventDateTime>
-                     </maintenanceEvent>]]
+                     </maintenanceEvent>]]>
                   </egXML>
                </div>
             </div>
