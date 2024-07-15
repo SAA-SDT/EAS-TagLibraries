@@ -70,14 +70,14 @@
                      <alternativeSet>
                         <setComponent href="http://www.womenaustralia.info/biogs/AWE0064b.htm" linkTitle="Hill, Dorothy - Woman - The Australian Women's Register">
                            <componentEntry>The Australian Women's Register record.</componentEntry>
-                        <setComponent>
+                  </setComponent>
                         <setComponent href="http://nla.gov.au/anbd.aut-an35995526" linkTitle="Hill, Dorothy, 1907-1997 - Full record view - Libraries Australia Search">
-                           <componentEntry>Libraries Australia record.<componentEntry>
-                        <setComponent>
+                           <componentEntry>Libraries Australia record.</componentEntry>
+                  </setComponent>
                         <setComponent href="https://www.eoas.info/biogs/P000494b.htm" linkTitle="Hill, Dorothy - Biographical entry - Encyclopedia of Australian Science">
-                           <componentEntry>Encyclopedia of Australian Science record.<componentEntry>
-                        <setComponent>
-                     <alternativeSet>]]
+                           <componentEntry>Encyclopedia of Australian Science record.</componentEntry>
+                  </setComponent>
+                  </alternativeSet>]]
                   </egXML>
                </div>
             </div>
