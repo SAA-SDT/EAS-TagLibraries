@@ -23,10 +23,10 @@
                   <p type="eac">
                      <list type="gloss">
                         <label>addressLineType</label>
-                        <item>Optional<p type="eac"> (values limited to: county, country, district, municipality,
-                           postBox, postalCode, region, street)</p></item>
+                        <item>Optional (values limited to: county, country, district, municipality,
+                           postBox, postalCode, region, street)</item>
                         <label>audience</label>
-                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
+                        <item>Optional (values limited to: external, internal)</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -47,13 +47,12 @@
                         <item>Optional</item>
                      </list>
                   </p>
-                  <p type="eac">
+                  <p type="ead">
                      <list type="gloss">
                         <label>addressLineType</label>
-                        <item>Optional<p type="eac"> (values limited to: county, country, district, municipality,
-                           postBox, postalCode, region, street)</p></item>
+                        <item>Optional</item>
                         <label>audience</label>
-                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
+                        <item>Optional</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
