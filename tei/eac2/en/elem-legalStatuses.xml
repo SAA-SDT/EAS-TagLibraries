@@ -56,8 +56,7 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <legalStatuses>
+                  <egXML xml:lang="eng"><![CDATA[<legalStatuses>
                         <legalStatus>
                            <term>Private limited liability company</term>
                            <dateRange>
@@ -81,8 +80,7 @@
                         </legalStatus>
                      </legalStatuses>]]>
                   </egXML>
-                  <egXML xml:lang="eng"><![CDATA[
-                     <legalStatuses>
+                  <egXML xml:lang="eng"><![CDATA[<legalStatuses>
                         <legalStatus>
                            <term>EPIC</term>
                            <dateRange>
