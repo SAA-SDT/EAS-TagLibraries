@@ -56,21 +56,21 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:localDescriptions>
-                        <eac:localDescription localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DXDE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#">
-                           <eac:term>Deutsches Reich</eac:term>
-                        </eac:localDescription>
-                        <eac:localDescription localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE-BE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#">
-                           <eac:term>Berlin</eac:term>
-                        </eac:localDescription>					
-                        <eac:localDescription localType="https://d-nb.info/standards/elementset/gnd#broaderTermInstantial" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/gnd/4066573-2" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                           <eac:term>Wissenschaftliche Bibliothek</eac:term>
-                        </eac:localDescription>
-                        <eac:localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#6.7" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
-                           <eac:term>Bibliothek, Information und Dokumentation</eac:term>
-                        </eac:localDescription>						
-                     </eac:localDescriptions>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <localDescriptions>
+                        <localDescription localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DXDE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#">
+                           <term>Deutsches Reich</term>
+                        </localDescription>
+                        <localDescription localType="https://d-nb.info/standards/elementset/gnd#geographicAreaCode" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE-BE" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/geographic-area-code#">
+                           <term>Berlin</term>
+                        </localDescription>					
+                        <localDescription localType="https://d-nb.info/standards/elementset/gnd#broaderTermInstantial" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/gnd/4066573-2" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                           <term>Wissenschaftliche Bibliothek</term>
+                        </localDescription>
+                        <localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#6.7" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
+                           <term>Bibliothek, Information und Dokumentation</term>
+                        </localDescription>						
+                     </localDescriptions>]]
                   </egXML>
                </div>
             </div>
