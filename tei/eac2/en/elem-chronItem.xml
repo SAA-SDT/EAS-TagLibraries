@@ -70,34 +70,34 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:chronList>
-                        <eac:chronItem>
-                           <eac:dateRange>
-                              <eac:fromDate standardDate="1944">1944</eac:fromDate>
-                              <eac:toDate standardDate="1947">1947</eac:toDate>
+                  <egXML xml:lang="eng"><![CDATA[
+                     <chronList>
+                        <chronItem>
+                           <dateRange>
+                              <fromDate standardDate="1944">1944</fromDate>
+                              <toDate standardDate="1947">1947</toDate>
+                           </dateRange>
+                           <event>Summer employment at Minnesota Valley Canning Co.</event>
+                           <place>
+                              <placeName>Blue Earth (Minn.)</placeName>
+                           </place>
+                        </chronItem>
+                        <chronItem>
+                           <dateRange>
+                              <fromDate standardDate="1946">1946</fromDate>
+                              <toDate standardDate="1948">1948</toDate>
                            </eac:dateRange>
-                           <eac:event>Summer employment at Minnesota Valley Canning Co.</eac:event>
-                           <eac:place>
-                              <eac:placeName>Blue Earth (Minn.)</eac:placeName>
-                           </eac:place>
-                        </eac:chronItem>
-                        <eac:chronItem>
-                           <eac:dateRange>
-                              <eac:fromDate standardDate="1946">1946</eac:fromDate>
-                              <eac:toDate standardDate="1948">1948</eac:toDate>
-                           </eac:dateRange>
-                           <eac:event>Macalester College</eac:event>
-                           <eac:place>
-                              <eac:placeName>St. Paul (Minn.)</eac:placeName>
-                           </eac:place>
-                        </eac:chronItem>
-                        <eac:chronItem>
-                           <eac:date standardDate="1948">1948</eac:date>
-                           <eac:event>Campaign Manager, 2nd District, State Democratic-Farmer-Labor
-                              Central Committee. Report to Orville Freeman.</eac:event>
-                        </eac:chronItem>
-                     </eac:chronList>
+                           <event>Macalester College</event>
+                           <place>
+                              <placeName>St. Paul (Minn.)</placeName>
+                           </place>
+                        </chronItem>
+                        <chronItem>
+                           <date standardDate="1948">1948</date>
+                           <event>Campaign Manager, 2nd District, State Democratic-Farmer-Labor
+                              Central Committee. Report to Orville Freeman.</event>
+                        </chronItem>
+                     </chronList>]]
                   </egXML>
                </div>
             </div>
