@@ -1,70 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-occupations" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
-               <head>
-                  <gi>occupations</gi>
-               </head>
-               <div type="fullName">
-                  <p>Occupations</p>
-               </div>
-               <div type="summary">
-                  <p>An optional child element of <gi>description</gi> used for grouping together
-                     one or more <gi>occupation</gi> elements.</p>
-               </div>
-               <div type="mayContain">
-                  <p>descriptiveNote (0..1), occupation (1..n)</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>description</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>Use the optional <gi>occupations</gi> element to group together one or more
-                     occurrences of <gi>occupation</gi>. <gi>occupations</gi> must include at least
-                     one <gi>occupation</gi> element.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>occupation</gi></item>
-                     <item><gi>descriptiveNote</gi></item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Optional, not repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <occupations>
-                        <occupation>
-                           <term>Teacher</term>
-                        </occupation>
-                        <occupation>
-                           <term>Railway labourer</term>
-                        </occupation>
-                     </occupations>]]>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-occupations"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>occupations</gi>
+   </head>
+   <div type="fullName">
+      <p>Occupations</p>
+   </div>
+   <div type="summary">
+      <p>An optional child element of <gi>description</gi> used for grouping together one or more
+            <gi>occupation</gi> elements.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>>descriptiveNote</label>
+            <item>0..1</item>
+            <label>occupation</label>
+            <item>1..n</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>localTypeDeclarationReference</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p>Use the optional <gi>occupations</gi> element to group together one or more occurrences of
+            <gi>occupation</gi>. <gi>occupations</gi> must include at least one <gi>occupation</gi>
+         element.</p>
+      <p>The prescribed order of all child elements (both required and optional) is:</p>
+      <list type="simple">
+         <item><gi>occupation</gi></item>
+         <item><gi>descriptiveNote</gi></item>
+      </list>
+   </div>
+   <div type="availability">
+      <p>Optional, not repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<occupations>
+     	<occupation>
+     	      <term>Teacher</term>
+     	</occupation>
+     	<occupation>
+     	      <term>Railway labourer</term>
+     	</occupation>
+</occupations>]]>
+      </egXML>
+   </div>
+</div>

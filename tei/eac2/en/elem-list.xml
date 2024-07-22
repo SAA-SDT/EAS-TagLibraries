@@ -1,95 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-list" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
-               <head>
-                  <gi>list</gi>
-               </head>
-               <div type="fullName">
-                  <p>List</p>
-               </div>
-               <div type="summary">
-                  <p>A wrapper element used to encode a simple list consisting of one or more
-                        <gi>item</gi> elements, or a complex list with one or more child
-                        <gi>list</gi> elements.</p>
-               </div>
-               <div type="mayContain">
-                  <p>head (0..1), item (0..n), list (0..n)</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>biogHist, generalContext, structureOrGenealogy</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>listType</label>
-                        <item>Optional (values limited to: ordered, unordered)</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>style</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>The <gi>list</gi> element is used for general lists that can be embedded with a
-                     large number of descriptive elements.</p>
-                  <p>To encode a simple list, include one or more <gi>item</gi> elements within
-                        <gi>list</gi>. To encode more complex lists, such as hierarchies, additional
-                        <gi>list</gi> elements can be nested within <gi>list</gi>. <gi>head</gi>
-                     can be used to encode a title or caption within a <gi>list</gi>.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>head</gi></item>
-                     <item>One or both of <gi>list</gi> and <gi>item</gi></item>
-                  </list>
-               </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>listType</att> to identify and format the list as a particular
-                        type. The choices are: "ordered," and "unordered."</item>
-                     <item> Use <att>style</att> to define the list type by entering a CSS list-style-type.</item>
-                  </list>
-               </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>Do not confuse with <gi>chronList</gi>, which encodes a structured
-                        chronology.</item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Optional, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <list listType="unordered" style="list-style-type: circle">
-                        <head>List of ministers of May Memorial Unitarian Universalist
-                           Church</head>
-                        <item>John Storer, Minister 1839-1844</item>
-                        <item>Samuel Joseph May, Minister 1845-1868</item>
-                        <item>Samuel R. Calthrop, Minister 1868-1911</item>
-                        <item>John H. Applebee, Minister 1911-1929</item>
-                        <item>Waldemar W. Argow, Minister 1930-1941</item>
-                        <item>Robert E. Romig, Minister 1941-1946</item>
-                        <item>Glenn O. Canfield, Minister 1946-1952</item>
-                        <item>John Fuller, Minister, 1961-1973</item>
-                     </list>]]>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-list" xmlns:eac="http://archivists.org/ns/eac/v2"
+   xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>list</gi>
+   </head>
+   <div type="fullName">
+      <p>List</p>
+   </div>
+   <div type="summary">
+      <p>A wrapper element used to encode a simple list consisting of one or more <gi>item</gi>
+         elements, or a complex list with one or more child <gi>list</gi> elements.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>head</label>
+            <item>0..1</item>
+            <label>item</label>
+            <item>0..n</item>
+            <label>list</label>
+            <item>0..n</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>biogHist, generalContext, structureOrGenealogy</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>listType</label>
+            <item>Optional (values limited to: ordered, unordered)</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>localTypeDeclarationReference</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>style</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p>The <gi>list</gi> element is used for general lists that can be embedded with a large
+         number of descriptive elements.</p>
+      <p>To encode a simple list, include one or more <gi>item</gi> elements within <gi>list</gi>.
+         To encode more complex lists, such as hierarchies, additional <gi>list</gi> elements can be
+         nested within <gi>list</gi>. <gi>head</gi> can be used to encode a title or caption within
+         a <gi>list</gi>.</p>
+      <p>The prescribed order of all child elements (both required and optional) is:</p>
+      <list type="simple">
+         <item><gi>head</gi></item>
+         <item>One or both of <gi>list</gi> and <gi>item</gi></item>
+      </list>
+   </div>
+   <div type="attributeusage">
+         <p>Use <att>listType</att> to identify and format the list as a particular type. The
+            choices are: "ordered," and "unordered."</p>
+         <p> Use <att>style</att> to define the list type by entering a CSS
+            list-style-type.</p>
+   </div>
+   <div type="seealso">
+         <p>Do not confuse with <gi>chronList</gi>, which encodes a structured chronology.</p>
+   </div>
+   <div type="availability">
+      <p>Optional, repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<list listType="unordered" style="list-style-type: circle">
+  	<head>List of ministers of May Memorial Unitarian Universalist Church</head>
+  	<item>John Storer, Minister 1839-1844</item>
+  	<item>Samuel Joseph May, Minister 1845-1868</item>
+  	<item>Samuel R. Calthrop, Minister 1868-1911</item>
+  	<item>John H. Applebee, Minister 1911-1929</item>
+  	<item>Waldemar W. Argow, Minister 1930-1941</item>
+  	<item>Robert E. Romig, Minister 1941-1946</item>
+  	<item>Glenn O. Canfield, Minister 1946-1952</item>
+  	<item>John Fuller, Minister, 1961-1973</item>
+</list>]]>
+      </egXML>
+   </div>
+</div>

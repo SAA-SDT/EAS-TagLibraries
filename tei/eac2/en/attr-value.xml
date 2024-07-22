@@ -17,8 +17,7 @@
                   <p>corporateBody, family, person</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <entityType value="person"/>]]>
+                  <egXML xml:lang="eng"><![CDATA[<entityType value="person"/>]]>
                   </egXML>
                </div>
             </div>

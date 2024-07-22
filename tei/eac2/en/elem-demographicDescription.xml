@@ -11,7 +11,16 @@
                      to provide demographic information about the CPF entity being described.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..n), placeName (0..n), term (1..n)</p>
+                  <p><list type="gloss">
+                     <label>date or dateRange or dateSet</label>
+                     <item>0..1</item>
+                     <label>descriptiveNote</label>
+                     <item>0..n</item>
+                     <label>placeName</label>
+                     <item>0..n</item>
+                     <label>term</label>
+                     <item>1..n</item>
+                  </list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>demographicDescriptions</p>
@@ -75,22 +84,20 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <demographicDescriptions>
-                        <demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
-                           <term>Age 30 to 44</term>
-                        </demographicDescription>
-                        <demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
-                           <term>Level 4 qualifications and above</term>
-                        </demographicDescription>
-                        <demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
-                           <term>In a registered same-sex civil partnership</term>
-                        </demographicDescription>
-                        <descriptiveNote>
-                           <p>As part of the Census 2011, various demographic variables have been evaluated. 
-                              Among others, this included the age, the level of qualifications, and the marital status of the participants.</p>
-                        </descriptiveNote>
-                     </demographicDescriptions>]]>
+                  <egXML xml:lang="eng"><![CDATA[<demographicDescriptions>
+  	<demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
+  	      <term>Age 30 to 44</term>
+  	</demographicDescription>
+  	<demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
+  	      <term>Level 4 qualifications and above</term>
+  	</demographicDescription>
+  	<demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
+     	   <term>In a registered same-sex civil partnership</term>
+  	</demographicDescription>
+  	<descriptiveNote>
+  	      <p>As part of the Census 2011, various demographic variables have been evaluated. Among others, this included the age, the level of qualifications, and the marital status of the participants.</p>
+  	</descriptiveNote>
+</demographicDescriptions>]]>
                   </egXML>
                </div>
             </div>

@@ -12,7 +12,14 @@
                      structured chronology.</p>
                </div>
                <div type="mayContain">
-                  <p>[text], reference (0..n), span (0..n)</p>
+                  <p><list type="gloss">
+                     <label>[text]</label
+                     ><item/>
+                     <label>reference</label>
+                     <item>0..n</item>
+                     <label>span</label>
+                     <item>0..n</item>
+                  </list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>chronItem, chronItemSet</p>
@@ -64,34 +71,32 @@
                   <p>Within <gi>chronItemSet</gi>: required, repeatable.</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <chronList>
-                        <chronItem>
-                           <dateRange>
-                              <fromDate standardDate="1944">1944</fromDate>
-                              <toDate standardDate="1947">1947</toDate>
-                           </dateRange>
-                           <event>Summer employment at Minnesota Valley Canning Co.</event>
-                           <place>
-                              <placeName>Blue Earth (Minn.)</placeName>
-                           </place>
-                        </chronItem>
-                        <chronItem>
-                           <dateRange>
-                              <fromDate standardDate="1946">1946</fromDate>
-                              <toDate standardDate="1948">1948</toDate>
-                           </dateRange>
-                           <event>Macalester College</event>
-                           <place>
-                              <placeName>St. Paul (Minn.)</placeName>
-                           </place>
-                        </chronItem>
-                        <chronItem>
-                           <date standardDate="1948">1948</date>
-                           <event>Campaign Manager, 2nd District, State Democratic-Farmer-Labor
-                              Central Committee. Report to Orville Freeman.</event>
-                        </chronItem>
-                     </chronList>]]>
+                  <egXML xml:lang="eng"><![CDATA[<chronList>
+      <chronItem>
+           <dateRange>
+                <fromDate standardDate="1944">1944</fromDate>
+                <toDate standardDate="1947">1947</toDate>
+           </dateRange>
+           <event>Summer employment at Minnesota    Valley Canning Co.</event>
+           <place>
+                 <placeName>Blue Earth (Minn.)</placeName>
+           </place>
+      </chronItem>
+      <chronItem>
+          <dateRange>
+                <fromDate standardDate="1946">1946</fromDate>
+                <toDate standardDate="1948">1948</toDate>
+          </dateRange>
+          <event>Macalester College</event>
+          <place>
+               <placeName>St. Paul (Minn.)</placeName>
+          </place>
+      </chronItem>
+      <chronItem>
+            <date standardDate="1948">1948</date>
+            <event>Campaign Manager, 2nd District, State Democratic-Farmer-Labor Central Committee. Report to Orville Freeman.</event>
+      </chronItem>
+</chronList>]]>
                   </egXML>
                </div>
             </div>

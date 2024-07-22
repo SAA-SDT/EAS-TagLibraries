@@ -12,7 +12,7 @@
                      encode additional or alternative entity types.</p>
                </div>
                <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
+                  <p><list type="gloss"><label>date or dateRange or dateSet</label><item>0..1</item><label>descriptiveNote</label><item>0..1</item><label>placeName</label><item>0..n</item><label>term</label><item>1..n</item></list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>otherEntityTypes</p>
@@ -73,18 +73,17 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <identity>
-                        <entityType>corporateBody</entityType>
-                        <nameEntry status="authorized">
-                           <part>Ballarat Orphanage</part>
-                        </nameEntry>
-                        <otherEntityTypes>
-                           <otherEntityType>
-                              <term>Organisation</term>
-                           </otherEntityType>
-                        </otherEntityTypes>
-                     </identity>]]>
+                  <egXML xml:lang="eng"><![CDATA[<identity>
+     	<entityType>corporateBody</entityType>
+     	<nameEntry status="authorized">
+     		  <part>Ballarat Orphanage</part>
+     	</nameEntry>
+     	<otherEntityTypes>
+      		<otherEntityType>
+      		    <term>Organisation</term>
+      		</otherEntityType>
+     	</otherEntityTypes>
+</identity>]]>
                   </egXML>
                </div>
             </div>

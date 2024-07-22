@@ -1,90 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-cpfDescription" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+<div type="elementDocumentation" xml:id="elem-cpfDescription"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
 
-               <head>
-                  <gi>cpfDescription</gi>
-               </head>
-               <div type="fullName">
-                  <p>CPF Description</p>
-               </div>
-               <div type="summary">
-                  <p>A wrapper element that binds together the descriptive information of one CPF
-                     identity.</p>
-               </div>
-               <div type="mayContain">
-                  <p>alternativeSet (0..1), description (0..1), identity (1..1), relations (0..1)</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>eac, multipleIdentities</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>base</label>
-                        <item>Optional</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p><gi>cpfDescription</gi> contains the description of one identity.</p>
-                  <p>The <gi>cpfDescription</gi> includes a required <gi>identity</gi> element
-                     containing the entity type and authorized or alternative name entries. It also
-                     includes the optional <gi>description</gi> and <gi>relations</gi> elements that
-                     provide contextual information about the CPF entity being described, including
-                     the relations to other corporate bodies, persons, families, resources, and
-                     functions.</p>
-                  <p>An optional <gi>alternativeSet</gi> element allows the incorporation of one or
-                     more authority records derived from one or more authority systems.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>identity</gi></item>
-                     <item><gi>description</gi></item>
-                     <item><gi>relations</gi></item>
-                     <item><gi>alternativeSet</gi></item>
-                  </list>
-               </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use the <att>id</att> attribute to identify individual
-                           <gi>cpfDescription</gi> elements when using the
-                           <gi>multipleIdentities</gi> structure.</item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Within <gi>eac</gi>: one of <gi>cpfDescription</gi> or
-                        <gi>multipleIdentities</gi> required, not repeatable</p>
-                  <p>Within <gi>multipleIdentities</gi>: two or more <gi>cpfDescription</gi>
-                     required, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <cpfDescription>
-                        <identity>
-                           <entityType value="person"/>
-                           <nameEntry>
-                              <part localType="familyname">Hill</part>
-                              <part localType="givenname">Dorothy</part>
-                           </nameEntry>
-                        </identity>
-                        <description> [...] </description>
-                        <relations> [...] </relations>
-                     </cpfDescription>]]>
-                  </egXML>
-               </div>
-            </div>
+   <head>
+      <gi>cpfDescription</gi>
+   </head>
+   <div type="fullName">
+      <p>CPF Description</p>
+   </div>
+   <div type="summary">
+      <p>A wrapper element that binds together the descriptive information of one CPF identity.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>alternativeSet </label>
+            <item>0..1</item>
+            <label>description </label>
+            <item>0..1</item>
+            <label>identity </label>
+            <item>1..1</item>
+            <label>relations </label>
+            <item>0..1</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>eac, multipleIdentities</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>base</label>
+            <item>Optional</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p><gi>cpfDescription</gi> contains the description of one identity.</p>
+      <p>The <gi>cpfDescription</gi> includes a required <gi>identity</gi> element containing the
+         entity type and authorized or alternative name entries. It also includes the optional
+            <gi>description</gi> and <gi>relations</gi> elements that provide contextual information
+         about the CPF entity being described, including the relations to other corporate bodies,
+         persons, families, resources, and functions.</p>
+      <p>An optional <gi>alternativeSet</gi> element allows the incorporation of one or more
+         authority records derived from one or more authority systems.</p>
+      <p>The prescribed order of all child elements (both required and optional) is:</p>
+      <list type="simple">
+         <item><gi>identity</gi></item>
+         <item><gi>description</gi></item>
+         <item><gi>relations</gi></item>
+         <item><gi>alternativeSet</gi></item>
+      </list>
+   </div>
+   <div type="attributeusage">
+         <p>Use the <att>id</att> attribute to identify individual <gi>cpfDescription</gi>
+            elements when using the <gi>multipleIdentities</gi> structure.</p>
+   </div>
+   <div type="availability">
+      <p>Within <gi>eac</gi>: one of <gi>cpfDescription</gi> or <gi>multipleIdentities</gi>
+         required, not repeatable</p>
+      <p>Within <gi>multipleIdentities</gi>: two or more <gi>cpfDescription</gi> required,
+         repeatable</p>
+   </div>
+   <div type="examples">
+<egXML xml:lang="eng"><![CDATA[<cpfDescription>
+  	<identity>
+    		<entityType value="person"/>
+    		<nameEntry>
+       			<part localType="familyname">Hill</part>
+       			<part localType="givenname">Dorothy</part>
+    		</nameEntry>
+  	</identity>
+  	<description> [...] </description>
+  	<relations> [...] </relations>
+</cpfDescription>]]>
+      </egXML>
+   </div>
+</div>

@@ -1,92 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-description" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
-               <head>
-                  <gi>description</gi>
-               </head>
-               <div type="fullName">
-                  <p>Description</p>
-               </div>
-               <div type="summary">
-                  <p>An optional child element of <gi>cpfDescription</gi>, <gi>description</gi> is a
-                     wrapper element for all of the content elements comprising descriptive
-                     information about the CPF entity.</p>
-               </div>
-               <div type="mayContain">
-                  <p>biogHist (0..n), demographicDescriptions (0..1), existDates (0..n), functions (0..1), generalContext (0..n), languagesUsed (0..1), legalStatuses (0..1), localDescriptions (0..1), mandates (0..1), occupations (0..1), places (0..1), structureOrGenealogy (0..n)</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>cpfDescription</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>base</label>
-                        <item>Optional</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>The child elements that constitute <gi>description</gi> together permit
-                     descriptive information to be encoded in either structured or unstructured
-                     fashions, or in a combined approach. <gi>description</gi> accommodates the
-                     encoding of all the data elements that comprise the Description Area of ISAAR
-                     (CPF) including historical, biographical, and genealogical information; legal
-                     status and mandates; functions, occupations, and activities, and the dates and
-                     places that further constrain those elements.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>demographicDescriptions</gi></item>
-                     <item><gi>functions</gi></item>
-                     <item><gi>languagesUsed</gi></item>
-                     <item><gi>legalStatuses</gi></item>
-                     <item><gi>localDescriptions</gi></item>
-                     <item><gi>mandates</gi></item>
-                     <item><gi>occupations</gi></item>
-                     <item><gi>places</gi></item>
-                     <item> Any of <gi>biogHist</gi>, <gi>existDates</gi>, <gi>generalContext</gi>,
-                        and <gi>structureOrGenealogy</gi></item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Optional, not repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <description>
-                        <places>
-                           <place>
-                              <placeName vocabularySource="local" id="IDPlaceName1">East Side (Buffalo, N.Y.)</placeName>
-                              <geographicCoordinates coordinateSystem="WGS84">N 42°53′48" W 78°50′2"</geographicCoordinates>
-                           </place>
-                        </places>
-                        <functions>
-                           <function valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/">
-                              <term>community development</term>         
-                              <placeName target="IDPlaceName1">East Side (Buffalo, N.Y.)</placeName>
-                              <descriptiveNote>
-                                 <p>The organization’s mission is to create programs to improve the quality of
-                                    residential housing and develop projects to improve the East Side of Buffalo and
-                                    Western New York.</p>
-                              </descriptiveNote>
-                           </function>
-                        </functions>
-                     </description>]]>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-description"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>description</gi>
+   </head>
+   <div type="fullName">
+      <p>Description</p>
+   </div>
+   <div type="summary">
+      <p>An optional child element of <gi>cpfDescription</gi>, <gi>description</gi> is a wrapper
+         element for all of the content elements comprising descriptive information about the CPF
+         entity.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>biogHist</label>
+            <item>0..n</item>
+            <label>demographicDescriptions</label>
+            <item>0..1</item>
+            <label>existDates</label>
+            <item>0..n</item>
+            <label>functions</label>
+            <item>0..1</item>
+            <label>generalContext</label>
+            <item>0..n</item>
+            <label>languagesUsed</label>
+            <item>0..1</item>
+            <label>legalStatuses</label>
+            <item>0..1</item>
+            <label>localDescriptions</label>
+            <item>0..1</item>
+            <label>mandates</label>
+            <item>0..1</item>
+            <label>occupations</label>
+            <item>0..1</item>
+            <label>places</label>
+            <item>0..1</item>
+            <label>structureOrGenealogy</label>
+            <item>0..n</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>cpfDescription</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>base</label>
+            <item>Optional</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p>The child elements that constitute <gi>description</gi> together permit descriptive
+         information to be encoded in either structured or unstructured fashions, or in a combined
+         approach. <gi>description</gi> accommodates the encoding of all the data elements that
+         comprise the Description Area of ISAAR (CPF) including historical, biographical, and
+         genealogical information; legal status and mandates; functions, occupations, and
+         activities, and the dates and places that further constrain those elements.</p>
+      <p>The prescribed order of all child elements (both required and optional) is:</p>
+      <list type="simple">
+         <item><gi>demographicDescriptions</gi></item>
+         <item><gi>functions</gi></item>
+         <item><gi>languagesUsed</gi></item>
+         <item><gi>legalStatuses</gi></item>
+         <item><gi>localDescriptions</gi></item>
+         <item><gi>mandates</gi></item>
+         <item><gi>occupations</gi></item>
+         <item><gi>places</gi></item>
+         <item> Any of <gi>biogHist</gi>, <gi>existDates</gi>, <gi>generalContext</gi>, and
+               <gi>structureOrGenealogy</gi></item>
+      </list>
+   </div>
+   <div type="availability">
+      <p>Optional, not repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<description>
+  	<places>
+    		<place>
+      			<placeName vocabularySource="local" id="IDPlaceName1">East Side (Buffalo, N.Y.)</placeName>
+      			<geographicCoordinates coordinateSystem="WGS84">N 42°53′48" W 78°50′2"</geographicCoordinates>
+    		</place>
+  	</places>
+  	<functions>
+     		<function valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/">
+      			<term>community development</term>         
+      			<placeName target="IDPlaceName1">East Side (Buffalo, N.Y.)</placeName>
+      			<descriptiveNote>
+      			<p>The organization’s mission is to create programs to improve the quality of residential housing and develop projects to improve the East Side of Buffalo and Western New York.</p>
+      			</descriptiveNote>
+     		</function>
+  	</functions>
+</description>]]>
+      </egXML>
+   </div>
+</div>

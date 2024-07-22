@@ -1,94 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-localDescription" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
-               <head>
-                  <gi>localDescription</gi>
-               </head>
-               <div type="fullName">
-                  <p>Local Description</p>
-               </div>
-               <div type="summary">
-                  <p>A required child element of <gi>localDescriptions</gi> used to extend the
-                     descriptive categories to others available in a local system.</p>
-               </div>
-               <div type="mayContain">
-                  <p>date or dateRange or dateSet (0..1), descriptiveNote (0..1), placeName (0..n), term (1..n)</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>localDescriptions</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                        <label>valueURI</label>
-                        <item>Optional</item>
-                        <label>vocabularySource</label>
-                        <item>Optional</item>
-                        <label>vocabularySourceURI</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p><gi>localDescription</gi> provides a means to extend the list of description
-                     elements specified in the EAC-CPF schema. It should be used to record
-                     structured index terms rather than discursive text. The
-                        <gi>localDescription</gi> element should be used whenever a separate
-                     semantic process of the descriptive information is required in a local system
-                     that cannot be accommodated by the existing categories available in
-                     EAC-CPF.</p>
-                  <p><gi>localDescription</gi> must contain at least one <gi>term</gi> child
-                     element. Terms may be drawn from controlled vocabularies or may be natural
-                     language terms. Associated date(s) (<gi>date</gi>, <gi>dateRange</gi>, or
-                        <gi>dateSet</gi>) and place(s) (<gi>placeName</gi>) may be included to
-                     further constrain the term's meaning. A <gi>descriptiveNote</gi> may be
-                     included if a fuller textual explanation is needed.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>term</gi></item>
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
-                     <item><gi>placeName</gi></item>
-                     <item><gi>descriptiveNote</gi></item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Required, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <localDescriptions>
-                        <localDescription localType="https://d-nb.info/standards/elementset/gnd#academicDegree" localTypeDeclarationReference="GNDO">
-                           <term>Prof. Dr.</term>
-                        </localDescription>
-                        <localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#4.7p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
-                           <term>Personen zu Philosophie</term>
-                        </localDescription>
-                        <localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#8.1p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
-                           <term>Personen (Politologen, Staatstheoretiker)</term>
-                        </localDescription>
-                        <localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#9.5p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
-                           <term>Personen zu Soziologie, Gesellschaft, Arbeit, Sozialgeschichte</term>
-                        </localDescription>				
-                     </localDescriptions>]]>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-localDescription"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>localDescription</gi>
+   </head>
+   <div type="fullName">
+      <p>Local Description</p>
+   </div>
+   <div type="summary">
+      <p>A required child element of <gi>localDescriptions</gi> used to extend the descriptive
+         categories to others available in a local system.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>date or dateRange or dateSet</label>
+            <item>0..1</item>
+            <label>descriptiveNote</label>
+            <item>0..1</item>
+            <label>placeName</label>
+            <item>0..n</item>
+            <label>term</label>
+            <item>1..n</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>localDescriptions</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>localTypeDeclarationReference</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+            <label>valueURI</label>
+            <item>Optional</item>
+            <label>vocabularySource</label>
+            <item>Optional</item>
+            <label>vocabularySourceURI</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p><gi>localDescription</gi> provides a means to extend the list of description elements
+         specified in the EAC-CPF schema. It should be used to record structured index terms rather
+         than discursive text. The <gi>localDescription</gi> element should be used whenever a
+         separate semantic process of the descriptive information is required in a local system that
+         cannot be accommodated by the existing categories available in EAC-CPF.</p>
+      <p><gi>localDescription</gi> must contain at least one <gi>term</gi> child element. Terms may
+         be drawn from controlled vocabularies or may be natural language terms. Associated date(s)
+            (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) and place(s)
+            (<gi>placeName</gi>) may be included to further constrain the term's meaning. A
+            <gi>descriptiveNote</gi> may be included if a fuller textual explanation is needed.</p>
+      <p>The prescribed order of all child elements (both required and optional) is:</p>
+      <list type="simple">
+         <item><gi>term</gi></item>
+         <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+         <item><gi>placeName</gi></item>
+         <item><gi>descriptiveNote</gi></item>
+      </list>
+   </div>
+   <div type="availability">
+      <p>Required, repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<localDescriptions>
+     	<localDescription localType="https://d-nb.info/standards/elementset/gnd#academicDegree" localTypeDeclarationReference="GNDO">
+     		  <term>Prof. Dr.</term>
+     	</localDescription>
+     	<localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#4.7p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
+     		  <term>Personen zu Philosophie</term>
+     	</localDescription>
+     	<localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#8.1p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
+     		  <term>Personen (Politologen, Staatstheoretiker)</term>
+     	</localDescription>
+     	<localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#9.5p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
+     		  <term>Personen zu Soziologie, Gesellschaft, Arbeit, Sozialgeschichte</term>
+     	</localDescription>				
+</localDescriptions>]]>
+      </egXML>
+   </div>
+</div>

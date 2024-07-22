@@ -1,71 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-otherEntityTypes" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
-               <head>
-                  <gi>otherEntityTypes</gi>
-               </head>
-               <div type="fullName">
-                  <p>Other Entity Types</p>
-               </div>
-               <div type="summary">
-                  <p>An optional child element of <gi>identity</gi> used for grouping one or more
-                        <gi>otherEntityType</gi> elements.</p>
-               </div>
-               <div type="mayContain">
-                  <p>descriptiveNote (0..1), otherEntityType (1..n)</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>identity</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>A wrapper element used to group one or more <gi>otherEntityType</gi> elements.
-                     These elements are used to encode any additional or alternative entity types
-                     used for the CPF instance in addition to the required <gi>entityType</gi>
-                     element with values of corporateBody, person or family.</p>
-                  <p><gi>otherEntityTypes</gi> must include at least one <gi>otherEntityType</gi>
-                     element.</p>
-                  <p><gi>descriptiveNote</gi> can be used to add any additional descriptive
-                     information to the <gi>otherEntityTypes</gi>.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>otherEntityType</gi></item>
-                     <item><gi>descriptiveNote</gi></item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Optional, not repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[
-                     <otherEntityTypes>
-                        <otherEntityType>
-                           <term>Non-governmental organization</term>
-                        </otherEntityType>
-                        <otherEntityType>
-                           <term>Organization</term>
-                        </otherEntityType>
-                     </otherEntityTypes>]]>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-otherEntityTypes"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>otherEntityTypes</gi>
+   </head>
+   <div type="fullName">
+      <p>Other Entity Types</p>
+   </div>
+   <div type="summary">
+      <p>An optional child element of <gi>identity</gi> used for grouping one or more
+            <gi>otherEntityType</gi> elements.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>descriptiveNote</label>
+            <item>0..1</item>
+            <label>otherEntityType</label>
+            <item>1..n</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>identity</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p>A wrapper element used to group one or more <gi>otherEntityType</gi> elements. These
+         elements are used to encode any additional or alternative entity types used for the CPF
+         instance in addition to the required <gi>entityType</gi> element with values of
+         corporateBody, person or family.</p>
+      <p><gi>otherEntityTypes</gi> must include at least one <gi>otherEntityType</gi> element.</p>
+      <p><gi>descriptiveNote</gi> can be used to add any additional descriptive information to the
+            <gi>otherEntityTypes</gi>.</p>
+      <p>The prescribed order of all child elements (both required and optional) is:</p>
+      <list type="simple">
+         <item><gi>otherEntityType</gi></item>
+         <item><gi>descriptiveNote</gi></item>
+      </list>
+   </div>
+   <div type="availability">
+      <p>Optional, not repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<otherEntityTypes>
+    	<otherEntityType>
+    		   <term>Non-governmental organization</term>
+    	</otherEntityType>
+    	<otherEntityType>
+    		   <term>Organization</term>
+    	</otherEntityType>
+</otherEntityTypes>]]>
+      </egXML>
+   </div>
+</div>
