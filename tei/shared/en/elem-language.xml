@@ -49,7 +49,10 @@
                      <p type="ead">Use either <gi>language</gi> or <gi>languageSet</gi>, if combining language and script information, as sub-element of <gi>languageOfMaterial</gi> to identify a language or communication system of the materials being described.</p>
                </div>
                <div type="attributeusage"><p>Use <att>languageCode</att> to provide a code for the language
-                        itself.</p></div>
+                        itself.</p>
+                 <p>Use <att>languageOfElement</att> to provide a code for the language in
+                        which the element is given.</p>
+               </div>
                <div type="seealso"><p>Use <gi>writingSystem</gi> to specify, in a human-readable form, the script corresponding to the language.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
