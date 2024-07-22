@@ -51,7 +51,7 @@
                      <p>Use <att>languageOfElement</att> to provide a code for the language in
                         which the <gi>languageDeclaration</gi> element is given.</p>
                      <p>Use <att>scriptCode</att> to provide a code for the writing system used
-                        in the EAC-CPF instance.</p>
+                        in the EAS instance.</p>
                      <p>Use <att>scriptOfElement</att> to provide a code for the writing system
                         in which the <gi>languageDeclaration</gi> element is given.</p>
                </div>
