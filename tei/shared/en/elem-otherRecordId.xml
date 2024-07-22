@@ -47,7 +47,11 @@
                <div type="description">
                   <p><gi>otherRecordId</gi> can be used to record an identifier that is an alternative to the mandatory identifier provided in <gi>recordId</gi>. These might include the identifiers of merged EAS instances representing the same entity or those of records that are no longer current but had some part in the history and maintenance of the EAS instance.</p>
                </div>
-               <div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the alternative identifier in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system.</p><p>Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, e.g, the institution or service providing the associated record identifier, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>
+               <div type="attributeusage">
+                 <p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the alternative identifier in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system.</p>
+                 <p>Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, e.g, the institution or service providing the associated record identifier, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p>
+                 <p>Use <att>localType</att> to identify the institution or service responsible for providing the associated record identifier, if not the same as that given in <gi>maintenanceAgency</gi>.</p>
+               </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
