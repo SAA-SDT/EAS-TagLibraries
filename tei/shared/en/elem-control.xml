@@ -239,7 +239,7 @@
                </div>
                <div type="attributeusage">
   <p type="eac">Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p>
-  <p type="eac">Use the optional <att>publicationStatus</att> attribute to record the editorial status of the EAC-CPF instance.</p></div>
+  <p type="eac">Use the optional <att>publicationStatus</att> attribute to record the editorial status of the EAS instance.</p></div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
