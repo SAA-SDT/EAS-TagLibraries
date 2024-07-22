@@ -51,7 +51,7 @@
                      are based on a commonly used system for expressing geographic coordinates.</p>
                   <p type="eac">At least one of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
                         <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
-                 <p type="eac">At least one of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, <p>placeType</p>, 
+                 <p type="ead">At least one of <gi>geographicCoordinates</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, <gi>placeType</gi>, 
                    <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                </div>
                <div type="attributeusage"><p>Use the required <att>coordinateSystem</att> attribute to provide a

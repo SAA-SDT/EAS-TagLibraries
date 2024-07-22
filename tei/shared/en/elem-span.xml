@@ -54,7 +54,9 @@
          qualities of the words or phrases.</p>
    </div>
    <div type="attributeusage"><p>Use the optional <att>style</att> attribute to affect an arbitrary stylistic
-            difference.</p></div>
+            difference.</p>
+      <p>Use the optional <att>localType</att> attribute to identify qualities of words or phrases.</p>
+   </div>
    <div type="availability">
       <p>Optional, repeatable</p>
    </div>
