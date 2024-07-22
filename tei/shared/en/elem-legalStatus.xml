@@ -13,7 +13,7 @@
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
-  <label>date or dateRange</label>
+  <label>date or dateRange or dateSet</label>
   <item>0..1</item>
   <label>descriptiveNote</label>
   <item>0..1</item>

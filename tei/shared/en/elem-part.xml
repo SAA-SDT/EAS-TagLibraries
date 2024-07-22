@@ -18,7 +18,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">nameEntry, targetEntity</p>
-                  <p type="eac">targetEntity, title</p>
+                  <p type="ead">targetEntity, title</p>
                </div>
                <div type="attributes">
                   <p>
