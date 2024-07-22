@@ -70,7 +70,7 @@
                <p type="eac">Use <gi>otherAgencyCode</gi> to record any alternative codes representing
                         the agency.</p>
                      <p type="eac">Use <gi>recordId</gi> in combination with <gi>agencyCode</gi> to provide
-                        a globally unique identifier for the EAC-CPF instance.</p>
+                        a globally unique identifier for the EAS instance.</p>
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
