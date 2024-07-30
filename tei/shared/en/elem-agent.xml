@@ -114,7 +114,7 @@
                   <p type="ead">Within <gi>maintenanceEvent</gi>: required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="en"><![CDATA[<maintenanceHistory>
+                  <egXML xml:lang="en" type="eac"><![CDATA[<maintenanceHistory>
    <maintenanceEvent maintenanceEventType="derived">
       <agent agentType="machine">
          XSLT ead2cpf.xsl/Saxon B9
