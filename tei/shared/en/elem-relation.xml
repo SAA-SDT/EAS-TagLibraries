@@ -73,7 +73,7 @@
                </div>
                <div type="description">
                   <p type="ead"><gi>relation</gi> records descriptive information about a relationship between the materials being described and archival, bibliographic, or other types of resources or any kind of digital representations, microfiches or microfilms, copies, etc. of the materials. Use the required child element <gi>targetEntity</gi> to provide a textual identification of the related entity, such as a name or a title. Use the optional child element <gi>relationType</gi> to specify the type of relation, e.g., derivation. Use the optional child element <gi>targetRole</gi> to specify the role of the related entity, e.g., digital representation, and the optional child element <gi>targetType</gi> to classify the type of the related entity, e.g., JPEG. It is recommended that the terms used in <gi>relationType</gi>, <gi>targetEntity</gi>, <gi>targetRole</gi>, and <gi>targetType</gi> be taken from an authorized vocabulary.</p>
-                  <p>Use the required child element <gi>targetEntity</gi> to provide a textual
+                  <p type="eac">Use the required child element <gi>targetEntity</gi> to provide a textual
                      identification of the related entity, such as a name or a title. Use the
                      optional child element <gi>relationType</gi> to specify the type of relation.
                      Use the optional child element <gi>targetRole</gi> to specify the role of the
