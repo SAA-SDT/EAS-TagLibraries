@@ -16,13 +16,11 @@
                  <p type="ead">An attribute used to specify the type of contact line encoded in
                         <gi>contactLine</gi>, eg "email", "phoneNumber" or "homepage".</p>
                </div>
-               <div type="values">
+               <div type="values" standard="eac">
                   <p type="eac">directions, email, fax, homepage, mobileNumber, phoneNumber</p>
-                  <p type="ead">Following the value list defined in <att>contactLineTypeEncoding</att> and <gi>conventionDeclaration</gi>.</p>
                </div>
-               <div type="datatype">
+               <div type="datatype" standard="ead">
                  <p type="ead">token</p>
-                 <p type="eac">predefined value list</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<contact>
