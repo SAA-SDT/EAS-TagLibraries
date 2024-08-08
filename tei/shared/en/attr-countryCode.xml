@@ -14,7 +14,8 @@
                  <p type="ead">Also available in <gi>unitId</gi>, where it can be used together with <att>repositoryCode</att> to comply with ISAD(G) element 3.1.1.</p>
                </div>
                <div type="datatype">
-                  <p>token</p>
+                  <p type="ead">token</p>
+                  <p type="eac">NMTOKEN</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countrycode="IE">
