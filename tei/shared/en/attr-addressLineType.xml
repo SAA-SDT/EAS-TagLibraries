@@ -21,7 +21,7 @@
                      street</p>
               </div>
                <div type="datatype" standard="ead">
-                 <p">token</p>
+                 <p>token</p>
                </div>
                <div type="examples">
                   <egXML><![CDATA[<address>
