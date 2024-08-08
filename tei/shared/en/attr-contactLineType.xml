@@ -17,10 +17,10 @@
                         <gi>contactLine</gi>, eg "email", "phoneNumber" or "homepage".</p>
                </div>
                <div type="values" standard="eac">
-                  <p type="eac">directions, email, fax, homepage, mobileNumber, phoneNumber</p>
+                  <p>directions, email, fax, homepage, mobileNumber, phoneNumber</p>
                </div>
                <div type="datatype" standard="ead">
-                 <p type="ead">token</p>
+                 <p>token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<contact>
