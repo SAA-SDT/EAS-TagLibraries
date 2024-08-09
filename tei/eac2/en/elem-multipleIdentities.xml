@@ -52,14 +52,24 @@
       <egXML xml:lang="eng"><![CDATA[<multipleIdentities>
 		<cpfDescription>
 				<identity identityType="acquired" localType="pseudonyme">
-						<entityType>person</entityType>
+						<entityType>
+								person
+						</entityType>
 						<nameEntry languageOfElement="ru" scriptOfElement="Latn">
-								<part localType="élément d'entrée">Gorki</part>
-								<part localType="autre élément">Maksim</part>
+								<part localType="élément d'entrée">
+										Gorki
+								</part>
+								<part localType="autre élément">
+										Maksim
+								</part>
 								<useDates>
 										<dateRange>
-												<fromDate standardDate="1892">1892</fromDate>
-												<toDate standardDate="1936">1936</toDate>
+												<fromDate standardDate="1892">
+														1892
+												</fromDate>
+												<toDate standardDate="1936">
+														1936
+												</toDate>
 										</dateRange>
 								</useDates>
 						</nameEntry>
@@ -67,50 +77,80 @@
 				<description>
 						<functions>
 							<function>
-									<term>Romancier</term>
+									<term>
+											Romancier
+									</term>
 							</function>
 					</functions>
 					<languagesUsed>
 							<languageUsed>
-									<language languageCode="rus">russe</language>
+									<language languageCode="rus">
+											russe
+									</language>
 									<writingSystem scriptCode="Cyrl"/>
 							</languageUsed>
 					</languagesUsed>
 					<existDates>
 							<dateRange>
-									<fromDate standardDate="1868">1868</fromDate>
-									<toDate standardDate="1936">1936</toDate>
+									<fromDate standardDate="1868">
+											1868
+									</fromDate>
+									<toDate standardDate="1936">
+											1936
+									</toDate>
 							</dateRange>
 					</existDates>
 				</description>
 		</cpfDescription>
 		<cpfDescription>
 				<identity identityType="given" localType="état civil">
-						<entityType>person</entityType>
+						<entityType>
+								person
+						</entityType>
 						<nameEntry languageOfElement="rus" scriptOfElemebt="Latn">
-								<part localType="élément d'entrée">Peškov</part>
-								<part localType="autre élément">Aleksej Maksimovič</part>
+								<part localType="élément d'entrée">
+										Peškov
+								</part>
+								<part localType="autre élément">
+										Aleksej Maksimovič
+								</part>
 						</nameEntry>
 				</identity>
 				<description>
 						<places>
 								<place>
-										<placeRole>naissance</placeRole>
-										<placeName>Nijni-Novgorod (Russie)</placeName>
+										<placeRole>
+												naissance
+										</placeRole>
+										<placeName>
+												Nijni-Novgorod (Russie)
+										</placeName>
 								</place>
 								<place>
-										<placeRole>décès</placeRole>
-										<placeRole>Gorki (Russie)</placeRole>
+										<placeRole>
+												décès
+										</placeRole>
+										<placeRole>
+												Gorki (Russie)
+										</placeRole>
 								</place>
 								<place>
-										<placeRole>nationalité</placeRole>
-										<placeName countryCode="SU">Union Soviétique</placeName>
+										<placeRole>
+												nationalité
+										</placeRole>
+										<placeName countryCode="SU">
+												Union Soviétique
+										</placeName>
 								</place>
 						</places>
 						<existDates>
 								<dateRange>
-										<fromDate standardDate="1868-03-28">28 mars 1868</fromDate>
-										<toDate standardDate="1936-06-18">18 juin 1936</toDate>
+										<fromDate standardDate="1868-03-28">
+												28 mars 1868
+										</fromDate>
+										<toDate standardDate="1936-06-18">
+												18 juin 1936
+										</toDate>
 								</dateRange>
 						</existDates>
 						<biogHist>
