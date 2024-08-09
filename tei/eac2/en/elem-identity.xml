@@ -96,11 +96,15 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<identity>
-  	<entityType value="person"/>
-  	<nameEntry>
-     		<part localType="familyname">Hill</part>
-     		<part localType="givenname">Dorothy</part>
-  	</nameEntry>
+		<entityType value="person"/>
+		<nameEntry>
+				<part localType="familyname">
+						Hill
+				</part>
+				<part localType="givenname">
+						Dorothy
+				</part>
+		</nameEntry>
 </identity>]]>
       </egXML>
    </div>
