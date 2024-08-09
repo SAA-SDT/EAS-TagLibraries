@@ -60,28 +60,48 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<chronList>
-  	<chronItem>
-     	   <date standardDate="1936">1936</date>
-     	   <event>Bachelor of Science (BSc) completed at the University of Sydney</event>
-  	</chronItem>
-  	<chronItem>
-     	   <date standardDate="1937">1937</date>
-     	   <event>Master of Science (MSc) completed at the University of Sydney</event>
-  	</chronItem>
-  	<chronItem>
-     	   <dateRange>
-        		  <fromDate standardDate="1937">1937</fromDate>
-        		  <toDate standardDate="1941">1941</toDate>
-     	   </dateRange>
-     	   <event>Linnean Macleay Fellow</event>
-  	</chronItem>
-  	<chronItem>
-   	   <dateRange>
-     		  <fromDate certainty="approximate" standardDate="1939">c. 1939</fromDate>
-     		  <toDate certainty="approximate" standardDate="1945">c. 1945</toDate>
-   	   </dateRange>
-   	   <event>Worked with Army Intelligence to map the vegetation (trees and undergrowth) in the coastal regions of New South Wales</event>
-  	</chronItem>
+		<chronItem>
+				<date standardDate="1936">
+						1936
+				</date>
+				<event>
+						Bachelor of Science (BSc) completed at the University of Sydney
+				</event>
+		</chronItem>
+		<chronItem>
+				<date standardDate="1937">
+						1937
+				</date>
+				<event>
+						Master of Science (MSc) completed at the University of Sydney
+				</event>
+		</chronItem>
+		<chronItem>
+				<dateRange>
+						<fromDate standardDate="1937">
+								1937
+						</fromDate>
+						<toDate standardDate="1941">
+								1941
+						</toDate>
+				</dateRange>
+				<event>
+						Linnean Macleay Fellow
+				</event>
+		</chronItem>
+		<chronItem>
+				<dateRange>
+						<fromDate certainty="approximate" standardDate="1939">
+								c. 1939
+						</fromDate>
+						<toDate certainty="approximate" standardDate="1945">
+								c. 1945
+						</toDate>
+				</dateRange>
+				<event>
+						Worked with Army Intelligence to map the vegetation (trees and undergrowth) in the coastal regions of New South Wales
+				</event>
+		</chronItem>
 </chronList>]]>
       </egXML>
    </div>
