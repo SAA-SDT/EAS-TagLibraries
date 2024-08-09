@@ -74,15 +74,21 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<identity>
-     	<entityType>corporateBody</entityType>
-     	<nameEntry status="authorized">
-     		  <part>Ballarat Orphanage</part>
-     	</nameEntry>
-     	<otherEntityTypes>
-      		<otherEntityType>
-      		    <term>Organisation</term>
-      		</otherEntityType>
-     	</otherEntityTypes>
+		<entityType>
+				corporateBody
+		</entityType>
+		<nameEntry status="authorized">
+				<part>
+						Ballarat Orphanage
+				</part>
+		</nameEntry>
+		<otherEntityTypes>
+				<otherEntityType>
+						<term>
+								Organisation
+						</term>
+				</otherEntityType>
+		</otherEntityTypes>
 </identity>]]>
                   </egXML>
                </div>
