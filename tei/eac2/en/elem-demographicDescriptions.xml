@@ -63,18 +63,26 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<demographicDescriptions>
-  	<demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
-  	      <term>Age 30 to 44</term>
-  	</demographicDescription>
-  	<demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
-  	      <term>Level 4 qualifications and above</term>
-  	</demographicDescription>
-  	<demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
-  	      <term>In a registered same-sex civil partnership</term>
-  	</demographicDescription>
-  	<descriptiveNote>
-  	      <p>As part of the Census 2011, various demographic variables have been evaluated. Among others, this included the age, the level of qualifications, and the marital status of the participants.</p>
-  	</descriptiveNote>
+		<demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
+				<term>
+						Age 30 to 44
+				</term>
+		</demographicDescription>
+		<demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
+				<term>
+						Level 4 qualifications and above
+				</term>
+		</demographicDescription>
+		<demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
+				<term>
+						In a registered same-sex civil partnership
+				</term>
+		</demographicDescription>
+		<descriptiveNote>
+				<p>
+						As part of the Census 2011, various demographic variables have been evaluated. Among others, this included the age, the level of qualifications, and the marital status of the participants.
+				</p>
+		</descriptiveNote>
 </demographicDescriptions>]]>
                   </egXML>
                </div>
