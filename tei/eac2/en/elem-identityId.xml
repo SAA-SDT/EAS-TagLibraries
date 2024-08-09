@@ -67,12 +67,20 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<localTypeDeclaration id="localTypeDeclaration1" vocabularySource="SwedishRegistrationCodeVocabulary">
-   	<reference href="https://link.to.source">The Swedish vocabulary for identification codes</reference>
+		<reference href="https://link.to.source">
+				The Swedish vocabulary for identification codes
+		</reference>
 </localTypeDeclaration>
 
-<identityId localType="RegistrationCode" localTypeDeclarationReference="localTypeDeclaration1">222000-3103</identityId>
-<identityId localType="VATRegistrationCode" localTypeDeclarationReference="localTypeDeclaration1">SE222000310301</identityId>
-<identityId localType="EInvoiceID" localTypeDeclarationReference="localTypeDeclaration1">2220003103</identityId>]]>
+<identityId localType="RegistrationCode" localTypeDeclarationReference="localTypeDeclaration1">
+		222000-3103
+</identityId>
+<identityId localType="VATRegistrationCode" localTypeDeclarationReference="localTypeDeclaration1">
+		SE222000310301
+</identityId>
+<identityId localType="EInvoiceID" localTypeDeclarationReference="localTypeDeclaration1">
+		2220003103
+</identityId>]]>
       </egXML>
    </div>
 </div>
