@@ -63,14 +63,22 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<languagesUsed>
- 	<languageUsed>
-    		<language languageCode="eng">English</language>
-    		<writingSystem scriptCode="Latn">Latin</writingSystem>
- 	</languageUsed>
- 	<languageUsed>
-  		<language languageCode="spa">Spanish</language>
-  		<writingSystem scriptCode="Latn">Latin</writingSystem>
- 	</languageUsed>
+		<languageUsed>
+				<language languageCode="eng">
+						English
+				</language>
+				<writingSystem scriptCode="Latn">
+						Latin
+				</writingSystem>
+		</languageUsed>
+		<languageUsed>
+				<language languageCode="spa">
+						Spanish
+				</language>
+				<writingSystem scriptCode="Latn">
+						Latin
+				</writingSystem>
+		</languageUsed>
 </languagesUsed>]]>
       </egXML>
    </div>
