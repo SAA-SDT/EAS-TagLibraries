@@ -69,16 +69,28 @@
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<nameEntrySet localType="parallel">
      	<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
-        	   <part localType="surname">Arendt</part>
-        	   <part localType="firstname">Hannah</part>
+        	   <part localType="surname">
+					Arendt
+			   </part>
+        	   <part localType="firstname">
+					Hannah
+			   </part>
      	</nameEntry>
      	<nameEntry languageOfElement="ja" scriptOfElement="Jpan" preferredForm="false" status="authorized" localType="translation">
-        	   <part localType="surname">アーレント</part>
-        	   <part localType="firstname">ハナ</part>
+        	   <part localType="surname">
+					アーレント
+			   </part>
+        	   <part localType="firstname">
+					ハナ
+			   </part>
      	</nameEntry>
      	<nameEntry languageOfElement="en" preferredForm="false" status="authorized">
-       	   <part localType="surname">Arendt</part>
-       	   <part localType="firstname">Hannah</part>
+       	   <part localType="surname">
+				Arendt
+		   </part>
+       	   <part localType="firstname">
+				Hannah
+		   </part>
      	</nameEntry>
 </nameEntrySet>]]>
       </egXML>
