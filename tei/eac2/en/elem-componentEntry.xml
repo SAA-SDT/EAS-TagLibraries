@@ -63,15 +63,22 @@
                </div>
                <div type="examples">
                    <egXML xml:lang="eng"><![CDATA[<alternativeSet>
-   	<setComponent href="https://adb.anu.edu.au/biography/mawson-sir-douglas-7531" linkTitle="Biography - Sir Douglas Mawson - Australian Dictionary of Biography">
-      		 <componentEntry>Australian Dictionary of Biography record.</componentEntry>
-   	</setComponent>
-   	<setComponent href="http://nla.gov.au/anbd.aut-an35335937" linkTitle="Mawson, Douglas, Sir, 1882-1958 - Full record view - Libraries Australia Search">
-   		    <componentEntry>Libraries Australia record.</componentEntry>
-   	</setComponent>
-   	<setComponent href="https://www.eoas.info/biogs/P000631b.htm" linkTitle="Mawson, Douglas - Biographical entry - Encyclopedia of Australian Science">
-   		    <componentEntry>Encyclopedia of Australian Science record.</componentEntry>
-   	</setComponent>
+                   <egXML xml:lang="eng"><![CDATA[<alternativeSet>
+		<setComponent href="https://adb.anu.edu.au/biography/mawson-sir-douglas-7531" linkTitle="Biography - Sir Douglas Mawson - Australian Dictionary of Biography">
+				<componentEntry>
+						Australian Dictionary of Biography record.
+				</componentEntry>
+		</setComponent>
+		<setComponent href="http://nla.gov.au/anbd.aut-an35335937" linkTitle="Mawson, Douglas, Sir, 1882-1958 - Full record view - Libraries Australia Search">
+				<componentEntry>
+						Libraries Australia record.
+				</componentEntry>
+		</setComponent>
+		<setComponent href="https://www.eoas.info/biogs/P000631b.htm" linkTitle="Mawson, Douglas - Biographical entry - Encyclopedia of Australian Science">
+				<componentEntry>
+						Encyclopedia of Australian Science record.
+				</componentEntry>
+		</setComponent>
 </alternativeSet>]]>
                   </egXML>
                </div>
