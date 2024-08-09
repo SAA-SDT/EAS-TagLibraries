@@ -62,48 +62,81 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<legalStatuses>
-      <legalStatus>
-           <term>Private limited liability company</term>
-           <dateRange>
-          	  <fromDate standardDate="1941">1941</fromDate>
-          	  <toDate standardDate="1948">1948</toDate>
-           </dateRange>
-      </legalStatus>
-      <legalStatus>
-          <term>Public limited liability company</term>
-          <dateRange>
-          	  <fromDate standardDate="1948">1948</fromDate>
-          	  <toDate standardDate="2006">2006</toDate>
-          </dateRange>
-      </legalStatus>
-      <legalStatus>
-           <term>Private limited liability company</term>
-           <dateRange>
-           	  <fromDate standardDate="2006">2006</fromDate>
-           	  <toDate standardDate="2008">2008</toDate>
-           </dateRange>
-      </legalStatus>
+		<legalStatus>
+				<term>
+						Private limited liability company
+				</term>
+				<dateRange>
+						<fromDate standardDate="1941">
+								1941
+						</fromDate>
+						<toDate standardDate="1948">
+								1948
+						</toDate>
+				</dateRange>
+		</legalStatus>
+		<legalStatus>
+				<term>
+						Public limited liability company
+				</term>
+				<dateRange>
+						<fromDate standardDate="1948">
+								1948
+						</fromDate>
+						<toDate standardDate="2006">
+								2006
+						</toDate>
+				</dateRange>
+		</legalStatus>
+		<legalStatus>
+				<term>
+						Private limited liability company
+				</term>
+				<dateRange>
+						<fromDate standardDate="2006">
+								2006
+						</fromDate>
+						<toDate standardDate="2008">
+								2008
+						</toDate>
+				</dateRange>
+		</legalStatus>
 </legalStatuses>]]>
       </egXML>
-      <egXML xml:lang="eng"><![CDATA[<legalStatuses><legalStatus>
-      <term>EPIC</term>
-      <dateRange>
-    	  <fromDate notBefore="1946-04">avril 1946</fromDate>
-    	  <toDate notAfter="2004-11">novembre 2004</toDate>
-      </dateRange>
-      <descriptiveNote>
-   	   <p>Établissement public à caractère industriel et commercial</p>
-      </descriptiveNote>
-</legalStatus>
-<legalStatus>
-   <term>SA</term>
-   <dateRange>
-	     <fromDate notBefore="2004-11">novembre 2004</fromDate>
-   </dateRange>
-   <descriptiveNote>
-	     <p>Société anonyme à capitaux publics</p>
-   </descriptiveNote>
-</legalStatus>
+      <egXML xml:lang="eng"><![CDATA[<legalStatuses>
+		<legalStatus>
+				<term>
+						EPIC
+				</term>
+				<dateRange>
+						<fromDate notBefore="1946-04">
+								avril 1946
+						</fromDate>
+						<toDate notAfter="2004-11">
+								novembre 2004
+						</toDate>
+				</dateRange>
+				<descriptiveNote>
+						<p>
+								Établissement public à caractère industriel et commercial
+						</p>
+				</descriptiveNote>
+		</legalStatus>
+		<legalStatus>
+				<term>
+						SA
+				</term>
+				<dateRange>
+						<fromDate notBefore="2004-11">
+								novembre 2004
+						</fromDate>
+				</dateRange>
+				<descriptiveNote>
+						<p>
+								Société anonyme à capitaux publics
+						</p>
+				</descriptiveNote>
+		</legalStatus>
 </legalStatuses>]]>
       </egXML>
    </div>
