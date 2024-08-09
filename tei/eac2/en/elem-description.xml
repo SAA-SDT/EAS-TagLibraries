@@ -93,21 +93,31 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<description>
-  	<places>
-    		<place>
-      			<placeName vocabularySource="local" id="IDPlaceName1">East Side (Buffalo, N.Y.)</placeName>
-      			<geographicCoordinates coordinateSystem="WGS84">N 42°53′48" W 78°50′2"</geographicCoordinates>
-    		</place>
-  	</places>
-  	<functions>
-     		<function valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/">
-      			<term>community development</term>         
-      			<placeName target="IDPlaceName1">East Side (Buffalo, N.Y.)</placeName>
-      			<descriptiveNote>
-      			<p>The organization’s mission is to create programs to improve the quality of residential housing and develop projects to improve the East Side of Buffalo and Western New York.</p>
-      			</descriptiveNote>
-     		</function>
-  	</functions>
+		<places>
+				<place>
+						<placeName vocabularySource="local" id="IDPlaceName1">
+								East Side (Buffalo, N.Y.)
+						</placeName>
+						<geographicCoordinates coordinateSystem="WGS84">
+								N 42°53′48" W 78°50′2"
+						</geographicCoordinates>
+				</place>
+		</places>
+		<functions>
+				<function valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/">
+						<term>
+								community development
+						</term>         
+						<placeName target="IDPlaceName1">
+								East Side (Buffalo, N.Y.)
+						</placeName>
+						<descriptiveNote>
+								<p>
+										The organization’s mission is to create programs to improve the quality of residential housing and develop projects to improve the East Side of Buffalo and Western New York.
+								</p>
+						</descriptiveNote>
+				</function>
+		</functions>
 </description>]]>
       </egXML>
    </div>
