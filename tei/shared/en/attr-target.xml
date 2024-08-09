@@ -16,6 +16,18 @@
                <div type="datatype">
                   <p>IDREFS</p>
                </div>
-               <div type="examples">
+               <div type="examples" type="eac">
+                   <egXML xml:lang="eng"><![CDATA[<occupations>
+    <occupation>
+        <term>Assistant examiner - level III</term>
+        <placeName target="#place1">Bern</placeName>
+    </occupation>
+</occupations>
+<places>
+    <place id="place1">
+        <placeName>Bern</placeName>
+        <placeRole>Place of work</placeRole>
+    </place>
+</places>]]></egXML>
                </div>
             </div>
