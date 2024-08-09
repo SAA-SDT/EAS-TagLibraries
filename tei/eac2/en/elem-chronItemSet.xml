@@ -65,43 +65,69 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<chronItem>
-	<date>2015</date>
-	<chronItemSet>
-	   <event>Opens additional stores</event>
-	   <place>
-		     <placeName>Woodbury, Minnesota</placeName>
-	   </place>
-	   <place>
-		     <placeName>Roseville, Minnesota</placeName>
-	   </place>
-	</chronItemSet>
+		<date>
+				2015
+		</date>
+		<chronItemSet>
+				<event>
+						Opens additional stores
+				</event>
+				<place>
+						<placeName>
+								Woodbury, Minnesota
+						</placeName>
+				</place>
+				<place>
+						<placeName>
+								Roseville, Minnesota
+						</placeName>
+				</place>
+		</chronItemSet>
 </chronItem>]]
 		</egXML>
 		<egXML xml:lang="eng"><![CDATA[<chronItem>
-	<date>1948</date>
-	<chronItemSet>
-	   <event>Graduates from the University of Minnesota</event>
-	   <event>Begins work as a receptionist for the Humphrey for Senator Committee</event>
-	   <place>
-		    <placeName>Minneapolis, Minnesota</placeName>
-	   </place>
-	</chronItemSet>
+		<date>
+				1948
+		</date>
+		<chronItemSet>
+				<event>
+						Graduates from the University of Minnesota
+				</event>
+				<event>
+						Begins work as a receptionist for the Humphrey for Senator Committee
+				</event>
+				<place>
+						<placeName>
+								Minneapolis, Minnesota
+						</placeName>
+				</place>
+		</chronItemSet>
 </chronItem>]]>
 		  </egXML>
 		  <egXML xml:lang="eng"><![CDATA[<chronItem>
-	<date>March 1957</date>
-	<chronItemSet>
-	   <event>Dies</event>
-	   <place>
-		    <placeName>Biwabik, Minnesota</placeName>
-	   </place>
-	</chronItemSet>
-	<chronItemSet>
-	   <event>Buried in Lakewood Cemetery</event>
-	   <place>
-		    <placeName>Minneapolis, Minnesota</placeName>
-	   </place>
-	</chronItemSet>
+		<date>
+				March 1957
+		</date>
+		<chronItemSet>
+				<event>
+						Dies
+				</event>
+				<place>
+						<placeName>
+								Biwabik, Minnesota
+						</placeName>
+				</place>
+		</chronItemSet>
+		<chronItemSet>
+				<event>
+						Buried in Lakewood Cemetery
+				</event>
+				<place>
+						<placeName>
+								Minneapolis, Minnesota
+						</placeName>
+				</place>
+		</chronItemSet>
 </chronItem>]]>
       </egXML>
    </div>
