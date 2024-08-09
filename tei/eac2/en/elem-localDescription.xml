@@ -82,26 +82,26 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<localDescriptions>
-     	<localDescription localType="https://d-nb.info/standards/elementset/gnd#academicDegree" localTypeDeclarationReference="GNDO">
-     		  <term>
-					Prof. Dr.
-			  </term>
-     	</localDescription>
-     	<localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#4.7p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
-     		  <term>
-					Personen zu Philosophie
-			  </term>
-     	</localDescription>
-     	<localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#8.1p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
-     		  <term>
-					Personen (Politologen, Staatstheoretiker)
-			  </term>
-     	</localDescription>
-     	<localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#9.5p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
-     		  <term>
-					Personen zu Soziologie, Gesellschaft, Arbeit, Sozialgeschichte
-			  </term>
-     	</localDescription>				
+		<localDescription localType="https://d-nb.info/standards/elementset/gnd#academicDegree" localTypeDeclarationReference="GNDO">
+				<term>
+						Prof. Dr.
+				</term>
+		</localDescription>
+		<localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#4.7p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
+				<term>
+						Personen zu Philosophie
+				</term>
+		</localDescription>
+		<localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#8.1p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
+				<term>
+						Personen (Politologen, Staatstheoretiker)
+				</term>
+		</localDescription>
+		<localDescription localType="https://d-nb.info/standards/elementset/gnd#gndSubjectCategory" localTypeDeclarationReference="GNDO" valueURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#9.5p" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/standards/vocab/gnd/gnd-sc.html#">
+				<term>
+						Personen zu Soziologie, Gesellschaft, Arbeit, Sozialgeschichte
+				</term>
+		</localDescription>				
 </localDescriptions>]]>
       </egXML>
    </div>
