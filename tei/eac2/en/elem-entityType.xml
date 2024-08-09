@@ -51,26 +51,36 @@
                </div>
                <div type="examples">
 				<egXML xml:lang="eng"><![CDATA[<identity>
-  	<entityType value="corporateBody"/>
-  	<nameEntry status="authorized">
-  	      <part localType="https://d-nb.info/standards/elementset/gnd#preferredNameForTheCorporateBody" localTypeDeclarationReference="MARC21">Preußische Staatsbibliothek</part>
-  	</nameEntry>
+		<entityType value="corporateBody"/>
+		<nameEntry status="authorized">
+				<part localType="https://d-nb.info/standards/elementset/gnd#preferredNameForTheCorporateBody" localTypeDeclarationReference="MARC21">
+						Preußische Staatsbibliothek
+				</part>
+		</nameEntry>
 </identity>]]>
                   </egXML>
                   <egXML xml:lang="eng"><![CDATA[<identity>
-   	<entityType value="person"/>
-   	<nameEntry status="authorized">
-     	   <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">Arendt, Hannah</part>
-     	   <part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO">1906-1975</part>						
-   	</nameEntry>
+		<entityType value="person"/>
+		<nameEntry status="authorized">
+				<part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">
+						Arendt, Hannah
+				</part>
+				<part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO">
+						1906-1975
+				</part>						
+		</nameEntry>
 </identity>]]>    
                   </egXML>
                   <egXML xml:lang="eng"><![CDATA[<identity>
- 	<entityType value="family"/>		
- 	<nameEntry status="authorized">
-   	   <part localType="100$a">Mozart</part>
-   	   <part localType="100$c">Familie : 17.-19. Jh.</part>
- 	</nameEntry>
+		<entityType value="family"/>		
+		<nameEntry status="authorized">
+				<part localType="100$a">
+						Mozart
+				</part>
+				<part localType="100$c">
+						Familie : 17.-19. Jh.
+				</part>
+		</nameEntry>
 </identity>]]>
                   </egXML>
                </div>
