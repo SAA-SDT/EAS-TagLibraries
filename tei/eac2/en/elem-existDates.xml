@@ -77,13 +77,19 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<existDates>
-  	<dateRange>
-         <fromDate standardDate="1868">1868</fromDate>
-  	    <toDate standardDate="1936">1936</toDate>
-  	</dateRange>
-  	<descriptiveNote>
-  	      <p>The company was in business these years</p>
-  	</descriptiveNote>
+		<dateRange>
+				<fromDate standardDate="1868">
+						1868
+				</fromDate>
+				<toDate standardDate="1936">
+						1936
+				</toDate>
+		</dateRange>
+		<descriptiveNote>
+				<p>
+						The company was in business these years
+				</p>
+		</descriptiveNote>
 </existDates>]]>
       </egXML>
    </div>
