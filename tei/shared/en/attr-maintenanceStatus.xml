@@ -30,11 +30,11 @@
                      that the record was derived from another descriptive system.</p>
                  <p type="ead">Use the attribute <att>maintenanceStatusEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>maintenanceStatus</att>.</p>
                </div>
-               <div type="values">
+               <div type="values" standard="eac">
                   <p type="eac">cancelled, deleted, deletedMerged, deletedReplaced, deletedSplit, derived, new,
                      revised</p>
                </div>
-               <div type="datatype">
+               <div type="datatype" standard="ead">
 		              <p type="ead">token</p>
 	             </div>
                <div type="examples">
