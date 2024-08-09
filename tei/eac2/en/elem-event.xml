@@ -72,30 +72,50 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<chronList>
-      <chronItem>
-           <dateRange>
-                <fromDate standardDate="1944">1944</fromDate>
-                <toDate standardDate="1947">1947</toDate>
-           </dateRange>
-           <event>Summer employment at Minnesota    Valley Canning Co.</event>
-           <place>
-                 <placeName>Blue Earth (Minn.)</placeName>
-           </place>
-      </chronItem>
-      <chronItem>
-          <dateRange>
-                <fromDate standardDate="1946">1946</fromDate>
-                <toDate standardDate="1948">1948</toDate>
-          </dateRange>
-          <event>Macalester College</event>
-          <place>
-               <placeName>St. Paul (Minn.)</placeName>
-          </place>
-      </chronItem>
-      <chronItem>
-            <date standardDate="1948">1948</date>
-            <event>Campaign Manager, 2nd District, State Democratic-Farmer-Labor Central Committee. Report to Orville Freeman.</event>
-      </chronItem>
+		<chronItem>
+				<dateRange>
+						<fromDate standardDate="1944">
+								1944
+						</fromDate>
+						<toDate standardDate="1947">
+								1947
+						</toDate>
+				</dateRange>
+				<event>
+						Summer employment at Minnesota Valley Canning Co.
+				</event>
+				<place>
+						<placeName>
+								Blue Earth (Minn.)
+						</placeName>
+				</place>
+		</chronItem>
+		<chronItem>
+				<dateRange>
+						<fromDate standardDate="1946">
+								1946
+						</fromDate>
+						<toDate standardDate="1948">
+								1948
+						</toDate>
+				</dateRange>
+				<event>
+						Macalester College
+				</event>
+				<place>
+						<placeName>
+								St. Paul (Minn.)
+						</placeName>
+				</place>
+		</chronItem>
+		<chronItem>
+				<date standardDate="1948">
+						1948
+				</date>
+				<event>
+						Campaign Manager, 2nd District, State Democratic-Farmer-Labor Central Committee. Report to Orville Freeman.
+				</event>
+		</chronItem>
 </chronList>]]>
                   </egXML>
                </div>
