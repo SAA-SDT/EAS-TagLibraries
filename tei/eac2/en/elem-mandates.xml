@@ -62,15 +62,21 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<mandates>
-  	<mandate>
-  	      <term>Instrucciones de 13-VI-1586 por las que se crean y definen las secretarias de Tierra y Mar.</term>
-  	</mandate>
-  	<mandate>
-  	      <term>Real Decreto de Nueva Planta para el consejo de Guerra de 23-IV-1714.</term>
-  	</mandate>
-  	<mandate>
-  	      <term>Real Decreto de Nueva Planta para el consejo de Guerra de 23-VIII-1715.</term>
-  	</mandate>
+		<mandate>
+				<term>
+						Instrucciones de 13-VI-1586 por las que se crean y definen las secretarias de Tierra y Mar.
+				</term>
+		</mandate>
+		<mandate>
+				<term>
+						Real Decreto de Nueva Planta para el consejo de Guerra de 23-IV-1714.
+				</term>
+		</mandate>
+		<mandate>
+				<term>
+						Real Decreto de Nueva Planta para el consejo de Guerra de 23-VIII-1715.
+				</term>
+		</mandate>
 </mandates>]]>
       </egXML>
    </div>
