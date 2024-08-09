@@ -63,12 +63,16 @@
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<otherEntityTypes>
-    	<otherEntityType>
-    		   <term>Non-governmental organization</term>
-    	</otherEntityType>
-    	<otherEntityType>
-    		   <term>Organization</term>
-    	</otherEntityType>
+		<otherEntityType>
+				<term>
+						Non-governmental organization
+				</term>
+		</otherEntityType>
+		<otherEntityType>
+				<term>
+						Organization
+				</term>
+		</otherEntityType>
 </otherEntityTypes>]]>
       </egXML>
    </div>
