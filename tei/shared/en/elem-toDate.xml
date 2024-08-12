@@ -69,7 +69,17 @@
                         <gi>toDate</gi> is unknown.</p>
                </div>
                <div type="attributeusage"><p>Use <att>certainty</att> to indicate the degree of precision in the
-                        dating, for example, "uncertain" or "approximate".</p></div>
+                        dating, for example, "uncertain" or "approximate".</p>
+                     <p>Use <att>localType</att> to supply a more specific characterization of
+                        the start date.</p>
+                     <p>Use <att>notAfter</att> and <att>notBefore</att> to capture the latest
+                        and earliest possible dates in machine-processable form in cases when the
+                        date is uncertain.</p>
+                     <p>Use <att>standardDate</att> to provide a machine-processable form of the
+                        date.</p>
+                     <p>Use <att>status</att> with the values "unknown" or "ongoing" to indicate
+                        where part of a date range is unknown, or the date range is ongoing.</p>
+               </div>
                <div type="seealso"><p>Use <gi>fromDate</gi> to record the starting point of a date
                         range.</p></div>
                <div type="availability">

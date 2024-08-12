@@ -62,11 +62,16 @@
                      institution codes may be given with the <ref target="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</ref> country code as the
                      prefix to ensure international uniqueness in <gi>agencyCode</gi>.</p>
                </div>
-               <div type="attributeusage"><p>Use <att>status</att> with the value "authorized" or "alternative" to
+               <div type="attributeusage"><p type="eac">Use <att>status</att> with the value "authorized" or "alternative" to
                         declare whether the <gi>agencyCode</gi> is using an authorized value, e.g. a
                         registered ISIL code, or an alternative one.</p>
                         <p type="ead">Use <att>status</att> with values such as “authorised” or “alternative” to declare whether the <gi>agencyCode</gi> is using an authorised value, e.g. a registered ISIL code, or an alternative code. Use <att>statusEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>status</att>.</p></div>
-               <div type="seealso"><p>Use <gi>agencyName</gi> to record the name of the agency.</p></div>
+               <div type="seealso"><p>Use <gi>agencyName</gi> to record the name of the agency.</p>
+               <p type="eac">Use <gi>otherAgencyCode</gi> to record any alternative codes representing
+                        the agency.</p>
+                     <p type="eac">Use <gi>recordId</gi> in combination with <gi>agencyCode</gi> to provide
+                        a globally unique identifier for the EAS instance.</p>
+               </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>

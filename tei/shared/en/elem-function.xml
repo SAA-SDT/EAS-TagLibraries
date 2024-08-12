@@ -12,8 +12,8 @@
                </div>
                <div type="mayContain">
                   <p type="eac"><list type="gloss">
-  <label>date</label>
-  <item>or</item>
+  <label>date or dateRange or dateSet</label>
+  <item>0..1</item>
   <label>descriptiveNote</label>
   <item>0..1</item>
   <label>placeName</label>
@@ -22,8 +22,8 @@
   <item>1..n</item>
 </list></p>
                   <p type="ead"><list type="gloss">
-  <label>date</label>
-  <item>or</item>
+  <label>date or dateRange or dateSet</label>
+  <item>0..1</item>
   <label>descriptiveNote</label>
   <item>0..1</item>
   <label>placeName</label>
@@ -108,7 +108,7 @@
           					 <item><gi>descriptiveNote</gi></item>
                   </list></p>
                </div>
-               <div type="seealso"><p>Use <gi>relation</gi> with <gi>targetEntity</gi> having the
+               <div type="seealso"><p type="eac">Use <gi>relation</gi> with <gi>targetEntity</gi> having the
                            <att>targetType</att> "function" when describing the relationship with
                         the function in more detail.</p></div>
                <div type="availability">

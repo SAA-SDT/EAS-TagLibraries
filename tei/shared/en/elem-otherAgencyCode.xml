@@ -49,7 +49,12 @@
                <div type="description">
                   <p>Use <gi>otherAgencyCode</gi> to provide an alternative and/or local code that represents the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance. Any code other than that given in <gi>agencyCode</gi> may be provided in <gi>otherAgencyCode</gi>. The addition of an ISO 3166-1 alpha-2 country code as the prefix to a local code is recommended to ensure international uniqueness.</p>
                </div>
-               <div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the code in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system.</p><p>Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>
+               <div type="attributeusage">
+                 <p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the code in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system.</p>
+                 <p>Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p>
+                 <p type="eac">Use <att>localType</att> to specify the type of code being provided.</p>
+                 <p type="eac">Use <att>status</att> to encode whether the <gi>otherAgencyCode</gi> is an authorized or alternative code.</p>
+               </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
