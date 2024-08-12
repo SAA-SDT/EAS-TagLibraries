@@ -109,9 +109,9 @@
             <xi:include href="shared/en/elem-agencyCode.xml" parse="xml"/>
             <xi:include href="shared/en/elem-agencyName.xml" parse="xml"/>
             <xi:include href="shared/en/elem-agent.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-agentName.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-agentRole.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-agents.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-agentName.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-agentType.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-appraisal.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-archDesc.xml" parse="xml"/>
