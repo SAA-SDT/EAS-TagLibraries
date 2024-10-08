@@ -99,12 +99,15 @@
       <body>
          <div type="elements">
 			<!-- One include for each element href points to the element file -->
-            <xi:include href="./descriptions/elem-abbreviation.xml" parse="xml"/>
+             	<xi:include href="shared/en/elem-agent.xml" parse="xml"/>
+		<xi:include href="ead4/en/elem-agentName.xml" parse="xml"/>
+            	<xi:include href="eac2/en/elem-alternativeSet.xml" parse="xml"/>
          </div>
          <div type="attributes">
-			<!-- One include for each attribute href points to the element file -->
-            <xi:include href="./descriptions/attr-accuracy.xml" parse="xml"/>
-             
+			<!-- One include for each attribute href points to the attribute file -->
+             	<xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
+            	<xi:include href="eac2/en/attr-agentType.xml" parse="xml"/>
+		<xi:include href="ead4/en/attr-approximate.xml" parse="xml"/>
          </div>
       </body>
       <back>
