@@ -10,38 +10,46 @@
 		<p>A summary of what the element is used for</p>
 	</div>
 	<div type="mayContain">
-		<p>List of elements that may be used as children of the element</p>
+		<p>
+			<list type="gloss">
+				<label>Element that may be used as child of the element</label>
+				<item>Availability of child element, eg 0..1</item>
+		</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element</p>
+		<p>List of elements that may be used as immediate parents of the element, separated by commas</p>
 	</div>
 	<div type="attributes">
 		<p>
 			<list type="gloss">
 				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" (values limited to: list of valid values for this attribute)</item>
+				<item>"Optional" or "Required" <p type="eac">(values limited to: list of valid values for this attribute in EAC)</p></item>
 			</list>
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element</p>
+		<p>A narrative description of the use of the element. Mark up other <gi>elements</gi> and <att>attributes</att> mentioned from the same Tag Library.</p>
+		<p type="eac">Description that only applies to a shared element in EAC</p>
+		<p type="ead">Description that only applies to a shared element in EAD</p>
 	</div>
 	<div type="attributeusage">
-		<list type="simple">
-			<item>A listing of usage of attributes with the element (optional)</item>
-		</list>
+		<p>A listing of usage of attributes with the element (optional)</p>
+		<p type="eac">Attribute usage that only applies to a shared element in EAC</p>
+		<p type="ead">Attribute usage  that only applies to a shared element in EAD</p>
 	</div>	
 	<div type="seealso">
-		<list type="simple">
-			<item>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</item>
-		</list>
+		<p>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</p>
+		<p type="eac">Other elements in the tag library that are relevant to a shared element in EAC only</p>
+		<p type="ead">Other elements in the tag library that are relevant to a shared element in EAD only</p>
 	</div>
 	<div type="availability">
 		<p>Required/Optional, Repeatable/Not Repeatable</p>
+		<p type="eac">Availability statement that only applies to a shared element in EAC</p>
+		<p type="ead">Availability statement that only applies to a shared element in EAD</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
-		</egXML>
+		<egXML xml:lang="eng"><![CDATA[
+			<!-- Contains examples of XML from the schema. -->
+		]]</egXML>
 	</div>
 </div>
