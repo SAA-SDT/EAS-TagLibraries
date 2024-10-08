@@ -11,16 +11,18 @@
 	</div>
 	<div type="description">
 		<p>A narrative description of the use of the attribute</p>
+		<p type="eac">Description of a shared attribute that only applies to EAC.</p>
+		<p type="ead">Description of a shared attribute that only applies to EAD.</p>
 	</div>
 	<div type="values">
-		<p>Available values (include either values or datatype)</p>
+		<p>Available values (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</p>
 	</div>
 	<div type="datatype">
-		<p>Datatype of the attribute (include either values or datatype)</p>
+		<p>Datatype of the attribute (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
-		</egXML>
+		<egXML xml:lang="eng"><![CDATA[
+			<!-- Contains examples of XML from the schema. -->
+		]]</egXML>
 	</div>
 </div>
