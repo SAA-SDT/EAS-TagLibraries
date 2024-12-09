@@ -232,7 +232,7 @@
             <xi:include href="eac2/en/elem-languageUsed.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-languagesUsed.xml" parse="xml"/>
             <xi:include href="shared/en/elem-legalStatus.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-legalStatuses.xml" parse="xml"/>
+            <xi:include href="eac2/en/elem-legalStatuses.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-list.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-localControl.xml" parse="xml"/>
             <xi:include href="eac2/en/elem-localDescription.xml" parse="xml"/>
@@ -323,7 +323,7 @@
             <xi:include href="eac2/en/attr-agentType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
             <xi:include href="shared/en/attr-base.xml" parse="xml"/>
-            <xi:include href="ehared/en/attr-calendar.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-calendar.xml" parse="xml"/>
             <xi:include href="shared/en/attr-certainty.xml" parse="xml"/>
             <xi:include href="shared/en/attr-contactLineType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-conventionDeclarationReference.xml" parse="xml"/>

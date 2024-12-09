@@ -1,84 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-representation" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
-               <head>
-                  <gi>representation</gi>
-               </head>
-               <div type="fullName">
-                  <p>Representation</p>
-               </div>
-               <div type="summary">
-                  <p>An optional child element of <gi>control</gi> for recording a link to a
-                     deliverable version of the EAC-CPF instance or to the XML version of the
-                     EAC-CPF instance itself.</p>
-               </div>
-               <div type="mayContain">
-                  <p>[text]</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>control</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>href</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>linkRole</label>
-                        <item>Optional</item>
-                        <label>linkTitle</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>Use <gi>representation</gi> to record a link to a deliverable version of an
-                     EAC-CPF instance, for example an HTML or PDF version, or to the XML version of
-                     the EAC-CPF instance itself.</p>
-               </div>
-               <div type="attributeusage">
-                  <list type="simple">
-                     <item>Use <att>href</att> to specify a link to a deliverable version of the
-                        EAC-CPF instance.</item>
-                     <item>Use <att>localType</att> to differentiate between multiple
-                           <gi>representation</gi> elements.</item>
-                  </list>
-               </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>Use <gi>otherRecordId</gi> to provide any local identifier for the
-                        EAC-CPF instance that does not link to a deliverable version.</item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Optional, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        <eac:recordId>122651634</eac:recordId>
-                        [...]
-                        <eac:representation href="https://kalliope-verbund.info/gnd/122651634"/>
-                     </eac:control>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="revised" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
-                        <eac:recordId>738070</eac:recordId>
-                        [...]
-                        <eac:representation href="https://trove.nla.gov.au/people/738070?c=people">Osburn, Lucy (1835-1891) - People and organisations - Trove</eac:representation>
-                     </eac:control>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-representation"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>representation</gi>
+   </head>
+   <div type="fullName">
+      <p>Representation</p>
+   </div>
+   <div type="summary">
+      <p>An optional child element of <gi>control</gi> for recording a link to a deliverable version
+         of the EAC-CPF instance or to the XML version of the EAC-CPF instance itself.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>[text]</label>
+            <item/>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>control</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>href</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>linkRole</label>
+            <item>Optional</item>
+            <label>linkTitle</label>
+            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>localTypeDeclarationReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p>Use <gi>representation</gi> to record a link to a deliverable version of an EAC-CPF
+         instance, for example an HTML or PDF version, or to the XML version of the EAC-CPF instance
+         itself.</p>
+   </div>
+   <div type="attributeusage">
+         <p>Use <att>href</att> to specify a link to a deliverable version of the EAC-CPF
+            instance.</p>
+         <p>Use <att>localType</att> to differentiate between multiple <gi>representation</gi>
+            elements.</p>
+   </div>
+   <div type="seealso">
+         <p>Use <gi>otherRecordId</gi> to provide any local identifier for the EAC-CPF instance
+            that does not link to a deliverable version.</p>
+   </div>
+   <div type="availability">
+      <p>Optional, repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+   	<recordId>122651634</recordId>
+   	[...]
+   	<representation href="https://kalliope-verbund.info/gnd/122651634"/>
+</control>]]>
+      </egXML>
+      <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="revised" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+   	<recordId>738070</recordId>
+   	[...]
+   	<representation href="https://trove.nla.gov.au/people/738070?c=people">Osburn, Lucy (1835-1891) - People and organisations - Trove</representation>
+</control>]]>
+      </egXML>
+   </div>
+</div>

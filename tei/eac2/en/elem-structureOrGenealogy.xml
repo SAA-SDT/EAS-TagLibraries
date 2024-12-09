@@ -1,112 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-structureOrGenealogy" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
-               <head>
-                  <gi>structureOrGenealogy</gi>
-               </head>
-               <div type="fullName">
-                  <p>Structure or Genealogy</p>
-               </div>
-               <div type="summary">
-                  <p>An optional child element of <gi>description</gi> used to describe internal
-                     administrative structure(s) of a corporate body or the genealogy of a
-                     family.</p>
-               </div>
-               <div type="mayContain">
-                  <p>head (0..1), list (0..n), p (0..n)</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>description</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p><gi>structureOrGenealogy</gi> encodes information expressing the internal
-                     administrative structure(s) of a corporate body and the dates of any changes to
-                     that structure that are significant to understanding the way that corporate
-                     body conducted affairs (such as dated organization charts), or the genealogy of
-                     a family (such as a family tree) in a way that demonstrates the
-                     interrelationships of its members with relevant dates.</p>
-                  <p>The optional <gi>list</gi> element may be used to accommodate greater
-                     complexity in expressing or representing the structure(s) or genealogy being
-                     described. <gi>head</gi> may be used to encode a title or caption. A simpler
-                     discursive expression of the structure(s) or genealogy may be encoded as one or
-                     more <gi>p</gi> elements.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>head</gi></item>
-                     <item>One or both of <gi>list</gi> or <gi>p</gi>.</item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Optional, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:structureOrGenealogy>
-                        <eac:p>Sir Edward Noel (d 1643) married Julian, daughter and co-heir of
-                           Baptists Hicks (d 1629), Viscount Campden, and succeeded to the viscouty
-                           of Campden and a portion of his father-in-law's estates. The third
-                           Viscount Campden (1612-82) married Hester Wotton, daughter of the second
-                           Baron Wotton. The fourth Viscount Campden (1641-1689, created Earl of
-                           Gainsborough, 1682) married Elizabeth Wriothesley, elder daughter of the
-                           fourth Earl of Southampton. Jane Noel (d 1811), sister of the fifth and
-                           sixth Earls of Gainsborough, married Gerard Anne Edwards of Welham Grove
-                           (Leicetershire) and had issue Gerard Noel Edwards (1759-1838). He married
-                           in 1780 Diana Middleton (1762-1823 suo jure Baroness Barham), daughter of
-                           Charles Middleton (1726-1813), created first Baronet of Barham Court
-                           (Kent) in 1781 and first Baron Barham in 1805. GN Edwards assumed the
-                           surname Noel in 1798 on inheriting the sixth Earl of Gainborough's
-                           Rutland and Gloucestershire estates (though not the Earl's honours, which
-                           were extinguished); and he later inherited his father-in-law's baronetcy.
-                           His eldest son John Noel (1781-1866) succeeded to the estates of his
-                           mother and his father, to his mother's barony and his father's baronetcy,
-                           and was created Viscount Campden and Earl of Gainsborough in
-                           1841.</eac:p>
-                     </eac:structureOrGenealogy>
-                  </egXML>
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:structureOrGenealogy>
-                        <eac:p>The organogram of the <eac:span style="font-style:italic">Ministry of
-                              Culture and Tourism</eac:span> before its incorporation with the
-                           Ministry of Education and Religious Affairs, was the following:</eac:p>
-                        <eac:list>
-                           <eac:item>Minister of Culture and Tourism</eac:item>
-                           <eac:list>
-                              <eac:item>Deputy Minister of Culture and Tourism</eac:item>
-                              <eac:list>
-                                 <eac:item>General Secretary of Tourism</eac:item>
-                                 <eac:item>General Secretary of Sports</eac:item>
-                                 <eac:item>General Secretary of Culture</eac:item>
-                                 <eac:item>General Secretary for Culture and Tourism
-                                    Infrastructure</eac:item>
-                              </eac:list>
-                           </eac:list>
-                        </eac:list>
-                     </eac:structureOrGenealogy>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-structureOrGenealogy"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>structureOrGenealogy</gi>
+   </head>
+   <div type="fullName">
+      <p>Structure or Genealogy</p>
+   </div>
+   <div type="summary">
+      <p>An optional child element of <gi>description</gi> used to describe internal administrative
+         structure(s) of a corporate body or the genealogy of a family.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>head</label>
+            <item>0..1</item>
+            <label>list</label>
+            <item>0..n</item>
+            <label>p</label>
+            <item>0..n</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>localTypeDeclarationReference</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p><gi>structureOrGenealogy</gi> encodes information expressing the internal administrative
+         structure(s) of a corporate body and the dates of any changes to that structure that are
+         significant to understanding the way that corporate body conducted affairs (such as dated
+         organization charts), or the genealogy of a family (such as a family tree) in a way that
+         demonstrates the interrelationships of its members with relevant dates.</p>
+      <p>The optional <gi>list</gi> element may be used to accommodate greater complexity in
+         expressing or representing the structure(s) or genealogy being described. <gi>head</gi> may
+         be used to encode a title or caption. A simpler discursive expression of the structure(s)
+         or genealogy may be encoded as one or more <gi>p</gi> elements.</p>
+      <p>The prescribed order of all child elements (both required and optional) is:</p>
+      <list type="simple">
+         <item><gi>head</gi></item>
+         <item>One or both of <gi>list</gi> or <gi>p</gi>.</item>
+      </list>
+   </div>
+   <div type="availability">
+      <p>Optional, repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<structureOrGenealogy>
+		<p>
+			Sir Edward Noel (d 1643) married Julian, daughter and co-heir of   Baptists Hicks (d 1629), Viscount Campden, and succeeded to the viscouty of Campden and a portion of his father-in-law's estates. The third Viscount Campden (1612-82) married Hester Wotton, daughter of the second Baron Wotton. The fourth Viscount Campden (1641-1689, created Earl of Gainsborough, 1682) married Elizabeth Wriothesley, elder daughter of the fourth Earl of Southampton. Jane Noel (d 1811), sister of the fifth and sixth Earls of Gainsborough, married Gerard Anne Edwards of Welham Grove (Leicetershire) and had issue Gerard Noel Edwards (1759-1838). He married in 1780 Diana Middleton (1762-1823 suo jure Baroness Barham), daughter of Charles Middleton (1726-1813), created first Baronet of Barham Court (Kent) in 1781 and first Baron Barham in 1805. GN Edwards assumed the surname Noel in 1798 on inheriting the sixth Earl of Gainborough's Rutland and Gloucestershire estates (though not the Earl's honours, which were extinguished); and he later inherited his father-in-law's baronetcy. His eldest son John Noel (1781-1866) succeeded to the estates of his mother and his father, to his mother's barony and his father's baronetcy, and was created Viscount Campden and Earl of Gainsborough in 1841.
+		</p>
+</structureOrGenealogy>]]>
+      </egXML>
+      <egXML xml:lang="eng"><![CDATA[<structureOrGenealogy>
+		<p>
+			The organogram of the <span style="font-style:italic">Ministry of Culture and Tourism</span> before its incorporation with the Ministry of Education and Religious Affairs, was the following:
+		</p>
+		<list>
+				<item>Minister of Culture and Tourism</item>
+				<list>
+					<item>Deputy Minister of Culture and Tourism</item>
+					<list>
+							<item>General Secretary of Tourism</item>
+							<item>General Secretary of Sports</item>
+							<item>General Secretary of Culture</item>
+							<item>General Secretary for Culture and Tourism Infrastructure</item>
+					</list>
+				</list>
+		</list>
+</structureOrGenealogy>]]>
+      </egXML>
+   </div>
+</div>

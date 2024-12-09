@@ -17,8 +17,7 @@
                   <p>corporateBody, family, person</p>
                </div>
                <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
-                     <eac:entityType value="person"/>
+                  <egXML xml:lang="eng"><![CDATA[<entityType value="person"/>]]>
                   </egXML>
                </div>
             </div>

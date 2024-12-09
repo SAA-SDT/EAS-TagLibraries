@@ -1,88 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-existDates" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
-               <head>
-                  <gi>existDates</gi>
-               </head>
-               <div type="fullName">
-                  <p>Dates of Existence</p>
-               </div>
-               <div type="summary">
-                  <p>An optional element within <gi>description</gi> used for encoding the dates of
-                     existence of the CPF entity being described, such as dates of establishment and
-                     dissolution for corporate bodies and dates of birth and death or floruit for
-                     persons.</p>
-               </div>
-               <div type="mayContain">
-                  <p>date or dateRange or dateSet (1..1), descriptiveNote (0..1)</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>description</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>The dates of existence of the CPF entity being described, such as dates of
-                     establishment and dissolution for corporate bodies and dates of birth and death
-                     or floruit for persons.</p>
-                  <p><gi>existDates</gi> must contain one of <gi>date</gi>, <gi>dateRange</gi>, or
-                        <gi>dateSet</gi>. These child elements may contain actual or approximate
-                     dates. A <gi>descriptiveNote</gi> may be included if a fuller explanation of
-                     the dates of existence is needed.</p>
-                  <p>Use the <gi>date</gi> element to record the date of a single event, such as a
-                     date of birth or date of incorporation. Use <gi>dateRange</gi> to encode a pair
-                     of inclusive dates. Use <gi>dateSet</gi> to encode more complex date
-                     expressions that intermix <gi>date</gi> and <gi>dateRange</gi> elements.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
-                     <item><gi>descriptiveNote</gi></item>
-                  </list>
-               </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>Do not confuse with <gi>useDates</gi>, which is a child element of
-                           <gi>nameEntry</gi> or <gi>nameEntrySet</gi> and represents the dates of
-                        use for a particular name or set of names.</item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Optional, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:existDates>
-                        <eac:dateRange>
-                           <eac:fromDate standardDate="1868">1868</eac:fromDate>
-                           <eac:toDate standardDate="1936">1936</eac:toDate>
-                        </eac:dateRange>
-                        <eac:descriptiveNote>
-                           <eac:p>The company was in business these years</eac:p>
-                        </eac:descriptiveNote>
-                     </eac:existDates>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-existDates"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>existDates</gi>
+   </head>
+   <div type="fullName">
+      <p>Dates of Existence</p>
+   </div>
+   <div type="summary">
+      <p>An optional element within <gi>description</gi> used for encoding the dates of existence of
+         the CPF entity being described, such as dates of establishment and dissolution for
+         corporate bodies and dates of birth and death or floruit for persons.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>date or dateRange or dateSet</label>
+            <item>1..1</item>
+            <label>descriptiveNote</label>
+            <item>0..1</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>localTypeDeclarationReference</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p>The dates of existence of the CPF entity being described, such as dates of establishment
+         and dissolution for corporate bodies and dates of birth and death or floruit for
+         persons.</p>
+      <p><gi>existDates</gi> must contain one of <gi>date</gi>, <gi>dateRange</gi>, or
+            <gi>dateSet</gi>. These child elements may contain actual or approximate dates. A
+            <gi>descriptiveNote</gi> may be included if a fuller explanation of the dates of
+         existence is needed.</p>
+      <p>Use the <gi>date</gi> element to record the date of a single event, such as a date of birth
+         or date of incorporation. Use <gi>dateRange</gi> to encode a pair of inclusive dates. Use
+            <gi>dateSet</gi> to encode more complex date expressions that intermix <gi>date</gi> and
+            <gi>dateRange</gi> elements.</p>
+      <p>The prescribed order of all child elements (both required and optional) is:</p>
+      <list type="simple">
+         <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+         <item><gi>descriptiveNote</gi></item>
+      </list>
+   </div>
+   <div type="seealso">
+         <p>Do not confuse with <gi>useDates</gi>, which is a child element of <gi>nameEntry</gi>
+            or <gi>nameEntrySet</gi> and represents the dates of use for a particular name or set of
+            names.</p>
+   </div>
+   <div type="availability">
+      <p>Optional, repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<existDates>
+		<dateRange>
+				<fromDate standardDate="1868">
+						1868
+				</fromDate>
+				<toDate standardDate="1936">
+						1936
+				</toDate>
+		</dateRange>
+		<descriptiveNote>
+				<p>
+						The company was in business these years
+				</p>
+		</descriptiveNote>
+</existDates>]]>
+      </egXML>
+   </div>
+</div>
