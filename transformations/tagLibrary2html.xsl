@@ -5,6 +5,7 @@
         xmlns:eac="http://archivists.org/ns/eac/v2"
         xmlns:ead="urn:isbn:1-931666-22-9"
         xmlns:ead3="http://ead3.archivists.org/schema/"
+        xmlns:eaf="" 
         xmlns:premis="http://www.loc.gov/premis/v3"
         xmlns:ex="http://www.tei-c.org/ns/Examples"
         xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -14,7 +15,7 @@
         xmlns:mods="http://www.loc.gov/mods/v3" xmlns:text="http://www.tei.org/ns/1.0"
         xmlns:example="example" xmlns:term="term" xmlns:exslt="http://exslt.org/common"
         xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-        exclude-result-prefixes="xs xlink eac-cpf eac ex eg exml example ead ead3 mods text term dc oai_dc fo premis tei"
+        exclude-result-prefixes="xs xlink eac-cpf eac ex eg exml example ead ead3 eaf mods text term dc oai_dc fo premis tei"
         xpath-default-namespace="http://www.w3.org/1999/xhtml" extension-element-prefixes="exslt"
         version="2.0">
 
@@ -34,8 +35,10 @@
         <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
         <xsl:variable name="EAD-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Description', 'i')) then true() else false()"/>
         <xsl:variable name="EAC-CPF-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Context', 'i')) then true() else false()"/>
+        <xsl:variable name="EAF-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Context', 'i')) then true() else false()"/>
         <xsl:param name="EAC-CPF-html-title" select="'Encoded Archival Context—Corporate Bodies, Persons, and Families (EAC-CPF) Tag Library'"/>
         <xsl:param name="EAD-html-title" select="'Encoded Archival Description Tag Library - Version EAD3 (EAD Official Site, Library of Congress)'"/>
+        <xsl:param name="EAF-html-title" select="'Encoded Archival Functions (EAF) Tag Library'"/>
 
         <!-- Headingtranslations in an own xml-file using the currentLanguage to fetch them -->
         <!-- This only works with XSLT-enginee Saxon 6.5.5 -->
@@ -127,6 +130,7 @@
                                 <title>
                                         <xsl:value-of select="if ($EAD-TL) then $EAD-html-title
                                                 else if ($EAC-CPF-TL) then $EAC-CPF-html-title
+                                                else if ($EAF-TL) then $EAF-html-title
                                                 else 'Tag Library'">
                                         </xsl:value-of>
                                 </title>
@@ -1121,7 +1125,7 @@
         </xsl:template>
 
         <!-- In this template all occuring other namespaceprefixis needs to be added -->
-        <!-- xsl:template match="eac-cpf:* |eac:* |example:* | ead:* | ead3:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
+        <!-- xsl:template match="eac-cpf:* |eac:* |example:* | ead:* | ead3:* |eaf:* | mods:* | text:* | dc:* | oai_dc:* | premis:*">
                 <div class="innerExample">
                         <xsl:text>&lt;</xsl:text>
                         <xsl:value-of select="local-name()"/>
