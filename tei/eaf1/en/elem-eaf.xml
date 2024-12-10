@@ -42,9 +42,7 @@
 		<p type="ead">Other elements in the tag library that are relevant to a shared element in EAD only</p>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
-		<p type="eac">Availability statement that only applies to a shared element in EAC</p>
-		<p type="ead">Availability statement that only applies to a shared element in EAD</p>
+		<p>Required, Not Repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xml:lang="eng"><![CDATA[
