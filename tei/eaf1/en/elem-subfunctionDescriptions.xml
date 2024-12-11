@@ -24,24 +24,6 @@
 			<list type="gloss">
 				<label>audience</label>
 				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>functionStatus</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sequence</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
 			</list>
 		</p>
 	</div>
