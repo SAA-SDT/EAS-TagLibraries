@@ -14,6 +14,8 @@
 			<list type="gloss">
 				<label>classification</label>
 				<item>1..n</item>
+				<label>descriptiveNote</label>
+				<item>0..1</item>
 		</p>
 	</div>
 	<div type="mayOccurWithin">
