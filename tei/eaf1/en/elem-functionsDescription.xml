@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>functionDescription</gi>
+		<gi>functionsDescription</gi>
 	</head>
 	<div type="fullName">
-		<p>Function Description</p>
+		<p>Functions Description</p>
 	</div>
 	<div type="summary">
 		<p>A summary of what the element is used for</p>
