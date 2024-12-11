@@ -40,6 +40,8 @@
 				<item>Optional</item>
 				<label>sourceReference</label>
 				<item>Optional</item>
+				<label>target</label>
+				<item>Optional</item>
 				<label>valueURI</label>
 				<item>Optional</item>
 				<label>vocabularySource</label>
