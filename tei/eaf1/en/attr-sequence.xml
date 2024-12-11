@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<att>sequence</att>
+	</head>
+	<div type="fullName">
+		<p>Sequence</p>
+	</div>
+	<div type="summary">
+		<p>A summary of what the attribute is used for</p>
+	</div>
+	<div type="description">
+		<p>A narrative description of the use of the attribute</p>
+		<p type="eac">Description of a shared attribute that only applies to EAC.</p>
+		<p type="ead">Description of a shared attribute that only applies to EAD.</p>
+	</div>
+	<div type="values">
+		<p>Available values (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</p>
+	</div>
+	<div type="datatype">
+		<p>Datatype of the attribute (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</p>
+	</div>
+	<div type="examples">
+		<egXML xml:lang="eng"><![CDATA[
+			<!-- Contains examples of XML from the schema. -->
+		]]</egXML>
+	</div>
+</div>
