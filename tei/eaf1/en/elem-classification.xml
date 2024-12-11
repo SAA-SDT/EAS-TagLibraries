@@ -22,8 +22,30 @@
 	<div type="attributes">
 		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" <p type="eac">(values limited to: list of valid values for this attribute in EAC)</p></item>
+				<label>audience</label>
+				<item>Optional</item>
+				<label>conventionDeclarationReference</label>
+				<item>Optional</item>
+				<label>id</label>
+				<item>Optional</item>
+				<label>languageOfElement</label>
+				<item>Optional</item>
+				<label>localType</label>
+				<item>Optional</item>
+				<label>localTypeDeclarationReference</label>
+				<item>Optional</item>
+				<label>maintenanceEventReference</label>
+				<item>Optional</item>
+				<label>scriptOfElement</label>
+				<item>Optional</item>
+				<label>sourceReference</label>
+				<item>Optional</item>
+				<label>valueURI</label>
+				<item>Optional</item>
+				<label>vocabularySource</label>
+				<item>Optional</item>
+				<label>vocabularySourceURI</label>
+				<item>Optional</item>
 			</list>
 		</p>
 	</div>
