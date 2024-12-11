@@ -188,6 +188,7 @@
 					<xi:include href="shared/en/attr-dateEncoding.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-detailLevel.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-era.xml" parse="xml"/>
+		 			<xi:include href="eaf1/en/attr-functionStatus.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-href.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-id.xml" parse="xml"/>
 					<xi:include href="eac2/en/attr-identityType.xml" parse="xml"/>
@@ -209,12 +210,14 @@
 					<xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-scriptEncoding.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-scriptOfElement.xml" parse="xml"/>
+		 			<xi:include href="eaf1/en/attr-sequence.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-sourceReference.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-standardDate.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-standardDateTime.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-status.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-style.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-target.xml" parse="xml"/>
+		 			<xi:include href="eaf1/en/attr-targetRelationshipType.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-unit.xml" parse="xml"/>
 					<xi:include href="eac2/en/attr-value.xml" parse="xml"/>
