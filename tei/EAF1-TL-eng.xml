@@ -118,7 +118,7 @@
 				<xi:include href="shared/en/elem-dateSet.xml" parse="xml"/>
 				<xi:include href="eac2/en/elem-description.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-descriptiveNote.xml" parse="xml"/>
-            	<xi:include href="eaf1/en/elem-eaf.xml" parse="xml"/>
+            			<xi:include href="eaf1/en/elem-eaf.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-eventDateTime.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-eventDescription.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
@@ -127,6 +127,7 @@
 				<xi:include href="eaf1/en/elem-functionType.xml" parse="xml"/>
 				<xi:include href="eaf1/en/elem-functionDates.xml" parse="xml"/>
 				<xi:include href="eaf1/en/elem-functionDescription.xml" parse="xml"/>
+		 		<xi:include href="eaf1/en/elem-functionsDescription.xml" parse="xml"/>
 				<xi:include href="eaf1/en/elem-functionHistory.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
 				<xi:include href="eac2/en/elem-identity.xml" parse="xml"/>
