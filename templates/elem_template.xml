@@ -14,6 +14,7 @@
 			<list type="gloss">
 				<label>Element that may be used as child of the element</label>
 				<item>Availability of child element, eg 0..1</item>
+			</list>
 		</p>
 	</div>
 	<div type="mayOccurWithin">
