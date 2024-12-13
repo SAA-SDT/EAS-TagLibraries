@@ -9,7 +9,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Encoded Archival Functions (EAF) <lb> Tag Library</title>
+            <title type="main">Encoded Archival Functions (EAF) <lb/> Tag Library</title>
 			<title type="additional">Version EAF 1.0.0</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
@@ -31,7 +31,7 @@
                <addrLine>info@archivists.org</addrLine>
                <addrLine>www.archivists.org</addrLine>
             </address>
-            <date when="2024"/>
+            <date when="2025"/>
             <idno>ISBN Number</idno>
             <availability>
                <licence>This work is licensed under a Creative Commons Attribution 4.0 International
@@ -118,17 +118,17 @@
 				<xi:include href="shared/en/elem-dateSet.xml" parse="xml"/>
 				<xi:include href="eac2/en/elem-description.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-descriptiveNote.xml" parse="xml"/>
-            			<xi:include href="eaf1/en/elem-eaf.xml" parse="xml"/>
+            	<xi:include href="eaf1/en/elem-eaf.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-eventDateTime.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-eventDescription.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
 				<xi:include href="eaf1/en/elem-functionAgent.xml" parse="xml"/>
 				<xi:include href="eaf1/en/elem-functionAgents.xml" parse="xml"/>
-				<xi:include href="eaf1/en/elem-functionType.xml" parse="xml"/>
 				<xi:include href="eaf1/en/elem-functionDates.xml" parse="xml"/>
 				<xi:include href="eaf1/en/elem-functionDescription.xml" parse="xml"/>
-		 		<xi:include href="eaf1/en/elem-functionsDescription.xml" parse="xml"/>
-				<xi:include href="eaf1/en/elem-functionHistory.xml" parse="xml"/>
+         	   <xi:include href="eaf1/en/elem-functionHistory.xml" parse="xml"/>
+         	<xi:include href="eaf1/en/elem-functionsDescription.xml" parse="xml"/>	
+         	<xi:include href="eaf1/en/elem-functionType.xml" parse="xml"/>	
 				<xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
 				<xi:include href="eac2/en/elem-identity.xml" parse="xml"/>
 				<xi:include href="eac2/en/elem-identityId.xml" parse="xml"/>
@@ -162,14 +162,14 @@
 				<xi:include href="shared/en/elem-shortCode.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-source.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-sources.xml" parse="xml"/>
-				<xi:include href="eaf1/en/elem-subfunction.xml" parse="xml"/>
+         	<xi:include href="shared/en/elem-span.xml" parse="xml"/>	
+         	<xi:include href="eaf1/en/elem-subfunction.xml" parse="xml"/>
 				<xi:include href="eaf1/en/elem-subfunctionDescriptions.xml" parse="xml"/>
-				<xi:include href="shared/en/elem-term.xml" parse="xml"/>
-				<xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
-				<xi:include href="shared/en/elem-span.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-targetEntity.xml" parse="xml"/>
-				<xi:include href="shared/en/elem-targetRelationship.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-targetRelationship.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-targetRole.xml" parse="xml"/>
+         	<xi:include href="shared/en/elem-term.xml" parse="xml"/>
+         	<xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
 				<xi:include href="eac2/en/elem-useDates.xml" parse="xml"/>
          </div>
          <div type="attributes">

@@ -14,6 +14,7 @@
 			<list type="gloss">
 				<label>date or dateRange or dateSet</label>
 				<item>1..1</item>
+			</list>
 		</p>
 	</div>
 	<div type="mayOccurWithin">
@@ -45,25 +46,17 @@
 	</div>
 	<div type="description">
 		<p>A narrative description of the use of the element. Mark up other <gi>elements</gi> and <att>attributes</att> mentioned from the same Tag Library.</p>
-		<p type="eac">Description that only applies to a shared element in EAC</p>
-		<p type="ead">Description that only applies to a shared element in EAD</p>
 	</div>
 	<div type="attributeusage">
 		<p>A listing of usage of attributes with the element (optional)</p>
-		<p type="eac">Attribute usage that only applies to a shared element in EAC</p>
-		<p type="ead">Attribute usage  that only applies to a shared element in EAD</p>
 	</div>	
 	<div type="seealso">
 		<p>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</p>
-		<p type="eac">Other elements in the tag library that are relevant to a shared element in EAC only</p>
-		<p type="ead">Other elements in the tag library that are relevant to a shared element in EAD only</p>
 	</div>
 	<div type="availability">
 		<p>Optional, Not Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[
-			<!-- Contains examples of XML from the schema. -->
-		]]</egXML>
+		<egXML xml:lang="eng"></egXML>
 	</div>
 </div>

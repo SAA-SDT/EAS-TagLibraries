@@ -5,7 +5,7 @@
         xmlns:eac="http://archivists.org/ns/eac/v2"
         xmlns:ead="urn:isbn:1-931666-22-9"
         xmlns:ead3="http://ead3.archivists.org/schema/"
-        xmlns:eaf="" 
+        xmlns:eaf="urn:isbn:1-931666-33-4" 
         xmlns:premis="http://www.loc.gov/premis/v3"
         xmlns:ex="http://www.tei-c.org/ns/Examples"
         xmlns:eg="http://www.tei-c.org/ns/Examples"

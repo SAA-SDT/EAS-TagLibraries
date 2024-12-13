@@ -10,7 +10,7 @@ if not exist %2 ( goto NOFILE )
 :: check which standard we're generating TLs for
 if /i %1 == eac ( goto EAC )
 if /i %1 == ead ( goto EAD )
-if /i %1 == Eeaf ( goto EAF )
+if /i %1 == eaf ( goto EAF )
 if /i %1 == premis ( goto PREMIS )
 echo syntax: generate_tag_libraries.bat (eac ead eaf premis) path\to\tei.xml
 goto END

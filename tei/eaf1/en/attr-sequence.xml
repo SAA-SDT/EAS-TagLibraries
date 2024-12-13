@@ -11,8 +11,6 @@
 	</div>
 	<div type="description">
 		<p>A narrative description of the use of the attribute</p>
-		<p type="eac">Description of a shared attribute that only applies to EAC.</p>
-		<p type="ead">Description of a shared attribute that only applies to EAD.</p>
 	</div>
 	<div type="values">
 		<p>Available values (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</p>
@@ -21,8 +19,6 @@
 		<p>Datatype of the attribute (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[
-			<!-- Contains examples of XML from the schema. -->
-		]]</egXML>
+		<egXML xml:lang="eng"></egXML>
 	</div>
 </div>
