@@ -13,7 +13,7 @@
          entity.</p>
    </div>
    <div type="mayContain">
-      <p><list type="gloss">
+      <p type="eac"><list type="gloss">
             <label>biogHist</label>
             <item>0..n</item>
             <label>demographicDescriptions</label>
@@ -39,9 +39,22 @@
             <label>structureOrGenealogy</label>
             <item>0..n</item>
          </list></p>
+         <p type="eaf"><list type="gloss">
+            <label>functionAgents</label>
+            <item>0..1</item>
+            <label>functionDates</label>
+            <item>0..1</item>
+            <label>functionDescription</label>
+            <item>0..1</item>
+            <label>functionHistory</label>
+            <item>0..1</item>
+            <label>legislations</label>
+            <item>0..1</item>
+         </list></p>
    </div>
    <div type="mayOccurWithin">
-      <p>cpfDescription</p>
+      <p type="eac">cpfDescription</p>
+      <p type="eaf">functionsDescription, subfunctionDescriptions</p>
    </div>
    <div type="attributes">
       <p>

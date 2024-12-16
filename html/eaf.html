@@ -427,7 +427,7 @@
                </table>
             </div>
             <div class="toc1">
-               <a href="#d1e6403">Attributes Attribute name Attribute values</a>
+               <a href="#d1e6436">Attributes Attribute name Attribute values</a>
             </div>
             <div class="toc2">
                <table>
@@ -1756,11 +1756,11 @@
          entity.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-biogHist0..ndemographicDescriptions0..1existDates0..nfunctions0..1generalContext0..nlanguagesUsed0..1legalStatuses0..1localDescriptions0..1mandates0..1occupations0..1places0..1structureOrGenealogy0..n">biogHist0..ndemographicDescriptions0..1existDates0..nfunctions0..1generalContext0..nlanguagesUsed0..1legalStatuses0..1localDescriptions0..1mandates0..1occupations0..1places0..1structureOrGenealogy0..n</a>
+                     <a href="#elem-functionAgents0..1functionDates0..1functionDescription0..1functionHistory0..1legislations0..1">functionAgents0..1functionDates0..1functionDescription0..1functionHistory0..1legislations0..1</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
-                     <a href="#elem-cpfDescription">cpfDescription</a>
+                     <a href="#elem-functionsDescription">functionsDescription</a>, <a href="#elem-subfunctionDescriptions">subfunctionDescriptions</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">The child elements that constitute &lt;description&gt; together permit descriptive
@@ -2780,11 +2780,11 @@
          related to the identity being described within the EAC-CPF instance.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-descriptiveNote0..1entityType1..1identityId0..nnameEntry">descriptiveNote0..1entityType1..1identityId0..nnameEntry</a> or <a href="#elem-nameEntrySet1..notherEntityTypes0..n">nameEntrySet1..notherEntityTypes0..n</a>
+                     <a href="#elem-classifications0..1descriptiveNote0..1functionType1..1identityId0..nnameEntry">classifications0..1descriptiveNote0..1functionType1..1identityId0..nnameEntry</a> or <a href="#elem-nameEntrySet1..notherFunctionTypes0..n">nameEntrySet1..notherFunctionTypes0..n</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
-                     <a href="#elem-cpfDescription">cpfDescription</a>
+                     <a href="#elem-functionsDescription">functionsDescription</a>, <a href="#elem-subfunction">subfunction</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">&lt;identity&gt; is a wrapper element used to group the elements necessary to encode the
@@ -5940,7 +5940,7 @@
                   <br/>
                </div>  <a class="tocReturn" href="#toc">[toc]</a>
             </div>
-            <div class="section" id="d1e6403">
+            <div class="section" id="d1e6436">
                <div class="head03">Attributes Attribute name Attribute values</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType">
@@ -6854,12 +6854,18 @@
                   <div class="content"> <span class="label">Value</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">Defines the type of entity described in the EAC-CPF instance.</div>
+                  <div class="content">
+                     <div class="p">Defines the type of function described in the EAF instance</div>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Required attribute within the &lt;entityType&gt; element that defines the type
-                     of entity described in the EAC-CPF instance. </div>
+                  <div class="content">
+                     <div class="p">Required attribute within the &lt;functionType&gt; element that defines the type
+                     of function described in the EAF instance. </div>
+                  </div>
                   <div class="leftcol">Values: </div>
-                  <div class="content">corporateBody, family, person</div>
+                  <div class="content">
+                     <div class="p">activity, business process, function, other, subfunction, task, transaction</div>
+                  </div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -6922,7 +6928,7 @@
             </div>
          </div>
          <div>
-            <div class="section" id="d1e7959">
+            <div class="section" id="d1e8002">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Title">Title  <a class="tocReturn" href="#toc">[toc]</a>
                </div>Contents of the appendix; this can also include lists</div>

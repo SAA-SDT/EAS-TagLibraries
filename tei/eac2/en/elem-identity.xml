@@ -12,7 +12,7 @@
          related to the identity being described within the EAC-CPF instance.</p>
    </div>
    <div type="mayContain">
-      <p><list type="gloss">
+      <p type="eac"><list type="gloss">
             <label>descriptiveNote</label>
             <item>0..1</item>
             <label>entityType</label>
@@ -24,9 +24,24 @@
             <label>otherEntityTypes</label>
             <item>0..n</item>
          </list></p>
+         <p type="eaf"><list type="gloss">
+            <label>classifications</label>
+            <item>0..1</item>
+            <label>descriptiveNote</label>
+            <item>0..1</item>
+            <label>functionType</label>
+            <item>1..1</item>
+            <label>identityId</label>
+            <item>0..n</item>
+            <label>nameEntry or nameEntrySet</label>
+            <item>1..n</item>
+            <label>otherFunctionTypes</label>
+            <item>0..n</item>
+         </list></p>
    </div>
    <div type="mayOccurWithin">
-      <p>cpfDescription</p>
+      <p type="eac">cpfDescription</p>
+      <p type="eaf">functionsDescription, subfunction</p>
    </div>
    <div type="attributes">
       <p>
