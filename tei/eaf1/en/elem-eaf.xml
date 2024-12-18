@@ -14,7 +14,7 @@
 			<list type="gloss">
 				<label>control</label>
 				<item>1..1</item>
-				<label>functionDescription</label>
+				<label>functionsDescription</label>
 				<item>1..1</item>
 			</list>
 		</p>
