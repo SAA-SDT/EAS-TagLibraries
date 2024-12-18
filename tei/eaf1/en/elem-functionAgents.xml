@@ -12,7 +12,7 @@
 	<div type="mayContain">
 		<p>
 			<list type="gloss">
-				<label>funcationAgent</label>
+				<label>functionAgent</label>
 				<item>1..n</item>
 			</list>
 		</p>
