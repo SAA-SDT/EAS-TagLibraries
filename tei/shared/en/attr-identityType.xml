@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-identityType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>identityType</att>
+               </head>
+               <div type="fullName">
+                  <p>Identity Type</p>
+               </div>
+               <div type="summary">
+                  <p>Indicates whether the identity is given or acquired. May be useful for
+                     processing when multiple identities are described in the same instance.</p>
+               </div>
+               <div type="description">
+                  <p>The <att>identityType</att> may occur on <gi>identity</gi>. Though optional, it
+                     is recommended that it be used when multiple identities are described in the
+                     same EAS instance using <gi>multipleIdentities</gi>. It will enable
+                     processors to distinguish between the description of a person and one or more
+                     personae.</p>
+               </div>
+               <div type="values">
+                  <p>acquired, given</p>
+               </div>
+               <div type="examples">
+                  <egXML xml:lang="eng"><![CDATA[<identity identityType="acquired" localType="pseudonym" localTypeDeclarationReference="LT001"> [...] </identity>]]>
+                  </egXML>
+               </div>
+            </div>

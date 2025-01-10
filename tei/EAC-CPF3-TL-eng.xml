@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:exml="http://workaround for xml namespace restriction/namespace"
+   xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="eng" type="main">Encoded Archival Context - Corporate Bodies, Persons,
+               and Families (EAC-CPF) <lb/> Tag Library</title>
+            <title xml:lang="eng" type="additional">Version EAC-CPF 2.0.1</title>
+            <respStmt>
+               <resp>Prepared and maintained by the </resp>
+               <name>Technical Subcommittee for Encoded Archival Standard of the Society of American
+                  Archivists and the Staatsbibliothek zu Berlin</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <p>2023 Edition</p>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Society of American Archivists in collaboration with Staatsbibliothek zu
+               Berlin</publisher>
+            <address>
+               <addrLine>17 North State Street, suite 1425</addrLine>
+               <addrLine>Chicago, IL 60602-3315</addrLine>
+               <addrLine>USA</addrLine>
+               <addrLine>312-606-0722</addrLine>
+               <addrLine>Fax: 312-606-0728</addrLine>
+               <addrLine>info@archivists.org</addrLine>
+               <addrLine>www.archivists.org</addrLine>
+            </address>
+            <date when="2023"/>
+            <idno>978-1-958954-16-4</idno>
+            <availability>
+               <licence>This work is licensed under a Creative Commons Attribution 4.0 International
+                  License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/"
+                     >http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No
+                  part of this publication may be reproduced, stored in a retrieval system or
+                  transmitted in any form or by any means, electronic, mechanical or photocopying,
+                  recording, or otherwise without attribution.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage>
+            <docTitle>
+               <titlePart type="main">Encoded Archival Context - Corporate Bodies, Persons, and
+                  Families (EAC-CPF) <lb/> Tag Library</titlePart>
+               <titlePart type="additional">Version EAC-CPF 2.0.1</titlePart>
+            </docTitle>
+            <docEdition>2023 Edition</docEdition>
+            <byline>Prepared and maintained by the</byline>
+            <docAuthor>Technical Subcommittee for Encoded Archival Standards of the Society of
+               American Archivists</docAuthor>
+            <docAuthor>and the Staatsbibliothek zu Berlin</docAuthor>
+            <docImprint>
+               <docDate>Date of the document</docDate>
+            </docImprint>
+         </titlePage>
+         <div>
+            <div xml:id="preface">
+               <head>Related Standards</head>
+               <p>The standards maintained by the Society of American Archivists’ <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas">Technical Subcommittee on Encoded Archival Standards</ref> (TS-EAS) are XML schemas based on established models developed by the <ref target="https://www.ica.org/en">International Council on Archives</ref> (ICA).</p>
+               <p>EAC-CPF is based on the <ref target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd">International Standard Archival Authority Record for Corporate Bodies, Persons and Families</ref> (ISAAR-CPF). Revisions to the EAD and EAC-CPF standards are being undertaken by TS-EAS based on the requirements of the Society of American Archivists’ standards maintenance schedule and policies, and are not tied to ongoing development of standards by the ICA, though keeping close connections to the ICA <ref target="https://www.ica.org/en/about-egad">Experts Group on Archival Description</ref> as a related standards body.</p>
+               <p>For this reason, the EAC-CPF 2.0 continues to be based on ISAAR(CPF) rather than the draft versions of Records in Contexts. We anticipate that future versions of EAC-CPF and other standards maintained by TS-EAS will take the Records in Contexts - Conceptual Model into account once it is finalized and approved.</p>
+               
+               <list type="gloss">
+                  <label>International Standard Archival Authority Record for Corporate Bodies, Persons and Families (ISAAR(CPF))</label>
+                  <item><ref target="https://www.ica.org/en/isaar-cpf-international-standard-archival-authority-record-corporate-bodies-persons-and-families-2nd">ISAAR(CPF)</ref> is a descriptive standard for descriptions of agent entities (corporate bodies, persons and families) associated with the creation and maintenance of archives. ISAAR(CPF) is maintained by the ICA.</item>
+                  <label>Encoded Archival Description (EAD)</label>
+                  <item><ref target="https://loc.gov/ead/">EAD</ref> is an XML standard for encoding archival finding aids, maintained by the TS-EAS of the Society of American Archivists, in partnership with the Library of Congress.</item>
+                  <label>Encoded Archival Guide (EAG)</label>
+                  <item><ref target="https://www.archivesportaleurope.net/eag">EAG</ref> is an XML standard for encoding data about archives and related organizations. EAG is maintained by the Archives Portal Europe Foundation and its Working Group on Standards (WGoS). The development of EAG is coordinated in close cooperation with the TS-EAS, which is responsible
+                     for EAD and EAC-CPF.</item>
+                  <label>Encoding Standards</label>
+                  <item>The international community of cultural heritage organizations is working on a broad set of diverse standards to meet the challenges of the digital age. Established standards concerning digitization and metadata are maintained by the <ref target="https://www.loc.gov/librarians/standards">Library of Congress</ref>.</item>
+                  <label>Records in Contexts - Conceptual Model (RiC-CM)</label>
+                  <item><ref target="https://www.ica.org/en/records-in-contexts-conceptual-model">RiC-CM</ref> is a high-level conceptual model that focuses on intellectually identifying and describing records, the people that created and use(d) them, and the activities pursued by the people that the records both facilitate and document. RiC-CM is maintained by the ICA.</item>
+               </list>   
+            </div>
+            <div xml:id="release">
+               <head>Release and Revision Notes</head>
+               <p>This is the release of the Tag Library for EAC-CPF 2.0. This major release includes changes and updates in the schema undertaken by the SAA <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas">Technical Subcommittee on Encoded Archival Standards</ref> (TS EAS) for the second major revision of the standard EAC-CPF. It supersedes the standard version EAC-CPF 2010 edition 2018.</p>
+               <p>The release is reflecting comments received by the international community of professionals between 2018 and 2021.</p>
+               <p>The EAC-CPF Tag Library is a living document. As such, it will continue to be developed as users suggest areas in need of clarification or expansion. The TS-EAS still encourages implementers to provide any queries, comments, and suggestions regarding the tag library and its content. In addition, the contribution of examples is highly encouraged. Questions, comments or examples may be directed to the TS-EAS (ts-eas[at]archivists.org). The underlying encoding of the Tag Library is based on TEI P5 and is designed to facilitate incorporating documentation into the schema to provide guidance in XML editors. While the initial release of the Tag Library is in English, the underlying encoding is designed to facilitate providing the Tag Library in additional languages at later dates.</p>
+               <p>The latest version of the EAC-CPF schema and tag library was adopted in 2010 and updated in late 2018. This version is called EAC-CPF 2010 edition 2018. The process for a major revision started in 2017, following the 2015 merger of the Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on Encoded Archival Standards (TS-EAS). This major revision aims to modernise the schema in terms of:
+                  <list type="simple">
+                     <item>- simplifying where possible,</item>
+                     <item>- alignment with EAD where useful,</item>
+                     <item>- implementing features and solutions upon users’ request,</item>
+                     <item>- clearing up unused components.</item></list></p>
+               <p>All elements and attributes in EAC-CPF 2010 were evaluated. Bugs and slight changes were made in a minor update of the Schema in 2018. The present version, EAC-CPF 2.0, is the result of a major overhaul of the standard and a reconciliation with EAD.</p> 
+               <p>Following ISAAR(CPF), the established structure of control area, identity area, description area, and relations is still available, as is the idea of encoding multiple identities in one EAC-CPF instance.</p>
+               <p>The user communities of EAD and EAC-CPF overlap; therefore, the alignment of both schemas, where possible, shall ease the standards’ maintenance, usage, teaching, and learning. Elements and attributes used in both standards are harmonized by name, description and technical definition. </p>
+               <p>With the goal of simplifying the schema and aligning it with EAD, some encoding concepts were modified:linking and referencing, formatting, date encoding, language encoding, transliteration, control area, identity area, description area, and relations, cf <ref target="https://eac.staatsbibliothek-berlin.de/schema-revision-2021/revision-notes/">Revision notes</ref>.</p>
+               <p>Working in parallel with the ICA Experts Group on Archival Description (ICA EGAD), who is working on a 2nd draft of Records in Contexts (RiC) which is being designed as the next comprehensive description standard for archives, EAC-CPF 2.0 tries to include the ideas of RiC-CM where feasible, see also <ref target="https://eac.staatsbibliothek-berlin.de/related-standards/">TS EAS statement on related standards</ref>.</p>
+               <p>Widely discussed was the question of spelling since the related standard, EAD, uses lower-case for element and attribute names. For easier reading and teaching it was agreed to keep the camel case spelling for element and attribute names and also for fixed values.</p>
+               
+            </div>
+            <div xml:id="conventions">
+               <head>Tag Library Conventions</head>
+               <p>The EAC-CPF Elements section of the Tag Library contains descriptions of 91
+                  elements, arranged alphabetically by element name.</p>
+               <!--p>Entries in the Tag Library that have been updated in the latest revision will be
+                  marked with "(revised in [revision number])". Updates that predate the most recent
+                  revision will not be marked in the text.</p-->
+               <list type="gloss">
+                  <label>Tag Name: </label>
+                  <item>Short, mnemonic form of the element name that is used in the
+                     machine-readable encoded document. The tag name is the first word at the top of
+                     the page. Tag names appear between angle brackets, e.g., <gi>nameEntry</gi>,
+                     except in the listings under "May occur within" and "May contain," and are
+                     always in camel case (camelCase).</item>
+                  <label>Element Name:</label>
+                  <item>Expanded version of the tag name that more fully describes the element's
+                     meaning. The full name of the element is usually a word or phrase that
+                     identifies the element's purpose. In the Tag Library, the element name follows
+                     the tag name on the page defining that element and appears with initial capital
+                     letters, e.g., <gi>nameEntry</gi> Name Entry.</item>
+                  <label>Summary:</label>
+                  <item>A brief statement that provides a concise definition of the element,
+                     suitable for quick reference.</item>
+                  <label>May Contain:</label>
+                  <item>Identifies what child nodes (text or elements) may occur within the element
+                     being defined. Elements are listed in alphabetical order by tag name. Elements
+                     may be empty (e.g., an element which allows no child text or element nodes), or
+                     they may contain text (listed as [text]), other elements, or a mixture of text
+                     and other elements.<lb/>Text content cannot include characters that would be
+                     interpreted by a parser as action codes. For example, a left angle bracket must 
+                     be represented as the character entity reference &amp;lt; so that it is not
+                     misinterpreted as the start of an element name. <lb/>The technical availability
+                     of child elements is listed in brackets beside each element, e.g. place (0..1).
+                     The first character represents the minimum occurrences of the child element and
+                     the final character represents the maximum occurrences of the child element,
+                     with 'n' representing unlimited occurrences.</item>
+                  <label>May Occur Within:</label>
+                  <item>Identifies all the parent elements within which the described element may
+                     appear, listed in alphabetical order by tag name. This information conveys
+                     information about where and how often an element is available throughout the
+                     schema. The definitions for parent elements may provide additional information
+                     about an element's usage.</item>
+                  <label>Attributes:</label>
+                  <item>Identifies all attributes that can be associated with an element. Attributes
+                     are represented in camelCase letters in XML coding. The Tag Library uses the
+                     convention of preceding an attribute name with an @ symbol (e.g.,
+                        <att>localType</att>), following XPath syntax. See the EAC-CPF Attributes
+                     section of the tag library for definitions and additional information.</item>
+                  <label>Description and Usage:</label>
+                  <item>This section begins with one or more paragraphs that provide a more thorough
+                     description of the element than that found in the Summary, which may be
+                     followed by guidance on use. The terms "parent" and "child" are used to
+                     indicate hierarchical relationships between elements. Standard terminology is
+                     also used to suggest the kind of element being discussed. "Wrapper element"
+                     indicates an element that cannot contain text directly; a second, nested
+                     element must be opened first. When the schema enforces a specific sequence of
+                     child elements, that sequence is indicated. <lb/>If useful, context-specific
+                     guidance for the usage of an element's attributes is given in an "Attribute
+                     usage" section. A "See also" section may be provided to indicate additional
+                     elements that are similar, easily confused, or otherwise related to the element
+                     being described.</item>
+                  <label>Availability:</label>
+                  <item>Indicates, within the context of its parent(s), whether the element is
+                     required or optional, and whether or not it is repeatable. </item>
+                  <label>Examples:</label>
+                  <item>Element and attribute descriptions include a tagged example to indicate how
+                     attributes and elements can be used together. Many of the examples are taken
+                     from real authory records; others have been specially constructed for the Tag
+                     Library. The examples illustrate any required sequences of elements, as in the
+                     case of children within <gi>control</gi>, or required attributes such as
+                        <att>part</att> in <gi>nameEntry</gi>. In other cases, the examples simply
+                     show what is possible. Some examples have ellipses, either between or within
+                     elements, indicating that other elements or text have been omitted. Some
+                     elements have multiple examples: one may show very dense markup with numerous
+                     attributes while another may illustrate a minimalist approach to the markup.
+                     Either approach is valid in EAC-CPF, and it is up to the instance creator to
+                     determine the optimal level of markup based on their specific purposes,
+                     functional requirements, resources, or consortial guidelines.</item>
+               </list>
+            </div>
+         </div>
+      </front>
+      <body>
+         <div type="elements" xml:id="EACCPFelements">
+            <xi:include href="shared/en/elem-abstract.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-address.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-addressLine.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agencyCode.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agencyName.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agent.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-alternativeSet.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-biogHist.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-chronItem.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-chronItemSet.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-chronList.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-citedRange.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-componentEntry.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-contact.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-contactLine.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-control.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-conventionDeclaration.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-cpfDescription.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-date.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-dateRange.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-dateSet.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-demographicDescription.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-demographicDescriptions.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-description.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-descriptiveNote.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-eac.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-entityType.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-event.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-eventDateTime.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-eventDescription.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-existDates.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-function.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-functions.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-generalContext.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-head.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-identity.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-identityId.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-item.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-language.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-languageDeclaration.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-languageUsed.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-languagesUsed.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-legalStatus.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-legalStatuses.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-list.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-localControl.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-localDescription.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-localDescriptions.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-localTypeDeclaration.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceAgency.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceEvent.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceHistory.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-mandate.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-mandates.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-multipleIdentities.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-nameEntry.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-nameEntrySet.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-objectXMLWrap.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-occupation.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-occupations.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-otherAgencyCode.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-otherEntityType.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-otherEntityTypes.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-otherRecordId.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-p.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-part.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-place.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-placeName.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-placeRole.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-places.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-recordId.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-reference.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relation.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relationType.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relations.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-representation.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-rightsDeclaration.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-setComponent.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-shortCode.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-source.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-sources.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-span.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-structureOrGenealogy.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-targetEntity.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-targetRole.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-term.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-useDates.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-writingSystem.xml" parse="xml"/>
+         </div>
+         <div type="attributes" xml:id="EACCPFattributes">
+            <div type="Introduction">
+               <head>Introduction</head>
+               <p>Attributes are associated with most of the elements contained in EAC-CPF. Attributes reflect named properties of an element and may take on different values, depending on the context in which they occur. In order to set one or more attributes, an encoder should include the name of the attribute(s) within the same angle brackets as the start tag, together with the value(s) to which the attribute(s) is/are to be set. That is,<lb/>
+                  <code>&lt;[tag] [attribute]="[value]"&gt;</code> 
+                  <lb/>or<lb/>
+                  <code>&lt;[tag] [attribute1]="[value1]" [attribute2]="[value2]"&gt;</code></p>
+                  <p>For example:<lb/>
+                     <!--<egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                        <eac:fromDate standardDate="1939">1939</eac:fromDate>
+                     </egXML>
+                     <lb/>or<lb/>
+                     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+                        <eac:fromDate certainty="approximate" standardDate="1939">c. 1939</eac:fromDate>
+                     </egXML>-->
+                     <code>&lt;fromDate standardDate="1939"&gt;</code>1939<code>&lt;/fromDate&gt;</code>
+                     <lb/>or<lb/>
+                     <code>&lt;fromDate certainty="approximate" standardDate="1939"&gt;</code>1939<code>&lt;/fromDate&gt;</code>
+                  </p>
+                  <p>Most attributes are optional, though some are required. The attribute description indicates whether an attribute is required. This information is also available in the Attributes section of each element description.</p>
+               <p>The value of attributes may be constrained by the schema using specific attribute type values. For example, the <att>id</att> attribute is of type ID, which constrains its value to a string beginning with an alphabetic character. An id value must be unique within the EAC-CPF instance within which it occurs, that is, no other tag in the entire document can have the same id value. EAC-CPF attributes have the following data types (capitalization of data types follows the documentation found in the W3C Recommendation XML Schema Part 2: Datatypes Second Edition (<ref target="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/)</ref>:
+                     <list type="gloss">
+                        <label>anyURI:</label>
+                        <item>A Uniform Resource Identifier. This may be a Uniform Resource Locator (URL) or a Uniform Resource Name (URN). Both relative and absolute URIs are allowed.</item>
+                        <label>ID:</label>
+                        <item>Unique identifier. For example, most elements have an id, so that a unique code can be established for and used to refer to that specific element. The content of the id is of the type called "ID". Parsers verify that the value of attributes of type "ID" are unique. The values of id must begin with an alpha, not numeric, character, either upper or lowercase, and may contain a . (period), : (colon), - (hyphen), or _ (underscore), but not a blank space. See also attributes of type "IDREF."</item>
+                        <label>IDREFS:</label>
+                        <item>List of ID reference values; values must match an existing ID of another element in the document.</item>
+                        <label>NMTOKEN:</label>
+                        <item>A name token, which can consist of any alpha or numeric character, as well as a . (period), : (colon), - (hyphen), or _ (underscore), but not a blank space. A number of attributes in EAC-CPF where a character string from a code list is to be used are of the type "NMTOKEN".</item>
+                        <label>normalizedString:</label>
+                        <item>The most general data type, a string can contain any sequence of characters allowed in XML. Certain characters may have to be represented with an entity reference, for example &amp;lt; for &lt;, and &amp;amp; for &amp;.</item>
+                        <label>token:</label>
+                        <item>A type of string that may not contain carriage return, line feed or tab characters, leading or trailing spaces, and any internal sequence of two or more spaces.</item>
+                     </list>
+                  </p>
+               <p>When the EAC-CPF schema limits attribute values to a few choices, those values are declared in the schema in what is known as a "closed list." For example, the values of <att>audience</att> are limited to either "external" or "internal." Other attributes are associated with semi-closed lists. Such lists include those values believed to be the most useful in many contexts, but other values are allowed. For example, <gi>language</gi> defines several values for <att>languageEncoding</att>, including "otherLanguageEncoding" which may be used to specify values that are not in the semi-closed list for <att>languageEncoding</att>. The definitions for some values in the closed and semi-closed lists appear below.</p>
+               <p>The following is a complete list of all the attributes that occur in EAC-CPF, and some discussion of how they may be used. Further, context-specific information about the use of certain attributes may be found in the "Attribute usage" section of the element descriptions.</p>
+                  
+            </div>
+            <xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
+            <xi:include href="eac3/en/attr-agentType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-base.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-calendar.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-certainty.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-contactLineType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-conventionDeclarationReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-coordinateSystem.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-countryCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-countryEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-dateEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-detailLevel.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-era.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-href.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-id.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-identityType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageOfElement.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-linkRole.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-linkTitle.xml" parse="xml"/>
+            <xi:include href="eac3/en/attr-listType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-localType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-localTypeDeclarationReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-notAfter.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-notBefore.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-preferredForm.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-publicationStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-repositoryEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptOfElement.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-sourceReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-standardDate.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-standardDateTime.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-status.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-style.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-target.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-unit.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-value.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-valueURI.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-vocabularySource.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-vocabularySourceURI.xml" parse="xml"/>            
+         </div>
+      </body>
+      <back>
+         <!-- One div for each element same element available as for div in front
+            in the div:
+               @type is always appendix
+               @xml:id is a short name of the appendix
+         -->
+         <!--<div type="appendix" xml:id="appendix1">
+            <head>Title</head>
+            <p>Contents of the appendix; this can also include lists</p>
+         </div>-->
+      </back>
+   </text>
+</TEI>

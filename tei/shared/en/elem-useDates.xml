@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-useDates" xmlns:eac="http://archivists.org/ns/eac/v2"
+   xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>useDates</gi>
+   </head>
+   <div type="fullName">
+      <p>Dates of Use</p>
+   </div>
+   <div type="summary">
+      <p>An optional child element of <gi>nameEntry</gi> and <gi>nameEntrySet</gi> that provides the
+         dates when the name or names were used for or by the CPF entity being described.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>date or dateRange or dateSet</label>
+            <item>1..1</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>nameEntry, nameEntrySet</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p>Within <gi>nameEntry</gi>, <gi>useDates</gi> provides the dates during which the name was
+         used for or by the CPF entity. For parallel names (e.g., official forms of the name in
+         different languages and/or scripts), <gi>useDates</gi> may occur in <gi>nameEntrySet</gi>
+         rather than in the individual <gi>nameEntry</gi> elements contained in
+            <gi>nameEntrySet</gi>.</p>
+      <p><gi>useDates</gi> must include one of <gi>date</gi>, <gi>dateRange</gi>, or
+            <gi>dateSet</gi>.</p>
+   </div>
+   <div type="availability">
+      <p>Optional, repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<nameEntry status="authorized">
+ 	<part>Technical Subcommittee for Encoded Archival Standards</part>
+    <useDates>
+      	   <dateRange>
+         		  <fromDate>2015</fromDate>
+         		  <toDate status="ongoing"/>
+      	   </dateRange>
+ 	</useDates>
+</nameEntry>]]>
+      </egXML>
+   </div>
+</div>

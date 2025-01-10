@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-value" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>value</att>
+               </head>
+               <div type="fullName">
+                  <p>Value</p>
+               </div>
+               <div type="summary">
+                  <p type="eac">Defines the type of entity described in the EAC-CPF instance.</p>
+                  <p type="eaf">Defines the type of function described in the EAF instance</p>
+               </div>
+               <div type="description">
+                  <p type="eac">Required attribute within the <gi>entityType</gi> element that defines the type
+                     of entity described in the EAC-CPF instance. </p>
+                  <p type="eaf">Required attribute within the <gi>functionType</gi> element that defines the type
+                     of function described in the EAF instance. </p>
+               </div>
+               <div type="values">
+                  <p type="eac">corporateBody, family, person</p>
+                  <p type="eaf">activity, business process, function, other, subfunction, task, transaction</p>
+               </div>
+               <div type="examples">
+                  <egXML xml:lang="eng"><![CDATA[<entityType value="person"/>]]>
+                  </egXML>
+               </div>
+            </div>

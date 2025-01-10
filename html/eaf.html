@@ -2891,7 +2891,7 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">An optional child element of &lt;identity&gt; used to record any identifier associated
          with the CPF entity being described.</div>Do not confuse with &lt;recordId&gt; within &lt;control&gt;, which refers to an
-            identifier for the EAC-CPF instance rather than the entity it describes.<div class="leftcol">May contain Element/content type Occurrences: </div>
+            identifier for the EAS instance rather than the entity it describes.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
@@ -2899,7 +2899,7 @@
                   </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">&lt;identityId&gt; may be used to record any identifier associated with the CPF entity
-         being described in the EAC-CPF instance. Identifiers such as legal identifiers, typically
+         being described in the EAS instance. Identifiers such as legal identifiers, typically
          assigned by an authoritative agency, may be recorded in this element. If multiple
          identifiers are recorded, each should be in its own &lt;identityID&gt;.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
@@ -4997,9 +4997,9 @@
                   </div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">An optional child element of &lt;control&gt; for recording a link to a deliverable version
-         of the EAC-CPF instance or to the XML version of the EAC-CPF instance itself.</div>Use href to specify a link to a deliverable version of the EAC-CPF
+         of the EAS instance or to the XML version of the EAS instance itself.</div>Use href to specify a link to a deliverable version of the EAS
             instance.Use localType to differentiate between multiple &lt;representation&gt;
-            elements.Use &lt;otherRecordId&gt; to provide any local identifier for the EAC-CPF instance
+            elements.Use &lt;otherRecordId&gt; to provide any local identifier for the EAS instance
             that does not link to a deliverable version.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -5007,8 +5007,8 @@
                      <a href="#elem-control">control</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Use &lt;representation&gt; to record a link to a deliverable version of an EAC-CPF
-         instance, for example an HTML or PDF version, or to the XML version of the EAC-CPF instance
+                  <div class="content">Use &lt;representation&gt; to record a link to a deliverable version of an EAS
+         instance, for example an HTML or PDF version, or to the XML version of the EAS instance
          itself.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
@@ -6275,7 +6275,7 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">The identityType may occur on &lt;identity&gt;. Though optional, it
                      is recommended that it be used when multiple identities are described in the
-                     same EAC-CPF instance using &lt;multipleIdentities&gt;. It will enable
+                     same EAS instance using &lt;multipleIdentities&gt;. It will enable
                      processors to distinguish between the description of a person and one or more
                      personae.</div>
                   <div class="leftcol">Values: </div>
@@ -6554,7 +6554,7 @@
                   <div class="content">Attribute that specifies whether or not a name provides the preferred form of the entity's name for display purposes</div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">Attribute that specifies whether or not a &lt;nameEntry&gt; provides the
-                     preferred form of the name of the EAC-CPF entity for display purposes in a
+                     preferred form of the name of the EAS entity for display purposes in a
                      given context. Use the value "true" if the name entry is preferred for any display purposed.This optional attribute is only available in &lt;nameEntry&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">false, true</div>

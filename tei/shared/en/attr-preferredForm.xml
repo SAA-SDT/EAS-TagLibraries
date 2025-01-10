@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-preferredForm" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <att>preferredForm</att>
+               </head>
+               <div type="fullName">
+                  <p>Preferred Form</p>
+               </div>
+               <div type="summary">
+                  <p>Attribute that specifies whether or not a name provides the preferred form of the entity's name for display purposes</p>
+               </div>
+               <div type="description">
+                  <p>Attribute that specifies whether or not a <gi>nameEntry</gi> provides the
+                     preferred form of the name of the EAS entity for display purposes in a
+                     given context. Use the value "true" if the name entry is preferred for any display purposed.</p>
+                  <p>This optional attribute is only available in <gi>nameEntry</gi>.</p>
+               </div>
+               <div type="values">
+                  <p>false, true</p>
+               </div>
+               <div type="examples">
+                  <egXML xml:lang="eng"><![CDATA[<nameEntrySet languageOfElement="fre">
+		<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+				<part>
+						Provence-Alpes-Côte d'Azur
+				</part>
+		</nameEntry>
+		<nameEntry conventionDeclarationReference="cd2">
+				<part>
+						Région Sud Provence-Alpes-Côte d'Azur
+				</part>
+		</nameEntry>
+		<nameEntry conventionDeclarationReference="cd3">
+				<part>
+						Provence-Alpes-Côte-d'Azur
+				</part>
+		</nameEntry>
+</nameEntrySet>]]>
+                  </egXML>
+               </div>
+            </div>
