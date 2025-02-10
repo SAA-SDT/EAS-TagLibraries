@@ -3,7 +3,7 @@
 # check to see that the arguments exist
 if [ $# -lt 2 ]
 then
-    echo "Tag library script syntax:  ./generate_tag_libraries.sh (eac|ead|premis) path/to/tei.xml (langcode)"
+    echo "Tag library script syntax:  ./generate_tag_libraries.sh (eac|ead|eaf|premis) path/to/tei.xml (langcode)"
     exit 1
 fi
 
@@ -40,13 +40,18 @@ case $1 in
 		java -cp $saxon net.sf.saxon.Transform -xi:on -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage=$lang currentStandard=$1
 		java -cp $saxon net.sf.saxon.Transform -xi:on -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes" currentLanguage=$lang currentStandard=$1
 		;;
+  	"eaf")
+		echo "generating EAF tag libraries"
+		java -cp $saxon net.sf.saxon.Transform -xi:on -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage=$lang currentStandard=$1
+		java -cp $saxon net.sf.saxon.Transform -xi:on -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes" currentLanguage=$lang currentStandard=$1
+		;;
 	"premis")
 		echo "generating PREMIS tag libraries"
 		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="no" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage=$lang currentStandard=$1
 		java -cp $saxon net.sf.saxon.Transform -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="no" currentLanguage=$lang currentStandard=$1
 		;;
 	*)
-		echo "supplied tag library must be: eac, ead, premis"
+		echo "supplied tag library must be: eac, ead, eaf, premis"
 		exit 1
 esac
 

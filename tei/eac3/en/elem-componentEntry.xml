@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-componentEntry" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+               <head>
+                  <gi>componentEntry</gi>
+               </head>
+               <div type="fullName">
+                  <p>Component Entry</p>
+               </div>
+               <div type="summary">
+                  <p>A child element of <gi>setComponent</gi> that can be used to provide
+                     identification and access to a linked resource.</p>
+               </div>
+               <div type="mayContain">
+                  <p><list type="gloss"><label>[text]</label><item/></list></p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>setComponent</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>localType</label>
+                        <item>Optional</item>
+                        <label>localTypeDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p><gi>componentEntry</gi> is used within <gi>setComponent</gi> to provide a
+                     textual note about the alternative authority record that is being bundled
+                     together with others describing the same entity. The bundled alternative
+                     records for a given EAC-CPF entity may be in different languages or come from
+                     different authority systems. The bundling allows them to be transmitted or
+                     stored together. The <gi>componentEntry</gi> element provides a place where a
+                     particular alternative record can be described or explained in relation to the
+                     other authority records.</p>
+               </div>
+               <div type="availability">
+                  <p>Optional, repeatable</p>
+               </div>
+               <div type="examples">
+                   <egXML xml:lang="eng"><![CDATA[<alternativeSet>
+		<setComponent href="https://adb.anu.edu.au/biography/mawson-sir-douglas-7531" linkTitle="Biography - Sir Douglas Mawson - Australian Dictionary of Biography">
+				<componentEntry>
+						Australian Dictionary of Biography record.
+				</componentEntry>
+		</setComponent>
+		<setComponent href="http://nla.gov.au/anbd.aut-an35335937" linkTitle="Mawson, Douglas, Sir, 1882-1958 - Full record view - Libraries Australia Search">
+				<componentEntry>
+						Libraries Australia record.
+				</componentEntry>
+		</setComponent>
+		<setComponent href="https://www.eoas.info/biogs/P000631b.htm" linkTitle="Mawson, Douglas - Biographical entry - Encyclopedia of Australian Science">
+				<componentEntry>
+						Encyclopedia of Australian Science record.
+				</componentEntry>
+		</setComponent>
+</alternativeSet>]]>
+                  </egXML>
+               </div>
+            </div>
