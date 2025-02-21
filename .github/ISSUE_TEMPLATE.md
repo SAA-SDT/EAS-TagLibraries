@@ -12,6 +12,8 @@
 <!--- Make an 'x' replacing the ' ' (space) inside the brackets to mark your choice. -->
 - [ ] EAC-CPF schema issue
 - [ ] EAC-CPF Tag Library issue
+- [ ] EAC-F schema issue
+- [ ] EAC-F Tag Library issue
 - [ ] EAD schema issue
 - [ ] EAD Tag Library issue
 - [ ] Schema issue
