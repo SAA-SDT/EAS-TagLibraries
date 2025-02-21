@@ -1,6 +1,6 @@
 ---
 name: TL issue template
-about: Templette for reporting TL' issues
+about: Template for reporting TL issues
 title: ''
 labels: ''
 assignees: ''
