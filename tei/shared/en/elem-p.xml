@@ -31,7 +31,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">biogHist, descriptiveNote, generalContext, structureOrGenealogy</p>
-                  <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, descriptiveNote, filePlan, formAvailable, identificationDataNote, otherDescriptiveInfo, otherFindAid, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
+                  <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, descriptiveNote, filePlan, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
                </div>
                <div type="attributes">
                   <p>
