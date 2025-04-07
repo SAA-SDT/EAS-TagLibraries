@@ -7,7 +7,7 @@
 		<p>Form Available Type</p>
 	</div>
 	<div type="summary">
-		<p>An optional attribute of <gi>formAvailable</gi> that specifies the type of form or instantiation  being described.</p>
+		<p>An optional attribute of <gi>formAvailable</gi> that specifies the type of form or instantiation being described.</p>
 	</div>
 	<div type="description">
 		<p>Use <att>formAvailableType</att> with <gi>formAvailable</gi> to specify the type of form or instantiation being described.</p>
