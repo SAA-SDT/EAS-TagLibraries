@@ -7,7 +7,7 @@
 		<p>Language Set</p>
 	</div>
 	<div type="summary">
-		<p>Within <gi>identificationData</gi>, <gi>languageSet</gi> is a child element of <gi>languageOfMaterial</gi> that is used to pair languages with their writing systems.</p>
+		<p>Within <gi>identificationData</gi>, <gi>languageSet</gi> is a child element of <gi>languageOfMaterial</gi> that is used to pair one language with one or more writing systems, e.g. a text in Japanese language and in Kana, Hiragana, and Katakana scripts, or one writing system with one or more languages, e.g. a document in English, French and German, all using the Latin alphabet.</p>
 	</div>
 	<div type="mayContain">
 		<p>
@@ -47,7 +47,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>languageSet</gi> within <gi>languageOfMaterial</gi> when it is necessary to associate <gi>language</gi> and <gi>writingSystem</gi>. Possible combinations include one language and one writing system, multiple languages and one writing system, and one language and multiple writing systems. Although the EAD4 schema allows multiple languages to be associated with multiple writing systems this combination is unlikely to convey useful information. <gi>languageSet</gi> may be repeated as necessary. Optionally, any comments about the language(s) and writing system(s) being recorded may be captured in <gi>descriptiveNote</gi> at the end, particularly for display to finding aid users.</p>
+		<p>Use <gi>languageSet</gi> within <gi>languageOfMaterial</gi> when it is necessary to associate <gi>language</gi> and <gi>writingSystem</gi>. Possible combinations include one language and one writing system, multiple languages and one writing system, and one language and multiple writing systems. <gi>languageSet</gi> may be repeated as necessary. Optionally, any comments about the language(s) and writing system(s) being recorded may be captured in <gi>descriptiveNote</gi> at the end, particularly for display to finding aid users.</p>
 	</div>
 	<div type="attributeusage"><p>Use <att>languageOfElement</att> and <att>scriptOfElement</att> to indicate the language and written scripts of the information in <gi>languageSet</gi>, not the language of materials.</p></div>	
 	<div type="availability">
