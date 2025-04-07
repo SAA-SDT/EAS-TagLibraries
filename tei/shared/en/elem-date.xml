@@ -19,7 +19,7 @@
                   <p type="eac">chronItem, dateSet, demographicDescription, existDates, function, legalStatus,
                      localControl, localDescription, mandate, occupation, otherEntityType, place,
                      relation, useDates</p>
-                  <p type="ead">agent, dateSet, findAidDesc, function, legalStatus, place, relation, subject, unitDateStructured</p>
+                  <p type="ead">agent, dateSet, findAidDesc, formAvailable, function, legalStatus, place, relation, subject, unitDate</p>
                </div>
                <div type="attributes">
                   <p>
