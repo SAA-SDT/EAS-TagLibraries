@@ -61,6 +61,12 @@
 		<p><gi>otherDescription</gi> is, however, only used to indicate the existence of additional descriptions; it is not designed to encode the content of those.</p>
 		<p>Such additional descriptions can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named within <gi>relations</gi>. This will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
 		<p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> can be used to refer to analog or digital resources.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                     <item><gi>abstract</gi> (if used)</item>
+                     <item><gi>relations</gi></item>
+		     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+		</list>
 	</div>
 	<div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>
 	<div type="availability">
