@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-relationTypeEncoding" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<att>relationTypeEncoding</att>
+	</head>
+	<div type="fullName">
+		<p>Relation Type Encoding</p>
+	</div>
+	<div type="summary">
+		<p>Specifies the authoritative source or rules for values used to identify the type of relation between the entity being described in the EAS instance and the related entity.</p>
+	</div>
+	<div type="description">
+		<p><att>relationTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>relationType</att> within <gi>relation</gi>. If the value "EASList" is selected, <att>addressLineType</att> will be expected with the values "...". If the value "otherRelationTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+	</div>
+	<div type="values">
+		<p>EASList, otherRelationTypeEncoding</p>
+	</div>
+	<div type="examples">
+		<egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" relationTypeEncoding="EASList">
+	[...]
+</control>]]></egXML>
+	</div>
+</div>
