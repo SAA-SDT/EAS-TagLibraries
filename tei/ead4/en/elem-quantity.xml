@@ -8,6 +8,7 @@
 	</div>
 	<div type="summary">
 		<p>An optional child element of <gi>extent</gi> and <gi>dimensions</gi> that indicates the number of units present as described by <gi>unitOfMeasurement</gi>.</p>
+		<p>Either <gi>quantity</gi> or <gi>unitOfMeasurement</gi> must be present, but it is recommended to use both elements in conjunction with each other whenever possible.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
