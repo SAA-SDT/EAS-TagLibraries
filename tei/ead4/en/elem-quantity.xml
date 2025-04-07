@@ -8,7 +8,6 @@
 	</div>
 	<div type="summary">
 		<p>An optional child element of <gi>extent</gi> and <gi>dimensions</gi> that indicates the number of units present as described by <gi>unitOfMeasurement</gi>.</p>
-		<p>Either <gi>quantity</gi> or <gi>unitOfMeasurement</gi> must be present, but it is recommended to use both elements in conjunction with each other whenever possible.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -44,7 +43,8 @@
     		</p>
 	</div>
 	<div type="description">
-		<p><gi>quantity</gi> is for indicating the number of <gi>unitOfMeasurement</gi>-s being described. The content of <gi>quantity</gi> should be a number. Use of <gi>quantity</gi> enables extent statements to be machine processable. If the quantity is unknown, the element should remain empty.</p>
+		<p><gi>quantity</gi> is for indicating the number of <gi>unitOfMeasurement</gi>-s being described. The content of <gi>quantity</gi> should be a number. Use of <gi>quantity</gi> enables extent statements to be machine processable.</p>
+		<p>Either <gi>quantity</gi> or <gi>unitOfMeasurement</gi> must be present, but it is recommended to use both elements in conjunction with each other whenever possible. If the quantity is unknown, the element should remain empty.</p>
 	</div>
 	<div type="availability">
 		<p>Optional, not repeatable</p>
