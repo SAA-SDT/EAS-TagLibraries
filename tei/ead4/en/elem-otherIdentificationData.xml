@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-materialSpec">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-otherIdentificationData">
 	<head>
-		<gi>materialSpec</gi>
+		<gi>otherIdentificationData</gi>
 	</head>
 	<div type="fullName">
-		<p>Material Specific Details </p>
+		<p>Other Identification Data</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>identificationData</gi> for providing material specific details for a small group of materials or an item.</p>
+		<p>A child element of <gi>identificationData</gi> for any details about the materials being described that are not more appropriately encoded in the other available elements.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -47,21 +47,16 @@
             			<item>Optional</item>
             			<label>target</label>
             			<item>Optional</item>
-				<label>valueURI</label>
-            			<item>Optional</item>
-            			<label>vocabularySource</label>
-            			<item>Optional</item>
-            			<label>vocabularySourceURI</label>
-            			<item>Optional</item>
         		</list>
     		</p>
 	</div>
 	<div type="description">
-		<p><gi>materialSpec</gi> is for recording material specific details that are unique to a particular class or form of material and which are not recorded in any other element of description. Examples of material specific details include mathematical data, such as scale for cartographic and architectural records, jurisdictional and denominational data for philatelic records, and presentation data that describes the format of music manuscripts.</p>
-		<p>Most likely <gi>materialSpec</gi> will be useful at the item or small group level of description, such as a file of maps, a group of sound recordings, etc.</p>
+		<p><gi>otherIdentificationData</gi> is for capturing short notes about the materials being described that cannot be encoded more appropriately in any of the other elements available in <gi>identificationData</gi>.</p>
 	</div>
-	<div type="attributeusage"><p>Use <att>localType</att> to specify the type of data being conveyed in the element, e.g., &lt;materialSpec localType="scale" localTypeDeclarationReference="lTDR1"&gt;1:200&lt;/materialspec&gt;.</p></div>	
-	<div type="availability">
+	<div type="attributeusage"><p>Use <att>localType</att> to specify the type of data being conveyed in the element.</p></div>	
+	<div type="seealso">
+		<p>For any more extensive or narrative information about the materials being described, for which there is no more appropriate element available, use <gi>otherDescriptiveInfo</gi> directly in <gi>archDesc</gi> or the component elements.</p>
+              </div><div type="availability">
 		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
