@@ -7,10 +7,8 @@
                   <p>Place Name</p>
                </div>
                <div type="summary">
-                  <p type="eac">An optional child element of <gi>place</gi> used to encode the name of a place
-                     or geographic feature that is related to the CPF entity described.</p>
-                  <p type="ead">An optional child element of <gi>place</gi> used to encode the name of a place
-                     or geographic feature that is related to the records being described.</p>
+                  <p type="eac">An optional child element of <gi>place</gi> used to encode the name of a place or geographic feature that is related to the CPF entity described.</p>
+                  <p type="ead">An optional child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>relation</gi> and <gi>subject</gi> used to encode the name of a place or geographic feature that is of importance in the entity's relation with the records being described.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -21,7 +19,7 @@
                <div type="mayOccurWithin">
                   <p type="eac">demographicDescription, function, legalStatus, localDescription, mandate,
                      occupation, otherEntityType, place</p>
-                     <p type="ead">agent, function, legalStatus, place, subject</p>
+                     <p type="ead">agent, formAvailable, function, legalStatus, relation, subject</p>
                </div>
                <div type="attributes">
                   <p>
@@ -61,26 +59,24 @@
                   <p><gi>placeName</gi> should be identified by the proper noun that commonly
                      designates the place, natural feature, or political jurisdiction. It is
                      recommended that place names be taken from authorized vocabularies.</p>
-                  <p>Within <gi>place</gi>, a companion <gi>placeRole</gi> is strongly recommended
+                  <p type="eac">Within <gi>place</gi>, a companion <gi>placeRole</gi> is strongly recommended
                      to describe the nature of the association of the <gi>placeName</gi> to the
                      entity. Furthermore a companion <gi>geographicCoordinates</gi> is available
                      beside <gi>placeName</gi>, when used within <gi>place</gi>, to encode latitude,
                      longitude and altitude information.</p>
                   <p type="eac">At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
-                  <p type="ead">At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>placeType</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
-                  <p>The <gi>placeName</gi> element is repeatable. It is strongly recommended that
-                     within <gi>place</gi>, the <gi>placeName</gi> element be repeated only to
-                     represent the same place name in various languages, with an accompanying
-                        <att>languageOfElement</att> attribute.</p>
+                  <p>The <gi>placeName</gi> element is repeatable.</p>
+                  <p type="eac"> It is strongly recommended that within <gi>place</gi>, the <gi>placeName</gi> element be repeated only to represent the same place name in various languages, with an accompanying <att>languageOfElement</att> attribute.</p>
                </div>
-               <div type="attributeusage"><p>The <att>vocabularySource</att> attribute may be used to indicate the
-                        controlled vocabulary from which the <gi>placeName</gi> term is
-                        derived.</p></div>
-               <div type="availability">
+               <div type="attributeusage"><p>The <att>vocabularySource</att> attribute may be used to indicate the controlled vocabulary from which the <gi>placeName</gi> term is derived.</p></div>
+               <div type="seealso" standard="ead">
+		               <p>Within <gi>place</gi>, the required element <gi>label</gi> is used to capture the name of the geographic feature or location to align with the other entity elements such as <gi>agent</gi>, <gi>formAvailable</gi> or <gi>function</gi> which also use <gi>label</gi> to name the entity being described.</p>
+              </div>
+	<div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<place>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<place>
    <placeName vocabularySource="local" id="IDPlaceName1">
       East Side (Buffalo, N.Y.)
    </placeName>
@@ -88,7 +84,7 @@
       N 42°53′48" W 78°50′2"
    </geographicCoordinates>
 </place>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<place>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<place>
    <placeName localType="place">
       Clear Spring
    </placeName>
