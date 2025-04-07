@@ -47,6 +47,8 @@
   <item>0..n</item>
   <label>publicationNote</label>
   <item>0..n</item>
+  <label>recordTypeSpecificStatement</label>
+  <item>0..n</item>
   <label>relatedMaterial</label>
   <item>0..n</item>
   <label>scopeContent</label>
