@@ -24,7 +24,7 @@
                   <p type="eac">chronItem, dateSet, demographicDescription, existDates, function, legalStatus,
                      localControl, localDescription, mandate, occupation, otherEntityType, place,
                      relation, useDates</p>
-                 <p type="ead">accessConditions, agent, dateSet, fuction, legalStatus, place, relation, subject, unitDateStructured, useConditions</p>
+                 <p type="ead">accessConditions, agent, dateSet, formAvailable, fuction, legalStatus, place, relation, subject, unitDate, useConditions</p>
                </div>
                <div type="attributes">
                   <p>
