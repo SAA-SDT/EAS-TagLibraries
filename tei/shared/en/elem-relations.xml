@@ -22,7 +22,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">cpfDescription</p>
-                  <p type="ead">formAvailable, otherFindAid, publicationNote, relatedMaterial, separatedMaterial</p>
+                  <p type="ead">formAvailable, otherDescription, publicationNote, relatedMaterial, separatedMaterial</p>
                </div>
                <div type="attributes">
                   <p type="eac">
