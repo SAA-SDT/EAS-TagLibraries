@@ -11,7 +11,7 @@
 	</div>
 	<div type="description">
 		<p>Use <att>extentType</att> with <gi>extent</gi> to specify the nature of the statement being provided. Use e.g. "carrier" to refer to the number of containers; "materialType" to indicate the type and/or number of the material types; "spaceOccupied" to denote the two- or three-dimensional volume of the materials.</p>
-		<p>Use the attribute <att>extentTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>physDescStructuredType</att>.</p>
+		<p>Use the attribute <att>extentTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>extentType</att>.</p>
 	</div>
 	<div type="datatype">
 		<p>token</p>
