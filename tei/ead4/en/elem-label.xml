@@ -55,7 +55,7 @@
 		<p>
 			<list>
 				<item>In <gi>agent</gi>, this can be the name of the agent responsible for the creation, modification, or deletion of an EAD instance, as captured in <gi>maintenanceEvent</gi>, or the name of the agent who has created, managed, used, or is mentioned in the archival materials.</item>
-				<item> In <gi>formAvailable</gi>, this may e.g. be the file name of a digitised version of a record resource.</item>
+				<item>In <gi>formAvailable</gi>, this may e.g. be the file name of a digitised version of a record resource.</item>
 				<item>In <gi>function</gi>, this may be the name of the function or subfunction that resulted in the creation of the materials being described.</item>
 				<item>In <gi>place</gi>, this can be the name of the place where a person was born or an organization was established, but also the location where the archival material being described are held.</item>
 				<item>In <gi>subject</gi>, this may be a term for the genre or type of record or theme represented in the materials being described.</item>
