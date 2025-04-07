@@ -17,6 +17,8 @@
   <item>0..1</item>
   <label>p</label>
   <item>0..n</item>
+  <label>provenanceEvent</label>
+  <item>0..n</item>
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
@@ -51,6 +53,12 @@
 	<div type="description">
 		<p>Use <gi>sourceOfAcquisition</gi> to identify the source of the materials being described and the circumstances under which they were received, including donations, transfers, purchases, and deposits.</p>
 		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>sourceOfAcquisition</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                     <item><gi>abstract</gi> (if used)</item>
+                     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+		     <item><gi>provenanceEvent</gi></item>
+		</list>
 	</div>
 	<div type="seealso"><p>Note that the accession number may be encoded in <gi>unitId</gi> within <gi>identificationData</gi>.</p></div>
 	<div type="availability">
