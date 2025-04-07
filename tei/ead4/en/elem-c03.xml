@@ -37,11 +37,9 @@
   <item>0..1</item>
   <label>identificationData</label>
   <item>1..1</item>
+  <label>otherDescription</label>
+  <item>0..n</item>
   <label>otherDescriptiveInfo</label>
-  <item>0..n</item>
-  <label>otherFindAid</label>
-  <item>0..n</item>
-  <label>physicalOrTechnicalRequirements</label>
   <item>0..n</item>
   <label>places</label>
   <item>0..1</item>
@@ -50,6 +48,8 @@
   <label>processInfo</label>
   <item>0..n</item>
   <label>publicationNote</label>
+  <item>0..n</item>
+  <label>recordTypeSpecificStatement</label>
   <item>0..n</item>
   <label>relatedMaterial</label>
   <item>0..n</item>
@@ -73,8 +73,6 @@
 			<list type="gloss">
 				<label>audience</label>
 				<item>Optional</item>
-				<label>base</label>
-            			<item>Optional</item>
 				<label>conventionDeclarationReference</label>
             			<item>Optional</item>
             			<label>id</label>
