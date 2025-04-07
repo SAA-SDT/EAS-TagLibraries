@@ -10,9 +10,7 @@
                   <p type="eac">An optional child element of <gi>relation</gi>, <gi>setComponent</gi>, and
                         <gi>source</gi> that allows for the inclusion of an XML element from any XML
                      namespace.</p>
-                  <p type="ead">An optional child element of <gi>relation</gi> and
-                        <gi>source</gi> that allows for the inclusion of an XML element from any XML
-                     namespace.</p>
+                  <p type="ead">An optional child element of <gi>descriptiveNote</gi>, <gi>relation</gi> and <gi>source</gi> that allows for the inclusion of an XML element from any XML namespace.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -22,7 +20,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">relation, setComponent, source</p>
-                  <p type="ead">relation, source</p>
+                  <p type="ead">descriptiveNote, relation, source</p>
                </div>
                <div type="attributes">
                   <p type="eac">
