@@ -7,18 +7,24 @@
 		<p>Genre or Form</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>An element for encoding a genre or form of material.</p>
 	</div>
 	<div type="mayContain">
 		<p>
 			<list type="gloss">
 				<label>[text]</label>
 				<item/>
+				<label>reference</label>
+				<item>0..n</item>
+				<label>referringString</label>
+				<item>0..n</item>
+				<label>span</label>
+				<item>0..n</item>
 			</list>
 		</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>classifications</p>
+		<p>identificationData</p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -53,16 +59,13 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element. Mark up other <gi>elements</gi> and <att>attributes</att> mentioned from the same Tag Library.</p>
+		<p><gi>genreForm</gi> identifies the types of material being described by naming the style or technique of their intellectual content (genre), order of information or object function (form), and physical characteristics. Examples include: account books, architectural drawings, portraits, short stories, sound recordings, and videotapes.</p>
 	</div>
 	<div type="attributeusage">
-		<p>A listing of usage of attributes with the element (optional)</p>
+		<p><p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
 	</div>	
-	<div type="seealso">
-		<p>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</p>
-	</div>
 	<div type="availability">
-		<p>Required, Repeatable</p>
+		<p>Optional, Repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xml:lang="eng"></egXML>
