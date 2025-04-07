@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-physDescStructuredType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<att>extentType</att>
+	</head>
+	<div type="fullName">
+		<p>Extent Type</p>
+	</div>
+	<div type="summary">
+		<p>An optional attribute of <gi>extent</gi> that specifies the nature of the extent statement being provided.</p>
+	</div>
+	<div type="description">
+		<p>Use <att>extentType</att> with <gi>extent</gi> to specify the nature of the statement being provided. Use e.g. "carrier" to refer to the number of containers; "materialType" to indicate the type and/or number of the material types; "spaceOccupied" to denote the two- or three-dimensional volume of the materials.</p>
+		<p>Use the attribute <att>extentTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>physDescStructuredType</att>.</p>
+	</div>
+	<div type="datatype">
+		<p>token</p>
+	</div>
+	<div type="examples">
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+		</egXML>
+	</div>
+</div>
