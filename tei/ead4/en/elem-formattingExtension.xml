@@ -7,10 +7,7 @@
 		<p>Formatting Extension</p>
 	</div>
 	<div type="summary">
-		<p>An optional, wrapping element that may be utilized to encode formatting features that are
-			not part of the EAS data model. When using the EAS-provided NVDL Schema validation
-			procedure, this element will require that all elements encoded within are from the XHTML
-			namespace.</p>
+		<p>An optional, wrapping element that may be utilized to encode formatting features that are not part of the EAS data model. When using the EAS-provided NVDL Schema validation procedure, this element will require that all elements encoded within are from the XHTML namespace.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -24,7 +21,7 @@
 		<!-- rather that sort A-Z in one list, would it be better to break out by type?  e.g. narrative appearance vs. findingAidDesc vs. former dsc + new formAvailable ? -->
 		<!-- also, in this case, i think we should take a harder line and *only* allow this extension on narrative elements, but also to be more flexible and allow it to sit side-by-side with paragraphs. i can certainly see the benefit of having a formattingExtension follow a local set of "paragraphs". -->
 		<p>
-				accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, filePlan, findAidDesc, formAvailable, otherDescriptiveInfo, otherFindAid, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions
+				accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, filePlan, findAidDesc, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions
 		</p>
 	</div>
 	<div type="attributes">
