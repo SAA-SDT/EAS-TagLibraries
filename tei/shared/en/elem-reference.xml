@@ -28,8 +28,7 @@
    <div type="mayOccurWithin">
       <p type="eac">abstract, chronItem, chronItemSet, conventionDeclaration, event,
          eventDescription, item, localTypeDeclaration, p, rightsDeclaration, source</p>
-      <p type="ead">abstract, container, conventionDeclaration, eventDescription, head,
-         localTypeDeclaration, p, physFacet, rightsDeclaration, source, textualDate, unitId, unitTitle</p>
+      <p type="ead">abstract, container, conventionDeclaration, eventDescription, formAvailableId, genreForm, head, localTypeDeclaration, otherIdentificationData, p, physFacet, rightsDeclaration, source, textualDate, unitId, unitTitle</p>
    </div>
    <div type="attributes">
       <p type="eac">
