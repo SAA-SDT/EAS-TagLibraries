@@ -43,9 +43,7 @@
            			<item>Optional</item>
             			<label>maintenanceEventReference</label>
             			<item>Optional</item>
-            			<label>parent</label>
-            			<item>Optional</item>
-				<label>scriptOfElement</label>
+            			<label>scriptOfElement</label>
             			<item>Optional</item>
             			<label>sourceReference</label>
             			<item>Optional</item>
