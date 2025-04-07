@@ -62,6 +62,7 @@
         <p>The prescribed order of all child elements (both required and optional) is:</p>
         <list type="simple">
            	<item><gi>abstract</gi> if used</item>
+		<item><gi>dateRange</gi></item>
            	<item><gi>formattingExtension</gi> or <gi>p</gi></item>
          </list></div>
 	<div type="seealso"><p>Do not confuse with <gi>accessConditions</gi>, which contains information about conditions affecting the availability of the described materials.</p></div>
