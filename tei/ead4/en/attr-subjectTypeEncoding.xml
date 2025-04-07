@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-subjectTypeEncoding" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<att>subjectTypeEncoding</att>
+	</head>
+	<div type="fullName">
+		<p>Subject Type Encoding</p>
+	</div>
+	<div type="summary">
+		<p>Specifies the authoritative source or rules for values used to identify the type of subject.</p>
+	</div>
+	<div type="description">
+		<p><att>subjectTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>subjectType</att> within <gi>subject</gi>. If the value "EASList" is selected, <att>subjectType</att> will be expected with the values "genre", "mandate", "occupation", "publishedResource", "recordType", or "theme". If the value "otherSubjectTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+	</div>
+	<div type="values">
+		<p>EASList, otherSubjectTypeEncoding</p>
+	</div>
+	<div type="examples">
+		<egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" subjectTypeEncoding="EASList">
+	[...]
+</control>]]></egXML>
+	</div>
+</div>
