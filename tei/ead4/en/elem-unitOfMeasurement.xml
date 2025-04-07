@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-unitType">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-unitOfMeasurement">
 	<head>
-		<gi>unitType</gi>
+		<gi>unitOfMeasurement</gi>
 	</head>
 	<div type="fullName">
-		<p>Unit Type</p>
+		<p>Unit of Measurement</p>
 	</div>
 	<div type="summary">
-		<p>A required child element of <gi>physDescStructured</gi> that indicates the type of unit being quantified, e.g., boxes, linear feet, megabyte, gigabyte, etc.</p>
+		<p>An optional child element of <gi>extent</gi> and <gi>dimensions</gi> that indicates the unit of measurement being quantified, e.g., boxes, linear feet, megabyte, gigabyte, etc.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -16,7 +16,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>physDescStructured</p>
+		<p>dimensions, extent</p>
 	</div>
 	<div type="attributes">
     		<p>
@@ -47,11 +47,12 @@
     		</p>
 	</div>
 	<div type="description">
-		<p>Required in <gi>physDescStructured</gi>, <gi>unitType</gi> identifies the type of unit being quantified. This can cover analog types such as boxes, linear feet or meters, cubic meters, etc. as well as digital types such as megabytes, gigabytes, etc. or types of items that are counted such as maps, photographs, posters, etc.</p>
+		<p><gi>unitOfMeasurement</gi> identifies the unit being quantified. This can cover analog units such as boxes, linear feet or meters, cubic meters, etc. as well as digital units such as megabytes, gigabytes, etc. or types of items that are counted such as maps, photographs, posters, etc.</p>
+		<p>Either <gi>unitOfMeasurement</gi> or <gi>quantity</gi> must be present, but it is recommended to use both elements in conjunction with each other whenever possible.</p>
 	</div>
 	<div type="attributeusage"><p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the unit type in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p></div>	
 	<div type="availability">
-		<p>Required, not repeatable</p>
+		<p>Optional, not repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
