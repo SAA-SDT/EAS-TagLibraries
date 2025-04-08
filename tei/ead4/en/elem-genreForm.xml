@@ -62,7 +62,7 @@
 		<p><gi>genreForm</gi> identifies the types of material being described by naming the style or technique of their intellectual content (genre), order of information or object function (form), and physical characteristics. Examples include: account books, architectural drawings, portraits, short stories, sound recordings, and videotapes.</p>
 	</div>
 	<div type="attributeusage">
-		<p><p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
+		<p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
 	</div>	
 	<div type="availability">
 		<p>Optional, Repeatable</p>
