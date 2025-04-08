@@ -50,7 +50,7 @@
 		<p>Use <gi>role</gi> to indicate the role of the related entity towards the entity being described in the EAS instance. It is recommended that the terms in <gi>role</gi> be taken from authorized vocabularies.</p>
 		<p><gi>role</gi> might be used in combination with the specific type attribute available with each of the entity elements where role is available. While these attribute provide a generic typology of each entity class, e.g. "corporateBody", "person", and "family" for <att>agentType</att>, <gi>role</gi> looks more specifically at the related entity itself in a certain context. Furthermore, <gi>role</gi> may be used in combination with <gi>relationship</gi> which is available in <gi>agent</gi>, <gi>function</gi>, <gi>place</gi> and <gi>subject</gi>. While <gi>relationship</gi> gives again a more general indication about the relationship between the related and the described entity, e.g. "creation", <gi>role</gi> allows to be more specific to the individual related entity, e.g. by assigning the role of "director" to one <gi>agent</gi> and the role of "playwright" to another.</p>
 		</div>
-	<div type="seealso"><p>Use the element <gi>label</gi> to encode the related entity’s name.</p></div>
+	<div type="seealso"><p>Use the element <gi>label</gi> to encode the related entity’s name and the element <gi>relationship</gi> to encode a more general denominator for the relation between the related entity and the entity being described in the EAS instance.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>
