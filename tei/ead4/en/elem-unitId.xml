@@ -64,7 +64,9 @@
 		<p><gi>unitId</gi> may contain any alpha-numeric text string that serves as a unique reference point or control number for the described material, such as a lot number, an accession number, a classification number, a reference code, or an entry number in a bibliography or catalog. <gi>unitId</gi> is primarily a logical designation, which sometimes indirectly provides location information, as in the case of a classification number.</p>
 	</div>
 	<div type="attributeusage"><p>Although not required, the <att>countryCode</att> and <att>repositoryCode</att> should be used in <gi>unitId</gi> to comply with ISAD(G) element 3.1.1.</p></div>	
-	<div type="seealso"><p>Use <gi>container</gi> and <gi>physLoc</gi> to designate the physical housing or location of the described materials.</p></div>
+	<div type="seealso"><p>Use <gi>container</gi> and <gi>place</gi> to designate the physical housing or location of the described materials.</p>
+	<p>Use <gi>formAvailableId</gi> to provide identifiers used for the specific instantiations of the materials being described. The identifier in <gi>unitId</gi> will usually  be different from, though might provide a basis for these identifiers.</p>
+	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>
