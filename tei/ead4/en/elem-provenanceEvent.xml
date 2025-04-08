@@ -7,18 +7,22 @@
 		<p>Provenance Event</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>An optional child element of <gi>appraisal</gi>, <gi>biogHist</gi>, <gi>custodHist</gi>, <gi>processInfo</gi>, and <gi>sourceOfAcquisition</gi> used to record a timeline of activities in the history of the materials being described or the biography of the records creator.</p>
 	</div>
 	<div type="mayContain">
 		<p>
 			<list type="gloss">
-				<label>[text]</label>
-				<item/>
+				<label>agent</label>
+				<item>0..1</label>
+				<label>eventDateTime</label>
+				<item>1..1</label>
+				<label>eventDescription</label>
+				<item>0..n</label>
 			</list>
 		</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>classifications</p>
+		<p>appraisal, biogHist, custodHist, processInfo, sourceOfAcquisition</p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -43,26 +47,21 @@
 				<item>Optional</item>
 				<label>target</label>
 				<item>Optional</item>
-				<label>valueURI</label>
-				<item>Optional</item>
-				<label>vocabularySource</label>
-				<item>Optional</item>
-				<label>vocabularySourceURI</label>
-				<item>Optional</item>
 			</list>
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element. Mark up other <gi>elements</gi> and <att>attributes</att> mentioned from the same Tag Library.</p>
-	</div>
-	<div type="attributeusage">
-		<p>A listing of usage of attributes with the element (optional)</p>
-	</div>	
-	<div type="seealso">
-		<p>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</p>
+		<p>Use <gi>provenanceEvent> to record an activity in the creation, management and ongoing maintenance of the materials being described or in the history of the records creator. This may include activities of appraisal and selection, sensitivity review, revisions, updates, retentions, etc.</p>
+<p>The type of each event may be defined with the attribute <att>localType</att>. Use <att>localTypeDeclarationReference</att> to refer to a <gi>localTypeDeclaration</gi> within <gi>control</gi> where you have defined those types. The child <gi>eventDateTime</gi> to record when the event took place is mandatory, while the child <gi>agent</gi> to provide information about who or what carried out, or was otherwise responsible for, the activity is optional, though highly recommended. Furthermore, the information about the event may be described in <gi>eventDescription</gi>.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                     <item><gi>eventDateTime</gi></item>
+                     <item><gi>agent</gi></item>
+		     <item><gi>eventDescription</gi></item>
+                </list>
 	</div>
 	<div type="availability">
-		<p>Required, Repeatable</p>
+		<p>Optional, Repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xml:lang="eng"></egXML>
