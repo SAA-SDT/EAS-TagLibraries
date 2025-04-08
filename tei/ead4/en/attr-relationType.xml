@@ -11,7 +11,7 @@
 	</div>
 	<div type="description">
 		<p>Use <att>relationType</att> with <gi>relation</gi> to specify the type of relation between the related entity and the entity being described in the EAS instance.</p>
-		<p>Use the attribute <att>relationTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>relation</att>.</p>
+		<p>Use the attribute <att>relationTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>relationType</att>.</p>
 	</div>
 	<div type="datatype">
 		<p>token</p>
