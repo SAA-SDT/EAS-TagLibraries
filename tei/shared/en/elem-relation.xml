@@ -32,19 +32,15 @@
   <item>0..1</item>
   <label>descriptiveNote</label>
   <item>0..1</item>
+  <label>label</label>
+  <item>1..n</item>
   <label>objectXMLWrap</label>
   <item>0..1</item>
-  <label>place</label>
+  <label>placeName</label>
   <item>0..n</item>
-  <label>relationType</label>
+  <label>role</label>
   <item>0..n</item>
-  <label>targetEntity</label>
-  <item>1..1</item>
-  <label>targetRole</label>
-  <item>0..n</item>
-  <label>targetType</label>
-  <item>0..n</item>
-</list></p>
+  </list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>relations</p>
@@ -62,29 +58,23 @@
                         <item>Optional</item>
                         <label>maintenanceEventReference</label>
                         <item>Optional</item>
+                        <label>relationType</label>
+                        <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
                         <label>sourceReference</label>
                         <item>Optional</item>
                         <label>target</label>
                         <item>Optional</item>
+                        <label>targetType</label>
+                        <item>Optional</item>
                      </list>
                   </p>
                </div>
                <div type="description">
-                  <p type="ead"><gi>relation</gi> records descriptive information about a relationship between the materials being described and archival, bibliographic, or other types of resources or any kind of digital representations, microfiches or microfilms, copies, etc. of the materials. Use the required child element <gi>targetEntity</gi> to provide a textual identification of the related entity, such as a name or a title. Use the optional child element <gi>relationType</gi> to specify the type of relation, e.g., derivation. Use the optional child element <gi>targetRole</gi> to specify the role of the related entity, e.g., digital representation, and the optional child element <gi>targetType</gi> to classify the type of the related entity, e.g., JPEG. It is recommended that the terms used in <gi>relationType</gi>, <gi>targetEntity</gi>, <gi>targetRole</gi>, and <gi>targetType</gi> be taken from an authorized vocabulary.</p>
-                  <p type="eac">Use the required child element <gi>targetEntity</gi> to provide a textual
-                     identification of the related entity, such as a name or a title. Use the
-                     optional child element <gi>relationType</gi> to specify the type of relation.
-                     Use the optional child element <gi>targetRole</gi> to specify the role of the
-                     related entity. It is recommended that the terms used in <gi>relationType</gi>,
-                        <gi>targetEntity</gi>, and <gi>targetRole</gi> be taken from an authorized
-                     vocabulary.</p>
-                  <p>Use <gi>objectXMLWrap</gi> to embed XML documenting the related entity from any
-                     namespace. Use <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> for
-                     specifying the time period of the relationship and <gi>place</gi> for relevant
-                     location information. <gi>descriptiveNote</gi> may be included for more
-                     detailed specifications or explanations of the relationship.</p>
+                  <p type="ead"><gi>relation</gi> records descriptive information about a relationship between the materials being described and archival, bibliographic, or other types of resources or any kind of digital representations, microfiches or microfilms, copies, etc. of the materials. Use the required child element <gi>label</gi> to provide a textual identification of the related entity, such as a name or a title. Use the optional attribute <att>relationType</att> to specify the type of relation, e.g., derivation. Use the optional child element <gi>role</gi> to specify the role of the related entity, e.g., digital representation, and the optional attribute <att>targetType</att> to classify the type of the related entity, e.g., JPEG. It is recommended that the terms used in <gi>label</gi> and  <gi>role</gi> be taken from an authorized vocabulary.</p>
+                  <p type="eac">Use the required child element <gi>targetEntity</gi> to provide a textual identification of the related entity, such as a name or a title. Use the optional child element <gi>relationType</gi> to specify the type of relation. Use the optional child element <gi>targetRole</gi> to specify the role of the related entity. It is recommended that the terms used in <gi>relationType</gi>, <gi>targetEntity</gi>, and <gi>targetRole</gi> be taken from an authorized vocabulary.</p>
+                  <p>Use <gi>objectXMLWrap</gi> to embed XML documenting the related entity from any namespace. Use <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> for specifying the time period of the relationship and <gi>placeName</gi> for relevant location information. <gi>descriptiveNote</gi> may be included for more detailed specifications or explanations of the relationship.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <p type="eac">
                      <list type="simple">
@@ -98,9 +88,10 @@
                   </p>
                   <p type="ead">
                      <list type="simple">
-                        <item><gi>targetEntity</gi></item>
+                        <item><gi>label</gi></item>
                         <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
-                        <item>One or more of <gi>place</gi>, <gi>relationType</gi>, <gi>targetRole</gi>, and <gi>targetType</gi></item>
+                        <item><gi>placeName</gi></item>
+                        <item><gi>role</gi></item>
                         <item><gi>descriptiveNote</gi></item>
                         <item><gi>objectXMLWrap</gi></item>
                      </list>
