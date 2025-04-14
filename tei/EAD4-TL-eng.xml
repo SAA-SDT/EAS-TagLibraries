@@ -203,7 +203,6 @@
             <xi:include href="ead4/en/elem-subject.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-subjectHeadings.xml" parse="xml"/>
             <xi:include href="shared/en/elem-targetEntity.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-targetRole.xml" parse="xml"/>
             <xi:include href="shared/en/elem-term.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-textualDate.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-title.xml" parse="xml"/>
