@@ -57,6 +57,10 @@
                      <item><gi>formattingExtension</gi> or <gi>p</gi></item>
                 </list>
 	</div>
+	<div type="seealso">
+		<p>Do not confuse with <gi>processInfo</gi> which describes the activities conducted by the staff of an institution with archival holdings in preparing the described materials for research and other use. This might or might not include activities related to processing any new additions to already existing record sets.</p>
+		<p>Do not confuse with <gi>maintenanceHistory</gi> which describes events in the lifetime of the EAD instance, not the materials being described.</p>
+	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>
