@@ -51,7 +51,7 @@
     		</p>
 	</div>
 	<div type="description">
-		<p><gi>processInfo</gi> is used for basic information about accessioning, arranging, describing, preserving, storing, conserving, or otherwise preparing the described materials for research use. Where appropriate, encode more specific information about each of these activities separately within other elements, such as <gi>sourceOfAcquisition</gi>, <gi>appraisal</gi>, <gi>arrangement</gi>, <gi>physLoc</gi>, etc.</p>
+		<p><gi>processInfo</gi> is used for basic information about accessioning, arranging, describing, preserving, storing, conserving, or otherwise preparing the described materials for research use. Where appropriate, encode more specific information about each of these activities separately within other elements, such as <gi>sourceOfAcquisition</gi>, <gi>appraisal</gi>, <gi>arrangement</gi>, etc.</p>
 		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>processInfo</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
 		<p>The prescribed order of all child elements (both required and optional) is:</p>
 		<list type="simple">
