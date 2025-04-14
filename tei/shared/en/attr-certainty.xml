@@ -16,7 +16,7 @@
                   </p>
                   <p type="ead">
                      The optional attribute <att>certainty</att> provides level of confidence for the information given in <gi>date</gi>,
-                     <gi>fromDate</gi>, <gi>toDate</gi>, <gi>unitDate</gi>, or <gi>unitDateStructured</gi>, e.g., approximate or circa.
+                     <gi>fromDate</gi>, <gi>toDate</gi>, or <gi>unitDate</gi>, e.g., approximate or circa.
                   </p>
                </div>
                <div type="datatype">
