@@ -100,10 +100,7 @@
                      <gi>legalStatus</gi>, <gi>place</gi>,
                         <gi>relation</gi>, <gi>subject</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> optional, not repeatable</p>
-                 <p type="ead">Within <gi>unitDateStructured</gi>: one of
-                        <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
-                     repeatable</p>
-                  <p type="eac">Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of
+                 <p type="eac">Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>
                   <p>Within <gi>dateSet</gi>: at least two of <gi>date</gi> and/or
