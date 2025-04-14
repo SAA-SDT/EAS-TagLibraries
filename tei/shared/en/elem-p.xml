@@ -59,8 +59,7 @@
                   <p>Use <gi>p</gi> for blocks of text. A paragraph may be a subdivision of a larger composition or it may exist alone. It is usually typographically distinguished: A line space is often left blank before it; the text begins on a new line; and the first letter of the first word may be indented, enlarged, or both.</p>
                </div>
                <div type="availability">
-                  <p type="eac">Within <gi>descriptiveNote</gi>: required, repeatable.</p>
-                  <p type="ead">Within <gi>descriptiveNote</gi> and <gi>identificationDataNote</gi>: required, repeatable.</p>
+                  <p>Within <gi>descriptiveNote</gi>: required, repeatable.</p>
                   <p>Within all other parents: optional, repeatable.</p>
                </div>
                <div type="examples">
