@@ -88,8 +88,7 @@
                         <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
                         <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> optional, not repeatable</p>
-                  <p type="ead">Within <gi>agent</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>place</gi>, <gi>relation</gi>, <gi>subject</gi> and <gi>unitDateStructured</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
-                        <gi>dateSet</gi> optional, not repeatable</p>
+                  <p type="ead">Within <gi>agent</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>place</gi>, <gi>relation</gi>, and <gi>subject</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not repeatable</p>
                   <p type="eac">Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>
