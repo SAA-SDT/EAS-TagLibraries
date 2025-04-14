@@ -13,11 +13,11 @@
 		<p>
 			<list type="gloss">
 				<label>agent</label>
-				<item>0..1</label>
+				<item>0..1</item>
 				<label>eventDateTime</label>
-				<item>1..1</label>
+				<item>1..1</item>
 				<label>eventDescription</label>
-				<item>0..n</label>
+				<item>0..n</item>
 			</list>
 		</p>
 	</div>
@@ -51,7 +51,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>provenanceEvent> to record an activity in the creation, management and ongoing maintenance of the materials being described or in the history of the records creator. This may include activities of appraisal and selection, sensitivity review, revisions, updates, retentions, etc.</p>
+		<p>Use <gi>provenanceEvent</gi> to record an activity in the creation, management and ongoing maintenance of the materials being described or in the history of the records creator. This may include activities of appraisal and selection, sensitivity review, revisions, updates, retentions, etc.</p>
 <p>The type of each event may be defined with the attribute <att>localType</att>. Use <att>localTypeDeclarationReference</att> to refer to a <gi>localTypeDeclaration</gi> within <gi>control</gi> where you have defined those types. The child <gi>eventDateTime</gi> to record when the event took place is mandatory, while the child <gi>agent</gi> to provide information about who or what carried out, or was otherwise responsible for, the activity is optional, though highly recommended. Furthermore, the information about the event may be described in <gi>eventDescription</gi>.</p>
 		<p>The prescribed order of all child elements (both required and optional) is:</p>
 		<list type="simple">

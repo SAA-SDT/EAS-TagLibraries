@@ -22,7 +22,7 @@
 		<p>token</p>
 	</div>
   <div type="examples">
-    <egXML xml:lang="eng"type="eac">
+    <egXML xml:lang="eng" type="eac">
       <![CDATA[<maintenanceEvent maintenanceEventType="updated">
         <agent agentType="human">A. Smith</agent>
         <eventDateTime standardDateTime="2021-12">December 2021</eventDateTime>

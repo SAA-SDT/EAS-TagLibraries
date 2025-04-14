@@ -16,7 +16,7 @@
 				<item/>
 				<label>reference</label>
 				<item>0..n</item>
-				<label>referringString/label>
+				<label>referringString</label>
 				<item>0..n</item>
 				<label>span</label>
 				<item>0..n</item>
@@ -59,7 +59,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p><formAvailableId> may contain any alpha-numeric text string that serves as a unique reference point or control number for the described instantiation.</p>
+		<p><gi>formAvailableId</gi> may contain any alpha-numeric text string that serves as a unique reference point or control number for the described instantiation.</p>
 	</div>
 	<div type="attributeusage">
 		<p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely and persistently identifies the instantiation in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
