@@ -21,7 +21,7 @@
                    terms from EAS lists that can be used as values of <att>status</att>. It is also possible 
                    to define one's own list by using the value "otherStatusEncoding". Optionally available 
                    in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, 
-                    <gi>fromDate</gi>, <gi>toDate</gi>, <gi>unitDate</gi>.</p>
+                    <gi>fromDate</gi>, <gi>toDate</gi>, <gi>textualDate</gi>.</p>
                </div>
                <div type="values" standard="eac">
                   <p>Values in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>nameEntry</gi>: alternative, authorized</p>
