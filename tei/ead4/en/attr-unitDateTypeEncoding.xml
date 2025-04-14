@@ -15,7 +15,4 @@
 	<div type="values">
 		<p>EASList, otherUnitDateTypeEncoding</p>
 	</div>
-	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924" unitDateTypeEncoding="EASList"> [...] </control>]]></egXML>
-	</div>
 </div>
