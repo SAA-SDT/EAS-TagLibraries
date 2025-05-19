@@ -19,7 +19,7 @@
   <item>1..n</item>
   <label>placeName</label>
   <item>0..n</item>
-  <label>relation</label>
+  <label>relationship</label>
   <item>0..n</item>
   <label>role</label>
   <item>0..n</item>
