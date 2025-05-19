@@ -19,7 +19,7 @@
                <div type="mayOccurWithin">
                   <p type="eac">demographicDescription, function, legalStatus, localControl, localDescription,
                      mandate, occupation, otherEntityType</p>
-                  <p type="ead">function, legalStatus, subject</p>
+                  <p type="ead">legalStatus</p>
                </div>
                <div type="attributes">
                   <p>
