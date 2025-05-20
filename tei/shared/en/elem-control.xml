@@ -56,10 +56,31 @@
   <label>sources</label>
   <item>0..1</item>
 </list></p>
+                 <p type="eaf"><list type="gloss">
+  <label>conventionDeclaration</label>
+  <item>0..n</item>
+  <label>languageDeclaration</label>
+  <item>0..n</item>
+  <label>localTypeDeclaration</label>
+  <item>0..n</item>
+  <label>maintenanceAgency</label>
+  <item>1..1</item>
+  <label>maintenanceHistory</label>
+  <item>1..1</item>
+  <label>otherRecordId</label>
+  <item>0..n</item>
+  <label>recordId</label>
+  <item>1..1</item>
+  <label>rightsDeclaration</label>
+  <item>0..n</item>
+  <label>sources</label>
+  <item>0..1</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">eac</p>
                   <p type="ead">ead</p>
+                 <p type="eaf">eaf</p>
                </div>
                <div type="attributes">
                   <p type="eac">
@@ -152,6 +173,54 @@
                         <item>Optional (values limited to: EASList, otherUnitDateTypeEncoding)</item>
                      </list>
                   </p>
+                 <p type="eaf">
+                     <list type="gloss">
+                        <label>addressLineTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherAddressLineTypeEncoding)</item>
+                        <label>audience</label>
+                        <item>Optional</item>
+                        <label>audienceEncoding</label>
+                        <item>Optional (values limited to: EASList, otherAudienceEncoding)</item>
+                        <label>base</label>
+                        <item>Optional</item>
+                        <label>contactLineTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherContactLineTypeEncoding)</item>
+                        <label>countryEncoding</label>
+                        <item>Optional (values limited to: iso3166-1, otherCountryEncoding)</item>
+                        <label>dateEncoding</label>
+                        <item>Optional (values limited to: iso8601, otherDateEncoding)</item>
+                        <label>detailLevel</label>
+                        <item>Optional</item>
+                        <label>detailLevelEncoding</label>
+                        <item>Optional (values limited to: EASList, otherDetailLevelEncoding)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageEncoding</label>
+                        <item>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2, iso639-3, otherLanguageEncoding)</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherMaintenanceEventTypeEncoding)</item>
+                        <label>maintenanceStatus</label>
+                        <item>Optional</item>
+                        <label>maintenanceStatusEncoding</label>
+                        <item>Optional (values limited to: EASList, otherMaintenanceStatusEncoding)</item>
+                        <label>publicationStatus</label>
+                        <item>Optional</item>
+                        <label>publicationStatusEncoding</label>
+                        <item>Optional (values limited to: EASList, otherPublicationStatusEncoding)</item>
+                        <label>repositoryEncoding</label>
+                        <item>Optional (values limited to: iso15511, otherRepositoryEncoding)</item>
+                        <label>scriptEncoding</label>
+                        <item>Optional (values limited to: iso15924, otherScriptEncoding)</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>statusEncoding</label>
+                        <item>Optional (values limited to: EASList, otherStatusEncoding)</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
                </div>
                <div type="description">
                   <p>This required wrapper element within the root element of an EAS instance contains the information
@@ -171,6 +240,12 @@
                      responsible for its creation and maintenance in <gi>maintenanceAgency</gi> as
                      well as statements about the creation, maintenance, and disposition
                      of the instance in <gi>maintenanceHistory</gi>.</p>
+                 <p type="eaf">It must contain a unique identifier for the instance within the
+                        <gi>recordId</gi> element. Other associated identifiers may be given in
+                        <gi>otherRecordId</gi>. There must be a description of the agency
+                     responsible for its creation and maintenance in <gi>maintenanceAgency</gi> as
+                     well as statements about the creation, maintenance, and disposition
+                     of the instance in <gi>maintenanceHistory</gi>.</p>
                   <p type="eac">There are optional elements available to declare languages, rules, conventions
                      and sources used in the EAS instance. Other control elements considered
                      necessary but not otherwise included may be given in the <gi>localControl</gi>
@@ -178,6 +253,9 @@
                      EAS instance are recommended to be defined in the
                         <gi>localTypeDeclaration</gi> element.</p>
                   <p type="ead">There are optional elements available to declare languages, rules, conventions
+                     and sources used in the EAS instance. Local types for certain elements used throughout the
+                     EAS instance are recommended to be defined in the <gi>localTypeDeclaration</gi> element.</p>
+                 <p type="eaf">There are optional elements available to declare languages, rules, conventions
                      and sources used in the EAS instance. Local types for certain elements used throughout the
                      EAS instance are recommended to be defined in the <gi>localTypeDeclaration</gi> element.</p>
                   <p>The available child elements (both required and optional), in their prescribed
@@ -234,17 +312,37 @@
                               the usage rights of the EAS instance.</item>
                          </list>
                        </p>
+                       <p type="eaf">The following elements may appear in any order after the above elements:
+                         <list type="simple">
+                           <item><gi>conventionDeclaration</gi> - Optional. Contains information on
+                              the rules or conventions used to construct the EAS
+                              instance.</item>
+                           <item><gi>languageDeclaration</gi> - Optional. Contains coded and natural
+                              language information about the language or languages of the EAS
+                              instance.</item>
+                           <item><gi>localTypeDeclaration</gi> - Optional. Contains information
+                              about local conventions used in the <att>localType</att>
+                              attribute.</item>
+                           <item><gi>otherRecordId</gi> - Optional. An element that allows the
+                              recording of additional identifiers that may be associated with the
+                              EAS instance.</item>
+                           <item><gi>rightsDeclaration</gi> - Optional. Contains information about
+                              the usage rights of the EAS instance.</item>
+                         </list>
+                       </p>
                      </item>
                   </list>
                </div>
                <div type="attributeusage">
   <p type="eac">Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p>
+                  <p type="eaf">Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p>
   <p type="eac">Use the optional <att>publicationStatus</att> attribute to record the editorial status of the EAS instance.</p></div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples" standard="eac">
                   <egXML xml:lang="eng" type="ead"/>
+                 <egXML xml:lang="eng" type="eaf"/>
                   <egXML xml:lang="eng" type="eac"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
    <recordId>
       https://kalliope-verbund.info/gnd/118584618
