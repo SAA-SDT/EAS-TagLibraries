@@ -58,6 +58,22 @@
                         <item>Optional</item>
                      </list>
                   </p>
+                 <p type="eaf">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventType</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
                </div>
                <div type="description">
                   <p>A required child element of <gi>maintenanceHistory</gi>,
@@ -81,7 +97,9 @@
                         maintenance activity that the <gi>maintenanceEvent</gi> is recording, using
                         one of the values from the available controlled list. </p>
                         <p type="ead">Use <att>maintenanceEventType</att> to document the type of maintenance activity that the <gi>maintenanceEvent</gi> is recording. Use <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>maintenanceEventType</att>.</p></div>
-               <div type="availability">
+  <p type="eaf">Use <att>maintenanceEventType</att> to document the type of maintenance activity that the <gi>maintenanceEvent</gi> is recording. Use <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>maintenanceEventType</att>.</p></div>
+                            
+  <div type="availability">
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
