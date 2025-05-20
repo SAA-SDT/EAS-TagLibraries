@@ -16,6 +16,7 @@
                <div type="datatype">
                   <p type="ead">token</p>
                   <p type="eac">NMTOKEN</p>
+                 <p type="eaf">token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countrycode="IE">
