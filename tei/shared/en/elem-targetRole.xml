@@ -11,6 +11,8 @@
                      related entity with respect to the CPF entity being described.</p>
                   <p type="ead">An optional child element of <gi>function</gi>, <gi>relation</gi>, and <gi>subject</gi> used to specify the role of a
                      related entity, function, or subject with respect to the records being described.</p>
+                 <p type="eaf">An optional child element of <gi>relation</gi> used to specify the role of a
+                     related entity with respect to the function being described.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -60,7 +62,9 @@
                      related entity with respect to the CPF entity being described.</p>
                   <p type="ead"><gi>targetRole</gi> is used with <gi>function</gi>, <gi>relation</gi>, and <gi>subject</gi> to specify the role of a
                      related function, entity, or subject with respect to the records being described.</p>
-                  <p>The <gi>targetRole</gi> element contains a textual description of the relation.
+                 <p type="eaf"><gi>targetRole</gi> is used with <gi>relation</gi> to specify the role of a
+                     related entity with respect to the function being described.</p> 
+                 <p>The <gi>targetRole</gi> element contains a textual description of the relation.
                      It is recommended that the terms in <gi>targetRole</gi> be taken from
                      authorized vocabularies.</p>
                </div>
