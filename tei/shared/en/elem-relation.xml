@@ -45,6 +45,22 @@
   <label>targetType</label>
   <item>0..n</item>
 </list></p>
+                 <p type="eaf"><list type="gloss">
+  <label>date or dateRange or dateSet</label>
+  <item>0..1</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>objectXMLWrap</label>
+  <item>0..1</item>
+  <label>places</label>
+  <item>0..1</item>
+  <label>relationType</label>
+  <item>0..n</item>
+  <label>targetEntity</label>
+  <item>1..1</item>
+  <label>targetRole</label>
+  <item>0..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p>relations</p>
