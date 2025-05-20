@@ -20,6 +20,7 @@
                      localControl, localDescription, mandate, occupation, otherEntityType, place,
                      relation, useDates</p>
                   <p type="ead">agent, dateSet, findAidDesc, function, legalStatus, place, relation, subject, unitDateStructured</p>
+		       <p type="eaf">dateSet, functionDates, legislation, localControl, useDates, place, relation</p>
                </div>
                <div type="attributes">
                   <p>
@@ -68,6 +69,8 @@
                      a function.</p>
                   <p type="ead">An element for expressing a single date relating to the materials being described, or in its relationship to,
                      e.g., a place, a function, a resource, or a subject.</p>
+		       <p type="eaf">An element for expressing a single date relating to the function being described, or in its relationship to,
+                     e.g., a place, a resource, or a subject.</p>
                   <p>The content of the element is intended to be a human-readable natural language
                      date with a machine-readable date provided as the value of the
                         <att>standardDate</att> attribute, formulated according to ISO 8601 or another rule for encoding dates. Uncertain or approximate dates can be encoded in <att>standardDate</att> using Extended Date/Time Format (EDTF).</p>
