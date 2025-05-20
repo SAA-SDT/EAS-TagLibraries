@@ -16,6 +16,9 @@
                  <p type="ead">Optionally available in <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi> and <gi>unitDate</gi>. 
                    It is recommended that <att>notAfter</att> values follow ISO 8601 or another standard date format 
                    as specified in <att>dateEncoding</att>.</p>
+                 <p type="eaf">Optionally available in <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>. 
+                    It is recommended that <att>notAfter</att> values follow ISO 8601 or another standard date format 
+                    as specified in <att>dateEncoding</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
