@@ -11,6 +11,8 @@
                      or geographic feature that is related to the CPF entity described.</p>
                   <p type="ead">An optional child element of <gi>place</gi> used to encode the name of a place
                      or geographic feature that is related to the records being described.</p>
+                 <p type="eaf">An optional child element of <gi>place</gi> used to encode the name of a place
+                     or geographic feature that is related to the function being described.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -22,6 +24,7 @@
                   <p type="eac">demographicDescription, function, legalStatus, localDescription, mandate,
                      occupation, otherEntityType, place</p>
                      <p type="ead">agent, function, legalStatus, place, subject</p>
+                 <p type="eaf">place</p>
                </div>
                <div type="attributes">
                   <p>
