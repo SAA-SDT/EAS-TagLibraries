@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="elementDocumentation" xml:id="elem-functionAgent" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns:eaf="https://archivists.org/ns/eaf/v1" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
 		<gi>functionAgent</gi>
 	</head>
@@ -7,7 +7,7 @@
 		<p>Function Agent</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>An element for giving the name of one or more agents responsible for the function or activity being described.</p>
 	</div>
 	<div type="mayContain">
 		<p>
@@ -24,21 +24,21 @@
 		<p>
 			<list type="gloss">
 				<label>audience</label>
-				<item>Optional</item>
+				<item>Optional, uses values from value list defined with attribute audienceEncoding in control</item>
 				<label>conventionDeclarationReference</label>
 				<item>Optional</item>
 				<label>id</label>
 				<item>Optional</item>
 				<label>languageOfElement</label>
-				<item>Optional</item>
+				<item>Optional, uses values from value list defined with attribute languageEncoding in control</item>
 				<label>localType</label>
-				<item>Optional</item>
+				<item>Optional, uses values from the value list defined and referenced in the <att>localTypeDeclarationReference</att></item>
 				<label>localTypeDeclarationReference</label>
 				<item>Optional</item>
 				<label>maintenanceEventReference</label>
-				<item>Optional</item>
+				<item>Optional, defines from which local defined value list declared in a <att>localTypeDeclaration</att> that is being used</item>
 				<label>scriptOfElement</label>
-				<item>Optional</item>
+				<item>Optional, uses values from value list defined with attribute <att>scriptEncoding</att> in control</item>
 				<label>sourceReference</label>
 				<item>Optional</item>
 				<label>target</label>
@@ -53,18 +53,25 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element. Mark up other <gi>elements</gi> and <att>attributes</att> mentioned from the same Tag Library.</p>
+		<p>The element is used for giving the name of the agent or agents responsible for the function or activity being described.</p> 
+<p>With the aid of the attributes <att>localType</att> and <att>localTypeDeclarationReference</att> or <att>vocabularySource</att>, <att>vocabularySourceURI</att> and <att>valueURI</att> the classification of the function agent is defined.</p>
+<p>The full description of the agent or agents is expected to be found through a <gi>relation</gi> pointing to an EAC-CPF record or equal.</p>
 	</div>
 	<div type="attributeusage">
-		<p>A listing of usage of attributes with the element (optional)</p>
+		<p>The two attributes <att>localType</att> and <att>localTypeDeclarationReference</att> are used for creating a reference to a locally defined value list defining the function agent classification.</p>
+		<p>The three attributes <att>vocabularySource</att>, <att>vocabularySourceURI</att> and <att>valueURI</att> are used for creating a reference to an externally defined value list defining the function agent classification.</p>
 	</div>	
-	<div type="seealso">
-		<p>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</p>
-	</div>
 	<div type="availability">
 		<p>Required, Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"></egXML>
+		<egXML xml:lang="eng" type="eaf"><![CDATA[<description>
+	....
+<functionAgents>
+		<functionAgent>The tax agency</functionAgent>
+	</function Agents>
+....
+</description>
+]]></egXML>
 	</div>
 </div>
