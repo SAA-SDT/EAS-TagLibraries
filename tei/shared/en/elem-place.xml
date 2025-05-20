@@ -72,7 +72,7 @@
                <div type="mayOccurWithin">
                  <p type="eac">chronItem, chronItemSet, places, relation</p> 
                  <p type="ead">findAidDesc, places, relation</p>
-                 <p type="eaf">places, relation</p>
+                 <p type="eaf">places</p>
                </div>
                <div type="attributes">
                   <p>
