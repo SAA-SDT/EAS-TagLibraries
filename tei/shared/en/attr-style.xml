@@ -21,6 +21,9 @@
       <p type="ead">The <att>style</att> attribute may occur on <gi>span</gi> and <gi>title</gi> to
          indicate rendering instructions. It is highly recommended that the value of
             <att>style</att> be expressed as a W3C CSS style to facilitate interoperability.</p>
+      <p type="ead">The <att>style</att> attribute may occur on <gi>span</gi> to
+         indicate rendering instructions. It is highly recommended that the value of
+            <att>style</att> be expressed as a W3C CSS style to facilitate interoperability.</p>
    </div>
    <div type="datatype">
       <p>normalizedString</p>
