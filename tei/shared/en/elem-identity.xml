@@ -8,8 +8,10 @@
       <p>Identity</p>
    </div>
    <div type="summary">
-      <p>A required child element of <gi>cpfDescription</gi> used to encode the name or names
+      <p type="eac">A required child element of <gi>cpfDescription</gi> used to encode the name or names
          related to the identity being described within the EAC-CPF instance.</p>
+	   <p type="eaf">A required child element of <gi>functionsDescription</gi> used to encode the name or names
+         related to the identity being described within the EAC-F instance.</p>
    </div>
    <div type="mayContain">
       <p type="eac"><list type="gloss">
@@ -41,7 +43,7 @@
    </div>
    <div type="mayOccurWithin">
       <p type="eac">cpfDescription</p>
-      <p type="eaf">functionsDescription, subfunction</p>
+      <p type="eaf">functionsDescription</p>
    </div>
    <div type="attributes">
       <p>
