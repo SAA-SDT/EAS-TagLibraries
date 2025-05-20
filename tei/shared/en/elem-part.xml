@@ -19,6 +19,7 @@
                <div type="mayOccurWithin">
                   <p type="eac">nameEntry, targetEntity</p>
                   <p type="ead">targetEntity, title</p>
+                 <p type="eaf">nameEntry, targetEntity, targetRelationship</p>
                </div>
                <div type="attributes">
                   <p>
@@ -50,6 +51,8 @@
                   <p type="eac">Within <gi>nameEntry</gi> each of the components of a name, such as forename, surname or honorific title, may be recorded in a separate <gi>part</gi> element. <gi>part</gi> may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</p>
                   <p>Within <gi>targetEntity</gi> the name or term for the related entity is encoded within <gi>part</gi> elements.</p>
                   <p type="ead">Within <gi>title</gi> components such as subtitles or the number of an issue in a serial publication may be recorded in a separate <gi>part</gi> element.</p>
+                 <p type="eaf">Within <gi>nameEntry</gi> each of the components of a name, such as forename, surname or honorific title, may be recorded in a separate <gi>part</gi> element. <gi>part</gi> may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</p>
+                  <p>Within <gi>targetEntity</gi> the name or term for the related entity is encoded within <gi>part</gi> elements.</p>
                   <p><gi>part</gi> cannot be empty and requires at least one non-whitespace character, such as a hyphen, if no actual name can be given.</p>
                </div>
                <div type="attributeusage"><p>The designation of the information contained in the <gi>part</gi> can be
