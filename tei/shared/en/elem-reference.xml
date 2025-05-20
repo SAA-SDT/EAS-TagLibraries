@@ -31,6 +31,7 @@
       <p type="ead">abstract, container, conventionDeclaration, dimensions, eventDescription, head,
          localTypeDeclaration, materialSpec, p, physDesc, physFacet, physLoc, rightsDeclaration,
          source, unitDate, unitId, unitTitle</p>
+      <p type="eaf">conventionDeclaration, eventDescription, localTypeDeclaration, p, rightsDeclaration, source</p> 
    </div>
    <div type="attributes">
       <p>
