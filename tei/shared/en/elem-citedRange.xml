@@ -8,6 +8,7 @@
                </div>
                <div type="summary">
                   <p type="eac">An optional child element of <gi>source</gi> that identifies precisely where supporting evidence was found within the source.</p>
+                 <p type="eaf">An optional child element of <gi>source</gi> that identifies precisely where supporting evidence was found within the source.</p>
                   <p type="ead">An optional child element of <gi>source</gi> and <gi>findAidDesc</gi> that identifies precisely where supporting evidence was found within the source or in which compilation the finding aid was published.</p>
                </div>
                <div type="mayContain">
@@ -18,10 +19,27 @@
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">source</p>
+                 <p type="eaf">source</p>
                   <p type="ead">findAidDesc, source</p>
                </div>
                <div type="attributes">
                   <p type="eac">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>unit</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+                 <p type="eaf">
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional (values limited to: external, internal)</item>
