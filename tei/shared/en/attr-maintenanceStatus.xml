@@ -12,6 +12,7 @@
                <div type="description">
                   <p type="eac">The maintenance status must occur on <gi>control</gi>.</p>
                   <p type="ead">The maintenance status may occur on <gi>control</gi>.</p>
+		       <p type="eaf">The maintenance status must occur on <gi>control</gi>.</p>
                   <p>As an EAS instance is modified or other events happen to it (as recorded in the
                         <gi>maintenanceHistory</gi> element), the maintenance status should also be
                      updated to reflect the current drafting status.</p>
@@ -36,6 +37,9 @@
                </div>
                <div type="datatype" standard="ead">
 		              <p type="ead">token</p>
+	             </div>
+	<div type="datatype" standard="eaf">
+		              <p type="eaf">token</p>
 	             </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="eac"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
