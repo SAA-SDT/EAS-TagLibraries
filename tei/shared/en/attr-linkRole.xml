@@ -19,6 +19,8 @@
       <p type="ead">A URI that characterizes the nature of the remote resource to which a linking element
          refers. Optionally available in <gi>contactLine</gi>, <gi>findAidDesc</gi>,
          <gi>reference</gi>, and <gi>source</gi>.</p>
+      <p type="eaf">A URI that characterizes the nature of the remote resource to which a linking element
+         refers. Optionally available in <gi>contactLine</gi>, <gi>reference</gi>, and <gi>source</gi>.</p>
    </div>
    <div type="datatype">
       <p>anyURI</p>
