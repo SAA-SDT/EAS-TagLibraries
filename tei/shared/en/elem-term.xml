@@ -20,6 +20,7 @@
                   <p type="eac">demographicDescription, function, legalStatus, localControl, localDescription,
                      mandate, occupation, otherEntityType</p>
                   <p type="ead">function, legalStatus, subject</p>
+                 <p type="eaf">localControl</p>
                </div>
                <div type="attributes">
                   <p>
@@ -53,6 +54,10 @@
                         <gi>legalStatus</gi> and <gi>subject</gi>, used to
                      specify a descriptive term in accordance with authorized vocabularies or local
                      rules.</p>
+                 <p type="eaf"><gi>term</gi> is a required child element of <gi>localControl</gi> used to
+                     specify a descriptive term in accordance with authorized vocabularies or local
+                     rules.</p>               
+                 
                   <p><gi>term</gi> can be repeated within its parent element to include translations
                      of the same term. Use the <att>languageOfElement</att> attribute to identify
                      the language used in each <gi>term</gi> grouped within a single parent
