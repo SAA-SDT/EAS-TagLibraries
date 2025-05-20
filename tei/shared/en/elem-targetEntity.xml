@@ -75,6 +75,35 @@
                         <item>Optional</item>
                      </list>
                   </p>
+                 <p type="eaf">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional (values limited to: external, internal)</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                        <label>targetType</label>
+                        <item>Required (values limited to: agent, corporateBody, family, function,
+                           person, resource)</item>
+                        <label>valueURI</label>
+                        <item>Optional</item>
+                        <label>vocabularySource</label>
+                        <item>Optional</item>
+                        <label>vocabularySourceURI</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
                </div>
                <div type="description">
                   <p><gi>targetEntity</gi> is used within <gi>relation</gi> to identify an entity
@@ -83,6 +112,10 @@
                      the name or term for the related entity.</p>
                </div>
                <div type="attributeusage"><p type="eac">Use the required <att>targetType</att>, to identity the type of entity
+                        related to in <gi>targetEntity</gi>, using one of the following values:
+                        "agent", "corporateBody", "family", "function", "person", or
+                        "resource".</p>
+               p type="eaf">Use the required <att>targetType</att>, to identity the type of entity
                         related to in <gi>targetEntity</gi>, using one of the following values:
                         "agent", "corporateBody", "family", "function", "person", or
                         "resource".</p></div>
