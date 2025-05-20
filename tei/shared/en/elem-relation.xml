@@ -52,7 +52,7 @@
   <item>0..1</item>
   <label>objectXMLWrap</label>
   <item>0..1</item>
-  <label>places</label>
+  <label>place</label>
   <item>0..1</item>
   <label>relationType</label>
   <item>0..n</item>
