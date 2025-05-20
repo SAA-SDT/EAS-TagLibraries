@@ -80,6 +80,7 @@
                      related entity. It is recommended that the terms used in <gi>relationType</gi>,
                         <gi>targetEntity</gi>, and <gi>targetRole</gi> be taken from an authorized
                      vocabulary.</p>
+                 <p type="eaf"><gi>relation</gi> records descriptive information about a relationship between the function being described to oterh function desc riptions as well as to all other types of resources like creators and records.</p>
                   <p>Use <gi>objectXMLWrap</gi> to embed XML documenting the related entity from any
                      namespace. Use <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> for
                      specifying the time period of the relationship and <gi>place</gi> for relevant
@@ -97,6 +98,15 @@
                      </list>
                   </p>
                   <p type="ead">
+                     <list type="simple">
+                        <item><gi>targetEntity</gi></item>
+                        <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+                        <item>One or more of <gi>place</gi>, <gi>relationType</gi>, <gi>targetRole</gi>, and <gi>targetType</gi></item>
+                        <item><gi>descriptiveNote</gi></item>
+                        <item><gi>objectXMLWrap</gi></item>
+                     </list>
+                  </p>
+                 <p type="eaf">
                      <list type="simple">
                         <item><gi>targetEntity</gi></item>
                         <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
