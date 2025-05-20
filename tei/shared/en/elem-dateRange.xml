@@ -25,6 +25,7 @@
                      localControl, localDescription, mandate, occupation, otherEntityType, place,
                      relation, useDates</p>
                  <p type="ead">accessConditions, agent, dateSet, fuction, legalStatus, place, relation, subject, unitDateStructured, useConditions</p>
+                 <p type="eaf">dateSet, functionDates, legislation, localControl, useDates, place, relation</p>
                </div>
                <div type="attributes">
                   <p>
@@ -57,7 +58,9 @@
                      relationship with, the person, family, or corporate body being described in the
                      EAC-CPF instance.</p>
                   <p type="ead">An element that expresses a range of dates in the creation or contextual history of the described materials, or their relationships to other entities such as persons, families, corporate bodies, resources, functions, places, and topics.</p>
-                  <p><gi>dateRange</gi> contains <gi>fromDate</gi> and/or <gi>toDate</gi>, and
+                  <p type="eaf">An element that expresses a range of dates in the creation or contextual history of the described function, or their relationships to other entities such as persons, families, corporate bodies, resources, functions, places, and topics.</p>
+                   
+                 <p><gi>dateRange</gi> contains <gi>fromDate</gi> and/or <gi>toDate</gi>, and
                      therefore may express a range of dates as a starting point with no end point, a
                      start and end point, or an end point with no starting point. Either
                         <gi>fromDate</gi> or <gi>toDate</gi> must be present within a
