@@ -20,6 +20,9 @@
                <div type="datatype" standard="ead">
                   <p>token</p>
                </div>
+	<div type="datatype" standard="eaf">
+                  <p>token</p>
+               </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-3" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
    [...]
