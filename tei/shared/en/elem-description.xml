@@ -8,7 +8,10 @@
       <p>Description</p>
    </div>
    <div type="summary">
-      <p>An optional child element of <gi>cpfDescription</gi>, <gi>description</gi> is a wrapper
+      <p type="eac">An optional child element of <gi>cpfDescription</gi>, <gi>description</gi> is a wrapper
+         element for all of the content elements comprising descriptive information about the CPF
+         entity.</p>
+	   <p type="eaf">An optional child element of <gi>functionDescription</gi>, <gi>description</gi> is a wrapper
          element for all of the content elements comprising descriptive information about the CPF
          entity.</p>
    </div>
@@ -54,7 +57,7 @@
    </div>
    <div type="mayOccurWithin">
       <p type="eac">cpfDescription</p>
-      <p type="eaf">functionsDescription, subfunctionDescriptions</p>
+      <p type="eaf">functionsDescription</p>
    </div>
    <div type="attributes">
       <p>
@@ -87,8 +90,8 @@
          comprise the Description Area of ISAAR (CPF) including historical, biographical, and
          genealogical information; legal status and mandates; functions, occupations, and
          activities, and the dates and places that further constrain those elements.</p>
-      <p>The prescribed order of all child elements (both required and optional) is:</p>
-      <list type="simple">
+      <p type="eac">The prescribed order of all child elements (both required and optional) is:</p>
+      <p type="eac"><list type="simple">
          <item><gi>demographicDescriptions</gi></item>
          <item><gi>functions</gi></item>
          <item><gi>languagesUsed</gi></item>
@@ -100,6 +103,7 @@
          <item> Any of <gi>biogHist</gi>, <gi>existDates</gi>, <gi>generalContext</gi>, and
                <gi>structureOrGenealogy</gi></item>
       </list>
+	      </p>
    </div>
    <div type="availability">
       <p>Optional, not repeatable</p>
