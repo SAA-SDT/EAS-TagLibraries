@@ -8,8 +8,10 @@
       <p>Identity Identifier</p>
    </div>
    <div type="summary">
-      <p>An optional child element of <gi>identity</gi> used to record any identifier associated
+      <p type="eac">An optional child element of <gi>identity</gi> used to record any identifier associated
          with the CPF entity being described.</p>
+	   <p type="eaf">An optional child element of <gi>identity</gi> used to record any identifier associated
+         with the function entity being described.</p>
    </div>
    <div type="mayContain">
       <p><list type="gloss">
@@ -53,7 +55,11 @@
       </p>
    </div>
    <div type="description">
-      <p><gi>identityId</gi> may be used to record any identifier associated with the CPF entity
+      <p type="eac"><gi>identityId</gi> may be used to record any identifier associated with the CPF entity
+         being described in the EAS instance. Identifiers such as legal identifiers, typically
+         assigned by an authoritative agency, may be recorded in this element. If multiple
+         identifiers are recorded, each should be in its own <gi>identityID</gi>.</p>
+	   <p type="eaf"><gi>identityId</gi> may be used to record any identifier associated with the function entity
          being described in the EAS instance. Identifiers such as legal identifiers, typically
          assigned by an authoritative agency, may be recorded in this element. If multiple
          identifiers are recorded, each should be in its own <gi>identityID</gi>.</p>
