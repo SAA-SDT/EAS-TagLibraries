@@ -9,6 +9,7 @@
                <div type="summary">
                   <p type="eac">A required attribute of <gi>maintenanceEvent</gi> that provides a controlled list of values for recording the type of maintenance activity.</p>
                   <p type="ead">An optional attribute of <gi>maintenanceEvent</gi> that identifies the type of maintenance activity.</p>
+                  <p type="eaf">An optional attribute of <gi>maintenanceEvent</gi> that identifies the type of maintenance activity.</p>
                </div>
                <div type="description">
                   <p>Identifies the type of maintenance event with values such as:</p>
@@ -25,6 +26,9 @@
                   <p>cancelled, created, deleted, derived, revised, unknown, updated</p>
                </div>
                <div type="datatype" standard="ead">
+                  <p>token</p>
+               </div>
+  <div type="datatype" standard="eaf">
                   <p>token</p>
                </div>
                <div type="examples">
