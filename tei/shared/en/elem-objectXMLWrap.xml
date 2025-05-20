@@ -13,6 +13,9 @@
                   <p type="ead">An optional child element of <gi>relation</gi> and
                         <gi>source</gi> that allows for the inclusion of an XML element from any XML
                      namespace.</p>
+                 <p type="eaf">An optional child element of <gi>relation</gi> and
+                        <gi>source</gi> that allows for the inclusion of an XML element from any XML
+                     namespace.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -23,6 +26,7 @@
                <div type="mayOccurWithin">
                   <p type="eac">relation, setComponent, source</p>
                   <p type="ead">relation, source</p>
+                 <p type="eaf">relation, source</p>
                </div>
                <div type="attributes">
                   <p type="eac">
@@ -36,6 +40,16 @@
                      </list>
                   </p>
                   <p type="ead">
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+                 <p type="eaf">
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional</item>
