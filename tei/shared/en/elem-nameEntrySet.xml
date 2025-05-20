@@ -50,8 +50,12 @@
       </p>
    </div>
    <div type="description">
-      <p>A wrapper element used to group two or more <gi>nameEntry</gi> elements representing
+      <p type="eac">A wrapper element used to group two or more <gi>nameEntry</gi> elements representing
          parallel or other forms of the name for the same CPF entity which are used at the same time
+         (e.g., official and non-official forms of the name in different languages and/or
+         scripts).</p>
+	   <p type="eaf">A wrapper element used to group two or more <gi>nameEntry</gi> elements representing
+         parallel or other forms of the name for the same functions entity which are used at the same time
          (e.g., official and non-official forms of the name in different languages and/or
          scripts).</p>
       <p>The <gi>nameEntrySet</gi> element may contain a <gi>useDates</gi> element to indicate the
