@@ -28,10 +28,21 @@
   <label>span</label>
   <item>0..n</item>
 </list></p>
+                 <p type="eaf"><list type="gloss">
+  <label>[text]</label>
+  <item/>
+  <label>reference</label>
+  <item>0..n</item>
+  <label>referringString</label>
+  <item>0..n</item>
+  <label>span</label>
+  <item>0..n</item>
+</list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">biogHist, descriptiveNote, generalContext, structureOrGenealogy</p>
                   <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, descriptiveNote, filePlan, formAvailable, identificationDataNote, otherDescriptiveInfo, otherFindAid, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
+                 <p type="eaf">descriptiveNote, functionHistory, legislation</p>
                </div>
                <div type="attributes">
                   <p>
@@ -60,6 +71,7 @@
                </div>
                <div type="availability">
                   <p type="eac">Within <gi>descriptiveNote</gi>: required, repeatable.</p>
+                 <p type="efc">Within <gi>descriptiveNote</gi>: required, repeatable.</p>
                   <p type="ead">Within <gi>descriptiveNote</gi> and <gi>identificationDataNote</gi>: required, repeatable.</p>
                   <p>Within all other parents: optional, repeatable.</p>
                </div>
