@@ -12,8 +12,8 @@
 	<div type="mayContain">
 		<p>
 			<list type="gloss">
-				<label>dates</label>
-        		<item>0..1</item>
+				<label>date or dateRange or dateSet</label>
+  <item>0..1</item>
         		<label>p</label>
 				<item>1..n</item>
 			</list>
@@ -55,13 +55,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element. Mark up other <gi>elements</gi> and <att>attributes</att> mentioned from the same Tag Library.</p>
-	</div>
-	<div type="attributeusage">
-		<p>A listing of usage of attributes with the element (optional)</p>
-	</div>	
-	<div type="seealso">
-		<p>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</p>
+		<p>The element is used to record any law, directive or charter which creates, amends or curtails the function. Record each and every one of these in their own <gi>legislation</gi></p>
 	</div>
 	<div type="availability">
 		<p>Required, Repeatable</p>
@@ -70,8 +64,10 @@
 		<egXML xml:lang="eng" type="eaf"><![CDATA[<description>
 	....
 <legislations>
-		<legislation>...</legislation>
-<legislation>...</legislation>
+		<legislation>Joint Stock Companies Act, 1856; Companies Act, 1862; Companies Act, 1900; Companies Act,
+1907; Companies (Consolidation) Act, 1908; Companies Act, 1928; Companies Act, 1929;
+Companies Act, 1947.</legislation>
+
 	</legislations>
 ....
 </description>]]></egXML>
