@@ -53,7 +53,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>The element is used to record any term and/or code from a function classification scheme. More than one classification may occur, each one of these classifications is given in their own <gi>classification</gi>. </p>
+		<p>The element is used to record any term and/or code from a function classification scheme. More than one classification may occur, record each one of these classifications is given in their own <gi>classification</gi>. </p>
 			<p>Record the classification scheme used in one <gi>conventionDeclararation</gi> and reference this convention declaration with the <att>conventionDeclarationReference</att> attribute.</p>
 	</div>
 	<div type="availability">
