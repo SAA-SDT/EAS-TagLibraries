@@ -67,6 +67,13 @@
 		<p>Required, Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"></egXML>
+		<egXML xml:lang="eng" type="eaf"><![CDATA[<description>
+	....
+<legislations>
+		<legislation>...</legislation>
+<legislation>...</legislation>
+	</legislations>
+....
+</description>]]></egXML>
 	</div>
 </div>
