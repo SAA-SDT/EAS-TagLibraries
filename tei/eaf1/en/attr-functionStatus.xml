@@ -7,18 +7,20 @@
 		<p>Function Status</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the attribute is used for</p>
+		<p>A required attribute used to specify the state of the description with the purpose of indicating the current stat</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the attribute</p>
+		<p>Use one of the values to identify the current status of the description, ie. draft, final, revised, deleted</p>
 	</div>
 	<div type="values">
-		<p>Available values (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</p>
+		<p>Suggested values include, but are not limited to, draft, final, revised, deleted, active, obsolete, inactive</p>
 	</div>
 	<div type="datatype">
-		<p>Datatype of the attribute (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</p>
+		<p>token</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"></egXML>
+		<egXML xml:lang="eng" type="eaf"><![<functionsDescription functionStatus=”active”>
+</functionsDescription>
+]]></egXML>
 	</div>
 </div>
