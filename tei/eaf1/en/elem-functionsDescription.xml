@@ -51,7 +51,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element. Mark up other <gi>elements</gi> and <att>attributes</att> mentioned from the same Tag Library.</p>
+		<p>Use the required <gi>functionsDescription</gi> element to group together identity, descriptive, and contextual information about the function</p>
 	</div>
 	<div type="attributeusage">
 		<p>A listing of usage of attributes with the element (optional)</p>
@@ -63,6 +63,23 @@
 		<p>Required, Not Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"></egXML>
+		<egXML xml:lang="eng"><![CDATA[<functionsDescription>
+	<identity>
+		<identityID valueURI="">
+		<functionType>
+		<nameEntry><part>Student registration</part></nameEntry>
+	</identity>
+	<description>
+		<dateRange>
+			<fromDate></fromDate>
+			<toDate></toDate>
+		</dateRange>
+		<functionDescription>
+			<p>The registration of students in the College to specific courses for a given academic term.</functionDescription>
+		</functionDescription>
+</description>
+</functionsDescription>
+]]>
+      </egXML>
 	</div>
 </div>
