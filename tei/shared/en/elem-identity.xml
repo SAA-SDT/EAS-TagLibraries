@@ -31,14 +31,10 @@
             <item>0..1</item>
             <label>descriptiveNote</label>
             <item>0..1</item>
-            <label>functionType</label>
-            <item>1..1</item>
             <label>identityId</label>
             <item>0..n</item>
             <label>nameEntry or nameEntrySet</label>
             <item>1..n</item>
-            <label>otherFunctionTypes</label>
-            <item>0..n</item>
          </list></p>
    </div>
    <div type="mayOccurWithin">
@@ -76,37 +72,63 @@
       </p>
    </div>
    <div type="description">
-      <p><gi>identity</gi> is a wrapper element used to group the elements necessary to encode the
+      <p type="eac"><gi>identity</gi> is a wrapper element used to group the elements necessary to encode the
          name or names related to the identity of the CPF entity within the <gi>cpfDescription</gi>
          element.</p>
-      <p>The required child element <gi>entityType</gi> specifies the type of entity (i.e.,
+	   <p type="eaf"><gi>identity</gi> is a wrapper element used to group the elements necessary to encode the
+         name or names related to the identity of the EAS entity within the <gi>functionsDescription</gi>
+         element.</p>
+      <p type="eac">The required child element <gi>entityType</gi> specifies the type of entity (i.e.,
          corporate body, family, or person). The optional <gi>otherEntityTypes</gi> element can be
          used to encode other entity types used in the local context. An optional
             <gi>identityId</gi> is available for any identifiers associated with the CPF entity.</p>
-      <p>One or more <gi>nameEntry</gi> elements and/or one or more <gi>nameEntrySet</gi> elements
+      <p  type="eac">One or more <gi>nameEntry</gi> elements and/or one or more <gi>nameEntrySet</gi> elements
          must be included. All names by which the identity being described within one
             <gi>cpfDescription</gi> element is known are provided within <gi>identity</gi>. Each of
          the names, whether authorized or alternatives, should be recorded in a separate
             <gi>nameEntry</gi> element.</p>
-      <p><gi>identity</gi> may accommodate two or more parallel names in different languages or
+	   <p  type="eaf">One or more <gi>nameEntry</gi> elements and/or one or more <gi>nameEntrySet</gi> elements
+         must be included. All names by which the identity being described within one
+            <gi>functionsDescription</gi> element is known are provided within <gi>identity</gi>. Each of
+         the names, whether authorized or alternatives, should be recorded in a separate
+            <gi>nameEntry</gi> element.</p>
+      <p  type="eac"><gi>identity</gi> may accommodate two or more parallel names in different languages or
          scripts. In countries where there is more than one official language, such as Canada or
          Switzerland, names of CPF entities are frequently provided in more than one language.
          Within <gi>identity</gi>, a <gi>nameEntrySet</gi> element should be used to group two or
          more <gi>nameEntry</gi> elements that represent parallel forms of the name of the CPF
          entity being described.</p>
-      <p>Within <gi>identity</gi>, a <gi>descriptiveNote</gi> element may be used to record other
+	   <p  type="eaf"><gi>identity</gi> may accommodate two or more parallel names in different languages or
+         scripts. In countries where there is more than one official language, such as Canada or
+         Switzerland, names of EAS entities are frequently provided in more than one language.
+         Within <gi>identity</gi>, a <gi>nameEntrySet</gi> element should be used to group two or
+         more <gi>nameEntry</gi> elements that represent parallel forms of the name of the EAC
+         entity being described.</p>
+      <p type="eac">Within <gi>identity</gi>, a <gi>descriptiveNote</gi> element may be used to record other
          information in a textual form that assists in the identification of the CPF entity.</p>
-      <p>In case of multiple identities of the same entity in one EAC-CPF instance, such that
+	   <p type="eaf">Within <gi>identity</gi>, a <gi>descriptiveNote</gi> element may be used to record other
+         information in a textual form that assists in the identification of the EAS entity.</p>
+      <p type="eac">In case of multiple identities of the same entity in one EAC-CPF instance, such that
          multiple <gi>cpfDescription</gi> elements are used, a separate <gi>identity</gi> element is
          contained in each of the <gi>cpfDescription</gi> elements of the EAC-CPF instance.</p>
       <p>The prescribed order of all child elements (both required and optional) is:</p>
-      <list type="simple">
+      <p type="eac">
+	<list type="simple">
          <item><gi>entityType</gi></item>
          <item><gi>nameEntry</gi> and/or <gi>nameEntrySet</gi></item>
          <item><gi>otherEntityTypes</gi></item>
          <item><gi>identityId</gi></item>
          <item><gi>descriptiveNote</gi></item>
-      </list>
+      	</list>
+      </p>
+	   <p type="eaf">
+	<list type="simple">
+         <item><gi>nameEntry</gi> and/or <gi>nameEntrySet</gi></item>
+         <item><gi>identityId</gi></item>
+		<item><gi>classifications</gi></item>
+         <item><gi>descriptiveNote</gi></item>
+      	</list>
+      </p>
    </div>
    <div type="availability">
       <p>Required, not repeatable</p>
