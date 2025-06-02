@@ -56,7 +56,8 @@
             <item>Optional (values limited to: acquired, given)</item>
             <label>languageOfElement</label>
             <item>Optional</item>
-            <label>localType</label>
+            <!-- Following the decsions in TS EAS these two localType attributes will be removed -->
+		 <label>localType</label>
             <item>Optional</item>
             <label>localTypeDeclarationReference</label>
             <item>Optional</item>
