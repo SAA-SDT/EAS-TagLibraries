@@ -71,6 +71,7 @@
                      longitude and altitude information.</p>
                   <p type="eac">At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                   <p type="ead">At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>placeType</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
+                 <p type="eaf">At least one of <gi>placeName</gi>, <gi>placeRole</gi>, <gi>placeType</gi>, <gi>geographicCoordinates</gi>, <gi>address</gi>, or <gi>contact</gi> is required within <gi>place</gi>.</p>
                   <p>The <gi>placeName</gi> element is repeatable. It is strongly recommended that
                      within <gi>place</gi>, the <gi>placeName</gi> element be repeated only to
                      represent the same place name in various languages, with an accompanying
