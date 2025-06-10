@@ -128,8 +128,7 @@
 				<xi:include href="eaf1/en/elem-functionDescription.xml" parse="xml"/>
          	   <xi:include href="eaf1/en/elem-functionHistory.xml" parse="xml"/>
          	   <xi:include href="eaf1/en/elem-functionsDescription.xml" parse="xml"/>	
-         	   <xi:include href="eaf1/en/elem-functionType.xml" parse="xml"/>	
-				<xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
+         	   <xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-identity.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-identityId.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-languageDeclaration.xml" parse="xml"/>
@@ -144,8 +143,6 @@
 				<xi:include href="shared/en/elem-nameEntrySet.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-objectXMLWrap.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-otherAgencyCode.xml" parse="xml"/>
-				<xi:include href="eaf1/en/elem-otherFunction.xml" parse="xml"/>
-				<xi:include href="eaf1/en/elem-otherFunctionTypes.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-otherRecordId.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-p.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-part.xml" parse="xml"/>
@@ -166,7 +163,6 @@
          	   <xi:include href="eaf1/en/elem-subfunction.xml" parse="xml"/>
 				<xi:include href="eaf1/en/elem-subfunctionDescriptions.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-targetEntity.xml" parse="xml"/>
-				<xi:include href="eaf1/en/elem-targetRelationship.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-targetRole.xml" parse="xml"/>
          	   <xi:include href="shared/en/elem-term.xml" parse="xml"/>
          	   <xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
@@ -210,15 +206,13 @@
 					<xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-scriptEncoding.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-scriptOfElement.xml" parse="xml"/>
-		 			<xi:include href="eaf1/en/attr-sequence.xml" parse="xml"/>
-					<xi:include href="shared/en/attr-sourceReference.xml" parse="xml"/>
+		 			<xi:include href="shared/en/attr-sourceReference.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-standardDate.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-standardDateTime.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-status.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-style.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-target.xml" parse="xml"/>
-		 			<xi:include href="eaf1/en/attr-targetRelationshipType.xml" parse="xml"/>
-					<xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
+		 			<xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-unit.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-value.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-valueURI.xml" parse="xml"/>
