@@ -427,7 +427,7 @@
                </table>
             </div>
             <div class="toc1">
-               <a href="#d1e6436">Attributes Attribute name Attribute values</a>
+               <a href="#d1e7048">Attributes Attribute name Attribute values</a>
             </div>
             <div class="toc2">
                <table>
@@ -857,7 +857,8 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">A child element of &lt;maintenanceAgency&gt; that provides a code for the
                      institution or service responsible for the creation, maintenance, and/or
-                     dissemination of the EAS instance.</div>Use &lt;agencyName&gt; to record the name of the agency.<div class="leftcol">May contain Element/content type Occurrences: </div>
+                     dissemination of the EAS instance.</div>
+                  <div class="p">Use status with values such as “authorised” or “alternative” to declare whether the &lt;agencyCode&gt; is using an authorised value, e.g. a registered ISIL code, or an alternative code. Use statusEncoding in &lt;control&gt; to specify the source or rules for values supplied in status.</div>Use &lt;agencyName&gt; to record the name of the agency.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
@@ -1017,17 +1018,60 @@
                      <span class="label">Agent</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">A required child element of &lt;maintenanceEvent&gt; that provides the name of
+                     a person, institution, or system responsible for a specific event in the
+                     EAS instance's maintenance history, such as its creation, modification, or
+                     deletion.</div>
+                  </div>
+                  <div class="p">Use the attributes valueURI, vocabularySource, and vocabularySourceURI with &lt;agent&gt; when referencing an entry of an external vocabulary, thesaurus, ontology applicable to the agent overall. In case of referencing different vocabularies or different entries within the same vocabulary for the name, the type or the role of the agent, use the three attributes with the sub-elements &lt;agentName&gt;, &lt;agentType&gt; and &lt;agentRole&gt; directly.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-agentName1..ndate">agentName1..ndate</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet0..1agentType0..nagentRole0..nrelationType0..nplaceName0..ndescriptiveNote0..1">dateSet0..1agentType0..nagentRole0..nrelationType0..nplaceName0..ndescriptiveNote0..1</a>
+                  </div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-maintenanceEvent">maintenanceEvent</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Use &lt;agent&gt; as a required sub-element of &lt;maintenanceEvent&gt; to name and describe the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAS instance, and the style sheet used to update an instance to a new version of the EAS. Use &lt;agent&gt; as an optional and repeatable sub-element of &lt;findAidDesc&gt; to indicate any person, institution, or system relevant to the creation, publication, or disseminiation of any instantiations of the EAS instance such as the author, publisher, or sponsor of a printed or online finding aid.</div>
+                  </div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">
+                        <div class="leftcol">audience</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">conventionDeclarationReference</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">id</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">languageOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">localType</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">localTypeDeclarationReference</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">maintenanceEventReference</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">scriptOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">sourceReference</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">target</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">valueURI</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">vocabularySource</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">vocabularySourceURI</div>
+                        <div class="content">Optional</div>
+                     </div>
+                  </div>
                   <div class="leftcol">Availability: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Required, not repeatable</div>
+                  </div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -1040,14 +1084,33 @@
                      <span class="label">Cited Range</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>Use the optional unit attribute to specify the format that the &lt;citedRange&gt; refers to, for example page number or volume number.<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">
+                     <div class="p">An optional child element of &lt;source&gt; that identifies precisely where supporting evidence was found within the source.</div>
+                  </div>Use the optional unit attribute to specify the format that the &lt;citedRange&gt; refers to, for example page number or volume number.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-source">source</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">The &lt;citedRange&gt; element can be used to refer to a specific location within a source where supporting evidence can be found. It may refer to a specific location such as a single page, or a broader location such as a range of pages.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">
+                        <div class="leftcol">audience</div>
+                        <div class="content">Optional (values limited to: external, internal)</div>
+                        <div class="leftcol">id</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">languageOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">scriptOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">target</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">unit</div>
+                        <div class="content">Optional</div>
+                     </div>
+                  </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">Optional, repeatable</div>
                   <div class="leftcol">Example:</div>
@@ -1062,14 +1125,15 @@
                      <span class="label">Classification</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">An element for giving the classification of the function according to a classification scheme.</div>
+                  <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-classifications">classifications</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">The element is used to record any term and/or code from a function classification scheme. More than one classification may occur, record each one of these classifications is given in their own &lt;classification&gt;. Record the classification scheme used in one &lt;conventionDeclararation&gt; and reference this convention declaration with the conventionDeclarationReference attribute.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -1141,7 +1205,20 @@
                   <div class="leftcol">Availability: </div>
                   <div class="content">Required, Repeatable</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+	....
+&lt;classifications&gt;
+		&lt;classification&gt;L100&lt;/classification&gt;
+&lt;classification&gt;4.2.1&lt;/classification&gt;
+	&lt;/classifications&gt;
+....
+&lt;/description&gt;
+
+</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -1152,7 +1229,8 @@
                      <span class="label">Classifications</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">An element for grouping one or more &lt;classification&gt;.</div>
+                  <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-classification1..ndescriptiveNote0..1">classification1..ndescriptiveNote0..1</a>
                   </div>
@@ -1161,7 +1239,7 @@
                      <a href="#elem-identity">identity</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">The element is a grouping element for grouping one or more of the element &lt;classification&gt;.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -1213,7 +1291,20 @@
                   <div class="leftcol">Availability: </div>
                   <div class="content">Optional, Not Repeatable</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+	....
+&lt;classifications&gt;
+		&lt;classification&gt;L100&lt;/classification&gt;
+&lt;classification&gt;4.2.1&lt;/classification&gt;
+	&lt;/classifications&gt;
+....
+&lt;/description&gt;
+
+</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -1337,15 +1428,28 @@
                   <div class="content">A required child element of the root element that contains information about the
                      creation, maintenance, status and the rules and authorities used in the
                      composition of the EAS instance.</div>
+                  <div class="p">Use the required maintenanceStatus attribute to document the current version status of the EAS instance.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-conventionDeclaration0..nlanguageDeclaration0..nlocalTypeDeclaration0..nmaintenanceAgency1..1maintenanceHistory1..1otherRecordId0..nrecordId1..1rightsDeclaration0..nsources0..1">conventionDeclaration0..nlanguageDeclaration0..nlocalTypeDeclaration0..nmaintenanceAgency1..1maintenanceHistory1..1otherRecordId0..nrecordId1..1rightsDeclaration0..nsources0..1</a>
+                  </div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-eaf">eaf</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">This required wrapper element within the root element of an EAS instance contains the information
                      necessary to manage the instance itself. This includes information about its creation,
                      maintenance and status as well as the languages, rules and authorities used in
-                     the composition of the description.The available child elements (both required and optional), in their prescribed
+                     the composition of the description.<div class="p">It must contain a unique identifier for the instance within the
+                        &lt;recordId&gt; element. Other associated identifiers may be given in
+                        &lt;otherRecordId&gt;. There must be a description of the agency
+                     responsible for its creation and maintenance in &lt;maintenanceAgency&gt; as
+                     well as statements about the creation, maintenance, and disposition
+                     of the instance in &lt;maintenanceHistory&gt;.</div>
+                     <div class="p">There are optional elements available to declare languages, rules, conventions
+                     and sources used in the EAS instance. Local types for certain elements used throughout the
+                     EAS instance are recommended to be defined in the &lt;localTypeDeclaration&gt; element.</div>The available child elements (both required and optional), in their prescribed
                      order, are:<div class="blockIndent">&lt;recordId&gt; - Required. Contains the unique identifier for the
                         EAS instance.<br/>
                         <br/>&lt;maintenanceAgency&gt; - Required. Contains the name and coded
@@ -1356,16 +1460,85 @@
                         <br/>&lt;sources&gt; - Optional. Contains information about the sources
                         consulted in creating the descriptive parts of the EAS instance.<br/>
                         <br/>
+                        <div class="p">The following elements may appear in any order after the above elements:
+                         <div class="blockIndent">&lt;conventionDeclaration&gt; - Optional. Contains information on
+                              the rules or conventions used to construct the EAS
+                              instance.<br/>
+                              <br/>&lt;languageDeclaration&gt; - Optional. Contains coded and natural
+                              language information about the language or languages of the EAS
+                              instance.<br/>
+                              <br/>&lt;localTypeDeclaration&gt; - Optional. Contains information
+                              about local conventions used in the @localType
+                              attribute.<br/>
+                              <br/>&lt;otherRecordId&gt; - Optional. An element that allows the
+                              recording of additional identifiers that may be associated with the
+                              EAS instance.<br/>
+                              <br/>&lt;rightsDeclaration&gt; - Optional. Contains information about
+                              the usage rights of the EAS instance.<br/>
+                              <br/>
+                           </div>
+                        </div>
                         <br/>
                         <br/>
                      </div>
                   </div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">
+                        <div class="leftcol">addressLineTypeEncoding</div>
+                        <div class="content">Optional (values limited to: EASList, otherAddressLineTypeEncoding)</div>
+                        <div class="leftcol">audience</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">audienceEncoding</div>
+                        <div class="content">Optional (values limited to: EASList, otherAudienceEncoding)</div>
+                        <div class="leftcol">base</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">contactLineTypeEncoding</div>
+                        <div class="content">Optional (values limited to: EASList, otherContactLineTypeEncoding)</div>
+                        <div class="leftcol">countryEncoding</div>
+                        <div class="content">Optional (values limited to: iso3166-1, otherCountryEncoding)</div>
+                        <div class="leftcol">dateEncoding</div>
+                        <div class="content">Optional (values limited to: iso8601, otherDateEncoding)</div>
+                        <div class="leftcol">detailLevel</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">detailLevelEncoding</div>
+                        <div class="content">Optional (values limited to: EASList, otherDetailLevelEncoding)</div>
+                        <div class="leftcol">id</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">languageEncoding</div>
+                        <div class="content">Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2, iso639-3, otherLanguageEncoding)</div>
+                        <div class="leftcol">languageOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">maintenanceEventTypeEncoding</div>
+                        <div class="content">Optional (values limited to: EASList, otherMaintenanceEventTypeEncoding)</div>
+                        <div class="leftcol">maintenanceStatus</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">maintenanceStatusEncoding</div>
+                        <div class="content">Optional (values limited to: EASList, otherMaintenanceStatusEncoding)</div>
+                        <div class="leftcol">publicationStatus</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">publicationStatusEncoding</div>
+                        <div class="content">Optional (values limited to: EASList, otherPublicationStatusEncoding)</div>
+                        <div class="leftcol">repositoryEncoding</div>
+                        <div class="content">Optional (values limited to: iso15511, otherRepositoryEncoding)</div>
+                        <div class="leftcol">scriptEncoding</div>
+                        <div class="content">Optional (values limited to: iso15924, otherScriptEncoding)</div>
+                        <div class="leftcol">scriptOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">statusEncoding</div>
+                        <div class="content">Optional (values limited to: EASList, otherStatusEncoding)</div>
+                        <div class="leftcol">target</div>
+                        <div class="content">Optional</div>
+                     </div>
+                  </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">Required, not repeatable</div>
                   <div class="leftcol">Examples:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml"/>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -1467,9 +1640,13 @@
                         date.Use status with the value "unknown" to indicate where a date is unknown.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-dateSet">dateSet</a>, <a href="#elem-functionDates">functionDates</a>, <a href="#elem-legislation">legislation</a>, <a href="#elem-localControl">localControl</a>, <a href="#elem-useDates">useDates</a>, <a href="#elem-place">place</a>, <a href="#elem-relation">relation</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">The content of the element is intended to be a human-readable natural language
+                  <div class="content">
+                     <div class="p">An element for expressing a single date relating to the function being described, or in its relationship to,
+                     e.g., a place, a resource, or a subject.</div>The content of the element is intended to be a human-readable natural language
                      date with a machine-readable date provided as the value of the
                         standardDate attribute, formulated according to ISO 8601 or another rule for encoding dates. Uncertain or approximate dates can be encoded in standardDate using Extended Date/Time Format (EDTF).If the event or relationship has inclusive dates use the &lt;dateRange&gt;
                      element, while more complex dates (combining singles dates and date ranges) can
@@ -1586,9 +1763,12 @@
                      <a href="#elem-fromDate0..1toDate0..1">fromDate0..1toDate0..1</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-dateSet">dateSet</a>, <a href="#elem-functionDates">functionDates</a>, <a href="#elem-legislation">legislation</a>, <a href="#elem-localControl">localControl</a>, <a href="#elem-useDates">useDates</a>, <a href="#elem-place">place</a>, <a href="#elem-relation">relation</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">&lt;dateRange&gt; contains &lt;fromDate&gt; and/or &lt;toDate&gt;, and
+                  <div class="content">
+                     <div class="p">An element that expresses a range of dates in the creation or contextual history of the described function, or their relationships to other entities such as persons, families, corporate bodies, resources, functions, places, and topics.</div>&lt;dateRange&gt; contains &lt;fromDate&gt; and/or &lt;toDate&gt;, and
                      therefore may express a range of dates as a starting point with no end point, a
                      start and end point, or an end point with no starting point. Either
                         &lt;fromDate&gt; or &lt;toDate&gt; must be present within a
@@ -1677,7 +1857,9 @@
                      <a href="#elem-date">date</a> or <a href="#elem-dateRange2..n">dateRange2..n</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-dateSet">dateSet</a>, <a href="#elem-functionDates">functionDates</a>, <a href="#elem-legislation">legislation</a>, <a href="#elem-localControl">localControl</a>, <a href="#elem-useDates">useDates</a>, <a href="#elem-place">place</a>, <a href="#elem-relation">relation</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">&lt;dateSet&gt; binds together single dates and date ranges, multiple single
                      dates, or multiple date ranges. &lt;dateSet&gt; is used in situations where
@@ -1751,16 +1933,18 @@
                      <span class="label">Description</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">An optional child element of &lt;cpfDescription&gt;, &lt;description&gt; is a wrapper
+                  <div class="content">
+                     <div class="p">An optional child element of &lt;functionDescription&gt;, &lt;description&gt; is a wrapper
          element for all of the content elements comprising descriptive information about the CPF
          entity.</div>
+                  </div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-functionAgents0..1functionDates0..1functionDescription0..1functionHistory0..1legislations0..1">functionAgents0..1functionDates0..1functionDescription0..1functionHistory0..1legislations0..1</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
-                     <a href="#elem-functionsDescription">functionsDescription</a>, <a href="#elem-subfunctionDescriptions">subfunctionDescriptions</a>
+                     <a href="#elem-functionsDescription">functionsDescription</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">The child elements that constitute &lt;description&gt; together permit descriptive
@@ -1768,19 +1952,7 @@
          approach. &lt;description&gt; accommodates the encoding of all the data elements that
          comprise the Description Area of ISAAR (CPF) including historical, biographical, and
          genealogical information; legal status and mandates; functions, occupations, and
-         activities, and the dates and places that further constrain those elements.The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">&lt;demographicDescriptions&gt;<br/>
-                        <br/>&lt;functions&gt;<br/>
-                        <br/>&lt;languagesUsed&gt;<br/>
-                        <br/>&lt;legalStatuses&gt;<br/>
-                        <br/>&lt;localDescriptions&gt;<br/>
-                        <br/>&lt;mandates&gt;<br/>
-                        <br/>&lt;occupations&gt;<br/>
-                        <br/>&lt;places&gt;<br/>
-                        <br/> Any of &lt;biogHist&gt;, &lt;existDates&gt;, &lt;generalContext&gt;, and
-               &lt;structureOrGenealogy&gt;<br/>
-                        <br/>
-                     </div>
-                  </div>
+         activities, and the dates and places that further constrain those elements.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -1849,7 +2021,9 @@
                      <a href="#elem-p1..n">p1..n</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-classifications">classifications</a>, <a href="#elem-conventionDeclaration">conventionDeclaration</a>, <a href="#elem-languageDeclaration">languageDeclaration</a>, <a href="#elem-localTypeDeclaration">localTypeDeclaration</a>, <a href="#elem-maintenanceAgency">maintenanceAgency</a>, <a href="#elem-relation">relation</a>, <a href="#elem-rightsDeclaration">rightsDeclaration</a>, <a href="#elem-source">source</a>, <a href="#elem-sources">sources</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">&lt;descriptiveNote&gt; provides additional descriptive information about the element in which it is contained. &lt;descriptiveNote&gt; must contain one or more &lt;p&gt; elements.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
@@ -1909,19 +2083,40 @@
                      <span class="label">Encoded Archival Functions</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">The required root element of an EAC-F instance.</div>A listing of usage of attributes with the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-control1..1functionsDescription1..1">control1..1functionsDescription1..1</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">&lt;eaf&gt; wraps all other elements in a particular instance of an function record encoded with the EAC-F XML Schema.&lt;eaf&gt; must contain &lt;control&gt; followed by a &lt;functionsDescription&gt; element.In order to validate an EAC-CPF instance, it is highly recommended to include according
+         information about the EAC-F namespace and the EAC-F schema location.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
-                        <a href="#attr-Attribute that may be used within this element">Attribute that may be used within this element</a>
+                        <a href="#attr-audience">audience</a>
                      </div>
-                     <div class="rightcol">"Optional" or "Required" </div>
+                     <div class="rightcol">Optional (values limited to: external, internal)</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-base">base</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-id">id</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-languageOfElement">languageOfElement</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-scriptOfElement">scriptOfElement</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
                   </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">Required, Not Repeatable</div>
@@ -2180,21 +2375,21 @@
                      <span class="label">Function Agent</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">An element for giving the name of one or more agents responsible for the function or activity being described.</div>The two attributes localType and localTypeDeclarationReference are used for creating a reference to a locally defined value list defining the function agent classification.The three attributes vocabularySource, vocabularySourceURI and valueURI are used for creating a reference to an externally defined value list defining the function agent classification.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-functionAgents">functionAgents</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">The element is used for giving the name of the agent or agents responsible for the function or activity being described.With the aid of the attributes localType and localTypeDeclarationReference or vocabularySource, vocabularySourceURI and valueURI the classification of the function agent is defined.The full description of the agent or agents is expected to be found through a &lt;relation&gt; pointing to an EAC-CPF record or equal.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-audience">audience</a>
                      </div>
-                     <div class="rightcol">Optional</div>
+                     <div class="rightcol">Optional, uses values from value list defined with attribute audienceEncoding in control</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-conventionDeclarationReference">conventionDeclarationReference</a>
@@ -2209,12 +2404,12 @@
                      <div class="centercol">
                         <a href="#attr-languageOfElement">languageOfElement</a>
                      </div>
-                     <div class="rightcol">Optional</div>
+                     <div class="rightcol">Optional, uses values from value list defined with attribute languageEncoding in control</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-localType">localType</a>
                      </div>
-                     <div class="rightcol">Optional</div>
+                     <div class="rightcol">Optional, uses values from the value list defined and referenced in the localTypeDeclarationReference</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-localTypeDeclarationReference">localTypeDeclarationReference</a>
@@ -2224,12 +2419,12 @@
                      <div class="centercol">
                         <a href="#attr-maintenanceEventReference">maintenanceEventReference</a>
                      </div>
-                     <div class="rightcol">Optional</div>
+                     <div class="rightcol">Optional, defines from which local defined value list declared in a localTypeDeclaration that is being used</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-scriptOfElement">scriptOfElement</a>
                      </div>
-                     <div class="rightcol">Optional</div>
+                     <div class="rightcol">Optional, uses values from value list defined with attribute scriptEncoding in control</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-sourceReference">sourceReference</a>
@@ -2259,7 +2454,18 @@
                   <div class="leftcol">Availability: </div>
                   <div class="content">Required, Repeatable</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+	....
+&lt;functionAgents&gt;
+		&lt;functionAgent&gt;The tax agency&lt;/functionAgent&gt;
+	&lt;/function Agents&gt;
+....
+&lt;/description&gt;
+</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -2270,7 +2476,8 @@
                      <span class="label">Function Agents</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">An element for grouping one or more &lt;functionAgent&gt;.</div>
+                  <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-functionAgent1..n">functionAgent1..n</a>
                   </div>
@@ -2279,7 +2486,7 @@
                      <a href="#elem-description">description</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">The element is a grouping element for the element &lt;functionAgent&gt;.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -2306,7 +2513,7 @@
                      <div class="centercol">
                         <a href="#attr-languageOfElement">languageOfElement</a>
                      </div>
-                     <div class="rightcol">Optional</div>
+                     <div class="rightcol">Optional, uses values from value list defined with attribute languageEncoding in control</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-maintenanceEventReference">maintenanceEventReference</a>
@@ -2316,7 +2523,7 @@
                      <div class="centercol">
                         <a href="#attr-scriptOfElement">scriptOfElement</a>
                      </div>
-                     <div class="rightcol">Optional</div>
+                     <div class="rightcol">Optional, uses values from value list defined with attribute scriptEncoding in control</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-sourceReference">sourceReference</a>
@@ -2331,7 +2538,19 @@
                   <div class="leftcol">Availability: </div>
                   <div class="content">Optional, Not Repeatable</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+	....
+&lt;functionAgents&gt;
+		&lt;functionAgent&gt;...&lt;/functionAgent&gt;
+&lt;functionAgent&gt;...&lt;/functionAgent&gt;
+	&lt;/function Agents&gt;
+....
+&lt;/description&gt;
+</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -2342,7 +2561,8 @@
                      <span class="label">Function Dates</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">An optional element that captures the date or date range of the function being described.</div>
+                  <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-date">date</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet1..1">dateSet1..1</a>
                   </div>
@@ -2351,7 +2571,7 @@
                      <a href="#elem-description">description</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">&lt;functionDates&gt; is used to assign a date or date range to the creation or revision of the function being described. When a &lt;dateRange&gt; is used with an open &lt;endDate&gt; the described funstion is seen as being on-going. </div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -2403,7 +2623,18 @@
                   <div class="leftcol">Availability: </div>
                   <div class="content">Optional, Not Repeatable</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+	....
+&lt;functionDates&gt;
+		&lt;date&gt;...&lt;/date&gt;
+	&lt;/functionDates&gt;
+....
+&lt;/description&gt;
+</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -2414,7 +2645,8 @@
                      <span class="label">Function Description</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">An optional child element of &lt;functionsDescription&gt; that provides a narrative description of the purpose of the function.</div>
+                  <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-p1..n">p1..n</a>
                   </div>
@@ -2423,14 +2655,17 @@
                      <a href="#elem-description">description</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">&lt;functionDescription&gt; provides narrative description of the purpose of the function.
+&lt;functionDescription&gt; must contain one or more &lt;p&gt; elements.
+This element is distinct from &lt;functionHistory&gt;, which is intended to record the administrative history of the function such as information on how the function was performed, associated roles, and how it changed over time.
+</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-audience">audience</a>
                      </div>
-                     <div class="rightcol">Optional</div>
+                     <div class="rightcol">Optional (values limited to external/internal)</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-base">base</a>
@@ -2473,9 +2708,20 @@
                      <div class="rightcol">Optional</div>
                   </div>
                   <div class="leftcol">Availability: </div>
-                  <div class="content">Optional, Not Repeatable</div>
+                  <div class="content">Mandatory, Not Repeatable</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">For the function "Student registration"
+			&lt;description&gt;
+	&lt;functionDescription&gt;
+		&lt;p&gt;The registration of students in the College to specific courses for a given academic term.&lt;/functionDescription&gt;
+	&lt;/function Agents&gt;
+&lt;/description&gt;
+
+</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -2486,7 +2732,8 @@
                      <span class="label">Function History</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">An optional element used to describe the history, specifically the chronology, or a sequential order of changes undergone by the function being described.</div>
+                  <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-p1..n">p1..n</a>
                   </div>
@@ -2495,7 +2742,7 @@
                      <a href="#elem-description">description</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">&lt;functionHistory&gt;&gt; is used to provide information on the precise chronology of the performance of the function being described. Examples include how and why the function was performed, who played what roles in the performance of the function, and how the function changed over time. Where &lt;functionDescription&gt; describes a narrative description of the function’s purpose, &lt;functionHistory&gt; focuses on chronology and the changes over time.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -2547,7 +2794,18 @@
                   <div class="leftcol">Availability: </div>
                   <div class="content">Optional, Not Repeatable</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+			...
+	&lt;functionHistory&gt;
+&lt;p&gt;In 1968 Yale stated they will admit 500 women into Yale College in the following Fall. The Planning Committee on Coeducation (1968-1969) oversaw every aspect of planning. In 1969, the University Committee on Coeducation was formed. The Committee continued to oversee the transition and facilitate integration of the female students. The Coeducation Office was also established to facilitate programs initiated by the Committee and to serve as a resource for the undergraduates, as well as graduate students, other women on campus, and administrators. Wasserman left Yale in 1972. Mary Arnstein became Acting Special Assistant to the President and chair of the University Committee on Coeducation. The Committee voted to terminate the position of Special Assistant and the Coeducation Office and transfer responsibilities to existing offices and a reorganized University Committee on the Education of Women in 1973. Some functions of the Coeducation Office were assumed by the new Office on the Education of Women. The University Committee on the Education of Women served as an advisory group to the president on issues related to women at Yale until 1977.&lt;/p&gt;
+&lt;/functionHistory&gt;
+			...
+&lt;/description&gt;
+</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -2567,7 +2825,7 @@
                      <a href="#elem-eaf">eaf</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">Use the required &lt;functionsDescription&gt; element to group together identity, descriptive, and contextual information about the function</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -2776,40 +3034,42 @@
                      <span class="label">Identity</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A required child element of &lt;cpfDescription&gt; used to encode the name or names
-         related to the identity being described within the EAC-CPF instance.</div>
+                  <div class="content">
+                     <div class="p">A required child element of &lt;functionsDescription&gt; used to encode the name or names
+         related to the identity being described within the EAC-F instance.</div>
+                  </div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-classifications0..1descriptiveNote0..1functionType1..1identityId0..nnameEntry">classifications0..1descriptiveNote0..1functionType1..1identityId0..nnameEntry</a> or <a href="#elem-nameEntrySet1..notherFunctionTypes0..n">nameEntrySet1..notherFunctionTypes0..n</a>
+                     <a href="#elem-classifications0..1descriptiveNote0..1identityId0..nnameEntry">classifications0..1descriptiveNote0..1identityId0..nnameEntry</a> or <a href="#elem-nameEntrySet1..n">nameEntrySet1..n</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
-                     <a href="#elem-functionsDescription">functionsDescription</a>, <a href="#elem-subfunction">subfunction</a>
+                     <a href="#elem-functionsDescription">functionsDescription</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">&lt;identity&gt; is a wrapper element used to group the elements necessary to encode the
-         name or names related to the identity of the CPF entity within the &lt;cpfDescription&gt;
-         element.The required child element &lt;entityType&gt; specifies the type of entity (i.e.,
-         corporate body, family, or person). The optional &lt;otherEntityTypes&gt; element can be
-         used to encode other entity types used in the local context. An optional
-            &lt;identityId&gt; is available for any identifiers associated with the CPF entity.One or more &lt;nameEntry&gt; elements and/or one or more &lt;nameEntrySet&gt; elements
+                  <div class="content">
+                     <div class="p">&lt;identity&gt; is a wrapper element used to group the elements necessary to encode the
+         name or names related to the identity of the EAS entity within the &lt;functionsDescription&gt;
+         element.</div>
+                     <div class="p">One or more &lt;nameEntry&gt; elements and/or one or more &lt;nameEntrySet&gt; elements
          must be included. All names by which the identity being described within one
-            &lt;cpfDescription&gt; element is known are provided within &lt;identity&gt;. Each of
+            &lt;functionsDescription&gt; element is known are provided within &lt;identity&gt;. Each of
          the names, whether authorized or alternatives, should be recorded in a separate
-            &lt;nameEntry&gt; element.&lt;identity&gt; may accommodate two or more parallel names in different languages or
+            &lt;nameEntry&gt; element.</div>
+                     <div class="p">&lt;identity&gt; may accommodate two or more parallel names in different languages or
          scripts. In countries where there is more than one official language, such as Canada or
-         Switzerland, names of CPF entities are frequently provided in more than one language.
+         Switzerland, names of EAS entities are frequently provided in more than one language.
          Within &lt;identity&gt;, a &lt;nameEntrySet&gt; element should be used to group two or
-         more &lt;nameEntry&gt; elements that represent parallel forms of the name of the CPF
-         entity being described.Within &lt;identity&gt;, a &lt;descriptiveNote&gt; element may be used to record other
-         information in a textual form that assists in the identification of the CPF entity.In case of multiple identities of the same entity in one EAC-CPF instance, such that
-         multiple &lt;cpfDescription&gt; elements are used, a separate &lt;identity&gt; element is
-         contained in each of the &lt;cpfDescription&gt; elements of the EAC-CPF instance.The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">&lt;entityType&gt;<br/>
-                        <br/>&lt;nameEntry&gt; and/or &lt;nameEntrySet&gt;<br/>
-                        <br/>&lt;otherEntityTypes&gt;<br/>
-                        <br/>&lt;identityId&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+         more &lt;nameEntry&gt; elements that represent parallel forms of the name of the EAC
+         entity being described.</div>
+                     <div class="p">Within &lt;identity&gt;, a &lt;descriptiveNote&gt; element may be used to record other
+         information in a textual form that assists in the identification of the EAS entity.</div>The prescribed order of all child elements (both required and optional) is:<div class="p">
+                        <div class="blockIndent">&lt;nameEntry&gt; and/or &lt;nameEntrySet&gt;<br/>
+                           <br/>&lt;identityId&gt;<br/>
+                           <br/>&lt;classifications&gt;<br/>
+                           <br/>&lt;descriptiveNote&gt;<br/>
+                           <br/>
+                        </div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
@@ -2889,8 +3149,10 @@
                      <span class="label">Identity Identifier</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">An optional child element of &lt;identity&gt; used to record any identifier associated
-         with the CPF entity being described.</div>Do not confuse with &lt;recordId&gt; within &lt;control&gt;, which refers to an
+                  <div class="content">
+                     <div class="p">An optional child element of &lt;identity&gt; used to record any identifier associated
+         with the function entity being described.</div>
+                  </div>Do not confuse with &lt;recordId&gt; within &lt;control&gt;, which refers to an
             identifier for the EAS instance rather than the entity it describes.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -2898,10 +3160,12 @@
                      <a href="#elem-identity">identity</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">&lt;identityId&gt; may be used to record any identifier associated with the CPF entity
+                  <div class="content">
+                     <div class="p">&lt;identityId&gt; may be used to record any identifier associated with the function entity
          being described in the EAS instance. Identifiers such as legal identifiers, typically
          assigned by an authoritative agency, may be recorded in this element. If multiple
          identifiers are recorded, each should be in its own &lt;identityID&gt;.</div>
+                  </div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -3055,16 +3319,17 @@
                      <span class="label">Legislation</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">An element for identifying the legal basis of the function.</div>
+                  <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-dates0..1p1..n">dates0..1p1..n</a>
+                     <a href="#elem-date">date</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet0..1p1..n">dateSet0..1p1..n</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-legislations">legislations</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">The element is used to record any law, directive or charter which creates, amends or curtails the function. Record each and every one of these in their own &lt;legislation&gt;</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -3136,7 +3401,20 @@
                   <div class="leftcol">Availability: </div>
                   <div class="content">Required, Repeatable</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+	....
+&lt;legislations&gt;
+		&lt;legislation&gt;Joint Stock Companies Act, 1856; Companies Act, 1862; Companies Act, 1900; Companies Act,
+1907; Companies (Consolidation) Act, 1908; Companies Act, 1928; Companies Act, 1929;
+Companies Act, 1947.&lt;/legislation&gt;
+
+	&lt;/legislations&gt;
+....
+&lt;/description&gt;</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -3147,7 +3425,8 @@
                      <span class="label">Legislations</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">An element for grouping one or more &lt;legislation&gt;.</div>
+                  <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-legislation1..n">legislation1..n</a>
                   </div>
@@ -3156,7 +3435,7 @@
                      <a href="#elem-description">description</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
+                  <div class="content">The element is a grouping element for the element &lt;legislation&gt;.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -3208,7 +3487,18 @@
                   <div class="leftcol">Availability: </div>
                   <div class="content">Optional, Not Repeatable</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+	....
+&lt;legislations&gt;
+		&lt;legislation&gt;...&lt;/legislation&gt;
+&lt;legislation&gt;...&lt;/legislation&gt;
+	&lt;/legislations&gt;
+....
+&lt;/description&gt;</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="element">
@@ -3472,6 +3762,7 @@
                   <div class="content">A required child element of &lt;maintenanceHistory&gt; used to record
                      information about maintenance activities in the history of the EAS
                      instance.</div>
+                  <div class="p">Use maintenanceEventType to document the type of maintenance activity that the &lt;maintenanceEvent&gt; is recording. Use maintenanceEventTypeEncoding in &lt;control&gt; to specify the source or rules for values supplied in maintenanceEventType.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-agent1..1eventDateTime1..1eventDescription0..n">agent1..1eventDateTime1..1eventDescription0..n</a>
@@ -3495,7 +3786,22 @@
                      </div>
                   </div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">
+                        <div class="leftcol">audience</div>
+                        <div class="content">Optional </div>
+                        <div class="leftcol">id</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">languageOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">maintenanceEventType</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">scriptOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">target</div>
+                        <div class="content">Optional</div>
+                     </div>
+                  </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">Required, repeatable</div>
                   <div class="leftcol">Example:</div>
@@ -3570,7 +3876,9 @@
                      <span class="label">Name Entry</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">An element containing a name entry for a corporate body, person, or family.</div>The status attribute may be used to indicate whether the
+                  <div class="content">
+                     <div class="p">An element containing a name entry for the described function.</div>
+                  </div>The status attribute may be used to indicate whether the
                &lt;nameEntry&gt; is an authorized or alternative form of the name.The scriptOfElement and languageOfElement attributes can be
             used to specify the script and language of each name recorded in
             &lt;nameEntry&gt;.<div class="leftcol">May contain Element/content type Occurrences: </div>
@@ -3582,8 +3890,10 @@
                      <a href="#elem-identity">identity</a>, <a href="#elem-nameEntrySet">nameEntrySet</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Within &lt;identity&gt;, the element &lt;nameEntry&gt; is used to record a name by which
-         the corporate body, person, or family described in the EAC-CPF instance is known.When &lt;nameEntry&gt; occurs within &lt;nameEntrySet&gt; it is used to record two or
+                  <div class="content">When &lt;nameEntry&gt; occurs within &lt;nameEntrySet&gt; it is used to record two or
+         more forms of a name, for example official and non-official forms of the name in different
+         languages and/or scripts.<div class="p">Within &lt;identity&gt;, the element &lt;nameEntry&gt; is used to record a name by which
+         thefunction described in the EAC-F instance is known.</div>When &lt;nameEntry&gt; occurs within &lt;nameEntrySet&gt; it is used to record two or
          more forms of a name, for example official and non-official forms of the name in different
          languages and/or scripts.Each form of the name is recorded in a separate &lt;nameEntry&gt; element.Each &lt;nameEntry&gt; must contain at least one &lt;part&gt; element. Within
             &lt;nameEntry&gt; each of the component parts of a name may be recorded in a separate
@@ -3698,10 +4008,11 @@
                      <a href="#elem-identity">identity</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A wrapper element used to group two or more &lt;nameEntry&gt; elements representing
-         parallel or other forms of the name for the same CPF entity which are used at the same time
+                  <div class="content">
+                     <div class="p">A wrapper element used to group two or more &lt;nameEntry&gt; elements representing
+         parallel or other forms of the name for the same functions entity which are used at the same time
          (e.g., official and non-official forms of the name in different languages and/or
-         scripts).The &lt;nameEntrySet&gt; element may contain a &lt;useDates&gt; element to indicate the
+         scripts).</div>The &lt;nameEntrySet&gt; element may contain a &lt;useDates&gt; element to indicate the
          dates the set of name forms was used.The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">&lt;nameEntry&gt;<br/>
                         <br/>&lt;useDates&gt;<br/>
                         <br/>
@@ -3775,11 +4086,17 @@
                      <span class="label">Object XML Wrap</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">An optional child element of &lt;relation&gt; and
+                        &lt;source&gt; that allows for the inclusion of an XML element from any XML
+                     namespace.</div>
+                  </div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[any element from any namespace]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-relation">relation</a>, <a href="#elem-source">source</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">A wrapper element that provides a place to express data in any XML encoding
                      language.To facilitate interoperability the XML should conform to an open, standard XML
@@ -3788,7 +4105,16 @@
                      than linking to external resources in order to facilitate processing or in
                      cases where the related data may not be reliably accessible.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">
+                        <div class="leftcol">audience</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">id</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">target</div>
+                        <div class="content">Optional</div>
+                     </div>
+                  </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">Optional, not repeatable</div>
                   <div class="leftcol">Examples:</div>
@@ -4122,9 +4448,11 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">A general purpose element used to encode blocks of text.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
-                  <div class="content"/>
+                  <div class="content">[text]reference0..nreferringString0..nspan0..n</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-descriptiveNote">descriptiveNote</a>, <a href="#elem-functionHistory">functionHistory</a>, <a href="#elem-legislation">legislation</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">Use &lt;p&gt; for blocks of text. A paragraph may be a subdivision of a larger composition or it may exist alone. It is usually typographically distinguished: A line space is often left blank before it; the text begins on a new line; and the first letter of the first word may be indented, enlarged, or both.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
@@ -4188,9 +4516,11 @@
                         specified by the attribute localType.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-nameEntry">nameEntry</a>, <a href="#elem-targetEntity">targetEntity</a>, <a href="#elem-targetRelationship">targetRelationship</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Within &lt;targetEntity&gt; the name or term for the related entity is encoded within &lt;part&gt; elements.&lt;part&gt; cannot be empty and requires at least one non-whitespace character, such as a hyphen, if no actual name can be given.</div>
+                  <div class="content">Within &lt;targetEntity&gt; the name or term for the related entity is encoded within &lt;part&gt; elements.<div class="p">Within &lt;nameEntry&gt; each of the components of a name, such as forename, surname or honorific title, may be recorded in a separate &lt;part&gt; element. &lt;part&gt; may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</div>Within &lt;targetEntity&gt; the name or term for the related entity is encoded within &lt;part&gt; elements.&lt;part&gt; cannot be empty and requires at least one non-whitespace character, such as a hyphen, if no actual name can be given.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -4258,13 +4588,21 @@
                      <span class="label">Place</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">An element that provides information about a place or jurisdiction, including places where the function was preformed or with which it had some other significant connection.</div>
+                  </div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-address0..ncontact0..ndate">address0..ncontact0..ndate</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet0..ndescriptiveNote0..1geographicCoordinates0..nplaceName0..nplaceRole0..nplaceType0..nrelationType0..n">dateSet0..ndescriptiveNote0..1geographicCoordinates0..nplaceName0..nplaceRole0..nplaceType0..nrelationType0..n</a>
+                  </div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-relation">relation</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">The &lt;address&gt; element is available for specifying a postal or other address. The &lt;contact&gt; element is available for specifying a digital address or other contact information.The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">
+                  <div class="content">
+                     <div class="p">A &lt;place&gt; element is a wrapper element used to encode information about a place or jurisdiction. This includes identifying the places or jurisdictions where the function was preformed or with which it had some other significant connection. It can also be used to encode address and contact information.</div>
+                     <div class="p">&lt;place&gt; must include at least one of &lt;address&gt;, &lt;contact&gt;, &lt;geographicCoordinates&gt;, &lt;placeName&gt; or &lt;placeRole&gt;.</div>The &lt;address&gt; element is available for specifying a postal or other address. The &lt;contact&gt; element is available for specifying a digital address or other contact information.<div class="p">Associated date or date range (&lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;) information may be included to further constrain the place's meaning. A &lt;descriptiveNote&gt; may be included if a fuller explanation of the significance of the place to the records being described is needed.</div>The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">
                         <br/>
                         <br/>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br/>
                         <br/>
@@ -4355,12 +4693,17 @@
                      <span class="label">Place Name</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>The vocabularySource attribute may be used to indicate the
+                  <div class="content">
+                     <div class="p">An optional child element of &lt;place&gt; used to encode the name of a place
+                     or geographic feature that is related to the function being described.</div>
+                  </div>The vocabularySource attribute may be used to indicate the
                         controlled vocabulary from which the &lt;placeName&gt; term is
                         derived.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-place">place</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">&lt;placeName&gt; should be identified by the proper noun that commonly
                      designates the place, natural feature, or political jurisdiction. It is
@@ -4368,7 +4711,7 @@
                      to describe the nature of the association of the &lt;placeName&gt; to the
                      entity. Furthermore a companion &lt;geographicCoordinates&gt; is available
                      beside &lt;placeName&gt;, when used within &lt;place&gt;, to encode latitude,
-                     longitude and altitude information.The &lt;placeName&gt; element is repeatable. It is strongly recommended that
+                     longitude and altitude information.<div class="p">At least one of &lt;placeName&gt;, &lt;placeRole&gt;, &lt;placeType&gt;, &lt;geographicCoordinates&gt;, &lt;address&gt;, or &lt;contact&gt; is required within &lt;place&gt;.</div>The &lt;placeName&gt; element is repeatable. It is strongly recommended that
                      within &lt;place&gt;, the &lt;placeName&gt; element be repeated only to
                      represent the same place name in various languages, with an accompanying
                         languageOfElement attribute.</div>
@@ -4601,7 +4944,9 @@
             required, use the target attribute.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content"/>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-conventionDeclaration">conventionDeclaration</a>, <a href="#elem-eventDescription">eventDescription</a>, <a href="#elem-localTypeDeclaration">localTypeDeclaration</a>, <a href="#elem-p">p</a>, <a href="#elem-rightsDeclaration">rightsDeclaration</a>, <a href="#elem-source">source</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">&lt;reference&gt; is a required child element of &lt;conventionDeclaration&gt;,
             &lt;localTypeDeclaration&gt;, and &lt;rightsDeclaration&gt; for identifying any rules
@@ -4684,17 +5029,29 @@
                   <div class="content">A required child element of &lt;relations&gt; for describing a relationship
                      between the entity or records described and a related entity.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-date">date</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet0..1descriptiveNote0..1objectXMLWrap0..1place0..1relationType0..ntargetEntity1..1targetRole0..n">dateSet0..1descriptiveNote0..1objectXMLWrap0..1place0..1relationType0..ntargetEntity1..1targetRole0..n</a>
+                  </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-relations">relations</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Use &lt;objectXMLWrap&gt; to embed XML documenting the related entity from any
+                  <div class="content">
+                     <div class="p">&lt;relation&gt; records descriptive information about a relationship between the function being described to oterh function desc riptions as well as to all other types of resources like creators and records.</div>Use &lt;objectXMLWrap&gt; to embed XML documenting the related entity from any
                      namespace. Use &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt; for
                      specifying the time period of the relationship and &lt;place&gt; for relevant
                      location information. &lt;descriptiveNote&gt; may be included for more
-                     detailed specifications or explanations of the relationship.The prescribed order of all child elements (both required and optional) is:</div>
+                     detailed specifications or explanations of the relationship.The prescribed order of all child elements (both required and optional) is:<div class="p">
+                        <div class="blockIndent">&lt;targetEntity&gt;<br/>
+                           <br/>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br/>
+                           <br/>One or more of &lt;place&gt;, &lt;relationType&gt;, &lt;targetRole&gt;, and &lt;targetType&gt;<br/>
+                           <br/>&lt;descriptiveNote&gt;<br/>
+                           <br/>&lt;objectXMLWrap&gt;<br/>
+                           <br/>
+                        </div>
+                     </div>
+                  </div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -4761,7 +5118,9 @@
                      <a href="#elem-descriptiveNote0..1relation1..n">descriptiveNote0..1relation1..n</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-functionsDescription">functionsDescription</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">A wrapper element that groups together one or more &lt;relation&gt; elements,
                      each of which encodes a specific relationship.The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">&lt;relation&gt;<br/>
@@ -4831,13 +5190,19 @@
                      <span class="label">Relation Type</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">An element used to specify the type of relation that the described entity  has to the &lt;targetEntity&gt;.</div>
+                  </div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-relation">relation</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">The &lt;relationType&gt; element contains a textual description of the
+                  <div class="content">
+                     <div class="p">Use &lt;relationType&gt; to specify the type of
+                     relation that the entity or records being described have to the &lt;targetEntity&gt;.</div>The &lt;relationType&gt; element contains a textual description of the
                      relation. It is recommended that values used in &lt;relationType&gt; be taken
                      from an authorized vocabulary.
                      </div>
@@ -5472,6 +5837,10 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">A required child element of &lt;relation&gt; used to identify the entity that
                      is being targeted by the relation.</div>
+                  <div class="p">Use the required targetType, to identity the type of entity
+                        related to in &lt;targetEntity&gt;, using one of the following values:
+                        "agent", "corporateBody", "family", "function", "person", or
+                        "resource".</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
                      <a href="#elem-part1..n">part1..n</a>
@@ -5485,7 +5854,35 @@
                      that is related to the source entity or records.&lt;targetEntity&gt; must include at least one &lt;part&gt; element, encoding
                      the name or term for the related entity.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">
+                        <div class="leftcol">audience</div>
+                        <div class="content">Optional (values limited to: external, internal)</div>
+                        <div class="leftcol">conventionDeclarationReference</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">id</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">languageOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">maintenanceEventReference</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">scriptOfElement</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">sourceReference</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">target</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">targetType</div>
+                        <div class="content">Required (values limited to: agent, corporateBody, family, function,
+                           person, resource)</div>
+                        <div class="leftcol">valueURI</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">vocabularySource</div>
+                        <div class="content">Optional</div>
+                        <div class="leftcol">vocabularySourceURI</div>
+                        <div class="content">Optional</div>
+                     </div>
+                  </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">Required, not repeatable</div>
                   <div class="leftcol">Examples:</div>
@@ -5587,7 +5984,10 @@
                      <span class="label">Target Role</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">An optional child element of &lt;relation&gt; used to specify the role of a
+                     related entity with respect to the function being described.</div>
+                  </div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
@@ -5595,7 +5995,9 @@
                      <a href="#elem-relation">relation</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">The &lt;targetRole&gt; element contains a textual description of the relation.
+                  <div class="content">
+                     <div class="p">&lt;targetRole&gt; is used with &lt;relation&gt; to specify the role of a
+                     related entity with respect to the function being described.</div>The &lt;targetRole&gt; element contains a textual description of the relation.
                      It is recommended that the terms in &lt;targetRole&gt; be taken from
                      authorized vocabularies.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
@@ -5685,9 +6087,14 @@
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <a href="#elem-localControl">localControl</a>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">&lt;term&gt; can be repeated within its parent element to include translations
+                  <div class="content">
+                     <div class="p">&lt;term&gt; is a required child element of &lt;localControl&gt; used to
+                     specify a descriptive term in accordance with authorized vocabularies or local
+                     rules.</div>&lt;term&gt; can be repeated within its parent element to include translations
                      of the same term. Use the languageOfElement attribute to identify
                      the language used in each &lt;term&gt; grouped within a single parent
                      element.</div>
@@ -5940,7 +6347,7 @@
                   <br/>
                </div>  <a class="tocReturn" href="#toc">[toc]</a>
             </div>
-            <div class="section" id="d1e6436">
+            <div class="section" id="d1e7048">
                <div class="head03">Attributes Attribute name Attribute values</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType">
@@ -5951,7 +6358,12 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">Used to specify the type of address line encoded in &lt;addressLine&gt;. </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">An attribute used to specify the type of address line encoded in
+                        &lt;addressLine&gt;, eg "street", "country" or "postalCode". </div>
+                  </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">token</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Values: </div>
@@ -6001,7 +6413,11 @@
                   <div class="leftcol">Values: </div>
                   <div class="content">external, internal</div>
                   <div class="leftcol">Examples:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;eaf audience="external"&gt; [...] &lt;/ead&gt;</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="spacer"> </div>
@@ -6014,7 +6430,8 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">Optional attribute used to specify a base URI that is different to the base URI of the EAS instance.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Using the optional attribute base allows any relative URIs provided on attributes of a specific element, or its descendants, to be resolved using the URI provided in that element's or its parent element's base.</div>
+                  <div class="content">Using the optional attribute base allows any relative URIs provided on attributes of a specific element, or its descendants, to be resolved using the URI provided in that element's or its parent element's base.<div class="p"> Available on &lt;classifications&gt;, &lt;control&gt;, &lt;dates&gt;, &lt;description&gt;, &lt;functionAgents&gt;, &lt;functionDates&gt;, &lt;functionDescription&gt;, &lt;functionsDescription&gt;, &lt;functionHistory&gt;, &lt;identity&gt;, &lt;legislations&gt;, &lt;sources&gt; and &lt;relations&gt;</div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">anyURI</div>
                   <div class="leftcol">Examples:</div>
@@ -6032,7 +6449,11 @@
                   <div class="content">System of reckoning time, such as Gregorian calendar or Julian calendar.
                      </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Suggested values include, but are not limited to, "gregorian" and "julian". 
+                    Available in &lt;date&gt;, &lt;fromDate&gt;, &lt;toDate&gt;. 
+                  </div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content"/>
                   <div class="leftcol">Example:</div>
@@ -6049,9 +6470,16 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">The level of confidence for a date.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">
+                     The optional attribute certainty provides level of confidence for the information given in &lt;date&gt;,
+                     &lt;fromDate&gt;, or &lt;toDate&gt;, e.g., approximate or circa.
+                  </div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">token</div>
+                  </div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -6066,7 +6494,12 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">Used to specify the type of contact line encoded in &lt;contactLine&gt;.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">An attribute used to specify the type of contact line encoded in
+                        &lt;contactLine&gt;, eg "email", "phoneNumber" or "homepage".</div>
+                  </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">token</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Values: </div>
@@ -6129,7 +6562,9 @@
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">Content of the optional attribute should be a code taken from ISO 3166-1 Codes for the Representation of Names of Countries and their Subdivisions, column A2, or another controlled list, as specified in the countryEncoding attribute in &lt;control&gt;. Available in &lt;maintenanceAgency&gt; and &lt;placeName&gt;.</div>
                   <div class="leftcol">Data Type: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">token</div>
+                  </div>
                   <div class="leftcol">Examples:</div>
                   <div class="content"/>
                   <br/>
@@ -6142,9 +6577,12 @@
                   <div class="content"> <span class="label">Country Encoding</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Specifies the authoritative source or rules for codes used to identify a country as part of the maintenance agency's location or of describing a geographic feature.</div>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">This can either be the ISO standard 3166-1 or an alternative code list. If the value "otherCountryEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  <div class="content">
+                     <div class="p">countryEncoding specifies the authoritative source or rules for values supplied in countryCode within &lt;maintenanceAgency&gt; and &lt;placeName&gt;.</div>This can either be the ISO standard 3166-1 or an alternative code list. If the value "otherCountryEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">iso3166-1, otherCountryEncoding</div>
                   <div class="leftcol">Example:</div>
@@ -6161,7 +6599,8 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">Specifies the authoritative source or rules used to normalize date information.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">This can either be the ISO standard 8601 or an alternative code list. If the value "otherDateEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  <div class="content">
+                     <div class="p">dateEncoding specifies the authoritative source or rules for normalized values supplied in standardDate within &lt;date&gt;, &lt;fromDate&gt; and &lt;toDate&gt; as well as in standardDateTime within &lt;eventDateTime&gt;.</div>This can either be the ISO standard 8601 or an alternative code list. If the value "otherDateEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">iso8601, otherDateEncoding</div>
                   <div class="leftcol">Example:</div>
@@ -6199,9 +6638,15 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">Period during which years are numbered and dates reckoned.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
+                    Suggested values include "ce" and "bce". This optional attribute is available in &lt;date&gt;, &lt;fromDate&gt;, 
+                    and &lt;toDate&gt;</div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">token</div>
+                  </div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -6214,15 +6659,21 @@
                   <div class="content"> <span class="label">Function Status</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the attribute is used for</div>
+                  <div class="content">A required attribute used to specify the state of the description with the purpose of indicating the current stat</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the attribute</div>
+                  <div class="content">Use one of the values to identify the current status of the description, ie. draft, final, revised, deleted</div>
                   <div class="leftcol">Data Type: </div>
-                  <div class="content">Datatype of the attribute (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</div>
+                  <div class="content">token</div>
                   <div class="leftcol">Values: </div>
-                  <div class="content">Available values (include either values or datatype). Include standard="eac" or standard="ead" in div for shared elements where these are different.</div>
+                  <div class="content">Suggested values include, but are not limited to, draft, final, revised, deleted, active, obsolete, inactive</div>
                   <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;functionsDescription functionStatus=”active”&gt;
+&lt;/functionsDescription&gt;
+</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="spacer"> </div>
@@ -6235,7 +6686,10 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">The address for a remote resource.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">The optional href attribute takes the form of a Uniform Resource Identifier
+         (URI). Available in &lt;contactLine&gt;, &lt;reference&gt;, and &lt;source&gt;.</div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">anyURI</div>
                   <div class="leftcol">Example:</div>
@@ -6295,7 +6749,9 @@
                   <div class="content">The code for the language used in the EAS instance or by the records or entity being described.
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Content of the attribute should be a code taken from ISO 639-1, ISO 639-2, ISO 639-3, IETF BCP 47 or another controlled list, as specified in the languageEncoding attribute in &lt;control&gt;. </div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content"/>
                   <div class="leftcol">Example:</div>
@@ -6310,11 +6766,16 @@
                   <div class="content"> <span class="label">Language Encoding</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Specifies the authoritative source or rules for codes used to identify the language of the EAS instance as a whole, of a specific element, or represented in the function entity being described.</div>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">languageEncoding specifies the authoritative source or rules for values supplied in languageCode within &lt;languageDeclaration&gt; and &lt;language&gt; and in languageOfElement available in all non-empty elements.</div>
+                  <div class="content">languageEncoding specifies the authoritative source or rules for values supplied in languageCode within &lt;languageDeclaration&gt; and &lt;language&gt; and in languageOfElement available in all non-empty elements.<div class="p">This can either be one of the ISO standards 639-1, 639-2, and 639-3, the IETF BCP 47 language tag or an alternative code list. If the value "otherLanguageEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  </div>
                   <div class="leftcol">Values: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">iso639-1, iso639-2, iso639-3, ietf-bcp-47, otherLanguageEncoding</div>
+                  </div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -6336,7 +6797,9 @@
                      to specify which elements are written in which language. Optionally available
                      on all non-empty elements.</div>
                   <div class="leftcol">Data Type: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">token</div>
+                  </div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -6352,7 +6815,10 @@
                   <div class="content">A URI that characterizes the nature of the remote resource to which a linking element
          refers.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">A URI that characterizes the nature of the remote resource to which a linking element
+         refers. Optionally available in &lt;contactLine&gt;, &lt;reference&gt;, and &lt;source&gt;.</div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">anyURI</div>
                   <div class="leftcol">Example:</div>
@@ -6372,7 +6838,8 @@
                   <div class="content">Information that serves as a viewable caption which explains to users the part that a
          remote resource plays in a link. May be used alongside any href attribute in order
          to support accessibilty guidelines, such as those defined within the W3C's Web Content
-         Accessibility Guidelines (WCAG).</div>
+         Accessibility Guidelines (WCAG).<div class="p">Optionally available in &lt;contactLine&gt;, &lt;reference&gt; and &lt;source&gt;.</div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Examples:</div>
@@ -6456,7 +6923,9 @@
                   <div class="content"> <span class="label">Maintenance Event Type</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">An optional attribute of &lt;maintenanceEvent&gt; that identifies the type of maintenance activity.</div>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">Identifies the type of maintenance event with values such as:<div class="blockIndent">cancelled: marks an instance as not current (obsolete or rejected), but retained for reference<br/>
                         <br/>created: the initial creation of the EAS instance<br/>
@@ -6468,6 +6937,8 @@
                         <br/>
                      </div>
                   </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">token</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Values: </div>
@@ -6486,7 +6957,8 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">The current drafting status of the EAS instance.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">As an EAS instance is modified or other events happen to it (as recorded in the
+                  <div class="content">
+                     <div class="p">The maintenance status must occur on &lt;control&gt;.</div>As an EAS instance is modified or other events happen to it (as recorded in the
                         &lt;maintenanceHistory&gt; element), the maintenance status should also be
                      updated to reflect the current drafting status.On first creation the status would be "new", which on revision can be changed
                      to "revised". Because it is important to be clear about what has happened to
@@ -6503,6 +6975,10 @@
                      that the record was derived from another descriptive system.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content"/>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">
+                     <div class="p">token</div>
+                  </div>
                   <div class="leftcol">Values: </div>
                   <div class="content"/>
                   <div class="leftcol">Examples:</div>
@@ -6519,7 +6995,11 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">A standard numerical form of an approximate date for which a latest possible date is known.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Optionally available in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;. 
+                    It is recommended that notAfter values follow ISO 8601 or another standard date format 
+                    as specified in dateEncoding.</div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6536,7 +7016,11 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">A standard numerical form of an approximate date for which an earliest possible date is known.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Optionally available in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;. 
+                    It is recommended that notBefore values follow ISO 8601 or another standard date format as specified in
+                     dateEncoding.</div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6575,6 +7059,8 @@
                   <div class="content">The publication status may occur on &lt;control&gt; to indicate the current publication status of the EAS instance, for example in process, approved or final. As an EAS instance is modified or other events happen to it (as recorded in the &lt;maintenanceHistory&gt; element), the publication status should also be updated.A newly created EAS instance will usually start with a publication status of "inProcess". This partial and preliminary status will be applicable as long as the author or the creating agency is working on the document. Depending on the context, the document might first reach a pre-publication level, awaiting approval e.g. by a higher level manager or an authorizing agency. Once such approval has been given, the status "approved" could be assigned for internal purposes while the EAS instance is not publicly available yet. When the EAS instance has been published on the institution’s own website or via the authorizing agency, the status "published" can be assigned.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">token</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">approved, inProcess, published</div>
                   <div class="leftcol">Example:</div>
@@ -6589,9 +7075,12 @@
                   <div class="content"> <span class="label">Repository Encoding</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Specifies the authoritative source or rules for codes used to identify the maintenance agency of an EAS instance.</div>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">This can either be the ISO standard 15511 or an alternative code list. If the value "otherRepositoryEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  <div class="content">
+                     <div class="p">repositoryEncoding specifies the authoritative source or rules for values used within &lt;agencyCode&gt;.</div>This can either be the ISO standard 15511 or an alternative code list. If the value "otherRepositoryEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">iso15511, otherRepositoryEncoding</div>
                   <div class="leftcol">Example:</div>
@@ -6612,7 +7101,9 @@
                      specified in the scriptEncoding attribute in &lt;control&gt;.
                      Optionally available in &lt;languageDeclaration&gt; and &lt;writingSystem&gt;.</div>
                   <div class="leftcol">Data Type: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">token</div>
+                  </div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -6625,7 +7116,9 @@
                   <div class="content"> <span class="label">Script Encoding</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">Specifies the authoritative source or rules for codes used to identify the writing system of the EAS instance as a whole or, of a specific element, or represented in the creative work of the function being described.</div>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">scriptEncoding specifies the authoritative source or rules for values supplied in scriptCode within &lt;languageDeclaration&gt; and &lt;writingSystem&gt; and in scriptOfElement available in all non-empty elements. This can either be the ISO standard 15924 or an alternative code list. If the value "otherScriptEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
@@ -6650,7 +7143,9 @@
                      consistently in a multi-lingual EAS instance to specify which elements are
                      written in which script. Optionally available on all non-empty elements.</div>
                   <div class="leftcol">Data Type: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">token</div>
+                  </div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -6704,7 +7199,11 @@
                   <div class="leftcol">Summary: </div>
                   <div class="content">The standardized form of date.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">The standardized form of date expressed in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;. 
+                    It is recommended that standardDate values follow ISO 8601, for example, 2011-07-22, 1963, or 1912-11, 
+                    or another standard date format as specified in dateEncoding.</div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6745,7 +7244,17 @@
                   <div class="content">Attribute that follows controlled terminology detailing the status of
                      elements.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="p">status provides controlled terminology detailing the status of specific
+                     elements. The terms available for status are defined in closed lists that vary by
+                     element. Use statusEncoding in &lt;control&gt; to identify lists of  
+                   terms from EAS lists that can be used as values of status. It is also possible 
+                   to define one's own list by using the value "otherStatusEncoding". Optionally available 
+                   in &lt;agencyCode&gt;, &lt;otherAgencyCode&gt;, &lt;date&gt;, 
+                    &lt;fromDate&gt;, &lt;toDate&gt;.</div>
+                  </div>
+                  <div class="leftcol">Data Type: </div>
+                  <div class="content">token</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Values: </div>
@@ -6854,18 +7363,11 @@
                   <div class="content"> <span class="label">Value</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">
-                     <div class="p">Defines the type of function described in the EAF instance</div>
-                  </div>
+                  <div class="content"/>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">
-                     <div class="p">Required attribute within the &lt;functionType&gt; element that defines the type
-                     of function described in the EAF instance. </div>
-                  </div>
+                  <div class="content"/>
                   <div class="leftcol">Values: </div>
-                  <div class="content">
-                     <div class="p">activity, business process, function, other, subfunction, task, transaction</div>
-                  </div>
+                  <div class="content"/>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -6928,7 +7430,7 @@
             </div>
          </div>
          <div>
-            <div class="section" id="d1e8002">
+            <div class="section" id="d1e8852">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Title">Title  <a class="tocReturn" href="#toc">[toc]</a>
                </div>Contents of the appendix; this can also include lists</div>

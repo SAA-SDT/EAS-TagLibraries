@@ -96,7 +96,7 @@
                   <p type="eac">Use the required <att>maintenanceEventType</att> to document the type of
                         maintenance activity that the <gi>maintenanceEvent</gi> is recording, using
                         one of the values from the available controlled list. </p>
-                        <p type="ead">Use <att>maintenanceEventType</att> to document the type of maintenance activity that the <gi>maintenanceEvent</gi> is recording. Use <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>maintenanceEventType</att>.</p></div>
+                        <p type="ead">Use <att>maintenanceEventType</att> to document the type of maintenance activity that the <gi>maintenanceEvent</gi> is recording. Use <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>maintenanceEventType</att>.</p>
   <p type="eaf">Use <att>maintenanceEventType</att> to document the type of maintenance activity that the <gi>maintenanceEvent</gi> is recording. Use <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>maintenanceEventType</att>.</p></div>
                             
   <div type="availability">
