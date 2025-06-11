@@ -15,7 +15,7 @@
                      encode a local type of contact line.</p>
                  <p type="ead">An attribute used to specify the type of contact line encoded in
                         <gi>contactLine</gi>, eg "email", "phoneNumber" or "homepage".</p>
-               </div>
+               
   <p type="eaf">An attribute used to specify the type of contact line encoded in
                         <gi>contactLine</gi>, eg "email", "phoneNumber" or "homepage".</p>
                </div>

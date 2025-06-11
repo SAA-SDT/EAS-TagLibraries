@@ -115,7 +115,7 @@
                         related to in <gi>targetEntity</gi>, using one of the following values:
                         "agent", "corporateBody", "family", "function", "person", or
                         "resource".</p>
-               p type="eaf">Use the required <att>targetType</att>, to identity the type of entity
+               <p type="eaf">Use the required <att>targetType</att>, to identity the type of entity
                         related to in <gi>targetEntity</gi>, using one of the following values:
                         "agent", "corporateBody", "family", "function", "person", or
                         "resource".</p></div>
