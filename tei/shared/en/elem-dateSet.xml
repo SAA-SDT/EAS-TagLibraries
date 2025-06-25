@@ -20,8 +20,8 @@
                   <p type="eac">chronItem, demographicDescription, existDates, function, legalStatus,
                      localDescription, mandate, occupation, otherEntityType, place, relation,
                      useDates</p>
-                  <p type="ead">agent, function, legalStatus, subject, place, relation, unitDateStructured</p>
-                 <p type="eaf">dateSet, functionDates, legislation, localControl, useDates, place, relation</p>
+                  <p type="eaf">dateSet, functionDates, legislation, localControl, useDates, place, relation</p>
+                  <p type="ead">agent, formAvailable, function, legalStatus, subject, place, relation, unitDate</p>
                </div>
                <div type="attributes">
                   <p>

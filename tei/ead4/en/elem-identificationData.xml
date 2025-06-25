@@ -13,27 +13,21 @@
 		<p><list type="gloss">
   <label>container</label>
   <item>0..n</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>extent</label>
+  <item>0..n</item>
+  <label>genreForm</label>
+  <item>0..n</item>
   <label>head</label>
   <item>0..1</item>
-  <label>identificationDataNote</label>
-  <item>0..n</item>
   <label>languageOfMaterial</label>
   <item>0..n</item>
   <label>legalStatus</label>
   <item>0..n</item>
-  <label>materialSpec</label>
-  <item>0..n</item>
-  <label>physDescSet</label>
-  <item>0..n</item>
-  <label>physDesc</label>
-  <item>0..n</item>
-  <label>physDescStructured</label>
-  <item>0..n</item>
-  <label>physLoc</label>
+  <label>otherIdentificationData</label>
   <item>0..n</item>
   <label>unitDate</label>
-  <item>0..n</item>
-  <label>unitDateStructured</label>
   <item>0..n</item>
   <label>unitId</label>
   <item>0..n</item>
@@ -69,7 +63,7 @@
 	<div type="description">
 		<p><gi>identificationData</gi> binds together other elements that provide core information needed for identifying the described materials. <gi>identificationData</gi> occurs in <gi>archDesc</gi> and <gi>c</gi> respectively <gi>c01</gi> to <gi>c12</gi>. The various <gi>identificationData</gi> child elements are intended for brief, clearly designated statements of information, whereas following sibling elements of <gi>identificationData</gi> such as <gi>custodHist</gi>, <gi>arrangement</gi>, or <gi>scopeContent</gi> allow for more detailed, narrative description.</p>
 		<p><gi>identificationData</gi> groups elements that constitute a good basic description of an archival unit. This grouping ensures that the same data elements and structure are available at every level of description within the EAD hierarchy. It facilitates the retrieval or output of a coherent body of elements for resource discovery and recognition.</p>
-		<p>The <gi>identificationData</gi> in <gi>archDesc</gi> is sometimes called the high-level <gi>identificationData</gi>, because it covers the entirety of the materials described by the EAD instance. Consider using the following child elements in the high-level <gi>identificationData</gi>: <gi>unitTitle</gi>, <gi>unitId</gi>, <gi>unitDate</gi> or <gi>unitDateStructured</gi>, <gi>physDesc</gi> or <gi>physDescStructured</gi>, and <gi>physLoc</gi> (if applicable to a repository's practice). <gi>identificationData</gi> within components can have fewer elements, and might have only <gi>container</gi> or <gi>unitId</gi> and <gi>unitTitle</gi>.</p>
+		<p>The <gi>identificationData</gi> in <gi>archDesc</gi> is sometimes called the high-level <gi>identificationData</gi>, because it covers the entirety of the materials described by the EAD instance. Consider using the following child elements in the high-level <gi>identificationData</gi>: <gi>unitTitle</gi>, <gi>unitId</gi>, <gi>unitDate</gi>, and <gi>extent</gi>. <gi>identificationData</gi> within components can have fewer elements, and might for example have only <gi>container</gi> or <gi>unitId</gi> and <gi>unitTitle</gi>.</p>
 	</div>
 	<div type="availability">
 		<p>Required, not repeatable</p>

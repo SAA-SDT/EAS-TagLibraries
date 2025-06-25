@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-recordTypeSpecificStatement" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<gi>recordTypeSpecificStatement</gi>
+	</head>
+	<div type="fullName">
+		<p>Record Type Specific Statement</p>
+	</div>
+	<div type="summary">
+		<p>An element for providing record type specific details for the materials being described.</p>
+	</div>
+	<div type="mayContain">
+		<p>
+			<list type="gloss">
+				<label>abstract</label>
+  				<item>0..1</item>
+ 				<label>formattingExtension</label>
+  				<item>0..1</item>
+  				<label>objectXMLWrap</label>
+  				<item>0..1</item>
+  				<label>p</label>
+  				<item>0..n</item>
+			</list>
+		</p>
+	</div>
+	<div type="mayOccurWithin">
+		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+	</div>
+	<div type="attributes">
+		<p>
+			<list type="gloss">
+				<label>audience</label>
+				<item>Optional</item>
+				<label>conventionDeclarationReference</label>
+				<item>Optional</item>
+				<label>id</label>
+				<item>Optional</item>
+				<label>languageOfElement</label>
+				<item>Optional</item>
+				<label>localType</label>
+				<item>Optional</item>
+				<label>localTypeDeclarationReference</label>
+				<item>Optional</item>
+				<label>maintenanceEventReference</label>
+				<item>Optional</item>
+				<label>scriptOfElement</label>
+				<item>Optional</item>
+				<label>sourceReference</label>
+				<item>Optional</item>
+				<label>target</label>
+				<item>Optional</item>
+			</list>
+		</p>
+	</div>
+	<div type="description">
+		<p><gi>recordTypeSpecificStatement</gi> is for capturing record type specific details that are unique to a particular class, form or type of material and which are not recorded in any other element of description. Examples include mathematical data, such as scale for cartographic and architectural records, jurisdictional and denominational data for philatelic records, and presentation data that describes the format of music manuscripts.</p>
+		<p>Use the child <gi>objectXMLWrap</gi> to include record type specfic details in another XML format or standard that might allow for more detailed encoding of such details than the EAS.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                     <item><gi>abstract</gi> (if used)</item>
+                     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+		     <item><gi>objectXMLWrap</gi></item>
+		</list>
+	</div>
+	<div type="availability">
+		<p>Optional, Repeatable</p>
+	</div>
+	<div type="examples">
+		<egXML xml:lang="eng"></egXML>
+	</div>
+</div>

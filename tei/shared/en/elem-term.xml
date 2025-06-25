@@ -19,8 +19,8 @@
                <div type="mayOccurWithin">
                   <p type="eac">demographicDescription, function, legalStatus, localControl, localDescription,
                      mandate, occupation, otherEntityType</p>
-                  <p type="ead">function, legalStatus, subject</p>
-                 <p type="eaf">localControl</p>
+                  <p type="eaf">localControl</p>
+                  <p type="ead">legalStatus</p>
                </div>
                <div type="attributes">
                   <p>
@@ -50,8 +50,7 @@
                         <gi>mandate</gi>, <gi>occupation</gi>, and <gi>otherEntityType</gi>, used to
                      specify a descriptive term in accordance with authorized vocabularies or local
                      rules.</p>
-                 <p type="ead"><gi>term</gi> is a required child element of <gi>function</gi>,
-                        <gi>legalStatus</gi> and <gi>subject</gi>, used to
+                 <p type="ead"><gi>term</gi> is a required child element of <gi>legalStatus</gi>, used to
                      specify a descriptive term in accordance with authorized vocabularies or local
                      rules.</p>
                  <p type="eaf"><gi>term</gi> is a required child element of <gi>localControl</gi> used to

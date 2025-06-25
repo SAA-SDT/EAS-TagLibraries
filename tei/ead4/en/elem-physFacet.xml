@@ -7,7 +7,7 @@
 		<p>Physical Facet</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>physDescStructured</gi> that provides more detailed information about the physical nature of or techniques and methods of creation of the material described in terms that are often taken from a controlled vocabulary list.</p>
+		<p>A child element of <gi>formAvailable</gi> that provides more detailed information about the physical nature of or techniques and methods of creation of a specific instantiation of the material described in terms that are often taken from a controlled vocabulary list.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -22,7 +22,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>physDescStructured</p>
+		<p>formAvailable</p>
 	</div>
 	<div type="attributes">
     		<p>
@@ -57,7 +57,7 @@
     		</p>
 	</div>
 	<div type="description">
-		<p><gi>physFacet</gi> records information about an aspect of the physical nature – such as color, style, marks, substances, materials, playback speed, duration, track configuration, and motion picture presentation format – or techniques and methods of creation of the units identified by <gi>unitType</gi> within <gi>physDescStructured</gi>. It generally should not be used for aspects of physical description that are covered more directly by <gi>unitType</gi> and <gi>dimensions</gi>.</p>
+		<p><gi>physFacet</gi> records information about an aspect of the physical nature – such as color, style, marks, substances, materials, playback speed, duration, track configuration, and motion picture presentation format – or techniques and methods of creation of the units identified by <gi>unitOfMeasurement</gi> within <gi>extent</gi>. It generally should not be used for aspects of physical description that are covered more directly by <gi>unitOfMeasurement</gi> and <gi>dimensions</gi>.</p>
 <p>Physical facet terminology can be found in the Art and Architecture Thesaurus and other sources for authorized data values.</p>
 	</div>
 	<div type="attributeusage"><p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the physical facet in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p></div>	

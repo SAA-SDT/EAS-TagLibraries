@@ -24,8 +24,8 @@
                   <p type="eac">chronItem, dateSet, demographicDescription, existDates, function, legalStatus,
                      localControl, localDescription, mandate, occupation, otherEntityType, place,
                      relation, useDates</p>
-                 <p type="ead">accessConditions, agent, dateSet, fuction, legalStatus, place, relation, subject, unitDateStructured, useConditions</p>
-                 <p type="eaf">dateSet, functionDates, legislation, localControl, useDates, place, relation</p>
+                  <p type="eaf">dateSet, functionDates, legislation, localControl, useDates, place, relation</p>
+                  <p type="ead">accessConditions, agent, dateSet, formAvailable, fuction, legalStatus, place, relation, subject, unitDate, useConditions</p>
                </div>
                <div type="attributes">
                   <p>
@@ -91,8 +91,7 @@
                         <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
                         <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
                         <gi>dateSet</gi> optional, not repeatable</p>
-                  <p type="ead">Within <gi>agent</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>place</gi>, <gi>relation</gi>, <gi>subject</gi> and <gi>unitDateStructured</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
-                        <gi>dateSet</gi> optional, not repeatable</p>
+                  <p type="ead">Within <gi>agent</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>place</gi>, <gi>relation</gi>, and <gi>subject</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not repeatable</p>
                   <p type="eac">Within <gi>chronItem</gi>, <gi>existDates</gi> and <gi>useDates</gi>: one of
                         <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not
                      repeatable</p>

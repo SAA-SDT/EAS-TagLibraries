@@ -7,18 +7,12 @@
 		<p>Date of the Unit</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>identificationData</gi> that provides a simple statement of the date(s) covered by the described materials.</p>
+		<p>A child element of <gi>identificationData</gi> that allows the encoding of either structured, machine-processable expressions of the dates of the materials being described or of a simple statement of these date(s).</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
-  <label>[text]</label>
-  <item/>
-  <label>reference</label>
-  <item>0..n</item>
-  <label>referringString</label>
-  <item>0..n</item>
-  <label>span</label>
-  <item>0..n</item>
+  <label>date or dateRange or dateSet or textualDate</label>
+  <item>0..1</item>
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
@@ -45,19 +39,11 @@
             			<item>Optional</item>
 				<label>maintenanceEventReference</label>
             			<item>Optional</item>
-            			<label>notAfter</label>
-            			<item>Optional</item>
-           			<label>notBefore</label>
-            			<item>Optional</item>
-           			<label>scriptOfElement</label>
+            			<label>scriptOfElement</label>
             			<item>Optional</item>
             			<label>sourceReference</label>
             			<item>Optional</item>
-            			<label>standardDate</label>
-            			<item>Optional</item>
-           			<label>status</label>
-            			<item>Optional</item>
-           			<label>target</label>
+            			<label>target</label>
             			<item>Optional</item>
 				<label>unitDateType</label>
             			<item>Optional</item>
@@ -66,9 +52,9 @@
 	</div>
 	<div type="description">
 		<p><gi>unitDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc. <gi>unitDate</gi> may be in the form of text or numbers, and may consist of a single date, a date range, or a combination of single dates and date ranges.</p>
+		<p>Use the sub-elements <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> to provide a more granular, machine-processable statement for the dates of the materials being described. Alternatively, use the sub-element <gi>textualDate</gi> to capture a temporal statement that cannot be expressed in a standardised or structured way.</p>
 	</div>
 	<div type="attributeusage"><p>Use <att>unitDateType</att> to indicate if <gi>unitDate</gi> represents inclusive dates or bulk (predominant) dates.</p></div>	
-	<div type="seealso"><p>Use <gi>unitDateStructured</gi> to provide a more granular, machine-processable statement for the dates of the materials being described.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

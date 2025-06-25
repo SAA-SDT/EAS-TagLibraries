@@ -57,37 +57,4 @@
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>
-	<div type="examples">
-		<egXML><![CDATA[<languageOfMaterial>
-	<languageSet>
-		<language languageCode="lat">Latin</language>
-		<writingSystem scriptCode="Latn"/>
-	</languageSet>
-	<languageSet>
-		<language languageCode="ang">Old English</language>
-		<writingSystem scriptCode="Latn"/>
-	</languageSet>
-	<languageSet>
-		<language languageCode="eng">English</language>
-		<writingSystem scriptCode="Latn"/>
-	</languageSet>
-	<descriptiveNote>
-		<p>The majority of the documents are written in Modern English. Roberts copies multiple passages from original manuscripts in Latin and Old English.</p>
-	</descriptiveNote>
-</languageOfMaterial>]]></egXML>
-		<egXML xml:lang="eng"><![CDATA[<languageOfMaterial>
-	<language languageCode="eng">English</language>
-	<language languageCode="fre">French</language>
-</languageOfMaterial>]]></egXML>
-		<egXML xml:lang="eng"><![CDATA[<languageOfMaterial>
-	<languageSet>
-		<language languageCode="jpn">Japanese</language>
-		<writingSystem scriptCode="Hira">hiragana</writingSystem>
-		<writingSystem scriptCode="Kana">katakana</writingSystem>
-	</languageSet>
-	<descriptiveNote>
-		<p>This file contains documents in Japanese, in both the hiragana and katakana scripts.</p>
-	</descriptiveNote>
-</languageOfMaterial>]]></egXML>
-	</div>
 </div>

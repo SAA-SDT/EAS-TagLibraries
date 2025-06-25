@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-agentTypeEncoding" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<att>agentTypeEncoding</att>
+	</head>
+	<div type="fullName">
+		<p>Agent Type Encoding</p>
+	</div>
+	<div type="summary">
+		<p>Specifies the authoritative source or rules for values used to identify the type of agent.</p>
+	</div>
+	<div type="description">
+		<p><att>agentTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>agentType</att> within <gi>agent</gi>. If the value "EASList" is selected, <att>agentType</att> will be expected with the values "corporateBody", "family", "group", "human", "mechanism", "person", "position", or "unknown". If the value "otherAgentTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+	</div>
+	<div type="values">
+		<p>EASList, otherAgentTypeEncoding</p>
+	</div>
+</div>

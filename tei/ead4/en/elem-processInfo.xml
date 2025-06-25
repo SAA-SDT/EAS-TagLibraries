@@ -17,10 +17,12 @@
   <item>0..1</item>
   <label>p</label>
   <item>0..n</item>
+  <label>provenanceEvent</label>
+  <item>0..n</item>
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, formAvailable</p>
 	</div>
 	<div type="attributes">
     		<p>
@@ -49,13 +51,18 @@
     		</p>
 	</div>
 	<div type="description">
-		<p><gi>processInfo</gi> is used for basic information about accessioning, arranging, describing, preserving, storing, conserving, or otherwise preparing the described materials for research use. Where appropriate, encode more specific information about each of these activities separately within other elements, such as <gi>sourceOfAcquisition</gi>, <gi>appraisal</gi>, <gi>arrangement</gi>, <gi>physLoc</gi>, etc.</p>
+		<p><gi>processInfo</gi> is used for basic information about accessioning, arranging, describing, preserving, storing, conserving, or otherwise preparing the described materials for research use. Where appropriate, encode more specific information about each of these activities separately within other elements, such as <gi>sourceOfAcquisition</gi>, <gi>appraisal</gi>, <gi>arrangement</gi>, etc.</p>
+		<p>Depending on the context, e.g. differing national approaches, <gi>processInfo</gi> might also refer to activities conducted before the materials are transferred to the archives, e.g. when the records creators already conduct some of the activities around appraisal or sensitivity review.</p>
 		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>processInfo</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
 		<p>The prescribed order of all child elements (both required and optional) is:</p>
 		<list type="simple">
                      <item><gi>abstract</gi> (if used)</item>
                      <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+		     <item><gi>provenanceEvent</gi></item>
                 </list>
+	</div>
+	<div type="seealso">
+		<p>Do not confuse with <gi>accruals</gi> which lists anticipated additions to the material already held by the repository but does not go into details about the processing of such additions once they have been received.</p>
 	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>

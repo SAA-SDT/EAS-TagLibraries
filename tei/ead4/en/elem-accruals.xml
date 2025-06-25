@@ -20,7 +20,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, formAvailable</p>
 	</div>
 	<div type="attributes">
     		<p>
@@ -56,6 +56,10 @@
                      <item><gi>abstract</gi> (if used)</item>
                      <item><gi>formattingExtension</gi> or <gi>p</gi></item>
                 </list>
+	</div>
+	<div type="seealso">
+		<p>Do not confuse with <gi>processInfo</gi> which describes the activities conducted by the staff of an institution with archival holdings in preparing the described materials for research and other use. This might or might not include activities related to processing any new additions to already existing record sets.</p>
+		<p>Do not confuse with <gi>maintenanceHistory</gi> which describes events in the lifetime of the EAD instance, not the materials being described.</p>
 	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>

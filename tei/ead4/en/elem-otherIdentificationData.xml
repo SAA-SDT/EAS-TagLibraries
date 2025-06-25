@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-physLoc">
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-otherIdentificationData">
 	<head>
-		<gi>physLoc</gi>
+		<gi>otherIdentificationData</gi>
 	</head>
 	<div type="fullName">
-		<p>Physical Location</p>
+		<p>Other Identification Data</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>identificationData</gi> that specifies the physical location of the materials.</p>
+		<p>A child element of <gi>identificationData</gi> for any details about the materials being described that are not more appropriately encoded in the other available elements.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -25,20 +25,20 @@
 		<p>identificationData</p>
 	</div>
 	<div type="attributes">
-		<p>
-			<list type="gloss">
+    		<p>
+        		<list type="gloss">
             			<label>audience</label>
             			<item>Optional</item>
-	           			<label>conventionDeclarationReference</label>
+            			<label>conventionDeclarationReference</label>
             			<item>Optional</item>
             			<label>id</label>
             			<item>Optional</item>
             			<label>languageOfElement</label>
             			<item>Optional</item>
-						<label>localType</label>
+            			<label>localType</label>
             			<item>Optional</item>
             			<label>localTypeDeclarationReference</label>
-           				<item>Optional</item>
+            			<item>Optional</item>
             			<label>maintenanceEventReference</label>
             			<item>Optional</item>
             			<label>scriptOfElement</label>
@@ -48,14 +48,15 @@
             			<label>target</label>
             			<item>Optional</item>
         		</list>
-		</p>
+    		</p>
 	</div>
 	<div type="description">
-		<p><gi>physLoc</gi> is used to identify where the described materials are stored, and it may contain such information as the name or number of the building, room, stack, shelf, etc., where the materials may be stored and retrieved. <gi>physLoc</gi> can be used to designate onsite and offsite storage locations.</p>
+		<p><gi>otherIdentificationData</gi> is for capturing short notes about the materials being described that cannot be encoded more appropriately in any of the other elements available in <gi>identificationData</gi>.</p>
 	</div>
-	
-	<div type="seealso"><p>Do not confuse with <gi>container</gi>, which is used to identify the cartons, boxes, reels, folders, and other storage devices used to hold the described materials.</p></div>
-	<div type="availability">
+	<div type="attributeusage"><p>Use <att>localType</att> to specify the type of data being conveyed in the element.</p></div>	
+	<div type="seealso">
+		<p>For any more extensive or narrative information about the materials being described, for which there is no more appropriate element available, use <gi>otherDescriptiveInfo</gi> directly in <gi>archDesc</gi> or the component elements.</p>
+              </div><div type="availability">
 		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">

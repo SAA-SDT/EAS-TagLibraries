@@ -16,7 +16,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>abstract, container, dimensions, eventDescription, head, materialSpec, p, physDesc, physFacet, physLoc, reference, unitDate, unitId, unitTitle</p>
+		<p>abstract, container, eventDescription, formAvailableId, genreForm, head, otherIdentificationData, p, physFacet, reference, textualDate, unitId, unitTitle</p>
 	</div>
 	<div type="attributes">
     		<p>
@@ -34,6 +34,10 @@
             			<label>localTypeDeclarationReference</label>
             			<item>Optional</item>
             			<label>maintenanceEventReference</label>
+            			<item>Optional</item>
+            			<label>referredEntityRelationship</label>
+            			<item>Optional</item>
+            			<label>referredEntityType</label>
             			<item>Optional</item>
             			<label>scriptOfElement</label>
             			<item>Optional</item>
@@ -54,8 +58,10 @@
 		<p>Use <gi>referringString</gi> in longer texts to indicate that certain words or phrases within these texts represent named entities such as persons, organisations, places, functions, dates, etc.</p>
 		<p>Use <gi>referringString</gi> e.g. when the identification of such named entities within existing archival descriptions is the result of some natural language processing or when capturing the results of named entity recognition having been conducted as part of Optical Character Recognition or Handwritten Text Recognition tasks.</p>
 	</div>
-	<div type="attributeusage"><p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p></div>	
-	<div type="seealso"><p>Only fall back on using <gi>referringString</gi> in the contexts mentioned above. Use dedicated elements such as <gi>agents</gi>, <gi>functions</gi>, <gi>places</gi>, <gi>formsAvailable</gi>, <gi>relatedMaterial</gi>, <gi>separatedMaterial</gi>, <gi>otherFindAid</gi>, or <gi>publicationNote</gi> to name related entities central to the understanding of the materials described and to provide more information about their relationship with the materials.</p></div>
+	<div type="attributeusage">
+		<p>Use <att>referredEntityType</att> to indicate the type of entity that is named in the narrative text and <att>referredEntityRelationship</att> to specify the relation between that named entity and the entity being described in the EAS instance.</p>
+		<p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p></div>	
+	<div type="seealso"><p>Only fall back on using <gi>referringString</gi> in the contexts mentioned above. Use dedicated elements such as <gi>agents</gi>, <gi>functions</gi>, <gi>places</gi>, <gi>formsAvailable</gi>, <gi>relatedMaterial</gi>, <gi>separatedMaterial</gi>, <gi>otherDescription</gi>, or <gi>publicationNote</gi> to name related entities central to the understanding of the materials described and to provide more information about their relationship with the materials.</p></div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>

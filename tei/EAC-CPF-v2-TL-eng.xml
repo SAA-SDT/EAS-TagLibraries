@@ -257,7 +257,7 @@
             <xi:include href="shared/en/elem-part.xml" parse="xml"/>
             <xi:include href="shared/en/elem-place.xml" parse="xml"/>
             <xi:include href="shared/en/elem-placeName.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-placeRole.xml" parse="xml"/>
+            <xi:include href="eac2/en/elem-placeRole.xml" parse="xml"/>
             <xi:include href="shared/en/elem-places.xml" parse="xml"/>
             <xi:include href="shared/en/elem-recordId.xml" parse="xml"/>
             <xi:include href="shared/en/elem-reference.xml" parse="xml"/>
@@ -320,7 +320,7 @@
                   
             </div>
             <xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
-            <xi:include href="eac2/en/attr-agentType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-agentType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
             <xi:include href="shared/en/attr-base.xml" parse="xml"/>
             <xi:include href="shared/en/attr-calendar.xml" parse="xml"/>

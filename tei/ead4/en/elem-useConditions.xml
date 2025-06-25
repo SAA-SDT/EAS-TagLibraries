@@ -22,7 +22,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12, formAvailable</p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -62,6 +62,7 @@
         <p>The prescribed order of all child elements (both required and optional) is:</p>
         <list type="simple">
            	<item><gi>abstract</gi> if used</item>
+		<item><gi>dateRange</gi></item>
            	<item><gi>formattingExtension</gi> or <gi>p</gi></item>
          </list></div>
 	<div type="seealso"><p>Do not confuse with <gi>accessConditions</gi>, which contains information about conditions affecting the availability of the described materials.</p></div>

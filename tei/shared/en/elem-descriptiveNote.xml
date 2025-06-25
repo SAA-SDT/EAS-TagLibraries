@@ -7,18 +7,25 @@
                   <p>Descriptive Note</p>
                </div>
                <div type="summary">
-                  <p>An element used to provide general descriptive information related to its parent element.</p>
+                  <p type="eac">An element used to provide general descriptive information related to its parent element.</p>
+                 <p type="ead">An element used to provide general descriptive information related to its parent element, either as narrative text or encoded in a related standard.</p>
                </div>
                <div type="mayContain">
-                  <p><list type="gloss">
+                  <p type="eac"><list type="gloss">
   <label>p</label>
+  <item>1..n</item>
+</list></p>
+                 <p type="ead"><list type="gloss">
+                   <label>objectXMLWrap</label>
+                   <item>0..1</item>
+                   <label>p</label>
   <item>1..n</item>
 </list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">conventionDeclaration, demographicDescription, demographicDescriptions, existDates, function, functions, identity, languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses, localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency, mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes, place, places, relation, relations, rightsDeclaration, setComponent, source, sources</p>
-                 <p type="ead">agent, agents, conventionDeclaration, formsAvailable, function, functions, languageDeclaration, languageOfMaterial, languageSet, legalStatus, localTypeDeclaration, maintenanceAgency, physDescStructured, place, places, relation, relations, rightsDeclaration, source, sources, subject</p>
                  <p type="eaf">classifications, conventionDeclaration, languageDeclaration, localTypeDeclaration, maintenanceAgency, relation, rightsDeclaration, source, sources</p>
+                 <p type="ead">agent, agents, conventionDeclaration, extent, formAvailable, formsAvailable, function, functions, identificationData, languageDeclaration, languageOfMaterial, languageSet, legalStatus, localTypeDeclaration, maintenanceAgency, place, places, relation, relations, rightsDeclaration, source, sources, subject</p>
                </div>
                <div type="attributes">
                   <p>
@@ -44,12 +51,13 @@
                </div>
                <div type="description">
                   <p><gi>descriptiveNote</gi> provides additional descriptive information about the element in which it is contained. <gi>descriptiveNote</gi> must contain one or more <gi>p</gi> elements.</p>
+                 <p type="ead">With the optional element <gi>objectXMLWrap</gi>, <gi>descriptiveNote</gi> also allows for the inclusion of information encoded in other formats and standards that add further details to its parent element which could not be encoded in the EAS.</p>
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<function valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/">
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<function valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/">
    <term>
       community development
    </term>         

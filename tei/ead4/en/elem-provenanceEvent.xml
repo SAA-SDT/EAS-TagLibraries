@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-provenanceEvent" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<gi>provenanceEvent</gi>
+	</head>
+	<div type="fullName">
+		<p>Provenance Event</p>
+	</div>
+	<div type="summary">
+		<p>An optional child element of <gi>appraisal</gi>, <gi>biogHist</gi>, <gi>custodHist</gi>, <gi>processInfo</gi>, and <gi>sourceOfAcquisition</gi> used to record a timeline of activities in the history of the materials being described or the biography of the records creator.</p>
+	</div>
+	<div type="mayContain">
+		<p>
+			<list type="gloss">
+				<label>agent</label>
+				<item>0..1</item>
+				<label>eventDateTime</label>
+				<item>1..1</item>
+				<label>eventDescription</label>
+				<item>0..n</item>
+			</list>
+		</p>
+	</div>
+	<div type="mayOccurWithin">
+		<p>appraisal, biogHist, custodHist, processInfo, sourceOfAcquisition</p>
+	</div>
+	<div type="attributes">
+		<p>
+			<list type="gloss">
+				<label>audience</label>
+				<item>Optional</item>
+				<label>conventionDeclarationReference</label>
+				<item>Optional</item>
+				<label>id</label>
+				<item>Optional</item>
+				<label>languageOfElement</label>
+				<item>Optional</item>
+				<label>localType</label>
+				<item>Optional</item>
+				<label>localTypeDeclarationReference</label>
+				<item>Optional</item>
+				<label>maintenanceEventReference</label>
+				<item>Optional</item>
+				<label>scriptOfElement</label>
+				<item>Optional</item>
+				<label>sourceReference</label>
+				<item>Optional</item>
+				<label>target</label>
+				<item>Optional</item>
+			</list>
+		</p>
+	</div>
+	<div type="description">
+		<p>Use <gi>provenanceEvent</gi> to record an activity in the creation, management and ongoing maintenance of the materials being described or in the history of the records creator. This may include activities of appraisal and selection, sensitivity review, revisions, updates, retentions, etc.</p>
+<p>The type of each event may be defined with the attribute <att>localType</att>. Use <att>localTypeDeclarationReference</att> to refer to a <gi>localTypeDeclaration</gi> within <gi>control</gi> where you have defined those types. The child <gi>eventDateTime</gi> to record when the event took place is mandatory, while the child <gi>agent</gi> to provide information about who or what carried out, or was otherwise responsible for, the activity is optional, though highly recommended. Furthermore, the information about the event may be described in <gi>eventDescription</gi>.</p>
+		<p>The prescribed order of all child elements (both required and optional) is:</p>
+		<list type="simple">
+                     <item><gi>eventDateTime</gi></item>
+                     <item><gi>agent</gi></item>
+		     <item><gi>eventDescription</gi></item>
+                </list>
+	</div>
+	<div type="availability">
+		<p>Optional, Repeatable</p>
+	</div>
+	<div type="examples">
+		<egXML xml:lang="eng"></egXML>
+	</div>
+</div>

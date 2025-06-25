@@ -119,16 +119,16 @@
                      <list type="gloss">
                         <label>addressLineTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherAddressLineTypeEncoding)</item>
+                        <label>agentTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherAgentTypeEncoding)</item>
                         <label>audience</label>
                         <item>Optional</item>
                         <label>audienceEncoding</label>
                         <item>Optional (values limited to: EASList, otherAudienceEncoding)</item>
-                        <label>base</label>
-                        <item>Optional</item>
                         <label>contactLineTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherContactLineTypeEncoding)</item>
                         <label>countryEncoding</label>
-                        <item>Optional (values limited to: iso3166-1, otherCountryEncoding)</item>
+                        <item>Optional (values limited to: iso3166-1-alpha-2, iso3166-1-alpha-3, iso3166-1-numeric, iso3166-2, iso3166-3, otherCountryEncoding)</item>
                         <label>coverageEncoding</label>
                         <item>Optional (values limited to: EASList, otherCoverageEncoding)</item>
                         <label>dateEncoding</label>
@@ -139,10 +139,16 @@
                         <item>Optional</item>
                         <label>detailLevelEncoding</label>
                         <item>Optional (values limited to: EASList, otherDetailLevelEncoding)</item>
-                        <label>id</label>
+                        <label>extentTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherExtentTypeEncoding)</item>
+                        <label>formAvailableTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherFormAvailableTypeEncoding)</item>
+                        <label>functionTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherFunctionTypeEncoding)</item>
+                       <label>id</label>
                         <item>Optional</item>
                         <label>languageEncoding</label>
-                        <item>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2, iso639-3, otherLanguageEncoding)</item>
+                        <item>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2, iso639-2b, iso639-2t, iso639-3, iso639-5, otherLanguageEncoding)</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
                         <label>levelEncoding</label>
@@ -153,12 +159,16 @@
                         <item>Optional</item>
                         <label>maintenanceStatusEncoding</label>
                         <item>Optional (values limited to: EASList, otherMaintenanceStatusEncoding)</item>
-                        <label>physDescStructuredTypeEncoding</label>
-                        <item>Optional (values limited to: EASList, otherPhysDescStructuredTypeEncoding)</item>
-                        <label>publicationStatus</label>
+                        <label>placeTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherPlaceTypeEncoding)</item>
+                       <label>publicationStatus</label>
                         <item>Optional</item>
                         <label>publicationStatusEncoding</label>
                         <item>Optional (values limited to: EASList, otherPublicationStatusEncoding)</item>
+                        <label>referredEntityTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherReferredEntityTypeEncoding)</item>
+                        <label>relationTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherRelationTypeEncoding)</item>
                         <label>repositoryEncoding</label>
                         <item>Optional (values limited to: iso15511, otherRepositoryEncoding)</item>
                         <label>scriptEncoding</label>
@@ -167,8 +177,12 @@
                         <item>Optional</item>
                         <label>statusEncoding</label>
                         <item>Optional (values limited to: EASList, otherStatusEncoding)</item>
+                        <label>subjectTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherSubjectTypeEncoding)</item>
                         <label>target</label>
                         <item>Optional</item>
+                        <label>targetTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherTargetTypeEncoding)</item>
                         <label>unitDateTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherUnitDateTypeEncoding)</item>
                      </list>

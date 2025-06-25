@@ -30,6 +30,8 @@
   <item>0..1</item>
   <label>p</label>
   <item>0..n</item>
+  <label>provenanceEvent</label>
+  <item>0..n</item>                  
 </list></p>
                </div>
                <div type="mayOccurWithin">
@@ -78,6 +80,7 @@
                       <list type="simple">
                          <item><gi>abstract</gi> (if used)</item>
                          <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+                         <item><gi>provenanceEvent</gi></item>
                       </list>
                   </p>
                </div>

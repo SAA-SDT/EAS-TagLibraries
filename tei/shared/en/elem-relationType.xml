@@ -7,10 +7,8 @@
                   <p>Relation Type</p>
                </div>
                <div type="summary">
-                  <p type="eac">An element used to specify the type of relation that the described entity  has to the <gi>targetEntity</gi>.</p>
-                  <p type="ead">An element used to specify the type of relation that the described materials have to the person, corporate body, or family named in <gi>agentName</gi>, the function or subject named in <gi>term</gi>, the geographic location or feature named in <gi>placeName</gi>, or the resource or instance named in <gi>targetEntity</gi>.</p>
-               <p type="eaf">An element used to specify the type of relation that the described entity  has to the <gi>targetEntity</gi>.</p>
-               </div>
+                  <p>An element used to specify the type of relation that the described entity  has to the <gi>targetEntity</gi>.</p>
+              </div>
                <div type="mayContain">
                   <p><list type="gloss">
   <label>[text]</label>
@@ -18,15 +16,13 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p type="eac">relation</p>
-                  <p type="ead">agent, function, place, relation, subject</p>
-                 <p type="eaf">relation</p>
+                  <p>relation</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
+                        <item>Optional (values limited to: external, internal)</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -55,15 +51,10 @@
                   </p>
                </div>
                <div type="description">
-                  <p type="eac">Use <gi>relationType</gi> to specify the type of
+                  <p>Use <gi>relationType</gi> to specify the type of
                      relation that the entity or records being described have to the <gi>targetEntity</gi>.</p>
-                  <p type="ead">Use <gi>relationType</gi> to specify the type of
-                     relation that the entity or records being described have to the person, corporate body, or family named in <gi>agentName</gi>, the function or subject named in <gi>term</gi>, the geographic location or feature named in <gi>placeName</gi>, or the resource or instance named in <gi>targetEntity</gi>.</p>
-                 <p type="eaf">Use <gi>relationType</gi> to specify the type of
-                     relation that the entity or records being described have to the <gi>targetEntity</gi>.</p> 
-                 <p>The <gi>relationType</gi> element contains a textual description of the
-                     relation. It is recommended that values used in <gi>relationType</gi> be taken
-                     from an authorized vocabulary.
+                  <p>The <gi>relationType</gi> element contains a textual description of the
+                     relation. It is recommended that values used in <gi>relationType</gi> be taken from an authorized vocabulary.
                      <!--Examples of relations between the entity being described and a
                      corporate body, person or family include "identity", "hierarchical", "temporal",
                      "family" or "associative". Relations between the entity being described and a
@@ -75,7 +66,7 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<relation>
+                  <egXML xml:lang="eng"><![CDATA[<relation>
    <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
       <part>
          Sophie
@@ -94,7 +85,7 @@
       daughter
    </targetRole>
 </relation>]]></egXML>
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<relation>
+                  <egXML xml:lang="eng"><![CDATA[<relation>
    <targetEntity targetType="corporateBody" valueURI="https://d-nb.info/gnd/37101-4" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
       <part>
          Königliche Bibliothek zu Berlin

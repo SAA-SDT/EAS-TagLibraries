@@ -54,9 +54,6 @@
                   <p type="eac">At least one of <gi>contact</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
                         <gi>geographicCoordinates</gi>, or <gi>address</gi> is required within
                         <gi>place</gi>.</p>
-                 <p type="ead">At least one of <gi>address</gi>, <gi>placeName</gi>, <gi>placeRole</gi>, <gi>placeType</gi>, 
-                        <gi>geographicCoordinates</gi>, or <gi>contact</gi> is required within
-                        <gi>place</gi>.</p>
                </div>
                <div type="seealso"><p>Use <gi>address</gi> to encode a physical or analog address.</p></div>
                <div type="availability">
