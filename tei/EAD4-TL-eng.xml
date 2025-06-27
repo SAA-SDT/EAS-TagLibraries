@@ -147,7 +147,8 @@
             <xi:include href="ead4/en/elem-findAidDesc.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-formattingExtension.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-formAvailable.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-formsAvailable.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-formAvailableId.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-formsAvailable.xml" parse="xml"/>
             <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
             <xi:include href="shared/en/elem-function.xml" parse="xml"/>
             <xi:include href="shared/en/elem-functions.xml" parse="xml"/>
@@ -240,7 +241,6 @@
             <xi:include href="ead4/en/attr-descriptionOfComponentsTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-detailLevel.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-detailLevelEncoding.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-formAvailableId.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-formAvailableType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-formAvailableTypeEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-functionType.xml" parse="xml"/>
