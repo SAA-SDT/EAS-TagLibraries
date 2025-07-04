@@ -11,15 +11,7 @@
                      description of a maintenance event in the life of the EAS instance.</p>
                </div>
                <div type="mayContain">
-                  <p type="eac"><list type="gloss">
-  <label>[text]</label>
-  <item/>
-  <label>reference</label>
-  <item>0..n</item>
-  <label>span</label>
-  <item>0..n</item>
-</list></p>
-                  <p type="ead"><list type="gloss">
+                  <p><list type="gloss">
   <label>[text]</label>
   <item/>
   <label>reference</label>
@@ -37,7 +29,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
