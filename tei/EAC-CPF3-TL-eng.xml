@@ -193,7 +193,7 @@
             <xi:include href="shared/en/elem-agencyCode.xml" parse="xml"/>
             <xi:include href="shared/en/elem-agencyName.xml" parse="xml"/>
             <xi:include href="shared/en/elem-agent.xml" parse="xml"/>
-            <xi:include href="eac3/en/elem-alternativeSet.xml" parse="xml"/>
+            <!--<xi:include href="eac3/en/elem-alternativeSet.xml" parse="xml"/>-->
             <xi:include href="shared/en/elem-biogHist.xml" parse="xml"/>
             <!--<xi:include href="eac3/en/elem-chronItem.xml" parse="xml"/>
             <xi:include href="eac3/en/elem-chronItemSet.xml" parse="xml"/>
@@ -327,7 +327,7 @@
             </div>
             <xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-addressLineTypeEncoding.xml" parse="xml" />
-            <xi:include href="eac3/en/attr-agentType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-agentType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-agentTypeEncoding.xml" parse="xml" />
             <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
             <xi:include href="shared/en/attr-audienceEncoding.xml" parse="xml" />
