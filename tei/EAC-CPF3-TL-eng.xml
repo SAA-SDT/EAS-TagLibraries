@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ad4<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
    xmlns:exml="http://workaround for xml namespace restriction/namespace"
@@ -218,7 +218,7 @@
             <xi:include href="shared/en/elem-eventDateTime.xml" parse="xml"/>
             <xi:include href="shared/en/elem-eventDescription.xml" parse="xml"/>
             <xi:include href="eac3/en/elem-existDates.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-formattingExtension.xml" parse="xml" />
+            <xi:include href="ead4/en/elem-formattingExtension.xml" parse="xml" />
             <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
             <xi:include href="shared/en/elem-function.xml" parse="xml"/>
             <xi:include href="shared/en/elem-functions.xml" parse="xml"/>
