@@ -228,7 +228,7 @@
             <xi:include href="shared/en/elem-identity.xml" parse="xml"/>
             <xi:include href="shared/en/elem-identityId.xml" parse="xml"/>
             <!--<xi:include href="eac3/en/elem-item.xml" parse="xml"/>-->
-            <xi:include href="shared/en/elem-label.xml" parse="xml" />
+            <xi:include href="ead4/en/elem-label.xml" parse="xml" />
             <xi:include href="shared/en/elem-language.xml" parse="xml"/>
             <xi:include href="shared/en/elem-languageDeclaration.xml" parse="xml"/>
             <xi:include href="eac3/en/elem-languageUsed.xml" parse="xml"/>
