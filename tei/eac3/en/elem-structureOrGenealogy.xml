@@ -15,9 +15,7 @@
       <p><list type="gloss">
             <label>head</label>
             <item>0..1</item>
-            <label>list</label>
-            <item>0..n</item>
-            <label>p</label>
+            <label>p or formattingExtension</label>
             <item>0..n</item>
          </list></p>
    </div>
@@ -28,7 +26,7 @@
       <p>
          <list type="gloss">
             <label>audience</label>
-            <item>Optional (values limited to: external, internal)</item>
+            <item>Optional</item>
             <label>conventionDeclarationReference</label>
             <item>Optional</item>
             <label>id</label>
@@ -56,14 +54,13 @@
          significant to understanding the way that corporate body conducted affairs (such as dated
          organization charts), or the genealogy of a family (such as a family tree) in a way that
          demonstrates the interrelationships of its members with relevant dates.</p>
-      <p>The optional <gi>list</gi> element may be used to accommodate greater complexity in
-         expressing or representing the structure(s) or genealogy being described. <gi>head</gi> may
+      <p><gi>head</gi> may
          be used to encode a title or caption. A simpler discursive expression of the structure(s)
          or genealogy may be encoded as one or more <gi>p</gi> elements.</p>
       <p>The prescribed order of all child elements (both required and optional) is:</p>
       <list type="simple">
          <item><gi>head</gi></item>
-         <item>One or both of <gi>list</gi> or <gi>p</gi>.</item>
+         <item>One or both of <gi>p</gi> or <gi>formattingExtension</gi>.</item>
       </list>
    </div>
    <div type="availability">
