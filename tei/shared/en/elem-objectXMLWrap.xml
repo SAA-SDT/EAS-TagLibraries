@@ -7,7 +7,7 @@
                   <p>Object XML Wrap</p>
                </div>
                <div type="summary">
-                  <p type="eac">An optional child element of <gi>relation</gi>, <gi>setComponent</gi>, and
+                  <p type="eac">An optional child element of <gi>descriptiveNote</gi>, <gi>relation</gi>, <gi>setComponent</gi>, and
                         <gi>source</gi> that allows for the inclusion of an XML element from any XML
                      namespace.</p>
                   <p type="eaf">An optional child element of <gi>relation</gi> and
