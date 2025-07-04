@@ -21,7 +21,7 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p type="eac">chronItem, dateSet, demographicDescription, existDates, function, legalStatus,
+                  <p type="eac">dateSet, demographicDescription, existDates, function, legalStatus,
                      localControl, localDescription, mandate, occupation, otherEntityType, place,
                      relation, useDates</p>
                   <p type="eaf">dateSet, functionDates, legislation, localControl, useDates, place, relation</p>
@@ -31,7 +31,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
+                        <item>Optional</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
