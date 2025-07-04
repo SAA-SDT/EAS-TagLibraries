@@ -28,14 +28,13 @@
                   <p type="eac">
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
                         <label>maintenanceEventType</label>
-                        <item>Required (values limited to: cancelled, created, deleted, derived,
-                           revised, unknown, updated)</item>
+                        <item>Optional</item>
                         <label>scriptOfElement</label>
                         <item>Optional</item>
                         <label>target</label>
