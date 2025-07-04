@@ -20,34 +20,7 @@
                   <p>address</p>
                </div>
                <div type="attributes">
-                  <p type="eac">
-                     <list type="gloss">
-                        <label>addressLineType</label>
-                        <item>Optional (values limited to: county, country, district, municipality,
-                           postBox, postalCode, region, street)</item>
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-                  <p type="ead">
+                  <p>
                      <list type="gloss">
                         <label>addressLineType</label>
                         <item>Optional</item>
@@ -69,7 +42,6 @@
                         <item>Optional</item>
                      </list>
                   </p>
-
                </div>
                <div type="description">
                   <p><gi>addressLine</gi> is used to encode parts or lines of a physical address
@@ -80,7 +52,7 @@
                <div type="attributeusage"><p>Use the optional <att>addressLineType</att>
                         attribute to encode the part of the address that the <gi>addressLine</gi>
                         refers to, for example "street".</p>
-                        <p type="ead">Use the optional <att>addressLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>addressLineType</att>.</p></div>
+                        <p>Use the optional <att>addressLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>addressLineType</att>.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
