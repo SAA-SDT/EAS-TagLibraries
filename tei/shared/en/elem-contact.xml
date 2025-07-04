@@ -24,7 +24,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
+                        <item>Optional</p></item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -51,9 +51,6 @@
                      encode digital addresses and contact information.</p>
                   <p><gi>contact</gi> must include one or more <gi>contactLine</gi> element(s) that
                      provide relevant contact details for the entity being described.</p>
-                  <p type="eac">At least one of <gi>contact</gi>, <gi>placeName</gi>, <gi>placeRole</gi>,
-                        <gi>geographicCoordinates</gi>, or <gi>address</gi> is required within
-                        <gi>place</gi>.</p>
                </div>
                <div type="seealso"><p>Use <gi>address</gi> to encode a physical or analog address.</p></div>
                <div type="availability">
