@@ -29,7 +29,7 @@
     </p>
   </div>
   <div type="mayOccurWithin">
-    <p type="eac">maintenanceEvent</p>
+    <p type="eac">maintenanceEvent, provenanceEvent</p> <!--check provenanceEvent-->
     <p type="eaf">maintenanceEvent</p>
     <p type="ead">agents, findAidDesc, maintenanceEvent</p>
   </div>
@@ -70,7 +70,7 @@
       <p type="eaf">Use <gi>agent</gi> as a required sub-element of <gi>maintenanceEvent</gi> to name and describe the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAS instance, and the style sheet used to update an instance to a new version of the EAS. Use <gi>agent</gi> as an optional and repeatable sub-element of <gi>findAidDesc</gi> to indicate any person, institution, or system relevant to the creation, publication, or disseminiation of any instantiations of the EAS instance such as the author, publisher, or sponsor of a printed or online finding aid.</p>
     </div>
     <div type="attributeusage">
-      <p type="eac">Use the required <att>agentType</att> attribute to specify whether the agent is "human", "machine", or "unknown".</p>
+      <p type="eac">Use the <att>agentType</att> attribute to specify whether the agent is "human", "machine", or "unknown".</p>
       <p type="ead">Use the attributes <att>valueURI</att>, <att>vocabularySource</att>, and <att>vocabularySourceURI</att> with <gi>agent</gi> when referencing an entry of an external vocabulary, thesaurus, ontology applicable to the agent overall. In case of referencing different vocabularies or different entries within the same vocabulary for the name or the role of the agent, use the three attributes with the sub-elements <gi>label</gi> or  <gi>role</gi> directly.</p>
       <p type="eaf">Use the attributes <att>valueURI</att>, <att>vocabularySource</att>, and <att>vocabularySourceURI</att> with <gi>agent</gi> when referencing an entry of an external vocabulary, thesaurus, ontology applicable to the agent overall. In case of referencing different vocabularies or different entries within the same vocabulary for the name, the type or the role of the agent, use the three attributes with the sub-elements <gi>agentName</gi>, <gi>agentType</gi> and <gi>agentRole</gi> directly.</p>
     </div>

@@ -17,9 +17,7 @@ in <gi>languageDeclaration</gi> and optionally available in <gi>language</gi>.</
                  <p type="eaf">Content of the attribute should be a code taken from ISO 639-1, ISO 639-2, ISO 639-3, IETF BCP 47 or another controlled list, as specified in the <att>languageEncoding</att> attribute in <gi>control</gi>. </p>
                </div>
                <div type="datatype">
-                  <p type="eac">NMTOKEN</p>
-                  <p type="ead">token</p>
-                 <p type="ead">token</p>
+                 <p>token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<languagesUsed>

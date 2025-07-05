@@ -17,9 +17,7 @@
                      written in which script. Optionally available on all non-empty elements.</p>
                </div>
                <div type="datatype">
-                 <p type="eac">NMTOKEN</p> 
-                 <p type="ead">token</p>
-                 <p type="eaf">token</p>
+                 <p>token</p>
                </div>
                <div type="examples">
                  <egXML xml:lang="eng"><![CDATA[<nameEntry status="alternative">

@@ -19,8 +19,8 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p type="eac">demographicDescription, function, legalStatus, localDescription, mandate,
-                     occupation, otherEntityType, place</p>
+                  <p type="eac">agent, demographicDescription, functionPerformed, legalStatus, localDescription, mandate,
+                     occupation, otherEntityType, relation</p>
                   <p type="eaf">place</p>
                   <p type="ead">agent, formAvailable, function, legalStatus, relation, subject</p>
                </div>
@@ -28,7 +28,7 @@
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
+                        <item>Optional</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>countryCode</label>

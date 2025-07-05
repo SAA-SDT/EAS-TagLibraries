@@ -10,7 +10,7 @@
                   <p>The current drafting status of the EAS instance.</p>
                </div>
                <div type="description">
-                  <p type="eac">The maintenance status must occur on <gi>control</gi>.</p>
+                  <p type="eac">The maintenance status may occur on <gi>control</gi>.</p>
                   <p type="ead">The maintenance status may occur on <gi>control</gi>.</p>
 		       <p type="eaf">The maintenance status must occur on <gi>control</gi>.</p>
                   <p>As an EAS instance is modified or other events happen to it (as recorded in the
@@ -29,17 +29,10 @@
                      is deleted because it has been merged with another record, its status should be
                      given as "deletedMerged". A "derived" status value is available to indicate
                      that the record was derived from another descriptive system.</p>
-                 <p type="ead">Use the attribute <att>maintenanceStatusEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>maintenanceStatus</att>.</p>
+                 <p>Use the attribute <att>maintenanceStatusEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>maintenanceStatus</att>.</p>
                </div>
-               <div type="values" standard="eac">
-                  <p type="eac">cancelled, deleted, deletedMerged, deletedReplaced, deletedSplit, derived, new,
-                     revised</p>
-               </div>
-               <div type="datatype" standard="ead">
-		              <p type="ead">token</p>
-	             </div>
-	<div type="datatype" standard="eaf">
-		              <p type="eaf">token</p>
+               <div type="datatype">
+		              <p>token</p>
 	             </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="eac"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">

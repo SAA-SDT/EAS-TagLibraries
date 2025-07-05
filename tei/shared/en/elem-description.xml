@@ -23,7 +23,7 @@
             <item>0..1</item>
             <label>existDates</label>
             <item>0..n</item>
-            <label>functions</label>
+            <label>functionsPerformed</label>
             <item>0..1</item>
             <label>generalContext</label>
             <item>0..n</item>
@@ -93,7 +93,7 @@
       <p type="eac">The prescribed order of all child elements (both required and optional) is:</p>
       <p type="eac"><list type="simple">
          <item><gi>demographicDescriptions</gi></item>
-         <item><gi>functions</gi></item>
+         <item><gi>functionsPerformed</gi></item>
          <item><gi>languagesUsed</gi></item>
          <item><gi>legalStatuses</gi></item>
          <item><gi>localDescriptions</gi></item>

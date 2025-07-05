@@ -128,8 +128,7 @@
                   </list>
                </div>
                <div type="availability">
-                  <p type="eac">Within <gi>chronItem</gi>: optional, not repeatable.</p>
-                  <p type="eac">Within <gi>chronItemSet</gi>, <gi>relation</gi>: optional, repeatable.</p>
+                  <p type="eac">Within <gi>relation</gi>: optional, repeatable.</p>
                   <p type="ead">Within <gi>findAidDesc</gi>: optional, repeatable.</p>
                   <p>Within <gi>places</gi>: required, repeatable.</p>
                </div>

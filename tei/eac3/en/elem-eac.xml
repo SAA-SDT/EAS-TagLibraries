@@ -22,8 +22,6 @@
       <p>
          <list type="gloss">
             <label>audience</label>
-            <item>Optional (values limited to: external, internal)</item>
-            <label>base</label>
             <item>Optional</item>
             <label>id</label>
             <item>Optional</item>

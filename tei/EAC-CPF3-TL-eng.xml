@@ -193,7 +193,7 @@
             <xi:include href="shared/en/elem-agencyCode.xml" parse="xml"/>
             <xi:include href="shared/en/elem-agencyName.xml" parse="xml"/>
             <xi:include href="shared/en/elem-agent.xml" parse="xml"/>
-            <!--<xi:include href="eac3/en/elem-alternativeSet.xml" parse="xml"/>-->
+            <xi:include href="eac3/en/elem-alternativeSet.xml" parse="xml"/>
             <xi:include href="shared/en/elem-biogHist.xml" parse="xml"/>
             <!--<xi:include href="eac3/en/elem-chronItem.xml" parse="xml"/>
             <xi:include href="eac3/en/elem-chronItemSet.xml" parse="xml"/>
@@ -220,8 +220,8 @@
             <xi:include href="eac3/en/elem-existDates.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-formattingExtension.xml" parse="xml" />
             <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-function.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-functions.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-functionPerformed.xml" parse="xml"/>
+            <xi:include href="eac3/en/elem-functionsPerformed.xml" parse="xml"/>
             <xi:include href="eac3/en/elem-generalContext.xml" parse="xml"/>
             <xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
             <xi:include href="shared/en/elem-head.xml" parse="xml"/>
@@ -278,7 +278,7 @@
             <xi:include href="shared/en/elem-sources.xml" parse="xml"/>
             <xi:include href="shared/en/elem-span.xml" parse="xml"/>
             <xi:include href="eac3/en/elem-structureOrGenealogy.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-targetEntity.xml" parse="xml"/>
+            <!--<xi:include href="shared/en/elem-targetEntity.xml" parse="xml"/>-->
             <!--<xi:include href="shared/en/elem-targetRole.xml" parse="xml"/>-->
             <xi:include href="shared/en/elem-term.xml" parse="xml"/>
             <xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
@@ -368,6 +368,7 @@
             <xi:include href="shared/en/attr-preferredForm.xml" parse="xml"/>
             <xi:include href="shared/en/attr-publicationStatus.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-publicationStatusEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-referredEntityType.xml" parse="xml" />
             <xi:include href="ead4/en/attr-referredEntityTypeEncoding.xml" parse="xml" />
             <xi:include href="ead4/en/attr-relationType.xml" parse="xml" />
             <xi:include href="ead4/en/attr-relationTypeEncoding.xml" parse="xml" />

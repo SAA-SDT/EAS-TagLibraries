@@ -10,14 +10,10 @@
                   <p>Identifies the type of entity related to the entity or records being described.</p>
                </div>
                <div type="description">
-                  <p type="eac">Required attribute within <gi>targetEntity</gi> which identifies the type of entity that is related to the entity or records being described. Use the value "agent" only for migration from EAC-CPF 2010 to EAC 2.0.</p>
-                 <p type="ead">An optional attribute of <gi>relation</gi> that specifies the type of entity that is related to the entity or records being described.</p>
-                 <p type="ead">Use the attribute <att>targetTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>targetType</att>.</p>
+                 <p>An optional attribute of <gi>relation</gi> that specifies the type of entity that is related to the entity or records being described.</p>
+                 <p>Use the attribute <att>targetTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>targetType</att>.</p>
                </div>
-               <div type="values" standard="eac">
-                  <p>agent, corporateBody, family, function, person, resource</p>
-               </div>
-               <div type="datatype" standard="ead">
+               <div type="datatype">
 		              <p>token</p>
 	             </div>
                <div type="examples">

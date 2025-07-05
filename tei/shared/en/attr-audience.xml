@@ -10,13 +10,10 @@
                   <p>An optional attribute that helps control whether the information contained in the element should be available to all viewers or only to repository staff.</p>
                </div>
                <div type="description">
-                  <p>Available as global attribute for all elements. The attribute can be set to "external" in e.g. cpfDescription in EAC-CPF or archDesc in EAD to allow access to all the information about the entity resp. the materials being described, but specific elements within these sections can also be set to "internal" to reserve that information for repository access only. This feature is intended to assist application software in restricting access to particular information by explicitly identifying data that is potentially sensitive or may otherwise have a limited audience. Special software capability may be needed, however, to prevent the display or export of an element marked "internal" when a whole EAS instance is displayed in a networked environment.</p>
-                  <p type="ead">Use the attribute <att>audienceEncoding</att> in <gi>control</gi> to identify the list of terms to be used as values of <att>audience</att>.</p>
+                  <p>Available as global attribute for all elements. The attribute can be set to "external" in e.g. cpfDescription in EAC-CPF or archDesc in EAD to allow access to all the information about the entity or the materials being described, but specific elements within these sections can also be set to "internal" to reserve that information for repository access only. This feature is intended to assist application software in restricting access to particular information by explicitly identifying data that is potentially sensitive or may otherwise have a limited audience. Special software capability may be needed, however, to prevent the display or export of an element marked "internal" when a whole EAS instance is displayed in a networked environment.</p>
+                  <p>Use the attribute <att>audienceEncoding</att> in <gi>control</gi> to identify the list of terms to be used as values of <att>audience</att>.</p>
                </div>
-               <div type="values" standard="eac">
-                  <p>external, internal</p>
-               </div>
-               <div type="datatype" standard="ead">
+               <div type="datatype">
                   <p>token</p>
                </div>
                <div type="examples">
