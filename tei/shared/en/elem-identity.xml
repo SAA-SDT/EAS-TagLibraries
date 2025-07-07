@@ -54,8 +54,6 @@
             <item>Optional (values limited to: acquired, given)</item>
             <label>languageOfElement</label>
             <item>Optional</item>
-            <label>localTypeDeclarationReference</label>
-            <item>Optional</item>
             <label>maintenanceEventReference</label>
             <item>Optional</item>
             <label>scriptOfElement</label>
