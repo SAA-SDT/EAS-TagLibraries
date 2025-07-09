@@ -51,9 +51,13 @@
             <label>id</label>
             <item>Optional</item>
             <label>identityType</label>
-            <item>Optional (values limited to: acquired, given)</item>
+            <item>Optional</item>
             <label>languageOfElement</label>
             <item>Optional</item>
+	    <label>localType</label>
+	    <item>Optional</item>
+	    <label>LocalTypeDeclarationReference</label>
+	    <item>Optional</item>
             <label>maintenanceEventReference</label>
             <item>Optional</item>
             <label>scriptOfElement</label>
