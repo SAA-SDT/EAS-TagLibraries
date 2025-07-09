@@ -18,7 +18,7 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p type="eac">conventionDeclaration, demographicDescription, demographicDescriptions, existDates, functionPerformed, functionsPerformed, identity, languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses, localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency, mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes, place, places, relation, relations, rightsDeclaration, setComponent, source, sources</p>
+                  <p type="eac">agent, conventionDeclaration, demographicDescription, demographicDescriptions, existDates, functionPerformed, functionsPerformed, identity, languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses, localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency, mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes, place, places, relation, relations, rightsDeclaration, setComponent, source, sources</p>
                  <p type="eaf">classifications, conventionDeclaration, languageDeclaration, localTypeDeclaration, maintenanceAgency, relation, rightsDeclaration, source, sources</p>
                  <p type="ead">agent, agents, conventionDeclaration, extent, formAvailable, formsAvailable, function, functions, identificationData, languageDeclaration, languageOfMaterial, languageSet, legalStatus, localTypeDeclaration, maintenanceAgency, place, places, relation, relations, rightsDeclaration, source, sources, subject</p>
                </div>
