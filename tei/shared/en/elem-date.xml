@@ -94,7 +94,7 @@
                         date.</p>
                      <p>Use <att>status</att> with the value "unknown" to indicate where a date is unknown.</p></div>
                <div type="availability">
-                  <p type="eac">Within <gi>demographicDescription</gi>, <gi>functionPerformed</gi>,
+                  <p type="eac">Within <gi>agent</gi>, <gi>demographicDescription</gi>, <gi>functionPerformed</gi>,
                      <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>,
                         <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>,
                         <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or
