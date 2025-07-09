@@ -20,7 +20,7 @@
                   <p>contact</p>
                </div>
                <div type="attributes">
-                  <p type="ead">
+                  <p>
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional</item>
