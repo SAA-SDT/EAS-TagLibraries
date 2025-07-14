@@ -16,7 +16,7 @@
 </list></p>
    </div>
    <div type="mayOccurWithin">
-      <p type="eac">abstract, event, eventDescription, head, reference, p</p>
+      <p type="eac">abstract, eventDescription, head, reference, p</p>
       <p type="eaf">eventDescription, reference, p</p>
       <p type="ead">abstract, container, eventDescription, formAvailableId, genreForm, head, otherIdentificationData, physFacet, reference, p, textualDate, unitId, unitTitle</p>
    </div>
