@@ -46,7 +46,7 @@
             <label>sourceReference</label>
             <item>Optional</item>
             <label>status</label>
-            <item>Optional/item>
+            <item>Optional</item>
             <label>target</label>
             <item>Optional</item>
             <label>valueURI</label>

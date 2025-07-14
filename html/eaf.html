@@ -397,7 +397,7 @@
                </table>
             </div>
             <div class="toc1">
-               <a href="#d1e6190">Attributes Attribute name Attribute values</a>
+               <a href="#d1e6085">Attributes Attribute name Attribute values</a>
             </div>
             <div class="toc2">
                <table>
@@ -1551,7 +1551,68 @@
                      details or digital addresses within a parent &lt;contact&gt; element.&lt;contactLine&gt; may be repeated as many times as necessary to enter all
                      relevant contact details.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-audience">audience</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-contactLineType">contactLineType</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-conventionDeclarationReference">conventionDeclarationReference</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-href">href</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-id">id</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-languageOfElement">languageOfElement</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-linkRole">linkRole</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-linkTitle">linkTitle</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-maintenanceEventReference">maintenanceEventReference</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-scriptOfElement">scriptOfElement</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-sourceReference">sourceReference</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-target">target</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                  </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">Required, repeatable</div>
                   <div class="leftcol">Example:</div>
@@ -2099,11 +2160,6 @@
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-audience">audience</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-base">base</a>
                      </div>
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
@@ -3169,7 +3225,7 @@ This element is distinct from &lt;functionHistory&gt;, which is intended to reco
                      <div class="centercol">
                         <a href="#attr-identityType">identityType</a>
                      </div>
-                     <div class="rightcol">Optional (values limited to: acquired, given)</div>
+                     <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-languageOfElement">languageOfElement</a>
@@ -3177,7 +3233,12 @@ This element is distinct from &lt;functionHistory&gt;, which is intended to reco
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
-                        <a href="#attr-localTypeDeclarationReference">localTypeDeclarationReference</a>
+                        <a href="#attr-localType">localType</a>
+                     </div>
+                     <div class="rightcol">Optional</div>
+                     <div class="leftcolattrlist"> </div>
+                     <div class="centercol">
+                        <a href="#attr-LocalTypeDeclarationReference">LocalTypeDeclarationReference</a>
                      </div>
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
@@ -4030,7 +4091,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                      <div class="centercol">
                         <a href="#attr-status">status</a>
                      </div>
-                     <div class="rightcol">Optional (values limited to: alternative, authorized)</div>
+                     <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-target">target</a>
@@ -4428,15 +4489,18 @@ Companies Act, 1947.&lt;/legislation&gt;
                      <span class="label">Part</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>The designation of the information contained in the &lt;part&gt; can be
+                  <div class="content">
+                     <div class="p">A required and repeatable child of &lt;nameEntry&gt; used to distinguish components of a name.</div>
+                  </div>The designation of the information contained in the &lt;part&gt; can be
                         specified by the attribute localType.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
-                     <a href="#elem-nameEntry">nameEntry</a>, <a href="#elem-targetEntity">targetEntity</a>, <a href="#elem-targetRelationship">targetRelationship</a>
+                     <a href="#elem-nameEntry">nameEntry</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Within &lt;targetEntity&gt; the name or term for the related entity is encoded within &lt;part&gt; elements.<div class="p">Within &lt;nameEntry&gt; each of the components of a name, such as forename, surname or honorific title, may be recorded in a separate &lt;part&gt; element. &lt;part&gt; may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</div>Within &lt;targetEntity&gt; the name or term for the related entity is encoded within &lt;part&gt; elements.&lt;part&gt; cannot be empty and requires at least one non-whitespace character, such as a hyphen, if no actual name can be given.</div>
+                  <div class="content">
+                     <div class="p">Within &lt;nameEntry&gt; each of the components of a name, such as forename, surname or honorific title, may be recorded in a separate &lt;part&gt; element. &lt;part&gt; may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</div>&lt;part&gt; cannot be empty and requires at least one non-whitespace character, such as a hyphen, if no actual name can be given.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -4509,7 +4573,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   </div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-address0..ncontact0..ndate">address0..ncontact0..ndate</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet0..ndescriptiveNote0..1geographicCoordinates0..nplaceName0..nplaceRole0..nplaceType0..nrelationType0..n">dateSet0..ndescriptiveNote0..1geographicCoordinates0..nplaceName0..nplaceRole0..nplaceType0..nrelationType0..n</a>
+                     <a href="#elem-address0..ncontact0..ndate">address0..ncontact0..ndate</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet0..ndescriptiveNote0..1geographicCoordinates0..nlabel1..nrole0..nrelationship0..n">dateSet0..ndescriptiveNote0..1geographicCoordinates0..nlabel1..nrole0..nrelationship0..n</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
@@ -4517,16 +4581,11 @@ Companies Act, 1947.&lt;/legislation&gt;
                   </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">A &lt;place&gt; element is a wrapper element used to encode information about a place or jurisdiction. This includes identifying the places or jurisdictions where the function was preformed or with which it had some other significant connection. It can also be used to encode address and contact information.</div>
-                     <div class="p">&lt;place&gt; must include at least one of &lt;address&gt;, &lt;contact&gt;, &lt;geographicCoordinates&gt;, &lt;placeName&gt; or &lt;placeRole&gt;.</div>The &lt;address&gt; element is available for specifying a postal or other address. The &lt;contact&gt; element is available for specifying a digital address or other contact information.<div class="p">Associated date or date range (&lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;) information may be included to further constrain the place's meaning. A &lt;descriptiveNote&gt; may be included if a fuller explanation of the significance of the place to the records being described is needed.</div>The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">
-                        <br/>
+                     <div class="p">A &lt;place&gt; element is a wrapper element used to encode information about a place or jurisdiction. This includes identifying the places or jurisdictions where the function was preformed or with which it had some other significant connection. It can also be used to encode address and contact information.</div>&lt;place&gt; must include at least one &lt;label&gt; to name the geographic feature or location.&lt;label&gt; may be used to encode the name of a place that is related to the records being described. The &lt;role&gt; element is available to specify the nature of the place in relation with the records being described, and its use is strongly recommended. The placeType attribute may be used to classify the type of place for clarification, e.g., indicating whether the place is a city or town or a first or second-order administrative divistion. Use &lt;relationship&gt; to describe the nature of connection between the place and the records being described. Terms in these elements may be drawn from controlled vocabularies or may be natural language terms. These controlled vocabularies can be identified with the vocabularySource and vocabularySourceURI attributes. The &lt;address&gt; element is available for specifying a postal or other address. The &lt;contact&gt; element is available for specifying a digital address or other contact information.<div class="p">Associated date or date range (&lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;) information may be included to further constrain the place's meaning. A &lt;descriptiveNote&gt; may be included if a fuller explanation of the significance of the place to the records being described is needed.</div>The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">&lt;label&gt;<br/>
                         <br/>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
+                        <br/>&lt;role&gt;<br/>
+                        <br/>p type="ead"&gt;&lt;relationship&gt;<br/>
+                        <br/>One or more of &lt;address&gt;, &lt;contact&gt; and  &lt;geographicCoordinates&gt;<br/>
                         <br/>&lt;descriptiveNote&gt;<br/>
                         <br/>
                      </div>
@@ -4595,7 +4654,8 @@ Companies Act, 1947.&lt;/legislation&gt;
                      <div class="rightcol">Optional</div>
                   </div>
                   <div class="leftcol">Availability: </div>
-                  <div class="content">Within &lt;places&gt;: required, repeatable.</div>
+                  <div class="content">
+                     <div class="p">Within &lt;relation&gt;: optional, repeatable.</div>Within &lt;places&gt;: required, repeatable.</div>
                   <div class="leftcol">Examples:</div>
                   <div class="content"/>
                   <br/>
@@ -4764,7 +4824,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="leftcol">Summary: </div>
                   <div class="content">An element that cites an external resource.</div>Use href to link to the cited resource.&lt;reference&gt; is used for external linking only. If any internal linking is required,
          use the target attribute.<div class="leftcol">May contain Element/content type Occurrences: </div>
-                  <div class="content"/>
+                  <div class="content">[text]referringString0..nspan0..n</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-conventionDeclaration">conventionDeclaration</a>, <a href="#elem-eventDescription">eventDescription</a>, <a href="#elem-localTypeDeclaration">localTypeDeclaration</a>, <a href="#elem-p">p</a>, <a href="#elem-rightsDeclaration">rightsDeclaration</a>, <a href="#elem-source">source</a>
@@ -4781,7 +4841,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                      <div class="centercol">
                         <a href="#attr-audience">audience</a>
                      </div>
-                     <div class="rightcol">Optional </div>
+                     <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
                         <a href="#attr-conventionDeclarationReference">conventionDeclarationReference</a>
@@ -6028,7 +6088,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <br/>
                </div>  <a class="tocReturn" href="#toc">[toc]</a>
             </div>
-            <div class="section" id="d1e6190">
+            <div class="section" id="d1e6085">
                <div class="head03">Attributes Attribute name Attribute values</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType">
@@ -6434,8 +6494,6 @@ Companies Act, 1947.&lt;/legislation&gt;
                      same EAS instance using &lt;multipleIdentities&gt;. It will enable
                      processors to distinguish between the description of a person and one or more
                      personae.</div>
-                  <div class="leftcol">Values: </div>
-                  <div class="content">acquired, given</div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -7227,7 +7285,7 @@ Companies Act, 1947.&lt;/legislation&gt;
             </div>
          </div>
          <div>
-            <div class="section" id="d1e8052">
+            <div class="section" id="d1e7949">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Title">Title  <a class="tocReturn" href="#toc">[toc]</a>
                </div>Contents of the appendix; this can also include lists</div>
