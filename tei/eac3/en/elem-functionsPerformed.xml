@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-demographicDescriptions" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+<div type="elementDocumentation" xml:id="elem-functions" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
                <head>
-                  <gi>demographicDescriptions</gi>
+                  <gi>functionsPerformed</gi>
                </head>
                <div type="fullName">
-                  <p>Demographic Descriptions</p>
+                  <p>Functions Performed</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>description</gi> used to group together one or
-                     more <gi>demographicDescription</gi> elements.</p>
+                  <p>An optional child element of <gi>description</gi> used for grouping together
+                     one or more <gi>functionPerformed</gi> elements.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
-                     <label>demographicDescription</label>
-                     <item>1..n</item>
                      <label>descriptiveNote</label>
-                     <item>0..1</item>
+                     <item>(0..1)</item>
+                     <label>functionPerformed</label>
+                     <item>(1..n)</item>
                   </list></p>
                </div>
                <div type="mayOccurWithin">
@@ -48,13 +48,12 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use the optional <gi>demographicDescriptions</gi> element to group together one
-                     or more occurrences of <gi>demographicDescription</gi>.
-                        <gi>demographicDescriptions</gi> must include at least one
-                        <gi>demographicDescription</gi> element.</p>
+                  <p>Use the optional <gi>functionsPerformed</gi> element to group together one or more
+                     occurrences of <gi>functionPerformed</gi>. <gi>functionsPerformed</gi> must include at least one
+                        <gi>functionPerformed</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
-                     <item><gi>demographicDescription</gi></item>
+                     <item><gi>functionPerformed</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
@@ -62,28 +61,18 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<demographicDescriptions>
-		<demographicDescription localType="age" localTypeDeclarationReference="lTD_age">
-				<term>
-						Age 30 to 44
-				</term>
-		</demographicDescription>
-		<demographicDescription localType="education" localTypeDeclarationReference="lTD_education">
-				<term>
-						Level 4 qualifications and above
-				</term>
-		</demographicDescription>
-		<demographicDescription localType="income" localTypeDeclarationReference="lTD_maritalStatus">
-				<term>
-						In a registered same-sex civil partnership
-				</term>
-		</demographicDescription>
-		<descriptiveNote>
-				<p>
-						As part of the Census 2011, various demographic variables have been evaluated. Among others, this included the age, the level of qualifications, and the marital status of the participants.
-				</p>
-		</descriptiveNote>
-</demographicDescriptions>]]>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                     <eac:functions>
+                        <eac:function>
+                           <eac:term>Industrial or Scientific Research</eac:term>
+                        </eac:function>
+                        <eac:function>
+                           <eac:term>Analytical Services</eac:term>
+                        </eac:function>
+                        <eac:function>
+                           <eac:term>Advisory or Regulatory Body</eac:term>
+                        </eac:function>
+                     </eac:functions>
                   </egXML>
                </div>
             </div>

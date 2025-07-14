@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-reference">
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-reference">
    <head>
       <gi>reference</gi>
    </head>
@@ -10,58 +11,28 @@
       <p>An element that cites an external resource.</p>
    </div>
    <div type="mayContain">
-      <p type="eac"><list type="gloss">
-  <label>[text]</label>
-  <item/>
-  <label>span</label>
-  <item>0..n</item>
-</list></p>
-      <p type="ead"><list type="gloss">
-  <label>[text]</label>
-  <item/>
-  <label>referringString</label>
-  <item>0..n</item>
-  <label>span</label>
-  <item>0..n</item>
-</list></p>
+      <p><list type="gloss">
+            <label>[text]</label>
+            <item/>
+            <label>referringString</label>
+            <item>0..n</item>
+            <label>span</label>
+            <item>0..n</item>
+         </list></p>
    </div>
    <div type="mayOccurWithin">
-      <p type="eac">abstract, chronItem, chronItemSet, conventionDeclaration, event,
-         eventDescription, item, localTypeDeclaration, p, rightsDeclaration, source</p>
-      <p type="eaf">conventionDeclaration, eventDescription, localTypeDeclaration, p, rightsDeclaration, source</p> 
-      <p type="ead">abstract, container, conventionDeclaration, eventDescription, formAvailableId, genreForm, head, localTypeDeclaration, otherIdentificationData, p, physFacet, rightsDeclaration, source, textualDate, unitId, unitTitle</p>
+      <p type="eac">abstract, conventionDeclaration, eventDescription, head, localTypeDeclaration, p, rightsDeclaration, source</p>
+      <p type="eaf">conventionDeclaration, eventDescription, localTypeDeclaration, p,
+         rightsDeclaration, source</p>
+      <p type="ead">abstract, container, conventionDeclaration, eventDescription, formAvailableId,
+         genreForm, head, localTypeDeclaration, otherIdentificationData, p, physFacet,
+         rightsDeclaration, source, textualDate, unitId, unitTitle</p>
    </div>
    <div type="attributes">
-      <p type="eac">
+        <p>
          <list type="gloss">
             <label>audience</label>
-            <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
-            <label>conventionDeclarationReference</label>
             <item>Optional</item>
-            <label>href</label>
-            <item>Optional</item>
-            <label>id</label>
-            <item>Optional</item>
-            <label>languageOfElement</label>
-            <item>Optional</item>
-            <label>linkRole</label>
-            <item>Optional</item>
-            <label>linkTitle</label>
-            <item>Optional</item>
-            <label>maintenanceEventReference</label>
-            <item>Optional</item>
-            <label>scriptOfElement</label>
-            <item>Optional</item>
-            <label>sourceReference</label>
-            <item>Optional</item>
-            <label>target</label>
-            <item>Optional</item>
-         </list>
-      </p>
-      <p type="ead">
-         <list type="gloss">
-            <label>audience</label>
-            <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
             <label>conventionDeclarationReference</label>
             <item>Optional</item>
             <label>href</label>
@@ -99,22 +70,33 @@
          element of <gi>source</gi>, used to identify any sources used in compiling the description.
             <gi>source</gi> may include multiple child <gi>reference</gi> elements.</p>
       <p type="eac"><gi>reference</gi> is an optional child element of <gi>abstract</gi>,
-            <gi>chronItem</gi>, <gi>chronItemSet</gi>, <gi>event</gi>, <gi>eventDescription</gi>,
-            <gi>item</gi>, and <gi>p</gi> where it is used to reference any external resources that
+            <gi>event</gi>, <gi>eventDescription</gi>, and <gi>p</gi> where it is used to reference any external resources that
          provide additional context to the content of that element.</p>
-      <p type="ead"><gi>reference</gi> is an optional child element of <gi>abstract</gi>, <gi>container</gi>, <gi>conventionDeclaration</gi>, <gi>eventDescription</gi>, <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>, <gi>localTypeDeclaration</gi>, <gi>otherIdentificationData</gi>, <gi>p</gi>, <gi>physFacet</gi>, <gi>rightsDeclaration</gi>, <gi>source</gi>, <gi>textualDate</gi>, <gi>unitId</gi>, and <gi>unitTitle</gi> where it is used to reference any external resources that provide additional context to the content of that element.</p>
+      <p type="ead"><gi>reference</gi> is an optional child element of <gi>abstract</gi>,
+            <gi>container</gi>, <gi>conventionDeclaration</gi>, <gi>eventDescription</gi>,
+            <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>,
+            <gi>localTypeDeclaration</gi>, <gi>otherIdentificationData</gi>, <gi>p</gi>,
+            <gi>physFacet</gi>, <gi>rightsDeclaration</gi>, <gi>source</gi>, <gi>textualDate</gi>,
+            <gi>unitId</gi>, and <gi>unitTitle</gi> where it is used to reference any external
+         resources that provide additional context to the content of that element.</p>
    </div>
-   <div type="attributeusage"><p>Use <att>href</att> to link to the cited resource.</p></div>
-   <div type="seealso"><p><gi>reference</gi> is used for external linking only. If any internal linking is
-            required, use the <att>target</att> attribute.</p></div>
+   <div type="attributeusage">
+      <p>Use <att>href</att> to link to the cited resource.</p>
+   </div>
+   <div type="seealso">
+      <p><gi>reference</gi> is used for external linking only. If any internal linking is required,
+         use the <att>target</att> attribute.</p>
+   </div>
    <div type="availability">
       <p>Within <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>,
             <gi>rightsDeclaration</gi>: required, not repeatable</p>
       <p>Within <gi>source</gi>: required, repeatable</p>
-      <p type="eac">Within <gi>abstract</gi>, <gi>chronItem</gi>, <gi>chronItemSet</gi>,
-            <gi>event</gi>, <gi>eventDescription</gi>, <gi>item</gi>, <gi>p</gi>: optional,
+      <p type="eac">Within <gi>abstract</gi>, <gi>event</gi>, <gi>eventDescription</gi>, <gi>p</gi>: optional,
          repeatable</p>
-      <p type="ead">Within <gi>abstract</gi>, <gi>container</gi>, <gi>eventDescription</gi>, <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>, <gi>otherIdentificationData</gi>, <gi>p</gi>, <gi>physFacet</gi>, <gi>textualDate</gi>, <gi>unitId</gi>, <gi>unitTitle</gi>: optional, repeatable</p>
+      <p type="ead">Within <gi>abstract</gi>, <gi>container</gi>, <gi>eventDescription</gi>,
+            <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>,
+            <gi>otherIdentificationData</gi>, <gi>p</gi>, <gi>physFacet</gi>, <gi>textualDate</gi>,
+            <gi>unitId</gi>, <gi>unitTitle</gi>: optional, repeatable</p>
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<source>

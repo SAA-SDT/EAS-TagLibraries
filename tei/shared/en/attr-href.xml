@@ -12,8 +12,7 @@
    </div>
    <div type="description">
       <p type="eac">The optional <att>href</att> attribute takes the form of a Uniform Resource Identifier
-         (URI). Available in <gi>contactLine</gi>, <gi>reference</gi>, <gi>representation</gi>,
-            <gi>setComponent</gi> and <gi>source</gi>.</p>
+         (URI). Available in <gi>contactLine</gi>, <gi>reference</gi>, <gi>setComponent</gi> and <gi>source</gi>.</p>
       <p type="ead">The optional <att>href</att> attribute takes the form of a Uniform Resource Identifier
          (URI). Available in <gi>contactLine</gi>, <gi>findAidDesc</gi>, <gi>reference</gi>, and <gi>source</gi>.</p>
       <p type="eaf">The optional <att>href</att> attribute takes the form of a Uniform Resource Identifier

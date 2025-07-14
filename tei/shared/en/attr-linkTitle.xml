@@ -17,7 +17,7 @@
          to support accessibilty guidelines, such as those defined within the W3C's Web Content
          Accessibility Guidelines (WCAG).</p>
       <p type="eac">Optionally available in <gi>contactLine</gi>, <gi>reference</gi>,
-            <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
+            <gi>setComponent</gi>, and <gi>source</gi>.</p>
       <p type="ead">Optionally available in <gi>contactLine</gi>, <gi>findAidDesc</gi>,
             <gi>reference</gi>, and <gi>source</gi>.</p>
       <p type="eaf">Optionally available in <gi>contactLine</gi>, <gi>reference</gi> and <gi>source</gi>.</p>

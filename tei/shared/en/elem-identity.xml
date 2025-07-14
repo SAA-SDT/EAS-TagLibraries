@@ -45,22 +45,19 @@
       <p>
          <list type="gloss">
             <label>audience</label>
-            <item>Optional (values limited to: external, internal)</item>
-            <label>base</label>
             <item>Optional</item>
             <label>conventionDeclarationReference</label>
             <item>Optional</item>
             <label>id</label>
             <item>Optional</item>
             <label>identityType</label>
-            <item>Optional (values limited to: acquired, given)</item>
+            <item>Optional</item>
             <label>languageOfElement</label>
             <item>Optional</item>
-            <!-- Following the decsions in TS EAS these two localType attributes will be removed -->
-		 <label>localType</label>
-            <item>Optional</item>
-            <label>localTypeDeclarationReference</label>
-            <item>Optional</item>
+	    <label>localType</label>
+	    <item>Optional</item>
+	    <label>LocalTypeDeclarationReference</label>
+	    <item>Optional</item>
             <label>maintenanceEventReference</label>
             <item>Optional</item>
             <label>scriptOfElement</label>

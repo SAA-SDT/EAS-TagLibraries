@@ -15,7 +15,7 @@
    <div type="description">
       <p type="eac">A URI that characterizes the nature of the remote resource to which a linking element
          refers. Optionally available in <gi>contactLine</gi>, <gi>reference</gi>,
-            <gi>representation</gi>, <gi>setComponent</gi>, and <gi>source</gi>.</p>
+            <gi>setComponent</gi>, and <gi>source</gi>.</p>
       <p type="ead">A URI that characterizes the nature of the remote resource to which a linking element
          refers. Optionally available in <gi>contactLine</gi>, <gi>findAidDesc</gi>,
          <gi>reference</gi>, and <gi>source</gi>.</p>

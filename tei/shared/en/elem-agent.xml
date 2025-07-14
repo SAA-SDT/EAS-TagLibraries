@@ -11,13 +11,7 @@
     <p type="ead">An element to name and describe a person, institution, or system related to the archival materials being described or relevant to the EAS instance itself or any instantiation of it, e.g. a printed or online finding aid.</p>
     <p type="eaf">A required child element of <gi>maintenanceEvent</gi> that provides the name of a person, institution, or system responsible for a specific event in the EAS instance's maintenance history, such as its creation, modification, or deletion.</p>  </div>
   <div type="mayContain">
-    <p type="eac">
-      <list type="gloss">
-        <label>[text]</label>
-        <item/>
-      </list>
-    </p>
-    <p type="ead">
+    <p>
       <list type="gloss">
         <label>date or dateRange or dateSet</label>
         <item>0..1</item>
@@ -33,54 +27,14 @@
         <item>0..n</item>
       </list>
     </p>
-    <p type="eaf">
-      <list type="gloss">
-        <label>agentName</label>
-        <item>1..n</item>
-	<label>date or dateRange or dateSet</label>
-        <item>0..1</item>
-        <label>agentType</label>
-        <item>0..n</item>
-        <label>agentRole</label>
-        <item>0..n</item>
-        <label>relationType</label>
-        <item>0..n</item>
-        <label>placeName</label>
-        <item>0..n</item>
-        <label>descriptiveNote</label>
-        <item>0..1</item>
-      </list>
-    </p>
   </div>
   <div type="mayOccurWithin">
-    <p type="eac">maintenanceEvent</p>
+    <p type="eac">maintenanceEvent, provenanceEvent</p> <!--check provenanceEvent-->
     <p type="eaf">maintenanceEvent</p>
     <p type="ead">agents, findAidDesc, maintenanceEvent</p>
   </div>
   <div type="attributes">
-    <p type="eac">
-      <list type="gloss">
-        <label>agentType</label>
-        <item>Required (values limited to: human, machine, unknown)</item>
-        <label>audience</label>
-        <item>Optional (values limited to: external, internal)</item>
-        <label>id</label>
-        <item>Optional</item>
-        <label>languageOfElement</label>
-        <item>Optional</item>
-        <label>scriptOfElement</label>
-        <item>Optional</item>
-        <label>target</label>
-        <item>Optional</item>
-        <label>valueURI</label>
-        <item>Optional</item>
-        <label>vocabularySource</label>
-        <item>Optional</item>
-        <label>vocabularySourceURI</label>
-        <item>Optional</item>
-      </list>
-    </p>
-    <p type="ead">
+    <p>
       <list type="gloss">
         <label>agentType</label>
         <item>Optional</item>
@@ -108,36 +62,6 @@
         <item>Optional</item>
         </list>
       </p>
-      <p type="eaf">
-        <list type="gloss">
-          <label>audience</label>
-          <item>Optional</item>
-	  <label>conventionDeclarationReference</label>
-          <item>Optional</item>
-          <label>id</label>
-          <item>Optional</item>
-          <label>languageOfElement</label>
-	  <item>Optional</item>
-          <label>localType</label>
-          <item>Optional</item>
-          <label>localTypeDeclarationReference</label>
-          <item>Optional</item>
-          <label>maintenanceEventReference</label>
-          <item>Optional</item>
-          <label>scriptOfElement</label>
-          <item>Optional</item>
-          <label>sourceReference</label>
-          <item>Optional</item>
-          <label>target</label>
-          <item>Optional</item>
-          <label>valueURI</label>
-          <item>Optional</item>
-          <label>vocabularySource</label>
-          <item>Optional</item>
-          <label>vocabularySourceURI</label>
-          <item>Optional</item>
-        </list>
-      </p>
     </div>
     <div type="description">
       <p type="eac">Use <gi>agent</gi> to indicate the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAS instance, and the style sheet used to update an instance to a new version of the EAS. Each <gi>maintenanceEvent</gi> element must have a child <gi>agent</gi> element.</p>
@@ -146,7 +70,7 @@
       <p type="eaf">Use <gi>agent</gi> as a required sub-element of <gi>maintenanceEvent</gi> to name and describe the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAS instance, and the style sheet used to update an instance to a new version of the EAS. Use <gi>agent</gi> as an optional and repeatable sub-element of <gi>findAidDesc</gi> to indicate any person, institution, or system relevant to the creation, publication, or disseminiation of any instantiations of the EAS instance such as the author, publisher, or sponsor of a printed or online finding aid.</p>
     </div>
     <div type="attributeusage">
-      <p type="eac">Use the required <att>agentType</att> attribute to specify whether the agent is "human", "machine", or "unknown".</p>
+      <p type="eac">Use the <att>agentType</att> attribute to specify whether the agent is "human", "machine", or "unknown".</p>
       <p type="ead">Use the attributes <att>valueURI</att>, <att>vocabularySource</att>, and <att>vocabularySourceURI</att> with <gi>agent</gi> when referencing an entry of an external vocabulary, thesaurus, ontology applicable to the agent overall. In case of referencing different vocabularies or different entries within the same vocabulary for the name or the role of the agent, use the three attributes with the sub-elements <gi>label</gi> or  <gi>role</gi> directly.</p>
       <p type="eaf">Use the attributes <att>valueURI</att>, <att>vocabularySource</att>, and <att>vocabularySourceURI</att> with <gi>agent</gi> when referencing an entry of an external vocabulary, thesaurus, ontology applicable to the agent overall. In case of referencing different vocabularies or different entries within the same vocabulary for the name, the type or the role of the agent, use the three attributes with the sub-elements <gi>agentName</gi>, <gi>agentType</gi> and <gi>agentRole</gi> directly.</p>
     </div>

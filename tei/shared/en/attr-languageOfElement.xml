@@ -12,6 +12,7 @@
                </div>
                <div type="description">
                  <!-- In eac version two its iso639-2b -->
+                  <!--all standards currently list additional language encoding standards-->
                   <p>Content of the attribute should be a code taken from ietf-bcp-47, ISO 639-1, ISO 639-2, ISO 639-3, or another
                      controlled list, as specified in the <att>languageEncoding</att> attribute in
                         <gi>control</gi>. May be used consistently in a multi-lingual EAS instance 
@@ -19,9 +20,7 @@
                      on all non-empty elements.</p>
                </div>
                <div type="datatype">
-                  <p type="eac">NMTOKEN</p>
-                  <p type="ead">token</p>
-                 <p type="eaf">token</p>
+                 <p>token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<agencyName languageOfElement="eng">

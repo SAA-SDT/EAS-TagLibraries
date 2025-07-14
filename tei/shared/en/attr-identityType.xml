@@ -17,8 +17,8 @@
                      processors to distinguish between the description of a person and one or more
                      personae.</p>
                </div>
-               <div type="values">
-                  <p>acquired, given</p>
+               <div type="dataType">
+                  <p>token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<identity identityType="acquired" localType="pseudonym" localTypeDeclarationReference="LT001"> [...] </identity>]]>

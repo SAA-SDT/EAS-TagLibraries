@@ -10,22 +10,10 @@
                   <p>Used to specify the type of contact line encoded in <gi>contactLine</gi>.</p>
                </div>
                <div type="description">
-                  <p type="eac">Use one of the set values to specify the type of contact line encoded in
-                        <gi>contactLine</gi>. Use the attribute <att>localType</att> to
-                     encode a local type of contact line.</p>
-                 <p type="ead">An attribute used to specify the type of contact line encoded in
-                        <gi>contactLine</gi>, eg "email", "phoneNumber" or "homepage".</p>
-               
-  <p type="eaf">An attribute used to specify the type of contact line encoded in
+                 <p>An attribute used to specify the type of contact line encoded in
                         <gi>contactLine</gi>, eg "email", "phoneNumber" or "homepage".</p>
                </div>
-               <div type="values" standard="eac">
-                  <p>directions, email, fax, homepage, mobileNumber, phoneNumber</p>
-               </div>
-               <div type="datatype" standard="ead">
-                 <p>token</p>
-               </div>
-<div type="datatype" standard="eaf">
+               <div type="datatype">
                  <p>token</p>
                </div>
                <div type="examples">

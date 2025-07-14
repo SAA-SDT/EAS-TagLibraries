@@ -9,7 +9,7 @@
                <div type="summary">
                   <p type="eac">An optional child element of <gi>description</gi> used for grouping together one or more <gi>place</gi> elements.</p>
                   <p type="ead">An optional child element of <gi>archDesc</gi>, <gi>c</gi>, and <gi>c01</gi> to <gi>c12</gi> used for grouping together one or more <gi>place</gi> elements.</p>
-                 <p type="eac">An optional child element of <gi>relation</gi> used for grouping together one or more <gi>place</gi> elements.</p>
+                 <!--EAC-F?><p type="eac">An optional child element of <gi>relation</gi> used for grouping together one or more <gi>place</gi> elements.</p>-->
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -22,13 +22,13 @@
                <div type="mayOccurWithin">
                   <p type="eac">description</p>
                   <p type="ead">archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
-                 <p type="eac">relation</p>
+                 <!--EAC-F??<p type="eaf">relation</p>-->
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
+                        <item>Optional</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>

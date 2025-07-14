@@ -18,7 +18,7 @@
                   <p>This can either be the ISO standard 3166-1 or an alternative code list. If the value "otherCountryEncoding" is selected, such an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
                </div>
                <div type="values">
-                  <p>iso3166-1, otherCountryEncoding</p>
+                  <p>iso3166-1-alpha-2, iso3166-1-alpha-3, iso3166-1-numeric, iso3166-2, iso3166-3, otherCountryEncoding</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="otherLanguageEncoding" repositoryEncoding="iso15511" scriptEncoding="iso15924"> 

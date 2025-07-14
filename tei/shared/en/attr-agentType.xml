@@ -7,18 +7,15 @@
 		<p>Agent Type</p>
 	</div>
 	<div type="summary">
-		<p type="eac">A required attribute of <gi>agent</gi> that indicates the type of agent responsible for the creation, modification, or deletion of an EAS instance.</p>
+		<p type="eac">An optional attribute of <gi>agent</gi> that indicates the type of agent responsible for the creation, modification, or deletion of an EAS instance.</p>
     <p type="ead">Used to specify the type of agent encoded in <gi>agent</gi>.</p>
 	</div>
 	<div type="description">
-		<p type="eac">The attribute's value must be set to "human," "machine," or "unknown," and should correspond to the information recorded in <gi>agent</gi>. For example, if the <gi>agent</gi> is Jane Marshall, the value of <att>agentType</att> should be set to "human." If the <gi>agent</gi> is a database, style sheet, or other system, the value of <att>agentType</att> should be set to "machine." The value of <att>agentType</att> may also be set to "unknown" if the agent and/or type of agent cannot be determined.</p>
-    <p type="ead">Use <att>agentType</att> with <gi>agent</gi> to specify the type of agent, e.g. responsible for the creation, maintenance and further editing of the EAS instance or the creation, management or usage of the archival materials being described.</p>
-		<p type="ead">Use the attribute <att>agentTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>agentType</att>.</p>
+		<p type="eac">Use <att>agentType</att> with <gi>agent</gi> to specify the type of agent, e.g. responsible for the creation, maintenance and further editing of the EAS instance.</p>
+		<p type="ead">Use <att>agentType</att> with <gi>agent</gi> to specify the type of agent, e.g. responsible for the creation, maintenance and further editing of the EAS instance or the creation, management or usage of the archival materials being described.</p>
+		<p>Use the attribute <att>agentTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>agentType</att>.</p>
 	</div>
-	<div type="values" standard="eac">
-    <p>human, machine, unknown</p>
-  </div>
-  <div type="datatype" standard="ead">
+	<div type="datatype">
 		<p>token</p>
 	</div>
   <div type="examples">

@@ -15,7 +15,7 @@
       <p><list type="gloss">
             <label>head</label>
             <item>0..1</item>
-            <label>list</label>
+            <label>formattingExtension</label>
             <item>0..n</item>
             <label>p</label>
             <item>0..n</item>
@@ -28,7 +28,7 @@
       <p>
          <list type="gloss">
             <label>audience</label>
-            <item>Optional (values limited to: external, internal)</item>
+            <item>Optional</item>
             <label>conventionDeclarationReference</label>
             <item>Optional</item>
             <label>id</label>
@@ -55,14 +55,14 @@
          political, and/or historical context in which the CPF entity being described existed. The
          general context provides wide latitude to record contextual information not specifically
          accommodated by other elements contained in <gi>description</gi>.</p>
-      <p>The optional <gi>list</gi> element may be used to accommodate greater complexity in
+      <p>The optional <gi>formattingExtention</gi> element may be used to accommodate greater complexity in
          expressing or representing the general context being described. The optional <gi>head</gi>
          element may be used to encode a title or caption. A simpler discursive expression of the
          general context may be encoded as one or more <gi>p</gi> elements.</p>
       <p>The prescribed order of all child elements (both required and optional) is:</p>
       <list type="simple">
          <item><gi>head</gi></item>
-         <item>Any of <gi>list</gi> and <gi>p</gi></item>
+         <item>Any of <gi>formattingExtension</gi> and <gi>p</gi></item>
       </list>
    </div>
    <div type="availability">
