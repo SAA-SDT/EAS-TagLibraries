@@ -11,13 +11,7 @@
       <p>An element that cites an external resource.</p>
    </div>
    <div type="mayContain">
-      <p type="eac"><list type="gloss">
-            <label>[text]</label>
-            <item/>
-            <label>span</label>
-            <item>0..n</item>
-         </list></p>
-      <p type="ead"><list type="gloss">
+      <p><list type="gloss">
             <label>[text]</label>
             <item/>
             <label>referringString</label>
@@ -38,7 +32,7 @@
         <p>
          <list type="gloss">
             <label>audience</label>
-            <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
+            <item>Optional</item>
             <label>conventionDeclarationReference</label>
             <item>Optional</item>
             <label>href</label>
