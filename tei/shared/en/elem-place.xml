@@ -71,11 +71,8 @@
                   <p type="ead">A <gi>place</gi> element is a wrapper element used to encode information about a place or jurisdiction. This includes identifying the places or jurisdictions where the records being described were created or with which they have some other significant connection. It can also be used to encode address and contact information.</p>
                  <p type="eaf">A <gi>place</gi> element is a wrapper element used to encode information about a place or jurisdiction. This includes identifying the places or jurisdictions where the function was preformed or with which it had some other significant connection. It can also be used to encode address and contact information.</p>
                    
-                  <p type="eac"><gi>place</gi> must include at least one of <gi>address</gi>, <gi>contact</gi>, <gi>geographicCoordinates</gi>, <gi>placeName</gi> or <gi>placeRole</gi>.</p>
-                  <p type="eaf"><gi>place</gi> must include at least one of <gi>address</gi>, <gi>contact</gi>, <gi>geographicCoordinates</gi>, <gi>placeName</gi> or <gi>placeRole</gi>.</p>
-                  <p type="ead"><gi>place</gi> must include at least one <gi>label</gi> to name the geographic feature or location.</p>
-                  <p type="eac"><gi>placeName</gi> may be used to encode the name of a place that is related to  the CPF entity described. The <gi>placeRole</gi> element is available to specify the nature of the connection of the place with the CPF entity being described, and its use is strongly recommended. Terms in <gi>placeName</gi> and <gi>placeRole</gi> may be drawn from controlled vocabularies or may be natural language terms. These controlled vocabularies can be identified with the <att>vocabularySource</att> and <att>vocabularySourceURI</att> attributes.</p>
-                  <p type="ead"><gi>label</gi> may be used to encode the name of a place that is related to the records being described. The <gi>role</gi> element is available to specify the nature of the place in relation with the records being described, and its use is strongly recommended. The <att>placeType</att> attribute may be used to classify the type of place for clarification, e.g., indicating whether the place is a city or town or a first or second-order administrative divistion. Use <gi>relationship</gi> to describe the nature of connection between the place and the records being described. Terms in these elements may be drawn from controlled vocabularies or may be natural language terms. These controlled vocabularies can be identified with the <att>vocabularySource</att> and <att>vocabularySourceURI</att> attributes. </p>
+                  <p><gi>place</gi> must include at least one <gi>label</gi> to name the geographic feature or location.</p>
+                  <p><gi>label</gi> may be used to encode the name of a place that is related to the records being described. The <gi>role</gi> element is available to specify the nature of the place in relation with the records being described, and its use is strongly recommended. The <att>placeType</att> attribute may be used to classify the type of place for clarification, e.g., indicating whether the place is a city or town or a first or second-order administrative divistion. Use <gi>relationship</gi> to describe the nature of connection between the place and the records being described. Terms in these elements may be drawn from controlled vocabularies or may be natural language terms. These controlled vocabularies can be identified with the <att>vocabularySource</att> and <att>vocabularySourceURI</att> attributes. </p>
                   <p>The <gi>address</gi> element is available for specifying a postal or other address. The <gi>contact</gi> element is available for specifying a digital address or other contact information.</p>
                   <p type="eac">Associated date or date range (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) information may be included to further constrain the place's meaning. A <gi>descriptiveNote</gi> may be included if a fuller explanation of the significance of the place to the CPF entity described is needed.</p>
                   <p type="ead">Associated date or date range (<gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>) information may be included to further constrain the place's meaning. A <gi>descriptiveNote</gi> may be included if a fuller explanation of the significance of the place to the records being described is needed.</p>
@@ -83,16 +80,16 @@
                  
                  <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
-                     <item><p type="eac">One or more of <gi>address</gi>, <gi>contact</gi>, <gi>geographicCoordinates</gi>, <gi>placeName</gi>, and <gi>placeRole</gi></p><p type="ead"><gi>label</gi></p></item>
+                     <item><gi>label</gi></item>
                      <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
-                     <item><p type="ead"><gi>role</gi></p></item>
-                     <item><p type="ead"><gi>relationship</gi></p></item>
-                     <item><p type="ead">One or more of <gi>address</gi>, <gi>contact</gi> and  <gi>geographicCoordinates</gi></p></item>
+                     <item><gi>role</gi></item>
+                     <item>p type="ead"><gi>relationship</gi></item>
+                     <item>One or more of <gi>address</gi>, <gi>contact</gi> and  <gi>geographicCoordinates</gi></item>
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
                <div type="availability">
-                  <p type="eac">Within <gi>relation</gi>: optional, repeatable.</p>
+                  <p type="eaf">Within <gi>relation</gi>: optional, repeatable.</p>
                   <p type="ead">Within <gi>findAidDesc</gi>: optional, repeatable.</p>
                   <p>Within <gi>places</gi>: required, repeatable.</p>
                </div>
