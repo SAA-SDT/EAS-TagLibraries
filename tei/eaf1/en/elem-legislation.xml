@@ -55,7 +55,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>The element is used to record any law, directive or charter which creates, amends or curtails the function. Record each and every one of these in their own <gi>legislation</gi></p>
+		<p>The purpose of this element it to identify the legal basis of the function. The element is therefore used to record any law, directive or charter which creates, amends or curtails the function. Record each and every one of these in their own <gi>legislation</gi></p>
 	</div>
 	<div type="availability">
 		<p>Required, Repeatable</p>

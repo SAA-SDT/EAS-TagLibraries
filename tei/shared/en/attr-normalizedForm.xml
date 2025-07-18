@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="http://ead3.archivists.org/schema/" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<att>normalizedForm</att>
+	</head>
+	<div type="fullName">
+		<p>Normalized Form</p>
+	</div>
+	<div type="summary">
+		<p>A summary of what the attribute is used for</p>
+	</div>
+	<div type="description">
+		<p>A narrative description of the use of the attribute</p>
+	</div>
+	<div type="datatype">
+		<p>token</p>
+	</div>
+</div>
