@@ -150,8 +150,8 @@
 	    <xi:include href="ead4/en/elem-formAvailableId.xml" parse="xml"/>
 	    <xi:include href="ead4/en/elem-formsAvailable.xml" parse="xml"/>
             <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-function.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-functions.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-function.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-functions.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-genreForm.xml" parse="xml"/>
             <xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
             <xi:include href="shared/en/elem-head.xml" parse="xml"/>
