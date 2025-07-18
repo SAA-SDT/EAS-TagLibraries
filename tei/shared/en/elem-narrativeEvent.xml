@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-provenanceEvent" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>provenanceEvent</gi>
+		<gi>narratieEvent</gi>
 	</head>
 	<div type="fullName">
-		<p>Provenance Event</p>
+		<p>Narrative Event</p>
 	</div>
 	<div type="summary">
-		<p>An optional child element of <gi>appraisal</gi>, <gi>biogHist</gi>, <gi>custodHist</gi>, <gi>processInfo</gi>, and <gi>sourceOfAcquisition</gi> used to record a timeline of activities in the history of the materials being described or the biography of the records creator.</p>
+		<p type="ead">An optional child element of <gi>appraisal</gi>, <gi>biogHist</gi>, <gi>custodHist</gi>, <gi>processInfo</gi>, and <gi>sourceOfAcquisition</gi> used to record a timeline of activities in the history of the materials being described or the biography of the records creator.</p>
+		<p type="eac">An optional child element of <gi>biogHist</gi> used to record a timeline of activities in the history of the materials being described or the biography of the records creator.</p>
 	</div>
 	<div type="mayContain">
 		<p>
 			<list type="gloss">
 				<label>agent</label>
 				<item>0..1</item>
-				<label>eventDateTime</label>
+				<label>date</label>
 				<item>1..1</item>
 				<label>eventDescription</label>
 				<item>0..n</item>
+				<label>placeName</label>
+				<item>0..1</item>
 			</list>
 		</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>appraisal, biogHist, custodHist, processInfo, sourceOfAcquisition</p>
+		<p type="ead">appraisal, biogHist, custodHist, processInfo, sourceOfAcquisition</p>
+		<p type="eac">biogHist</p>
 	</div>
 	<div type="attributes">
 		<p>

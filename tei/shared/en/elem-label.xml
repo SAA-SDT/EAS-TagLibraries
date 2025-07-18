@@ -16,7 +16,9 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>agent, formAvailable, function, place, subject, relation</p>
+		<p type="ead">agent, formAvailable, function, place, subject, relation</p>
+		<p type="eac">agent, place, relation</p>
+		<p type="eaf">agent, relation</p>
 	</div>
 	<div type="attributes">
 		<p>

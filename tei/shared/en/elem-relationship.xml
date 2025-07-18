@@ -18,7 +18,9 @@
 		</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>agent, function, place, subject</p>
+		<p type="ead">agent, function, place, subject</p>
+		<p type="eac">agent, place</p>
+		<p type="eaf">agent</p>
 	</div>
 	<div type="attributes">
 		<p>

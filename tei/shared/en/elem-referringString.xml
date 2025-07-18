@@ -16,7 +16,9 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>abstract, container, eventDescription, formAvailableId, genreForm, head, otherIdentificationData, p, physFacet, reference, textualDate, unitId, unitTitle</p>
+		<p type="ead">abstract, container, eventDescription, formAvailableId, genreForm, head, otherIdentificationData, p, physFacet, reference, textualDate, unitId, unitTitle</p>
+		<p type="eac">abstract, eventDescription, head, p, reference</p>
+		<p type="eaf">eventDescription, p, reference</p>
 	</div>
 	<div type="attributes">
     		<p>
@@ -35,6 +37,8 @@
             			<item>Optional</item>
             			<label>maintenanceEventReference</label>
             			<item>Optional</item>
+        				<label>normalizedForm</label>
+        				<item>Optional</item>
             			<label>referredEntityRelationship</label>
             			<item>Optional</item>
             			<label>referredEntityType</label>
@@ -45,7 +49,7 @@
             			<item>Optional</item>
             			<label>target</label>
             			<item>Optional</item>
-				<label>valueURI</label>
+						<label>valueURI</label>
             			<item>Optional</item>
             			<label>vocabularySource</label>
             			<item>Optional</item>

@@ -20,9 +20,11 @@
 		...especially with EAF, etc. Yikes! -->
 		<!-- rather that sort A-Z in one list, would it be better to break out by type?  e.g. narrative appearance vs. findingAidDesc vs. former dsc + new formAvailable ? -->
 		<!-- also, in this case, i think we should take a harder line and *only* allow this extension on narrative elements, but also to be more flexible and allow it to sit side-by-side with paragraphs. i can certainly see the benefit of having a formattingExtension follow a local set of "paragraphs". -->
-		<p>
+		<p type="ead">
 				accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, filePlan, findAidDesc, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions
 		</p>
+		<p type="eac">biogHist, generalContext, structureOrGenealogy</p>
+		<p type="eaf">functionDescription, functionHistory, legislation</p>
 	</div>
 	<div type="attributes">
 		<p>
