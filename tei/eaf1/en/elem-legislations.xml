@@ -33,6 +33,10 @@
 				<item>Optional</item>
 				<label>languageOfElement</label>
 				<item>Optional</item>
+				<label>localType</label>
+				<item>Optional</item>
+				<label>localTypeDeclarationReference</label>
+				<item>Optional</item>
 				<label>maintenanceEventReference</label>
 				<item>Optional</item>
 				<label>scriptOfElement</label>
