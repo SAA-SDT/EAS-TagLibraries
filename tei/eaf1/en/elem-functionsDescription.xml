@@ -29,9 +29,7 @@
 			<list type="gloss">
 				<label>audience</label>
 			        <item>Optional</item>
-					<label>base</label>
-					<item>Optional</item>
-			        <label>conventionDeclarationReference</label>
+					<label>conventionDeclarationReference</label>
 			        <item>Optional</item>
 					<label>functionStatus</label>
 					<item>Optional</item>
