@@ -8,7 +8,7 @@
          <titleStmt>
             <title xml:lang="eng" type="main">Encoded Archival Context - Corporate Bodies, Persons,
                and Families (EAC-CPF) <lb/> Tag Library</title>
-            <title xml:lang="eng" type="additional">Version EAC-CPF 2.0.1</title>
+            <title xml:lang="eng" type="additional">Version EAC-CPF 3.0.0</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
                <name>Technical Subcommittee for Encoded Archival Standard of the Society of American
@@ -16,7 +16,7 @@
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <p>2023 Edition</p>
+            <p>2025 Edition</p>
          </editionStmt>
          <publicationStmt>
             <publisher>Society of American Archivists in collaboration with Staatsbibliothek zu
@@ -30,7 +30,7 @@
                <addrLine>info@archivists.org</addrLine>
                <addrLine>www.archivists.org</addrLine>
             </address>
-            <date when="2023"/>
+            <date when="2025"/>
             <idno>978-1-958954-16-4</idno>
             <availability>
                <licence>This work is licensed under a Creative Commons Attribution 4.0 International
@@ -52,9 +52,9 @@
             <docTitle>
                <titlePart type="main">Encoded Archival Context - Corporate Bodies, Persons, and
                   Families (EAC-CPF) <lb/> Tag Library</titlePart>
-               <titlePart type="additional">Version EAC-CPF 2.0.1</titlePart>
+               <titlePart type="additional">Version EAC-CPF 3.0.0</titlePart>
             </docTitle>
-            <docEdition>2023 Edition</docEdition>
+            <docEdition>2025 Edition</docEdition>
             <byline>Prepared and maintained by the</byline>
             <docAuthor>Technical Subcommittee for Encoded Archival Standards of the Society of
                American Archivists</docAuthor>
