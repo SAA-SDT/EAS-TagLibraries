@@ -14,7 +14,10 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<extent><quantity approximate="true">5,000</quantity><unitOfMeasurement>photographs</unitOfMeasurement></extent>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<dimensions><quantity approximate="false">18 x 24</quantity><unitOfMeasurement>inches</unitOfMeasurement></dimensions>]]>
 		</egXML>
 	</div>
 </div>
