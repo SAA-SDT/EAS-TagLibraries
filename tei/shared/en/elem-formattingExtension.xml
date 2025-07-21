@@ -43,8 +43,10 @@
 		<p>When using this element, it is recommended that the EAS file is associated with the EAS NVDL for validation purposes.</p>
 	</div>
 	<div type="availability">
-		<p>Within <gi>findAidDesc</gi>: optional, repeatable.</p>
-		<p>Within all other elements: optional, not repeatable.</p>
-		<p>When used outside of <gi>findAidDesc</gi> to encode a narrative description, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or to use one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+		<p type="ead">Within <gi>findAidDesc</gi>: optional, repeatable.</p>
+		<p type="ead">Within all other elements: optional, not repeatable.</p>
+		<p type="ead">When used outside of <gi>findAidDesc</gi> to encode a narrative description, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or to use one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+		<p type="eac">Optional, not repeatable</p>
+		<p type="eaf">Optional, not repeatable</p>
 	</div>
 </div>

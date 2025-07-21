@@ -509,7 +509,7 @@
                </table>
             </div>
             <div class="toc1">
-               <a href="#d1e8142">Attributes Attribute name Attribute values</a>
+               <a href="#d1e8273">Attributes Attribute name Attribute values</a>
             </div>
             <div class="toc2">
                <table>
@@ -3516,7 +3516,9 @@
                      <div class="rightcol">Optional</div>
                   </div>
                   <div class="leftcol">Availability: </div>
-                  <div class="content">Within &lt;findAidDesc&gt;: optional, repeatable.Within all other elements: optional, not repeatable.When used outside of &lt;findAidDesc&gt; to encode a narrative description, the encoder must choose between using a &lt;formattingExtention&gt; element (to wrap XHTML content), or to use one or more &lt;p&gt; elements that are defined within the current EAS schema.</div>
+                  <div class="content">
+                     <div class="p">Optional, not repeatable</div>
+                  </div>
                </div>
                <div class="element">
                   <div class="leftcol" id="elem-fromDate">
@@ -4331,14 +4333,16 @@
                      <span class="label">Label</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A required child element of &lt;agent&gt;, &lt;formAvailable&gt;, &lt;function&gt;, &lt;place&gt;, &lt;subject&gt;, and &lt;relation&gt; that indicates the name of the related entity.</div>Use valueURI to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use vocabularySource to identify the source where valueURI comes from, and vocabularySourceURI to point univocally to the organization system used.Use this element in combination with agentType and &lt;role&gt; to encode also the agent’s type and role. I.e.: &lt;label&gt;: "John Bianchi",agentType: "person", &lt;role&gt;: "author" (in &lt;findAidDesc&gt;).<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">
+                     <div class="p">A required child element of &lt;agent&gt;, &lt;place&gt;, and &lt;relation&gt; that indicates the name of the related entity.</div>
+                  </div>Use valueURI to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use vocabularySource to identify the source where valueURI comes from, and vocabularySourceURI to point univocally to the organization system used.Use this element in combination with agentType and &lt;role&gt; to encode also the agent’s type and role. I.e.: &lt;label&gt;: "John Bianchi",agentType: "person", &lt;role&gt;: "author" (in &lt;findAidDesc&gt;).<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-agent">agent</a>, <a href="#elem-place">place</a>, <a href="#elem-relation">relation</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Use &lt;label&gt; to indicate the name of the related entity, either in the generic &lt;relation&gt; element or in one of the specific entity elements.In &lt;agent&gt;, this can be the name of the agent responsible for the creation, modification, or deletion of an EAD instance, as captured in &lt;maintenanceEvent&gt;, or the name of the agent who has created, managed, used, or is mentioned in the archival materials.In &lt;formAvailable&gt;, this may e.g. be the file name of a digitised version of a record resource.In &lt;function&gt;, this may be the name of the function or subfunction that resulted in the creation of the materials being described.In &lt;place&gt;, this can be the name of the place where a person was born or an organization was established, but also the location where the archival material being described are held.In &lt;subject&gt;, this may be a term for the genre or type of record or theme represented in the materials being described.It is recommended to use authorized vocabularies in cases where the element is valorized with a well-known corporation (i.e. "Library of Congress").</div>
+                  <div class="content">Use &lt;label&gt; to indicate the name of the related entity, either in the generic &lt;relation&gt; element or in one of the specific entity elements.<div class="p">In &lt;agent&gt;, &lt;label&gt; can be the name of the agent responsible for the creation, modification, or deletion of an EAS instance, as captured in &lt;maintenanceEvent&gt;. In &lt;place&gt;, &lt;label&gt; can be the name of the place where a person was born or an organization was established</div>It is recommended to use authorized vocabularies in cases where the element is valorized with a well-known corporation (i.e. "Library of Congress").</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -7530,14 +7534,18 @@
                      <span class="label">Relationship</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A child element of &lt;agent&gt;, &lt;function&gt;, &lt;place&gt; and &lt;subject&gt; used to specify the type of relationship that these entities have with the entity being described within the EAS instance.</div>Use valueURI to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use vocabularySource and/or vocabularySourceURI to name and/or point to the organization system used.Use &lt;role&gt; in &lt;agent&gt;, &lt;function&gt;, &lt;place&gt; and &lt;subject&gt; to more specifically indicate the role of the related entity towards the entity being described in the EAS instance.<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">
+                     <div class="p">A child element of &lt;agent&gt; and &lt;place&gt;, used to specify the type of relationship that these entities have with the entity being described within the EAS instance.</div>
+                  </div>Use valueURI to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use vocabularySource and/or vocabularySourceURI to name and/or point to the organization system used.Use &lt;role&gt; in &lt;agent&gt;, &lt;function&gt;, &lt;place&gt; and &lt;subject&gt; to more specifically indicate the role of the related entity towards the entity being described in the EAS instance.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-agent">agent</a>, <a href="#elem-place">place</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Use &lt;relationship&gt; within &lt;agent&gt;, &lt;function&gt;, &lt;place&gt; and &lt;subject&gt; to specify the type of relation that these entities have with the entity being described within the EAS instance. The &lt;relationship&gt; element contains a textual description of the relation. It is recommended that values used in &lt;relationship&gt; be taken from an authorized vocabulary.</div>
+                  <div class="content">
+                     <div class="p">Use &lt;relationship&gt; within &lt;agent&gt; and &lt;place&gt; to specify the type of relation that these entities have with the entity being described within the EAS instance. The &lt;relationship&gt; element contains a textual description of the relation. It is recommended that values used in &lt;relationship&gt; be taken from an authorized vocabulary.</div>
+                  </div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -7627,7 +7635,7 @@
                      <a href="#elem-abstract">abstract</a>, <a href="#elem-eventDescription">eventDescription</a>, <a href="#elem-head">head</a>, <a href="#elem-p">p</a>, <a href="#elem-reference">reference</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Use &lt;referringString&gt; in longer texts to indicate that certain words or phrases within these texts represent named entities such as persons, organisations, places, functions, dates, etc.Use &lt;referringString&gt; e.g. when the identification of such named entities within existing archival descriptions is the result of some natural language processing or when capturing the results of named entity recognition having been conducted as part of Optical Character Recognition or Handwritten Text Recognition tasks.</div>
+                  <div class="content">Use &lt;referringString&gt; in longer texts to indicate that certain words or phrases within these texts represent named entities such as persons, organisations, places, functions, dates, etc.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -7798,14 +7806,17 @@
                      <span class="label">Role</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">An optional child element of &lt;agent&gt;, &lt;formAvailable&gt;, &lt;function&gt;, &lt;place&gt;, &lt;subject&gt;, and &lt;relation&gt; that indicates the role of the related entity towards the entity being described in the EAS instance.</div>Use the element &lt;label&gt; to encode the related entity’s name and the element &lt;relationship&gt; to encode a more general denominator for the relation between the related entity and the entity being described in the EAS instance.<div class="leftcol">May contain Element/content type Occurrences: </div>
+                  <div class="content">
+                     <div class="p">An optional child element of &lt;agent&gt;, &lt;place&gt; and &lt;relation&gt; that indicates the role of the related entity towards the entity being described in the EAS instance.</div>
+                  </div>Use the element &lt;label&gt; to encode the related entity’s name and the element &lt;relationship&gt; to encode a more general denominator for the relation between the related entity and the entity being described in the EAS instance.<div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">[text]</div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-agent">agent</a>, <a href="#elem-place">place</a>, <a href="#elem-relation">relation</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Use &lt;role&gt; to indicate the role of the related entity towards the entity being described in the EAS instance. It is recommended that the terms in &lt;role&gt; be taken from authorized vocabularies.&lt;role&gt; might be used in combination with the specific type attribute available with each of the entity elements where &lt;role&gt; is available. While these attributes provide a generic typology of each entity class, e.g. "corporateBody", "person", and "family" for agentType, &lt;role&gt; looks more specifically at the related entity itself in a certain context. Furthermore, &lt;role&gt; may be used in combination with &lt;relationship&gt; which is available in &lt;agent&gt;, &lt;function&gt;, &lt;place&gt; and &lt;subject&gt;. While &lt;relationship&gt; gives again a more general indication about the relationship between the related and the described entity, e.g. "creation", &lt;role&gt; allows to be more specific to the individual related entity, e.g. by assigning the role of "director" to one &lt;agent&gt; and the role of "playwright" to another.</div>
+                  <div class="content">Use &lt;role&gt; to indicate the role of the related entity towards the entity being described in the EAS instance. It is recommended that the terms in &lt;role&gt; be taken from authorized vocabularies.<div class="p">&lt;role&gt; might be used in combination with the specific type attribute available with each of the entity elements where &lt;role&gt; is available. While these attributes provide a generic typology of each entity class, e.g. "corporateBody", "person", and "family" for agentType, &lt;role&gt; looks more specifically at the related entity itself in a certain context. Furthermore, &lt;role&gt; may be used in combination with &lt;relationship&gt; which is available in &lt;agent&gt; and &lt;place&gt;. While &lt;relationship&gt; gives again a more general indication about the relationship between the related and the described entity, e.g. "creation", &lt;role&gt; allows to be more specific to the individual related entity, e.g. by assigning the role of "director" to one &lt;agent&gt; and the role of "playwright" to another.</div>
+                  </div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -8724,7 +8735,7 @@
                   <br/>
                </div>  <a class="tocReturn" href="#toc">[toc]</a>
             </div>
-            <div class="section" id="d1e8142">
+            <div class="section" id="d1e8273">
                <div class="head03">Attributes Attribute name Attribute values</div>
                <div class="head03">Introduction  <a class="tocReturn" href="#toc">[toc]</a>
                </div>Attributes are associated with most of the elements contained in EAC-CPF. Attributes reflect named properties of an element and may take on different values, depending on the context in which they occur. In order to set one or more attributes, an encoder should include the name of the attribute(s) within the same angle brackets as the start tag, together with the value(s) to which the attribute(s) is/are to be set. That is,&lt;[tag] [attribute]="[value]"&gt;or&lt;[tag] [attribute1]="[value1]" [attribute2]="[value2]"&gt;For example:&lt;fromDate standardDate="1939"&gt;1939&lt;/fromDate&gt;or&lt;fromDate certainty="approximate" standardDate="1939"&gt;1939&lt;/fromDate&gt;Most attributes are optional, though some are required. The attribute description indicates whether an attribute is required. This information is also available in the Attributes section of each element description.The value of attributes may be constrained by the schema using specific attribute type values. For example, the id attribute is of type ID, which constrains its value to a string beginning with an alphabetic character. An id value must be unique within the EAC-CPF instance within which it occurs, that is, no other tag in the entire document can have the same id value. EAC-CPF attributes have the following data types (capitalization of data types follows the documentation found in the W3C Recommendation XML Schema Part 2: Datatypes Second Edition (<a href="http://www.w3.org/TR/xmlschema-2/" target="new">http://www.w3.org/TR/xmlschema-2/)</a>:
@@ -9976,7 +9987,9 @@ in &lt;languageDeclaration&gt; and optionally available in &lt;language&gt;.</di
                   <div class="leftcol">Summary: </div>
                   <div class="content">Specifies the authoritative source or rules for values used to indicate the status and certainty of the information provided in various elements.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">statusEncoding specifies the authoritative source or rules for values supplied in status within &lt;agencyCode&gt;, &lt;otherAgencyCode&gt;, &lt;date&gt;, &lt;fromDate&gt;, &lt;toDate&gt;, and &lt;textualDate&gt;. If the value "EASList" is selected, status will be expected with the values "authorized" and "alternative" (for agency codes), "unknown" or "ongoing" (for dates). If the value "otherStatusEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  <div class="content">
+                     <div class="p">statusEncoding specifies the authoritative source or rules for values supplied in status within &lt;agencyCode&gt;, &lt;otherAgencyCode&gt;, &lt;date&gt;, &lt;fromDate&gt;, &lt;toDate&gt;, and &lt;nameEntry&gt;. If the value "EASList" is selected, status will be expected with the values "authorized" and "alternative" (for agency codes and &lt;nameEntry&gt;), "unknown" or "ongoing" (for dates). If the value "otherStatusEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherStatusEncoding</div>
                </div>
