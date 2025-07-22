@@ -15,9 +15,9 @@
   <item>0..1</item>
   <label>formattingExtension</label>
   <item>0..1</item>
-  <label>p</label>
+  <label>narrativeEvent</label>
   <item>0..n</item>
-  <label>provenanceEvent</label>
+  <label>p</label>
   <item>0..n</item>
 </list></p>
 	</div>
@@ -57,7 +57,7 @@
 		<list type="simple">
                      <item><gi>abstract</gi> (if used)</item>
                      <item><gi>formattingExtension</gi> or <gi>p</gi></item>
-		     <item><gi>provenanceEvent</gi></item>
+		     <item><gi>narrativeEvent</gi></item>
 		</list>
 	</div>
 	<div type="seealso"><p>Note that the accession number may be encoded in <gi>unitId</gi> within <gi>identificationData</gi>.</p></div>
