@@ -15,4 +15,9 @@
 	<div type="values">
 		<p>EASList, otherDescriptionOfComponentsTypeEncoding</p>
 	</div>
+	<div type="examples">
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<control descriptionOfComponentsTypeEncoding="EASList"/>]]>
+		</egXML>
+	</div>
 </div>
