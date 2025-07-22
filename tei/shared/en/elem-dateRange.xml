@@ -25,7 +25,7 @@
                      localDescription, mandate, occupation, otherEntityType, place,
                      relation, useDates</p>
                   <p type="eaf">dateSet, functionDates, legislation, localControl, useDates, place, relation</p>
-                  <p type="ead">accessConditions, agent, dateSet, formAvailable, fuction, legalStatus, place, relation, subject, unitDate, useConditions</p>
+                  <p type="ead">accessConditions, agent, dateSet, formAvailable, function, legalStatus, place, relation, subject, unitDate, useConditions</p>
                </div>
                <div type="attributes">
                   <p>
