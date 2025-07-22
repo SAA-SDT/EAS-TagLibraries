@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-provenanceEvent" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<div type="elementDocumentation" xml:id="elem-narrativeEvent" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>narratieEvent</gi>
+		<gi>narrativeEvent</gi>
 	</head>
 	<div type="fullName">
 		<p>Narrative Event</p>
@@ -55,7 +55,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>provenanceEvent</gi> to record an activity in the creation, management and ongoing maintenance of the materials being described or in the history of the records creator. This may include activities of appraisal and selection, sensitivity review, revisions, updates, retentions, etc.</p>
+		<p>Use <gi>narrativeEvent</gi> to record an activity in the creation, management and ongoing maintenance of the materials being described or in the history of the records creator. This may include activities of appraisal and selection, sensitivity review, revisions, updates, retentions, etc.</p>
 <p>The type of each event may be defined with the attribute <att>localType</att>. Use <att>localTypeDeclarationReference</att> to refer to a <gi>localTypeDeclaration</gi> within <gi>control</gi> where you have defined those types. The child <gi>eventDateTime</gi> to record when the event took place is mandatory, while the child <gi>agent</gi> to provide information about who or what carried out, or was otherwise responsible for, the activity is optional, though highly recommended. Furthermore, the information about the event may be described in <gi>eventDescription</gi>.</p>
 		<p>The prescribed order of all child elements (both required and optional) is:</p>
 		<list type="simple">

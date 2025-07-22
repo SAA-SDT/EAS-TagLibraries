@@ -29,7 +29,7 @@
     </p>
   </div>
   <div type="mayOccurWithin">
-    <p type="eac">maintenanceEvent, provenanceEvent</p> <!--check provenanceEvent-->
+    <p type="eac">maintenanceEvent, narrativeEvent</p> 
     <p type="eaf">maintenanceEvent</p>
     <p type="ead">agents, findAidDesc, maintenanceEvent</p>
   </div>
