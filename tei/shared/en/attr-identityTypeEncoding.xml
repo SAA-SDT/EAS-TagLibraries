@@ -11,10 +11,10 @@
 	</div>
 	<div type="description">
 		<p>@identityTypeEncoding specifies the authoritative source or rules for
-values supplied in @identityType within <identity>. If the value
+			values supplied in @identityType within <gi>identity</gi>. If the value
 "EASList" is selected, @identityType will be expected with the values
 "acquired" or "given". If the value "otherIdentityTypeEncoding" is selected, an alternate code list
-should be specified in <conventionDeclaration>. This optional attribute is on available in <control>.</p>
+should be specified in <gi>conventionDeclaration</gi>. This optional attribute is on available in <gi>control</gi>.</p>
 	</div>
 	<div type="values">
 		<p>EASList, otherIdentityTypeEncoding</p>
