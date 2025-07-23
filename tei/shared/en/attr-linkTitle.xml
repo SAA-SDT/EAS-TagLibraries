@@ -32,7 +32,7 @@
    </componentEntry>
 </setComponent>]]></egXML>
       <egXML xml:lang="eng" type="ead"><![CDATA[<p>
-   More information is available on our <ref linkTitle="Archives at Yale, Help Page" href="https://archives.yale.edu/help">Help page</ref>.
+   More information is available on our <reference linkTitle="Archives at Yale, Help Page" href="https://archives.yale.edu/help">Help page</reference>.
 </p>]]></egXML>
    </div>
 </div>
