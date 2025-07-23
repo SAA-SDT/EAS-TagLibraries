@@ -175,7 +175,7 @@
             <xi:include href="shared/en/elem-otherRecordId.xml" parse="xml"/>
             <xi:include href="shared/en/elem-p.xml" parse="xml"/>
             <xi:include href="shared/en/elem-part.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-physFacet.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-physicalFacet.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-physicalOrTechnicalRequirements.xml" parse="xml"/>
             <xi:include href="shared/en/elem-place.xml" parse="xml"/>
             <xi:include href="shared/en/elem-placeName.xml" parse="xml"/>
@@ -285,8 +285,6 @@
             <xi:include href="shared/en/attr-standardDateTime.xml" parse="xml"/>
             <xi:include href="shared/en/attr-status.xml" parse="xml"/>
             <xi:include href="shared/en/attr-statusEncoding.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-subjectType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-subjectTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-style.xml" parse="xml"/>
             <xi:include href="shared/en/attr-target.xml" parse="xml"/>
             <xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
