@@ -7,11 +7,10 @@
                   <p>ID</p>
                </div>
                <div type="summary">
-                  <p>A unique identifier to name the element.</p>
+                  <p>A unique identifier to name a specific element within an EAS instance.</p>
                </div>
                <div type="description">
-                  <p>An identifier that must be unique within the current document and is used to
-                     name the element so that it can be referred to, or referenced from, somewhere else in the record. This facilitates building links between the element and other resources within the current document.</p>
+                  <p>An identifier that must be unique within the current EAS instance and is used to name the element so that it can be referred to from somewhere else in the EAS instance. This facilitates building links between the element and other elements within the same XML file, though it can also be used to point to a specific element from outside of the EAS instance.</p>
                   <p>
                      Use <att>target</att>, <att>conventionDeclarationReference</att>, <att>localTypeDeclarationReference</att>, <att>maintenanceEventReference</att>, or <att>sourceReference</att> to link to an <att>id</att> attribute within the EAS instance.
                   </p>
@@ -21,34 +20,57 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="eac"><![CDATA[<occupations>
-   <occupation>
-      <term>
-         Assistant examiner - level III
-      </term>
-      <placeName target="#place1">
-         Bern
-      </placeName>
-   </occupation>
-</occupations>
-<places>
-   <place id="place1">
-      <placeName>
-         Bern
-      </placeName>
-      <placeRole>
-         Place of work
-      </placeRole>
-   </place>
-</places>]]></egXML>
-                  <egXML xml:lang="eng" type="ead"><![CDATA[<places>
-   <place id="place1">
-      <placeName>
-         Bern
-      </placeName>
-      <placeRole>
-         Place of storage
-      </placeRole>
-   </place>
-</places>]]></egXML>
+                    <occupation>
+                    <term>Assistant examiner - level III</term>
+                    <placeName target="#place1">Bern</placeName>
+                  </occupation>
+                  </occupations>
+                    <places>
+                    <place id="place1">
+                    <label>Bern</label>
+                    <role>Place of work</role>
+                    <address>
+                    <addressLine addressLineType="street">Stauffacherstrasse 65/59g</addressLine>
+                    <addressLine addressLineType="postalCode">3003</addressLine>
+                    <addressLine addressLineType="municipality">Bern</addressLine>
+                  </address>
+                  </place>
+                  </places>]]></egXML>
+                  <egXML xml:lang="eng" type="ead"><![CDATA[<agents>
+                    <agent>
+                    <label>Schweizerisches Bundesarchiv</label>
+                    <role>holdingInstitution</role>
+                    <placeName target="#place1">Bern</placeName>
+                  </agent>
+                  </agents>
+                    <places>
+                    <place id="place1">
+                    <label>Bern</label>
+                    <role>Place of storage</role>
+                    <address>
+                    <addressLine addressLineType="street">Archivstrasse 24</addressLine>
+                    <addressLine addressLineType="postalCode">3005</addressLine>
+                    <addressLine addressLineType="municipality">Bern</addressLine>
+                  </address>
+                  </place>
+                  </places>]]></egXML>
+                 <egXML xml:lang="eng" type="eaf"><![CDATA[<control>
+                   [...]
+                    <conventionDeclaration id="cd1">
+                    <reference>International Standard for Describing Functions</reference>
+                   <shortCode>ISDF</shortCode>
+                 </conventionDeclaration>
+                   [...]
+                  </control>
+                    <functionsDescription>
+                   <identity>
+                   [...]
+                 </identity>
+                   <description>
+                   <legislations target="#cd1">
+                   <legislation>Joint Stock Companies Act, 1856; Companies Act, 1862; Companies Act, 1900; Companies Act, 1907; Companies (Consolidation) Act, 1908; Companies Act, 1928; Companies Act, 1929; Companies Act, 1947</legislation>
+                 </legislations>
+                 </description>
+                 </functionsDescription>]]></egXML>
                </div>
             </div>
