@@ -11,7 +11,7 @@
                </div>
                <div type="description">
                  <p>An attribute used to specify the type of contact line encoded in
-                        <gi>contactLine</gi>, eg "email", "phoneNumber" or "homepage".</p>
+                        <gi>contactLine</gi>, e.g. "email", "phoneNumber" or "homepage".</p>
                </div>
                <div type="datatype">
                  <p>token</p>
