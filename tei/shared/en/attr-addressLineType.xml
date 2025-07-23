@@ -10,7 +10,7 @@
                   <p>Used to specify the type of address line encoded in <gi>addressLine</gi>. </p>
                </div>
                <div type="description">
-                 <p>Use <att>addressLineType</att> with <gi>addressLine</gi> to specify the type of address line, eg "street", "country" or "postalCode".</p>
+                 <p>Use <att>addressLineType</att> with <gi>addressLine</gi> to specify the type of address line, e.g. "street", "country" or "postalCode".</p>
                  <p>Use the attribute <att>addressLineTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>addressLineType</att>.</p>
                </div>
                <div type="datatype">
