@@ -15,4 +15,9 @@
 	<div type="values">
 		<p>EASList, otherFormAvailableTypeEncoding</p>
 	</div>
+	<div type="examples">
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<control formAvailableTypeEncoding="EASList"/>]]>
+		</egXML>
+	</div>
 </div>

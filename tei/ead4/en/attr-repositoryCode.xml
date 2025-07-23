@@ -17,7 +17,28 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<archDesc level="collection">
+			<identificationData>
+			<unitTitle>Papers of the Permanent Representation of Ireland to the European Union</unitTitle>
+			<unitId repositoryCode="IE-NAI">PR-EU</unitId>
+		</identificationData>
+			[...]
+		</archDesc>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<archDesc level="collection" valueURI="https://library.syracuse.edu/digital/guides/s/stone_dc.htm">
+			<identificationData>
+			<unitTitle>Donald C. Stone Papers</unitTitle>
+			<unitDate unitDateType="inclusive">
+			<dateRange>
+			<fromDate standardDate="1926?">1926[?]</fromDate>
+			<toDate standardDate="1992?">1992[?]</toDate>
+		</dateRange>
+		</unitDate>
+			<unitId countryCode="US" repositoryCode="cbgtu">GTU 2001-8-03</unitId>
+		</identificationData>
+			[...]
+		</archDesc>]]>
 		</egXML>
 	</div>
 </div>

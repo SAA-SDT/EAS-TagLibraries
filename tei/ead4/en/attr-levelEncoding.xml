@@ -15,4 +15,9 @@
 	<div type="values">
 		<p>EASList, otherLevelEncoding</p>
 	</div>
+	<div type="examples">
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<control levelEncoding="EASList"/>]]>
+		</egXML>
+	</div>
 </div>
