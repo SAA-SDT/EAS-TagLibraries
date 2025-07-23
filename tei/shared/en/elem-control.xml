@@ -191,6 +191,8 @@
                         <item>Optional (values limited to: EASList, otherDetailLevelEncoding)</item>
                         <label>id</label>
                         <item>Optional</item>
+                        <label>identityTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherIdentityTypeEncoding)</item>
                         <label>languageEncoding</label>
                         <item>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2, iso639-3, otherLanguageEncoding)</item>
                         <label>languageOfElement</label>

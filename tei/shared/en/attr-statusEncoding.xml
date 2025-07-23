@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-statusEncoding" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<att>statusEncoding</att>
+	</head>
+	<div type="fullName">
+		<p>Status Encoding</p>
+	</div>
+	<div type="summary">
+		<p>The authoritative source or rules for values supplied in <att>status</att>.</p>
+	</div>
+	<div type="summary">
+		<p>Specifies the authoritative source or rules for values used to indicate the status and certainty of the information provided in various elements.</p>
+	</div>
+	<div type="description">
+		<p type="ead"><att>statusEncoding</att> specifies the authoritative source or rules for values supplied in <att>status</att> within <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>, and <gi>textualDate</gi>. If the value "EASList" is selected, <att>status</att> will be expected with the values "authorized" and "alternative" (for agency codes), "unknown" or "ongoing" (for dates). If the value "otherStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+		<p type="eac"><att>statusEncoding</att> specifies the authoritative source or rules for values supplied in <att>status</att> within <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>, and <gi>nameEntry</gi>. If the value "EASList" is selected, <att>status</att> will be expected with the values "authorized" and "alternative" (for agency codes and <gi>nameEntry</gi>), "unknown" or "ongoing" (for dates). If the value "otherStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+		<p type="eaf"><att>statusEncoding</att> specifies the authoritative source or rules for values supplied in <att>status</att> within <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>, and <gi>nameEntry</gi>. If the value "EASList" is selected, <att>status</att> will be expected with the values "authorized" and "alternative" (for agency codes and <gi>nameEntry</gi>), "unknown" or "ongoing" (for dates). If the value "otherStatusEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+	</div>
+	<div type="values">
+		<p>EASList, otherStatusEncoding</p>
+	</div>
+</div>

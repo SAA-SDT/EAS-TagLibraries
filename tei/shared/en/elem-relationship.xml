@@ -7,7 +7,9 @@
 		<p>Relationship</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>agent</gi>, <gi>function</gi>, <gi>place</gi> and <gi>subject</gi> used to specify the type of relationship that these entities have with the entity being described within the EAS instance.</p>
+		<p type="ead">A child element of <gi>agent</gi>, <gi>function</gi>, <gi>place</gi> and <gi>subject</gi> used to specify the type of relationship that these entities have with the entity being described within the EAS instance.</p>
+		<p type="eac">A child element of <gi>agent</gi> and <gi>place</gi>, used to specify the type of relationship that these entities have with the entity being described within the EAS instance.</p>
+		<p type="eaf">A child element of <gi>agent</gi>, used to specify the type of relationship that the agent has with the entity being described within the EAS instance.</p>
 	</div>
 	<div type="mayContain">
 		<p>
@@ -18,7 +20,9 @@
 		</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>agent, function, place, subject</p>
+		<p type="ead">agent, function, place, subject</p>
+		<p type="eac">agent, place</p>
+		<p type="eaf">agent</p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -53,12 +57,14 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>relationship</gi> within <gi>agent</gi>, <gi>function</gi>, <gi>place</gi> and <gi>subject</gi> to specify the type of relation that these entities have with the entity being described within the EAS instance. The <gi>relationship</gi> element contains a textual description of the relation. It is recommended that values used in <gi>relationship</gi> be taken from an authorized vocabulary.</p>
+		<p type="ead">Use <gi>relationship</gi> within <gi>agent</gi>, <gi>function</gi>, <gi>place</gi> and <gi>subject</gi> to specify the type of relation that these entities have with the entity being described within the EAS instance. The <gi>relationship</gi> element contains a textual description of the relation. It is recommended that values used in <gi>relationship</gi> be taken from an authorized vocabulary.</p>
+		<p type="eac">Use <gi>relationship</gi> within <gi>agent</gi> and <gi>place</gi> to specify the type of relation that these entities have with the entity being described within the EAS instance. The <gi>relationship</gi> element contains a textual description of the relation. It is recommended that values used in <gi>relationship</gi> be taken from an authorized vocabulary.</p>
+		<p type="eaf">Use <gi>relationship</gi> within <gi>agent</gi> to specify the type of relation that the agent with the entity being described within the EAS instance. The <gi>relationship</gi> element contains a textual description of the relation. It is recommended that values used in <gi>relationship</gi> be taken from an authorized vocabulary.</p>
 	</div>
 	<div type="attributeusage">
 		<p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
 	</div>	
-	<div type="seealso">
+	<div type="seealso" standard="ead">
 		<p>Use <gi>role</gi> in <gi>agent</gi>, <gi>function</gi>, <gi>place</gi> and <gi>subject</gi> to more specifically indicate the role of the related entity towards the entity being described in the EAS instance.</p>
 	</div>
 	<div type="availability">
