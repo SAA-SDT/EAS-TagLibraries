@@ -7,12 +7,12 @@
                   <p>Preferred Form</p>
                </div>
                <div type="summary">
-                  <p>Attribute that specifies whether or not a name provides the preferred form of the entity's name for display purposes</p>
+                  <p>Attribute that specifies whether or not a name provides the preferred form of the entity's name for display purposes.</p>
                </div>
                <div type="description">
                   <p>Attribute that specifies whether or not a <gi>nameEntry</gi> provides the
-                     preferred form of the name of the EAS entity for display purposes in a
-                     given context. Use the value "true" if the name entry is preferred for any display purposed.</p>
+                     preferred form of the name of the EAS entity for display or other purposes in a
+                     given context. Use the value "true" if the name entry is preferred for any display or other purposes.</p>
                   <p>This optional attribute is only available in <gi>nameEntry</gi>.</p>
                </div>
                <div type="values">
@@ -21,19 +21,13 @@
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<nameEntrySet languageOfElement="fre">
 		<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
-				<part>
-						Provence-Alpes-Côte d'Azur
-				</part>
+				<part>Provence-Alpes-Côte d'Azur</part>
 		</nameEntry>
 		<nameEntry conventionDeclarationReference="cd2">
-				<part>
-						Région Sud Provence-Alpes-Côte d'Azur
-				</part>
+				<part>Région Sud Provence-Alpes-Côte d'Azur</part>
 		</nameEntry>
 		<nameEntry conventionDeclarationReference="cd3">
-				<part>
-						Provence-Alpes-Côte-d'Azur
-				</part>
+				<part>Provence-Alpes-Côte-d'Azur</part>
 		</nameEntry>
 </nameEntrySet>]]>
                   </egXML>
