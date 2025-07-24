@@ -11,13 +11,13 @@
                </div>
                <div type="description">
                   <p type="eac">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
-                    Suggested values include "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
+                    Suggested values include, but are not limited to, "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
                     and <gi>toDate</gi>.</p>
                  <p type="ead">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
-                   Suggested values include "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
+                   Suggested values include, but are not limited to, "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
                    <gi>toDate</gi>, <gi>unitDate</gi>.</p>
                  <p type="eaf">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
-                    Suggested values include "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
+                    Suggested values include, but are not limited to, "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
                     and <gi>toDate</gi>.</p>
                </div>
                <div type="datatype">
@@ -25,10 +25,10 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<dateRange>
-   <fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950">
+   <fromDate calendar="gregorian" certainty="approximate" era="ce" standardDate="1950~">
       1950
    </fromDate>
-   <toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000">
+   <toDate calendar="gregorian" certainty="approximate" era="ce" standardDate="2000~">
       2000
    </toDate>
 </dateRange>]]></egXML>

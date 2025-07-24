@@ -7,47 +7,36 @@
                   <p>Maintenance Event Type</p>
                </div>
                <div type="summary">
-                  <p type="eac">A required attribute of <gi>maintenanceEvent</gi> that provides a controlled list of values for recording the type of maintenance activity.</p>
-                  <p type="ead">An optional attribute of <gi>maintenanceEvent</gi> that identifies the type of maintenance activity.</p>
-                  <p type="eaf">An optional attribute of <gi>maintenanceEvent</gi> that identifies the type of maintenance activity.</p>
+                  <p>An optional attribute of <gi>maintenanceEvent</gi> that identifies the type of maintenance activity.</p>
                </div>
                <div type="description">
-                  <p>Identifies the type of maintenance event with values such as:</p>
-                  <list type="simple">
-                     <item>cancelled: marks an instance as not current (obsolete or rejected), but retained for reference</item>
-                     <item>created: the initial creation of the EAS instance</item>
-                     <item>deleted: indication that the instance has been deleted from the system</item>
-                     <item>derived: indicates that the instance was derived from another descriptive system</item>
-                     <item>revised: any type of general modification to the EAS instance</item>
-                     <item>unknown: when the type of event is not known</item>
-                     <item>updated: when an instance has been brought up to date with significant changes to the materials being described or to the version of EAS used</item></list>
+                  <p>Identifies the type of maintenance event with values such as "created", "derived" or "updated".</p>
+                 <p>Use the attribute <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>maintenanceEventType</att>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceHistory>
-   <maintenanceEvent maintenanceEventType="derived">
-      <agent agentType="machine">
-         XSLT ead2cpf.xsl/Saxon B9
-      </agent>
-      <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
-      <eventDescription>
-         Derived from EAD instance.
-      </eventDescription>
-   </maintenanceEvent>
-   <maintenanceEvent maintenanceEventType="revised">
-      <agent agentType="unknown"/>
-      <eventDateTime standardDateTime="2021-11-27"/>
-   </maintenanceEvent>
-   <maintenanceEvent maintenanceEventType="updated">
-      <agent agentType="human">
-         K. Bredenberg
-      </agent>
-      <eventDateTime>
-         December 2021
-      </eventDateTime>
-   </maintenanceEvent>
-</maintenanceHistory>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceHistory>
+                    <maintenanceEvent maintenanceEventType="derived">
+                    <agent agentType="machine">
+                    <label>export.xsl/Saxon B9</label>
+                  </agent>
+                    <eventDateTime standardDateTime="2024-08-30T09:37:17.029-04:00"/>
+                    <eventDescription>Derived from local collection management system</eventDescription
+                  </maintenanceEvent>
+                    <maintenanceEvent maintenanceEventType="revised">
+                    <agent agentType="unknown">
+                    <label/>
+                  </agent>
+                    <eventDateTime standardDateTime="2024-11-27"/>
+                  </maintenanceEvent>
+                    <maintenanceEvent maintenanceEventType="updated">
+                    <agent agentType="person">
+                    <label>K. Bredenberg</label>
+                  </agent>
+                    <eventDateTime>December 2024</eventDateTime>
+                  </maintenanceEvent>
+                  </maintenanceHistory>]]></egXML>
                </div>
             </div>

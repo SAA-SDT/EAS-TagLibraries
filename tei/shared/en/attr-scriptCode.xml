@@ -7,39 +7,42 @@
                   <p>Script Code</p>
                </div>
                <div type="summary">
-                  <p>The code for the writing system, or script, used in the EAS instance or by the described entity or records.</p>
+                  <p type="eac">The code for the writing system, or script, used in the EAS instance or by the described entity or records.</p>
+                 <p type="ead">The code for the writing system, or script, used in the EAS instance or by the described entity or records.</p>
+                 <p type="eaf">The code for the writing system, or script, used in the EAS instance.</p>
                   </div>
                <div type="description">
-                  <p>Content of the attribute should be a code taken from ISO 15924, or another controlled list, as
-                     specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>.
-                     Optionally available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
+                  <p type="eac">Content of the attribute should be a code taken from ISO 15924, or another controlled list, as specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>. Optionally available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
+                 <p type="ead">Content of the attribute should be a code taken from ISO 15924, or another controlled list, as specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>. Optionally available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
+                 <p type="eaf">Content of the attribute should be a code taken from ISO 15924, or another controlled list, as specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>. Optionally available in <gi>languageDeclaration</gi>.</p>
                </div>
                <div type="datatype">
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<languagesUsed>
-   <languageUsed>
-      <language languageCode="eng">
-         English
-      </language>
-      <writingSystem scriptCode="Latn">
-         Latin
-      </writingSystem>
-   </languageUsed>
-   <languageUsed>
-      <language languageCode="spa">
-         Spanish
-      </language>
-      <writingSystem scriptCode="Latn">
-         Latin
-      </writingSystem>
-   </languageUsed>
-   <descriptiveNote>
-      <p>
-         Published works in English and Spanish.
-      </p>
-   </descriptiveNote>
-</languagesUsed>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<languageDeclaration languageCode="gre" scriptCode="Grek"/>]]</egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<languagesUsed>
+                    <languageUsed>
+                    <language languageCode="eng">English</language>
+                    <writingSystem scriptCode="Latn">Latin</writingSystem>
+                  </languageUsed>
+                    <languageUsed>
+                    <language languageCode="spa">Spanish</language>
+                    <writingSystem scriptCode="Latn">Latin</writingSystem>
+                  </languageUsed>
+                    <descriptiveNote>
+                    <p>Published works in English and Spanish.</p>
+                  </descriptiveNote>
+                  </languagesUsed>]]></egXML>
+                 <egXML xml:lang="eng" type="ead"><![CDATA[<languageOfMaterial>
+                    <languageSet>
+                    <writingSystem scriptCode="Latn">Latin</writingSystem>
+                    <language languageCode="dut">Dutch</language>
+                    <language languageCode="fre">French</language>
+                 </languageSet>
+                    <descriptiveNote>
+                    <p>The materials are in Dutch and French.</p>
+                  </descriptiveNote>
+                  </languageOfMaterial>]]></egXML>
                </div>
             </div>

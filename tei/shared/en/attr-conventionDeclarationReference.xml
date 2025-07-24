@@ -23,13 +23,8 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                 <egXML xml:lang="eng"><![CDATA[<agent conventionDeclarationReference="cd2">
-   <agentName>
-      Karin Bredenberg
-   </agentName>
-   <agentType>
-      person
-   </agentType>
-</agent>]]></egXML>
+                 <egXML xml:lang="eng"><![CDATA[<agent conventionDeclarationReference="cd2" agentType="person">
+                   <label>Karin Bredenberg</label>
+                 </agent>]]></egXML>
                </div>
             </div>

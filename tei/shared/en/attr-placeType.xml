@@ -18,7 +18,14 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<places>
+			<place placeType="firstOrderAdministrativeDivision">
+			<label valueURI="https://www.geonames.org/2152274/state-of-queensland.html" vocabularySource="GeoNames">Queensland</label>
+		</place>
+			<place placeType="reef">
+			<label valueURI="https://www.geonames.org/2164628/great-barrier-reef.html" vocabularySource="GeoNames">Great Barrier Reef</label>
+		</place>
+		</places>]]>
 		</egXML>
 	</div>
 </div>
