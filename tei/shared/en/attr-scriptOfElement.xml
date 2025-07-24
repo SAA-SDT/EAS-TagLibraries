@@ -7,23 +7,30 @@
                   <p>Script of Element</p>
                </div>
                <div type="summary">
-                  <p>Indicates the writing script of the content of an element (e.g., Cyrillic,
-                     Katakana).</p>
+                  <p>Indicates the writing script of the content of an element (e.g., Cyrillic, Katakana).</p>
                </div>
                <div type="description">
-                     <p>Content should be taken from ISO 15924, or another controlled list, as specified in the
-                        <att>scriptEncoding</att> attribute in <gi>control</gi>. May be used
-                     consistently in a multi-lingual EAS instance to specify which elements are
-                     written in which script. Optionally available on all non-empty elements.</p>
+                     <p>Content should be taken from ISO 15924, or another controlled list, as specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>. May be used consistently in a multi-lingual EAS instance to specify which elements are written in which script. Optionally available on all non-empty elements.</p>
                </div>
                <div type="datatype">
                  <p>token</p>
                </div>
                <div type="examples">
-                 <egXML xml:lang="eng"><![CDATA[<nameEntry status="alternative">
-   <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO" scriptOfElement="Hans">
-      阿伦特, 汉娜
-   </part>
-</nameEntry>]]></egXML>
+                 <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry status="alternative">
+                   <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO" scriptOfElement="Hans">阿伦特, 汉娜</part>
+                 </nameEntry>]]></egXML>
+                 <egXML xml:lang="eng" type="ead"><![CDATA[<unitTitle languageOfElement="ukr" scriptOfElement="Cyrl">Лист Миколи Хвильового до Михайла (Ялового)</unitTitle>
+                   <unitTitle languageOfElement="eng" scriptOfElement="Latn">Letter from Mykoly Khvylovoho to Mykhayla (Yalovoho)</unitTitle>]]></egXML>
+                 <egXML xml:lang="eng" type="eaf"><![CDATA[<nameEntrySet>
+                   <nameEntry>
+                   <part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT" languageOfElement="eng" scriptOfElement="Latn">educating</part>
+                 </nameEntry>
+                   <nameEntry>
+                   <part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT" languageOfElement="spa" scriptOfElement="Latn">educar</part>
+                 </nameEntry>
+                   <nameEntry>
+                   <part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT" languageOfElement="zho" scriptOfElement="Hant">教導</part>
+                 </nameEntry>
+                 </nameEntrySet>]]></egXML>
                </div>
             </div>
