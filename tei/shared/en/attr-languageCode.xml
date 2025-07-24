@@ -7,8 +7,9 @@
                   <p>Language Code</p>
                </div>
                <div type="summary">
-                  <p>The code for the language used in the EAS instance or by the records or entity being described.
-                  </p>
+                  <p type="eac">The code for the language used in the EAS instance or by the records or entity being described.</p>
+                 <p type="ead">The code for the language used in the EAS instance or by the records or entity being described.</p>
+                 <p type="eaf">The code for the language used in the EAS instance.</p>
                </div>
                <div type="description">
                   <p type="eac">Content of the attribute should be a code taken from ISO 639-1, ISO 639-2, ISO 639-2b, ISO 639-2t, ISO 639-3, ISO 639-5, IETF BCP 47 or another controlled list, as specified in the <att>languageEncoding</att> attribute in <gi>control</gi>. Required in <gi>languageDeclaration</gi> and optionally available in <gi>language</gi>.</p>
