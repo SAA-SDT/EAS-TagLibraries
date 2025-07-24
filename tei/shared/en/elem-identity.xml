@@ -56,7 +56,7 @@
             <item>Optional</item>
 	    <label>localType</label>
 	    <item>Optional</item>
-	    <label>LocalTypeDeclarationReference</label>
+	    <label>localTypeDeclarationReference</label>
 	    <item>Optional</item>
             <label>maintenanceEventReference</label>
             <item>Optional</item>

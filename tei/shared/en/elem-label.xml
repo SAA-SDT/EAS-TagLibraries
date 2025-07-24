@@ -7,7 +7,9 @@
 		<p>Label</p>
 	</div>
 	<div type="summary">
-		<p>A required child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>place</gi>, <gi>subject</gi>, and <gi>relation</gi> that indicates the name of the related entity.</p>
+		<p type="ead">A required child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>place</gi>, <gi>subject</gi>, and <gi>relation</gi> that indicates the name of the related entity.</p>
+		<p type="eac">A required child element of <gi>agent</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the name of the related entity.</p>
+		<p type="eaf">A required child element of <gi>agent</gi> and <gi>relation</gi> that indicates the name of the related entity.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -16,7 +18,9 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>agent, formAvailable, function, place, subject, relation</p>
+		<p type="ead">agent, formAvailable, function, place, subject, relation</p>
+		<p type="eac">agent, place, relation</p>
+		<p type="eaf">agent, relation</p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -52,7 +56,7 @@
 	</div>
 	<div type="description">
 		<p>Use <gi>label</gi> to indicate the name of the related entity, either in the generic <gi>relation</gi> element or in one of the specific entity elements.</p>
-		<p>
+		<p type="ead">
 			<list>
 				<item>In <gi>agent</gi>, this can be the name of the agent responsible for the creation, modification, or deletion of an EAD instance, as captured in <gi>maintenanceEvent</gi>, or the name of the agent who has created, managed, used, or is mentioned in the archival materials.</item>
 				<item>In <gi>formAvailable</gi>, this may e.g. be the file name of a digitised version of a record resource.</item>
@@ -61,6 +65,8 @@
 				<item>In <gi>subject</gi>, this may be a term for the genre or type of record or theme represented in the materials being described.</item>
 			</list>
 		</p>
+		<p type="eac">In <gi>agent</gi>, <gi>label</gi> can be the name of the agent responsible for the creation, modification, or deletion of an EAS instance, as captured in <gi>maintenanceEvent</gi>. In <gi>place</gi>, <gi>label</gi> can be the name of the place where a person was born or an organization was established</p>
+		<p type="eaf">In <gi>agent</gi>, <gi>label</gi> can be the name of the agent responsible for the creation, modification, or deletion of an EAS instance, as captured in <gi>maintenanceEvent</gi>.</p>
 		<p>It is recommended to use authorized vocabularies in cases where the element is valorized with a well-known corporation (i.e. "Library of Congress").</p> 
 	</div>
 	<div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>	

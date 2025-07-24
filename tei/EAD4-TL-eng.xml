@@ -145,18 +145,18 @@
             <xi:include href="ead4/en/elem-extent.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-filePlan.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-findAidDesc.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-formattingExtension.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-formattingExtension.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-formAvailable.xml" parse="xml"/>
 	    <xi:include href="ead4/en/elem-formAvailableId.xml" parse="xml"/>
 	    <xi:include href="ead4/en/elem-formsAvailable.xml" parse="xml"/>
             <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-function.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-functions.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-function.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-functions.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-genreForm.xml" parse="xml"/>
             <xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
             <xi:include href="shared/en/elem-head.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-identificationData.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-label.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-label.xml" parse="xml"/>
             <xi:include href="shared/en/elem-language.xml" parse="xml"/>
             <xi:include href="shared/en/elem-languageDeclaration.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-languageOfMaterial.xml" parse="xml"/>
@@ -166,6 +166,7 @@
             <xi:include href="shared/en/elem-maintenanceAgency.xml" parse="xml"/>
             <xi:include href="shared/en/elem-maintenanceEvent.xml" parse="xml"/>
             <xi:include href="shared/en/elem-maintenanceHistory.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-narrativeEvent.xml" parse="xml"/>
             <xi:include href="shared/en/elem-objectXMLWrap.xml" parse="xml"/>
             <xi:include href="shared/en/elem-otherAgencyCode.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-otherDescription.xml" parse="xml"/>
@@ -174,26 +175,25 @@
             <xi:include href="shared/en/elem-otherRecordId.xml" parse="xml"/>
             <xi:include href="shared/en/elem-p.xml" parse="xml"/>
             <xi:include href="shared/en/elem-part.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-physFacet.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-physicalFacet.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-physicalOrTechnicalRequirements.xml" parse="xml"/>
             <xi:include href="shared/en/elem-place.xml" parse="xml"/>
             <xi:include href="shared/en/elem-placeName.xml" parse="xml"/>
             <xi:include href="shared/en/elem-places.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-preferCite.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-processInfo.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-provenanceEvent.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-publicationNote.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-quantity.xml" parse="xml"/>
             <xi:include href="shared/en/elem-recordId.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-recordTypeSpecificStatement.xml" parse="xml"/>
             <xi:include href="shared/en/elem-reference.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-referringString.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-referringString.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-relatedMaterial.xml" parse="xml"/>
             <xi:include href="shared/en/elem-relation.xml" parse="xml"/>
             <xi:include href="shared/en/elem-relations.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-relationship.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relationship.xml" parse="xml"/>
             <xi:include href="shared/en/elem-rightsDeclaration.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-role.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-role.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-scopeContent.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-separatedMaterial.xml" parse="xml"/>
             <xi:include href="shared/en/elem-shortCode.xml" parse="xml"/>
@@ -217,16 +217,16 @@
          <div type="attributes">
 	 <!-- One include for each attribute href points to the element file -->
             <xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-addressLineTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-addressLineTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-agentType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-agentTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-agentTypeEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-approximate.xml" parse="xml"/>
             <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-audienceEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-audienceEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-calendar.xml" parse="xml"/>
             <xi:include href="shared/en/attr-certainty.xml" parse="xml"/>
             <xi:include href="shared/en/attr-contactLineType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-contactLineTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-contactLineTypeEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-containerId.xml" parse="xml"/>
             <xi:include href="shared/en/attr-conventionDeclarationReference.xml" parse="xml"/>
             <xi:include href="shared/en/attr-coordinateSystem.xml" parse="xml"/>
@@ -239,7 +239,7 @@
             <xi:include href="ead4/en/attr-descriptionOfComponentsType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-descriptionOfComponentsTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-detailLevel.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-detailLevelEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-detailLevelEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-formAvailableType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-formAvailableTypeEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-functionType.xml" parse="xml"/>
@@ -260,21 +260,22 @@
             <xi:include href="shared/en/attr-localTypeDeclarationReference.xml" parse="xml"/>
             <xi:include href="shared/en/attr-maintenanceEventReference.xml" parse="xml"/>
             <xi:include href="shared/en/attr-maintenanceEventType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-maintenanceEventTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-maintenanceStatus.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-maintenanceStatusEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceStatusEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-normalizedForm.xml" parse="xml" />
             <xi:include href="shared/en/attr-notAfter.xml" parse="xml"/>
             <xi:include href="shared/en/attr-notBefore.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-placeType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-placeTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-placeType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-placeTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-publicationStatus.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-publicationStatusEncoding.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-referredEntityRelationship.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-referredEntityType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-referredEntityTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-publicationStatusEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-referredEntityRelationship.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-referredEntityType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-referredEntityTypeEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-repositoryCode.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-relationType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-relationTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-relationType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-relationTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-repositoryEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
             <xi:include href="shared/en/attr-scriptEncoding.xml" parse="xml"/>
@@ -283,13 +284,11 @@
             <xi:include href="shared/en/attr-standardDate.xml" parse="xml"/>
             <xi:include href="shared/en/attr-standardDateTime.xml" parse="xml"/>
             <xi:include href="shared/en/attr-status.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-statusEncoding.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-subjectType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-subjectTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-statusEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-style.xml" parse="xml"/>
             <xi:include href="shared/en/attr-target.xml" parse="xml"/>
             <xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-targetTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-targetTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-unit.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-unitDateType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-unitDateTypeEncoding.xml" parse="xml"/>
