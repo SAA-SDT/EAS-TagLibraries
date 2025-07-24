@@ -22,11 +22,12 @@
                      [+|-][hh:mm], or "Z" to indicate the dateTime is UTC. No timezone implies the
                      dateTime is UTC.]</p>
                </div>
-               <div type="examples" standard="eac">
-                  <egXML xml:lang="eng" type="ead"/>
-		  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceEvent maintenanceEventType="revised">
-    <agent agentType="unknown"/>
-    <eventDateTime standardDateTime="2021-11-27"/>
+               <div type="examples">
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="revised">
+			  <agent agentType="machine">
+			  <label>export.xsl</label>
+		  </agent>
+			  <eventDateTime standardDateTime="2024-11-27"/>
 </maintenanceEvent>]]></egXML>
                </div>
             </div>
