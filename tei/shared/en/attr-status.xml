@@ -11,44 +11,20 @@
                      elements.</p> 
                </div>
                <div type="description">
-                   <p type="eac"><att>status</att> provides controlled terminology detailing the status of specific
-                       elements. The terms available for <att>status</att> are defined in closed lists that vary by
-                       element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of  
-                       terms from EAS lists that can be used as values of <att>status</att>. It is also possible 
-                       to define one's own list by using the value "otherStatusEncoding". Optionally available 
-                       in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>nameEntry</gi>, <gi>date</gi>, 
-                       <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
-                 <p type="ead"><att>status</att> provides controlled terminology detailing the status of specific
-                     elements. The terms available for <att>status</att> are defined in closed lists that vary by
-                     element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of  
-                   terms from EAS lists that can be used as values of <att>status</att>. It is also possible 
-                   to define one's own list by using the value "otherStatusEncoding". Optionally available 
-                   in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, 
-                    <gi>fromDate</gi>, <gi>toDate</gi>, <gi>textualDate</gi>.</p>
-                 <p type="eaf"><att>status</att> provides controlled terminology detailing the status of specific
-                     elements. The terms available for <att>status</att> are defined in closed lists that vary by
-                     element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of  
-                   terms from EAS lists that can be used as values of <att>status</att>. It is also possible 
-                   to define one's own list by using the value "otherStatusEncoding". Optionally available 
-                   in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, 
-                    <gi>fromDate</gi>, <gi>toDate</gi>.</p>
+                   <p type="eac"><att>status</att> provides controlled terminology detailing the status of specific elements. The terms available for <att>status</att> are defined in closed lists that can vary by element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of terms from EAS lists that can be used as values of <att>status</att>. It is also possible to define one's own list by using the value "otherStatusEncoding". Optionally available in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>nameEntry</gi>, <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
+                 <p type="ead"><att>status</att> provides controlled terminology detailing the status of specific elements. The terms available for <att>status</att> are defined in closed lists that can vary by element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of terms from EAS lists that can be used as values of <att>status</att>. It is also possible to define one's own list by using the value "otherStatusEncoding". Optionally available in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>, <gi>textualDate</gi>.</p>
+                 <p type="eaf"><att>status</att> provides controlled terminology detailing the status of specific elements. The terms available for <att>status</att> are defined in closed lists that can vary by element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of terms from EAS lists that can be used as values of <att>status</att>. It is also possible to define one's own list by using the value "otherStatusEncoding". Optionally available in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>nameEntry</gi>, <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>.</p>
                </div>
               <div type="datatype">
                   <p>token</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
-    <part localType="surname">
-        Arendt
-    </part>
-    <part localType="firstname">
-        Hannah
-    </part>
+    <part localType="surname">Arendt</part>
+    <part localType="firstname">Hannah</part>
 </nameEntry>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<dateRange>
-    <fromDate standardDate="2016-09">
-        September 2016
-    </fromDate>
+    <fromDate standardDate="2016-09">September 2016</fromDate>
     <toDate status="ongoing"/>
 </dateRange>]]></egXML>
                   <egXML xml:lang="eng"><![CDATA[<date status="unknown"/>]]></egXML>
