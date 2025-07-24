@@ -7,14 +7,13 @@
                   <p>Value</p>
                </div>
                <div type="summary">
-                  <p type="eac">Defines the type of entity described in the EAC-CPF instance.</p>
+                  <p>Defines the type of entity described in the EAC-CPF instance.</p>
                </div>
                <div type="description">
-                  <p type="eac">Required attribute within the <gi>entityType</gi> element that defines the type
-                     of entity described in the EAC-CPF instance. </p>
+                  <p>Required attribute within the <gi>entityType</gi> element that defines the type of entity described in the EAC-CPF instance. </p>
                </div>
                <div type="values">
-                  <p type="eac">corporateBody, family, person</p>
+                  <p>corporateBody, family, person</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<entityType value="person"/>]]>
