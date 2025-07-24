@@ -52,12 +52,12 @@
 	</div>
 	<div type="description">
 		<p>A statement of the rationale for decisions related to appraisal and disposition of the materials being described. Such decisions may be based upon the records’ current administrative, legal, and fiscal use; their evidential, intrinsic, and informational value; their arrangement and condition; and their relationship to other records. May include information about destruction actions, sampling, and disposition schedules.</p>
-		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>appraisal</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>appraisal</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML. Use <gi>narrativeEvent</gi> to provide a chronology of appraisal events.</p>
 		<p>The prescribed order of all child elements (both required and optional) is:</p>
 		<list type="simple">
                      <item><gi>abstract</gi> (if used)</item>
                      <item><gi>formattingExtension</gi> or <gi>p</gi></item>
-		     <item><gi>provenanceEvent</gi></item>	
+		     <item><gi>narrativeEvent</gi></item>	
                 </list>
 	</div>
 	<div type="availability">
@@ -65,7 +65,23 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<appraisal>
+			<p>The records of the Mid-Ocean Dynamics Experiment came to the Institute Archives in two accessions in 1980 and 1982. During processing the collection was reduced from fifteen cubic feet to four by discarding duplicate materials, financial records, and publications not authored by MODE participants. Forty charts and six inches of raw data presented the primary appraisal issues. The raw data consisted of bulletins and reports referring to float positions, moorings, isotherms, geostrophic velocity calculations, ships' summaries, and work proposed and work carried out during the MODE-I experiment. As this raw data was recapitulated in weekly <referringString referredEntityType="publication">MODE Hot Line Bulletins</referringString>, only a sampling was retained in the collection. Also discarded were ten charts for which there were no descriptions of indicated data points, nor were dates or test site locations provided.</p>
+			<p>Six inches of materials pertaining to the POLYMODE project, 1973-1980, were added to the Institute Archives POLYMODE collection.</p>
+			<p>The appraisal of this collection was carried out in consultation with Robert Heinmiller, a research associate at Woods Hole Oceanographic Institution during MODE.</p>
+		</appraisal>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<appraisal>
+			<narrativeEvent>
+			<date standardDate="1975">1975</date>
+			<eventDescription>Appraisal provided by donor, $12,500.</eventDescription>
+		</narrativeEvent>
+			<narrativeEvent>
+			<date standardDate="2008">2008</date>
+			<eventDescription>Appraised for insurance purposes, $15,750.</eventDescription>
+		</narrativeEvent>
+		</appraisal>]]>
 		</egXML>
 	</div>
 </div>
