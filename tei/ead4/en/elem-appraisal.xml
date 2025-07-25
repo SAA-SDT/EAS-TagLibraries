@@ -15,10 +15,10 @@
   <item>0..1</item>
   <label>formattingExtension</label>
   <item>0..1</item>
+  <label>narrativeEvent</label>
+  <item>0..n</item>
   <label>p</label>
   <item>0..n</item>
-  <label>provenanceEvent</label>
-  <item>0..n</item>			
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
