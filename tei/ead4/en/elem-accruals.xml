@@ -77,25 +77,25 @@
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<accruals>
-			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application contetx. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
+			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application context. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
 			<formattingExtension>
-			<xhtml:xhtml xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
-			<h3>Agreement on digital transfers</h3>
-			<p>All transfers of records dating from 1999 and later will happen in digital
+			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+			<xhtml:h3>Agreement on digital transfers</xhtml:h3>
+			<xhtml:p>All transfers of records dating from 1999 and later will happen in digital
                         form only. Regular transfers have been agreed in intervals of three years at
                         the end of the fiscal year. Following the Public Records Act 2023, these
                         transfers will include all records that are - by then - older than 25 years,
                         plus potentially younger records that the Office of the Governor of
-                        Queensland has deemed of permanent value and wishes to transfer early.</p>
-			<h4>Planned digital transfers</h4>
-			<p>Already planned transfers are scheduled for:</p>
-			<ul>
-                        <li>June 2026</li>
-                        <li>June 2029</li>
-                        <li>June 2032</li>
-                        <li>June 2035</li>
-                    </ul>
-                </xhtml:xhtml>
+                        Queensland has deemed of permanent value and wishes to transfer early.</xhtml:p>
+			<xhtml:h4>Planned digital transfers</xhtml:h4>
+			<xhtml:p>Already planned transfers are scheduled for:</xhtml:p>
+			<xhtml:ul>
+                        <xhtml:li>June 2026</xhtml:li>
+                        <xhtml:li>June 2029</xhtml:li>
+                        <xhtml:li>June 2032</xhtml:li>
+                        <xhtml:li>June 2035</xhtml:li>
+                    </xhtml:ul>
+                </xhtml:div>
             </formattingExtension>
         </accruals>]]>
 		</egXML>
