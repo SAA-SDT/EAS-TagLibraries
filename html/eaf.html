@@ -12,12 +12,13 @@
       <div>
          <div>
             <div class="titlePage">
-               <div class="title">Encoded Archival Functions (EAF)  Tag Library Version EAF 1.0.0</div>
+               <div class="title">Encoded Archival Functions (EAF)  Tag
+						Library Version EAF 1.0.0</div>
                <div class="edition">2025 Edition</div>
                <div class="edition">
                   <div>Prepared and maintained by the</div>
                   <div>Technical Subcommittee for Encoded Archival Standards of the Society of
-               American Archivists</div>
+					American Archivists</div>
                   <div/>
                </div>
                <div class="logo"/>
@@ -30,7 +31,52 @@
                <a href="#d1e54">Title</a>
             </div>
             <div class="toc1">
-               <a href="#d1e62">Elements</a>
+               <a href="#d1e61">Preface</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e67">Design principles</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e74">Functions</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e91">The ISDF standard</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e98">Previous efforts (2013-2018)</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e105">Effort until submission for publication (2021- onwards)</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e109">Groundwork and exploration</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e118">The ISDF descriptive structure</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e120">IDENTITY AREA</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e125">CONTEXT AREA</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e129">RELATIONSHIPS AREA</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e133">CONTROL AREA</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e137">RELATING FUNCTIONS TO CORPORATE BODIES, ARCHIVAL MATERIALS AND OTHER RESOURCES</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e141">The XML standard design principles explained</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e144">Tag Library Conventions</a>
+            </div>
+            <div class="toc1">
+               <a href="#d1e193">Elements</a>
             </div>
             <div class="toc2">
                <table>
@@ -52,7 +98,7 @@
                      </td>
                      <td>
                         <span>
-                           <a href="#elem-subfunction">subfunction</a>
+                           <a href="#elem-term">term</a>
                         </span>
                      </td>
                   </tr>
@@ -74,7 +120,7 @@
                      </td>
                      <td>
                         <span>
-                           <a href="#elem-subfunctionDescriptions">subfunctionDescriptions</a>
+                           <a href="#elem-toDate">toDate</a>
                         </span>
                      </td>
                   </tr>
@@ -96,7 +142,7 @@
                      </td>
                      <td>
                         <span>
-                           <a href="#elem-term">term</a>
+                           <a href="#elem-useDates">useDates</a>
                         </span>
                      </td>
                   </tr>
@@ -116,11 +162,6 @@
                            <a href="#elem-otherRecordId">otherRecordId</a>
                         </span>
                      </td>
-                     <td>
-                        <span>
-                           <a href="#elem-toDate">toDate</a>
-                        </span>
-                     </td>
                   </tr>
                   <tr>
                      <td>
@@ -136,11 +177,6 @@
                      <td>
                         <span>
                            <a href="#elem-p">p</a>
-                        </span>
-                     </td>
-                     <td>
-                        <span>
-                           <a href="#elem-useDates">useDates</a>
                         </span>
                      </td>
                   </tr>
@@ -402,7 +438,7 @@
                </table>
             </div>
             <div class="toc1">
-               <a href="#d1e6281">Attributes Attribute name Attribute values</a>
+               <a href="#d1e6313">Attributes Attribute name Attribute values</a>
             </div>
             <div class="toc2">
                <table>
@@ -483,7 +519,7 @@
                      </td>
                      <td>
                         <span>
-                           <a href="#attr-value">value</a>
+                           <a href="#attr-valueURI">valueURI</a>
                         </span>
                      </td>
                   </tr>
@@ -510,7 +546,7 @@
                      </td>
                      <td>
                         <span>
-                           <a href="#attr-valueURI">valueURI</a>
+                           <a href="#attr-vocabularySource">vocabularySource</a>
                         </span>
                      </td>
                   </tr>
@@ -537,7 +573,7 @@
                      </td>
                      <td>
                         <span>
-                           <a href="#attr-vocabularySource">vocabularySource</a>
+                           <a href="#attr-vocabularySourceURI">vocabularySourceURI</a>
                         </span>
                      </td>
                   </tr>
@@ -560,11 +596,6 @@
                      <td>
                         <span>
                            <a href="#attr-scriptEncoding">scriptEncoding</a>
-                        </span>
-                     </td>
-                     <td>
-                        <span>
-                           <a href="#attr-vocabularySourceURI">vocabularySourceURI</a>
                         </span>
                      </td>
                   </tr>
@@ -785,10 +816,305 @@
                      <br/>
                   </div>
                </div>
+               <div id="d1e61">
+                  <div class="head03">Preface  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>With a new start in 2022, a subgroup of TS-EAS has been exploring an XML
+						expression of the ICA content standard “International Standard for
+						Describing Functions” (ISDF). First released in 2007, ISDF is based on
+						models of functional description in use at international archival
+						institutions as well as ISO standards for records management. ISDF aims to
+						create a standardized description of business processes and other
+						recordkeeping activities that documents the creation and use of records that
+						are not met in the other ICA standards. Functions are an essential aspect of
+						archival description that captures additional elements of the records'
+						context, provenance, creation, and application. As such, archival of the
+						used functions in the records creation complement descriptions of record
+						creators (EAC-CPF) and the records themselves (EAD).The development of an XML standard to express archival functions is intended
+						to expand the suite of encoded archival standards and provide a mechanism to
+						standardize description of functions of corporate bodies. The XML standard
+						is based on ISDF and places great importance on the incorporation of
+						established schemas like EAC-CPF and EAD, adherence to recognized ontologies
+						and metadata models, and flexible options for defining functions in relation
+						to other entities. These strategies ensure consistency, interoperability,
+						and adaptability, to enhance the schema's usability and enable seamless
+						integration with existing practices and systems.This is the resulting XML standard of the work that was carried out. The EAF
+						XML standard described here is one of the parts of the EAS standards.
+						Standards are maintained by the Technical Subcommittee on Encoded Archival
+						Standards, a group housed and supported by the Society of American
+						Archivists (SAA) and overseen by the SAA Standards Committee.The final creation of EAC-F was done by members of the TS-EAS Functions
+						Subteam: Karin Bredenberg, Ypapanti (Dia) Kytta, Mpho Ngoepe, Kolbe Resnick,
+						and Elizabeth Russey Roke</div>
+               <div id="d1e67">
+                  <div class="head03">Design principles  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>The schema is designed to follow the TS-EAS design principles <a href="https://github.com/SAA-SDT/TS-EAS-subteam-notes/wiki/Design-Principles"
+                     target="new">TS-EAS Design Principles</a>], which prioritize simplicity and
+						connect community needs with the first principle. The goal is to create a
+						schema that can be customized to meet local requirements without sacrificing
+						interoperability. The schema is designed to be compatible with linked open
+						data principles and responsive to related standards and changing
+						technologies. This is accomplished by reusing data models from existing
+						schemas such as EAC-CPF and EAD, and ensuring compatibility with external,
+						widely-used ontologies and metadata models such as the newly-released
+						Records in Contexts content model (RiC). The Encoded Archival Functions XML
+						schema (henceforth referred to as EAF) has been deliberately designed to
+						offer various options for linking Function descriptions with external
+						entities and provide a bridge between XML and graph data by including a
+						mechanism for encoding semantic and relational data. </div>
+               <div id="d1e74">
+                  <div class="head03">Functions  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>Functions provide essential information for an integrated description of the
+						archival context. They describe the activities of corporate bodies that use
+						and create records in ways that are not limited to the organizational
+						structure. Identifying and processing functions can reveal unseen
+						relationships between recordkeeping activities and the corporate bodies that
+						create and maintain records. Including functions in the archival
+						description, therefore, is essential in clarifying the provenance of groups
+						of records. Functions comprise a required and well-known implement for
+						describing, understanding, and managing groups of records. The analysis of
+						organizational functions, known as functional analysis, is a technique used
+						traditionally to evaluate and process archival materials, based on the
+						relative importance of activities performed within an organization.Society of American Archivists. (2020). Dictionary of Archives
+							Terminology (DAT). Available at: <a href="https://dictionary.archivists.org" target="new">https://dictionary.archivists.org</a> Functional analysis
+						results often set the priorities for records appraisal and processing and
+						provide essential information to guide arrangement and description. ISDF
+						coordinates this content in a standardized way, providing links to agents
+						and archival records as well as providing guidance for how to structure the
+						information for use in archival description.The concept of functions is defined by ISO 30300:2020(en) as the group of
+						activities aimed at achieving one or more goals of an organization. In a
+						wider definition, functions correspond to any high-level purpose,
+						responsibility, or task assigned to a corporate body by legislation, policy,
+						or mandate. (ISDF, 2007). In both cases, functions are understood as sets of
+						coordinated processes aimed at achieving a specific outcome. These processes
+						can also be more granularly divided into sub-functions, business processes,
+						activities, tasks, or transactions. For instance, a Fundraising campaign
+						management activity (F – Activity) might be part of a Fundraising (F –
+						Function) operation in an organization (Agent – Corporate body). The
+						fundraising campaign management (F – Activity) is hierarchically related to
+						the overall fundraising Fundraising (F – Function) but, at the same time,
+						could also have an additional associative relationship with another activity
+						such as Financial Accounting (F – Activity).International
+							Council on Archives. (2016). ISDF: International Standard for Describing
+							Functions, 1st ed, English, p.p 41-43). Available at: <a href="https://www.ica.org/resource/isdf-international-standard-for-describing-functions/"
+                     target="new">https://www.ica.org/resource/isdf-international-standard-for-describing-functions/</a>Thus, functions within an organization are distinct from agents, be it a
+						corporate body, a family, or a person. Functions are processes that develop
+						beyond individuals, groups, or units of the organization. They are
+						established to perform fundamental operations of the organization, which may
+						change according to the evolution of organizational objectives. Functions
+						may consist of a partnership of activities and units, and may not
+						necessarily mirror the organizational chart. While the ISAAR-CPF and EAC-CPF
+						standards help to provide a complete description of an agent/creator of
+						records and establish relationships to specific records or groups of
+						records, this approach cannot adequately document essential information
+						about the cooperation between agents or units and decisions and processes
+						that cannot be described in terms of an agent's history. While linking
+						records to agent descriptions helps to illuminate roles and actions in
+						relation to a record, it does not provide a comprehensive understanding of
+						the stage in which they are related. Functions are often wider than a single
+						agent's activities. Additionally, they are often developed to serve a
+						specific organizational or personal objective or decision unrelated to the
+						agent that ultimately creates the recordFunctions as described in ISDF do not merely operate as subject headings but
+						are integral components of the archival context. Standardized descriptions
+						of functions provide a more comprehensive and nuanced picture of a group of
+						records by relating records and agents within the aspect of purpose,
+						revealing the processes that link agents' actions and records creation. They
+						provide essential contextual and structural information that supports the
+						organization, management, and understanding of records within an archival
+						system. By documenting functions and their relationships, ISDF ensures that
+						the provenance and operational context of records are accurately
+						represented, facilitating effective archival description and management.
+						This has been a missing piece of the archival descriptive landscape that
+						cannot be performed by merely describing records, agents, and their
+						relationships.</div>
+               <div id="d1e91">
+                  <div class="head03">The ISDF standard  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>
+                  <a href="https://www.ica.org/resource/isdf-international-standard-for-describing-functions/"
+                     target="new">ISDF (1st edition, 2007)</a> provides guidance for how to describe
+						the functions linked to the creation and upkeep of records, applied by
+						corporate bodies. Translated in multiple languages, the standard includes
+						example records to illustrate its potential use. ISDF suggests the creation of a descriptive authority metadata set per
+						function that carries identity and context information. The suggested
+						metadata set includes four areas of elements, following the structure of
+						ICA’s standards for archival and agents’ description. The main body of
+						description is developed in the Identity, Context, and Control areas. The
+						Identity area defines the different form of names, the specific type, and
+						the corresponding classification scheme if that applies. In the Context
+						area, information about the history, the legal basis and the purpose, and
+						the relevant date range of the function is recorded. The Control area
+						records the administrative information of this metadata set. ISDF also
+						provides a metadata section entitled the Relationship area (5.3) that
+						relates the function to other functions to create a functions inventory. The
+						standard also discusses how to establish external relations to other
+						entities such as agents and records. The standard, therefore, provides two
+						different mechanisms for documenting relationships between entities: one
+						with other metadata sets describing other functions and another for relating
+						them to agents and records. Translated into different languages, the
+						standard includes examples authored by different members that illustrate the
+						various ways these relationships can be established, resulting in no unified
+						way to express relationships within ISDF. </div>
+               <div id="d1e98">
+                  <div class="head03">Previous efforts (2013-2018)  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>There have been multiple efforts to develop an XML serialization of ISDF,
+						largely spearheaded by the Technical Subcommittee on Encoded Archival
+							Standards.The most recent iteration of these efforts was in
+							2018. The committee included Kathy Wisser (chair), Erica Boudreau,
+							Florence Clavaud, Claire Sibille-de Grimouard, and Joost van
+							Koutrik. A central goal of these efforts was to gather real world
+						examples of ISDF descriptions and XML-based implementations of ISDF as well
+						as defining the need, purpose, and goals of an XML schema for functions. A
+						number of test documents were created early on to interpret ISDF and create
+						an XML structure to support each test creator's need for an XML document to
+						use. These early efforts focused on adapting one of these examples for
+						broader use, but the examples varied widely in their application and
+						significant questions remained about how ISDF data could be created
+						consistently and accurately. For instance, functions described within
+						descriptive contextual metadata are usually done by archivists without
+						sufficient knowledge of the functions and activities of the corporate body.
+						Additionally, there is no mechanism for capturing or reusing existing
+						descriptions of functions and activities in an archival setting. This means
+						that the proposed XML standard needed to be easy to use and bear familiarity
+						with the already existing EAS standards EAD and EAC-CPF so archivists could
+						create these examples manually. The team has also looked at software for
+						creating archival description. Most of them only had a description field for
+						giving a textual description of functions and activities rather than
+						structured metadata fields for different elements. AtoM, which has a
+						ISDF-based form to create this type of information as described earlier in
+						the text, was the exception.</div>
+               <div id="d1e105">
+                  <div class="head03">Effort until submission for publication (2021- onwards)  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>In 2021 the focus shifted from reworking current examples into a
+						newly-conceived standard to an approach that attempted to reuse what already
+						is available in existing models and ontologies while still supporting the
+						conceptual structure and elements of the ISDF standard. A primary end goal
+						for this work was to support multiple options for describing and relating
+						functions’ entities depending upon local use cases and needs. It is also
+						important that a new EAS standard follow the decided and guiding design
+						principles created by TS-EAS and to be used for Encoded Archival Description
+						(EAD) and Encoded Archival Context–Corporate Bodies, Persons and Families
+						(EAC-CPF). The central aim during this phase was to create a proposal in the form of a
+						white paper with accompanying examples, to solicit comments from all types
+						of users to make sure that the standard would be useful to a wide variety of
+						implementers and support a range of use cases. The white paper gave valuable
+						input into the work with creating a standard for describing functions.</div>
+               <div id="d1e109">
+                  <div class="head03">Groundwork and exploration  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>Previous research by TS-EAS members had not identified any full
+						implementations that encode archival functions, so investigation of the
+						examples offered by ISDF in its first editions was a primary starting point.
+						Using the contents and the structure of these examples, group members
+						attempted to translate them into XML and match them to existing EAD/EAC-CPF
+						data models as well as linked data ontologies including the RiC content
+						model. These included examples provided in the French, Spanish, and English
+						ISDF editions. Moreover, searching for a real-life example of Functions’
+						inclusion in archival practice, relevant information was retrieved from the
+						Swedish best practice for archival description in <a href="https://riksarkivet.se/resurser/redovisa-verksamhetsinformation"
+                     target="new">Guidance on the National
+						Archives' regulations on record keeping</a> that enriched our encoding trials.
+						These experiments revealed that even within the ISDF standard and the
+						examples it provides, there was a lack of a unified understanding of the
+						concept of function and an equable application of the standard.To ensure that the new encoding standard supports the variety of use cases we identified, we have developed an XML standard that creates separate ISDF records for each function or activity. The main body of description for each function includes elements such as  identity, dates, events, history, and legislation. This main set of elements is related with other function(s), activity(ies), record(s), and agent(s) descriptions through the use of the relations element. These relationships described in each relation element mirror the relation elements in EAD and EAC-CPF and are declared as sub-joins within the same record. This option allows a series of interrelated records that provide a high level of granularity and flexibility to be developed.Describing functions and activities will be new for some archival communities of practice and we hope that an XML-friendly version of this standard will encourage description of functions and activities and provide a mechanism to easily exchange the information in a format that can be used worldwide.</div>
+               <div id="d1e118">
+                  <div class="head03">The ISDF descriptive structure  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>
+               </div>
+               <div id="d1e120">
+                  <div class="head03">IDENTITY AREA  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>The Identity area in ISDF provides all information necessary to identify the function.
+						It records the type of function, the authorized form(s) of name, parallel and other form(s) of name, and the classification scheme indicator ID applicable.
+					The approach follows the description of identities in EAC-CPF.</div>
+               <div id="d1e125">
+                  <div class="head03">CONTEXT AREA  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>The Context area includes the dates / date range of the function, the description of the function focusing on its purpose, the history of its performance including the changes applied over the time along with information about the relevant organizational units, and the regulatory / legal framework under which the function was performed.The  approach follows the description of identities in EAC-CPF.</div>
+               <div id="d1e129">
+                  <div class="head03">RELATIONSHIPS AREA  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>The Relationships area in ISDF provides information on how the function under description is related to other function documents. This includes the authorized form(s) of name of the related function, the type, and the category of the relationship to provide a hierarchical, temporal, or associative connection.The approach used is based upon the creation of  a function description for each function and relating them by reusing the relationship elements of EAF. </div>
+               <div id="d1e133">
+                  <div class="head03">CONTROL AREA  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>The Control area in ISDF includes administrative information and maintenance management of the record created for the described function. This section contains information about the document itself, including identification, maintenance, and vocabularies used.Our approach follows the definition of the Control area in the EAS standards (EAD and EAC-CPF).</div>
+               <div id="d1e137">
+                  <div class="head03">RELATING FUNCTIONS TO CORPORATE BODIES, ARCHIVAL MATERIALS AND OTHER RESOURCES  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>ISDF provides indications for the relations to the other entities but these are not included as an area in the document of the function’s description but applied as additional linkage. Relating a function document to another type of entity such as archival records, corporate bodies records, or other resources requires the documentation of identifier and authorized form(s) of name/title of related resource, and information of the nature and the dates of the relationship.In order to relate a function to other entities (i.e., agents or records), there is a reuse of the relations element established in the EAS standards as seen in both the EAD and EAC-CPF standards to relate to other entities.  This approach is specifically designed to enable implementers to  incorporate external vocabularies and ontologies (such as RiC) to describe these relationships.</div>
+               <div id="d1e141">
+                  <div class="head03">The XML standard design principles explained  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>The EAF XML standard is designed to be easily implemented.  Throughout the new XML standard, we have aligned elements and concepts with shared elements in all of the EAS standards, particularly those from the revised EAC-CPF. This ensures that dates, for example, are described in the same way as for EAC-CPF and EAD. The TS-EAS Functions Team has also placed special attention on how to make the XML description linked data-friendly and thus possible to be a stepping stone between an XML format for describing functions and activities and RDF-based ontologies such as Records in Contexts. Ontologies describing terms for functions, activities, and relationships with other entities such as those outlined in the Records in Contexts content model can be reused within EAF to ensure forward compatibility with evolving standards. Institutions with local ontologies and local vocabularies will also find it easy to reference those within the structure of this schema.  The semantic and relational elements in the EAF schema will also ensure relationships with domain-specific schemas such as PREMIS can be established and maintained. Additional recommendations for complementary ontologies will be part of the final documentation.</div>
+               <div id="d1e144">
+                  <div class="head03">Tag Library Conventions  <a class="tocReturn" href="#toc">[toc]</a>
+                  </div>The EAC-CPF Elements section of the Tag Library contains descriptions of 91
+						elements, arranged alphabetically by element name.<div class="leftcol">Tag Name: </div>
+                  <div class="content">Short, mnemonic form of the element name that is used in the
+							machine-readable encoded document. The tag name is the first word at the top of
+							the page. Tag names appear between angle brackets, e.g., &lt;nameEntry&gt;,
+							except in the listings under "May occur within" and "May contain," and are
+							always in camel case (camelCase).</div>
+                  <div class="leftcol">Element Name:</div>
+                  <div class="content">Expanded version of the tag name that more fully describes the element's
+							meaning. The full name of the element is usually a word or phrase that
+							identifies the element's purpose. In the Tag Library, the element name follows
+							the tag name on the page defining that element and appears with initial capital
+							letters, e.g., &lt;nameEntry&gt; Name Entry.</div>
+                  <div class="leftcol">Summary:</div>
+                  <div class="content">A brief statement that provides a concise definition of the element,
+							suitable for quick reference.</div>
+                  <div class="leftcol">May Contain:</div>
+                  <div class="content">Identifies what child nodes (text or elements) may occur within the element
+							being defined. Elements are listed in alphabetical order by tag name. Elements
+							may be empty (e.g., an element which allows no child text or element nodes), or
+							they may contain text (listed as [text]), other elements, or a mixture of text
+							and other elements.Text content cannot include characters that would be
+							interpreted by a parser as action codes. For example, a left angle bracket must 
+							be represented as the character entity reference &amp;lt; so that it is not
+							misinterpreted as the start of an element name. The technical availability
+							of child elements is listed in brackets beside each element, e.g. place (0..1).
+							The first character represents the minimum occurrences of the child element and
+							the final character represents the maximum occurrences of the child element,
+							with 'n' representing unlimited occurrences.</div>
+                  <div class="leftcol">May Occur Within:</div>
+                  <div class="content">Identifies all the parent elements within which the described element may
+							appear, listed in alphabetical order by tag name. This information conveys
+							information about where and how often an element is available throughout the
+							schema. The definitions for parent elements may provide additional information
+							about an element's usage.</div>
+                  <div class="leftcol">Attributes:</div>
+                  <div class="content">Identifies all attributes that can be associated with an element. Attributes
+							are represented in camelCase letters in XML coding. The Tag Library uses the
+							convention of preceding an attribute name with an @ symbol (e.g.,
+							@localType), following XPath syntax. See the EAC-CPF Attributes
+							section of the tag library for definitions and additional information.</div>
+                  <div class="leftcol">Description and Usage:</div>
+                  <div class="content">This section begins with one or more paragraphs that provide a more thorough
+							description of the element than that found in the Summary, which may be
+							followed by guidance on use. The terms "parent" and "child" are used to
+							indicate hierarchical relationships between elements. Standard terminology is
+							also used to suggest the kind of element being discussed. "Wrapper element"
+							indicates an element that cannot contain text directly; a second, nested
+							element must be opened first. When the schema enforces a specific sequence of
+							child elements, that sequence is indicated. If useful, context-specific
+							guidance for the usage of an element's attributes is given in an "Attribute
+							usage" section. A "See also" section may be provided to indicate additional
+							elements that are similar, easily confused, or otherwise related to the element
+							being described.</div>
+                  <div class="leftcol">Availability:</div>
+                  <div class="content">Indicates, within the context of its parent(s), whether the element is
+							required or optional, and whether or not it is repeatable. </div>
+                  <div class="leftcol">Examples:</div>
+                  <div class="content">Element and attribute descriptions include a tagged example to indicate how
+							attributes and elements can be used together. Many of the examples are taken
+							from real authory records; others have been specially constructed for the Tag
+							Library. The examples illustrate any required sequences of elements, as in the
+							case of children within &lt;control&gt;, or required attributes such as
+							@part in &lt;nameEntry&gt;. In other cases, the examples simply
+							show what is possible. Some examples have ellipses, either between or within
+							elements, indicating that other elements or text have been omitted. Some
+							elements have multiple examples: one may show very dense markup with numerous
+							attributes while another may illustrate a minimalist approach to the markup.
+							Either approach is valid in EAC-CPF, and it is up to the instance creator to
+							determine the optimal level of markup based on their specific purposes,
+							functional requirements, resources, or consortial guidelines.</div>
+               </div>
             </div>
          </div>
          <div>
-            <div class="section" id="d1e62">
+            <div class="section" id="d1e193">
                <div class="head03">Elements</div>
                <div class="element">
                   <div class="leftcol" id="elem-address">
@@ -3285,7 +3611,7 @@ This element is distinct from &lt;functionHistory&gt;, which is intended to reco
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
                      <div class="centercol">
-                        <a href="#attr-LocalTypeDeclarationReference">LocalTypeDeclarationReference</a>
+                        <a href="#attr-localTypeDeclarationReference">localTypeDeclarationReference</a>
                      </div>
                      <div class="rightcol">Optional</div>
                      <div class="leftcolattrlist"> </div>
@@ -5773,115 +6099,6 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <br/>
                </div>
                <div class="element">
-                  <div class="leftcol" id="elem-subfunction">
-                     <span class="label">&lt;subfunction&gt;</span>
-                  </div>
-                  <div class="content">
-                     <span class="label">Subfunction</span>  <a class="tocReturn" href="#toc">[toc]</a>
-                  </div>
-                  <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
-                  <div class="content">
-                     <a href="#elem-description0..1identity1..1subfunction0..n">description0..1identity1..1subfunction0..n</a>
-                  </div>
-                  <div class="leftcol">May occur within: </div>
-                  <div class="content">
-                     <a href="#elem-subfunction">subfunction</a>, <a href="#elem-subfunctionDescriptions">subfunctionDescriptions</a>
-                  </div>
-                  <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
-                  <div class="leftcol">Attributes Attribute name Attribute values: </div>
-                  <div class="content">
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-audience">audience</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-conventionDeclarationReference">conventionDeclarationReference</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-functionStatus">functionStatus</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-id">id</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-languageOfElement">languageOfElement</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-maintenanceEventReference">maintenanceEventReference</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-scriptOfElement">scriptOfElement</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-sequence">sequence</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-sourceReference">sourceReference</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-target">target</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                  </div>
-                  <div class="leftcol">Availability: </div>
-                  <div class="content">Within &lt;subfunctionDescriptions&gt;: Required, RepeatableWithin &lt;subfunction&gt;: Optional, Repeatable</div>
-                  <div class="leftcol">Example:</div>
-                  <div class="content"/>
-                  <br/>
-               </div>
-               <div class="element">
-                  <div class="leftcol" id="elem-subfunctionDescriptions">
-                     <span class="label">&lt;subfunctionDescriptions&gt;</span>
-                  </div>
-                  <div class="content">
-                     <span class="label">Subfunction Descriptions</span>  <a class="tocReturn" href="#toc">[toc]</a>
-                  </div>
-                  <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the element is used for</div>A listing of usage of attributes with the element (optional)A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)<div class="leftcol">May contain Element/content type Occurrences: </div>
-                  <div class="content">
-                     <a href="#elem-subfunction1..n">subfunction1..n</a>
-                  </div>
-                  <div class="leftcol">May occur within: </div>
-                  <div class="content">
-                     <a href="#elem-description">description</a>
-                  </div>
-                  <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the element. Mark up other &lt;elements&gt; and attributes mentioned from the same Tag Library.</div>
-                  <div class="leftcol">Attributes Attribute name Attribute values: </div>
-                  <div class="content">
-                     <div class="leftcolattrlist"> </div>
-                     <div class="centercol">
-                        <a href="#attr-audience">audience</a>
-                     </div>
-                     <div class="rightcol">Optional</div>
-                  </div>
-                  <div class="leftcol">Availability: </div>
-                  <div class="content">Optional, Not Repeatable</div>
-                  <div class="leftcol">Example:</div>
-                  <div class="content"/>
-                  <br/>
-               </div>
-               <div class="element">
                   <div class="leftcol" id="elem-term">
                      <span class="label">&lt;term&gt;</span>
                   </div>
@@ -6154,7 +6371,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <br/>
                </div>  <a class="tocReturn" href="#toc">[toc]</a>
             </div>
-            <div class="section" id="d1e6281">
+            <div class="section" id="d1e6313">
                <div class="head03">Attributes Attribute name Attribute values</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType">
@@ -6165,8 +6382,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="leftcol">Summary: </div>
                   <div class="content">Used to specify the type of address line encoded in &lt;addressLine&gt;. </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">An attribute used to specify the type of address line encoded in
-                        &lt;addressLine&gt;, eg "street", "country" or "postalCode". </div>
+                  <div class="content">Use addressLineType with &lt;addressLine&gt; to specify the type of address line, e.g. "street", "country" or "postalCode".Use the attribute addressLineTypeEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of addressLineType.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6186,6 +6402,9 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content">addressLineTypeEncoding specifies the authoritative source or rules for values supplied in addressLineType within &lt;addressLine&gt;. If the value "EASList" is selected, addressLineType will be expected with the values "county", "country", "district", "municipality", "postBox", "postalCode", "region", or "street". If the value "otherAddressLineTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherAddressLineTypeEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -6195,12 +6414,13 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content"> <span class="label">Agent Type</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content"/>
+                  <div class="content">An optional attribute of &lt;agent&gt; that indicates the type of agent relevant in a specific context.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Use the attribute agentTypeEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of agentType.</div>
+                  <div class="content">
+                     <div class="p">Use agentType in &lt;agent&gt; to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within &lt;maintenanceEvent&gt;.</div>Use the attribute agentTypeEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of agentType.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="content"/>
                   <br/>
                </div>
@@ -6217,6 +6437,9 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content">agentTypeEncoding specifies the authoritative source or rules for values supplied in agentType within &lt;agent&gt;. If the value "EASList" is selected, agentType will be expected with the values "corporateBody", "family", "group", "human", "mechanism", "person", "position", or "unknown". If the value "otherAgentTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherAgentTypeEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -6228,13 +6451,13 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="leftcol">Summary: </div>
                   <div class="content">An optional attribute that helps control whether the information contained in the element should be available to all viewers or only to repository staff.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Available as global attribute for all elements. The attribute can be set to "external" in e.g. cpfDescription in EAC-CPF or archDesc in EAD to allow access to all the information about the entity or the materials being described, but specific elements within these sections can also be set to "internal" to reserve that information for repository access only. This feature is intended to assist application software in restricting access to particular information by explicitly identifying data that is potentially sensitive or may otherwise have a limited audience. Special software capability may be needed, however, to prevent the display or export of an element marked "internal" when a whole EAS instance is displayed in a networked environment.Use the attribute audienceEncoding in &lt;control&gt; to identify the list of terms to be used as values of audience.</div>
+                  <div class="content">Available as global attribute for all elements. The attribute can be set to "external" in e.g. cpfDescription in EAC-CPF, archDesc in EAD, or functionsDescription in EAF to allow access to all the information about the entity, materials, or functions being described, but specific elements within these sections can also be set to "internal" to reserve that information for repository access only. This feature is intended to assist application software in restricting access to particular information by explicitly identifying data that is potentially sensitive or may otherwise have a limited audience. Special software capability may be needed, however, to prevent the display or export of an element marked "internal" when a whole EAS instance is displayed in a networked environment.Use the attribute audienceEncoding in &lt;control&gt; to identify the list of terms to be used as values of audience.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Examples:</div>
                   <div class="content">
                      <div class="example">
-                        <pre lang="xml">&lt;eaf audience="external"&gt; [...] &lt;/ead&gt;</pre>
+                        <pre lang="xml">&lt;eaf audience="external"&gt; [...] &lt;/eaf&gt;</pre>
                      </div>
                   </div>
                   <br/>
@@ -6252,6 +6475,9 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content">audienceEncoding specifies the authoritative source or rules for values supplied in audience available in all elements. If the value "EASList" is selected, audience will be expected with the values "external" or "internal". If the value "otherAudienceEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherAudienceEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -6308,7 +6534,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content">Used to specify the type of contact line encoded in &lt;contactLine&gt;.</div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">An attribute used to specify the type of contact line encoded in
-                        &lt;contactLine&gt;, eg "email", "phoneNumber" or "homepage".</div>
+                        &lt;contactLine&gt;, e.g. "email", "phoneNumber" or "homepage".</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6328,6 +6554,9 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content">contactLineTypeEncoding specifies the authoritative source or rules for values supplied in contactLineType within &lt;contactLine&gt;. If the value "EASList" is selected, contactLineType will be expected with the values "directions", "email", "fax", "homepage", "mobileNumber", or "phoneNumber". If the value "otherContactLineTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherContactLineTypeEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -6381,7 +6610,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="leftcol">Summary: </div>
                   <div class="content">A unique code representing a country.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Content of the optional attribute should be a code taken from ISO 3166-1 Codes for the Representation of Names of Countries and their Subdivisions, column A2, or another controlled list, as specified in the countryEncoding attribute in &lt;control&gt;. Available in &lt;maintenanceAgency&gt; and &lt;placeName&gt;.</div>
+                  <div class="content">Content of the optional attribute should be a code taken from the part of ISO 3166 Country Codes or another controlled list specified in the countryEncoding attribute in &lt;control&gt;. Available in &lt;maintenanceAgency&gt; and &lt;placeName&gt;.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Examples:</div>
@@ -6401,7 +6630,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">countryEncoding specifies the authoritative source or rules for values supplied in countryCode within &lt;maintenanceAgency&gt; and &lt;placeName&gt;.</div>This can either be the ISO standard 3166-1 or an alternative code list. If the value "otherCountryEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                     <div class="p">countryEncoding specifies the authoritative source or rules for values supplied in countryCode within &lt;maintenanceAgency&gt; and &lt;placeName&gt;.</div>This can either be a specific part of the ISO standard 3166 or an alternative code list. If the value "otherCountryEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">iso3166-1-alpha-2, iso3166-1-alpha-3, iso3166-1-numeric, iso3166-2, iso3166-3, otherCountryEncoding</div>
                   <div class="leftcol">Example:</div>
@@ -6433,11 +6662,9 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content"> <span class="label">Level of Detail</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">Provides information about the level of detail of the entity’s description within the EAS instance.</div>
+                  <div class="content">Provides information about the level of detail of the description encoded within the EAS instance.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">An optional attribute within &lt;control&gt;, used to provide information
-                     about the level of detail in accordance with relevant description guidelines and/or rules of the entity's description, from a fixed set of
-                     values. </div>
+                  <div class="content">An optional attribute within &lt;control&gt;, used to provide information about the level of detail in accordance with relevant description guidelines and/or rules.Use the attribute detailLevelEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of detailLevel.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6457,6 +6684,9 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content">detailLevelEncoding specifies the authoritative source or rules for values supplied in detailLevel within &lt;control&gt;. If the value "EASList" is selected, detailLevel will be expected with the values "basic", "extended" or "minimal". If the value "otherDetailLevelEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherDetailLevelEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -6470,7 +6700,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
-                    Suggested values include "ce" and "bce". This optional attribute is available in &lt;date&gt;, &lt;fromDate&gt;, 
+                    Suggested values include, but are not limited to, "ce" and "bce". This optional attribute is available in &lt;date&gt;, &lt;fromDate&gt;, 
                     and &lt;toDate&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
@@ -6516,8 +6746,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">The optional href attribute takes the form of a Uniform Resource Identifier
-         (URI). Available in &lt;contactLine&gt;, &lt;reference&gt;, and &lt;source&gt;.</div>
-                  </div>
+         (URI). Available in &lt;contactLine&gt;, &lt;reference&gt;, and &lt;source&gt;.</div>Being of type "anyURI", href is meant to point to any dereferencable resource. The term resource is used in a general sense and includes, but is not limited to, electronic documents, images, services (e.g. an HTTP-to-SMS gateway), collections of other resources, etc. A resource is not necessarily accessible via the Internet, i.e. not every URI is a URL, and abstract concepts can be resources too, such as the operators and operands of a mathematical equation or numeric values (e.g., zero, one, and infinity). While the use of complete URIs is recommended, it is also possible to use relative references in href, e.g. only consisting of a string of numbers.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">anyURI</div>
                   <div class="leftcol">Example:</div>
@@ -6532,16 +6761,27 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content"> <span class="label">ID</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A unique identifier to name the element.</div>
+                  <div class="content">A unique identifier to name a specific element within an EAS instance.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">An identifier that must be unique within the current document and is used to
-                     name the element so that it can be referred to, or referenced from, somewhere else in the record. This facilitates building links between the element and other resources within the current document.
+                  <div class="content">An identifier that must be unique within the current EAS instance and is used to name the element so that it can be referred to from somewhere else in the EAS instance. This facilitates building links between the element and other elements within the same XML file, though it can also be used to point to a specific element from outside of the EAS instance.
                      Use target, conventionDeclarationReference, localTypeDeclarationReference, maintenanceEventReference, or sourceReference to link to an id attribute within the EAS instance.
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">ID</div>
                   <div class="leftcol">Examples:</div>
-                  <div class="content"/>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+                   &lt;functionHistory&gt;
+                   &lt;p target="#lex1"&gt;Since 1862, liquidation also meant bringing criminal proceedings against directors and others who were alleged to have committed offences in relation to the company.&lt;/&lt;p&gt;
+                 &lt;/functionHistory
+                   &lt;legislations&gt;
+                   &lt;legislation id="lex1"&gt;Joint Stock Companies Act, 1856; Companies Act, 1862; Companies Act, 1900; Companies Act, 1907; Companies (Consolidation) Act, 1908; Companies Act, 1928; Companies Act, 1929; Companies Act, 1947&lt;/legislation&gt;
+                 &lt;/legislations&gt;
+                 &lt;/description&gt;
+                 &lt;/functionsDescription&gt;</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="spacer"> </div>
@@ -6555,11 +6795,8 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content">Indicates whether the identity is given or acquired. May be useful for
                      processing when multiple identities are described in the same instance.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">The identityType may occur on &lt;identity&gt;. Though optional, it
-                     is recommended that it be used when multiple identities are described in the
-                     same EAS instance using &lt;multipleIdentities&gt;. It will enable
-                     processors to distinguish between the description of a person and one or more
-                     personae.</div>
+                  <div class="content">
+                     <div class="p">The identityType may occur on &lt;identity&gt;.</div>Use the attribute identityTypeEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of identityType.</div>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -6574,13 +6811,12 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="leftcol">Summary: </div>
                   <div class="content">Specifies the authoritative source or rules for values used to identify the type of identity being used.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">@identityTypeEncoding specifies the authoritative source or rules for
-			values supplied in @identityType within &lt;identity&gt;. If the value
-"EASList" is selected, @identityType will be expected with the values
-"acquired" or "given". If the value "otherIdentityTypeEncoding" is selected, an alternate code list
-should be specified in &lt;conventionDeclaration&gt;. This optional attribute is on available in &lt;control&gt;.</div>
+                  <div class="content">identityTypeEncoding specifies the authoritative source or rules for values supplied in identityType within &lt;identity&gt;. If the value "EASList" is selected, identityType will be expected with the values "acquired" or "given". If the value "otherIdentityTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is on available in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherIdentityTypeEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -6590,15 +6826,16 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content"> <span class="label">Language Code</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">The code for the language used in the EAS instance or by the records or entity being described.
+                  <div class="content">
+                     <div class="p">The code for the language used in the EAS instance.</div>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">Content of the attribute should be a code taken from ISO 639-1, ISO 639-2, ISO 639-3, IETF BCP 47 or another controlled list, as specified in the languageEncoding attribute in &lt;control&gt;. </div>
+                     <div class="p">Content of the attribute should be a code taken from ISO 639-1, ISO 639-2, ISO 639-2b, ISO 639-2t, ISO 639-3, ISO 639-5, IETF BCP 47 or another controlled list, as specified in the languageEncoding attribute in &lt;control&gt;. Required in &lt;languageDeclaration&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="content"/>
                   <br/>
                </div>
@@ -6614,7 +6851,8 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                      <div class="p">Specifies the authoritative source or rules for codes used to identify the language of the EAS instance as a whole, of a specific element, or represented in the function entity being described.</div>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">languageEncoding specifies the authoritative source or rules for values supplied in languageCode within &lt;languageDeclaration&gt; and &lt;language&gt; and in languageOfElement available in all non-empty elements.This can either be one of the ISO standards 639-1, 639-2, 639-2b, 639-2t, 639-3, and 369-5, the IETF BCP 47 language tag or an alternative code list. If the value "otherLanguageEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  <div class="content">
+                     <div class="p">languageEncoding specifies the authoritative source or rules for values supplied in languageCode within &lt;languageDeclaration&gt; and in languageOfElement available in all non-empty elements.</div>This can either be one of the ISO standards 639-1, 639-2, 639-2b, 639-2t, 639-3, and 639-5, the IETF BCP 47 language tag or an alternative code list. If the value "otherLanguageEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">iso639-1, iso639-2, iso639-2b, iso639-2t, iso639-3, iso639-5, ietf-bcp-47, otherLanguageEncoding</div>
                   <div class="leftcol">Example:</div>
@@ -6632,11 +6870,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">Indicates the language of the content of an element. 
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Content of the attribute should be a code taken from ietf-bcp-47, ISO 639-1, ISO 639-2, ISO 639-3, or another
-                     controlled list, as specified in the languageEncoding attribute in
-                        &lt;control&gt;. May be used consistently in a multi-lingual EAS instance 
-                     to specify which elements are written in which language. Optionally available
-                     on all non-empty elements.</div>
+                  <div class="content">Content of the attribute should be a code taken from ISO 639-1, ISO 639-2, ISO 639-2b, ISO 639-2t, ISO 639-3, ISO 639-5, IETF BCP 47 or another controlled list, as specified in the languageEncoding attribute in &lt;control&gt;. May be used consistently in a multi-lingual EAS instance to specify which elements are written in which language. Optionally available on all non-empty elements.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6656,8 +6890,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
                      <div class="p">A URI that characterizes the nature of the remote resource to which a linking element
-         refers. Optionally available in &lt;contactLine&gt;, &lt;reference&gt;, and &lt;source&gt;.</div>
-                  </div>
+         refers. Optionally available in &lt;contactLine&gt;, &lt;reference&gt;, and &lt;source&gt;.</div>Being of type "anyURI", linkRole is meant to point to any dereferencable resource. The term resource is used in a general sense and includes, but is not limited to, electronic documents, images, services (e.g. an HTTP-to-SMS gateway), collections of other resources, etc. A resource is not necessarily accessible via the Internet, i.e. not every URI is a URL, and abstract concepts can be resources too, such as the operators and operands of a mathematical equation or numeric values (e.g., zero, one, and infinity). While the use of complete URIs is recommended, it is also possible to use relative references in linkRole, e.g. only consisting of a string of numbers.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">anyURI</div>
                   <div class="leftcol">Example:</div>
@@ -6724,7 +6957,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="leftcol">Summary: </div>
                   <div class="content">Use localTypeDeclarationReference to provide a direct link to a
                         &lt;localTypeDeclaration&gt; element within &lt;control&gt; from another
-                     element using localType within the EAS instance.
+                     element within the EAS instance using localType.
                   </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">localTypeDeclarationReference should always be used when 
@@ -6747,10 +6980,10 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">Use maintenanceEventReference to provide a direct link to a
                         &lt;maintenanceEvent&gt; element within &lt;maintenanceHistory&gt;.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">The attribute can be used to link to a maintenance event in order to verify any assertion added to the entity’s description.The attribute is optionally available in all elements in the identity area (except &lt;entityType&gt;), in the description area, and in the relations area.The attribute is optionally available in all elements that can contain text and are available outside of &lt;control&gt;. </div>
+                  <div class="content">The attribute can be used to link to a maintenance event in order to verify any assertion added to the entity’s description.The attribute is optionally available in all elements that can contain text and are available outside of &lt;control&gt;.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">IDREFS</div>
-                  <div class="leftcol">Examples:</div>
+                  <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
                </div>
@@ -6762,20 +6995,9 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content"> <span class="label">Maintenance Event Type</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">
-                     <div class="p">An optional attribute of &lt;maintenanceEvent&gt; that identifies the type of maintenance activity.</div>
-                  </div>
+                  <div class="content">An optional attribute of &lt;maintenanceEvent&gt; that identifies the type of maintenance activity.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Identifies the type of maintenance event with values such as:<div class="blockIndent">cancelled: marks an instance as not current (obsolete or rejected), but retained for reference<br/>
-                        <br/>created: the initial creation of the EAS instance<br/>
-                        <br/>deleted: indication that the instance has been deleted from the system<br/>
-                        <br/>derived: indicates that the instance was derived from another descriptive system<br/>
-                        <br/>revised: any type of general modification to the EAS instance<br/>
-                        <br/>unknown: when the type of event is not known<br/>
-                        <br/>updated: when an instance has been brought up to date with significant changes to the materials being described or to the version of EAS used<br/>
-                        <br/>
-                     </div>
-                  </div>
+                  <div class="content">Identifies the type of maintenance event with values such as "created", "derived" or "updated".Use the attribute maintenanceEventTypeEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of maintenanceEventType.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6795,6 +7017,9 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">maintenanceEventTypeEncoding specifies the authoritative source or rules for values supplied in maintenanceEventType within &lt;maintenanceEvent&gt;. If the value "EASList" is selected, maintenanceEventType will be expected with the values "cancelled", "created", "deleted", "derived", "revised", "unknown", or "updated". If the value "otherMaintenanceEventTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherMaintenanceEventTypeEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -6806,25 +7031,10 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="leftcol">Summary: </div>
                   <div class="content">The current drafting status of the EAS instance.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">
-                     <div class="p">The maintenance status must occur on &lt;control&gt;.</div>As an EAS instance is modified or other events happen to it (as recorded in the
-                        &lt;maintenanceHistory&gt; element), the maintenance status should also be
-                     updated to reflect the current drafting status.On first creation the status would be "new", which on revision can be changed
-                     to "revised". Because it is important to be clear about what has happened to
-                     records, particularly when sharing and making links between them, a number of
-                     status values are available for records that are no longer current. A record
-                     that is simply deleted from a system can be given the status "deleted", but in
-                     cases where a record is marked as not current (obsolete or rejected) but kept
-                     for reference then it should be given the status "cancelled". If a record is
-                     deleted because it has become superseded by two or more records then its status
-                     should be given as "deletedSplit", while if it has simply been replaced by a
-                     new record then "deletedReplaced" is the appropriate status value. If a record
-                     is deleted because it has been merged with another record, its status should be
-                     given as "deletedMerged". A "derived" status value is available to indicate
-                     that the record was derived from another descriptive system.Use the attribute maintenanceStatusEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of maintenanceStatus.</div>
+                  <div class="content">The maintenance status may occur on &lt;control&gt;.As an EAS instance is modified or other events happen to it (as recorded in the &lt;maintenanceHistory&gt; element), the maintenance status should also be updated to reflect the current drafting status. On first creation the status would e.g. be "new", which on revision could be changed to "revised".Use the attribute maintenanceStatusEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of maintenanceStatus.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
-                  <div class="leftcol">Examples:</div>
+                  <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
                </div>
@@ -6853,11 +7063,14 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content"> <span class="label">Normalized Form</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A summary of what the attribute is used for</div>
+                  <div class="content">A standardized form of the content of &lt;referringString&gt; that is in uncontrolled or natural language.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">A narrative description of the use of the attribute</div>
+                  <div class="content">Use normalizedForm to provide a standardized form, usually from a controlled vocabulary list, of the content of &lt;referringString&gt; e.g. to facilitate retrieval.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -6869,9 +7082,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="leftcol">Summary: </div>
                   <div class="content">A standard numerical form of an approximate date for which a latest possible date is known.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Optionally available in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;. 
-                    It is recommended that notAfter values follow ISO 8601 or another standard date format 
-                    as specified in dateEncoding.</div>
+                  <div class="content">Optionally available in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;. It is recommended that notAfter values follow ISO 8601 or another standard date format as specified in dateEncoding.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6888,12 +7099,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="leftcol">Summary: </div>
                   <div class="content">A standard numerical form of an approximate date for which an earliest possible date is known.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Optionally available in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;. 
-                    It is recommended that notBefore values follow ISO 8601 or another standard date format as specified in
-                     dateEncoding.<div class="p">Optionally available in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;. 
-                    It is recommended that notBefore values follow ISO 8601 or another standard date format as specified in
-                     dateEncoding.</div>
-                  </div>
+                  <div class="content">Optionally available in &lt;date&gt;, &lt;fromDate&gt;, and &lt;toDate&gt;. It is recommended that notBefore values follow ISO 8601 or another standard date format as specified in dateEncoding.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6930,6 +7136,9 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">placeTypeEncoding specifies the authoritative source or rules for values supplied in placeType within &lt;place&gt;. If the value "EASList" is selected, placeType will be expected with the values "...". If the value "otherPlaceTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherPlaceTypeEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -6939,11 +7148,11 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content"> <span class="label">Preferred Form</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">Attribute that specifies whether or not a name provides the preferred form of the entity's name for display purposes</div>
+                  <div class="content">Attribute that specifies whether or not a name provides the preferred form of the entity's name for display purposes.</div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">Attribute that specifies whether or not a &lt;nameEntry&gt; provides the
-                     preferred form of the name of the EAS entity for display purposes in a
-                     given context. Use the value "true" if the name entry is preferred for any display purposed.This optional attribute is only available in &lt;nameEntry&gt;.</div>
+                     preferred form of the name of the EAS entity for display or other purposes in a
+                     given context. Use the value "true" if the name entry is preferred for any display or other purposes.This optional attribute is only available in &lt;nameEntry&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">false, true</div>
                   <div class="leftcol">Example:</div>
@@ -6960,7 +7169,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="leftcol">Summary: </div>
                   <div class="content">The current publication status of the EAS instance.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">The publication status may occur on &lt;control&gt; to indicate the current publication status of the EAS instance, for example in process, approved or final. As an EAS instance is modified or other events happen to it (as recorded in the &lt;maintenanceHistory&gt; element), the publication status should also be updated.A newly created EAS instance will usually start with a publication status of "inProcess". This partial and preliminary status will be applicable as long as the author or the creating agency is working on the document. Depending on the context, the document might first reach a pre-publication level, awaiting approval e.g. by a higher level manager or an authorizing agency. Once such approval has been given, the status "approved" could be assigned for internal purposes while the EAS instance is not publicly available yet. When the EAS instance has been published on the institution’s own website or via the authorizing agency, the status "published" can be assigned.Use the attribute publicationStatusEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of publicationStatus.</div>
+                  <div class="content">The publication status may occur on &lt;control&gt; to indicate the current publication status of the EAS instance, for example "inProcess", "approved" or "published". As an EAS instance is modified or other events happen to it (as recorded in the &lt;maintenanceHistory&gt; element), the publication status should also be updated.Use the attribute publicationStatusEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of publicationStatus.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
                   <div class="leftcol">Example:</div>
@@ -6980,6 +7189,9 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">publicationStatusEncoding specifies the authoritative source or rules for values supplied in publicationStatus within &lt;control&gt;. If the value "EASList" is selected, publicationStatus will be expected with the values "approved", "inProcess", or "published". If the value "otherPublicationStatusEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherPublicationStatusEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -7028,6 +7240,9 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">referredEntityTypeEncoding specifies the authoritative source or rules for values supplied in referredEntityType within &lt;referringString&gt;. If the value "EASList" is selected, referredEntityType will be expected with the values "corpName", "famName", "function", "genreForm", "geogName", "name", "occupation", "persName", "subject" or "title". If the value "otherReferreredEntityTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherReferredEntityTypeEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -7042,7 +7257,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">Use relationType with &lt;relation&gt; to specify the type of relation between the related entity and the entity being described in the EAS instance.Use the attribute relationTypeEncoding in &lt;control&gt; to identify the list of authoritative terms that can be used as values of relationType.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="content"/>
                   <br/>
                </div>
@@ -7056,9 +7271,12 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="leftcol">Summary: </div>
                   <div class="content">Specifies the authoritative source or rules for values used to identify the type of relation between the entity being described in the EAS instance and the related entity.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">relationTypeEncoding specifies the authoritative source or rules for values supplied in relationType within &lt;relation&gt;. If the value "EASList" is selected, addressLineType will be expected with the values "...". If the value "otherRelationTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  <div class="content">relationTypeEncoding specifies the authoritative source or rules for values supplied in relationType within &lt;relation&gt;. If the value "EASList" is selected, relationType will be expected with the values "...". If the value "otherRelationTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherRelationTypeEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -7088,14 +7306,16 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content"> <span class="label">Script Code</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">The code for the writing system, or script, used in the EAS instance or by the described entity or records.</div>
+                  <div class="content">
+                     <div class="p">The code for the writing system, or script, used in the EAS instance.</div>
+                  </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Content of the attribute should be a code taken from ISO 15924, or another controlled list, as
-                     specified in the scriptEncoding attribute in &lt;control&gt;.
-                     Optionally available in &lt;languageDeclaration&gt; and &lt;writingSystem&gt;.</div>
+                  <div class="content">
+                     <div class="p">Content of the attribute should be a code taken from ISO 15924, or another controlled list, as specified in the scriptEncoding attribute in &lt;control&gt;. Optionally available in &lt;languageDeclaration&gt;.</div>
+                  </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
-                  <div class="leftcol">Example:</div>
+                  <div class="leftcol">Examples:</div>
                   <div class="content"/>
                   <br/>
                </div>
@@ -7108,10 +7328,12 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   </div>
                   <div class="leftcol">Summary: </div>
                   <div class="content">
-                     <div class="p">Specifies the authoritative source or rules for codes used to identify the writing system of the EAS instance as a whole or, of a specific element, or represented in the creative work of the function being described.</div>
+                     <div class="p">Specifies the authoritative source or rules for codes used to identify the writing system of the EAS instance as a whole or of a specific element.</div>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">scriptEncoding specifies the authoritative source or rules for values supplied in scriptCode within &lt;languageDeclaration&gt; and &lt;writingSystem&gt; and in scriptOfElement available in all non-empty elements. This can either be the ISO standard 15924 or an alternative code list. If the value "otherScriptEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  <div class="content">
+                     <div class="p">scriptEncoding specifies the authoritative source or rules for values supplied in scriptCode within &lt;languageDeclaration&gt; and in scriptOfElement available in all non-empty elements. This can either be the ISO standard 15924 or an alternative code list. If the value "otherScriptEncoding" is selected, such an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
+                  </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">iso15924, otherScriptEncoding</div>
                   <div class="leftcol">Example:</div>
@@ -7126,17 +7348,27 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content"> <span class="label">Script of Element</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">Indicates the writing script of the content of an element (e.g., Cyrillic,
-                     Katakana).</div>
+                  <div class="content">Indicates the writing script of the content of an element (e.g., Cyrillic, Katakana).</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Content should be taken from ISO 15924, or another controlled list, as specified in the
-                        scriptEncoding attribute in &lt;control&gt;. May be used
-                     consistently in a multi-lingual EAS instance to specify which elements are
-                     written in which script. Optionally available on all non-empty elements.</div>
+                  <div class="content">Content should be taken from ISO 15924, or another controlled list, as specified in the scriptEncoding attribute in &lt;control&gt;. May be used consistently in a multi-lingual EAS instance to specify which elements are written in which script. Optionally available on all non-empty elements.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
-                  <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="leftcol">Examples:</div>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;nameEntrySet&gt;
+                   &lt;nameEntry&gt;
+                   &lt;part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT" languageOfElement="eng" scriptOfElement="Latn"&gt;educating&lt;/part&gt;
+                 &lt;/nameEntry&gt;
+                   &lt;nameEntry&gt;
+                   &lt;part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT" languageOfElement="spa" scriptOfElement="Latn"&gt;educar&lt;/part&gt;
+                 &lt;/nameEntry&gt;
+                   &lt;nameEntry&gt;
+                   &lt;part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT" languageOfElement="zho" scriptOfElement="Hant"&gt;教導&lt;/part&gt;
+                 &lt;/nameEntry&gt;
+                 &lt;/nameEntrySet&gt;</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="spacer"> </div>
@@ -7195,7 +7427,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                      YYYY-MM-DDThh:mm:ss [with optional timezone offset from UTC in the form of
                      [+|-][hh:mm], or "Z" to indicate the dateTime is UTC. No timezone implies the
                      dateTime is UTC.]</div>
-                  <div class="leftcol">Examples:</div>
+                  <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
                </div>
@@ -7211,13 +7443,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                      elements.</div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">
-                     <div class="p">status provides controlled terminology detailing the status of specific
-                     elements. The terms available for status are defined in closed lists that vary by
-                     element. Use statusEncoding in &lt;control&gt; to identify lists of  
-                   terms from EAS lists that can be used as values of status. It is also possible 
-                   to define one's own list by using the value "otherStatusEncoding". Optionally available 
-                   in &lt;agencyCode&gt;, &lt;otherAgencyCode&gt;, &lt;date&gt;, 
-                    &lt;fromDate&gt;, &lt;toDate&gt;.</div>
+                     <div class="p">status provides controlled terminology detailing the status of specific elements. The terms available for status are defined in closed lists that can vary by element. Use statusEncoding in &lt;control&gt; to identify lists of terms from EAS lists that can be used as values of status. It is also possible to define one's own list by using the value "otherStatusEncoding". Optionally available in &lt;agencyCode&gt;, &lt;otherAgencyCode&gt;, &lt;nameEntry&gt;, &lt;date&gt;, &lt;fromDate&gt;, &lt;toDate&gt;.</div>
                   </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
@@ -7242,6 +7468,9 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   </div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherStatusEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -7251,8 +7480,7 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content"> <span class="label">Style</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">Used to specify a rendering style for a string. It is recommended that the value conforms
-         to W3C CSS.</div>
+                  <div class="content">Used to specify a rendering style for a string. It is recommended that the value conforms to W3C CSS.</div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content"/>
                   <div class="leftcol">Data Type: </div>
@@ -7271,12 +7499,23 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="leftcol">Summary: </div>
                   <div class="content">A pointer to the ID of another element.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Used to create internal links within an
-                     XML instance. Optionally available in all elements except the root element.</div>
+                  <div class="content">Used to create internal links within an XML instance. Optionally available in all elements except the root element.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">IDREFS</div>
-                  <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="leftcol">Examples:</div>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;description&gt;
+                   &lt;functionHistory&gt;
+                   &lt;p target="#lex1"&gt;Since 1862, liquidation also meant bringing criminal proceedings against directors and others who were alleged to have committed offences in relation to the company.&lt;/&lt;p&gt;
+                 &lt;/functionHistory
+                   &lt;legislations&gt;
+                   &lt;legislation id="lex1"&gt;Joint Stock Companies Act, 1856; Companies Act, 1862; Companies Act, 1900; Companies Act, 1907; Companies (Consolidation) Act, 1908; Companies Act, 1928; Companies Act, 1929; Companies Act, 1947&lt;/legislation&gt;
+                 &lt;/legislations&gt;
+                 &lt;/description&gt;
+                 &lt;/functionsDescription&gt;</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="spacer"> </div>
@@ -7309,6 +7548,9 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">targetTypeEncoding specifies the authoritative source or rules for values supplied in targetType within &lt;relation&gt;. If the value "EASList" is selected, targetType will be expected with the values "corporateBody", "family", "function", "group", "instantiation", "mechanism", "person", "place", "position", "record", "recordSet", "recordPart", or "resource". If the value "otherTargetTypeEncoding" is selected, an alternate code list should be specified in &lt;conventionDeclaration&gt;. This optional attribute is available only in &lt;control&gt;.</div>
                   <div class="leftcol">Values: </div>
                   <div class="content">EASList, otherTargetTypeEncoding</div>
+                  <div class="leftcol">Example:</div>
+                  <div class="content"/>
+                  <br/>
                </div>
                <div class="spacer"> </div>
                <div class="attribute">
@@ -7318,28 +7560,11 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content"> <span class="label">Unit</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">Defines a unit of measurement to go along with the value provided.</div>
+                  <div class="content">Defines the format or unit specified in &lt;citedRange&gt;.</div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">Use unit to document the format or unit that is specified in &lt;citedRange&gt;, for example page number ("pageNumber") or volume number ("volumeNumber").</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
-                  <div class="leftcol">Examples:</div>
-                  <div class="content"/>
-                  <br/>
-               </div>
-               <div class="spacer"> </div>
-               <div class="attribute">
-                  <div class="leftcol" id="attr-value">
-                     <span class="label">@value</span>
-                  </div>
-                  <div class="content"> <span class="label">Value</span>  <a class="tocReturn" href="#toc">[toc]</a>
-                  </div>
-                  <div class="leftcol">Summary: </div>
-                  <div class="content"/>
-                  <div class="leftcol">Description and Usage: </div>
-                  <div class="content"/>
-                  <div class="leftcol">Values: </div>
-                  <div class="content"/>
                   <div class="leftcol">Example:</div>
                   <div class="content"/>
                   <br/>
@@ -7354,12 +7579,17 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="leftcol">Summary: </div>
                   <div class="content">An attribute for including a URI identifying the resource to be used as the element's value.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Use the optional valueURI attribute to provide the URI identifying the authority resource to be used as the element's content. Available in all elements that can contain any type of entity. 
-                  </div>
+                  <div class="content">Use the optional valueURI attribute to provide the URI identifying the authority resource to be used as the element's content. Available in all elements that can contain any type of entity.Being of type "anyURI", valueURI is meant to point to any dereferencable resource. The term resource is used in a general sense and includes, but is not limited to, electronic documents, images, services (e.g. an HTTP-to-SMS gateway), collections of other resources, etc. A resource is not necessarily accessible via the Internet, i.e. not every URI is a URL, and abstract concepts can be resources too, such as the operators and operands of a mathematical equation or numeric values (e.g., zero, one, and infinity). While the use of complete URIs is recommended, it is also possible to use relative references in valueURI, e.g. only consisting of a string of numbers.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">anyURI</div>
-                  <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="leftcol">Examples:</div>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;nameEntry&gt;
+                   &lt;part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT"&gt;educating&lt;/part&gt;
+                 &lt;/nameEntry&gt;</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="spacer"> </div>
@@ -7375,8 +7605,14 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">Use the optional attribute to provide a name or title of the authority or vocabulary source of the element’s content given in valueURI. Available in all elements that can contain any type of entity. </div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">token</div>
-                  <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="leftcol">Examples:</div>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;nameEntry&gt;
+                   &lt;part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/index.html"&gt;educating&lt;/part&gt;
+                 &lt;/nameEntry&gt;</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="spacer"> </div>
@@ -7390,19 +7626,24 @@ should be specified in &lt;conventionDeclaration&gt;. This optional attribute is
                   <div class="content">An optional attribute for including a URI identifying the vocabulary source for
                      the element's value.</div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">Use the optional attribute to provide the URI of the authority or vocabulary source given in @vocabularySource. Available in all elements that can contain any type of entity.
-                  </div>
+                  <div class="content">Use the optional attribute to provide the URI of the authority or vocabulary source given in vocabularySource. Available in all elements that can contain any type of entity.Being of type "anyURI", vocabularySourceURI is meant to point to any dereferencable resource. The term resource is used in a general sense and includes, but is not limited to, electronic documents, images, services (e.g. an HTTP-to-SMS gateway), collections of other resources, etc. A resource is not necessarily accessible via the Internet, i.e. not every URI is a URL, and abstract concepts can be resources too, such as the operators and operands of a mathematical equation or numeric values (e.g., zero, one, and infinity). While the use of complete URIs is recommended, it is also possible to use relative references in vocabularySourceURI, e.g. only consisting of a string of numbers.</div>
                   <div class="leftcol">Data Type: </div>
                   <div class="content">anyURI</div>
-                  <div class="leftcol">Example:</div>
-                  <div class="content"/>
+                  <div class="leftcol">Examples:</div>
+                  <div class="content">
+                     <div class="example">
+                        <pre lang="xml">&lt;nameEntry&gt;
+                   &lt;part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/index.html"&gt;educating&lt;/part&gt;
+                 &lt;/nameEntry&gt;</pre>
+                     </div>
+                  </div>
                   <br/>
                </div>
                <div class="spacer"> </div>  <a class="tocReturn" href="#toc">[toc]</a>
             </div>
          </div>
          <div>
-            <div class="section" id="d1e8252">
+            <div class="section" id="d1e8467">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Title">Title  <a class="tocReturn" href="#toc">[toc]</a>
                </div>Contents of the appendix; this can also include lists</div>
