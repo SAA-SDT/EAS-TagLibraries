@@ -75,16 +75,18 @@
 		</extent>
 		</identificationData>
 			<arrangement>
-			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application contetx. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
+			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application context. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
 			<formattingExtension>
-			<xhtml:xhtml xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
-			<p>Organized into three subseries:</p>
-			<ul>
-                        <li>Clippings--chronological</li>
-                        <li>Clippings--persons</li>
-                        <li>Notes</li>
-                    </ul>
-			<p>"Clippings-persons" is arranged alphabetically by surname, and "Notes" alphabetically by subject.</p>
+			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+			<xhtml:p>Organized into three subseries:</xhtml:p>
+			<xhtml:ul>
+                        <xhtml:li>Clippings--chronological</xhtml:li>
+                        <xhtml:li>Clippings--persons</xhtml:li>
+                        <xhtml:li>Notes</xhtml:li>
+                    </xhtml:ul>
+			<xhtml:p>"Clippings-persons" is arranged alphabetically by surname, and "Notes" alphabetically by subject.</xhtml:p>
+		</xhtml:div>
+		</formattingExtension>
 		</arrangement>
 		</c>]]>
 		</egXML>
@@ -107,92 +109,46 @@
 		</arrangement></c>]]>
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<arrangement>
-			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application contetx. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
+			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application context. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
 			<formattingExtension>
-			<xhtml:xhtml xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
-			<h3>Arrangement of the Collection</h3>
-			<p>This collection is arranged in five groups composed of twenty-five series
-                        followed by restricted and oversize series:</p>
-                    <h4>Group I:</h4>
-                    <ul>
-                        <li>Correspondence, 1891-1940</li>
-                        <ul>
-                            <li>Incoming Correspondence</li>
-                            <ul>
-                                <li>A-E</li>
-                                <li>F-J</li>
-                                <li>K-O</li>
-                                <li>P-T</li>
-                                <li>U-Z</li>
-                            </ul>
-                            <li>Outgoing Correspondence (copies)</li>
-                            <ul>
-                                <li>A-E</li>
-                                <li>F-J</li>
-                                <li>K-O</li>
-                                <li>P-T</li>
-                                <li>U-Z</li>
-                            </ul>
-                        </ul>
-                        <li>Administrative Files, 1913-1921</li>
-                        <li>Printed Matter, 1889-1936</li>
-                        <li>Photographs, 1911-1935</li>
-                        <li>Medals and Ribbons, undated</li>
-                    </ul>
-                    <h4>Group II:</h4>
-                    <ul>
-                        <li>Correspondence, 1877-1974</li>
-                        <ul>
-                            <li>Incoming Correspondence</li>
-                            <ul>
-                                <li>A-E</li>
-                                <li>F-J</li>
-                                <li>K-O</li>
-                                <li>P-T</li>
-                                <li>U-Z</li>
-                            </ul>
-                            <li>Outgoing Correspondence (copies)</li>
-                            <ul>
-                                <li>A-E</li>
-                                <li>F-J</li>
-                                <li>K-O</li>
-                                <li>P-T</li>
-                                <li>U-Z</li>
-                            </ul>
-                        </ul>
-                        <li>Minutes, 1917-1972</li>
-                        <li>Legal Papers, 1914-1972</li>
-                        <li>Financial Records, 1912-1966</li>
-                        <li>Printed Matter, 1850-1974</li>
-                        <li>Photographs, 1912-1970</li>
-                        <li>World Woman's Party Papers, 1938-1958</li>
-                        <li>Addendum, 1912-1972</li>
-                    </ul>
-                    <h4>Group III:</h4>
-                    <ul>
-                        <li>Correspondence, 1912-1971</li>
-                        <li>Account Books, 1913-1967</li>
-                        <li>Miscellany, 1912-1965</li>
-                    </ul>
-                    <h4>Group IV:</h4>
-                    <ul>
-                        <li>Addition I, 1884-1963</li>
-                        <li>Addition II, 1876-1968</li>
-                        <li>Addition III, 1898-1975</li>
-                    </ul>
-                    <h4>Group V:</h4>
-                    <ul>
-                        <li>Administrative File, 1910-2020</li>
-                        <li>Alphabetical File, 1887-2015</li>
-                        <li>Correspondence, 1920-2022</li>
-                        <li>Photographs, 1863-2016</li>
-                        <li>Printed Matter, 1850-2016</li>
-                        <li>Scrapbooks, 1887-2004</li>
-                    </ul>
-                    <h4>Other series:</h4>
-                    <p>Restricted, 1889-1942</p>
-                    <p>Oversize, 1863-1999</p>
-                </xhtml:xhtml>
+			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+			<xhtml:h3>Arrangement of the Collection</xhtml:h3>
+			<xhtml:p>This collection is arranged in five groups composed of twenty-five series
+                        followed by restricted and oversize series:</xhtml:p>
+                    <xhtml:h4>Group I:</xhtml:h4>
+                    <xhtml:ul>
+                        <xhtml:li>Correspondence, 1891-1940</xhtml:li>
+                        <xhtml:ul>
+                            <xhtml:li>Incoming Correspondence</xhtml:li>
+                            <xhtml:ul>
+                                <xhtml:li>A-E</xhtml:li>
+                                <xhtml:li>F-J</xhtml:li>
+                                [...]
+                            </xhtml:ul>
+                            <xhtml:li>Outgoing Correspondence (copies)</xhtml:li>
+                            <xhtml:ul>
+                                <xhtml:li>A-E</xhtml:li>
+                                <xhtml:li>F-J</xhtml:li>
+                                [...]
+                            </xhtml:ul>
+                        </xhtml:ul>
+                        <xhtml:li>Administrative Files, 1913-1921</xhtml:li>
+                        <xhtml:li>Printed Matter, 1889-1936</xhtml:li>
+                        <xhtml:li>Photographs, 1911-1935</xhtml:li>
+                        <xhtml:li>Medals and Ribbons, undated</xhtml:li>
+                    </xhtml:ul>
+                    <xhtml:h4>Group II:</xhtml:h4>
+                    <xhtml:ul>
+                        <xhtml:li>Correspondence, 1877-1974</xhtml:li>
+                        <xhtml:li>Minutes, 1917-1972</xhtml:li>
+                        [...]
+                        <xhtml:li>Addendum, 1912-1972</xhtml:li>
+                    </xhtml:ul>
+                    	[...]
+			<xhtml:h4>Other series:</xhtml:h4>
+                    <xhtml:p>Restricted, 1889-1942</xhtml:p>
+                    <xhtml:p>Oversize, 1863-1999</xhtml:p>
+                </xhtml:div>
             </formattingExtension>
         </arrangement>]]>
 		</egXML>
