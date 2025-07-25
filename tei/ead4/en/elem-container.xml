@@ -111,7 +111,7 @@
 		</scopecontent>
 			<c level="file">
 			<identificationData>
-			<container id="mss1993-043.1.1" localType="box" localTypeDeclarationReference="#containers">1</container>
+			<container containerId="mss1993-043.1.1" localType="box" localTypeDeclarationReference="#containers">1</container>
 			<container target="#mss1993-043.1.1" localtype="folder" localTypeDeclarationReference="#containers">1</container>
 			<unitTitle>Family</unitTitle>
 			<unitDate unitDateType="inclusive">
