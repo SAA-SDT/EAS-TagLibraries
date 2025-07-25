@@ -374,7 +374,7 @@
             <xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-targetTypeEncoding.xml" parse="xml" />
             <xi:include href="shared/en/attr-unit.xml" parse="xml"/>
-            <xi:include href="shared/en/attr-value.xml" parse="xml"/>
+            <xi:include href="eac3/en/attr-value.xml" parse="xml"/>
             <xi:include href="shared/en/attr-valueURI.xml" parse="xml"/>
             <xi:include href="shared/en/attr-vocabularySource.xml" parse="xml"/>
             <xi:include href="shared/en/attr-vocabularySourceURI.xml" parse="xml"/>            
