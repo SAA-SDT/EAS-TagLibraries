@@ -15,9 +15,9 @@
   <item>0..1</item>
   <label>formattingExtension</label>
   <item>0..1</item>
-  <label>p</label>
+  <label>narrativeEvent</label>
   <item>0..n</item>
-  <label>provenanceEvent</label>
+  <label>p</label>
   <item>0..n</item>
 </list></p>
 	</div>
@@ -52,12 +52,12 @@
 	</div>
 	<div type="description">
 		<p><gi>custodHist</gi> may be used to describe both physical possession and intellectual ownership, providing details of changes of ownership and/or custody that may be significant in terms of authority, integrity, and interpretation.</p>
-		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>custodHist</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>custodHist</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML. Use <gi>narrativeEvent</gi> to provide a chronology of the custodial history.</p>
 		<p>The prescribed order of all child elements (both required and optional) is:</p>
 		<list type="simple">
                      <item><gi>abstract</gi> (if used)</item>
                      <item><gi>formattingExtension</gi> or <gi>p</gi></item>
-		     <item><gi>provenanceEvent</gi></item>	
+		     <item><gi>narrativeEvent</gi></item>	
                 </list>
 	</div>
 	<div type="seealso"><p>Use <gi>sourceOfAcquisition</gi> to record information about the immediate source of the described materials and the circumstances under which they were received by the repository.</p></div>
@@ -66,7 +66,53 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<custodHist>
+			<p>The George Franklin Papers were maintained by the staff of the Mayor's Office, City of Irvine, California, in the records storage facility at City Hall from the time of Franklin's death in 1972 until they were transferred, at his family's request, to Special Collections and Archives, The UC Irvine Libraries, in 1988.</p>
+		</custodHist>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<custodHist>
+			<narrativeEvent>
+			<date standardDate="1972">1972</date>
+			<agent agentType="corporateBody">
+			<label>Mayor's Office</label>
+		</agent>
+			<placeName>Irvine, California</placeName>
+			<eventDescription>Records are held by the Mayor's Office from 1972 onwards.</eventDescription>
+		</narrativeEvent>
+			<narrativeEvent>
+			<date standardDate="1988">1988</date>
+			<agent agentType="corporateBody">
+			<label>The UC Irvine Libraries</label>
+		</agent>
+			<placeName>Irvine, California</placeName>
+			<eventDescription>Records are held by the Special Collections and Archives, The UC Irvine Libraries, from 1988 onwards.</eventDescription>
+		</narrativeEvent>
+			<narrativeEvent>
+			<date standardDate="2009">2009</date>
+			<agent agentType="corporateBody">
+			<label>Harry Ransom Center</label>
+		</agent>
+			<placeName>Austin, Texas</placeName>
+			<eventDescription>Records are held by the Harry Ransom Center since 2009.</eventDescription>
+		</narrativeEvent>
+		</custodHist>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<custodHist>
+			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application context. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
+			<formattingExtension>
+			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+			<xhtml:h3>Custodial History</xhtml:h3>
+			<xhtml:p>Before being transferred to the University Archives, the materials were:</xhtml:p> 
+			<xhtml:ul>
+                        <xhtml:li>Held by faculty members</xhtml:li>
+                        <xhtml:li>Collected by departmental secretaries as informal archive</xhtml:li>
+		</xhtml:ul>
+			<xhtml:p>In 1989, the University Archives conducted a Departmental Records Collection Initiative. Since then, the records have been held by the University Archives.</xhtml:p>
+		</xhtml:div>
+		</formattingExtension>
+		</custodHist>]]>
 		</egXML>
 	</div>
 </div>
