@@ -109,7 +109,90 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<descriptionOfComponents descriptionOfComponentsType="combined">
+			<c level="series">
+			<identificationData>
+			<unitId>Series 1</unitId>
+			<unitTitle>Correspondence</unitTitle>
+		</identificationData>
+			<scopeContent>[...]</scopeContent>
+			<c level="subseries">
+			<identificationData>
+			<unitId>Subseries 1.1</unitId>
+			<unitTitle>Outgoing Correspondence</unitTitle>
+		</identificationData>
+			<c level="file">
+			<identificationData>
+			<unitTitle>Abbinger-Aldrich</unitTitle>
+		</identificationData>
+		</c>
+			[...]
+		</c>
+			<c level="subseries">
+			<identificationData>
+			<unitId>Subseries 1.2</unitId>
+			<unitTitle>Incoming Correspondence</unitTitle>
+		</identificationData>
+			<c level="file">
+			<identificationData>
+			<unitTitle>Adams-Ayers</unitTitle>
+		</identificationData>
+		</c>
+			[...]
+		</c>
+		</c>
+		</descriptionOfComponents>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<descriptionOfComponents descriptionOfComponentsType="combined">
+			<c level="series">
+			<identificationData>
+			<unitTitle>Topical Files</unitTitle>
+			<unitDate unitDateType="inclusive">
+			<dateRange>
+			<fromDate standardDate="1918">1918</fromDate>
+			<toDate standardDate="1945">1945</toDate>
+		</dateRange>
+		</unitDate>
+		</identificationData>
+			<scopecontent>[...]</scopecontent>
+			<c level="file">
+			<identificationData>
+			<unitTitle>California Dining Club</unitTitle>
+		</identificationData>
+			<c level="subseries">
+			<identificationData>
+			<unitTitle>Annual financial statements</unitTitle>
+			<unitDate unitDateType="inclusive">
+			<dateRange>
+			<fromDate standardDate="1923">1923</fromDate>
+			<toDate standardDate="1929">1929</fromDate>
+		</dateRange>
+		</unitDate>
+		</identificationData>
+			<c level="file">
+			<identificationData>
+			<unitTitle>Annual financial statement 1923</unitTitle>
+		</identificationData>
+		</c>
+			[...]
+		</c>
+			<c level="file">
+			<identificationData>
+			<unitTitle>Membership rosters</unitTitle>
+			<unitDate unitDateType="inclusive">
+			<dateRange>
+			<fromDate standardDate="1918">1918</fromDate>
+			<toDate standardDate="1932">1932</fromDate>
+		</dateRange>
+		</unitDate>
+		</identificationData>
+		</c>
+			[...]
+		</c>
+			[...]
+		</c>
+		</descriptionOfComponents>]]>
 		</egXML>
 	</div>
 </div>
