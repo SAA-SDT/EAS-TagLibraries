@@ -66,7 +66,77 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<findAidDesc>
+			<title>
+			<part>Register of the Emily Higby Collection</part>
+			<part>2nd ed.</part>
+		</title>
+			<date standardDate="2024-09">September 2024</date>
+		</findAidDesc>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<!-- The following example has been adapted from the EADiva Tag Libray by Ruth Kitchin Tillman, https://eadiva.com/filedesc/ -->
+			<ead>
+			<control>[...]</control>
+			<findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department/quilting-technologies-department.xml" linkTitle="Download the encoded finding aid" linkRole="text/xml">
+			<title localType="mainTitle" localTypeDeclarationReference="titles">
+			<part>Guide to Quilting Technologies Department Records, 1978-2020</part>
+			<part localType="edition" localTypeDeclarationReference="titles">2nd edition</part>
+		</title>
+			<title localType="subtitle" localTypeDeclarationReference="titles">
+			<part>A guide to the records of the Quilting Technologies Department at Piecemaking University</part>
+		</title>
+			<title localType="seriesTitle" localTypeDeclarationReference="titles">
+			<part>Piecemaking University Departmental Records, 13</part>
+		</title>
+			<agent agentType="person">
+			<label>Ruth Tillman</label>
+			<role valueURI="aut" vocabularySource="MARC Code List for Relators">Author</role>
+		</agent>
+			<agent agentType="corporateBody">
+			<label>National Alliance of Peace Quilters</label>
+			<role valueURI="spn" vocabularySource="MARC Code List for Relators">Sponsor</role>
+			<descriptiveNote>
+			<p>Funding for the initial creation of this electronic finding aid was made possible in 1992 by a generous gift of the National Alliance of Peace Quilters.</p>
+		</descriptiveNote>
+		</agent>
+			<agent agentType="corporateBody">
+			<label>Piecemaking University</label>
+			<role valueURI="pbl" vocabularySource="MARC Code List for Relators">Publisher</role>
+			<role valueURI="spn" vocabularySource="MARC Code List for Relators">Sponsor</role>
+			<descriptiveNote>
+			<p>Funding for encoding was made possible in 2008 by a Piecemaking University Digital Initiatives Grant.</p>
+			</descriptiveNote>
+		</agent>
+			<date standardDate="2020-06-08">June 8, 2020</date>
+			<place>
+			<label>Lancaster, Pennsylvania</label>
+			<address>
+			<addressLine>University Archives</addressLine>
+			<addressLine>Piecemaking University</addressLine>
+			<addressLine>Lancaster, PA 17603</addressLine>
+		</address>
+			<contact>
+			<contactLine contactLineType="phoneNumber">+1-717-555-1313</contactLine>
+			<contactLine contactLineType="email">archivist@piecemaking.edu</contactLine>
+		</contact>
+		</place>
+			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application context. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
+			<formattingExtension>
+			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+			<xhtml:p>Edition was updated during EAD3 encoding to conform to DACS standards.</xhtml:p>
+			<xhtml:p>To submit corrections or request clarifications, please use the <xhtml:a target="_blank" href="https://archives.piecemaking.edu/contact/finding-aid-feedback">University Archives' feedback form</xhtml:a>.</xhtml:p>
+		</xhtml:div>
+		</formattingExtension>
+		</findAidDesc>
+			<findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department" linkTitle="View the finding aid online" linkRole="application/xhtml+xml">
+			<date standardDate="2024-10-11">October 11, 2024</date>
+		</findAidDesc>
+			<findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department/quilting-technologies-department.pdf" linkTitle="Download the finding aid in PDF format" linkRole="application/pdf">
+			<date standardDate="2024-10-11">October 11, 2024</date>
+		</findAidDesc>
+			<archDesc>[...]</archDesc>
+		</ead>]]>
 		</egXML>
 	</div>
 </div>
