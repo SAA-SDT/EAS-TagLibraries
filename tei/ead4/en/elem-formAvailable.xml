@@ -240,7 +240,10 @@
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<formAvailable>
-			<label>MF1993-034:1 to MF1993-034:3</label>
+			<label>Microfilm reels</label>
+			<formAvailableId>MF1993-034:1</formAvailableId>
+			<formAvailableId>MF1993-034:2</formAvailableId>
+			<formAvailableId>MF1993-034:3</formAvailableId>
 			<descriptiveNote>
 			<p>This collection has been microfilmed and is available on three reels MF1993-034:1 to MF1993-034:3.</p>
 			<p>Researchers interested in purchasing microfilm copies should contact the repository.</p>
