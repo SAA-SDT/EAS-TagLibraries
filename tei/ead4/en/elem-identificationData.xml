@@ -70,7 +70,76 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<archDesc level="subgroup">
+			<identificationData>
+			<unitTitle>Game laws violation records</unitTitle>
+			<unitDate>
+			<dateRange>
+			<fromDate standardDate="1908">1908</fromDate>
+			<toDate standardDate="1928">1928</toDate>
+		</dateRange>
+		</unitDate>
+			<extent extentType="spaceOccupied" coverage="whole">
+			<quantity>2.25</quantity>
+			<unitOfMeasurement>cu. ft.</unitOfMeasurement>
+		</extent>
+			<extent extentType="carrier" coverage="whole">
+			<quantity>3</quantity>
+			<unitOfMeasurement>boxes</unitOfMeasurement>
+			<descriptiveNote>
+			<p>7 v. and 1 folder in 3 boxes</p>
+		</descriptiveNote>
+		</extent>
+		</identificationData>
+			<agents>
+			<agent agentType="corporateBody">
+			<label>Minnesota Historical Society</label>
+			<role>holdingInstitution</role>
+		</agent>
+			<agent agentType="corporateBody">
+			<label>Minnesota, Game and Fish Department</label>
+			<role>Creator</role>
+		</agent>
+		</agents>
+			<scopeContent>
+			<p>Records of prosecutions for and seizures of property resulting from violation of the state's hunting and fishing laws.</p>
+		</scopeContent>
+			[...]
+		</archDesc>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<c id="able-pa" level="file">
+			<identificationData>
+			<unitTitle>Adult Basic and Literacy Education, Pennsylvania (ABLE)</unitTitle>
+			<extent coverage="whole" extentType="carrier">
+			<quantity>21</quantity>
+			<unitOfMeasurement>reels</unitOfMeasurement>
+		</extent>
+			<container localType="Box" localTypeDeclarationReference="containers">20</container>
+		</identificationData>
+			<scopeContent>
+			<p>Includes "Focus on..." newsletters</p>
+		</scopeContent>
+		</c>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<c>
+			<identificationData>
+			<unitTitle>Class Notes, Undergraduate</unitTitle>
+			<unitDate unitDateType="inclusive">
+			<dateRange>
+			<fromDate notAfter="1962">1962</fromDate>
+			<toDate notAfter="1968">1968</toDate>
+		</dateRange>
+		</unitDate>
+			<extent>
+			<quantity>12</quantity>
+			<unitOfMeasurement>notebooks</unitOfMeasurement>
+		</extent>
+			<container localType="boxes" localTypeDeclarationReference="containers">5-6</container>
+			<otherIdentificationData>The notebooks contain months and days, not years. Estimated dates are based on the years Scully attended the University of Maryland.</otherIdentificationData>
+		</identificationData>
+		</c>]]>
 		</egXML>
 	</div>
 </div>
