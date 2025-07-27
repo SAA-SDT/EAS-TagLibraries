@@ -58,7 +58,8 @@
 		<p>Use the attributes <att>id</att> and <att>target</att> to relate two or more parallel statements of extent to each other. Use <att>coverage</att> to indicate whether the extent statement refers to all or only part of the materials being described.</p>
 	</div>	
 	<div type="availability">
-		<p>Optional, Repeatable</p>
+		<p>Within <gi>identificationData</gi>: optional, repeatable</p>
+		<p>Within <gi>physicalDescription</gi>: optional, not repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xml:lang="eng"><![CDATA[<c>
