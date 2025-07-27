@@ -1,56 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-elementName" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
 	<head>
-		<gi>Title</gi>
+		<gi>physicalDescription</gi>
 	</head>
 	<div type="fullName">
-		<p>Full Element Name</p>
+		<p>Physical Description</p>
 	</div>
 	<div type="summary">
-		<p>A summary of what the element is used for</p>
+		<p>An optional child element of <gi>formAvailable</gi> to encode statements about the extent and physical characteristics specific to the instantiation being described.</p>
 	</div>
 	<div type="mayContain">
 		<p>
 			<list type="gloss">
-				<label>Element that may be used as child of the element</label>
-				<item>Availability of child element, eg 0..1</item>
+				<label>descriptiveNote</label
+				<item>0..1</item>
+				<label>dimensions</label
+				<item>0..1</item>
+				<label>extent</label
+				<item>0..1</item>
+				<label>physicalFacet</label
+				<item>0..1</item>
 			</list>
 		</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>List of elements that may be used as immediate parents of the element, separated by commas</p>
+		<p>formAvailable</p>
 	</div>
 	<div type="attributes">
 		<p>
 			<list type="gloss">
-				<label>Attribute that may be used within this element</label>
-				<item>"Optional" or "Required" <p type="eac">(values limited to: list of valid values for this attribute in EAC)</p></item>
+            			<label>audience</label>
+            			<item>Optional</item>
+            			<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>id</label>
+				<item>Optional</item>
+            			<label>languageOfElement</label>
+				<item>Optional</item>
+            			<label>maintenanceEventReference</label>
+				<item>Optional</item>
+            			<label>scriptOfElement</label>
+				<item>Optional</item>
+            			<label>sourceReference</label>
+				<item>Optional</item>
+            			<label>target</label>
+				<item>Optional</item>
 			</list>
 		</p>
 	</div>
 	<div type="description">
-		<p>A narrative description of the use of the element. Mark up other <gi>elements</gi> and <att>attributes</att> mentioned from the same Tag Library.</p>
-		<p type="eac">Description that only applies to a shared element in EAC</p>
-		<p type="ead">Description that only applies to a shared element in EAD</p>
-	</div>
-	<div type="attributeusage">
-		<p>A listing of usage of attributes with the element (optional)</p>
-		<p type="eac">Attribute usage that only applies to a shared element in EAC</p>
-		<p type="ead">Attribute usage  that only applies to a shared element in EAD</p>
-	</div>	
-	<div type="seealso">
-		<p>A listing of other elements in the tag library that are relevant to, or similar to, the element (optional)</p>
-		<p type="eac">Other elements in the tag library that are relevant to a shared element in EAC only</p>
-		<p type="ead">Other elements in the tag library that are relevant to a shared element in EAD only</p>
+		<p><gi>physicalDescription</gi> creates structured statements describing the physical or logical extent or the medium of the instantiation described in <gi>formAvailable</gi>. While optional individually, one of the child elements <gi>dimensions</gi>, <gi>extent</gi> or <gi>physicalFacet</gi> has to be included when using <gi>physicalDescription</gi>. Next to the descriptive, human-readabile information, the structured design of <gi>physicalDescription</gi> allows for quantifying the extent of the whole or a part of the instantiation described in a form that will also be machine-processable and that will facilitate reporting, statistics, sorting, and importing and exporting data in a collection management system.</p>
+                  <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item>
+                        <gi>extent</gi>
+                     </item>
+                     <item>
+                        <gi>dimensions</gi>
+                     </item>
+                     <item>
+                        <gi>physicalFacet</gi>
+                     </item>
+                     <item>
+                        <gi>descriptiveNote</gi>
+                     </item>
+                  </list>
+               </div>
+               <div type="seealso">
+		<p>When statements of physical or logical extent relate to the record resource in general rather than being specific to an individual instantiation, use <gi>extent</gi> within <gi>identificationData</gi>. E.g. a photographic collection might consist of 1,200 photographs, a statement captured in <gi>extent</gi> within <gi>identificationData</gi>. Within <gi>physicalDescription</gi> in repeated <gi>formAvailable</gi> elements, this might then be specified as "1,2000 prints" for one analog instantation, "1,200 negatives" for a second analog instantiation, and "1,200 image files (tiff)" for a digital instantiation.</p>
 	</div>
 	<div type="availability">
-		<p>Required/Optional, Repeatable/Not Repeatable</p>
-		<p type="eac">Availability statement that only applies to a shared element in EAC</p>
-		<p type="ead">Availability statement that only applies to a shared element in EAD</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[
-			<!-- Contains examples of XML from the schema. -->
-		]]</egXML>
+		<egXML xml:lang="eng"><![CDATA[<formsAvailable>
+			<formAvailable formAvailableType="digitalOriginal" coverage="whole">
+			<label>Photographs</label>
+			<physicalDescription>
+			<extent coverage="part" extentType="spaceOccupied" id="ext1" target="ext2 ext3">
+			<quantity>650</quantity>
+			<unitOfMeasurement>gigabytes</unitOfMeasurement>
+		</extent>
+		</physicalDescription>
+			<physicalDescription>
+			<extent coverage="part" extentType="carrier" id="ext2" target="ext1 ext3">
+			<quantity>1</quantity>
+			<unitOfMeasurement>hard disk</unitOfMeasurement>
+			<descriptiveNote>
+			<p>Password protected</p>
+		</descriptiveNote>
+		</extent>
+		</physicalDescription>
+			<physicalDescription>
+			<extent coverage="part" extentType="materialType" id="ext3" target="ext1 ext2">
+			<quantity>7,500</quantity>
+			<unitOfMeasurement>electronic files</unitOfMeasurement>
+			</extent>
+			<physicalFacet valueURI="http://vocab.getty.edu/page/aat/300391245" vocabularySource="AAT">false-color infrared photography</physicalFacet>
+		</physicalDescription>
+		</formAvailable>
+			<formAvailable formAvailableType="analogDerived" coverage="part">
+			<label>Prints</label>
+			<physicalDescription>
+			<extent coverage="whole" extentType="materialType" id="ext4">
+			<quantity>50</quantity>
+			<unitOfMeasurement valueURI="http://vocab.getty.edu/page/aat/300053443" vocabularySource="AAT">Aerial photographs</unitOfMeasurement>
+			</extent>
+			<dimensions>
+			<quantity>30 x 40</quantity>
+			<unitOfMeasurement>cm</unitOfMeasurement>
+		</dimensions>
+		</physicalDescription>
+		</formAvailable>
+		</formsAvailable>]]></egXML>
 	</div>
 </div>
