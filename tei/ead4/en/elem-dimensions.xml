@@ -53,7 +53,7 @@
 		<p>Either the sub-element <gi>quantity</gi> or the sub-element <gi>unitOfMeasurement</gi> must be present within <gi>dimensions</gi>, but it is recommended to use both child elements whenever possible.</p>
 	</div>
 	<div type="availability">
-		<p>Optional, repeatable</p>
+		<p>Optional, not repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
