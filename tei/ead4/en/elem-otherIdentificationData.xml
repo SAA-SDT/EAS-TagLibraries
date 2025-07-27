@@ -61,7 +61,21 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<identificationData>
+			<unitTitle>Class Notes, Undergraduate</unitTitle>
+			<unitDate unitDateType="inclusive">
+			<dateRange>
+			<fromDate notAfter="1962">1962</fromDate>
+			<toDate notAfter="1968">1968</toDate>
+		</dateRange>
+		</unitDate>
+			<extent>
+			<quantity>12</quantity>
+			<unitOfMeasurement>notebooks</unitOfMeasurement>
+		</extent>
+			<container localType="boxes" localTypeDeclarationReference="containers">5-6</container>
+			<otherIdentificationData>The notebooks contain months and days, not years. Estimated dates are based on the years Scully attended the University of Maryland.</otherIdentificationData>
+		</identificationData>]]>
 		</egXML>
 	</div>
 </div>
