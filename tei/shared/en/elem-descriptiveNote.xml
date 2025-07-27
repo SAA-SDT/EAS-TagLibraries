@@ -14,13 +14,13 @@
                    <label>objectXMLWrap</label>
                    <item>0..1</item>
                    <label>p</label>
-  <item>1..n</item>
-</list></p>
+                   <item>1..n</item>
+                 </list></p>
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">agent, conventionDeclaration, demographicDescription, demographicDescriptions, existDates, functionPerformed, functionsPerformed, identity, languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses, localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency, mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes, place, places, relation, relations, rightsDeclaration, setComponent, source, sources</p>
-                 <p type="eaf">classifications, conventionDeclaration, languageDeclaration, localTypeDeclaration, maintenanceAgency, relation, rightsDeclaration, source, sources</p>
-                 <p type="ead">agent, agents, conventionDeclaration, extent, formAvailable, formsAvailable, function, functions, identificationData, languageDeclaration, languageOfMaterial, languageSet, legalStatus, localTypeDeclaration, maintenanceAgency, place, places, relation, relations, rightsDeclaration, source, sources, subject</p>
+                 <p type="eaf">classifications, conventionDeclaration, languageDeclaration, localTypeDeclaration, maintenanceAgency, relation, relations, rightsDeclaration, source, sources</p>
+                 <p type="ead">agent, agents, conventionDeclaration, extent, formAvailable, formsAvailable, function, functions, identificationData, languageDeclaration, languageOfMaterial, languageSet, legalStatus, localTypeDeclaration, maintenanceAgency, physicalDescription, place, places, relation, relations, rightsDeclaration, source, sources, subject</p>
                </div>
                <div type="attributes">
                   <p>
@@ -52,18 +52,30 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<function valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/">
-   <term>
-      community development
-   </term>         
-   <placeName target="IDPlaceName1">
-      East Side (Buffalo, N.Y.)
-   </placeName>
-   <descriptiveNote>
-      <p>
-         The organization’s mission is to create programs to improve the quality of residential housing and develop projects to improve the East Side of Buffalo and Western New York.
-      </p>
-   </descriptiveNote>
-</function>]]></egXML>
+                  <egXML xml:lang="eng" type="eac">
+                    <![CDATA[<functionPerformed valueURI="http://vocab.getty.edu/page/aat/300055433" vocabularySource="aat" vocabularySourceURI="https://www.getty.edu/research/tools/vocabularies/aat/">
+                    <term>community development</term>
+                    <placeName target="IDPlaceName1">East Side (Buffalo, N.Y.)</placeName>
+                    <descriptiveNote>
+                    <p>The organization’s mission is to create programs to improve the quality of residential housing and develop projects to improve the East Side of Buffalo and Western New York.</p>
+                  </descriptiveNote>
+                  </functionPerformed>]]></egXML>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead">
+                   <![CDATA[<languageOfMaterial>
+                   <languageSet>
+                   <writingSystem scriptCode="Latn">Latin</writingSystem>
+                   <language languageCode="eng">English</language>
+                   <language languageCode="ang">Old English</language>
+                   <language languageCode="lat">Latin</language>
+                 </languageSet>
+                   <languageSet>
+                   <language languageCode="gre">Greek</language>
+                   <writingSystem scriptCode="Grek">Greek</writingSystem>
+                 </languageSet>
+                   <descriptiveNote>
+                   <p>The majority of the documents are written in Modern English. Roberts copied multiple passages from original manuscripts in Latin, Greek and Old English.</p>
+                 </descriptiveNote>
+                 </languageOfMaterial>]]>
+                 </egXML>
                </div>
             </div>
