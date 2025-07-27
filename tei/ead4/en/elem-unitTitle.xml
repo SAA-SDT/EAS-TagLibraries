@@ -65,7 +65,90 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<c>
+			<identificationData>
+			<unitTitle>Manouche</unitTitle>
+		</identificationData>
+			<c>
+			<identificationData>
+			<unitTitle>Recording</unitTitle>
+			<unitId>grove_005</unitId>
+			<container localType="Box" localTypeDeclarationReference="containers">559</container>
+		</identificationData>
+			<scopeContent>
+			<p>45-rpm phonodisc of Manouche singing two unidentified French songs</p>
+		</scopeContent>
+		</c>
+			[...]
+		</c>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<c level="subseries">
+			<identificationData>
+			<unitTitle>Documentary Movies</unitTitle>
+			<unitDate unitDateType="inclusive">
+			<dateRange>
+			<fromDate>1952</fromDate>
+			<toDate>1964</toDate>
+		</dateRange>
+		</unitDate>
+			<extent>
+			<quantity>2.5</quantity>
+			<unitOfMeasurement>linear ft.</unitOfMeasurement>
+		</extent>
+		</identificationData>
+			<scopeContent>
+			<p>Includes scores, arranged alphabetically by movie title, and some correspondence, arranged chronologically.</p>
+		</scopeContent>
+		</c>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<archDesc level="collection">
+			<identificationData>
+			<unitTitle>Donald C. Stone, Jr. Papers</unitTitle>
+			<unitDate unitDateType="inclusive">
+			<dateRange>
+			<fromDate>1971</fromDate>
+			<toDate>1983</toDate>
+		</dateRange>
+		</unitDate>
+			<unitId countryCode="US" repositoryCode="cbgtu"
+			valueURI="https://library.syracuse.edu/digital/guides/s/stone_dc.htm" localType="accessionNumber" localTypeDeclarationReference="identifiers">GTU 2001-08-03</unitId>
+			<extent extentType="carrier" coverage="whole">
+			<quantity>4</quantity>
+			<unitOfMeasurement>boxes</unitOfMeasurement>
+		</extent>
+			<extent extentType="spaceOccupied" coverage="whole">
+			<quantity>4</quantity>
+			<unitOfMeasurement>linear ft.</unitOfMeasurement>
+		</extent>
+		</identificationData>
+			<agents>
+			<agent agentType="person" valueURI="http://id.loc.gov/authorities/names/n80148920" vocabularySource="LCNAF">
+			<label>Stone, Donald C., Jr.</label>
+			<role>Creator</role>
+		</agent>
+			<agent agentType="group" valueURI="http://id.loc.gov/authorities/names/n79126342" vocabularySource="LCNAF">
+			<label>The Graduate Theological Union</label>
+			<role>holdingInstitution</role>
+		</agent>
+		</agents>
+			<places>
+			<place placeType="repository">
+			<label>Flora Lamson Hewlett Library</label>
+			<address>
+			<addressLine>Berkeley, California</addressLine>
+		</address>
+		</place>
+			<place placeType="shelfLocation">
+			<label>5/D/4-5</label>
+		</place>
+		</places>
+			<scopeContent>
+			<p>The papers document Donald C. Stone's work with Ornstein and Swencionis on the est Outcome Project, and the development of his doctoral research, including his various publications on the human potential movement, up to the completion of his doctoral dissertation.</p>
+		</scopeContent>
+			[...]
+		</archDesc>]]>
 		</egXML>
 	</div>
 </div>
