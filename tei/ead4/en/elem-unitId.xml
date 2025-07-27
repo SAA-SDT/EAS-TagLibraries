@@ -88,6 +88,8 @@
 		</c>
 			[...]
 		</c>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<archDesc level="collection">
 			<identificationData>
 			<unitTitle>Donald C. Stone, Jr. Papers</unitTitle>
