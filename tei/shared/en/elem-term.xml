@@ -7,8 +7,7 @@
                   <p>Term</p>
                </div>
                <div type="summary">
-                  <p>An element used to encode a descriptive term in accordance with authorized
-                     vocabularies or local rules.</p>
+                  <p>An element used to encode a descriptive term in accordance with authorized vocabularies or local rules.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -17,10 +16,8 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p type="eac">demographicDescription, functionPerformed, legalStatus, localDescription,
-                     mandate, occupation, otherEntityType</p>
-                  <p type="eaf">localControl</p>
-                  <p type="ead">legalStatus</p>
+                  <p type="eac">demographicDescription, functionPerformed, legalStatus, localDescription, mandate, occupation, otherEntityType</p>
+                  <p type="ead">legalStatus, subject</p>
                </div>
                <div type="attributes">
                   <p>
@@ -45,72 +42,93 @@
                   </p>
                </div>
                <div type="description">
-                  <p type="eac"><gi>term</gi> is a required child element of <gi>functionPerformed</gi>,
-                        <gi>legalStatus</gi>, <gi>localDescription</gi>,
-                        <gi>mandate</gi>, <gi>occupation</gi>, and <gi>otherEntityType</gi>, used to
-                     specify a descriptive term in accordance with authorized vocabularies or local
-                     rules.</p>
-                 <p type="ead"><gi>term</gi> is a required child element of <gi>legalStatus</gi>, used to
-                     specify a descriptive term in accordance with authorized vocabularies or local
-                     rules.</p>
-                 <p type="eaf"><gi>term</gi> is a required child element of <gi>localControl</gi> used to
-                     specify a descriptive term in accordance with authorized vocabularies or local
-                     rules.</p>               
-                 
-                  <p><gi>term</gi> can be repeated within its parent element to include translations
-                     of the same term. Use the <att>languageOfElement</att> attribute to identify
-                     the language used in each <gi>term</gi> grouped within a single parent
-                     element.</p>
+                  <p type="eac"><gi>term</gi> is a required child element of <gi>functionPerformed</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>, <gi>occupation</gi>, and <gi>otherEntityType</gi>, used to specify a descriptive term in accordance with authorized vocabularies or local rules.</p>
+                 <p type="ead"><gi>term</gi> is a required child element of <gi>legalStatus</gi> and <gi>subject</gi>, used to specify a descriptive term in accordance with authorized vocabularies or local rules.</p>
+                 <p><gi>term</gi> can be repeated within its parent element to include translations of the same term. Use the <att>languageOfElement</att> attribute to identify the language used in each <gi>term</gi> grouped within a single parent element.</p>
                </div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML type="eac" xml:lang="eng"><![CDATA[<function>
-   <term>
-      Estate ownership
-   </term>
-   <descriptiveNote>
-      <p>
-         Social, political, and cultural role typical of landed aristocracy in England. The first Viscount Campden amassed a large fortune in trade in London and purchased extensive estates, including Exton (Rutland), and Chipping Campden (Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron Barham, a successful admiral and naval administrator (First Lord of the Admiralty 1805).
-      </p>
-   </descriptiveNote>
-</function>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<function vocabularySource="AGIFT">
-   <term>
-      Education and training
-   </term>
-</function>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<legalStatus>
-   <term scriptOfElement="Latn">
-      Organismo de la Administracion Central del Estado
-   </term>
-   <date standardDate="1769">
-      1769
-   </date>
-</legalStatus>]]></egXML>
-                  <egXML type="eac" xml:lang="eng"><![CDATA[<mandate>
-   <term>
-      Minnesota. Executive Session Laws 1919 c49
-   </term>
-   <dateRange>
-      <fromDate standardDate="1919">
-         1919
-      </fromDate>
-      <toDate standardDate="1925">
-         1925
-      </toDate>
-   </dateRange>
-   <descriptiveNote>
-      <p>
-         Board created in 1919 to receive and examine applications for bonuses from Minnesota soldiers.
-      </p>
-   </descriptiveNote>
-</mandate>]]></egXML>
-                  <egXML type="eac" xml:lang="eng"><![CDATA[<occupation>
-   <term>
-      Teacher
-   </term>
-</occupation>]]></egXML>
+                  <egXML type="eac" xml:lang="eng">
+                    <![CDATA[<function>
+                    <term>Estate ownership</term>
+                    <descriptiveNote>
+                    <p>Social, political, and cultural role typical of landed aristocracy in England. The first Viscount Campden amassed a large fortune in trade in London and purchased extensive estates, including Exton (Rutland), and Chipping Campden (Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron Barham, a successful admiral and naval administrator (First Lord of the Admiralty 1805).</p>
+                  </descriptiveNote>
+                  </functionPerformed>]]>
+                  </egXML>
+                  <egXML xml:lang="eng" type="eac">
+                    <![CDATA[<legalStatus>
+                    <term scriptOfElement="Latn">Organismo de la Administracion Central del Estado</term>
+                    <date standardDate="1769">1769</date>
+                  </legalStatus>]]>
+                  </egXML>
+                  <egXML type="eac" xml:lang="eng">
+                    <![CDATA[<mandate>
+                    <term>Minnesota. Executive Session Laws 1919 c49</term>
+                    <dateRange>
+                    <fromDate standardDate="1919">1919</fromDate>
+                    <toDate standardDate="1925">1925</toDate>
+                  </dateRange>
+                    <descriptiveNote>
+                    <p>Board created in 1919 to receive and examine applications for bonuses from Minnesota soldiers</p>
+                  </descriptiveNote>
+                  </mandate>]]>
+                  </egXML>
+                  <egXML type="eac" xml:lang="eng">
+                    <![CDATA[<occupation>
+                    <term>Teacher</term></occupation>]]>
+                  </egXML>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead">
+			<![CDATA[<subjectHeadings>
+			<p>Use the following index to find photographs within the collection related to specific subjects.</p>
+			<subject valueURI="https://id.loc.gov/authorities/subjects/sh85016829" vocabularySource="LCSH" target="photo-1234-001 photo-1234-010 photo-1234-015">
+			<term>Bridges</term>
+		</subject>
+			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85025854" vocabularySource="LCSH" target="photo-1234-002 photo-1234-003 photo-1234-004 photo-1234-019 photo-1234-020">
+			<term>Churches</term>
+		</subject>
+			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85046823" vocabularySource="LCSH" target="photo-1234-030 photo-1234-031 photo-1234-032 photo-1234-040">
+			<term>Factories</term>
+		</subject>
+			<subject valueURI="https://id.loc.gov/authorities/subjects/sh85051067" vocabularySource="LCSH" target="photo-1234-012 photo-1234-016 photo-1234-021">
+			<term>Fountains</term>
+		</subject>
+			<subject valueURI="https://id.loc.gov/authorities/subjects/sh85053101" vocabularySource="LCSH" target="photo-1234-027 photo-1234-039">
+			<term>Gardens</term>
+		</subject>
+			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85062487" vocabularySource="LCSH" target="photo-1234-005 photo-1234-011 photo-1234-029">
+			<term>Hotels</term>
+		</subject>
+			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85088723" vocabularySource="LCSH" target="photo-1234-006 photo-1234-014 photo-1234-017 photo-1234-018 photo-1234-026 photo-1234-033">
+			<term>Museums</term>
+		</subject>
+			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85118451" vocabularySource="LCSH" target="photo-1234-024 photo-1234-025">
+			<term>Schools</term>
+		</subject>
+			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85134578" vocabularySource="LCSH" target="photo-1234-013 photo-1234-035 photo-1234-038">
+			<term>Theaters</term>
+		</subject>
+			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85141086" vocabularySource="LCSH" target="photo-1234-007 photo-1234-008 photo-1234-022 photo-1234-028 photo-1234-032 photo-1234-034">
+			<term>Universities and colleges</term>
+		</subject>
+		</subjectHeadings>]]>
+		</egXML>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead">
+			<![CDATA[<legalStatus>
+                   <term>Student records</term>
+                   <descriptiveNote>
+                   <p>Student records are governed by the Family Educational Rights and Privacy Act (FERPA), 20 U.S.C. § 1232g.</p>
+                 </descriptiveNote>
+                 </legalStatus>
+                   <legalStatus>
+                   <term>Patient records</term>
+                   <descriptiveNote>
+                   <p>Patient records are governed by the Health Insurance Portability and Accountability Act, Pub.L. 104–191 and 110 Stat. 1936. Article 8 ECHR may also apply.</p>
+                 </descriptiveNote>
+                 </legalStatus>
+                   
+      ]]></egXML
                </div>
             </div>
