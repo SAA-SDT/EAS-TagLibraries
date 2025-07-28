@@ -7,7 +7,7 @@
                   <p>Heading</p>
                </div>
                <div type="summary">
-                  <p>An element that encodes a title or caption for a section of text.</p>
+                  <p>An optional element of <gi>identificationData</gi> and the component elements that encodes a caption for the following section of text.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -22,8 +22,7 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p type="eac">generalContext, structureOrGenealogy</p>
-                  <p type="ead">identificationData, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+                  <p>identificationData, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
                </div>
                <div type="attributes">
                   <p>
@@ -48,41 +47,31 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>head</gi> is used for supplying title-like statements to a section of text or a list. When <gi>head</gi> is used, it must be the first child element, followed by one or more other elements.</p>
+                  <p><gi>head</gi> can be used as an optional element at the start of <gi>identificationData</gi> and the component elements to encode a caption for the following part of the encoded description, e.g. when needing a generic section header for print or display, though the latter might usually be addressed via the general template and/or stylesheet of a web interface. When <gi>head</gi> is used, it must be the first child element, followed by one or more other elements.</p>
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>
-               <div type="examples" standard="eac">
-                  <egXML xml:lang="eng" type="ead"/>
-		  <egXML xml:lang="eng" type="eac"><![CDATA[<list listType="unordered">
-   <head>
-      List of ministers of May Memorial Unitarian Universalist Church
-   </head>
-   <item>
-      John Storer, Minister 1839-1844
-   </item>
-   <item>
-      Samuel Joseph May, Minister 1845-1868
-   </item>
-   <item>
-      Samuel R. Calthrop, Minister 1868-1911
-   </item>
-   <item>
-      John H. Applebee, Minister 1911-1929
-   </item>
-   <item>
-      Waldemar W. Argow, Minister 1930-1941
-   </item>
-   <item>
-      Robert E. Romig, Minister 1941-1946
-   </item>
-   <item>
-      Glenn O. Canfield, Minister 1946-1952
-   </item>
-   <item>
-      John Fuller, Minister, 1961-1973
-   </item>
-</list>]]></egXML>
+               <div type="examples">
+                  <egXML xml:lang="eng"><![CDATA[<identificationData>
+			  <head>Descriptive Summary</head>
+			  <unitTitle>Donald C. Stone, Jr. Papers</unitTitle>
+			  <unitDate unitDateType="inclusive">
+			  <dateRange>
+			  <fromDate standardDate="1971">1971</fromDate>
+			  <toDate standardDate="1983">1983</toDate>
+		  </dateRange>
+		  </unitDate>
+			  <unitId countryCode="US" repositoryCode="cbgtu" localType="accessionNumber" localTypeDeclarationReference="identifiers">GTU 2001-8-03</unitId>
+			  <extent extentType="carrier">
+			  <quantity>4</quantity>
+			  <unitOfMeasurement>boxes</unitOfMeasurement>
+		  </extent>
+			  <extent extentType="spaceOccupied">
+			  <quantity>4</quantity>
+			  <unitOfMeasurement>linear ft.</unitOfMeasurement>
+		  </extent>
+		  </identificationData>]]>
+		  </egXML>
                </div>
             </div>
