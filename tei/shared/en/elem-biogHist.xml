@@ -95,6 +95,9 @@
                     <formattingExtension>
                         <xhtml:div
                             xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+                            <xhtml:h4>Biography Johann Sebastian Bach</xhtml:h4>
+                            <xhtml:p>[...]</xhtml:p>
+                            [...]
                             <xhtml:h3>Family life</xhtml:h3>
                             <p>Bach was married twice and had 20 children, 10 of whom survived into adulthood.</p>
                             <xhtml:ul>
