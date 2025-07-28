@@ -7,7 +7,9 @@
 		<p>Relationship</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>agent</gi>, <gi>function</gi>, <gi>place</gi> and <gi>subject</gi> used to specify the type of relationship that these entities have with the entity being described within the EAS instance.</p>
+		<p type="ead">A child element of <gi>agent</gi>, <gi>function</gi>, and <gi>place</gi> used to specify the type of relationship that these entities have with the entity being described within the EAS instance.</p>
+		<p type="eac">A child element of <gi>agent</gi> and <gi>place</gi> used to specify the type of relationship that these entities have with the EAS instance respectively with the entity being described.</p>
+		<p type="eaf">A child element of <gi>agent</gi> within <gi>maintenanceEvent</gi> used to specify the type of relationship that this entity has with the EAS instance.</p>
 	</div>
 	<div type="mayContain">
 		<p>
@@ -18,7 +20,9 @@
 		</p>
 	</div>
 	<div type="mayOccurWithin">
-		<p>agent, function, place, subject</p>
+		<p type="ead">agent, function, place</p>
+		<p type="eac">agent, place</p>
+		<p type="eaf">agent</p>
 	</div>
 	<div type="attributes">
 		<p>
@@ -53,18 +57,42 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>relationship</gi> within <gi>agent</gi>, <gi>function</gi>, <gi>place</gi> and <gi>subject</gi> to specify the type of relation that these entities have with the entity being described within the EAS instance. The <gi>relationship</gi> element contains a textual description of the relation. It is recommended that values used in <gi>relationship</gi> be taken from an authorized vocabulary.</p>
+		<p type="ead">Use <gi>relationship</gi> within <gi>agent</gi>, <gi>function</gi>, and <gi>place</gi> to specify the type of relation that these entities have with the entity being described within the EAS instance, e.g. "creation" for record creators, "maintenance" for holding institutions, "storage" for places. To more specifically indicate the role of the related entity towards the entity being described in the EAS instance (e.g. "director" or "playwright" for the record creator of an audiovisual record, "readingRoom" for places), the element <gi>role</gi> should be used instead of or in combination with <gi>relationship</gi>.</p>
+		<p type="eac">Use <gi>relationship</gi> within <gi>agent</gi> and <gi>place</gi> to specify the type of relation that these entities have with the entity being described within the EAS instance, e.g. "maintenance" for the agent named in <gi>maintenanceEvent</gi>, "residence" for places. To more specifically indicate the role of the related entity towards the entity being described in the EAS instance (e.g. "archivist" or "volunteer" for the agent in <gi>maintenanceEvent</gi>, "birthplace" or "currentResidence" for places), the element <gi>role</gi> should be used instead of or in combination with <gi>relationship</gi>.</p>
+		<p type="eaf">Use <gi>relationship</gi> within <gi>agent</gi> to specify the type of relation that this entity has with the EAS instance, e.g. "maintenance". To more specifically indicate the role of the related entity towards the EAS instance (e.g. "archivist" or "volunteer"), the element <gi>role</gi> should be used instead of or in combination with <gi>relationship</gi>.</p>
+		<p>The <gi>relationship</gi> element contains a textual description of the relation. It is recommended that values used in <gi>relationship</gi> be taken from an authorized vocabulary.</p>
 	</div>
 	<div type="attributeusage">
 		<p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
 	</div>	
 	<div type="seealso">
-		<p>Use <gi>role</gi> in <gi>agent</gi>, <gi>function</gi>, <gi>place</gi> and <gi>subject</gi> to more specifically indicate the role of the related entity towards the entity being described in the EAS instance.</p>
+		<p>Use <gi>role</gi> to more specifically indicate the role of the related entity towards the entity being described in the EAS instance respectively towards the EAS instance itself.</p>
 	</div>
 	<div type="availability">
 		<p>Optional, Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"></egXML>
+		<egXML xml:lang="eng">
+			<![CDATA[<maintenanceHistory>
+			<maintenanceEvent id="me1">
+			<agent>
+			<label>Tanya Smith</label>
+			<role>Archivist</role>
+			<relationship valueURI="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology"/>
+		</agent>
+			<eventDateTime standardDateTime="2021-09">September 2021</eventDateTime>
+			<eventDescription>Creation of the encoded archival description</eventDescription>
+		</maintenanceEvent>
+			<maintenanceEvent id="me2">
+			<agent>
+			<label>Gregory Miller</label>
+			<role>Volunteer</role>
+			<relationship valueURI="https://www.ica.org/standards/RiC/ontology#CreationRelation" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology"/>
+		</agent>
+			<eventDateTime standardDateTime="2023-05">May 2023</eventDateTime>
+			<eventDescription>Marking persons and organisations named in narrative texts as part of a crowdsourcing project</eventDescription>
+		</maintenanceEvent>
+		</maintenanceHistory>]]>
+		</egXML>
 	</div>
 </div>
