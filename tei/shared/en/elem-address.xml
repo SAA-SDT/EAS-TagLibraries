@@ -7,8 +7,7 @@
                   <p>Address</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>place</gi> that binds together one or more
-                        <gi>addressLine</gi> elements to encode a postal or other address.</p>
+                  <p>An optional child element of <gi>place</gi> that binds together one or more <gi>addressLine</gi> elements to encode a postal or other address.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -48,37 +47,23 @@
                <div type="description">
                   <p><gi>address</gi> is an optional wrapper element within <gi>place</gi> used to
                      encode a physical or analog address.</p>
-                 <p>Ideally <gi>address</gi> should be bundled with a <gi>label</gi> element
-                     within <gi>place</gi> to provide both the name and address of a location.</p>
-                  <p><gi>address</gi> must include one or more <gi>addressLine</gi> element(s) that
-                     provide full or sufficient information identifying a postal or other physical
-                     address related to the entity being described.</p>
+                 <p>Ideally <gi>address</gi> should be bundled with a <gi>label</gi> element within <gi>place</gi> to provide both the name and address of a location.</p>
+                  <p><gi>address</gi> must include one or more <gi>addressLine</gi> element(s) that provide full or sufficient information identifying a postal or other physical address related to the entity being described.</p>
                </div>
-               <div type="seealso"><p>Use <gi>contact</gi> to encode digital addresses and contact
-                        information.</p></div>
+               <div type="seealso"><p>Use <gi>contact</gi> to encode digital addresses and contact information.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<address audience="external" id="IDAddress1">
-   <addressLine languageOfElement="se">
-      Kungl. Hovstaterna
-   </addressLine>
-   <addressLine languageOfElement="se">
-      Kungl. Slottet
-   </addressLine>
-   <addressLine addressLineType="postalCode">
-      10770
-   </addressLine>
-   <addressLine languageOfElement="se" addressLineType="municipality">
-      Stockholm
-   </addressLine>
-   <addressLine languageOfElement="se" addressLineType="country">
-      Sverige
-   </addressLine>
-   <addressLine languageOfElement="en" addressLineType="country">
-      Sweden
-   </addressLine>
-<address>]]></egXML>
+                  <egXML xml:lang="eng">
+                    <![CDATA[<address audience="external" id="IDaddress1">
+                    <addressLine languageOfElement="se">Kungl. Hovstaterna</addressLine>
+                    <addressLine languageOfElement="se">Kungl. Slottet</addressLine>
+                    <addressLine addressLineType="postalCode">10770</addressLine>
+                    <addressLine languageOfElement="se" addressLineType="municipality">Stockholm</addressLine>
+                    <addressLine languageOfElement="se" addressLineType="country">Sverige</addressLine>
+                    <addressLine languageOfElement="en" addressLineType="country">Sweden</addressLine>
+                  </address>]]>
+                  </egXML>
                </div>
             </div>
