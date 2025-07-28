@@ -55,7 +55,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>label</gi> to indicate the name of the related entity, either in the generic <gi>relation</gi> element or in one of the specific entity elements.</p>
+		<p>Use <gi>label</gi> to indicate the name of the related entity, either in the generic <gi>relation</gi> element or in one of the specific entity elements. Depending on the type of related entity, such a name can also take the form of a numeric denominator.</p>
 		<p type="ead">
 			<list>
 				<item>In <gi>agent</gi>, this can be the name of the agent responsible for the creation, modification, or deletion of an EAD instance, as captured in <gi>maintenanceEvent</gi>, or the name of the agent who has created, managed, used, or is mentioned in the archival materials.</item>
