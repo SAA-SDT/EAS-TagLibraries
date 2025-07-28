@@ -7,9 +7,7 @@
                   <p>Contact</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>place</gi> that binds together one or more
-                        <gi>contactLine</gi> elements to encode contact details or digital
-                     addresses.</p>
+                  <p>An optional child element of <gi>place</gi> that binds together one or more <gi>contactLine</gi> elements to encode contact details or digital addresses.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -47,26 +45,18 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>contact</gi> is an optional wrapper element within <gi>place</gi> used to
-                     encode digital addresses and contact information.</p>
-                  <p><gi>contact</gi> must include one or more <gi>contactLine</gi> element(s) that
-                     provide relevant contact details for the entity being described.</p>
+                  <p><gi>contact</gi> is an optional wrapper element within <gi>place</gi> used to encode digital addresses and contact information.</p>
+                  <p><gi>contact</gi> must include one or more <gi>contactLine</gi> element(s) that provide relevant contact details for the entity being described.</p>
                </div>
                <div type="seealso"><p>Use <gi>address</gi> to encode a physical or analog address.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<contact audience="external" id="IDContact1">
-   <contactLine contactLineType="phoneNumber">
-      08-402 60 00
-   </contactLine>
-   <contactLine languageOfElement="se" contactLineType="homepage">
-      https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html
-   </contactLine>
-   <contactLine languageOfElement="en" contactLineType="homepage">
-      https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html
-   </contactLine>
-</contact>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<contact audience="external" id="IDcontact1">
+                    <contactLine contactLineType="phoneNumber">08-402 60 00</contactLine>
+                    <contactLine languageOfElement="se" contactLineType="homepage" href="https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html" linkTitle="Besök vår hemsida"/>
+   <contactLine languageOfElement="en" contactLineType="homepage" href="https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html" linkTitle="Visit our website"/
+                  </contact>]]></egXML>
                </div>
             </div>
