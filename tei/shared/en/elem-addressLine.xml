@@ -7,8 +7,7 @@
                   <p>Address Line</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>address</gi> used for recording one line of a
-                     postal or other address.</p>
+                  <p>A required child element of <gi>address</gi> used for recording one line of a postal or other address.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -44,15 +43,11 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>addressLine</gi> is used to encode parts or lines of a physical address
-                     within a parent <gi>address</gi> element.</p>
-                  <p><gi>addressLine</gi> may be repeated as many times as necessary to enter all
-                     parts of an address.</p>
+                  <p><gi>addressLine</gi> is used to encode parts or lines of a physical address within a parent <gi>address</gi> element.</p>
+                  <p><gi>addressLine</gi> may be repeated as many times as necessary to enter all parts of an address.</p>
                </div>
-               <div type="attributeusage"><p>Use the optional <att>addressLineType</att>
-                        attribute to encode the part of the address that the <gi>addressLine</gi>
-                        refers to, for example "street".</p>
-                        <p>Use the optional <att>addressLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>addressLineType</att>.</p></div>
+               <div type="attributeusage"><p>Use the optional <att>addressLineType</att> attribute to encode the part of the address that the <gi>addressLine</gi> refers to, for example "street".</p>
+                 <p>Use the optional <att>addressLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>addressLineType</att>.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
