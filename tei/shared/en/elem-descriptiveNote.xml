@@ -19,7 +19,7 @@
                </div>
                <div type="mayOccurWithin">
                   <p type="eac">agent, conventionDeclaration, demographicDescription, demographicDescriptions, existDates, functionPerformed, functionsPerformed, identity, languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses, localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency, mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes, place, places, relation, relations, rightsDeclaration, setComponent, source, sources</p>
-                 <p type="eaf">classifications, conventionDeclaration, languageDeclaration, localTypeDeclaration, maintenanceAgency, relation, relations, rightsDeclaration, source, sources</p>
+                 <p type="eaf">agent, classifications, conventionDeclaration, identity, languageDeclaration, localTypeDeclaration, maintenanceAgency, relation, relations, rightsDeclaration, source, sources</p>
                  <p type="ead">agent, agents, conventionDeclaration, extent, formAvailable, formsAvailable, function, functions, identificationData, languageDeclaration, languageOfMaterial, languageSet, legalStatus, localTypeDeclaration, maintenanceAgency, physicalDescription, place, places, relation, relations, rightsDeclaration, source, sources, subject</p>
                </div>
                <div type="attributes">
@@ -76,6 +76,9 @@
                    <p>The majority of the documents are written in Modern English. Roberts copied multiple passages from original manuscripts in Latin, Greek and Old English.</p>
                  </descriptiveNote>
                  </languageOfMaterial>]]>
+                 </egXML>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" type="eaf">
+                   <![CDATA[]]>
                  </egXML>
                </div>
             </div>
