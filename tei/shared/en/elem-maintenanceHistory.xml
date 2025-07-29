@@ -40,6 +40,7 @@
                </div>
                <div type="seealso">
                  <p>Use <att>maintenanceStatus</att> within <gi>control</gi> to reflect the current drafting status of the EAS instance as recorded in <gi>maintenanceHistory</gi>.</p>
+                 <p type="ead">Use elements such as <gi>appraisal</gi>, <gi>custodHist</gi>, <gi>processInfo</gi> or <gi>sourceOfAcquisition</gi> within <gi>archDesc</gi> and the component elements to record the events in the lifecycle of the materials being described.</p>
                </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
