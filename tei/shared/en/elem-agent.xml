@@ -111,12 +111,15 @@
       <![CDATA[<biogHist>
 		  <narrativeEvent>
 		  <date standardDate="1964-10">October 1964</date>
-		  <agent agentType="group">Labour government</agent>
+		  <agent agentType="group">
+	      <label>Labour government</label>
+      </agent>
 		  <eventDescription>Created the new office of Secretary of State for Economic Affairs (combined with First Secretary of State) and set up the Department of Economic Affairs under the Ministers of the Crown Act 1964 to carry primary responsibility for long term economic planning.</eventDescription>
 	  </narrativeEvent>
 		  <narrativeEvent>
 		  <date standardDate="1964-10-16">16 October 1964</date>
-		  <agent agentType="person">George Brown</agent>
+		  <agent agentType="person">
+	      <label>George Brown</label></agent>
 		  <eventDescription>Appointed as First Secretary of State and Secretary of State for Economic Affairs, and as chairman of the National Economic Development Council (NEDC).</eventDescription>
 	  </narrativeEvent>
 		  [...]
@@ -126,12 +129,16 @@
       <![CDATA[<biogHist>
 		  <narrativeEvent>
 		  <date standardDate="1964-10">October 1964</date>
-		  <agent agentType="group">Labour government</agent>
+		  <agent agentType="group">
+		  <label>Labour government</label>
+	  </agent>
 		  <eventDescription>Created the new office of Secretary of State for Economic Affairs (combined with First Secretary of State) and set up the Department of Economic Affairs under the Ministers of the Crown Act 1964 to carry primary responsibility for long term economic planning.</eventDescription>
 	  </narrativeEvent>
 		  <narrativeEvent>
 		  <date standardDate="1964-10-16">16 October 1964</date>
-		  <agent agentType="person">George Brown</agent>
+		  <agent agentType="person">
+		  <label>George Brown</label>
+	  </agent>
 		  <eventDescription>Appointed as First Secretary of State and Secretary of State for Economic Affairs, and as chairman of the National Economic Development Council (NEDC).</eventDescription>
 	  </narrativeEvent>
 		  [...]
