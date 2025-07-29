@@ -54,11 +54,7 @@
             <item>Optional</item>
             <label>languageOfElement</label>
             <item>Optional</item>
-	    <label>localType</label>
-	    <item>Optional</item>
-	    <label>LocalTypeDeclarationReference</label>
-	    <item>Optional</item>
-            <label>maintenanceEventReference</label>
+	    <label>maintenanceEventReference</label>
             <item>Optional</item>
             <label>scriptOfElement</label>
             <item>Optional</item>
@@ -132,7 +128,7 @@
       <p>Required, not repeatable</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng"><![CDATA[<identity>
+      <egXML xml:lang="eng" type="eac"><![CDATA[<identity>
 		<entityType value="person"/>
 		<nameEntry>
 				<part localType="familyname">
