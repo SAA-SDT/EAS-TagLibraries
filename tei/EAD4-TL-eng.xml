@@ -263,6 +263,7 @@
             <xi:include href="shared/en/attr-maintenanceEventTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-maintenanceStatus.xml" parse="xml"/>
             <xi:include href="shared/en/attr-maintenanceStatusEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-normalizedForm.xml" parse="xml" />
             <xi:include href="shared/en/attr-notAfter.xml" parse="xml"/>
             <xi:include href="shared/en/attr-notBefore.xml" parse="xml"/>
             <xi:include href="shared/en/attr-placeType.xml" parse="xml"/>
@@ -273,7 +274,7 @@
             <xi:include href="shared/en/attr-referredEntityType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-referredEntityTypeEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-repositoryCode.xml" parse="xml"/>
-	    <xi:include href="shared/en/attr-relationType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-relationType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-relationTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-repositoryEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
