@@ -4,11 +4,12 @@
                   <gi>eventDescription</gi>
                </head>
                <div type="fullName">
-                  <p>Maintenance Event Description</p>
+                  <p>Event Description</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>maintenanceEvent</gi> that provides the
-                     description of a maintenance event in the life of the EAS instance.</p>
+                  <p type="eac">An optional child element of <gi>maintenanceEvent</gi> and <gi>narrativeEvent</gi> that provides the description of a maintenance event in the life of the EAS instance respectively the description of an event in the life of the CPF entity described.</p>
+                 <p type="ead">An optional child element of <gi>maintenanceEvent</gi> and <gi>narrativeEvent</gi> that provides the description of a maintenance event in the life of the EAS instance respectively the description of an event in the lifecycle of the materials described or the life of the records creator(s).</p>
+                 <p type="eaf">An optional child element of <gi>maintenanceEvent</gi> that provides the description of a maintenance event in the life of the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -23,18 +24,26 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p>maintenanceEvent</p>
+                  <p type"eac">maintenanceEvent, narrativeEvent</p>
+                  <p type"ead">maintenanceEvent, narrativeEvent</p>
+                  <p type"eaf">maintenanceEvent</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional</item>
+                        <label>conventionDeclarationReference</label>
+                        <item>Optional</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
                         <item>Optional</item>
+                        <label>maintenanceEventReference</label>
+                        <item>Optional</item>
                         <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>sourceReference</label>
                         <item>Optional</item>
                         <label>target</label>
                         <item>Optional</item>
@@ -42,23 +51,57 @@
                   </p>
                </div>
                <div type="description">
-                  <p>A child element of <gi>maintenanceEvent</gi> used for describing the
-                     maintenance event. The element allows a full description of the maintenance
-                     event to be given alongside information about the maintenance agent, and the
-                     type, time and date of the maintenance event.</p>
+                  <p type="eac">A child element of <gi>maintenanceEvent</gi> used for describing the maintenance event and of <gi>narrativeEvent</gi> used for describing a chronology of events in the life of the CPF entity described. The element allows a full description of the event to be given alongside information about the time and date of the event, the agent involved, and - in the context of <gi>maintenanceEvent</gi> - the type respectively - in the context of <gi>narrativeEvent</gi> - the place of the event.</p>
+                 <p type="ead">A child element of <gi>maintenanceEvent</gi> used for describing the maintenance event and of <gi>narrativeEvent</gi> used for describing a chronology of events in the lifecycle of the materials described (<gi>appraisal</gi>, <gi>custodHist</gi>, <gi>processInfo</gi>, <gi>sourceOfAcquisition</gi>) and the life of the record creator(s) (<gi>biogHist</gi>). The element allows a full description of the event to be given alongside information about the time and date of the event, the agent involved, and - in the context of <gi>maintenanceEvent</gi> - the type respectively - in the context of <gi>narrativeEvent</gi> - the place of the event.</p>
+                 <p type="eaf">A child element of <gi>maintenanceEvent</gi> used for describing the maintenance event. The element allows a full description of the event to be given alongside information about the time and date of the event, the agent involved, and the type of the event in <att>maintenanceEventType</att>.</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceEvent maintenanceEventType="derived">
-   <agent agentType="machine">
-      XSLT ead2cpf.xsl/Saxon B9
-   </agent>
-   <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
-   <eventDescription>
-      Derived from EAD instance.
-   </eventDescription>
-</maintenanceEvent>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="derived">
+                    <agent agentType="machine">
+                    <label>export.xsl/Saxon B9</label>
+                  </agent>
+                    <eventDateTime standardDateTime="2024-08-30T09:37:17.029-04:00"/>
+                    <eventDescription>Derived from local collection management system</eventDescription
+                  </maintenanceEvent>]]></egXML>
+                 <egXML xml:lang="eng" type="eac">
+      <![CDATA[<biogHist>
+		  <narrativeEvent>
+		  <date standardDate="1964-10">October 1964</date>
+		  <agent agentType="group">
+	      <label>Labour government</label>
+      </agent>
+		  <eventDescription>Created the new office of Secretary of State for Economic Affairs (combined with First Secretary of State) and set up the Department of Economic Affairs under the Ministers of the Crown Act 1964 to carry primary responsibility for long term economic planning.</eventDescription>
+	  </narrativeEvent>
+		  <narrativeEvent>
+		  <date standardDate="1964-10-16">16 October 1964</date>
+		  <agent agentType="person">
+	      <label>George Brown</label></agent>
+		  <eventDescription>Appointed as First Secretary of State and Secretary of State for Economic Affairs, and as chairman of the National Economic Development Council (NEDC).</eventDescription>
+	  </narrativeEvent>
+		  [...]
+	  </biogHist>]]>
+    </egXML>
+	  <egXML xml:lang="eng" type="ead">
+      <![CDATA[<biogHist>
+		  <narrativeEvent>
+		  <date standardDate="1964-10">October 1964</date>
+		  <agent agentType="group">
+		  <label>Labour government</label>
+	  </agent>
+		  <eventDescription>Created the new office of Secretary of State for Economic Affairs (combined with First Secretary of State) and set up the Department of Economic Affairs under the Ministers of the Crown Act 1964 to carry primary responsibility for long term economic planning.</eventDescription>
+	  </narrativeEvent>
+		  <narrativeEvent>
+		  <date standardDate="1964-10-16">16 October 1964</date>
+		  <agent agentType="person">
+		  <label>George Brown</label>
+	  </agent>
+		  <eventDescription>Appointed as First Secretary of State and Secretary of State for Economic Affairs, and as chairman of the National Economic Development Council (NEDC).</eventDescription>
+	  </narrativeEvent>
+		  [...]
+	  </biogHist>]]>
+    </egXML>
                </div>
             </div>
