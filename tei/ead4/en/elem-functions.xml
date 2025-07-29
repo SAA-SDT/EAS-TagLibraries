@@ -7,8 +7,7 @@
                   <p>Functions</p>
                </div>
                <div type="summary">
-                  <p>An optional child element used for grouping together
-                     one or more <gi>function</gi> elements.</p>
+                  <p>An optional child element used for grouping together one or more <gi>function</gi> elements.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -19,14 +18,13 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p type="eac">description</p>
                   <p type="ead">archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
                </div>
                <div type="attributes">
                   <p>
                      <list type="gloss">
                         <label>audience</label>
-                        <item>Optional<p type="eac"> (values limited to: external, internal)</p></item>
+                        <item>Optional</item>
                         <label>conventionDeclarationReference</label>
                         <item>Optional</item>
                         <label>id</label>
@@ -49,9 +47,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use the optional <gi>functions</gi> element to group together one or more
-                     occurrences of <gi>function</gi>. <gi>functions</gi> must include at least one
-                        <gi>function</gi> element.</p>
+                  <p>Use the optional <gi>functions</gi> element to group together one or more occurrences of <gi>function</gi>. <gi>functions</gi> must include at least one <gi>function</gi> element.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:
                   <list type="simple">
                      <item><gi>function</gi></item>
@@ -62,22 +58,18 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<functions>
-   <function>
-      <term>
-         Industrial or Scientific Research
-      </term>
-   </function>
-   <function>
-      <term>
-         Analytical Services
-      </term>
-   </function>
-   <function>
-      <term>
-         Advisory or Regulatory Body
-      </term>
-   </function>
-</functions>]]></egXML>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<functions>
+                    <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137609" functionType="function">
+                    <label>Legislating</label>
+                  </function>
+                    <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300138095" functionType="subfunction">
+                    <label>Law enforcing</label>
+                  </function>
+                    <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137796" functionType="subfunction">
+                    <label>Convicting</label>
+                  </function>
+                  </functions>]]>
+                  </egXML>
                </div>
             </div>

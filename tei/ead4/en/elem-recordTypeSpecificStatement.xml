@@ -66,6 +66,20 @@
 		<p>Optional, Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"></egXML>
+		<egXML xml:lang="eng">
+			<![CDATA[<recordTypeSpecificStatement>
+			<p>Autograph conductor's full score (pencil), with mimeographed conductor's short score of certain sections interleaved. Selections, including deletions.</p>
+		</recordTypeSpecificStatement>]]>
+		</egXML>
+		<egXML xml:lang="eng">
+			<![CDATA[<recordTypeSpecificStatement>
+			<objectXMLWrap>
+			<mods:cartographics xmlns:mods="https://www.loc.gov/standards/mods/mods-3-8.xsd">
+			<mods:scale>1:10000</mods:scale>
+			<mods:projection>Universal Transverse Mercator (UTM)</mods:projection>
+		</mods:cartographics>
+		</objectXMLWrap>
+		</recordTypeSpecificStatement>]]>
+		</egXML>
 	</div>
 </div>

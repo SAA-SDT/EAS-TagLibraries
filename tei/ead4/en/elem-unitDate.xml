@@ -51,8 +51,8 @@
     		</p>
 	</div>
 	<div type="description">
-		<p><gi>unitDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc. <gi>unitDate</gi> may be in the form of text or numbers, and may consist of a single date, a date range, or a combination of single dates and date ranges.</p>
-		<p>Use the sub-elements <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> to provide a more granular, machine-processable statement for the dates of the materials being described. Alternatively, use the sub-element <gi>textualDate</gi> to capture a temporal statement that cannot be expressed in a standardised or structured way.</p>
+		<p><gi>unitDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc. <gi>unitDate</gi> may include date information in the form of text or numbers, and may consist of a single date, a date range, or a combination of single dates and date ranges.</p>
+		<p>Use the sub-elements <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> to provide a more granular, machine-processable statement for the dates of the materials being described. Alternatively, use the sub-element <gi>textualDate</gi> to capture a temporal statement that cannot easily be expressed in a standardised or structured way.</p>
 	</div>
 	<div type="attributeusage"><p>Use <att>unitDateType</att> to indicate if <gi>unitDate</gi> represents inclusive dates or bulk (predominant) dates.</p></div>	
 	<div type="availability">
@@ -60,7 +60,41 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<unitDate>
+			<date standardDate="1852-03-23">1852 March 23</date>
+		</unitDate>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<unitDate unitDateType="inclusive">
+			<dateRange>
+			<fromDate standardDate="1860">1860</fromDate>
+			<toDate standardDate="1865">1865</toDate>
+		</dateRange>
+		</unitDate>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<unitDate unitDateType="bulk">
+			<dateSet>
+			<date standardDate="1832">1832</date>
+			<dateRange>
+			<fromDate standardDate="1848">1848</fromDate>
+			<toDate standardDate="1871">1871</toDate>
+		</dateRange>
+			<date standardDate="1888">1888</date>
+			<date standardDate="1918">1918</date>
+		</dateSet>
+		</unitDate>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<unitDate>
+			<date notBefore="1532-03-30">April 1532</date>
+			<textualDate>Anno Domini millesimo quingentesimo trissesimo secundo post festum Paschatis</textualDate>
+		</unitDate>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<unitDate>
+			<textualDate>No date given</textualDate>
+		</unitDate>]]>
 		</egXML>
 	</div>
 </div>

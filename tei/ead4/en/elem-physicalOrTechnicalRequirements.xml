@@ -62,7 +62,20 @@
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<c level="item">
+			<identificationData>[...]</identificationData>
+			<physicalOrTechnicalRequirements>
+			<p>Due to already existing oxidatve corrosion, the original daguerrotypes can only be viewed upon request and at the archive, where suitable conditions (dimmed lighting, low humidity) can be guaranteed.</p>
+		</physicalOrTechnicalRequirements>
+		</c>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<c level="subseries">
+			<identificationData>[...]</identificationData>
+			<physicalOrTechnicalRequirements>
+			<p>48K RAM; Apple Disk II with controller; colour monitor</p>
+		</physicalOrTechnicalRequirements>
+		</c>]]>
 		</egXML>
 	</div>
 </div>

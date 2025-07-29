@@ -223,6 +223,7 @@
             <xi:include href="shared/en/elem-head.xml" parse="xml"/>
             <xi:include href="shared/en/elem-identity.xml" parse="xml"/>
             <xi:include href="shared/en/elem-identityId.xml" parse="xml"/>
+            <!--<xi:include href="eac3/en/elem-item.xml" parse="xml"/>-->
             <xi:include href="shared/en/elem-label.xml" parse="xml" />
             <xi:include href="shared/en/elem-language.xml" parse="xml"/>
             <xi:include href="shared/en/elem-languageDeclaration.xml" parse="xml"/>
@@ -243,6 +244,7 @@
             <xi:include href="shared/en/elem-nameEntrySet.xml" parse="xml"/>
             <xi:include href="shared/en/elem-narrativeEvent.xml" parse="xml" />
             <xi:include href="shared/en/elem-objectXMLWrap.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-narrativeEvent.xml" parse="xml" />
             <xi:include href="eac3/en/elem-occupation.xml" parse="xml"/>
             <xi:include href="eac3/en/elem-occupations.xml" parse="xml"/>
             <xi:include href="shared/en/elem-otherAgencyCode.xml" parse="xml"/>
@@ -260,6 +262,7 @@
             <xi:include href="shared/en/elem-relations.xml" parse="xml"/>
             <xi:include href="shared/en/elem-relationship.xml" parse="xml" />
             <xi:include href="shared/en/elem-referringString.xml" parse="xml" />
+            <!--<xi:include href="shared/en/elem-representation.xml" parse="xml"/>-->
             <xi:include href="shared/en/elem-rightsDeclaration.xml" parse="xml"/>
             <xi:include href="shared/en/elem-role.xml" parse="xml" />
             <xi:include href="eac3/en/elem-setComponent.xml" parse="xml"/>
@@ -319,6 +322,7 @@
             <xi:include href="shared/en/attr-agentTypeEncoding.xml" parse="xml" />
             <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
             <xi:include href="shared/en/attr-audienceEncoding.xml" parse="xml" />
+            <!--<xi:include href="shared/en/attr-base.xml" parse="xml"/>-->
             <xi:include href="shared/en/attr-calendar.xml" parse="xml"/>
             <xi:include href="shared/en/attr-certainty.xml" parse="xml"/>
             <xi:include href="shared/en/attr-contactLineType.xml" parse="xml"/>

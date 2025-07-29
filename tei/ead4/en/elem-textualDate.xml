@@ -7,7 +7,7 @@
 		<p>Textual Date</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>unitDate</gi> that provides a simple statement of the date(s) covered by the described materials.</p>
+		<p>A child element of <gi>unitDate</gi> that provides a textual statement of the date(s) covered by the described materials, or indicates when no date information is available.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -29,13 +29,13 @@
 			<list type="gloss">
             			<label>audience</label>
             			<item>Optional</item>
-           			  <label>conventionDeclarationReference</label>
+           			<label>conventionDeclarationReference</label>
             			<item>Optional</item>
             			<label>id</label>
             			<item>Optional</item>
             			<label>languageOfElement</label>
             			<item>Optional</item>
-				          <label>maintenanceEventReference</label>
+				<label>maintenanceEventReference</label>
             			<item>Optional</item>
             			<label>scriptOfElement</label>
             			<item>Optional</item>
@@ -43,21 +43,29 @@
             			<item>Optional</item>
             			<label>status</label>
             			<item>Optional</item>
-           			  <label>target</label>
+           			<label>target</label>
             			<item>Optional</item>
-				   		</list>
+			</list>
     		</p>
 	</div>
 	<div type="description">
-		<p><gi>textualDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc, when these cannot be expressed in a more standardised or structured way. <gi>textualDate</gi> mainly takes the form of text representing a single date, a date range, or a combination of single dates and date ranges.</p>
+		<p><gi>textualDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc, when these cannot be expressed in a more standardised or structured way. <gi>textualDate</gi> mainly takes the form of text representing a single date, a date range, or a combination of single dates and date ranges. <gi>textualDate</gi> may also be used to indicate that no date information is available.</p>
 	</div>
-	<div type="seealso"><p>Use the other sub-elements of <gi>unitDate</gi>, i.e. <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> to provide a more granular, machine-processable statement for the dates of the materials being described.</p></div>
+	<div type="seealso"><p>Use the other sub-elements of <gi>unitDate</gi>, i.e. <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> to provide a more granular, machine-processable statement for the dates of the materials being described. This includes uncertain and/or approximate dates.</p></div>
 	<div type="availability">
 		<p>Optional, not repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<unitDate>
+			<date notBefore="1532-03-30">April 1532</date>
+			<textualDate>Anno Domini millesimo quingentesimo trissesimo secundo post festum Paschatis</textualDate>
+		</unitDate>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<unitDate>
+			<textualDate>No date given</textualDate>
+		</unitDate>]]>
 		</egXML>
 	</div>
 </div>
