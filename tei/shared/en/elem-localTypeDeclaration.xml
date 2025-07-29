@@ -7,9 +7,7 @@
                   <p>Local Type Declaration</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>control</gi> used to declare any local
-                     conventions or controlled vocabularies used in <att>localType</att> in the
-                     EAS instance.</p>
+                  <p>An optional child element of <gi>control</gi> used to declare any local conventions or controlled vocabularies used in <att>localType</att> in the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -48,11 +46,8 @@
                </div>
                <div type="description">
                   <p><gi>localTypeDeclaration</gi> specifies the local conventions and controlled vocabularies used in <att>localType</att> attributes in the EAS instance.</p>
-                  <p>The child <gi>reference</gi> must be used to cite the resource that lists the
-                     local rules or controlled terms. Any notes relating to how these rules or
-                     conventions have been used may be given in <gi>descriptiveNote</gi>. The child
-                        <gi>shortCode</gi> may be used to identify any abbreviation or code
-                     representing the local convention or controlled vocabulary.</p>
+                  <p>Each additional rule or set of rules, controlled vocabulary, or standard should be contained in a separate <gi>localTypeDeclaration</gi>.</p>
+                  <p>The child <gi>reference</gi> must be used to cite the resource that lists the local rules or controlled terms. Any notes relating to how these rules or conventions have been used may be given in <gi>descriptiveNote</gi>. The child <gi>shortCode</gi> may be used to identify any abbreviation or code representing the local convention or controlled vocabulary.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>reference</gi></item>
@@ -60,30 +55,16 @@
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
+               <div type="seealso">
+                 <p>Use <gi>conventionDeclaration</gi> to indicate any more broadly (i.e. nationally or  internationally) used rules or conventions, including authorized controlled vocabularies and thesauri, applied in creating the EAS instance.</p>
+                 <p>When using <att>localType</att> throughout the EAS instance, use <att>localTypeDeclarationReference</att> in parallel to refer back to the relevant <gi>localTypeDeclaration</gi> via its <att>id</att> attribute.</p>
+                  </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                   <egXML xml:lang="eng"><![CDATA[<localTypeDeclaration>
-   <reference href="https://d-nb.info/standards/elementset/gnd_20191015">
-      GNDO
-   </reference>
-   <descriptiveNote>
-      <p>
-         Gemeinsame Normdatei Ontologie
-      </p>
-      <p languageOfElement="eng">
-         Integrated Authority File Ontology
-      </p>
-      <p>
-         Version 2019-10-15
-      </p>
-   </descriptiveNote>
-</localTypeDeclaration>
-<localTypeDeclaration>
-   <reference href="https://www.loc.gov/marc/authority/">
-      MARC21
-   </reference>
-</localTypeDeclaration>]]></egXML>
+                   <egXML xml:lang="eng"><![CDATA[<localTypeDeclaration id="identifiers">
+                     <reference href="https://example.org/value-lists/identifiers.csv">List of identifier types</reference>
+                   </localTypeDeclaration>>]]></egXML>
                </div>
             </div>
