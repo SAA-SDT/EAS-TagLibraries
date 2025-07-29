@@ -69,6 +69,15 @@
       <p type="ead"><gi>agent</gi> is a required and repeatable sub-element of <gi>agents</gi> and can be used to name persons, organizations, and families related to the archival materials being described as well as their specific relationship with and role towards the materials. The required sub-element <gi>label</gi> is used to encode the name of the agent, while the optional <att>agentType</att> and <gi>role</gi> allow for specifying the type of agent in question and for providing information about their role in relation to the materials being described (e.g., if a person is the "creator" of the materials or a "contributor" or if they are the "director" or the "cinematographer" of audiovisual material or the "defendant" or the "plaintiff" in court records). Use the sub-elements <gi>relationship</gi>, <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>, and <gi>placeName</gi> along with the optional <gi>descriptiveNote</gi> to describe the relationship between the agent and the materials being described in more detail.</p>
       <p type="ead">Use <gi>agent</gi> as a required sub-element of <gi>maintenanceEvent</gi> to name and describe the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAS instance, and the style sheet used to update an instance to a new version of the EAS. Use <gi>agent</gi> as an optional and repeatable sub-element of <gi>findAidDesc</gi> to indicate any person, institution, or system relevant to the creation, publication, or disseminiation of any instantiations of the EAS instance such as the author, publisher, or sponsor of a printed or online finding aid. Use <gi>agent</gi> as an optional sub-element in <gi>narrativeEvent</gi> to name a person, institution, or other type of agent of importance to a specific event in the history or the processing of materials being described.</p>
       <p type="eaf">Use <gi>agent</gi> as a required sub-element of <gi>maintenanceEvent</gi> to name and describe the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAS instance, and the style sheet used to update an instance to a new version of the EAS.</p>
+	    <p>The prescribed order of all child elements (both required and optional) is:</p>
+                  <list type="simple">
+                     <item><gi>label</gi></item>
+                     <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
+		     <item><gi>placeName</gi></item>
+                     <item><gi>role</gi></item>
+                     <item><gi>relationship</gi></item>
+                     <item><gi>descriptiveNote</gi></item>
+                  </list>
     </div>
     <div type="attributeusage">
       <p>Use the <att>agentType</att> attribute to specify whether the agent is, for example, a "corporateBody", "mechanism", or "person". Use the optional <att>agentTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>agentType</att>.</p>
