@@ -8,7 +8,7 @@
                </div>
                <div type="summary">
                   <p type="eac">An optional child element of <gi>languageUsed</gi> that identifies the writing script for a language used by the described entity.</p>
-                  <p type="ead">An optional child element of <gi>languageSet</gi> that identifies the writing script for a language used in the materials described.</p>
+                  <p type="ead">A required child element of <gi>languageSet</gi> that identifies the writing script for a language used in the materials described.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -45,18 +45,16 @@
                   </p>
                </div>
                <div type="description">
-                  <p type="eac">An optional element within <gi>languageUsed</gi> that gives the main script
-                     used by the entity or records being described.</p>
-                  <p type="ead">An optional element within <gi>languageSet</gi> that gives the main script
-                     used by the entity or records being described.</p>
+                  <p type="eac">An optional element within <gi>languageUsed</gi> that gives the main script used by the entity being described.</p>
+                  <p type="ead">An optional element within <gi>languageSet</gi> that gives the main script used by the records being described.</p>
                </div>
-               <div type="attributeusage"><p>Use <att>scriptCode</att> to provide a code for the writing system
-                        itself.</p>
-                    <p>Use <att>scriptOfElement</att> to provide a code for the writing system
-                        in which the element is given.</p>
+               <div type="attributeusage">
+                 <p>Use <att>scriptCode</att> to provide a code for the writing system itself.</p>
+                 <p>Use <att>scriptOfElement</att> to provide a code for the writing system in which the element is given.</p>
                </div>
                <div type="availability">
-                  <p>Optional, repeatable</p>
+                  <p type="eac">Optional, repeatable</p>
+                  <p type="ead">Required, only repeatable when encoding one language with several writing systems</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<languageUsed>
@@ -67,5 +65,34 @@
       Latin
    </writingSystem>
 </languageUsed>]]></egXML>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead">
+			<![CDATA[<languageOfMaterial>
+			<languageSet>
+			<writingSystem scriptCode="Latn">Latin</writingSystem>
+			<language languageCode="eng">English</language>
+			<language languageCode="ang">Old English</language>
+			<language languageCode="lat">Latin</language>
+		</languageSet>
+			<languageSet>
+			<language languageCode="gre">Greek</language>
+			<writingSystem scriptCode="Grek">Greek</writingSystem>
+		</languageSet>
+			<descriptiveNote>
+			<p>The majority of the documents are written in Modern English. Roberts copied multiple passages from original manuscripts in Latin, Greek and Old English.</p>
+		</descriptiveNote>
+		</languageOfMaterial>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead">
+			<![CDATA[<languageOfMaterial>
+			<languageSet>
+			<language languageCode="jpn">Japanese</language>
+			<writingSystem scriptCode="Hira">hiragana</writingSystem>
+			<writingSystem scriptCode="Kana">katakana</writingSystem>
+		</languageSet>
+			<descriptiveNote>
+			<p>This file contains documents in Japanese, in both the hiragana and katakana scripts.</p>
+		</descriptiveNote>
+		</languageOfMaterial>]]>
+		</egXML>
                </div>
             </div>
