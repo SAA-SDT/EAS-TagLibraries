@@ -7,7 +7,7 @@
                   <p>Short Code</p>
                </div>
                <div type="summary">
-                  <p>An optional element for encoding the shortened form of a word or phrase.</p>
+                  <p>An optional element for encoding the shortened form of the rule, code list, vocabulary, rights statement etc applied in creating and maintaining the EAS instance and captured in <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi> and <gi>rightsDeclaration</gi>.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -35,9 +35,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Used to record the shortened form of a word or phrase, for example, an
-                     acronym.</p>
-                  <p>Use <gi>shortCode</gi> within <gi>conventionDeclaration</gi> or <gi>localTypeDeclaration</gi> to identify the code for a thesaurus, controlled vocabulary, or another standard used in creating the EAS description. Use within <gi>rightsDeclaration</gi> to provide an abbreviated name for the rights statement.</p>
+                  <p>Use <gi>shortCode</gi> within <gi>conventionDeclaration</gi> or <gi>localTypeDeclaration</gi> to identify the shortened form, acronym, or code for a thesaurus, controlled vocabulary, or another standard used in creating the EAS description. Use within <gi>rightsDeclaration</gi> to provide an abbreviated name for the rights statement.</p>
                   <p>To improve interoperability, it is recommended that the value be selected from an authorized list of codes such as the MARC Code List (http://www.loc.gov/marc/sourcelist/).</p>
                </div>
                <div type="availability">
