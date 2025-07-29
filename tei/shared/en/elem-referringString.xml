@@ -16,8 +16,8 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p type="ead">abstract, container, eventDescription, formAvailableId, genreForm, head, otherIdentificationData, p, physFacet, reference, textualDate, unitId, unitTitle</p>
-		<p type="eac">abstract, eventDescription, head, p, reference</p>
+		<p type="ead">abstract, container, eventDescription, formAvailableId, genreForm, head, otherIdentificationData, p, physicalFacet, reference, textualDate, unitId, unitTitle</p>
+		<p type="eac">abstract, eventDescription, p, reference</p>
 		<p type="eaf">eventDescription, p, reference</p>
 	</div>
 	<div type="attributes">
