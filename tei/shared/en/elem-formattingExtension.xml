@@ -41,9 +41,9 @@
 		<p type="ead">Within all other elements: optional, not repeatable.</p>
 		<p type="eac">Optional, not repeatable</p>
 		<p type="eaf">Optional, not repeatable</p>
-		<p type="ead">In <gi>findAidDesc</gi>, <gi>formattingExtension</gi> is optionally available to encode a narrative description next to the more specific elements <gi>agent</gi>, <gi>citedRange</gi>, <gi>date</gi>, <gi>place</gi>, and <gi>title</gi>. In all other contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or to use one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
-		<p type="eac">In these narrative contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or to use one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
-		<p type="eaf">In these narrative contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or to use one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+		<p type="ead">In <gi>findAidDesc</gi>, <gi>formattingExtension</gi> is optionally available to encode a narrative description next to the more specific elements <gi>agent</gi>, <gi>citedRange</gi>, <gi>date</gi>, <gi>place</gi>, and <gi>title</gi>. In all other contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+		<p type="eac">In these narrative contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+		<p type="eaf">In these narrative contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
 	</div>
 	<div type="examples">
 		<p type="eac">See encoding examples in parent elements of <gi>formattingExtension</gi>, e.g. in <gi>biogHist</gi>.</p>
