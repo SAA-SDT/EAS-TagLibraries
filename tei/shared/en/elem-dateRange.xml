@@ -20,7 +20,7 @@
                <div type="mayOccurWithin">
                  <p type="eac">agent, dateSet, demographicDescription, existDates, functionPerformed, legalStatus, localDescription, mandate, narrativeEvent, occupation, otherEntityType, place, relation, useDates</p>
                  <p type="eaf">agent, dateSet, functionDates, legislation, relation, useDates</p>
-                 <p type="ead">accessConditions, agent, dateSet, formAvailable, fuction, legalStatus, place, relation, subject, unitDate, useConditions</p>
+                 <p type="ead">accessConditions, agent, dateSet, formAvailable, function, legalStatus, place, relation, subject, unitDate, useConditions</p>
                </div>
                <div type="attributes">
                   <p>
