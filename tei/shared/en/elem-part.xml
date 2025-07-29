@@ -50,28 +50,38 @@
                </div>
                <div type="description">
                   <p type="eac">Within <gi>nameEntry</gi> each of the components of a name, such as forename, surname or honorific title, may be recorded in a separate <gi>part</gi> element. <gi>part</gi> may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</p>
-                  <p type="ead">Within <gi>title</gi> components such as subtitles or the number of an issue in a serial publication may be recorded in a separate <gi>part</gi> element.</p>
-                 <p type="eaf">Within <gi>nameEntry</gi> each of the components of a name, such as forename, surname or honorific title, may be recorded in a separate <gi>part</gi> element. <gi>part</gi> may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</p>
+                  <p type="ead">Within <gi>title</gi> components such as edition numbers or the number of an issue in a serial publication may be recorded in a separate <gi>part</gi> element. Subtitles or the full title of a serial publication should, however, be recorded in a <gi>title</gi> element of their own.</p>
+                 <p type="eaf">Within <gi>nameEntry</gi> each of the components of the name of a function may be recorded in a separate <gi>part</gi> element. <gi>part</gi> may also contain the full name of the entity when it is not possible to distinguish the different components of the name.</p>
                   <p><gi>part</gi> cannot be empty and requires at least one non-whitespace character, such as a hyphen, if no actual name can be given.</p>
                </div>
-               <div type="attributeusage"><p>The designation of the information contained in the <gi>part</gi> can be
-                        specified by the attribute <att>localType</att>.</p></div>
+               <div type="attributeusage"><p>The designation of the information contained in the <gi>part</gi> element can be specified by the attribute <att>localType</att>.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
-   <part localType="surname">
-      Arendt
-   </part>
-   <part localType="firstname">
-      Hannah
-   </part>
-</nameEntry>]]></egXML>
+                    <part localType="surname">Arendt</part>
+                    <part localType="firstname">Hannah</part>
+                  </nameEntry>]]></egXML>
                   <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
-   <part>
-      Provence-Alpes-Côte d'Azur
-   </part>
-</nameEntry>]]></egXML>
+                    <part>Provence-Alpes-Côte d'Azur</part>
+                  </nameEntry>]]></egXML>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<!-- The following example has been adapted from the EADiva Tag Libray by Ruth Kitchin Tillman, https://eadiva.com/filedesc/ -->
+                   <ead>
+                   <control>[...]</control>
+                   <findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department/quilting-technologies-department.xml" linkTitle="Download the encoded finding aid" linkRole="text/xml">
+                   <title localType="mainTitle" localTypeDeclarationReference="titles">
+                   <part>Guide to Quilting Technologies Department Records, 1978-2020</part>
+                   <part localType="edition" localTypeDeclarationReference="titles">2nd edition</part>
+                 </title>
+                   <title localType="subtitle" localTypeDeclarationReference="titles">
+                   <part>A guide to the records of the Quilting Technologies Department at Piecemaking University</part>
+                 </title>
+                   <title localType="seriesTitle" localTypeDeclarationReference="titles">
+                   <part>Piecemaking University Departmental Records<part>
+                   <part localType="issueNumber" localTypeDeclarationReference="titles">13</part>
+                 </title>
+                   [...]
+                 </findAidDesc>]]></egXML>
                </div>
             </div>
