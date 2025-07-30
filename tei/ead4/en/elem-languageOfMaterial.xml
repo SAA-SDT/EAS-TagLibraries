@@ -13,7 +13,7 @@
 		<p>
 			<list type="gloss">
 				<label>descriptiveNote</label>
-				<label>0..1</label>
+				<item>0..1</item>
 				<label>language</label>
 				<item>0..n</item>
 				<label>languageSet</label>

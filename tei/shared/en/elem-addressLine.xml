@@ -47,7 +47,7 @@
                   <p><gi>addressLine</gi> may be repeated as many times as necessary to enter all parts of an address.</p>
                </div>
                <div type="attributeusage"><p>Use the optional <att>addressLineType</att> attribute to encode the part of the address that the <gi>addressLine</gi> refers to, for example "street".</p>
-                 <p>Use the optional <att>addressLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>addressLineType</att>.</p></div>
+                  <p>Use the optional <att>addressLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>addressLineType</att>.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>

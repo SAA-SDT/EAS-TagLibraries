@@ -49,7 +49,7 @@
             			<item>Optional</item>
             			<label>target</label>
             			<item>Optional</item>
-				<label>valueURI</label>
+      						<label>valueURI</label>
             			<item>Optional</item>
             			<label>vocabularySource</label>
             			<item>Optional</item>
