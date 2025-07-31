@@ -24,9 +24,9 @@
 </list></p>
                </div>
                <div type="mayOccurWithin">
-                  <p type"eac">maintenanceEvent, narrativeEvent</p>
-                  <p type"ead">maintenanceEvent, narrativeEvent</p>
-                  <p type"eaf">maintenanceEvent</p>
+                  <p type="eac">maintenanceEvent, narrativeEvent</p>
+                  <p type="ead">maintenanceEvent, narrativeEvent</p>
+                  <p type="eaf">maintenanceEvent</p>
                </div>
                <div type="attributes">
                   <p>

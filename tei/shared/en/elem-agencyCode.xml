@@ -49,7 +49,8 @@
                </div>
                <div type="attributeusage">
                  <p>Use <att>status</att> with values such as “authorised” or “alternative” to declare whether the <gi>agencyCode</gi> is using an authorised value, e.g. a registered ISIL code, or an alternative code. Use <att>statusEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>status</att>.</p>
-                 <div type="seealso">
+	 </div>
+		 <div type="seealso">
                    <p>Use <gi>agencyName</gi> to record the name of the agency. Use <gi>otherAgencyCode</gi> to record any alternative codes representing the agency. Use <gi>recordId</gi> in combination with <gi>agencyCode</gi> to form a globally unique identifier for the EAS instance.</p>
                </div>
                <div type="availability">

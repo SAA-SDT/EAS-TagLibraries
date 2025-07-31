@@ -139,7 +139,8 @@
             <xi:include href="shared/en/elem-dateSet.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-descriptionOfComponents.xml" parse="xml"/>
             <xi:include href="shared/en/elem-descriptiveNote.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-dimensions.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-dimensions.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-ead.xml" parse="xml"/>
             <xi:include href="shared/en/elem-eventDateTime.xml" parse="xml"/>
             <xi:include href="shared/en/elem-eventDescription.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-extent.xml" parse="xml"/>
@@ -154,7 +155,7 @@
             <xi:include href="ead4/en/elem-functions.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-genreForm.xml" parse="xml"/>
             <xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
-            <xi:include href="shared/en/elem-head.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-head.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-identificationData.xml" parse="xml"/>
             <xi:include href="shared/en/elem-label.xml" parse="xml"/>
             <xi:include href="shared/en/elem-language.xml" parse="xml"/>
@@ -175,7 +176,8 @@
             <xi:include href="shared/en/elem-otherRecordId.xml" parse="xml"/>
             <xi:include href="shared/en/elem-p.xml" parse="xml"/>
             <xi:include href="shared/en/elem-part.xml" parse="xml"/>
-            <xi:include href="ead4/en/elem-physicalFacet.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-physicalDescription.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-physicalFacet.xml" parse="xml"/>
             <xi:include href="ead4/en/elem-physicalOrTechnicalRequirements.xml" parse="xml"/>
             <xi:include href="shared/en/elem-place.xml" parse="xml"/>
             <xi:include href="shared/en/elem-placeName.xml" parse="xml"/>

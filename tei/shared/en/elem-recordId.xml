@@ -40,7 +40,7 @@
                   <p><gi>recordId</gi> cannot be empty.</p>
                </div>
                <div type="seealso"><p>Use <gi>agencyCode</gi> in combination with <gi>recordId</gi> to provide a globally unique identifier for the EAS instance.</p>
-                 <p>Any alternative or additional record identifiers may be recorded in <gi>otherRecordId</gi>.</div>
+		       <p>Any alternative or additional record identifiers may be recorded in <gi>otherRecordId</gi>.</p></div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>

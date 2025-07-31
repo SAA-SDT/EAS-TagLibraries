@@ -7,9 +7,9 @@
 		<p>Role</p>
 	</div>
 	<div type="summary">
-		<p type"ead">An optional child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance.</p>
-		<p type"eac">An optional child element of <gi>agent</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself.</p>
-		<p type"eaf">An optional child element of <gi>agent</gi> and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself.</p>
+		<p type="ead">An optional child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance.</p>
+		<p type="eac">An optional child element of <gi>agent</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself.</p>
+		<p type="eaf">An optional child element of <gi>agent</gi> and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">

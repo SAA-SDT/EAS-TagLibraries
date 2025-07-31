@@ -94,7 +94,7 @@
 		       </descriptiveNote>
 		       </legalStatus>
 		       </identificationData>]]>
-		       </egXML
+	       </egXML>
 		  <egXML xml:lang="eng" type="eac"><![CDATA[<legalStatus>
 			  <term>Department of State</term>
 		  </legalStatus>]]></egXML>

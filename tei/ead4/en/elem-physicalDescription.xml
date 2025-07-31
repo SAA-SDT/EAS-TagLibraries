@@ -12,13 +12,13 @@
 	<div type="mayContain">
 		<p>
 			<list type="gloss">
-				<label>descriptiveNote</label
+				<label>descriptiveNote</label>
 				<item>0..1</item>
-				<label>dimensions</label
+				<label>dimensions</label>
 				<item>0..1</item>
-				<label>extent</label
+				<label>extent</label>
 				<item>0..1</item>
-				<label>physicalFacet</label
+				<label>physicalFacet</label>
 				<item>0..1</item>
 			</list>
 		</p>
