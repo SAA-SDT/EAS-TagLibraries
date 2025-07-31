@@ -9,7 +9,6 @@
                <div type="summary">
                   <p type="eac">An optional child element of <gi>description</gi> used for grouping together one or more <gi>place</gi> elements.</p>
                   <p type="ead">An optional child element of <gi>archDesc</gi>, <gi>c</gi>, and <gi>c01</gi> to <gi>c12</gi> used for grouping together one or more <gi>place</gi> elements.</p>
-                 <!--EAC-F?><p type="eac">An optional child element of <gi>relation</gi> used for grouping together one or more <gi>place</gi> elements.</p>-->
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -22,7 +21,6 @@
                <div type="mayOccurWithin">
                   <p type="eac">description</p>
                   <p type="ead">archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
-                 <!--EAC-F??<p type="eaf">relation</p>-->
                </div>
                <div type="attributes">
                   <p>
@@ -51,10 +49,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use the optional <gi>places</gi> element to group together one or more
-                     occurrences of <gi>place</gi>. <gi>places</gi> must include at least one
-                        <gi>place</gi> element. A <gi>descriptiveNote</gi> element may be included
-                     if a fuller textual explanation is needed.</p>
+                  <p>Use the optional <gi>places</gi> element to group together one or more occurrences of <gi>place</gi>. <gi>places</gi> must include at least one <gi>place</gi> element. A <gi>descriptiveNote</gi> element may be included if a fuller textual explanation is needed.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>place</gi></item>
@@ -65,23 +60,37 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<places>
-   <place>
-      <placeName valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-         Stockholm
-      </placeName>
-      <placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBirth" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">
-         Geburtsort
-      </placeRole>
-   </place>
-   <place>
-      <placeName valueURI="https://d-nb.info/gnd/4051594-1" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-         Sankt Gallen
-      </placeName>	
-      <placeRole valueURI="https://d-nb.info/standards/elementset/gnd#placeOfDeath" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">
-         Sterbeort
-      </placeRole>
-   </place>
-</places>]]></egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<places>
+                    <place placeType="populatedPlace">
+                    <label valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Stockholm</label>
+                    <role valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBirth" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Geburtsort</role>
+                  </place>
+                    <place placeType="populatedPlace">
+                    <label valueURI="https://d-nb.info/gnd/4051594-1" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Sankt Gallen</label>	
+                    <role valueURI="https://d-nb.info/standards/elementset/gnd#placeOfDeath" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Sterbeort</role>
+                  </place>
+                  </places>]]></egXML>
+                 <egXML xml:lang="eng" type="ead"><![CDATA[<places>
+                   <place placeType="populatedPlace">
+                   <label>Treviso</label>
+                   <role valueURI="https://schema.org/serviceLocation" vocabularySource="schema.org">sala lettura</role>
+                   <address>
+                   <addressLine addressLineType="street">Via Pietro di Dante, 11</addressLine>
+                   <addressLine addressLineType="postalCode">31100</addressLine>
+                   <addressLine addressLineType="country">Italia</addressLine>
+                 </address>
+                   <contact>
+                   <contactLine contactLineType="homepage" href="https://www.archiviodistatotreviso.beniculturali.it/">Visita nostro sito web ufficiale</contactLine>
+                 </contact>
+                 </place>
+                   <place>
+                   <label>Stanza A, fila 7, scaffale 2</label>
+                   <role valueURI="https://schema.org/itemLocation" vocabularySource="schema.org">deposito</role>
+                 </place>
+                   <place placeType="administrativeDivision">
+                   <label valueURI="https://www.geonames.org/6697802/crete.html" vocabularySource="GeoNames">Regno de Càndia</label>
+                   <role valueURI="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOf" vocabularySource="RiC-O">soggetto</role>
+                 </place>
+                 </places>]]></egXML>
                </div>
             </div>

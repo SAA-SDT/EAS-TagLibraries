@@ -7,9 +7,7 @@
                   <p>Maintenance Event</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>maintenanceHistory</gi> used to record
-                     information about maintenance activities in the history of the EAS
-                     instance.</p>
+                  <p>A required child element of <gi>maintenanceHistory</gi> used to record information about maintenance activities in the history of the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -25,42 +23,10 @@
                   <p>maintenanceHistory</p>
                </div>
                <div type="attributes">
-                  <p type="eac">
+                  <p>
                      <list type="gloss">
                         <label>audience</label>
                         <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventType</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-                  <p type="ead">
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventType</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-                 <p type="eaf">
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional <p type="eac">(values limited to: external, internal)</p></item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>languageOfElement</label>
@@ -75,15 +41,8 @@
                   </p>
                </div>
                <div type="description">
-                  <p>A required child element of <gi>maintenanceHistory</gi>,
-                        <gi>maintenanceEvent</gi> is used to record an activity in the creation and
-                     ongoing maintenance of an EAS instance, including revisions, updates, and
-                     deletions. There will always be at least one maintenance event for each
-                     instance, which will typically be its creation.</p>
-                  <p><gi>maintenanceEvent</gi> must include <gi>agent</gi> and
-                        <gi>eventDateTime</gi> child elements to record the agent that carried out
-                     the maintenance event, and the date and time the maintenance event
-                     occurred.</p>
+                  <p>A required child element of <gi>maintenanceHistory</gi>, <gi>maintenanceEvent</gi> is used to record an activity in the creation and ongoing maintenance of an EAS instance, including revisions, updates, and deletions, e.g. as a result of reparative description or the application of Artificial Intelligence models. There will always be at least one maintenance event for each instance, which will typically be its creation.</p>
+                  <p><gi>maintenanceEvent</gi> must include <gi>agent</gi> and <gi>eventDateTime</gi> child elements to record the agent that carried out the maintenance event, and the date and time the maintenance event occurred.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>agent</gi></item>
@@ -92,38 +51,32 @@
                   </list>
                </div>
                <div type="attributeusage">
-                  <p type="eac">Use the required <att>maintenanceEventType</att> to document the type of
-                        maintenance activity that the <gi>maintenanceEvent</gi> is recording, using
-                        one of the values from the available controlled list. </p>
-                        <p type="ead">Use <att>maintenanceEventType</att> to document the type of maintenance activity that the <gi>maintenanceEvent</gi> is recording. Use <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>maintenanceEventType</att>.</p>
-  <p type="eaf">Use <att>maintenanceEventType</att> to document the type of maintenance activity that the <gi>maintenanceEvent</gi> is recording. Use <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>maintenanceEventType</att>.</p></div>
-                            
-  <div type="availability">
+                  <p>Use <att>maintenanceEventType</att> to document the type of maintenance activity that the <gi>maintenanceEvent</gi> is recording. Use <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>maintenanceEventType</att>.</p>
+               </div>
+               <div type="availability">
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceHistory>
-   <maintenanceEvent maintenanceEventType="derived">
-      <agent agentType="machine">
-         XSLT ead2cpf.xsl/Saxon B9
-      </agent>
-      <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
-      <eventDescription>
-         Derived from EAD instance.
-      </eventDescription>
-   </maintenanceEvent>
-   <maintenanceEvent maintenanceEventType="revised">
-      <agent agentType="unknown"/>
-      <eventDateTime standardDateTime="2021-11-27"/>
-   </maintenanceEvent>
-   <maintenanceEvent maintenanceEventType="updated">
-      <agent agentType="human">
-         K. Bredenberg
-      </agent>
-      <eventDateTime>
-         December 2021
-      </eventDateTime>
-   </maintenanceEvent>
-</maintenanceHistory>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceHistory>
+                    <maintenanceEvent maintenanceEventType="derived">
+                    <agent agentType="machine">
+                    <label>export.xsl/Saxon B9</label>
+                  </agent>
+                    <eventDateTime standardDateTime="2024-08-30T09:37:17.029-04:00"/>
+                    <eventDescription>Derived from local collection management system</eventDescription
+                  </maintenanceEvent>
+                    <maintenanceEvent maintenanceEventType="revised">
+                    <agent agentType="unknown">
+                    <label/>
+                  </agent>
+                    <eventDateTime standardDateTime="2024-11-27"/>
+                  </maintenanceEvent>
+                    <maintenanceEvent maintenanceEventType="updated">
+                    <agent agentType="person">
+                    <label>K. Bredenberg</label>
+                  </agent>
+                    <eventDateTime>December 2024</eventDateTime>
+                  </maintenanceEvent>
+                  </maintenanceHistory>]]></egXML>
                </div>
             </div>

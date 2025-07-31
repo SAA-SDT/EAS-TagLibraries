@@ -44,26 +44,20 @@
                      <item><gi>descriptiveNote</gi></item>
                   </list>
                </div>
-               <div type="attributeusage" standard="eac"><p>Use <att>base</att> to specify a URI (other than the base URI of the EAS instance) to be used for resolving relative URIs within <gi>sources</gi> or descendant elements.</p></div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<sources>
-   <source>
-      <reference>
-         Provenienzmerkmal
-      </reference>
-   </source>
-   <source>
-      <reference href="http://staatsbibliothek-berlin.de/die-staatsbibliothek/geschichte/">
-         <descriptiveNote>
-            <p>
-               Stand: 31.07.2018
-            </p>
-         </descriptiveNote>
-      </reference>
-   </source>
-</sources>]]></egXML>
+                    <source>
+                    <reference>Provenienzmerkmal</reference>
+                  </source>
+                    <source href="http://staatsbibliothek-berlin.de/die-staatsbibliothek/geschichte/">
+                    <reference>Geschichte der Staatsbibliothek zu Berlin</reference>
+                    <descriptiveNote>
+                    <p>Stand: 31.07.2018</p>
+                  </descriptiveNote>
+                  </source>
+                  </sources>]]></egXML>
                </div>
             </div>

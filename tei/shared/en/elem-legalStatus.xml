@@ -7,8 +7,7 @@
                   <p>Legal Status</p>
                </div>
                <div type="summary">
-                  <p type="eac">A required child element of <gi>legalStatuses</gi> used to encode information
-                     about the legal status of a corporate body.</p>
+                  <p type="eac">A required child element of <gi>legalStatuses</gi> used to encode information about the legal status of a corporate body.</p>
                  <p type="ead">An element for indicating the statutorily defined status of the materials being described.</p>
                </div>
                <div type="mayContain">
@@ -76,20 +75,32 @@
                   <p type="eac">Required, repeatable</p>
                   <p type="ead">Optional, repeatable</p>
                </div>
-               <div type="examples" standard="eac">
-                  <egXML xml:lang="eng" type="ead"/>
+               <div type="examples">
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead"><![CDATA[<legalStatus>
+			  <term>Public Record(s)</term>
+		  </legalStatus>]]>
+		  </egXML>
+		       <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead"><![CDATA[<identificationData>
+			       <legalStatus>
+			       <term>Student records</term>
+			       <descriptiveNote>
+			       <p>Student records are governed by the Family Educational Rights and Privacy Act (FERPA), 20 U.S.C. § 1232g.</p>
+		       </descriptiveNote>
+		       </legalStatus>
+			       <legalStatus>
+			       <term>Patient records</term>
+			       <descriptiveNote>
+			       <p>Patient records are governed by the Health Insurance Portability and Accountability Act, Pub.L. 104–191 and 110 Stat. 1936. Article 8 ECHR may also apply.</p>
+		       </descriptiveNote>
+		       </legalStatus>
+		       </identificationData>]]>
+	       </egXML>
 		  <egXML xml:lang="eng" type="eac"><![CDATA[<legalStatus>
-   <term>
-      Department of State
-   </term>
-</legalStatus>]]></egXML>
+			  <term>Department of State</term>
+		  </legalStatus>]]></egXML>
                   <egXML xml:lang="eng" type="eac"><![CDATA[<legalStatus>
-   <term>
-      Organismo de la Administracion Central del Estado
-   </term>
-   <date standardDate="1769">
-      1769
-   </date>
-</legalStatus>]]></egXML>
+			  <term>Organismo de la Administracion Central del Estado</term>
+			  <date standardDate="1769">1769</date>
+		  </legalStatus>]]></egXML>
                </div>
             </div>

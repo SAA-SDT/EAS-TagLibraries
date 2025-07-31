@@ -7,8 +7,7 @@
                   <p>Maintenance History</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>control</gi> that captures the history of the
-                     creation and maintenance of the EAS instance.</p>
+                  <p>A required child element of <gi>control</gi> that captures the history of the creation and maintenance of the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -36,41 +35,37 @@
                   </p>
                </div>
                <div type="description">
-                  <p>A required child element of <gi>control</gi>, <gi>maintenanceHistory</gi> is
-                     for recording the history of the creation, revisions, updates, and other
-                     modifications to the EAS instance.</p>
-                  <p>There must be at least one child <gi>maintenanceEvent</gi> in
-                        <gi>maintenanceHistory</gi>, which usually will be a record of the creation
-                     of the instance. There may be many other <gi>maintenanceEvent</gi> elements
-                     documenting the milestone changes or activities in the maintenance of the
-                     instance.</p>
+                  <p>A required child element of <gi>control</gi>, <gi>maintenanceHistory</gi> is for recording the history of the creation, revisions, updates, and other modifications to the EAS instance.</p>
+                  <p>There must be at least one child <gi>maintenanceEvent</gi> in <gi>maintenanceHistory</gi>, which usually will be a record of the creation of the instance. There may be many other <gi>maintenanceEvent</gi> elements documenting the milestone changes or activities in the maintenance of the instance.</p>
+               </div>
+               <div type="seealso">
+                 <p>Use <att>maintenanceStatus</att> within <gi>control</gi> to reflect the current drafting status of the EAS instance as recorded in <gi>maintenanceHistory</gi>.</p>
+                 <p type="ead">Use elements such as <gi>appraisal</gi>, <gi>custodHist</gi>, <gi>processInfo</gi> or <gi>sourceOfAcquisition</gi> within <gi>archDesc</gi> and the component elements to record the events in the lifecycle of the materials being described.</p>
                </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<maintenanceHistory>
-   <maintenanceEvent maintenanceEventType="derived">
-      <agent agentType="machine">
-         XSLT ead2cpf.xsl/Saxon B9
-      </agent>
-      <eventDateTime standardDateTime="2009-08-30T09:37:17.029-04:00"/>
-      <eventDescription>
-         Derived from EAD instance.
-      </eventDescription>
-   </maintenanceEvent>
-   <maintenanceEvent maintenanceEventType="revised">
-      <agent agentType="unknown"/>
-      <eventDateTime standardDateTime="2021-11-27"/>
-   </maintenanceEvent>
-   <maintenanceEvent maintenanceEventType="updated">
-      <agent agentType="human">
-         K. Bredenberg
-      </agent>
-      <eventDateTime>
-         December 2021
-      </eventDateTime>
-   </maintenanceEvent>
-</maintenanceHistory>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceHistory>
+                    <maintenanceEvent maintenanceEventType="derived">
+                    <agent agentType="machine">
+                    <label>export.xsl/Saxon B9</label>
+                  </agent>
+                    <eventDateTime standardDateTime="2024-08-30T09:37:17.029-04:00"/>
+                    <eventDescription>Derived from local collection management system</eventDescription
+                  </maintenanceEvent>
+                    <maintenanceEvent maintenanceEventType="revised">
+                    <agent agentType="unknown">
+                    <label/>
+                  </agent>
+                    <eventDateTime standardDateTime="2024-11-27"/>
+                  </maintenanceEvent>
+                    <maintenanceEvent maintenanceEventType="updated">
+                    <agent agentType="person">
+                    <label>K. Bredenberg</label>
+                  </agent>
+                    <eventDateTime>December 2024</eventDateTime>
+                  </maintenanceEvent>
+                  </maintenanceHistory>]]></egXML>
                </div>
             </div>

@@ -7,8 +7,7 @@
                   <p>Geographic Coordinates</p>
                </div>
                <div type="summary">
-                  <p>An optional child element of <gi>place</gi> that encodes a set of geographic
-                     coordinates.</p>
+                  <p>An optional child element of <gi>place</gi> that encodes a set of geographic coordinates.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -44,50 +43,33 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>geographicCoordinates</gi> to express a set of geographic coordinates
-                     such as latitude, longitude, and altitude representing a point, line, or area
-                     on the surface of the earth.</p>
-                  <p>It is recommended that the values included in <gi>geographicCoordinates</gi>
-                     are based on a commonly used system for expressing geographic coordinates.</p>
+                  <p>Use <gi>geographicCoordinates</gi> to express a set of geographic coordinates such as latitude, longitude, and altitude representing a point, line, or area on the surface of the earth.</p>
+                  <p>It is recommended that the values included in <gi>geographicCoordinates</gi> are based on a commonly used system for expressing geographic coordinates.</p>
                </div>
-               <div type="attributeusage"><p>Use the required <att>coordinateSystem</att> attribute to provide a
-                        commonly used code for the system used to express the coordinates. Examples
-                        include WGS84, OSGB36, ED50.</p></div>
+               <div type="attributeusage"><p>Use the required <att>coordinateSystem</att> attribute to provide a commonly used code for the system used to express the coordinates. Examples include WGS84, OSGB36, ED50.</p></div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
                   <egXML xml:lang="eng"><![CDATA[<places>
-   <place>
-      <geographicCoordinates coordinateSystem="mgrs">
-         33UUU9029819737
-      </geographicCoordinates>
-      <placeName>
-         Berlin, Germany
-      </placeName>
-   </place>
-   <place>
-      <placeName localType="place">
-         Clear Spring
-      </placeName>
-      <placeName localType="state">
-         Maryland
-      </placeName>
-      <geographicCoordinates coordinateSystem="UTM">
-         18S 248556mE 4393694mN
-      </geographicCoordinates>
-   </place>
-   <place>
-      <placeName localType="place">
-         Hardeeville
-      </placeName>
-      <placeName localType="state">
-         South Carolina
-      </placeName>
-      <geographicCoordinates coordinateSystem="WGS84">
-         -81.1, 32.2, -81.0, 32.3
-      </geographicCoordinates>
-   </place>
-</places>]]></egXML>
+                    <place>
+                    <label>Berlin, Germany</label>
+                    <geographicCoordinates coordinateSystem="mgrs">33UUU9029819737</geographicCoordinates>
+                  </place>
+                    <place placeType="populatedPlace">
+                    <label>Clear Spring</label>
+                    <address>
+                    <addressLine addressLineType="state">Maryland</addressLine>
+                  </address>
+                    <geographicCoordinates coordinateSystem="UTM">18S 248556mE 4393694mN</geographicCoordinates>
+                  </place>
+                    <place placeType="populatedPlace">
+                    <label>Hardeeville</label>
+                    <address>
+                    <addressLine addressLineType="state">South Carolina</addressLine>
+                  </address>
+                    <geographicCoordinates coordinateSystem="WGS84">-81.1, 32.2, -81.0, 32.3</geographicCoordinates>
+                  </place>
+                  </places>]]></egXML>
                </div>
             </div>

@@ -7,9 +7,7 @@
                   <p>Control</p>
                </div>
                <div type="summary">
-                  <p>A required child element of the root element that contains information about the
-                     creation, maintenance, status and the rules and authorities used in the
-                     composition of the EAS instance.</p>
+                  <p>A required child element of the root element that contains information about the creation, maintenance, status and the rules and authorities used in the composition of the EAS instance.</p>
                </div>
                <div type="mayContain">
                    <p><list type="gloss">
@@ -127,7 +125,7 @@
                         <item>Optional (values limited to: EASList, otherFormAvailableTypeEncoding)</item>
                         <label>functionTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherFunctionTypeEncoding)</item>
-                       <label>id</label>
+                        <label>id</label>
                         <item>Optional</item>
                         <label>languageEncoding</label>
                         <item>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2, iso639-2b, iso639-2t, iso639-3, iso639-5, otherLanguageEncoding)</item>
@@ -143,7 +141,7 @@
                         <item>Optional (values limited to: EASList, otherMaintenanceStatusEncoding)</item>
                         <label>placeTypeEncoding</label>
                         <item>Optional (values limited to: EASList, otherPlaceTypeEncoding)</item>
-                       <label>publicationStatus</label>
+                        <label>publicationStatus</label>
                         <item>Optional</item>
                         <label>publicationStatusEncoding</label>
                         <item>Optional (values limited to: EASList, otherPublicationStatusEncoding)</item>
@@ -159,8 +157,6 @@
                         <item>Optional</item>
                         <label>statusEncoding</label>
                         <item>Optional (values limited to: EASList, otherStatusEncoding)</item>
-                        <label>subjectTypeEncoding</label>
-                        <item>Optional (values limited to: EASList, otherSubjectTypeEncoding)</item>
                         <label>target</label>
                         <item>Optional</item>
                         <label>targetTypeEncoding</label>
@@ -171,16 +167,12 @@
                   </p>
                  <p type="eaf">
                      <list type="gloss">
-                        <label>addressLineTypeEncoding</label>
-                        <item>Optional (values limited to: EASList, otherAddressLineTypeEncoding)</item>
+                        <label>agentTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherAgentTypeEncoding)</item>
                         <label>audience</label>
                         <item>Optional</item>
                         <label>audienceEncoding</label>
                         <item>Optional (values limited to: EASList, otherAudienceEncoding)</item>
-                        <label>base</label>
-                        <item>Optional</item>
-                        <label>contactLineTypeEncoding</label>
-                        <item>Optional (values limited to: EASList, otherContactLineTypeEncoding)</item>
                         <label>countryEncoding</label>
                         <item>Optional (values limited to: iso3166-1, otherCountryEncoding)</item>
                         <label>dateEncoding</label>
@@ -207,6 +199,10 @@
                         <item>Optional</item>
                         <label>publicationStatusEncoding</label>
                         <item>Optional (values limited to: EASList, otherPublicationStatusEncoding)</item>
+                        <label>referredEntityTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherReferredEntityTypeEncoding)</item>
+                        <label>relationTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherRelationTypeEncoding)</item>
                         <label>repositoryEncoding</label>
                         <item>Optional (values limited to: iso15511, otherRepositoryEncoding)</item>
                         <label>scriptEncoding</label>
@@ -217,209 +213,91 @@
                         <item>Optional (values limited to: EASList, otherStatusEncoding)</item>
                         <label>target</label>
                         <item>Optional</item>
-                     </list>
+                        <label>targetTypeEncoding</label>
+                        <item>Optional (values limited to: EASList, otherTargetTypeEncoding)</item>
+                    </list>
                   </p>
                </div>
                <div type="description">
-                  <p>This required wrapper element within the root element of an EAS instance contains the information
-                     necessary to manage the instance itself. This includes information about its creation,
-                     maintenance and status as well as the languages, rules and authorities used in
-                     the composition of the description.</p>
-                  <p type="eac">It must contain a unique identifier for the instance within the
-                        <gi>recordId</gi> element. Other associated identifiers may be given in
-                        <gi>otherRecordId</gi>. There must be a description of the agency
-                     responsible for its creation and maintenance in <gi>maintenanceAgency</gi> as
-                     well as statements about its current drafting status in
-                        <att>maintenanceStatus</att> and the creation, maintenance, and disposition
-                     of the instance in <gi>maintenanceHistory</gi>.</p>
-                  <p type="ead">It must contain a unique identifier for the instance within the
-                        <gi>recordId</gi> element. Other associated identifiers may be given in
-                        <gi>otherRecordId</gi>. There must be a description of the agency
-                     responsible for its creation and maintenance in <gi>maintenanceAgency</gi> as
-                     well as statements about the creation, maintenance, and disposition
-                     of the instance in <gi>maintenanceHistory</gi>.</p>
-                 <p type="eaf">It must contain a unique identifier for the instance within the
-                        <gi>recordId</gi> element. Other associated identifiers may be given in
-                        <gi>otherRecordId</gi>. There must be a description of the agency
-                     responsible for its creation and maintenance in <gi>maintenanceAgency</gi> as
-                     well as statements about the creation, maintenance, and disposition
-                     of the instance in <gi>maintenanceHistory</gi>.</p>
-                  <p type="eac">There are optional elements available to declare languages, rules, conventions
-                     and sources used in the EAS instance. Local types for certain elements used throughout the
-                     EAS instance are recommended to be defined in the
-                        <gi>localTypeDeclaration</gi> element.</p>
-                  <p type="ead">There are optional elements available to declare languages, rules, conventions
-                     and sources used in the EAS instance. Local types for certain elements used throughout the
-                     EAS instance are recommended to be defined in the <gi>localTypeDeclaration</gi> element.</p>
-                 <p type="eaf">There are optional elements available to declare languages, rules, conventions
-                     and sources used in the EAS instance. Local types for certain elements used throughout the
-                     EAS instance are recommended to be defined in the <gi>localTypeDeclaration</gi> element.</p>
-                  <p>The available child elements (both required and optional), in their prescribed
-                     order, are:</p>
+                  <p>This required wrapper element within the root element of an EAS instance contains the information necessary to manage the instance itself. This includes information about its creation, maintenance and status as well as the languages, rules and authorities used in the composition of the description.</p>
+                  <p>It must contain a unique identifier for the instance within the <gi>recordId</gi> element. Other associated identifiers may be given in <gi>otherRecordId</gi>. There must be a description of the agency responsible for its creation and maintenance in <gi>maintenanceAgency</gi> as well as statements about the creation, maintenance, and disposition of the instance, as applicable, in <gi>maintenanceHistory</gi>.</p>
+                 <p>There are optional elements available to declare languages, rules, conventions and sources used in the EAS instance and licensing information about the EAS instance itself. Local types for certain elements used throughout the EAS instance are recommended to be defined in the <gi>localTypeDeclaration</gi> element.</p>
+                 <p>The available child elements (both required and optional), in their prescribed order, are:</p>
                   <list type="simple">
-                     <item><gi>recordId</gi> - Required. Contains the unique identifier for the
-                        EAS instance.</item>
-                     <item><gi>maintenanceAgency</gi> - Required. Contains the name and coded
-                        information about the institution or service responsible for the creation,
-                        maintenance, and/or dissemination of the EAS instance.</item>
-                     <item><gi>maintenanceHistory</gi> - Required. Contains information about the
-                        date, type and events within the life cycle of an EAS instance.</item>
-                     <item><gi>sources</gi> - Optional. Contains information about the sources
-                        consulted in creating the descriptive parts of the EAS instance.</item>
+                     <item><gi>recordId</gi> - Required. Contains the unique identifier for the EAS instance.</item>
+                     <item><gi>maintenanceAgency</gi> - Required. Contains the name and coded information about the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.</item>
+                     <item><gi>maintenanceHistory</gi> - Required. Contains information about the date, type and events within the life cycle of an EAS instance.</item>
+                     <item><gi>sources</gi> - Optional. Contains information about the sources consulted in creating the descriptive parts of the EAS instance.</item>
                      <item>
-                       <p type="eac">The following elements may appear in any order after the above elements:
+                       <p>The following elements may appear in any order after the above elements:
                          <list type="simple">
-                           <item><gi>conventionDeclaration</gi> - Optional. Contains information on
-                              the rules or conventions used to construct the EAS
-                              instance.</item>
-                           <item><gi>languageDeclaration</gi> - Optional. Contains coded and natural
-                              language information about the language or languages of the EAS
-                              instance.</item>
-                           <item><gi>localTypeDeclaration</gi> - Optional. Contains information
-                              about local conventions used in the <att>localType</att>
-                              attribute.</item>
-                           <item><gi>otherRecordId</gi> - Optional. An element that allows the
-                              recording of additional identifiers that may be associated with the
-                              EAS instance.</item>
-                           <item><gi>rightsDeclaration</gi> - Optional. Contains information about
-                              the usage rights of the EAS instance.</item>
+                           <item><gi>conventionDeclaration</gi> - Optional. Contains information on the rules or conventions used to construct the EAS instance.</item>
+                           <item><gi>languageDeclaration</gi> - Optional. Contains coded and natural language information about the language or languages of the EAS instance.</item>
+                           <item><gi>localTypeDeclaration</gi> - Optional. Contains information about local conventions used in the <att>localType</att> attribute.</item>
+                           <item><gi>otherRecordId</gi> - Optional. An element that allows the recording of additional identifiers that may be associated with the EAS instance.</item>
+                           <item><gi>rightsDeclaration</gi> - Optional. Contains information about the usage rights of the EAS instance.</item>
                         </list>
                        </p>
-                       <p type="ead">The following elements may appear in any order after the above elements:
-                         <list type="simple">
-                           <item><gi>conventionDeclaration</gi> - Optional. Contains information on
-                              the rules or conventions used to construct the EAS
-                              instance.</item>
-                           <item><gi>languageDeclaration</gi> - Optional. Contains coded and natural
-                              language information about the language or languages of the EAS
-                              instance.</item>
-                           <item><gi>localTypeDeclaration</gi> - Optional. Contains information
-                              about local conventions used in the <att>localType</att>
-                              attribute.</item>
-                           <item><gi>otherRecordId</gi> - Optional. An element that allows the
-                              recording of additional identifiers that may be associated with the
-                              EAS instance.</item>
-                           <item><gi>rightsDeclaration</gi> - Optional. Contains information about
-                              the usage rights of the EAS instance.</item>
-                         </list>
-                       </p>
-                       <p type="eaf">The following elements may appear in any order after the above elements:
-                         <list type="simple">
-                           <item><gi>conventionDeclaration</gi> - Optional. Contains information on
-                              the rules or conventions used to construct the EAS
-                              instance.</item>
-                           <item><gi>languageDeclaration</gi> - Optional. Contains coded and natural
-                              language information about the language or languages of the EAS
-                              instance.</item>
-                           <item><gi>localTypeDeclaration</gi> - Optional. Contains information
-                              about local conventions used in the <att>localType</att>
-                              attribute.</item>
-                           <item><gi>otherRecordId</gi> - Optional. An element that allows the
-                              recording of additional identifiers that may be associated with the
-                              EAS instance.</item>
-                           <item><gi>rightsDeclaration</gi> - Optional. Contains information about
-                              the usage rights of the EAS instance.</item>
-                         </list>
-                       </p>
-                     </item>
+                    </item>
                   </list>
                </div>
                <div type="attributeusage">
-  <p type="eac">Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p>
-                  <p type="eaf">Use the required <att>maintenanceStatus</att> attribute to document the current version status of the EAS instance.</p>
-  <p type="eac">Use the optional <att>publicationStatus</att> attribute to record the editorial status of the EAS instance.</p></div>
+                 <p>Use the optional <att>maintenanceStatus</att>, <att>publicationStatus</att>, and <att>detailLevel</att> attributes to document the current version status of the EAS instance, its current editorial status and the current level of detail included in its descriptive sections.</p>
+                  <p>Use the optional encoding attributes such as <att>countryEncoding</att>, <att>maintenanceEventTypeEncoding</att> or <att>relationTypeEncoding</att> to specify the source or rules for values supplied in those attributes used throughout the EAS instance that rely either on code lists from ISO standards or make use of the value lists defined and maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS). Should you decide to use other authorized value lists in these attributes instead, it is highly recommended to indicate this by using the "other..." value in the encoding attributes and to name and refer to these other value lists in <gi>conventionDeclaration</gi> to still enable semantic interoperability.</p>
+               </div>
                <div type="availability">
                   <p>Required, not repeatable</p>
                </div>
-               <div type="examples" standard="eac">
-                  <egXML xml:lang="eng" type="ead"/>
-                 <egXML xml:lang="eng" type="eaf"/>
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<control countryEncoding="iso3166-1" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
-   <recordId>
-      https://kalliope-verbund.info/gnd/118584618
-   </recordId>
-   <maintenanceAgency countryCode="DE">
-      <agencyCode status="authorized">
-         DE-611
-      </agencyCode>
-      <agencyName>
-         Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund
-      </agencyName>
-      <agencyName languageOfElement="eng">
-         Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog
-      </agencyName>
-   </maintenanceAgency>
-   <maintenanceHistory>
-      <maintenanceEvent maintenanceEventType="created">
-         <agent agentType="unknown">
-            DE-101
-         </agent>
-         <eventDateTime standardDateTime="1988-07-01"/>
-      </maintenanceEvent>
-      <maintenanceEvent maintenanceEventType="revised">
-         <agent agentType="unknown">
-            1400
-         </agent>
-         <eventDateTime standardDateTime="2015-10-15"/>
-      </maintenanceEvent>
-   </maintenanceHistory>
-   <sources>
-      <source>
-         <reference>
-            Szb. Mozart-Lex.
-         </reference>
-      </source>
-   </sources>
-   <conventionDeclaration>
-      <reference href="https://www.loc.gov/aba/rda/">
-         Resource Description and Access
-      </reference>
-      <shortCode>
-         RDA
-      </shortCode>
-   </conventionDeclaration>
-   <languageDeclaration languageCode="ger" scriptCode="Latn"/>
-      <localTypeDeclaration>
-         <reference href="https://d-nb.info/standards/elementset/gnd_20191015">
-            GNDO
-         </reference>
-         <descriptiveNote>
-            <p languageOfElement="ger">
-               Gemeinsame Normdatei Ontologie
-            </p>
-            <p languageOfElement="eng">
-               Integrated Authority File Ontology
-            </p>
-            <p>
-               Version 2019-10-15
-            </p>
-         </descriptiveNote>
-      </localTypeDeclaration>
-      <localTypeDeclaration>
-         <reference href="https://www.loc.gov/marc/authority/">
-            MARC21
-         </reference>
-      </localTypeDeclaration>
-      <otherRecordId localType="024$a" localTypeDeclarationReference="MARC21">
-         http://d-nb.info/gnd/118584618
-      </otherRecordId>		
-      <otherRecordId localType="035$a" localTypeDeclarationReference="MARC21">
-         (DE-101)118584618
-      </otherRecordId>
-      <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#gndIdentifier" localTypeDeclarationReference="GNDO">
-         (DE-588)118584618
-      </otherRecordId>
-      <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">
-         (DE-588a)118584618
-      </otherRecordId>	
-      <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#oldAuthorityNumber" localTypeDeclarationReference="GNDO">
-         (DE-588c)4040426-2
-      </otherRecordId>
-      <rightsDeclaration>
-         <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">
-            CC0 1.0 Universell
-         </reference>
-      </rightsDeclaration>
-</control>]]></egXML>
+               <div type="examples">
+                <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" maintenanceStatusEncoding="EASList" publicationStatus="published" publicationStatusEncoding="EASList" repositoryEncoding="iso15511" scriptEncoding="iso15924" statusEncoding="EASList" maintenanceEventTypeEncoding="EASList" agentTypeEncoding="EASList">
+        <recordId>https://kalliope-verbund.info/gnd/118584618</recordId>
+        <maintenanceAgency countryCode="DE">
+            <agencyCode status="authorized">DE-611</agencyCode>
+            <agencyName>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund</agencyName>
+            <agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</agencyName>
+        </maintenanceAgency>
+        <maintenanceHistory>
+            <maintenanceEvent maintenanceEventType="created">
+                <agent agentType="unknown">
+                    <label>DE-101</label>
+                </agent>
+                <eventDateTime standardDateTime="1988-07-01"/>
+            </maintenanceEvent>
+            <maintenanceEvent maintenanceEventType="revised">
+                <agent agentType="unknown">
+                    <label>1400</label>
+                </agent>
+                <eventDateTime standardDateTime="2015-10-15"/>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source>
+                <reference>Szb. Mozart-Lex.</reference>
+            </source>
+        </sources>
+        <conventionDeclaration>
+            <reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</reference>
+            <shortCode>RDA</shortCode>
+        </conventionDeclaration>
+        <conventionDeclaration>
+            <reference href="https://www.loc.gov/marc/authority/">MARC21</reference>
+        </conventionDeclaration>
+        <languageDeclaration languageCode="ger" scriptCode="Latn"/>
+        <localTypeDeclaration id="GNDO">
+            <reference href="https://d-nb.info/standards/elementset/gnd_20191015">GNDO</reference>
+            <descriptiveNote>
+                <p languageOfElement="ger">Gemeinsame Normdatei Ontologie</p>
+                <p languageOfElement="eng">Integrated Authority File Ontology</p>
+                <p>Version 2019-10-15</p>
+            </descriptiveNote>
+        </localTypeDeclaration>
+        <otherRecordId xmlns:marc21="http://www.loc.gov/MARC21/slim" marc21:tag="024$a">http://d-nb.info/gnd/118584618</otherRecordId>
+        <otherRecordId xmlns:marc21="http://www.loc.gov/MARC21/slim" marc21:tag="035$a">(DE-101)118584618</otherRecordId>
+        <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#gndIdentifier" localTypeDeclarationReference="GNDO">(DE-588)118584618</otherRecordId>
+        <rightsDeclaration>
+            <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0 Universell</reference>
+        </rightsDeclaration>
+    </control>]]>
+                </egXML>
                </div>
             </div>

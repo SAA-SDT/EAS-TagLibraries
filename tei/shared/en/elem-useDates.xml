@@ -8,8 +8,7 @@
       <p>Dates of Use</p>
    </div>
    <div type="summary">
-      <p>An optional child element of <gi>nameEntry</gi> and <gi>nameEntrySet</gi> that provides the
-         dates when the name or names were used for or by the CPF entity being described.</p>
+      <p>An optional child element of <gi>nameEntry</gi> and <gi>nameEntrySet</gi> that provides the dates when the name or names were used for or by the entity being described.</p>
    </div>
    <div type="mayContain">
       <p><list type="gloss">
@@ -43,19 +42,14 @@
       </p>
    </div>
    <div type="description">
-      <p>Within <gi>nameEntry</gi>, <gi>useDates</gi> provides the dates during which the name was
-         used for or by the CPF entity. For parallel names (e.g., official forms of the name in
-         different languages and/or scripts), <gi>useDates</gi> may occur in <gi>nameEntrySet</gi>
-         rather than in the individual <gi>nameEntry</gi> elements contained in
-            <gi>nameEntrySet</gi>.</p>
-      <p><gi>useDates</gi> must include one of <gi>date</gi>, <gi>dateRange</gi>, or
-            <gi>dateSet</gi>.</p>
+      <p>Within <gi>nameEntry</gi>, <gi>useDates</gi> provides the dates during which the name was used for or by the entity being described. For parallel names (e.g., official forms of the name in different languages and/or scripts), <gi>useDates</gi> may occur in <gi>nameEntrySet</gi> rather than in the individual <gi>nameEntry</gi> elements contained in <gi>nameEntrySet</gi>.</p>
+      <p><gi>useDates</gi> must include one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>.</p>
    </div>
    <div type="availability">
       <p>Optional, repeatable</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng"><![CDATA[<nameEntry status="authorized">
+      <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry status="authorized">
  	<part>Technical Subcommittee for Encoded Archival Standards</part>
     <useDates>
       	   <dateRange>

@@ -7,7 +7,7 @@
 		<p>Formatting Extension</p>
 	</div>
 	<div type="summary">
-		<p>An optional, wrapping element that may be utilized to encode formatting features that are not part of the EAS data model. When using the EAS-provided NVDL Schema validation procedure, this element will require that all elements encoded within are from the XHTML namespace.</p>
+		<p>An optional, wrapping element that may be utilized to encode more complex formatting features that are not part of the EAS data model such as lists, tables, nested headers, etc. When using the EAS-provided NVDL Schema validation procedure, this element will require that all elements encoded within are from the XHTML namespace.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -16,13 +16,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<!--It seems like we're encoding for display here, so perhaps we should go with an automated Schema-to-TEI approach at some point, rather than keeping these files in sync by hand moving forward
-		...especially with EAF, etc. Yikes! -->
-		<!-- rather that sort A-Z in one list, would it be better to break out by type?  e.g. narrative appearance vs. findingAidDesc vs. former dsc + new formAvailable ? -->
-		<!-- also, in this case, i think we should take a harder line and *only* allow this extension on narrative elements, but also to be more flexible and allow it to sit side-by-side with paragraphs. i can certainly see the benefit of having a formattingExtension follow a local set of "paragraphs". -->
-		<p type="ead">
-				accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, filePlan, findAidDesc, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions
-		</p>
+		<p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, filePlan, findAidDesc, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
 		<p type="eac">biogHist, generalContext, structureOrGenealogy</p>
 		<p type="eaf">functionDescription, functionHistory, legislation</p>
 	</div>
@@ -45,8 +39,15 @@
 	<div type="availability">
 		<p type="ead">Within <gi>findAidDesc</gi>: optional, repeatable.</p>
 		<p type="ead">Within all other elements: optional, not repeatable.</p>
-		<p type="ead">When used outside of <gi>findAidDesc</gi> to encode a narrative description, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or to use one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
 		<p type="eac">Optional, not repeatable</p>
 		<p type="eaf">Optional, not repeatable</p>
+		<p type="ead">In <gi>findAidDesc</gi>, <gi>formattingExtension</gi> is optionally available to encode a narrative description next to the more specific elements <gi>agent</gi>, <gi>citedRange</gi>, <gi>date</gi>, <gi>place</gi>, and <gi>title</gi>. In all other contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+		<p type="eac">In these narrative contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+		<p type="eaf">In these narrative contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+	</div>
+	<div type="examples">
+		<p type="eac">See encoding examples in parent elements of <gi>formattingExtension</gi>, e.g. in <gi>biogHist</gi>.</p>
+		<p type="ead">See encoding examples in parent elements of <gi>formattingExtension</gi>, e.g. in <gi>biogHist</gi>.</p>
+		<p type="eaf">See encoding examples in parent elements of <gi>formattingExtension</gi>.</p>
 	</div>
 </div>

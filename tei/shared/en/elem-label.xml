@@ -7,7 +7,7 @@
 		<p>Label</p>
 	</div>
 	<div type="summary">
-		<p type="ead">A required child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>place</gi>, <gi>subject</gi>, and <gi>relation</gi> that indicates the name of the related entity.</p>
+		<p type="ead">A required child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the name of the related entity.</p>
 		<p type="eac">A required child element of <gi>agent</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the name of the related entity.</p>
 		<p type="eaf">A required child element of <gi>agent</gi> and <gi>relation</gi> that indicates the name of the related entity.</p>
 	</div>
@@ -18,7 +18,7 @@
 </list></p>
 	</div>
 	<div type="mayOccurWithin">
-		<p type="ead">agent, formAvailable, function, place, subject, relation</p>
+		<p type="ead">agent, formAvailable, function, place, relation</p>
 		<p type="eac">agent, place, relation</p>
 		<p type="eaf">agent, relation</p>
 	</div>
@@ -55,28 +55,57 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>Use <gi>label</gi> to indicate the name of the related entity, either in the generic <gi>relation</gi> element or in one of the specific entity elements.</p>
+		<p>Use <gi>label</gi> to indicate the name of the related entity, either in the generic <gi>relation</gi> element or in one of the specific entity elements. Depending on the type of related entity, such a name can also take the form of a numeric denominator.</p>
 		<p type="ead">
 			<list>
 				<item>In <gi>agent</gi>, this can be the name of the agent responsible for the creation, modification, or deletion of an EAD instance, as captured in <gi>maintenanceEvent</gi>, or the name of the agent who has created, managed, used, or is mentioned in the archival materials.</item>
-				<item>In <gi>formAvailable</gi>, this may e.g. be the file name of a digitised version of a record resource.</item>
-				<item>In <gi>function</gi>, this may be the name of the function or subfunction that resulted in the creation of the materials being described.</item>
-				<item>In <gi>place</gi>, this can be the name of the place where a person was born or an organization was established, but also the location where the archival material being described are held.</item>
-				<item>In <gi>subject</gi>, this may be a term for the genre or type of record or theme represented in the materials being described.</item>
+				<item>In <gi>formAvailable</gi>, this might e.g. be the file name of a digitised version of a record resource.</item>
+				<item>In <gi>function</gi>, this might be the name of the function or subfunction that resulted in the creation of the materials being described.</item>
+				<item>In <gi>place</gi>, this might be the name of the place where the archival materials being described are held, are stored, or relate to in other ways.</item>
 			</list>
 		</p>
-		<p type="eac">In <gi>agent</gi>, <gi>label</gi> can be the name of the agent responsible for the creation, modification, or deletion of an EAS instance, as captured in <gi>maintenanceEvent</gi>. In <gi>place</gi>, <gi>label</gi> can be the name of the place where a person was born or an organization was established</p>
-		<p type="eaf">In <gi>agent</gi>, <gi>label</gi> can be the name of the agent responsible for the creation, modification, or deletion of an EAS instance, as captured in <gi>maintenanceEvent</gi>.</p>
+		<p type="eac">
+			<list>
+				<item>In <gi>agent</gi>, this is the name of the agent responsible for the creation, modification, or deletion of an EAC-CPF instance, as captured in <gi>maintenanceEvent</gi>.</item>
+				<item>In <gi>place</gi>, this might e.g. be the name of the place where a person was born or an organization was established.</item>
+			</list>
+		</p>
+		<p type="eaf">In <gi>agent</gi>, this is the name of the agent responsible for the creation, modification, or deletion of an EAC-F instance, as captured in <gi>maintenanceEvent</gi>.</p>
 		<p>It is recommended to use authorized vocabularies in cases where the element is valorized with a well-known corporation (i.e. "Library of Congress").</p> 
 	</div>
 	<div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>	
-	<div type="seealso"><p>Use this element in combination with <att>agentType</att> and <gi>role</gi> to encode also the agent’s type and role. I.e.: <gi>label</gi>: "John Bianchi",<att>agentType</att>: "person", <gi>role</gi>: "author" (in <gi>findAidDesc</gi>).</p></div>
+	<div type="seealso"><p>Use this element in combination with type and role information which can also be encoded within the parent elements of <gi>label</gi>. E.g.: <gi>label</gi>: "John Bianchi", <att>agentType</att>: "person", <gi>role</gi>: "author".</p></div>
 	<div type="availability">
 		<p>Required, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<!-- Contains examples of XML from the schema.  Tags in egXML must be prefixed with the proper namespace (e.g. <ead:unittitle> -->
+			<![CDATA[<maintenanceHistory>
+			<maintenanceEvent id="me1">
+			<agent>
+			<label>Tanya Smith</label>
+			<role>Archivist</role>
+			<relationship valueURI="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology"/>
+		</agent>
+			<eventDateTime standardDateTime="2021-09">September 2021</eventDateTime>
+			<eventDescription>Creation of the encoded archival description</eventDescription>
+		</maintenanceEvent>
+			<maintenanceEvent id="me2">
+			<agent>
+			<label>Gregory Miller</label>
+			<role>Volunteer</role>
+			<relationship valueURI="https://www.ica.org/standards/RiC/ontology#CreationRelation" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology"/>
+		</agent>
+			<eventDateTime standardDateTime="2023-05">May 2023</eventDateTime>
+			<eventDescription>Marking persons and organisations named in narrative texts as part of a crowdsourcing project</eventDescription>
+		</maintenanceEvent>
+		</maintenanceHistory>]]>
+		</egXML>
+		<egXML xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<relation targetType="resource">
+			<label>Mémorial du colonel Gustafsson. - 1829</label>
+			<role>Publication</role>
+		</relation>]]>
 		</egXML>
 	</div>
 </div>

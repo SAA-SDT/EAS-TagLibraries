@@ -7,10 +7,7 @@
                   <p>Relations</p>
                </div>
                <div type="summary">
-                  <p>An optional element that groups one or more
-                        <gi>relation</gi> elements, which identify external entities and
-                     characterize the nature of their relationships to the entity or records being
-                     described.</p>
+                  <p>An optional element that groups one or more <gi>relation</gi> elements, which identify external entities and characterize the nature of their relationships to the entity or records being described.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -48,8 +45,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>A wrapper element that groups together one or more <gi>relation</gi> elements,
-                     each of which encodes a specific relationship.</p>
+                  <p>A wrapper element that groups together one or more <gi>relation</gi> elements, each of which encodes a specific relationship.</p>
                   <p>The prescribed order of all child elements (both required and optional) is:</p>
                   <list type="simple">
                      <item><gi>relation</gi></item>
@@ -61,54 +57,30 @@
                </div>
                <div type="examples">
                   <egXML xml:lang="eng" type="eac"><![CDATA[<relations>
-   <relation>
-      <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-         <part>
-            Arendt, Max
-         </part>
-         <part>
-            1843-1913
-         </part>
-      </targetEntity>
-      <relationType>
-         family
-      </relationType>
-      <targetRole>
-         grandfather
-      </targetRole>
-   </relation>
-   <relation>
-      <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/1190672170" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-         <part>
-            Arendt-Beerwald, Martha
-         </part>
-         <part>
-            1874-1948
-         </part>
-      </targetEntity>
-      <relationType>
-         family
-      </relationType>
-      <targetRole>
-         mother
-      </targetRole>
-   </relation>
-   <relation>
-      <targetEntity targetType="person" valueURI="https://d-nb.info/gnd/1190671301" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-         <part>
-            Arendt, Paul
-         </part>
-         <part>
-            1873-1913
-         </part>
-      </targetEntity>
-      <relationType>
-         family
-      </relationType>
-      <targetRole>
-         father
-      </targetRole>
-   </relation>
-</relations>]]></egXML>
+                    <relation relationType="family" targetType="person">
+                    <label valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Arendt, Max (1843-1913)</label>
+                    <role>grandfather</role>
+                  </relation>
+                    <relation relationType="family" targetType="person">
+                    <label valueURI="https://d-nb.info/gnd/1190672170" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Arendt-Beerwald, Martha (1874-1948)</label>
+                    <role>mother</role>
+                  </relation>
+                    <relation relationType="family" targetType="person">
+                    <label valueURI="https://d-nb.info/gnd/1190671301" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Arendt, Paul (1873-1913)</label>
+                    <role>father</role>
+                  </relation>
+                  </relations>]]></egXML>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead"><![CDATA[<relatedMaterial>
+                   <abstract>Several genealogies and biographies of the Smith family have been published and are held in the Rare Books Department.</abstract>
+                   <relations>
+                   <relation targetType="resource">
+                   <label valueURI="4569982" vocabularySource="Rare Books Department">Kavanaugh, Carol. The Smith Family in Johnson County (New York: Penguin)</label>
+                 </relation>
+                   <relation>
+                   <label valueURI="336712" vocabularySource="Rare Books Department">Llewellyn, Gareth. Smythe, Smith: What's the Difference? (London: Jonathan Cape)</label>
+                 </relation>
+                 </relations>
+                 </relatedMaterial>]]>
+                 </egXML>
                </div>
             </div>

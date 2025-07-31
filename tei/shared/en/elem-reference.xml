@@ -21,12 +21,9 @@
          </list></p>
    </div>
    <div type="mayOccurWithin">
-      <p type="eac">abstract, conventionDeclaration, eventDescription, head, localTypeDeclaration, p, rightsDeclaration, source</p>
-      <p type="eaf">conventionDeclaration, eventDescription, localTypeDeclaration, p,
-         rightsDeclaration, source</p>
-      <p type="ead">abstract, container, conventionDeclaration, eventDescription, formAvailableId,
-         genreForm, head, localTypeDeclaration, otherIdentificationData, p, physFacet,
-         rightsDeclaration, source, textualDate, unitId, unitTitle</p>
+      <p type="eac">abstract, conventionDeclaration, eventDescription, localTypeDeclaration, p, rightsDeclaration, source</p>
+      <p type="eaf">conventionDeclaration, eventDescription, localTypeDeclaration, p, rightsDeclaration, source</p>
+      <p type="ead">abstract, container, conventionDeclaration, eventDescription, formAvailableId, genreForm, head, localTypeDeclaration, otherIdentificationData, p, physicalFacet, rightsDeclaration, source, textualDate, unitId, unitTitle</p>
    </div>
    <div type="attributes">
         <p>
@@ -61,56 +58,40 @@
       </p>
    </div>
    <div type="description">
-      <p type="eac">An element used for referencing external resources that have been used to
-         compile the EAC-CPF instance, that provide additional context to the EAC-CPF instance, or
-         that identify rules or conventions that have been applied.</p>
-      <p><gi>reference</gi> is a required child element of <gi>conventionDeclaration</gi>,
-            <gi>localTypeDeclaration</gi>, and <gi>rightsDeclaration</gi> for identifying any rules
-         and conventions applied in the compilation of the description. It is also a required child
-         element of <gi>source</gi>, used to identify any sources used in compiling the description.
-            <gi>source</gi> may include multiple child <gi>reference</gi> elements.</p>
-      <p type="eac"><gi>reference</gi> is an optional child element of <gi>abstract</gi>,
-            <gi>event</gi>, <gi>eventDescription</gi>, and <gi>p</gi> where it is used to reference any external resources that
-         provide additional context to the content of that element.</p>
-      <p type="ead"><gi>reference</gi> is an optional child element of <gi>abstract</gi>,
-            <gi>container</gi>, <gi>conventionDeclaration</gi>, <gi>eventDescription</gi>,
-            <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>,
-            <gi>localTypeDeclaration</gi>, <gi>otherIdentificationData</gi>, <gi>p</gi>,
-            <gi>physFacet</gi>, <gi>rightsDeclaration</gi>, <gi>source</gi>, <gi>textualDate</gi>,
-            <gi>unitId</gi>, and <gi>unitTitle</gi> where it is used to reference any external
-         resources that provide additional context to the content of that element.</p>
+      <p>An element used for referencing external resources that have been used to compile the EAS instance, that provide additional context to the EAS instance, or that identify rules or conventions that have been applied.</p>
+      <p><gi>reference</gi> is a required child element of <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, and <gi>rightsDeclaration</gi> for identifying any rules and conventions applied in the compilation of the description. It is also a required child element of <gi>source</gi>, used to identify any sources used in compiling the description. <gi>source</gi> may include multiple child <gi>reference</gi> elements.</p>
+      <p type="eaf">In <gi>eventDescription</gi> and <gi>p</gi>, <gi>reference</gi> is used to reference any external resources that provide additional context to the content of these elements, which may include multiple <gi>reference</gi> elements.</p>
+      <p type="eac">In <gi>abstract</gi>, <gi>eventDescription</gi> and <gi>p</gi>, <gi>reference</gi> may be used to reference any external resources that provide additional context to the content of these elements, which may include multiple <gi>reference</gi> elements.</p>
+      <p type="ead">In <gi>abstract</gi>, <gi>container</gi>, <gi>eventDescription</gi>, <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>, <gi>otherIdentificationData</gi>, <gi>p</gi>, <gi>physicalFacet</gi>, <gi>textualDate</gi>, <gi>unitId</gi>, and <gi>unitTitle</gi>, <gi>reference</gi> may be used to reference any external resources that provide additional context to the content of these elements, which may include multiple <gi>reference</gi> elements.</p>
    </div>
    <div type="attributeusage">
-      <p>Use <att>href</att> to link to the cited resource.</p>
+      <p>Use <att>href</att> to link to the cited resource, in case this is available online.</p>
    </div>
    <div type="seealso">
-      <p><gi>reference</gi> is used for external linking only. If any internal linking is required,
-         use the <att>target</att> attribute.</p>
+      <p><gi>reference</gi> is used for external linking only. If any internal linking is required, use the <att>target</att> attribute to point to the <att>id</att> of the referenced element.</p>
    </div>
    <div type="availability">
-      <p>Within <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>,
-            <gi>rightsDeclaration</gi>: required, not repeatable</p>
+      <p>Within <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, <gi>rightsDeclaration</gi>: required, not repeatable</p>
       <p>Within <gi>source</gi>: required, repeatable</p>
-      <p type="eac">Within <gi>abstract</gi>, <gi>event</gi>, <gi>eventDescription</gi>, <gi>p</gi>: optional,
-         repeatable</p>
-      <p type="ead">Within <gi>abstract</gi>, <gi>container</gi>, <gi>eventDescription</gi>,
-            <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>,
-            <gi>otherIdentificationData</gi>, <gi>p</gi>, <gi>physFacet</gi>, <gi>textualDate</gi>,
-            <gi>unitId</gi>, <gi>unitTitle</gi>: optional, repeatable</p>
+      <p type="eaf">Within <gi>eventDescription</gi>, <gi>p</gi>: optional, repeatable</p>
+      <p type="eac">Within <gi>abstract</gi>, <gi>eventDescription</gi>, <gi>p</gi>: optional, repeatable</p>
+      <p type="ead">Within <gi>abstract</gi>, <gi>container</gi>, <gi>eventDescription</gi>, <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>, <gi>otherIdentificationData</gi>, <gi>p</gi>, <gi>physicalFacet</gi>, <gi>textualDate</gi>, <gi>unitId</gi>, <gi>unitTitle</gi>: optional, repeatable</p>
    </div>
    <div type="examples">
       <egXML xml:lang="eng"><![CDATA[<source>
-   <reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">
-      Wikipedia
-   </reference>
-</source>]]></egXML>
+         <reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">Wikipedia</reference>
+      </source>]]>
+      </egXML>
       <egXML xml:lang="eng"><![CDATA[<conventionDeclaration>
-   <reference href="https://www.loc.gov/aba/rda/">
-      Resource Description and Access
-   </reference>
-   <shortCode>
-      RDA
-   </shortCode>
-</conventionDeclaration>]]></egXML>
+         <reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</reference>
+         <shortCode>RDA</shortCode>
+      </conventionDeclaration>]]></egXML>
+      <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="revised">
+         <agent>
+         <label>T. Baker</label>
+      </agent>
+         <eventDateTime standardDateTime="2022-10">October 2022</eventDateTime>
+         <eventDescription>The archival description encoded in this document has been reviewed and, where necessary, updated following the <reference href="https://guides.library.yale.edu/reparativearchivaldescription">Reparative Archival Description Working Group: Guiding Principles</reference>.</eventDescription>
+      </maintenanceEvent>]]></egXML>
    </div>
 </div>

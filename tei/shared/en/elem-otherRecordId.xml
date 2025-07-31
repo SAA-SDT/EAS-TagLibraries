@@ -49,18 +49,13 @@
                </div>
                <div type="attributeusage">
                  <p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the alternative identifier in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system.</p>
-                 <p>Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, e.g, the institution or service providing the associated record identifier, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p>
-                 <p>Use <att>localType</att> to identify the institution or service responsible for providing the associated record identifier, if not the same as that given in <gi>maintenanceAgency</gi>.</p>
+                 <p>Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, e.g, the institution or service providing the associated record identifier, and <att>vocabularySourceURI</att> to point univocally to the organization system used, if available.</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<otherRecordId localType="PARES" localTypeDeclarationReference="lTD1">
-   140149
-</otherRecordId>]]></egXML>
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<otherRecordId localType="original">
-   AUBT-ISAAR-C-002
-</otherRecordId>]]></egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<otherRecordId valueURI="https://pares.mcu.es/ParesBusquedas20/catalogo/autoridad/140149" vocabularySource="PARES">140149</otherRecordId>]]></egXML>
+                  <egXML xml:lang="eng" type="eac"><![CDATA[<otherRecordId localType="original" localTypeDeclarationReference="identifierTypes">AUBT-ISAAR-C-002</otherRecordId>]]></egXML>
                </div>
             </div>

@@ -7,8 +7,7 @@
                   <p>Contact Line</p>
                </div>
                <div type="summary">
-                  <p>A required child element of <gi>contact</gi> used for recording one line of
-                     contact details or digital addresses.</p>
+                  <p>A required child element of <gi>contact</gi> used for recording one line of contact details or digital addresses.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -50,29 +49,19 @@
                   </p>
                </div>
                <div type="description">
-                  <p><gi>contactLine</gi> is used to encode separate details or lines of contact
-                     details or digital addresses within a parent <gi>contact</gi> element.</p>
-                  <p><gi>contactLine</gi> may be repeated as many times as necessary to enter all
-                     relevant contact details.</p>
+                  <p><gi>contactLine</gi> is used to encode separate details or lines of contact details or digital addresses within a parent <gi>contact</gi> element.</p>
+                  <p><gi>contactLine</gi> may be repeated as many times as necessary to enter all relevant contact details.</p>
                </div>
-               <div type="attributeusage"><p>Use the optional <att>contactLineType</att>
-                        attribute to encode the type of contact detail that the <gi>contactLine</gi>
-                        refers to, for example "phoneNumber".</p>
+               <div type="attributeusage"><p>Use the optional <att>contactLineType</att> attribute to encode the type of contact detail that the <gi>contactLine</gi> refers to, for example "phoneNumber".</p>
                         <p>Use <att>contactLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>contactLineType</att>.</p></div>
                <div type="availability">
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<contact>
-   <contactLine contactLineType="phoneNumber">
-      08-402 60 00
-   </contactLine>
-   <contactLine languageOfElement="se" contactLineType="homepage">
-      https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html
-   </contactLine>
-   <contactLine languageOfElement="en" contactLineType="homepage">
-      https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html
-   </contactLine>
-</contact>]]></egXML>
+                  <egXML xml:lang="eng"><![CDATA[<contact audience="external" id="IDcontact1">
+                    <contactLine contactLineType="phoneNumber">08-402 60 00</contactLine>
+                    <contactLine languageOfElement="se" contactLineType="homepage" href="https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html" linkTitle="Besök vår hemsida"/>
+   <contactLine languageOfElement="en" contactLineType="homepage" href="https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html" linkTitle="Visit our website"/
+                  </contact>]]></egXML>
                </div>
             </div>
