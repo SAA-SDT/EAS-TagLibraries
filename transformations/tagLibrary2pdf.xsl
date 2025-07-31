@@ -278,7 +278,10 @@
                 text-align="left" text-align-last="justify" span="all">
                 <fo:inline>
                     <fo:basic-link internal-destination="{generate-id()}">
-                        <xsl:value-of select="tei:head"/>
+			    <xsl:attribute name="fox:alt-text">
+				    <xsl:value-of select="tei:head"/>
+			    </xsl:attribute>
+			<xsl:value-of select="tei:head"/>
                         <fo:leader leader-pattern="dots"/>
                         <fo:page-number-citation ref-id="{generate-id(.)}"/>
                     </fo:basic-link>
@@ -288,7 +291,10 @@
                 <fo:block start-indent="10pt" text-align-last="justify">
                     <fo:inline>
                         <fo:basic-link internal-destination="{generate-id(.)}">
-                            <xsl:value-of select="tei:head"/>
+				<xsl:attribute name="fox:alt-text">
+					<xsl:value-of select="tei:head"/>
+				</xsl:attribute>
+				<xsl:value-of select="tei:head"/>
                             <fo:leader leader-pattern="dots"/>
                             <fo:page-number-citation ref-id="{generate-id(.)}"/>
                         </fo:basic-link>
@@ -304,7 +310,10 @@
                 text-align="left" text-align-last="justify">
                 <fo:inline>
                     <fo:basic-link internal-destination="{generate-id(.)}">
-                        <xsl:value-of select="tei:head"/>
+                        <xsl:attribute name="fox:alt-text">
+				<xsl:value-of select="tei:head"/>
+			</xsl:attribute>
+			<xsl:value-of select="tei:head"/>
                         <fo:leader leader-pattern="dots"/>
                         <fo:page-number-citation ref-id="{generate-id(.)}"/>
                     </fo:basic-link>
@@ -314,7 +323,10 @@
                 <fo:block start-indent="10pt" text-align-last="justify">
                     <fo:inline>
                         <fo:basic-link internal-destination="{generate-id(.)}">
-                            <xsl:value-of select="tei:head"/>
+                            <xsl:attribute name="fox:alt-text">
+                            	<xsl:value-of select="tei:head"/>
+			    </xsl:attribute>
+			    <xsl:value-of select="tei:head"/>
                             <fo:leader leader-pattern="dots"/>
                             <fo:page-number-citation ref-id="{generate-id(.)}"/>
                         </fo:basic-link>
@@ -434,7 +446,10 @@
                         <fo:block text-align="left" text-align-last="justify">
                            <fo:inline>
                                 <fo:basic-link internal-destination="{generate-id(.)}">
-                                    <xsl:value-of select="tei:head/tei:gi"/>
+				    <xsl:attribute name="fox:alt-text">
+					    <xsl:value-of select="tei:head/tei:gi"/>
+                                    </xsl:attribute>	
+				    <xsl:value-of select="tei:head/tei:gi"/>
                                     <fo:leader leader-pattern="dots"/>
                                     <fo:page-number-citation ref-id="{generate-id(.)}"/>
                                 </fo:basic-link>
@@ -452,7 +467,10 @@
                         <fo:block text-align="left" text-align-last="justify">
                             <fo:inline>
                                 <fo:basic-link internal-destination="{generate-id(.)}">
-                                    <xsl:value-of select="tei:head/tei:att"/>
+                                    <xsl:attribute name="fox:alt-text">
+					    <xsl:value-of select="tei:head/tei:att"/>
+			            </xsl:attribute>
+			            <xsl:value-of select="tei:head/tei:att"/>
                                     <fo:leader leader-pattern="dots"/>
                                     <fo:page-number-citation ref-id="{generate-id(.)}"/>
                                 </fo:basic-link>
@@ -465,7 +483,10 @@
                         space-after="6pt" text-align="left" text-align-last="justify" span="all">
                         <fo:inline>
                             <fo:basic-link internal-destination="{generate-id(.)}">
-                                <xsl:value-of select="tei:head"/>
+                                <xsl:attribute name="fox:alt-text">
+                                    <xsl:value-of select="tei:head"/>
+			        </xsl:attribute>
+			        <xsl:value-of select="tei:head"/>
                                 <fo:leader leader-pattern="dots"/>
                                 <fo:page-number-citation ref-id="{generate-id(.)}"/>
                             </fo:basic-link>
@@ -691,7 +712,7 @@
             <xsl:apply-templates select="tei:div[@type = 'usagenotes']"/>
             <xsl:if test="starts-with($returntotoc, 'yes')">
                 <fo:block>
-                    <fo:basic-link internal-destination="tocpage" color="blue">
+			<fo:basic-link fox:alt-text="{$toc}" internal-destination="tocpage" color="blue">
                         <xsl:value-of select="$toc"/>
                     </fo:basic-link>
                 </fo:block>
@@ -736,7 +757,7 @@
             <xsl:apply-templates select="tei:div[@type = 'examples']"/>
             <xsl:if test="starts-with($returntotoc, 'yes')">
                 <fo:block>
-                    <fo:basic-link internal-destination="tocpage" color="blue">
+			<fo:basic-link fox:alt-text="{$toc}" internal-destination="tocpage" color="blue">
                         <xsl:value-of select="$toc"/>
                     </fo:basic-link>
                 </fo:block>
@@ -1284,7 +1305,7 @@
     </xsl:template>
 
     <xsl:template match="tei:ref">
-        <fo:basic-link external-destination="{@target}" color="blue">
+	    <fo:basic-link fox:alt-text="{@target}" external-destination="{@target}" color="blue">
             <xsl:apply-templates/>
         </fo:basic-link>
     </xsl:template>
@@ -1435,6 +1456,7 @@
     </xsl:template>
 
     <xsl:template name="tokenize">
+	<xsl:variable name="text" select="." />
         <xsl:for-each select="tokenize(., ',')">
             <xsl:choose>
                 <xsl:when test="contains(., 'base64Binary')">
@@ -1462,13 +1484,13 @@
                 </xsl:when>
                 <xsl:when test="contains(., '(')">
                         <!-- remove "(revised in x.y.z)" text from title -->
-                        <fo:basic-link
+			<fo:basic-link fox:alt-text="{$text}"
                             internal-destination="{concat('elem-', normalize-space(substring-before(concat(., '('), '(')))}">
                             <xsl:value-of select="normalize-space(.)"/>
                         </fo:basic-link>
                 </xsl:when>
                 <xsl:otherwise>
-                    <fo:basic-link
+			<fo:basic-link fox:alt-text="{$text}" 
                             internal-destination="{concat('elem-', translate(normalize-space(.), ':',''))}" color="blue">
                             <xsl:value-of select="normalize-space(.)"/>
                         </fo:basic-link>
@@ -1488,14 +1510,14 @@
                 <xsl:choose>
                     <xsl:when test="contains($text, '(revised')">
                         <!-- remove "(revised in x.y.z)" text from title -->
-                        <fo:basic-link
+			    <fo:basic-link fox:alt-text="{$text}" 
                             internal-destination="{concat('attr-', substring-before($text, ' '))}" color="blue">
                             <xsl:value-of select="normalize-space($text)"/>
                         </fo:basic-link>
                     </xsl:when>
                     <xsl:when test="not(contains($text, '['))">
                         <!-- attributes have an id with attr- first -->
-                        <fo:basic-link
+			    <fo:basic-link fox:alt-text="{$text}" 
                             internal-destination="{concat('attr-', translate(normalize-space($text), ':',''))}" color="blue">
                             <xsl:value-of select="normalize-space($text)"/>
                         </fo:basic-link>
@@ -1509,14 +1531,14 @@
                 <xsl:choose>
                     <xsl:when test="contains($text, '(revised')">
                         <!-- remove "(revised in x.y.z)" text from title -->
-                        <fo:basic-link
+			    <fo:basic-link fox:alt-text="{$text}" 
                             internal-destination="{concat('attr-', substring-before($text, ' '))}" color="blue">
                             <xsl:value-of select="normalize-space($text)"/>
                         </fo:basic-link>
                     </xsl:when>
                     <xsl:when test="not(contains($text, '['))">
                         <!-- attributes have an id with attr- first -->
-                        <fo:basic-link
+			    <fo:basic-link fox:alt-text="{$text}" 
                             internal-destination="{concat('attr-', translate(normalize-space(substring-before($text, $separator)), ':',''))}" color="blue">
                             <xsl:value-of
                                 select="normalize-space(substring-before($text, $separator))"/>
