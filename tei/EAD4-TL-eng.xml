@@ -242,13 +242,13 @@
             <xi:include href="ead4/en/attr-descriptionOfComponentsTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-detailLevel.xml" parse="xml"/>
             <xi:include href="shared/en/attr-detailLevelEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-era.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-extentType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-extentTypeEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-formAvailableType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-formAvailableTypeEncoding.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-functionType.xml" parse="xml"/>
             <xi:include href="ead4/en/attr-functionTypeEncoding.xml" parse="xml"/>
-            <xi:include href="shared/en/attr-era.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-extentType.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-extentTypeEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-href.xml" parse="xml"/>
             <xi:include href="shared/en/attr-id.xml" parse="xml"/>
             <xi:include href="shared/en/attr-languageCode.xml" parse="xml"/>
