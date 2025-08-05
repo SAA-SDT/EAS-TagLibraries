@@ -79,16 +79,16 @@
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<accessConditions>
 			<p>University records are public records and once fully processed are generally open to research use. Records that contain personally identifiable information will be closed to protect individual privacy. The closure of university records is subject to compliance with applicable laws.</p>
-		</accessrestrict>]]>
+		</accessConditions>]]>
 		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<accessConditions valueURI='https://www.wikidata.org/wiki/Q232932">
+		<egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<accessConditions valueURI="https://www.wikidata.org/wiki/Q232932">
 			<p>Open access</p>
 		</accessConditions>]]>
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<c level="file">
 			<identificationData>
-			<container localType="box" localTypeDeclarationReference="#containers">104</container
-			<container localType="folder(s)" localTypeDeclarationReference="#containers">6578-6579</container>
+			<container localType="box" localTypeDeclarationReference="containers">104</container>
+			<container localType="folder(s)" localTypeDeclarationReference="containers">6578-6579</container>
 			<unitTitle>Technics and Civilization (Form and Personality)</unitTitle>
 			<unitDate unitDateType="inclusive">
 			<dateRange>
@@ -102,7 +102,7 @@
 		</accessConditions>
 		</c>]]>
 		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<accessConditions valueURI='https://www.wikidata.org/wiki/Q910845">
+		<egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<accessConditions valueURI="https://www.wikidata.org/wiki/Q910845">
 			<p>Paywall</p>
 		</accessConditions>]]>
 		</egXML>
