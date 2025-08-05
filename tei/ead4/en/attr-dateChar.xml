@@ -17,7 +17,7 @@
 			<![CDATA[<unitDate certainty="approximate" dateChar="creation" unitDateType="inclusive">
 			<dateRange>
 			<fromDate standardDate="1950">1950</fromDate>
-			<toDate standardDate="2000">2000</todate>
+			<toDate standardDate="2000">2000</toDate>
 		</dateRange>
 		</unitDate>]]>
 		</egXML>
