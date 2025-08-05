@@ -155,7 +155,7 @@
 		</dateRange>
 		</unitDate>
 		</identificationData>
-			<scopecontent>[...]</scopecontent>
+			<scopeContent>[...]</scopeContent>
 			<c level="file">
 			<identificationData>
 			<unitTitle>California Dining Club</unitTitle>
@@ -166,7 +166,7 @@
 			<unitDate unitDateType="inclusive">
 			<dateRange>
 			<fromDate standardDate="1923">1923</fromDate>
-			<toDate standardDate="1929">1929</fromDate>
+			<toDate standardDate="1929">1929</toDate>
 		</dateRange>
 		</unitDate>
 		</identificationData>
@@ -183,7 +183,7 @@
 			<unitDate unitDateType="inclusive">
 			<dateRange>
 			<fromDate standardDate="1918">1918</fromDate>
-			<toDate standardDate="1932">1932</fromDate>
+			<toDate standardDate="1932">1932</toDate>
 		</dateRange>
 		</unitDate>
 		</identificationData>
