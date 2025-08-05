@@ -117,7 +117,7 @@
 			<dateRange>
 			<fromDate standardDate="1860">1860</fromDate>
 			<toDate standardDate="1967">1967</toDate>
-			<dateRange>
+		</dateRange>
 			<date standardDate="1987">(1987)</date>
 		</dateSet>
 		</unitDate>
