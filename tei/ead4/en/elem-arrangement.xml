@@ -109,29 +109,31 @@
 		</arrangement></c>]]>
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<arrangement>
-			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application context. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
+			<!-- Note: the following encoding is based on using the NVDL schema for EAD 4.0, which has the XHTML schema integrated already; the example validates in Oxygen XML Editor 20.1. -->
 			<formattingExtension>
-			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
-			<xhtml:h3>Arrangement of the Collection</xhtml:h3>
-			<xhtml:p>This collection is arranged in five groups composed of twenty-five series
-                        followed by restricted and oversize series:</xhtml:p>
+			<xhtml:div>
+                    <xhtml:h3>Arrangement of the Collection</xhtml:h3>
+                    <xhtml:p>This collection is arranged in five groups composed of twenty-five series followed by restricted and oversize series:</xhtml:p>
                     <xhtml:h4>Group I:</xhtml:h4>
                     <xhtml:ul>
-                        <xhtml:li>Correspondence, 1891-1940</xhtml:li>
-                        <xhtml:ul>
-                            <xhtml:li>Incoming Correspondence</xhtml:li>
+                        <xhtml:li>Correspondence, 1891-1940
                             <xhtml:ul>
-                                <xhtml:li>A-E</xhtml:li>
-                                <xhtml:li>F-J</xhtml:li>
-                                [...]
+                                <xhtml:li>Incoming Correspondence
+                                    <xhtml:ul>
+                                        <xhtml:li>A-E</xhtml:li>
+                                        <xhtml:li>F-J</xhtml:li>
+                                        [...]
+                                    </xhtml:ul>
+                                </xhtml:li>
+                                <xhtml:li>Outgoing Correspondence (copies)
+                                    <xhtml:ul>
+                                        <xhtml:li>A-E</xhtml:li>
+                                        <xhtml:li>F-J</xhtml:li>
+                                        [...]
+                                    </xhtml:ul>
+                                </xhtml:li>
                             </xhtml:ul>
-                            <xhtml:li>Outgoing Correspondence (copies)</xhtml:li>
-                            <xhtml:ul>
-                                <xhtml:li>A-E</xhtml:li>
-                                <xhtml:li>F-J</xhtml:li>
-                                [...]
-                            </xhtml:ul>
-                        </xhtml:ul>
+                        </xhtml:li>
                         <xhtml:li>Administrative Files, 1913-1921</xhtml:li>
                         <xhtml:li>Printed Matter, 1889-1936</xhtml:li>
                         <xhtml:li>Photographs, 1911-1935</xhtml:li>
@@ -144,8 +146,8 @@
                         [...]
                         <xhtml:li>Addendum, 1912-1972</xhtml:li>
                     </xhtml:ul>
-                    	[...]
-			<xhtml:h4>Other series:</xhtml:h4>
+                    [...]
+                    <xhtml:h4>Other series:</xhtml:h4>
                     <xhtml:p>Restricted, 1889-1942</xhtml:p>
                     <xhtml:p>Oversize, 1863-1999</xhtml:p>
                 </xhtml:div>
