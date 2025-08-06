@@ -26,7 +26,7 @@
 		</unitDate>
 		</identificationData>
 			<formsAvailable>
-			<formAvailable coverage="whole" formAvailableType="analogueOriginal">
+			<formAvailable coverage="whole" formAvailableType="analogOriginal">
 			<label>The Pippa & Porthos</label>
 		</formAvailable>
 			<formAvailable valueURI=”https://collections.library.yale.edu/catalog/2008313” coverage=”part” formAvailableType=”digitalDerived”>

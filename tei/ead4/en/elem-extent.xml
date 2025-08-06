@@ -109,7 +109,7 @@
 			<quantity>12</quantity>
 			<unitOfMeasurement>notebooks</unitOfMeasurement>
 		</extent>
-			<container localType="boxes" localTypeDeclarationReference="#containers">5-6</container>
+			<container localType="boxes" localTypeDeclarationReference="containers">5-6</container>
 			<descriptiveNote>
 			<p>The notebooks contain months and days, not years. Estimated dates are based on the years Scully attended the University of Maryland.</p>
 		</descriptiveNote>

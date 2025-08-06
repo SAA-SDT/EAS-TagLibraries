@@ -25,7 +25,7 @@
 		</extent>]]>
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<formAvailable coverage="part" formAvailableType="analogueCopy">
+			<![CDATA[<formAvailable coverage="part" formAvailableType="analogDerived">
 			<label>Letters sent by Abraham Lincoln</label>
 			<processInfo>
 			<p>The collection includes a copy of letters sent by Abraham Lincoln, retained by Lincoln’s secretary John G. Nicolay. The originals have been reincorporated with the Lincoln Papers in 1959.</p>
