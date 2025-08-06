@@ -54,8 +54,7 @@
          general context provides wide latitude to record contextual information not specifically
          accommodated by other elements contained in <gi>description</gi>.</p>
       <p>The optional <gi>formattingExtention</gi> element may be used to accommodate greater complexity in
-         expressing or representing the general context being described. The optional <gi>head</gi>
-         element may be used to encode a title or caption. A simpler discursive expression of the
+         expressing or representing the general context being described. A simpler discursive expression of the
          general context may be encoded as one or more <gi>p</gi> elements.</p>
    </div>
    <div type="availability">
