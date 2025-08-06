@@ -79,12 +79,12 @@
 			<unitOfMeasurement>linear ft.</unitOfMeasurement>
 		</extent>
 		</identificationData>
-			<scopecontent>
+			<scopeContent>
 			<p>The Activities series gives examples of the types of activities offered at the camp. The folders contain reports, schedules, and inventories from each activity area of the camp. These records are predominantly from the late 1960s and early 1970s and replicate some of the information found in the staff manuals.</p>
-		</scopecontent>
+		</scopeContent>
 			<c level="file">
 			<identificationData>
-			<container localType="box" localTypeDeclarationReference="#containers">1</container>
+			<container localType="box" localTypeDeclarationReference="containers">1</container>
 			<unitTitle>General</unitTitle>
 			<unitDate unitDateType="inclusive">
 			<dateRange>
@@ -96,8 +96,8 @@
 		</c>
 			<c level="file">
 			<identificationData>
-			<container localType="box" localTypeDeclarationReference="#containers">1</container>
-			<unitTitle>Camp Crafts</unitTtle>
+			<container localType="box" localTypeDeclarationReference="containers">1</container>
+			<unitTitle>Camp Crafts</unitTitle>
 			<unitDate>
 			<date>1967</date>
 		</unitDate>
@@ -105,16 +105,16 @@
 		</c>
 			<c level="file">
 			<identificationData>
-			<container localType="box" localTypeDeclarationReference="#containers">1</container>
+			<container localType="box" localTypeDeclarationReference="containers">1</container>
 			<unitTitle>Education Program</unitTitle>
-			<unitdate>
+			<unitDate>
 			<date>1967</date>
 		</unitDate>
 		</identificationData>
 		</c>
 			<c level="file">
 			<identificationData>
-			<container localType="box" localTypeDeclarationReference="#containers">1</container>
+			<container localType="box" localTypeDeclarationReference="containers">1</container>
 			<unitTitle>Expressive Arts</unitTitle>
 			<unitDate>
 			<date>1970</date>
@@ -124,7 +124,7 @@
 			[...]
 		</c>
 			[...]
-		</descriptionOfComponents]]>
+		</descriptionOfComponents>]]>
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<descriptionOfComponents descriptionOfComponentsType="analyticover">
@@ -137,7 +137,7 @@
 			<fromDate>1958</fromDate>
 			<toDate>1979</toDate>
 		</dateRange>
-		</unitdate>
+		</unitDate>
 			<extent coverage="whole">
 			<quantity>36</quantity>
 			<unitOfMeasurement>ft.</unitOfMeasurement>
@@ -151,9 +151,9 @@
 			<recordTypeSpecificStatement>
 			<p>Scale: predominantly 4 inches to 1 mile (1:15,840)</p>
 		</recordTypeSpecificStatement>
-			<p>Series consists of forest stand maps. A map sheet was created for each township of the surveyed section of the province and for each basemap area in unsurveyed areas.</p>
-			[...]
-		</scopecontent>
+			<scopeContent>
+			<p>Series consists of forest stand maps. A map sheet was created for each township of the surveyed section of the province and for each basemap area in unsurveyed areas.</p>	
+		</scopeContent>
 		</c>
 			<c level="series">
 			<identificationData>
@@ -164,7 +164,7 @@
 			<fromDate>1958</fromDate>
 			<toDate>1971</toDate>
 		</dateRange>
-		</unitdate>
+		</unitDate>
 			<extent>
 			<quantity>ca. 70</quantity>
 			<unitOfMeasurement>maps</unitOfMeasurement>
@@ -173,13 +173,12 @@
 			<recordTypeSpecificStatement>
 			<p>Scale: 1 inch to 1 mile</p>
 		</recordTypeSpecificStatement>
-			<scopecontent>
+			<scopeContent>
 			<p>Series consists of composite maps of the forest resource inventory data from all the townships within a Forestry Management Unit. The composites offer a broader view of an area than the township/basemaps, however the forest stand statistics are quite small and difficult to read.</p>
-			[...]
-		</scopecontent>
+		</scopeContent>
 		</c>
 			[...]
-		</descriptionOfComponents]]>
+		</descriptionOfComponents>]]>
 		</egXML><egXML xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<descriptionOfComponents descriptionOfComponentsType="in-depth">
 			<c level="series">
@@ -195,8 +194,8 @@
 		</identificationData>
 			<c>
 			<identificationData>
-			<container containerId="mss92-894c-bx1" localType="box" localTypeDeclarationReference="#containers">Box 1</container>
-			<container target="#mss92-894c-bx1" localType="folder" localTypeDeclarationReference="#containers">7-8 </container>
+			<container id="mss92-894c-bx1" containerId="mss92-894c-bx1" localType="box" localTypeDeclarationReference="containers">Box 1</container>
+			<container target="mss92-894c-bx1" localType="folder" localTypeDeclarationReference="containers">7-8 </container>
 			<unitTitle>Annual reports</unitTitle>
 			<unitDate unitDateType="inclusive">
 			<dateSet>
@@ -211,7 +210,7 @@
 		</c>
 			<c>
 			<identificationData>
-			<container target="#mss92-894c-bx1" localType="folder" localTypeDeclarationReference="#containers">9</container>
+			<container target="mss92-894c-bx1" localType="folder" localTypeDeclarationReference="containers">9</container>
 			<unitTitle>Board of Directors, Minutes and correspondence</unitTitle>
 			<unitDate unitDateType="inclusive">
 			<dateRange>
@@ -236,7 +235,7 @@
 		</identificationData>
 			<c>
 			<identificationData>
-			<container target="#mss92-894c-bx1" localType="folder" localTypeDeclarationReference="#containers">21 </container>
+			<container target="mss92-894c-bx1" localType="folder" localTypeDeclarationReference="containers">21 </container>
 			<unitTitle>Correspondence</unitTitle>
 			<unitDate unitDateType="inclusive">
 			<dateRange>
@@ -248,7 +247,7 @@
 		</c>
 			<c>
 			<identificationData>
-			<container target="#mss92-894c-bx1" localType="folder" localTypeDeclarationReference="#containers">22</container>
+			<container target="mss92-894c-bx1" localType="folder" localTypeDeclarationReference="containers">22</container>
 			<unitTitle>Writings</unitTitle>
 			<unitDate>
 			<textualDate>n.d.</textualDate>
