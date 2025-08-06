@@ -79,7 +79,7 @@
 			<![CDATA[<accruals>
 			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application context. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
 			<formattingExtension>
-			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+			<xhtml:div>
 			<xhtml:h3>Agreement on digital transfers</xhtml:h3>
 			<xhtml:p>All transfers of records dating from 1999 and later will happen in digital
                         form only. Regular transfers have been agreed in intervals of three years at
