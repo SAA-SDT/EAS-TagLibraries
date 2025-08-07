@@ -64,17 +64,27 @@
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<c level="item">
 			<identificationData>[...]</identificationData>
+			<formsAvailable>
+			<formAvailable>
+			[...]
 			<physicalOrTechnicalRequirements>
-			<p>Due to already existing oxidatve corrosion, the original daguerrotypes can only be viewed upon request and at the archive, where suitable conditions (dimmed lighting, low humidity) can be guaranteed.</p>
+			<p>Due to already existing oxidative corrosion, the original daguerrotypes can only be viewed upon request and at the archive, where suitable conditions (dimmed lighting, low humidity) can be guaranteed.</p>
 		</physicalOrTechnicalRequirements>
+		</formAvailable>
+		</formsAvailable>
 		</c>]]>
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<c level="subseries">
 			<identificationData>[...]</identificationData>
+			<formsAvailable>
+			<formAvailable>
+			[...]
 			<physicalOrTechnicalRequirements>
 			<p>48K RAM; Apple Disk II with controller; colour monitor</p>
 		</physicalOrTechnicalRequirements>
+		</formAvailable>
+		</formsAvailable>
 		</c>]]>
 		</egXML>
 	</div>
