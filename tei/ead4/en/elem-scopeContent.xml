@@ -68,9 +68,9 @@
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<scopeContent>
-			<!-- Note: the way how the XHTML schema is integrated can differ depending on your local application context. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
+			<!-- Note: the following encoding is based on using the NVDL schema for EAD 4.0, which has the XHTML schema integrated already; the example validates in Oxygen XML Editor 20.1. -->
 			<formattingExtension>
-			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+			<xhtml:div>
 			<xhtml:p>Production score - excerpted reductions, photostats:</xhtml:p>
 			<xhtml:ul>
 			<xhtml:li>PROD. #306 M:10 Main title / before the fact</xhtml:li>
