@@ -509,7 +509,7 @@
                </table>
             </div>
             <div class="toc1">
-               <a href="#d1e8476">Attributes Attribute name Attribute values</a>
+               <a href="#d1e8452">Attributes Attribute name Attribute values</a>
             </div>
             <div class="toc2">
                <table>
@@ -3596,7 +3596,7 @@
          general social and cultural context of the CPF entity being described.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-head0..1formattingExtension0..np0..n">head0..1formattingExtension0..np0..n</a>
+                     <a href="#elem-formattingExtension0..np0..n">formattingExtension0..np0..n</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
@@ -3607,13 +3607,8 @@
          political, and/or historical context in which the CPF entity being described existed. The
          general context provides wide latitude to record contextual information not specifically
          accommodated by other elements contained in &lt;description&gt;.The optional &lt;formattingExtention&gt; element may be used to accommodate greater complexity in
-         expressing or representing the general context being described. The optional &lt;head&gt;
-         element may be used to encode a title or caption. A simpler discursive expression of the
-         general context may be encoded as one or more &lt;p&gt; elements.The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">&lt;head&gt;<br/>
-                        <br/>Any of &lt;formattingExtension&gt; and &lt;p&gt;<br/>
-                        <br/>
-                     </div>
-                  </div>
+         expressing or representing the general context being described. A simpler discursive expression of the
+         general context may be encoded as one or more &lt;p&gt; elements.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -7779,7 +7774,7 @@
          structure(s) of a corporate body or the genealogy of a family.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-head0..1p">head0..1p</a> or <a href="#elem-formattingExtension0..n">formattingExtension0..n</a>
+                     <a href="#elem-p">p</a> or <a href="#elem-formattingExtension0..n">formattingExtension0..n</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
@@ -7790,13 +7785,10 @@
          structure(s) of a corporate body and the dates of any changes to that structure that are
          significant to understanding the way that corporate body conducted affairs (such as dated
          organization charts), or the genealogy of a family (such as a family tree) in a way that
-         demonstrates the interrelationships of its members with relevant dates.&lt;head&gt; may
-         be used to encode a title or caption. A simpler discursive expression of the structure(s)
-         or genealogy may be encoded as one or more &lt;p&gt; elements.The prescribed order of all child elements (both required and optional) is:<div class="blockIndent">&lt;head&gt;<br/>
-                        <br/>One or both of &lt;p&gt; or &lt;formattingExtension&gt;.<br/>
-                        <br/>
-                     </div>
-                  </div>
+         demonstrates the interrelationships of its members with relevant dates.The optional &lt;formattingExtention&gt; element may be used to accommodate
+greater complexity in expressing or representing the structure(s) or genealogy being
+described. A simpler discursive expression of the structure(s)
+         or genealogy may be encoded as one or more &lt;p&gt; elements.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -8230,7 +8222,7 @@
                   <br/>
                </div>  <a class="tocReturn" href="#toc">[toc]</a>
             </div>
-            <div class="section" id="d1e8476">
+            <div class="section" id="d1e8452">
                <div class="head03">Attributes Attribute name Attribute values</div>
                <div class="head03">Introduction  <a class="tocReturn" href="#toc">[toc]</a>
                </div>Attributes are associated with most of the elements contained in EAC-CPF. Attributes reflect named properties of an element and may take on different values, depending on the context in which they occur. In order to set one or more attributes, an encoder should include the name of the attribute(s) within the same angle brackets as the start tag, together with the value(s) to which the attribute(s) is/are to be set. That is,&lt;[tag] [attribute]="[value]"&gt;or&lt;[tag] [attribute1]="[value1]" [attribute2]="[value2]"&gt;For example:&lt;fromDate standardDate="1939"&gt;1939&lt;/fromDate&gt;or&lt;fromDate certainty="approximate" standardDate="1939"&gt;1939&lt;/fromDate&gt;Most attributes are optional, though some are required. The attribute description indicates whether an attribute is required. This information is also available in the Attributes section of each element description.The value of attributes may be constrained by the schema using specific attribute type values. For example, the id attribute is of type ID, which constrains its value to a string beginning with an alphabetic character. An id value must be unique within the EAC-CPF instance within which it occurs, that is, no other tag in the entire document can have the same id value. EAC-CPF attributes have the following data types (capitalization of data types follows the documentation found in the W3C Recommendation XML Schema Part 2: Datatypes Second Edition (<a href="http://www.w3.org/TR/xmlschema-2/" target="new">http://www.w3.org/TR/xmlschema-2/)</a>:
