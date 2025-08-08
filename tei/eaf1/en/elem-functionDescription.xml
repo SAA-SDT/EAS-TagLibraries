@@ -13,7 +13,9 @@
 		<p>
 			<list type="gloss">
 				<label>p</label>
-				<item>1..n</item>
+				<item>0..n</item>
+				<label>formattingExtension</label>
+				<item>0..1</item>
 			</list>
     </p>
 	</div>
@@ -44,9 +46,10 @@
 	</div>
 	<div type="description">
 		<p><gi>functionDescription</gi> provides narrative description of the purpose of the function.
-<gi>functionDescription</gi> must contain one or more <gi>p</gi> elements.
 This element is distinct from <gi>functionHistory</gi>, which is intended to record the administrative history of the function such as information on how the function was performed, associated roles, and how it changed over time.
 </p>
+		<p>Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+		
 	</div>
 	<div type="availability">
 		<p>Mandatory, Not Repeatable</p>

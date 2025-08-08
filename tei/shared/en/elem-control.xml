@@ -195,7 +195,9 @@
                         <item>Optional</item>
                         <label>maintenanceStatusEncoding</label>
                         <item>Optional (values limited to: EASList, otherMaintenanceStatusEncoding)</item>
-                        <label>publicationStatus</label>
+                         <label>placeTypeEncoding</label>
+                         <item>Optional (values limited to: EASList, otherPlaceTypeEncoding)</item>
+                         <label>publicationStatus</label>
                         <item>Optional</item>
                         <label>publicationStatusEncoding</label>
                         <item>Optional (values limited to: EASList, otherPublicationStatusEncoding)</item>
