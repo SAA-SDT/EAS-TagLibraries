@@ -85,11 +85,10 @@
     </div>
     <div type="availability">
       <p type="eac">Within <gi>maintenanceEvent</gi>: required, not repeatable</p>
-      <p type="eac">Within <gi>narrativeEvent</gi>: optional, not repeatable</p>
+      <p type="eac">Within <gi>narrativeEvent</gi>: optional, repeatable</p>
       <p type="ead">Within <gi>agents</gi>: required, repeatable</p>
-      <p type="ead">Within <gi>findAidDesc</gi>: optional, repeatable</p>
+      <p type="ead">Within <gi>findAidDesc</gi> and <gi>narrativeEvent</gi>: optional, repeatable</p>
       <p type="ead">Within <gi>maintenanceEvent</gi>: required, not repeatable</p>
-      <p type="ead">Within <gi>narrativeEvent</gi>: optional, not repeatable</p>
       <p type="eaf">Required, not repeatable</p>
     </div>
     <div type="examples">
