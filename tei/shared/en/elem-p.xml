@@ -49,7 +49,7 @@
                   </p>
                </div>
                <div type="description">
-                  <p>Use <gi>p</gi> for blocks of text. A paragraph may be a subdivision of a larger composition or it may exist alone. It is usually typographically distinguished: A line space is often left blank before it; the text begins on a new line; and the first letter of the first word may be indented, enlarged, or both.</p>
+                  <p>Use <gi>p</gi> for blocks of text. A paragraph may be a subdivision of a larger composition or it may exist alone. It is usually typographically distinguished: a line space is often left blank before it; the text begins on a new line; and the first letter of the first word may be indented, enlarged, or both.</p>
                </div>
                <div type="availability">
                   <p>Within <gi>descriptiveNote</gi>: required, repeatable.</p>
