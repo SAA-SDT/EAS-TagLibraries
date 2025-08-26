@@ -80,7 +80,7 @@
    <otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="http://id.loc.gov/vocabulary/organizations">
       CtY-BR
    </otherAgencyCode>
-   <otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">
+   <otherAgencyCode status="alternative" valueURI="http://www.wikidata.org/entity/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">
       Q814779
    </otherAgencyCode>
 </maintenanceAgency>]]></egXML>
