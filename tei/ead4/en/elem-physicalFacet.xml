@@ -7,7 +7,7 @@
 		<p>Physical Facet</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>physicalDescription</gi> that provides more detailed information about the physical nature of or techniques and methods of creation of a specific instantiation of the material described in terms that are often taken from a controlled vocabulary list.</p>
+		<p>A child element of <gi>physicalDescription</gi> that provides more detailed information about the physical nature or techniques and methods of creation of a specific instantiation of the material described, in terms that are often taken from a controlled vocabulary list.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
@@ -73,7 +73,7 @@
 			<quantity>7,500</quantity>
 			<unitOfMeasurement>electronic files</unitOfMeasurement>
 		</extent>
-			<physicalFacet valueURI="http://vocab.getty.edu/page/aat/300391245" vocabularySource="AAT">false-color infrared photography</physicalFacet>
+			<physicalFacet valueURI="http://vocab.getty.edu/aat/300391245" vocabularySource="AAT">false-color infrared photography</physicalFacet>
 		</physicalDescription>
 		</formAvailable>
 		</formsAvailable>]]>
@@ -81,7 +81,7 @@
 		<egXML xml:lang="eng"><![CDATA[<physicalDescription>
 			<extent coverage="part" extentType="materialType">
 			<quantity>5</quantity>
-			<unitOfMeasurement>dageurreotypes</unitOfMeasurement>
+			<unitOfMeasurement>daguerreotypes</unitOfMeasurement>
 		</extent>
 			<dimensions>
 			<quantity>6.5 x 8.5</quantity>
