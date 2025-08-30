@@ -59,7 +59,8 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceAgency>
+                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<maintenanceAgency>
    <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">
       US-nbuuar
    </agencyCode>
@@ -69,8 +70,10 @@
    <otherAgencyCode status="authorized" valueURI="http://id.loc.gov/vocabulary/organizations/nbuuar" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="http://id.loc.gov/vocabulary/organizations">
       NBuU-AR
    </otherAgencyCode>
-</maintenanceAgency>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceAgency>
+</maintenanceAgency>]]>
+                  </egXML>
+                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<maintenanceAgency>
    <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">
       US-ctybr
    </agencyCode>
@@ -83,6 +86,7 @@
    <otherAgencyCode status="alternative" valueURI="http://www.wikidata.org/entity/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">
       Q814779
    </otherAgencyCode>
-</maintenanceAgency>]]></egXML>
+</maintenanceAgency>]]>
+                  </egXML>
                </div>
             </div>
