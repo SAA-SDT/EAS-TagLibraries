@@ -66,12 +66,12 @@
 		<p>Optional, Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng">
+		<egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<recordTypeSpecificStatement>
 			<p>Autograph conductor's full score (pencil), with mimeographed conductor's short score of certain sections interleaved. Selections, including deletions.</p>
 		</recordTypeSpecificStatement>]]>
 		</egXML>
-		<egXML xml:lang="eng">
+		<egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<recordTypeSpecificStatement>
 			<objectXMLWrap>
 			<mods:cartographics xmlns:mods="https://www.loc.gov/standards/mods/mods-3-8.xsd">
