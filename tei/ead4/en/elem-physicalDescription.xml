@@ -74,7 +74,8 @@
 		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<formsAvailable>
+		<egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<formsAvailable>
 			<formAvailable formAvailableType="digitalOriginal" coverage="whole">
 			<label>Photographs</label>
 			<physicalDescription>
@@ -113,8 +114,9 @@
 		</dimensions>
 		</physicalDescription>
 		</formAvailable>
-		</formsAvailable>]]></egXML>
-		<egXML xml:lang="eng">
+		</formsAvailable>]]>
+		</egXML>
+		<egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<formAvailable>
 			<label>Born digital archives (audiovisual)</label>
 			<role>copie</role>
@@ -153,6 +155,7 @@
 			<unitOfMeasurement>bytes</unitOfMeasurement>
 		</extent>
 		</physicalDescription>
-		</formAvailable>]]></egXML>
+		</formAvailable>]]>
+		</egXML>
 	</div>
 </div>
