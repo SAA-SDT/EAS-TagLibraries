@@ -65,7 +65,7 @@
 		<p>Optional, not repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<formsAvailable>
+		<egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<formsAvailable>
 			<formAvailable formAvailableType="digitalOriginal" coverage="whole">
 			<label>Photographs</label>
 			<physicalDescription>
@@ -78,7 +78,7 @@
 		</formAvailable>
 		</formsAvailable>]]>
 		</egXML>
-		<egXML xml:lang="eng"><![CDATA[<physicalDescription>
+		<egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<physicalDescription>
 			<extent coverage="part" extentType="materialType">
 			<quantity>5</quantity>
 			<unitOfMeasurement>daguerreotypes</unitOfMeasurement>
@@ -90,7 +90,7 @@
 			<physicalFacet valueURI="http://vocab.getty.edu/page/aat/300457737" vocabularySource="AAT">hand-tinted</physicalFacet>
 		</physicalDescription>]]>
 		</egXML>
-		<egXML xml:lang="eng"><![CDATA[<physicalDescription>
+		<egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<physicalDescription>
 			<extent coverage="part" extentType="materialType">
 			<quantity>10</quantity>
 			<unitOfMeasurement>videocassettes</unitOfMeasurement>
