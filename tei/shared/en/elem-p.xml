@@ -57,24 +57,30 @@
                   <p>In all parents except <gi>descriptiveNote</gi>, the encoder must choose between using one or more <gi>p</gi> elements that are defined within the current EAS schema, or using a <gi>formattingExtention</gi> element (to wrap XHTML content) for more complex formatting.</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<biogHist>
+                  <egXML xml:lang="eng" type="eac" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<biogHist>
    <p>
       Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).
    </p>
    <p>
       During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <span style="font-style:italic">Brazilian American</span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <span style="font-style:italic">Mexican American</span> (1924-1929) and <span style="font-style:italic">British American</span> (1926-1929).
    </p>
-</biogHist>]]></egXML>
-                 <egXML xml:lang="eng" type="ead"><![CDATA[<biogHist>
+</biogHist>]]>
+                  </egXML>
+                 <egXML xml:lang="eng" type="ead" xmlns="http://www.tei-c.org/ns/Examples">
+                   <![CDATA[<biogHist>
    <p>
       Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).
    </p>
    <p>
       During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <span style="font-style:italic">Brazilian American</span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <span style="font-style:italic">Mexican American</span> (1924-1929) and <span style="font-style:italic">British American</span> (1926-1929).
    </p>
-</biogHist>]]></egXML>
-                 <egXML xml:lang="eng" type="eaf"><![CDATA[<functionHistory>
+</biogHist>]]>
+                 </egXML>
+                 <egXML xml:lang="eng" type="eaf" xmlns="http://www.tei-c.org/ns/Examples">
+                   <![CDATA[<functionHistory>
 <p>In 1968 Yale stated they will admit 500 women into Yale College in the following Fall. The Planning Committee on Coeducation (1968-1969) oversaw every aspect of planning. In 1969, the University Committee on Coeducation was formed. The Committee continued to oversee the transition and facilitate integration of the female students. The Coeducation Office was also established to facilitate programs initiated by the Committee and to serve as a resource for the undergraduates, as well as graduate students, other women on campus, and administrators. Wasserman left Yale in 1972. Mary Arnstein became Acting Special Assistant to the President and chair of the University Committee on Coeducation. The Committee voted to terminate the position of Special Assistant and the Coeducation Office and transfer responsibilities to existing offices and a reorganized University Committee on the Education of Women in 1973. Some functions of the Coeducation Office were assumed by the new Office on the Education of Women. The University Committee on the Education of Women served as an advisory group to the president on issues related to women at Yale until 1977.</p>
-</functionHistory>]]></egXML>
+</functionHistory>]]>
+                 </egXML>
                </div>
             </div>
