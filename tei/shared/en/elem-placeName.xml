@@ -71,7 +71,7 @@
                   <p>Optional, repeatable</p>
                </div>
                <div type="examples">
-		       <egXML xml:lang="en" type="eac">
+		       <egXML xml:lang="en" type="eac" xmlns="http://www.tei-c.org/ns/Examples">
 			       <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#FamilyRelation" targetType="person">
 			       <label>Marie Skłodowska-Curie</label>
 			       <dateRange>
@@ -82,7 +82,7 @@
 			       <role valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Esposa</role>
 		       </relation>]]>
 		     </egXML>
-                            <egXML xml:lang="en" type="eaf">
+                            <egXML xml:lang="en" type="eaf" xmlns="http://www.tei-c.org/ns/Examples">
 			       <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#OccupationType" targetType="person">
                                 <label>Marie Skłodowska-Curie</label>
                                 <dateRange>
@@ -93,7 +93,7 @@
                                 <role valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadOccupationOfType" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Cátedra de Física</role>
                             </relation>]]>
 		</egXML>
-                            <egXML xml:lang="en" type="ead">
+                            <egXML xml:lang="en" type="ead" xmlns="http://www.tei-c.org/ns/Examples">
 			       <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#CreationRelation" targetType="person">
                                 <label>Marie Skłodowska-Curie</label>
                                 <date>1903</date>
