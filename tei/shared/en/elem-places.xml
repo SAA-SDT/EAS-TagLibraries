@@ -60,7 +60,8 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<places>
+                  <egXML xml:lang="ger" type="eac" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<places>
                     <place placeType="populatedPlace">
                     <label valueURI="https://d-nb.info/gnd/4057648-6" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Stockholm</label>
                     <role valueURI="https://d-nb.info/standards/elementset/gnd#placeOfBirth" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Geburtsort</role>
@@ -69,8 +70,10 @@
                     <label valueURI="https://d-nb.info/gnd/4051594-1" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Sankt Gallen</label>	
                     <role valueURI="https://d-nb.info/standards/elementset/gnd#placeOfDeath" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Sterbeort</role>
                   </place>
-                  </places>]]></egXML>
-                 <egXML xml:lang="eng" type="ead"><![CDATA[<places>
+                  </places>]]>
+                  </egXML>
+                 <egXML xml:lang="ita" type="ead" xmlns="http://www.tei-c.org/ns/Examples">
+                   <![CDATA[<places>
                    <place placeType="populatedPlace">
                    <label>Treviso</label>
                    <role valueURI="https://schema.org/serviceLocation" vocabularySource="schema.org">sala lettura</role>
@@ -91,6 +94,7 @@
                    <label valueURI="https://www.geonames.org/6697802/crete.html" vocabularySource="GeoNames">Regno de Càndia</label>
                    <role valueURI="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOf" vocabularySource="RiC-O">soggetto</role>
                  </place>
-                 </places>]]></egXML>
+                 </places>]]>
+                 </egXML>
                </div>
             </div>
