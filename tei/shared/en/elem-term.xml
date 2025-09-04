@@ -50,7 +50,7 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML type="eac" xml:lang="eng">
+                  <egXML type="eac" xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
                     <![CDATA[<functionPerformed>
                     <term>Estate ownership</term>
                     <descriptiveNote>
@@ -58,13 +58,13 @@
                   </descriptiveNote>
                   </functionPerformed>]]>
                   </egXML>
-                  <egXML xml:lang="eng" type="eac">
+                  <egXML xml:lang="eng" type="eac" xmlns="http://www.tei-c.org/ns/Examples">
                     <![CDATA[<legalStatus>
                     <term scriptOfElement="Latn">Organismo de la Administracion Central del Estado</term>
                     <date standardDate="1769">1769</date>
                   </legalStatus>]]>
                   </egXML>
-                  <egXML type="eac" xml:lang="eng">
+                  <egXML type="eac" xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
                     <![CDATA[<mandate>
                     <term>Minnesota. Executive Session Laws 1919 c49</term>
                     <dateRange>
@@ -76,7 +76,7 @@
                   </descriptiveNote>
                   </mandate>]]>
                   </egXML>
-                  <egXML type="eac" xml:lang="eng">
+                  <egXML type="eac" xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
                     <![CDATA[<occupation>
                     <term>Teacher</term></occupation>]]>
                   </egXML>
