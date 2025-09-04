@@ -71,7 +71,8 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<sources>
+                  <egXML xml:lang="ger" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<sources>
                     <source href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">
                     <reference>Wikipedia-Seite zu Gustav IV. Adolf</reference>
                   </source>
@@ -81,6 +82,7 @@
                     <p>Stand: 03.12.2020</p>
                   </descriptiveNote>
                   </source>
-                  </sources>]]></egXML>
+                  </sources>]]>
+                  </egXML>
                </div>
             </div>
