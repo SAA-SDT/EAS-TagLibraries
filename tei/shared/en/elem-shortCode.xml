@@ -36,27 +36,31 @@
                </div>
                <div type="description">
                   <p>Use <gi>shortCode</gi> within <gi>conventionDeclaration</gi> or <gi>localTypeDeclaration</gi> to identify the shortened form, acronym, or code for a thesaurus, controlled vocabulary, or another standard used in creating the EAS description. Use within <gi>rightsDeclaration</gi> to provide an abbreviated name for the rights statement.</p>
-                  <p>To improve interoperability, it is recommended that the value be selected from an authorized list of codes such as the MARC Code List (http://www.loc.gov/marc/sourcelist/).</p>
+                  <p>To improve interoperability, it is recommended that the value be selected from an authorized list of codes such as the MARC Field Index to Source Code Usage (http://www.loc.gov/marc/sourcelist/).</p>
                </div>
                <div type="availability">
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<conventionDeclaration id="conventiondeclaration1">
+                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<conventionDeclaration id="conventiondeclaration1">
    <reference>
       Anglo-American Cataloging Rules, Revised
    </reference>
    <shortCode>
       AACR2
    </shortCode>
-</conventionDeclaration>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<rightsDeclaration>
+</conventionDeclaration>]]>
+                  </egXML>
+                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<rightsDeclaration>
    <reference href="https://creativecommons.org/licenses/by/4.0/">
       Creative Commons Attribution 4.0 International Public License
    </reference>
    <shortCode>
       CC BY
    </shortCode>
-</rightsDeclaration>]]></egXML>
+</rightsDeclaration>]]>
+                  </egXML>
                </div>
             </div>
