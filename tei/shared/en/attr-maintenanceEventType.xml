@@ -17,7 +17,8 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceHistory>
+                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<maintenanceHistory>
                     <maintenanceEvent maintenanceEventType="derived">
                     <agent agentType="machine">
                     <label>export.xsl/Saxon B9</label>
@@ -37,6 +38,7 @@
                   </agent>
                     <eventDateTime>December 2024</eventDateTime>
                   </maintenanceEvent>
-                  </maintenanceHistory>]]></egXML>
+                  </maintenanceHistory>]]>
+                  </egXML>
                </div>
             </div>
