@@ -1,48 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-formAvailableType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
-	<head>
-		<att>formAvailableType</att>
-	</head>
-	<div type="fullName">
-		<p>Form Available Type</p>
-	</div>
-	<div type="summary">
-		<p>An optional attribute of <gi>formAvailable</gi> that specifies the type of form or instantiation being described.</p>
-	</div>
-	<div type="description">
-		<p>Use <att>formAvailableType</att> with <gi>formAvailable</gi> to specify the type of form or instantiation being described.</p>
-		<p>Use the attribute <att>formAvailableTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>formAvailableType</att>.</p>
-	</div>
-	<div type="datatype">
-		<p>token</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<c>
-			<identificationData>
-			<unitId>GEN MSS 551, Series I</unitId>
-			<unitDate>
-			<date standardDate="1895-01">January 1895</date>
-		</unitDate>
-		</identificationData>
-			<formsAvailable>
-			<formAvailable coverage="whole" formAvailableType="analogOriginal">
-			<label>The Pippa & Porthos</label>
-		</formAvailable>
-			<formAvailable valueURI=”https://collections.library.yale.edu/catalog/2008313” coverage=”part” formAvailableType=”digitalDerived”>
-			<label>The Pippa & Porthos</label>
-			<formAvailableId valueURI=”https://collections.library.yale.edu/iiif/2/1044151/full/full/0/default.jpg”>Cover</formAvailableId>
-<formAvailableId
-valueURI=”https://collections.library.yale.edu/iiif/2/1044153/full/full/0/default.jpg”>Titlepage</formAvailableId>
-<formAvailableId
-valueURI=”https://collections.library.yale.edu/iiif/2/1044154/full/full/0/default.jpg”>p. 1</formAvailableId>
-			[...]
-			<descriptiveNote>
-			<p>Digitized pages of Barrie’s "The Pippa & Porthos."</p>
-		</descriptiveNote>
-		</formAvailable>
-		</formsAvailable>
-		</c>]]>
-		</egXML>
-	</div>
+    <head>
+        <att>formAvailableType</att>
+    </head>
+    <div type="fullName">
+        <p>Form Available Type</p>
+    </div>
+    <div type="summary">
+        <p>An optional attribute of <gi>formAvailable</gi> that specifies the type of form or instantiation being described.</p>
+    </div>
+    <div type="description">
+        <p>Use <att>formAvailableType</att> with <gi>formAvailable</gi> to specify the type of form or instantiation being described.</p>
+        <p>Use the attribute <att>formAvailableTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>formAvailableType</att>.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

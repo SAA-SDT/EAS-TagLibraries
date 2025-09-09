@@ -1,159 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-extent" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
-	<head>
-		<gi>extent</gi>
-	</head>
-	<div type="fullName">
-		<p>Extent</p>
-	</div>
-	<div type="summary">
-		<p>A child of <gi>identificationData</gi> or <gi>physicalDescription</gi> used for information about the quantity of the materials being described or an expression of the space - physical as well as digital - they occupy.</p>
-	</div>
-	<div type="mayContain">
-		<p>
-			<list type="gloss">
-				<label>descriptiveNote</label>
-				<item>0..1</item>
-				<label>quantity</label>
-				<item>0..1</item>
-				<label>unitOfMeasurement</label>
-				<item>0..1</item>
-			</list>
-		</p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>identificationData, physicalDescription</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>coverage</label>
-				<item>Optional</item>
-				<label>extentType</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p>An element to capture information about the quantity of the materials being described or an expression of the digital or physical space they occupy. Includes such traditional archival measurements as cubic and linear feet and meters; also includes counts of microfilm reels, photographs, or other special formats, the number of logical records in a database, or the volume of a data file in bytes. Repeat the element when more than one type or unit of extent is provided, such as, when both linear feet and quantity of containers are given.</p>
-		<p>Either the sub-element <gi>quantity</gi> or the sub-element <gi>unitOfMeasurement</gi> must be present within <gi>extent</gi>, but it is recommended to use both child elements whenever possible. The sub-element <gi>descriptiveNote</gi> can be used to express physical description in a non-machine-processable form and in instances where data exchange is not a concern.</p>
-	</div>
-	<div type="attributeusage">
-		<p>Use the attributes <att>id</att> and <att>target</att> to relate two or more parallel statements of extent to each other. Use <att>coverage</att> to indicate whether the extent statement refers to all or only part of the materials being described.</p>
-	</div>	
-	<div type="availability">
-		<p>Within <gi>identificationData</gi>: optional, repeatable</p>
-		<p>Within <gi>physicalDescription</gi>: optional, not repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<c>
-			<identificationData>
-			<unitTitle>Seizure Records</unitTitle>
-			<unitDate>
-			<dateRange>
-			<fromDate standardDate="1908-12">December 1908</fromDate>
-			<toDate standardDate="1928-01">January 1928</toDate>
-		</dateRange>
-		</unitDate>
-			<extent coverage="part" extentType="carrier">
-			<quantity>4</quantity>
-			<unitOfMeasurement>volumes</unitOfMeasurement>
-		</extent>
-			<extent coverage="part" extentType="carrier">
-			<quantity>1</quantity>
-			<unitOfMeasurement>folder</unitOfMeasurement>
-		</extent>
-		</identificationData>
-		</c>]]></egXML>
-		<egXML xml:lang="eng"><![CDATA[<c>
-			<identificationData>
-			<unitTitle>Documentary Movies</unitTitle>
-			<unitDate unitDateType="inclusive">
-			<dateRange>
-			<fromDate standardDate="1952">1952</fromDate>
-			<toDate standardDate="1964">1964</toDate>
-		</dateRange>
-		</unitDate>
-			<extent coverage="part" extentType="spaceOccupied">
-			<quantity>2.5</quantity>
-			<unitOfMeasurement>linear ft.</unitOfMeasurement>
-		</extent>
-		</identificationData>
-		</c>]]></egXML>
-		<egXML xml:lang="eng"><![CDATA[<c>
-			<identificationData>
-			<unitTitle>Class Notes, Undergraduate</unitTitle>
-			<unitDate unitDateType="inclusive">
-			<dateRange>
-			<fromDate standardDate="1962">1962</fromDate>
-			<toDate standardDate="1968">1968</toDate>
-		</dateRange>
-		</unitDate>
-			<extent coverage="part" extentType="materialType">
-			<quantity>12</quantity>
-			<unitOfMeasurement>notebooks</unitOfMeasurement>
-		</extent>
-			<container localType="boxes" localTypeDeclarationReference="containers">5-6</container>
-			<descriptiveNote>
-			<p>The notebooks contain months and days, not years. Estimated dates are based on the years Scully attended the University of Maryland.</p>
-		</descriptiveNote>
-		</identificationData>
-		</c>]]></egXML>
-		<egXML xml:lang="eng"><![CDATA[<formsAvailable>
-			<formAvailable formAvailableType="digitalOriginal" coverage="whole">
-			<label>Photographs</label>
-			<physicalDescription>
-			<extent coverage="part" extentType="spaceOccupied" id="ext1" target="ext2 ext3">
-			<quantity>650</quantity>
-			<unitOfMeasurement>gigabytes</unitOfMeasurement>
-		</extent>
-		</physicalDescription>
-			<physicalDescription>
-			<extent coverage="part" extentType="carrier" id="ext2" target="ext1 ext3">
-			<quantity>1</quantity>
-			<unitOfMeasurement>hard disk</unitOfMeasurement>
-			<descriptiveNote>
-			<p>Password protected</p>
-		</descriptiveNote>
-		</extent>
-		</physicalDescription>
-			<physicalDescription>
-			<extent coverage="part" extentType="materialType" id="ext3" target="ext1 ext2">
-			<quantity>7,500</quantity>
-			<unitOfMeasurement>electronic files</unitOfMeasurement>
-			</extent>
-			<physicalFacet valueURI="http://vocab.getty.edu/page/aat/300391245" vocabularySource="AAT">false-color infrared photography</physicalFacet>
-		</physicalDescription>
-		</formAvailable>
-			<formAvailable formAvailableType="analogDerived" coverage="part">
-			<label>Prints</label>
-			<physicalDescription>
-			<extent coverage="whole" extentType="materialType" id="ext4">
-			<quantity>50</quantity>
-			<unitOfMeasurement valueURI="http://vocab.getty.edu/page/aat/300053443" vocabularySource="AAT">Aerial photographs</unitOfMeasurement>
-			</extent>
-			<dimensions>
-			<quantity>30 x 40</quantity>
-			<unitOfMeasurement>cm</unitOfMeasurement>
-		</dimensions>
-		</physicalDescription>
-		</formAvailable>
-		</formsAvailable>]]></egXML>
-	</div>
+    <head>
+        <gi>extent</gi>
+    </head>
+    <div type="fullName">
+        <p>Extent</p>
+    </div>
+    <div type="summary">
+        <p>A child of <gi>identificationData</gi> or <gi>physicalDescription</gi> used for information about the quantity of the materials being described or an expression of the space - physical as well as digital - they occupy.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>descriptiveNote</label>
+                <item>0..1</item>
+                <label>quantity</label>
+                <item>0..1</item>
+                <label>unitOfMeasurement</label>
+                <item>0..1</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>identificationData, physicalDescription</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>coverage</label>
+                <item>Optional</item>
+                <label>extentType</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>An element to capture information about the quantity of the materials being described or an expression of the digital or physical space they occupy. Includes such traditional archival measurements as cubic and linear feet and meters; also includes counts of microfilm reels, photographs, or other special formats, the number of logical records in a database, or the volume of a data file in bytes. Repeat the element when more than one type or unit of extent is provided, such as, when both linear feet and quantity of containers are given.</p>
+        <p>Either the sub-element <gi>quantity</gi> or the sub-element <gi>unitOfMeasurement</gi> must be present within <gi>extent</gi>, but it is recommended to use both child elements whenever possible. The sub-element <gi>descriptiveNote</gi> can be used to express physical description in a non-machine-processable form and in instances where data exchange is not a concern.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use the attributes <att>id</att> and <att>target</att> to relate two or more parallel statements of extent to each other. Use <att>coverage</att> to indicate whether the extent statement refers to all or only part of the materials being described.</p>
+    </div>
+    <div type="availability">
+        <p>Within <gi>identificationData</gi>: optional, repeatable</p>
+        <p>Within <gi>physicalDescription</gi>: optional, not repeatable</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

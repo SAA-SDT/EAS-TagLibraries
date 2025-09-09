@@ -1,141 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-unitId">
-	<head>
-		<gi>unitId</gi>
-	</head>
-	<div type="fullName">
-		<p>Identifier of the Unit</p>
-	</div>
-	<div type="summary">
-		<p>A child element of <gi>identificationData</gi> that provides an identifier for the materials being described, such as an accession number or a reference code.</p>
-	</div>
-	<div type="mayContain">
-		<p><list type="gloss">
-  <label>[text]</label>
-  <item/>
-  <label>reference</label>
-  <item>0..n</item>
-  <label>referringString</label>
-  <item>0..n</item>
-  <label>span</label>
-  <item>0..n</item>
-</list></p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>identificationData</p>
-	</div>
-	<div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>countryCode</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>repositoryCode</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                        <label>valueURI</label>
-                        <item>Optional</item>
-                        <label>vocabularySource</label>
-                        <item>Optional</item>
-                        <label>vocabularySourceURI</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-        </div>
-	<div type="description">
-		<p><gi>unitId</gi> may contain any alpha-numeric text string that serves as a unique reference point or control number for the described material, such as a lot number, an accession number, a classification number, a reference code, or an entry number in a bibliography or catalog. <gi>unitId</gi> is primarily a logical designation, which sometimes indirectly provides location information, as in the case of a classification number.</p>
-	</div>
-	<div type="attributeusage"><p>Although not required, the <att>countryCode</att> and <att>repositoryCode</att> should be used in <gi>unitId</gi> to comply with ISAD(G) element 3.1.1.</p></div>	
-	<div type="seealso"><p>Use <gi>container</gi> and <gi>place</gi> to designate the physical housing or location of the described materials.</p>
-	<p>Use <gi>formAvailableId</gi> to provide identifiers used for the specific instantiations of the materials being described. The identifier in <gi>unitId</gi> will usually  be different from, though might provide a basis for these identifiers.</p>
-	</div>
-	<div type="availability">
-		<p>Optional, repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<c>
-			<identificationData>
-			<unitTitle>Manouche</unitTitle>
-		</identificationData>
-			<c>
-			<identificationData>
-			<unitTitle>Recording</unitTitle>
-			<unitId>grove_005</unitId>
-			<container localType="Box" localTypeDeclarationReference="containers">559</container>
-		</identificationData>
-			<scopeContent>
-			<p>45-rpm phonodisc of Manouche singing two unidentified French songs</p>
-		</scopeContent>
-		</c>
-			[...]
-		</c>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<archDesc level="collection">
-			<identificationData>
-			<unitTitle>Donald C. Stone, Jr. Papers</unitTitle>
-			<unitDate unitDateType="inclusive">
-			<dateRange>
-			<fromDate>1971</fromDate>
-			<toDate>1983</toDate>
-		</dateRange>
-		</unitDate>
-			<unitId countryCode="US" repositoryCode="cbgtu"
-			valueURI="https://library.syracuse.edu/digital/guides/s/stone_dc.htm" localType="accessionNumber" localTypeDeclarationReference="identifiers">GTU 2001-08-03</unitId>
-			<extent extentType="carrier" coverage="whole">
-			<quantity>4</quantity>
-			<unitOfMeasurement>boxes</unitOfMeasurement>
-		</extent>
-			<extent extentType="spaceOccupied" coverage="whole">
-			<quantity>4</quantity>
-			<unitOfMeasurement>linear ft.</unitOfMeasurement>
-		</extent>
-		</identificationData>
-			<agents>
-			<agent agentType="person" valueURI="http://id.loc.gov/authorities/names/n80148920" vocabularySource="LCNAF">
-			<label>Stone, Donald C., Jr.</label>
-			<role>Creator</role>
-		</agent>
-			<agent agentType="group" valueURI="http://id.loc.gov/authorities/names/n79126342" vocabularySource="LCNAF">
-			<label>The Graduate Theological Union</label>
-			<role>holdingInstitution</role>
-		</agent>
-		</agents>
-			<places>
-			<place placeType="repository">
-			<label>Flora Lamson Hewlett Library</label>
-			<address>
-			<addressLine>Berkeley, California</addressLine>
-		</address>
-		</place>
-			<place placeType="shelfLocation">
-			<label>5/D/4-5</label>
-		</place>
-		</places>
-			<scopeContent>
-			<p>The papers document Donald C. Stone's work with Ornstein and Swencionis on the est Outcome Project, and the development of his doctoral research, including his various publications on the human potential movement, up to the completion of his doctoral dissertation.</p>
-		</scopeContent>
-			[...]
-		</archDesc>]]>
-		</egXML>
-	</div>
+    <head>
+        <gi>unitId</gi>
+    </head>
+    <div type="fullName">
+        <p>Identifier of the Unit</p>
+    </div>
+    <div type="summary">
+        <p>A child element of <gi>identificationData</gi> that provides an identifier for the materials being described, such as an accession number or a reference code.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+                <label>reference</label>
+                <item>0..n</item>
+                <label>referringString</label>
+                <item>0..n</item>
+                <label>span</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>identificationData</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>countryCode</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>repositoryCode</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>unitId</gi> may contain any alpha-numeric text string that serves as a unique reference point or control number for the described material, such as a lot number, an accession number, a classification number, a reference code, or an entry number in a bibliography or catalog. <gi>unitId</gi> is primarily a logical designation, which sometimes indirectly provides location information, as in the case of a classification number.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Although not required, the <att>countryCode</att> and <att>repositoryCode</att> should be used in <gi>unitId</gi> to comply with ISAD(G) element 3.1.1.</p>
+    </div>
+    <div type="seealso">
+        <p>Use <gi>container</gi> and <gi>place</gi> to designate the physical housing or location of the described materials.</p>
+        <p>Use <gi>formAvailableId</gi> to provide identifiers used for the specific instantiations of the materials being described. The identifier in <gi>unitId</gi> will usually  be different from, though might provide a basis for these identifiers.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

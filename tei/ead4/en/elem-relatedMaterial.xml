@@ -1,116 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-relatedMaterial">
-	<head>
-		<gi>relatedMaterial</gi>
-	</head>
-	<div type="fullName">
-		<p>Related Material</p>
-	</div>
-	<div type="summary">
-		<p>Element used for identifying archival materials that may be related to the materials being described.</p>
-	</div>
-	<div type="mayContain">
-		<p><list type="gloss">
-  <label>abstract</label>
-  <item>0..1</item>
-  <label>formattingExtension</label>
-  <item>0..1</item>
-  <label>p</label>
-  <item>0..n</item>
-  <label>relations</label>
-  <item>0..1</item>
-</list></p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>localType</label>
-				<item>Optional</item>
-				<label>localTypeDeclarationReference</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
-				<label>valueURI</label>
-				<item>Optional</item>
-				<label>vocabularySource</label>
-				<item>Optional</item>
-				<label>vocabularySourceURI</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p><gi>relatedMaterial</gi>is used to identify associated materials in the same repository or elsewhere. These materials may be related by sphere of activity, or subject matter.</p>
-		<p>These associated materials can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named within and, if applicable, linked to via <gi>relations</gi>. Using <gi>relations</gi> is especially useful when referring to several associated materials at once and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
-		<p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> may be used to refer to such associated materials.</p>
-		<p>The prescribed order of all child elements (both required and optional) is:</p>
-		<list type="simple">
-                     <item><gi>abstract</gi> (if used)</item>
-                     <item><gi>relations</gi></item>
-		     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
-		</list>
-	</div>
-	<div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>	
-	<div type="seealso"><p>Do not confuse with <gi>separatedmaterial</gi>, which provides information about materials that have been separated or physically removed from the described materials but that are related to them by provenance.</p></div>
-	<div type="availability">
-		<p>Optional, repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<relatedMaterial>
-			<p>Records relating to the Warren Commission are held in the National Archives and Records Administration.</p>
-		</relatedMaterial>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<relatedMaterial>
-			<abstract>Several genealogies and biographies of the Smith family have been published and are held in the Rare Books Department.</abstract>
-			<relations>
-			<relation>
-			<label valueURI="4569982" vocabularySource="Rare Books Department">Kavanaugh, Carol. The Smith Family in Johnson County (New York: Penguin)</label>
-		</relation>
-			<relation>
-			<label valueURI="336712" vocabularySource="Rare Books Department">Llewellyn, Gareth. Smythe, Smith: What's the Difference? (London: Jonathan Cape)</label>
-		</relation>
-		</relations>
-		</relatedMaterial>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<relatedMaterial>
-			<!-- Note: the following encoding is based on using the NVDL schema for EAD 4.0, which has the XHTML schema integrated already; the example validates in Oxygen XML Editor 20.1. -->
-			<formattingExtension>
-			<xhtml:div>
-			<xhtml:p>The following sources provide additional information on Gordon Gray's personal and professional life and on the development of the Consolidated University during his tenure as president.</xhtml:p>
-			<xhtml:h4>Southern Historical Collection</xhtml:h4>
-			<xhtml:ul>
-			<xhtml:li>Gordon Gray Papers, #3824</xhtml:li>
-		</xhtml:ul>
-			<xhtml:h4>University Archives</xhtml:h4>
-			<xhtml:ul>
-			<xhtml:li>Records of the Board of Trustees</xhtml:li>
-			<xhtml:li>Records of the Vice President for Finance</xhtml:li>
-			<xhtml:li>Records of the Vice President for Academic Affairs</xhtml:li>
-			<xhtml:li>Records of the Chancellor: R.B. House Series</xhtml:li>
-		</xhtml:ul>
-		</xhtml:div>
-		</formattingExtension>
-		</relatedMaterial>]]>
-		</egXML>
-	</div>
+    <head>
+        <gi>relatedMaterial</gi>
+    </head>
+    <div type="fullName">
+        <p>Related Material</p>
+    </div>
+    <div type="summary">
+        <p>Element used for identifying archival materials that may be related to the materials being described.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>abstract</label>
+                <item>0..1</item>
+                <label>formattingExtension</label>
+                <item>0..1</item>
+                <label>p</label>
+                <item>0..n</item>
+                <label>relations</label>
+                <item>0..1</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>relatedMaterial</gi>is used to identify associated materials in the same repository or elsewhere. These materials may be related by sphere of activity, or subject matter.</p>
+        <p>These associated materials can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named within and, if applicable, linked to via <gi>relations</gi>. Using <gi>relations</gi> is especially useful when referring to several associated materials at once and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
+        <p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> may be used to refer to such associated materials.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <list type="simple">
+            <item>
+                <gi>abstract</gi> (if used)</item>
+            <item>
+                <gi>relations</gi>
+            </item>
+            <item>
+                <gi>formattingExtension</gi> or <gi>p</gi>
+            </item>
+        </list>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p>
+    </div>
+    <div type="seealso">
+        <p>Do not confuse with <gi>separatedmaterial</gi>, which provides information about materials that have been separated or physically removed from the described materials but that are related to them by provenance.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

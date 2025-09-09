@@ -1,44 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-repositoryCode" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
-	<head>
-		<att>repositoryCode</att>
-	</head>
-	<div type="fullName">
-		<p>Repository Code</p>
-	</div>
-	<div type="summary">
-		<p>A code in <gi>unitId</gi> that uniquely identifies the repository responsible for intellectual control of the materials being described.</p>
-	</div>
-	<div type="description">
-		<p>Use <att>repositoryCode</att> in <gi>unitId</gi> to provide a number or code that uniquely identifies the repository responsible for intellectual control of the materials being described. The code should be taken from ISO/DIS 15511 Information and documentation—International Standard Identifier for Libraries and Related Organizations (ISIL), or another code as specified in <att>repositoryEncoding</att> in <gi>control</gi>.</p>
-	</div>
-	<div type="datatype">
-		<p>token</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<archDesc level="collection">
-			<identificationData>
-			<unitTitle>Papers of the Permanent Representation of Ireland to the European Union</unitTitle>
-			<unitId repositoryCode="IE-NAI">PR-EU</unitId>
-		</identificationData>
-			[...]
-		</archDesc>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<archDesc level="collection" valueURI="https://library.syracuse.edu/digital/guides/s/stone_dc.htm">
-			<identificationData>
-			<unitTitle>Donald C. Stone Papers</unitTitle>
-			<unitDate unitDateType="inclusive">
-			<dateRange>
-			<fromDate standardDate="1926?">1926[?]</fromDate>
-			<toDate standardDate="1992?">1992[?]</toDate>
-		</dateRange>
-		</unitDate>
-			<unitId countryCode="US" repositoryCode="cbgtu">GTU 2001-8-03</unitId>
-		</identificationData>
-			[...]
-		</archDesc>]]>
-		</egXML>
-	</div>
+    <head>
+        <att>repositoryCode</att>
+    </head>
+    <div type="fullName">
+        <p>Repository Code</p>
+    </div>
+    <div type="summary">
+        <p>A code in <gi>unitId</gi> that uniquely identifies the repository responsible for intellectual control of the materials being described.</p>
+    </div>
+    <div type="description">
+        <p>Use <att>repositoryCode</att> in <gi>unitId</gi> to provide a number or code that uniquely identifies the repository responsible for intellectual control of the materials being described. The code should be taken from ISO/DIS 15511 Information and documentation—International Standard Identifier for Libraries and Related Organizations (ISIL), or another code as specified in <att>repositoryEncoding</att> in <gi>control</gi>.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

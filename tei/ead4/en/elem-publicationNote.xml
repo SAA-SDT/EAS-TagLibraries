@@ -1,117 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-publicationNote">
-	<head>
-		<gi>publicationNote</gi>
-	</head>
-	<div type="fullName">
-		<p>Publication Note</p>
-	</div>
-	<div type="summary">
-		<p>For citing works based on the use or analysis of the materials being described.</p>
-	</div>
-	<div type="mayContain">
-		<p><list type="gloss">
-  <label>abstract</label>
-  <item>0..1</item>
-  <label>formattingExtension</label>
-  <item>0..1</item>
-  <label>p</label>
-  <item>0..n</item>
-  <label>relations</label>
-  <item>0..1</item>
-</list></p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>localType</label>
-				<item>Optional</item>
-				<label>localTypeDeclarationReference</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
-				<label>valueURI</label>
-				<item>Optional</item>
-				<label>vocabularySource</label>
-				<item>Optional</item>
-				<label>vocabularySourceURI</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p>Use <gi>publicationNote</gi> to identify works that are based on, about, or of special value when using the materials being described, or works in which a citation to or brief description of the materials occurs.</p>
-		 <p>These works can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named within and, if applicable, linked to via <gi>relations</gi>. Using <gi>relations</gi> is especially useful when referring to several publications at once and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
-		<p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> may be used to refer to analog or digital publications.</p>
-		<p>The prescribed order of all child elements (both required and optional) is:</p>
-		<list type="simple">
-                     <item><gi>abstract</gi> (if used)</item>
-                     <item><gi>relations</gi></item>
-		     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
-		</list>
-	</div>
-	<div type="attributeusage"><p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p></div>	
-	<div type="availability">
-		<p>Optional, repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<publicationNote>
-			<!-- Note: the following encoding is based on using the NVDL schema for EAD 4.0, which has the XHTML schema integrated already; the example validates in Oxygen XML Editor 20.1. -->
-			<formattingExtension>
-			<xhtml:div>
-			<xhtml:h3>Bibliography</xhtml:h3>
-			<xhtml:p>Sources consulted by John Kobler.</xhtml:p>
-			<xhtml:h4>Monographs</xhtml:h4>
-			<xhtml:ul>
-			<xhtml:li><xhtml:cite>Affiches americaines</xhtml:cite>. San Domingo: Imprimerie royale du Cap, 1782. Nos. 30, 35.</xhtml:li>
-			<xhtml:li>Ardouin, Charles Nicholas Celigny. <xhtml:cite>Essais sur l'histoire d'Haiti</xhtml:cite>. Port-au-Prince, 1865.</xhtml:li>
-			<xhtml:li>Bastien, Remy. <xhtml:cite>Anthologie du folklore haitien, "Proverbes"</xhtml:cite>. Mexico, 1946. pp.83-91.</xhtml:li>
-			<xhtml:li>Bellegarde, Dantes. <xhtml:cite>Dessalines a parle</xhtml:cite>. Port-au-Prince, 1948. Chap. IV: pp. 47-54.</xhtml:li>
-		</xhtml:ul>
-			<xhtml:h4>Serial publications</xhtml:h4>
-			[...]
-		</xhtml:div>
-		</formattingExtension>
-		</publicationNote>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<publicationNote>
-			<relations>
-			<relation>
-			<label valueURI="https://etheses.lse.ac.uk/3172/" vocabularySource="LSE Theses Online">Juhász, Réka. Temporary protection, technology adoption and economic development: data and evidence from the age of revolution in France.</label>
-			<date>2015</date>
-			<role>PhD thesis</role>
-		</relation>
-			<relation>
-			<label valueURI="https://etheses.lse.ac.uk/3283/" vocabularySource="LSE Theses Online">Palma, Nuno Pedro G. Harbingers of modernity: monetary injections and European economic growth, 1492-1790.</label>
-			<date>2015</date>
-			<role>PhD thesis</role>
-		</relation>
-			<relation>
-			<label valueURI="https://etheses.lse.ac.uk/963/" vocabularySource="LSE Theses Online">Waldinger, Maria. Historical events and their effects on long-term economic and social development.</label>
-			<date>2014</date>
-			<role>PhD thesis</role>
-		</relation>
-		</relations>
-		</publicationNote>]]>
-		</egXML>
-	</div>
+    <head>
+        <gi>publicationNote</gi>
+    </head>
+    <div type="fullName">
+        <p>Publication Note</p>
+    </div>
+    <div type="summary">
+        <p>For citing works based on the use or analysis of the materials being described.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>abstract</label>
+                <item>0..1</item>
+                <label>formattingExtension</label>
+                <item>0..1</item>
+                <label>p</label>
+                <item>0..n</item>
+                <label>relations</label>
+                <item>0..1</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>publicationNote</gi> to identify works that are based on, about, or of special value when using the materials being described, or works in which a citation to or brief description of the materials occurs.</p>
+        <p>These works can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named within and, if applicable, linked to via <gi>relations</gi>. Using <gi>relations</gi> is especially useful when referring to several publications at once and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
+        <p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> may be used to refer to analog or digital publications.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <list type="simple">
+            <item>
+                <gi>abstract</gi> (if used)</item>
+            <item>
+                <gi>relations</gi>
+            </item>
+            <item>
+                <gi>formattingExtension</gi> or <gi>p</gi>
+            </item>
+        </list>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>
