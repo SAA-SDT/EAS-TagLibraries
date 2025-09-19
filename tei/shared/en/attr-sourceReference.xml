@@ -20,14 +20,5 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<sources>
-                    <source id="source1">
-                    <reference>R. Greene, S.Cushman (ed.): The Princeton Handbook of World Poetries</reference>
-                  </source>
-                    </sources>
-                    [...]
-                    <relation sourceReference="source1" maintenanceEventReference="me2" targetType="corporateBody" relationType="https://www.wikidata.org/wiki/Q166118">
-                    <label valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" vocabularySourceURI="https://snaccooperative.org">Princeton University</label>
-                  </relation>]]></egXML>
                </div>
             </div>

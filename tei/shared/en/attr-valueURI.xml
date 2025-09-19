@@ -17,16 +17,5 @@
                   <p>anyURI</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<place valueURI="https://d-nb.info/gnd/4076982-3" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                    <label>Salzburg</label>
-                    <role valueURI="https://d-nb.info/standards/elementset/gnd#characteristicPlace" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Charakteristischer Ort</role>
-</place>]]></egXML>
-                 <egXML xml:lang="eng" type="ead"><![CDATA[<place valueURI="https://d-nb.info/gnd/4076982-3" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
-                    <label>Salzburg</label>
-                    <role valueURI="https://d-nb.info/standards/elementset/gnd#characteristicPlace" vocabularySource="GNDO" vocabularySourceURI="https://d-nb.info/standards/elementset/gnd#">Charakteristischer Ort</role>
-</place>]]></egXML>
-                 <egXML xml:lang="eng" type="eaf"><![CDATA[<nameEntry>
-                   <part valueURI="http://vocab.getty.edu/page/aat/300191862" vocabularySource="AAT">educating</part>
-                 </nameEntry>]]></egXML>
                </div>
             </div>

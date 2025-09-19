@@ -21,17 +21,5 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry status="authorized">
-   <part localType="https://d-nb.info/standards/elementset/gnd#personalName" localTypeDeclarationReference="GNDO">
-      Arendt, Hannah
-   </part>
-   <part localType="https://d-nb.info/standards/elementset/gnd#dateOfBirthAndDeath" localTypeDeclarationReference="GNDO">
-      1906-1975
-   </part>                 
-</nameEntry>]]></egXML>
-                 <egXML xml:lang="eng" type="ead"><![CDATA[<relation relationType="agentRelation" targetType="person">
-                   <label valueURI="https://d-nb.info/gnd/117145971" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/" localType="https://d-nb.info/standards/elementset/gnd#NameOfThePerson" localTypeDeclarationReference="GNDO">Wasa, Gustav</label>
-                   [...]
-                 </relation>]]></egXML>
                </div>
             </div>

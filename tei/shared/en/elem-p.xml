@@ -1,80 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-p">
-               <head>
-                  <gi>p</gi>
-               </head>
-               <div type="fullName">
-                  <p>Paragraph</p>
+    <head>
+        <gi>p</gi>
+    </head>
+    <div type="fullName">
+        <p>Paragraph</p>
+    </div>
+    <div type="summary">
+        <p>A general purpose element used to encode blocks of text.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+                <label>reference</label>
+                <item>0..n</item>
+                <label>referringString</label>
+                <item>0..n</item>
+                <label>span</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">biogHist, descriptiveNote, generalContext, structureOrGenealogy</p>
+        <p type="eaf">descriptiveNote, functionDescription, functionHistory, legislation</p>
+        <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, descriptiveNote, filePlan, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>p</gi> for blocks of text. A paragraph may be a subdivision of a larger composition or it may exist alone. It is usually typographically distinguished: A line space is often left blank before it; the text begins on a new line; and the first letter of the first word may be indented, enlarged, or both.</p>
+    </div>
+    <div type="availability">
+        <p>Within <gi>descriptiveNote</gi>: required, repeatable.</p>
+        <p>Within all other parents: optional, repeatable.</p>
+        <p>In all parents except <gi>descriptiveNote</gi>, the encoder must choose between using one or more <gi>p</gi> elements that are defined within the current EAS schema, or using a <gi>formattingExtention</gi> element (to wrap XHTML content) for more complex formatting.</p>
+    </div>
+    <div type="examples">
                </div>
-               <div type="summary">
-                  <p>A general purpose element used to encode blocks of text.</p>
-               </div>
-               <div type="mayContain">
-                  <p><list type="gloss">
-  <label>[text]</label>
-  <item/>
-  <label>reference</label>
-  <item>0..n</item>
-  <label>referringString</label>
-  <item>0..n</item>
-  <label>span</label>
-  <item>0..n</item>
-</list></p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p type="eac">biogHist, descriptiveNote, generalContext, structureOrGenealogy</p>
-                  <p type="eaf">descriptiveNote, functionDescription, functionHistory, legislation</p>
-                  <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, descriptiveNote, filePlan, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>Use <gi>p</gi> for blocks of text. A paragraph may be a subdivision of a larger composition or it may exist alone. It is usually typographically distinguished: A line space is often left blank before it; the text begins on a new line; and the first letter of the first word may be indented, enlarged, or both.</p>
-               </div>
-               <div type="availability">
-                  <p>Within <gi>descriptiveNote</gi>: required, repeatable.</p>
-                  <p>Within all other parents: optional, repeatable.</p>
-                  <p>In all parents except <gi>descriptiveNote</gi>, the encoder must choose between using one or more <gi>p</gi> elements that are defined within the current EAS schema, or using a <gi>formattingExtention</gi> element (to wrap XHTML content) for more complex formatting.</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<biogHist>
-   <p>
-      Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).
-   </p>
-   <p>
-      During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <span style="font-style:italic">Brazilian American</span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <span style="font-style:italic">Mexican American</span> (1924-1929) and <span style="font-style:italic">British American</span> (1926-1929).
-   </p>
-</biogHist>]]></egXML>
-                 <egXML xml:lang="eng" type="ead"><![CDATA[<biogHist>
-   <p>
-      Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).
-   </p>
-   <p>
-      During 1918, he traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <span style="font-style:italic">Brazilian American</span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <span style="font-style:italic">Mexican American</span> (1924-1929) and <span style="font-style:italic">British American</span> (1926-1929).
-   </p>
-</biogHist>]]></egXML>
-                 <egXML xml:lang="eng" type="eaf"><![CDATA[<functionHistory>
-<p>In 1968 Yale stated they will admit 500 women into Yale College in the following Fall. The Planning Committee on Coeducation (1968-1969) oversaw every aspect of planning. In 1969, the University Committee on Coeducation was formed. The Committee continued to oversee the transition and facilitate integration of the female students. The Coeducation Office was also established to facilitate programs initiated by the Committee and to serve as a resource for the undergraduates, as well as graduate students, other women on campus, and administrators. Wasserman left Yale in 1972. Mary Arnstein became Acting Special Assistant to the President and chair of the University Committee on Coeducation. The Committee voted to terminate the position of Special Assistant and the Coeducation Office and transfer responsibilities to existing offices and a reorganized University Committee on the Education of Women in 1973. Some functions of the Coeducation Office were assumed by the new Office on the Education of Women. The University Committee on the Education of Women served as an advisory group to the president on issues related to women at Yale until 1977.</p>
-</functionHistory>]]></egXML>
-               </div>
-            </div>
+</div>

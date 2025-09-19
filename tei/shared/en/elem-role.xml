@@ -1,88 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-role">
-	<head>
-		<gi>role</gi>
-	</head>
-	<div type="fullName">
-		<p>Role</p>
-	</div>
-	<div type="summary">
-		<p type="ead">An optional child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance.</p>
-		<p type="eac">An optional child element of <gi>agent</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself.</p>
-		<p type="eaf">An optional child element of <gi>agent</gi> and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself.</p>
-	</div>
-	<div type="mayContain">
-		<p><list type="gloss">
-  <label>[text]</label>
-  <item/>
-</list></p>
-	</div>
-	<div type="mayOccurWithin">
-		<p type="ead">agent, formAvailable, function, place, relation</p>
-		<p type="eac">agent, place, relation</p>
-		<p type="eaf">agent, relation</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
-				<label>valueURI</label>
-				<item>Optional</item>
-				<label>vocabularySource</label>
-				<item>Optional</item>
-				<label>vocabularySourceURI</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p>Use <gi>role</gi> to indicate the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself. It is recommended that the terms in <gi>role</gi> be taken from authorized vocabularies.</p>
-		<p><gi>role</gi> might be used in combination with the specific type attribute available with each of the elements where <gi>role</gi> is available. While these attributes provide a generic typology of each entity class, e.g. "corporateBody", "person", and "family" for <att>agentType</att>, <gi>role</gi> looks more specifically at the related entity itself in a certain context.</p>
-		<p type="ead">Furthermore, <gi>role</gi> may be used in combination with <gi>relationship</gi> which is available in <gi>agent</gi>, <gi>function</gi>, and <gi>place</gi>. While <gi>relationship</gi> is used to encode a more general denominator for the relation between the related entity and the entity being described in the EAS instance, e.g. "creation" or "authorship" for agents, <gi>role</gi> allows to be more specific to the individual related entity, e.g. by assigning the role of "director" to one <gi>agent</gi> and the role of "playwright" to another.</p>
-		<p type="eac">Furthermore, <gi>role</gi> may be used in combination with <gi>relationship</gi> which is available in <gi>agent</gi> and and <gi>place</gi>. While <gi>relationship</gi> is used to encode a more general denominator for the relation between the related entity and the entity being described in the EAS instance, e.g. "creation" or "authorship" for agents, <gi>role</gi> allows to be more specific to the individual related entity, e.g. by assigning the role of "archivist" to one <gi>agent</gi> and the role of "volunteer" to another.</p>
-		<p type="eaf">Furthermore, <gi>role</gi> may be used in combination with <gi>relationship</gi> when applied within <gi>agent</gi>. While <gi>relationship</gi> is used to encode a more general denominator for the relation between the related entity and the EAS instance, e.g. "creation" or "authorship", <gi>role</gi> allows to be more specific to the individual related entity, e.g. by assigning the role of "archivist" to one <gi>agent</gi> and the role of "volunteer" to another.</p>
-		</div>
-	<div type="seealso"><p>Use the element <gi>label</gi> to encode the related entity’s name.</p></div>
-	<div type="availability">
-		<p>Optional, repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xml:lang="eng">
-			<![CDATA[<maintenanceHistory>
-			<maintenanceEvent id="me1">
-			<agent>
-			<label>Tanya Smith</label>
-			<role>Archivist</role>
-			<relationship valueURI="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology"/>
-		</agent>
-			<eventDateTime standardDateTime="2021-09">September 2021</eventDateTime>
-			<eventDescription>Creation of the encoded archival description</eventDescription>
-		</maintenanceEvent>
-			<maintenanceEvent id="me2">
-			<agent>
-			<label>Gregory Miller</label>
-			<role>Volunteer</role>
-			<relationship valueURI="https://www.ica.org/standards/RiC/ontology#CreationRelation" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology"/>
-		</agent>
-			<eventDateTime standardDateTime="2023-05">May 2023</eventDateTime>
-			<eventDescription>Marking persons and organisations named in narrative texts as part of a crowdsourcing project</eventDescription>
-		</maintenanceEvent>
-		</maintenanceHistory>]]>
-		</egXML>
+    <head>
+        <gi>role</gi>
+    </head>
+    <div type="fullName">
+        <p>Role</p>
+    </div>
+    <div type="summary">
+        <p type="ead">An optional child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance.</p>
+        <p type="eac">An optional child element of <gi>agent</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself.</p>
+        <p type="eaf">An optional child element of <gi>agent</gi> and <gi>relation</gi> that indicates the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="ead">agent, formAvailable, function, place, relation</p>
+        <p type="eac">agent, place, relation</p>
+        <p type="eaf">agent, relation</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>role</gi> to indicate the role of the related entity towards the entity being described in the EAS instance or the EAS instance itself. It is recommended that the terms in <gi>role</gi> be taken from authorized vocabularies.</p>
+        <p>
+            <gi>role</gi> might be used in combination with the specific type attribute available with each of the elements where <gi>role</gi> is available. While these attributes provide a generic typology of each entity class, e.g. "corporateBody", "person", and "family" for <att>agentType</att>, <gi>role</gi> looks more specifically at the related entity itself in a certain context.</p>
+        <p type="ead">Furthermore, <gi>role</gi> may be used in combination with <gi>relationship</gi> which is available in <gi>agent</gi>, <gi>function</gi>, and <gi>place</gi>. While <gi>relationship</gi> is used to encode a more general denominator for the relation between the related entity and the entity being described in the EAS instance, e.g. "creation" or "authorship" for agents, <gi>role</gi> allows to be more specific to the individual related entity, e.g. by assigning the role of "director" to one <gi>agent</gi> and the role of "playwright" to another.</p>
+        <p type="eac">Furthermore, <gi>role</gi> may be used in combination with <gi>relationship</gi> which is available in <gi>agent</gi> and and <gi>place</gi>. While <gi>relationship</gi> is used to encode a more general denominator for the relation between the related entity and the entity being described in the EAS instance, e.g. "creation" or "authorship" for agents, <gi>role</gi> allows to be more specific to the individual related entity, e.g. by assigning the role of "archivist" to one <gi>agent</gi> and the role of "volunteer" to another.</p>
+        <p type="eaf">Furthermore, <gi>role</gi> may be used in combination with <gi>relationship</gi> when applied within <gi>agent</gi>. While <gi>relationship</gi> is used to encode a more general denominator for the relation between the related entity and the EAS instance, e.g. "creation" or "authorship", <gi>role</gi> allows to be more specific to the individual related entity, e.g. by assigning the role of "archivist" to one <gi>agent</gi> and the role of "volunteer" to another.</p>
+    </div>
+    <div type="seealso">
+        <p>Use the element <gi>label</gi> to encode the related entity’s name.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
 	</div>
 </div>

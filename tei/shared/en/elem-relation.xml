@@ -1,112 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0"
-   xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-relation">
-   <head>
-      <gi>relation</gi>
-   </head>
-   <div type="fullName">
-      <p>Relation</p>
-   </div>
-   <div type="summary">
-      <p>A required child element of <gi>relations</gi> for describing a relationship between the entity or records described and a related entity.</p>
-   </div>
-   <div type="mayContain">
-      <p><list type="gloss">
-            <label>date or dateRange or dateSet</label>
-            <item>0..1</item>
-            <label>descriptiveNote</label>
-            <item>0..1</item>
-            <label>label</label>
-            <item>1..n</item>
-            <label>objectXMLWrap</label>
-            <item>0..1</item>
-            <label>placeName</label>
-            <item>0..n</item>
-            <label>role</label>
-            <item>0..n</item>
-         </list></p>
-   </div>
-   <div type="mayOccurWithin">
-      <p>relations</p>
-   </div>
-   <div type="attributes">
-      <p>
-         <list type="gloss">
-            <label>audience</label>
-            <item>Optional</item>
-            <label>conventionDeclarationReference</label>
-            <item>Optional</item>
-            <label>id</label>
-            <item>Optional</item>
-            <label>languageOfElement</label>
-            <item>Optional</item>
-            <label>maintenanceEventReference</label>
-            <item>Optional</item>
-            <label>relationType</label>
-            <item>Optional</item>
-            <label>scriptOfElement</label>
-            <item>Optional</item>
-            <label>sourceReference</label>
-            <item>Optional</item>
-            <label>target</label>
-            <item>Optional</item>
-            <label>targetType</label>
-            <item>Optional</item>
-         </list>
-      </p>
-   </div>
-   <div type="description">
-      <p type="eac"><gi>relation</gi> records descriptive information about a relationship between the CPF entity being described and other agents as well as all other types of entities like functions and records.</p>
-      <p type="eaf"><gi>relation</gi> records descriptive information about a relationship between the function being described and other functions as well as all other types of entities like agents and records.</p>
-      <p type="ead"><gi>relation</gi> records descriptive information about a relationship between the materials being described and archival, bibliographic, or other types of resources or any kind of digital representations, microfiches or microfilms, copies, etc. of the materials. Descriptive information about a relationship between the materials being described and agents or functions are captured in the entity elements <gi>agent</gi> and <gi>function</gi>.</p>
-      <p>Use the required child element <gi>label</gi> to provide a textual identification of the related entity, such as a name or a title. Use the optional attribute <att>targetType</att> to classify the type of the related entity, the optional attribute <att>relationType</att> to specify the type of relation in its most generic form, and the optional child element <gi>role</gi> to specify the role of the related entity towards the entity or the materials being described more concretely.</p>
-      <p>It is recommended that the terms used in <gi>label</gi> and <gi>role</gi> be taken from an authorized vocabulary. When not using the EAS value lists for <att>relationType</att> and <att>targetType</att>, any alternative value lists should ideally also be taken from authorized vocabularies.</p>
-      <p>Use <gi>objectXMLWrap</gi> to embed XML documenting the related entity from any other namespace. Use <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> for specifying the time period of the relationship and <gi>placeName</gi> for relevant location information. <gi>descriptiveNote</gi> may be included for more detailed specifications or explanations of the relationship.</p>
-      <p>The prescribed order of all child elements (both required and optional) is:</p>
-      <p>
-         <list type="simple">
-            <item><gi>label</gi></item>
-            <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi></item>
-            <item><gi>placeName</gi></item>
-            <item><gi>role</gi></item>
-            <item><gi>descriptiveNote</gi></item>
-            <item><gi>objectXMLWrap</gi></item>
-         </list>
-      </p>
-   </div>
-   <div type="availability">
-      <p>Required, repeatable</p>
-   </div>
-   <div type="examples">
-      <egXML xmlns="http://www.tei-c.org/ns/Examples" type="eac">
-         <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#FamilyRelation" targetType="person">
-         <label>Marie Skłodowska-Curie</label>
-         <dateRange>
-         <fromDate>1895</fromDate>
-         <toDate>1906</toDate>
-      </dateRange>
-         <placeName valueURI="https://www.geonames.org/2988507/paris.html" vocabularySource="GeoNames">Paris</placeName>
-         <role valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Esposa</role>
-      </relation>]]>
-		</egXML>
-      <egXML xmlns="http://www.tei-c.org/ns/Examples" type="eaf">
-         <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#OccupationType" targetType="person">
-         <label>Marie Skłodowska-Curie</label>
-         <dateRange>
-         <fromDate>1908</fromDate>
-         <toDate>1934</toDate>
-      </dateRange>
-         <placeName valueURI="https://www.geonames.org/2988507/paris.html" vocabularySource="GeoNames">Paris</placeName>
-         <role valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadOccupationOfType" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Cátedra de Física</role>
-      </relation>]]>
-		</egXML>
-      <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead">
-         <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#CreationRelation" targetType="person">
-         <label>Marie Skłodowska-Curie</label>
-         <date>1903</date>
-         <placeName valueURI="https://www.geonames.org/2988507/paris.html" vocabularySource="GeoNames">Paris</placeName>
-         <role valueURI="https://www.ica.org/standards/RiC/ontology#isAuthorOf" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Estudiante de doctorado</role>
-      </relation>]]>
-		</egXML>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-relation">
+    <head>
+        <gi>relation</gi>
+    </head>
+    <div type="fullName">
+        <p>Relation</p>
+    </div>
+    <div type="summary">
+        <p>A required child element of <gi>relations</gi> for describing a relationship between the entity or records described and a related entity.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>date or dateRange or dateSet</label>
+                <item>0..1</item>
+                <label>descriptiveNote</label>
+                <item>0..1</item>
+                <label>label</label>
+                <item>1..n</item>
+                <label>objectXMLWrap</label>
+                <item>0..1</item>
+                <label>placeName</label>
+                <item>0..n</item>
+                <label>role</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>relations</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>relationType</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>targetType</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p type="eac">
+            <gi>relation</gi> records descriptive information about a relationship between the CPF entity being described and other agents as well as all other types of entities like functions and records.</p>
+        <p type="eaf">
+            <gi>relation</gi> records descriptive information about a relationship between the function being described and other functions as well as all other types of entities like agents and records.</p>
+        <p type="ead">
+            <gi>relation</gi> records descriptive information about a relationship between the materials being described and archival, bibliographic, or other types of resources or any kind of digital representations, microfiches or microfilms, copies, etc. of the materials. Descriptive information about a relationship between the materials being described and agents or functions are captured in the entity elements <gi>agent</gi> and <gi>function</gi>.</p>
+        <p>Use the required child element <gi>label</gi> to provide a textual identification of the related entity, such as a name or a title. Use the optional attribute <att>targetType</att> to classify the type of the related entity, the optional attribute <att>relationType</att> to specify the type of relation in its most generic form, and the optional child element <gi>role</gi> to specify the role of the related entity towards the entity or the materials being described more concretely.</p>
+        <p>It is recommended that the terms used in <gi>label</gi> and <gi>role</gi> be taken from an authorized vocabulary. When not using the EAS value lists for <att>relationType</att> and <att>targetType</att>, any alternative value lists should ideally also be taken from authorized vocabularies.</p>
+        <p>Use <gi>objectXMLWrap</gi> to embed XML documenting the related entity from any other namespace. Use <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> for specifying the time period of the relationship and <gi>placeName</gi> for relevant location information. <gi>descriptiveNote</gi> may be included for more detailed specifications or explanations of the relationship.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <p>
+            <list type="simple">
+                <item>
+                    <gi>label</gi>
+                </item>
+                <item>One of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi>
+                </item>
+                <item>
+                    <gi>placeName</gi>
+                </item>
+                <item>
+                    <gi>role</gi>
+                </item>
+                <item>
+                    <gi>descriptiveNote</gi>
+                </item>
+                <item>
+                    <gi>objectXMLWrap</gi>
+                </item>
+            </list>
+        </p>
+    </div>
+    <div type="availability">
+        <p>Required, repeatable</p>
+    </div>
+    <div type="examples">
    </div>
 </div>

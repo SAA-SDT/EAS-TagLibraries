@@ -46,26 +46,6 @@
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceHistory>
-                    <maintenanceEvent maintenanceEventType="derived">
-                    <agent agentType="machine">
-                    <label>export.xsl/Saxon B9</label>
-                  </agent>
-                    <eventDateTime standardDateTime="2024-08-30T09:37:17.029-04:00"/>
-                    <eventDescription>Derived from local collection management system</eventDescription
-                  </maintenanceEvent>
-                    <maintenanceEvent maintenanceEventType="revised">
-                    <agent agentType="unknown">
-                    <label/>
-                  </agent>
-                    <eventDateTime standardDateTime="2024-11-27"/>
-                  </maintenanceEvent>
-                    <maintenanceEvent maintenanceEventType="updated">
-                    <agent agentType="person">
-                    <label>K. Bredenberg</label>
-                  </agent>
-                    <eventDateTime>December 2024</eventDateTime>
-                  </maintenanceEvent>
-                  </maintenanceHistory>]]></egXML>
+                  control
                </div>
             </div>

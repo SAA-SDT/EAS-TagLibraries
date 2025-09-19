@@ -1,86 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-source">
-               <head>
-                  <gi>source</gi>
-               </head>
-               <div type="fullName">
-                  <p>Source</p>
-               </div>
-               <div type="summary">
-                  <p>A required and repeatable child element of <gi>sources</gi> used to identify a particular
+    <head>
+        <gi>source</gi>
+    </head>
+    <div type="fullName">
+        <p>Source</p>
+    </div>
+    <div type="summary">
+        <p>A required and repeatable child element of <gi>sources</gi> used to identify a particular
                      source of evidence used for the establishment of the descriptive parts in an EAS instance.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>citedRange</label>
+                <item>0..n</item>
+                <label>descriptiveNote</label>
+                <item>0..1</item>
+                <label>objectXMLWrap</label>
+                <item>0..1</item>
+                <label>reference</label>
+                <item>1..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>sources</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>href</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>linkRole</label>
+                <item>Optional</item>
+                <label>linkTitle</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>source</gi> to cite a published resource used in creating the descriptive parts of the EAS instance. Use the required child element <gi>reference</gi>to include a textual identification of the source. Use the optional child element <gi>citedRange</gi> to point to a specific location within a source.</p>
+        <p>Use the optional <gi>descriptiveNote</gi> for any additional notes about the source. Use the optional <gi>objectXMLWrap</gi> to embed XML documenting the source from any other namespace.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <list type="simple">
+            <item>
+                <gi>reference</gi>
+            </item>
+            <item>
+                <gi>citedRange</gi>
+            </item>
+            <item>
+                <gi>descriptiveNote</gi>
+            </item>
+            <item>
+                <gi>objectXMLWrap</gi>
+            </item>
+        </list>
+    </div>
+    <div type="attributeusage">
+        <p>In the case of online sources, use <att>href</att> to provide a URL. In case an online source is identified via a persistent identifier (PID) such as a DOI or and ARK, use <att>valueURI</att> instead and indicate the PID scheme in <att>vocabularySource</att> and/or <att>vocabularySourceURI</att>.</p>
+    </div>
+    <div type="availability">
+        <p>Required, repeatable</p>
+    </div>
+    <div type="examples">
                </div>
-               <div type="mayContain">
-                  <p><list type="gloss">
-  <label>citedRange</label>
-  <item>0..n</item>
-  <label>descriptiveNote</label>
-  <item>0..1</item>
-  <label>objectXMLWrap</label>
-  <item>0..1</item>
-  <label>reference</label>
-  <item>1..n</item>
-</list></p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>sources</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>href</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>linkRole</label>
-                        <item>Optional</item>
-                        <label>linkTitle</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                        <label>valueURI</label>
-                        <item>Optional</item>
-                        <label>vocabularySource</label>
-                        <item>Optional</item>
-                        <label>vocabularySourceURI</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>Use <gi>source</gi> to cite a published resource used in creating the descriptive parts of the EAS instance. Use the required child element <gi>reference</gi>to include a textual identification of the source. Use the optional child element <gi>citedRange</gi> to point to a specific location within a source.</p>
-                  <p>Use the optional <gi>descriptiveNote</gi> for any additional notes about the source. Use the optional <gi>objectXMLWrap</gi> to embed XML documenting the source from any other namespace.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>reference</gi></item>
-                     <item><gi>citedRange</gi></item>
-                     <item><gi>descriptiveNote</gi></item>
-                     <item><gi>objectXMLWrap</gi></item>
-                  </list>
-               </div>
-               <div type="attributeusage">
-                  <p>In the case of online sources, use <att>href</att> to provide a URL. In case an online source is identified via a persistent identifier (PID) such as a DOI or and ARK, use <att>valueURI</att> instead and indicate the PID scheme in <att>vocabularySource</att> and/or <att>vocabularySourceURI</att>.</p>
-               </div>	
-               <div type="availability">
-                  <p>Required, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<sources>
-                    <source href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)">
-                    <reference>Wikipedia-Seite zu Gustav IV. Adolf</reference>
-                  </source>
-                    <source href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13318">
-                    <reference>Svenskt biografiskt lexikon</reference>
-                    <descriptiveNote>
-                    <p>Stand: 03.12.2020</p>
-                  </descriptiveNote>
-                  </source>
-                  </sources>]]></egXML>
-               </div>
-            </div>
+</div>

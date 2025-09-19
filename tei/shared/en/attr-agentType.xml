@@ -1,93 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-agentType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
   <head>
-		<att>agentType</att>
-	</head>
-	<div type="fullName">
-		<p>Agent Type</p>
-	</div>
-	<div type="summary">
-		<p>An optional attribute of <gi>agent</gi> that indicates the type of agent relevant in a specific context.</p>
-	</div>
-	<div type="description">
-		<p type="eaf">Use <att>agentType</att> in <gi>agent</gi> to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within <gi>maintenanceEvent</gi>.</p>
-		<p type="eac">Use <att>agentType</att> in <gi>agent</gi> to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within <gi>maintenanceEvent</gi>, or the type of agent relevant in the context of a <gi>narrativeEvent</gi>.</p>
-		<p type="ead">Use <att>agentType</att> in <gi>agent</gi> to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within <gi>maintenanceEvent</gi>, the type of agent relevant in the context of a <gi>narrativeEvent</gi> or the type of agent important in relation to the creation, modification, publication, or use of record resources (within <gi>archDesc</gi> and the component elements) and of finding aids (within <gi>findAidDesc</gi>).</p>
-		<p>Use the attribute <att>agentTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>agentType</att>.</p>
-	</div>
-	<div type="datatype">
-		<p>token</p>
-	</div>
+        <att>agentType</att>
+    </head>
+    <div type="fullName">
+        <p>Agent Type</p>
+    </div>
+    <div type="summary">
+        <p>An optional attribute of <gi>agent</gi> that indicates the type of agent relevant in a specific context.</p>
+    </div>
+    <div type="description">
+        <p type="eaf">Use <att>agentType</att> in <gi>agent</gi> to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within <gi>maintenanceEvent</gi>.</p>
+        <p type="eac">Use <att>agentType</att> in <gi>agent</gi> to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within <gi>maintenanceEvent</gi>, or the type of agent relevant in the context of a <gi>narrativeEvent</gi>.</p>
+        <p type="ead">Use <att>agentType</att> in <gi>agent</gi> to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within <gi>maintenanceEvent</gi>, the type of agent relevant in the context of a <gi>narrativeEvent</gi> or the type of agent important in relation to the creation, modification, publication, or use of record resources (within <gi>archDesc</gi> and the component elements) and of finding aids (within <gi>findAidDesc</gi>).</p>
+        <p>Use the attribute <att>agentTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>agentType</att>.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
   <div type="examples">
-    <egXML xml:lang="eng">
-      <![CDATA[<maintenanceEvent maintenanceEventType="updated">
-        <agent agentType="human">
-	    <label>A. Smith</label>
-    </agent>
-        <eventDateTime standardDateTime="2021-12">December 2021</eventDateTime>
-      </maintenanceEvent>]]>
-    </egXML>
-	  <egXML xml:lang="eng" type="eac">
-      <![CDATA[<biogHist>
-		  <narrativeEvent>
-		  <date standardDate="1964-10">October 1964</date>
-		  <agent agentType="group">
-		  <label>Labour government</label>
-	  </agent>
-		  <eventDescription>Created the new office of Secretary of State for Economic Affairs (combined with First Secretary of State) and set up the Department of Economic Affairs under the Ministers of the Crown Act 1964 to carry primary responsibility for long term economic planning.</eventDescription>
-	  </narrativeEvent>
-		  <narrativeEvent>
-		  <date standardDate="1964-10-16">16 October 1964</date>
-		  <agent agentType="person">
-		  <label>George Brown</label>
-	  </agent>
-		  <eventDescription>Appointed as First Secretary of State and Secretary of State for Economic Affairs, and as chairman of the National Economic Development Council (NEDC).</eventDescription>
-	  </narrativeEvent>
-		  [...]
-	  </biogHist>]]>
-    </egXML>
-	  <egXML xml:lang="eng" type="ead">
-      <![CDATA[<biogHist>
-		  <narrativeEvent>
-		  <date standardDate="1964-10">October 1964</date>
-		  <agent agentType="group">
-		  <label>Labour government</label>
-	  </agent>
-		  <eventDescription>Created the new office of Secretary of State for Economic Affairs (combined with First Secretary of State) and set up the Department of Economic Affairs under the Ministers of the Crown Act 1964 to carry primary responsibility for long term economic planning.</eventDescription>
-	  </narrativeEvent>
-		  <narrativeEvent>
-		  <date standardDate="1964-10-16">16 October 1964</date>
-		  <agent agentType="person">
-		  <label>George Brown</label>
-	  </agent>
-		  <eventDescription>Appointed as First Secretary of State and Secretary of State for Economic Affairs, and as chairman of the National Economic Development Council (NEDC).</eventDescription>
-	  </narrativeEvent>
-		  [...]
-	  </biogHist>]]>
-    </egXML>
-	  <egXML xml:lang="eng" type="ead">
-      <![CDATA[<archDesc>
-		  <identificationData>
-		  <unitTitle>National Association for the Advancement of Colored People records, 1842-2019</unitTitle>
-		  <unitDate>
-		  <dateRange>
-		  <fromDate standardDate="1842">1842</fromDate>
-		  <toDate standardDate="2019">2019</toDate>
-		  <dateRange>
-		  <unitDate>
-	  </identificationData>
-		  <agents>
-		  <agent agentType="corporateBody">
-		  <label>National Association for the Advancement of Colored People</label>
-		  <role>Creator</role>
-	  </agent>
-		  <agent agentType="corporateBody">
-		  <label>Library of Congress</label>
-		  <role>Holding institution</role>
-	  </agent>
-	  </agents>
-		  [...]
-	  </archDesc>]]>
-    </egXML>
   </div>
 </div>

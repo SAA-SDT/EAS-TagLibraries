@@ -17,8 +17,5 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<eac audience="external"> [...] </eac>]]></egXML>
-                  <egXML xml:lang="eng" type="ead"><![CDATA[<ead audience="external"> [...] </ead>]]></egXML>
-                 <egXML xml:lang="eng" type="eaf"><![CDATA[<eaf audience="external"> [...] </eaf>]]></egXML>
                </div>
             </div>

@@ -17,7 +17,5 @@
                  <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</agencyName>
-                    <agencyName languageOfElement="ger">Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope Verbundkatalog</agencyName>]]></egXML>
                </div>
             </div>

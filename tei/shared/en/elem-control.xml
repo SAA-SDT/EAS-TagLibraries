@@ -251,55 +251,6 @@
                   <p>Required, not repeatable</p>
                </div>
                <div type="examples">
-                <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" languageEncoding="iso639-2b" maintenanceStatus="new" maintenanceStatusEncoding="EASList" publicationStatus="published" publicationStatusEncoding="EASList" repositoryEncoding="iso15511" scriptEncoding="iso15924" statusEncoding="EASList" maintenanceEventTypeEncoding="EASList" agentTypeEncoding="EASList">
-        <recordId>https://kalliope-verbund.info/gnd/118584618</recordId>
-        <maintenanceAgency countryCode="DE">
-            <agencyCode status="authorized">DE-611</agencyCode>
-            <agencyName>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund</agencyName>
-            <agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</agencyName>
-        </maintenanceAgency>
-        <maintenanceHistory>
-            <maintenanceEvent maintenanceEventType="created">
-                <agent agentType="unknown">
-                    <label>DE-101</label>
-                </agent>
-                <eventDateTime standardDateTime="1988-07-01"/>
-            </maintenanceEvent>
-            <maintenanceEvent maintenanceEventType="revised">
-                <agent agentType="unknown">
-                    <label>1400</label>
-                </agent>
-                <eventDateTime standardDateTime="2015-10-15"/>
-            </maintenanceEvent>
-        </maintenanceHistory>
-        <sources>
-            <source>
-                <reference>Szb. Mozart-Lex.</reference>
-            </source>
-        </sources>
-        <conventionDeclaration>
-            <reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</reference>
-            <shortCode>RDA</shortCode>
-        </conventionDeclaration>
-        <conventionDeclaration>
-            <reference href="https://www.loc.gov/marc/authority/">MARC21</reference>
-        </conventionDeclaration>
-        <languageDeclaration languageCode="ger" scriptCode="Latn"/>
-        <localTypeDeclaration id="GNDO">
-            <reference href="https://d-nb.info/standards/elementset/gnd_20191015">GNDO</reference>
-            <descriptiveNote>
-                <p languageOfElement="ger">Gemeinsame Normdatei Ontologie</p>
-                <p languageOfElement="eng">Integrated Authority File Ontology</p>
-                <p>Version 2019-10-15</p>
-            </descriptiveNote>
-        </localTypeDeclaration>
-        <otherRecordId xmlns:marc21="http://www.loc.gov/MARC21/slim" marc21:tag="024$a">http://d-nb.info/gnd/118584618</otherRecordId>
-        <otherRecordId xmlns:marc21="http://www.loc.gov/MARC21/slim" marc21:tag="035$a">(DE-101)118584618</otherRecordId>
-        <otherRecordId localType="https://d-nb.info/standards/elementset/gnd#gndIdentifier" localTypeDeclarationReference="GNDO">(DE-588)118584618</otherRecordId>
-        <rightsDeclaration>
-            <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0 Universell</reference>
-        </rightsDeclaration>
-    </control>]]>
-                </egXML>
+                  <p>See <gi>control</gi> encoding</p>
                </div>
             </div>
