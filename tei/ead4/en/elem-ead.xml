@@ -40,7 +40,7 @@
         <p><gi>ead</gi> must contain both <gi>control</gi> and <gi>archDesc</gi> elements. Use <gi>control</gi> first, followed optionally by <gi>findAidDesc</gi> with <gi>archDesc</gi> last. </p>
     </div>
     <div type="attributeusage">
-        <p>If the <att>@audience</att> value is set to "external", data in all descendant elements will be displayed, unless the value is changed individually for specific elements. </p>
+        <p>If the <att>audience</att> value is set to "external", data in all descendant elements will be displayed, unless the value is changed individually for specific elements. </p>
     </div>
     <div type="availability">
         <p>Required, not repeatable</p>
