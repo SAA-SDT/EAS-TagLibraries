@@ -1,79 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-agencyCode">
-               <head>
-                  <gi>agencyCode</gi>
-               </head>
-               <div type="fullName">
-                  <p>Agency Code</p>
+    <head>
+        <gi>agencyCode</gi>
+    </head>
+    <div type="fullName">
+        <p>Agency Code</p>
+    </div>
+    <div type="summary">
+        <p>A child element of <gi>maintenanceAgency</gi> that provides a code for the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>maintenanceAgency</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>status</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>agencyCode</gi> to record a code indicating the institution or service responsible for the creation, maintenance and/or dissemination of the EAS instance. Use of <gi>agencyCode</gi> is recommended, as the combination of <gi>agencyCode</gi> and the required <gi>recordId</gi> can provide a globally unique identifier for the instance.</p>
+        <p>
+            <gi>maintenanceAgency</gi> must include one or both of <gi>agencyCode</gi> and <gi>agencyName</gi>.</p>
+        <p>It is recommended that the code follows the format of the International Standard Identifier for Libraries and Related Organizations (<ref target="https://www.iso.org/standard/57332.html">ISIL: ISO 15511</ref>): a prefix, a dash, and an identifier. The code is alphanumeric (characters A-Z, 0-9, solidus, hyphen-minus, and colon) with a maximum of 16 characters. If appropriate to local or national convention, insert a valid ISIL for an institution, whether provided by a national authority (usually the national library) or a service (such as OCLC). If this is not the case then local institution codes may be given with the <ref target="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</ref> country code as the prefix to ensure international uniqueness in <gi>agencyCode</gi>.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>status</att> with values such as “authorised” or “alternative” to declare whether the <gi>agencyCode</gi> is using an authorised value, e.g. a registered ISIL code, or an alternative code. Use <att>statusEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>status</att>.</p>
+    </div>
+    <div type="seealso">
+        <p>Use <gi>agencyName</gi> to record the name of the agency. Use <gi>otherAgencyCode</gi> to record any alternative codes representing the agency. Use <gi>recordId</gi> in combination with <gi>agencyCode</gi> to form a globally unique identifier for the EAS instance.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, not repeatable</p>
+    </div>
+    <div type="examples">
                </div>
-               <div type="summary">
-                  <p>A child element of <gi>maintenanceAgency</gi> that provides a code for the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.</p>
-               </div>
-               <div type="mayContain">
-                  <p><list type="gloss">
-  <label>[text]</label>
-  <item/>
-</list></p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>maintenanceAgency</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>status</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                        <label>valueURI</label>
-                        <item>Optional</item>
-                        <label>vocabularySource</label>
-                        <item>Optional</item>
-                        <label>vocabularySourceURI</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>Use <gi>agencyCode</gi> to record a code indicating the institution or service responsible for the creation, maintenance and/or dissemination of the EAS instance. Use of <gi>agencyCode</gi> is recommended, as the combination of <gi>agencyCode</gi> and the required <gi>recordId</gi> can provide a globally unique identifier for the instance.</p>
-                  <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyCode</gi> and <gi>agencyName</gi>.</p>
-                  <p>It is recommended that the code follows the format of the International Standard Identifier for Libraries and Related Organizations (<ref target="https://www.iso.org/standard/57332.html">ISIL: ISO 15511</ref>): a prefix, a dash, and an identifier. The code is alphanumeric (characters A-Z, 0-9, solidus, hyphen-minus, and colon) with a maximum of 16 characters. If appropriate to local or national convention, insert a valid ISIL for an institution, whether provided by a national authority (usually the national library) or a service (such as OCLC). If this is not the case then local institution codes may be given with the <ref target="https://www.iso.org/iso-3166-country-codes.html">ISO 3166-1 alpha-2</ref> country code as the prefix to ensure international uniqueness in <gi>agencyCode</gi>.</p>
-               </div>
-               <div type="attributeusage">
-                 <p>Use <att>status</att> with values such as “authorised” or “alternative” to declare whether the <gi>agencyCode</gi> is using an authorised value, e.g. a registered ISIL code, or an alternative code. Use <att>statusEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>status</att>.</p>
-	 </div>
-		 <div type="seealso">
-                   <p>Use <gi>agencyName</gi> to record the name of the agency. Use <gi>otherAgencyCode</gi> to record any alternative codes representing the agency. Use <gi>recordId</gi> in combination with <gi>agencyCode</gi> to form a globally unique identifier for the EAS instance.</p>
-               </div>
-               <div type="availability">
-                  <p>Optional, not repeatable</p>
-               </div>
-               <div type="examples">
-                    <egXML xml:lang="eng"><![CDATA[<maintenanceAgency>
-                      <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="http://id.loc.gov/vocabulary/identifiers/isil">US-ctybr</agencyCode>
-                      <agencyName>Beinecke Rare Book and Manuscript Library</agencyName>
-                      <otherAgencyCode status="authorized" valueURI="https://id.loc.gov/vocabulary/organizations/ctybr" vocabularySource="MARC Code List for Organizations" vocabularySourceURI="https://www.loc.gov/marc/organizations/">CtY-BR</otherAgencyCode>
-                      <otherAgencyCode status="alternative" valueURI="https://www.wikidata.org/wiki/Q814779" vocabularySource="Wikidata" vocabularySourceURI="https://www.wikidata.org/">Q814779</otherAgencyCode>
-                    </maintenanceAgency>]]>
-                    </egXML>
-                    <egXML xml:lang="eng"><![CDATA[<maintenanceAgency>
-                      <agencyCode status="alternative" vocabularySource="NAD" vocabularySourceURI="https://sok.riksarkivet.se/">SE/G066</agencyCode>
-                      <agencyName>Kommunalförbundet Sydarkivera</agencyName>
-                    </maintenanceAgency>]]>
-                    </egXML>
-                 <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countryCode="DE">
-                   <agencyCode status="authorized" vocabularySource="ISIL" vocabularySourceURI="https://sigel.staatsbibliothek-berlin.de/de/suche/" valueURI="https://ld.zdb-services.de/resource/organisations/DE-611">DE-611</agencyCode>
-                   <agencyName>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Kalliope-Verbund</agencyName
-                   <agencyName languageOfElement="eng">Berlin State Library - Prussian Cultural Heritage, Kalliope Union Catalog</agencyName>
-                 </maintenanceAgency>]]>
-                 </egXML>
-               </div>
-            </div>
+</div>

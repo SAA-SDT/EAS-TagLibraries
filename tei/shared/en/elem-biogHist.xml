@@ -1,154 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-biogHist">
-               <head>
-                  <gi>biogHist</gi>
-               </head>
-               <div type="fullName">
-                  <p>Biography or History</p>
+    <head>
+        <gi>biogHist</gi>
+    </head>
+    <div type="fullName">
+        <p>Biography or History</p>
+    </div>
+    <div type="summary">
+        <p type="eac">A concise essay and/or chronology that provides biographical or historical information about the EAC-CPF entity.</p>
+        <p type="ead">A concise essay and/or chronology that provides biographical or historical information about the creator(s) of the materials being described.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>abstract</label>
+                <item>0..1</item>
+                <label>formattingExtension</label>
+                <item>0..1</item>
+                <label>narrativeEvent</label>
+                <item>0..n</item>
+                <label>p</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">description</p>
+        <p type="ead">archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>biogHist</gi> includes significant details about the life of an individual or family, or the administrative history of a corporate body.</p>
+        <p type="eac">Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>biogHist</gi> that could be extracted for inclusion in a remote source, such as a MARC record. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML and to accommodate greater complexity in expressing or representing the biography or history of the CPF entity. Use <gi>narrativeEvent</gi> to provide a chronology of the biography or history of the entity.</p>
+        <p type="ead">Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>biogHist</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML. Use <gi>narrativeEvent</gi> to provide a chronology of the biography or history of the entity.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <p>
+            <list type="simple">
+                <item>
+                    <gi>abstract</gi> (if used)</item>
+                <item>
+                    <gi>formattingExtension</gi> or <gi>p</gi>
+                </item>
+                <item>
+                    <gi>narrativeEvent</gi>
+                </item>
+            </list>
+        </p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
                </div>
-               <div type="summary">
-                  <p type="eac">A concise essay and/or chronology that provides biographical or historical information about the EAC-CPF entity.</p>
-                 <p type="ead">A concise essay and/or chronology that provides biographical or historical information about the creator(s) of the materials being described.</p>
-               </div>
-               <div type="mayContain">
-                  <p><list type="gloss">
-                    <label>abstract</label>
-                    <item>0..1</item>
-                    <label>formattingExtension</label>
-                    <item>0..1</item>
-                    <label>narrativeEvent</label>
-                    <item>0..n</item>
-                    <label>p</label>
-                    <item>0..n</item>
-                  </list></p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p type="eac">description</p>
-                  <p type="ead">archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p><gi>biogHist</gi> includes significant details about the life of an individual or family, or the administrative history of a corporate body.</p>
-                  <p type="eac">Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>biogHist</gi> that could be extracted for inclusion in a remote source, such as a MARC record. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML and to accommodate greater complexity in expressing or representing the biography or history of the CPF entity. Use <gi>narrativeEvent</gi> to provide a chronology of the biography or history of the entity.</p>
-                  <p type="ead">Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>biogHist</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML. Use <gi>narrativeEvent</gi> to provide a chronology of the biography or history of the entity.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <p>
-                      <list type="simple">
-                         <item><gi>abstract</gi> (if used)</item>
-                         <item><gi>formattingExtension</gi> or <gi>p</gi></item>
-                         <item><gi>narrativeEvent</gi></item>
-                      </list>
-                  </p>
-               </div>
-               <div type="availability">
-                  <p>Optional, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<biogHist>
-                    <abstract>Established in 1961, the United States Peace Corps administered and coordinated Federal international volunteer and related domestic volunteer programs in areas of agricultural assistance, community development, education, environmental protection, and nation assistance.</abstract>
-                    <p>The Peace Corps was established as an operating agency in the Department of State Delegation of Authority 85-11, effective March 3, 1961, pursuant to Executive Order (E.O.) 10924, March 1, 1961. It was recognized legislatively by the Peace Corps Act (75 Stat. 612), approved September 22, 1961. The Peace Corps was reassigned to the newly established ACTION by Reorganization Plan No. 1 of 1971, effective July 1, 1971. It was made autonomous within ACTION by E.O. 12137, May 16, 1979, and was made an independent agency by Title VI of the International Security and Development Corporation Act of 1981 (95 Stat. 1540), February 21, 1982. The Peace Corps administered and coordinated Federal international volunteer and related domestic volunteer programs including the areas of agricultural assistance, community development, education, environmental protection, and nation assistance.</p>
-                  </biogHist>]]>
-                  </egXML>
-                  <egXML xml:lang="eng"><![CDATA[<biogHist>
-                    <p>Ilma Mary Brewer, nee Pidgeon, was Lecturer in Botany/Biology, University of Sydney 1963-70 and Senior Lecturer in Biological Sciences 1970-78. She developed new methods of teaching based on the recognition that a student learnt more by working at his/her own place and instruction him/her self. Her findings were published as a book, "Learning More and Teaching Less."</p>
-                    <narrativeEvent>
-                    <date standardDate="1936">1936</date>
-                    <eventDescription>Bachelor of Science (BSc) completed at the University of Sydney</eventDescription>
-                  </narrativeEvent>
-                    <narrativeEvent>
-                    <date standardDate="1937">1937</date>
-                    <eventDescription>Master of Science (MSc) completed at the University of Sydney</eventDescription>
-                  </narrativeEvent>
-                    <narrativeEvent>
-                    <date standardDate="1937/1941">until 1941</date>
-                    <eventDescription>Linnean Macleay Fellow</eventDescription>
-                  </narrativeEvent>
-                  </biogHist>]]>
-                  </egXML>
-                 <egXML xml:lang="eng"><![CDATA[<biogHist>
-                    <!-- Note: the way how the XHTML schema is integrated can differ depending on your local application context. The following encoding validates e.g. in Oxygen XML Editor 20.1. -->
-                    <formattingExtension>
-                        <xhtml:div
-                            xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
-                            <xhtml:h4>Biography Johann Sebastian Bach</xhtml:h4>
-                            <xhtml:p>[...]</xhtml:p>
-                            [...]
-                            <xhtml:h3>Family life</xhtml:h3>
-                            <p>Bach was married twice and had 20 children, 10 of whom survived into adulthood.</p>
-                            <xhtml:ul>
-                                
-                                <xhtml:h4>Children of Johann Sebastian Bach and Maria Barbara Bach</xhtml:h4>
-                                <xhtml:li>Catharina Dorothea Bach</xhtml:li>
-                                <xhtml:li>Wilhelm Friedemann Bach</xhtml:li>
-                                <xhtml:ul>
-                                    <xhtml:h5>Children of Wilhelm Friedemann Bach</xhtml:h5>
-                                    <xhtml:li>Friederica Sophia Bach</xhtml:li>
-                                    <xhtml:li>Two sons who did not live past infancy</xhtml:li>
-                                </xhtml:ul>
-                                <xhtml:li>Carl Philipp Emanuel Bach</xhtml:li>
-                                <xhtml:ul>
-                                    <xhtml:h5>Children of Carl Philipp Emanual Bach</xhtml:h5>
-                                    <xhtml:li>Johann Adam Bach</xhtml:li>
-                                    <xhtml:li>Anna Carolina Philippina Bach</xhtml:li>
-                                    <xhtml:li>Johann Sebastian Bach ("the Younger")</xhtml:li>
-                                    <xhtml:li>Other children who did not live to adulthood</xhtml:li>
-                                </xhtml:ul>
-                                <xhtml:li>Johann Gottfried Bernhard Bach</xhtml:li>
-                                <xhtml:li>Three more children who did not live to their first birthday</xhtml:li>
-                            </xhtml:ul>
-                            <xhtml:ul>
-                                <xhtml:h4>Children of Johann Sebastian Bach and Anna Magdalena Wilcken</xhtml:h4>
-                                <xhtml:li>Gottfried Heinrich Bach</xhtml:li>
-                                <xhtml:li>Johann Christoph Friedrich Bach</xhtml:li>
-                                <xhtml:ul>
-                                    <xhtml:h5>Children of Johann Christoph Friedrich Bach</xhtml:h5>
-                                    <xhtml:li>Anna Philippiana Friederica Bach</xhtml:li>
-                                    <xhtml:li>Wilhelm Friedrich Ernst Bach</xhtml:li>
-                                    <xhtml:ul>
-                                        <xhtml:h6>Children of Wilhelm Friedrich Ernst Bach</xhtml:h6>
-                                        <xhtml:li>Carolina Auguste Wilhelmine Bach</xhtml:li>
-                                        <xhtml:li>Juliane Friederica Bach</xhtml:li>
-                                    </xhtml:ul>
-                                    <xhtml:li>Christine Luise Bach</xhtml:li>
-                                </xhtml:ul>
-                                <xhtml:li>Johann Christian Bach</xhtml:li>
-                                <xhtml:li>Elisabeth Juliane Friederica Bach</xhtml:li>
-                                <xhtml:ul>
-                                    <xhtml:h5>Children of Elisabeth Juliane Friederica Bach</xhtml:h5>
-                                    <xhtml:li>Johann Sebastian Altnickol</xhtml:li>
-                                </xhtml:ul>
-                                <xhtml:li>Johanna Carolina Bach</xhtml:li>
-                                <xhtml:li>Regina Susanna Bach</xhtml:li>
-                                <xhtml:li>Six more children who did not live to adulthood</xhtml:li>
-                            </xhtml:ul>
-                        </xhtml:div>
-                    </formattingExtension>
-                </biogHist>]]>
-                  </egXML>
-               </div>
-            </div>
+</div>
