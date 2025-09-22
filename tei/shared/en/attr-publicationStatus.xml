@@ -17,8 +17,10 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" languageEncoding="iso639-3" maintenanceStatusEncoding="EASList" maintenanceStatus="new" publicationStatusEncoding="EASList" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
+                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<control countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" languageEncoding="iso639-3" maintenanceStatusEncoding="EASList" maintenanceStatus="new" publicationStatusEncoding="EASList" publicationStatus="published" repositoryEncoding="iso15511" scriptEncoding="iso15924">
    [...]
-</control>]]></egXML>
+</control>]]>
+                  </egXML>
                </div>
             </div>

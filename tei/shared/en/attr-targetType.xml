@@ -17,10 +17,10 @@
 		              <p>token</p>
 	             </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<relation targetType="resource">
+                  <egXML xml:lang="fre" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<relation targetType="resource">
 			  <label>Mémorial du colonel Gustafsson. - 1829</label>
 		  </relation>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<relation targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
+                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<relation targetType="person" valueURI="https://d-nb.info/gnd/120636123" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">
 			  <label>Sophie, Baden, Großherzogin, 1801-1865</label>
 		  </relation>]]></egXML>
                </div>

@@ -63,7 +63,7 @@
 		<p>The <gi>relationship</gi> element contains a textual description of the relation. It is recommended that values used in <gi>relationship</gi> be taken from an authorized vocabulary.</p>
 	</div>
 	<div type="attributeusage">
-		<p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
+		<p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the relationship in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
 	</div>	
 	<div type="seealso">
 		<p>Use <gi>role</gi> to more specifically indicate the role of the related entity towards the entity being described in the EAS instance respectively towards the EAS instance itself.</p>
@@ -72,7 +72,7 @@
 		<p>Optional, Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng">
+		<egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
 			<![CDATA[<maintenanceHistory>
 			<maintenanceEvent id="me1">
 			<agent>

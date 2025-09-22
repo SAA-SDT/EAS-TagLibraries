@@ -44,7 +44,8 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="en"><![CDATA[<objectXMLWrap>
+                  <egXML xml:lang="en" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<objectXMLWrap>
                     <mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/mods/v3/mods-3-3.xsd">
                     <mods:titleInfo>
                     <mods:title>Artisti trentini tra le due guerre</mods:title>
@@ -54,9 +55,11 @@
                     <mods:namePart type="family">Boschiero</mods:namePart>
                   </mods:name>
                   </mods:mods>
-                  </objectXMLWrap>]]></egXML>
-                  <egXML xml:lang="en"><![CDATA[<objectXMLWrap>
-                    <tei:bibl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:text="http://www.tei-c.org/ns/1.0" xsi:schemaLocation="https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd" default="false">
+                  </objectXMLWrap>]]>
+                  </egXML>
+                  <egXML xml:lang="en" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<objectXMLWrap>
+                    <tei:bibl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tei="http://www.tei-c.org/ns/1.0" xsi:schemaLocation="https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd" default="false">
                     <tei:title>
                     <tei:emph rend="italic">Paris d'hier et d'aujourd'hui</tei:emph>
                   </tei:title>
@@ -66,14 +69,17 @@
                     <tei:name>Yann Arthus-Bertrand</tei:name>
                   </tei:respStmt>
                   </tei:bibl>
-                  </objectXMLWrap>]]></egXML>
-                  <egXML xml:lang="en"><![CDATA[<objectXMLWrap>
-                    <note xmlns="">
+                  </objectXMLWrap>]]>
+                  </egXML>
+                  <egXML xml:lang="en" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<objectXMLWrap>
+                    <note>
                     <to>Tove</to>
                     <from>Jani</from>
                     <heading>Reminder</heading>
                     <body>Don't forget me this weekend!</body>
                   </note>
-                  </objectXMLWrap>]]></egXML>
+                  </objectXMLWrap>]]>
+                  </egXML>
                </div>
             </div>

@@ -90,15 +90,16 @@
       </relation>]]>
 		</egXML>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" type="eaf">
-         <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#OccupationType" targetType="person">
+         <![CDATA[<!-- This is not consistent, as OccupationType is not a relation in RiC-O. The relation element should directly point to the rico:hasOrHadOccupationOfType that the role element refers to <relation relationType="https://www.ica.org/standards/RiC/ontology#OccupationType" targetType="person">-->
+		  <relation relationType="https://www.ica.org/standards/RiC/ontology#hasOrHadOccupationOfType" targetType="person">
          <label>Marie Skłodowska-Curie</label>
          <dateRange>
          <fromDate>1908</fromDate>
          <toDate>1934</toDate>
       </dateRange>
          <placeName valueURI="https://www.geonames.org/2988507/paris.html" vocabularySource="GeoNames">Paris</placeName>
-         <role valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadOccupationOfType" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Cátedra de Física</role>
-      </relation>]]>
+         <!-- <role valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadOccupationOfType" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Cátedra de Física</role>
+      </relation>]]>-->
 		</egXML>
       <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead">
          <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#CreationRelation" targetType="person">

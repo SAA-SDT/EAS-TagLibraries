@@ -95,7 +95,7 @@
 			<![CDATA[<relatedMaterial>
 			<!-- Note: the following encoding is based on using the NVDL schema for EAD 4.0, which has the XHTML schema integrated already; the example validates in Oxygen XML Editor 20.1. -->
 			<formattingExtension>
-			<xhtml:div>
+			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml">
 			<xhtml:p>The following sources provide additional information on Gordon Gray's personal and professional life and on the development of the Consolidated University during his tenure as president.</xhtml:p>
 			<xhtml:h4>Southern Historical Collection</xhtml:h4>
 			<xhtml:ul>

@@ -56,7 +56,8 @@
                   <p>Optional, not repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<relations>
+                  <egXML xmlns="http://www.tei-c.org/ns/Examples" type="eac">
+                    <![CDATA[<relations>
                     <relation relationType="family" targetType="person">
                     <label valueURI="https://d-nb.info/gnd/119067159X" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Arendt, Max (1843-1913)</label>
                     <role>grandfather</role>
@@ -69,8 +70,10 @@
                     <label valueURI="https://d-nb.info/gnd/1190671301" vocabularySource="GND" vocabularySourceURI="https://d-nb.info/gnd/">Arendt, Paul (1873-1913)</label>
                     <role>father</role>
                   </relation>
-                  </relations>]]></egXML>
-                 <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead"><![CDATA[<relatedMaterial>
+                  </relations>]]>
+                  </egXML>
+                 <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead">
+                   <![CDATA[<relatedMaterial>
                    <abstract>Several genealogies and biographies of the Smith family have been published and are held in the Rare Books Department.</abstract>
                    <relations>
                    <relation targetType="resource">

@@ -51,12 +51,12 @@
    <div type="description">
       <p><gi>span</gi> is an optional formatting element for distinguishing words or phrases that are intentionally stressed or emphasized for linguistic effect or identifying some qualities of the words or phrases.</p>
    </div>
-   <div type="attributeusage"><p>Use the optional <att>style</att> attribute to affect an arbitrary stylistic difference.</p>
+   <div type="attributeusage"><p>Use the optional <att>style</att> attribute to specify an arbitrary stylistic difference.</p>
    </div>
    <div type="availability">
       <p>Optional, repeatable</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng"><![CDATA[<p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).</p>]]></egXML>
+      <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).</p>]]></egXML>
    </div>
 </div>

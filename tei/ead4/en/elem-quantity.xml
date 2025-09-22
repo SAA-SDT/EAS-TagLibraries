@@ -50,7 +50,8 @@
 		<p>Optional, not repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<c>
+		<egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<c>
 			<identificationData>
 			<unitTitle>Seizure Records</unitTitle>
 			<unitDate>
@@ -68,8 +69,10 @@
 			<unitOfMeasurement>folder</unitOfMeasurement>
 		</extent>
 		</identificationData>
-		</c>]]></egXML>
-		<egXML xml:lang="eng"><![CDATA[<formsAvailable>
+		</c>]]>
+		</egXML>
+		<egXML xml:lang="eng"xmlns="http://www.tei-c.org/ns/Examples">
+			<![CDATA[<formsAvailable>
 			<formAvailable formAvailableType="digitalOriginal" coverage="whole">
 			<label>Photographs</label>
 			<physicalDescription>
@@ -92,6 +95,7 @@
 		</dimensions>
 		</physicalDescription>
 		</formAvailable>
-		</formsAvailable>]]></egXML>
+		</formsAvailable>]]>
+		</egXML>
 	</div>
 </div>
