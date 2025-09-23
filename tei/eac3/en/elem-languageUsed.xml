@@ -69,24 +69,6 @@
       <p>Required, repeatable</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng"><![CDATA[<languagesUsed>
-		<languageUsed>
-				<language languageCode="eng">
-						English
-				</language>
-				<writingSystem scriptCode="Latn">
-						Latin
-				</writingSystem>
-		</languageUsed>
-		<languageUsed>
-				<language languageCode="gre">
-						Greek, Modern (1453-)
-				</language>
-				<writingSystem scriptCode="Grek">
-						Greek
-				</writingSystem>
-		</languageUsed>
-</languagesUsed>]]>
-      </egXML>
+      <p>See <gi>description</gi> encoding</p>
    </div>
 </div>
