@@ -62,14 +62,6 @@
       <p>Optional, not repeatable</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng"><![CDATA[<occupations>
-     	<occupation>
-     	      <term>Teacher</term>
-     	</occupation>
-     	<occupation>
-     	      <term>Railway labourer</term>
-     	</occupation>
-</occupations>]]>
-      </egXML>
+      <p>See <gi>description</gi> encoding</p>
    </div>
 </div>

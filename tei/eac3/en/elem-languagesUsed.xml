@@ -62,24 +62,6 @@
       <p>Optional, not repeatable</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng"><![CDATA[<languagesUsed>
-		<languageUsed>
-				<language languageCode="eng">
-						English
-				</language>
-				<writingSystem scriptCode="Latn">
-						Latin
-				</writingSystem>
-		</languageUsed>
-		<languageUsed>
-				<language languageCode="spa">
-						Spanish
-				</language>
-				<writingSystem scriptCode="Latn">
-						Latin
-				</writingSystem>
-		</languageUsed>
-</languagesUsed>]]>
-      </egXML>
+      <p>See <gi>description</gi> encoding</p>
    </div>
 </div>
