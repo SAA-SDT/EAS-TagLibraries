@@ -45,9 +45,13 @@
 		</p>
 	</div>
 	<div type="description">
-		<p><gi>functionHistory></gi> is used to provide information on the precise chronology of the performance of the function being described. Examples include how and why the function was performed, who played what roles in the performance of the function, and how the function changed over time. Where <gi>functionDescription</gi> describes a narrative description of the function’s purpose, <gi>functionHistory</gi> focuses on chronology and the changes over time.</p>
+		<p><gi>functionHistory</gi> is used to provide information on the precise chronology of the performance of the function being described. Examples include how and why the function was performed, who played what roles in the performance of the function, and how the function changed over time.</p>
 		<p>Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
 	</div>
+	<div type="seealso">
+		<p>Where <gi>functionDescription</gi> describes a narrative description of the function’s purpose, <gi>functionHistory</gi> focuses on chronology and the changes over time.</p>
+	</div>
+	
 	<div type="availability">
 		<p>Optional, Not Repeatable</p>
 	</div>

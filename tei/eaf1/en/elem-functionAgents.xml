@@ -30,7 +30,7 @@
 				<label>id</label>
 				<item>Optional</item>
 				<label>languageOfElement</label>
-				<item>Optional, uses values from value list defined with attribute <att>languageEncoding</att> in control</item>
+				<item>Optional</item>
 				<label>localType</label>
 				<item>Optional</item>
 				<label>localTypeDeclarationReference</label>
@@ -38,16 +38,16 @@
 				<label>maintenanceEventReference</label>
 				<item>Optional</item>
 				<label>scriptOfElement</label>
-				<item>Optional, uses values from value list defined with attribute <att>scriptEncoding</att> in control</item>
+				<item>Optional</item>
 				<label>sourceReference</label>
 				<item>Optional</item>
 				<label>target</label>
-				<item>Optional</item>>
+				<item>Optional</item>
 			</list>
 		</p>
 	</div>
 	<div type="description">
-		<p>The element is a grouping element for the element <gi>functionAgent</gi>.</p>
+		<p>The element is an always used grouping element when one or more of the element <gi>functionAgent</gi> is being used.</p>
 	</div>
 	<div type="availability">
 		<p>Optional, Not Repeatable</p>
