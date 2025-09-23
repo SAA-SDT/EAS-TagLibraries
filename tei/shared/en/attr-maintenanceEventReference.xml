@@ -18,7 +18,7 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceHistory>
+                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<maintenanceHistory>
                     <maintenanceEvent maintenanceEventType="updated" id="me2">
                     <agent agentType="person">
                     <label>K. Bredenberg</label>

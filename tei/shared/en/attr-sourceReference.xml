@@ -13,14 +13,15 @@
                   </p>
                </div>
                <div type="description">
-                  <p>The attribute can be used to reference any detailed information about the described entity with a source.</p>
+                  <p>The attribute can be used to link any detailed information about the described entity to a source.</p>
                   <p>The attribute is optionally available in elements which can contain text.</p>
                </div>
                <div type="datatype">
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<sources>
+                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<sources>
                     <source id="source1">
                     <reference>R. Greene, S.Cushman (ed.): The Princeton Handbook of World Poetries</reference>
                   </source>
@@ -28,6 +29,7 @@
                     [...]
                     <relation sourceReference="source1" maintenanceEventReference="me2" targetType="corporateBody" relationType="https://www.wikidata.org/wiki/Q166118">
                     <label valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" vocabularySourceURI="https://snaccooperative.org">Princeton University</label>
-                  </relation>]]></egXML>
+                  </relation>]]>
+                  </egXML>
                </div>
             </div>

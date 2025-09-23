@@ -57,8 +57,8 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>                     <gi>separatedMaterial</gi> identifies materials that are associated by provenance to the described materials that have been physically separated or removed. Examples include the separation of special formats; the destruction of duplicate or nonessential material; and the deliberate or unintentional dispersal of a creator’s records among different repositories.</p>
-		 <p>These separated materials can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named within and, if applicable, linked to via <gi>relations</gi>. Using <gi>relations</gi> is especially useful when referring to several separated materials at once and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
+		<p><gi>separatedMaterial</gi> identifies materials that are associated by provenance to the described materials, and that have been physically separated or removed from them. Examples include the separation of special formats; the destruction of duplicate or nonessential material; and the deliberate or unintentional dispersal of a creator’s records among different repositories.</p>
+		 <p>These separated materials can either be described using narrative text in the elements <gi>abstract</gi>, <gi>p</gi>, and <gi>formattingExtension</gi> or they can be named within and, if applicable, linked to via <gi>relations</gi>. Using <gi>relations</gi> is especially useful when referring to several separated materials at once, and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</p>
 		<p>If described in narrative text, the element <gi>reference</gi> within <gi>p</gi> may be used to refer to such separated materials.</p>
 		<p>The prescribed order of all child elements (both required and optional) is:</p>
 		<list type="simple">

@@ -83,11 +83,11 @@
 	<div type="availability">
 		<p type="eac">Within <gi>agent</gi>, <gi>demographicDescription</gi>, <gi>functionPerformed</gi>,  <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not repeatable</p>
 		<p type="eac">Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not repeatable</p>
-		<p type="eac">Within <gi>narrativeEvent</gi>: required, not repeatable</p>
+		<p type="eac">Within <gi>narrativeEvent</gi>: required, repeatable</p>
 		<p type="ead">Within <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>place</gi>, <gi>relation</gi>, <gi>subject</gi>, <gi>unitDate</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not repeatable</p>
 		<p type="ead">Within <gi>findAidDesc</gi>: at least one of <gi>agent</gi>, <gi>citedRange</gi>, 
  <gi>date</gi>, <gi>formattingExtension</gi>, <gi>place</gi> or <gi>title</gi> required, repeatable</p>
-		<p type="ead">Within <gi>narrativeEvent</gi>: required, not repeatable</p>
+		<p type="ead">Within <gi>narrativeEvent</gi>: required, repeatable</p>
 		<p type="eaf">Within <gi>agent</gi>, <gi>legislation</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not repeatable</p>
 		<p type="eaf">Within <gi>useDates</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not repeatable</p>
 		<p type="eaf">Within <gi>functionDates</gi>: one of <gi>date</gi> or <gi>dateRange</gi> required, not repeatable</p>

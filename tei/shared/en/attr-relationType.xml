@@ -29,7 +29,7 @@
 		</relation>]]>
 		</egXML>
 		<egXML xmlns="http://www.tei-c.org/ns/Examples" type="eaf">
-			<![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#isOrWasPerformedBy" targetType="group">
+			<![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#performsOrPerformed" targetType="group">
 			<label>Obama Cabinet</label>
 		</relation>]]>
 		</egXML>

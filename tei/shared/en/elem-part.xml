@@ -59,14 +59,19 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
+                  <egXML xml:lang="eng" type="eac" xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<nameEntry languageOfElement="de" preferredForm="true" status="authorized" localType="native">
                     <part localType="surname">Arendt</part>
                     <part localType="firstname">Hannah</part>
-                  </nameEntry>]]></egXML>
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
+                  </nameEntry>]]>
+                  </egXML>
+                  <egXML xml:lang="eng" type="eac"  xmlns="http://www.tei-c.org/ns/Examples">
+                    <![CDATA[<nameEntry conventionDeclarationReference="cd1" preferredForm="true">
                     <part>Provence-Alpes-Côte d'Azur</part>
-                  </nameEntry>]]></egXML>
-                 <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<!-- The following example has been adapted from the EADiva Tag Libray by Ruth Kitchin Tillman, https://eadiva.com/filedesc/ -->
+                  </nameEntry>]]>
+                  </egXML>
+                 <egXML xml:lang="en" type="ead" xmlns="http://www.tei-c.org/ns/Examples">
+                   <![CDATA[<!-- The following example has been adapted from the EADiva Tag Libray by Ruth Kitchin Tillman, https://eadiva.com/filedesc/ -->
                    <ead>
                    <control>[...]</control>
                    <findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department/quilting-technologies-department.xml" linkTitle="Download the encoded finding aid" linkRole="text/xml">
@@ -82,6 +87,7 @@
                    <part localType="issueNumber" localTypeDeclarationReference="titles">13</part>
                  </title>
                    [...]
-                 </findAidDesc>]]></egXML>
+                 </findAidDesc>]]>
+                 </egXML>
                </div>
             </div>

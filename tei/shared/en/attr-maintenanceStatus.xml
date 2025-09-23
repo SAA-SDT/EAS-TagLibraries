@@ -17,7 +17,7 @@
                <div type="datatype">
 		              <p>token</p>
 	             </div>
-               <div type="examples">
+               <div type="examples" xmlns="http://www.tei-c.org/ns/Examples">
                   <egXML xml:lang="eng"><![CDATA[<control countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" languageEncoding="iso639-2" maintenanceStatus="new" maintenanceStatusEncoding="EASList" publicationStatus="published" publicationStatusEncoding="EASList" repositoryEncoding="iso15511" scriptEncoding="iso15924">
 			  [...]
 		  </control>]]></egXML>

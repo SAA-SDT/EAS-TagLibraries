@@ -14,13 +14,13 @@
 		<p>
 			<list type="gloss">
 				<label>agent</label>
-				<item>0..1</item>
+				<item>0..n</item>
 				<label>date</label>
-				<item>1..1</item>
+				<item>1..n</item>
 				<label>eventDescription</label>
 				<item>0..n</item>
 				<label>placeName</label>
-				<item>0..1</item>
+				<item>0..n</item>
 			</list>
 		</p>
 	</div>
