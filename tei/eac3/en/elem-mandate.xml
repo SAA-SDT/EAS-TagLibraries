@@ -84,19 +84,6 @@
       <p>Required, repeatable</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng"><![CDATA[<mandate>
-		<term>
-				Law 1946/1991
-		</term>
-		<date standardDate="1991">
-				1991
-		</date>
-		<descriptiveNote>
-				<p>
-						Law 1946/1991 determines a new legislative frame, which regulates the operation of the General State Archives to this day. The Central Service is structured into departments and Archives are established in prefectures which did not exist till then.
-				</p>
-		</descriptiveNote>
-</mandate>]]>
-      </egXML>
+      <p>See <gi>description</gi> encoding</p>
    </div>
 </div>
