@@ -11,7 +11,7 @@
       <p type="eac">An optional child element of <gi>cpfDescription</gi>, <gi>description</gi> is a wrapper
          element for all of the content elements comprising descriptive information about the CPF
          entity.</p>
-	   <p type="eaf">An optional child element of <gi>functionDescription</gi>, <gi>description</gi> is a wrapper
+	   <p type="eaf">An optional child element of <gi>functionsDescription</gi>, <gi>description</gi> is a wrapper
          element for all of the content elements comprising descriptive information about the function.</p>
    </div>
    <div type="mayContain">

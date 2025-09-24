@@ -36,13 +36,11 @@
 	<div type="description">
 		<p><gi>eaf</gi> wraps all other elements in a particular instance of an function record encoded with the EAC-F XML Schema.</p>
       <p><gi>eaf</gi> must contain <gi>control</gi> followed by a <gi>functionsDescription</gi> element.</p>
-      <p>In order to validate an EAC-CPF instance, it is highly recommended to include according
+      <p>In order to validate an EAC-F instance, it is highly recommended to include according
          information about the EAC-F namespace and the EAC-F schema location.</p>
 	</div>
 	<div type="attributeusage">
-		<p>A listing of usage of attributes with the element (optional)</p>
-		<p type="eac">Attribute usage that only applies to a shared element in EAC</p>
-		<p type="ead">Attribute usage  that only applies to a shared element in EAD</p>
+		<p>All attributes in this element are optional to use.</p>
 	</div>	
 	<div type="availability">
 		<p>Required, Not Repeatable</p>

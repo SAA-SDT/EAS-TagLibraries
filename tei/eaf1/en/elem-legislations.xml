@@ -47,7 +47,7 @@
 		</p>
 	</div>
 	<div type="description">
-		<p>The element is a grouping element for the element <gi>legislation</gi>.</p>
+		<p>The element is always used as a grouping element when one or more of the element <gi>legislation</gi> is being used.</p>
 	</div>
 	<div type="availability">
 		<p>Optional, Not Repeatable</p>

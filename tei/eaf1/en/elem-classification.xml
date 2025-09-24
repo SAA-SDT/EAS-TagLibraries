@@ -63,8 +63,8 @@
 		<egXML xml:lang="eng" type="eaf"><![CDATA[<description>
 	....
 <classifications>
-		<classification>L100</classification>
-<classification>4.2.1</classification>
+		<classification conventionDeclarationReference="conventionClassification1">L100</classification>
+<classification conventionDeclarationReference="conventionClassification2">4.2.1</classification>
 	</classifications>
 ....
 </description>

@@ -7,10 +7,10 @@
 		<p>Function Status</p>
 	</div>
 	<div type="summary">
-		<p>A required attribute used to specify the state of the description with the purpose of indicating the current status of the described function or activity.</p>
+		<p>A required attribute used to indicate the current status of the description of the function.</p>
 	</div>
 	<div type="description">
-		<p>Use one of the values to identify the current status of the description, ie. draft, final, revised, deleted</p>
+		<p>Use a decided upon value to identify the current status of the description, ie. draft, final, revised, deleted</p>
 	</div>
 	<div type="values">
 		<p>Suggested values include, but are not limited to, draft, final, revised, deleted, active, obsolete, inactive</p>
