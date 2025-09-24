@@ -40,7 +40,7 @@
          information about the EAC-F namespace and the EAC-F schema location.</p>
 	</div>
 	<div type="attributeusage">
-		<p>All attributes in this element is optional to use.</p>
+		<p>All attributes in this element are optional to use.</p>
 	</div>	
 	<div type="availability">
 		<p>Required, Not Repeatable</p>
