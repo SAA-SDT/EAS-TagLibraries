@@ -64,7 +64,7 @@
 		       <p type="eac">An element for expressing the single date of an event in the history of the person, corporate body or family being described, or in their relationship to, e.g., a name entry, a place, an occupation, another CPF entity, a resource, or a function.</p>
 		       <p type="ead">An element for expressing a single date relating to the materials being described, or in their relationship to, e.g., a place, a function, a resource, or a subject.</p>
 		       <p type="eaf">An element for expressing a single date relating to the function being described, or in its relationship to, e.g., a resource, or an agent.</p>
-		       <p>The content of the element is intended to be a human-readable natural language date with a machine-readable date provided as the value of the <att>standardDate</att> attribute, formulated according to ISO 8601 or another rule for encoding dates as definded on <att>dateEncoding</att> within <gi>control</gi>. Uncertain or approximate dates can be encoded in <att>standardDate</att> using Extended Date/Time Format (EDTF).</p>
+		       <p>The content of the element is intended to be a human-readable natural language date with a machine-readable date provided as the value of the <att>standardDate</att> attribute, formulated according to ISO 8601 or another rule for encoding dates as definded by <att>dateEncoding</att> within <gi>control</gi>. Uncertain or approximate dates can be encoded in <att>standardDate</att> using Extended Date/Time Format (EDTF).</p>
 	       </div>
                <div type="attributeusage">
 		       <p>Use <att>certainty</att> to indicate the degree of precision in the dating, for example, "uncertain" or "approximate".</p>

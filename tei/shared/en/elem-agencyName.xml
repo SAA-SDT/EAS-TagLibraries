@@ -7,7 +7,7 @@
                   <p>Agency Name</p>
                </div>
                <div type="summary">
-                  <p>A child element of <gi>maintenanceAgency</gi> that provides the name of the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.</p>
+                  <p>An optional child element of <gi>maintenanceAgency</gi> that provides the name of the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.</p>
                </div>
                <div type="mayContain">
                   <p><list type="gloss">
@@ -44,7 +44,7 @@
                   <p>Use <gi>agencyName</gi> to record the name of the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance. Examples include the repository name or the name of an aggregation service.</p>
                  <p><gi>maintenanceAgency</gi> must include one or both of <gi>agencyName</gi> and <gi>agencyCode</gi>.</p>
                  <p>It is recommended to use the form of the agency name that is authorized by an appropriate national or international agency or service.</p>
-                 <p><gi>agencyName</gi> may be repeated in order to provide the name of the institution or service responsible for the EAS instance in multiple languages. If <gi>agencyName</gi> is repeated it is recommended to indicate the language of each name using <att>languageOfElement</att>.</p>
+                 <p><gi>agencyName</gi> may be repeated in order to provide the name of the institution or service responsible for the EAS instance in multiple languages or name settings. If <gi>agencyName</gi> is repeated it is recommended to indicate the language of each name using <att>languageOfElement</att>.</p>
                </div>
                <div type="availability">
                   <p>Optional, repeatable</p>
