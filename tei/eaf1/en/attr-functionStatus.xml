@@ -7,13 +7,10 @@
 		<p>Function Status</p>
 	</div>
 	<div type="summary">
-		<p>A required attribute used to indicate the current status of the description of the function.</p>
+		<p>A required attribute that follows controlled terminology detailing the current status of use for the described function.</p>
 	</div>
 	<div type="description">
-		<p>Use a decided upon value to identify the current status of the description, ie. draft, final, revised, deleted</p>
-	</div>
-	<div type="values">
-		<p>Suggested values include, but are not limited to, draft, final, revised, deleted, active, obsolete, inactive</p>
+		<p><att>functionStatus</att> provides controlled terminology detailing the status of specific elements. The terms available for <att>functionStatus</att> are defined in a closed list. Use <att>functionStatusEncoding</att> in <gi>control</gi> to identify lists of terms from EAS lists that can be used as values of <att>functionStatus</att>. It is also possible to define one's own list by using the value "otherFunctionStatusEncoding". Optionally available in <gi>functionsDescription</gi>.</p>
 	</div>
 	<div type="datatype">
 		<p>token</p>
