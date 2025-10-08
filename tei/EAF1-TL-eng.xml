@@ -506,6 +506,7 @@
          	<xi:include href="shared/en/attr-detailLevelEncoding.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-era.xml" parse="xml"/>
 		 		  <xi:include href="eaf1/en/attr-functionStatus.xml" parse="xml"/>
+		  	<xi:include href="eaf1/en/attr-functionStatusEncoding.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-href.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-id.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-identityType.xml" parse="xml"/>
