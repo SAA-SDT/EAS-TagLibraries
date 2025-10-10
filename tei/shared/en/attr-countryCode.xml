@@ -17,7 +17,7 @@
                  <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countrycode="IE">
+                  <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countryCode="IE">
    <agencyCode>
       IE-NAI
    </agencyCode>
