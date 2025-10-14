@@ -36,8 +36,8 @@
                   <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples" type="ead"><![CDATA[<agents>
                     <agent>
                     <label>Schweizerisches Bundesarchiv</label>
-                    <role>holdingInstitution</role>
                     <placeName target="place1">Bern</placeName>
+                    <role>holdingInstitution</role>
                   </agent>
                   </agents>
                     <places>
