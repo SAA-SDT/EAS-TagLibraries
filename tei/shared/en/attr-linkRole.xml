@@ -27,8 +27,7 @@
       <p>anyURI</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng"><![CDATA[<reference href="https://deliberation.maregionsud.fr/docs/ASSEMBLEEPLENIERE/2017/12/15/DELIBERATION/D0V0Q.pdf" linkRole="document/pdf">
-   DELIBERATION N° 17-1166, 15 DECEMBRE 2017
-</reference>]]></egXML>
+      <egXML xml:lang="eng"><![CDATA[<reference href="https://cnig.gouv.fr/IMG/pdf/collectivites-territoriales_cnt_10-decembre-2021.pdf" linkRole="document/pdf">
+   Commission nationale de toponymie: Collectivités territoriales françaises</reference>]]></egXML>
    </div>
 </div>
