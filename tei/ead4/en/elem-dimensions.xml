@@ -7,7 +7,7 @@
 		<p>Dimensions</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>physicalDescription</gi> that provides information about the size of the material being described.</p>
+		<p>An optional child element of <gi>physicalDescription</gi> that provides information about the size of the material being described.</p>
 	</div>
 	<div type="mayContain">
 		<p>
