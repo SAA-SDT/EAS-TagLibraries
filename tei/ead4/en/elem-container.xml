@@ -7,7 +7,7 @@
 		<p>Container</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>identificationData</gi> or <gi>formAvailable</gi> for indicating the container in which the material being described is housed, e.g., box, folder.</p>
+		<p>An optional child element of <gi>identificationData</gi> and  <gi>formAvailable</gi> for indicating the container in which the material being described is housed, e.g., box, folder.</p>
 	</div>
 	<div type="mayContain">
 		<p><list type="gloss">
