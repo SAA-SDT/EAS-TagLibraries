@@ -7,7 +7,7 @@
 		<p>Extent</p>
 	</div>
 	<div type="summary">
-		<p>A child of <gi>identificationData</gi> or <gi>physicalDescription</gi> used for information about the quantity of the materials being described or an expression of the space - physical as well as digital - they occupy.</p>
+		<p>An optional child of <gi>identificationData</gi> and <gi>physicalDescription</gi> used for information about the quantity of the materials being described or an expression of the space - physical as well as digital - they occupy.</p>
 	</div>
 	<div type="mayContain">
 		<p>
