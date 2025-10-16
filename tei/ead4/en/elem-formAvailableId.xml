@@ -7,7 +7,7 @@
 		<p>Identifier of the Form Available</p>
 	</div>
 	<div type="summary">
-		<p>A child element of <gi>formAvailable</gi> that provides an identifier for the instantiation being described, e.g. a microfiche number.</p>
+		<p>An optional child element of <gi>formAvailable</gi> that provides an identifier for the instantiation being described, e.g. a microfiche number.</p>
 	</div>
 	<div type="mayContain">
 		<p>
@@ -68,7 +68,7 @@
 		<p>Use <gi>unitId</gi> to provide an identifier for the record resource in general, which is different from, though might provide a basis for the identifiers used for its specific instantiations encoded in <gi>formAvailableId</gi>.</p>
 	</div>
 	<div type="availability">
-		<p>Required, Repeatable</p>
+		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
 		<egXML xmlns="http://www.tei-c.org/ns/Examples">
