@@ -99,7 +99,7 @@
                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
                    <![CDATA[<place>
                    <label vocabularySource="local">East Side (Buffalo, N.Y.)</label>
-                   <geographicCoordinates coordinateSystem="WGS84">N 42°53′48" W 78°50′2"</geographicCoordinates
+                   <geographicCoordinates coordinateSystem="WGS84">N 42°53′48" W 78°50′2"</geographicCoordinates>
                  </place>]]>
                  </egXML>
                  <egXML xmlns="http://www.tei-c.org/ns/Examples" type="ead">
@@ -146,8 +146,7 @@
                    <label>Stanza A, fila 7, scaffale 2</label>
                    <role valueURI="https://schema.org/itemLocation" vocabularySource="schema.org">deposito</role>
                  </place>
-                 </place>
-                   <place placeType="administrativeDivision">
+                 <place placeType="administrativeDivision">
                    <label valueURI="https://www.geonames.org/6697802/crete.html" vocabularySource="GeoNames">Regno de Càndia</label>
                    <role valueURI="https://www.ica.org/standards/RiC/ontology#isOrWasSubjectOf" vocabularySource="RiC-O">soggetto</role>
                  </place>
