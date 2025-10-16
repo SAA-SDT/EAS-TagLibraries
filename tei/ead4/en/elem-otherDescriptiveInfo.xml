@@ -59,7 +59,9 @@
                 </list>
 	</div>
 	<div type="attributeusage"><p>Use <att>localType</att> to more specifically designate the type of information being provided.</p></div>
-	<div type="seealso"><p>Do not confuse with <gi>otherDescription</gi>, which allows you to identify and, if applicable, link to any other description of the materials being described that might exist next to the one in the EAS instance.</p></div>
+	<div type="seealso"><p>Do not confuse with <gi>otherDescription</gi>, which allows you to identify and, if applicable, link to any other description of the materials being described that might exist next to the one in the EAS instance.</p>
+	<p>Use <otherIdentificationData> to capture short notes about the materials being described.</p>
+	</div>
 	<div type="availability">
 		<p>Optional, repeatable</p>
 	</div>
