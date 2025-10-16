@@ -7,7 +7,7 @@
 		<p>Genre or Form</p>
 	</div>
 	<div type="summary">
-		<p>An element for encoding a genre or form of material.</p>
+		<p>An optional element for encoding a genre or form of material.</p>
 	</div>
 	<div type="mayContain">
 		<p>
