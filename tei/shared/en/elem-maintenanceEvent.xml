@@ -57,6 +57,6 @@
                   <p>Required, repeatable</p>
                </div>
                <div type="examples">
-                  control
+           <p>See <gi>control</gi> encoding</p> 
                </div>
             </div>

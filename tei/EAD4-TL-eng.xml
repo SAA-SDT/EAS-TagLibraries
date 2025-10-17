@@ -301,7 +301,8 @@
       </body>
       <back>
          <div type="appendix" xml:id="appendix1">
-               <div type="exampleText" subtype="archDesc">
+	       <head>Examples</head>	 
+	       <div type="exampleText" subtype="archDesc">
                <egXML xml:lang="eng"><![CDATA[<archDesc level="fonds" localType="inventory" localTypeDeclarationReference="EADTypes">
     <identificationData>
         <unitTitle languageOfElement="nl" scriptOfElement="Latn">Nederlandsche Gist- en Spiritusfabriek en Pharmaceutische Fabrieken voorheen Brocades-Stheeman &amp; Pharmacia, in 1967 gefuseerd tot Gist-Brocades</unitTitle>

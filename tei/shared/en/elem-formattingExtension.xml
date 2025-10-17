@@ -49,5 +49,5 @@
         <p type="eaf">In these narrative contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
     </div>
     <div type="examples">
-	</div>
+	    <p type="ead">See <gi>archDesc</gi> and <gi>findAidDesc</gi> encoding</p>	</div>
 </div>
