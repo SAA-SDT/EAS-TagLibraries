@@ -62,5 +62,5 @@
         <p>Within <gi>physicalDescription</gi>: optional, not repeatable</p>
     </div>
     <div type="examples">
-                       <p>See <gi>archDesc</gi> encoding</p>    </div>
+	    <p>See <gi>archDesc</gi> and <gi>identificationData</gi> encoding</p>    </div>
 </div>
