@@ -10,7 +10,7 @@
 		<p>An optional attribute of <gi>formAvailable</gi> that specifies the type of form or instantiation being described.</p>
 	</div>
 	<div type="description">
-		<p>Use <att>formAvailableType</att> with <gi>formAvailable</gi> to specify the type of form or instantiation being described.</p>
+		<p>Use <att>formAvailableType</att> with <gi>formAvailable</gi> to specify the type of form or instantiation being described. Use e.g. "analogOriginal" for an analog original instantiation such as a charter, map, drawing, paper file, etc.</p>
 		<p>Use the attribute <att>formAvailableTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>formAvailableType</att>.</p>
 	</div>
 	<div type="datatype">
