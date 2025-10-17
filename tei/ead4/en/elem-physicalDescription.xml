@@ -50,7 +50,7 @@
     </div>
     <div type="description">
         <p>
-            <gi>physicalDescription</gi> creates structured statements describing the physical or logical extent or the medium of the instantiation described in <gi>formAvailable</gi>. While optional individually, one of the child elements <gi>dimensions</gi>, <gi>extent</gi> or <gi>physicalFacet</gi> has to be included when using <gi>physicalDescription</gi>. Next to the descriptive, human-readabile information, the structured design of <gi>physicalDescription</gi> allows for quantifying the extent of the whole or a part of the instantiation described in a form that will also be machine-processable and that will facilitate reporting, statistics, sorting, and importing and exporting data in a collection management system.</p>
+            <gi>physicalDescription</gi> creates structured statements describing the physical or logical extent or the medium of the instantiation described in <gi>formAvailable</gi>. While optional individually, one of the child elements <gi>dimensions</gi>, <gi>extent</gi> or <gi>physicalFacet</gi> has to be included when using <gi>physicalDescription</gi>. Next to the descriptive, human-readable information, the structured design of <gi>physicalDescription</gi> allows for quantifying the extent of the whole or a part of the instantiation described in a form that will also be machine-processable and that will facilitate reporting, statistics, sorting, and importing and exporting data in a collection management system.</p>
         <p>The prescribed order of all child elements (both required and optional) is:</p>
         <list type="simple">
             <item>
@@ -69,7 +69,7 @@
         <p>Use <gi>objectXMLWrap</gi> in <gi>descriptiveNote</gi> to include, where necessary, more detailed information encoded in another standard such as MIX, AudioMD, national standards focussed specifically on digital instantiations, etc.</p>
     </div>
     <div type="seealso">
-        <p>When statements of physical or logical extent relate to the record resource in general rather than being specific to an individual instantiation, use <gi>extent</gi> within <gi>identificationData</gi>. E.g. a photographic collection might consist of 1,200 photographs, a statement captured in <gi>extent</gi> within <gi>identificationData</gi>. Within <gi>physicalDescription</gi> in repeated <gi>formAvailable</gi> elements, this might then be specified as "1,2000 prints" for one analog instantation, "1,200 negatives" for a second analog instantiation, and "1,200 image files (tiff)" for a digital instantiation.</p>
+        <p>When statements of extent relate to the record resource in general rather than being specific to an individual instantiation, use <gi>extent</gi> within <gi>identificationData</gi>. E.g. a photographic collection might consist of 1,200 photographs, a statement captured in <gi>extent</gi> within <gi>identificationData</gi>. Within <gi>physicalDescription</gi> in repeated <gi>formAvailable</gi> elements, this might then be specified as "1,2000 prints" for one analog instantation, "1,200 negatives" for a second analog instantiation, and "1,200 image files (tiff)" for a digital instantiation.</p>
     </div>
     <div type="availability">
         <p>Optional, repeatable</p>

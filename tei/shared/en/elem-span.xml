@@ -55,7 +55,7 @@
             <gi>span</gi> is an optional formatting element for distinguishing words or phrases that are intentionally stressed or emphasized for linguistic effect or identifying some qualities of the words or phrases.</p>
     </div>
     <div type="attributeusage">
-        <p>Use the optional <att>style</att> attribute to affect an arbitrary stylistic difference.</p>
+        <p>Use the optional <att>style</att> attribute to specify an arbitrary stylistic difference.</p>
     </div>
     <div type="availability">
         <p>Optional, repeatable</p>

@@ -438,7 +438,7 @@
                </table>
             </div>
             <div class="toc1">
-               <a href="#d1e6438">Attributes Attribute name Attribute values</a>
+               <a href="#d1e6460">Attributes Attribute name Attribute values</a>
             </div>
             <div class="toc2">
                <table>
@@ -1992,6 +1992,8 @@
                         <div class="content">Optional</div>
                         <div class="leftcol">maintenanceStatusEncoding</div>
                         <div class="content">Optional (values limited to: EASList, otherMaintenanceStatusEncoding)</div>
+                        <div class="leftcol">placeTypeEncoding</div>
+                        <div class="content">Optional (values limited to: EASList, otherPlaceTypeEncoding)</div>
                         <div class="leftcol">publicationStatus</div>
                         <div class="content">Optional</div>
                         <div class="leftcol">publicationStatusEncoding</div>
@@ -3143,7 +3145,7 @@
                   <div class="content">An optional child element of &lt;functionsDescription&gt; that provides a narrative description of the purpose of the function.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-p1..n">p1..n</a>
+                     <a href="#elem-p0..nformattingExtension0..1">p0..nformattingExtension0..1</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
@@ -3151,9 +3153,8 @@
                   </div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">&lt;functionDescription&gt; provides narrative description of the purpose of the function.
-&lt;functionDescription&gt; must contain one or more &lt;p&gt; elements.
 This element is distinct from &lt;functionHistory&gt;, which is intended to record the administrative history of the function such as information on how the function was performed, associated roles, and how it changed over time.
-</div>
+Use the repeatable &lt;p&gt; element to structure longer texts in several paragraphs. If required and suitable, use &lt;formattingExtension&gt; to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -3225,14 +3226,14 @@ This element is distinct from &lt;functionHistory&gt;, which is intended to reco
                   <div class="content">An optional element used to describe the history, specifically the chronology, or a sequential order of changes undergone by the function being described.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-p1..n">p1..n</a>
+                     <a href="#elem-p0..nformattingExtension0..1">p0..nformattingExtension0..1</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-description">description</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">&lt;functionHistory&gt;&gt; is used to provide information on the precise chronology of the performance of the function being described. Examples include how and why the function was performed, who played what roles in the performance of the function, and how the function changed over time. Where &lt;functionDescription&gt; describes a narrative description of the function’s purpose, &lt;functionHistory&gt; focuses on chronology and the changes over time.</div>
+                  <div class="content">&lt;functionHistory&gt;&gt; is used to provide information on the precise chronology of the performance of the function being described. Examples include how and why the function was performed, who played what roles in the performance of the function, and how the function changed over time. Where &lt;functionDescription&gt; describes a narrative description of the function’s purpose, &lt;functionHistory&gt; focuses on chronology and the changes over time.Use the repeatable &lt;p&gt; element to structure longer texts in several paragraphs. If required and suitable, use &lt;formattingExtension&gt; to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -3799,14 +3800,14 @@ This element is distinct from &lt;functionHistory&gt;, which is intended to reco
                   <div class="content">An element for identifying the legal basis of the function.</div>
                   <div class="leftcol">May contain Element/content type Occurrences: </div>
                   <div class="content">
-                     <a href="#elem-date">date</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet0..1p1..n">dateSet0..1p1..n</a>
+                     <a href="#elem-date">date</a> or <a href="#elem-dateRange">dateRange</a> or <a href="#elem-dateSet0..1p0..nformattingExtension0..1">dateSet0..1p0..nformattingExtension0..1</a>
                   </div>
                   <div class="leftcol">May occur within: </div>
                   <div class="content">
                      <a href="#elem-legislations">legislations</a>
                   </div>
                   <div class="leftcol">Description and Usage: </div>
-                  <div class="content">The purpose of this element it to identify the legal basis of the function. The element is therefore used to record any law, directive or charter which creates, amends or curtails the function. Record each and every one of these in their own &lt;legislation&gt;</div>
+                  <div class="content">The purpose of this element it to identify the legal basis of the function. The element is therefore used to record any law, directive or charter which creates, amends or curtails the function. Record each and every one of these in their own &lt;legislation&gt;Use the repeatable &lt;p&gt; element to structure longer texts in several paragraphs. If required and suitable, use &lt;formattingExtension&gt; to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                   <div class="leftcol">Attributes Attribute name Attribute values: </div>
                   <div class="content">
                      <div class="leftcolattrlist"> </div>
@@ -6181,7 +6182,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <br/>
                </div>  <a class="tocReturn" href="#toc">[toc]</a>
             </div>
-            <div class="section" id="d1e6438">
+            <div class="section" id="d1e6460">
                <div class="head03">Attributes Attribute name Attribute values</div>
                <div class="attribute">
                   <div class="leftcol" id="attr-addressLineType">
@@ -6527,7 +6528,7 @@ Companies Act, 1947.&lt;/legislation&gt;
                   <div class="content"> <span class="label">Function Status</span>  <a class="tocReturn" href="#toc">[toc]</a>
                   </div>
                   <div class="leftcol">Summary: </div>
-                  <div class="content">A required attribute used to specify the state of the description with the purpose of indicating the current stat</div>
+                  <div class="content">A required attribute used to specify the state of the description with the purpose of indicating the current status of the described function or activity.</div>
                   <div class="leftcol">Description and Usage: </div>
                   <div class="content">Use one of the values to identify the current status of the description, ie. draft, final, revised, deleted</div>
                   <div class="leftcol">Data Type: </div>
@@ -7453,7 +7454,7 @@ Companies Act, 1947.&lt;/legislation&gt;
             </div>
          </div>
          <div>
-            <div class="section" id="d1e8592">
+            <div class="section" id="d1e8614">
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Title">Title  <a class="tocReturn" href="#toc">[toc]</a>
                </div>Contents of the appendix; this can also include lists</div>

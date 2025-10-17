@@ -7,7 +7,7 @@
 		<p>Function Dates</p>
 	</div>
 	<div type="summary">
-		<p>An optional element that captures the date or date range of the function being described.</p>
+		<p>An optional element that captures the date or date range, or a combination of date and date range, needed to understand of the function being described.</p>
 	</div>
 	<div type="mayContain">
 		<p>
@@ -43,7 +43,9 @@
 		</p>
 	</div>
 	<div type="description">
-		<p><gi>functionDates</gi> is used to assign a date or date range to the creation or revision of the function being described. When a <gi>dateRange</gi> is used with an open <gi>endDate</gi> the described funstion is seen as being on-going. </p>
+		<p><gi>functionDates</gi> is used to assign a specific <gi>date</gi>, for example the creation or revision, of the function being described.</p>
+		<p>When a <gi>dateRange</gi> is used this gives information about the whole period the function has been in use. If an open <gi>endDate</gi> is given the described function is seen as being on-going and in current use.</p>
+		<p>A combination of <gi>date</gi> and <gi>dateRange</gi> by using the <gi>dateSet</gi> to faciliate more dates needed for dates relating to the described function.</p>
 	</div>
 	<div type="availability">
 		<p>Optional, Not Repeatable</p>

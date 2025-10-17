@@ -14,13 +14,13 @@
         <p>
             <list type="gloss">
                 <label>agent</label>
-                <item>0..1</item>
+                <item>0..n</item>
                 <label>date</label>
-                <item>1..1</item>
+                <item>1..n</item>
                 <label>eventDescription</label>
                 <item>0..n</item>
                 <label>placeName</label>
-                <item>0..1</item>
+                <item>0..n</item>
             </list>
         </p>
     </div>
@@ -57,7 +57,7 @@
     <div type="description">
         <p type="ead">Use <gi>narrativeEvent</gi> to record an activity in the creation, management and ongoing maintenance of the materials being described or in the history of the records creator. This may include activities of appraisal and selection, sensitivity review, revisions, updates, retentions, etc.</p>
         <p type="eac">Use <gi>narrativeEvent</gi> to record a chronology of life events of the CPF entity.  This may include any event between the birth and the death of a person or between the foundation and the closure of an organization.</p>
-        <p>The type of each event may be defined with the attribute <att>localType</att>. Use <att>localTypeDeclarationReference</att> to refer to a <gi>localTypeDeclaration</gi> within <gi>control</gi> where you have defined those types. The child element <gi>date</gi> to record when the event took place is mandatory, while the child element <gi>agent</gi> to provide information about who or what carried out, or was otherwise responsible for, the activity is optional, though highly recommended. Additionally, the child element <gi>placeName</gi> may be used to provide information about where the event happened. Last, the information about the event may be described in <gi>eventDescription</gi>.</p>
+        <p>The type of each event may be defined with the attribute <att>localType</att>. Use <att>localTypeDeclarationReference</att> to refer to a <gi>localTypeDeclaration</gi> within <gi>control</gi> where you have defined those types. Use the required child element <gi>date</gi> to record when the event took place. Using the optional child element <gi>agent</gi> to provide information about who or what carried out, or was responsible for the activity is highly recommended. The child element <gi>placeName</gi> may be used to provide information about where the event happened. Information about the event may be described in <gi>eventDescription</gi>.</p>
         <p>The prescribed order of all child elements (both required and optional) is:</p>
         <list type="simple">
             <item>
@@ -78,5 +78,5 @@
         <p>Optional, repeatable</p>
     </div>
     <div type="examples">
-	</div>
+    </div>
 </div>

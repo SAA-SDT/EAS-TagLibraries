@@ -7,7 +7,7 @@
         <p>Agency Code</p>
     </div>
     <div type="summary">
-        <p>A child element of <gi>maintenanceAgency</gi> that provides a code for the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.</p>
+        <p>An optional child element of <gi>maintenanceAgency</gi> that provides a code for the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.</p>
     </div>
     <div type="mayContain">
         <p>

@@ -20,7 +20,7 @@
             <gi>setComponent</gi>, and <gi>source</gi>.</p>
       <p type="ead">Optionally available in <gi>contactLine</gi>, <gi>findAidDesc</gi>,
             <gi>reference</gi>, and <gi>source</gi>.</p>
-      <p type="eaf">Optionally available in <gi>contactLine</gi>, <gi>reference</gi> and <gi>source</gi>.</p>
+      <p type="eaf">Optionally available in <gi>reference</gi> and <gi>source</gi>.</p>
    </div>
    <div type="datatype">
       <p>token</p>

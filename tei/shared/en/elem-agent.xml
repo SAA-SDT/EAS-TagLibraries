@@ -96,13 +96,12 @@
         <p>Use the attributes <att>valueURI</att>, <att>vocabularySource</att>, and <att>vocabularySourceURI</att> with <gi>agent</gi> when referencing an entry of an external vocabulary, thesaurus, ontology applicable to the agent overall. In case of referencing different vocabularies or different entries within the same vocabulary for the name or the role of the agent, use the three attributes with the sub-elements <gi>label</gi> or  <gi>role</gi> directly.</p>
     </div>
     <div type="availability">
-        <p type="eac">Within <gi>maintenanceEvent</gi>: required, not repeatable</p>
-        <p type="eac">Within <gi>narrativeEvent</gi>: optional, not repeatable</p>
-        <p type="ead">Within <gi>agents</gi>: required, repeatable</p>
-        <p type="ead">Within <gi>findAidDesc</gi>: optional, repeatable</p>
-        <p type="ead">Within <gi>maintenanceEvent</gi>: required, not repeatable</p>
-        <p type="ead">Within <gi>narrativeEvent</gi>: optional, not repeatable</p>
-        <p type="eaf">Required, not repeatable</p>
+      <p type="eac">Within <gi>maintenanceEvent</gi>: required, not repeatable</p>
+      <p type="eac">Within <gi>narrativeEvent</gi>: optional, repeatable</p>
+      <p type="ead">Within <gi>agents</gi>: required, repeatable</p>
+      <p type="ead">Within <gi>findAidDesc</gi> and <gi>narrativeEvent</gi>: optional, repeatable</p>
+      <p type="ead">Within <gi>maintenanceEvent</gi>: required, not repeatable</p>
+      <p type="eaf">Required, not repeatable</p>
     </div>
     <div type="examples">
   </div>

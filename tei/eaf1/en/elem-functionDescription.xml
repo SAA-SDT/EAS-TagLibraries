@@ -45,11 +45,12 @@
 		</p>
 	</div>
 	<div type="description">
-		<p><gi>functionDescription</gi> provides narrative description of the purpose of the function.
-This element is distinct from <gi>functionHistory</gi>, which is intended to record the administrative history of the function such as information on how the function was performed, associated roles, and how it changed over time.
-</p>
+		<p><gi>functionDescription</gi> provides a narrative description of the purpose of the function.</p>
 		<p>Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
 		
+	</div>
+	<div type="seealso">
+		<p>This element <gi>functionDescription</gi> is distinct from <gi>functionHistory</gi>, which is intended to record the administrative history of the function such as information on how the function was performed, associated roles, and how it changed over time.</p>
 	</div>
 	<div type="availability">
 		<p>Mandatory, Not Repeatable</p>

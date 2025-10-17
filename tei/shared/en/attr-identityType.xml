@@ -11,7 +11,7 @@
                      processing when multiple identities are described in the same instance.</p>
                </div>
                <div type="description">
-                  <p type="eac">The <att>identityType</att> may occur on <gi>identity</gi>. Though optional, it is recommended that it be used when multiple identities are described in the same EAS instance using <gi>multipleIdentities</gi>. It will enable processors to distinguish between the description of a person and one or more personae.</p>
+                  <p type="eac">The <att>identityType</att> may occur on <gi>identity</gi>. Though optional, it is recommended that it be used when multiple identities are described in the same EAS instance using <gi>multipleIdentities</gi>, for example when describing pseudonyms. It will enable processors to distinguish between the description of a person and one or more personae.</p>
                  <p type="eaf">The <att>identityType</att> may occur on <gi>identity</gi>.</p>
                  <p>Use the attribute <att>identityTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>identityType</att>.</p>
                </div>

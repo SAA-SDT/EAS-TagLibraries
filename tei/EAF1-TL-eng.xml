@@ -88,7 +88,8 @@
                <item> for the text
             <note n="number"> for creating footnotes
             -->
-				<div xml:id="front-example">
+				<!-- front-example -->
+				<!--<div xml:id="front-example">
 					<head>Title</head>
 					<p>Text</p>
 					<egXML xmlns="http://www.tei-c.org/ns/Examples"/>
@@ -96,7 +97,7 @@
 						<item>Item 1</item>
 						<item>Item 2</item>
 					</list>
-				</div>
+				</div>-->
 				<div xml:id="Preface">
 					<head>Preface</head>
 					<p>With a new start in 2022, a subgroup of TS-EAS has been exploring an XML
@@ -122,7 +123,7 @@
 						integration with existing practices and systems.</p>
 					<p>This is the resulting XML standard of the work that was carried out. The EAF
 						XML standard described here is one of the parts of the EAS standards.
-						Standards are maintained by the Technical Subcommittee on Encoded Archival
+						EAS standards are maintained by the Technical Subcommittee on Encoded Archival
 						Standards, a group housed and supported by the Society of American
 						Archivists (SAA) and overseen by the SAA Standards Committee.</p>
 					<p>The final creation of EAC-F was done by members of the TS-EAS Functions
@@ -134,14 +135,13 @@
 					<p>The schema is designed to follow the TS-EAS design principles <ref
 							target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/wiki/Design-Principles"
 							>TS-EAS Design Principles</ref>], which prioritize simplicity and
-						connect community needs with the first principle. The goal is to create a
+						connect community needs with the first principle. The goal is a
 						schema that can be customized to meet local requirements without sacrificing
 						interoperability. The schema is designed to be compatible with linked open
 						data principles and responsive to related standards and changing
 						technologies. This is accomplished by reusing data models from existing
-						schemas such as EAC-CPF and EAD, and ensuring compatibility with external,
-						widely-used ontologies and metadata models such as the newly-released
-						Records in Contexts content model (RiC). The Encoded Archival Functions XML
+						schemas maintained by TS-EAS such as EAC-CPF and EAD, and ensuring compatibility with external,
+						widely-used ontologies and metadata models such as the Records in Contexts content model (RiC). The Encoded Archival Functions XML
 						schema (henceforth referred to as EAF) has been deliberately designed to
 						offer various options for linking Function descriptions with external
 						entities and provide a bridge between XML and graph data by including a
@@ -274,7 +274,7 @@
 						create these examples manually. The team has also looked at software for
 						creating archival description. Most of them only had a description field for
 						giving a textual description of functions and activities rather than
-						structured metadata fields for different elements. AtoM, which has a
+						structured metadata fields for different elements. <ref target="https://www.accesstomemory.org/en/">AtoM</ref>  (Access to Memory), which has a
 						ISDF-based form to create this type of information as described earlier in
 						the text, was the exception.</p>
 				</div>
@@ -287,7 +287,7 @@
 						for this work was to support multiple options for describing and relating
 						functions’ entities depending upon local use cases and needs. It is also
 						important that a new EAS standard follow the decided and guiding design
-						principles created by TS-EAS and to be used for Encoded Archival Description
+						principles created by TS-EAS and used for Encoded Archival Description
 						(EAD) and Encoded Archival Context–Corporate Bodies, Persons and Families
 						(EAC-CPF). </p>
 					<p>The central aim during this phase was to create a proposal in the form of a
@@ -312,7 +312,7 @@
 						These experiments revealed that even within the ISDF standard and the
 						examples it provides, there was a lack of a unified understanding of the
 						concept of function and an equable application of the standard.</p>
-					<p>To ensure that the new encoding standard supports the variety of use cases we identified, we have developed an XML standard that creates separate ISDF records for each function or activity. The main body of description for each function includes elements such as  identity, dates, events, history, and legislation. This main set of elements is related with other function(s), activity(ies), record(s), and agent(s) descriptions through the use of the relations element. These relationships described in each relation element mirror the relation elements in EAD and EAC-CPF and are declared as sub-joins within the same record. This option allows a series of interrelated records that provide a high level of granularity and flexibility to be developed.</p>
+					<p>To ensure that the new encoding standard supports the variety of use cases we identified, we have developed an XML standard that creates separate ISDF records for each function or activity. The main body of description for each function includes elements such as  identity, dates, events, history, and legislation. This main set of elements is related with other function(s), activity(ies), record(s), and agent(s) descriptions through the use of the relation element. These relationships described in each relation element mirror the relation elements in EAD and EAC-CPF and are declared as sub-joins within the same record. This option allows a series of interrelated records that provide a high level of granularity and flexibility to be developed.</p>
 					<p>Describing functions and activities will be new for some archival communities of practice and we hope that an XML-friendly version of this standard will encourage description of functions and activities and provide a mechanism to easily exchange the information in a format that can be used worldwide.</p>
 				</div>
 				<div xml:id="structure">
@@ -343,7 +343,7 @@
 				<div xml:id="easrelations">
 					<head>RELATING FUNCTIONS TO CORPORATE BODIES, ARCHIVAL MATERIALS AND OTHER RESOURCES</head>
 					<p>ISDF provides indications for the relations to the other entities but these are not included as an area in the document of the function’s description but applied as additional linkage. Relating a function document to another type of entity such as archival records, corporate bodies records, or other resources requires the documentation of identifier and authorized form(s) of name/title of related resource, and information of the nature and the dates of the relationship.</p>
-					<p>In order to relate a function to other entities (i.e., agents or records), there is a reuse of the relations element established in the EAS standards as seen in both the EAD and EAC-CPF standards to relate to other entities.  This approach is specifically designed to enable implementers to  incorporate external vocabularies and ontologies (such as RiC) to describe these relationships.</p>
+					<p>In order to relate a function to other entities (i.e., agents or records), there is a reuse of the relation element established in the EAS standards as seen in both the EAD and EAC-CPF standards to relate to other entities.  This approach is specifically designed to enable implementers to  incorporate external vocabularies and ontologies (such as RiC) to describe these relationships.</p>
 				</div>
 				<div xml:id="explanation">
 					<head>The XML standard design principles explained</head>
@@ -351,8 +351,7 @@
 				</div>
 				<div xml:id="conventions">
 					<head>Tag Library Conventions</head>
-					<p>The EAC-CPF Elements section of the Tag Library contains descriptions of 91
-						elements, arranged alphabetically by element name.</p>
+					<p>The EAC-F Elements section of the Tag Library contains descriptions of the elements, arranged alphabetically by element name.</p>
 					<!--p>Entries in the Tag Library that have been updated in the latest revision will be
                   marked with "(revised in [revision number])". Updates that predate the most recent
                   revision will not be marked in the text.</p-->
@@ -395,7 +394,7 @@
 						<item>Identifies all attributes that can be associated with an element. Attributes
 							are represented in camelCase letters in XML coding. The Tag Library uses the
 							convention of preceding an attribute name with an @ symbol (e.g.,
-							<att>localType</att>), following XPath syntax. See the EAC-CPF Attributes
+							<att>localType</att>), following XPath syntax. See the EAC-F Attributes
 							section of the tag library for definitions and additional information.</item>
 						<label>Description and Usage:</label>
 						<item>This section begins with one or more paragraphs that provide a more thorough
@@ -424,7 +423,7 @@
 							elements, indicating that other elements or text have been omitted. Some
 							elements have multiple examples: one may show very dense markup with numerous
 							attributes while another may illustrate a minimalist approach to the markup.
-							Either approach is valid in EAC-CPF, and it is up to the instance creator to
+							Either approach is valid in EAC-F, and it is up to the instance creator to
 							determine the optimal level of markup based on their specific purposes,
 							functional requirements, resources, or consortial guidelines.</item>
 					</list>
@@ -488,8 +487,6 @@
 				<xi:include href="shared/en/elem-source.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-sources.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-span.xml" parse="xml"/>
-				<!--<xi:include href="eaf1/en/elem-subfunction.xml" parse="xml"/>-->
-				<!--<xi:include href="eaf1/en/elem-subfunctionDescriptions.xml" parse="xml"/>-->
 				<xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
 				<xi:include href="shared/en/elem-useDates.xml" parse="xml"/>
 			</div>
@@ -509,6 +506,7 @@
          	<xi:include href="shared/en/attr-detailLevelEncoding.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-era.xml" parse="xml"/>
 		 		  <xi:include href="eaf1/en/attr-functionStatus.xml" parse="xml"/>
+		  	<xi:include href="eaf1/en/attr-functionStatusEncoding.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-href.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-id.xml" parse="xml"/>
 					<xi:include href="shared/en/attr-identityType.xml" parse="xml"/>
@@ -561,10 +559,11 @@
                @type is always appendix
                @xml:id is a short name of the appendix
          -->
-			<div type="appendix" xml:id="appendix1">
+<!--      Placeholder for possible appendix	-->
+			<!--<div type="appendix" xml:id="appendix1">
 				<head>Title</head>
 				<p>Contents of the appendix; this can also include lists</p>
-			</div>
+			</div>-->
 		</back>
 	</text>
 </TEI>

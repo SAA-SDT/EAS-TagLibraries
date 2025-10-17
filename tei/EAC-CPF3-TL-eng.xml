@@ -86,30 +86,16 @@
             </div>
             <div xml:id="release">
                <head>Release and Revision Notes</head>
-               <p>This is the release of the Tag Library for EAC-CPF 2.0. This major release includes changes and updates in the schema undertaken by the SAA <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas">Technical Subcommittee on Encoded Archival Standards</ref> (TS EAS) for the second major revision of the standard EAC-CPF. It supersedes the standard version EAC-CPF 2010 edition 2018.</p>
-               <p>The release is reflecting comments received by the international community of professionals between 2018 and 2021.</p>
+               <p>This is the release of the Tag Library for EAC-CPF 3.0. This major release includes changes and updates in the schema undertaken by the SAA <ref target="https://www2.archivists.org/groups/technical-subcommittee-on-encoded-archival-standards-ts-eas">Technical Subcommittee on Encoded Archival Standards</ref> (TS EAS) for the third major revision of the standard EAC-CPF. It supersedes the standard version EAC-CPF 2.0.1 (2024).</p>
+               <p>The release reflects the commitment to align all EAS where possible and practica.</p>
                <p>The EAC-CPF Tag Library is a living document. As such, it will continue to be developed as users suggest areas in need of clarification or expansion. The TS-EAS still encourages implementers to provide any queries, comments, and suggestions regarding the tag library and its content. In addition, the contribution of examples is highly encouraged. Questions, comments or examples may be directed to the TS-EAS (ts-eas[at]archivists.org). The underlying encoding of the Tag Library is based on TEI P5 and is designed to facilitate incorporating documentation into the schema to provide guidance in XML editors. While the initial release of the Tag Library is in English, the underlying encoding is designed to facilitate providing the Tag Library in additional languages at later dates.</p>
-               <p>The latest version of the EAC-CPF schema and tag library was adopted in 2010 and updated in late 2018. This version is called EAC-CPF 2010 edition 2018. The process for a major revision started in 2017, following the 2015 merger of the Technical Subcommittees on EAD and EAC-CPF into the Technical Subcommittee on Encoded Archival Standards (TS-EAS). This major revision aims to modernise the schema in terms of:
-                  <list type="simple">
-                     <item>- simplifying where possible,</item>
-                     <item>- alignment with EAD where useful,</item>
-                     <item>- implementing features and solutions upon users’ request,</item>
-                     <item>- clearing up unused components.</item></list></p>
-               <p>All elements and attributes in EAC-CPF 2010 were evaluated. Bugs and slight changes were made in a minor update of the Schema in 2018. The present version, EAC-CPF 2.0, is the result of a major overhaul of the standard and a reconciliation with EAD.</p> 
-               <p>Following ISAAR(CPF), the established structure of control area, identity area, description area, and relations is still available, as is the idea of encoding multiple identities in one EAC-CPF instance.</p>
-               <p>The user communities of EAD and EAC-CPF overlap; therefore, the alignment of both schemas, where possible, shall ease the standards’ maintenance, usage, teaching, and learning. Elements and attributes used in both standards are harmonized by name, description and technical definition. </p>
-               <p>With the goal of simplifying the schema and aligning it with EAD, some encoding concepts were modified:linking and referencing, formatting, date encoding, language encoding, transliteration, control area, identity area, description area, and relations, cf <ref target="https://eac.staatsbibliothek-berlin.de/schema-revision-2021/revision-notes/">Revision notes</ref>.</p>
-               <p>Working in parallel with the ICA Experts Group on Archival Description (ICA EGAD), who is working on a 2nd draft of Records in Contexts (RiC) which is being designed as the next comprehensive description standard for archives, EAC-CPF 2.0 tries to include the ideas of RiC-CM where feasible, see also <ref target="https://eac.staatsbibliothek-berlin.de/related-standards/">TS EAS statement on related standards</ref>.</p>
-               <p>Widely discussed was the question of spelling since the related standard, EAD, uses lower-case for element and attribute names. For easier reading and teaching it was agreed to keep the camel case spelling for element and attribute names and also for fixed values.</p>
-               
+               <p>All elements and attributes in EAC-CPF 2.0.1 were evaluated with particular attention to elements and attributes shared across EAS.</p> 
+               <p>Following ISAAR(CPF), the established structure of control area, identity area, description area, and relations is still available, as is the availability of encoding multiple identities in one EAC-CPF instance.</p>
+               <p>Working in parallel with the ICA Experts Group on Archival Description (ICA EGAD), EAC-CPF 3.0 reflects the Records on Contexts - Conceptial Model (RiC-CM) where feasible.</p>
             </div>
             <div xml:id="conventions">
                <head>Tag Library Conventions</head>
-               <p>The EAC-CPF Elements section of the Tag Library contains descriptions of 91
-                  elements, arranged alphabetically by element name.</p>
-               <!--p>Entries in the Tag Library that have been updated in the latest revision will be
-                  marked with "(revised in [revision number])". Updates that predate the most recent
-                  revision will not be marked in the text.</p-->
+               <p>The EAC-CPF Elements section of the Tag Library contains descriptions of the elements, arranged alphabetically by element name.</p>
                <list type="gloss">
                   <label>Tag Name: </label>
                   <item>Short, mnemonic form of the element name that is used in the
@@ -168,7 +154,7 @@
                   <item>Indicates, within the context of its parent(s), whether the element is
                      required or optional, and whether or not it is repeatable. </item>
                   <label>Examples:</label>
-                  <item>Element and attribute descriptions include a tagged example to indicate how
+                  <item>Element and attribute descriptions link to an example to indicate how
                      attributes and elements can be used together. Many of the examples are taken
                      from real authory records; others have been specially constructed for the Tag
                      Library. The examples illustrate any required sequences of elements, as in the

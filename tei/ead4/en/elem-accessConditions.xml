@@ -7,7 +7,7 @@
         <p>Access Conditions</p>
     </div>
     <div type="summary">
-        <p>An element for information about conditions that affect the availability of the materials being described.</p>
+        <p>An element for information about conditions that affect the availability and accessibility of the materials being described.</p>
     </div>
     <div type="mayContain">
         <p>
@@ -59,7 +59,7 @@
         </p>
     </div>
     <div type="description">
-        <p>Record in <gi>accessConditions</gi> information about the availability of the described materials, whether due to the nature of the information in the materials being described, the physical condition of the materials, or the location of the materials. Examples include restrictions imposed by the donor, legal statute, repository, or other agency, as well as the need to make an appointment with repository staff. May also indicate that the materials are not restricted. Use the sub-element <gi>dateRange</gi> to provide information about the time span during which or until when these access conditions apply.</p>
+        <p>Record in <gi>accessConditions</gi> information about the availability and accessibility of the described materials, whether due to the nature of the information in the materials being described, the physical condition of the materials, or the location of the materials. Examples include restrictions imposed by the donor, legal statute, repository, or other agency, as well as the need to make an appointment with repository staff. May also indicate that the materials are not restricted or that specific measures have been or need to be taken for the accessibility of the materials. Use the sub-element <gi>dateRange</gi> to provide information about the time span during which or until when these access conditions apply.</p>
         <p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>accessConditions</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
         <p>The prescribed order for all child elements is:
             <list type="simple">

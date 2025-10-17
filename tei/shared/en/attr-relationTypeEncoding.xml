@@ -7,7 +7,7 @@
         <p>Relation Type Encoding</p>
     </div>
     <div type="summary">
-        <p>Specifies the authoritative source or rules for values used to identify the type of relation between the entity being described in the EAS instance and the related entity.</p>
+        <p>Specifies the authoritative source or rules for values used to identify the type of relation between between the related entity and the entity being described in the EAS instance.</p>
     </div>
     <div type="description">
         <p><att>relationTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>relationType</att> within <gi>relation</gi>. If the value "EASList" is selected, <att>relationType</att> will be expected with the values "...". If the value "otherRelationTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>

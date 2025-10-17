@@ -66,7 +66,7 @@
          more forms of a name, for example official and non-official forms of the name in different
          languages and/or scripts.</p>
         <p type="eaf">Within <gi>identity</gi>, the element <gi>nameEntry</gi> is used to record a name by which
-         thefunction described in the EAC-F instance is known.</p>
+         the function described in the EAC-F instance is known.</p>
         <p>When <gi>nameEntry</gi> occurs within <gi>nameEntrySet</gi> it is used to record two or
          more forms of a name, for example official and non-official forms of the name in different
          languages and/or scripts.</p>

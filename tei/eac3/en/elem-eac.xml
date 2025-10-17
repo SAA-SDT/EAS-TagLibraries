@@ -44,18 +44,6 @@
       <p>Required, not repeatable</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng"><![CDATA[<eac audience="external">
-  	<control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="extended" languageEncoding="ietf-bcp-47" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </control>
-  	<cpfDescription> [...] </cpfDescription>
-</eac>]]>
-      </egXML>
-      <egXML xml:lang="eng"><![CDATA[<eac>
-  	<control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="basic" languageEncoding="iso639-2b" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </control>
-  	<multipleIdentities>
-   	   <cpfDescription> [...] </cpfDescription>
-   	   <cpfDescription> [...] </cpfDescription>
-  	</multipleIdentities>
-</eac>]]>
-      </egXML>
+     <p>See <gi>eac</gi> encoding</p>
    </div>
 </div>

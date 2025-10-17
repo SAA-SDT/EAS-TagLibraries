@@ -7,7 +7,7 @@
         <p>Physical Facet</p>
     </div>
     <div type="summary">
-        <p>A child element of <gi>physicalDescription</gi> that provides more detailed information about the physical nature of or techniques and methods of creation of a specific instantiation of the material described in terms that are often taken from a controlled vocabulary list.</p>
+        <p>A child element of <gi>physicalDescription</gi> that provides more detailed information about the physical nature or techniques and methods of creation of a specific instantiation of the material described in terms that are often taken from a controlled vocabulary list.</p>
     </div>
     <div type="mayContain">
         <p>

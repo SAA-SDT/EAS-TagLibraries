@@ -16,7 +16,7 @@
       <p type="ead">The optional <att>href</att> attribute takes the form of a Uniform Resource Identifier
          (URI). Available in <gi>contactLine</gi>, <gi>findAidDesc</gi>, <gi>reference</gi>, and <gi>source</gi>.</p>
       <p type="eaf">The optional <att>href</att> attribute takes the form of a Uniform Resource Identifier
-         (URI). Available in <gi>contactLine</gi>, <gi>reference</gi>, and <gi>source</gi>.</p>
+         (URI). Available in <gi>reference</gi>, and <gi>source</gi>.</p>
       <p>Being of type "anyURI", <att>href</att> is meant to point to any dereferencable resource. The term resource is used in a general sense and includes, but is not limited to, electronic documents, images, services (e.g. an HTTP-to-SMS gateway), collections of other resources, etc. A resource is not necessarily accessible via the Internet, i.e. not every URI is a URL, and abstract concepts can be resources too, such as the operators and operands of a mathematical equation or numeric values (e.g., zero, one, and infinity). While the use of complete URIs is recommended, it is also possible to use relative references in <att>href</att>, e.g. only consisting of a string of numbers.</p>
    </div>
    <div type="datatype">

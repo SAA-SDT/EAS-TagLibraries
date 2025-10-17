@@ -18,7 +18,7 @@
                 <label>contact</label>
                 <item>0..n</item>
                 <label>date or dateRange or dateSet</label>
-                <item>0..n</item>
+                <item>0..1</item>
                 <label>descriptiveNote</label>
                 <item>0..1</item>
                 <label>geographicCoordinates</label>

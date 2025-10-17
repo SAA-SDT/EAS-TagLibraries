@@ -56,7 +56,7 @@
     <div type="description">
         <p>The <gi>abstract</gi> is a brief synopsis of the information in the narrative element that it is used with. Its purpose is to help readers quickly identify the most important aspects in each context. The content within this element may also be harvested by other systems to provide explanatory context when appearing e.g. in a set of search results.</p>
         <p>
-            <gi>abstract</gi> may include one or more <gi>reference</gi> elements to point to external resources that provide additional descriptive data. It may furthermore include one or more <gi>referringString</gi> elements to emphasize entities names as part of the descriptive texts and to point to external vocabularies for more information about these, where applicable.</p>
+            <gi>abstract</gi> may include one or more <gi>reference</gi> elements to point to external resources that provide additional descriptive data. It may furthermore include one or more <gi>referringString</gi> elements to emphasize entities' names as part of the descriptive texts and to point to external vocabularies for more information about these, where applicable.</p>
     </div>
     <div type="availability">
         <p>Optional, not repeatable</p>

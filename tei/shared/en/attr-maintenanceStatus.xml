@@ -15,8 +15,5 @@
                  <p>Use the attribute <att>maintenanceStatusEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>maintenanceStatus</att>.</p>
                </div>
                <div type="datatype">
-                    <p>token</p>
-                </div>
-               <div type="examples">
                </div>
             </div>

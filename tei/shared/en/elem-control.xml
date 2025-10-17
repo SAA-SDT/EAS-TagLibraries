@@ -181,6 +181,8 @@
                         <item>Optional</item>
                         <label>detailLevelEncoding</label>
                         <item>Optional (values limited to: EASList, otherDetailLevelEncoding)</item>
+                         <label>functionStatusEncoding</label>
+                         <item>Optional (values limited to: EASList, otherFunctionStatusEncoding)</item>
                         <label>id</label>
                         <item>Optional</item>
                         <label>identityTypeEncoding</label>
