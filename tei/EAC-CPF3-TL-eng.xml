@@ -490,6 +490,7 @@
         </body>
         <back>
             <div type="appendix" xml:id="appendix1">
+			<div type="examples">
                 <div type="exampleText" subtype="eac">
                     <egXML xml:lang="eng"><![CDATA[<eac xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://archivists.org/ns/eac/v3 https://github.com/SAA-SDT/eas-schemas/releases/download/v0.3.0-alpha/eac.xsd" xmlns="https://archivists.org/ns/eac/v3">
 	<control addressLineTypeEncoding="EASList" agentTypeEncoding="EASList" audienceEncoding="EASList" contactLineTypeEncoding="EASList" countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" identityTypeEncoding="EASList" languageEncoding="iso639-2b" maintenanceStatus="revised" maintenanceEventTypeEncoding="EASList" maintenanceStatusEncoding="EASList" placeTypeEncoding="EASList" publicationStatus="published" publicationStatusEncoding="EASList" referredEntityTypeEncoding="EASList" relationTypeEncoding="EASList" repositoryEncoding="iso15511" scriptEncoding="iso15924" scriptOfElement="Latn" targetTypeEncoding="EASList" statusEncoding="EASList">
@@ -673,7 +674,7 @@
 		<maintenanceEvent maintenanceEventType="revised">
 			<agent agentType="machine">
 			<label>
-			CPF merge program
+					CPF merge program
 			</label>
 			</agent>
 			<eventDateTime standardDateTime="2015-09-18">
@@ -902,21 +903,21 @@
 		</place>
 	</places>
 	<biogHist>
-		<p>
-			Biographical information about the person being described in the EAC-CPF instance.
-		</p>
+		<abstact>
+			Brief summary of biographical information about the person being described in the EAC-CPF instance.
+		</abstract>
 		<narrativeEvent>
-			<date standardDate="1850?" certainty="uncertain">c.1850</date>
+			<date standardDate="1850?" certainty="uncertain" calendar="gregorian" era="ce">c.1850</date>
 			<placeName>London, England</placeName>
 			<eventDescription>Born in London circa 1850.</eventDescription>
 		</narrativeEvent>
 		<narrativeEvent>
-			<date standardDate="1873">1873</date>
+			<date notBefore="1873">1873</date>
 			<placeName>Edinburgh, Scotland</placeName>
 			<eventDescription>Completed medical degree at the University of Edinburgh.</eventDescription>
 		</narrativeEvent>
 		<narrativeEvent>
-			<date standardDate="1917/1921">until 1921</date>
+			<date notAfter="1921">until 1921</date>
 			<placeName>York, England</placeName>
 			<eventDescription>Practiced medicine in York, England.</eventDescription>
 		</narrativeEvent>
@@ -1056,6 +1057,7 @@
 </alternativeSet>]]>
                     </egXML>
                 </div>
+				</div>
             </div>
         </back>
     </text>

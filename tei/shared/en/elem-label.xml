@@ -85,5 +85,7 @@
         <p>Required, repeatable</p>
     </div>
     <div type="examples">
+		<p type="eac">See <gi>description</gi> encoding</p>
+		<p>See <gi>relation</gi> encoding</p>
 	</div>
 </div>

@@ -104,5 +104,6 @@
       <p type="eaf">Required, not repeatable</p>
     </div>
     <div type="examples">
+		<p>See <gi>control</gi> encoding</p>
   </div>
 </div>

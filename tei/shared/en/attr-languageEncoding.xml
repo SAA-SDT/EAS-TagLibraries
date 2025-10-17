@@ -21,5 +21,6 @@
                  <p>iso639-1, iso639-2, iso639-2b, iso639-2t, iso639-3, iso639-5, ietf-bcp-47, otherLanguageEncoding</p> 
                 </div>
                <div type="examples">
+				<p>See <gi>control</gi> encoding</p>
                </div>
             </div>

@@ -62,5 +62,6 @@
         <p type="ead">Within <gi>languageSet</gi>: required, only repeatable when encoding one script with several languages</p>
     </div>
     <div type="examples">
+		<p type="eac">See <gi>description</gi> encoding</p>
                </div>
 </div>

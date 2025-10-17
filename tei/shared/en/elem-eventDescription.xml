@@ -61,5 +61,7 @@
         <p>Optional, repeatable</p>
     </div>
     <div type="examples">
+		<p>See <gi>control</gi> encoding</p>
+		<p type="eac">See <gi>description</gi> encoding</p>
                </div>
 </div>

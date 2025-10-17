@@ -56,5 +56,6 @@
         <p>Use <gi>agencyCode</gi> to record a code representing the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.</p>
     </div>
     <div type="examples">
+		<p>See <gi>control</gi> encoding</p>
                </div>
 </div>

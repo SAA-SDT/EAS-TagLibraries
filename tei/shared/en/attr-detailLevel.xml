@@ -13,9 +13,4 @@
                   <p>An optional attribute within <gi>control</gi>, used to provide information about the level of detail in accordance with relevant description guidelines and/or rules, e.g. "minimal" or "extended".</p>
                  <p>Use the attribute <att>detailLevelEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>detailLevel</att>.</p>
                </div>
-               <div type="datatype">
-                  <p>token</p>
-               </div>
-               <div type="examples">
-               </div>
             </div>
