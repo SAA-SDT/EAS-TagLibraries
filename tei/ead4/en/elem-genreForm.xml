@@ -69,56 +69,5 @@
 		<p>Optional, Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng">
-			<![CDATA[<c level="series">
-			<identificationData>
-			<unitTitle>Registrar General Office</unitTitle>
-			<unitDate>
-			<dateRange>
-			<fromDate standardDate="1837">1837</fromDate>
-			<toDate standardDate="1875">1875</toDate>
-		</dateRange>
-		</unitDate>
-			<genreForm valueURI="http://vocab.getty.edu/page/aat/300027401" vocabularySource="AAT">Birth registers</genreForm>
-			<genreForm valueURI="http://vocab.getty.edu/page/aat/300027976" vocabularySource="AAT">Baptismal registers</genreForm>
-			<genreForm valueURI="http://vocab.getty.edu/page/aat/300027422" vocabularySource="AAT">Marriage registers</genreForm>
-			<genreForm valueURI="http://vocab.getty.edu/page/aat/300027405" vocabularySource="AAT">Death registers</genreForm>
-			<genreForm valueURI="http://vocab.getty.edu/page/aat/300027978" vocabularySource="AAT">Burial registers</genreForm>
-		</identificationData>
-		</c>]]>
-		</egXML>
-		<egXML xml:lang="eng">
-			<![CDATA[<c level="series">
-			<identificationData>
-			<unitTitle>National Geographic Society - Cartographic materials</unitTitle>
-			<unitDate>
-			<dateRange>
-			<fromDate standardDate="1900">1900</fromDate>
-			<toDate standardDate="1910">1910</toDate>
-		</dateRange>
-		</unitDate>
-			<genreForm vocabularySource="LCGFT">Aerial photographs</genreForm>
-			<genreForm vocabularySource="LCGFT">Astronomical models</genreForm>
-			<genreForm vocabularySource="LCGFT">Globes</genreForm>
-			<genreForm vocabularySource="LCGFT">Maps</genreForm>
-			<genreForm vocabularySource="LCGFT">Aerial photographs</genreForm>
-			<genreForm vocabularySource="LCGFT">Relief models</genreForm>
-		</identificationData>
-		</c>]]>
-		</egXML>
-		<egXML xml:lang="eng">
-			<![CDATA[<c level="series">
-			<identificationData>
-			<unitTitle>Series of maps and plans</unitTitle>
-			<unitDate>
-			<dateRange>
-			<fromDate standardDate="1895">1895</fromDate>
-			<toDate standardDate="1932">1932</toDate>
-		</dateRange>
-		</unitDate>
-			<genreForm valueURI="http://vocab.getty.edu/page/aat/300034787" vocabularySource="AAT">Architectural drawings</genreForm>
-		</identificationData>
-		</c>]]>
-		</egXML>
 	</div>
 </div>

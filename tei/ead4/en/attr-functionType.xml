@@ -17,18 +17,5 @@
 		<p>token</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<functions>
-			<function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137609" functionType="function">
-			<label>Legislating</label>
-		</function>
-			<function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300138095" functionType="subfunction">
-			<label>Law enforcing</label>
-		</function>
-			<function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137796" functionType="subfunction">
-			<label>Convicting</label>
-		</function>
-		</functions>]]>
-		</egXML>
 	</div>
 </div>

@@ -66,37 +66,5 @@
 		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<otherDescriptiveInfo>
-			<!-- Note: the following encoding is based on using the NVDL schema for EAD 4.0, which has the XHTML schema integrated already; the example validates in Oxygen XML Editor 20.1. -->
-			<formattingExtension>
-			<xhtml:div>
-			<xhtml:h3>Selected list of correspondents</xhtml:h3>
-			<xhtml:p>All correspondence in the collection is arranged chronologically. Following is a list of notable correspondents, with dates.</xhtml:p>
-			<xhtml:ul>
-			<xhtml:li>Adams, Samuel
-			<xhtml:ul>
-			<xhtml:li>1870 Mar 3</xhtml:li>
-			<xhtml:li>1871 Jan 15</xhtml:li>
-		</xhtml:ul>
-		</xhtml:li>
-			<xhtml:li>Barlow, Christine
-			<xhtml:ul>
-			<xhtml:li>1872 Feb 15</xhtml:li>
-			<xhtml:li>1872 Nov 24</xhtml:li>
-		</xhtml:ul>
-			</xhtml:li>
-			[...]
-		</xhtml:ul>
-		</xhtml:div>
-		</formattingExtension>
-		</otherDescriptiveInfo>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<!-- The following example has been adapted from the EADiva Tag Libray by Ruth Kitchin Tillman, https://eadiva.com/odd/ -->
-			<otherDescriptiveInfo>
-			<p>There is no recorded notetaker on most minutes. Styles vary from brief bullet points to longform notes.</p>
-		</otherDescriptiveInfo>]]>
-		</egXML>
 	</div>
 </div>

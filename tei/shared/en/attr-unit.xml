@@ -16,6 +16,5 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<citedRange unit="page">1</citedRange>]]></egXML>
                </div>
             </div>

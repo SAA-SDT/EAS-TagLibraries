@@ -71,31 +71,5 @@
 		<p>Optional, repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<formsAvailable>
-			<formAvailable valueURI="https://collections.library.yale.edu/catalog/2008313" coverage="whole" formAvailableType="digitalDerived">
-			<label>The Pippa and Porthos</label>
-			<formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044151/full/full/0/default.jpg">The Pippa and Porthos (cover)</formAvailableId>
-			<formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044153/full/full/0/default.jpg">The Pippa and Porthos (titlepage)</formAvailableId>
-			<formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044154/full/full/0/default.jpg">The Pippa and Porthos (p. 1)</formAvailableId>
-			[...]
-			<descriptiveNote>
-			<p>Digitized pages of Barrie’s "The Pippa and Porthos."</p>
-		</descriptiveNote>
-		</formAvailable>
-		</formsAvailable>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<formAvailable>
-			<label>Microfilm reels</label>
-			<formAvailableId>MF1993-034:1</formAvailableId>
-			<formAvailableId>MF1993-034:2</formAvailableId>
-			<formAvailableId>MF1993-034:3</formAvailableId>
-			<descriptiveNote>
-			<p>This collection has been microfilmed and is available on three reels MF1993-034:1 to MF1993-034:3.</p>
-			<p>Researchers interested in purchasing microfilm copies should contact the repository.</p>
-		</descriptiveNote>
-		</formAvailable>]]>
-		</egXML>
 	</div>
 </div>

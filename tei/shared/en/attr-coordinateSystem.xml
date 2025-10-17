@@ -18,11 +18,5 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<geographicCoordinates coordinateSystem="mgrs">
-   33UUU9029819737
-</geographicCoordinates>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<geographicCoordinates coordinateSystem="WGS84">
-   -81.1, 32.2, -81.0, 32.3
-</geographicCoordinates>]]></egXML>
                </div>
             </div>

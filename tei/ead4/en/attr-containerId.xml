@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-containerId" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
-	<head>
-		<att>containerId</att>
-	</head>
-	<div type="fullName">
-		<p>Container ID</p>
-	</div>
-	<div type="summary">
-		<p>An attribute for <gi>container</gi> that takes as its value a locally assigned identifier (e.g. barcode) for the container described. Unlike <att>id</att>, the value of <att>containerId</att> does not need to be unique within the document, and does not have to conform to the rules for the ID data type.</p>
-	</div>
-	
-	<div type="datatype">
-		<p>token</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<container containerId="33433117009781" id="aspace_3e98d60dfc5e7ef6c017b677f6616965" localType="box" localTypeDeclarationReference="containers">3</container>]]>
-		</egXML>
-	</div>
+    <head>
+        <att>containerId</att>
+    </head>
+    <div type="fullName">
+        <p>Container ID</p>
+    </div>
+    <div type="summary">
+        <p>An attribute for <gi>container</gi> that takes as its value a locally assigned identifier (e.g. barcode) for the container described. Unlike <att>id</att>, the value of <att>containerId</att> does not need to be unique within the document, and does not have to conform to the rules for the ID data type.</p>
+    </div>
+    
+    <div type="datatype">
+        <p>token</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

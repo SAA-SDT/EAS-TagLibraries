@@ -1,114 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-subjectHeadings">
-	<head>
-		<gi>subjectHeadings</gi>
-	</head>
-	<div type="fullName">
-		<p>Subject Headings</p>
-	</div>
-	<div type="summary">
-		<p>An element that binds together information about subject headings for the described materials.</p>
-	</div>
-	<div type="mayContain">
-		<p><list type="gloss">
-  <label>abstract</label>
-  <item>0..1</item>
-  <label>formattingExtension</label>
-  <item>0..1</item>
-  <label>p</label>
-  <item>0..n</item>
-  <label>subject</label>
-  <item>0..n</item>
-</list></p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>localType</label>
-				<item>Optional</item>
-				<label>localTypeDeclarationReference</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p>Use <gi>subjectHeadings</gi> to bundle topical or thematic access points that represent the contexts of the materials described.</p>
-		<p>Although <gi>subjectHeadings</gi> is often used within <gi>archDesc</gi> to provide significant access terms for the entirety of the materials described, it may be used at the component level to provide terms specific to a component if so desired.</p>
-		<p>This element helps to provide more standardization enabling an authority-controlled searching across finding aids, in particular where terms are taken from internationally or nationally controlled vocabularies such as the Library of Congress Subject Headings (LCSH), the Getty Art &amp; Architecture Thesaurus (Getty AAT), the UNESCO Thesaurus, the UK Archival Thesaurus (UKAT) or Wikidata.</p>
-	</div>
-	<div type="seealso">
-		<p>Use the dedicated elements <gi>agent</gi>, <gi>function</gi>, and <gi>place</gi> to encode information about persons, corporate bodies, families, functions, and geographical locations or features that represent the contexts of the materials described.</p> 
-	</div>
-	<div type="availability">
-		<p>Optional, repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<subjectHeadings>
-			<p>These records are indexed under the following headings in the catalog of the Minnesota Historical Society. Researchers wishing to find related materials should search the catalog under these index terms.</p>
-			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85048694" vocabularySource="LCSH">
-			<term>Fishery law and legislation</term>
-			<placeName>Minnesota</placeName>
-		</subject>
-			<subject valueURI="https://id.loc.gov/authorities/subjects/sh85052932" vocabularySource="LCSH">
-			<term>Game laws</term>
-			<placeName>Minnesota</placeName>
-		</subject>
-		</subjectHeadings>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<subjectHeadings>
-			<p>Use the following index to find photographs within the collection related to specific subjects.</p>
-			<subject valueURI="https://id.loc.gov/authorities/subjects/sh85016829" vocabularySource="LCSH" target="photo-1234-001 photo-1234-010 photo-1234-015">
-			<term>Bridges</term>
-		</subject>
-			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85025854" vocabularySource="LCSH" target="photo-1234-002 photo-1234-003 photo-1234-004 photo-1234-019 photo-1234-020">
-			<term>Churches</term>
-		</subject>
-			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85046823" vocabularySource="LCSH" target="photo-1234-030 photo-1234-031 photo-1234-032 photo-1234-040">
-			<term>Factories</term>
-		</subject>
-			<subject valueURI="https://id.loc.gov/authorities/subjects/sh85051067" vocabularySource="LCSH" target="photo-1234-012 photo-1234-016 photo-1234-021">
-			<term>Fountains</term>
-		</subject>
-			<subject valueURI="https://id.loc.gov/authorities/subjects/sh85053101" vocabularySource="LCSH" target="photo-1234-027 photo-1234-039">
-			<term>Gardens</term>
-		</subject>
-			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85062487" vocabularySource="LCSH" target="photo-1234-005 photo-1234-011 photo-1234-029">
-			<term>Hotels</term>
-		</subject>
-			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85088723" vocabularySource="LCSH" target="photo-1234-006 photo-1234-014 photo-1234-017 photo-1234-018 photo-1234-026 photo-1234-033">
-			<term>Museums</term>
-		</subject>
-			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85118451" vocabularySource="LCSH" target="photo-1234-024 photo-1234-025">
-			<term>Schools</term>
-		</subject>
-			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85134578" vocabularySource="LCSH" target="photo-1234-013 photo-1234-035 photo-1234-038">
-			<term>Theaters</term>
-		</subject>
-			<subject valueURI="http://id.loc.gov/authorities/subjects/sh85141086" vocabularySource="LCSH" target="photo-1234-007 photo-1234-008 photo-1234-022 photo-1234-028 photo-1234-032 photo-1234-034">
-			<term>Universities and colleges</term>
-		</subject>
-		</subjectHeadings>]]>
-		</egXML>
-	</div>
+    <head>
+        <gi>subjectHeadings</gi>
+    </head>
+    <div type="fullName">
+        <p>Subject Headings</p>
+    </div>
+    <div type="summary">
+        <p>An element that binds together information about subject headings for the described materials.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>abstract</label>
+                <item>0..1</item>
+                <label>formattingExtension</label>
+                <item>0..1</item>
+                <label>p</label>
+                <item>0..n</item>
+                <label>subject</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>subjectHeadings</gi> to bundle topical or thematic access points that represent the contexts of the materials described.</p>
+        <p>Although <gi>subjectHeadings</gi> is often used within <gi>archDesc</gi> to provide significant access terms for the entirety of the materials described, it may be used at the component level to provide terms specific to a component if so desired.</p>
+        <p>This element helps to provide more standardization enabling an authority-controlled searching across finding aids, in particular where terms are taken from internationally or nationally controlled vocabularies such as the Library of Congress Subject Headings (LCSH), the Getty Art &amp; Architecture Thesaurus (Getty AAT), the UNESCO Thesaurus, the UK Archival Thesaurus (UKAT) or Wikidata.</p>
+    </div>
+    <div type="seealso">
+        <p>Use the dedicated elements <gi>agent</gi>, <gi>function</gi>, and <gi>place</gi> to encode information about persons, corporate bodies, families, functions, and geographical locations or features that represent the contexts of the materials described.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

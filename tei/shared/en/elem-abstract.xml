@@ -1,69 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-abstract">
-               <head>
-                  <gi>abstract</gi>
-               </head>
-               <div type="fullName">
-                  <p>Abstract</p>
+    <head>
+        <gi>abstract</gi>
+    </head>
+    <div type="fullName">
+        <p>Abstract</p>
+    </div>
+    <div type="summary">
+        <p>An optional element within narrative elements such as <gi>biogHist</gi> that contains a brief summary of the information contained within the narrative element as a whole.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+                <label>reference</label>
+                <item>0..n</item>
+                <label>referringString</label>
+                <item>0..n</item>
+                <label>span</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">biogHist</p>
+        <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, filePlan, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>The <gi>abstract</gi> is a brief synopsis of the information in the narrative element that it is used with. Its purpose is to help readers quickly identify the most important aspects in each context. The content within this element may also be harvested by other systems to provide explanatory context when appearing e.g. in a set of search results.</p>
+        <p>
+            <gi>abstract</gi> may include one or more <gi>reference</gi> elements to point to external resources that provide additional descriptive data. It may furthermore include one or more <gi>referringString</gi> elements to emphasize entities' names as part of the descriptive texts and to point to external vocabularies for more information about these, where applicable.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, not repeatable</p>
+    </div>
+    <div type="examples">
                </div>
-               <div type="summary">
-                  <p>An optional element within narrative elements such as <gi>biogHist</gi> that contains a brief summary of the information contained within the narrative element as a whole.</p>
-               </div>
-               <div type="mayContain">
-                  <p><list type="gloss">
-  <label>[text]</label>
-  <item/>
-  <label>reference</label>
-  <item>0..n</item>
-  <label>referringString</label>
-  <item>0..n</item>
-  <label>span</label>
-  <item>0..n</item>
-</list></p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p type="eac">biogHist</p>
-                  <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, filePlan, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p>The <gi>abstract</gi> is a brief synopsis of the information in the narrative element that it is used with. Its purpose is to help readers quickly identify the most important aspects in each context. The content within this element may also be harvested by other systems to provide explanatory context when appearing e.g. in a set of search results.</p>
-                  <p><gi>abstract</gi> may include one or more <gi>reference</gi> elements to point to external resources that provide additional descriptive data. It may furthermore include one or more <gi>referringString</gi> elements to emphasize entities' names as part of the descriptive texts and to point to external vocabularies for more information about these, where applicable.</p>
-               </div>
-               <div type="availability">
-                  <p>Optional, not repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<biogHist>
-                    <abstract>Hubert H. Humphrey was born in Wallace, South Dakota (1911). He was elected Mayor of Minneapolis in 1945 and served until 1948. In November of 1948, he was elected to the United States Senate and he also served as the Senate Democratic Whip from 1961 to 1964 and in 1968, Humphrey was the Democratic Party's candidate for President, but he was defeated by Richard M. Nixon.</abstract>
-                    <p>Hubert H. Humphrey was born in Wallace, South Dakota, on May 27, 1911. He left South Dakota to attend the University of Minnesota but returned to South Dakota to help manage his father's drug store early in the depression. He attended the Capitol College of Pharmacy in Denver, Colorado, and became a register pharmacist in 1933. On September 3, 1936, Humphrey married Muriel Fay Buck. He returned to the University of Minnesota and earned a B.A. degree in 1939. In 1940 he earned an M.A. in political science from Louisiana State University and returned to Minneapolis to teach and pursue further graduate study, he began working for the W.P.A. (Works Progress Administration). He moved on from there to a series of positions with wartime agencies. In 1943, he ran unsuccessfully for Mayor of Minneapolis and returned to teaching as a visiting professor at Macalester College in St. Paul. Between 1943 and 1945 Humphrey worked at a variety of jobs. In 1945, he was elected Mayor of Minneapolis and served until 1948. In 1948, at the Democratic National Convention, he gained national attention when he delivered a stirring speech in favor of a strong civil rights plank in the party's platform. In November of 1948, Humphrey was elected to the United States Senate. He served as the Senate Democratic Whip from 1961 to 1964.</p>
-   <p>In 1964, at the Democratic National Convention, President Lyndon B. Johnson asked the convention to select Humphrey as the Vice Presidential nominee. The ticket was elected in November in a Democratic landslide. In 1968, Humphrey was the Democratic Party's candidate for President, but he was defeated narrowly by Richard M. Nixon. After the defeat, Humphrey returned to Minnesota to teach at the University of Minnesota and Macalester College. He returned to the U.S. Senate in 1971, and he won re-election in 1976. He died January 13, 1978 of cancer.</p>
-                  </biogHist>]]>
-                  </egXML>
-               </div>
-            </div>
+</div>

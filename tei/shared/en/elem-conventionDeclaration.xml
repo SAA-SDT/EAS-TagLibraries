@@ -1,100 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-conventionDeclaration">
-               <head>
-                  <gi>conventionDeclaration</gi>
-               </head>
-               <div type="fullName">
-                  <p>Convention Declaration</p>
+    <head>
+        <gi>conventionDeclaration</gi>
+    </head>
+    <div type="fullName">
+        <p>Convention Declaration</p>
+    </div>
+    <div type="summary">
+        <p>An optional child element of <gi>control</gi>, used to declare the rules or conventions, including authorized controlled vocabularies and thesauri, applied in creating the EAS instance.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>descriptiveNote</label>
+                <item>0..1</item>
+                <label>reference</label>
+                <item>1..1</item>
+                <label>shortCode</label>
+                <item>0..1</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>control</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>conventionDeclaration</gi> is used for declaring references to any rules and conventions, including authorized controlled vocabularies or thesauri, applied in the construction of the description. The element binds together the required <gi>reference</gi> element with optional <gi>shortCode</gi> and <gi>descriptiveNote</gi> elements that identify rules or conventions applied in compiling the EAS instance.</p>
+        <p>Each additional rule or set of rules, controlled vocabulary, or standard should be contained in a separate <gi>conventionDeclaration</gi>.</p>
+        <p>
+            <gi>shortCode</gi> may be used to identify the standard or controlled vocabulary in a coded structure. Any notes relating to how these rules or conventions have been used may be given within <gi>descriptiveNote</gi>.</p>
+        <p>Use <gi>conventionDeclaration</gi> to name and refer to other authorized value lists, if you use these instead of the EAS lists or ISO standards available with the optional encoding attributes in <gi>control</gi> (e.g.  <att>countryEncoding</att>, <att>maintenanceEventTypeEncoding</att> or <att>relationTypeEncoding</att>). It is recommended that <gi>reference</gi> includes a link to these other value lists to still enable semantic interoperability.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <list type="simple">
+            <item>
+                <gi>reference</gi>
+            </item>
+            <item>
+                <gi>shortCode</gi>
+            </item>
+            <item>
+                <gi>descriptiveNote</gi>
+            </item>
+        </list>
+    </div>
+    <div type="seealso">
+        <p>Use <gi>localTypeDeclaration</gi> to indicate any local or consortial value lists that you might use with <att>localType</att> throughout the EAS instance.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
                </div>
-               <div type="summary">
-                  <p>An optional child element of <gi>control</gi>, used to declare the rules or conventions, including authorized controlled vocabularies and thesauri, applied in creating the EAS instance.</p>
-               </div>
-               <div type="mayContain">
-                  <p><list type="gloss">
-  <label>descriptiveNote</label>
-  <item>0..1</item>
-  <label>reference</label>
-  <item>1..1</item>
-  <label>shortCode</label>
-  <item>0..1</item>
-</list></p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>control</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                        <label>valueURI</label>
-                        <item>Optional</item>
-                        <label>vocabularySource</label>
-                        <item>Optional</item>
-                        <label>vocabularySourceURI</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p><gi>conventionDeclaration</gi> is used for declaring references to any rules and conventions, including authorized controlled vocabularies or thesauri, applied in the construction of the description. The element binds together the required <gi>reference</gi> element with optional <gi>shortCode</gi> and <gi>descriptiveNote</gi> elements that identify rules or conventions applied in compiling the EAS instance.</p>
-                  <p>Each additional rule or set of rules, controlled vocabulary, or standard should be contained in a separate <gi>conventionDeclaration</gi>.</p>
-                  <p><gi>shortCode</gi> may be used to identify the standard or controlled vocabulary in a coded structure. Any notes relating to how these rules or conventions have been used may be given within <gi>descriptiveNote</gi>.</p>
-                  <p>Use <gi>conventionDeclaration</gi> to name and refer to other authorized value lists, if you use these instead of the EAS lists or ISO standards available with the optional encoding attributes in <gi>control</gi> (e.g.  <att>countryEncoding</att>, <att>maintenanceEventTypeEncoding</att> or <att>relationTypeEncoding</att>). It is recommended that <gi>reference</gi> includes a link to these other value lists to still enable semantic interoperability.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>reference</gi></item>
-                     <item><gi>shortCode</gi></item>
-                     <item><gi>descriptiveNote</gi></item>
-                  </list>
-               </div>
-               <div type="seealso">
-                 <p>Use <gi>localTypeDeclaration</gi> to indicate any local or consortial value lists that you might use with <att>localType</att> throughout the EAS instance.</p>
-                  </div>
-               <div type="availability">
-                  <p>Optional, repeatable</p>
-               </div>
-               <div type="examples">
-                 <egXML xml:lang="eng"><![CDATA[<conventionDeclaration id="cd1">
-                   <reference href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033553530/"> Décret n° 2016-1689 du 8 décembre 2016 fixant le nom, la composition et le chef-lieu des circonscriptions administratives régionales - Légifrance</reference>
-                 </conventionDeclaration>
-                   <conventionDeclaration id="cd2">
-                   <reference href="https://cnig.gouv.fr/IMG/pdf/collectivites-territoriales_cnt_10-decembre-2021.pdf">Commission nationale de toponymie: Collectivités territoriales françaises</reference>
-                 </conventionDeclaration>]]></egXML>
-                 <egXML xml:lang="eng"><![CDATA[<control dateEncoding="iso8601" languageEncoding="ietf-bcp-47" repositoryEncoding="otherRepositoryEncoding" maintenanceEventTypeEncoding="EASList" agentTypeEncoding="otherAgentTypeEncoding">
-                   [...]
-                   <maintenanceAgency countryCode="EE">
-                   <agencyCode status="authorized">ErTrt-ElvRK</agencyCode>
-                   <agencyName>Elva Linnaraamatukogu</agencyName>
-                 </maintenanceAgency>
-                   <maintenanceHistory>
-                   <maintenanceEvent maintenanceEventType="created">
-                   <agent agentType="prov:SoftwareAgent">
-                   <label>teisendusskript A2B.xsl</label>
-                 </agent>
-                   <eventDateTime standardDateTime="2025-04-16"/>
-                 </maintenanceEvent>
-                 </maintenanceHistory>
-                   [...]
-                   <conventionDeclaration id="repositoryCode">
-                   <reference href="https://www.rara.ee/wp-content/uploads/koik_koodid_22.04.2025.csv"> Kataloogimiskohad</reference>
-                   <descriptiveNote>
-                   <p languageOfElement="et-EE">Kataloogimiskohad (välja andnud Eesti Rahvusraamatukogu)</p>
-                   <p languageOfElement="en-GB">Cataloguing Source Codes (issued by the National Library of Estonia)</p>
-                 </descriptiveNote>
-                 </conventionDeclaration>
-                   <conventionDeclaration id="agentType">
-                   <reference href="https://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent">PROV-DM agent types</reference>
-                 </conventionDeclaration>
-                 </control>]]>
-                 </egXML>
-               </div>
-            </div>
+</div>

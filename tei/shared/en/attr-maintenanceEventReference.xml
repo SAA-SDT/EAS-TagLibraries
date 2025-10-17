@@ -18,18 +18,5 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<maintenanceHistory>
-                    <maintenanceEvent maintenanceEventType="updated" id="me2">
-                    <agent agentType="person">
-                    <label>K. Bredenberg</label>
-                  </agent>
-                    <eventDateTime>May 2024</eventDateTime>
-                    <eventDescription>Relation added</eventDescription>
-                  </maintenanceEvent>
-                  </maintenanceHistory>
-                    [...]
-                    <relation sourceReference="source1" maintenanceEventReference="me2" targetType="corporateBody" relationType="https://www.wikidata.org/wiki/Q166118">
-                    <label valueURI="https://snaccooperative.org/ark:/99166/w63z1x39" vocabularySourceURI="https://snaccooperative.org">Princeton University</label>
-                  </relation>]]></egXML>
                </div>
             </div>

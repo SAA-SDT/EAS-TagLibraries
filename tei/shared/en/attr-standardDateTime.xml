@@ -23,11 +23,5 @@
                      dateTime is UTC.]</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceEvent maintenanceEventType="revised">
-			  <agent agentType="machine">
-			  <label>export.xsl</label>
-		  </agent>
-			  <eventDateTime standardDateTime="2024-11-27"/>
-</maintenanceEvent>]]></egXML>
                </div>
             </div>

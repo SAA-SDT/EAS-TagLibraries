@@ -13,20 +13,5 @@
 		<p>token</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<descriptionOfComponents descriptionOfComponentsType="analyticOverview">
-			<c level="series">
-			<identificationData>
-			<unitId>1-429-1</unitId>
-			<unitTitle>Forest Stand Maps by Township and Basemap</unitTitle>
-		</identificationData></c>
-			<c level="series">
-			<identificationData>
-			<unitId>RG 1-429-2</unitId>
-			<unitTitle>Forest Stand Map Composites</unitTitle>
-		</identificationData></c>
-			[...]
-			</descriptionOfComponents>]]>
-		</egXML>
 	</div>
 </div>

@@ -10,7 +10,7 @@
 		<p>Specifies whether a statement of extent or information about analog respectively digital instantiation(s) relates to the entire unit being described or only a part thereof.</p>
 	</div>
 	<div type="description">
-		<p>Use <att>coverage</att> with <gi>extent</gi> to indicate whether the statement of physical description refers to the entire unit being described (e.g. with value "whole") or only a part thereof (e.g. with value "part".</p>
+		<p>Use <att>coverage</att> with <gi>extent</gi> to indicate whether the statement of physical description refers to the entire unit being described (e.g. with value "whole") or only a part thereof (e.g. with value "part").</p>
 		<p>Use <att>coverage</att> with <gi>formAvailable</gi> to indicate whether the digital archival object or the copy or any other type of instantiation represents the entire set of records being described or a part of it.</p>
 		<p>Use the attribute <att>coverageEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>coverage</att>.</p>
 	</div>
@@ -18,19 +18,5 @@
 		<p>token</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<extent coverage="whole" extentType="spaceOccupied">
-			<quantity>3.32</quantity>
-			<unitOfMeasurement>linear feet</unitOfMeasurement>
-		</extent>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<formAvailable coverage="part" formAvailableType="analogDerived">
-			<label>Letters sent by Abraham Lincoln</label>
-			<processInfo>
-			<p>The collection includes a copy of letters sent by Abraham Lincoln, retained by Lincoln’s secretary John G. Nicolay. The originals have been reincorporated with the Lincoln Papers in 1959.</p>
-		</processInfo>
-		</formAvailable>]]>
-		</egXML>
 	</div>
 </div>

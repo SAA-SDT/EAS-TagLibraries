@@ -108,22 +108,5 @@
 		<p>Required, not repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<archDesc level="fonds" localType="inventory" localTypeDeclarationReference="EADTypes" languageOfElement="dut" scriptOfElement="Latn">
-			<identificationData>
-			<unitTitle>Nederlandsche Gist- en Spiritusfabriek en Pharmaceutische Fabrieken voorheen Brocades-Stheeman & Pharmacia, in 1967 gefuseerd tot Gist-Brocades</unitTitle>
-			<unitDate calendar="gregorian" era="ce" unitDateType="bulk">
-			<dateSet>
-			<dateRange>
-			<fromDate standardDate="1860">1860</fromDate>
-			<toDate standardDate="1967">1967</toDate>
-		</dateRange>
-			<date standardDate="1987">(1987)</date>
-		</dateSet>
-		</unitDate>
-		</identificationData>
-			[...]
-		</archdesc>]]>
-		</egXML>
 	</div>
 </div>

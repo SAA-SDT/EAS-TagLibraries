@@ -1,105 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-placeName">
-               <head>
-                  <gi>placeName</gi>
-               </head>
-               <div type="fullName">
-                  <p>Place Name</p>
+    <head>
+        <gi>placeName</gi>
+    </head>
+    <div type="fullName">
+        <p>Place Name</p>
+    </div>
+    <div type="summary">
+        <p type="eac">An optional element used to encode the name of a place or geographic feature that is of importance in the relation between the CPF entity and related named entities or in the history of the CPF entity being described.</p>
+        <p type="ead">An optional element used to encode the name of a place or geographic feature that is of importance in the relation between the materials being described and related named entities or in the history of the described materials.</p>
+        <p type="eaf">An optional element used to encode the name of a place or geographic feature that is of importance in the relation between the function described and related named entities.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">agent, demographicDescription, functionPerformed, legalStatus, localDescription, mandate, narrativeEvent, occupation, otherEntityType, relation</p>
+        <p type="eaf">agent, relation</p>
+        <p type="ead">agent, formAvailable, function, legalStatus, narrativeEvent, relation, subject</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>countryCode</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>placeName</gi> should be identified by the proper noun that commonly designates the place, natural feature, or political jurisdiction. It is recommended that place names be taken from authorized vocabularies.</p>
+        <p type="eaf">Use <gi>placeName</gi> within <gi>agent</gi> and <gi>relation</gi> to encode the name of a place or geographic feature that is of importance in the entity's relation with the function being described.</p>
+        <p type="eac">Use <gi>placeName</gi> within <gi>agent</gi>, <gi>demographicDescription</gi>, <gi>functionPerformed</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi> and <gi>relation</gi> to encode the name of a place or geographic feature that is of importance in the term's or the entity's relation with the CPF entity being described. Use <gi>placeName</gi> within <gi>narrativeEvent</gi> to encode the geographic dimension of the event.</p>
+        <p type="ead">Use <gi>placeName</gi> within <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>relation</gi> and <gi>subject</gi> to encode the name of a place or geographic feature that is of importance in the term's or the entity's relation with the records being described. Use <gi>placeName</gi> within <gi>narrativeEvent</gi> to encode the geographic dimension of the event.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use the attributes <att>valueURI</att>, <att>vocabularySource</att>, and <att>vocabularySourceURI</att> with <gi>placeName</gi> when referencing an entry of an external vocabulary, thesaurus, ontology.</p>
+    </div>
+    <div type="seealso">
+        <p type="ead">Within <gi>place</gi>, the required element <gi>label</gi> is used to capture the name of the geographic feature or location. This is to align with the other entity elements such as <gi>agent</gi>, <gi>formAvailable</gi>, or <gi>relation</gi> which also use <gi>label</gi> to name the related entity. Use <att>target</att> within <gi>placeName</gi> to link to the <att>id</att> attribute of a <gi>place</gi>, which might include more detailed information about the same place.</p>
+        <p type="eac">Within <gi>place</gi>, the required element <gi>label</gi> is used to capture the name of the geographic feature or location. This is to align with the element <gi>relation</gi> which also uses <gi>label</gi> to name the related entity. Use <att>target</att> within <gi>placeName</gi> to link to the <att>id</att> attribute of a <gi>place</gi>, which might include more detailed information about the same place.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
                </div>
-               <div type="summary">
-                 <p type="eac">An optional element used to encode the name of a place or geographic feature that is of importance in the relation between the CPF entity and related named entities or in the history of the CPF entity being described.</p>
-		 <p type="ead">An optional element used to encode the name of a place or geographic feature that is of importance in the relation between the materials being described and related named entities or in the history of the described materials.</p>
-		 <p type="eaf">An optional element used to encode the name of a place or geographic feature that is of importance in the relation between the function described and related named entities.</p>
-	       </div>
-               <div type="mayContain">
-                  <p><list type="gloss">
-  <label>[text]</label>
-  <item/>
-</list></p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p type="eac">agent, demographicDescription, functionPerformed, legalStatus, localDescription, mandate, narrativeEvent, occupation, otherEntityType, relation</p>
-                  <p type="eaf">agent, relation</p>
-                  <p type="ead">agent, formAvailable, function, legalStatus, narrativeEvent, relation, subject</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>countryCode</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                        <label>valueURI</label>
-                        <item>Optional</item>
-                        <label>vocabularySource</label>
-                        <item>Optional</item>
-                        <label>vocabularySourceURI</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p><gi>placeName</gi> should be identified by the proper noun that commonly designates the place, natural feature, or political jurisdiction. It is recommended that place names be taken from authorized vocabularies.</p>
-		  <p type="eaf">Use <gi>placeName</gi> within <gi>agent</gi> and <gi>relation</gi> to encode the name of a place or geographic feature that is of importance in the entity's relation with the function being described.</p>
-		  <p type="eac">Use <gi>placeName</gi> within <gi>agent</gi>, <gi>demographicDescription</gi>, <gi>functionPerformed</gi>, <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi> and <gi>relation</gi> to encode the name of a place or geographic feature that is of importance in the term's or the entity's relation with the CPF entity being described. Use <gi>placeName</gi> within <gi>narrativeEvent</gi> to encode the geographic dimension of the event.</p>
-		       <p type="ead">Use <gi>placeName</gi> within <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>relation</gi> and <gi>subject</gi> to encode the name of a place or geographic feature that is of importance in the term's or the entity's relation with the records being described. Use <gi>placeName</gi> within <gi>narrativeEvent</gi> to encode the geographic dimension of the event.</p>
-                  </div>
-               <div type="attributeusage"><p>Use the attributes <att>valueURI</att>, <att>vocabularySource</att>, and <att>vocabularySourceURI</att> with <gi>placeName</gi> when referencing an entry of an external vocabulary, thesaurus, ontology.</p></div>
-               <div type="seealso">
-		       <p type="ead">Within <gi>place</gi>, the required element <gi>label</gi> is used to capture the name of the geographic feature or location. This is to align with the other entity elements such as <gi>agent</gi>, <gi>formAvailable</gi>, or <gi>relation</gi> which also use <gi>label</gi> to name the related entity. Use <att>target</att> within <gi>placeName</gi> to link to the <att>id</att> attribute of a <gi>place</gi>, which might include more detailed information about the same place.</p>
-		       <p type="eac">Within <gi>place</gi>, the required element <gi>label</gi> is used to capture the name of the geographic feature or location. This is to align with the element <gi>relation</gi> which also uses <gi>label</gi> to name the related entity. Use <att>target</att> within <gi>placeName</gi> to link to the <att>id</att> attribute of a <gi>place</gi>, which might include more detailed information about the same place.</p>
-              </div>
-	<div type="availability">
-                  <p>Optional, repeatable</p>
-               </div>
-               <div type="examples">
-		       <egXML xml:lang="en" type="eac" xmlns="http://www.tei-c.org/ns/Examples">
-			       <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#FamilyRelation" targetType="person">
-			       <label>Marie Skłodowska-Curie</label>
-			       <dateRange>
-			       <fromDate>1895</fromDate>
-			       <toDate>1906</toDate>
-		       </dateRange>
-			       <placeName valueURI="https://www.geonames.org/2988507/paris.html" vocabularySource="GeoNames">Paris</placeName>
-			       <role valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadSpouse" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Esposa</role>
-		       </relation>]]>
-		     </egXML>
-                            <egXML xml:lang="en" type="eaf" xmlns="http://www.tei-c.org/ns/Examples">
-			       <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#OccupationType" targetType="person">
-                                <label>Marie Skłodowska-Curie</label>
-                                <dateRange>
-                                    <fromDate>1908</fromDate>
-                                    <toDate>1934</toDate>
-                                </dateRange>
-                                <placeName valueURI="https://www.geonames.org/2988507/paris.html" vocabularySource="GeoNames">Paris</placeName>
-                                <role valueURI="https://www.ica.org/standards/RiC/ontology#hasOrHadOccupationOfType" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Cátedra de Física</role>
-                            </relation>]]>
-		</egXML>
-                            <egXML xml:lang="en" type="ead" xmlns="http://www.tei-c.org/ns/Examples">
-			       <![CDATA[<relation relationType="https://www.ica.org/standards/RiC/ontology#CreationRelation" targetType="person">
-                                <label>Marie Skłodowska-Curie</label>
-                                <date>1903</date>
-                                <placeName valueURI="https://www.geonames.org/2988507/paris.html" vocabularySource="GeoNames">Paris</placeName>
-                                <role valueURI="https://www.ica.org/standards/RiC/ontology#isAuthorOf" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">Estudiante de doctorado</role>
-                            </relation>]]>
-		</egXML>
-               </div>
-            </div>
+</div>

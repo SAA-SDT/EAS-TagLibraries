@@ -1,142 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-findAidDesc">
-	<head>
-		<gi>findAidDesc</gi>
-	</head>
-	<div type="fullName">
-		<p>Finding Aid Description</p>
-	</div>
-	<div type="summary">
-		<p>An optional element that binds together a bibliographic description of an EAD instance. </p>
-	</div>
-	<div type="mayContain">
-		<p><list type="gloss">
-  <label>agent</label>
-  <item>0..n</item>
-  <label>citedRange</label>
-  <item>0..n</item>
-  <label>date</label>
-  <item>0..n</item>
-  <label>formattingExtension</label>
-  <item>0..n</item>
-  <label>place</label>
-  <item>0..n</item>
-  <label>title</label>
-  <item>0..n</item>
-</list></p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>ead</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-            			<label>audience</label>
-            			<item>Optional</item>
-            			<label>conventionDeclarationReference</label>
-            			<item>Optional</item>
-            			<label>href</label>			
-				<item>Optional</item>
-            			<label>id</label>
-				<item>Optional</item>
-            			<label>languageOfElement</label>
-				<item>Optional</item>
-            			<label>linkRole</label>
-				<item>Optional</item>
-            			<label>linkTitle</label>
-				<item>Optional</item>
-            			<label>maintenanceEventReference</label>
-				<item>Optional</item>
-            			<label>scriptOfElement</label>
-				<item>Optional</item>
-            			<label>sourceReference</label>
-				<item>Optional</item>
-            			<label>target</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p>Use <gi>findAidDesc</gi> to record a bibliographic description of the finding aid. This may include its author, title, subtitle, sponsor, edition, publisher, publishing series, and related notes, each within apppropriate sub-elements. </p>
-		<p>If <gi>findAidDesc</gi> is used, at least one sub-element must be included.</p>
-	</div>
-	<div type="seealso"><p>Do not confuse with <gi>control</gi>, which contains administrative information about the management of the EAD instance. </p></div>
-	<div type="availability">
-		<p>Optional, repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<findAidDesc>
-			<title>
-			<part>Register of the Emily Higby Collection</part>
-			<part>2nd ed.</part>
-		</title>
-			<date standardDate="2024-09">September 2024</date>
-		</findAidDesc>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<!-- The following example has been adapted from the EADiva Tag Libray by Ruth Kitchin Tillman, https://eadiva.com/filedesc/ -->
-			<ead>
-			<control>[...]</control>
-			<findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department/quilting-technologies-department.xml" linkTitle="Download the encoded finding aid" linkRole="text/xml">
-			<title localType="mainTitle" localTypeDeclarationReference="titles">
-			<part>Guide to Quilting Technologies Department Records, 1978-2020</part>
-			<part localType="edition" localTypeDeclarationReference="titles">2nd edition</part>
-		</title>
-			<title localType="subtitle" localTypeDeclarationReference="titles">
-			<part>A guide to the records of the Quilting Technologies Department at Piecemaking University</part>
-		</title>
-			<title localType="seriesTitle" localTypeDeclarationReference="titles">
-			<part>Piecemaking University Departmental Records, 13</part>
-		</title>
-			<agent agentType="person">
-			<label>Ruth Tillman</label>
-			<role valueURI="aut" vocabularySource="MARC Code List for Relators">Author</role>
-		</agent>
-			<agent agentType="corporateBody">
-			<label>National Alliance of Peace Quilters</label>
-			<role valueURI="spn" vocabularySource="MARC Code List for Relators">Sponsor</role>
-			<descriptiveNote>
-			<p>Funding for the initial creation of this electronic finding aid was made possible in 1992 by a generous gift of the National Alliance of Peace Quilters.</p>
-		</descriptiveNote>
-		</agent>
-			<agent agentType="corporateBody">
-			<label>Piecemaking University</label>
-			<role valueURI="pbl" vocabularySource="MARC Code List for Relators">Publisher</role>
-			<role valueURI="spn" vocabularySource="MARC Code List for Relators">Sponsor</role>
-			<descriptiveNote>
-			<p>Funding for encoding was made possible in 2008 by a Piecemaking University Digital Initiatives Grant.</p>
-			</descriptiveNote>
-		</agent>
-			<date standardDate="2020-06-08">June 8, 2020</date>
-			<place>
-			<label>Lancaster, Pennsylvania</label>
-			<address>
-			<addressLine>University Archives</addressLine>
-			<addressLine>Piecemaking University</addressLine>
-			<addressLine>Lancaster, PA 17603</addressLine>
-		</address>
-			<contact>
-			<contactLine contactLineType="phoneNumber">+1-717-555-1313</contactLine>
-			<contactLine contactLineType="email">archivist@piecemaking.edu</contactLine>
-		</contact>
-		</place>
-			<!-- Note: the following encoding is based on using the NVDL schema for EAD 4.0, which has the XHTML schema integrated already; the example validates in Oxygen XML Editor 20.1. -->
-			<formattingExtension>
-			<xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
-			<xhtml:p>Edition was updated during EAD3 encoding to conform to DACS standards.</xhtml:p>
-			<xhtml:p>To submit corrections or request clarifications, please use the <xhtml:a href="https://archives.piecemaking.edu/contact/finding-aid-feedback">University Archives' feedback form</xhtml:a>.</xhtml:p>
-		</xhtml:div>
-		</formattingExtension>
-		</findAidDesc>
-			<findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department" linkTitle="View the finding aid online" linkRole="application/xhtml+xml">
-			<date standardDate="2024-10-11">October 11, 2024</date>
-		</findAidDesc>
-			<findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department/quilting-technologies-department.pdf" linkTitle="Download the finding aid in PDF format" linkRole="application/pdf">
-			<date standardDate="2024-10-11">October 11, 2024</date>
-		</findAidDesc>
-			<archDesc>[...]</archDesc>
-		</ead>]]>
-		</egXML>
-	</div>
+    <head>
+        <gi>findAidDesc</gi>
+    </head>
+    <div type="fullName">
+        <p>Finding Aid Description</p>
+    </div>
+    <div type="summary">
+        <p>An optional element that binds together a bibliographic description of an EAD instance. </p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>agent</label>
+                <item>0..n</item>
+                <label>citedRange</label>
+                <item>0..n</item>
+                <label>date</label>
+                <item>0..n</item>
+                <label>formattingExtension</label>
+                <item>0..n</item>
+                <label>place</label>
+                <item>0..n</item>
+                <label>title</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>ead</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>href</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>linkRole</label>
+                <item>Optional</item>
+                <label>linkTitle</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>findAidDesc</gi> to record a bibliographic description of the finding aid. This may include its author, title, subtitle, sponsor, edition, publisher, publishing series, and related notes, each within apppropriate sub-elements. </p>
+        <p>If <gi>findAidDesc</gi> is used, at least one sub-element must be included.</p>
+    </div>
+    <div type="seealso">
+        <p>Do not confuse with <gi>control</gi>, which contains administrative information about the management of the EAD instance. </p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

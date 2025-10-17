@@ -20,29 +20,5 @@
                  <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<languageDeclaration languageCode="gre" scriptCode="Grek"/>]]</egXML>
-                  <egXML xml:lang="eng" type="eac"><![CDATA[<languagesUsed>
-                    <languageUsed>
-                    <language languageCode="eng">English</language>
-                    <writingSystem scriptCode="Latn">Latin</writingSystem>
-                  </languageUsed>
-                    <languageUsed>
-                    <language languageCode="spa">Spanish</language>
-                    <writingSystem scriptCode="Latn">Latin</writingSystem>
-                  </languageUsed>
-                    <descriptiveNote>
-                    <p>Published works in English and Spanish.</p>
-                  </descriptiveNote>
-                  </languagesUsed>]]></egXML>
-                 <egXML xml:lang="eng" type="ead"><![CDATA[<languageOfMaterial>
-                    <languageSet>
-                    <writingSystem scriptCode="Latn">Latin</writingSystem>
-                    <language languageCode="dut">Dutch</language>
-                    <language languageCode="fre">French</language>
-                 </languageSet>
-                    <descriptiveNote>
-                    <p>The materials are in Dutch and French.</p>
-                  </descriptiveNote>
-                  </languageOfMaterial>]]></egXML>
                </div>
             </div>

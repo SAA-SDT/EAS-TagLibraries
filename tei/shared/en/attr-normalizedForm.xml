@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-attributeName" xmlns:ead="http://ead3.archivists.org/schema/" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
-	<head>
-		<att>normalizedForm</att>
-	</head>
-	<div type="fullName">
-		<p>Normalized Form</p>
-	</div>
-	<div type="summary">
-		<p>A standardized form of the content of <gi>referringString</gi> that is in uncontrolled or natural language.</p>
-	</div>
-	<div type="description">
-		<p>Use <att>normalizedForm</att> to provide a standardized form, usually from a controlled vocabulary list, of the content of <gi>referringString</gi> e.g. to facilitate retrieval.</p>
-	</div>
-	<div type="datatype">
-		<p>token</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<p>See the following publication for background information: <referringString referredEntityType="person" normalizedForm="Bernier, Pierre-François (1779-1803)">P.-F. BERNIER</referringString>, <referringString referredEntityType="work">Études particulières</referringString></p>]]>
-		</egXML>
-	</div>
+    <head>
+        <att>normalizedForm</att>
+    </head>
+    <div type="fullName">
+        <p>Normalized Form</p>
+    </div>
+    <div type="summary">
+        <p>A standardized form of the content of <gi>referringString</gi> that is in uncontrolled or natural language.</p>
+    </div>
+    <div type="description">
+        <p>Use <att>normalizedForm</att> to provide a standardized form, usually from a controlled vocabulary list, of the content of <gi>referringString</gi> e.g. to facilitate retrieval.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

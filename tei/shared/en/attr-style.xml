@@ -18,7 +18,5 @@
       <p>normalizedString</p>
    </div>
    <div type="examples">
-      <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<p>
-      During 1918, Robert Carlton Brown (1886-1959) traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <span style="font-style:italic">Brazilian American</span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <span style="font-style:italic">Mexican American</span> (1924-1929) and <span style="font-style:italic">British American</span> (1926-1929).</p>]]></egXML>
    </div>
 </div>
