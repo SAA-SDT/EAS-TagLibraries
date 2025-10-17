@@ -16,49 +16,5 @@
                   <p>IDREFS</p>
                </div>
                <div type="examples">
-                   <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples" type="eac"><![CDATA[<occupations>
-                    <occupation>
-                    <term>Assistant examiner - level III</term>
-                    <placeName target="place1">Bern</placeName>
-                  </occupation>
-                  </occupations>
-                    <places>
-                    <place id="place1">
-                    <label>Bern</label>
-                    <role>Place of work</role>
-                    <address>
-                    <addressLine addressLineType="street">Stauffacherstrasse 65/59g</addressLine>
-                    <addressLine addressLineType="postalCode">3003</addressLine>
-                    <addressLine addressLineType="municipality">Bern</addressLine>
-                  </address>
-                  </place>
-                  </places>]]></egXML>
-                  <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples" type="ead"><![CDATA[<agents>
-                    <agent>
-                    <label>Schweizerisches Bundesarchiv</label>
-                    <role>holdingInstitution</role>
-                    <placeName target="place1">Bern</placeName>
-                  </agent>
-                  </agents>
-                    <places>
-                    <place id="place1">
-                    <label>Bern</label>
-                    <role>Place of storage</role>
-                    <address>
-                    <addressLine addressLineType="street">Archivstrasse 24</addressLine>
-                    <addressLine addressLineType="postalCode">3005</addressLine>
-                    <addressLine addressLineType="municipality">Bern</addressLine>
-                  </address>
-                  </place>
-                  </places>]]></egXML>
-                 <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples" type="eaf"><![CDATA[<description>
-                   <functionHistory>
-                   <p target="lex1">Since 1862, liquidation also meant bringing criminal proceedings against directors and others who were alleged to have committed offences in relation to the company.</<p>
-                 </functionHistory
-                   <legislations>
-                   <legislation id="lex1">Joint Stock Companies Act, 1856; Companies Act, 1862; Companies Act, 1900; Companies Act, 1907; Companies (Consolidation) Act, 1908; Companies Act, 1928; Companies Act, 1929; Companies Act, 1947</legislation>
-                 </legislations>
-                 </description>
-                 </functionsDescription>]]></egXML>
                </div>
             </div>

@@ -1,87 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-languageSet">
-	<head>
-		<gi>languageSet</gi>
-	</head>
-	<div type="fullName">
-		<p>Language Set</p>
-	</div>
-	<div type="summary">
-		<p>Within <gi>identificationData</gi>, <gi>languageSet</gi> is a child element of <gi>languageOfMaterial</gi> that is used to pair one language with one or more writing systems, e.g. a text in Japanese language and in Kana, Hiragana, and Katakana scripts, or one writing system with one or more languages, e.g. a document in English, French and German, all using the Latin alphabet.</p>
-	</div>
-	<div type="mayContain">
-		<p>
-			<list type="gloss">
-				<label>descriptiveNote</label>
-				<item>0..1</item>
-				<label>language</label>
-				<item>1..n</item>
-				<label>writingSystem</label>
-				<item>1..n</item>
-			</list>
-		</p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>languageOfMaterial</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p>Use <gi>languageSet</gi> within <gi>languageOfMaterial</gi> when it is necessary to associate <gi>language</gi> and <gi>writingSystem</gi>. Possible combinations include one language and one writing system, multiple languages and one writing system, and one language and multiple writing systems. <gi>languageSet</gi> may be repeated as necessary. Optionally, any comments about the language(s) and writing system(s) being recorded may be captured in <gi>descriptiveNote</gi> at the end, particularly for display to finding aid users.</p>
-	</div>
-	<div type="attributeusage"><p>Use <att>languageOfElement</att> and <att>scriptOfElement</att> to indicate the language and written scripts of the information in <gi>languageSet</gi>, not the language of materials.</p></div>	
-	<div type="availability">
-		<p>Optional, repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<languageOfMaterial>
-			<languageSet>
-			<writingSystem scriptCode="Latn">Latin</writingSystem>
-			<language languageCode="eng">English</language>
-			<language languageCode="ang">Old English</language>
-			<language languageCode="lat">Latin</language>
-		</languageSet>
-			<languageSet>
-			<language languageCode="gre">Greek</language>
-			<writingSystem scriptCode="Grek">Greek</writingSystem>
-		</languageSet>
-			<descriptiveNote>
-			<p>The majority of the documents are written in Modern English. Roberts copied multiple passages from original manuscripts in Latin, Greek and Old English.</p>
-		</descriptiveNote>
-		</languageOfMaterial>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<languageOfMaterial>
-			<languageSet>
-			<language languageCode="jpn">Japanese</language>
-			<writingSystem scriptCode="Hira">hiragana</writingSystem>
-			<writingSystem scriptCode="Kana">katakana</writingSystem>
-		</languageSet>
-			<descriptiveNote>
-			<p>This file contains documents in Japanese, in both the hiragana and katakana scripts.</p>
-		</descriptiveNote>
-		</languageOfMaterial>]]>
-		</egXML>
-	</div>
+    <head>
+        <gi>languageSet</gi>
+    </head>
+    <div type="fullName">
+        <p>Language Set</p>
+    </div>
+    <div type="summary">
+        <p>Within <gi>identificationData</gi>, <gi>languageSet</gi> is a child element of <gi>languageOfMaterial</gi> that is used to pair one language with one or more writing systems, e.g. a text in Japanese language and in Kana, Hiragana, and Katakana scripts, or one writing system with one or more languages, e.g. a document in English, French and German, all using the Latin alphabet.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>descriptiveNote</label>
+                <item>0..1</item>
+                <label>language</label>
+                <item>1..n</item>
+                <label>writingSystem</label>
+                <item>1..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>languageOfMaterial</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>languageSet</gi> within <gi>languageOfMaterial</gi> when it is necessary to associate <gi>language</gi> and <gi>writingSystem</gi>. Possible combinations include one language and one writing system, multiple languages and one writing system, and one language and multiple writing systems. <gi>languageSet</gi> may be repeated as necessary. Optionally, any comments about the language(s) and writing system(s) being recorded may be captured in <gi>descriptiveNote</gi> at the end, particularly for display to finding aid users.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>languageOfElement</att> and <att>scriptOfElement</att> to indicate the language and written scripts of the information in <gi>languageSet</gi>, not the language of materials.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

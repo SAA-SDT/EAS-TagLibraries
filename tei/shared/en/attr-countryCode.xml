@@ -9,7 +9,7 @@
                <div type="summary">
                   <p>A unique code representing a country.</p>
                </div>
-               <div type="description">      
+               <div type="description">
                      <p>Content of the optional attribute should be a code taken from the part of ISO 3166 Country Codes or another controlled list specified in the <att>countryEncoding</att> attribute in <gi>control</gi>. Available in <gi>maintenanceAgency</gi> and <gi>placeName</gi>.</p>
                  <p type="ead">Also available in <gi>unitId</gi>, where it can be used together with <att>repositoryCode</att> to comply with ISAD(G) element 3.1.1.</p>
                </div>
@@ -17,19 +17,5 @@
                  <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<maintenanceAgency countrycode="IE">
-   <agencyCode>
-      IE-NAI
-   </agencyCode>
-   <agencyName>
-      National Archives of Ireland
-   </agencyName>
-</maintenanceAgency>]]></egXML>
-                  <egXML xml:lang="eng"><![CDATA[<relation relationType="resourceRelation">
-                    <label>Charles Darwin, On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life (London, John Murray, 1859)</label>
-                    <role valueURI="https://www.ica.org/standards/RiC/RiC-O_1-1.html#hasOrHadSubject" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">hasOrHadSubject</role>
-                    <placeName countryCode="GB">London</placeName>
-                  </relation>]]></egXML>
-                 <egXML xml:lang="eng" type="ead"><![CDATA[<unitId countryCode="US" repositoryCode="cu-i">MS-R72</unitId>]]></egXML>
                </div>
             </div>

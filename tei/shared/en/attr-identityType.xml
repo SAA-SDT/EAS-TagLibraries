@@ -19,7 +19,5 @@
                   <p>token</p>
                </div>
                <div type="examples">
-                  <egXML xml:lang="eng"><![CDATA[<identity identityType="acquired"> [...] </identity>]]>
-                  </egXML>
                </div>
             </div>

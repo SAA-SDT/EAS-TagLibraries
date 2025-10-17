@@ -711,7 +711,7 @@
             <xsl:apply-templates select="tei:div[@type = 'creationmaintenance']"/>
             <xsl:apply-templates select="tei:div[@type = 'usagenotes']"/>
             <xsl:if test="starts-with($returntotoc, 'yes')">
-                <fo:block>
+                <fo:block margin-top="1em">
 			<fo:basic-link fox:alt-text="{$toc}" internal-destination="tocpage" color="blue">
                         <xsl:value-of select="$toc"/>
                     </fo:basic-link>
@@ -763,77 +763,6 @@
                 </fo:block>
             </xsl:if>
         </xsl:for-each>
-    </xsl:template>
-
-
-    <xsl:template match="tei:div[@type = 'deprecatedAttributeDocumentation']">
-        <fo:block font-size="18pt" font-weight="bold" space-before="18pt" space-after="12pt"
-            text-align="left" page-break-before="always" id="{generate-id(.)}">
-            <fo:marker marker-class-name="taglibrary-head">
-                <fo:block id="{@xml:id}">
-                    <xsl:text>@</xsl:text>
-                    <xsl:value-of select="tei:head/tei:att"/>
-                </fo:block>
-            </fo:marker>
-            <xsl:text>@</xsl:text>
-            <xsl:value-of select="tei:head/tei:att"/>
-            <xsl:text>&#xA0;&#xA0;</xsl:text>
-            <xsl:value-of select="tei:div[@type = 'fullName']/tei:p"/>
-            <xsl:if test="starts-with($returntotoc, 'yes')">
-                <fo:inline font-size="12pt" start-indent="10pt" font-weight="normal">
-                    <fo:basic-link internal-destination="tocpage">
-                        <xsl:text>(</xsl:text>
-                        <xsl:value-of select="$toc"/>
-                        <xsl:text>)</xsl:text>
-                    </fo:basic-link>
-                </fo:inline>
-            </xsl:if>
-        </fo:block>
-        <xsl:apply-templates select="tei:div[@type = 'summary']"/>
-        <xsl:apply-templates select="tei:div[@type = 'description']"/>
-        <xsl:apply-templates select="tei:div[@type = 'datatype']"/>
-        <xsl:apply-templates select="tei:div[@type = 'values']"/>
-    </xsl:template>
-
-    <xsl:template match="tei:div[@type = 'deprecatedElementDocumentation']">
-        <!-- No linking to other elements or attributes by using templates with mode="deprecated" -->
-        <fo:block font-size="18pt" font-weight="bold" space-before="18pt" space-after="12pt"
-            text-align="left" page-break-before="always" id="{generate-id()}">
-            <fo:marker marker-class-name="taglibrary-head">
-                <fo:block>
-                    <xsl:text>&lt;</xsl:text>
-                    <xsl:value-of select="tei:head/tei:gi"/>
-                    <xsl:text>&gt;</xsl:text>
-                </fo:block>
-            </fo:marker>
-            <xsl:text>&lt;</xsl:text>
-            <xsl:value-of select="tei:head/tei:gi"/>
-            <xsl:text>&gt;</xsl:text>
-            <xsl:text>&#xA0;&#xA0;</xsl:text>
-            <xsl:value-of select="tei:div[@type = 'fullName']/tei:p"/>
-            <xsl:if test="starts-with($returntotoc, 'yes')">
-                <fo:inline font-size="12pt" start-indent="10pt" font-weight="normal">
-                    <fo:basic-link internal-destination="tocpage">
-                        <xsl:text>(</xsl:text>
-                        <xsl:value-of select="$toc"/>
-                        <xsl:text>)</xsl:text>
-                    </fo:basic-link>
-                </fo:inline>
-            </xsl:if>
-        </fo:block>
-        <xsl:apply-templates select="tei:div[@type = 'summary']"/>
-        <xsl:apply-templates select="tei:div[@type = 'description']"/>
-        <xsl:apply-templates select="tei:div[@type = 'desc']"/>
-        <xsl:apply-templates select="tei:div[@type = 'usage']"/>
-        <xsl:apply-templates select="tei:div[@type = 'mayContain']" mode="deprecated"/>
-        <xsl:apply-templates select="tei:div[@type = 'mayOccurWithin']" mode="deprecated"/>
-        <xsl:apply-templates select="tei:div[@type = 'attributes']/tei:p" mode="deprecated"/>
-        <xsl:apply-templates select="tei:div[@type = 'occurrence']"/>
-        <xsl:apply-templates select="tei:div[@type = 'availability']"/>
-        <xsl:apply-templates select="tei:div[@type = 'mandatory']"/>
-        <xsl:apply-templates select="tei:div[@type = 'repetable']"/>
-        <xsl:apply-templates select="tei:div[@type = 'reference']"/>
-        <xsl:apply-templates select="tei:div[@type = 'references']"/>
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'element']">
@@ -1003,59 +932,6 @@
         </fo:list-block>
     </xsl:template>
 
-
-    <!-- commenting these templates out, but keeping them in case they're needed again later
-    these templates should be superseded by the occurrence template...
-
-    <xsl:template match="tei:div[@type='mandatory']">
-        Only value is given in the latest version of the TL 
-        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
-            <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                    <fo:block break-after="auto">
-                        <xsl:value-of select="$mandatory"/>
-                        <xsl:text>/</xsl:text>
-                    </fo:block>
-                    <fo:block>
-                        <xsl:value-of select="$optional"/>
-                        <xsl:text>: </xsl:text>
-                    </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
-                    <fo:block>
-                        <xsl:apply-templates/>
-                    </fo:block>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block>
-        <xsl:value-of select="tei:p/text()"/>
-    </xsl:template>
-
-    <xsl:template match="tei:div[@type='repeatable']">
-        Only value is given in the latest layout of TL. And always after mandatory
-        <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
-            <fo:list-item>
-                <fo:list-item-label end-indent="label-end()">
-                    <fo:block break-after="auto">
-                        <xsl:value-of select="$repeatable"/>
-                        <xsl:text>/</xsl:text>
-                    </fo:block>
-                    <fo:block>
-                        <xsl:value-of select="$nonrepeatable"/>
-                        <xsl:text>: </xsl:text>
-                    </fo:block>
-                </fo:list-item-label>
-                <fo:list-item-body start-indent="body-start()">
-                    <fo:block>
-                        <xsl:apply-templates/>
-                    </fo:block>
-                </fo:list-item-body>
-            </fo:list-item>
-        </fo:list-block>
-        <xsl:text>, </xsl:text>
-        <xsl:value-of select="tei:p/text()"/>
-    </xsl:template> -->
-
     <xsl:template match="tei:div[@type = 'mayContain']/tei:p | tei:div[@type = 'attributes']/tei:p">
         <xsl:choose>
             <xsl:when test="tei:list[@type = 'gloss']">
@@ -1137,65 +1013,6 @@
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="tei:div[@type = 'attributes']/tei:p" mode="deprecated">
-        <xsl:choose>
-            <xsl:when test="tei:list[@type = 'gloss']">
-                <fo:list-block provisional-distance-between-starts="45mm" space-after="6pt">
-                    <fo:list-item>
-                        <fo:list-item-label end-indent="label-end()">
-                            <fo:block font-weight="bold">
-                                <xsl:value-of select="$attributes"/>
-                                <xsl:text>: </xsl:text>
-                            </fo:block>
-                        </fo:list-item-label>
-                        <fo:list-item-body start-indent="body-start()">
-                            <fo:table start-indent="body-start()-23mm" table-layout="fixed"
-                                width="85%">
-                                <fo:table-body>
-                                    <xsl:for-each select="tei:list/tei:label[1]">
-                                        <fo:table-row>
-                                            <fo:table-cell width="50mm">
-                                                <fo:block>
-                                                  <xsl:value-of select="."/>
-                                                </fo:block>
-                                            </fo:table-cell>
-                                            <fo:table-cell>
-                                                <fo:block>
-                                                  <xsl:apply-templates
-                                                  select="following-sibling::tei:item[1]"/>
-                                                </fo:block>
-                                            </fo:table-cell>
-                                        </fo:table-row>
-                                    </xsl:for-each>
-                                    <xsl:for-each select="tei:list/tei:label[position() &gt; 1]">
-                                        <fo:table-row>
-                                            <fo:table-cell>
-                                                <fo:block>
-                                                  <xsl:value-of select="."/>
-                                                </fo:block>
-                                            </fo:table-cell>
-                                            <fo:table-cell>
-                                                <fo:block>
-                                                  <xsl:apply-templates
-                                                  select="following-sibling::tei:item[1]"/>
-                                                </fo:block>
-                                            </fo:table-cell>
-                                        </fo:table-row>
-                                    </xsl:for-each>
-                                </fo:table-body>
-                            </fo:table>
-                        </fo:list-item-body>
-                    </fo:list-item>
-                </fo:list-block>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="$attributes"/>
-                <xsl:text>: </xsl:text>
-                <xsl:apply-templates/>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>
-
     <xsl:template match="tei:list[@type = 'bulleted']">
         <fo:list-block provisional-distance-between-starts="20mm">
             <xsl:for-each select="tei:item">
@@ -1237,7 +1054,7 @@
         <xsl:text>&gt;</xsl:text>
     </xsl:template>
 
-    <xsl:template match="tei:gi">
+    <!--xsl:template match="tei:gi">
         <xsl:text>&lt;</xsl:text>
         <xsl:apply-templates/>
         <xsl:text>&gt;</xsl:text>
@@ -1256,7 +1073,7 @@
     <xsl:template match="tei:att" mode="tocshort">
         <xsl:text>@</xsl:text>
         <xsl:apply-templates/>
-    </xsl:template>
+    </xsl:template-->
 
     <xsl:template match="tei:back/tei:div">
         <fo:block font-size="24pt" font-weight="bold" space-before="18pt" space-after="12pt"
@@ -1347,21 +1164,20 @@
         </fo:block>
     </xsl:template>
 
-    <xsl:template match="tei:div[@type = 'examples']">
-       <xsl:choose>
-          <xsl:when test="$currentStandard = 'ead'">
-             <!-- do nothing -->
-          </xsl:when>
-          <xsl:otherwise> 
+    <xsl:template match="tei:div[@type='examples']">
+        <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
+                        <xsl:variable name="termtitle">
+                            <xsl:value-of select="current()/@type"/>
+                        </xsl:variable>
+                        <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage]"/>
+                    </fo:block>                    
+        <xsl:call-template name="tokenizeExamples"/>
+    </xsl:template>
+
+    <xsl:template match="tei:div[@type = 'exampleText']"> 
              <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
-                <xsl:choose>
-                   <xsl:when test="count(*) &gt; 1">
-                      <xsl:value-of select="$examples"/>
-                   </xsl:when>
-                   <xsl:otherwise>
-                      <xsl:value-of select="$example"/>
-                   </xsl:otherwise>
-                </xsl:choose>
+                <xsl:attribute name="id" select="concat('example-', @subtype)"/>
+                <xsl:value-of select="@subtype"/>
              </fo:block>
              <xsl:choose>
                 <xsl:when test="egXML">
@@ -1377,8 +1193,6 @@
                     </fo:block>
                  </xsl:otherwise>
               </xsl:choose>
-          </xsl:otherwise>
-       </xsl:choose>
     </xsl:template>
     <!-- In this template all occuring other namespaceprefixis needs to be added -->
     <xsl:template
@@ -1456,7 +1270,7 @@
     </xsl:template>
 
     <xsl:template name="tokenize">
-	<xsl:variable name="text" select="." />
+        <xsl:variable name="text" select="." />
         <xsl:for-each select="tokenize(., ',')">
             <xsl:choose>
                 <xsl:when test="contains(., 'base64Binary')">
@@ -1483,17 +1297,17 @@
                     <xsl:value-of select="normalize-space(.)" />
                 </xsl:when>
                 <xsl:when test="contains(., '(')">
-                        <!-- remove "(revised in x.y.z)" text from title -->
-			<fo:basic-link fox:alt-text="{$text}"
-                            internal-destination="{concat('elem-', normalize-space(substring-before(concat(., '('), '(')))}">
-                            <xsl:value-of select="normalize-space(.)"/>
-                        </fo:basic-link>
+                    <!-- remove "(revised in x.y.z)" text from title -->
+                    <fo:basic-link fox:alt-text="{$text}"
+                        internal-destination="{concat('elem-', normalize-space(substring-before(concat(., '('), '(')))}">
+                        <xsl:value-of select="normalize-space(.)"/>
+                    </fo:basic-link>
                 </xsl:when>
                 <xsl:otherwise>
-			<fo:basic-link fox:alt-text="{$text}" 
-                            internal-destination="{concat('elem-', translate(normalize-space(.), ':',''))}" color="blue">
-                            <xsl:value-of select="normalize-space(.)"/>
-                        </fo:basic-link>
+                    <fo:basic-link fox:alt-text="{$text}" 
+                        internal-destination="{concat('elem-', translate(normalize-space(.), ':',''))}" color="blue">
+                        <xsl:value-of select="normalize-space(.)"/>
+                    </fo:basic-link>
                 </xsl:otherwise>
             </xsl:choose>
             <xsl:if test="position() ne last()">
@@ -1555,6 +1369,48 @@
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="tokenizeExamples">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="gi">
+        <xsl:variable name="text" select="."/>
+        <xsl:choose>
+            <xsl:when test="ancestor::div[@type='examples']">
+                <fo:basic-link internal-destination="{concat('example-', $text)}" color="blue">
+                    &lt;<xsl:value-of select="$text"/>&gt;
+                </fo:basic-link>
+            </xsl:when>
+            <xsl:when test="ancestor::head">
+                &lt;<xsl:value-of select="$text"/>&gt;
+            </xsl:when>
+            <xsl:otherwise>
+                <fo:basic-link internal-destination="{concat('elem-', $text)}" color="blue">
+                    &lt;<xsl:value-of select="$text"/>&gt;
+                </fo:basic-link>
+            </xsl:otherwise>
+            </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="att">
+        <xsl:variable name="text" select="."/>
+        <xsl:choose>
+            <xsl:when test="ancestor::div[@type='examples']">
+                <fo:basic-link internal-destination="{concat('example-', $text)}" color="blue">
+                    @<xsl:value-of select="$text"/>
+                </fo:basic-link>
+            </xsl:when>
+            <xsl:when test="ancestor::head">
+                @<xsl:value-of select="$text"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <fo:basic-link internal-destination="{concat('attr-', $text)}" color="blue">
+                    @<xsl:value-of select="$text"/>
+                </fo:basic-link>
+            </xsl:otherwise>
+            </xsl:choose>
     </xsl:template>
 
     <!-- formatting tags -->

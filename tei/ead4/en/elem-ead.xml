@@ -1,56 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-ead">
-	<head>
-		<gi>ead</gi>
-	</head>
-	<div type="fullName">
-		<p>Encoded Archival Description</p>
-	</div>
-	<div type="summary">
-		<p>The required root element of an EAD instance.</p>
-	</div>
-	<div type="mayContain">
-		<p><list type="gloss">
-  <label>archDesc</label>
-  <item>1..1</item>
-  <label>control</label>
-  <item>1..1</item>
-  <label>findAidDesc</label>
-  <item>0..n</item>
-</list></p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p><gi>ead</gi> wraps all other elements in an Encoded Archival Description document (or finding aid). A finding aid (or inventory) establishes intellectual and physical control over many types of archival materials and helps researchers understand and access the materials being described. </p>
-		<p><gi>ead</gi> must contain both <gi>control</gi> and <gi>archDesc</gi> elements. Use <gi>control</gi> first, followed optionally by <gi>findAidDesc</gi> with <gi>archDesc</gi> last. </p>
-	</div>
-	<div type="attributeusage"><p>If the <att>@audience</att> value is set to "external", data in all descendant elements will be displayed, unless the value is changed individually for specific elements. </p></div>	
-	<div type="availability">
-		<p>Required, not repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<ead>
-			<control>
-			[...]
-		</control>
-			<archDesc>
-			[...]
-		</archDesc>
-		</ead>]]>
-		</egXML>
-	</div>
+    <head>
+        <gi>ead</gi>
+    </head>
+    <div type="fullName">
+        <p>Encoded Archival Description</p>
+    </div>
+    <div type="summary">
+        <p>The required root element of an EAD instance.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>archDesc</label>
+                <item>1..1</item>
+                <label>control</label>
+                <item>1..1</item>
+                <label>findAidDesc</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p><gi>ead</gi> wraps all other elements in an Encoded Archival Description document (or finding aid). A finding aid (or inventory) establishes intellectual and physical control over many types of archival materials and helps researchers understand and access the materials being described. </p>
+        <p><gi>ead</gi> must contain both <gi>control</gi> and <gi>archDesc</gi> elements. Use <gi>control</gi> first, followed optionally by <gi>findAidDesc</gi> with <gi>archDesc</gi> last. </p>
+    </div>
+    <div type="attributeusage">
+        <p>If the <att>audience</att> value is set to "external", data in all descendant elements will be displayed, unless the value is changed individually for specific elements. </p>
+    </div>
+    <div type="availability">
+        <p>Required, not repeatable</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

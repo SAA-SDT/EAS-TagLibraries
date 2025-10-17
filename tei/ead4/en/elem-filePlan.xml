@@ -1,131 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-filePlan">
-	<head>
-		<gi>filePlan</gi>
-	</head>
-	<div type="fullName">
-		<p>File Plan</p>
-	</div>
-	<div type="summary">
-		<p>An element for information about any classification scheme used by the original creator to arrange, store, and retrieve the materials described.</p>
-	</div>
-	<div type="mayContain">
-		<p><list type="gloss">
-  <label>abstract</label>
-  <item>0..1</item>
-  <label>formattingExtension</label>
-  <item>0..1</item>
-  <label>p</label>
-  <item>0..n</item>
-</list></p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
-	</div>
-	<div type="attributes">
-    		<p>
-        		<list type="gloss">
-            			<label>audience</label>
-            			<item>Optional</item>
-            			<label>conventionDeclarationReference</label>
-            			<item>Optional</item>
-            			<label>id</label>
-            			<item>Optional</item>
-            			<label>languageOfElement</label>
-            			<item>Optional</item>
-            			<label>localType</label>
-            			<item>Optional</item>
-            			<label>localTypeDeclarationReference</label>
-            			<item>Optional</item>
-            			<label>maintenanceEventReference</label>
-            			<item>Optional</item>
-            			<label>scriptOfElement</label>
-            			<item>Optional</item>
-            			<label>sourceReference</label>
-            			<item>Optional</item>
-            			<label>target</label>
-            			<item>Optional</item>
-        		</list>
-    		</p>
-	</div>
-	<div type="description">
-		<p>A filing plan is usually identified by the type of system used, e.g., alphabetical, numerical, alpha-numerical, decimal, color-coded, etc. It is often hierarchical and may include the filing guidelines of the originating entity. Additional types include a drawing of a room layout or a scientific scheme.</p>
-		<p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>filePlan</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
-		<p>The prescribed order of all child elements (both required and optional) is:</p>
-		<list type="simple">
-                     <item><gi>abstract</gi> (if used)</item>
-                     <item><gi>formattingExtension</gi> or <gi>p</gi></item>
-                </list>
-	</div>
-	<div type="seealso"><p>Do not confuse with <gi>arrangement</gi>, which describes the current organization and/or filing sequence of the materials, as opposed to that imposed by the original creator.</p></div>
-	<div type="availability">
-		<p>Optional, repeatable</p>
-	</div>
-	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<filePlan>
-			<!-- Note: the following encoding is based on using the NVDL schema for EAD 4.0, which has the XHTML schema integrated already; the example validates in Oxygen XML Editor 20.1. -->
-			<formattingExtension>
-			<xhtml:div>
-			<xhtml:h3>File List</xhtml:h3>
-			<xhtml:p> The list below outlines the classification system used for the central files of Vice President Mondale's office. This structure assigned alpha-numeric codes to primary subjects and to secondary and tertiary subdivisions thereunder.</xhtml:p>
-			<xhtml:h4>AGRICULTURE (AG)</xhtml:h4>
-			<xhtml:ol>
-			<xhtml:li>Home Economics</xhtml:li>
-			<xhtml:li>Horticulture</xhtml:li>
-			<xhtml:li>Marketing</xhtml:li>
-			<xhtml:li>Price Support</xhtml:li>
-		</xhtml:ol>
-			<xhtml:h4>ARTS (AR)</xhtml:h4>
-			<xhtml:ol>
-			<xhtml:li>Languages</xhtml:li>
-			<xhtml:li>Museums</xhtml:li>
-			<xhtml:li>Music</xhtml:li>
-		</xhtml:ol>
-			[...]
-			<xhtml:h4>URBAN PLANNING (UP)</xhtml:h4>
-			<xhtml:ol>
-			<xhtml:li>Communications</xhtml:li>
-			<xhtml:li>Distribution Networks</xhtml:li>
-			<xhtml:li>Infrastructure</xhtml:li>
-			<xhtml:li>Public Welfare</xhtml:li>
-			<xhtml:li>Transportation</xhtml:li>
-		</xhtml:ol>
-		</xhtml:div>
-		</formattingExtension>
-		</filePlan>]]>
-		</egXML>
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<!-- The following example has been adapted from the EADiva Tag Libray by Ruth Kitchin Tillman, https://eadiva.com/fileplan/ -->
-			<filePlan>
-			<!-- Note: the following encoding is based on using the NVDL schema for EAD 4.0, which has the XHTML schema integrated already; the example validates in Oxygen XML Editor 20.1. -->
-			<formattingExtension>
-			<xhtml:div>
-			<xhtml:h3>List of Courses</xhtml:h3>
-			<xhtml:p>The following list associates course codes with course titles represented in the syllabuses.</xhtml:p>
-			<xhtml:dl>
-			<xhtml:dt><xhtml:strong>Course Number</xhtml:strong></xhtml:dt>
-			<xhtml:dd><xhtml:strong>Course Title</xhtml:strong></xhtml:dd>
-			<xhtml:dt>QT-512</xhtml:dt>
-			<xhtml:dd>What is Technology?</xhtml:dd>
-			<xhtml:dt>QT-537</xhtml:dt>
-			<xhtml:dd>History of the Quilt</xhtml:dd>
-			<xhtml:dt>QT-570</xhtml:dt>
-			<xhtml:dd>Traditional Quilts, Art Quilts, and Feminism</xhtml:dd>
-			<xhtml:dt>QT-614</xhtml:dt>
-			<xhtml:dd>Quilting and the Industrial Revolution</xhtml:dd>
-			<xhtml:dt>QT-638</xhtml:dt>
-			<xhtml:dd>Women's Work: Society, Technology, and Misogyny</xhtml:dd>
-			<xhtml:dt>QT-687</xhtml:dt>
-			<xhtml:dd>Technologies of Improvisation</xhtml:dd>
-			<xhtml:dt>QT-712</xhtml:dt>
-			<xhtml:dd>Needle, Thimble, and Computer: Textiles and Technologies</xhtml:dd>
-			<xhtml:dt>QT-729</xhtml:dt>
-			<xhtml:dd>Technological Design and the Textile Future</xhtml:dd>
-		</xhtml:dl>
-		</xhtml:div>
-		</formattingExtension>
-		</filePlan>]]>
-		</egXML>
-	</div>
+    <head>
+        <gi>filePlan</gi>
+    </head>
+    <div type="fullName">
+        <p>File Plan</p>
+    </div>
+    <div type="summary">
+        <p>An element for information about any classification scheme used by the original creator to arrange, store, and retrieve the materials described.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>abstract</label>
+                <item>0..1</item>
+                <label>formattingExtension</label>
+                <item>0..1</item>
+                <label>p</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>archDesc, c, c01, c02, c03, c04, c05, c06, c07, c08, c09, c10, c11, c12</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>A filing plan is usually identified by the type of system used, e.g., alphabetical, numerical, alpha-numerical, decimal, color-coded, etc. It is often hierarchical and may include the filing guidelines of the originating entity. Additional types include a drawing of a room layout or a scientific scheme.</p>
+        <p>Use the element <gi>abstract</gi> to provide a brief summary of the information encoded in <gi>filePlan</gi>. Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <list type="simple">
+            <item><gi>abstract</gi> (if used)</item>
+            <item><gi>formattingExtension</gi> or <gi>p</gi></item>
+        </list>
+    </div>
+    <div type="seealso">
+        <p>Do not confuse with <gi>arrangement</gi>, which describes the current organization and/or filing sequence of the materials, as opposed to that imposed by the original creator.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+    </div>
 </div>

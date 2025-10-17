@@ -1,62 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-span">
-   <head>
-      <gi>span</gi>
-   </head>
-   <div type="fullName">
-      <p>span</p>
-   </div>
-   <div type="summary">
-      <p>Specifies the beginning and the end of a span of text.</p>
-   </div>
-   <div type="mayContain">
-      <p><list type="gloss">
-  <label>[text]</label>
-  <item/>
-</list></p>
-   </div>
-   <div type="mayOccurWithin">
-      <p type="eac">abstract, eventDescription, reference, p</p>
-      <p type="eaf">eventDescription, reference, p</p>
-      <p type="ead">abstract, container, eventDescription, formAvailableId, genreForm, head, otherIdentificationData, physicalFacet, reference, p, textualDate, unitId, unitTitle</p>
-   </div>
-   <div type="attributes">
-      <p>
-         <list type="gloss">
-            <label>audience</label>
-            <item>Optional</item>
-            <label>conventionDeclarationReference</label>
-            <item>Optional</item>
-            <label>id</label>
-            <item>Optional</item>
-            <label>languageOfElement</label>
-            <item>Optional</item>
-            <label>localType</label>
-            <item>Optional</item>
-            <label>localTypeDeclarationReference</label>
-            <item>Optional</item>
-            <label>maintenanceEventReference</label>
-            <item>Optional</item>
-            <label>scriptOfElement</label>
-            <item>Optional</item>
-            <label>sourceReference</label>
-            <item>Optional</item>
-            <label>style</label>
-            <item>Optional</item>
-            <label>target</label>
-            <item>Optional</item>
-         </list>
-      </p>
-   </div>
-   <div type="description">
-      <p><gi>span</gi> is an optional formatting element for distinguishing words or phrases that are intentionally stressed or emphasized for linguistic effect or identifying some qualities of the words or phrases.</p>
-   </div>
-   <div type="attributeusage"><p>Use the optional <att>style</att> attribute to specify an arbitrary stylistic difference.</p>
-   </div>
-   <div type="availability">
-      <p>Optional, repeatable</p>
-   </div>
-   <div type="examples">
-      <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[<p>Robert Carlton Brown (1886-1959) was a writer, editor, publisher, and traveler. From 1908 to 1917, he wrote poetry and prose for numerous magazines and newspapers in New York City, publishing two pulp novels, <span style="font-style:italic">What Happened to Mary</span> and <span style="font-style:italic">The Remarkable Adventures of Christopher Poe</span> (1913), and one volume of poetry, <span style="font-style:italic">My Marjonary</span> (1916).</p>]]></egXML>
+    <head>
+        <gi>span</gi>
+    </head>
+    <div type="fullName">
+        <p>span</p>
+    </div>
+    <div type="summary">
+        <p>Specifies the beginning and the end of a span of text.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">abstract, eventDescription, reference, p</p>
+        <p type="eaf">eventDescription, reference, p</p>
+        <p type="ead">abstract, container, eventDescription, formAvailableId, genreForm, head, otherIdentificationData, physicalFacet, reference, p, textualDate, unitId, unitTitle</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>style</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>span</gi> is an optional formatting element for distinguishing words or phrases that are intentionally stressed or emphasized for linguistic effect or identifying some qualities of the words or phrases.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use the optional <att>style</att> attribute to specify an arbitrary stylistic difference.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
    </div>
 </div>
