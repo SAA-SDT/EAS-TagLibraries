@@ -11,9 +11,8 @@
       <p>Used to specify a rendering style for a string. It is recommended that the value conforms to W3C CSS.</p>
    </div>
    <div type="description">
-      <p type="eac">The <att>style</att> attribute may occur on <gi>span</gi> to indicate rendering instructions. It is highly recommended that the value of <att>style</att> be expressed as a W3C CSS style to facilitate interoperability.</p>
-      <p type="ead">The <att>style</att> attribute may occur on <gi>span</gi> and <gi>title</gi> to indicate rendering instructions. It is highly recommended that the value of <att>style</att> be expressed as a W3C CSS style to facilitate interoperability.</p>
-      <p type="ead">The <att>style</att> attribute may occur on <gi>span</gi> to indicate rendering instructions. It is highly recommended that the value of <att>style</att> be expressed as a W3C CSS style to facilitate interoperability.</p>
+      <p>The <att>style</att> attribute may occur on <gi>span</gi> to indicate rendering instructions. It is highly recommended that the value of <att>style</att> be expressed as a W3C CSS style to facilitate interoperability.</p>
+      <p type="ead">Additionally, <att>style</att> may occur on <gi>title</gi>.</p>
    </div>
    <div type="datatype">
       <p>normalizedString</p>

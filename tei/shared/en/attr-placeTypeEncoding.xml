@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-placeTypeEncoding" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
-    <head>
-        <att>placeTypeEncoding</att>
-    </head>
-    <div type="fullName">
-        <p>Place Type Encoding</p>
-    </div>
-    <div type="summary">
-        <p>Specifies the authoritative source or rules for values used to identify the type of geographic feature or location.</p>
-    </div>
-    <div type="description">
-        <p><att>placeTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>placeType</att> within <gi>place</gi>. If the value "EASList" is selected, <att>placeType</att> will be expected with the values "...". If the value "otherPlaceTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
-    </div>
-    <div type="values">
-        <p>EASList, otherPlaceTypeEncoding</p>
-    </div>
-    <div type="examples">
-    </div>
+	<head>
+		<att>placeTypeEncoding</att>
+	</head>
+	<div type="fullName">
+		<p>Place Type Encoding</p>
+	</div>
+	<div type="summary">
+		<p>Specifies the authoritative source or rules for values used to identify the type of geographic feature or location.</p>
+	</div>
+	<div type="description">
+		<p><att>placeTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>placeType</att> within <gi>place</gi>. If the value "EASList" is selected, <att>placeType</att> will be expected with the values "administrativeDivision", "area", "bodyOfWater", "landElevation", "populatedPlace", "roadOrRailroad", "spot", "undersea", "vegetation". If the value "otherPlaceTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+	</div>
+	<div type="values">
+		<p>EASList, otherPlaceTypeEncoding</p>
+	</div>
+	<div type="examples">
+	</div>
 </div>

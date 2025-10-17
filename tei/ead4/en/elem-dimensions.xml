@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-dimensions">
-    <head>
-        <gi>dimensions</gi>
-    </head>
-    <div type="fullName">
-        <p>Dimensions</p>
-    </div>
-    <div type="summary">
-        <p>A child element of <gi>physicalDescription</gi> that provides information about the size of the material being described.</p>
-    </div>
-    <div type="mayContain">
-        <p>
-            <list type="gloss">
-                <label>quantity</label>
-                <item>0..1</item>
-                <label>unitOfMeasurement</label>
-                <item>0..1</item>
-            </list>
-        </p>
-    </div>
-    <div type="mayOccurWithin">
-        <p>physicalDescription</p>
-    </div>
-    <div type="attributes">
-        <p>
-            <list type="gloss">
-                <label>audience</label>
-                <item>Optional</item>
-                <label>conventionDeclarationReference</label>
-                <item>Optional</item>
-                <label>id</label>
-                <item>Optional</item>
-                <label>languageOfElement</label>
-                <item>Optional</item>
-                <label>localType</label>
-                <item>Optional</item>
-                <label>localTypeDeclarationReference</label>
-                <item>Optional</item>
-                <label>maintenanceEventReference</label>
-                <item>Optional</item>
-                <label>scriptOfElement</label>
-                <item>Optional</item>
-                <label>sourceReference</label>
-                <item>Optional</item>
-                <label>target</label>
-                <item>Optional</item>
-            </list>
-        </p>
-    </div>
-    <div type="description">
-        <p><gi>dimensions</gi> may be used to specify the size, in two or three dimensions, of the units identified within <gi>extent</gi>. It usually includes numerical data. Express measurements in any convenient unit as indicated in the <gi>unitOfMeasurement</gi> sub-element of <gi>dimensions</gi>, for example, "inches" or "centimeters.". Multiple dimensions, for example, height-by-width, can be encoded in a single <gi>dimensions</gi> or in separate <gi>dimensions</gi> with distinctive <att>localType</att> values.</p>
-        <p>Either the sub-element <gi>quantity</gi> or the sub-element <gi>unitOfMeasurement</gi> must be present within <gi>dimensions</gi>, but it is recommended to use both child elements whenever possible.</p>
-    </div>
-    <div type="availability">
-        <p>Optional, not repeatable</p>
-    </div>
-    <div type="examples">
-    </div>
+	<head>
+		<gi>dimensions</gi>
+	</head>
+	<div type="fullName">
+		<p>Dimensions</p>
+	</div>
+	<div type="summary">
+		<p>An optional child element of <gi>physicalDescription</gi> that provides information about the size of the material being described.</p>
+	</div>
+	<div type="mayContain">
+		<p>
+			<list type="gloss">
+				<label>quantity</label>
+				<item>0..1</item>
+				<label>unitOfMeasurement</label>
+				<item>0..1</item>
+			</list>
+		</p>
+	</div>
+	<div type="mayOccurWithin">
+		<p>physicalDescription</p>
+	</div>
+	<div type="attributes">
+    		<p>
+			<list type="gloss">
+            			<label>audience</label>
+            			<item>Optional</item>
+           			<label>conventionDeclarationReference</label>
+            			<item>Optional</item>
+            			<label>id</label>
+            			<item>Optional</item>
+            			<label>languageOfElement</label>
+            			<item>Optional</item>
+				<label>localType</label>
+            			<item>Optional</item>
+            			<label>localTypeDeclarationReference</label>
+            			<item>Optional</item>
+				<label>maintenanceEventReference</label>
+            			<item>Optional</item>
+            			<label>scriptOfElement</label>
+            			<item>Optional</item>
+            			<label>sourceReference</label>
+            			<item>Optional</item>
+            			<label>target</label>
+            			<item>Optional</item>
+			</list>
+    		</p>
+	</div>
+	<div type="description">
+		<p><gi>dimensions</gi> may be used to specify the size, in two or three dimensions, of the units identified within <gi>extent</gi>. It usually includes numerical data. Express measurements in any convenient unit as indicated in the <gi>unitOfMeasurement</gi> sub-element of <gi>dimensions</gi>, for example, "inches" or "centimeters.". Multiple dimensions, for example, height-by-width, can be encoded in a single <gi>dimensions</gi> or in separate <gi>dimensions</gi> with distinctive <att>localType</att> values.</p>
+		<p>Either the sub-element <gi>quantity</gi> or the sub-element <gi>unitOfMeasurement</gi> must be present within <gi>dimensions</gi>, but it is recommended to use both child elements whenever possible.</p>
+	</div>
+	<div type="availability">
+		<p>Optional, not repeatable</p>
+	</div>
+	<div type="examples">
+	</div>
 </div>
