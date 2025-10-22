@@ -275,9 +275,9 @@
             <xi:include href="shared/en/attr-referredEntityRelationship.xml" parse="xml"/>
             <xi:include href="shared/en/attr-referredEntityType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-referredEntityTypeEncoding.xml" parse="xml"/>
-            <xi:include href="ead4/en/attr-repositoryCode.xml" parse="xml"/>
             <xi:include href="shared/en/attr-relationType.xml" parse="xml"/>
             <xi:include href="shared/en/attr-relationTypeEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-repositoryCode.xml" parse="xml"/>
             <xi:include href="shared/en/attr-repositoryEncoding.xml" parse="xml"/>
             <xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
             <xi:include href="shared/en/attr-scriptEncoding.xml" parse="xml"/>

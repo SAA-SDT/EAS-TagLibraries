@@ -413,7 +413,7 @@
 						<item>Indicates, within the context of its parent(s), whether the element is
 							required or optional, and whether or not it is repeatable. </item>
 						<label>Examples:</label>
-						<item>Element and attribute descriptions include a tagged example to indicate how
+						<item>Element and attribute descriptions link to an example to indicate how
 							attributes and elements can be used together. Many of the examples are taken
 							from real authory records; others have been specially constructed for the Tag
 							Library. The examples illustrate any required sequences of elements, as in the
@@ -554,16 +554,167 @@
          </div>
       </body>
       <back>
-         <!-- One div for each element same element available as for div in front
-            in the div:
-               @type is always appendix
-               @xml:id is a short name of the appendix
-         -->
-<!--      Placeholder for possible appendix	-->
-			<!--<div type="appendix" xml:id="appendix1">
-				<head>Title</head>
-				<p>Contents of the appendix; this can also include lists</p>
-			</div>-->
+         <div type="appendix" xml:id="appendix1">
+			<div type="exampleText" subtype="control">
+                    <egXML xml:lang="eng"><![CDATA[<control addressLineTypeEncoding="EASList" agentTypeEncoding="EASList" audienceEncoding="EASList" contactLineTypeEncoding="EASList" countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" identityTypeEncoding="EASList" languageEncoding="iso639-2b" maintenanceStatus="revised" maintenanceEventTypeEncoding="EASList" maintenanceStatusEncoding="EASList" placeTypeEncoding="EASList" publicationStatus="published" publicationStatusEncoding="EASList" referredEntityTypeEncoding="EASList" relationTypeEncoding="EASList" repositoryEncoding="iso15511" scriptEncoding="iso15924" scriptOfElement="Latn" targetTypeEncoding="EASList" statusEncoding="EASList">
+	<recordId>
+		21159483
+	</recordId>
+	<maintenanceAgency>
+	<agencyCode>
+		NBuU-AR
+	</agencyCode>
+	<agencyName>
+		University Archives
+	</agencyName>
+	</maintenanceAgency>
+	<maintenanceHistory>
+		<maintenanceEvent maintenanceEventType="revised">
+			<agent agentType="machine">
+			<label>
+				CPF merge program
+			</label>
+			</agent>
+			<eventDateTime standardDateTime="2015-09-18">
+				2015-09-18
+			</eventDateTime>
+			<eventDescription>
+				Merge v2.0
+			</eventDescription>
+		</maintenanceEvent>
+		<maintenanceEvent maintenanceEventType="revised">
+			<agent agentType="machine">
+				<label>
+						SNAC EAC-CPF Parser
+				</label>
+			</agent>
+			<eventDateTime standardDateTime="2016-08-11T10:39:38">
+				2016-08-11T10:39:38
+			</eventDateTime>
+			<eventDescription>
+				Bulk ingest into SNAC Database
+			</eventDescription>
+		</maintenanceEvent>
+		<maintenanceEvent maintenanceEventType="revised">
+			<agent agentType="human">
+				<label>
+						R. Elia
+				</label>
+			</agent>
+			<eventDateTime standardDateTime="2025-10-15"/>
+		</maintenanceEvent>
+	</maintenanceHistory>
+	<sources>
+		<source id="source1" href="http://search.worldcat.org/title/1181498130">
+			<reference>
+				Handley-Taylor, Geoffrey, <span style="font-style:italic">The International Who's Who in Poetry</span>, vol. 2, London, The Cranbrook Tower Press, 1958.
+			</reference>
+		</source>
+		<source id="source2">
+			<reference>
+				"What Poetry Means to Me," manuscript in Sjanna Solum papers, dated 1952 May 16
+			</reference>
+		</source>
+		<source id="source3" href="https://search.worldcat.org/title/25575262">
+			<reference>
+				"Who's Who Poet, Sjanna Solum Living At Kelsey Hill, Deep River," <span style="font-style:italic">The New Era</span>, Deep River, CT, 1959 April 30.
+			</reference>
+			<citedRange unit="page">
+				11
+			</citedRange>
+		</source>
+	</sources>
+	<conventionDeclaration id="cd1">
+		<reference href="https://viaf.org/">
+			Virtual International Authority File
+		</reference>
+		<shortCode>
+			VIAF
+		</shortCode>
+	</conventionDeclaration>
+	<conventionDeclaration id="cd2">
+		<reference href="https://www.ica.org/standards/RiC/RiC-O_1-1.html">
+			Records in Contexts Ontology (ICA RiC-O) version 1.1
+		</reference>
+		<shortCode>
+			RICO
+		</shortCode>
+	</conventionDeclaration>
+	<conventionDeclaration id="cd3">
+		<reference href="http://vocab.getty.edu/page/aat">
+			Getty Art and Architecture Thesaurus
+		</reference>
+		<shortCode>
+			AAT
+		</shortCode>
+	</conventionDeclaration>
+	<conventionDeclaration id="cd4">
+	<reference href="https://id.loc.gov/authorities/names.html">
+		Library of Congress Name Authority Files
+	</reference>
+	<shortCode>
+		lcnaf
+	</shortCode>
+	</conventionDeclaration>
+	<otherRecordId localType="ARK">
+		http://n2t.net/ark:/99166/w6dz099z
+	</otherRecordId>
+	<otherRecordId vocabularySource="VIAF" vocabularySourceURI="#cd1" valueURI="http://viaf.org/viaf/3162902797577782447">
+		3162902797577782447
+	</otherRecordId>
+</control>]]>
+</egXML>
+</div>
+<div type="exampleText" subtype="relations">
+                    <egXML xml:lang="eng"><![CDATA[<relations>
+	<relation id="relation1" relationType="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation" targetType="resource" conventionDeclarationReference="cd2">
+		<label valueURI="https://find.library.upenn.edu/catalog/9923566873503681">
+			Foggy night They lie, they lie, by David Morton and Florence B. Price, Ms. Coll. 199: Marian Anderson Collection of Music Manuscripts, folder 1404
+		</label>
+		<dateRange>
+			<fromDate standardDate="1949-02-05">
+				February 5, 1949
+			</fromDate>
+			<toDate standardDate="1989">
+				1989
+			</toDate>
+		</dateRange>
+		<role>
+			Lyricist
+		</role>
+	</relation>
+	<relation id="relation2" relationType="https://www.ica.org/standards/RiC/ontology#MembershipRelation" targetType="corporateBody" conventionDeclarationReference="cd2">
+		<label valueURI="http://id.loc.gov/authorities/names/n50065387" conventionDeclarationReference="cd4">
+			Poetry Society of America
+		</label>
+	</relation>
+	<relation id="relation3" relationType="https://www.ica.org/standards/RiC/ontology#MembershipRelation" targetType="corporateBody" conventionDeclarationReference="cd2">
+		<label valueURI="http://id.loc.gov/authorities/names/no2003010198" conventionDeclarationReference="cd4">
+			Pen and Brush, Inc.
+		</label>
+	</relation>
+</relations>]]>
+                    </egXML>
+                    <egXML xml:lang="eng"><![CDATA[<relations>
+	<relation targetType="function">
+		<label valueURI="Example Function Description.xml">
+			Function name (placeholder)
+		</label>
+	</relation>
+	<relation targetType="corporateBody" relationType="https://www.ica.org/standards/RiC/ontology#AgentControlRelation">
+		<label valueURI="https://lccn.loc.gov/n83167936" vocabularySource="LCNAF" vocabularySourceURI="https://lccn.loc.gov" conventionDeclarationReference="cd1">
+			New York (State). Governor
+		</label>
+		<descriptiveNote>
+			<p>
+				Established in accordance with <referringString referredEntityType="name" target="mandate1">New York State Education Law</referringString>, the council consists of ten members, nine who are appointed to seven-year terms by the governor of the State of New York, and one student member who is elected to an annual term by the university’s students.
+			</p>
+		</descriptiveNote>
+	</relation>
+</relations>]]>	
+</egXML>
+</div>	 
+		 </div>
 		</back>
 	</text>
 </TEI>

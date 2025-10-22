@@ -56,13 +56,6 @@
 		<p>Optional, Not Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng" type="eaf"><![CDATA[<description>
-			...
-	<functionHistory>
-<p>In 1968 Yale stated they will admit 500 women into Yale College in the following Fall. The Planning Committee on Coeducation (1968-1969) oversaw every aspect of planning. In 1969, the University Committee on Coeducation was formed. The Committee continued to oversee the transition and facilitate integration of the female students. The Coeducation Office was also established to facilitate programs initiated by the Committee and to serve as a resource for the undergraduates, as well as graduate students, other women on campus, and administrators. Wasserman left Yale in 1972. Mary Arnstein became Acting Special Assistant to the President and chair of the University Committee on Coeducation. The Committee voted to terminate the position of Special Assistant and the Coeducation Office and transfer responsibilities to existing offices and a reorganized University Committee on the Education of Women in 1973. Some functions of the Coeducation Office were assumed by the new Office on the Education of Women. The University Committee on the Education of Women served as an advisory group to the president on issues related to women at Yale until 1977.</p>
-</functionHistory>
-			...
-</description>
-]]></egXML>
+		
 	</div>
 </div>

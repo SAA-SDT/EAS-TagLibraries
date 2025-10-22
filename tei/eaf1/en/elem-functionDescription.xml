@@ -56,13 +56,6 @@
 		<p>Mandatory, Not Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng" type="eaf"><![CDATA[For the function "Student registration"
-			<description>
-	<functionDescription>
-		<p>The registration of students in the College to specific courses for a given academic term.</functionDescription>
-	</function Agents>
-</description>
-
-]]></egXML>
+		
 	</div>
 </div>

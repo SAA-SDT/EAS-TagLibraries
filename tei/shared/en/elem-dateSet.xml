@@ -60,5 +60,6 @@
         <p type="eaf">Within <gi>useDates</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not repeatable</p>
     </div>
     <div type="examples">
-               </div>
+        <p type="ead">See <gi>identificationData</gi> encoding</p>
+    </div>
 </div>

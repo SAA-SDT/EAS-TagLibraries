@@ -51,13 +51,6 @@
 		<p>Optional, Not Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng" type="eaf"><![CDATA[<description>
-	....
-<functionDates>
-		<date>...</date>
-	</functionDates>
-....
-</description>
-]]></egXML>
+
 	</div>
 </div>

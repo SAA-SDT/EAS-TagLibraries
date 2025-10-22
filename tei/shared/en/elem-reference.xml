@@ -81,5 +81,6 @@
         <p type="ead">Within <gi>abstract</gi>, <gi>container</gi>, <gi>eventDescription</gi>, <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>, <gi>otherIdentificationData</gi>, <gi>p</gi>, <gi>physicalFacet</gi>, <gi>textualDate</gi>, <gi>unitId</gi>, <gi>unitTitle</gi>: optional, repeatable</p>
     </div>
     <div type="examples">
-<p type="ead">See <gi>control</gi> encoding</p>    </div>
+        <p>See <gi>control</gi> encoding</p>
+    </div>
 </div>

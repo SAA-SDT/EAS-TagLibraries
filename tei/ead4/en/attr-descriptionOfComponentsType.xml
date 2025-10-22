@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-descriptionOfComponentsType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<<<<<<< HEAD
     <head>
         <att>descriptionOfComponentsType</att>
     </head>
@@ -14,4 +15,20 @@
     </div>
     <div type="examples">
 <p type="ead">See <gi>identificationData</gi> encoding</p>    </div>
+=======
+	<head>
+		<att>descriptionOfComponentsType</att>
+	</head>
+	<div type="fullName">
+		<p>Description of Subordinate Components Type</p>
+	</div>
+	<div type="summary">
+		<p>An optional attribute in <gi>descriptionOfComponents</gi> that indicates the approach used in describing components within a finding aid (e.g. "inDepth"). Use the attribute <att>descriptionOfComponentsTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>descriptionOfComponentsType</att>.</p>
+	</div>
+	<div type="datatype">
+		<p>token</p>
+	</div>
+	<div type="examples">
+	</div>
+>>>>>>> 04571b58efc277306728a6532d835065840599a3
 </div>

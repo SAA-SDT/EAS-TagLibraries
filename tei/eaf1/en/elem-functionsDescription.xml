@@ -55,23 +55,6 @@
 		<p>Required, Not Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<functionsDescription>
-	<identity>
-		<identityID valueURI="">
-		<functionType>
-		<nameEntry><part>Student registration</part></nameEntry>
-	</identity>
-	<description>
-		<dateRange>
-			<fromDate></fromDate>
-			<toDate></toDate>
-		</dateRange>
-		<functionDescription>
-			<p>The registration of students in the College to specific courses for a given academic term.</functionDescription>
-		</functionDescription>
-</description>
-</functionsDescription>
-]]>
-      </egXML>
+		
 	</div>
 </div>
