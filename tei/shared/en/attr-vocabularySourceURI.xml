@@ -18,5 +18,10 @@
                   <p>anyURI</p>
                </div>
                <div type="examples">
+<<<<<<< HEAD
              <p>See <gi>control</gi> encoding</p>  </div>
+=======
+				<p type="eac">See <gi>description</gi> encoding</p>
+               </div>
+>>>>>>> 04571b58efc277306728a6532d835065840599a3
             </div>

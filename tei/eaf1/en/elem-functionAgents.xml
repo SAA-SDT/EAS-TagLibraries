@@ -53,14 +53,6 @@
 		<p>Optional, Not Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng" type="eaf"><![CDATA[<description>
-	....
-<functionAgents>
-		<functionAgent>...</functionAgent>
-<functionAgent>...</functionAgent>
-	</function Agents>
-....
-</description>
-]]></egXML>
+
 	</div>
 </div>

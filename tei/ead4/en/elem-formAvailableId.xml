@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-formAvailableId" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+<<<<<<< HEAD
     <head>
         <gi>formAvailableId</gi>
     </head>
@@ -73,4 +74,78 @@
     </div>
     <div type="examples">
                        <p>See <gi>archDesc</gi> encoding</p>    </div>
+=======
+	<head>
+		<gi>formAvailableId</gi>
+	</head>
+	<div type="fullName">
+		<p>Identifier of the Form Available</p>
+	</div>
+	<div type="summary">
+		<p>An optional child element of <gi>formAvailable</gi> that provides an identifier for the instantiation being described, e.g. a microfiche number.</p>
+	</div>
+	<div type="mayContain">
+		<p>
+			<list type="gloss">
+				<label>[text]</label>
+				<item/>
+				<label>reference</label>
+				<item>0..n</item>
+				<label>referringString</label>
+				<item>0..n</item>
+				<label>span</label>
+				<item>0..n</item>
+			</list>
+		</p>
+	</div>
+	<div type="mayOccurWithin">
+		<p>formAvailable</p>
+	</div>
+	<div type="attributes">
+		<p>
+			<list type="gloss">
+				<label>audience</label>
+				<item>Optional</item>
+				<label>conventionDeclarationReference</label>
+				<item>Optional</item>
+				<label>id</label>
+				<item>Optional</item>
+				<label>languageOfElement</label>
+				<item>Optional</item>
+				<label>localType</label>
+				<item>Optional</item>
+				<label>localTypeDeclarationReference</label>
+				<item>Optional</item>
+				<label>maintenanceEventReference</label>
+				<item>Optional</item>
+				<label>scriptOfElement</label>
+				<item>Optional</item>
+				<label>sourceReference</label>
+				<item>Optional</item>
+				<label>target</label>
+				<item>Optional</item>
+				<label>valueURI</label>
+				<item>Optional</item>
+				<label>vocabularySource</label>
+				<item>Optional</item>
+				<label>vocabularySourceURI</label>
+				<item>Optional</item>
+			</list>
+		</p>
+	</div>
+	<div type="description">
+		<p><gi>formAvailableId</gi> may contain any alpha-numeric text string that serves as a unique reference point or control number for the described instantiation.</p>
+	</div>
+	<div type="attributeusage">
+		<p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely and persistently identifies the instantiation in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
+	</div>	
+	<div type="seealso">
+		<p>Use <gi>unitId</gi> to provide an identifier for the record resource in general, which is different from, though might provide a basis for the identifiers used for its specific instantiations encoded in <gi>formAvailableId</gi>.</p>
+	</div>
+	<div type="availability">
+		<p>Optional, repeatable</p>
+	</div>
+	<div type="examples">
+	</div>
+>>>>>>> 04571b58efc277306728a6532d835065840599a3
 </div>

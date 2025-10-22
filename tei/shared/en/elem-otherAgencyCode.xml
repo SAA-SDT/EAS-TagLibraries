@@ -54,12 +54,13 @@
     <div type="attributeusage">
         <p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the code in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system.</p>
         <p>Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p>
-        <p type="eac">Use <att>localType</att> to specify the type of code being provided.</p>
-        <p type="eac">Use <att>status</att> to encode whether the <gi>otherAgencyCode</gi> is an authorized or alternative code.</p>
+        <p>Use <att>localType</att> to specify the type of code being provided.</p>
+        <p>Use <att>status</att> to encode whether the <gi>otherAgencyCode</gi> is an authorized or alternative code.</p>
     </div>
     <div type="availability">
         <p>Optional, repeatable</p>
     </div>
     <div type="examples">
-<p>See <gi>control</gi> encoding</p>               </div>
+        <p>See <gi>control</gi> encoding</p>
+    </div>
 </div>

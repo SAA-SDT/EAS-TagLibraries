@@ -16,8 +16,6 @@
 		<p>token</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng" type="eaf"><![CDATA[<functionsDescription functionStatus=”active”>
-</functionsDescription>
-]]></egXML>
+		
 	</div>
 </div>

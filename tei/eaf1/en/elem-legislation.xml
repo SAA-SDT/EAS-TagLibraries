@@ -64,15 +64,6 @@
 		<p>Required, Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng" type="eaf"><![CDATA[<description>
-	....
-<legislations>
-		<legislation>Joint Stock Companies Act, 1856; Companies Act, 1862; Companies Act, 1900; Companies Act,
-1907; Companies (Consolidation) Act, 1908; Companies Act, 1928; Companies Act, 1929;
-Companies Act, 1947.</legislation>
-
-	</legislations>
-....
-</description>]]></egXML>
+		
 	</div>
 </div>
