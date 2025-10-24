@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-formAvailable">
-<<<<<<< HEAD
     <head>
         <gi>formAvailable</gi>
     </head>
@@ -11,46 +10,44 @@
         <p>A required child element of <gi>formsAvailable</gi> used to name and describe single instantiations of the described records such as digital representations, microfiches, copies, etc.</p>
     </div>
     <div type="mayContain">
-        <p>
-            <list type="gloss">
-                <label>accessConditions</label>
-                <item>0..n</item>
-                <label>accruals</label>
-                <item>0..n</item>
-                <label>arrangement</label>
-                <item>0..n</item>
-                <label>container</label>
-                <item>0..n</item>
-                <label>custodHist</label>
-                <item>0..n</item>
-                <label>date or dateRange or dateSet</label>
-                <item>0..1</item>
-                <label>descriptiveNote</label>
-                <item>0..1</item>
-                <label>formAvailableId</label>
-                <item>0..n</item>
-                <label>label</label>
-                <item>1..n</item>
-                <label>physicalDescription</label>
-                <item>0..n</item>
-                <label>physicalOrTechnicalRequirements</label>
-                <item>0..n</item>
-                <label>placeName</label>
-                <item>0..n</item>
-                <label>processInfo</label>
-                <item>0..n</item>
-                <label>relations</label>
-                <item>0..1</item>
-                <label>role</label>
-                <item>0..n</item>
-                <label>separatedMaterial</label>
-                <item>0..n</item>
-                <label>sourceOfAcquisition</label>
-                <item>0..n</item>
-                <label>useConditions</label>
-                <item>0..n</item>
-            </list>
-        </p>
+        <p><list type="gloss">
+  <label>accessConditions</label>
+  <item>0..n</item>
+  <label>accruals</label>
+  <item>0..n</item>
+  <label>arrangement</label>
+  <item>0..n</item>
+  <label>container</label>
+  <item>0..n</item>
+  <label>custodHist</label>
+  <item>0..n</item>
+  <label>date or dateRange or dateSet</label>
+  <item>0..1</item>
+  <label>descriptiveNote</label>
+  <item>0..1</item>
+  <label>formAvailableId</label>
+  <item>0..n</item>
+  <label>label</label>
+  <item>1..n</item>
+  <label>physicalDescription</label>
+  <item>0..n</item>
+  <label>physicalOrTechnicalRequirements</label>
+  <item>0..n</item>
+  <label>placeName</label>
+  <item>0..n</item>
+  <label>processInfo</label>
+  <item>0..n</item>
+  <label>relations</label>
+  <item>0..1</item>
+  <label>role</label>
+  <item>0..n</item>
+  <label>separatedMaterial</label>
+  <item>0..n</item>
+  <label>sourceOfAcquisition</label>
+  <item>0..n</item>
+  <label>useConditions</label>
+  <item>0..n</item>
+</list></p>
     </div>
     <div type="mayOccurWithin">
         <p>formsAvailable</p>
@@ -89,145 +86,27 @@
     </div>
     <div type="description">
         <p>Use <gi>formAvailable</gi> within the wrapper element <gi>formsAvailable</gi> to specify single instances concerning the available form(s) of the described entities in <gi>archDesc</gi> or in <gi>c</gi> elements.</p>
-        <p>The available form(s), digital representations, microfiches or microfilms, copies, or originals in case the materials described are copies themselves need to be named using the element <gi>label</gi> and can be identified using the element <gi>formAvailableId</gi>. Same as the other entity elements, <gi>formAvailable</gi> includes an option to encode the specific type and role of an instantiation (<att>formAvailableType</att>) and <gi>role</gi>) and to provide a temporal or geographic dimension to the relation (date elements and <gi>placeName</gi>). With the sub-element <gi>relations</gi>, a more detailed description of the relationship itself is enabled.</p>
+        <p>The available form(s), digital representations, microfiches or microfilms, copies, or originals - in case the materials described are copies themselves - need to be named using the element <gi>label</gi> and can be identified using the element <gi>formAvailableId</gi>. Same as the other entity elements, <gi>formAvailable</gi> includes an option to encode the specific type and role of an instantiation (<att>formAvailableType</att>) and <gi>role</gi>) and to provide a temporal or geographic dimension to the relation (date elements and <gi>placeName</gi>). With the sub-element <gi>relations</gi>, a more detailed description of the relationship itself is enabled.</p>
         <p>Additionally, <gi>formAvailable</gi> includes elements to capture extent and other physical characteristics of each instantiation as well as elements such as <gi>accessConditions</gi> and <gi>useConditions</gi> or <gi>accruals</gi>, <gi>processInfo</gi> and <gi>sourceOfAcquisition</gi>, which might differ between the instantiations of the same record resource.</p>
         <p>The prescribed order of all child elements (both required and optional) is:</p>
         <list type="simple">
-            <item>
-                <gi>label</gi>
-            </item>
-            <item>
-                <gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi>
-            </item>
+                        <item><gi>label</gi></item>
+                        <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
             <item>relations</item>
-            <item>One or more of <gi>formAvailableId</gi>, <gi>placeName</gi>, <gi>role</gi>
-            </item>
-            <item>One or more of <gi>container</gi>, <gi>physicalDescription</gi>
-            </item>
-            <item>One or more of <gi>accessConditions</gi>, <gi>accruals</gi>, <gi>arrangement</gi>, <gi>custodHist</gi>, <gi>physicalOrTechnicalRequirements</gi>, <gi>processInfo</gi>, <gi>separatedMaterial</gi>, <gi>sourceOfAcquisition</gi>, <gi>useConditions</gi>
-            </item>
-            <item>
-                <gi>descriptiveNote</gi>
-            </item>
-        </list>
+            <item>One or more of <gi>formAvailableId</gi>, <gi>placeName</gi>, <gi>role</gi></item>
+            <item>One or more of <gi>container</gi>, <gi>physicalDescription</gi></item>
+            <item>One or more of <gi>accessConditions</gi>, <gi>accruals</gi>, <gi>arrangement</gi>, <gi>custodHist</gi>, <gi>physicalOrTechnicalRequirements</gi>, <gi>processInfo</gi>, <gi>separatedMaterial</gi>, <gi>sourceOfAcquisition</gi>, <gi>useConditions</gi></item>
+            <item><gi>descriptiveNote</gi></item>
+                </list>
     </div>
     <div type="attributeusage">
         <p>Use <att>valueURI</att> to directly link to the available form in question, e.g. a digital object identified by an ARK (Archival Resource Key) or DOI (Digital Object Identifier). Use <att>vocabularySource</att> to indicate the identifier scheme applied in this case.</p>
-        <p>If the available form in question consists of, for example, several individual image files, use the sub-element <gi>formAvailableId</gi> together with <att>valueURI</att> available therein to link to each of these files separately. Alternatively, an aggregated form including these individual files such as a IIIF manifest, a PDF file, a METS XML file, etc. might be used, which would then be linked to from <att>valueURI</att> within <gi>formAvailable</gi> as mentioned above.</p>
-    </div>
+        <p>If the available form in question consists of, for example, several individual image files, use the sub-element <gi>formAvailableId</gi> together with <att>valueURI</att> available therein to link to each of these files separately. Alternatively, an aggregated form including these individual files such as a IIIF manifest, a PDF file, a METS XML file, etc. might be used, which would then be linked to from <att>valueURI</att> within <gi>formAvailable</gi> as mentioned above.</p> 
+    </div>  
     <div type="availability">
         <p>Required, repeatable</p>
     </div>
     <div type="examples">
-                       <p>See <gi>archDesc</gi> encoding</p>    </div>
-=======
-	<head>
-		<gi>formAvailable</gi>
-	</head>
-	<div type="fullName">
-		<p>Form Available</p>
-	</div>
-	<div type="summary">
-		<p>A required child element of <gi>formsAvailable</gi> used to name and describe single instantiations of the described records such as digital representations, microfiches, copies, etc.</p>
-	</div>
-	<div type="mayContain">
-		<p><list type="gloss">
-  <label>accessConditions</label>
-  <item>0..n</item>
-  <label>accruals</label>
-  <item>0..n</item>
-  <label>arrangement</label>
-  <item>0..n</item>
-  <label>container</label>
-  <item>0..n</item>
-  <label>custodHist</label>
-  <item>0..n</item>
-  <label>date or dateRange or dateSet</label>
-  <item>0..1</item>
-  <label>descriptiveNote</label>
-  <item>0..1</item>
-  <label>formAvailableId</label>
-  <item>0..n</item>
-  <label>label</label>
-  <item>1..n</item>
-  <label>physicalDescription</label>
-  <item>0..n</item>
-  <label>physicalOrTechnicalRequirements</label>
-  <item>0..n</item>
-  <label>placeName</label>
-  <item>0..n</item>
-  <label>processInfo</label>
-  <item>0..n</item>
-  <label>relations</label>
-  <item>0..1</item>
-  <label>role</label>
-  <item>0..n</item>
-  <label>separatedMaterial</label>
-  <item>0..n</item>
-  <label>sourceOfAcquisition</label>
-  <item>0..n</item>
-  <label>useConditions</label>
-  <item>0..n</item>
-</list></p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>formsAvailable</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>coverage</label>
-				<item>Optional</item>
-				<label>formAvailableType</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
-				<label>valueURI</label>
-				<item>Optional</item>
-				<label>vocabularySource</label>
-				<item>Optional</item>
-				<label>vocabularySourceURI</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p>Use <gi>formAvailable</gi> within the wrapper element <gi>formsAvailable</gi> to specify single instances concerning the available form(s) of the described entities in <gi>archDesc</gi> or in <gi>c</gi> elements.</p>
-		<p>The available form(s), digital representations, microfiches or microfilms, copies, or originals - in case the materials described are copies themselves - need to be named using the element <gi>label</gi> and can be identified using the element <gi>formAvailableId</gi>. Same as the other entity elements, <gi>formAvailable</gi> includes an option to encode the specific type and role of an instantiation (<att>formAvailableType</att>) and <gi>role</gi>) and to provide a temporal or geographic dimension to the relation (date elements and <gi>placeName</gi>). With the sub-element <gi>relations</gi>, a more detailed description of the relationship itself is enabled.</p>
-		<p>Additionally, <gi>formAvailable</gi> includes elements to capture extent and other physical characteristics of each instantiation as well as elements such as <gi>accessConditions</gi> and <gi>useConditions</gi> or <gi>accruals</gi>, <gi>processInfo</gi> and <gi>sourceOfAcquisition</gi>, which might differ between the instantiations of the same record resource.</p>
-		<p>The prescribed order of all child elements (both required and optional) is:</p>
-		<list type="simple">
-                        <item><gi>label</gi></item>
-                        <item><gi>date</gi> or <gi>dateRange</gi> or <gi>dateSet</gi></item>
-			<item>relations</item>
-			<item>One or more of <gi>formAvailableId</gi>, <gi>placeName</gi>, <gi>role</gi></item>
-			<item>One or more of <gi>container</gi>, <gi>physicalDescription</gi></item>
-			<item>One or more of <gi>accessConditions</gi>, <gi>accruals</gi>, <gi>arrangement</gi>, <gi>custodHist</gi>, <gi>physicalOrTechnicalRequirements</gi>, <gi>processInfo</gi>, <gi>separatedMaterial</gi>, <gi>sourceOfAcquisition</gi>, <gi>useConditions</gi></item>
-			<item><gi>descriptiveNote</gi></item>
-                </list>
-	</div>
-	<div type="attributeusage">
-		<p>Use <att>valueURI</att> to directly link to the available form in question, e.g. a digital object identified by an ARK (Archival Resource Key) or DOI (Digital Object Identifier). Use <att>vocabularySource</att> to indicate the identifier scheme applied in this case.</p>
-		<p>If the available form in question consists of, for example, several individual image files, use the sub-element <gi>formAvailableId</gi> together with <att>valueURI</att> available therein to link to each of these files separately. Alternatively, an aggregated form including these individual files such as a IIIF manifest, a PDF file, a METS XML file, etc. might be used, which would then be linked to from <att>valueURI</att> within <gi>formAvailable</gi> as mentioned above.</p> 
-	</div>	
-	<div type="availability">
-		<p>Required, repeatable</p>
-	</div>
-	<div type="examples">
-	</div>
->>>>>>> 04571b58efc277306728a6532d835065840599a3
+        <p>See <gi>archDesc</gi> encoding</p>
+    </div>
 </div>

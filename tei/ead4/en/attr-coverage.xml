@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="attributeDocumentation" xml:id="attr-coverage" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
-<<<<<<< HEAD
     <head>
         <att>coverage</att>
     </head>
@@ -11,7 +10,7 @@
         <p>Specifies whether a statement of extent or information about analog respectively digital instantiation(s) relates to the entire unit being described or only a part thereof.</p>
     </div>
     <div type="description">
-        <p>Use <att>coverage</att> with <gi>extent</gi> to indicate whether the statement of physical description refers to the entire unit being described or only a part thereof.</p>
+        <p>Use <att>coverage</att> with <gi>extent</gi> to indicate whether the statement of physical description refers to the entire unit being described (e.g. with value "whole") or only a part thereof (e.g. with value "part").</p>
         <p>Use <att>coverage</att> with <gi>formAvailable</gi> to indicate whether the digital archival object or the copy or any other type of instantiation represents the entire set of records being described or a part of it.</p>
         <p>Use the attribute <att>coverageEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>coverage</att>.</p>
     </div>
@@ -19,26 +18,6 @@
         <p>token</p>
     </div>
     <div type="examples">
-	    <p>See <gi>archDesc</gi> and <gi>identificationData</gi> encoding</p>    </div>
-=======
-	<head>
-		<att>coverage</att>
-	</head>
-	<div type="fullName">
-		<p>Coverage</p>
-	</div>
-	<div type="summary">
-		<p>Specifies whether a statement of extent or information about analog respectively digital instantiation(s) relates to the entire unit being described or only a part thereof.</p>
-	</div>
-	<div type="description">
-		<p>Use <att>coverage</att> with <gi>extent</gi> to indicate whether the statement of physical description refers to the entire unit being described (e.g. with value "whole") or only a part thereof (e.g. with value "part").</p>
-		<p>Use <att>coverage</att> with <gi>formAvailable</gi> to indicate whether the digital archival object or the copy or any other type of instantiation represents the entire set of records being described or a part of it.</p>
-		<p>Use the attribute <att>coverageEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>coverage</att>.</p>
-	</div>
-	<div type="datatype">
-		<p>token</p>
-	</div>
-	<div type="examples">
-	</div>
->>>>>>> 04571b58efc277306728a6532d835065840599a3
+        <p>See <gi>archDesc</gi> and <gi>identificationData</gi> encoding</p>
+    </div>
 </div>
