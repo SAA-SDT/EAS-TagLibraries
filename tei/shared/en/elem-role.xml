@@ -67,5 +67,7 @@
         <p>Optional, repeatable</p>
     </div>
     <div type="examples">
-	</div>
+        <p type="ead">See <gi>archDesc</gi>, <gi>control</gi>, and <gi>findAidDesc</gi> encoding</p>
+        <p type="eac">See <gi>relation</gi> encoding</p>
+    </div>
 </div>

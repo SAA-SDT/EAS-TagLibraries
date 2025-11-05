@@ -1,73 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-genreForm" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
-	<head>
-		<gi>genreForm</gi>
-	</head>
-	<div type="fullName">
-		<p>Genre or Form</p>
-	</div>
-	<div type="summary">
-		<p>An optional element for encoding a genre or form of material.</p>
-	</div>
-	<div type="mayContain">
-		<p>
-			<list type="gloss">
-				<label>[text]</label>
-				<item/>
-				<label>reference</label>
-				<item>0..n</item>
-				<label>referringString</label>
-				<item>0..n</item>
-				<label>span</label>
-				<item>0..n</item>
-			</list>
-		</p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>identificationData</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>localType</label>
-				<item>Optional</item>
-				<label>localTypeDeclarationReference</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
-				<label>valueURI</label>
-				<item>Optional</item>
-				<label>vocabularySource</label>
-				<item>Optional</item>
-				<label>vocabularySourceURI</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p><gi>genreForm</gi> identifies the types of material being described by naming the style or technique of their intellectual content (genre), the order of information or the object function (form). Examples include: account books, architectural drawings, portraits, short stories, sound recordings, and videotapes.</p>
-		<p>Use <gi>genreForm</gi> to indicate a genre or form with major representation in the materials being described. It is recommended that the terms in <gi>genreForm</gi> be taken from authorized vocabularies (see “Attributes usage” for details).</p>
-	</div>
-	<div type="attributeusage">
-		<p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
-	</div>	
-	<div type="availability">
-		<p>Optional, Repeatable</p>
-	</div>
-	<div type="examples">
-	</div>
+    <head>
+        <gi>genreForm</gi>
+    </head>
+    <div type="fullName">
+        <p>Genre or Form</p>
+    </div>
+    <div type="summary">
+        <p>An optional element for encoding a genre or form of material.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+                <label>reference</label>
+                <item>0..n</item>
+                <label>referringString</label>
+                <item>0..n</item>
+                <label>span</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>identificationData</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p><gi>genreForm</gi> identifies the types of material being described by naming the style or technique of their intellectual content (genre), the order of information or the object function (form). Examples include: account books, architectural drawings, portraits, short stories, sound recordings, and videotapes.</p>
+        <p>Use <gi>genreForm</gi> to indicate a genre or form with major representation in the materials being described. It is recommended that the terms in <gi>genreForm</gi> be taken from authorized vocabularies (see “Attributes usage” for details).</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>valueURI</att> to provide a number, code, or string (e.g., URI) that uniquely identifies the genre or form in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> and/or <att>vocabularySourceURI</att> to name and/or point to the organization system used.</p>
+    </div>  
+    <div type="availability">
+        <p>Optional, Repeatable</p>
+    </div>
+    <div type="examples">
+        <p>See <gi>identificationData</gi> encoding</p>
+    </div>
 </div>

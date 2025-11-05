@@ -59,5 +59,7 @@
         <p>In all parents except <gi>descriptiveNote</gi>, the encoder must choose between using one or more <gi>p</gi> elements that are defined within the current EAS schema, or using a <gi>formattingExtention</gi> element (to wrap XHTML content) for more complex formatting.</p>
     </div>
     <div type="examples">
-               </div>
+        <p type="ead">See <gi>archDesc</gi> and <gi>identificationData</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+    </div>
 </div>

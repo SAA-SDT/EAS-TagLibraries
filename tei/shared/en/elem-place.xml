@@ -99,5 +99,7 @@
         <p type="ead">Within <gi>findAidDesc</gi>: optional, repeatable.</p>
     </div>
     <div type="examples">
-               </div>
+        <p type="ead">See <gi>archDesc</gi> and <gi>findAidDesc</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+    </div>
 </div>

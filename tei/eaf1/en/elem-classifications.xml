@@ -55,15 +55,6 @@
 		<p>Optional, Not Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng" type="eaf"><![CDATA[<description>
-	....
-<classifications>
-		<classification conventionDeclarationReference="conventionClassification1">L100</classification>
-<classification conventionDeclarationReference="conventionClassification2">4.2.1</classification>
-	</classifications>
-....
-</description>
 
-]]></egXML>
 	</div>
 </div>

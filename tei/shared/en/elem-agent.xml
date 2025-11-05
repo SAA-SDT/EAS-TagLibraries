@@ -104,5 +104,7 @@
       <p type="eaf">Required, not repeatable</p>
     </div>
     <div type="examples">
+        <p type="ead">See <gi>archDesc</gi>, <gi>control</gi>, and <gi>findAidDesc</gi> encoding</p>
+        <p type="eac">See <gi>control</gi> encoding</p>
   </div>
 </div>

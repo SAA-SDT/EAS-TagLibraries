@@ -76,5 +76,7 @@
         <p>Optional, not repeatable</p>
     </div>
     <div type="examples">
-               </div>
+        <p type="ead">See <gi>identificationData</gi> encoding</p>
+        <p type="eac">See <gi>identity</gi> encoding</p>
+    </div>
 </div>

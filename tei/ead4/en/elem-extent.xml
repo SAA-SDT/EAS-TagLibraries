@@ -1,66 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div type="elementDocumentation" xml:id="elem-extent" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
-	<head>
-		<gi>extent</gi>
-	</head>
-	<div type="fullName">
-		<p>Extent</p>
-	</div>
-	<div type="summary">
-		<p>An optional child of <gi>identificationData</gi> and <gi>physicalDescription</gi> used for information about the quantity of the materials being described or an expression of the space - physical as well as digital - they occupy.</p>
-	</div>
-	<div type="mayContain">
-		<p>
-			<list type="gloss">
-				<label>descriptiveNote</label>
-				<item>0..1</item>
-				<label>quantity</label>
-				<item>0..1</item>
-				<label>unitOfMeasurement</label>
-				<item>0..1</item>
-			</list>
-		</p>
-	</div>
-	<div type="mayOccurWithin">
-		<p>identificationData, physicalDescription</p>
-	</div>
-	<div type="attributes">
-		<p>
-			<list type="gloss">
-				<label>audience</label>
-				<item>Optional</item>
-				<label>conventionDeclarationReference</label>
-				<item>Optional</item>
-				<label>coverage</label>
-				<item>Optional</item>
-				<label>extentType</label>
-				<item>Optional</item>
-				<label>id</label>
-				<item>Optional</item>
-				<label>languageOfElement</label>
-				<item>Optional</item>
-				<label>maintenanceEventReference</label>
-				<item>Optional</item>
-				<label>scriptOfElement</label>
-				<item>Optional</item>
-				<label>sourceReference</label>
-				<item>Optional</item>
-				<label>target</label>
-				<item>Optional</item>
-			</list>
-		</p>
-	</div>
-	<div type="description">
-		<p>An element to capture information about the quantity of the materials being described or an expression of the digital or physical space they occupy. Includes such traditional archival measurements as cubic and linear feet and meters; also includes counts of microfilm reels, photographs, or other special formats, the number of logical records in a database, or the volume of a data file in bytes. Repeat the element when more than one type or unit of extent is provided, such as, when both linear feet and quantity of containers are given.</p>
-		<p>Either the sub-element <gi>quantity</gi> or the sub-element <gi>unitOfMeasurement</gi> must be present within <gi>extent</gi>, but it is recommended to use both child elements whenever possible. The sub-element <gi>descriptiveNote</gi> can be used to express physical description in a non-machine-processable form and in instances where data exchange is not a concern.</p>
-	</div>
-	<div type="attributeusage">
-		<p>Use the attributes <att>id</att> and <att>target</att> to relate two or more parallel statements of extent to each other. Use <att>coverage</att> to indicate whether the extent statement refers to all or only part of the materials being described.</p>
-	</div>	
-	<div type="availability">
-		<p>Within <gi>identificationData</gi>: optional, repeatable</p>
-		<p>Within <gi>physicalDescription</gi>: optional, not repeatable</p>
-	</div>
-	<div type="examples">
-	</div>
+    <head>
+        <gi>extent</gi>
+    </head>
+    <div type="fullName">
+        <p>Extent</p>
+    </div>
+    <div type="summary">
+        <p>An optional child of <gi>identificationData</gi> and <gi>physicalDescription</gi> used for information about the quantity of the materials being described or an expression of the space - physical as well as digital - they occupy.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>descriptiveNote</label>
+                <item>0..1</item>
+                <label>quantity</label>
+                <item>0..1</item>
+                <label>unitOfMeasurement</label>
+                <item>0..1</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>identificationData, physicalDescription</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>coverage</label>
+                <item>Optional</item>
+                <label>extentType</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>An element to capture information about the quantity of the materials being described or an expression of the digital or physical space they occupy. Includes such traditional archival measurements as cubic and linear feet and meters; also includes counts of microfilm reels, photographs, or other special formats, the number of logical records in a database, or the volume of a data file in bytes. Repeat the element when more than one type or unit of extent is provided, such as, when both linear feet and quantity of containers are given.</p>
+        <p>Either the sub-element <gi>quantity</gi> or the sub-element <gi>unitOfMeasurement</gi> must be present within <gi>extent</gi>, but it is recommended to use both child elements whenever possible. The sub-element <gi>descriptiveNote</gi> can be used to express physical description in a non-machine-processable form and in instances where data exchange is not a concern.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use the attributes <att>id</att> and <att>target</att> to relate two or more parallel statements of extent to each other. Use <att>coverage</att> to indicate whether the extent statement refers to all or only part of the materials being described.</p>
+    </div>  
+    <div type="availability">
+        <p>Within <gi>identificationData</gi>: optional, repeatable</p>
+        <p>Within <gi>physicalDescription</gi>: optional, not repeatable</p>
+    </div>
+    <div type="examples">
+        <p>See <gi>archDesc</gi> and <gi>identificationData</gi> encoding</p>
+    </div>
 </div>

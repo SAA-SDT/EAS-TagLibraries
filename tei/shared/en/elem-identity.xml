@@ -153,5 +153,6 @@
         <p>Required, not repeatable</p>
     </div>
     <div type="examples">
+        <p type="eac">See <gi>eac</gi> encoding</p>
    </div>
 </div>

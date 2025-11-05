@@ -18,5 +18,7 @@
       <p>normalizedString</p>
    </div>
    <div type="examples">
+    <p type="ead">See <gi>archDesc</gi> encoding</p>
+    <p type="eac">See <gi>control</gi> encoding</p>
    </div>
 </div>

@@ -46,10 +46,6 @@
 		<p>Required, Not Repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xml:lang="eng"><![CDATA[<eaf>
-  	<control countryEncoding="iso3166-1" dateEncoding="iso8601" detailLevel="extended" languageEncoding="ietf-bcp-47" repositoryEncoding="iso15511" scriptEncoding="iso15924"> [...] </control>
-  	<functionsDescription> [...] </functionsDescription>
-</eac>]]>
-      </egXML>
+
 	</div>
 </div>

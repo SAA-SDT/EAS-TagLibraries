@@ -58,20 +58,5 @@
 		<p>Optional, not repeatable</p>
 	</div>
 	<div type="examples">
-		<egXML xmlns="http://www.tei-c.org/ns/Examples">
-			<![CDATA[<formsAvailable>
-			<formAvailable valueURI="https://collections.library.yale.edu/manifests/2008313" coverage="whole" formAvailableType="digitalDerived">
-			<label>The Pippa and Porthos</label>
-			<role>IIIF manifest</role>
-		</formAvailable>
-			<formAvailable valueURI="https://collections.library.yale.edu/pdfs/2008313.pdf" coverage="whole" formAvailableType="digitalDerived">
-			<label>The Pippa and Porthos</label>
-			<role valueURI="application/pdf"/>
-		</formAvailable>
-			<descriptiveNote>
-			<p>Digitized pages of Barrie’s "The Pippa and Porthos."</p>
-		</descriptiveNote>
-		</formsAvailable>]]>
-		</egXML>
-	</div>
+	                       <p>See <gi>archDesc</gi> encoding</p></div>
 </div>
