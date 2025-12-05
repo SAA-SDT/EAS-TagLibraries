@@ -77,6 +77,7 @@
     </div>
     <div type="examples">
         <p type="ead">See <gi>archDesc</gi> and <gi>control</gi> encoding</p>
-        <p type="eac">See <gi>relation</gi> encoding</p>
+        <p type="eac">See <gi>relations</gi> encoding</p>
+        <p type="eaf">See <gi>relations</gi> encoding</p>
     </div>
 </div>

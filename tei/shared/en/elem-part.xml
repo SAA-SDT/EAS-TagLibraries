@@ -66,5 +66,6 @@
     <div type="examples">
         <p type="ead">See <gi>findAidDesc</gi> encoding</p>
         <p type="eac">See <gi>identity</gi> encoding</p>
+        <p type="eaf">See <gi>eaf</gi> encoding</p>
     </div>
 </div>

@@ -18,5 +18,6 @@
                <div type="examples">
                 <p type="ead">See <gi>archDesc</gi> and <gi>identificationData</gi> encoding</p>
                 <p type="eac">See <gi>description</gi> encoding</p>
+                <p type="eaf">See <gi>eaf</gi> encoding</p>
                </div>
             </div>

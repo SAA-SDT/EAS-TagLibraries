@@ -142,6 +142,7 @@
         <p>Optional, not repeatable</p>
     </div>
     <div type="examples">
-        <p type="eac">See <gi>control</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+        <p type="eaf">See <gi>eaf</gi> encoding</p>
    </div>
 </div>
