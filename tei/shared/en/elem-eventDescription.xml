@@ -63,5 +63,6 @@
     <div type="examples">
         <p type="ead">See <gi>archDesc</gi>  and <gi>control</gi> encoding</p>
         <p type="eac">See <gi>control</gi> and <gi>description</gi> encoding</p>
+        <p type="eaf">See <gi>control</gi> and <gi>description</gi> encoding</p>
     </div>
 </div>

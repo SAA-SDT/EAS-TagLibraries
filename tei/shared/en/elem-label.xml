@@ -87,5 +87,6 @@
     <div type="examples">
         <p type="ead">See <gi>archDesc</gi>, <gi>control</gi>, and <gi>findAidDesc</gi> encoding</p>
         <p type="eac">See <gi>description</gi> and <gi>relation</gi> encoding</p>
+        <p type="eaf">See <gi>eaf</gi> encoding</p>
     </div>
 </div>
