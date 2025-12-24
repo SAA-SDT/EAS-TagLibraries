@@ -556,8 +556,37 @@
 		<back>
 			<div type="appendix" xml:id="appendix1">
 				<head>Examples</head>
-					<div type="exampleText" subtype="eaf">
-							<egXML xml:lang="eng">
+				<p>Before EAC-F was available a description of a function being performed could look like this:</p>
+				<list type="gloss">	
+				<label>Function name</label>
+					<item>Campus maintenance</item>
+					
+					<label>Function description</label>
+					<item>Maintenance includes a full range of services to keep campus operational. Includes planning, construction, and operations in addition to custodial support, landscaping, snow removal, lockshop key services, and recycling assistance.</item>
+					
+					<label>Function dates</label>
+					<item>circa 1795 - 2023</item>
+					
+					<label>Function history</label>
+					<item>Included with the first issuance of Yale’s by-laws in 1795, the care of the campus buildings and grounds has evolved with the University. From the 1750s until the early 1900s this included the Old Campus area including Connecticut Hall and the dormitories, expanding to encompass the Divinity School and Library between 1835-1849. Between 1870-1928, Yale expanded again and added residential colleges and the buildings that would make up the Gothic revival style buildings of Cross Campus. Today the library maintains swaths of green spaces and a wide range of architectural styles. Since 2005, the focus of facilities, construction, and maintenance projects have focused on energy and environmental sustainability, led by the Office of Sustainability.</item>
+					
+					<label>Any procedural mandates that require the function to be performed?</label>
+					<item>As approved by the Yale Corporation By-Laws: "The Committee on Buildings and Grounds shall consist of not fewer than five members of the Corporation. Persons with experience in fields relating to buildings and grounds, not members of the Corporation, may be invited to be members of the Committee without vote. Such members may be invited by the Corporation to serve for such terms as the Corporation may approve. It shall examine the proposals of the President to the Corporation concerning the development and maintenance of a capital plan; the priority of building needs; the location, design, and erection of new structures; and the upkeep and improvement of buildings and grounds; and shall make comments and recommendations with respect thereto, prior to the presentation of the proposals by the President to the Corporation. Before making recommendations to the Corporation which require expenditure of money not provided for in an approved budget, it shall submit its recommendations to the Committee on Finance for review and approval. The Committee shall establish policy with respect to the use of University residences and shall review and approve individually any proposals for capital maintenance or renovation of residences owned by the University and occupied by University officials."</item>
+					
+					<label>Function agents</label>
+					<item><p>Buildings and Grounds Committee</p>
+						<p>Office of Facilities</p></item>
+					
+					<label>Relation to records</label>
+				<item><p>Buildings and Grounds Committee records</p>
+					<p>Yale University long-range building plan records: Yale University long-range building plan: <ref target="https://archives.yale.edu/repositories/12/resources/2112">https://archives.yale.edu/repositories/12/resources/2112</ref></p>
+					<p>Yale University buildings and grounds architectural documentation: <ref target="https://archives.yale.edu/repositories/12/resources/2586">https://archives.yale.edu/repositories/12/resources/2586</ref></p>
+					<p>Architectural drawings and maps of Yale University buildings and grounds: <ref target="https://archives.yale.edu/repositories/12/resources/2871">https://archives.yale.edu/repositories/12/resources/2871</ref></p>
+					<p>Robin Winks, Buildings and Grounds Committee, Yale University, records: <ref target="https://archives.yale.edu/repositories/12/resources/2090">https://archives.yale.edu/repositories/12/resources/2090</ref></p></item>
+				</list>
+				<div type="exampleText" subtype="eaf">
+				
+						<egXML xml:lang="eng">
 <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <eaf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://archivists.org/ns/eaf/v1 eaf.xsd" xmlns="https://archivists.org/ns/eaf/v1">
     <control>
