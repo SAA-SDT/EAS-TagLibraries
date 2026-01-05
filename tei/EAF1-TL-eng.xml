@@ -556,6 +556,7 @@
 		<back>
 			<div type="appendix" xml:id="appendix1">
 				<head>Examples</head>
+				<div type="exampleText" subtype="eaf">
 				<p>Before EAC-F was available a description of a function being performed could look like this:</p>
 				<list type="gloss">	
 				<label>Function name</label>
@@ -584,7 +585,8 @@
 					<p>Architectural drawings and maps of Yale University buildings and grounds: <ref target="https://archives.yale.edu/repositories/12/resources/2871">https://archives.yale.edu/repositories/12/resources/2871</ref></p>
 					<p>Robin Winks, Buildings and Grounds Committee, Yale University, records: <ref target="https://archives.yale.edu/repositories/12/resources/2090">https://archives.yale.edu/repositories/12/resources/2090</ref></p></item>
 				</list>
-				<div type="exampleText" subtype="eaf">
+				<p>Encoding the same function using EAC-F looks like this:</p>
+				
 				
 						<egXML xml:lang="eng">
 <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
@@ -697,7 +699,7 @@
     </functionsDescription>
 </eaf>]]>
 							</egXML>
-					</div>
+					
 				
 			<div type="exampleText" subtype="control">
                     <egXML xml:lang="eng"><![CDATA[<control addressLineTypeEncoding="EASList" agentTypeEncoding="EASList" audienceEncoding="EASList" contactLineTypeEncoding="EASList" countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" identityTypeEncoding="EASList" languageEncoding="iso639-2b" maintenanceStatus="revised" maintenanceEventTypeEncoding="EASList" maintenanceStatusEncoding="EASList" placeTypeEncoding="EASList" publicationStatus="published" publicationStatusEncoding="EASList" referredEntityTypeEncoding="EASList" relationTypeEncoding="EASList" repositoryEncoding="iso15511" scriptEncoding="iso15924" scriptOfElement="Latn" targetTypeEncoding="EASList" statusEncoding="EASList">
