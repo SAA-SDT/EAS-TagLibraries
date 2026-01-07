@@ -308,6 +308,153 @@
     <identificationData>
         <unitTitle languageOfElement="nl" scriptOfElement="Latn">Nederlandsche Gist- en Spiritusfabriek en Pharmaceutische Fabrieken voorheen Brocades-Stheeman &amp; Pharmacia, in 1967 gefuseerd tot Gist-Brocades</unitTitle>
     </identificationData>
+    <agents>
+        <agent agentType="group" valueURI="http://id.loc.gov/authorities/names/n80049704" vocabularySource="LCNAF">
+            <label>National Association for the Advancement of Colored People</label>
+            <role>Creator</role>
+        </agent>
+        <agent agentType="corporateBody" valueURI="http://id.loc.gov/authorities/names/n78089035" vocabularySource="LCNAF">
+            <label>Library of Congress</label>
+            <role>holdingInstitution</role>
+        </agent>
+        <agent>
+            <label>Schweizerisches Bundesarchiv</label>
+            <placeName target="place1">Bern</placeName>
+            <role>holdingInstitution</role>
+        </agent>
+    </agents>
+    <formsAvailable>
+        <formAvailable formAvailableType="digitalOriginal" coverage="whole">
+            <label>Photographs</label>
+            <physicalDescription>
+                <extent coverage="part" extentType="spaceOccupied" id="ext1" target="ext2 ext3">
+                    <quantity>650</quantity>
+                    <unitOfMeasurement>gigabytes</unitOfMeasurement>
+                </extent>
+            </physicalDescription>
+            <physicalDescription>
+                <extent coverage="part" extentType="carrier" id="ext2" target="ext1 ext3">
+                    <quantity>1</quantity>
+                    <unitOfMeasurement>hard disk</unitOfMeasurement>
+                    <descriptiveNote>
+                        <p>Password protected</p>
+                    </descriptiveNote>
+                </extent>
+            </physicalDescription>
+            <physicalDescription>
+                <extent coverage="part" extentType="materialType" id="ext3" target="ext1 ext2">
+                    <quantity>7,500</quantity>
+                    <unitOfMeasurement>electronic files</unitOfMeasurement>
+                </extent>
+                <physicalFacet valueURI="http://vocab.getty.edu/page/aat/300391245" vocabularySource="AAT">false-color infrared photography</physicalFacet>
+            </physicalDescription>
+        </formAvailable>
+        <formAvailable formAvailableType="analogDerived" coverage="part">
+            <label>Prints</label>
+            <physicalDescription>
+                <extent coverage="whole" extentType="materialType">
+                    <quantity>50</quantity>
+                    <unitOfMeasurement valueURI="http://vocab.getty.edu/page/aat/300053443" vocabularySource="AAT">Aerial photographs</unitOfMeasurement>
+                </extent>
+                <dimensions>
+                    <quantity>30 x 40</quantity>
+                    <unitOfMeasurement>cm</unitOfMeasurement>
+                </dimensions>
+            </physicalDescription>
+        </formAvailable>
+        <formAvailable valueURI="https://collections.library.yale.edu/catalog/2008313" coverage="whole" formAvailableType="digitalDerived">
+            <label>The Pippa and Porthos</label>
+            <formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044151/full/full/0/default.jpg">
+                The Pippa and Porthos (cover)
+            </formAvailableId>
+            <formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044153/full/full/0/default.jpg">
+                    The Pippa and Porthos (titlepage)
+                </formAvailableId>
+            <formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044154/full/full/0/default.jpg">
+                    The Pippa and Porthos (p. 1)
+                </formAvailableId>
+        </formAvailable>
+        <formAvailable>
+            <label>Born digital archives (audiovisual)</label>
+            <physicalDescription>
+                <extent>
+                    <quantity>3</quantity>
+                    <unitOfMeasurement>MP4 files</unitOfMeasurement>
+                </extent>
+                <physicalFacet localType="technique" localTypeDeclarationReference="physicalFacets">
+                    video
+                </physicalFacet>
+                <descriptiveNote>
+                    <p>Detailed technical metadata imported from SEDA schema.</p>
+                    <objectXMLWrap>
+                        <seda:DataObjectGroup id="aebaaaaaaihioegaabzdoamtvkrlrwyaaaam">
+                            <seda:BinaryDataObject id="aeaaaaaaaahioegaabzdoamtvkrlrwqaaabq">
+                                <seda:DataObjectVersion>BinaryMaster_1</seda:DataObjectVersion>
+                                <seda:Uri>Content/aeaaaaaaaahioegaabzdoamtvkrlrwqaaabq.mp3</seda:Uri>
+                                <seda:MessageDigest algorithm="SHA-512">
+                                    a6a34cf4fd36ff3bc9bdda6923f2380a80f4b015e905cae7ceff095ce4824705a682cb345c44e28f3643f7cc3deb66022dbe51a33881a5eec51648243e7e9463
+                                </seda:MessageDigest>
+                                <seda:Size>395736405</seda:Size>
+                                <seda:FormatIdentification>
+                                    <seda:FormatLitteral>MPEG 1/2 Audio Layer 3</seda:FormatLitteral>
+                                    <seda:MimeType>audio/mpeg</seda:MimeType>
+                                    <seda:FormatId>fmt/134</seda:FormatId>
+                                </seda:FormatIdentification>
+                                <seda:FileInfo>
+                                    <seda:Filename>vlc-record-12h00m41s-1ere partie _ 5_juillet_2016.MP3-.mp3</seda:Filename>
+                                    <seda:LastModified>2016-07-08T10:50:29.021</seda:LastModified>
+                                </seda:FileInfo>
+                            </seda:BinaryDataObject>
+                        </seda:DataObjectGroup>
+                    </objectXMLWrap>
+                </descriptiveNote>
+            </physicalDescription>
+        </formAvailable>
+    </formsAvailable>
+    <functions>
+        <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137609" functionType="function">
+            <label>Legislating</label>
+        </function>
+        <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300138095" functionType="subfunction">
+            <label>Law enforcing</label>
+        </function>
+        <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137796" functionType="subfunction">
+            <label>Convicting</label>
+        </function>
+    </functions>
+    <places>
+        <place>
+            <label languageOfElement="en">Royal Court, Stockholm</label>
+            <address>
+                <addressLine languageOfElement="se">Kungl. Hovstaterna</addressLine>
+                <addressLine languageOfElement="se">Kungl. Slottet</addressLine>
+                <addressLine addressLineType="postalCode">10770</addressLine>
+                <addressLine languageOfElement="se" addressLineType="municipality">
+                    Stockholm
+                </addressLine>
+            </address>
+            <contact>
+                <contactLine contactLineType="phoneNumber">08-402 60 00</contactLine>
+                <contactLine languageOfElement="se" contactLineType="homepage">
+                    https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html
+                </contactLine>
+                <contactLine languageOfElement="en" contactLineType="homepage">
+                    https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html
+                </contactLine>
+            </contact>
+            <geographicCoordinates coordinateSystem="mgrs">34V VF 23840 65720</geographicCoordinates>
+            <geographicCoordinates coordinateSystem="WGS84">59.3268871784808, 18.07163893373358</geographicCoordinates>
+        </place>
+        <place id="place1">
+            <label>Bern</label>
+            <role>Place of storage</role>
+            <address>
+                <addressLine addressLineType="street">Archivstrasse 24</addressLine>
+                <addressLine addressLineType="postalCode">3005</addressLine>
+                <addressLine addressLineType="municipality">Bern</addressLine>
+            </address>
+        </place>
+    </places>
     <accessConditions>
         <p>University records are public records and once fully processed are generally open to research use. Records that contain personally identifiable information will be closed to protect individual privacy. The closure of university records is subject to compliance with applicable laws.</p>
     </accessConditions>
@@ -333,21 +480,6 @@
             </xhtml:div>
         </formattingExtension>
     </accruals>
-    <agents>
-        <agent agentType="group" valueURI="http://id.loc.gov/authorities/names/n80049704" vocabularySource="LCNAF">
-            <label>National Association for the Advancement of Colored People</label>
-            <role>Creator</role>
-        </agent>
-        <agent agentType="corporateBody" valueURI="http://id.loc.gov/authorities/names/n78089035" vocabularySource="LCNAF">
-            <label>Library of Congress</label>
-            <role>holdingInstitution</role>
-        </agent>
-        <agent>
-            <label>Schweizerisches Bundesarchiv</label>
-            <placeName target="place1">Bern</placeName>
-            <role>holdingInstitution</role>
-        </agent>
-    </agents>
     <appraisal>
         <p>The records of the Mid-Ocean Dynamics Experiment came to the Institute Archives in two accessions in 1980 and 1982. During processing the collection was reduced from fifteen cubic feet to four by discarding duplicate materials, financial records, and publications not authored by MODE participants. Forty charts and six inches of raw data presented the primary appraisal issues. The raw data consisted of bulletins and reports referring to float positions, moorings, isotherms, geostrophic velocity calculations, ships' summaries, and work proposed and work carried out during the MODE-I experiment. As this raw data was recapitulated in weekly <referringString referredEntityType="publication">MODE Hot Line Bulletins</referringString>, only a sampling was retained in the collection. Also discarded were ten charts for which there were no descriptions of indicated data points, nor were dates or test site locations provided.</p>
         <p>The appraisal of this collection was carried out in consultation with Robert Heinmiller, a research associate at Woods Hole Oceanographic Institution during MODE.</p>
@@ -554,105 +686,6 @@
             </xhtml:div>
         </formattingExtension>
     </filePlan>
-    <formsAvailable>
-        <formAvailable formAvailableType="digitalOriginal" coverage="whole">
-            <label>Photographs</label>
-            <physicalDescription>
-                <extent coverage="part" extentType="spaceOccupied" id="ext1" target="ext2 ext3">
-                    <quantity>650</quantity>
-                    <unitOfMeasurement>gigabytes</unitOfMeasurement>
-                </extent>
-            </physicalDescription>
-            <physicalDescription>
-                <extent coverage="part" extentType="carrier" id="ext2" target="ext1 ext3">
-                    <quantity>1</quantity>
-                    <unitOfMeasurement>hard disk</unitOfMeasurement>
-                    <descriptiveNote>
-                        <p>Password protected</p>
-                    </descriptiveNote>
-                </extent>
-            </physicalDescription>
-            <physicalDescription>
-                <extent coverage="part" extentType="materialType" id="ext3" target="ext1 ext2">
-                    <quantity>7,500</quantity>
-                    <unitOfMeasurement>electronic files</unitOfMeasurement>
-                </extent>
-                <physicalFacet valueURI="http://vocab.getty.edu/page/aat/300391245" vocabularySource="AAT">false-color infrared photography</physicalFacet>
-            </physicalDescription>
-        </formAvailable>
-        <formAvailable formAvailableType="analogDerived" coverage="part">
-            <label>Prints</label>
-            <physicalDescription>
-                <extent coverage="whole" extentType="materialType">
-                    <quantity>50</quantity>
-                    <unitOfMeasurement valueURI="http://vocab.getty.edu/page/aat/300053443" vocabularySource="AAT">Aerial photographs</unitOfMeasurement>
-                </extent>
-                <dimensions>
-                    <quantity>30 x 40</quantity>
-                    <unitOfMeasurement>cm</unitOfMeasurement>
-                </dimensions>
-            </physicalDescription>
-        </formAvailable>
-        <formAvailable valueURI="https://collections.library.yale.edu/catalog/2008313" coverage="whole" formAvailableType="digitalDerived">
-            <label>The Pippa and Porthos</label>
-            <formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044151/full/full/0/default.jpg">
-                The Pippa and Porthos (cover)
-            </formAvailableId>
-            <formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044153/full/full/0/default.jpg">
-                    The Pippa and Porthos (titlepage)
-                </formAvailableId>
-            <formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044154/full/full/0/default.jpg">
-                    The Pippa and Porthos (p. 1)
-                </formAvailableId>
-        </formAvailable>
-        <formAvailable>
-            <label>Born digital archives (audiovisual)</label>
-            <physicalDescription>
-                <extent>
-                    <quantity>3</quantity>
-                    <unitOfMeasurement>MP4 files</unitOfMeasurement>
-                </extent>
-                <physicalFacet localType="technique" localTypeDeclarationReference="physicalFacets">
-                    video
-                </physicalFacet>
-                <descriptiveNote>
-                    <p>Detailed technical metadata imported from SEDA schema.</p>
-                    <objectXMLWrap>
-                        <seda:DataObjectGroup id="aebaaaaaaihioegaabzdoamtvkrlrwyaaaam">
-                            <seda:BinaryDataObject id="aeaaaaaaaahioegaabzdoamtvkrlrwqaaabq">
-                                <seda:DataObjectVersion>BinaryMaster_1</seda:DataObjectVersion>
-                                <seda:Uri>Content/aeaaaaaaaahioegaabzdoamtvkrlrwqaaabq.mp3</seda:Uri>
-                                <seda:MessageDigest algorithm="SHA-512">
-                                    a6a34cf4fd36ff3bc9bdda6923f2380a80f4b015e905cae7ceff095ce4824705a682cb345c44e28f3643f7cc3deb66022dbe51a33881a5eec51648243e7e9463
-                                </seda:MessageDigest>
-                                <seda:Size>395736405</seda:Size>
-                                <seda:FormatIdentification>
-                                    <seda:FormatLitteral>MPEG 1/2 Audio Layer 3</seda:FormatLitteral>
-                                    <seda:MimeType>audio/mpeg</seda:MimeType>
-                                    <seda:FormatId>fmt/134</seda:FormatId>
-                                </seda:FormatIdentification>
-                                <seda:FileInfo>
-                                    <seda:Filename>vlc-record-12h00m41s-1ere partie _ 5_juillet_2016.MP3-.mp3</seda:Filename>
-                                    <seda:LastModified>2016-07-08T10:50:29.021</seda:LastModified>
-                                </seda:FileInfo>
-                            </seda:BinaryDataObject>
-                        </seda:DataObjectGroup>
-                    </objectXMLWrap>
-                </descriptiveNote>
-            </physicalDescription>
-        </formAvailable>
-    </formsAvailable>
-    <functions>
-        <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137609" functionType="function">
-            <label>Legislating</label>
-        </function>
-        <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300138095" functionType="subfunction">
-            <label>Law enforcing</label>
-        </function>
-        <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137796" functionType="subfunction">
-            <label>Convicting</label>
-        </function>
-    </functions>
     <otherDescription valueURI="https://agatha.arch.be/data/ead/BE-A0518_104297_104557">
         <p languageOfElement="fr">L'inventaire est également disponible en néerlandais.</p>
     </otherDescription>
@@ -707,39 +740,6 @@
     <otherDescriptiveInfo>
         <p>There is no recorded notetaker on most minutes. Styles vary from brief bullet points to longform notes.</p>
     </otherDescriptiveInfo>
-    <places>
-        <place>
-            <label languageOfElement="en">Royal Court, Stockholm</label>
-            <address>
-                <addressLine languageOfElement="se">Kungl. Hovstaterna</addressLine>
-                <addressLine languageOfElement="se">Kungl. Slottet</addressLine>
-                <addressLine addressLineType="postalCode">10770</addressLine>
-                <addressLine languageOfElement="se" addressLineType="municipality">
-                    Stockholm
-                </addressLine>
-            </address>
-            <contact>
-                <contactLine contactLineType="phoneNumber">08-402 60 00</contactLine>
-                <contactLine languageOfElement="se" contactLineType="homepage">
-                    https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html
-                </contactLine>
-                <contactLine languageOfElement="en" contactLineType="homepage">
-                    https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html
-                </contactLine>
-            </contact>
-            <geographicCoordinates coordinateSystem="mgrs">34V VF 23840 65720</geographicCoordinates>
-            <geographicCoordinates coordinateSystem="WGS84">59.3268871784808, 18.07163893373358</geographicCoordinates>
-        </place>
-        <place id="place1">
-            <label>Bern</label>
-            <role>Place of storage</role>
-            <address>
-                <addressLine addressLineType="street">Archivstrasse 24</addressLine>
-                <addressLine addressLineType="postalCode">3005</addressLine>
-                <addressLine addressLineType="municipality">Bern</addressLine>
-            </address>
-        </place>
-    </places>
     <preferCite>
         <p>[Identification of item], Arequipa Sanatorium Records, BANC MSS 92/894c, The Bancroft Library, University of California, Berkeley.</p>
     </preferCite>
