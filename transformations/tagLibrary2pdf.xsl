@@ -785,7 +785,7 @@
     </xsl:template>
 
     <xsl:template
-        match="tei:list[@type = 'gloss'][ancestor-or-self::tei:front] | tei:list[@type = 'gloss'][ancestor-or-self::tei:div[@type = 'Introduction']]">
+        match="tei:list[@type = 'gloss'][ancestor-or-self::tei:front] | tei:list[@type = 'gloss'][ancestor-or-self::tei:div[@type = 'Introduction']] | tei:list[@type = 'gloss'][ancestor-or-self::tei:back]">
         <fo:list-block provisional-distance-between-starts="5mm" space-after="6pt">
             <fo:list-item>
                 <fo:list-item-label end-indent="label-end()">
