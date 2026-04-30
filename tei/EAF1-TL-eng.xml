@@ -16,7 +16,7 @@
 				</respStmt>
 			</titleStmt>
 			<editionStmt>
-				<edition>2025 Edition</edition>
+				<edition>2026 Edition</edition>
 			</editionStmt>
 			<publicationStmt>
 				<publisher>Society of American Archivists</publisher>
@@ -29,8 +29,8 @@
 					<addrLine>info@archivists.org</addrLine>
 					<addrLine>www.archivists.org</addrLine>
 				</address>
-				<date when="2025"/>
-				<idno>ISBN Number</idno>
+				<date when="2026"/>
+				<idno>978-1-958954-34-8</idno>
 				<availability>
 					<licence>This work is licensed under a Creative Commons Attribution 4.0
 						International License (CC BY 4.0). See <ref
@@ -55,13 +55,13 @@
 						Library</titlePart>
 					<titlePart type="additional">Version EAF 1.0.0</titlePart>
 				</docTitle>
-				<docEdition>2025 Edition</docEdition>
+				<docEdition>2026 Edition</docEdition>
 				<byline>Prepared and maintained by the</byline>
 				<docAuthor>Technical Subcommittee for Encoded Archival Standards of the Society of
 					American Archivists</docAuthor>
 
 				<docImprint>
-					<docDate>Date of the document</docDate>
+					<docDate>July 2026</docDate>
 				</docImprint>
 			</titlePage>
 			<div>
