@@ -16,7 +16,7 @@
 				</respStmt>
 			</titleStmt>
 			<editionStmt>
-				<edition>2026 Edition</edition>
+				<p>2026 Edition</p>
 			</editionStmt>
 			<publicationStmt>
 				<publisher>Society of American Archivists</publisher>
@@ -842,7 +842,8 @@
 </relations>]]>
                     </egXML>
                     
-</div>	 
+</div>	
+</div> 
 		 </div>
 		</back>
 	</text>
