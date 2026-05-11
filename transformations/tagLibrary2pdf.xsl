@@ -1166,6 +1166,8 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type='examples']">
+		<xsl:choose>
+			<xsl:when test="tei:p[@type=$currentStandard] | tei:p[not(@type)]">
 	        <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                         <xsl:variable name="termtitle">
                             <xsl:value-of select="current()/@type"/>
@@ -1173,6 +1175,11 @@
                         <xsl:value-of select="$headingtranslations/*:terms/*:term[@name = $termtitle]/*:translation[@lang = $currentLanguage]"/>
                     </fo:block>                    
         <xsl:call-template name="tokenizeExamples"/>
+		</xsl:when>
+		<xsl:otherwise>
+                    <xsl:text></xsl:text>
+                </xsl:otherwise>
+		</xsl:choose>
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'exampleText']"> 
