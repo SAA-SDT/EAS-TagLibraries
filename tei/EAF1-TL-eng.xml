@@ -126,6 +126,11 @@
 						EAS standards are maintained by the Technical Subcommittee on Encoded Archival
 						Standards, a group housed and supported by the Society of American
 						Archivists (SAA) and overseen by the SAA Standards Committee.</p>
+					<p>This tag library is focused on technical implementation of the EAF 1.0
+						standard. A companion document, the <ref target="https://saa-sdt.github.io/EAS-Best-Practices/">Best Practices Guide</ref> (BPG), provides
+						guidance on applying the standard in archival practice. The BPG includes
+						in-depth explanations of elements and attributes, use cases, and additional
+						examples.</p>
 					<p>The final creation of EAC-F was done by members of the TS-EAS Functions
 						Subteam: Karin Bredenberg, Ypapanti (Dia) Kytta, Mpho Ngoepe, Kolbe Resnick,
 						and Elizabeth Russey Roke</p>

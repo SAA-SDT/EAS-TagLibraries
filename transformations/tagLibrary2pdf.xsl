@@ -414,9 +414,10 @@
                 <xsl:value-of select="$TheWholeDocument/tei:editionStmt/tei:p"/>
             </fo:block>
             <fo:block wrap-option="no-wrap">
-                <xsl:value-of select="$printed"/>
+                <!--<xsl:value-of select="$printed"/>
                 :
-                <xsl:value-of select="$printedinusa"/>
+                <xsl:value-of select="$printedinusa"/>-->
+				<xsl:value-of select="$TheWholeDocument/tei:sourceDesc/tei:p"/>
             </fo:block>
         </fo:block>
         <fo:block padding-before=".5cm">
@@ -1165,7 +1166,7 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type='examples']">
-        <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
+	        <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                         <xsl:variable name="termtitle">
                             <xsl:value-of select="current()/@type"/>
                         </xsl:variable>
@@ -1175,7 +1176,7 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'exampleText']"> 
-             <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
+		     <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                 <xsl:attribute name="id" select="concat('example-', @subtype)"/>
                 <xsl:value-of select="@subtype"/>
              </fo:block>
