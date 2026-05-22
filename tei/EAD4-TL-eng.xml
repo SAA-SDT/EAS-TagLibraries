@@ -10,14 +10,14 @@
       <fileDesc>
          <titleStmt>
             <title type="main">Encoded Archival Description 4.0 Tag Library</title>
-	    <title type="additional">DRAFT</title>
+	    <title type="additional">Version 4.0.0</title>
             <respStmt>
                <resp>Prepared and maintained by the </resp>
                <name>Society of American Archivists</name>
             </respStmt>
          </titleStmt>
          <editionStmt>
-            <edition>Draft Release</edition>
+            <edition>2026 Edition</edition>
          </editionStmt>
          <publicationStmt>
             <publisher>Society of American Archivists</publisher>
@@ -30,8 +30,8 @@
                <addrLine>info@archivists.org</addrLine>
                <addrLine>www.archivists.org</addrLine>
             </address>
-            <date when="2025"/>
-            <idno>[placeholder for ISBN Number]</idno>
+            <date when="2026"/>
+            <idno>eISBN: 978-1-958954-32-4</idno>
             <availability>
                <licence>This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No part of this publication may be reproduced, stored in a retrieval system or transmitted in any form or by any means, electronic, mechanical or photocopying, recording, or otherwise without attribution.</licence>
             </availability>
@@ -46,25 +46,26 @@
          <titlePage>
             <docTitle>
                <titlePart type="main">Encoded Archival Description 4.0 Tag Library</titlePart>
-	       <titlePart type="additional">DRAFT</titlePart>
+	       <titlePart type="additional">Version 4.0.0</titlePart>
             </docTitle>
-            <docEdition>Draft Release</docEdition>
+            <docEdition>July 2026</docEdition>
             <byline>Prepared and maintained by the</byline>
             <docAuthor>Technical Subcommittee on Encoded Archival Standards (TS-EAS)</docAuthor>
             <docAuthor>Society of American Archivists</docAuthor>
             <docImprint>
-               <docDate>October 2025</docDate>
+               <docDate>July 2026</docDate>
             </docImprint>
          </titlePage>
          <div xml:lang="eng" type="Introduction">
             <div xml:id="preface">
-               <head>Preface to the Draft Tag Library</head>
+               <head>Preface to the Tag Library</head>
                <p>Encoded Archival Description (EAD) is the international metadata transmission standard for descriptions of archival records.  Developed and maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS) of the Society of American Archivists (SAA), EAD is used around the globe for digitally encoding the description of archival records.</p>
                <p>The fourth revision of EAD (EAD 4.0) recognizes that the methods of developing and maintaining archival description have changed since EAD 1.0 (1998). The revised standard is designed for a digital-first world, focusing on interoperability with other SAA standards (namely EAC-CPF 3.0 and EAC-F 1.0), support for linked open data, and incorporating external schemas into EAD.  EAD 4.0 also removes support for "print-first" features directly within the EAS schema, streamlines mixed content, and limits more complex nesting.</p>
-               <p>This draft tag library reflects the draft schema of EAD 4.0 after integrating community feedback on the initial draft in a first (April to July 2024) and second (April to May 2025) call for comments. For more information on the comments received and how the have been addressed, please see the <ref target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/blob/master/ead-subteam/major-revision_2021-2025_documents/FeedbackReceived_1stCallForComments_EAD4.0.pdf">Overview 1st call for comments</ref> and the <ref target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/blob/master/ead-subteam/major-revision_2021-2025_documents/FeedbackReceived_2ndCallForComments_EAD4.0.pdf">Overview 2nd call for comments</ref>. To learn more about the vision behind the new version of EAD, please see the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Infograph.pdf">Infograph</ref>; for a description of the main features of EAD 4.0, please see the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Editorial_ChangesInEAD4.0.pdf">Editorial Changes</ref>. Other relevant documents that document the revision process can be found on the TS-EAS <ref target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/tree/master/ead-subteam/major-revision_2021-2025_documents">GitHub</ref> page.</p>
-	       <p>With the alignment between EAD and the other Encoded Archival Standards, this draft tag library is the first to combine shared elements and attributes, i.e., those that are available in EAD, the Encoded Archival Context - Corporate Bodies, Persons, Families (EAC-CPF), and the Encoded Archival Context - Functions (EAC-F) with EAD-specific elements and attributes. The descriptions of shared elements and attributes in this draft tag library have been adapted based on their existing versions in the EAC-CPF 2.0.1 tag library.</p>
-			<p>Encoding examples are now presented per section within the EAS structure, rather than having element-based and attribute-based examples. For EAD, this means encoding examples for the <gi>control</gi> section, for <gi>findAidDesc</gi>, for the identification section, i.e. <gi>identificationData</gi>, for the description section, i.e. the narrative elements such as <gi>scopeContent</gi>, and elements enabling the encoding of relations, i.e. the entity elements such as <gi>agents</gi> and <gi>formsAvailable</gi>, and narrative elements about related resources such as <gi>relatedMaterial</gi>. With this, elements and attributes can better be presented in their broader application context and repetitions of the same encoding example across various elements and attributes (e.g. for a parent element and its individual child elements) can be avoided. These section-based encoding examples will be included in the Tag Libraries as an annex with references from the individual elements and attributes.</p>
-			<p>Comments on the EAD 4.0 draft should be sent to TS-EAS at the <ref target="https://www2.archivists.org/standards/TS-EAS-report-an-issue">Report an Issue form</ref> or via the TS-EAS repositories for the <ref target="https://github.com/SAA-SDT/eas-schemas">EAS schemas</ref> respectively the <ref target="https://github.com/SAA-SDT/EAS-TagLibraries">EAS Tag Libraries</ref> on GitHub.</p>
+               <p>This tag library reflects the schema of EAD 4.0 after integrating community feedback via two public call for comments (April to July 2024, April to May 2025). For more information on the comments received and how the have been addressed, please see the <ref target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/blob/master/ead-subteam/major-revision_2021-2025_documents/FeedbackReceived_1stCallForComments_EAD4.0.pdf">Overview 1st call for comments</ref> and the <ref target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/blob/master/ead-subteam/major-revision_2021-2025_documents/FeedbackReceived_2ndCallForComments_EAD4.0.pdf">Overview 2nd call for comments</ref>. To learn more about the vision behind the new version of EAD, please see the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Infograph.pdf">Infograph</ref>; for a description of the main features of EAD 4.0, please see the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Editorial_ChangesInEAD4.0.pdf">Editorial Changes</ref>. Other relevant documents that document the revision process can be found on the TS-EAS <ref target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/tree/master/ead-subteam/major-revision_2021-2025_documents">GitHub</ref> page.</p>
+	       <p>With the alignment between EAD and the other Encoded Archival Standards, this tag library is the first to combine shared elements and attributes between TS-EAS standards.  These elements and attributes are available in EAD, the Encoded Archival Context - Corporate Bodies, Persons, Families (EAC-CPF), and the Encoded Archival Context - Functions (EAC-F).  Elements and attributes specific to the description of records are included as EAD-only items.  The descriptions of shared elements and attributes in this tag library have been adapted based on their existing versions in the EAC-CPF 2.0.1 tag library.</p>
+	       <p>Encoding examples are now presented per section within the EAS structure, rather than having element-based and attribute-based examples. For example, encoding examples for all elements available under <gi>control</gi> are presented in the <gi>control</gi> example. With this, elements and attributes can better be presented in their broader application context and repetition is avoided. These section-based encoding examples will be included in the Tag Libraries as an annex with references from the individual elements and attributes.</p>
+	       <p>This tag library is focused on technical implementation of the EAD 4.0 standard.  A companion document, the <ref target="https://saa-sdt.github.io/EAS-Best-Practices/">Best Practices Guide</ref> (BPG), provides guidance on applying the standard in archival practice.  The BPG includes in-depth explanations of elements and attributes, use cases, and additional examples.</p>
+			<p>Comments on EAD 4.0 should be sent to TS-EAS at the <ref target="https://www2.archivists.org/standards/TS-EAS-report-an-issue">Report an Issue form</ref> or via the TS-EAS repositories for the <ref target="https://github.com/SAA-SDT/eas-schemas">EAS schemas</ref> respectively the <ref target="https://github.com/SAA-SDT/EAS-TagLibraries">EAS Tag Libraries</ref> on GitHub.</p>
             </div>
             <!-- Descriptive chapters
             Consists of a wrapper <div> with the elements:
