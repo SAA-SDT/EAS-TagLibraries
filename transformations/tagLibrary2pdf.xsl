@@ -215,22 +215,22 @@
                     <fo:block font-size="10pt" text-align="start">
                         <fo:retrieve-marker retrieve-class-name="taglibrary-head"/>
                     </fo:block>
-                </fo:static-content>
+                </fo:static-content-->
                 <fo:static-content flow-name="taglibrary-region-after-even">
                     <fo:block font-size="10pt" text-align="start">
                         <fo:page-number/>
                     </fo:block>
                 </fo:static-content>
-                <fo:static-content flow-name="taglibrary-region-before-odd">
+                <!--fo:static-content flow-name="taglibrary-region-before-odd">
                     <fo:block font-size="10pt" text-align="end">
                         <fo:retrieve-marker retrieve-class-name="taglibrary-head"/>
                     </fo:block>
-                </fo:static-content>
+                </fo:static-content-->
                 <fo:static-content flow-name="taglibrary-region-after-odd">
                     <fo:block font-size="10pt" text-align="end">
                         <fo:page-number/>
                     </fo:block>
-                </fo:static-content-->
+                </fo:static-content>
                 <fo:flow flow-name="taglibrary-region-body">
                     <xsl:apply-templates select="tei:TEI"/>
                 </fo:flow>
