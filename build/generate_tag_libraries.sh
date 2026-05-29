@@ -37,7 +37,7 @@ case $1 in
 		;;
 	"ead")
 		echo "generating EAD3 tag libraries"
-		java -cp $saxon net.sf.saxon.Transform -xi:on -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage=$lang currentStandard=$1
+		java -cp $saxon net.sf.saxon.Transform -xi:on -s:$2 -xsl:../transformations/tagLibrary2pdf.xsl -o:"$outfile"-tmp.xml SAA="yes" ISBN="eISBN: 978-1-958954-32-4" currentLanguage=$lang currentStandard=$1
 		java -cp $saxon net.sf.saxon.Transform -xi:on -s:$2 -xsl:../transformations/tagLibrary2html.xsl -o:"$outfile".html SAA="yes" currentLanguage=$lang currentStandard=$1
 		;;
   	"eaf")
@@ -57,6 +57,6 @@ esac
 
 # generate the FOXML->PDF, then delete FOXML
 $fop -a -c fop-config.xml "$outfile"-tmp.xml "$outfile".pdf
-rm "$outfile"-tmp.xml
+#rm "$outfile"-tmp.xml
 
 echo "All done!"

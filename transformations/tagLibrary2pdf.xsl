@@ -211,21 +211,21 @@
             </fo:page-sequence>
 
             <fo:page-sequence master-reference="frames" force-page-count="end-on-even">
-                <fo:static-content flow-name="taglibrary-region-before-even">
+                <!--fo:static-content flow-name="taglibrary-region-before-even">
                     <fo:block font-size="10pt" text-align="start">
                         <fo:retrieve-marker retrieve-class-name="taglibrary-head"/>
                     </fo:block>
-                </fo:static-content>
+                </fo:static-content-->
                 <fo:static-content flow-name="taglibrary-region-after-even">
                     <fo:block font-size="10pt" text-align="start">
                         <fo:page-number/>
                     </fo:block>
                 </fo:static-content>
-                <fo:static-content flow-name="taglibrary-region-before-odd">
+                <!--fo:static-content flow-name="taglibrary-region-before-odd">
                     <fo:block font-size="10pt" text-align="end">
                         <fo:retrieve-marker retrieve-class-name="taglibrary-head"/>
                     </fo:block>
-                </fo:static-content>
+                </fo:static-content-->
                 <fo:static-content flow-name="taglibrary-region-after-odd">
                     <fo:block font-size="10pt" text-align="end">
                         <fo:page-number/>
@@ -411,7 +411,7 @@
             <fo:block wrap-option="no-wrap">
                 <xsl:value-of select="$edition"/>
                 :
-                <xsl:value-of select="$TheWholeDocument/tei:editionStmt/tei:p"/>
+                <xsl:value-of select="$TheWholeDocument/tei:editionStmt/tei:edition"/>
             </fo:block>
             <fo:block wrap-option="no-wrap">
                 <!--<xsl:value-of select="$printed"/>
@@ -1036,7 +1036,7 @@
 
     <!-- div@type="attributes"/p has special handling, so we don't want this to match it -->
     <xsl:template match="tei:p[(@type=$currentStandard or not(@type)) and not(ancestor::div[@type='mayContain']) and not(ancestor::div[@type='attributes'])]">
-        <fo:block>
+	<fo:block space-after="3mm"> 
             <xsl:apply-templates/>
         </fo:block>
     </xsl:template>
