@@ -158,6 +158,11 @@
                     <p>Working in parallel with the ICA Experts Group on Archival Description (ICA
                         EGAD), EAC-CPF 3.0 reflects the Records on Contexts - Conceptial Model
                         (RiC-CM) where feasible.</p>
+					<p>This tag library is focused on technical implementation of the EAC-CPF 3.0
+						standard. A companion document, the <ref target="https://saa-sdt.github.io/EAS-Best-Practices/">Best Practices Guide</ref> (BPG), provides
+						guidance on applying the standard in archival practice. The BPG includes
+						in-depth explanations of elements and attributes, use cases, and additional
+						examples.</p>
                 </div>
                 <div xml:id="conventions">
                     <head>Tag Library Conventions</head>

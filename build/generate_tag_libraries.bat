@@ -19,19 +19,19 @@ goto END
 :EAC
 echo Generating EAC-CPF tag libraries
 java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="yes" currentLanguage="en" currentStandard="eac"
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage="en" currentStandard="eac"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="978-1-958954-33-1" currentLanguage="en" currentStandard="eac"
 goto MAIN
 
 :EAD
 echo Generating EAD tag libraries
 java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="yes" currentLanguage="en" currentStandard="ead"
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage="en" currentStandard="ead"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="978-1-958954-32-4" currentLanguage="en" currentStandard="ead"
 goto MAIN
 
 :EAF
 echo Generating EAF tag libraries
 java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2html.xsl -o:%1.html SAA="yes" currentLanguage="en" currentStandard="eaf"
-java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="PLACEHOLDER ISBN VALUE" currentLanguage="en" currentStandard="eaf"
+java -cp vendor\SaxonHE10-2J\saxon-he-10.2.jar net.sf.saxon.Transform -xi:on -s:%2 -xsl:..\transformations\tagLibrary2pdf.xsl -o:%1.xml SAA="yes" ISBN="978-1-958954-34-8" currentLanguage="en" currentStandard="eaf"
 goto MAIN
 
 :PREMIS

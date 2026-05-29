@@ -81,11 +81,9 @@
                   </list>
                </div>
                <div type="seealso">
-                  <list type="simple">
-                     <item>Use <gi>relation</gi> with <gi>targetEntity</gi> having the
+                     <p>Use <gi>relation</gi> with <gi>targetEntity</gi> having the
                            <att>targetType</att> "function" when describing the relationship between
-                        the function and the CPF entity being described in more detail.</item>
-                  </list>
+                        the function and the CPF entity being described in more detail.</p>
                </div>
                <div type="availability">
                   <p>Required, repeatable</p>
