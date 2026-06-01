@@ -149,8 +149,7 @@ div.contentTable {
 	padding-bottom: 6px;
 }
 div.p {
-	padding-top: 6px;
-	padding-bottom: 6px;
+	margin-bottom: 12px;
 	clear:both;
 }
 .label {
