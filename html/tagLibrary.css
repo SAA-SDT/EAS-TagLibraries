@@ -37,7 +37,7 @@ div.titlePage {
 	margin-left:2%
 }
 table {
-	border-spacing: 10px 0;
+	border-collapse: collapse;
 }
 .element {
 	padding-top: 24px;

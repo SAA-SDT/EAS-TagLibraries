@@ -1081,7 +1081,28 @@
                <a href="#appendix-Examples">Examples</a>
             </div>
             <div class="toc2">
-               <table/>
+               <table>
+                  <tr>
+                     <td>
+                        <a href="#example-archDesc">archDesc</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a href="#example-control">control</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a href="#example-findAidDesc">findAidDesc</a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a href="#example-identificationData">identificationData</a>
+                     </td>
+                  </tr>
+               </table>
             </div>
          </div>
          <div>
@@ -1288,10 +1309,10 @@
                      <div class="p">Record in <a href="#elem-accessConditions">&lt;accessConditions&gt;</a> information about the availability and accessibility of the described materials, whether due to the nature of the information in the materials being described, the physical condition of the materials, or the location of the materials. Examples include restrictions imposed by the donor, legal statute, repository, or other agency, as well as the need to make an appointment with repository staff. May also indicate that the materials are not restricted or that specific measures have been or need to be taken for the accessibility of the materials. Use the sub-element <a href="#elem-dateRange">&lt;dateRange&gt;</a> to provide information about the time span during which or until when these access conditions apply.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-accessConditions">&lt;accessConditions&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                      <div class="p">The prescribed order for all child elements is:
-            <div class="blockIndent">&lt;abstract&gt;<br/>
-                           <br/>&lt;dateRange&gt;<br/>
-                           <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                           <br/>
+            <div class="blockIndent">
+                           <div class="p">&lt;abstract&gt;</div>
+                           <div class="p">&lt;dateRange&gt;</div>
+                           <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                         </div>
                      </div>
                   </div>
@@ -1440,9 +1461,9 @@
                      <div class="p">Used to indicate anticipated additions to the material already held by the repository. May indicate quantity and frequency of the accruals. The element may also be used to indicate no additions are expected.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-accruals">&lt;accruals&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -2018,13 +2039,13 @@
                         <a href="#elem-agent">&lt;agent&gt;</a> is a required and repeatable sub-element of <a href="#elem-agents">&lt;agents&gt;</a> and can be used to name persons, organizations, and families related to the archival materials being described as well as their specific relationship with and role towards the materials. The required sub-element <a href="#elem-label">&lt;label&gt;</a> is used to encode the name of the agent, while the optional <a href="#attr-agentType">@agentType</a> and <a href="#elem-role">&lt;role&gt;</a> allow for specifying the type of agent in question and for providing information about their role in relation to the materials being described (e.g., if a person is the "creator" of the materials or a "contributor" or if they are the "director" or the "cinematographer" of audiovisual material or the "defendant" or the "plaintiff" in court records). Use the sub-elements <a href="#elem-relationship">&lt;relationship&gt;</a>, <a href="#elem-date">&lt;date&gt;</a>, <a href="#elem-dateRange">&lt;dateRange&gt;</a>, or <a href="#elem-dateSet">&lt;dateSet&gt;</a>, and <a href="#elem-placeName">&lt;placeName&gt;</a> along with the optional <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> to describe the relationship between the agent and the materials being described in more detail.</div>
                      <div class="p">Use <a href="#elem-agent">&lt;agent&gt;</a> as a required sub-element of <a href="#elem-maintenanceEvent">&lt;maintenanceEvent&gt;</a> to name and describe the person, institution, or system responsible for a maintenance event. Examples include the name of the author or encoder, the database responsible for creating the EAS instance, and the style sheet used to update an instance to a new version of the EAS. Use <a href="#elem-agent">&lt;agent&gt;</a> as an optional and repeatable sub-element of <a href="#elem-findAidDesc">&lt;findAidDesc&gt;</a> to indicate any person, institution, or system relevant to the creation, publication, or disseminiation of any instantiations of the EAS instance such as the author, publisher, or sponsor of a printed or online finding aid. Use <a href="#elem-agent">&lt;agent&gt;</a> as an optional sub-element in <a href="#elem-narrativeEvent">&lt;narrativeEvent&gt;</a> to name a person, institution, or other type of agent of importance to a specific event in the history or the processing of materials being described.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;label&gt;<br/>
-                        <br/>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br/>
-                        <br/>&lt;placeName&gt;<br/>
-                        <br/>&lt;role&gt;<br/>
-                        <br/>&lt;relationship&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;label&gt;</div>
+                        <div class="p">One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;</div>
+                        <div class="p">&lt;placeName&gt;</div>
+                        <div class="p">&lt;role&gt;</div>
+                        <div class="p">&lt;relationship&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -2156,9 +2177,9 @@
                   <div class="content">
                      <div class="p">Use <a href="#elem-agents">&lt;agents&gt;</a> to bind together one or more <a href="#elem-agent">&lt;agent&gt;</a> elements. <a href="#elem-agents">&lt;agents&gt;</a> must include at least one <a href="#elem-agent">&lt;agent&gt;</a> element.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;agent&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;agent&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -2284,10 +2305,10 @@
                      <div class="p">A statement of the rationale for decisions related to appraisal and disposition of the materials being described. Such decisions may be based upon the records’ current administrative, legal, and fiscal use; their evidential, intrinsic, and informational value; their arrangement and condition; and their relationship to other records. May include information about destruction actions, sampling, and disposition schedules.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-appraisal">&lt;appraisal&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML. Use <a href="#elem-narrativeEvent">&lt;narrativeEvent&gt;</a> to provide a chronology of appraisal events.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>&lt;narrativeEvent&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
+                        <div class="p">&lt;narrativeEvent&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -2684,9 +2705,9 @@
                      <div class="p">Use <a href="#elem-arrangement">&lt;arrangement&gt;</a> to record the logical or physical groupings within a hierarchical structure and their relationships. This includes how the described materials have been subdivided into smaller units, e.g., record groups into series. May also indicate the filing sequence of the described materials, for example chronological or alphabetical arrangement.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-arrangement">&lt;arrangement&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -2814,10 +2835,10 @@
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-biogHist">&lt;biogHist&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML. Use <a href="#elem-narrativeEvent">&lt;narrativeEvent&gt;</a> to provide a chronology of the biography or history of the entity.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
                      <div class="p">
-                        <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                           <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                           <br/>&lt;narrativeEvent&gt;<br/>
-                           <br/>
+                        <div class="blockIndent">
+                           <div class="p">&lt;abstract&gt; (if used)</div>
+                           <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
+                           <div class="p">&lt;narrativeEvent&gt;</div>
                         </div>
                      </div>
                   </div>
@@ -7012,22 +7033,22 @@
                      <div class="p">It must contain a unique identifier for the instance within the <a href="#elem-recordId">&lt;recordId&gt;</a> element. Other associated identifiers may be given in <a href="#elem-otherRecordId">&lt;otherRecordId&gt;</a>. There must be a description of the agency responsible for its creation and maintenance in <a href="#elem-maintenanceAgency">&lt;maintenanceAgency&gt;</a> as well as statements about the creation, maintenance, and disposition of the instance, as applicable, in <a href="#elem-maintenanceHistory">&lt;maintenanceHistory&gt;</a>.</div>
                      <div class="p">There are optional elements available to declare languages, rules, conventions and sources used in the EAS instance and licensing information about the EAS instance itself. Local types for certain elements used throughout the EAS instance are recommended to be defined in the <a href="#elem-localTypeDeclaration">&lt;localTypeDeclaration&gt;</a> element.</div>
                      <div class="p">The available child elements (both required and optional), in their prescribed order, are:</div>
-                     <div class="blockIndent">&lt;recordId&gt; - Required. Contains the unique identifier for the EAS instance.<br/>
-                        <br/>&lt;maintenanceAgency&gt; - Required. Contains the name and coded information about the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.<br/>
-                        <br/>&lt;maintenanceHistory&gt; - Required. Contains information about the date, type and events within the life cycle of an EAS instance.<br/>
-                        <br/>&lt;sources&gt; - Optional. Contains information about the sources consulted in creating the descriptive parts of the EAS instance.<br/>
-                        <br/>
-                        <div class="p">The following elements may appear in any order after the above elements:
-                         <div class="blockIndent">&lt;conventionDeclaration&gt; - Optional. Contains information on the rules or conventions used to construct the EAS instance.<br/>
-                              <br/>&lt;languageDeclaration&gt; - Optional. Contains coded and natural language information about the language or languages of the EAS instance.<br/>
-                              <br/>&lt;localTypeDeclaration&gt; - Optional. Contains information about local conventions used in the @localType attribute.<br/>
-                              <br/>&lt;otherRecordId&gt; - Optional. An element that allows the recording of additional identifiers that may be associated with the EAS instance.<br/>
-                              <br/>&lt;rightsDeclaration&gt; - Optional. Contains information about the usage rights of the EAS instance.<br/>
-                              <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;recordId&gt; - Required. Contains the unique identifier for the EAS instance.</div>
+                        <div class="p">&lt;maintenanceAgency&gt; - Required. Contains the name and coded information about the institution or service responsible for the creation, maintenance, and/or dissemination of the EAS instance.</div>
+                        <div class="p">&lt;maintenanceHistory&gt; - Required. Contains information about the date, type and events within the life cycle of an EAS instance.</div>
+                        <div class="p">&lt;sources&gt; - Optional. Contains information about the sources consulted in creating the descriptive parts of the EAS instance.</div>
+                        <div class="p">
+                           <div class="p">The following elements may appear in any order after the above elements:
+                         <div class="blockIndent">
+                                 <div class="p">&lt;conventionDeclaration&gt; - Optional. Contains information on the rules or conventions used to construct the EAS instance.</div>
+                                 <div class="p">&lt;languageDeclaration&gt; - Optional. Contains coded and natural language information about the language or languages of the EAS instance.</div>
+                                 <div class="p">&lt;localTypeDeclaration&gt; - Optional. Contains information about local conventions used in the @localType attribute.</div>
+                                 <div class="p">&lt;otherRecordId&gt; - Optional. An element that allows the recording of additional identifiers that may be associated with the EAS instance.</div>
+                                 <div class="p">&lt;rightsDeclaration&gt; - Optional. Contains information about the usage rights of the EAS instance.</div>
+                              </div>
                            </div>
                         </div>
-                        <br/>
-                        <br/>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -7037,74 +7058,206 @@
                   </div>
                   <div class="leftcol">Attributes: </div>
                   <div class="content">
-                     <div class="p">
-                        <div class="leftcol">addressLineTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherAddressLineTypeEncoding)</div>
-                        <div class="leftcol">agentTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherAgentTypeEncoding)</div>
-                        <div class="leftcol">audience</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">audienceEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherAudienceEncoding)</div>
-                        <div class="leftcol">contactLineTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherContactLineTypeEncoding)</div>
-                        <div class="leftcol">countryEncoding</div>
-                        <div class="content">Optional (values limited to: iso3166-1-alpha-2, iso3166-1-alpha-3, iso3166-1-numeric, iso3166-2, iso3166-3, otherCountryEncoding)</div>
-                        <div class="leftcol">coverageEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherCoverageEncoding)</div>
-                        <div class="leftcol">dateEncoding</div>
-                        <div class="content">Optional (values limited to: iso8601, otherDateEncoding)</div>
-                        <div class="leftcol">descriptionOfComponentsTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherDescriptionOfComponentsTypeEncoding)</div>
-                        <div class="leftcol">detailLevel</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">detailLevelEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherDetailLevelEncoding)</div>
-                        <div class="leftcol">extentTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherExtentTypeEncoding)</div>
-                        <div class="leftcol">formAvailableTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherFormAvailableTypeEncoding)</div>
-                        <div class="leftcol">functionTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherFunctionTypeEncoding)</div>
-                        <div class="leftcol">id</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">languageEncoding</div>
-                        <div class="content">Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2, iso639-2b, iso639-2t, iso639-3, iso639-5, otherLanguageEncoding)</div>
-                        <div class="leftcol">languageOfElement</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">levelEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherLevelEncoding)</div>
-                        <div class="leftcol">maintenanceEventTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherMaintenanceEventTypeEncoding)</div>
-                        <div class="leftcol">maintenanceStatus</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">maintenanceStatusEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherMaintenanceStatusEncoding)</div>
-                        <div class="leftcol">placeTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherPlaceTypeEncoding)</div>
-                        <div class="leftcol">publicationStatus</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">publicationStatusEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherPublicationStatusEncoding)</div>
-                        <div class="leftcol">referredEntityTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherReferredEntityTypeEncoding)</div>
-                        <div class="leftcol">relationTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherRelationTypeEncoding)</div>
-                        <div class="leftcol">repositoryEncoding</div>
-                        <div class="content">Optional (values limited to: iso15511, otherRepositoryEncoding)</div>
-                        <div class="leftcol">scriptEncoding</div>
-                        <div class="content">Optional (values limited to: iso15924, otherScriptEncoding)</div>
-                        <div class="leftcol">scriptOfElement</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">statusEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherStatusEncoding)</div>
-                        <div class="leftcol">target</div>
-                        <div class="content">Optional</div>
-                        <div class="leftcol">targetTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherTargetTypeEncoding)</div>
-                        <div class="leftcol">unitDateTypeEncoding</div>
-                        <div class="content">Optional (values limited to: EASList, otherUnitDateTypeEncoding)</div>
-                     </div>
+                     <table>
+                        <tr>
+                           <td>
+                              <a href="#attr-addressLineTypeEncoding">addressLineTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherAddressLineTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-agentTypeEncoding">agentTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherAgentTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-audience">audience</a>
+                           </td>
+                           <td>Optional</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-audienceEncoding">audienceEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherAudienceEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-contactLineTypeEncoding">contactLineTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherContactLineTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-countryEncoding">countryEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: iso3166-1-alpha-2, iso3166-1-alpha-3, iso3166-1-numeric, iso3166-2, iso3166-3, otherCountryEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-coverageEncoding">coverageEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherCoverageEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-dateEncoding">dateEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: iso8601, otherDateEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-descriptionOfComponentsTypeEncoding">descriptionOfComponentsTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherDescriptionOfComponentsTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-detailLevel">detailLevel</a>
+                           </td>
+                           <td>Optional</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-detailLevelEncoding">detailLevelEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherDetailLevelEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-extentTypeEncoding">extentTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherExtentTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-formAvailableTypeEncoding">formAvailableTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherFormAvailableTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-functionTypeEncoding">functionTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherFunctionTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-id">id</a>
+                           </td>
+                           <td>Optional</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-languageEncoding">languageEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: ietf-bcp-47, iso639-1, iso639-2, iso639-2b, iso639-2t, iso639-3, iso639-5, otherLanguageEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-languageOfElement">languageOfElement</a>
+                           </td>
+                           <td>Optional</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-levelEncoding">levelEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherLevelEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-maintenanceEventTypeEncoding">maintenanceEventTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherMaintenanceEventTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-maintenanceStatus">maintenanceStatus</a>
+                           </td>
+                           <td>Optional</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-maintenanceStatusEncoding">maintenanceStatusEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherMaintenanceStatusEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-placeTypeEncoding">placeTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherPlaceTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-publicationStatus">publicationStatus</a>
+                           </td>
+                           <td>Optional</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-publicationStatusEncoding">publicationStatusEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherPublicationStatusEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-referredEntityTypeEncoding">referredEntityTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherReferredEntityTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-relationTypeEncoding">relationTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherRelationTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-repositoryEncoding">repositoryEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: iso15511, otherRepositoryEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-scriptEncoding">scriptEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: iso15924, otherScriptEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-scriptOfElement">scriptOfElement</a>
+                           </td>
+                           <td>Optional</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-statusEncoding">statusEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherStatusEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-target">target</a>
+                           </td>
+                           <td>Optional</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-targetTypeEncoding">targetTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherTargetTypeEncoding)</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="#attr-unitDateTypeEncoding">unitDateTypeEncoding</a>
+                           </td>
+                           <td>Optional (values limited to: EASList, otherUnitDateTypeEncoding)</td>
+                        </tr>
+                     </table>
                   </div>
                   <div class="leftcol">Availability: </div>
                   <div class="content">
@@ -7166,10 +7319,10 @@
                         <a href="#elem-shortCode">&lt;shortCode&gt;</a> may be used to identify the standard or controlled vocabulary in a coded structure. Any notes relating to how these rules or conventions have been used may be given within <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a>.</div>
                      <div class="p">Use <a href="#elem-conventionDeclaration">&lt;conventionDeclaration&gt;</a> to name and refer to other authorized value lists, if you use these instead of the EAS lists or ISO standards available with the optional encoding attributes in <a href="#elem-control">&lt;control&gt;</a> (e.g.  <a href="#attr-countryEncoding">@countryEncoding</a>, <a href="#attr-maintenanceEventTypeEncoding">@maintenanceEventTypeEncoding</a> or <a href="#attr-relationTypeEncoding">@relationTypeEncoding</a>). It is recommended that <a href="#elem-reference">&lt;reference&gt;</a> includes a link to these other value lists to still enable semantic interoperability.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;reference&gt;<br/>
-                        <br/>&lt;shortCode&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;reference&gt;</div>
+                        <div class="p">&lt;shortCode&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -7288,10 +7441,10 @@
                         <a href="#elem-custodHist">&lt;custodHist&gt;</a> may be used to describe both physical possession and intellectual ownership, providing details of changes of ownership and/or custody that may be significant in terms of authority, integrity, and interpretation.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-custodHist">&lt;custodHist&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML. Use <a href="#elem-narrativeEvent">&lt;narrativeEvent&gt;</a> to provide a chronology of the custodial history.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>&lt;narrativeEvent&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
+                        <div class="p">&lt;narrativeEvent&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -7588,9 +7741,9 @@
                         <a href="#elem-dateRange">&lt;dateRange&gt;</a> contains <a href="#elem-fromDate">&lt;fromDate&gt;</a> and/or <a href="#elem-toDate">&lt;toDate&gt;</a>, and therefore may express a range of dates as a starting point with no end point, a start and end point, or an end point with no starting point. Either <a href="#elem-fromDate">&lt;fromDate&gt;</a> or <a href="#elem-toDate">&lt;toDate&gt;</a> must be present within a <a href="#elem-dateRange">&lt;dateRange&gt;</a>, but it is recommended to use both child elements whenever possible.</div>
                      <div class="p">The content of the children of <a href="#elem-dateRange">&lt;dateRange&gt;</a> is intended to be a human-readable, natural language expression of the dates. If, however, indexing or other machine processing of dates is desired, <a href="#attr-standardDate">@standardDate</a> should be used on the children of <a href="#elem-dateRange">&lt;dateRange&gt;</a> to record the date in machine-processable form as well.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;fromDate&gt;<br/>
-                        <br/>&lt;toDate&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;fromDate&gt;</div>
+                        <div class="p">&lt;toDate&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -8579,9 +8732,9 @@
                      <div class="p">A filing plan is usually identified by the type of system used, e.g., alphabetical, numerical, alpha-numerical, decimal, color-coded, etc. It is often hierarchical and may include the filing guidelines of the originating entity. Additional types include a drawing of a room layout or a scientific scheme.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-filePlan">&lt;filePlan&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -9006,14 +9159,14 @@
                      <div class="p">The available form(s), digital representations, microfiches or microfilms, copies, or originals - in case the materials described are copies themselves - need to be named using the element <a href="#elem-label">&lt;label&gt;</a> and can be identified using the element <a href="#elem-formAvailableId">&lt;formAvailableId&gt;</a>. Same as the other entity elements, <a href="#elem-formAvailable">&lt;formAvailable&gt;</a> includes an option to encode the specific type and role of an instantiation (<a href="#attr-formAvailableType">@formAvailableType</a>) and <a href="#elem-role">&lt;role&gt;</a>) and to provide a temporal or geographic dimension to the relation (date elements and <a href="#elem-placeName">&lt;placeName&gt;</a>). With the sub-element <a href="#elem-relations">&lt;relations&gt;</a>, a more detailed description of the relationship itself is enabled.</div>
                      <div class="p">Additionally, <a href="#elem-formAvailable">&lt;formAvailable&gt;</a> includes elements to capture extent and other physical characteristics of each instantiation as well as elements such as <a href="#elem-accessConditions">&lt;accessConditions&gt;</a> and <a href="#elem-useConditions">&lt;useConditions&gt;</a> or <a href="#elem-accruals">&lt;accruals&gt;</a>, <a href="#elem-processInfo">&lt;processInfo&gt;</a> and <a href="#elem-sourceOfAcquisition">&lt;sourceOfAcquisition&gt;</a>, which might differ between the instantiations of the same record resource.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;label&gt;<br/>
-                        <br/>&lt;date&gt; or &lt;dateRange&gt; or &lt;dateSet&gt;<br/>
-                        <br/>relations<br/>
-                        <br/>One or more of &lt;formAvailableId&gt;, &lt;placeName&gt;, &lt;role&gt;<br/>
-                        <br/>One or more of &lt;container&gt;, &lt;physicalDescription&gt;<br/>
-                        <br/>One or more of &lt;accessConditions&gt;, &lt;accruals&gt;, &lt;arrangement&gt;, &lt;custodHist&gt;, &lt;physicalOrTechnicalRequirements&gt;, &lt;processInfo&gt;, &lt;separatedMaterial&gt;, &lt;sourceOfAcquisition&gt;, &lt;useConditions&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;label&gt;</div>
+                        <div class="p">&lt;date&gt; or &lt;dateRange&gt; or &lt;dateSet&gt;</div>
+                        <div class="p">relations</div>
+                        <div class="p">One or more of &lt;formAvailableId&gt;, &lt;placeName&gt;, &lt;role&gt;</div>
+                        <div class="p">One or more of &lt;container&gt;, &lt;physicalDescription&gt;</div>
+                        <div class="p">One or more of &lt;accessConditions&gt;, &lt;accruals&gt;, &lt;arrangement&gt;, &lt;custodHist&gt;, &lt;physicalOrTechnicalRequirements&gt;, &lt;processInfo&gt;, &lt;separatedMaterial&gt;, &lt;sourceOfAcquisition&gt;, &lt;useConditions&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -9300,9 +9453,9 @@
                   <div class="content">
                      <div class="p">Use the optional <a href="#elem-formsAvailable">&lt;formsAvailable&gt;</a> element to group together one or more occurrences of <a href="#elem-formAvailable">&lt;formAvailable&gt;</a>. <a href="#elem-formsAvailable">&lt;formsAvailable&gt;</a> must include at least one <a href="#elem-formAvailable">&lt;formAvailable&gt;</a> element.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;formAvailable&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;formAvailable&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -9626,13 +9779,13 @@
                         <a href="#elem-function">&lt;function&gt;</a> must include at least one <a href="#elem-label">&lt;label&gt;</a> element to identify the functions, activities and processes in order to provide useful access points to the materials, especially for corporate, government, or institutional records. <a href="#elem-label">&lt;label&gt;</a> can be repeated within <a href="#elem-function">&lt;function&gt;</a> to include translations of the same function. Use the <a href="#attr-languageOfElement">@languageOfElement</a> attribute to identify the language used in each <a href="#elem-label">&lt;label&gt;</a>. Examples include "collecting taxes" and "entertaining". Terms used in <a href="#elem-label">&lt;label&gt;</a> may be drawn from controlled vocabularies or may be natural language terms.</div>
                      <div class="p">Associated date(s) (<a href="#elem-date">&lt;date&gt;</a>, <a href="#elem-dateRange">&lt;dateRange&gt;</a>, or <a href="#elem-dateSet">&lt;dateSet&gt;</a>) and place(s) (<a href="#elem-placeName">&lt;placeName&gt;</a>) may be included to further constrain the term's meaning. A <a href="#elem-role">&lt;role&gt;</a> can be defined same as a <a href="#attr-functionType">@functionType</a> and the <a href="#elem-relationship">&lt;relationship&gt;</a> between the function and the materials being described can be specified. A <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> may be included if a fuller textual explanation is needed.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:
-                  <div class="blockIndent">&lt;label&gt;<br/>
-                           <br/>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br/>
-                           <br/>&lt;placeName&gt;<br/>
-                           <br/>&lt;role&gt;<br/>
-                           <br/>&lt;relationship&gt;<br/>
-                           <br/>&lt;descriptiveNote&gt;<br/>
-                           <br/>
+                  <div class="blockIndent">
+                           <div class="p">&lt;label&gt;</div>
+                           <div class="p">One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;</div>
+                           <div class="p">&lt;placeName&gt;</div>
+                           <div class="p">&lt;role&gt;</div>
+                           <div class="p">&lt;relationship&gt;</div>
+                           <div class="p">&lt;descriptiveNote&gt;</div>
                         </div>
                      </div>
                   </div>
@@ -9758,9 +9911,9 @@
                   <div class="content">
                      <div class="p">Use the optional <a href="#elem-functions">&lt;functions&gt;</a> element to group together one or more occurrences of <a href="#elem-function">&lt;function&gt;</a>. <a href="#elem-functions">&lt;functions&gt;</a> must include at least one <a href="#elem-function">&lt;function&gt;</a> element.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:
-                  <div class="blockIndent">&lt;function&gt;<br/>
-                           <br/>&lt;descriptiveNote&gt;<br/>
-                           <br/>
+                  <div class="blockIndent">
+                           <div class="p">&lt;function&gt;</div>
+                           <div class="p">&lt;descriptiveNote&gt;</div>
                         </div>
                      </div>
                   </div>
@@ -10971,11 +11124,11 @@
                         <a href="#elem-legalStatus">&lt;legalStatus&gt;</a> must include at least one <a href="#elem-term">&lt;term&gt;</a> element, where the legal status is encoded. <a href="#elem-term">&lt;term&gt;</a> can be repeated within <a href="#elem-legalStatus">&lt;legalStatus&gt;</a> to include translations of the same term. Use the <a href="#attr-languageOfElement">@languageOfElement</a> attribute to identify the language used in each <a href="#elem-term">&lt;term&gt;</a>.</div>
                      <div class="p">Associated date(s) (<a href="#elem-date">&lt;date&gt;</a>, <a href="#elem-dateRange">&lt;dateRange&gt;</a>, or <a href="#elem-dateSet">&lt;dateSet&gt;</a>) and place(s) (<a href="#elem-placeName">&lt;placeName&gt;</a>) may be included to further constrain the term's meaning. A <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> element may be included if a fuller textual explanation is needed.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;term&gt;<br/>
-                        <br/>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br/>
-                        <br/>&lt;placeName&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;term&gt;</div>
+                        <div class="p">One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;</div>
+                        <div class="p">&lt;placeName&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -11120,10 +11273,10 @@
                      <div class="p">Each additional rule or set of rules, controlled vocabulary, or standard should be contained in a separate <a href="#elem-localTypeDeclaration">&lt;localTypeDeclaration&gt;</a>.</div>
                      <div class="p">The child <a href="#elem-reference">&lt;reference&gt;</a> must be used to cite the resource that lists the local rules or controlled terms. Any notes relating to how these rules or conventions have been used may be given in <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a>. The child <a href="#elem-shortCode">&lt;shortCode&gt;</a> may be used to identify any abbreviation or code representing the local convention or controlled vocabulary.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;reference&gt;<br/>
-                        <br/>&lt;shortCode&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;reference&gt;</div>
+                        <div class="p">&lt;shortCode&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -11251,11 +11404,11 @@
                      any additional identifiers. Any general information about the institution or service in
                      relation to the EAS instance may be given in <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a>.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;agencyCode&gt; (if used)<br/>
-                        <br/>&lt;agencyName&gt;<br/>
-                        <br/>&lt;otherAgencyCode&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;agencyCode&gt; (if used)</div>
+                        <div class="p">&lt;agencyName&gt;</div>
+                        <div class="p">&lt;otherAgencyCode&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -11379,10 +11532,10 @@
                      <div class="p">
                         <a href="#elem-maintenanceEvent">&lt;maintenanceEvent&gt;</a> must include <a href="#elem-agent">&lt;agent&gt;</a> and <a href="#elem-eventDateTime">&lt;eventDateTime&gt;</a> child elements to record the agent that carried out the maintenance event, and the date and time the maintenance event occurred.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;agent&gt;<br/>
-                        <br/>&lt;eventDateTime&gt;<br/>
-                        <br/>&lt;eventDescription&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;agent&gt;</div>
+                        <div class="p">&lt;eventDateTime&gt;</div>
+                        <div class="p">&lt;eventDescription&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -11568,11 +11721,11 @@
                      <div class="p">Use <a href="#elem-narrativeEvent">&lt;narrativeEvent&gt;</a> to record an activity in the creation, management and ongoing maintenance of the materials being described or in the history of the records creator. This may include activities of appraisal and selection, sensitivity review, revisions, updates, retentions, etc.</div>
                      <div class="p">The type of each event may be defined with the attribute <a href="#attr-localType">@localType</a>. Use <a href="#attr-localTypeDeclarationReference">@localTypeDeclarationReference</a> to refer to a <a href="#elem-localTypeDeclaration">&lt;localTypeDeclaration&gt;</a> within <a href="#elem-control">&lt;control&gt;</a> where you have defined those types. Use the required child element <a href="#elem-date">&lt;date&gt;</a> to record when the event took place. Using the optional child element <a href="#elem-agent">&lt;agent&gt;</a> to provide information about who or what carried out, or was responsible for the activity is highly recommended. The child element <a href="#elem-placeName">&lt;placeName&gt;</a> may be used to provide information about where the event happened. Information about the event may be described in <a href="#elem-eventDescription">&lt;eventDescription&gt;</a>.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;date&gt;<br/>
-                        <br/>&lt;agent&gt;<br/>
-                        <br/>&lt;placeName&gt;<br/>
-                        <br/>&lt;eventDescription&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;date&gt;</div>
+                        <div class="p">&lt;agent&gt;</div>
+                        <div class="p">&lt;placeName&gt;</div>
+                        <div class="p">&lt;eventDescription&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -11895,10 +12048,10 @@
                      <div class="p">Such additional descriptions can either be described using narrative text in the elements <a href="#elem-abstract">&lt;abstract&gt;</a>, <a href="#elem-p">&lt;p&gt;</a>, and <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> or they can be named within and, if applicable, linked to via <a href="#elem-relations">&lt;relations&gt;</a>. Using <a href="#elem-relations">&lt;relations&gt;</a> is especially useful when referring to several other descriptions at once and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</div>
                      <div class="p">If described in narrative text, the element <a href="#elem-reference">&lt;reference&gt;</a> within <a href="#elem-p">&lt;p&gt;</a> may be used to refer to analog or digital resources.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;relations&gt;<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;relations&gt;</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -12051,9 +12204,9 @@
                      <div class="p">Use <a href="#elem-otherDescriptiveInfo">&lt;otherDescriptiveInfo&gt;</a> only after considering how the existence of unspecified content will affect search, retrieval, and display.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-otherDescriptiveInfo">&lt;otherDescriptiveInfo&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -12655,11 +12808,11 @@
                      <div class="p">
                         <a href="#elem-physicalDescription">&lt;physicalDescription&gt;</a> creates structured statements describing the physical or logical extent or the medium of the instantiation described in <a href="#elem-formAvailable">&lt;formAvailable&gt;</a>. While optional individually, one of the child elements <a href="#elem-dimensions">&lt;dimensions&gt;</a>, <a href="#elem-extent">&lt;extent&gt;</a> or <a href="#elem-physicalFacet">&lt;physicalFacet&gt;</a> has to be included when using <a href="#elem-physicalDescription">&lt;physicalDescription&gt;</a>. Next to the descriptive, human-readable information, the structured design of <a href="#elem-physicalDescription">&lt;physicalDescription&gt;</a> allows for quantifying the extent of the whole or a part of the instantiation described in a form that will also be machine-processable and that will facilitate reporting, statistics, sorting, and importing and exporting data in a collection management system.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;extent&gt;<br/>
-                        <br/>&lt;dimensions&gt;<br/>
-                        <br/>&lt;physicalFacet&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;extent&gt;</div>
+                        <div class="p">&lt;dimensions&gt;</div>
+                        <div class="p">&lt;physicalFacet&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                      <div class="p">Use <a href="#elem-objectXMLWrap">&lt;objectXMLWrap&gt;</a> in <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> to include, where necessary, more detailed information encoded in another standard such as MIX, AudioMD, national standards focussed specifically on digital instantiations, etc.</div>
                   </div>
@@ -12917,9 +13070,9 @@
                         <a href="#elem-physicalOrTechnicalRequirements">&lt;physicalOrTechnicalRequirements&gt;</a> is used to capture any physical or technical characteristics that affect the storage or use of the specific form of the archival record being described. This may hence be different for an analog or digital form. <a href="#elem-physicalOrTechnicalRequirements">&lt;physicalOrTechnicalRequirements&gt;</a> may include details of the specific form's physical composition, preservation requirements, or particular hardware or software needed to access the materials.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-physicalOrTechnicalRequirements">&lt;physicalOrTechnicalRequirements&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -13070,13 +13223,13 @@
                      <div class="p">The <a href="#elem-address">&lt;address&gt;</a> element is available for specifying a postal or other address, while a digital address or other contact information can be encoded using the <a href="#elem-contact">&lt;contact&gt;</a> element. Specific coordinates for the geographic feature or location may be provided using the element <a href="#elem-geographicCoordinates">&lt;geographicCoordinates&gt;</a>.</div>
                      <div class="p">Associated date or date range (<a href="#elem-date">&lt;date&gt;</a>, <a href="#elem-dateRange">&lt;dateRange&gt;</a>, or <a href="#elem-dateSet">&lt;dateSet&gt;</a>) information may be included to further constrain the place's meaning. A <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> may be included if a fuller explanation of the significance of the place to the records being described is needed.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;label&gt;<br/>
-                        <br/>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br/>
-                        <br/>&lt;role&gt;<br/>
-                        <br/>&lt;relationship&gt;<br/>
-                        <br/>One or more of &lt;address&gt;, &lt;contact&gt; and  &lt;geographicCoordinates&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;label&gt;</div>
+                        <div class="p">One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;</div>
+                        <div class="p">&lt;role&gt;</div>
+                        <div class="p">&lt;relationship&gt;</div>
+                        <div class="p">One or more of &lt;address&gt;, &lt;contact&gt; and  &lt;geographicCoordinates&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -13342,9 +13495,9 @@
                   <div class="content">
                      <div class="p">Use the optional <a href="#elem-places">&lt;places&gt;</a> element to group together one or more occurrences of <a href="#elem-place">&lt;place&gt;</a>. <a href="#elem-places">&lt;places&gt;</a> must include at least one <a href="#elem-place">&lt;place&gt;</a> element. A <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> element may be included if a fuller textual explanation is needed.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;place&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;place&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -13464,9 +13617,9 @@
                      <div class="p">Use <a href="#elem-preferCite">&lt;preferCite&gt;</a> to supply users with a prescribed wording or format for references to the described materials to be included in bibliographies, footnotes, screen credits, etc.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-preferCite">&lt;preferCite&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -13598,10 +13751,10 @@
                      <div class="p">Depending on the context, e.g. differing national approaches, <a href="#elem-processInfo">&lt;processInfo&gt;</a> might also refer to activities conducted before the materials are transferred to the archives, e.g. when the records creators already conduct some of the activities around appraisal or sensitivity review.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-processInfo">&lt;processInfo&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML. Use <a href="#elem-narrativeEvent">&lt;narrativeEvent&gt;</a> to provide a chronology of processing events.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>&lt;narrativeEvent&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
+                        <div class="p">&lt;narrativeEvent&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -13732,10 +13885,10 @@
                      <div class="p">These works can either be described using narrative text in the elements <a href="#elem-abstract">&lt;abstract&gt;</a>, <a href="#elem-p">&lt;p&gt;</a>, and <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> or they can be named within and, if applicable, linked to via <a href="#elem-relations">&lt;relations&gt;</a>. Using <a href="#elem-relations">&lt;relations&gt;</a> is especially useful when referring to several publications at once and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</div>
                      <div class="p">If described in narrative text, the element <a href="#elem-reference">&lt;reference&gt;</a> within <a href="#elem-p">&lt;p&gt;</a> may be used to refer to analog or digital publications.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;relations&gt;<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;relations&gt;</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -14063,10 +14216,10 @@
                         <a href="#elem-recordTypeSpecificStatement">&lt;recordTypeSpecificStatement&gt;</a> is for capturing record type specific details that are unique to a particular class, form or type of material and which are not recorded in any other element of description. Examples include mathematical data, such as scale for cartographic and architectural records, jurisdictional and denominational data for philatelic records, and presentation data that describes the format of music manuscripts.</div>
                      <div class="p">Use the child <a href="#elem-objectXMLWrap">&lt;objectXMLWrap&gt;</a> to include record type specfic details in another XML format or standard that might allow for more detailed encoding of such details than the EAS.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>&lt;objectXMLWrap&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
+                        <div class="p">&lt;objectXMLWrap&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -14506,10 +14659,10 @@
                      <div class="p">These associated materials can either be described using narrative text in the elements <a href="#elem-abstract">&lt;abstract&gt;</a>, <a href="#elem-p">&lt;p&gt;</a>, and <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> or they can be named within and, if applicable, linked to via <a href="#elem-relations">&lt;relations&gt;</a>. Using <a href="#elem-relations">&lt;relations&gt;</a> is especially useful when referring to several associated materials at once and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</div>
                      <div class="p">If described in narrative text, the element <a href="#elem-reference">&lt;reference&gt;</a> within <a href="#elem-p">&lt;p&gt;</a> may be used to refer to such associated materials.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;relations&gt;<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;relations&gt;</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -14673,13 +14826,13 @@
                      <div class="p">Use <a href="#elem-objectXMLWrap">&lt;objectXMLWrap&gt;</a> to embed XML documenting the related entity from any other namespace. Use <a href="#elem-date">&lt;date&gt;</a>, <a href="#elem-dateRange">&lt;dateRange&gt;</a>, or <a href="#elem-dateSet">&lt;dateSet&gt;</a> for specifying the time period of the relationship and <a href="#elem-placeName">&lt;placeName&gt;</a> for relevant location information. <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> may be included for more detailed specifications or explanations of the relationship.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
                      <div class="p">
-                        <div class="blockIndent">&lt;label&gt;<br/>
-                           <br/>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br/>
-                           <br/>&lt;placeName&gt;<br/>
-                           <br/>&lt;role&gt;<br/>
-                           <br/>&lt;descriptiveNote&gt;<br/>
-                           <br/>&lt;objectXMLWrap&gt;<br/>
-                           <br/>
+                        <div class="blockIndent">
+                           <div class="p">&lt;label&gt;</div>
+                           <div class="p">One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;</div>
+                           <div class="p">&lt;placeName&gt;</div>
+                           <div class="p">&lt;role&gt;</div>
+                           <div class="p">&lt;descriptiveNote&gt;</div>
+                           <div class="p">&lt;objectXMLWrap&gt;</div>
                         </div>
                      </div>
                   </div>
@@ -14793,9 +14946,9 @@
                   <div class="content">
                      <div class="p">A wrapper element that groups together one or more <a href="#elem-relation">&lt;relation&gt;</a> elements, each of which encodes a specific relationship.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;relation&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;relation&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -15041,10 +15194,10 @@
                      <div class="p">
                         <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> may be used to provide a human-readable description of the license statement.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;reference&gt;<br/>
-                        <br/>&lt;shortCode&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;reference&gt;</div>
+                        <div class="p">&lt;shortCode&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -15268,9 +15421,9 @@
                         <a href="#elem-scopeContent">&lt;scopeContent&gt;</a> contains a narrative statement that summarizes the range and topical coverage of the materials. It provides the researcher with the information necessary to evaluate the potential relevance of the materials being described. <a href="#elem-scopeContent">&lt;scopeContent&gt;</a> may include information about the form and arrangement of the materials; dates covered by the materials; significant organizations, individuals, events, places, and subjects represented in the materials; and functions and activities that generated the materials being described. It may also identify strengths of or gaps in the materials.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-scopeContent">&lt;scopeContent&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -15402,10 +15555,10 @@
                      <div class="p">These separated materials can either be described using narrative text in the elements <a href="#elem-abstract">&lt;abstract&gt;</a>, <a href="#elem-p">&lt;p&gt;</a>, and <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> or they can be named within and, if applicable, linked to via <a href="#elem-relations">&lt;relations&gt;</a>. Using <a href="#elem-relations">&lt;relations&gt;</a> is especially useful when referring to several separated materials at once, and will also allow for a more detailed description of the relationship itself by including type and role information or a temporal or geographic dimension of the relationship.</div>
                      <div class="p">If described in narrative text, the element <a href="#elem-reference">&lt;reference&gt;</a> within <a href="#elem-p">&lt;p&gt;</a> may be used to refer to such separated materials.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;relations&gt;<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;relations&gt;</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -15627,11 +15780,11 @@
                      <div class="p">Use <a href="#elem-source">&lt;source&gt;</a> to cite a published resource used in creating the descriptive parts of the EAS instance. Use the required child element <a href="#elem-reference">&lt;reference&gt;</a>to include a textual identification of the source. Use the optional child element <a href="#elem-citedRange">&lt;citedRange&gt;</a> to point to a specific location within a source.</div>
                      <div class="p">Use the optional <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> for any additional notes about the source. Use the optional <a href="#elem-objectXMLWrap">&lt;objectXMLWrap&gt;</a> to embed XML documenting the source from any other namespace.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;reference&gt;<br/>
-                        <br/>&lt;citedRange&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>&lt;objectXMLWrap&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;reference&gt;</div>
+                        <div class="p">&lt;citedRange&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
+                        <div class="p">&lt;objectXMLWrap&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attribute usage: </div>
@@ -15771,10 +15924,10 @@
                      <div class="p">Use <a href="#elem-sourceOfAcquisition">&lt;sourceOfAcquisition&gt;</a> to identify the source of the materials being described and the circumstances under which they were received, including donations, transfers, purchases, and deposits.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-sourceOfAcquisition">&lt;sourceOfAcquisition&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML. Use <a href="#elem-narrativeEvent">&lt;narrativeEvent&gt;</a> to provide a chronology of processing events.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; (if used)<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>&lt;narrativeEvent&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; (if used)</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
+                        <div class="p">&lt;narrativeEvent&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -15887,9 +16040,9 @@
                   <div class="content">
                      <div class="p">Use <a href="#elem-sources">&lt;sources&gt;</a> to bind together one or more <a href="#elem-source">&lt;source&gt;</a> elements. <a href="#elem-sources">&lt;sources&gt;</a> must include at least one <a href="#elem-source">&lt;source&gt;</a> element.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;source&gt;<br/>
-                        <br/>&lt;descriptiveNote&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;source&gt;</div>
+                        <div class="p">&lt;descriptiveNote&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -16105,11 +16258,11 @@
                      <div class="p">Associated date(s) (<a href="#elem-date">&lt;date&gt;</a>, <a href="#elem-dateRange">&lt;dateRange&gt;</a>, or <a href="#elem-dateSet">&lt;dateSet&gt;</a>) and place(s) (<a href="#elem-placeName">&lt;placeName&gt;</a>) may be included to further constrain the term's meaning. A <a href="#elem-descriptiveNote">&lt;descriptiveNote&gt;</a> may be included if a fuller textual explanation is needed.</div>
                      <div class="p">A list of <a href="#elem-subject">&lt;subject&gt;</a> terms may also be used with reference pointers (<a href="#attr-id">@id</a> and <a href="#attr-target">@target</a>) to enhance navigation of and access to the materials being described.</div>
                      <div class="p">The order of child elements of <a href="#elem-subject">&lt;subject&gt;</a> is:
-                  <div class="blockIndent">&lt;term&gt;<br/>
-                           <br/>One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;<br/>
-                           <br/>&lt;placeName&gt;<br/>
-                           <br/>&lt;descriptiveNote&gt;<br/>
-                           <br/>
+                  <div class="blockIndent">
+                           <div class="p">&lt;term&gt;</div>
+                           <div class="p">One of &lt;date&gt;, &lt;dateRange&gt;, or &lt;dateSet&gt;</div>
+                           <div class="p">&lt;placeName&gt;</div>
+                           <div class="p">&lt;descriptiveNote&gt;</div>
                         </div>
                      </div>
                   </div>
@@ -17461,10 +17614,10 @@
                      <div class="p">Use <a href="#elem-useConditions">&lt;useConditions&gt;</a> for information about any limitations, regulations, or special procedures imposed by a repository, donor, legal statute, or other agency. These conditions may be related to reproduction, publication, or quotation of the described materials after access to the materials has been granted. Use the sub-element <a href="#elem-dateRange">&lt;dateRange&gt;</a> to provide information about the time span during which or until when these conditions of use apply. <a href="#elem-useConditions">&lt;useConditions&gt;</a> may also be used to indicate the absence of restrictions, such as when intellectual property rights have been dedicated to the public.</div>
                      <div class="p">Use the element <a href="#elem-abstract">&lt;abstract&gt;</a> to provide a brief summary of the information encoded in <a href="#elem-useConditions">&lt;useConditions&gt;</a>. Use the repeatable <a href="#elem-p">&lt;p&gt;</a> element to structure longer texts in several paragraphs. If required and suitable, use <a href="#elem-formattingExtension">&lt;formattingExtension&gt;</a> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</div>
                      <div class="p">The prescribed order of all child elements (both required and optional) is:</div>
-                     <div class="blockIndent">&lt;abstract&gt; if used<br/>
-                        <br/>&lt;dateRange&gt;<br/>
-                        <br/>&lt;formattingExtension&gt; or &lt;p&gt;<br/>
-                        <br/>
+                     <div class="blockIndent">
+                        <div class="p">&lt;abstract&gt; if used</div>
+                        <div class="p">&lt;dateRange&gt;</div>
+                        <div class="p">&lt;formattingExtension&gt; or &lt;p&gt;</div>
                      </div>
                   </div>
                   <div class="leftcol">Attributes: </div>
@@ -19731,7 +19884,7 @@
                <div class="head03">Appendix   </div>
                <div class="head03" id="appendix-Examples">Examples  <a class="tocReturn" href="#toc">[toc]</a>
                </div>
-               <div type="head04" id="example-archDesc">archDesc</div>
+               <div class="head04" id="example-archDesc">archDesc</div>
                <div type="example">
                   <pre>&lt;archDesc level="fonds" localType="inventory" localTypeDeclarationReference="EADTypes"&gt;
     &lt;identificationData&gt;
@@ -20302,7 +20455,7 @@
     &lt;/useConditions&gt;
 &lt;/archDesc&gt;</pre>
                </div>
-               <div type="head04" id="example-control">control</div>
+               <div class="head04" id="example-control">control</div>
                <div type="example">
                   <pre>&lt;control coverageEncoding="EASList" descriptionOfComponentsTypeEncoding="EASList" extentTypeEncoding="EASList" formAvailableTypeEncoding="EASList" functionTypeEncoding="EASList" levelEncoding="EASList" unitDateTypeEncoding="EASList" agentTypeEncoding="otherAgentTypeEncoding" countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" languageEncoding="iso639-1" scriptEncoding="iso15924" repositoryEncoding="iso15511" addressLineTypeEncoding="EASList" audience="internal" audienceEncoding="EASList" contactLineTypeEncoding="EASList" detailLevelEncoding="EASList" detailLevel="extended" maintenanceEventTypeEncoding="EASList" maintenanceStatusEncoding="EASList" maintenanceStatus="revised" placeTypeEncoding="otherPlaceTypeEncoding" publicationStatusEncoding="EASList" publicationStatus="approved" referredEntityTypeEncoding="otherReferredEntityTypeEncoding" relationTypeEncoding="otherRelationTypeEncoding" targetTypeEncoding="EASList" statusEncoding="EASList"&gt;
     &lt;recordId&gt;F10219&lt;/recordId&gt;
@@ -20472,7 +20625,7 @@
     &lt;/rightsDeclaration&gt;
 &lt;/control&gt;</pre>
                </div>
-               <div type="head04" id="example-findAidDesc">findAidDesc</div>
+               <div class="head04" id="example-findAidDesc">findAidDesc</div>
                <div type="example">
                   <pre>&lt;findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department/quilting-technologies-department.xml" linkTitle="Download the encoded finding aid (XML)" linkRole="text/xml"&gt;
     &lt;title localType="mainTitle" localTypeDeclarationReference="titles"&gt;
@@ -20531,7 +20684,7 @@
     &lt;date standardDate="2024-10-11"&gt;October 11, 2024&lt;/date&gt;
 &lt;/findAidDesc&gt;</pre>
                </div>
-               <div type="head04" id="example-identificationData">identificationData</div>
+               <div class="head04" id="example-identificationData">identificationData</div>
                <div type="example">
                   <pre>&lt;descriptionOfComponents descriptionOfComponentsType="combined"&gt;
     &lt;c&gt;

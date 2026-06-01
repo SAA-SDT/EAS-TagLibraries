@@ -189,9 +189,11 @@
                                 <div>
                                         <xsl:apply-templates select="tei:docAuthor[1]"/>
                                 </div>
-                                <div>
-                                        <xsl:apply-templates select="tei:docAuthor[2]"/>
-                                </div>
+                                <xsl:if test="tei:docAuthor[2]">
+                                    <div>
+                                            <xsl:apply-templates select="tei:docAuthor[2]"/>
+                                    </div>
+                                </xsl:if>
                         </div>
                         <div class="logo">
                               <xsl:apply-templates select="tei:figure/tei:graphic"/>  
@@ -299,6 +301,16 @@
                                                                 </td>
                                                         </tr>
                                                 </xsl:for-each>
+                                                <xsl:for-each select="tei:div[@subtype]">
+                                                        <tr>
+                                                                <td>
+                                                                    <xsl:variable name="examplename" select="@subtype"/>
+                                                                    <a href="#{translate(translate(concat('example-' , $examplename), ':',''), ' ','')}">
+                                                                                <xsl:value-of select="$examplename"/>
+                                                                        </a>
+                                                                </td>
+                                                        </tr>
+                                                </xsl:for-each>
                                                 </table>
                                         </div>
                                 </xsl:when>
@@ -331,14 +343,14 @@
                 </div>
         </xsl:template>
         
-        <xsl:template match="tei:att[ancestor-or-self::tei:front]">
+        <!--xsl:template match="tei:att[ancestor-or-self::tei:front]">
                 <div class="head04">
                         <xsl:text>@</xsl:text>
                         <xsl:value-of select="."/>
                         <xsl:text>&#xA0;&#xA0;</xsl:text>
                         <a class="tocReturn" href="#toc">[toc]</a>
                 </div>
-        </xsl:template>
+        </xsl:template-->
 
         <xsl:template match="tei:front/tei:div/tei:div">
                 <div id="{generate-id()}">
@@ -414,9 +426,9 @@
                         <xsl:otherwise>
                                 <div class="blockIndent">
                                         <xsl:for-each select="tei:item">
+                                                <div class="p">
                                                 <xsl:apply-templates/>
-                                                <br/>
-                                                <br/>
+                                                </div>
                                         </xsl:for-each>
                                 </div>
                         </xsl:otherwise>
@@ -919,14 +931,6 @@
                 </div>
         </xsl:template>
 
-        <xsl:template match="tei:p[@type=$currentStandard] | tei:p[@type=$currentStandard]">
-                <div class="p">
-                        <xsl:apply-templates/>
-                </div>
-        </xsl:template>
-
-        <xsl:template match="tei:p[@type!=$currentStandard]"/>
-
         <xsl:template match="tei:att" mode="toc">
                 <xsl:text>@</xsl:text>
                 <xsl:apply-templates/>                
@@ -972,7 +976,7 @@
 
     <xsl:template match="tei:div[@type='exampleText']">
         <xsl:variable name="exampleType" select="current()/@subtype"/>
-        <div type="head04" id="{concat('example-', $exampleType)}">
+        <div class="head04" id="{concat('example-', $exampleType)}">
             <xsl:value-of select="$exampleType"/>
         </div>
         <div type="example">
@@ -989,6 +993,10 @@
                         <xsl:text> </xsl:text>
                 </xsl:if>
         </xsl:template>
+
+        
+        <xsl:template match="tei:p[@type!=$currentStandard]"/>
+
 
     <xsl:template match="tei:p">
         <div class="p">
