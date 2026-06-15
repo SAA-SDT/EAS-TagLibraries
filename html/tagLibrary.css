@@ -37,7 +37,7 @@ div.titlePage {
 	margin-left:2%
 }
 table {
-	border-spacing: 10px 0;
+	border-collapse: collapse;
 }
 .element {
 	padding-top: 24px;
@@ -149,8 +149,7 @@ div.contentTable {
 	padding-bottom: 6px;
 }
 div.p {
-	padding-top: 6px;
-	padding-bottom: 6px;
+	margin-bottom: 12px;
 	clear:both;
 }
 .label {
