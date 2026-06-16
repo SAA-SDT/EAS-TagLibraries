@@ -627,7 +627,7 @@
                         <xsl:text>: </xsl:text>
                 </div>
                     <div class="content">
-                        <xsl:apply-templates/>
+                        <xsl:apply-templates select="tei:p | tei:list"/>
                     </div>
         </xsl:template>
         
