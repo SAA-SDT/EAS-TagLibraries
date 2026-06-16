@@ -621,14 +621,21 @@
         </xsl:template>
         
         <xsl:template match="tei:div[@type=('summary', 'definition', 'entity', 'rationale', 'creationmaintenance', 'usagenotes', 'description', 'desc', 'usage', 'attributeusage', 'seealso', 'examples')]">
-                <div class="leftcol">
-                        <xsl:variable name="termtitle"><xsl:value-of select="current()/@type"/></xsl:variable>
-                        <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$termtitle]/*:translation[@lang=$currentLanguage]"/>
-                        <xsl:text>: </xsl:text>
-                </div>
-                    <div class="content">
-                        <xsl:apply-templates select="tei:p | tei:list"/>
+            <xsl:choose>
+                <xsl:when test="tei:p[@type=$currentStandard] | tei:p[not(@type)]">                
+                    <div class="leftcol">
+                            <xsl:variable name="termtitle"><xsl:value-of select="current()/@type"/></xsl:variable>
+                            <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$termtitle]/*:translation[@lang=$currentLanguage]"/>
+                            <xsl:text>: </xsl:text>
                     </div>
+                        <div class="content">
+                            <xsl:apply-templates/>
+                        </div>
+                        </xsl:when>
+                        <xsl:otherwise>
+                    <xsl:text></xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:template>
         
         <!-- leftcol + content elements -->
