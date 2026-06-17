@@ -5,7 +5,7 @@
         xmlns:eac="http://archivists.org/ns/eac/v2"
         xmlns:ead="urn:isbn:1-931666-22-9"
         xmlns:ead3="http://ead3.archivists.org/schema/"
-        xmlns:eaf="urn:isbn:1-931666-33-4" 
+        xmlns:eaf="urn:isbn:1-931666-33-4"
         xmlns:premis="http://www.loc.gov/premis/v3"
         xmlns:ex="http://www.tei-c.org/ns/Examples"
         xmlns:eg="http://www.tei-c.org/ns/Examples"
@@ -35,7 +35,7 @@
         <xsl:variable name="bulletpoint">&#x2022;</xsl:variable>
         <xsl:variable name="EAD-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Description', 'i')) then true() else false()"/>
         <xsl:variable name="EAC-CPF-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Context', 'i')) then true() else false()"/>
-        <xsl:variable name="EAF-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Context', 'i')) then true() else false()"/>
+        <xsl:variable name="EAF-TL" select="if (matches(tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title[1], 'Function', 'i')) then true() else false()"/>
         <xsl:param name="EAC-CPF-html-title" select="'Encoded Archival Context—Corporate Bodies, Persons, and Families (EAC-CPF) Tag Library'"/>
         <xsl:param name="EAD-html-title" select="'Encoded Archival Description Tag Library - Version EAD3 (EAD Official Site, Library of Congress)'"/>
         <xsl:param name="EAF-html-title" select="'Encoded Archival Functions (EAF) Tag Library'"/>
@@ -975,7 +975,7 @@
         </xsl:template>
 
     <xsl:template match="tei:div[@type='exampleText']">
-        <xsl:variable name="exampleType" select="current()/@subtype"/>
+	        <xsl:variable name="exampleType" select="current()/@subtype"/>
         <div class="head04" id="{concat('example-', $exampleType)}">
             <xsl:value-of select="$exampleType"/>
         </div>

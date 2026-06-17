@@ -2,7 +2,7 @@
 <?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:exml="http://workaround for xml namespace restriction/namespace"
-    xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:eac="http://archivists.org/ns/eac/v2"
+    xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:eac="http://archivists.org/ns/eac/v3"
     xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
@@ -17,7 +17,7 @@
                 </respStmt>
             </titleStmt>
             <editionStmt>
-                <p>2026 Edition</p>
+                <edition>2026 Edition</edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>Society of American Archivists in collaboration with Staatsbibliothek zu
