@@ -2,13 +2,13 @@
 <?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
 	xmlns:exml="http://workaround for xml namespace restriction/namespace"
-	xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:ead="http://archivists.org/ns/ead/v4"
-	xmlns:eac="http://archivists.org/ns/eac/v2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:eaf="urn:isbn:1-931666-33-4"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
-				<title type="main">Encoded Archival Functions (EAF) <lb/> Tag Library</title>
-				<title type="additional">Version EAF 1.0.0</title>
+				<title xml:lang="eng" type="main">Encoded Archival Functions (EAF) <lb/> Tag Library</title>
+				<title xml:lang="eng" type="additional">Version EAF 1.0.0</title>
 				<respStmt>
 					<resp>Prepared and maintained by the </resp>
 					<name>Technical Subcommittee for Encoded Archival Standard of the Society of
@@ -16,7 +16,7 @@
 				</respStmt>
 			</titleStmt>
 			<editionStmt>
-				<p>2026 Edition</p>
+				<edition>2026 Edition</edition>
 			</editionStmt>
 			<publicationStmt>
 				<publisher>Society of American Archivists</publisher>
@@ -51,8 +51,7 @@
 		<front>
 			<titlePage>
 				<docTitle>
-					<titlePart type="main">Encoded Archival Functions (EAF) <lb/> Tag
-						Library</titlePart>
+					<titlePart type="main">Encoded Archival Functions (EAF) <lb/> Tag Library</titlePart>
 					<titlePart type="additional">Version EAF 1.0.0</titlePart>
 				</docTitle>
 				<docEdition>2026 Edition</docEdition>
