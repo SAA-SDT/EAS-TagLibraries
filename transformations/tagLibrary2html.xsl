@@ -519,9 +519,19 @@
 
         <xsl:template match="tei:head/tei:gi">
                 <!-- Karin: Changes needed to be made here to get it to write semmantic unit when head has type=DD -->
+
+                <div class="leftcol">
+                        <span class="label"> 
+                                <xsl:value-of
+                                        select="ancestor-or-self::tei:div[@type='elementDocumentation']/tei:div[@type='fullName']/tei:p"
+                                />  
+                     </span>
+                        <xsl:text>&#xA0;&#xA0;</xsl:text>
+                        <!--a class="tocReturn" href="#toc">[toc]</a-->
+                </div>
                 <xsl:choose>
                         <xsl:when test="ancestor-or-self::tei:front">
-                                <div class="leftcol" id="{generate-id()}">
+                                <div class="content" id="{generate-id()}">
                                         <span class="label">
                                                 <xsl:text>&lt;</xsl:text>
                                                 <xsl:apply-templates/>
@@ -530,7 +540,7 @@
                                 </div>
                         </xsl:when>
                         <xsl:otherwise>
-                                <div class="leftcol" id="{translate(concat('elem-', .), ':','')}">
+                                <div class="content" id="{translate(concat('elem-', .), ':','')}">
                                         <span class="label">
                                                 <!-- would like to look into this section, but for now just removing the PREMIS bit.  - mdc -->
                                                 <xsl:text>&lt;</xsl:text>
@@ -540,15 +550,6 @@
                                 </div>
                         </xsl:otherwise>
                 </xsl:choose>
-                <div class="content">
-                        <span class="label"> 
-                                <xsl:value-of
-                                        select="ancestor-or-self::tei:div[@type='elementDocumentation']/tei:div[@type='fullName']/tei:p"
-                                />  
-                     </span>
-                        <xsl:text>&#xA0;&#xA0;</xsl:text>
-                        <a class="tocReturn" href="#toc">[toc]</a>
-                </div>
         </xsl:template>
 
         <xsl:template match="tei:div[@type='fullName']"/>
@@ -602,32 +603,39 @@
         </xsl:template>
         
         <xsl:template match="tei:head/tei:att">
-                <div class="leftcol" id="{translate(concat('attr-' , .), ':','')}">
-                        <span class="label">
-                                <xsl:text>@</xsl:text>
-                                <xsl:value-of select="."/>
-                        </span>
-                </div>
-                <div class="content">
+                <div class="leftcol">
                         <span class="label"> 
                                 <xsl:value-of
                                         select="ancestor-or-self::tei:div[@type='attributeDocumentation']/tei:div[@type='fullName']/tei:p"
                                 />
                         </span>
                         <xsl:text>&#xA0;&#xA0;</xsl:text>
-                        <a class="tocReturn" href="#toc">[toc]</a>
+                        <!--a class="tocReturn" href="#toc">[toc]</a-->
+                </div>
+                <div class="content" id="{translate(concat('attr-' , .), ':','')}">
+                        <span class="label">
+                                <xsl:text>@</xsl:text>
+                                <xsl:value-of select="."/>
+                        </span>
                 </div>
         </xsl:template>
         
         <xsl:template match="tei:div[@type=('summary', 'definition', 'entity', 'rationale', 'creationmaintenance', 'usagenotes', 'description', 'desc', 'usage', 'attributeusage', 'seealso', 'examples')]">
-                <div class="leftcol">
-                        <xsl:variable name="termtitle"><xsl:value-of select="current()/@type"/></xsl:variable>
-                        <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$termtitle]/*:translation[@lang=$currentLanguage]"/>
-                        <xsl:text>: </xsl:text>
-                </div>
-                    <div class="content">
-                        <xsl:apply-templates/>
+            <xsl:choose>
+                <xsl:when test="tei:p[@type=$currentStandard] | tei:p[not(@type)]">                
+                    <div class="leftcol">
+                            <xsl:variable name="termtitle"><xsl:value-of select="current()/@type"/></xsl:variable>
+                            <xsl:value-of select="$headingtranslations/*:terms/*:term[@name=$termtitle]/*:translation[@lang=$currentLanguage]"/>
+                            <xsl:text>: </xsl:text>
                     </div>
+                        <div class="content">
+                            <xsl:apply-templates/>
+                        </div>
+                        </xsl:when>
+                        <xsl:otherwise>
+                    <xsl:text></xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:template>
         
         <!-- leftcol + content elements -->
