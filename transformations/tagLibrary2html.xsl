@@ -983,17 +983,20 @@
         </xsl:template>
 
     <xsl:template match="tei:div[@type='exampleText']">
-	        <xsl:variable name="exampleType" select="current()/@subtype"/>
+        <xsl:variable name="exampleType" select="current()/@subtype"/>
         <div class="head04" id="{concat('example-', $exampleType)}">
             <xsl:value-of select="$exampleType"/>
         </div>
         <div type="example">
-            <pre>
-                <xsl:value-of select="."/>
-            </pre>
+            <xsl:apply-templates/>
         </div>
     </xsl:template>
         
+    <xsl:template match="tei:egXML">
+        <pre>
+            <xsl:apply-templates/>
+        </pre>
+    </xsl:template>
         <!-- total hack until we determine how best to hande this. but, we don't want to wind up with "LibraryVersion", which is what we have now. -->
         <xsl:template match="tei:titlePart">
                 <xsl:apply-templates/>
