@@ -61,7 +61,7 @@
         </p>
     </div>
     <div type="description">
-        <p>Use <gi>referringString</gi> in longer texts to indicate that certain words or phrases within these texts represent named entities such as persons, organisations, places, functions, resources, etc.</p>
+        <p>Use <gi>referringString</gi> in longer texts to indicate that certain words or phrases within these texts represent named entities such as persons, organizations, places, functions, resources, etc.</p>
         <p>Use <gi>referringString</gi> e.g. when the identification of such named entities within existing archival descriptions is the result of some natural language processing or when capturing the results of named entity recognition having been conducted as part of Optical Character Recognition or Handwritten Text Recognition tasks.</p>
     </div>
     <div type="attributeusage">
