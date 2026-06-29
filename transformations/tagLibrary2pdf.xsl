@@ -1183,25 +1183,20 @@
     </xsl:template>
 
     <xsl:template match="tei:div[@type = 'exampleText']"> 
-		     <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
+            <fo:block role="H3" font-weight="bold" space-after="1em" space-before="1em" font-size="1.17em">
                 <xsl:attribute name="id" select="concat('example-', @subtype)"/>
                 <xsl:value-of select="@subtype"/>
-             </fo:block>
-             <xsl:choose>
-                <xsl:when test="egXML">
-                   <xsl:for-each select="egXML[@type=$currentStandard] | egXML[not(@type)]">
-                       <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" white-space-collapse="false" text-align="start" wrap-option="wrap" linefeed-treatment="preserve" white-space-treatment="preserve" background-color="gainsboro" border="outset" font-size="0.83em" padding="2mm" margin="0mm" space-after="3mm">
-                          <xsl:value-of select="."/>
-                       </fo:block>
-                    </xsl:for-each>
-                 </xsl:when>
-                 <xsl:otherwise>
-                    <fo:block>
-                       <xsl:apply-templates/>
-                    </fo:block>
-                 </xsl:otherwise>
-              </xsl:choose>
+            </fo:block>
+            <xsl:apply-templates/>
     </xsl:template>
+
+    <xsl:template match="egXML">
+        <fo:block font-family="KurintoMono,KurintoMonoJP,KurintoMonoKR,KurintoMonoSC" white-space-collapse="false" text-align="start" wrap-option="wrap" linefeed-treatment="preserve" white-space-treatment="preserve" background-color="gainsboro" border="outset" font-size="0.83em" padding="2mm" margin="0mm" space-after="3mm">
+            <xsl:value-of select="."/>
+        </fo:block>
+    </xsl:template>
+
+
     <!-- In this template all occuring other namespaceprefixis needs to be added -->
     <xsl:template
         match="eac-cpf:* | eac:* |example:* | ead:* | ead3:* | eaf:*| mods:* | text:* | dc:* | oai_dc:* | premis:*">
