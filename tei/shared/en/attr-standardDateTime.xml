@@ -13,7 +13,7 @@
                   <p>An ISO 8601 compliant form of the date, or date and time, of a specific
                      maintenance event expressed in <gi>eventDateTime</gi>. For example, 2021-12-31,
                      2021, 2021-12, 2021-12-31T23:59:59. Optionally available only in
-                     <gi>eventDateTime</gi>. It is recommended to either have the date and time stated as a literal in <gi>eventDateTime</gi> or to provide a standardised date with <att>standardDateTime</att>, if not using both options in parallel.</p>
+                     <gi>eventDateTime</gi>. It is recommended to either have the date and time stated as a literal in <gi>eventDateTime</gi> or to provide a standardized date with <att>standardDateTime</att>, if not using both options in parallel.</p>
                  <p>Note that the requirement of ISO 8601 compliance for <att>standardDateTime</att> is different from the usage of the attribute <att>standardDate</att>, which can also follow other date encoding rules as specified in <att>dateEncoding</att> within <gi>control</gi>.</p>
                </div>
                <div type="datatype">
