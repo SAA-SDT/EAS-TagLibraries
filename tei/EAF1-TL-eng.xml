@@ -593,7 +593,7 @@
 				
 				
 						<egXML xml:lang="eng">
-<![CDATA[<eaf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standards.openpreservation.org/eaf/v1.0.0 https://github.com/SAA-SDT/eas-schemas/releases/download/EAF1.0.0/eaf.xsd" xmlns="https://standards.openpreservation.org/eaf/v1.0.0">
+<![CDATA[<eaf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standards.openpreservation.org/eaf/v1 https://github.com/SAA-SDT/eas-schemas/tree/release_2026_07/xml-schemas/eaf/eaf.xsd" xmlns="https://standards.openpreservation.org/eaf/v1">
     <control>
         <recordId>Y1234</recordId>
         <maintenanceAgency>
