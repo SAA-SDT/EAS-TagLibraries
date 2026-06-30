@@ -52,7 +52,7 @@
     </div>
     <div type="description">
         <p>
-            <gi>textualDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc, when these cannot be expressed in a more standardised or structured way. <gi>textualDate</gi> mainly takes the form of text representing a single date, a date range, or a combination of single dates and date ranges. <gi>textualDate</gi> may also be used to indicate that no date information is available.</p>
+            <gi>textualDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc, when these cannot be expressed in a more standardized or structured way. <gi>textualDate</gi> mainly takes the form of text representing a single date, a date range, or a combination of single dates and date ranges. <gi>textualDate</gi> may also be used to indicate that no date information is available.</p>
     </div>
     <div type="seealso">
         <p>Use the other sub-elements of <gi>unitDate</gi>, i.e. <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> to provide a more granular, machine-processable statement for the dates of the materials being described. This includes uncertain and/or approximate dates.</p>
