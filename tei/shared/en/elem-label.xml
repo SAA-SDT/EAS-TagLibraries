@@ -61,7 +61,7 @@
         <p type="ead">
             <list>
                 <item>In <gi>agent</gi>, this can be the name of the agent responsible for the creation, modification, or deletion of an EAD instance, as captured in <gi>maintenanceEvent</gi>, or the name of the agent who has created, managed, used, or is mentioned in the archival materials.</item>
-                <item>In <gi>formAvailable</gi>, this might e.g. be the file name of a digitised version of a record resource.</item>
+                <item>In <gi>formAvailable</gi>, this might e.g. be the file name of a digitized version of a record resource.</item>
                 <item>In <gi>function</gi>, this might be the name of the function or subfunction that resulted in the creation of the materials being described.</item>
                 <item>In <gi>place</gi>, this might be the name of the place where the archival materials being described are held, are stored, or relate to in other ways.</item>
             </list>
