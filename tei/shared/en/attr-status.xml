@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-status" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>status</att>
+               </head>
+               <div type="fullName">
+                  <p>Status</p>
+               </div>
+               <div type="summary">
+                  <p>Attribute that follows controlled terminology detailing the status of
+                     elements.</p> 
+               </div>
+               <div type="description">
+                   <p type="eac"><att>status</att> provides controlled terminology detailing the status of specific elements. The terms available for <att>status</att> are defined in closed lists that can vary by element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of terms from EAS lists that can be used as values of <att>status</att>. It is also possible to define one's own list by using the value "otherStatusEncoding". Optionally available in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>nameEntry</gi>, <gi>date</gi>, <gi>fromDate</gi>, and <gi>toDate</gi>.</p>
+                 <p type="ead"><att>status</att> provides controlled terminology detailing the status of specific elements. The terms available for <att>status</att> are defined in closed lists that can vary by element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of terms from EAS lists that can be used as values of <att>status</att>. It is also possible to define one's own list by using the value "otherStatusEncoding". Optionally available in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>, <gi>textualDate</gi>.</p>
+                 <p type="eaf"><att>status</att> provides controlled terminology detailing the status of specific elements. The terms available for <att>status</att> are defined in closed lists that can vary by element. Use <att>statusEncoding</att> in <gi>control</gi> to identify lists of terms from EAS lists that can be used as values of <att>status</att>. It is also possible to define one's own list by using the value "otherStatusEncoding". Optionally available in <gi>agencyCode</gi>, <gi>otherAgencyCode</gi>, <gi>nameEntry</gi>, <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>.</p>
+               </div>
+              <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>control</gi> encoding</p>
+                <p type="eac">See <gi>identity</gi> encoding</p>
+                  <p type="eaf">See <gi>eaf</gi> encoding</p>
+               </div>
+            </div>

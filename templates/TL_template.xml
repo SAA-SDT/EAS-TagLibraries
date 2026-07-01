@@ -3,7 +3,7 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:exml="http://workaround for xml namespace restriction/namespace"
      xmlns:xlink="http://www.w3c.org/1999/xlink"
-     xmlns:ead="http://ead3.archivists.org/schema/" 
+     xmlns:ead="http://archivists.org/ns/ead/v4" 
 	xmlns:eac="http://archivists.org/ns/eac/v2"
 	xmlns:xi="http://www.w3.org/2001/XInclude">
    <teiHeader>
@@ -99,12 +99,15 @@
       <body>
          <div type="elements">
 			<!-- One include for each element href points to the element file -->
-            <xi:include href="./descriptions/elem-abbreviation.xml" parse="xml"/>
+             	<xi:include href="shared/en/elem-agent.xml" parse="xml"/>
+		<xi:include href="ead4/en/elem-agentName.xml" parse="xml"/>
+            	<xi:include href="eac2/en/elem-alternativeSet.xml" parse="xml"/>
          </div>
          <div type="attributes">
-			<!-- One include for each attribute href points to the element file -->
-            <xi:include href="./descriptions/attr-accuracy.xml" parse="xml"/>
-             
+			<!-- One include for each attribute href points to the attribute file -->
+             	<xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
+            	<xi:include href="eac2/en/attr-agentType.xml" parse="xml"/>
+		<xi:include href="ead4/en/attr-approximate.xml" parse="xml"/>
          </div>
       </body>
       <back>

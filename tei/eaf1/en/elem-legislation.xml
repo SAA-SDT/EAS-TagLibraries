@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-legislation" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<gi>legislation</gi>
+	</head>
+	<div type="fullName">
+		<p>Legislation</p>
+	</div>
+	<div type="summary">
+		<p>An element for identifying the legal basis of the function.</p>
+	</div>
+	<div type="mayContain">
+		<p>
+			<list type="gloss">
+				<label>date or dateRange or dateSet</label>
+  <item>0..1</item>
+        		<label>p</label>
+				<item>0..n</item>
+				<label>formattingExtension</label>
+				<item>0..1</item>
+			</list>
+		</p>
+	</div>
+	<div type="mayOccurWithin">
+		<p>legislations</p>
+	</div>
+	<div type="attributes">
+		<p>
+			<list type="gloss">
+				<label>audience</label>
+				<item>Optional</item>
+				<label>conventionDeclarationReference</label>
+				<item>Optional</item>
+				<label>id</label>
+				<item>Optional</item>
+				<label>languageOfElement</label>
+				<item>Optional</item>
+				<label>localType</label>
+				<item>Optional</item>
+				<label>localTypeDeclarationReference</label>
+				<item>Optional</item>
+				<label>maintenanceEventReference</label>
+				<item>Optional</item>
+				<label>scriptOfElement</label>
+				<item>Optional</item>
+				<label>sourceReference</label>
+				<item>Optional</item>
+				<label>target</label>
+				<item>Optional</item>
+				<label>valueURI</label>
+				<item>Optional</item>
+				<label>vocabularySource</label>
+				<item>Optional</item>
+				<label>vocabularySourceURI</label>
+				<item>Optional</item>
+			</list>
+		</p>
+	</div>
+	<div type="description">
+		<p>The purpose of this element it to identify the legal basis of the function. The element is therefore used to record any law, directive or charter which creates, amends or curtails the function. Record each and every one of these in their own <gi>legislation</gi></p>
+		<p>Use the repeatable <gi>p</gi> element to structure longer texts in several paragraphs. If required and suitable, use <gi>formattingExtension</gi> to make use of more detailed formatting options such as lists, tables, or section headers in XHTML.</p>
+	</div>
+	<div type="availability">
+		<p>Required, Repeatable</p>
+	</div>
+	<div type="examples">
+		<p>See <gi>eaf</gi> encoding</p>
+	</div>
+</div>

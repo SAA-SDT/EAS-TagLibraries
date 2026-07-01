@@ -37,7 +37,7 @@ div.titlePage {
 	margin-left:2%
 }
 table {
-	border-spacing: 10px 0;
+	border-collapse: collapse;
 }
 .element {
 	padding-top: 24px;
@@ -73,11 +73,21 @@ div.example {
 	float: left;
 	width: 79%;
 	margin-left: 1%;
+	margin-bottom: 1%;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	font-family: monospace;
 	font-size: 120%;
+	background: gainsboro;
+	word-wrap: break-word;
+	border: inset;
 }
+
+code, pre {
+white-space:pre-wrap !important;
+word-wrap:break-word !important;
+}
+
 div.innerExample {
 	margin-left: 5%;
 }
@@ -139,8 +149,7 @@ div.contentTable {
 	padding-bottom: 6px;
 }
 div.p {
-	padding-top: 6px;
-	padding-bottom: 6px;
+	margin-bottom: 12px;
 	clear:both;
 }
 .label {

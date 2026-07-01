@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-geographicCoordinates">
+    <head>
+        <gi>geographicCoordinates</gi>
+    </head>
+    <div type="fullName">
+        <p>Geographic Coordinates</p>
+    </div>
+    <div type="summary">
+        <p>An optional child element of <gi>place</gi> that encodes a set of geographic coordinates.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>place</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>coordinateSystem</label>
+                <item>Required</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>geographicCoordinates</gi> to express a set of geographic coordinates such as latitude, longitude, and altitude representing a point, line, or area on the surface of the earth.</p>
+        <p>It is recommended that the values included in <gi>geographicCoordinates</gi> are based on a commonly used system for expressing geographic coordinates.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use the required <att>coordinateSystem</att> attribute to provide a commonly used code for the system used to express the coordinates. Examples include WGS84, OSGB36, ED50.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-physicalDescription" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+    <head>
+        <gi>physicalDescription</gi>
+    </head>
+    <div type="fullName">
+        <p>Physical Description</p>
+    </div>
+    <div type="summary">
+        <p>An optional child element of <gi>formAvailable</gi> to encode statements about the extent and physical characteristics specific to the instantiation being described.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>descriptiveNote</label>
+                <item>0..1</item>
+                <label>dimensions</label>
+                <item>0..1</item>
+                <label>extent</label>
+                <item>0..1</item>
+                <label>physicalFacet</label>
+                <item>0..1</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>formAvailable</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>physicalDescription</gi> creates structured statements describing the physical or logical extent or the medium of the instantiation described in <gi>formAvailable</gi>. While optional individually, one of the child elements <gi>dimensions</gi>, <gi>extent</gi> or <gi>physicalFacet</gi> has to be included when using <gi>physicalDescription</gi>. Next to the descriptive, human-readable information, the structured design of <gi>physicalDescription</gi> allows for quantifying the extent of the whole or a part of the instantiation described in a form that will also be machine-processable and that will facilitate reporting, statistics, sorting, and importing and exporting data in a collection management system.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <list type="simple">
+            <item>
+                <gi>extent</gi>
+            </item>
+            <item>
+                <gi>dimensions</gi>
+            </item>
+            <item>
+                <gi>physicalFacet</gi>
+            </item>
+            <item>
+                <gi>descriptiveNote</gi>
+            </item>
+        </list>
+        <p>Use <gi>objectXMLWrap</gi> in <gi>descriptiveNote</gi> to include, where necessary, more detailed information encoded in another standard such as MIX, AudioMD, national standards focussed specifically on digital instantiations, etc.</p>
+    </div>
+    <div type="seealso">
+        <p>When statements of extent relate to the record resource in general rather than being specific to an individual instantiation, use <gi>extent</gi> within <gi>identificationData</gi>. E.g. a photographic collection might consist of 1,200 photographs, a statement captured in <gi>extent</gi> within <gi>identificationData</gi>. Within <gi>physicalDescription</gi> in repeated <gi>formAvailable</gi> elements, this might then be specified as "1,2000 prints" for one analog instantation, "1,200 negatives" for a second analog instantiation, and "1,200 image files (tiff)" for a digital instantiation.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+                       <p>See <gi>archDesc</gi> encoding</p>    </div>
+</div>

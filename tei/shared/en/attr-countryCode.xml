@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-countryCode" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>countryCode</att>
+               </head>
+               <div type="fullName">
+                  <p>Country Code</p>
+               </div>
+               <div type="summary">
+                  <p>A unique code representing a country.</p>
+               </div>
+               <div type="description">
+                     <p>Content of the optional attribute should be a code taken from the part of ISO 3166 Country Codes or another controlled list specified in the <att>countryEncoding</att> attribute in <gi>control</gi>. Available in <gi>maintenanceAgency</gi> and <gi>placeName</gi>.</p>
+                 <p type="ead">Also available in <gi>unitId</gi>, where it can be used together with <att>repositoryCode</att> to comply with ISAD(G) element 3.1.1.</p>
+               </div>
+               <div type="datatype">
+                 <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>identificationData</gi> encoding</p>  
+               </div>
+            </div>

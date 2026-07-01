@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-structureOrGenealogy"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>structureOrGenealogy</gi>
+   </head>
+   <div type="fullName">
+      <p>Structure or Genealogy</p>
+   </div>
+   <div type="summary">
+      <p>An optional child element of <gi>description</gi> used to describe internal administrative
+         structure(s) of a corporate body or the genealogy of a family.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>p or formattingExtension</label>
+            <item>0..n</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>localTypeDeclarationReference</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p><gi>structureOrGenealogy</gi> encodes information expressing the internal administrative
+         structure(s) of a corporate body and the dates of any changes to that structure that are
+         significant to understanding the way that corporate body conducted affairs (such as dated
+         organization charts), or the genealogy of a family (such as a family tree) in a way that
+         demonstrates the interrelationships of its members with relevant dates.</p>
+      <p>The optional <gi>formattingExtention</gi> element may be used to accommodate
+greater complexity in expressing or representing the structure(s) or genealogy being
+described. A simpler discursive expression of the structure(s)
+         or genealogy may be encoded as one or more <gi>p</gi> elements.</p>
+   </div>
+   <div type="availability">
+      <p>Optional, repeatable</p>
+   </div>
+   <div type="examples">
+      <p>See <gi>description</gi> encoding</p>
+   </div>
+</div>

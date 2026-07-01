@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-maintenanceHistory">
+               <head>
+                  <gi>maintenanceHistory</gi>
+               </head>
+               <div type="fullName">
+                  <p>Maintenance History</p>
+               </div>
+               <div type="summary">
+                  <p>A required child element of <gi>control</gi> that captures the history of the creation and maintenance of the EAS instance.</p>
+               </div>
+               <div type="mayContain">
+                  <p><list type="gloss">
+  <label>maintenanceEvent</label>
+  <item>1..n</item>
+</list></p>
+               </div>
+               <div type="mayOccurWithin">
+                  <p>control</p>
+               </div>
+               <div type="attributes">
+                  <p>
+                     <list type="gloss">
+                        <label>audience</label>
+                        <item>Optional</item>
+                        <label>id</label>
+                        <item>Optional</item>
+                        <label>languageOfElement</label>
+                        <item>Optional</item>
+                        <label>scriptOfElement</label>
+                        <item>Optional</item>
+                        <label>target</label>
+                        <item>Optional</item>
+                     </list>
+                  </p>
+               </div>
+               <div type="description">
+                  <p>A required child element of <gi>control</gi>, <gi>maintenanceHistory</gi> is for recording the history of the creation, revisions, updates, and other modifications to the EAS instance.</p>
+                  <p>There must be at least one child <gi>maintenanceEvent</gi> in <gi>maintenanceHistory</gi>, which usually will be a record of the creation of the instance. There may be many other <gi>maintenanceEvent</gi> elements documenting the milestone changes or activities in the maintenance of the instance.</p>
+               </div>
+               <div type="seealso">
+                 <p>Use <att>maintenanceStatus</att> within <gi>control</gi> to reflect the current drafting status of the EAS instance as recorded in <gi>maintenanceHistory</gi>.</p>
+                 <p type="ead">Use elements such as <gi>appraisal</gi>, <gi>custodHist</gi>, <gi>processInfo</gi> or <gi>sourceOfAcquisition</gi> within <gi>archDesc</gi> and the component elements to record the events in the lifecycle of the materials being described.</p>
+               </div>
+               <div type="availability">
+                  <p>Required, not repeatable</p>
+               </div>
+               <div type="examples">
+                  <p>See <gi>control</gi> encoding</p>
+               </div>
+            </div>

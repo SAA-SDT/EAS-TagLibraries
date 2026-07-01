@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-maintenanceStatus" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>maintenanceStatus</att>
+               </head>
+               <div type="fullName">
+                  <p>Maintenance Status</p>
+               </div>
+               <div type="summary">
+                  <p>The current drafting status of the EAS instance.</p>
+               </div>
+               <div type="description">
+                  <p>The maintenance status may occur on <gi>control</gi>.</p>
+                  <p>As an EAS instance is modified or other events happen to it (as recorded in the <gi>maintenanceHistory</gi> element), the maintenance status should also be updated to reflect the current drafting status. On first creation the status would e.g. be "new", which on revision could be changed to "revised".</p>
+                 <p>Use the attribute <att>maintenanceStatusEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>maintenanceStatus</att>.</p>
+               </div>
+               <div type="datatype">
+                <p>See <gi>control</gi> encoding</p>
+               </div>
+            </div>

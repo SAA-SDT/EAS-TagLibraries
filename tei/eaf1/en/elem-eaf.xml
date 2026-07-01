@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-eaf" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns:eaf="https://archivists.org/ns/eaf/v1" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+	<head>
+		<gi>eaf</gi>
+	</head>
+	<div type="fullName">
+		<p>Encoded Archival Functions</p>
+	</div>
+	<div type="summary">
+		<p>The required root element of an EAC-F instance.</p>
+	</div>
+	<div type="mayContain">
+		<p>
+			<list type="gloss">
+				<label>control</label>
+				<item>1..1</item>
+				<label>functionsDescription</label>
+				<item>1..1</item>
+			</list>
+		</p>
+	</div>
+	<div type="attributes">
+		<p>
+			<list type="gloss">
+				<label>audience</label>
+				<item>Optional</item>
+				<label>id</label>
+				<item>Optional</item>
+				<label>languageOfElement</label>
+				<item>Optional</item>
+				<label>scriptOfElement</label>
+				<item>Optional</item>
+			</list>
+		</p>
+	</div>
+	<div type="description">
+		<p><gi>eaf</gi> wraps all other elements in a particular instance of an function record encoded with the EAC-F XML Schema.</p>
+      <p><gi>eaf</gi> must contain <gi>control</gi> followed by a <gi>functionsDescription</gi> element.</p>
+      <p>In order to validate an EAC-F instance, it is highly recommended to include according
+         information about the EAC-F namespace and the EAC-F schema location.</p>
+	</div>
+	<div type="attributeusage">
+		<p>All attributes in this element are optional to use.</p>
+	</div>	
+	<div type="availability">
+		<p>Required, Not Repeatable</p>
+	</div>
+	<div type="examples">
+		<p>See <gi>eaf</gi> encoding</p>
+	</div>
+</div>

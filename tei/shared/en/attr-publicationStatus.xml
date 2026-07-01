@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-publicationStatus" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>publicationStatus</att>
+               </head>
+               <div type="fullName">
+                  <p>Publication Status</p>
+               </div>
+               <div type="summary">
+                  <p>The current publication status of the EAS instance.</p>
+               </div>
+               <div type="description">
+                  <p>The publication status may occur on <gi>control</gi> to indicate the current publication status of the EAS instance, for example "inProcess", "approved" or "published". As an EAS instance is modified or other events happen to it (as recorded in the <gi>maintenanceHistory</gi> element), the publication status should also be updated.</p>
+                  <p>Use the attribute <att>publicationStatusEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>publicationStatus</att>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                <p>See <gi>control</gi> encoding</p>
+               </div>
+            </div>

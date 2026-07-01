@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-valueURI" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>valueURI</att>
+               </head>
+               <div type="fullName">
+                  <p>Value URI</p>
+               </div>
+               <div type="summary">
+                  <p>An attribute for including a URI identifying the resource to be used as the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional <att>valueURI</att> attribute to provide the URI identifying the authority resource to be used as the element's content. Available in all elements that can contain any type of entity.</p>
+                 <p>Being of type "anyURI", <att>valueURI</att> is meant to point to any dereferencable resource. The term resource is used in a general sense and includes, but is not limited to, electronic documents, images, services (e.g. an HTTP-to-SMS gateway), collections of other resources, etc. A resource is not necessarily accessible via the Internet, i.e. not every URI is a URL, and abstract concepts can be resources too, such as the operators and operands of a mathematical equation or numeric values (e.g., zero, one, and infinity). While the use of complete URIs is recommended, it is also possible to use relative references in <att>valueURI</att>, e.g. only consisting of a string of numbers.</p>
+               </div>
+               <div type="datatype">
+                  <p>anyURI</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>archDesc</gi>, <gi>control</gi>, <gi>findAidDesc</gi>, and <gi>identificationData</gi> encoding</p>
+                <p type="eac">See <gi>description</gi> encoding</p>
+                  <p type="eaf">See <gi>eaf</gi> encoding</p>
+               </div>
+            </div>

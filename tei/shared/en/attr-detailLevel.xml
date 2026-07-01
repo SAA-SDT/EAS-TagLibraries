@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-detailLevel" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>detailLevel</att>
+               </head>
+               <div type="fullName">
+                  <p>Level of Detail</p>
+               </div>
+               <div type="summary">
+                  <p>Provides information about the level of detail of the description encoded within the EAS instance.</p>
+               </div>
+               <div type="description">
+                  <p>An optional attribute within <gi>control</gi>, used to provide information about the level of detail in accordance with relevant description guidelines and/or rules, e.g. "minimal" or "extended".</p>
+                 <p>Use the attribute <att>detailLevelEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>detailLevel</att>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>control</gi> encoding</p>
+                </div>
+            </div>

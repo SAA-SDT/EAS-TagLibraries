@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-audience" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>audience</att>
+               </head>
+               <div type="fullName">
+                  <p>Audience</p>
+               </div>
+               <div type="summary">
+                  <p>An optional attribute that helps control whether the information contained in the element should be available to all viewers or only to repository staff.</p>
+               </div>
+               <div type="description">
+                  <p>Available as global attribute for all elements. The attribute can be set to "external" in e.g. <gi>cpfDescription</gi> in EAC-CPF, <gi>archDesc</gi> in EAD, or <gi>functionsDescription</gi> in EAF to allow access to all the information about the entity, materials, or functions being described, but specific elements within these sections can also be set to "internal" to reserve that information for repository access only. This feature is intended to assist application software in restricting access to particular information by explicitly identifying data that is potentially sensitive or may otherwise have a limited audience. Special software capability may be needed, however, to prevent the display or export of an element marked "internal" when a whole EAS instance is displayed in a networked environment.</p>
+                  <p>Use the attribute <att>audienceEncoding</att> in <gi>control</gi> to identify the list of terms to be used as values of <att>audience</att>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                    <p type="ead">See <gi>control</gi> encoding</p>
+                    <p type="eac">See <gi>eac</gi> encoding</p>
+               </div>
+            </div>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-date">
+    <head>
+        <gi>date</gi>
+    </head>
+    <div type="fullName">
+        <p>Date</p>
+    </div>
+    <div type="summary">
+        <p>An element for encoding a single date relating to the entity or materials being described, or in their relationship to other entities.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">agent, dateSet, demographicDescription, existDates, functionPerformed, legalStatus, localDescription, mandate, narrativeEvent, occupation, otherEntityType, place, relation, useDates</p>
+        <p type="eaf">agent, dateSet, functionDates, legislation, relation, useDates</p>
+        <p type="ead">agent, dateSet, findAidDesc, formAvailable, function, legalStatus, narrativeEvent, place, relation, subject, unitDate</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>calendar</label>
+                <item>Optional</item>
+                <label>certainty</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>era</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>notAfter</label>
+                <item>Optional</item>
+                <label>notBefore</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>standardDate</label>
+                <item>Optional</item>
+                <label>status</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p type="eac">An element for expressing the single date of an event in the history of the person, corporate body or family being described, or in their relationship to, e.g., a name entry, a place, an occupation, another CPF entity, a resource, or a function.</p>
+        <p type="ead">An element for expressing a single date relating to the materials being described, or in their relationship to, e.g., a place, a function, a resource, or a subject.</p>
+        <p type="eaf">An element for expressing a single date relating to the function being described, or in its relationship to, e.g., a resource, or an agent.</p>
+        <p>The content of the element is intended to be a human-readable natural language date with a machine-readable date provided as the value of the <att>standardDate</att> attribute, formulated according to ISO 8601 or another rule for encoding dates as defined by <att>dateEncoding</att> within <gi>control</gi>. Uncertain or approximate dates can be encoded in <att>standardDate</att> using Extended Date/Time Format (EDTF).</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>certainty</att> to indicate the degree of precision in the dating, for example, "uncertain" or "approximate".</p>
+        <p>Use <att>localType</att> to supply a more specific characterization of the date.</p>
+        <p>Use <att>notAfter</att> and <att>notBefore</att> to capture the latest and earliest possible dates in machine-processable form in cases when the date is uncertain.</p>
+        <p>Use <att>standardDate</att> to provide a machine-processable form of the date.</p>
+        <p>Use <att>status</att> e.g. with the value "unknown" to indicate where a date is unknown.</p>
+    </div>
+    <div type="seealso">
+        <p>If the event or relationship has inclusive dates use the <gi>dateRange</gi> element, while more complex dates (combining singles dates and date ranges) can be expressed in <gi>dateSet</gi>.</p>
+        <p type="eac">Dates of existence for the entity being described are encoded with the <gi>existDates</gi> element, while the dates of use of a particular name of an entity are encoded in <gi>useDates</gi>.</p>
+        <p type="ead">Dates of creation or accumulation of the materials being described are encoded with the <gi>unitDate</gi> element, which also includes the <gi>textualDate</gi> element used with textual date information that cannot be expressed in a standardized format. </p>
+        <p type="eaf">Dates related to the creation or revision of the function being described are encoded with the <gi>functionDates</gi> element, while the dates of use of a particular name for a function are encoded in <gi>useDates</gi>
+        </p>
+        <p>The date and time of a maintenance event in the history of the EAS instance are given in the <gi>eventDateTime</gi> element.</p>
+    </div>
+    <div type="availability">
+        <p type="eac">Within <gi>agent</gi>, <gi>demographicDescription</gi>, <gi>functionPerformed</gi>,  <gi>legalStatus</gi>, <gi>localDescription</gi>, <gi>mandate</gi>, <gi>occupation</gi>, <gi>otherEntityType</gi>, <gi>place</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not repeatable</p>
+        <p type="eac">Within <gi>existDates</gi> and <gi>useDates</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not repeatable</p>
+        <p type="eac">Within <gi>narrativeEvent</gi>: required, repeatable</p>
+        <p type="ead">Within <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>legalStatus</gi>, <gi>place</gi>, <gi>relation</gi>, <gi>subject</gi>, <gi>unitDate</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not repeatable</p>
+        <p type="ead">Within <gi>findAidDesc</gi>: at least one of <gi>agent</gi>, <gi>citedRange</gi>, 
+ <gi>date</gi>, <gi>formattingExtension</gi>, <gi>place</gi> or <gi>title</gi> required, repeatable</p>
+        <p type="ead">Within <gi>narrativeEvent</gi>: required, repeatable</p>
+        <p type="eaf">Within <gi>agent</gi>, <gi>legislation</gi>, <gi>relation</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> optional, not repeatable</p>
+        <p type="eaf">Within <gi>useDates</gi>: one of <gi>date</gi>, <gi>dateRange</gi>, or <gi>dateSet</gi> required, not repeatable</p>
+        <p type="eaf">Within <gi>functionDates</gi>: one of <gi>date</gi> or <gi>dateRange</gi> required, not repeatable</p>
+        <p>Within <gi>dateSet</gi>: at least two of <gi>date</gi> and/or <gi>dateRange</gi> required, repeatable</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+        <p type="eaf">See <gi>eaf</gi> encoding</p>
+    </div>
+</div>

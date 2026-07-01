@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-addressLine">
+    <head>
+        <gi>addressLine</gi>
+    </head>
+    <div type="fullName">
+        <p>Address Line</p>
+    </div>
+    <div type="summary">
+        <p>A required child element of <gi>address</gi> used for recording one line of a postal or other address.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>address</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>addressLineType</label>
+                <item>Optional</item>
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>addressLine</gi> is used to encode parts or lines of a physical address within a parent <gi>address</gi> element.</p>
+        <p>
+            <gi>addressLine</gi> may be repeated as many times as necessary to enter all parts of an address.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use the optional <att>addressLineType</att> attribute to encode the part of the address that the <gi>addressLine</gi> refers to, for example "street".</p>
+        <p>Use the optional <att>addressLineTypeEncoding</att> in <gi>control</gi> to specify the source or rules for values supplied in <att>addressLineType</att>.</p>
+    </div>
+    <div type="availability">
+        <p>Required, repeatable</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi>, <gi>findAidDesc</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+    </div>
+</div>

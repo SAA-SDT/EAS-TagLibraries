@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-localTypeDeclarationReference" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>localTypeDeclarationReference</att>
+               </head>
+               <div type="fullName">
+                  <p>Local Type Declaration Reference</p>
+               </div>
+               <div type="summary">
+                  <p>Use <att>localTypeDeclarationReference</att> to provide a direct link to a
+                        <gi>localTypeDeclaration</gi> element within <gi>control</gi> from another
+                     element within the EAS instance using <att>localType</att>.
+                  </p>
+               </div>
+               <div type="description">
+                  <p><att>localTypeDeclarationReference</att> should always be used when 
+                     <att>localType</att> is used, in order to link to the local type
+                     declaration.</p>
+               </div>
+               <div type="datatype">
+                  <p>IDREFS</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>archDesc</gi>, <gi>findAidDesc</gi>, and <gi>identificationData</gi> encoding</p>
+                <p type="eac">See <gi>description</gi> encoding</p>
+               </div>
+            </div>

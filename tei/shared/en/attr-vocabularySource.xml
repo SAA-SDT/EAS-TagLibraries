@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-vocabularySource" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>vocabularySource</att>
+               </head>
+               <div type="fullName">
+                  <p>Vocabulary Source</p>
+               </div>
+               <div type="summary">
+                  <p>An attribute for identifying a vocabulary that is the source of the element's value.</p>
+               </div>
+               <div type="description">
+                  <p>Use the optional <att>vocabularySource</att> attribute to provide a name or title of the authority or vocabulary source of the element’s content. Available in all elements that can contain any type of entity. </p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>archDesc</gi>, <gi>control</gi>, <gi>findAidDesc</gi>, and <gi>identificationData</gi> encoding</p>
+                <p type="eac">See <gi>description</gi> encoding</p>
+                  <p type="eaf">See <gi>control</gi> encoding</p>
+               </div>
+            </div>

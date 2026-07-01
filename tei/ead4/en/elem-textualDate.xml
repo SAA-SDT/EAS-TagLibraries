@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-textualDate">
+    <head>
+        <gi>textualDate</gi>
+    </head>
+    <div type="fullName">
+        <p>Textual Date</p>
+    </div>
+    <div type="summary">
+        <p>A child element of <gi>unitDate</gi> that provides a textual statement of the date(s) covered by the described materials, or indicates when no date information is available.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+                <label>reference</label>
+                <item>0..n</item>
+                <label>referringString</label>
+                <item>0..n</item>
+                <label>span</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>unitDate</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>status</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>textualDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc, when these cannot be expressed in a more standardized or structured way. <gi>textualDate</gi> mainly takes the form of text representing a single date, a date range, or a combination of single dates and date ranges. <gi>textualDate</gi> may also be used to indicate that no date information is available.</p>
+    </div>
+    <div type="seealso">
+        <p>Use the other sub-elements of <gi>unitDate</gi>, i.e. <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> to provide a more granular, machine-processable statement for the dates of the materials being described. This includes uncertain and/or approximate dates.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, not repeatable</p>
+    </div>
+    <div type="examples">
+<p type="ead">See <gi>identificationData</gi> encoding</p>    </div>
+</div>

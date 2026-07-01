@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-abstract">
+    <head>
+        <gi>abstract</gi>
+    </head>
+    <div type="fullName">
+        <p>Abstract</p>
+    </div>
+    <div type="summary">
+        <p>An optional element within narrative elements such as <gi>biogHist</gi> that contains a brief summary of the information contained within the narrative element as a whole.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+                <label>reference</label>
+                <item>0..n</item>
+                <label>referringString</label>
+                <item>0..n</item>
+                <label>span</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">biogHist</p>
+        <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, filePlan, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>The <gi>abstract</gi> is a brief synopsis of the information in the narrative element that it is used with. Its purpose is to help readers quickly identify the most important aspects in each context. The content within this element may also be harvested by other systems to provide explanatory context when appearing e.g. in a set of search results.</p>
+        <p>
+            <gi>abstract</gi> may include one or more <gi>reference</gi> elements to point to external resources that provide additional descriptive data. It may furthermore include one or more <gi>referringString</gi> elements to emphasize entities' names as part of the descriptive texts and to point to external vocabularies for more information about these, where applicable.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, not repeatable</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+    </div>
+</div>

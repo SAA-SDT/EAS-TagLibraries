@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-languageDeclaration">
+    <head>
+        <gi>languageDeclaration</gi>
+    </head>
+    <div type="fullName">
+        <p>Language Declaration</p>
+    </div>
+    <div type="summary">
+        <p>An optional child element of <gi>control</gi> that indicates the language and script in which an EAS instance is written.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>descriptiveNote</label>
+                <item>0..1</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>control</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageCode</label>
+                <item>Required</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>scriptCode</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>An optional child element of <gi>control</gi> that declares the languages and scripts in which an EAS instance is written in the <att>languageCode</att> and <att>scriptCode</att> attributes. Any comments about the languages and scripts in which the EAS instance is written may be included in the optional <gi>descriptiveNote</gi> element. While <gi>languageDeclaration</gi> states the language(s) and script(s) for the EAS instance in general, the <att>languageOfElement</att> and <att>scriptOfElement</att> attributes available with all elements may be used to encode language and script information specific to the content of one element in cases where this is different from the overall language(s) and script(s).</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use the required <att>languageCode</att> to provide a code for the language used in the EAS instance.</p>
+        <p>Use <att>languageOfElement</att> to provide a code for the language in which the <gi>languageDeclaration</gi> element is given.</p>
+        <p>Use <att>scriptCode</att> to provide a code for the writing system used in the EAS instance.</p>
+        <p>Use <att>scriptOfElement</att> to provide a code for the writing system in which the <gi>languageDeclaration</gi> element is given.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+        <p>See <gi>control</gi> encoding</p>
+    </div>
+</div>

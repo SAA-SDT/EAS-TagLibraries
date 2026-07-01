@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-certainty" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>certainty</att>
+               </head>
+               <div type="fullName">
+                  <p>Certainty</p>
+               </div>
+               <div type="summary">
+                  <p>The level of confidence for a date.</p>
+               </div>
+               <div type="description">
+                  <p type="eac">
+                     The optional attribute <att>certainty</att> provides level of confidence for the information given in <gi>date</gi>,
+                     <gi>fromDate</gi>, or <gi>toDate</gi>, e.g., approximate or circa.
+                  </p>
+                  <p type="ead">
+                     The optional attribute <att>certainty</att> provides level of confidence for the information given in <gi>date</gi>,
+                     <gi>fromDate</gi>, <gi>toDate</gi>, or <gi>unitDate</gi>, e.g., approximate or circa.
+                  </p>
+                 <p type="eaf">
+                     The optional attribute <att>certainty</att> provides level of confidence for the information given in <gi>date</gi>,
+                     <gi>fromDate</gi>, or <gi>toDate</gi>, e.g., approximate or circa.
+                  </p>
+               </div>
+               <div type="datatype">
+                 <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>identificationData</gi> encoding</p>
+                <p type="eac">See <gi>description</gi> encoding</p>
+                <p type="eaf">See <gi>eaf</gi> encoding</p>
+               </div>
+            </div>

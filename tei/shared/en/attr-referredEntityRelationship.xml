@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-referredEntityRelationship" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+    <head>
+        <att>referredEntityRelationship</att>
+    </head>
+    <div type="fullName">
+        <p>Referred Entity Relationship</p>
+    </div>
+    <div type="summary">
+        <p>An optional attribute of <gi>referringString</gi> that specifies the relationship between the entity named in a narrative text and the entity being described in the EAS instance.</p>
+    </div>
+    <div type="description">
+        <p>Use <att>referredEntityRelationship</att> with <gi>referringString</gi> to specify the relationship between the entity named in a narrative text and the entity being described in the EAS instance.</p>
+        <p>While <att>referredEntityRelationship</att> does not come with a set of predefined values, it is highly recommended to use terms from controlled vocabularies whenever possible.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-descriptiveNote">
+    <head>
+        <gi>descriptiveNote</gi>
+    </head>
+    <div type="fullName">
+        <p>Descriptive Note</p>
+    </div>
+    <div type="summary">
+        <p>An element used to provide general descriptive information related to its parent element, either as narrative text or encoded in a related standard.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>objectXMLWrap</label>
+                <item>0..1</item>
+                <label>p</label>
+                <item>1..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">agent, conventionDeclaration, demographicDescription, demographicDescriptions, existDates, functionPerformed, functionsPerformed, identity, languageDeclaration, languageUsed, languagesUsed, legalStatus, legalStatuses, localDescription, localDescriptions, localTypeDeclaration, maintenanceAgency, mandate, mandates, occupation, occupations, otherEntityType, otherEntityTypes, place, places, relation, relations, rightsDeclaration, setComponent, source, sources</p>
+        <p type="eaf">agent, classifications, conventionDeclaration, identity, languageDeclaration, localTypeDeclaration, maintenanceAgency, relation, relations, rightsDeclaration, source, sources</p>
+        <p type="ead">agent, agents, conventionDeclaration, extent, formAvailable, formsAvailable, function, functions, identificationData, languageDeclaration, languageOfMaterial, languageSet, legalStatus, localTypeDeclaration, maintenanceAgency, physicalDescription, place, places, relation, relations, rightsDeclaration, source, sources, subject</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>descriptiveNote</gi> provides additional descriptive information about the element in which it is contained. <gi>descriptiveNote</gi> must contain one or more <gi>p</gi> elements.</p>
+        <p>With the optional element <gi>objectXMLWrap</gi>, <gi>descriptiveNote</gi> also allows for the inclusion of information encoded in other formats and standards that add further details to its parent element which could not be encoded in the EAS.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, not repeatable</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi>, <gi>control</gi>, <gi>findAidDesc</gi>, and <gi>identificationData</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+        <p type="eaf">See <gi>eaf</gi> encoding</p>
+    </div>
+</div>

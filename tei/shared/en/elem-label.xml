@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-label">
+    <head>
+        <gi>label</gi>
+    </head>
+    <div type="fullName">
+        <p>Label</p>
+    </div>
+    <div type="summary">
+        <p type="ead">A required child element of <gi>agent</gi>, <gi>formAvailable</gi>, <gi>function</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the name of the related entity.</p>
+        <p type="eac">A required child element of <gi>agent</gi>, <gi>place</gi>, and <gi>relation</gi> that indicates the name of the related entity.</p>
+        <p type="eaf">A required child element of <gi>agent</gi> and <gi>relation</gi> that indicates the name of the related entity.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="ead">agent, formAvailable, function, place, relation</p>
+        <p type="eac">agent, place, relation</p>
+        <p type="eaf">agent, relation</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>label</gi> to indicate the name of the related entity, either in the generic <gi>relation</gi> element or in one of the specific entity elements. Depending on the type of related entity, such a name can also take the form of a numeric denominator.</p>
+        <p type="ead">
+            <list>
+                <item>In <gi>agent</gi>, this can be the name of the agent responsible for the creation, modification, or deletion of an EAD instance, as captured in <gi>maintenanceEvent</gi>, or the name of the agent who has created, managed, used, or is mentioned in the archival materials.</item>
+                <item>In <gi>formAvailable</gi>, this might e.g. be the file name of a digitized version of a record resource.</item>
+                <item>In <gi>function</gi>, this might be the name of the function or subfunction that resulted in the creation of the materials being described.</item>
+                <item>In <gi>place</gi>, this might be the name of the place where the archival materials being described are held, are stored, or relate to in other ways.</item>
+            </list>
+        </p>
+        <p type="eac">
+            <list>
+                <item>In <gi>agent</gi>, this is the name of the agent responsible for the creation, modification, or deletion of an EAC-CPF instance, as captured in <gi>maintenanceEvent</gi>.</item>
+                <item>In <gi>place</gi>, this might e.g. be the name of the place where a person was born or an organization was established.</item>
+            </list>
+        </p>
+        <p type="eaf">In <gi>agent</gi>, this is the name of the agent responsible for the creation, modification, or deletion of an EAC-F instance, as captured in <gi>maintenanceEvent</gi>.</p>
+        <p>It is recommended to use authorized vocabularies in cases where the element is valorized with a well-known corporation (i.e. "Library of Congress").</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>valueURI</att> to provide the sequence of characters (e.g., URI) that uniquely identifies the entity in a controlled vocabulary, taxonomy, ontology, or other knowledge organization system. Use <att>vocabularySource</att> to identify the source where <att>valueURI</att> comes from, and <att>vocabularySourceURI</att> to point univocally to the organization system used.</p>
+    </div>
+    <div type="seealso">
+        <p>Use this element in combination with type and role information which can also be encoded within the parent elements of <gi>label</gi>. E.g.: <gi>label</gi>: "John Bianchi", <att>agentType</att>: "person", <gi>role</gi>: "author".</p>
+    </div>
+    <div type="availability">
+        <p>Required, repeatable</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi>, <gi>control</gi>, and <gi>findAidDesc</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> and <gi>relation</gi> encoding</p>
+        <p type="eaf">See <gi>eaf</gi> encoding</p>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="elementDocumentation" xml:id="elem-multipleIdentities"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>multipleIdentities</gi>
+   </head>
+   <div type="fullName">
+      <p>Multiple Identities</p>
+   </div>
+   <div type="summary">
+      <p>A child element of <gi>eac</gi> used to group together more than one
+            <gi>cpfDescription</gi> within a single EAC-CPF instance.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>cpfDescription</label>
+            <item>2..n</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>eac</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p>A grouping element used to encode more than one <gi>cpfDescription</gi> in a single EAC-CPF
+         instance.</p>
+      <p>The <gi>multipleIdentities</gi> element can be used to resolve two identity circumstances.
+         Firstly, it can be used to represent more than one identity (including official identities)
+         of the same CPF entity, each with a separate <gi>cpfDescription</gi>. Secondly, it can be
+         used to represent a collaborative identity that includes multiple individuals operating
+         under a shared identity (such as a shared pseudonym).</p>
+      <p><gi>multipleIdentities</gi> must include two or more <gi>cpfDescription</gi> elements.</p>
+   </div>
+   <div type="availability">
+      <p>Within <gi>eac</gi>: one of <gi>cpfDescription</gi> or <gi>multipleIdentities</gi>
+         required, not repeatable</p>
+   </div>
+   <div type="examples">
+      <p>See <gi>eac</gi> encoding</p>
+   </div>
+</div>

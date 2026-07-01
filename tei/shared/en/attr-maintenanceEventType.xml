@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-maintenanceEventType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>maintenanceEventType</att>
+               </head>
+               <div type="fullName">
+                  <p>Maintenance Event Type</p>
+               </div>
+               <div type="summary">
+                  <p>An optional attribute of <gi>maintenanceEvent</gi> that identifies the type of maintenance activity.</p>
+               </div>
+               <div type="description">
+                  <p>Identifies the type of maintenance event with values such as "created", "derived" or "updated".</p>
+                 <p>Use the attribute <att>maintenanceEventTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>maintenanceEventType</att>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>control</gi> encoding</p>
+                  <p type="eaf">See <gi>eaf</gi> encoding</p>
+                  <p type="eac">See <gi>eac</gi> encoding</p>
+             </div>
+            </div>

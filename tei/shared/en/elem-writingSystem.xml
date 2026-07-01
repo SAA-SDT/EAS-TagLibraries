@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-writingSystem">
+    <head>
+        <gi>writingSystem</gi>
+    </head>
+    <div type="fullName">
+        <p>Writing System</p>
+    </div>
+    <div type="summary">
+        <p type="eac">An optional child element of <gi>languageUsed</gi> that identifies the writing script for a language used by the described entity.</p>
+        <p type="ead">A required child element of <gi>languageSet</gi> that identifies the writing script for a language used in the materials described.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">languageUsed</p>
+        <p type="ead">languageSet</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptCode</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p type="eac">An optional element within <gi>languageUsed</gi> that gives the main script used by the entity being described.</p>
+        <p type="ead">An optional element within <gi>languageSet</gi> that gives the main script used by the records being described.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>scriptCode</att> to provide a code for the writing system itself.</p>
+        <p>Use <att>scriptOfElement</att> to provide a code for the writing system in which the element is given.</p>
+    </div>
+    <div type="availability">
+        <p type="eac">Optional, repeatable</p>
+        <p type="ead">Required, only repeatable when encoding one language with several writing systems</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>identificationData</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+    </div>
+</div>

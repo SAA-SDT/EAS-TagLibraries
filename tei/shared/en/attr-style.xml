@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-style" xmlns:eac="http://archivists.org/ns/eac/v2"
+   xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+   <head>
+      <att>style</att>
+   </head>
+   <div type="fullName">
+      <p>Style</p>
+   </div>
+   <div type="summary">
+      <p>Used to specify a rendering style for a string. It is recommended that the value conforms to W3C CSS.</p>
+   </div>
+   <div type="description">
+      <p>The <att>style</att> attribute may occur on <gi>span</gi> to indicate rendering instructions. It is highly recommended that the value of <att>style</att> be expressed as a W3C CSS style to facilitate interoperability.</p>
+      <p type="ead">Additionally, <att>style</att> may occur on <gi>title</gi>.</p>
+   </div>
+   <div type="datatype">
+      <p>normalizedString</p>
+   </div>
+   <div type="examples">
+    <p type="ead">See <gi>archDesc</gi> encoding</p>
+    <p type="eac">See <gi>control</gi> encoding</p>
+   </div>
+</div>

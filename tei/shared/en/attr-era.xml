@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-era" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>era</att>
+               </head>
+               <div type="fullName">
+                  <p>Era</p>
+               </div>
+               <div type="summary">
+                  <p>Period during which years are numbered and dates reckoned.</p>
+               </div>
+               <div type="description">
+                  <p type="eac">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
+                    Suggested values include, but are not limited to, "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
+                    and <gi>toDate</gi>.</p>
+                 <p type="ead">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
+                   Suggested values include, but are not limited to, "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
+                   <gi>toDate</gi>, <gi>unitDate</gi>.</p>
+                 <p type="eaf">Period during which years are numbered and dates reckoned, such as CE (Common Era) or BCE (Before Common Era). 
+                    Suggested values include, but are not limited to, "ce" and "bce". This optional attribute is available in <gi>date</gi>, <gi>fromDate</gi>, 
+                    and <gi>toDate</gi>.</p>
+               </div>
+               <div type="datatype">
+                 <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="eac">See <gi>description</gi> encoding</p>
+               </div>
+            </div>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-objectXMLWrap">
+    <head>
+        <gi>objectXMLWrap</gi>
+    </head>
+    <div type="fullName">
+        <p>Object XML Wrap</p>
+    </div>
+    <div type="summary">
+        <p type="eac">An optional child element of <gi>descriptiveNote</gi>, <gi>relation</gi>, <gi>setComponent</gi>, and <gi>source</gi> that allows for the inclusion of XML encoding from any other XML namespace.</p>
+        <p type="eaf">An optional child element of <gi>descriptiveNote</gi>, <gi>relation</gi> and <gi>source</gi> that allows for the inclusion of XML encoding from any other XML namespace.</p>
+        <p type="ead">An optional child element of <gi>descriptiveNote</gi>, <gi>recordTypeSpecificStatement</gi>, <gi>relation</gi> and <gi>source</gi> that allows for the inclusion of XML encoding from any other XML namespace.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[any element from any namespace]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">descriptiveNote, relation, setComponent, source</p>
+        <p type="eaf">descriptiveNote, relation, source</p>
+        <p type="ead">descriptiveNote, recordTypeSpecificStatement, relation, source</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>A wrapper element that provides a place to express data in any XML encoding language.</p>
+        <p>To facilitate interoperability the XML should conform to an open, standard XML schema and a namespace attribute should be present on the root element referencing the namespace of the standard.</p>
+        <p>If interoperability is not a main objective in a specific application context of the EAS, it is also possible to encode data in XML without a namespace within the <gi>objectXMLWrap</gi> element.</p>
+        <p>
+            <gi>objectXMLWrap</gi> may be used to store related XML data locally rather than linking to external resources in order to facilitate processing or in cases where the related data may not be reliably accessible.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, not repeatable</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi> and <gi>control</gi> encoding</p>
+    </div>
+</div>

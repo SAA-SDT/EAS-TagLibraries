@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-calendar" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>calendar</att>
+               </head>
+               <div type="fullName">
+                  <p>Calendar</p>
+               </div>
+               <div type="summary">
+                  <p>System of reckoning time, such as Gregorian calendar or Julian calendar.
+                     </p>
+               </div>
+               <div type="description">
+                  <p type="eac">Suggested values include, but are not limited to, "gregorian" and "julian". 
+                    Available in <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>. 
+                  </p>
+                  <p type="ead">Suggested values include, but are not limited to, "gregorian" and "julian". 
+                    Available in <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>, <gi>unitDate</gi>.
+                  </p>
+                 <p type="eaf">Suggested values include, but are not limited to, "gregorian" and "julian". 
+                    Available in <gi>date</gi>, <gi>fromDate</gi>, <gi>toDate</gi>. 
+                  </p>
+               </div>
+               <div type="datatype">
+                 <p>token</p>
+               </div>
+               <div type="examples">
+                 <p type="eac">See <gi>description</gi> encoding</p>
+               </div>
+            </div>

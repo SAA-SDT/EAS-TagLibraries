@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:exml="http://workaround for xml namespace restriction/namespace"
+     xmlns:xlink="http://www.w3c.org/1999/xlink"
+     xmlns:ead="http://archivists.org/ns/ead/v4" 
+	xmlns:eac="http://archivists.org/ns/eac/v2"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Encoded Archival Description 4.0 Tag Library</title>
+	    <title type="additional">Version 4.0.0</title>
+            <respStmt>
+               <resp>Prepared and maintained by the </resp>
+               <name>Society of American Archivists</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>2026 Edition</edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Society of American Archivists</publisher>
+            <address>
+               <addrLine>17 North State Street, suite 1425</addrLine>
+               <addrLine>Chicago, IL 60602-3315</addrLine>
+               <addrLine>USA</addrLine>
+               <addrLine>312-606-0722</addrLine>
+               <addrLine>Fax: 312-606-0728</addrLine>
+               <addrLine>info@archivists.org</addrLine>
+               <addrLine>www.archivists.org</addrLine>
+            </address>
+            <date when="2026"/>
+            <idno>eISBN: 978-1-958954-32-4</idno>
+            <availability>
+               <licence>This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0). See <ref target="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ref>. Some rights reserved. No part of this publication may be reproduced, stored in a retrieval system or transmitted in any form or by any means, electronic, mechanical or photocopying, recording, or otherwise without attribution.</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <titlePage>
+            <docTitle>
+               <titlePart type="main">Encoded Archival Description 4.0 Tag Library</titlePart>
+	       <titlePart type="additional">Version 4.0.0</titlePart>
+            </docTitle>
+            <docEdition>July 2026</docEdition>
+            <byline>Prepared and maintained by the</byline>
+            <docAuthor>Technical Subcommittee on Encoded Archival Standards (TS-EAS)</docAuthor>
+            <docAuthor>Society of American Archivists</docAuthor>
+            <docImprint>
+               <docDate>July 2026</docDate>
+            </docImprint>
+         </titlePage>
+         <div xml:lang="eng" type="Introduction">
+            <div xml:id="preface">
+               <head>Preface to the Tag Library</head>
+               <p>Encoded Archival Description (EAD) is the international metadata transmission standard for descriptions of archival records.  Developed and maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS) of the Society of American Archivists (SAA), EAD is used around the globe for digitally encoding the description of archival records.</p>
+               <p>The fourth revision of EAD (EAD 4.0) recognizes that the methods of developing and maintaining archival description have changed since EAD 1.0 (1998). The revised standard is designed for a digital-first world, focusing on interoperability with other SAA standards (namely EAC-CPF 3.0 and EAC-F 1.0), support for linked open data, and incorporating external schemas into EAD.  EAD 4.0 also removes support for "print-first" features directly within the EAS schema, streamlines mixed content, and limits more complex nesting.</p>
+               <p>This tag library reflects the schema of EAD 4.0 after integrating community feedback via two public call for comments (April to July 2024, April to May 2025). For more information on the comments received and how the have been addressed, please see the <ref target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/blob/master/ead-subteam/major-revision_2021-2025_documents/FeedbackReceived_1stCallForComments_EAD4.0.pdf">Overview 1st call for comments</ref> and the <ref target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/blob/master/ead-subteam/major-revision_2021-2025_documents/FeedbackReceived_2ndCallForComments_EAD4.0.pdf">Overview 2nd call for comments</ref>. To learn more about the vision behind the new version of EAD, please see the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Infograph.pdf">Infograph</ref>; for a description of the main features of EAD 4.0, please see the <ref target="https://raw.githubusercontent.com/SAA-SDT/TS-EAS-subteam-notes/master/ead-subteam/major-revision_2021-2025_documents/Editorial_ChangesInEAD4.0.pdf">Editorial Changes</ref>. Other relevant documents that document the revision process can be found on the TS-EAS <ref target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/tree/master/ead-subteam/major-revision_2021-2025_documents">GitHub</ref> page.</p>
+	       <p>With the alignment between EAD and the other Encoded Archival Standards, this tag library is the first to combine shared elements and attributes between TS-EAS standards.  These elements and attributes are available in EAD, the Encoded Archival Context - Corporate Bodies, Persons, Families (EAC-CPF), and the Encoded Archival Context - Functions (EAC-F).  Elements and attributes specific to the description of records are included as EAD-only items.  The descriptions of shared elements and attributes in this tag library have been adapted based on their existing versions in the EAC-CPF 2.0.1 tag library.</p>
+	       <p>Encoding examples are now presented per section within the EAS structure, rather than having element-based and attribute-based examples. For example, encoding examples for all elements available under <gi>control</gi> are presented in the <gi>control</gi> example. With this, elements and attributes can better be presented in their broader application context and repetition is avoided. These section-based encoding examples will be included in the Tag Libraries as an annex with references from the individual elements and attributes.</p>
+	       <p>This tag library is focused on technical implementation of the EAD 4.0 standard.  A companion document, the <ref target="https://saa-sdt.github.io/EAS-Best-Practices/">Best Practices Guide</ref> (BPG), provides guidance on applying the standard in archival practice.  The BPG includes in-depth explanations of elements and attributes, use cases, and additional examples.</p>
+			<p>Comments on EAD 4.0 should be sent to TS-EAS at the <ref target="https://www2.archivists.org/standards/TS-EAS-report-an-issue">Report an Issue form</ref> or via the TS-EAS repositories for the <ref target="https://github.com/SAA-SDT/eas-schemas">EAS schemas</ref> respectively the <ref target="https://github.com/SAA-SDT/EAS-TagLibraries">EAS Tag Libraries</ref> on GitHub.</p>
+            </div>
+            <!-- Descriptive chapters
+            Consists of a wrapper <div> with the elements:
+            <head> for the title
+            <p>'s for the text
+            <div> for creating next level titles
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"> for examples
+            
+            In text these elements are possible:
+            <ref> with @target for e-mail, webbpage and so on
+            <tag> with text to create anglebrakets
+            <att> with text to create attributes
+            
+            Possible elements in each <p>:
+            <list type="ordered"> for ordered list 
+               the list contains:
+               <head> for title
+               <item n="number"> for the text and where @number is the ordered number (same number cant occur twice)
+            <list type="simple"> for a simple list
+               the list contains:
+               <item> for the text
+            <note n="number"> for creating footnotes
+            
+            <div xml:id="front-example">
+               <head>Title</head>
+               <p>Text</p>
+               <egXML xmlns="http://www.tei-c.org/ns/Examples"/>
+               <list type="simple">
+                  <item>Item 1</item>
+                  <item>Item 2</item>
+               </list>
+            </div> -->
+         </div>
+      </front>
+      <body>
+         <div type="elements">
+	 <!-- One include for each element href points to the element file -->
+            <xi:include href="shared/en/elem-abstract.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-accessConditions.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-accruals.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-address.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-addressLine.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agencyCode.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agencyName.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-agent.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-agents.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-appraisal.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-archDesc.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-arrangement.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-biogHist.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c01.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c02.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c03.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c04.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c05.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c06.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c07.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c08.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c09.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c10.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c11.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-c12.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-citedRange.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-contact.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-contactLine.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-container.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-control.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-conventionDeclaration.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-custodHist.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-date.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-dateRange.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-dateSet.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-descriptionOfComponents.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-descriptiveNote.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-dimensions.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-ead.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-eventDateTime.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-eventDescription.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-extent.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-filePlan.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-findAidDesc.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-formattingExtension.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-formAvailable.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-formAvailableId.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-formsAvailable.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-function.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-functions.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-genreForm.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-geographicCoordinates.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-head.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-identificationData.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-label.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-language.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-languageDeclaration.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-languageOfMaterial.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-languageSet.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-legalStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-localTypeDeclaration.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceAgency.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceEvent.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-maintenanceHistory.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-narrativeEvent.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-objectXMLWrap.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-otherAgencyCode.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-otherDescription.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-otherDescriptiveInfo.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-otherIdentificationData.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-otherRecordId.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-p.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-part.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-physicalDescription.xml" parse="xml"/>
+	    <xi:include href="ead4/en/elem-physicalFacet.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-physicalOrTechnicalRequirements.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-place.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-placeName.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-places.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-preferCite.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-processInfo.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-publicationNote.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-quantity.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-recordId.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-recordTypeSpecificStatement.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-reference.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-referringString.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-relatedMaterial.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relation.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relations.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-relationship.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-rightsDeclaration.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-role.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-scopeContent.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-separatedMaterial.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-shortCode.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-source.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-sourceOfAcquisition.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-sources.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-span.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-subject.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-subjectHeadings.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-term.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-textualDate.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-title.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-unitDate.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-unitId.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-unitOfMeasurement.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-unitTitle.xml" parse="xml"/>
+            <xi:include href="ead4/en/elem-useConditions.xml" parse="xml"/>
+            <xi:include href="shared/en/elem-writingSystem.xml" parse="xml"/>
+         </div>
+         <div type="attributes">
+	 <!-- One include for each attribute href points to the element file -->
+            <xi:include href="shared/en/attr-addressLineType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-addressLineTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-agentType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-agentTypeEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-approximate.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-audience.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-audienceEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-calendar.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-certainty.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-contactLineType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-contactLineTypeEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-containerId.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-conventionDeclarationReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-coordinateSystem.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-countryCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-countryEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-coverage.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-coverageEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-dateChar.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-dateEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-descriptionOfComponentsType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-descriptionOfComponentsTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-detailLevel.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-detailLevelEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-era.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-extentType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-extentTypeEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-formAvailableType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-formAvailableTypeEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-functionType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-functionTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-href.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-id.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-languageOfElement.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-level.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-levelEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-linkRole.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-linkTitle.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-localType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-localTypeDeclarationReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceEventTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-maintenanceStatusEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-normalizedForm.xml" parse="xml" />
+            <xi:include href="shared/en/attr-notAfter.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-notBefore.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-placeType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-placeTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-publicationStatus.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-publicationStatusEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-referredEntityRelationship.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-referredEntityType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-referredEntityTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-relationType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-relationTypeEncoding.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-repositoryCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-repositoryEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-scriptOfElement.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-sourceReference.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-standardDate.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-standardDateTime.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-status.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-statusEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-style.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-target.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-targetTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-unit.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-unitDateType.xml" parse="xml"/>
+            <xi:include href="ead4/en/attr-unitDateTypeEncoding.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-valueURI.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-vocabularySource.xml" parse="xml"/>
+            <xi:include href="shared/en/attr-vocabularySourceURI.xml" parse="xml"/>             
+         </div>
+      </body>
+      <back>
+         <div type="appendix" xml:id="appendix1">
+	       <head>Examples</head>	 
+	       <div type="exampleText" subtype="archDesc">
+               <egXML xml:lang="eng"><![CDATA[<archDesc level="fonds" localType="inventory" localTypeDeclarationReference="EADTypes">
+    <identificationData>
+        <unitTitle languageOfElement="nl" scriptOfElement="Latn">Nederlandsche Gist- en Spiritusfabriek en Pharmaceutische Fabrieken voorheen Brocades-Stheeman &amp; Pharmacia, in 1967 gefuseerd tot Gist-Brocades</unitTitle>
+    </identificationData>
+    <agents>
+        <agent agentType="group" valueURI="http://id.loc.gov/authorities/names/n80049704" vocabularySource="LCNAF">
+            <label>National Association for the Advancement of Colored People</label>
+            <role>Creator</role>
+        </agent>
+        <agent agentType="corporateBody" valueURI="http://id.loc.gov/authorities/names/n78089035" vocabularySource="LCNAF">
+            <label>Library of Congress</label>
+            <role>holdingInstitution</role>
+        </agent>
+        <agent>
+            <label>Schweizerisches Bundesarchiv</label>
+            <placeName target="place1">Bern</placeName>
+            <role>holdingInstitution</role>
+        </agent>
+    </agents>
+    <formsAvailable>
+        <formAvailable formAvailableType="digitalOriginal" coverage="whole">
+            <label>Photographs</label>
+            <physicalDescription>
+                <extent coverage="part" extentType="spaceOccupied" id="ext1" target="ext2 ext3">
+                    <quantity>650</quantity>
+                    <unitOfMeasurement>gigabytes</unitOfMeasurement>
+                </extent>
+            </physicalDescription>
+            <physicalDescription>
+                <extent coverage="part" extentType="carrier" id="ext2" target="ext1 ext3">
+                    <quantity>1</quantity>
+                    <unitOfMeasurement>hard disk</unitOfMeasurement>
+                    <descriptiveNote>
+                        <p>Password protected</p>
+                    </descriptiveNote>
+                </extent>
+            </physicalDescription>
+            <physicalDescription>
+                <extent coverage="part" extentType="materialType" id="ext3" target="ext1 ext2">
+                    <quantity>7,500</quantity>
+                    <unitOfMeasurement>electronic files</unitOfMeasurement>
+                </extent>
+                <physicalFacet valueURI="http://vocab.getty.edu/page/aat/300391245" vocabularySource="AAT">false-color infrared photography</physicalFacet>
+            </physicalDescription>
+        </formAvailable>
+        <formAvailable formAvailableType="analogDerived" coverage="part">
+            <label>Prints</label>
+            <physicalDescription>
+                <extent coverage="whole" extentType="materialType">
+                    <quantity>50</quantity>
+                    <unitOfMeasurement valueURI="http://vocab.getty.edu/page/aat/300053443" vocabularySource="AAT">Aerial photographs</unitOfMeasurement>
+                </extent>
+                <dimensions>
+                    <quantity>30 x 40</quantity>
+                    <unitOfMeasurement>cm</unitOfMeasurement>
+                </dimensions>
+            </physicalDescription>
+        </formAvailable>
+        <formAvailable valueURI="https://collections.library.yale.edu/catalog/2008313" coverage="whole" formAvailableType="digitalDerived">
+            <label>The Pippa and Porthos</label>
+            <formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044151/full/full/0/default.jpg">
+                The Pippa and Porthos (cover)
+            </formAvailableId>
+            <formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044153/full/full/0/default.jpg">
+                    The Pippa and Porthos (titlepage)
+                </formAvailableId>
+            <formAvailableId valueURI="https://collections.library.yale.edu/iiif/2/1044154/full/full/0/default.jpg">
+                    The Pippa and Porthos (p. 1)
+                </formAvailableId>
+        </formAvailable>
+        <formAvailable>
+            <label>Born digital archives (audiovisual)</label>
+            <physicalDescription>
+                <extent>
+                    <quantity>3</quantity>
+                    <unitOfMeasurement>MP4 files</unitOfMeasurement>
+                </extent>
+                <physicalFacet localType="technique" localTypeDeclarationReference="physicalFacets">
+                    video
+                </physicalFacet>
+                <descriptiveNote>
+                    <p>Detailed technical metadata imported from SEDA schema.</p>
+                    <objectXMLWrap>
+                        <seda:DataObjectGroup id="aebaaaaaaihioegaabzdoamtvkrlrwyaaaam">
+                            <seda:BinaryDataObject id="aeaaaaaaaahioegaabzdoamtvkrlrwqaaabq">
+                                <seda:DataObjectVersion>BinaryMaster_1</seda:DataObjectVersion>
+                                <seda:Uri>Content/aeaaaaaaaahioegaabzdoamtvkrlrwqaaabq.mp3</seda:Uri>
+                                <seda:MessageDigest algorithm="SHA-512">
+                                    a6a34cf4fd36ff3bc9bdda6923f2380a80f4b015e905cae7ceff095ce4824705a682cb345c44e28f3643f7cc3deb66022dbe51a33881a5eec51648243e7e9463
+                                </seda:MessageDigest>
+                                <seda:Size>395736405</seda:Size>
+                                <seda:FormatIdentification>
+                                    <seda:FormatLitteral>MPEG 1/2 Audio Layer 3</seda:FormatLitteral>
+                                    <seda:MimeType>audio/mpeg</seda:MimeType>
+                                    <seda:FormatId>fmt/134</seda:FormatId>
+                                </seda:FormatIdentification>
+                                <seda:FileInfo>
+                                    <seda:Filename>vlc-record-12h00m41s-1ere partie _ 5_juillet_2016.MP3-.mp3</seda:Filename>
+                                    <seda:LastModified>2016-07-08T10:50:29.021</seda:LastModified>
+                                </seda:FileInfo>
+                            </seda:BinaryDataObject>
+                        </seda:DataObjectGroup>
+                    </objectXMLWrap>
+                </descriptiveNote>
+            </physicalDescription>
+        </formAvailable>
+    </formsAvailable>
+    <functions>
+        <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137609" functionType="function">
+            <label>Legislating</label>
+        </function>
+        <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300138095" functionType="subfunction">
+            <label>Law enforcing</label>
+        </function>
+        <function vocabularySource="AAT" valueURI="http://vocab.getty.edu/page/aat/300137796" functionType="subfunction">
+            <label>Convicting</label>
+        </function>
+    </functions>
+    <places>
+        <place>
+            <label languageOfElement="en">Royal Court, Stockholm</label>
+            <address>
+                <addressLine languageOfElement="se">Kungl. Hovstaterna</addressLine>
+                <addressLine languageOfElement="se">Kungl. Slottet</addressLine>
+                <addressLine addressLineType="postalCode">10770</addressLine>
+                <addressLine languageOfElement="se" addressLineType="municipality">
+                    Stockholm
+                </addressLine>
+            </address>
+            <contact>
+                <contactLine contactLineType="phoneNumber">08-402 60 00</contactLine>
+                <contactLine languageOfElement="se" contactLineType="homepage">
+                    https://www.kungahuset.se/2.1c3432a100d8991c5b80001816.html
+                </contactLine>
+                <contactLine languageOfElement="en" contactLineType="homepage">
+                    https://www.kungahuset.se/royalcourt.4.367010ad11497db6cba800054503.html
+                </contactLine>
+            </contact>
+            <geographicCoordinates coordinateSystem="mgrs">34V VF 23840 65720</geographicCoordinates>
+            <geographicCoordinates coordinateSystem="WGS84">59.3268871784808, 18.07163893373358</geographicCoordinates>
+        </place>
+        <place id="place1">
+            <label>Bern</label>
+            <role>Place of storage</role>
+            <address>
+                <addressLine addressLineType="street">Archivstrasse 24</addressLine>
+                <addressLine addressLineType="postalCode">3005</addressLine>
+                <addressLine addressLineType="municipality">Bern</addressLine>
+            </address>
+        </place>
+    </places>
+    <accessConditions>
+        <p>University records are public records and once fully processed are generally open to research use. Records that contain personally identifiable information will be closed to protect individual privacy. The closure of university records is subject to compliance with applicable laws.</p>
+    </accessConditions>
+    <accessConditions valueURI="https://www.wikidata.org/wiki/Q232932">
+        <p>Open access</p>
+    </accessConditions>
+    <accruals>
+        <p>Noncurrent additions to this Record Group are transferred from the Development Department annually at the end of the fiscal year in June.</p>
+    </accruals>
+    <accruals maintenanceEventReference="revision2025">
+        <formattingExtension>
+            <xhtml:div>
+                <xhtml:h3>Agreement on digital transfers</xhtml:h3>
+                <xhtml:p>All transfers of records dating from 1999 and later will happen in digital form only. Regular transfers have been agreed in intervals of three years at the end of the fiscal year. Following the Public Records Act 2023, these transfers will include all records that are - by then - older than 25 years, plus potentially younger records that the Office of the Governor of Queensland has deemed of permanent value and wishes to transfer early.</xhtml:p>
+                <xhtml:h4>Planned digital transfers</xhtml:h4>
+                <xhtml:p>Already planned transfers are scheduled for:</xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li>June 2026</xhtml:li>
+                    <xhtml:li>June 2029</xhtml:li>
+                    <xhtml:li>June 2032</xhtml:li>
+                    <xhtml:li>June 2035</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </formattingExtension>
+    </accruals>
+    <appraisal>
+        <p>The records of the Mid-Ocean Dynamics Experiment came to the Institute Archives in two accessions in 1980 and 1982. During processing the collection was reduced from fifteen cubic feet to four by discarding duplicate materials, financial records, and publications not authored by MODE participants. Forty charts and six inches of raw data presented the primary appraisal issues. The raw data consisted of bulletins and reports referring to float positions, moorings, isotherms, geostrophic velocity calculations, ships' summaries, and work proposed and work carried out during the MODE-I experiment. As this raw data was recapitulated in weekly <referringString referredEntityType="publication">MODE Hot Line Bulletins</referringString>, only a sampling was retained in the collection. Also discarded were ten charts for which there were no descriptions of indicated data points, nor were dates or test site locations provided.</p>
+        <p>The appraisal of this collection was carried out in consultation with Robert Heinmiller, a research associate at Woods Hole Oceanographic Institution during MODE.</p>
+    </appraisal>
+    <appraisal>
+        <narrativeEvent>
+            <date standardDate="1975">1975</date>
+            <eventDescription>Appraisal provided by donor, $12,500.</eventDescription>
+        </narrativeEvent>
+        <narrativeEvent>
+            <date standardDate="2008">2008</date>
+            <eventDescription>Appraised for insurance purposes, $15,750.</eventDescription>
+        </narrativeEvent>
+    </appraisal>
+    <arrangement>
+        <p>The filing system for the Braman Collection has been kept substantially in its original form. That is, original folders and their titles have been retained. The processor devised the basic organization scheme for the collection and, where necessary, reorganized the papers within the various component groups.</p>
+    </arrangement>
+    <arrangement>
+        <formattingExtension>
+            <xhtml:div>
+                <xhtml:h3>Arrangement of the Collection</xhtml:h3>
+                <xhtml:p>This collection is arranged in five groups composed of twenty-five series followed by restricted and oversize series:</xhtml:p>
+                <xhtml:h4>Group I:</xhtml:h4>
+                <xhtml:ul>
+                    <xhtml:li>Correspondence, 1891-1940 
+                        <xhtml:ul>
+                            <xhtml:li>Incoming Correspondence
+                                <xhtml:ul>
+                                    <xhtml:li>A-E</xhtml:li>
+                                    <xhtml:li>F-J</xhtml:li>
+                                    <xhtml:li>K-R</xhtml:li>
+                                    <xhtml:li>S-Z</xhtml:li>
+                                </xhtml:ul>
+                            </xhtml:li>
+                            <xhtml:li>Outgoing Correspondence (copies)
+                                <xhtml:ul>
+                                    <xhtml:li>A-E</xhtml:li>
+                                    <xhtml:li>F-J</xhtml:li>
+                                    <xhtml:li>K-R</xhtml:li>
+                                    <xhtml:li>S-Z</xhtml:li>
+                                </xhtml:ul>
+                            </xhtml:li>
+                        </xhtml:ul>
+                    </xhtml:li>
+                    <xhtml:li>Administrative Files, 1913-1921</xhtml:li>
+                    <xhtml:li>Printed Matter, 1889-1936</xhtml:li>
+                    <xhtml:li>Photographs, 1911-1935</xhtml:li>
+                    <xhtml:li>Medals and Ribbons, undated</xhtml:li>
+                </xhtml:ul>
+                <xhtml:h4>Group II:</xhtml:h4>
+                <xhtml:ul>
+                    <xhtml:li>Correspondence, 1877-1974</xhtml:li>
+                    <xhtml:li>Minutes, 1917-1972</xhtml:li>
+                    <xhtml:li>Addendum, 1912-1972</xhtml:li>
+                </xhtml:ul>
+                <xhtml:h4>Other series:</xhtml:h4>
+                <xhtml:p>Restricted, 1889-1942</xhtml:p>
+                <xhtml:p>Oversize, 1863-1999</xhtml:p>
+            </xhtml:div>
+        </formattingExtension>
+    </arrangement>
+    <biogHist>
+        <abstract>Robert Carlton Brown II (June 14, 1886 – August 7, 1959) was an American writer and publisher in many forms from comic squibs to magazine fiction to advertising to avant-garde poetry to business news to cookbooks to political tracts to novelized memoirs to parodies and much more.</abstract>
+        <p> During 1918, Brown traveled extensively in Mexico and Central America, writing for the U.S. Committee of Public Information in Santiago de Chile. In 1919, he moved with his wife, Rose Brown, to Rio de Janeiro, where they founded <span style="font-style:italic"> Brazilian American</span>, a weekly magazine that ran until 1929. With Brown's mother, Cora, the Browns also established magazines in Mexico City and London: <span style="font-style:italic">Mexican American</span> (1924-1929) and <span style="font-style:italic">British American</span> (1926-1929).</p>
+    </biogHist>
+    <biogHist>
+        <formattingExtension>
+            <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+                <xhtml:h4>Biography Johann Sebastian Bach</xhtml:h4>
+                <xhtml:p>[...]</xhtml:p>
+                <xhtml:h3>Family life</xhtml:h3>
+                <p>Bach was married twice and had 20 children, 10 of whom survived into adulthood.</p>
+                <xhtml:ul>
+                    <xhtml:h4>Children of Johann Sebastian Bach and Maria Barbara Bach</xhtml:h4>
+                    <xhtml:li>Catharina Dorothea Bach</xhtml:li>
+                    <xhtml:li>Wilhelm Friedemann Bach</xhtml:li>
+                    <xhtml:ul>
+                        <xhtml:h5>Children of Wilhelm Friedemann Bach</xhtml:h5>
+                        <xhtml:li>Friederica Sophia Bach</xhtml:li>
+                        <xhtml:li>Two sons who did not live past infancy</xhtml:li>
+                    </xhtml:ul>
+                    <xhtml:li>Carl Philipp Emanuel Bach</xhtml:li>
+                    <xhtml:ul>
+                        <xhtml:h5>Children of Carl Philipp Emanual Bach</xhtml:h5>
+                        <xhtml:li>Johann Adam Bach</xhtml:li>
+                        <xhtml:li>Anna Carolina Philippina Bach</xhtml:li>
+                        <xhtml:li>Johann Sebastian Bach ("the Younger")</xhtml:li>
+                        <xhtml:li>Other children who did not live to adulthood</xhtml:li>
+                    </xhtml:ul>
+                    <xhtml:li>Johann Gottfried Bernhard Bach</xhtml:li>
+                    <xhtml:li>Three more children who did not live to their first birthday</xhtml:li>
+                </xhtml:ul>
+                <xhtml:ul>
+                    <xhtml:h4>Children of Johann Sebastian Bach and Anna Magdalena Wilcken</xhtml:h4>
+                    <xhtml:li>Gottfried Heinrich Bach</xhtml:li>
+                    <xhtml:li>Johann Christoph Friedrich Bach</xhtml:li>
+                    <xhtml:ul>
+                        <xhtml:h5>Children of Johann Christoph Friedrich Bach</xhtml:h5>
+                        <xhtml:li>Anna Philippiana Friederica Bach</xhtml:li>
+                        <xhtml:li>Wilhelm Friedrich Ernst Bach</xhtml:li>
+                        <xhtml:ul>
+                            <xhtml:h6>Children of Wilhelm Friedrich Ernst Bach</xhtml:h6>
+                            <xhtml:li>Carolina Auguste Wilhelmine Bach</xhtml:li>
+                            <xhtml:li>Juliane Friederica Bach</xhtml:li>
+                        </xhtml:ul>
+                        <xhtml:li>Christine Luise Bach</xhtml:li>
+                    </xhtml:ul>
+                    <xhtml:li>Johann Christian Bach</xhtml:li>
+                    <xhtml:li>Elisabeth Juliane Friederica Bach</xhtml:li>
+                    <xhtml:ul>
+                        <xhtml:h5>Children of Elisabeth Juliane Friederica Bach</xhtml:h5>
+                        <xhtml:li>Johann Sebastian Altnickol</xhtml:li>
+                    </xhtml:ul>
+                    <xhtml:li>Johanna Carolina Bach</xhtml:li>
+                    <xhtml:li>Regina Susanna Bach</xhtml:li>
+                    <xhtml:li>Six more children who did not live to adulthood</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </formattingExtension>
+    </biogHist>
+    <biogHist>
+        <p>Ilma Mary Brewer, nee Pidgeon, was Lecturer in Botany/Biology, University of Sydney 1963-70 and Senior Lecturer in Biological Sciences 1970-78. She developed new methods of teaching based on the recognition that a student learnt more by working at his/her own place and instruction him/her self. Her findings were published as a book, "Learning More and Teaching Less."</p>
+        <narrativeEvent>
+            <date standardDate="1936">1936</date>
+            <eventDescription>Bachelor of Science (BSc) completed at the University of Sydney</eventDescription>
+        </narrativeEvent>
+        <narrativeEvent>
+            <date standardDate="1937">1937</date>
+            <eventDescription>Master of Science (MSc) completed at the University of Sydney</eventDescription>
+        </narrativeEvent>
+        <narrativeEvent>
+            <date standardDate="1937/1941">until 1941</date>
+            <eventDescription>Linnean Macleay Fellow</eventDescription>
+        </narrativeEvent>
+    </biogHist>
+    <custodHist>
+        <p>The George Franklin Papers were maintained by the staff of the Mayor's Office, City of Irvine, California, in the records storage facility at City Hall from the time of Franklin's death in 1972 until they were transferred, at his family's request, to Special Collections and Archives, The UC Irvine Libraries, in 1988.</p>
+    </custodHist>
+    <custodHist>
+        <narrativeEvent>
+            <date standardDate="1972">1972</date>
+            <agent>
+                <label>Mayor's Office</label>
+            </agent>
+            <placeName>Irvine, California</placeName>
+            <eventDescription>Records are held by the Mayor's Office from 1972 onwards.</eventDescription>
+        </narrativeEvent>
+        <narrativeEvent>
+            <date standardDate="1988">1988</date>
+            <agent>
+                <label>The UC Irvine Libraries</label>
+            </agent>
+            <placeName>Irvine, California</placeName>
+            <eventDescription>Records are held by the Special Collections and Archives, The UC Irvine Libraries, from 1988 onwards.</eventDescription>
+        </narrativeEvent>
+        <narrativeEvent>
+            <date standardDate="2009">2009</date>
+            <agent>
+                <label>Harry Ransom Center</label>
+            </agent>
+            <placeName>Austin, Texas</placeName>
+            <eventDescription>Records are held by the Harry Ransom Center since 2009.</eventDescription>
+        </narrativeEvent>
+    </custodHist>
+    <custodHist>
+        <formattingExtension>
+            <xhtml:div>
+                <xhtml:h3>Custodial History</xhtml:h3>
+                <xhtml:p>Before being transferred to the University Archives, the materials were:</xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li>Held by faculty members</xhtml:li>
+                    <xhtml:li>Collected by departmental secretaries as informal archive</xhtml:li>
+                </xhtml:ul>
+                <xhtml:p>In 1989, the University Archives conducted a Departmental Records Collection Initiative. Since then, the records have been held by the University Archives.</xhtml:p>
+            </xhtml:div>
+        </formattingExtension>
+    </custodHist>
+    <filePlan>
+        <formattingExtension>
+            <xhtml:div>
+                <xhtml:h3>File List</xhtml:h3>
+                <xhtml:p> The list below outlines the classification system used for the central files of Vice President Mondale's office. This structure assigned alpha-numeric codes to primary subjects and to secondary and tertiary subdivisions thereunder.</xhtml:p>
+                <xhtml:h4>AGRICULTURE (AG)</xhtml:h4>
+                <xhtml:ol>
+                    <xhtml:li>Home Economics</xhtml:li>
+                    <xhtml:li>Horticulture</xhtml:li>
+                    <xhtml:li>Marketing</xhtml:li>
+                    <xhtml:li>Price Support</xhtml:li>
+                </xhtml:ol>
+                <xhtml:h4>ARTS (AR)</xhtml:h4>
+                <xhtml:ol>
+                    <xhtml:li>Languages</xhtml:li>
+                    <xhtml:li>Museums</xhtml:li>
+                    <xhtml:li>Music</xhtml:li>
+                </xhtml:ol>
+                <xhtml:h4>URBAN PLANNING (UP)</xhtml:h4>
+                <xhtml:ol>
+                    <xhtml:li>Communications</xhtml:li>
+                    <xhtml:li>Distribution Networks</xhtml:li>
+                    <xhtml:li>Infrastructure</xhtml:li>
+                    <xhtml:li>Public Welfare</xhtml:li>
+                    <xhtml:li>Transportation</xhtml:li>
+                </xhtml:ol>
+            </xhtml:div>
+        </formattingExtension>
+    </filePlan>
+    <otherDescription valueURI="https://agatha.arch.be/data/ead/BE-A0518_104297_104557">
+        <p languageOfElement="fr">L'inventaire est également disponible en néerlandais.</p>
+    </otherDescription>
+    <otherDescription>
+        <relations>
+            <relation>
+                <label languageOfElement="fr">Archives antérieurs à 1945, archives photographiques et audiovisuelles - Fonds d'archives manuscrites</label>
+                <role>Printed finding aid</role>
+            </relation>
+            <relation>
+                <label valueURI="https://calames.abes.fr/pub/#details?id=FR751142302-M001061">
+                    Calames - Online catalogue of archives and manusprcipts in French University and Research libraries
+                </label>
+                <role>Online presentation</role>
+            </relation>
+            <relation>
+                <label valueURI="https://francearchives.gouv.fr/fr/facomponent/405d30ade8dd7535b1fbe03c231e175b1bd682b8.csv">
+                    CSV format on FranceArchives
+                </label>
+                <role>Download</role>
+            </relation>
+            <relation>
+                <label valueURI="https://francearchives.gouv.fr/fr/facomponent/405d30ade8dd7535b1fbe03c231e175b1bd682b8/rdf.xml">
+                    RDF/XML format on FranceArchives
+                </label>
+                <role>Download</role>
+            </relation>
+        </relations>
+    </otherDescription>
+    <otherDescriptiveInfo>
+        <formattingExtension>
+            <xhtml:div>
+                <xhtml:h3>Selected list of correspondents</xhtml:h3>
+                <xhtml:p>All correspondence in the collection is arranged chronologically. Following is a list of notable correspondents, with dates.</xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li>Adams, Samuel
+                        <xhtml:ul>
+                            <xhtml:li>1870 Mar 3</xhtml:li>
+                            <xhtml:li>1871 Jan 15</xhtml:li>
+                        </xhtml:ul>
+                    </xhtml:li>
+                    <xhtml:li>Barlow, Christine
+                        <xhtml:ul>
+                            <xhtml:li>1872 Feb 15</xhtml:li>
+                            <xhtml:li>1872 Nov 24</xhtml:li>
+                        </xhtml:ul>
+                    </xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </formattingExtension>
+    </otherDescriptiveInfo>
+    <otherDescriptiveInfo>
+        <p>There is no recorded notetaker on most minutes. Styles vary from brief bullet points to longform notes.</p>
+    </otherDescriptiveInfo>
+    <preferCite>
+        <p>[Identification of item], Arequipa Sanatorium Records, BANC MSS 92/894c, The Bancroft Library, University of California, Berkeley.</p>
+    </preferCite>
+    <processInfo>
+        <p>Material was processed over several years.</p>
+        <narrativeEvent>
+            <date>1982</date>
+            <eventDescription>Correspondence processed.</eventDescription>
+        </narrativeEvent>
+        <narrativeEvent>
+            <date>1984</date>
+            <eventDescription>Published material transferred to Rare Books for cataloging.</eventDescription>
+        </narrativeEvent>
+        <narrativeEvent>
+            <date>1989</date>
+            <eventDescription>Processing completed, including integration of 1986 and 1987 accessions.</eventDescription>
+        </narrativeEvent>
+    </processInfo>
+    <publicationNote>
+        <relations>
+            <relation relationType="resourceRelation">
+                <label>Charles Darwin, On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life (London, John Murray, 1859)</label>
+                <role valueURI="https://www.ica.org/standards/RiC/RiC-O_1-1.html#hasOrHadSubject" vocabularySource="RiC-O" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology">
+                    hasOrHadSubject
+                </role>
+                <placeName countryCode="GB">London</placeName>
+            </relation>
+        </relations>
+    </publicationNote>
+    <publicationNote>
+        <relations>
+            <relation targetType="resource">
+                <label>Mémorial du colonel Gustafsson. - 1829</label>
+            </relation>
+            <relation>
+                <label>Paris d'hier et d'aujourd'hui</label>
+                <objectXMLWrap>
+                    <tei:bibl>
+                        <tei:title>
+                            <tei:emph rend="italic">Paris d'hier et d'aujourd'hui</tei:emph>
+                        </tei:title>
+                        <tei:respStmt>
+                            <tei:resp>photographes</tei:resp>
+                            <tei:name>Roger Henrard</tei:name>
+                            <tei:name>Yann Arthus-Bertrand</tei:name>
+                        </tei:respStmt>
+                    </tei:bibl>
+                </objectXMLWrap>
+            </relation>
+        </relations>
+        <p>See the following publication for background information: <referringString referredEntityType="person" normalizedForm="Bernier, Pierre-François (1779-1803)">P.-F. BERNIER</referringString>, <referringString referredEntityType="work">Études particulières</referringString></p>
+    </publicationNote>
+    <recordTypeSpecificStatement>
+        <p>Autograph conductor's full score (pencil), with mimeographed conductor's short score of certain sections interleaved. Selections, including deletions.</p>
+    </recordTypeSpecificStatement>
+    <recordTypeSpecificStatement>
+        <objectXMLWrap>
+            <mods:cartographics>
+                <mods:scale>1:10000</mods:scale>
+                <mods:projection>Universal Transverse Mercator (UTM)</mods:projection>
+            </mods:cartographics>
+        </objectXMLWrap>
+    </recordTypeSpecificStatement>
+    <relatedMaterial>
+        <abstract>Several genealogies and biographies of the Smith family have been published and are held in the Rare Books Department.</abstract>
+        <relations>
+            <relation relationType="https://www.ica.org/standards/RiC/ontology#RecordResourceToRecordResourceRelation" targetType="recordSet">
+                <label valueURI="4569982" vocabularySource="Rare Books Department">Kavanaugh, Carol. The Smith Family in Johnson County (New York: Penguin)</label>
+            </relation>
+            <relation sourceReference="source1">
+                <label valueURI="336712" vocabularySource="Rare Books Department">Llewellyn, Gareth. Smythe, Smith: What's the Difference? (London: Jonathan Cape)</label>
+            </relation>
+        </relations>
+    </relatedMaterial>
+    <scopeContent>
+        <p>Fonds includes records relating to the Department of Plant Ecology's administration, teaching and research; extension work relating to the Saskatchewan Weed Survey; and correspondence with a variety of institutions and individuals. A series of minutes and correspondence relating to the Saskatchewan Committee on the Ecology and Preservation of Grasslands (established in 1935) documents the efforts to establish permanent reserves of significant grasslands in Saskatchewan.</p>
+    </scopeContent>
+    <scopeContent>
+        <formattingExtension>
+            <xhtml:div>
+                <xhtml:p>Production score - excerpted reductions, photostats:</xhtml:p>
+                <xhtml:ul>
+                    <xhtml:li>PROD. #306 M:10 Main title / before the fact</xhtml:li>
+                    <xhtml:li>PROD. #306 M:60 Melbeck's office / before the fact</xhtml:li>
+                    <xhtml:li>PROD. #306 M:74 Looking for Johnny / before the fact</xhtml:li>
+                    <xhtml:li>PROD. #306 M:85 Lina alone / before the fact</xhtml:li>
+                    <xhtml:li>PROD. #306 M:94 The morning mail / before the fact</xhtml:li>
+                    <xhtml:li>PROD. #306 M:106 Too fast / before the fact</xhtml:li>
+                    <xhtml:li>PROD. #306 M:74 Looking for Johnny / before the fact</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </formattingExtension>
+    </scopeContent>
+    <separatedMaterial>
+        <abstract>Other papers of Earl Warren, which relate chiefly to his early years and public service in California, have been deposited in the California State Archives in Sacramento.</abstract>
+        <relations>
+            <relation>
+                <label valueURI="https://oac.cdlib.org/findaid/ark:/13030/tf4b69n6gc" vocabularySource="OAC">Earl Warren Papers, 1924-53</label>
+            </relation>
+        </relations>
+    </separatedMaterial>
+    <sourceOfAcquisition>
+        <narrativeEvent>
+            <date>1945</date>
+            <eventDescription>Transfer from <referringString referredEntityType="corporateBody" valueURI="http://id.loc.gov/authorities/names/n79022809" vocabularySource="LCNAF">National Park Service</referringString>, Accession number 45.22</eventDescription>
+        </narrativeEvent>
+    </sourceOfAcquisition>
+    <sourceOfAcquisition>
+        <p>Source unknown. Originally deposited in University Library, transferred to Department of Palaeography in 1958.</p>
+    </sourceOfAcquisition>
+    <subjectHeadings>
+        <p>These records are indexed under the following headings in the catalog of the Minnesota Historical Society. Researchers wishing to find related materials should search the catalog under these index terms.</p>
+        <subject valueURI="http://id.loc.gov/authorities/subjects/sh85048694" vocabularySource="LCSH">
+            <term>Fishery law and legislation</term>
+            <placeName>Minnesota</placeName>
+        </subject>
+        <subject valueURI="https://id.loc.gov/authorities/subjects/sh85052932" vocabularySource="LCSH">
+            <term>Game laws</term>
+            <placeName>Minnesota</placeName>
+        </subject>
+    </subjectHeadings>
+    <useConditions>
+        <p>Until 2055 permission to photocopy some materials from this collection has been limited at the request of the donor. Please ask repository staff for details if you are interested in obtaining photocopies from Series 1: Correspondence.</p>
+    </useConditions>
+    <useConditions valueURI="https://rightsstatements.org/vocab/NoC-NC/1.0/" vocabularySource="rightsStatements">
+        <dateRange>
+            <toDate standardDate="2030-05">May 2030</toDate>
+        </dateRange>
+        <p>Non-commercial use only</p>
+        <p>While the records themselves are free of copyright, they have been digitized in a public-private partnership as part of which, the partners have agreed to limit commercial uses of these digital representations by third parties until May 2053 including.</p>
+    </useConditions>
+</archDesc>]]></egXML>
+               </div>
+               <div type="exampleText" subtype="control">
+                 <egXML xml:lang="eng"><![CDATA[<control coverageEncoding="EASList" descriptionOfComponentsTypeEncoding="EASList" extentTypeEncoding="EASList" formAvailableTypeEncoding="EASList" functionTypeEncoding="EASList" levelEncoding="EASList" unitDateTypeEncoding="EASList" agentTypeEncoding="otherAgentTypeEncoding" countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" languageEncoding="iso639-1" scriptEncoding="iso15924" repositoryEncoding="iso15511" addressLineTypeEncoding="EASList" audience="internal" audienceEncoding="EASList" contactLineTypeEncoding="EASList" detailLevelEncoding="EASList" detailLevel="extended" maintenanceEventTypeEncoding="EASList" maintenanceStatusEncoding="EASList" maintenanceStatus="revised" placeTypeEncoding="otherPlaceTypeEncoding" publicationStatusEncoding="EASList" publicationStatus="approved" referredEntityTypeEncoding="otherReferredEntityTypeEncoding" relationTypeEncoding="otherRelationTypeEncoding" targetTypeEncoding="EASList" statusEncoding="EASList">
+    <recordId>F10219</recordId>
+    <maintenanceAgency countryCode="IE">
+        <agencyCode status="authorized">IE-NAI</agencyCode>
+        <agencyName languageOfElement="en">National Archives of Ireland</agencyName>
+        <agencyName languageOfElement="ga">An Cartlann Náisiúnta na hÉireann </agencyName>
+        <otherAgencyCode status="alternative">NAI-CNE</otherAgencyCode>
+    </maintenanceAgency>
+    <maintenanceHistory>
+        <maintenanceEvent maintenanceEventType="derived">
+            <agent agentType="prov:SoftwareAgent">
+                <label>export.xsl/Saxon B9</label>
+            </agent>
+            <eventDateTime standardDateTime="2021-08-30T09:37:17.029-04:00"/>
+            <eventDescription>Derived from local collection management system</eventDescription>
+        </maintenanceEvent>
+        <maintenanceEvent maintenanceEventType="updated">
+            <agent>
+                <label>Tanya Smith</label>
+                <role>Archivist</role>
+                <relationship
+                    valueURI="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation"
+                    vocabularySourceURI="https://www.ica.org/standards/RiC/ontology"/>
+            </agent>
+            <eventDateTime standardDateTime="2021-09">September 2021</eventDateTime>
+            <eventDescription>Editing the encoded archival description with additional data not included in the export from the local collection management system</eventDescription>
+        </maintenanceEvent>
+        <maintenanceEvent maintenanceEventType="revised">
+            <agent>
+                <label>T. Baker</label>
+            </agent>
+            <eventDateTime standardDateTime="2022-10">October 2022</eventDateTime>
+            <eventDescription>The archival description encoded in this document has been reviewed and, where necessary, updated following the <reference href="https://guides.library.yale.edu/reparativearchivaldescription"> Reparative Archival Description Working Group: Guiding Principles</reference>.</eventDescription>
+        </maintenanceEvent>
+        <maintenanceEvent>
+            <agent>
+                <label>Gregory Miller</label>
+                <role>Volunteer</role>
+                <relationship valueURI="https://www.ica.org/standards/RiC/ontology#CreationRelation" vocabularySourceURI="https://www.ica.org/standards/RiC/ontology"/>
+            </agent>
+            <eventDateTime standardDateTime="2023-05">May 2023</eventDateTime>
+            <eventDescription>Marking persons and organisations named in narrative texts as part of a crowdsourcing project</eventDescription>
+        </maintenanceEvent>
+        <maintenanceEvent maintenanceEventType="updated">
+            <agent agentType="unknown">
+                <label/>
+            </agent>
+            <eventDateTime standardDateTime="2024-11-27"/>
+        </maintenanceEvent>
+        <maintenanceEvent maintenanceEventType="revised" id="revision2025">
+            <agent agentType="person">
+                <label>Marianne Cousteau</label>
+            </agent>
+            <eventDateTime>October 2025</eventDateTime>
+        </maintenanceEvent>
+    </maintenanceHistory>
+    <sources>
+        <source id="source1">
+            <reference>R. Greene, S.Cushman (ed.): The Princeton Handbook of World Poetries</reference>
+        </source>
+        <source id="source2" href="https://www.theguardian.com/books/2018/aug/10/langston-hughes-born-a-year-before-accepted-date-poet">
+            <reference>Flood, Alison <referringString referredEntityType="title">"Langston Hughes 'born a  year before accepted date', researcher finds,"</referringString> The Guardian. Published  10 August 2018.</reference>
+            <citedRange unit="page">11</citedRange>
+            <descriptiveNote>
+                <p>Poet researching archives of local African American newspaper finds story reporting on 'little Langston' before his recorded birth date.</p>
+            </descriptiveNote>
+        </source>
+        <source>
+            <reference href="https://de.wikipedia.org/wiki/Gustav_IV._Adolf_(Schweden)" languageOfElement="de"> Wikipedia-Seite zu Gustav IV. Adolf</reference>
+        </source>
+        <source href="https://sok.riksarkivet.se/sbl/Presentation.aspx?id=13318">
+            <reference languageOfElement="sv">Svenskt biografiskt lexikon</reference>
+            <descriptiveNote>
+                <p languageOfElement="de">Stand: 03.12.2020</p>
+            </descriptiveNote>
+        </source>
+        <source>
+            <reference/>
+            <objectXMLWrap>
+                <tei:bibl>
+                    <tei:title>
+                        <tei:emph rend="italic">Paris d'hier et d'aujourd'hui</tei:emph>
+                    </tei:title>
+                    <tei:respStmt>
+                        <tei:resp>photographes</tei:resp>
+                        <tei:name>Roger Henrard</tei:name>
+                        <tei:name>Yann Arthus-Bertrand</tei:name>
+                    </tei:respStmt>
+                </tei:bibl>
+            </objectXMLWrap>
+        </source>
+    </sources>
+    <conventionDeclaration>
+        <reference href="https://www.loc.gov/aba/rda/">Resource Description and Access</reference>
+        <shortCode>RDA</shortCode>
+    </conventionDeclaration>
+    <conventionDeclaration>
+        <reference>Anglo-American Cataloging Rules, Revised</reference>
+        <shortCode>AACR2</shortCode>
+    </conventionDeclaration>
+    <conventionDeclaration id="administrativeRegions">
+        <reference href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000033553530/" languageOfElement="fr">
+            Décret n°2016-1689 du 8 décembre 2016 fixant le nom, la composition et le chef-lieu des circonscriptions administratives régionales - Légifrance
+        </reference>
+    </conventionDeclaration>
+    <conventionDeclaration id="localAuthorities">
+        <reference href="https://cnig.gouv.fr/IMG/pdf/collectivites-territoriales_cnt_10-decembre-2021.pdf" linkRole="document/pdf" languageOfElement="fr">
+            Commission nationale de toponymie: Collectivités territoriales françaises
+        </reference>
+    </conventionDeclaration>
+    <conventionDeclaration id="repositoryCode">
+        <reference href="https://www.rara.ee/wp-content/uploads/koik_koodid_22.04.2025.csv">
+            Kataloogimiskohad
+        </reference>
+        <descriptiveNote>
+            <p languageOfElement="et">Kataloogimiskohad (välja andnud Eesti Rahvusraamatukogu)</p>
+            <p>Cataloguing Source Codes (issued by the National Library of Estonia)</p>
+        </descriptiveNote>
+    </conventionDeclaration>
+    <conventionDeclaration id="agentType">
+        <reference href="https://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent">
+        PROV-DM agent types
+        </reference>
+    </conventionDeclaration>
+    <conventionDeclaration id="placeType">
+        <reference>Geographic Association Place Types</reference>
+        <descriptiveNote>
+            <p>The Geographic Association uses its own, in-house classification systems for types of places. At the moment, this is an internal document that is not available online.</p>
+        </descriptiveNote>
+    </conventionDeclaration>
+    <conventionDeclaration id="entityType">
+        <reference>List of entity types (referrals)</reference>
+    </conventionDeclaration>
+    <conventionDeclaration id="relationType">
+        <reference href="https://www.ica.org/standards/RiC/ontology">
+            Records in Contexts Ontology - Relationships properties
+        </reference>
+        <shortCode>RiC-O</shortCode>
+    </conventionDeclaration>
+    <languageDeclaration languageCode="en" scriptCode="Latn"/>
+    <languageDeclaration languageCode="el" scriptCode="Grek">
+        <descriptiveNote>
+            <p>This finding aid's main descriptive language is English. Parts of the finding aid that describe materials related to the Embassy in Greece additionally include a small set of elements using Greek as the descriptive language.</p>
+        </descriptiveNote>
+    </languageDeclaration>
+    <localTypeDeclaration id="containers">
+        <reference>List of values to identify types of containers</reference>
+        <shortCode>ContainerTypes</shortCode>
+    </localTypeDeclaration>
+    <localTypeDeclaration id="identifiers">
+        <reference href="https://example.org/value-lists/identifiers.xml">
+            List of values to identify types of identifiers
+        </reference>
+        <descriptiveNote>
+            <p>The list of types of identifiers has been defined in the context of the "Our history", where it was used to identify records, record versions and record enrichments depending on their source and provenance.</p>
+        </descriptiveNote>
+    </localTypeDeclaration>
+    <otherRecordId valueURI="https://pares.mcu.es/ParesBusquedas20/catalogo/autoridad/140149" vocabularySource="PARES">140149</otherRecordId>
+    <otherRecordId localType="original" localTypeDeclarationReference="identifiers">AUBT-ISAAR-C-002</otherRecordId>
+    <rightsDeclaration>
+        <reference href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</reference>
+        <shortCode>CC0 1.0</shortCode>
+        <descriptiveNote>
+            <p>All existing copyrights and related rights to this finding aid have been waived and the finding aid is licensed under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. This means, you can copy, modify, and distribute this finding aid, even for commercial purposes, all without asking permission.</p>
+        </descriptiveNote>
+    </rightsDeclaration>
+</control>]]></egXML>
+               </div>
+               <div type="exampleText" subtype="findAidDesc">
+                <egXML xml:lang="eng"><![CDATA[<findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department/quilting-technologies-department.xml" linkTitle="Download the encoded finding aid (XML)" linkRole="text/xml">
+    <title localType="mainTitle" localTypeDeclarationReference="titles">
+        <part>Guide to Quilting Technologies Department Records, 1978-2020</part>
+        <part localType="edition" localTypeDeclarationReference="titles">2nd edition</part>
+    </title>
+    <title localType="subtitle" localTypeDeclarationReference="titles">
+        <part>A guide to the records of the Quilting Technologies Department at Piecemaking University</part>
+    </title>
+    <title localType="seriesTitle" localTypeDeclarationReference="titles">
+        <part>Piecemaking University Departmental Records, 13</part>
+    </title>
+    <agent agentType="person">
+        <label>Ruth Tillman</label>
+        <role valueURI="aut" vocabularySource="MARC Code List for Relators">Author</role>
+    </agent>
+    <agent agentType="prov:Organization" conventionDeclarationReference="agentType">
+        <label>National Alliance of Peace Quilters</label>
+        <role valueURI="spn" vocabularySource="MARC Code List for Relators">Sponsor</role>
+        <descriptiveNote>
+            <p>Funding for the initial creation of this electronic finding aid was made possible in 1992 by a generous gift of the National Alliance of Peace Quilters.</p>
+        </descriptiveNote>
+    </agent>
+    <agent agentType="prov:Organization" conventionDeclarationReference="agentType">
+        <label>Piecemaking University</label>
+        <role valueURI="pbl" vocabularySource="MARC Code List for Relators">Publisher</role>
+        <role valueURI="spn" vocabularySource="MARC Code List for Relators">Sponsor</role>
+        <descriptiveNote>
+            <p>Funding for encoding was made possible in 2008 by a Piecemaking University Digital Initiatives Grant.</p>
+        </descriptiveNote>
+    </agent>
+    <date standardDate="2020-06-08">June 8, 2020</date>
+    <place>
+        <label>Lancaster, Pennsylvania</label>
+        <address>
+            <addressLine>University Archives</addressLine>
+            <addressLine>Piecemaking University</addressLine>
+            <addressLine>Lancaster, PA 17603</addressLine>
+        </address>
+        <contact>
+            <contactLine contactLineType="phoneNumber">+1-717-555-1313</contactLine>
+            <contactLine contactLineType="email">archivist@piecemaking.edu</contactLine>
+        </contact>
+    </place>
+    <formattingExtension>
+        <xhtml:div>
+            <xhtml:p>Edition was updated during EAD3 encoding to conform to DACS standards.</xhtml:p>
+            <xhtml:p>To submit corrections or request clarifications, please use the <xhtml:a href="https://archives.piecemaking.edu/contact/finding-aid-feedback"> University Archives' feedback form</xhtml:a>.</xhtml:p>
+        </xhtml:div>
+    </formattingExtension>
+</findAidDesc>
+<findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department" linkTitle="View the finding aid online" linkRole="application/xhtml+xml">
+    <date standardDate="2024-10-11">October 11, 2024</date>
+</findAidDesc>
+<findAidDesc href="https://archives.piecemaking.edu/finding-aids/quilting-technologies-department/quilting-technologies-department.pdf" linkTitle="Download the finding aid in PDF format" linkRole="application/pdf">
+    <date standardDate="2024-10-11">October 11, 2024</date>
+</findAidDesc>]]></egXML>
+              </div>
+              <div type="exampleText" subtype="identificationData">
+                <egXML xml:lang="eng"><![CDATA[<descriptionOfComponents descriptionOfComponentsType="combined">
+    <c>
+        <identificationData>
+            <head>Descriptive Summary</head>
+            <container containerId="33433117009781" id="aspace_3e98d60dfc5e7ef6c017b677f6616965" localType="box" localTypeDeclarationReference="containers">3</container>
+            <extent coverage="whole" extentType="spaceOccupied">
+                <quantity>3.32</quantity>
+                <unitOfMeasurement>linear feet</unitOfMeasurement>
+            </extent>
+            <extent coverage="whole" extentType="spaceOccupied">
+                <quantity>6</quantity>
+                <unitOfMeasurement>terabytes</unitOfMeasurement>
+            </extent>
+            <extent coverage="whole" extentType="carrier">
+                <quantity>12</quantity>
+                <unitOfMeasurement>hard drives</unitOfMeasurement>
+            </extent>
+            <extent coverage="part" extentType="materialType">
+                <quantity approximate="true">1,800</quantity>
+                <unitOfMeasurement>electronic files</unitOfMeasurement>
+            </extent>
+            <genreForm valueURI="http://vocab.getty.edu/page/aat/300027401" vocabularySource="AAT">Birth registers</genreForm>
+            <genreForm vocabularySource="LCGFT">Aerial photographs</genreForm>
+            <languageOfMaterial>
+                <languageSet>
+                    <writingSystem scriptCode="Latn">Latin</writingSystem>
+                    <language languageCode="en">English</language>
+                    <language languageCode="la">Latin</language>
+                </languageSet>
+                <languageSet>
+                    <language languageCode="el">Greek</language>
+                    <writingSystem scriptCode="Grek">Greek</writingSystem>
+                </languageSet>
+                <descriptiveNote>
+                    <p>The majority of the documents are written in Modern English. Roberts copied multiple passages from original manuscripts in Latin and Greek.</p>
+                </descriptiveNote>
+            </languageOfMaterial>
+            <languageOfMaterial>
+                <language languageCode="nl">Dutch</language>
+                <language languageCode="fr">French</language>
+                <descriptiveNote>
+                    <p>The materials are in Dutch and French.</p>
+                </descriptiveNote>
+            </languageOfMaterial>
+            <languageOfMaterial>
+                <languageSet>
+                    <language languageCode="ja">Japanese</language>
+                    <writingSystem scriptCode="Hira">hiragana</writingSystem>
+                    <writingSystem scriptCode="Kana">katakana</writingSystem>
+                </languageSet>
+                <descriptiveNote>
+                    <p>This file contains documents in Japanese, in both the hiragana and katakana scripts.</p>
+                </descriptiveNote>
+            </languageOfMaterial>
+            <legalStatus>
+                <term>Public Record(s)</term>
+            </legalStatus>
+            <legalStatus>
+                <term>Student records</term>
+                <descriptiveNote>
+                    <p>Student records are governed by the Family Educational Rights and Privacy Act (FERPA), 20 U.S.C. § 1232g.</p>
+                </descriptiveNote>
+            </legalStatus>
+            <legalStatus>
+                <term>Patient records</term>
+                <descriptiveNote>
+                    <p>Patient records are governed by the Health Insurance Portability and Accountability Act, Pub.L. 104–191 and 110 Stat. 1936. Article 8 ECHR may also apply.</p>
+                </descriptiveNote>
+            </legalStatus>
+            <otherIdentificationData>
+                The notebooks contain months and days, not years. Estimated dates are based on the years Scully attended the University of Maryland.
+            </otherIdentificationData>
+            <unitDate certainty="circa" unitDateType="inclusive">
+                <dateRange>
+                    <fromDate notBefore="1971" notAfter="1975">around 1973</fromDate>
+                    <toDate standardDate="1992">1992</toDate>
+                </dateRange>
+            </unitDate>
+            <unitDate unitDateType="bulk">
+                <dateSet>
+                    <date certainty="uncertain" standardDate="1968?">c.1968</date>
+                    <dateRange>
+                        <fromDate standardDate="1973">1973</fromDate>
+                        <toDate standardDate="1992">1992</toDate>
+                    </dateRange>
+                    <date standardDate="1997">1997</date>
+                </dateSet>
+            </unitDate>
+            <unitDate>
+                <date notBefore="1532-03-30">April 1532</date>
+                <textualDate languageOfElement="la">Anno Domini millesimo quingentesimo trissesimo secundo post festum Paschatis</textualDate>
+            </unitDate>
+            <unitDate>
+                <textualDate status="unknown">No date given</textualDate>
+            </unitDate>
+            <unitDate>
+                <dateRange>
+                    <fromDate standardDate="1609-07-04" languageOfElement="fr">4 juillet 1609</fromDate>
+                    <toDate standardDate="1640-07-07" languageOfElement="fr">7 juillet 1640</toDate>
+                </dateRange>
+            </unitDate>
+            <unitDate certainty="circa" unitDateType="inclusive">
+                <dateRange>
+                    <fromDate standardDate="2016-09" languageOfElement="de">September 2016</fromDate>
+                    <toDate status="ongoing"/>
+                </dateRange>
+            </unitDate>
+            <unitId countryCode="US" repositoryCode="US-cbgtu">GTU 2001-8-03</unitId>
+            <unitTitle>Donald C. Stone Papers</unitTitle>
+        </identificationData>
+    </c>
+</descriptionOfComponents>]]></egXML>
+              </div>
+         </div>
+      </back>
+   </text>
+</TEI>

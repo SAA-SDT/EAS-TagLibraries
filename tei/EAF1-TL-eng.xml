@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/TL-teiliteSchema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+	xmlns:exml="http://workaround for xml namespace restriction/namespace"
+	xmlns:xlink="http://www.w3c.org/1999/xlink" xmlns:eaf="urn:isbn:1-931666-33-4"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="eng" type="main">Encoded Archival Functions (EAF) <lb/> Tag Library</title>
+				<title xml:lang="eng" type="additional">Version EAF 1.0.0</title>
+				<respStmt>
+					<resp>Prepared and maintained by the </resp>
+					<name>Technical Subcommittee for Encoded Archival Standard of the Society of
+						American Archivists</name>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition>2026 Edition</edition>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>Society of American Archivists</publisher>
+				<address>
+					<addrLine>17 North State Street, suite 1425</addrLine>
+					<addrLine>Chicago, IL 60602-3315</addrLine>
+					<addrLine>USA</addrLine>
+					<addrLine>312-606-0722</addrLine>
+					<addrLine>Fax: 312-606-0728</addrLine>
+					<addrLine>info@archivists.org</addrLine>
+					<addrLine>www.archivists.org</addrLine>
+				</address>
+				<date when="2026"/>
+				<idno>978-1-958954-34-8</idno>
+				<availability>
+					<licence>This work is licensed under a Creative Commons Attribution 4.0
+						International License (CC BY 4.0). See <ref
+							target="http://creativecommons.org/licenses/by/4.0/"
+							>http://creativecommons.org/licenses/by/4.0/</ref>. Some rights
+						reserved. No part of this publication may be reproduced, stored in a
+						retrieval system or transmitted in any form or by any means, electronic,
+						mechanical or photocopying, recording, or otherwise without
+						attribution.</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Born digital.</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<titlePage>
+				<docTitle>
+					<titlePart type="main">Encoded Archival Functions (EAF) <lb/> Tag Library</titlePart>
+					<titlePart type="additional">Version EAF 1.0.0</titlePart>
+				</docTitle>
+				<docEdition>2026 Edition</docEdition>
+				<byline>Prepared and maintained by the</byline>
+				<docAuthor>Technical Subcommittee for Encoded Archival Standards of the Society of
+					American Archivists</docAuthor>
+
+				<docImprint>
+					<docDate>July 2026</docDate>
+				</docImprint>
+			</titlePage>
+			<div>
+				<!-- Descriptive chapters
+            Consists of a wrapper <div> with the elements:
+            <head> for the title
+            <p>'s for the text
+            <div> for creating next level titles
+            <egXML xmlns="http://www.tei-c.org/ns/Examples"> for examples
+            
+            In text these elements are possible:
+            <ref> with @target for e-mail, webbpage and so on
+            <tag> with text to create anglebrakets
+            <att> with text to create attributes
+            
+            
+            Possible elements in each <p>:
+            <list type="ordered"> for ordered list 
+               the list contains:
+               <head> for title
+               <item n="number"> for the text and where @number is the ordered number (same number cant occur twice)
+            <list type="simple"> for a simple list
+               the list contains:
+               <item> for the text
+            <note n="number"> for creating footnotes
+            -->
+				<!-- front-example -->
+				<!--<div xml:id="front-example">
+					<head>Title</head>
+					<p>Text</p>
+					<egXML xmlns="http://www.tei-c.org/ns/Examples"/>
+					<list type="simple">
+						<item>Item 1</item>
+						<item>Item 2</item>
+					</list>
+				</div>-->
+				<div xml:id="Preface">
+					<head>Preface</head>
+					<p>With a new start in 2022, a subgroup of TS-EAS has been exploring an XML
+						expression of the ICA content standard “International Standard for
+						Describing Functions” (ISDF). First released in 2007, ISDF is based on
+						models of functional description in use at international archival
+						institutions as well as ISO standards for records management. ISDF aims to
+						create a standardized description of business processes and other
+						recordkeeping activities that documents the creation and use of records that
+						are not met in the other ICA standards. Functions are an essential aspect of
+						archival description that captures additional elements of the records'
+						context, provenance, creation, and application. As such, archival of the
+						used functions in the records creation complement descriptions of record
+						creators (EAC-CPF) and the records themselves (EAD).</p>
+					<p>The development of an XML standard to express archival functions is intended
+						to expand the suite of encoded archival standards and provide a mechanism to
+						standardize description of functions of corporate bodies. The XML standard
+						is based on ISDF and places great importance on the incorporation of
+						established schemas like EAC-CPF and EAD, adherence to recognized ontologies
+						and metadata models, and flexible options for defining functions in relation
+						to other entities. These strategies ensure consistency, interoperability,
+						and adaptability, to enhance the schema's usability and enable seamless
+						integration with existing practices and systems.</p>
+					<p>This is the resulting XML standard of the work that was carried out. The EAF
+						XML standard described here is one of the parts of the EAS standards.
+						EAS standards are maintained by the Technical Subcommittee on Encoded Archival
+						Standards, a group housed and supported by the Society of American
+						Archivists (SAA) and overseen by the SAA Standards Committee.</p>
+					<p>This tag library is focused on technical implementation of the EAF 1.0
+						standard. A companion document, the <ref target="https://saa-sdt.github.io/EAS-Best-Practices/">Best Practices Guide</ref> (BPG), provides
+						guidance on applying the standard in archival practice. The BPG includes
+						in-depth explanations of elements and attributes, use cases, and additional
+						examples.</p>
+					<p>The final creation of EAC-F was done by members of the TS-EAS Functions
+						Subteam: Karin Bredenberg, Ypapanti (Dia) Kytta, Mpho Ngoepe, Kolbe Resnick,
+						and Elizabeth Russey Roke</p>
+				</div>
+				<div xml:id="DesignPrinciples">
+					<head>Design principles</head>
+					<p>The schema is designed to follow the TS-EAS design principles <ref
+							target="https://github.com/SAA-SDT/TS-EAS-subteam-notes/wiki/Design-Principles"
+							>TS-EAS Design Principles</ref>], which prioritize simplicity and
+						connect community needs with the first principle. The goal is a
+						schema that can be customized to meet local requirements without sacrificing
+						interoperability. The schema is designed to be compatible with linked open
+						data principles and responsive to related standards and changing
+						technologies. This is accomplished by reusing data models from existing
+						schemas maintained by TS-EAS such as EAC-CPF and EAD, and ensuring compatibility with external,
+						widely-used ontologies and metadata models such as the Records in Contexts content model (RiC). The Encoded Archival Functions XML
+						schema (henceforth referred to as EAF) has been deliberately designed to
+						offer various options for linking Function descriptions with external
+						entities and provide a bridge between XML and graph data by including a
+						mechanism for encoding semantic and relational data. </p>
+				</div>
+				<div xml:id="Functions">
+					<head>Functions</head>
+					<p>Functions provide essential information for an integrated description of the
+						archival context. They describe the activities of corporate bodies that use
+						and create records in ways that are not limited to the organizational
+						structure. Identifying and processing functions can reveal unseen
+						relationships between recordkeeping activities and the corporate bodies that
+						create and maintain records. Including functions in the archival
+						description, therefore, is essential in clarifying the provenance of groups
+						of records. Functions comprise a required and well-known implement for
+						describing, understanding, and managing groups of records. The analysis of
+						organizational functions, known as functional analysis, is a technique used
+						traditionally to evaluate and process archival materials, based on the
+						relative importance of activities performed within an organization.<note
+							n="1">Society of American Archivists. (2020). Dictionary of Archives
+							Terminology (DAT). Available at: <ref
+								target="https://dictionary.archivists.org"
+								>https://dictionary.archivists.org</ref></note> Functional analysis
+						results often set the priorities for records appraisal and processing and
+						provide essential information to guide arrangement and description. ISDF
+						coordinates this content in a standardized way, providing links to agents
+						and archival records as well as providing guidance for how to structure the
+						information for use in archival description.</p>
+					<p>The concept of functions is defined by ISO 30300:2020(en) as the group of
+						activities aimed at achieving one or more goals of an organization. In a
+						wider definition, functions correspond to any high-level purpose,
+						responsibility, or task assigned to a corporate body by legislation, policy,
+						or mandate. (ISDF, 2007). In both cases, functions are understood as sets of
+						coordinated processes aimed at achieving a specific outcome. These processes
+						can also be more granularly divided into sub-functions, business processes,
+						activities, tasks, or transactions. For instance, a Fundraising campaign
+						management activity (F – Activity) might be part of a Fundraising (F –
+						Function) operation in an organization (Agent – Corporate body). The
+						fundraising campaign management (F – Activity) is hierarchically related to
+						the overall fundraising Fundraising (F – Function) but, at the same time,
+						could also have an additional associative relationship with another activity
+						such as Financial Accounting (F – Activity).<note n="2">International
+							Council on Archives. (2016). ISDF: International Standard for Describing
+							Functions, 1st ed, English, p.p 41-43). Available at: <ref
+								target="https://www.ica.org/resource/isdf-international-standard-for-describing-functions/"
+								>https://www.ica.org/resource/isdf-international-standard-for-describing-functions/</ref></note></p>
+					<p>Thus, functions within an organization are distinct from agents, be it a
+						corporate body, a family, or a person. Functions are processes that develop
+						beyond individuals, groups, or units of the organization. They are
+						established to perform fundamental operations of the organization, which may
+						change according to the evolution of organizational objectives. Functions
+						may consist of a partnership of activities and units, and may not
+						necessarily mirror the organizational chart. While the ISAAR-CPF and EAC-CPF
+						standards help to provide a complete description of an agent/creator of
+						records and establish relationships to specific records or groups of
+						records, this approach cannot adequately document essential information
+						about the cooperation between agents or units and decisions and processes
+						that cannot be described in terms of an agent's history. While linking
+						records to agent descriptions helps to illuminate roles and actions in
+						relation to a record, it does not provide a comprehensive understanding of
+						the stage in which they are related. Functions are often wider than a single
+						agent's activities. Additionally, they are often developed to serve a
+						specific organizational or personal objective or decision unrelated to the
+						agent that ultimately creates the record</p>
+					<p>Functions as described in ISDF do not merely operate as subject headings but
+						are integral components of the archival context. Standardized descriptions
+						of functions provide a more comprehensive and nuanced picture of a group of
+						records by relating records and agents within the aspect of purpose,
+						revealing the processes that link agents' actions and records creation. They
+						provide essential contextual and structural information that supports the
+						organization, management, and understanding of records within an archival
+						system. By documenting functions and their relationships, ISDF ensures that
+						the provenance and operational context of records are accurately
+						represented, facilitating effective archival description and management.
+						This has been a missing piece of the archival descriptive landscape that
+						cannot be performed by merely describing records, agents, and their
+						relationships.</p>
+				</div>
+				<div xml:id="ISDF">
+					<head>The ISDF standard</head>
+					<p><ref
+							target="https://www.ica.org/resource/isdf-international-standard-for-describing-functions/"
+							>ISDF (1st edition, 2007)</ref> provides guidance for how to describe
+						the functions linked to the creation and upkeep of records, applied by
+						corporate bodies. Translated in multiple languages, the standard includes
+						example records to illustrate its potential use. </p>
+					<p>ISDF suggests the creation of a descriptive authority metadata set per
+						function that carries identity and context information. The suggested
+						metadata set includes four areas of elements, following the structure of
+						ICA’s standards for archival and agents’ description. The main body of
+						description is developed in the Identity, Context, and Control areas. The
+						Identity area defines the different form of names, the specific type, and
+						the corresponding classification scheme if that applies. In the Context
+						area, information about the history, the legal basis and the purpose, and
+						the relevant date range of the function is recorded. The Control area
+						records the administrative information of this metadata set. ISDF also
+						provides a metadata section entitled the Relationship area (5.3) that
+						relates the function to other functions to create a functions inventory. The
+						standard also discusses how to establish external relations to other
+						entities such as agents and records. The standard, therefore, provides two
+						different mechanisms for documenting relationships between entities: one
+						with other metadata sets describing other functions and another for relating
+						them to agents and records. Translated into different languages, the
+						standard includes examples authored by different members that illustrate the
+						various ways these relationships can be established, resulting in no unified
+						way to express relationships within ISDF. </p>
+				</div>
+				<div xml:id="FirstWork">
+					<head>Previous efforts (2013-2018)</head>
+					<p>There have been multiple efforts to develop an XML serialization of ISDF,
+						largely spearheaded by the Technical Subcommittee on Encoded Archival
+							Standards.<note n="3">The most recent iteration of these efforts was in
+							2018. The committee included Kathy Wisser (chair), Erica Boudreau,
+							Florence Clavaud, Claire Sibille-de Grimouard, and Joost van
+							Koutrik.</note> A central goal of these efforts was to gather real world
+						examples of ISDF descriptions and XML-based implementations of ISDF as well
+						as defining the need, purpose, and goals of an XML schema for functions. A
+						number of test documents were created early on to interpret ISDF and create
+						an XML structure to support each test creator's need for an XML document to
+						use. These early efforts focused on adapting one of these examples for
+						broader use, but the examples varied widely in their application and
+						significant questions remained about how ISDF data could be created
+						consistently and accurately. For instance, functions described within
+						descriptive contextual metadata are usually done by archivists without
+						sufficient knowledge of the functions and activities of the corporate body.
+						Additionally, there is no mechanism for capturing or reusing existing
+						descriptions of functions and activities in an archival setting. This means
+						that the proposed XML standard needed to be easy to use and bear familiarity
+						with the already existing EAS standards EAD and EAC-CPF so archivists could
+						create these examples manually. The team has also looked at software for
+						creating archival description. Most of them only had a description field for
+						giving a textual description of functions and activities rather than
+						structured metadata fields for different elements. <ref target="https://www.accesstomemory.org/en/">AtoM</ref>  (Access to Memory), which has a
+						ISDF-based form to create this type of information as described earlier in
+						the text, was the exception.</p>
+				</div>
+				<div xml:id="Current">
+					<head>Effort until submission for publication (2021- onwards)</head>
+					<p>In 2021 the focus shifted from reworking current examples into a
+						newly-conceived standard to an approach that attempted to reuse what already
+						is available in existing models and ontologies while still supporting the
+						conceptual structure and elements of the ISDF standard. A primary end goal
+						for this work was to support multiple options for describing and relating
+						functions’ entities depending upon local use cases and needs. It is also
+						important that a new EAS standard follow the decided and guiding design
+						principles created by TS-EAS and used for Encoded Archival Description
+						(EAD) and Encoded Archival Context–Corporate Bodies, Persons and Families
+						(EAC-CPF). </p>
+					<p>The central aim during this phase was to create a proposal in the form of a
+						white paper with accompanying examples, to solicit comments from all types
+						of users to make sure that the standard would be useful to a wide variety of
+						implementers and support a range of use cases. The white paper gave valuable
+						input into the work with creating a standard for describing functions.</p>
+				</div>
+				<div xml:id="Groundwork">
+					<head>Groundwork and exploration</head>
+					<p>Previous research by TS-EAS members had not identified any full
+						implementations that encode archival functions, so investigation of the
+						examples offered by ISDF in its first editions was a primary starting point.
+						Using the contents and the structure of these examples, group members
+						attempted to translate them into XML and match them to existing EAD/EAC-CPF
+						data models as well as linked data ontologies including the RiC content
+						model. These included examples provided in the French, Spanish, and English
+						ISDF editions. Moreover, searching for a real-life example of Functions’
+						inclusion in archival practice, relevant information was retrieved from the
+						Swedish best practice for archival description in <ref target="https://riksarkivet.se/resurser/redovisa-verksamhetsinformation">Guidance on the National
+						Archives' regulations on record keeping</ref> that enriched our encoding trials.
+						These experiments revealed that even within the ISDF standard and the
+						examples it provides, there was a lack of a unified understanding of the
+						concept of function and an equable application of the standard.</p>
+					<p>To ensure that the new encoding standard supports the variety of use cases we identified, we have developed an XML standard that creates separate ISDF records for each function or activity. The main body of description for each function includes elements such as  identity, dates, events, history, and legislation. This main set of elements is related with other function(s), activity(ies), record(s), and agent(s) descriptions through the use of the relation element. These relationships described in each relation element mirror the relation elements in EAD and EAC-CPF and are declared as sub-joins within the same record. This option allows a series of interrelated records that provide a high level of granularity and flexibility to be developed.</p>
+					<p>Describing functions and activities will be new for some archival communities of practice and we hope that an XML-friendly version of this standard will encourage description of functions and activities and provide a mechanism to easily exchange the information in a format that can be used worldwide.</p>
+				</div>
+				<div xml:id="structure">
+					<head>The ISDF descriptive structure</head>
+				</div>
+				<div xml:id="identity">
+					<head>IDENTITY AREA</head>
+					<p>The Identity area in ISDF provides all information necessary to identify the function.
+						It records the type of function, the authorized form(s) of name, parallel and other form(s) of name, and the classification scheme indicator ID applicable.
+					</p>
+					<p>The approach follows the description of identities in EAC-CPF.</p>
+				</div>
+				<div xml:id="context">
+					<head>CONTEXT AREA</head>
+					<p>The Context area includes the dates / date range of the function, the description of the function focusing on its purpose, the history of its performance including the changes applied over the time along with information about the relevant organizational units, and the regulatory / legal framework under which the function was performed.</p>
+					<p>The  approach follows the description of identities in EAC-CPF.</p>
+				</div>
+				<div xml:id="relationships">
+					<head>RELATIONSHIPS AREA</head>
+					<p>The Relationships area in ISDF provides information on how the function under description is related to other function documents. This includes the authorized form(s) of name of the related function, the type, and the category of the relationship to provide a hierarchical, temporal, or associative connection.</p>
+					<p>The approach used is based upon the creation of  a function description for each function and relating them by reusing the relationship elements of EAF. </p>
+				</div>
+				<div xml:id="control">
+					<head>CONTROL AREA</head>
+					<p>The Control area in ISDF includes administrative information and maintenance management of the record created for the described function. This section contains information about the document itself, including identification, maintenance, and vocabularies used.</p>
+					<p>Our approach follows the definition of the Control area in the EAS standards (EAD and EAC-CPF).</p>
+				</div>
+				<div xml:id="easrelations">
+					<head>RELATING FUNCTIONS TO CORPORATE BODIES, ARCHIVAL MATERIALS AND OTHER RESOURCES</head>
+					<p>ISDF provides indications for the relations to the other entities but these are not included as an area in the document of the function’s description but applied as additional linkage. Relating a function document to another type of entity such as archival records, corporate bodies records, or other resources requires the documentation of identifier and authorized form(s) of name/title of related resource, and information of the nature and the dates of the relationship.</p>
+					<p>In order to relate a function to other entities (i.e., agents or records), there is a reuse of the relation element established in the EAS standards as seen in both the EAD and EAC-CPF standards to relate to other entities.  This approach is specifically designed to enable implementers to  incorporate external vocabularies and ontologies (such as RiC) to describe these relationships.</p>
+				</div>
+				<div xml:id="explanation">
+					<head>The XML standard design principles explained</head>
+					<p>The EAF XML standard is designed to be easily implemented.  Throughout the new XML standard, we have aligned elements and concepts with shared elements in all of the EAS standards, particularly those from the revised EAC-CPF. This ensures that dates, for example, are described in the same way as for EAC-CPF and EAD. The TS-EAS Functions Team has also placed special attention on how to make the XML description linked data-friendly and thus possible to be a stepping stone between an XML format for describing functions and activities and RDF-based ontologies such as Records in Contexts. Ontologies describing terms for functions, activities, and relationships with other entities such as those outlined in the Records in Contexts content model can be reused within EAF to ensure forward compatibility with evolving standards. Institutions with local ontologies and local vocabularies will also find it easy to reference those within the structure of this schema.  The semantic and relational elements in the EAF schema will also ensure relationships with domain-specific schemas such as PREMIS can be established and maintained. Additional recommendations for complementary ontologies will be part of the final documentation.</p>
+				</div>
+				<div xml:id="conventions">
+					<head>Tag Library Conventions</head>
+					<p>The EAC-F Elements section of the Tag Library contains descriptions of the elements, arranged alphabetically by element name.</p>
+					<!--p>Entries in the Tag Library that have been updated in the latest revision will be
+                  marked with "(revised in [revision number])". Updates that predate the most recent
+                  revision will not be marked in the text.</p-->
+					<list type="gloss">
+						<label>Tag Name: </label>
+						<item>Short, mnemonic form of the element name that is used in the
+							machine-readable encoded document. The tag name is the first word at the top of
+							the page. Tag names appear between angle brackets, e.g., <gi>nameEntry</gi>,
+							except in the listings under "May occur within" and "May contain," and are
+							always in camel case (camelCase).</item>
+						<label>Element Name:</label>
+						<item>Expanded version of the tag name that more fully describes the element's
+							meaning. The full name of the element is usually a word or phrase that
+							identifies the element's purpose. In the Tag Library, the element name follows
+							the tag name on the page defining that element and appears with initial capital
+							letters, e.g., <gi>nameEntry</gi> Name Entry.</item>
+						<label>Summary:</label>
+						<item>A brief statement that provides a concise definition of the element,
+							suitable for quick reference.</item>
+						<label>May Contain:</label>
+						<item>Identifies what child nodes (text or elements) may occur within the element
+							being defined. Elements are listed in alphabetical order by tag name. Elements
+							may be empty (e.g., an element which allows no child text or element nodes), or
+							they may contain text (listed as [text]), other elements, or a mixture of text
+							and other elements.<lb/>Text content cannot include characters that would be
+							interpreted by a parser as action codes. For example, a left angle bracket must 
+							be represented as the character entity reference &amp;lt; so that it is not
+							misinterpreted as the start of an element name. <lb/>The technical availability
+							of child elements is listed in brackets beside each element, e.g. place (0..1).
+							The first character represents the minimum occurrences of the child element and
+							the final character represents the maximum occurrences of the child element,
+							with 'n' representing unlimited occurrences.</item>
+						<label>May Occur Within:</label>
+						<item>Identifies all the parent elements within which the described element may
+							appear, listed in alphabetical order by tag name. This information conveys
+							information about where and how often an element is available throughout the
+							schema. The definitions for parent elements may provide additional information
+							about an element's usage.</item>
+						<label>Attributes:</label>
+						<item>Identifies all attributes that can be associated with an element. Attributes
+							are represented in camelCase letters in XML coding. The Tag Library uses the
+							convention of preceding an attribute name with an @ symbol (e.g.,
+							<att>localType</att>), following XPath syntax. See the EAC-F Attributes
+							section of the tag library for definitions and additional information.</item>
+						<label>Description and Usage:</label>
+						<item>This section begins with one or more paragraphs that provide a more thorough
+							description of the element than that found in the Summary, which may be
+							followed by guidance on use. The terms "parent" and "child" are used to
+							indicate hierarchical relationships between elements. Standard terminology is
+							also used to suggest the kind of element being discussed. "Wrapper element"
+							indicates an element that cannot contain text directly; a second, nested
+							element must be opened first. When the schema enforces a specific sequence of
+							child elements, that sequence is indicated. <lb/>If useful, context-specific
+							guidance for the usage of an element's attributes is given in an "Attribute
+							usage" section. A "See also" section may be provided to indicate additional
+							elements that are similar, easily confused, or otherwise related to the element
+							being described.</item>
+						<label>Availability:</label>
+						<item>Indicates, within the context of its parent(s), whether the element is
+							required or optional, and whether or not it is repeatable. </item>
+						<label>Examples:</label>
+						<item>Element and attribute descriptions link to an example to indicate how
+							attributes and elements can be used together. Many of the examples are taken
+							from real authory records; others have been specially constructed for the Tag
+							Library. The examples illustrate any required sequences of elements, as in the
+							case of children within <gi>control</gi>, or required attributes such as
+							<att>part</att> in <gi>nameEntry</gi>. In other cases, the examples simply
+							show what is possible. Some examples have ellipses, either between or within
+							elements, indicating that other elements or text have been omitted. Some
+							elements have multiple examples: one may show very dense markup with numerous
+							attributes while another may illustrate a minimalist approach to the markup.
+							Either approach is valid in EAC-F, and it is up to the instance creator to
+							determine the optimal level of markup based on their specific purposes,
+							functional requirements, resources, or consortial guidelines.</item>
+					</list>
+				</div>
+			</div>
+		</front>
+		  <body>
+         <div type="elements">
+			  <!-- One include for each element href points to the element file -->
+        		<xi:include href="shared/en/elem-agencyCode.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-agencyName.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-agent.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-citedRange.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-classification.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-classifications.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-control.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-conventionDeclaration.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-date.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-dateRange.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-dateSet.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-description.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-descriptiveNote.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-eaf.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-eventDateTime.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-eventDescription.xml" parse="xml"/>
+        <xi:include href="shared/en/elem-formattingExtension.xml" parse="xml" />
+        <xi:include href="shared/en/elem-fromDate.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-functionAgent.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-functionAgents.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-functionDates.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-functionDescription.xml" parse="xml"/>
+       	<xi:include href="eaf1/en/elem-functionHistory.xml" parse="xml"/>
+        <xi:include href="eaf1/en/elem-functionsDescription.xml" parse="xml"/>	
+        <xi:include href="shared/en/elem-identity.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-identityId.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-label.xml" parse="xml" />
+				<xi:include href="shared/en/elem-languageDeclaration.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-legislation.xml" parse="xml"/>
+				<xi:include href="eaf1/en/elem-legislations.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-localTypeDeclaration.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-maintenanceAgency.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-maintenanceEvent.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-maintenanceHistory.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-nameEntry.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-nameEntrySet.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-objectXMLWrap.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-otherAgencyCode.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-otherRecordId.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-p.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-part.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-placeName.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-recordId.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-reference.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-referringString.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-relation.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-relations.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-relationship.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-rightsDeclaration.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-role.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-shortCode.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-source.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-sources.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-span.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-toDate.xml" parse="xml"/>
+				<xi:include href="shared/en/elem-useDates.xml" parse="xml"/>
+			</div>
+		  <div type="attributes">
+			<!-- One include for each attribute href points to the attribute file -->
+					<xi:include href="shared/en/attr-agentType.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-agentTypeEncoding.xml" parse="xml" />
+					<xi:include href="shared/en/attr-audience.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-audienceEncoding.xml" parse="xml" />
+					<xi:include href="shared/en/attr-calendar.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-certainty.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-conventionDeclarationReference.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-countryCode.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-countryEncoding.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-dateEncoding.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-detailLevel.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-detailLevelEncoding.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-era.xml" parse="xml"/>
+		 		  <xi:include href="eaf1/en/attr-functionStatus.xml" parse="xml"/>
+		  	<xi:include href="eaf1/en/attr-functionStatusEncoding.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-href.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-id.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-identityType.xml" parse="xml"/>
+	        <xi:include href="shared/en/attr-identityTypeEncoding.xml" parse="xml"/>		
+	        <xi:include href="shared/en/attr-languageCode.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-languageEncoding.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-languageOfElement.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-linkRole.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-linkTitle.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-localType.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-localTypeDeclarationReference.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-maintenanceEventReference.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-maintenanceEventType.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-maintenanceEventTypeEncoding.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-maintenanceStatus.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-maintenanceStatusEncoding.xml" parse="xml"/>
+          <xi:include href="shared/en/attr-normalizedForm.xml" parse="xml" />	
+          <xi:include href="shared/en/attr-notAfter.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-notBefore.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-preferredForm.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-publicationStatus.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-publicationStatusEncoding.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-referredEntityRelationship.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-referredEntityType.xml" parse="xml" />
+         	<xi:include href="shared/en/attr-referredEntityTypeEncoding.xml" parse="xml" />
+         	<xi:include href="shared/en/attr-relationType.xml" parse="xml" />
+         	<xi:include href="shared/en/attr-relationTypeEncoding.xml" parse="xml" />
+					<xi:include href="shared/en/attr-repositoryEncoding.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-scriptCode.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-scriptEncoding.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-scriptOfElement.xml" parse="xml"/>
+		 		  <xi:include href="shared/en/attr-sourceReference.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-standardDate.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-standardDateTime.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-status.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-statusEncoding.xml" parse="xml" />
+					<xi:include href="shared/en/attr-style.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-target.xml" parse="xml"/>
+		 		  <xi:include href="shared/en/attr-targetType.xml" parse="xml"/>
+         	<xi:include href="shared/en/attr-targetTypeEncoding.xml" parse="xml" />
+					<xi:include href="shared/en/attr-unit.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-valueURI.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-vocabularySource.xml" parse="xml"/>
+					<xi:include href="shared/en/attr-vocabularySourceURI.xml" parse="xml"/>     
+         </div>
+      </body>
+		<back>
+			<div type="appendix" xml:id="appendix1">
+				<head>Examples</head>
+				<div type="exampleText" subtype="eaf">
+				<p>Before EAC-F was available a description of a function being performed could look like this:</p>
+				<list type="gloss">	
+				<label>Function name</label>
+					<item>Campus maintenance</item>
+					
+					<label>Function description</label>
+					<item>Maintenance includes a full range of services to keep campus operational. Includes planning, construction, and operations in addition to custodial support, landscaping, snow removal, lockshop key services, and recycling assistance.</item>
+					
+					<label>Function dates</label>
+					<item>circa 1795 - 2023</item>
+					
+					<label>Function history</label>
+					<item>Included with the first issuance of Yale’s by-laws in 1795, the care of the campus buildings and grounds has evolved with the University. From the 1750s until the early 1900s this included the Old Campus area including Connecticut Hall and the dormitories, expanding to encompass the Divinity School and Library between 1835-1849. Between 1870-1928, Yale expanded again and added residential colleges and the buildings that would make up the Gothic revival style buildings of Cross Campus. Today the library maintains swaths of green spaces and a wide range of architectural styles. Since 2005, the focus of facilities, construction, and maintenance projects have focused on energy and environmental sustainability, led by the Office of Sustainability.</item>
+					
+					<label>Any procedural mandates that require the function to be performed?</label>
+					<item>As approved by the Yale Corporation By-Laws: "The Committee on Buildings and Grounds shall consist of not fewer than five members of the Corporation. Persons with experience in fields relating to buildings and grounds, not members of the Corporation, may be invited to be members of the Committee without vote. Such members may be invited by the Corporation to serve for such terms as the Corporation may approve. It shall examine the proposals of the President to the Corporation concerning the development and maintenance of a capital plan; the priority of building needs; the location, design, and erection of new structures; and the upkeep and improvement of buildings and grounds; and shall make comments and recommendations with respect thereto, prior to the presentation of the proposals by the President to the Corporation. Before making recommendations to the Corporation which require expenditure of money not provided for in an approved budget, it shall submit its recommendations to the Committee on Finance for review and approval. The Committee shall establish policy with respect to the use of University residences and shall review and approve individually any proposals for capital maintenance or renovation of residences owned by the University and occupied by University officials."</item>
+					
+					<label>Function agents</label>
+					<item><p>Buildings and Grounds Committee</p>
+						<p>Office of Facilities</p></item>
+					
+					<label>Relation to records</label>
+				<item><p>Buildings and Grounds Committee records</p>
+					<p>Yale University long-range building plan records: Yale University long-range building plan: <ref target="https://archives.yale.edu/repositories/12/resources/2112">https://archives.yale.edu/repositories/12/resources/2112</ref></p>
+					<p>Yale University buildings and grounds architectural documentation: <ref target="https://archives.yale.edu/repositories/12/resources/2586">https://archives.yale.edu/repositories/12/resources/2586</ref></p>
+					<p>Architectural drawings and maps of Yale University buildings and grounds: <ref target="https://archives.yale.edu/repositories/12/resources/2871">https://archives.yale.edu/repositories/12/resources/2871</ref></p>
+					<p>Robin Winks, Buildings and Grounds Committee, Yale University, records: <ref target="https://archives.yale.edu/repositories/12/resources/2090">https://archives.yale.edu/repositories/12/resources/2090</ref></p></item>
+				</list>
+				<p>Encoding the same function using EAC-F looks like this:</p>
+				
+				
+						<egXML xml:lang="eng">
+<![CDATA[<eaf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://standards.openpreservation.org/eaf/v1 https://github.com/SAA-SDT/eas-schemas/tree/release_2026_07/xml-schemas/eaf/eaf.xsd" xmlns="https://standards.openpreservation.org/eaf/v1">
+    <control>
+        <recordId>Y1234</recordId>
+        <maintenanceAgency>
+            <agencyCode status="authorized">US-ctybr</agencyCode>
+            <agencyName>Yale University, Beinecke Rare Book and Manuscript Library</agencyName>
+        </maintenanceAgency>
+        <maintenanceHistory>
+            <maintenanceEvent maintenanceEventType="creation">
+                <agent>
+                    <label>Kolbe Resnick</label>
+                    <role valueURI="https://vocab.getty.edu/aat/300162133">Archivist</role>
+                </agent>
+                <eventDateTime standardDateTime="2025-10-21">October 21, 2025</eventDateTime>
+            </maintenanceEvent>
+            <maintenanceEvent maintenanceEventType="derived">
+                <agent>
+                    <label>Elizabeth Roke</label>
+                    <role  valueURI="https://vocab.getty.edu/aat/300162133">Archivist</role>
+                </agent>
+                <eventDateTime standardDateTime="2025-11-25">November 25, 2025</eventDateTime>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        <sources>
+            <source href="https://www.yale.edu/board-trustees/governance-historic-documents/laws">
+                <reference>Yale By-Laws</reference>
+            </source>
+        </sources>
+        <conventionDeclaration id="relationType">
+            <reference href="https://www.ica.org/standards/RiC/ontology"> Records in Contexts Ontology - Relationships properties </reference>
+	        <shortCode>RiC-O</shortCode>
+        </conventionDeclaration>
+    </control>
+    <functionsDescription functionStatus="active">
+        <identity>
+            <nameEntry>
+                <part>Campus maintenance</part>
+                <useDates>
+                    <dateRange>
+                        <fromDate certainty="circa">1795</fromDate>
+                        <toDate>2023</toDate>
+                    </dateRange>
+                </useDates>
+            </nameEntry>
+            <identityId>F96</identityId>
+        </identity>
+        <description>
+            <functionAgents>
+                <functionAgent valueURI="https://archives.yale.edu/agents/corporate_entities/9358">Buildings and Grounds Committee</functionAgent>
+                <functionAgent valueURI="https://archives.yale.edu/agents/corporate_entities/10864">Office of Facilities</functionAgent>
+            </functionAgents>
+            <functionDates>
+                <dateRange>
+                    <fromDate certainty="circa">1795</fromDate>
+                    <toDate>2023</toDate>
+                </dateRange>
+            </functionDates>
+            <functionDescription>
+                <p>
+                	Maintenance includes a full range of services to keep campus operational. Includes planning, construction, and operations in addition to custodial support, landscaping, snow removal, lockshop key services, and recycling assistance.
+                </p>
+            </functionDescription>
+            <functionHistory>
+                <p>
+                	Included with the first issuance of Yale’s by-laws in 1795, the care of the campus buildings and grounds has evolved with the University. From the 1750s until the early 1900s this included the Old Campus area including Connecticut Hall and the dormitories, expanding to encompass the Divinity School and Library between 1835-1849. Between 1870-1928, Yale expanded again and added residential colleges and the buildings that would make up the Gothic revival style buildings of Cross Campus. Today the library maintains swaths of green spaces and a wide range of architectural styles. Since 2005, the focus of facilities, construction, and maintenance projects have focused on energy and environmental sustainability, led by the Office of Sustainability.
+                </p>
+            </functionHistory>
+            <legislations>
+                <legislation>
+                    <p>
+                    	As approved by the Yale Corporation By-Laws: “The Committee on Buildings and Grounds shall consist of not fewer than five members of the Corporation. Persons with experience in fields relating to buildings and grounds, not members of the Corporation, may be invited to be members of the Committee without vote. Such members may be invited by the Corporation to serve for such terms as the Corporation may approve. It shall examine the proposals of the President to the Corporation concerning the development and maintenance of a capital plan; the priority of building needs; the location, design, and erection of new structures; and the upkeep and improvement of buildings and grounds; and shall make comments and recommendations with respect thereto, prior to the presentation of the proposals by the President to the Corporation. Before making recommendations to the Corporation which require expenditure of money not provided for in an approved budget, it shall submit its recommendations to the Committee on Finance for review and approval. The Committee shall establish policy with respect to the use of University residences and shall review and approve individually any proposals for capital maintenance or renovation of residences owned by the University and occupied by University officials.”
+                    </p>
+                    <date standardDate="2023-09-30">September 30, 2023</date>
+                </legislation>
+            </legislations>
+	        </description>
+        <relations>
+            <relation relationType="agent" targetType="https://www.ica.org/standards/RiC/ontology#isOrWasPerformedBy">
+	                <label valueURI="https://archives.yale.edu/agents/corporate_entities/9358">Yale University. Buildings and Grounds Committee</label>
+            </relation>
+            <relation relationType="agent" targetType="https://www.ica.org/standards/RiC/ontology#isOrWasPerformedBy">
+                <label valueURI="https://archives.yale.edu/agents/corporate_entities/10864">Yale University. Office of Facilities</label>
+            </relation>
+            <relation relationType="function" targetType="https://www.ica.org/standards/RiC/ontology#isRelatedTo">
+                <label>Environmental Sustainability</label>
+                <descriptiveNote>
+                    <p>
+                    	Since 2005, the focus of facilities, construction, and maintenance projects have focused on energy and environmental sustainability, led by the Office of Sustainability.
+                    </p>
+                </descriptiveNote>
+            </relation>
+            <relation relationType="resource" targetType="https://www.ica.org/standards/RiC/ontology#resultsOrResultedIn">
+                <label valueURI="https://archives.yale.edu/repositories/12/resources/2586">Yale University buildings and grounds architectural documentation</label>
+            </relation>
+            <relation relationType="resource" targetType="https://www.ica.org/standards/RiC/ontology#resultsOrResultedIn">
+                <label valueURI="https://archives.yale.edu/repositories/12/resources/2871">Architectural drawings and maps of Yale University buildings and grounds</label>
+            </relation>
+            <relation relationType="resource" targetType="https://www.ica.org/standards/RiC/ontology#resultsOrResultedIn">
+                <label valueURI="https://archives.yale.edu/repositories/12/resources/2090">Robin Winks, Buildings and Grounds Committee, Yale University, records</label>
+                <descriptiveNote>
+                    <p>
+                    	Professor Robin Winks was a member of the Buildings and Grounds Committee from 1980-1984.
+                    </p>
+                </descriptiveNote>
+            </relation>
+        </relations>
+    </functionsDescription>
+</eaf>]]>
+							</egXML>
+					
+				
+			<div type="exampleText" subtype="control">
+                    <egXML xml:lang="eng"><![CDATA[<control addressLineTypeEncoding="EASList" agentTypeEncoding="EASList" audienceEncoding="EASList" contactLineTypeEncoding="EASList" countryEncoding="iso3166-1-alpha-2" dateEncoding="iso8601" identityTypeEncoding="EASList" languageEncoding="iso639-2b" maintenanceStatus="revised" maintenanceEventTypeEncoding="EASList" maintenanceStatusEncoding="EASList" placeTypeEncoding="EASList" publicationStatus="published" publicationStatusEncoding="EASList" referredEntityTypeEncoding="EASList" relationTypeEncoding="EASList" repositoryEncoding="iso15511" scriptEncoding="iso15924" scriptOfElement="Latn" targetTypeEncoding="EASList" statusEncoding="EASList">
+	<recordId>
+		21159483
+	</recordId>
+	<maintenanceAgency>
+	<agencyCode>
+		NBuU-AR
+	</agencyCode>
+	<agencyName>
+		University Archives
+	</agencyName>
+	</maintenanceAgency>
+	<maintenanceHistory>
+		<maintenanceEvent maintenanceEventType="revised">
+			<agent agentType="machine">
+			<label>
+				CPF merge program
+			</label>
+			</agent>
+			<eventDateTime standardDateTime="2015-09-18">
+				2015-09-18
+			</eventDateTime>
+			<eventDescription>
+				Merge v2.0
+			</eventDescription>
+		</maintenanceEvent>
+		<maintenanceEvent maintenanceEventType="revised">
+			<agent agentType="machine">
+				<label>
+						SNAC EAC-CPF Parser
+				</label>
+			</agent>
+			<eventDateTime standardDateTime="2016-08-11T10:39:38">
+				2016-08-11T10:39:38
+			</eventDateTime>
+			<eventDescription>
+				Bulk ingest into SNAC Database
+			</eventDescription>
+		</maintenanceEvent>
+		<maintenanceEvent maintenanceEventType="revised">
+			<agent agentType="human">
+				<label>
+						R. Elia
+				</label>
+			</agent>
+			<eventDateTime standardDateTime="2025-10-15"/>
+		</maintenanceEvent>
+	</maintenanceHistory>
+	<sources>
+		<source id="source1" href="http://search.worldcat.org/title/1181498130">
+			<reference>
+				Handley-Taylor, Geoffrey, <span style="font-style:italic">The International Who's Who in Poetry</span>, vol. 2, London, The Cranbrook Tower Press, 1958.
+			</reference>
+		</source>
+		<source id="source2">
+			<reference>
+				"What Poetry Means to Me," manuscript in Sjanna Solum papers, dated 1952 May 16
+			</reference>
+		</source>
+		<source id="source3" href="https://search.worldcat.org/title/25575262">
+			<reference>
+				"Who's Who Poet, Sjanna Solum Living At Kelsey Hill, Deep River," <span style="font-style:italic">The New Era</span>, Deep River, CT, 1959 April 30.
+			</reference>
+			<citedRange unit="page">
+				11
+			</citedRange>
+		</source>
+	</sources>
+	<conventionDeclaration id="cd1">
+		<reference href="https://viaf.org/">
+			Virtual International Authority File
+		</reference>
+		<shortCode>
+			VIAF
+		</shortCode>
+	</conventionDeclaration>
+	<conventionDeclaration id="cd2">
+		<reference href="https://www.ica.org/standards/RiC/RiC-O_1-1.html">
+			Records in Contexts Ontology (ICA RiC-O) version 1.1
+		</reference>
+		<shortCode>
+			RICO
+		</shortCode>
+	</conventionDeclaration>
+	<conventionDeclaration id="cd3">
+		<reference href="http://vocab.getty.edu/page/aat">
+			Getty Art and Architecture Thesaurus
+		</reference>
+		<shortCode>
+			AAT
+		</shortCode>
+	</conventionDeclaration>
+	<conventionDeclaration id="cd4">
+	<reference href="https://id.loc.gov/authorities/names.html">
+		Library of Congress Name Authority Files
+	</reference>
+	<shortCode>
+		lcnaf
+	</shortCode>
+	</conventionDeclaration>
+	<otherRecordId localType="ARK">
+		http://n2t.net/ark:/99166/w6dz099z
+	</otherRecordId>
+	<otherRecordId vocabularySource="VIAF" vocabularySourceURI="#cd1" valueURI="http://viaf.org/viaf/3162902797577782447">
+		3162902797577782447
+	</otherRecordId>
+</control>]]>
+</egXML>
+</div>
+<div type="exampleText" subtype="relations">
+                    <egXML xml:lang="eng"><![CDATA[<relations>
+	<relation id="relation1" relationType="https://www.ica.org/standards/RiC/ontology#AuthorshipRelation" targetType="resource" conventionDeclarationReference="cd2">
+		<label valueURI="https://find.library.upenn.edu/catalog/9923566873503681">
+			Foggy night They lie, they lie, by David Morton and Florence B. Price, Ms. Coll. 199: Marian Anderson Collection of Music Manuscripts, folder 1404
+		</label>
+		<dateRange>
+			<fromDate standardDate="1949-02-05">
+				February 5, 1949
+			</fromDate>
+			<toDate standardDate="1989">
+				1989
+			</toDate>
+		</dateRange>
+		<role>
+			Lyricist
+		</role>
+	</relation>
+	<relation id="relation2" relationType="https://www.ica.org/standards/RiC/ontology#MembershipRelation" targetType="corporateBody" conventionDeclarationReference="cd2">
+		<label valueURI="http://id.loc.gov/authorities/names/n50065387" conventionDeclarationReference="cd4">
+			Poetry Society of America
+		</label>
+	</relation>
+	<relation id="relation3" relationType="https://www.ica.org/standards/RiC/ontology#MembershipRelation" targetType="corporateBody" conventionDeclarationReference="cd2">
+		<label valueURI="http://id.loc.gov/authorities/names/no2003010198" conventionDeclarationReference="cd4">
+			Pen and Brush, Inc.
+		</label>
+	</relation>
+</relations>]]>
+                    </egXML>
+                    
+</div>	
+</div> 
+		 </div>
+		</back>
+	</text>
+</TEI>

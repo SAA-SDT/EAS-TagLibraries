@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-container">
+    <head>
+        <gi>container</gi>
+    </head>
+    <div type="fullName">
+        <p>Container</p>
+    </div>
+    <div type="summary">
+        <p>An optional child element of <gi>identificationData</gi> and  <gi>formAvailable</gi> for indicating the container in which the material being described is housed, e.g., box, folder.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+                <label>reference</label>
+                <item>0..n</item>
+                <label>referringString</label>
+                <item>0..n</item>
+                <label>span</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>formAvailable, identificationData</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>containerId</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p><gi>container</gi> contributes to locating the described materials by indicating the kinds of containers that physically hold the materials and identifying any sequential numbers assigned to those containers. <gi>container</gi> is used most frequently at the component level. This storage information can help researchers understand how extensive the described material is, especially in the absence of a specific <gi>extent</gi> statement at the component level.</p>
+    </div>
+    <div type="attributeusage"><p>Use <att>target</att> to indicate the container in which the current container is housed, e.g., a box in which a folder is housed.</p></div>  
+    <div type="seealso"><p>Use <gi>place</gi> to designate the shelves, stacks, rooms, buildings, or other places where the containers are stored.</p></div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+        <p>See <gi>identificationData</gi> encoding</p>
+    </div>
+</div>

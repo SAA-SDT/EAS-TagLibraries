@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-targetTypeEncoding" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+    <head>
+        <att>targetTypeEncoding</att>
+    </head>
+    <div type="fullName">
+        <p>Target Type Encoding</p>
+    </div>
+    <div type="summary">
+        <p>Specifies the authoritative source or rules for values used to identify the type of related entity.</p>
+    </div>
+    <div type="description">
+        <p>
+            <att>targetTypeEncoding</att> specifies the authoritative source or rules for values supplied in <att>targetType</att> within <gi>relation</gi>. If the value "EASList" is selected, <att>targetType</att> will be expected with the values "corporateBody", "family", "function", "group", "instantiation", "mechanism", "person", "place", "position", "record", "recordSet", "recordPart", or "resource". If the value "otherTargetTypeEncoding" is selected, an alternate code list should be specified in <gi>conventionDeclaration</gi>. This optional attribute is available only in <gi>control</gi>.</p>
+    </div>
+    <div type="values">
+        <p>EASList, otherTargetTypeEncoding</p>
+    </div>
+    <div type="examples">
+        <p>See <gi>control</gi> encoding</p>
+    </div>
+</div>

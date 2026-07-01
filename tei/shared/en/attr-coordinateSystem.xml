@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-coordinateSystem" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>coordinateSystem</att>
+               </head>
+               <div type="fullName">
+                  <p>Coordinate System</p>
+               </div>
+               <div type="summary">
+                  <p>A code for a system used to express geographic coordinates.</p>
+               </div>
+               <div type="description">
+                  <p>A code for a system used to express geographic coordinates, for example WGS84,
+                     (World Geodetic System), OSGB36 (Ordnance Survey Great Britain), or ED50
+                     (European Datum). Required in <gi>geographicCoordinates</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>archDesc</gi> encoding</p>
+                <p type="eac">See <gi>description</gi> encoding</p>
+               </div>
+            </div>

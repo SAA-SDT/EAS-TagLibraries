@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-reference">
+    <head>
+        <gi>reference</gi>
+    </head>
+    <div type="fullName">
+        <p>Reference</p>
+    </div>
+    <div type="summary">
+        <p>An element that cites an external resource.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+                <label>referringString</label>
+                <item>0..n</item>
+                <label>span</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">abstract, conventionDeclaration, eventDescription, localTypeDeclaration, p, rightsDeclaration, source</p>
+        <p type="eaf">conventionDeclaration, eventDescription, localTypeDeclaration, p, rightsDeclaration, source</p>
+        <p type="ead">abstract, container, conventionDeclaration, eventDescription, formAvailableId, genreForm, head, localTypeDeclaration, otherIdentificationData, p, physicalFacet, rightsDeclaration, source, textualDate, unitId, unitTitle</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>href</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>linkRole</label>
+                <item>Optional</item>
+                <label>linkTitle</label>
+                <item>Optional</item>
+                <label>localType</label>
+                <item>Optional</item>
+                <label>localTypeDeclarationReference</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>An element used for referencing external resources that have been used to compile the EAS instance, that provide additional context to the EAS instance, or that identify rules or conventions that have been applied.</p>
+        <p>
+            <gi>reference</gi> is a required child element of <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, and <gi>rightsDeclaration</gi> for identifying any rules and conventions applied in the compilation of the description. It is also a required child element of <gi>source</gi>, used to identify any sources used in compiling the description. <gi>source</gi> may include multiple child <gi>reference</gi> elements.</p>
+        <p type="eaf">In <gi>eventDescription</gi> and <gi>p</gi>, <gi>reference</gi> is used to reference any external resources that provide additional context to the content of these elements, which may include multiple <gi>reference</gi> elements.</p>
+        <p type="eac">In <gi>abstract</gi>, <gi>eventDescription</gi> and <gi>p</gi>, <gi>reference</gi> may be used to reference any external resources that provide additional context to the content of these elements, which may include multiple <gi>reference</gi> elements.</p>
+        <p type="ead">In <gi>abstract</gi>, <gi>container</gi>, <gi>eventDescription</gi>, <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>, <gi>otherIdentificationData</gi>, <gi>p</gi>, <gi>physicalFacet</gi>, <gi>textualDate</gi>, <gi>unitId</gi>, and <gi>unitTitle</gi>, <gi>reference</gi> may be used to reference any external resources that provide additional context to the content of these elements, which may include multiple <gi>reference</gi> elements.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>href</att> to link to the cited resource, in case this is available online.</p>
+    </div>
+    <div type="seealso">
+        <p>
+            <gi>reference</gi> is used for external linking only. If any internal linking is required, use the <att>target</att> attribute to point to the <att>id</att> of the referenced element.</p>
+    </div>
+    <div type="availability">
+        <p>Within <gi>conventionDeclaration</gi>, <gi>localTypeDeclaration</gi>, <gi>rightsDeclaration</gi>: required, not repeatable</p>
+        <p>Within <gi>source</gi>: required, repeatable</p>
+        <p type="eaf">Within <gi>eventDescription</gi>, <gi>p</gi>: optional, repeatable</p>
+        <p type="eac">Within <gi>abstract</gi>, <gi>eventDescription</gi>, <gi>p</gi>: optional, repeatable</p>
+        <p type="ead">Within <gi>abstract</gi>, <gi>container</gi>, <gi>eventDescription</gi>, <gi>formAvailableId</gi>, <gi>genreForm</gi>, <gi>head</gi>, <gi>otherIdentificationData</gi>, <gi>p</gi>, <gi>physicalFacet</gi>, <gi>textualDate</gi>, <gi>unitId</gi>, <gi>unitTitle</gi>: optional, repeatable</p>
+    </div>
+    <div type="examples">
+        <p>See <gi>control</gi> encoding</p>
+    </div>
+</div>

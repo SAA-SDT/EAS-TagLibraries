@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-contactLineType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>contactLineType</att>
+               </head>
+               <div type="fullName">
+                  <p>Contact Line Type</p>
+               </div>
+               <div type="summary">
+                  <p>Used to specify the type of contact line encoded in <gi>contactLine</gi>.</p>
+               </div>
+               <div type="description">
+                 <p>An attribute used to specify the type of contact line encoded in
+                        <gi>contactLine</gi>, e.g. "email", "phoneNumber" or "homepage".</p>
+               </div>
+               <div type="datatype">
+                 <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>archDesc</gi> encoding</p>
+               </div>
+            </div>

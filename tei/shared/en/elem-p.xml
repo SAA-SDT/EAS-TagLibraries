@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-p">
+    <head>
+        <gi>p</gi>
+    </head>
+    <div type="fullName">
+        <p>Paragraph</p>
+    </div>
+    <div type="summary">
+        <p>A general purpose element used to encode blocks of text.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+                <label>reference</label>
+                <item>0..n</item>
+                <label>referringString</label>
+                <item>0..n</item>
+                <label>span</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">biogHist, descriptiveNote, generalContext, structureOrGenealogy</p>
+        <p type="eaf">descriptiveNote, functionDescription, functionHistory, legislation</p>
+        <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, descriptiveNote, filePlan, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>Use <gi>p</gi> for blocks of text. A paragraph may be a subdivision of a larger composition or it may exist alone. It is usually typographically distinguished: a line space is often left blank before it; the text begins on a new line; and the first letter of the first word may be indented, enlarged, or both.</p>
+    </div>
+    <div type="availability">
+        <p>Within <gi>descriptiveNote</gi>: required, repeatable.</p>
+        <p>Within all other parents: optional, repeatable.</p>
+        <p>In all parents except <gi>descriptiveNote</gi>, the encoder must choose between using one or more <gi>p</gi> elements that are defined within the current EAS schema, or using a <gi>formattingExtention</gi> element (to wrap XHTML content) for more complex formatting.</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi> and <gi>identificationData</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+        <p type="eaf">See <gi>eaf</gi> encoding</p>
+    </div>
+</div>

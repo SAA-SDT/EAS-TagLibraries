@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-unitDate">
+    <head>
+        <gi>unitDate</gi>
+    </head>
+    <div type="fullName">
+        <p>Date of the Unit</p>
+    </div>
+    <div type="summary">
+        <p>A child element of <gi>identificationData</gi> that allows the encoding of either structured, machine-processable expressions of the dates of the materials being described or of a simple statement of these date(s).</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>date or dateRange or dateSet or textualDate</label>
+                <item>0..1</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>identificationData</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>calendar</label>
+                <item>Optional</item>
+                <label>certainty</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>dateChar</label>
+                <item>Optional</item>
+                <label>era</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>unitDateType</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>unitDate</gi> is for indicating the date or dates the described materials were created, issued, copyrighted, broadcast, etc. <gi>unitDate</gi> may include date information in the form of text or numbers, and may consist of a single date, a date range, or a combination of single dates and date ranges.</p>
+        <p>Use the sub-elements <gi>date</gi>, <gi>dateRange</gi> or <gi>dateSet</gi> to provide a more granular, machine-processable statement for the dates of the materials being described. Alternatively, use the sub-element <gi>textualDate</gi> to capture a temporal statement that cannot easily be expressed in a standardized or structured way.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>unitDateType</att> to indicate if <gi>unitDate</gi> represents inclusive dates or bulk (predominant) dates.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+<p type="ead">See <gi>identificationData</gi> encoding</p>    </div>
+</div>

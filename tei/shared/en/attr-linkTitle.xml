@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-linkTitle"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:ead="https://archivists.org/ns/ead/v4">
+   <head>
+      <att>linkTitle</att>
+   </head>
+   <div type="fullName">
+      <p>Link Title</p>
+   </div>
+   <div type="summary">
+      <p>Viewable caption of a link text.</p>
+   </div>
+   <div type="description">
+      <p>Information that serves as a viewable caption which explains to users the part that a
+         remote resource plays in a link. May be used alongside any <att>href</att> attribute in order
+         to support accessibilty guidelines, such as those defined within the W3C's Web Content
+         Accessibility Guidelines (WCAG).</p>
+      <p type="eac">Optionally available in <gi>contactLine</gi>, <gi>reference</gi>,
+            <gi>setComponent</gi>, and <gi>source</gi>.</p>
+      <p type="ead">Optionally available in <gi>contactLine</gi>, <gi>findAidDesc</gi>,
+            <gi>reference</gi>, and <gi>source</gi>.</p>
+      <p type="eaf">Optionally available in <gi>reference</gi> and <gi>source</gi>.</p>
+   </div>
+   <div type="datatype">
+      <p>token</p>
+   </div>
+   <div type="examples">
+    <p type="ead">See <gi>findAidDesc</gi> encoding</p>
+    <p type="eac">See <gi>alternativeSet</gi> encoding</p>
+   </div>
+</div>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-scriptCode" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>scriptCode</att>
+               </head>
+               <div type="fullName">
+                  <p>Script Code</p>
+               </div>
+               <div type="summary">
+                  <p type="eac">The code for the writing system, or script, used in the EAS instance or by the described entity or records.</p>
+                 <p type="ead">The code for the writing system, or script, used in the EAS instance or by the described entity or records.</p>
+                 <p type="eaf">The code for the writing system, or script, used in the EAS instance.</p>
+                  </div>
+               <div type="description">
+                  <p type="eac">Content of the attribute should be a code taken from ISO 15924, or another controlled list, as specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>. Optionally available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
+                 <p type="ead">Content of the attribute should be a code taken from ISO 15924, or another controlled list, as specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>. Optionally available in <gi>languageDeclaration</gi> and <gi>writingSystem</gi>.</p>
+                 <p type="eaf">Content of the attribute should be a code taken from ISO 15924, or another controlled list, as specified in the <att>scriptEncoding</att> attribute in <gi>control</gi>. Optionally available in <gi>languageDeclaration</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>token</p>
+               </div>
+               <div type="examples">
+                <p type="ead">See <gi>control</gi> encoding</p>
+                <p type="eac">See <gi>description</gi> encoding</p>
+               </div>
+            </div>

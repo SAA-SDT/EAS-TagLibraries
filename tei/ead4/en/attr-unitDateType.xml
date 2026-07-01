@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-unitDateType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+    <head>
+        <att>unitDateType</att>
+    </head>
+    <div type="fullName">
+        <p>Unit Date Type</p>
+    </div>
+    <div type="summary">
+        <p>Identifies the type of date expressed in <gi>unitDate</gi>.</p>
+    </div>
+    <div type="description">
+        <p>Use <att>unitDateType</att> with <gi>unitDate</gi> to specify the nature of the dates mentioned, e.g. "bulk" or "inclusive".</p>
+        <p>Use the attribute <att>unitDateTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>unitDateType</att>.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
+    <div type="examples">
+<p type="ead">See <gi>identificationData</gi> encoding</p>    </div>
+</div>

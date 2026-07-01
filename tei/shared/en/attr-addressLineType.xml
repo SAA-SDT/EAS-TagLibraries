@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-addressLineType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>addressLineType</att>
+               </head>
+               <div type="fullName">
+                  <p>Address Line Type</p>
+               </div>
+               <div type="summary">
+                  <p>Used to specify the type of address line encoded in <gi>addressLine</gi>. </p>
+               </div>
+               <div type="description">
+                 <p>Use <att>addressLineType</att> with <gi>addressLine</gi> to specify the type of address line, e.g. "street", "country" or "postalCode".</p>
+                 <p>Use the attribute <att>addressLineTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>addressLineType</att>.</p>
+               </div>
+               <div type="datatype">
+                 <p>token</p>
+               </div>
+               <div type="examples">
+                    <p type="eac">See <gi>description</gi> encoding</p>
+                    <p type="ead">See <gi>archDesc</gi> encoding</p>
+               </div>
+            </div>

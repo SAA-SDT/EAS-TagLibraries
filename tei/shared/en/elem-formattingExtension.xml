@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" type="elementDocumentation" xml:id="elem-formattingExtension">
+    <head>
+        <gi>formattingExtension</gi>
+    </head>
+    <div type="fullName">
+        <p>Formatting Extension</p>
+    </div>
+    <div type="summary">
+        <p>An optional, wrapping element that may be utilized to encode more complex formatting features that are not part of the EAS data model such as lists, tables, nested headers, etc. When using the EAS-provided NVDL Schema validation procedure, this element will require that all elements encoded within are from the XHTML namespace.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[Any element that is in a namespace other than the current namespace]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="ead">accessConditions, accruals, appraisal, arrangement, biogHist, custodHist, descriptionOfComponents, filePlan, findAidDesc, otherDescription, otherDescriptiveInfo, physicalOrTechnicalRequirements, preferCite, processInfo, publicationNote, recordTypeSpecificStatement, relatedMaterial, scopeContent, separatedMaterial, sourceOfAcquisition, subjectHeadings, useConditions</p>
+        <p type="eac">biogHist, generalContext, structureOrGenealogy</p>
+        <p type="eaf">functionDescription, functionHistory, legislation</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>formattingExtension</gi> provides the option to embed external namespaces directly within the source file, when complex formatting is required. It should preferably be used for embedding XHTML data.</p>
+        <p>When using this element, it is recommended that the EAS file is associated with the EAS NVDL for validation purposes.</p>
+    </div>
+    <div type="availability">
+        <p type="ead">Within <gi>findAidDesc</gi>: optional, repeatable.</p>
+        <p type="ead">Within all other elements: optional, not repeatable.</p>
+        <p type="eac">Optional, not repeatable</p>
+        <p type="eaf">Optional, not repeatable</p>
+        <p type="ead">In <gi>findAidDesc</gi>, <gi>formattingExtension</gi> is optionally available to encode a narrative description next to the more specific elements <gi>agent</gi>, <gi>citedRange</gi>, <gi>date</gi>, <gi>place</gi>, and <gi>title</gi>. In all other contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+        <p type="eac">In these narrative contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+        <p type="eaf">In these narrative contexts, the encoder must choose between using a <gi>formattingExtention</gi> element (to wrap XHTML content), or using one or more <gi>p</gi> elements that are defined within the current EAS schema.</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi> and <gi>findAidDesc</gi> encoding</p>
+    </div>
+</div>

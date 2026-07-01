@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-language">
+    <head>
+        <gi>language</gi>
+    </head>
+    <div type="fullName">
+        <p>Language</p>
+    </div>
+    <div type="summary">
+        <p>An element that identifies the language or communication system used by the entity or in the materials described.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">languageUsed</p>
+        <p type="ead">languageOfMaterial, languageSet</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageCode</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p type="eac">An optional element within <gi>languageUsed</gi> that gives the language or languages used by the entity being described.</p>
+        <p type="ead">Use either <gi>language</gi> or <gi>languageSet</gi>, if combining language and script information, as sub-element of <gi>languageOfMaterial</gi> to identify a language or communication system of the materials being described.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use <att>languageCode</att> to provide a code for the language itself.</p>
+        <p>Use <att>languageOfElement</att> to provide a code for the language in which the element is given.</p>
+    </div>
+    <div type="seealso">
+        <p>Use <gi>writingSystem</gi> to specify, in a human-readable form, the script corresponding to the language.</p>
+    </div>
+    <div type="availability">
+        <p type="eac">Optional, repeatable</p>
+        <p type="ead">Within <gi>languageOfMaterial</gi>: optional, repeatable</p>
+        <p type="ead">Within <gi>languageSet</gi>: required, only repeatable when encoding one script with several languages</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>identificationData</gi> encoding</p>
+        <p type="eac">See <gi>description</gi> encoding</p>
+    </div>
+</div>

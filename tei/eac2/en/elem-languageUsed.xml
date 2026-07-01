@@ -1,79 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div type="elementDocumentation" xml:id="elem-languageUsed" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
-               <head>
-                  <gi>languageUsed</gi>
-               </head>
-               <div type="fullName">
-                  <p>Language Used</p>
-               </div>
-               <div type="summary">
-                  <p>A required child element of <gi>languagesUsed</gi> describing the language and
-                     writing system used by the CPF entity being described.</p>
-               </div>
-               <div type="mayContain">
-                  <p>descriptiveNote (0..1), language (0..n), writingSystem (0..n)</p>
-               </div>
-               <div type="mayOccurWithin">
-                  <p>languagesUsed</p>
-               </div>
-               <div type="attributes">
-                  <p>
-                     <list type="gloss">
-                        <label>audience</label>
-                        <item>Optional (values limited to: external, internal)</item>
-                        <label>conventionDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>id</label>
-                        <item>Optional</item>
-                        <label>languageOfElement</label>
-                        <item>Optional</item>
-                        <label>localType</label>
-                        <item>Optional</item>
-                        <label>localTypeDeclarationReference</label>
-                        <item>Optional</item>
-                        <label>maintenanceEventReference</label>
-                        <item>Optional</item>
-                        <label>scriptOfElement</label>
-                        <item>Optional</item>
-                        <label>sourceReference</label>
-                        <item>Optional</item>
-                        <label>target</label>
-                        <item>Optional</item>
-                     </list>
-                  </p>
-               </div>
-               <div type="description">
-                  <p><gi>languageUsed</gi> is an element used to indicate the language and writing
-                     system, or script, in which the CPF entity being described was creative or
-                     productive. Use the <gi>language</gi> element to specify the language and a
-                     corresponding <gi>writingSystem</gi> element for the writing system.</p>
-                  <p>The prescribed order of all child elements (both required and optional) is:</p>
-                  <list type="simple">
-                     <item><gi>language</gi> and/or <gi>writingSystem</gi></item>
-                     <item><gi>descriptiveNote</gi></item>
-                  </list>
-               </div>
-               <div type="seealso">
-                  <list type="simple">
-                     <item>Do not confuse with <gi>languageDeclaration</gi> which refers to the
-                        language and script of the EAC-CPF instance.</item>
-                  </list>
-               </div>
-               <div type="availability">
-                  <p>Required, repeatable</p>
-               </div>
-               <div type="examples">
-                  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                     <eac:languagesUsed>
-                        <eac:languageUsed>
-                           <eac:language languageCode="eng">English</eac:language>
-                           <eac:writingSystem scriptCode="Latn">Latin</eac:writingSystem>
-                        </eac:languageUsed>
-                        <eac:languageUsed>
-                           <eac:language languageCode="gre">Greek, Modern (1453-)</eac:language>
-                           <eac:writingSystem scriptCode="Grek">Greek</eac:writingSystem>
-                        </eac:languageUsed>
-                     </eac:languagesUsed>
-                  </egXML>
-               </div>
-            </div>
+<div type="elementDocumentation" xml:id="elem-languageUsed"
+   xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0">
+   <head>
+      <gi>languageUsed</gi>
+   </head>
+   <div type="fullName">
+      <p>Language Used</p>
+   </div>
+   <div type="summary">
+      <p>A required child element of <gi>languagesUsed</gi> describing the language and writing
+         system used by the CPF entity being described.</p>
+   </div>
+   <div type="mayContain">
+      <p><list type="gloss">
+            <label>descriptiveNote</label>
+            <item>0..1</item>
+            <label>language</label>
+            <item>0..n</item>
+            <label>writingSystem</label>
+            <item>0..n</item>
+         </list></p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>languagesUsed</p>
+   </div>
+   <div type="attributes">
+      <p>
+         <list type="gloss">
+            <label>audience</label>
+            <item>Optional (values limited to: external, internal)</item>
+            <label>conventionDeclarationReference</label>
+            <item>Optional</item>
+            <label>id</label>
+            <item>Optional</item>
+            <label>languageOfElement</label>
+            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>localTypeDeclarationReference</label>
+            <item>Optional</item>
+            <label>maintenanceEventReference</label>
+            <item>Optional</item>
+            <label>scriptOfElement</label>
+            <item>Optional</item>
+            <label>sourceReference</label>
+            <item>Optional</item>
+            <label>target</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="description">
+      <p><gi>languageUsed</gi> is an element used to indicate the language and writing system, or
+         script, in which the CPF entity being described was creative or productive. Use the
+            <gi>language</gi> element to specify the language and a corresponding
+            <gi>writingSystem</gi> element for the writing system.</p>
+      <p>The prescribed order of all child elements (both required and optional) is:</p>
+      <list type="simple">
+         <item><gi>language</gi> and/or <gi>writingSystem</gi></item>
+         <item><gi>descriptiveNote</gi></item>
+      </list>
+   </div>
+   <div type="seealso">
+         <p>Do not confuse with <gi>languageDeclaration</gi> which refers to the language and
+            script of the EAC-CPF instance.</p>
+   </div>
+   <div type="availability">
+      <p>Required, repeatable</p>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng"><![CDATA[<languagesUsed>
+		<languageUsed>
+				<language languageCode="eng">
+						English
+				</language>
+				<writingSystem scriptCode="Latn">
+						Latin
+				</writingSystem>
+		</languageUsed>
+		<languageUsed>
+				<language languageCode="gre">
+						Greek, Modern (1453-)
+				</language>
+				<writingSystem scriptCode="Grek">
+						Greek
+				</writingSystem>
+		</languageUsed>
+</languagesUsed>]]>
+      </egXML>
+   </div>
+</div>

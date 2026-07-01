@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-c03">
+    <head>
+        <gi>c03</gi>
+    </head>
+    <div type="fullName">
+        <p>Component (third level)</p>
+    </div>
+    <div type="summary">
+        <p>An element that designates a third-level subordinate part of the materials.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>accessConditions</label>
+                <item>0..n</item>
+                <label>accruals</label>
+                <item>0..n</item>
+                <label>agents</label>
+                <item>0..1</item>
+                <label>appraisal</label>
+                <item>0..n</item>
+                <label>arrangement</label>
+                <item>0..n</item>
+                <label>biogHist</label>
+                <item>0..n</item>
+                <label>c04</label>
+                <item>0..n</item>
+                <label>custodHist</label>
+                <item>0..n</item>
+                <label>filePlan</label>
+                <item>0..n</item>
+                <label>formsAvailable</label>
+                <item>0..1</item>
+                <label>functions</label>
+                <item>0..1</item>
+                <label>head</label>
+                <item>0..1</item>
+                <label>identificationData</label>
+                <item>1..1</item>
+                <label>otherDescription</label>
+                <item>0..n</item>
+                <label>otherDescriptiveInfo</label>
+                <item>0..n</item>
+                <label>places</label>
+                <item>0..1</item>
+                <label>preferCite</label>
+                <item>0..n</item>
+                <label>processInfo</label>
+                <item>0..n</item>
+                <label>publicationNote</label>
+                <item>0..n</item>
+                <label>recordTypeSpecificStatement</label>
+                <item>0..n</item>
+                <label>relatedMaterial</label>
+                <item>0..n</item>
+                <label>scopeContent</label>
+                <item>0..n</item>
+                <label>separatedMaterial</label>
+                <item>0..n</item>
+                <label>sourceOfAcquisition</label>
+                <item>0..n</item>
+                <label>subjectHeadings</label>
+                <item>0..n</item>
+                <label>useConditions</label>
+                <item>0..n</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>c02</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>level</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>c03</gi> is a third-level wrapper for subordinate components within <gi>descriptionOfComponents</gi>. Its parent must be <gi>c02</gi>. Numbering components may assist a finding aid encoder in accurately nesting them. </p>
+        <p>The numbering of components indicates hierarchy within the encoded finding aid, not the order of the components or a specific intellectual grouping. For instance, <gi>c03</gi> in one part of a finding aid may designate a series, while in another part of the finding aid it may designate an item. </p>
+    </div>
+    <div type="seealso">
+        <p>The unnumbered element <gi>c</gi> is an alternative way to designate components. Use either the unnumbered <gi>c</gi> or the numbered alternatives. Do not mix the two in a single EAD instance.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+<p type="ead">See <gi>identificationData</gi> encoding (as c)</p>    </div>
+</div>

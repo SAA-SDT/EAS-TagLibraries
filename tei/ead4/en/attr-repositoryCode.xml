@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-repositoryCode" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+    <head>
+        <att>repositoryCode</att>
+    </head>
+    <div type="fullName">
+        <p>Repository Code</p>
+    </div>
+    <div type="summary">
+        <p>A code in <gi>unitId</gi> that uniquely identifies the repository responsible for intellectual control of the materials being described.</p>
+    </div>
+    <div type="description">
+        <p>Use <att>repositoryCode</att> in <gi>unitId</gi> to provide a number or code that uniquely identifies the repository responsible for intellectual control of the materials being described. The code should be taken from ISO/DIS 15511 Information and documentation—International Standard Identifier for Libraries and Related Organizations (ISIL), or another code as specified in <att>repositoryEncoding</att> in <gi>control</gi>.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
+    <div type="examples">
+<p type="ead">See <gi>identificationData</gi> encoding</p>    </div>
+</div>

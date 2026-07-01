@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-maintenanceEventReference" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+               <head>
+                  <att>maintenanceEventReference</att>
+               </head>
+               <div type="fullName">
+                  <p>Maintenance Event Reference</p>
+               </div>
+               <div type="summary">
+                  <p>Use <att>maintenanceEventReference</att> to provide a direct link to a
+                        <gi>maintenanceEvent</gi> element within <gi>maintenanceHistory</gi>.</p>
+               </div>
+               <div type="description">
+                  <p>The attribute can be used to link to a maintenance event in order to verify any assertion added to the entity’s description.</p> 
+                     <p>The attribute is optionally available in all elements that can contain text and are available outside of <gi>control</gi>.</p>
+               </div>
+               <div type="datatype">
+                  <p>IDREFS</p>
+               </div>
+               <div type="examples">
+                    <p type="ead">See <gi>archDesc</gi> encoding</p>
+                </div>
+            </div>

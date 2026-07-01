@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4" type="elementDocumentation" xml:id="elem-localTypeDeclaration">
+    <head>
+        <gi>localTypeDeclaration</gi>
+    </head>
+    <div type="fullName">
+        <p>Local Type Declaration</p>
+    </div>
+    <div type="summary">
+        <p>An optional child element of <gi>control</gi> used to declare any local conventions or controlled vocabularies used in <att>localType</att> in the EAS instance.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>descriptiveNote</label>
+                <item>0..1</item>
+                <label>reference</label>
+                <item>1..1</item>
+                <label>shortCode</label>
+                <item>0..1</item>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>control</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>valueURI</label>
+                <item>Optional</item>
+                <label>vocabularySource</label>
+                <item>Optional</item>
+                <label>vocabularySourceURI</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>
+            <gi>localTypeDeclaration</gi> specifies the local conventions and controlled vocabularies used in <att>localType</att> attributes in the EAS instance.</p>
+        <p>Each additional rule or set of rules, controlled vocabulary, or standard should be contained in a separate <gi>localTypeDeclaration</gi>.</p>
+        <p>The child <gi>reference</gi> must be used to cite the resource that lists the local rules or controlled terms. Any notes relating to how these rules or conventions have been used may be given in <gi>descriptiveNote</gi>. The child <gi>shortCode</gi> may be used to identify any abbreviation or code representing the local convention or controlled vocabulary.</p>
+        <p>The prescribed order of all child elements (both required and optional) is:</p>
+        <list type="simple">
+            <item>
+                <gi>reference</gi>
+            </item>
+            <item>
+                <gi>shortCode</gi>
+            </item>
+            <item>
+                <gi>descriptiveNote</gi>
+            </item>
+        </list>
+    </div>
+    <div type="seealso">
+        <p>Use <gi>conventionDeclaration</gi> to indicate any more broadly (i.e. nationally or  internationally) used rules or conventions, including authorized controlled vocabularies and thesauri, applied in creating the EAS instance.</p>
+        <p>When using <att>localType</att> throughout the EAS instance, use <att>localTypeDeclarationReference</att> in parallel to refer back to the relevant <gi>localTypeDeclaration</gi> via its <att>id</att> attribute.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+        <p>See <gi>control</gi> encoding</p>
+    </div>
+</div>

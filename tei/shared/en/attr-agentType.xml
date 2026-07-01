@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-agentType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+  <head>
+        <att>agentType</att>
+    </head>
+    <div type="fullName">
+        <p>Agent Type</p>
+    </div>
+    <div type="summary">
+        <p>An optional attribute of <gi>agent</gi> that indicates the type of agent relevant in a specific context.</p>
+    </div>
+    <div type="description">
+        <p type="eaf">Use <att>agentType</att> in <gi>agent</gi> to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within <gi>maintenanceEvent</gi>.</p>
+        <p type="eac">Use <att>agentType</att> in <gi>agent</gi> to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within <gi>maintenanceEvent</gi>, or the type of agent relevant in the context of a <gi>narrativeEvent</gi>.</p>
+        <p type="ead">Use <att>agentType</att> in <gi>agent</gi> to specify the type of agent responsible for the creation, modification, or deletion of an EAS instance, when used within <gi>maintenanceEvent</gi>, the type of agent relevant in the context of a <gi>narrativeEvent</gi> or the type of agent important in relation to the creation, modification, publication, or use of record resources (within <gi>archDesc</gi> and the component elements) and of finding aids (within <gi>findAidDesc</gi>).</p>
+        <p>Use the attribute <att>agentTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>agentType</att>.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
+  <div type="examples">
+    <p type="ead">See <gi>archDesc</gi> and <gi>control</gi> encoding</p>
+    <p type="eac">See <gi>control</gi> encoding</p>
+    <p type="eaf">See <gi>control</gi> encoding</p>
+  </div>
+</div>

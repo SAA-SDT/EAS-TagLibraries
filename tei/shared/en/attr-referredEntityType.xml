@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-referredEntityType" xmlns:ead="https://archivists.org/ns/ead/v4" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink">
+    <head>
+        <att>referredEntityType</att>
+    </head>
+    <div type="fullName">
+        <p>Referrered Entity Type</p>
+    </div>
+    <div type="summary">
+        <p>An optional attribute of <gi>referringString</gi> that specifies the type of entity named in a narrative text.</p>
+    </div>
+    <div type="description">
+        <p>Use <att>referredEntityType</att> with <gi>referringString</gi> to specify the type of entity named in a narrative text.</p>
+        <p>Use the attribute <att>referredEntityTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>referredEntityType</att>.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
+    <div type="examples">
+        <p type="ead">See <gi>archDesc</gi> encoding</p>
+        <p type="eac">See <gi>relation</gi> encoding</p>
+        <p type="eaf">See <gi>relation</gi> encoding</p>
+    </div>
+</div>

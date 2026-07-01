@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div type="attributeDocumentation" xml:id="attr-targetType" xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:ead="https://archivists.org/ns/ead/v4">
+    <head>
+        <att>targetType</att>
+    </head>
+    <div type="fullName">
+        <p>Target Type</p>
+    </div>
+    <div type="summary">
+        <p>Identifies the type of entity related to the entity or records being described.</p>
+    </div>
+    <div type="description">
+        <p>An optional attribute of <gi>relation</gi> that specifies the type of entity that is related to the entity or records being described.</p>
+        <p>Use the attribute <att>targetTypeEncoding</att> in <gi>control</gi> to identify the list of authoritative terms that can be used as values of <att>targetType</att>.</p>
+    </div>
+    <div type="datatype">
+        <p>token</p>
+    </div>
+    <div type="examples">
+        <p type="eac">See <gi>relation</gi> encoding</p>
+        <p type="eac">See <gi>relation</gi> encoding</p>
+        <p type="eaf">See <gi>eaf</gi> encoding</p>
+    </div>
+</div>

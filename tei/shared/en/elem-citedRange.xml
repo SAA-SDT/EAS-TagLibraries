@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:eac="http://archivists.org/ns/eac/v2" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3c.org/1999/xlink" type="elementDocumentation" xml:id="elem-citedRange">
+    <head>
+        <gi>citedRange</gi>
+    </head>
+    <div type="fullName">
+        <p>Cited Range</p>
+    </div>
+    <div type="summary">
+        <p type="eac">An optional child element of <gi>source</gi> that identifies precisely where supporting evidence was found within the source.</p>
+        <p type="eaf">An optional child element of <gi>source</gi> that identifies precisely where supporting evidence was found within the source.</p>
+        <p type="ead">An optional child element of <gi>source</gi> and <gi>findAidDesc</gi> that identifies precisely where supporting evidence was found within the source or in which compilation the finding aid was published.</p>
+    </div>
+    <div type="mayContain">
+        <p>
+            <list type="gloss">
+                <label>[text]</label>
+                <item/>
+            </list>
+        </p>
+    </div>
+    <div type="mayOccurWithin">
+        <p type="eac">source</p>
+        <p type="eaf">source</p>
+        <p type="ead">findAidDesc, source</p>
+    </div>
+    <div type="attributes">
+        <p>
+            <list type="gloss">
+                <label>audience</label>
+                <item>Optional</item>
+                <label>conventionDeclarationReference</label>
+                <item>Optional</item>
+                <label>id</label>
+                <item>Optional</item>
+                <label>languageOfElement</label>
+                <item>Optional</item>
+                <label>maintenanceEventReference</label>
+                <item>Optional</item>
+                <label>scriptOfElement</label>
+                <item>Optional</item>
+                <label>sourceReference</label>
+                <item>Optional</item>
+                <label>target</label>
+                <item>Optional</item>
+                <label>unit</label>
+                <item>Optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="description">
+        <p>The <gi>citedRange</gi> element can be used to refer to a specific location within a source where supporting evidence can be found. It may refer to a specific location such as a single page, or a broader location such as a range of pages.</p>
+        <p type="ead">When used in <gi>findAidDesc</gi>, <gi>citedRange</gi> might refer to the designated part of a compilation in the context of which a finding aid has been published.</p>
+    </div>
+    <div type="attributeusage">
+        <p>Use the optional <att>unit</att> attribute to specify the format that the <gi>citedRange</gi> refers to, for example page number or volume number.</p>
+    </div>
+    <div type="availability">
+        <p>Optional, repeatable</p>
+    </div>
+    <div type="examples">
+        <p>See <gi>control</gi> encoding</p>
+    </div>
+</div>
