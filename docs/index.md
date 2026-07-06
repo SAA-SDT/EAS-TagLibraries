@@ -3,7 +3,7 @@
 # About this repository
 In this repository you can find the Tag Libraries for Encoded Archival Description Versions 3 and 4, Encoded Archival Context: Corporate Bodies, Persons, and Families Versions 2 and 3, and Encoded Archival Context: Functions Version 1  
 
-These three standards are devekoped and maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS) 
+These three standards are developed and maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS) 
 # Introduction
 The Encoded Archival Standards (EAS) Suite includes the three standards EAD, EAC-CPF and EAC-F. They provide the different XML formats to use for giving the description of the answers to the Who, Why and What of records in XML. 
 * Who: EAC-CPF describes the creator
