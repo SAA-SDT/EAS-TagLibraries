@@ -21,4 +21,4 @@ In this repository you can find the Tag Libraries for Encoded Archival Descripti
     * [Best Practices Guide (BPG)](https://saa-sdt.github.io/EAS-Best-Practices/)
  
   # News
-  * [EAS Suite release ahead - 20260706](news/20260706.md)
+  * [EAS Suite release ahead - 20260706](docs/news/20260706.md)
