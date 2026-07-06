@@ -27,4 +27,4 @@ The Encoded Archival Standards (EAS) Suite is our three standards EAD, EAc-CPF a
     * [Best Practices Guide (BPG)](https://saa-sdt.github.io/EAS-Best-Practices/)
  
   # News
-  * [EAS Suite release ahead - 20260706](news/20260706.html)
+  * [EAS Suite release ahead - 20260706](news/20260706.md?raw=true)
