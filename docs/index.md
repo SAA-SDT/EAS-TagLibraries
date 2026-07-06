@@ -3,21 +3,21 @@
 # About this repository
 In this repository you can find the Tag Libraries for Encoded Archival Description Versions 3 and 4, Encoded Archival Context: Corporate Bodies, Persons, and Families Versions 2 and 3, and Encoded Archival Context: Functions Version 1  
 
-These three standards are maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS) 
+These three standards are devekoped and maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS) 
 # Introduction
-The Encoded Archival Standards (EAS) Suite is our three standards EAD, EAc-CPF and EAC-F. They provide the different XML formats to use for giving the description of the answers to the Who, Why and What of records in XML. 
-* Who: The EAC-CPF describing the creator
-* Why: The EAC-F’s describing the function and/or activities which results in a record being created
-* What: The EAD where the records are described
-# The EAS Suite of Standards
+The Encoded Archival Standards (EAS) Suite includes the three standards EAD, EAC-CPF and EAC-F. They provide the different XML formats to use for giving the description of the answers to the Who, Why and What of records in XML. 
+* Who: EAC-CPF describes the creator
+* Why: EAC-F’s describes the function and/or activities which results in a record being created
+* What: EAD describes the records
+# The EAS Suite
 * EAD
   * Enoded Archival Description (EAD)
   * The description of records which is the result of a function or activitiy carried out by a creator
-  * [EAD](https://www.loc.gov/ead/) , kindly hosted by the Library of Congress
+  * [EAD](https://www.loc.gov/ead/), kindly hosted by the Library of Congress
 * EAC-CPF
   * Encoded Archvial Context: Corporate Bodies, Persons, and Families (EAC-CPF)
   * The description of the creator which through a function or activity produces records
-  * [EAC-CPF](https://eac.staatsbibliothek-berlin.de/) , kindly hosted by Staatsbibliothek zu Berlin
+  * [EAC-CPF](https://eac.staatsbibliothek-berlin.de/), kindly hosted by Staatsbibliothek zu Berlin
 * EAC-F
   * Encoded Archival Context: Functions (EAC-F)
   * The description of the function or activity carried out by a creator resulting in a record or records
