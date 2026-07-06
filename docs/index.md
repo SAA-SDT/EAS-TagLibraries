@@ -12,6 +12,6 @@ In this repository you can find the Tag Libraries for Encoded Archival Descripti
   * Encoded Archival Context: Functions (EAC-F)
   * The function or activity carried out by a creator resulting in a record or records
   * [EAC-F TL as PDF](https://github.com/SAA-SDT/EAS-TagLibraries/blob/master/pdf/EAF1-TL-eng.pdf)
-  * [EAC-F TL as HTML to view on screen](https://github.com/SAA-SDT/EAS-TagLibraries/blob/master/html/EAF1-TL-eng.html)
+  * [EAC-F TL as HTML to view on screen](https://htmlpreview.github.io/?https://github.com/SAA-SDT/EAS-TagLibraries/blob/master/html/EAF1-TL-eng.html)
   * New bullet point
   * And one more
