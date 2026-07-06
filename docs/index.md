@@ -32,3 +32,4 @@ The Encoded Archival Standards (EAS) Suite is our three standards EAD, EAc-CPF a
  
   # News
   * [20260706 - EAS Suite release ahead](news/20260706.md)
+ 
