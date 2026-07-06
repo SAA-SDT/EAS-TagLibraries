@@ -5,7 +5,7 @@ In this repository you can find the Tag Libraries for Encoded Archival Descripti
 
 These three standards are maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS) 
 # Introduction
-The Encoded Archival Standards (EAS) Suite is our three standards EAD, EAc-CPF and EAC-F. They provide the different XML formats to use for giving the description of the answers to the Who, Why and What of records. 
+The Encoded Archival Standards (EAS) Suite is our three standards EAD, EAc-CPF and EAC-F. They provide the different XML formats to use for giving the description of the answers to the Who, Why and What of records in XML. 
 * Who: The EAC-CPF describing the creator
 * Why: The EAC-F’s describing the function and/or activities which results in a record being created
 * What: The EAD where the records are described
