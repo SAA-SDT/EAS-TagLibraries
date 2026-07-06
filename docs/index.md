@@ -1,4 +1,4 @@
-<img src="https://github.com/SAA-SDT/EAS-TagLibraries/blob/master/images/SAA.png" alt="SAA logo" width="10%"/>
+<img src="https://github.com/SAA-SDT/EAS-TagLibraries/blob/master/images/SAA.png?raw=true" alt="SAA logo" width="10%"/>
 
 # About this repository
 In this repository you can find the Tag Libraries for Encoded Archival Description Versions 3 and 4, Encoded Archival Context: Corporate Bodies, Persons, and Families Versions 2 and 3, and Encoded Archival Context: Functions Version 1
