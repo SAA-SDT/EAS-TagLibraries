@@ -15,7 +15,7 @@ The Encoded Archival Standards (EAS) Suite includes the three standards EAD, EAC
   * The description of records which is the result of a function or activitiy carried out by a creator
   * [EAD](https://www.loc.gov/ead/), kindly hosted by the Library of Congress
 * EAC-CPF
-  * Encoded Archvial Context: Corporate Bodies, Persons, and Families (EAC-CPF)
+  * Encoded Archival Context: Corporate Bodies, Persons, and Families (EAC-CPF)
   * The description of the creator which through a function or activity produces records
   * [EAC-CPF](https://eac.staatsbibliothek-berlin.de/), kindly hosted by Staatsbibliothek zu Berlin
 * EAC-F
