@@ -28,6 +28,7 @@ The Encoded Archival Standards (EAS) Suite includes the three standards EAD, EAC
     * [EAC-F 1 Schemas in GitHub](https://github.com/SAA-SDT/eas-schemas/tree/main/xml-schemas/eaf)
     * [EAC-F XML-schema](https://github.com/SAA-SDT/eas-schemas/blob/main/xml-schemas/eaf/eaf.xsd?raw=true)
     * [EAC-F RNG-schema](https://github.com/SAA-SDT/eas-schemas/blob/main/xml-schemas/eaf/eaf.rng?raw=true)
+    * [EAC-F NVDL-schema](https://github.com/SAA-SDT/eas-schemas/blob/main/xml-schemas/eaf/eaf.nvdl?raw=true)
     * [Best Practices Guide (BPG)](https://saa-sdt.github.io/EAS-Best-Practices/)
  
   # News
