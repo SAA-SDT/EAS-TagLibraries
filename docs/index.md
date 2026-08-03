@@ -11,7 +11,7 @@ The Encoded Archival Standards (EAS) Suite includes the three standards EAD, EAC
 * What: EAD describes the records
 # The EAS Suite
 * EAD
-  * Enoded Archival Description (EAD)
+  * Encoded Archival Description (EAD)
   * The description of records which is the result of a function or activitiy carried out by a creator
   * [EAD](https://www.loc.gov/ead/), kindly hosted by the Library of Congress
 * EAC-CPF
@@ -25,10 +25,13 @@ The Encoded Archival Standards (EAS) Suite includes the three standards EAD, EAC
     * [EAS TL's in GitHub](https://github.com/SAA-SDT/EAS-TagLibraries)
     * [EAC-F TL as PDF](https://github.com/SAA-SDT/EAS-TagLibraries/blob/master/pdf/EAF1-TL-eng.pdf?raw=true)
     * [EAC-F TL as HTML to view on screen](https://htmlpreview.github.io/?https://github.com/SAA-SDT/EAS-TagLibraries/blob/master/html/EAF1-TL-eng.html)
-    * [EAC-F 1 Schemas in GitHub](https://github.com/SAA-SDT/eas-schemas/tree/main/xml-schemas/eaf)
+    * [EAC-F Schemas in GitHub](https://github.com/SAA-SDT/eas-schemas/tree/main/xml-schemas/eaf)
     * [EAC-F XML-schema](https://github.com/SAA-SDT/eas-schemas/blob/main/xml-schemas/eaf/eaf.xsd?raw=true)
     * [EAC-F RNG-schema](https://github.com/SAA-SDT/eas-schemas/blob/main/xml-schemas/eaf/eaf.rng?raw=true)
+    * [EAC-F Schematron for validation](https://github.com/SAA-SDT/eas-schematron-validator/blob/main/schematron/eaf.sch?raw=true)
     * [EAC-F NVDL-schema](https://github.com/SAA-SDT/eas-schemas/blob/main/xml-schemas/eaf/eaf.nvdl?raw=true)
+    * [EAS Suite Schematron in GitHub](https://github.com/SAA-SDT/eas-schematron-validator/tree/main/schematron)
+    * [EAS Suite validation tool in GitHub](https://saa-sdt.github.io/eas-schematron-validator/)
     * [Best Practices Guide (BPG)](https://saa-sdt.github.io/EAS-Best-Practices/)
  
   # News
