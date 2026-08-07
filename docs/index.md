@@ -1,6 +1,6 @@
 <img src="https://github.com/SAA-SDT/EAS-TagLibraries/blob/master/images/SAA.png?raw=true" alt="SAA logo" width="10%"/>
 
-# About this repository
+# About this [repository](https://github.com/SAA-SDT/EAS-TagLibraries)
 In this repository you can find the Tag Libraries for Encoded Archival Description Versions 3 and 4, Encoded Archival Context: Corporate Bodies, Persons, and Families Versions 2 and 3, and Encoded Archival Context: Functions Version 1  
 
 These three standards are developed and maintained by the Technical Subcommittee on Encoded Archival Standards (TS-EAS) 
