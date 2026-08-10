@@ -34,6 +34,7 @@ The Encoded Archival Standards (EAS) Suite includes the three standards EAD, EAC
     * [EAS Suite validation tool in GitHub](https://saa-sdt.github.io/eas-schematron-validator/)
     * [Best Practices Guide (BPG)](https://saa-sdt.github.io/EAS-Best-Practices/)
  
-  # News
-  * [20260706 - EAS Suite release ahead](news/20260706.md)
+# News
+* [20260807 - EAS Suite released!](news/20260807.md)
+* [20260706 - EAS Suite release ahead](news/20260706.md)
  
